@@ -109,7 +109,7 @@ section.display_results(fmt=".3f")
 
 print("Compare with AS5100.5 Tb. D4(A) - ds = 150 mm; alpha_c = 0.7")
 print(
-    f"Torsion constant: {section.get_j() / precast.elastic_modulus / 1e6:.0f} x1e6 mm3"
+    f"Torsion constant: {section.get_j() / precast.elastic_modulus / 1e6:.0f}x10^6 mm3"
 )
 
 #%% I Girder Only

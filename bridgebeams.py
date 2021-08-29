@@ -199,7 +199,6 @@ class IGirderSection(Geometry):
     """Constructs a precast I girder section to AS5100.5.
     
     As an example, replicate the table shown in AS5100.5 Fig. D1(A)::
-    
 
         import pandas as pd
         
