@@ -18,6 +18,26 @@ tree; the registry with URLs is `sources/SOURCES.md`.
 
 ## Implemented
 
+(turkey)=
+
+### Turkey
+
+**KGM-lineage precast pretensioned I-girders I90/I120/I140/I170** (900/
+1200/1400/1700 mm deep; 750 flanges, 200 web; spans to 35 m). Implemented
+with the flange thickness from the family's documented worked example —
+no published property tables exist, so validation is against closed-form
+values (flagged for project-drawing confirmation).
+
+(south-africa)=
+
+### South Africa
+
+**Civilcon I-beams I1–I20** implemented from Civilcon's published
+dimension tables (B1–B4/D1–D6, TMH7 loading). Areas exact against the
+published Ixx-derived values; the same source publishes the
+British-tradition M/Y/T/U families already covered by the Irish
+implementations.
+
 (ireland-uk)=
 
 ### Ireland / UK
@@ -38,6 +58,19 @@ effort — carries the same tables plus 50 embedded CAD drawings.
 current `sectionproperties` API.
 
 ## Researched — dimension sources collected
+
+(qatar)=
+
+### Qatar
+
+**Ashghal Standard Detail Drawings SD 5-1-100…115** (free, official):
+Q-girder sections (5 types, 800–1900 mm deep, drawn 1:10) and TY-beams
+TY1–TY10 (400–850 mm — the British TY inherited via UK practice, with a
+full section-property table: A 188,663→327,671 mm², I 1.958e9→2.437e10
+mm⁴). Our TY implementation covers the TY family; Q-girder geometry is
+being digitised from the drawings. Abu Dhabi explicitly rejects
+unmodified AASHTO/PCI sections — UK-style families dominate Gulf
+precasters.
 
 (united-states)=
 

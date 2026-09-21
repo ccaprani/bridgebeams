@@ -1,4 +1,4 @@
-﻿bridgebeams.ukie
+bridgebeams.ukie
 ================
 
 .. automodule:: bridgebeams.ukie

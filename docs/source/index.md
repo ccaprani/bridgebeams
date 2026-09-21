@@ -38,6 +38,8 @@ wrapped with materials for concrete section design checks.
 | Ireland/UK | M / UMB | 640–1360 mm | 0.7% / ≤0.6% |
 | Ireland/UK | SY / SYE | 1500–2000 mm | <0.05% / 0.56% rms |
 | Ireland/UK | MY / MYE | 300–600 mm | 0.8% / 0.3% rms |
+| Türkiye | KGM I-girders | 900–1700 mm | analytic (no tables published) |
+| South Africa | Civilcon I-beams | 710–1675 mm | exact vs published Ixx |
 
 See {doc}`global` for the clickable world map of jurisdictions and
 {doc}`families` for profiles, accuracy statements and sources.

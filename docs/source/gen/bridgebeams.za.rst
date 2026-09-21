@@ -1,7 +1,7 @@
-﻿bridgebeams
-===========
+bridgebeams.za
+==============
 
-.. automodule:: bridgebeams
+.. automodule:: bridgebeams.za
 
    
    
@@ -26,9 +26,5 @@
    :template: custom-module-template.rst
    :recursive:
 
-   adapters
-   aus
-   tr
-   ukie
-   za
+   civilcon_i_beam
 

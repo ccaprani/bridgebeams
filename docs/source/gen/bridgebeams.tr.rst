@@ -1,7 +1,7 @@
-﻿bridgebeams
-===========
+bridgebeams.tr
+==============
 
-.. automodule:: bridgebeams
+.. automodule:: bridgebeams.tr
 
    
    
@@ -26,9 +26,5 @@
    :template: custom-module-template.rst
    :recursive:
 
-   adapters
-   aus
-   tr
-   ukie
-   za
+   kgm_i_section
 
