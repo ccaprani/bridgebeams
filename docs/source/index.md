@@ -40,6 +40,7 @@ wrapped with materials for concrete section design checks.
 | Ireland/UK | MY / MYE | 300–600 mm | 0.8% / 0.3% rms |
 | Türkiye | KGM I-girders | 900–1700 mm | analytic (no tables published) |
 | South Africa | Civilcon I-beams | 710–1675 mm | exact vs published Ixx |
+| Korea | KHC PSC I-girders | 1650–2500 mm | +2–3% vs literature |
 
 See {doc}`global` for the clickable world map of jurisdictions and
 {doc}`families` for profiles, accuracy statements and sources.

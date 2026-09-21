@@ -57,6 +57,20 @@ effort — carries the same tables plus 50 embedded CAD drawings.
 1–4)** to AS5100.5 Appendix D — ported from the original 0.1 release to the
 current `sectionproperties` API.
 
+## Implemented (cont.)
+
+(korea)=
+
+### Korea
+
+**KHC (Korea Expressway Corporation) standard PSC I-girders** for 25/30/35 m
+spans — implemented from the published dimension table (Paik, Hwang & Shin,
+*Computers and Concrete* 6(1), Table 6): 1750/2000/2200 mm deep; 640/700/760
+top flanges; 600/660/720 bottom flanges; 200/220 webs. Validated against the
+literature's 35 m properties (A = 7,896 cm², Ix = 4.644×10¹¹ mm⁴) to +2/+3%
+(tabulated haunch depths slightly heavier than as-built). 20 m and 40 m
+extrapolated sizes included.
+
 ## Researched — dimension sources collected
 
 (qatar)=

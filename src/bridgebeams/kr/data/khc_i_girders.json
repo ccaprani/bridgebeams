@@ -1,0 +1,18 @@
+{
+  "family": "KHC standard PSC I-girders (Korea)",
+  "description": "Korea Expressway Corporation standard prestressed concrete I-girder sections for 25/30/35 m spans (20 m and 40 m are extrapolations in the source paper). Top flange width B1 (=H1), web B2, bottom flange width B3 (=H3); vertical stack H1 + H2 + H3 + H4 + H5 = H (verified exact for all five spans in the source). H1 top flange thickness, H2 top haunch height, H3 clear web height, H4 bottom haunch height, H5 bottom flange thickness.",
+  "sources": {
+    "table": "Paik, Hwang & Shin, 'Reliability-based bridge design...'; Table 6 (Dimensions of RC and PSC beam sections, mm), Computers and Concrete 6(1), Techno-Press (free PDF). PSC sections of 25/30/35 m are 'the standard sections recommended by KHC'.",
+    "source_urls": [
+      "https://www.techno-press.org/download.php?journal=cac&num=1&ordernum=4&volume=6"
+    ],
+    "validation_target": "35 m section: A = 7,896 cm2, Ix = 46,440,522 cm4 = 4.644e11 mm4 (literature). Implemented geometry validates to +2.2% (A) and +3.2% (Ixx): the tabulated haunch depths H2/H4 are slightly heavier than as-built. KHC-lineage confirmation via patent KR20130117635A (https://patents.google.com/patent/KR20130117635A/en)."
+  },
+  "published_properties": [
+    {"section": "KHC-25", "span_m": 25, "depth": 1750, "b1": 640, "b2": 200, "b3": 600, "h1": 160, "h2": 90, "h3": 1100, "h4": 200, "h5": 200},
+    {"section": "KHC-30", "span_m": 30, "depth": 2000, "b1": 700, "b2": 200, "b3": 660, "h1": 180, "h2": 100, "h3": 1270, "h4": 220, "h5": 230},
+    {"section": "KHC-35", "span_m": 35, "depth": 2200, "b1": 760, "b2": 220, "b3": 720, "h1": 200, "h2": 110, "h3": 1400, "h4": 240, "h5": 250},
+    {"section": "KHC-20", "span_m": 20, "depth": 1650, "b1": 600, "b2": 200, "b3": 580, "h1": 140, "h2": 80, "h3": 1070, "h4": 180, "h5": 180, "note": "extrapolated, not a KHC standard size"},
+    {"section": "KHC-40", "span_m": 40, "depth": 2500, "b1": 820, "b2": 220, "b3": 780, "h1": 220, "h2": 120, "h3": 1620, "h4": 260, "h5": 280, "note": "extrapolated, not a KHC standard size"}
+  ]
+}
