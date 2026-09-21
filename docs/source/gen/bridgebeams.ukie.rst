@@ -1,4 +1,4 @@
-bridgebeams.ukie
+﻿bridgebeams.ukie
 ================
 
 .. automodule:: bridgebeams.ukie
@@ -27,6 +27,7 @@ bridgebeams.ukie
    :recursive:
 
    ie_m_beam
+   ie_my_beam
    ie_sy_beam
    ie_t_beam
    ie_ty_beam

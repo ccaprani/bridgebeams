@@ -73,7 +73,10 @@ To AS5100.5 Appendix D Fig. D1(A).
 | IE T (T1–T10) | <0.01% | <0.02% | <0.02% | published drawing (exact) |
 | IE TY/TYE | <0.01% | <0.02% | <0.02% | published drawing (exact) |
 | IE U/SU | ≤0.05% | ≤0.05% | ≤0.3% | published drawing (exact) |
-| IE SY/SYE | <0.05% | <0.05% | <0.05% | published drawing (fitted widths) |
+| IE SY | <0.05% | <0.05% | <0.05% | published drawing (fitted widths) |
+| IE SYE | ≤1.2% | ≤1.2% | ≤1.2% | fitted (incl. published Xc) |
+| IE MY | ≤2.2% | ≤2.2% | ≤2.2% | documented reconstruction |
+| IE MYE | ≤0.6% | ≤0.6% | ≤0.6% | documented reconstruction (incl. Xc) |
 | IE M | ≤0.7% | ≤0.7% | ≤0.7% | fitted web/block |
 | IE UMB | ≤0.6% | ≤0.1% | ≤0.1% | published drawing (exact at UMB10) |
 | IE Y | 3.5% | 2.1% | 4.8% | documented reconstruction |

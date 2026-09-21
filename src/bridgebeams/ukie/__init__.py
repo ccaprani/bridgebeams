@@ -1,6 +1,7 @@
 """bridgebeams.ukie: Irish/UK standard precast bridge beam families."""
 
 from .ie_m_beam import IeMBeamDimensions, IeMBeamSection, IeUMBBeamDimensions, IeUMBBeamSection
+from .ie_my_beam import IeMYBeamDimensions, IeMYBeamSection, IeMYEBeamDimensions, IeMYEBeamSection
 from .ie_sy_beam import IeSYBeamDimensions, IeSYBeamSection, IeSYEBeamDimensions, IeSYEBeamSection, sye_wf
 from .ie_t_beam import IeTBeamDimensions, IeTBeamSection
 from .ie_y_beam import IeYBeamDimensions, IeYBeamSection, strand_locations
@@ -23,6 +24,10 @@ __all__ = [
     "IeMBeamSection",
     "IeUMBBeamDimensions",
     "IeUMBBeamSection",
+    "IeMYBeamDimensions",
+    "IeMYBeamSection",
+    "IeMYEBeamDimensions",
+    "IeMYEBeamSection",
     "IeSYBeamDimensions",
     "IeSYBeamSection",
     "IeSYEBeamDimensions",

@@ -1,0 +1,32 @@
+{
+  "family": "MY / MYE Edge Beam (Ireland, solid slab construction)",
+  "description": "Irish standard MY beams MY1-MY7 (300-600 mm deep, 970 mm bottom flange, designed and developed by Banagher) and MYE edge beams MYE1-MYE7, for solid slab construction as a more economical alternative to T and TY beams. Y-style topology with published top width Wf per size; fitted to published A/yc/Ixx (MY rms 0.83%) and A/yc/Xc/Ixx (MYE rms 0.26%).",
+  "sources": {
+    "properties_and_Wf": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed p. 10 (sources/banagher-bridge-beam-manual-3ed.pdf).",
+    "source_urls": ["https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf"]
+  },
+  "published_properties": {
+    "my": [
+      {"section": "MY1", "depth": 300, "area": 170000, "yc": 111.7, "zt": 6.39, "zb": 10.78, "ixx_e9": 1.2033, "self_weight_kN_m": 4.25, "wf": 360.0},
+      {"section": "MY2", "depth": 350, "area": 188500, "yc": 132.6, "zt": 9.05, "zb": 14.84, "ixx_e9": 1.9681, "self_weight_kN_m": 4.71, "wf": 380.0},
+      {"section": "MY3", "depth": 400, "area": 208000, "yc": 155.4, "zt": 12.31, "zb": 19.39, "ixx_e9": 3.0123, "self_weight_kN_m": 5.20, "wf": 400.0},
+      {"section": "MY4", "depth": 450, "area": 228500, "yc": 179.6, "zt": 16.18, "zb": 24.37, "ixx_e9": 4.3753, "self_weight_kN_m": 5.71, "wf": 420.0},
+      {"section": "MY5", "depth": 500, "area": 250000, "yc": 205.0, "zt": 20.67, "zb": 29.74, "ixx_e9": 6.0972, "self_weight_kN_m": 6.25, "wf": 440.0},
+      {"section": "MY6", "depth": 550, "area": 272000, "yc": 230.9, "zt": 25.61, "zb": 35.40, "ixx_e9": 8.1425, "self_weight_kN_m": 6.80, "wf": 440.0},
+      {"section": "MY7", "depth": 600, "area": 294000, "yc": 256.6, "zt": 30.83, "zb": 41.26, "ixx_e9": 10.587, "self_weight_kN_m": 7.35, "wf": 440.0}
+    ],
+    "mye": [
+      {"section": "MYE1", "depth": 300, "area": 230190, "yc": 136.0, "xc": 399.1, "zt": 10.78, "zb": 12.99, "ixx_e9": 1.7667, "self_weight_kN_m": 5.75, "wf": 665.0},
+      {"section": "MYE2", "depth": 350, "area": 263690, "yc": 160.1, "xc": 391.0, "zt": 14.84, "zb": 17.61, "ixx_e9": 2.8186, "self_weight_kN_m": 6.59, "wf": 675.0},
+      {"section": "MYE3", "depth": 400, "area": 297690, "yc": 184.6, "xc": 385.2, "zt": 19.58, "zb": 22.85, "ixx_e9": 4.2180, "self_weight_kN_m": 7.44, "wf": 685.0},
+      {"section": "MYE4", "depth": 450, "area": 332190, "yc": 209.6, "xc": 381.0, "zt": 25.01, "zb": 28.69, "ixx_e9": 6.0128, "self_weight_kN_m": 8.30, "wf": 695.0},
+      {"section": "MYE5", "depth": 500, "area": 367190, "yc": 234.9, "xc": 378.0, "zt": 31.13, "zb": 35.13, "ixx_e9": 8.2517, "self_weight_kN_m": 9.18, "wf": 705.0},
+      {"section": "MYE6", "depth": 550, "area": 402440, "yc": 260.3, "xc": 375.8, "zt": 37.85, "zb": 42.13, "ixx_e9": 10.9661, "self_weight_kN_m": 10.06, "wf": 705.0},
+      {"section": "MYE7", "depth": 600, "area": 437690, "yc": 285.6, "xc": 373.9, "zt": 45.11, "zb": 49.66, "ixx_e9": 14.1830, "self_weight_kN_m": 10.94, "wf": 705.0}
+    ]
+  },
+  "fitted_dims": {
+    "my": {"chamfer": 6.7, "flange_depth": 103.4, "waist_half_width": 151.4, "waist_height": 124.4},
+    "mye": {"chamfer": 12.6, "flange_depth": 105.7, "waist_half_width": 152.7, "waist_height": 125.7, "face_offset": -485.0}
+  }
+}

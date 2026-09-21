@@ -9,6 +9,8 @@ import pytest
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.ukie import (
     IeMBeamSection,
+    IeMYBeamSection,
+    IeMYEBeamSection,
     IeSYBeamSection,
     IeSYEBeamSection,
     IeTYBeamSection,
@@ -124,3 +126,35 @@ def test_m_umb_invalid_size_raises():
 def test_sy_invalid_size_raises():
     with pytest.raises(ValueError):
         IeSYBeamSection("SY7")
+
+
+def test_my_family_all_sizes():
+    my_data = json.loads(
+        resources.files("bridgebeams.ukie.data").joinpath("ie_my_beam.json").read_text()
+    )
+    # fitted family: rms 0.83%, max 2.2%
+    for row in my_data["published_properties"]["my"]:
+        beam = IeMYBeamSection(row["section"])
+        poly = as_polygon(beam.geometry)
+        assert poly.is_valid, row["section"]
+        props = section_properties(poly)
+        assert props["area"] == pytest.approx(row["area"], rel=0.025), row["section"]
+        assert props["cy"] == pytest.approx(row["yc"], rel=0.025), row["section"]
+        assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=0.025), row["section"]
+
+
+def test_mye_family_all_sizes():
+    my_data = json.loads(
+        resources.files("bridgebeams.ukie.data").joinpath("ie_my_beam.json").read_text()
+    )
+    # fitted family: rms 0.26%, max 0.6%
+    for row in my_data["published_properties"]["mye"]:
+        beam = IeMYEBeamSection(row["section"])
+        poly = as_polygon(beam.geometry)
+        assert poly.is_valid, row["section"]
+        props = section_properties(poly)
+        assert props["area"] == pytest.approx(row["area"], rel=0.01), row["section"]
+        assert props["cy"] == pytest.approx(row["yc"], rel=0.01), row["section"]
+        assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=0.01), row["section"]
+        xc = props["cx"] + 485.0
+        assert xc == pytest.approx(row["xc"], rel=0.02), row["section"]

@@ -27,7 +27,8 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 - **U beams (U600–U12) / SU (SU11–SU12)** — exact, ≤0.3%.
 - **M beams (M1–M10) / UMB edge beams** — validated to ≤0.7%.
 - **SY / SYE beams (SY1–SY6)** — long span; validated to <0.6% rms.
-- Solid Box (SD series), MY/MYE and W beams: sources collected, planned.
+- **MY / MYE beams (MY1–MY7)** — solid slab; validated to ≤2.2%.
+- Solid Box (SD series) and W beams: sources collected, planned.
 
 ### Australia (`bridgebeams.aus`)
 

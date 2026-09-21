@@ -35,7 +35,8 @@ wrapped with materials for concrete section design checks.
 | Ireland/UK | Y / YE | 700–1400 mm | 2.6% / 0.8% rms |
 | Ireland/UK | U / SU | 600–1600 mm | **exact** (≤0.3%) |
 | Ireland/UK | M / UMB | 640–1360 mm | 0.7% / ≤0.6% |
-| Ireland/UK | SY / SYE | 1500–2000 mm | <0.05% rms |
+| Ireland/UK | SY / SYE | 1500–2000 mm | <0.05% / 0.56% rms |
+| Ireland/UK | MY / MYE | 300–600 mm | 0.8% / 0.3% rms |
 
 See {doc}`families` for profiles, accuracy statements and sources.
 
