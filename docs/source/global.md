@@ -150,11 +150,22 @@ IRC standard precast girders and MoRTH standard drawings (brief in
 
 ### Japan
 
-**JIS A 5373:2016 Annex B** is the only codified source: pretensioned
-I-girders AG18–AG24 (spans 18–24 m; depths 900–1200 mm; base width
-800 mm) plus slab girders. Full web/flange/strand detail lives in the
-PCCEN design-manufacturing handbook (purchase); MLIT regional guidelines
-give free span tables.
+**JIS A 5373:2016 Annex B** tabulates only tolerances (表B.4) — the
+geometry lives in figures and the PCCEN design-manufacturing handbook
+(purchase). Source audit verdict: **blocked for exact-geometry
+implementation from open sources**; depths (900–1200 mm, spans 18–24 m,
+base 800 mm) are confirmed for planning use.
+
+(greece)=
+
+### Greece
+
+**45 standard extended-I sections** proposed in Marinelli et al.,
+Frontiers in Built Environment 6:119 (2020, open access) from 2,284
+as-built Egnatia Motorway beams: 15 lengths (22–43 m) × 3 deck-width
+classes; depth law D = −0.303 + 0.047L + 0.248·Weff; flanges 1400/750;
+web 300–340 by depth. **Flange thicknesses are figure-only in the
+paper** — family encoded pending that detail.
 
 (korea)=
 

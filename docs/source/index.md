@@ -41,6 +41,8 @@ wrapped with materials for concrete section design checks.
 | Türkiye | KGM I-girders | 900–1700 mm | analytic (no tables published) |
 | South Africa | Civilcon I-beams | 710–1675 mm | exact vs published Ixx |
 | Korea | KHC PSC I-girders | 1650–2500 mm | +2–3% vs literature |
+| Russia | Soyuzdorproekt 3.503 33 m I-beams | Б3300 marks | 0.3% rms |
+| Thailand | DOH IG-205 (20 m) | 1200 mm | drawn dims |
 | Russia/CIS | 3.503.1-81 33 m I-beams | 1530/1730 mm | 0.3% vs volumes |
 
 See {doc}`global` for the clickable world map of jurisdictions and

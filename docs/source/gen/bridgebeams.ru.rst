@@ -1,7 +1,7 @@
-﻿bridgebeams
-===========
+bridgebeams.ru
+==============
 
-.. automodule:: bridgebeams
+.. automodule:: bridgebeams.ru
 
    
    
@@ -26,12 +26,5 @@
    :template: custom-module-template.rst
    :recursive:
 
-   adapters
-   aus
-   kr
-   ru
-   th
-   tr
-   ukie
-   za
+   su3503_i33
 

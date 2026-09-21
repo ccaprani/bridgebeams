@@ -1,7 +1,7 @@
-﻿bridgebeams
-===========
+bridgebeams.th
+==============
 
-.. automodule:: bridgebeams
+.. automodule:: bridgebeams.th
 
    
    
@@ -26,12 +26,5 @@
    :template: custom-module-template.rst
    :recursive:
 
-   adapters
-   aus
-   kr
-   ru
-   th
-   tr
-   ukie
-   za
+   doh_igirder
 
