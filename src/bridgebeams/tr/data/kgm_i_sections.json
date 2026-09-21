@@ -1,0 +1,19 @@
+{
+  "family": "KGM standard precast pretensioned I-girders (Turkey)",
+  "description": "Turkish KGM-lineage precast pretensioned I-girders I90-I170: total depths 900/1200/1400/1700 mm with identical flange and web dimensions across types (top/bottom flange 750 mm wide, web 200 mm, flange thickness 150 mm assumed constant from the family's documented worked example). Effective spans 18-23 m (I90), 24-29 m (I120), 30-33 m (I140), 34-35 m (I170). KGM adopts AASHTO / AASHTO LRFD for design; the section and tendon layout are fixed in each bridge's approved application project.",
+  "sources": {
+    "profile": "Ozturk & Ozturk, IMO (Insaat Muhendisleri Odasi) technical paper citing Yapi Merkezi Prefabrikasyon 2007; KGM Teknik Sartnamesi (Karayollari Genel Mudurlugu, Part 320) governs materials/erection; TKIC precast I-beam design guide (AASHTO LRFD worked example).",
+    "source_urls": [
+      "https://www.imo.org.tr/TR%2C83194/ongerilmeli-kompozit-kopru-kirislerinin-etkin-kullanim-acikliklarinin-belirlenmesi---turgut-ozturk-ve-zubeyde-ozturk.html",
+      "https://www.tamyol.com.tr/UserFiles/Content/KGM_Teknik_Sartnamesi_2013.pdf",
+      "https://tkic.org.tr/documents/technical/OngerilmeliHazirBetonarme%20I-KirisTasarimi.pdf"
+    ],
+    "note": "No published section-property tables exist for the family; validation is against closed-form analytic values for a plain symmetric I-girder. The 150 mm flange thickness is assumed constant from the documented worked example - cross-check against KGM-approved project drawings before fabrication use."
+  },
+  "published_properties": [
+    {"section": "I90", "depth": 900, "span_m": "18-23"},
+    {"section": "I120", "depth": 1200, "span_m": "24-29"},
+    {"section": "I140", "depth": 1400, "span_m": "30-33"},
+    {"section": "I170", "depth": 1700, "span_m": "34-35"}
+  ]
+}
