@@ -18,10 +18,15 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 
 - **Y beams (Y1–Y8)**, 700–1400 mm deep, 750 mm soffit — the Irish standard
   beam-and-slab range (Banagher/Concast/Shay Murtagh publish identical
-  tables). Includes the reconstructed profile, the published property tables
-  for validation, and the "all possible strand locations" map.
-- YE edge beams, TY/TYE, M/UMB, T, U and box families are planned on the
-  same pipeline (dimensioned sources already collected under `sources/`).
+  tables). Reconstructed profile validated to 2.6% rms against published
+  properties, plus the "all possible strand locations" map.
+- **YE edge beams (YE1–YE8)** — asymmetric edge beam with full-height
+  vertical face; validated to 0.8% rms against published properties
+  (including the published centroid offset Xc).
+- **T beams (T1–T10)** — solid slab construction; exact published profile,
+  validated to <0.02% against published properties.
+- TY/TYE, M/UMB, U and box families are planned on the same pipeline
+  (dimensioned sources already collected under `sources/`).
 
 ### Australia (`bridgebeams.aus`)
 

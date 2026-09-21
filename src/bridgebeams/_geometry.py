@@ -41,9 +41,9 @@ def as_polygon(geometry: sp_geom.Geometry) -> Polygon:
 def section_properties(poly: Polygon) -> dict[str, float]:
     """Exact geometric properties of a polygon (shoelace integration).
 
-    Returns area, centroid height ``cy`` above y = 0, and second moment of
-    area ``ixx`` about the horizontal centroidal axis, all in the polygon's
-    own units.
+    Returns area, centroid ``cx``/``cy`` relative to the polygon origin, and
+    second moment of area ``ixx`` about the horizontal centroidal axis, in
+    the polygon's own units.
     """
     pts = list(poly.exterior.coords)
     xs = np.asarray([p[0] for p in pts], float)
@@ -51,6 +51,7 @@ def section_properties(poly: Polygon) -> dict[str, float]:
     x2, y2 = np.roll(xs, -1), np.roll(ys, -1)
     cr = xs * y2 - x2 * ys
     area = abs(cr.sum()) / 2.0
+    cx = ((xs + x2) * cr).sum() / (6.0 * area)
     cy = ((ys + y2) * cr).sum() / (6.0 * area)
     i0 = abs(((ys * ys + ys * y2 + y2 * y2) * cr).sum() / 12.0)
-    return {"area": area, "cy": cy, "ixx": i0 - area * cy * cy}
+    return {"area": area, "cx": cx, "cy": cy, "ixx": i0 - area * cy * cy}
