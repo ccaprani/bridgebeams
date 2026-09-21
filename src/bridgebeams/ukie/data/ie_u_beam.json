@@ -1,0 +1,36 @@
+{
+  "family": "U / SU Beam (Ireland, beam & slab construction)",
+  "description": "Irish standard U beams U600-U12 (600-1600 mm deep) and SU edge beams SU11-SU12. Three subgroups with slightly different void/notch detailing: U600-U1 (600 mm inner void, 25x25 leg step), U3-U12 (sloped inner face, 40x30 notch), SU11-SU12 (apex 210, 40x65 notch). Geometry recovered exactly from the Banagher manual vector drawing (printed p. 24); all sizes validate to <=0.3% against published properties.",
+  "sources": {
+    "properties": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed p. 24 (sources/banagher-bridge-beam-manual-3ed.pdf).",
+    "source_urls": ["https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf"],
+    "note": "The 2007 spreadsheet's U table differs slightly from Banagher's (e.g. U600 area 378,320 vs 377,100); the Banagher tables (which match the dimensioned drawing) are used here."
+  },
+  "fixed_dims": {
+    "soffit_face_width": 930.0,
+    "flange_width": 970.0,
+    "chamfer_height": 20.0,
+    "step": 40.0,
+    "step_below_top": 50.0
+  },
+  "subgroups": {
+    "small (U600-U1)": {"void_apex_y": 160.0, "haunch": [[200.0,180.0],[300.0,280.0]], "notch": "25 wide x 25 tall L-step"},
+    "large (U3-U12)": {"void_apex_y": 160.0, "haunch": [[240.0,210.0],[365.0,360.0]], "inner_breakpoint": "W1/2-218.7 at d-415", "notch": "40 wide x 30 tall"},
+    "SU (SU11-SU12)": {"void_apex_y": 210.0, "haunch": [[247.0,260.0],[372.0,410.0]], "inner_breakpoint": "W1/2-229.2 at d-490", "notch": "40 wide x 65 tall"}
+  },
+  "published_properties": [
+    {"section": "U600", "depth": 600, "area": 377100, "yc": 248.4, "zt": 33.20, "zb": 47.00, "ixx_e9": 11.64, "self_weight_kN_m": 9.43, "w1": 1118.4, "w2": 600.0, "w3": 194.2, "subgroup": "small"},
+    {"section": "U700", "depth": 700, "area": 431740, "yc": 298.0, "zt": 47.42, "zb": 83.97, "ixx_e9": 19.063, "self_weight_kN_m": 10.79, "w1": 1146.4, "w2": 600.0, "w3": 208.2, "subgroup": "small"},
+    {"section": "U1", "depth": 800, "area": 489180, "yc": 350.0, "zt": 64.58, "zb": 83.05, "ixx_e9": 29.065, "self_weight_kN_m": 12.23, "w1": 1174.4, "w2": 600.0, "w3": 222.2, "subgroup": "small"},
+    {"section": "U3", "depth": 900, "area": 509560, "yc": 396.3, "zt": 83.29, "zb": 105.88, "ixx_e9": 41.958, "self_weight_kN_m": 12.74, "w1": 1202.4, "w2": 558.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "U5", "depth": 1000, "area": 543170, "yc": 442.7, "zt": 101.27, "zb": 127.50, "ixx_e9": 56.441, "self_weight_kN_m": 13.58, "w1": 1230.4, "w2": 586.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "U7", "depth": 1100, "area": 576690, "yc": 489.5, "zt": 120.60, "zb": 150.42, "ixx_e9": 73.628, "self_weight_kN_m": 14.42, "w1": 1258.4, "w2": 614.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "U8", "depth": 1200, "area": 610210, "yc": 536.7, "zt": 141.23, "zb": 174.58, "ixx_e9": 93.687, "self_weight_kN_m": 15.26, "w1": 1286.4, "w2": 642.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "U9", "depth": 1300, "area": 643730, "yc": 584.1, "zt": 163.14, "zb": 199.95, "ixx_e9": 116.790, "self_weight_kN_m": 16.09, "w1": 1314.4, "w2": 670.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "U10", "depth": 1400, "area": 677250, "yc": 631.8, "zt": 186.29, "zb": 226.49, "ixx_e9": 143.100, "self_weight_kN_m": 16.93, "w1": 1342.4, "w2": 698.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "U11", "depth": 1500, "area": 710770, "yc": 679.8, "zt": 210.66, "zb": 254.21, "ixx_e9": 172.800, "self_weight_kN_m": 17.77, "w1": 1370.4, "w2": 726.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "U12", "depth": 1600, "area": 744290, "yc": 727.9, "zt": 230.24, "zb": 283.07, "ixx_e9": 206.040, "self_weight_kN_m": 18.61, "w1": 1398.4, "w2": 764.0, "w3": 242.2, "subgroup": "large"},
+    {"section": "SU11", "depth": 1500, "area": 772730, "yc": 681.0, "zt": 231.22, "zb": 278.08, "ixx_e9": 189.370, "self_weight_kN_m": 19.32, "w1": 1370.4, "w2": 682.0, "w3": 264.0, "subgroup": "SU"},
+    {"section": "SU12", "depth": 1600, "area": 806250, "yc": 728.8, "zt": 259.28, "zb": 309.96, "ixx_e9": 225.890, "self_weight_kN_m": 20.16, "w1": 1398.4, "w2": 710.0, "w3": 264.0, "subgroup": "SU"}
+  ]
+}

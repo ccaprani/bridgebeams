@@ -1,0 +1,71 @@
+{
+  "family": "TY / TYE Beam (Ireland, beam & slab and solid slab construction)",
+  "description": "Irish standard TY beams (beam & slab: TY3-TY11, 500-900 mm; solid slab: TY1-TY11, 400-900 mm) and TYE edge beams, with published top flange width Wf per size. Profile recovered exactly from the Banagher manual vector drawings (printed pp. 20, 22); all sizes validate to <=0.02%.",
+  "sources": {
+    "properties": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed pp. 20 and 22 (sources/banagher-bridge-beam-manual-3ed.pdf).",
+    "source_urls": ["https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf"]
+  },
+  "fixed_dims": {
+    "bottom_face_half": 350.0,
+    "flange_half": 375.0,
+    "chamfer": 25.0,
+    "flange_side_top_half": 370.0,
+    "flange_side_height": 135.0,
+    "shoulder_half": 142.5,
+    "shoulder_height": 240.0,
+    "web_half": 92.5,
+    "web_height": 320.0,
+    "bs_nib_step": 40.0,
+    "bs_nib_height": 50.0
+  },
+  "published_properties": {
+    "ty_bs": [
+      {"section": "TY3", "depth": 500, "area": 208050, "yc": 173.31, "ixx_e9": 3.5489, "wf": 157.7},
+      {"section": "TY4", "depth": 550, "area": 221460, "yc": 193.6, "ixx_e9": 4.9742, "wf": 178.0},
+      {"section": "TY5", "depth": 600, "area": 235880, "yc": 216.0, "ixx_e9": 6.7991, "wf": 198.3},
+      {"section": "TY6", "depth": 650, "area": 251320, "yc": 240.2, "ixx_e9": 9.0670, "wf": 218.6},
+      {"section": "TY7", "depth": 700, "area": 267770, "yc": 266.1, "ixx_e9": 11.819, "wf": 238.9},
+      {"section": "TY8", "depth": 750, "area": 285230, "yc": 293.4, "ixx_e9": 15.095, "wf": 259.1},
+      {"section": "TY9", "depth": 800, "area": 303710, "yc": 322.0, "ixx_e9": 18.935, "wf": 279.4},
+      {"section": "TY10", "depth": 850, "area": 323210, "yc": 351.7, "ixx_e9": 23.375, "wf": 299.7},
+      {"section": "TY11", "depth": 900, "area": 343710, "yc": 382.24, "ixx_e9": 28.454, "wf": 320.0}
+    ],
+    "ty_ss": [
+      {"section": "TY1", "depth": 400, "area": 188790, "yc": 145.5, "ixx_e9": 1.9581, "wf": 217.5},
+      {"section": "TY2", "depth": 450, "area": 200170, "yc": 161.4, "ixx_e9": 2.8011, "wf": 237.7},
+      {"section": "TY3", "depth": 500, "area": 212560, "yc": 179.7, "ixx_e9": 3.9538, "wf": 258.0},
+      {"section": "TY4", "depth": 550, "area": 225970, "yc": 200.2, "ixx_e9": 5.4630, "wf": 278.3},
+      {"section": "TY5", "depth": 600, "area": 240390, "yc": 222.7, "ixx_e9": 7.3730, "wf": 298.6},
+      {"section": "TY6", "depth": 650, "area": 255830, "yc": 247.0, "ixx_e9": 9.7266, "wf": 318.9},
+      {"section": "TY7", "depth": 700, "area": 272280, "yc": 272.9, "ixx_e9": 12.565, "wf": 339.2},
+      {"section": "TY8", "depth": 750, "area": 289740, "yc": 300.2, "ixx_e9": 15.926, "wf": 359.4},
+      {"section": "TY9", "depth": 800, "area": 308220, "yc": 328.6, "ixx_e9": 19.851, "wf": 379.7},
+      {"section": "TY10", "depth": 850, "area": 327710, "yc": 358.2, "ixx_e9": 24.375, "wf": 400.0},
+      {"section": "TY11", "depth": 900, "area": 348220, "yc": 388.6, "ixx_e9": 29.539, "wf": 420.3}
+    ],
+    "tye_bs": [
+      {"section": "TYE3", "depth": 500, "area": 291210, "yc": 222.9, "xc": 304.1, "ixx_e9": 6.0598, "wf": 453.9},
+      {"section": "TYE4", "depth": 550, "area": 316670, "yc": 246.8, "xc": 300.0, "ixx_e9": 8.1459, "wf": 464.0},
+      {"section": "TYE5", "depth": 600, "area": 342630, "yc": 271.3, "xc": 296.9, "ixx_e9": 10.674, "wf": 474.2},
+      {"section": "TYE6", "depth": 650, "area": 369100, "yc": 296.4, "xc": 294.5, "ixx_e9": 13.685, "wf": 484.3},
+      {"section": "TYE7", "depth": 700, "area": 396070, "yc": 321.9, "xc": 292.8, "ixx_e9": 17.222, "wf": 494.4},
+      {"section": "TYE8", "depth": 750, "area": 423550, "yc": 347.8, "xc": 291.6, "ixx_e9": 21.325, "wf": 504.6},
+      {"section": "TYE9", "depth": 800, "area": 451540, "yc": 374.0, "xc": 290.8, "ixx_e9": 26.039, "wf": 514.7},
+      {"section": "TYE10", "depth": 850, "area": 480040, "yc": 400.6, "xc": 290.4, "ixx_e9": 31.408, "wf": 524.9},
+      {"section": "TYE11", "depth": 900, "area": 509040, "yc": 427.4, "xc": 290.3, "ixx_e9": 37.476, "wf": 535.0}
+    ],
+    "tye_ss": [
+      {"section": "TYE1", "depth": 400, "area": 244080, "yc": 179.2, "xc": 317.3, "ixx_e9": 3.1420, "wf": 483.7},
+      {"section": "TYE2", "depth": 450, "area": 268520, "yc": 201.6, "xc": 310.6, "ixx_e9": 4.4905, "wf": 493.9},
+      {"section": "TYE3", "depth": 500, "area": 293470, "yc": 224.8, "xc": 305.4, "ixx_e9": 6.2035, "wf": 504.0},
+      {"section": "TYE4", "depth": 550, "area": 318920, "yc": 248.8, "xc": 301.4, "ixx_e9": 8.3207, "wf": 514.2},
+      {"section": "TYE5", "depth": 600, "area": 344880, "yc": 273.3, "xc": 298.2, "ixx_e9": 10.8820, "wf": 524.3},
+      {"section": "TYE6", "depth": 650, "area": 371350, "yc": 298.4, "xc": 295.8, "ixx_e9": 13.929, "wf": 534.4},
+      {"section": "TYE7", "depth": 700, "area": 398330, "yc": 323.9, "xc": 294.1, "ixx_e9": 17.503, "wf": 544.6},
+      {"section": "TYE8", "depth": 750, "area": 425810, "yc": 349.8, "xc": 292.8, "ixx_e9": 21.646, "wf": 554.7},
+      {"section": "TYE9", "depth": 800, "area": 453800, "yc": 376.0, "xc": 292.0, "ixx_e9": 26.401, "wf": 564.9},
+      {"section": "TYE10", "depth": 850, "area": 482290, "yc": 402.6, "xc": 291.6, "ixx_e9": 31.814, "wf": 575.0},
+      {"section": "TYE11", "depth": 900, "area": 511300, "yc": 429.4, "xc": 291.5, "ixx_e9": 37.928, "wf": 585.1}
+    ]
+  }
+}

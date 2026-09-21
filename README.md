@@ -16,17 +16,18 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 
 ### Ireland / UK (`bridgebeams.ukie`)
 
-- **Y beams (Y1–Y8)**, 700–1400 mm deep, 750 mm soffit — the Irish standard
-  beam-and-slab range (Banagher/Concast/Shay Murtagh publish identical
-  tables). Reconstructed profile validated to 2.6% rms against published
-  properties, plus the "all possible strand locations" map.
-- **YE edge beams (YE1–YE8)** — asymmetric edge beam with full-height
-  vertical face; validated to 0.8% rms against published properties
-  (including the published centroid offset Xc).
 - **T beams (T1–T10)** — solid slab construction; exact published profile,
   validated to <0.02% against published properties.
-- TY/TYE, M/UMB, U and box families are planned on the same pipeline
-  (dimensioned sources already collected under `sources/`).
+- **TY / TYE beams** — beam & slab (TY3–TY11, nibbed top) and solid slab
+  (TY1–TY11, full flange) variants with edge beams; exact, <0.02%.
+- **Y beams (Y1–Y8)** — beam & slab; reconstructed profile validated to
+  2.6% rms, with the "all possible strand locations" map.
+- **YE edge beams (YE1–YE8)** — asymmetric; validated to 0.8% rms
+  (including the published centroid offset Xc).
+- **U beams (U600–U12) / SU (SU11–SU12)** — exact, ≤0.3%.
+- **M beams (M1–M10) / UMB edge beams** — validated to ≤0.7%.
+- **SY / SYE beams (SY1–SY6)** — long span; validated to <0.6% rms.
+- Solid Box (SD series), MY/MYE and W beams: sources collected, planned.
 
 ### Australia (`bridgebeams.aus`)
 
@@ -84,6 +85,15 @@ All dimension sources are registered with URLs in
 future families (US AASHTO/PCI, China JTG, Canada CPCI/NU, Brazil, India,
 Europe) live in `sources/research/`. Source documents are working
 references and are not committed.
+
+## Documentation
+
+Sphinx docs (pydata theme), including an executed tutorial notebook:
+
+```bash
+python -m pip install -e ".[docs]"
+python -m sphinx -b html docs/source docs/_build/html
+```
 
 ## Development
 
