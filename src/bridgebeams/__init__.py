@@ -16,6 +16,7 @@ Adapters in :mod:`bridgebeams.adapters` provide one-call bridges to
 
 from bridgebeams.adapters import osp_grillage_properties, to_concreteproperties
 from bridgebeams.aus import IGirderSection, SuperTGirderSection
+from bridgebeams.gr import GrExtendedISection, depth_law as gr_depth_law, web_width as gr_web_width
 from bridgebeams.kr import KhcIGirderDimensions, KhcISection
 from bridgebeams.ru import Su3503I33Dimensions, Su3503I33Section
 from bridgebeams.th import ThDOHIGirderDimensions, ThDOHIGirderSection
@@ -43,6 +44,9 @@ __all__ = [
     "ThDOHIGirderSection",
     "KhcIGirderDimensions",
     "KhcISection",
+    "GrExtendedISection",
+    "gr_depth_law",
+    "gr_web_width",
     "Su3503I33Dimensions",
     "Su3503I33Section",
     "CivilconIBeamDimensions",

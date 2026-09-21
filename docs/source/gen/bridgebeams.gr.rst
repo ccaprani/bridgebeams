@@ -1,7 +1,7 @@
-﻿bridgebeams
-===========
+bridgebeams.gr
+==============
 
-.. automodule:: bridgebeams
+.. automodule:: bridgebeams.gr
 
    
    
@@ -26,13 +26,5 @@
    :template: custom-module-template.rst
    :recursive:
 
-   adapters
-   aus
-   gr
-   kr
-   ru
-   th
-   tr
-   ukie
-   za
+   egnatia_extended_i
 

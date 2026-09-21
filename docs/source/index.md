@@ -43,6 +43,7 @@ wrapped with materials for concrete section design checks.
 | Korea | KHC PSC I-girders | 1650–2500 mm | +2–3% vs literature |
 | Russia | Soyuzdorproekt 3.503 33 m I-beams | Б3300 marks | 0.3% rms |
 | Thailand | DOH IG-205 (20 m) | 1200 mm | drawn dims |
+| Greece | Egnatia extended-I (45) | 1250–2150 mm | depth law + widths published |
 | Russia/CIS | 3.503.1-81 33 m I-beams | 1530/1730 mm | 0.3% vs volumes |
 
 See {doc}`global` for the clickable world map of jurisdictions and

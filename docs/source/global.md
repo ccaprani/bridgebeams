@@ -160,12 +160,14 @@ base 800 mm) are confirmed for planning use.
 
 ### Greece
 
-**45 standard extended-I sections** proposed in Marinelli et al.,
-Frontiers in Built Environment 6:119 (2020, open access) from 2,284
-as-built Egnatia Motorway beams: 15 lengths (22–43 m) × 3 deck-width
-classes; depth law D = −0.303 + 0.047L + 0.248·Weff; flanges 1400/750;
-web 300–340 by depth. **Flange thicknesses are figure-only in the
-paper** — family encoded pending that detail.
+**GrExtendedISection** — the 45 standard extended-I sections proposed in
+Marinelli et al., Frontiers in Built Environment 6:119 (2020, open
+access) from 2,284 as-built Egnatia Motorway beams: 15 lengths (22–43 m)
+× 3 deck-width classes; depth law D = −0.303 + 0.047L + 0.248·Weff
+(reproduced by least squares from Table 6, max residual 4.2 cm);
+flanges 1400/750; web 300–340 by depth. Flange **thicknesses are design
+choices left open by the paper**, so they are required constructor
+arguments (nothing assumed).
 
 (korea)=
 
