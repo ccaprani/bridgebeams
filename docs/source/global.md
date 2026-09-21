@@ -71,6 +71,21 @@ literature's 35 m properties (A = 7,896 cm², Ix = 4.644×10¹¹ mm⁴) to +2/+3
 (tabulated haunch depths slightly heavier than as-built). 20 m and 40 m
 extrapolated sizes included.
 
+## Implemented (cont.)
+
+(russia)=
+
+### Russia / CIS
+
+**Soyuzdorproekt series 3.503.1-81, Vypusk 7-1 — 33 m precast prestressed
+I-beams** (marks Б3300.174/194.153/173): marking per GOST 23009 =
+length.top-width.height. Top slab 1040+e wide × 180 with 30×30 edge
+notches, R300 haunches into a 200 web, 620 bottom flange (R200 fillets);
+flange thickness fitted to the producer volume-derived areas of all four
+marks — **rms 0.30%, max 0.32%**. Strand bundles: m×n K-7 (bundle length
+k×100). The 12–24 m variants (h=930/1230) await their own drawing sheets.
+Source: scanned Vypusk 7-1 (zavodjbi.com) + GBiSIB producer table.
+
 ## Researched — dimension sources collected
 
 (qatar)=
@@ -182,11 +197,7 @@ Sweden (Bro), Norway, Finland standard beam families surveyed.
 
 KGM standard precast sections surveyed.
 
-(russia-cis)=
 
-### Russia / CIS
-
-GOST / Союздорпроект typical series surveyed.
 
 (middle-east)=
 
