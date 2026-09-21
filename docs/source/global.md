@@ -225,9 +225,22 @@ Philippines — adopted foreign standards plus local families surveyed.
 ### New Zealand
 
 **NZTA RR 364 (2008)** publishes complete standard designs — hollow-core
-deck units, I-beams, and **Super-T at 1025/1225 mm** (default below 35 m)
-— free PDF with dimensions and strand patterns; RR 252 reviews AU/UK/US/CA
-practice. Historic MoW families (1970s) documented too.
+deck units (587/650/900), I-beams (1500/1600), and **Super-T at 1025/1225
+mm** (default below 35 m) — free PDF (drawing sheets S0.01–S4.16, indexed;
+the Super-T 1025 unit section is fully dimensioned: 2490 wide, 852 bottom
+flange × 240, twin 100 webs at 840 centres, 20 chamfers). Implementation
+pending a careful digitisation of the proprietary web tapers.
+Historic MoW families (1970s) documented too.
+
+(norway)=
+
+### Norway
+
+**Handbok V426 "Prefabrikkerte brubjelker"** (free, Statens vegvesen):
+pre-approved pretensioned **NTB / KTB** T-beams, spans 12–40 m, with form
+and reinforcement drawings. Historic NIB series (302 predimensioned
+I-beams) in the archived Bruhåndbok. Implementation pending drawing
+digitisation.
 
 (norway)=
 
