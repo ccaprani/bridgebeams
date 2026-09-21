@@ -35,6 +35,7 @@ extensions = [
 # Tutorials are committed with executed outputs; render rather than run.
 nbsphinx_execute = "never"
 
+myst_heading_anchors = 3
 autodoc_member_order = "bysource"
 autosummary_generate = True
 autoclass_content = "both"
