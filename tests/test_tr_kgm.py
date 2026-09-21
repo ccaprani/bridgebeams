@@ -42,7 +42,7 @@ def test_symmetric():
 
     beam = KGMISection("I120")
     xmin, xmax, _, _ = beam.geometry.calculate_extents()
-    assert -xmin == pytest.approx(maxx)
+    assert -xmin == pytest.approx(xmax)
 
 
 def test_invalid_size_raises():
