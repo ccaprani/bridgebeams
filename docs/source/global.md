@@ -59,6 +59,16 @@ current `sectionproperties` API.
 
 ## Implemented (cont.)
 
+(thailand)=
+
+### Thailand
+
+**DOH standard precast prestressed I-girder (20 m span, IG-205)** —
+1200 mm deep, 450×100 top flange, 175 web, 500×200 bottom flange; strand
+layout 28 × 12.7 mm 7-wire (18 bonded + 10 debonded). HL-93 loading,
+AASHTO-derived geometry. The 15 m girder (IG-103) and the 30 m deeper
+alternative are documented for a future pass.
+
 (korea)=
 
 ### Korea

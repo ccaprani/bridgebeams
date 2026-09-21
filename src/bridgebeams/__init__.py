@@ -18,6 +18,7 @@ from bridgebeams.adapters import osp_grillage_properties, to_concreteproperties
 from bridgebeams.aus import IGirderSection, SuperTGirderSection
 from bridgebeams.kr import KhcIGirderDimensions, KhcISection
 from bridgebeams.ru import Su3503I33Dimensions, Su3503I33Section
+from bridgebeams.th import ThDOHIGirderDimensions, ThDOHIGirderSection
 from bridgebeams.tr import KGMIDimensions, KGMISection
 from bridgebeams.za import CivilconIBeamDimensions, CivilconIBeamSection
 from bridgebeams.ukie import (
@@ -38,6 +39,8 @@ __all__ = [
     "SuperTGirderSection",
     "KGMIDimensions",
     "KGMISection",
+    "ThDOHIGirderDimensions",
+    "ThDOHIGirderSection",
     "KhcIGirderDimensions",
     "KhcISection",
     "Su3503I33Dimensions",
