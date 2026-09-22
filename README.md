@@ -57,9 +57,11 @@ The [global source collection](docs/research/README.md) contains country-by-coun
 research, original titles with English translations, structured source records,
 and page-based PDF transcriptions. A source appearing in the catalogue does not
 mean that its beam family is implemented or that every profile dimension is known.
-The [multilingual discovery queue](docs/source/research.md) adds 38
-manufacturer, university, standards-library and technical-publication leads
-across 25 countries, with exact designations and drawing locators where found.
+The [multilingual discovery queue](docs/source/research.md) includes manufacturer,
+university, standards-library and technical-publication leads, with exact
+designations and drawing locators where found. Pakistan's NHA PSC I-girder
+Types A–H are [recorded separately](docs/research/pakistan-us-section-followup-2026-09.md)
+from the six US AASHTO/PCI reference outlines; common geometry is unverified.
 
 The [visual-review record](docs/source/research-visual-review.md) preserves
 the received answers and their implementation outcomes. With the local source
@@ -70,11 +72,12 @@ illustrated review link.
 
 The [live coverage map and complete country table](https://ccaprani.github.io/bridgebeams/coverage.html)
 separate researched sources from implemented profiles. UK and Ireland are
-separate entries. The research footprint spans 121 jurisdictions; many
+separate entries. The research footprint spans 122 jurisdictions; many
 currently have source evidence only.
 
-The United States now includes four WSDOT W-series girders and three
-edition-specific Minnesota rectangular beams; ten further state DOT records
+The United States now includes six classic PCI AASHTO I-beam reference sections,
+four WSDOT W-series girders and three edition-specific Minnesota rectangular
+beams; ten further state DOT records
 are in the [US follow-up](docs/research/us-states-followup.md). Canada's
 Ontario MTO S300/S400/S500 solid slabs are in the
 [Ontario follow-up](docs/research/canada-followup.md).

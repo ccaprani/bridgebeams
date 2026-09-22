@@ -1,11 +1,11 @@
 {
   "count_basis": "Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
-  "researched_jurisdictions": 121,
-  "source_records": 214,
+  "researched_jurisdictions": 122,
+  "source_records": 225,
   "implemented_countries": 18,
-  "implemented_profiles": 295,
-  "country_profile_assignments": 470,
+  "implemented_profiles": 301,
+  "country_profile_assignments": 476,
   "countries": [
     {
       "code": "AF",
@@ -1108,11 +1108,25 @@
             "Pretensioned and post-tensioned bridge beams"
           ],
           "title_original": "Vigas pretensadas y postensadas"
+        },
+        {
+          "title": "Rural road UNI07E tender: post-tensioned AASHTO Type IV beams",
+          "url": "https://connectamericas.com/sites/default/files/AnexoES-L1155_%20sdo_mejoramiento_camino_uni07e_yayantique_240912.pdf",
+          "status": "named_only",
+          "registry": "deep-search-aashto-global-2026-09.json",
+          "id": "SV-MOPT-UNI07E-AASHTO-IV",
+          "language": "Spanish",
+          "source_type": "transport_ministry_tender",
+          "locator": "tender pay item OP10034, 'VIGAS AASHTO TIPO IV DE CONCRETO POSTENSADO'",
+          "family_names": [
+            "AASHTO Tipo IV"
+          ],
+          "title_original": "Mejoramiento de camino rural UNI07E, tramo carretera Anchico - Yayantique"
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -1515,11 +1529,25 @@
             "Project-specific precast prestressed girders"
           ],
           "title_original": "Construcci\u00f3n Puente Benque Viejo, Carretera CA-9"
+        },
+        {
+          "title": "Manufacturer listing for AASHTO bridge beams",
+          "url": "https://www.construex.gt/exhibidores/grupo_muratori/producto/estructuras_prefabricadas_metalicas_guatemala",
+          "status": "named_only",
+          "registry": "deep-search-aashto-global-2026-09.json",
+          "id": "GT-MURATORI-AASHTO-BRIDGE-BEAMS",
+          "language": "Spanish",
+          "source_type": "manufacturer_listing",
+          "locator": "Grupo Muratori product description, paragraphs beginning 'Nuestra l\u00ednea de prefabricados' and bullet 'Vigas tipo AASHTO y tipo T para puentes vehiculares'",
+          "family_names": [
+            "vigas tipo AASHTO"
+          ],
+          "title_original": "Estructuras prefabricadas: vigas tipo AASHTO para puentes"
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -1616,11 +1644,26 @@
     {
       "code": "HN",
       "name": "Honduras",
-      "sources": [],
+      "sources": [
+        {
+          "title": "INSEP 2019 institutional report naming completed bridge with AASHTO Type IV beams",
+          "url": "https://portalunico.iaip.gob.hn/ver_archivo/NjY0Njgz",
+          "status": "named_only",
+          "registry": "deep-search-aashto-global-2026-09.json",
+          "id": "HN-INSEP-2019-AASHTO-IV",
+          "language": "Spanish",
+          "source_type": "government_completed_project_report",
+          "locator": "printed p. 67, completed-project description: 'vigas AASHTO Tipo IV'; table lists 2019 completion",
+          "family_names": [
+            "AASHTO Tipo IV"
+          ],
+          "title_original": "Memoria Institucional INSEP 2019"
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "HK",
@@ -3736,11 +3779,25 @@
             "T"
           ],
           "title_original": "Proyectos de Concreto Prefabricado"
+        },
+        {
+          "title": "Construction of AASHTO Type IV beams at Yahoska Bridge",
+          "url": "https://repositorio.ucc.edu.ni/1177/1/Puente%20Yahoska%20RAAN.pdf",
+          "status": "named_only",
+          "registry": "deep-search-aashto-global-2026-09.json",
+          "id": "NI-UCC-YAHOSKA-AASHTO-IV",
+          "language": "Spanish",
+          "source_type": "university_project_thesis",
+          "locator": "title, abstract and case-study description; indexed text identifies 30 m fabricated Type IV beams with 45 tendons",
+          "family_names": [
+            "AASHTO tipo IV"
+          ],
+          "title_original": "Conocer el proceso constructivo de vigas AASHTO tipo IV para puentes, aplicado en el proyecto Puente Yahoska"
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -3931,11 +3988,67 @@
             "precast bridge girders"
           ],
           "title_original": "EDS International"
+        },
+        {
+          "title": "Designing of Bridges on National Highways",
+          "url": "https://www.scribd.com/document/456777971/DESIGNING-OF-BRIDGES-ON-NATIONAL-HIGHWAYS-NHA-2006-pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-pakistan-2026-09.json",
+          "id": "PK-NHA-2005-PSC-I-A-H",
+          "language": "English",
+          "source_type": "transport_authority_standard_drawing_mirror",
+          "locator": "July 2006 compilation, contents items 7-8, Summary of Proposed Standard Cross-section of Girders and drawing STANDARD/04 (Types A-C), STANDARD/05 (D-F), STANDARD/06 (G-H), dated March 2005; text-indexed third-party copy",
+          "family_names": [
+            "NHA Type A",
+            "NHA Type B",
+            "NHA Type C",
+            "NHA Type D",
+            "NHA Type E",
+            "NHA Type F",
+            "NHA Type G",
+            "NHA Type H"
+          ],
+          "title_original": "Designing of Bridges on National Highways"
+        },
+        {
+          "title": "Effect of Concrete Strength on the Design of Prestressed Concrete Bridge Girders",
+          "url": "https://irispublishers.com/ctcse/pdf/CTCSE.MS.ID.000766.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-pakistan-2026-09.json",
+          "id": "PK-MUSTAFA-JAVED-2025-NHA-A-H",
+          "language": "English",
+          "source_type": "university_research_paper",
+          "locator": "PDF/printed p.2 Table 1 dimensional schedule; p.3 Figure 1 schematic; p.8 Girder Section paragraph; DOI 10.33552/CTCSE.2025.11.000766",
+          "family_names": [
+            "NHA Type A",
+            "NHA Type B",
+            "NHA Type C",
+            "NHA Type D",
+            "NHA Type E",
+            "NHA Type F",
+            "NHA Type G",
+            "NHA Type H"
+          ],
+          "title_original": "Effect of Concrete Strength on the Design of Prestressed Concrete Bridge Girders"
+        },
+        {
+          "title": "Lahore-Sialkot Motorway link highway structural drawings",
+          "url": "https://nha.gov.pk/wp-content/uploads/2018/01/Drawing-24-1-2018.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-pakistan-2026-09.json",
+          "id": "PK-NHA-LSM-2017-30M-PSC-I",
+          "language": "English",
+          "source_type": "transport_authority_project_drawing_set",
+          "locator": "PDF p.72 Structural Notes; PDF p.139 / drawing LSM-EBP-BR-ST-012, Flyover at Station 0+337, 30M Girder Pre-Stressing Details; visually inspected sections 25-25, 26-26, 27-27",
+          "family_names": [
+            "LSM 30m PSC I girder"
+          ],
+          "title_original": "Construction of Lahore-Sialkot Motorway Link Highway to Narang Mandi and Narowal: Structural Drawings"
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 4,
       "researched": true
     },
     {
@@ -4082,11 +4195,25 @@
             "Vigas pretensadas"
           ],
           "title_original": "Prefabricados de concreto"
+        },
+        {
+          "title": "Academic grade-separation design using an AASHTO Type IV I-beam",
+          "url": "https://repositorio.continental.edu.pe/bitstream/20.500.12394/7477/3/IV_FIN_105_TE_Bonifacio_Carrasco_2019.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-aashto-global-2026-09.json",
+          "id": "PE-CONTINENTAL-PASO-DESNIVEL-AASHTO-IV",
+          "language": "Spanish",
+          "source_type": "university_thesis",
+          "locator": "printed p. 192, Figure 135 'Dimensionamiento de la viga I, Tipo IV. AASHTO' and accompanying AASHTO properties table",
+          "family_names": [
+            "AASHTO Tipo IV"
+          ],
+          "title_original": "Dise\u00f1o de paso a desnivel con viga I de hormig\u00f3n pretensado Tipo IV AASHTO"
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4114,11 +4241,39 @@
             "prestressed girders"
           ],
           "title_original": "Frey-Fil Corporation"
+        },
+        {
+          "title": "Odiongan Bridge 2 project drawing, AASHTO Type VI girder",
+          "url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/webform/civil_works/bid_bulletin/odiongan-spillway-fy-2023_compressed-45-88.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-aashto-global-2026-09.json",
+          "id": "PH-DPWH-ODIONGAN-TYPE-VI-2023",
+          "language": "English",
+          "source_type": "transport_authority_project_drawing",
+          "locator": "drawing PDS 26/43, 'Typical Prestressed Girder Details, AASHTO, Type VI, L=40.00M 1/2'; Section at Ends and Section at Mid Span",
+          "family_names": [
+            "AASHTO Type VI"
+          ],
+          "title_original": "Rehabilitation of Totally-Damaged Concrete Spillway to Odiongan Bridge 2 and Approaches"
+        },
+        {
+          "title": "DPWH programme of work naming AASHTO Type IV-B PSC girders",
+          "url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/webform/pow/POW%2017J00028.pdf",
+          "status": "named_only",
+          "registry": "deep-search-aashto-global-2026-09.json",
+          "id": "PH-DPWH-17J00028-TYPE-IVB",
+          "language": "English",
+          "source_type": "transport_authority_bill_of_quantities",
+          "locator": "Bill of quantities item 406(1)a4.1, L=30.00 m, and item 406(1)a4.2, L=22.50 m",
+          "family_names": [
+            "AASHTO Type IV-B"
+          ],
+          "title_original": "POW 17J00028"
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 4,
       "researched": true
     },
     {
@@ -6302,9 +6457,54 @@
           "status": "official drawing and independent property check",
           "registry": "us-washington-followup.json",
           "id": "wsdot_source_properties"
+        },
+        {
+          "title": "PCI reference sections for AASHTO I-beam Types I\u2013VI",
+          "url": "https://ems-www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/AASHTO%20I%20Beams.pdf",
+          "status": "complete_outline",
+          "registry": "deep-search-us-aashto-2026-09.json",
+          "id": "US-PCI-AASHTO-I-VI-2011",
+          "language": "English",
+          "source_type": "industry_design_manual_pdf",
+          "locator": "November 2011 Appendix B-7, PDF p1: D1\u2013D6/B1\u2013B6 dimension table and section properties; Appendix B-8, PDF p2: individual shapes",
+          "family_names": [
+            "AASHTO Type I",
+            "AASHTO Type II",
+            "AASHTO Type III",
+            "AASHTO Type IV",
+            "AASHTO Type V",
+            "AASHTO Type VI"
+          ],
+          "title_original": "PCI Bridge Design Manual, Appendix B-7: AASHTO I-Beams"
         }
       ],
       "families": [
+        {
+          "id": "bridgebeams.us.aashto_i_beams.AashtoIBeamSection",
+          "name": "AashtoIBeamSection",
+          "module": "bridgebeams.us.aashto_i_beams",
+          "count": 6,
+          "profiles": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.aashto_i_beams.AashtoIBeamSection:I",
+            "bridgebeams.us.aashto_i_beams.AashtoIBeamSection:II",
+            "bridgebeams.us.aashto_i_beams.AashtoIBeamSection:III",
+            "bridgebeams.us.aashto_i_beams.AashtoIBeamSection:IV",
+            "bridgebeams.us.aashto_i_beams.AashtoIBeamSection:V",
+            "bridgebeams.us.aashto_i_beams.AashtoIBeamSection:VI"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
+        },
         {
           "id": "bridgebeams.us.other_state_mn_rectangular.MnRectangularBeamSection",
           "name": "MnRectangularBeamSection",
@@ -6348,8 +6548,8 @@
           ]
         }
       ],
-      "count": 7,
-      "source_count": 15,
+      "count": 13,
+      "source_count": 16,
       "researched": true
     },
     {

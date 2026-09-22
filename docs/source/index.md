@@ -27,8 +27,8 @@ All geometry is in **millimetres** and returned as `sectionproperties`
 `Geometry` objects, so sections can be meshed and analysed directly, or
 wrapped with materials for concrete section design checks.
 
-The complete coverage view currently counts **295 distinct fixed profiles across
-18 countries**, separately from **121 jurisdictions with research records**.
+The complete coverage view currently counts **301 distinct fixed profiles across
+18 countries**, separately from **122 jurisdictions with research records**.
 The UK and Ireland each show 175 shared Banagher profiles; those country assignments
 do not create new distinct geometry.
 Belgian and Greek parametric templates are listed separately because their
@@ -66,6 +66,7 @@ catalogue is assigned to both; the UK exports alias the same profile IDs.
 | United Kingdom | Banagher T, TY/TYE, Y/YE, U/SU, M/UMB, SY/SYE, MY/MYE, Solid Box, W | 175 shared profiles | same producer geometry/profile IDs as Ireland |
 | United States (Minnesota) | prestressed rectangular beams | 14RB, 18RB, 22RB | February 2019 MnDOT drawing and property checks |
 | United States (Washington) | W-series girders | W42G, W50G, W58G, W74G | 2006 standard outlines checked against June 2025 WSDOT properties |
+| United States (PCI reference) | AASHTO I-beams | Types I–VI | November 2011 dimension table; gross A/yb/Ixx match published rounded values |
 | Norway | NTB/KTB | 10 profiles, 600–1400 mm | reconstructed gross sections; reviewer-inferred 15 mm chamfers |
 | South Africa | Civilcon Y | Y1–Y8, 700–1400 mm | source and reviewed ledges; Y1 modulus discrepancy retained |
 | New Zealand | Super-T; I-beams; hollow-core | 1025/1225; 1500/1600; 587/650/900 mm | hollow-core inner variants and 587 outer; drawing/analytic checks |

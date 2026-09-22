@@ -38,6 +38,9 @@ profiles and completed checks.
 | Canada: Ontario MTO current drawings | [Source and geometry follow-up](canada-followup.md) | [Drawing record](data/canada-followup.json) |
 | United States: ten state DOTs | [State source follow-up](us-states-followup.md) | [State records](data/us-states-followup.json) |
 | Washington W-series | [Drawing and property audit](us-washington-followup.md) | [Source hashes and checks](data/us-washington-followup.json) |
+| United States: PCI AASHTO I-beam Types I–VI | [Dimensioned reference and property checks](pci-aashto-reference-2026-09.md) | [Source record](data/deep-search-us-aashto-2026-09.json) |
+| Pakistan: NHA PSC I-girder Types A–H | [Design-code and geometry follow-up](pakistan-us-section-followup-2026-09.md) | [Three source leads](data/deep-search-pakistan-2026-09.json) |
+| AASHTO-named beams outside the US | [Cross-jurisdiction follow-up](aashto-cross-jurisdiction-followup-2026-09.md) | [Seven source leads](data/deep-search-aashto-global-2026-09.json) |
 
 ## Reading the evidence
 
@@ -98,8 +101,8 @@ country table below. The separate PDF-backlog and Banagher transcriptions
 retain their own source manifests and are not included in these regional
 row counts.
 
-Run `python3 tools/check_discovery_sources.py` to validate the five newer
-discovery queues. Their 38 records are searchable on the coverage map;
+Run `python3 tools/check_discovery_sources.py` to validate the eight newer
+discovery queues. Their 49 records are searchable on the coverage map;
 the historical country index below remains the original regional-batch index,
 so its 149-record total should not be mistaken for the complete map total.
 

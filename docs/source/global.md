@@ -22,7 +22,7 @@ sources. The table below is only the implemented-family summary.
 | Canada (Ontario) | `bridgebeams.ca` | MTO S300/S400/S500 solid slabs | June 2025 standard drawings; Ontario-specific gross sections |
 | Ireland | `bridgebeams.ie` | T, TY/TYE, Y/YE, U/SU, M/UMB, SY/SYE, MY/MYE, Solid Box, W | Source-specific exact and reconstructed profiles; SD class 4 discrepancies retained |
 | United Kingdom | `bridgebeams.uk` | Banagher producer range, shared with Ireland | Availability aliases retain the same profile IDs and geometry; not a separate national standard |
-| United States (MN, WA) | `bridgebeams.us` | MnDOT 14RB/18RB/22RB; WSDOT W42G/W50G/W58G/W74G | Edition-specific official drawings; WSDOT geometry independently checked against 2025 published properties |
+| United States | `bridgebeams.us` | PCI AASHTO I-beams I–VI; MnDOT 14RB/18RB/22RB; WSDOT W42G/W50G/W58G/W74G | PCI November 2011 reference outlines match rounded published properties; state shapes use edition-specific official drawings |
 | Belgium | `bridgebeams.be` | FEBE standardised I-beams | Flange thicknesses must be supplied by the designer |
 | Greece | `bridgebeams.gr` | Egnatia extended-I families | Published depth law/widths; flange thicknesses are design inputs |
 | India (NH 45-A project) | `bridgebeams.india` | Ch 50+473 midspan PSC I girder | Dimensioned NHAI feasibility drawing, PDF p50; one project profile, not a national standard or construction drawing |
@@ -40,6 +40,8 @@ sources. The table below is only the implemented-family summary.
 | Türkiye | `bridgebeams.tr` | KGM-lineage I90/I120/I140/I170 | Worked-example profile assumptions; project drawing confirmation needed |
 
 Banagher's documented Ireland/UK catalogue is available through both `bridgebeams.ie` and `bridgebeams.uk`; the UK exports alias the same producer geometry. Other UK designs require their own evidence and implementations.
+
+Pakistan's NHA Type A–H PSC I-girders are [documented research leads](pakistan-us-section-followup-2026-09.md), with an NHA project drawing available for transcription. AASHTO design-code use does not show that their profiles equal US Types I–VI. The [cross-jurisdiction queue](aashto-cross-jurisdiction-followup-2026-09.md) likewise keeps AASHTO-named foreign beams separate pending full outline comparison.
 
 ![Examples implemented after visual review](_static/images/review-additions.svg)
 

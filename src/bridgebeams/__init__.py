@@ -37,6 +37,7 @@ from bridgebeams.za import (
     CivilconIBeamDimensions, CivilconIBeamSection,
     CivilconYBeamDimensions, CivilconYBeamSection,
 )
+from bridgebeams.us import AashtoIBeamDimensions, AashtoIBeamSection
 from bridgebeams.ie import (
     IeWBeamDimensions,
     IeWBeamSection,
@@ -104,6 +105,8 @@ __all__ = [
     "IeYBeamSection",
     "IeYEBeamDimensions",
     "IeYEBeamSection",
+    "AashtoIBeamDimensions",
+    "AashtoIBeamSection",
     "strand_locations",
     "wf_of_depth",
     "to_concreteproperties",

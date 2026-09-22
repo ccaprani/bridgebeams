@@ -12,6 +12,12 @@ PDF p50, drawing `FIPL-HD-TPT-117-V-N-45A-MJB-CH-50+473-GA-01`, sheet 03/03
 title block says **Final Feasibility Report**; the library does not claim
 that this profile was built or approved for construction.
 
+The classic US AASHTO I-beam Types I–VI are transcribed from [PCI Bridge
+Design Manual Appendix B-7/B-8](https://ems-www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/AASHTO%20I%20Beams.pdf)
+(November 2011). The complete inch dimension table and rounded section
+properties are checked in {doc}`pci-aashto-reference-2026-09`. This reference
+does not establish that another jurisdiction uses an identical outline.
+
 The original Irish section data are recovered from, or validated against,
 published manufacturer documentation:
 
