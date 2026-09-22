@@ -20,6 +20,7 @@ from bridgebeams.be import FebeIDimensions, FebeISection
 from bridgebeams.gr import GrExtendedISection, depth_law as gr_depth_law, web_width as gr_web_width
 from bridgebeams.pl import MostostalTDimensions, MostostalTSection
 from bridgebeams.kr import KhcIGirderDimensions, KhcISection
+from bridgebeams.nz import NzSuperTDimensions, NzSuperTSection
 from bridgebeams.ru import Su3503I33Dimensions, Su3503I33Section
 from bridgebeams.th import ThDOHIGirderDimensions, ThDOHIGirderSection
 from bridgebeams.tr import KGMIDimensions, KGMISection
@@ -46,6 +47,8 @@ __all__ = [
     "ThDOHIGirderSection",
     "KhcIGirderDimensions",
     "KhcISection",
+    "NzSuperTDimensions",
+    "NzSuperTSection",
     "GrExtendedISection",
     "gr_depth_law",
     "gr_web_width",
