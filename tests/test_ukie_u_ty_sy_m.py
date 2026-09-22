@@ -7,7 +7,7 @@ from importlib import resources
 import pytest
 
 from bridgebeams._geometry import as_polygon, section_properties
-from bridgebeams.ukie import (
+from bridgebeams.ie import (
     IeMBeamSection,
     IeMYBeamSection,
     IeMYEBeamSection,
@@ -19,16 +19,16 @@ from bridgebeams.ukie import (
 )
 
 U_DATA = json.loads(
-    resources.files("bridgebeams.ukie.data").joinpath("ie_u_beam.json").read_text()
+    resources.files("bridgebeams.ie.data").joinpath("ie_u_beam.json").read_text()
 )
 TY_DATA = json.loads(
-    resources.files("bridgebeams.ukie.data").joinpath("ie_ty_beam.json").read_text()
+    resources.files("bridgebeams.ie.data").joinpath("ie_ty_beam.json").read_text()
 )
 SY_DATA = json.loads(
-    resources.files("bridgebeams.ukie.data").joinpath("ie_sy_beam.json").read_text()
+    resources.files("bridgebeams.ie.data").joinpath("ie_sy_beam.json").read_text()
 )
 M_DATA = json.loads(
-    resources.files("bridgebeams.ukie.data").joinpath("ie_m_beam.json").read_text()
+    resources.files("bridgebeams.ie.data").joinpath("ie_m_beam.json").read_text()
 )
 
 TOL_EXACT = {"area": 0.005, "yc": 0.005, "ixx": 0.005}
@@ -130,7 +130,7 @@ def test_sy_invalid_size_raises():
 
 def test_my_family_all_sizes():
     my_data = json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath("ie_my_beam.json").read_text()
+        resources.files("bridgebeams.ie.data").joinpath("ie_my_beam.json").read_text()
     )
     # fitted family: rms 0.83%, max 2.2%
     for row in my_data["published_properties"]["my"]:
@@ -145,7 +145,7 @@ def test_my_family_all_sizes():
 
 def test_mye_family_all_sizes():
     my_data = json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath("ie_my_beam.json").read_text()
+        resources.files("bridgebeams.ie.data").joinpath("ie_my_beam.json").read_text()
     )
     # fitted family: rms 0.26%, max 0.6%
     for row in my_data["published_properties"]["mye"]:

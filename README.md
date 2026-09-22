@@ -14,7 +14,7 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 
 ## Families
 
-### Ireland / UK (`bridgebeams.ukie`)
+### Ireland / UK (`bridgebeams.ie`)
 
 - **T beams (T1–T10)** — solid slab construction; exact published profile,
   validated to <0.02% against published properties.
@@ -30,7 +30,12 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 - **MY / MYE beams (MY1–MY7)** — solid slab; validated to ≤2.2%.
 - Solid Box (SD series) and W beams: sources collected, planned.
 
-### Australia (`bridgebeams.aus`)
+#### United Kingdom (`bridgebeams.uk`) — planned
+
+The historic UK CBDG families (inverted-T, M, I, box) — ancestors of the
+Irish ranges; shared geometry backend with `bridgebeams.ie`.
+
+## Australia (`bridgebeams.aus`)
 
 - **Super-T girders (T1–T5)** to AS5100.5 App. D, pre- and post-2001 variants.
 - **I-girders (types 1–4)** to AS5100.5 App. D.
@@ -42,7 +47,7 @@ python -m pip install -e .
 ```
 
 ```python
-from bridgebeams.ukie import IeYBeamSection, strand_locations
+from bridgebeams.ie import IeYBeamSection, strand_locations
 from sectionproperties.analysis import Section
 
 beam = IeYBeamSection("Y4")            # 1000 mm deep Y4

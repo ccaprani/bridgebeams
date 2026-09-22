@@ -7,13 +7,13 @@ from importlib import resources
 import pytest
 
 from bridgebeams._geometry import as_polygon, section_properties
-from bridgebeams.ukie import IeTBeamSection, IeYEBeamSection
+from bridgebeams.ie import IeTBeamSection, IeYEBeamSection
 
 T_DATA = json.loads(
-    resources.files("bridgebeams.ukie.data").joinpath("ie_t_beam.json").read_text()
+    resources.files("bridgebeams.ie.data").joinpath("ie_t_beam.json").read_text()
 )
 YE_DATA = json.loads(
-    resources.files("bridgebeams.ukie.data").joinpath("ie_ye_beam.json").read_text()
+    resources.files("bridgebeams.ie.data").joinpath("ie_ye_beam.json").read_text()
 )
 
 T_TOL = {"area": 0.001, "yc": 0.001, "ixx": 0.001}  # exact dims: <0.02% deviation
@@ -67,7 +67,7 @@ def test_ye_beam_vertical_face_position():
 
 
 def test_ye_beam_top_width_matches_published_wf():
-    from bridgebeams.ukie import wf_of_depth
+    from bridgebeams.ie import wf_of_depth
 
     for row in YE_DATA["published_properties"]:
         assert wf_of_depth(row["depth"]) == pytest.approx(row["wf"], abs=0.05), row["section"]

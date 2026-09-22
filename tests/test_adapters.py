@@ -2,7 +2,7 @@
 
 import pytest
 
-from bridgebeams.ukie import IeYBeamSection
+from bridgebeams.ie import IeYBeamSection
 
 
 def test_osp_grillage_properties():

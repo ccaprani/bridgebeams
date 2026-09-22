@@ -41,7 +41,7 @@ _UPPER_W = 205.0
 
 def _load_data() -> dict:
     return json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath(_DATA_FILE).read_text()
+        resources.files("bridgebeams.ie.data").joinpath(_DATA_FILE).read_text()
     )
 
 
@@ -100,7 +100,7 @@ class IeTBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeTBeamSection
+    >>> from bridgebeams.ie import IeTBeamSection
     >>> t10 = IeTBeamSection("T10")
     >>> t10.dimensions.depth
     815.0

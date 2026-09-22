@@ -1,7 +1,7 @@
-bridgebeams.ukie
+bridgebeams.ie
 ================
 
-.. automodule:: bridgebeams.ukie
+.. automodule:: bridgebeams.ie
 
    
    

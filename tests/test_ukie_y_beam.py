@@ -13,11 +13,11 @@ from importlib import resources
 
 import pytest
 
-from bridgebeams.ukie import IeYBeamSection, strand_locations
+from bridgebeams.ie import IeYBeamSection, strand_locations
 from bridgebeams._geometry import as_polygon, section_properties
 
 DATA = json.loads(
-    resources.files("bridgebeams.ukie.data").joinpath("ie_y_beam.json").read_text()
+    resources.files("bridgebeams.ie.data").joinpath("ie_y_beam.json").read_text()
 )
 
 TOL = {"area": 0.04, "yc": 0.025, "ixx": 0.05}

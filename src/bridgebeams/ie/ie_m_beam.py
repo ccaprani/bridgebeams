@@ -28,7 +28,7 @@ _DATA_FILE = "ie_m_beam.json"
 
 def _load_data() -> dict:
     return json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath(_DATA_FILE).read_text()
+        resources.files("bridgebeams.ie.data").joinpath(_DATA_FILE).read_text()
     )
 
 
@@ -82,7 +82,7 @@ class IeMBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeMBeamSection
+    >>> from bridgebeams.ie import IeMBeamSection
     >>> m4 = IeMBeamSection("M4")
     >>> m4.dimensions.depth
     880.0
@@ -167,7 +167,7 @@ class IeUMBBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeUMBBeamSection
+    >>> from bridgebeams.ie import IeUMBBeamSection
     >>> umb10 = IeUMBBeamSection("UMB10")
     >>> umb10.dimensions.depth
     1360.0

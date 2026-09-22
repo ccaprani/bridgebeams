@@ -1,7 +1,7 @@
-bridgebeams.ukie.ie\_t\_beam.IeTBeamSection
+bridgebeams.ie.ie\_t\_beam.IeTBeamSection
 ===========================================
 
-.. currentmodule:: bridgebeams.ukie.ie_t_beam
+.. currentmodule:: bridgebeams.ie.ie_t_beam
 
 .. autoclass:: IeTBeamSection
    :members:

@@ -1,4 +1,4 @@
-"""bridgebeams.ukie: Irish/UK standard precast bridge beam families."""
+"""bridgebeams.ie: Irish/UK standard precast bridge beam families."""
 
 from .ie_m_beam import IeMBeamDimensions, IeMBeamSection, IeUMBBeamDimensions, IeUMBBeamSection
 from .ie_my_beam import IeMYBeamDimensions, IeMYBeamSection, IeMYEBeamDimensions, IeMYEBeamSection

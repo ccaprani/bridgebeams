@@ -1,7 +1,7 @@
-bridgebeams.ukie.ie\_my\_beam
+bridgebeams.ie.ie\_my\_beam
 =============================
 
-.. automodule:: bridgebeams.ukie.ie_my_beam
+.. automodule:: bridgebeams.ie.ie_my_beam
 
    
    

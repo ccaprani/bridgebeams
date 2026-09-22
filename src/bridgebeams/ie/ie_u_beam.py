@@ -31,7 +31,7 @@ _STEP_BELOW_TOP = 50.0
 
 def _load_data() -> dict:
     return json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath(_DATA_FILE).read_text()
+        resources.files("bridgebeams.ie.data").joinpath(_DATA_FILE).read_text()
     )
 
 
@@ -98,7 +98,7 @@ class IeUBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeUBeamSection
+    >>> from bridgebeams.ie import IeUBeamSection
     >>> u8 = IeUBeamSection("U8")
     >>> u8.dimensions.depth
     1200.0

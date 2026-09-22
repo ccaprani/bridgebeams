@@ -40,7 +40,7 @@ _DATA_FILE = "ie_y_beam.json"
 
 def _load_data() -> dict:
     return json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath(_DATA_FILE).read_text()
+        resources.files("bridgebeams.ie.data").joinpath(_DATA_FILE).read_text()
     )
 
 
@@ -92,7 +92,7 @@ class IeYBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeYBeamSection
+    >>> from bridgebeams.ie import IeYBeamSection
     >>> y4 = IeYBeamSection("Y4")
     >>> y4.dimensions.depth
     1000.0

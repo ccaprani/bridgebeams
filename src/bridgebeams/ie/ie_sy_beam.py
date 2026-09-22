@@ -49,7 +49,7 @@ _SYE_WF_SLOPE = 0.11643
 
 def _load_data() -> dict:
     return json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath(_DATA_FILE).read_text()
+        resources.files("bridgebeams.ie.data").joinpath(_DATA_FILE).read_text()
     )
 
 
@@ -113,7 +113,7 @@ class IeSYBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeSYBeamSection
+    >>> from bridgebeams.ie import IeSYBeamSection
     >>> sy4 = IeSYBeamSection("SY4")
     >>> sy4.dimensions.depth
     1800.0

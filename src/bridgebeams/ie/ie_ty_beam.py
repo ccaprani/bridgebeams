@@ -44,7 +44,7 @@ _FACE_OFFSET = -375.0
 
 def _load_data() -> dict:
     return json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath(_DATA_FILE).read_text()
+        resources.files("bridgebeams.ie.data").joinpath(_DATA_FILE).read_text()
     )
 
 
@@ -106,7 +106,7 @@ class IeTYBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeTYBeamSection
+    >>> from bridgebeams.ie import IeTYBeamSection
     >>> ty8 = IeTYBeamSection("TY8", variant="bs")
     >>> ty8.dimensions.depth
     750.0

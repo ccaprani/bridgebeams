@@ -4,7 +4,7 @@ with the ``sectionproperties`` package.
 Subpackages
 -----------
 - ``bridgebeams.aus``: Australian Super-T and I-girders to AS5100.5 App. D.
-- ``bridgebeams.ukie``: Irish/UK standard precast beams (T, Y and YE
+- ``bridgebeams.ie``: Irish/UK standard precast beams (T, Y and YE
   families).
 
 All geometry is in millimetres and returned as ``sectionproperties``
@@ -22,7 +22,7 @@ from bridgebeams.ru import Su3503I33Dimensions, Su3503I33Section
 from bridgebeams.th import ThDOHIGirderDimensions, ThDOHIGirderSection
 from bridgebeams.tr import KGMIDimensions, KGMISection
 from bridgebeams.za import CivilconIBeamDimensions, CivilconIBeamSection
-from bridgebeams.ukie import (
+from bridgebeams.ie import (
     IeTBeamDimensions,
     IeTBeamSection,
     IeYBeamDimensions,

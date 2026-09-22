@@ -1,7 +1,7 @@
-bridgebeams.ukie.ie\_u\_beam.IeUBeamDimensions
+bridgebeams.ie.ie\_u\_beam.IeUBeamDimensions
 ==============================================
 
-.. currentmodule:: bridgebeams.ukie.ie_u_beam
+.. currentmodule:: bridgebeams.ie.ie_u_beam
 
 .. autoclass:: IeUBeamDimensions
    :members:

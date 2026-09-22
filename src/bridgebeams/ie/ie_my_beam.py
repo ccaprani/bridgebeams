@@ -44,7 +44,7 @@ _MYE_WAIST_Y = 125.7
 
 def _load_data() -> dict:
     return json.loads(
-        resources.files("bridgebeams.ukie.data").joinpath(_DATA_FILE).read_text()
+        resources.files("bridgebeams.ie.data").joinpath(_DATA_FILE).read_text()
     )
 
 
@@ -100,7 +100,7 @@ class IeMYBeamSection:
 
     Examples
     --------
-    >>> from bridgebeams.ukie import IeMYBeamSection
+    >>> from bridgebeams.ie import IeMYBeamSection
     >>> my4 = IeMYBeamSection("MY4")
     >>> my4.dimensions.depth
     450.0
