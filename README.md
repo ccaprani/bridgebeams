@@ -62,7 +62,7 @@ materials present, run `python tools/build_local_docs.py --with-review`, then
 Open <http://localhost:8766/research-visual-review.html> for the guide and
 illustrated review link.
 
-The [coverage map and complete country table](docs/source/coverage.md)
+The [live coverage map and complete country table](https://ccaprani.github.io/bridgebeams/coverage.html)
 separate researched sources from implemented profiles. UK and Ireland are
 separate entries. The research footprint spans 114 jurisdictions; many
 currently have source evidence only.

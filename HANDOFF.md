@@ -25,6 +25,11 @@ width interpretations and blocker claims in it were wrong.
   Strict (`-E -W`) build passed after the US/Canada additions and coverage regeneration.
   Obsolete generated `gen/bridgebeams.ukie*` pages are excluded. Research
   includes use `:relative-docs: data/` so JSON links resolve as downloads.
+- Pages site: `https://ccaprani.github.io/bridgebeams/coverage.html` contains
+  the live interactive map. `.github/workflows/pages.yml` builds Sphinx from
+  `ukie-beams`, installs Pandoc for the tutorial notebook, and publishes the
+  static artifact. The `github-pages` deployment environment permits exactly
+  `main` and `ukie-beams`; the repository homepage points to the site.
 
 ## Jurisdictions and coverage
 
