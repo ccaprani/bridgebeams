@@ -61,10 +61,19 @@ def test_area_from_independent_layer_calculation():
     assert IeSolidBoxBeamSection("SD1 (2)").polygon.area == expected == 195125
 
 
-def test_unresolved_width_is_not_exposed():
-    assert len(IeSolidBoxBeamSection.SIZES) == 24
+def test_width_class_four_is_nominal_with_recorded_discrepancies():
+    assert len(IeSolidBoxBeamSection.SIZES) == 32
+    for index in range(1, 9):
+        beam = IeSolidBoxBeamSection(f"SD{index} (4)")
+        check = beam.published["nominal_drawing_check"]
+        props = section_properties(beam.polygon)
+        assert beam.polygon.is_valid and beam.polygon.exterior.is_ccw
+        assert beam.polygon.bounds == (-750, 0, 750, 200 + index * 100)
+        assert props["area"] - beam.published["area_mm2"] == (-225 if index <= 5 else -275)
+        assert props["cy"] == pytest.approx(check["calculated_centroid_from_soffit_mm"], abs=1e-9)
+        assert props["ixx"] == pytest.approx(check["calculated_Ixx_mm4"], rel=1e-12)
     with pytest.raises(ValueError):
-        IeSolidBoxBeamSection("SD1 (4)")
+        IeSolidBoxBeamSection("SD1 (5)")
 
 
 def test_sectionproperties_mesh_smoke():

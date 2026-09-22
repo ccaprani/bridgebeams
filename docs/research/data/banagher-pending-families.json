@@ -15,7 +15,7 @@
       "sha256": "5432e2db0b2f95045320f91254c52ce3f7b1f6d62279c6f05ae6aef4e46bb7bf",
       "pages": 62,
       "discovery": "inherited_local_pdf_new_transcription",
-      "status": "verified_table_transcription_24_sections_implemented",
+      "status": "nominal_dimensioned_geometry_32_sections_implemented_class4_property_discrepancies_preserved",
       "id": "banagher_solid_box_pending",
       "families": [
         "Solid Box SD1-SD8, width classes (1)-(4)"
@@ -1518,21 +1518,21 @@
         "Nominal drawing polygon for width classes (2) and (3) reproduces all published areas exactly. Class (1) area rounds to nearest 10 mm2 with a +5 mm2 difference. Class (4) published areas differ by +225 mm2 for SD1-SD5 and +275 mm2 for SD6-SD8; do not modify geometry silently to match."
       ],
       "blockers": [
-        "Resolve width class (4) area/centroid/modulus discrepancy with producer or original dimensioned drawings before implementing that width."
+        "Producer clarification of class(4) property table remains outstanding; it no longer blocks the fully dimensioned nominal outline. No SD CAD verification is claimed."
       ],
       "implementation": {
         "module": "src/bridgebeams/ie/ie_solid_box.py",
         "implemented_width_classes": [
           1,
           2,
-          3
-        ],
-        "research_only_width_classes": [
+          3,
           4
         ],
+        "research_only_width_classes": [],
         "targeted_tests": "tests/test_ie_solid_box.py",
-        "test_result": "27 passed"
-      }
+        "class4_basis": "nominal_manual_dimensions_with_explicit_signed_property_discrepancies"
+      },
+      "followup": "banagher-cad-followup.json"
     },
     {
       "organisation": "Banagher Precast Concrete",
@@ -1548,7 +1548,7 @@
       "sha256": "5432e2db0b2f95045320f91254c52ce3f7b1f6d62279c6f05ae6aef4e46bb7bf",
       "pages": 62,
       "discovery": "inherited_local_pdf_new_transcription",
-      "status": "verified_table_transcription_geometry_review_pending",
+      "status": "current_catalogue_geometry_16_sections_implemented_with_cad_lower_contour",
       "id": "banagher_w_pending",
       "families": [
         "W1,W3,W5,W7-W19"
@@ -1933,11 +1933,17 @@
         "Web is a vertical dimension of the sloping inner web segment, not thickness.",
         "V is absent for W1-W15; null retains the source dash rather than treating it as a measured zero.",
         "Appendix C strand pitches, reinforcement offsets and strand elevations are not concrete-profile dimensions.",
-        "Drawings show two outline regimes: W1-W15 and W16-W19."
+        "Drawings show two outline regimes: W1-W15 and W16-W19.",
+        "Recovered W19 CAD confirms straight inner faces,160mm valley and20x20mm bottom corners. Older F52/V512 are NOT used for current W19; current manual F100/V464 are used."
       ],
-      "blockers": [
-        "Published drawings do not explicitly dimension all inner bottom-slab vertices, corner radii or lower corner vertical extent. Do not derive these from drawing scale or strand coordinates. Obtain mould/CAD profile or additional authoritative dimensioned drawing before geometry implementation."
-      ]
+      "blockers": [],
+      "followup": "banagher-cad-followup.json",
+      "implementation": {
+        "module": "src/bridgebeams/ie/ie_w.py",
+        "implemented_sections": 16,
+        "targeted_tests": "tests/test_ie_w.py",
+        "basis": "current_manual_upper_dimensions_and_older_project_cad_common_straight_lower_contour"
+      }
     }
   ]
 }

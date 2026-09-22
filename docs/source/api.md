@@ -19,8 +19,12 @@
     bridgebeams.ie.ie_m_beam
     bridgebeams.ie.ie_sy_beam
     bridgebeams.ie.ie_solid_box
+    bridgebeams.ie.ie_w
     bridgebeams.nz.super_t
     bridgebeams.nz.i_beams
+    bridgebeams.nz.hollow_core
+    bridgebeams.no.ntb_ktb
+    bridgebeams.za.civilcon_y_beam
     bridgebeams.qa.q_beams
     bridgebeams.mx.sepsa_i_girder
     bridgebeams.tw.i_section

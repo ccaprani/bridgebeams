@@ -1063,7 +1063,7 @@
       "title_en": "Railway PSC girder and slab standard-drawing index",
       "url": "https://rdso.indianrailways.gov.in/uploads/BS-141.pdf",
       "accessed": "2026-09-22",
-      "status": "access-blocked",
+      "status": "web-readable; local-download-blocked",
       "families": [
         "2I",
         "4I",
@@ -1075,8 +1075,9 @@
       "evidence": {
         "method": "primary source web content or indexed primary-source extract"
       },
-      "notes": "Official PDF indexed with standard drawing numbers including B-10256/10258/10275/10276/10270/10290. Local connection refused; table column semantic check pending, so no structural-height numbers promoted.",
-      "download_blocker": "HTTPSConnectionPool(host='rdso.indianrailways.gov.in', port=443): Max retries exceeded with url: /uploads/BS-141.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='rdso.indianrailways.gov.in', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+      "notes": "Official PDF indexed with standard drawing numbers including B-10256/10258/10275/10276/10270/10290. Local connection refused; table column semantic check pending, so no structural-height numbers promoted. Follow-up on2026-09-22: the official106-page March2025PDF opened through the web reader with readable text; local requests still connection refused and later web page requests timed out. Exact drawing-list geometry not verified.",
+      "download_blocker": "HTTPSConnectionPool(host='rdso.indianrailways.gov.in', port=443): Max retries exceeded with url: /uploads/BS-141.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='rdso.indianrailways.gov.in', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "access_followup": "india-followup.json"
     },
     {
       "id": "PK-EDS",

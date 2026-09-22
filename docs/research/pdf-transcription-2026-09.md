@@ -1,5 +1,7 @@
 # PDF backlog: visual transcription and implementation, 22 September 2026
 
+> **Follow-up after visual review:** Norway and four NZ hollow-core variants are now implemented; see [the visual follow-up](visual-followup-norway-nz.md). The original transcription below is retained as source history.
+
 Four existing source PDFs were recovered from `/tmp` into persistent ignored working materials under `sources/expansion/pdf-backlog/`. The published text and drawings were inspected as rendered images. This pass supplies 28 section records and 17 translated drawing terms in [the machine-readable transcription](data/pdf-transcriptions.json), fixes the NZ Super-T topology, adds two NZ I-beams, and implements five Qatar Q-beam reconstructions.
 
 These results supersede conflicting statements in older research briefs and HANDOFF.md. A numerical dimension is reported as read only when its leader/feature was identified visually. Derived numbers and approximation choices are identified separately. No values were interpolated between beam types. Existing local PDFs were reused; the links below identify the publisher but their current HTTP availability was not checked in this PDF task.

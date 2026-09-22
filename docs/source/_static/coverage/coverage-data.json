@@ -1,0 +1,3951 @@
+{
+  "count_basis": "Named source-backed discrete geometry choices; includes documented reconstructions, excludes namespace aliases, arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
+  "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
+  "researched_jurisdictions": 114,
+  "source_records": 159,
+  "implemented_countries": 14,
+  "implemented_profiles": 284,
+  "countries": [
+    {
+      "code": "AF",
+      "name": "Afghanistan",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "sources": [
+        {
+          "title": "Design of a post-tensioned prestressed beam bridge",
+          "url": "https://repository.enp.edu.dz/jspui/handle/123456789/2543",
+          "status": "research-lead",
+          "registry": "asia-africa-sources.json",
+          "id": "DZ-ENP-2018"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "AS",
+      "name": "American Samoa",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "AD",
+      "name": "Andorra",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "sources": [
+        {
+          "title": "Prestressing of Pumangol viaduct deck beams",
+          "url": "https://tecnovia.pt/portfolio-posts/pre-esforco-em-vigas-do-tabuleiro-viaduto-da-pumangol/",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "AO-TECNOVIA-PUMANGOL"
+        },
+        {
+          "title": "Soyo bridge over Cadal Channel",
+          "url": "https://www.betar.pt/projecto/ponte-do-soyo-sobre-o-canal-cadal-para-acesso-a-base-do-kwanda-da-alng/",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "AO-BETAR-SOYO"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "AI",
+      "name": "Anguilla",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "AQ",
+      "name": "Antarctica",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "AG",
+      "name": "Antigua and Barbuda",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "sources": [
+        {
+          "title": "Bridge system",
+          "url": "https://www.pretensa.com.ar/multimedia/downloads/11/12/puentes.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "ar_pretensa"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "sources": [
+        {
+          "title": "Bridge-beam production",
+          "url": "https://kamurjshin.am/en/artadrutyun/2.html",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "am_kamurjshin"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "AW",
+      "name": "Aruba",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "sources": [
+        {
+          "title": "AS5100.5 Appendix D bridge beam sections",
+          "url": null,
+          "status": "inherited_code_citation_unverified_source",
+          "registry": "europe-americas-sources.json",
+          "id": "au_as5100"
+        }
+      ],
+      "families": [
+        {
+          "name": "IGirderSection",
+          "module": "bridgebeams.aus.sections",
+          "count": 4,
+          "profiles": [
+            "T1",
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "note": ""
+        },
+        {
+          "name": "SuperTGirderSection",
+          "module": "bridgebeams.aus.sections",
+          "count": 9,
+          "profiles": [
+            "T1, subtype1",
+            "T2, subtype1",
+            "T3, subtype1",
+            "T4, subtype1",
+            "T1, subtype2",
+            "T2, subtype2",
+            "T3, subtype2",
+            "T4, subtype2",
+            "T5, subtype2"
+          ],
+          "note": "Nine documented type/subtype combinations; nominal default flange only. Continuous width and web overrides are not additional profiles."
+        }
+      ],
+      "count": 13,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "sources": [
+        {
+          "title": "Thin-walled precast concrete girders in bridge and civil engineering",
+          "url": "https://www.tuwien.at/cee/tragkonstruktionen/beton/forschung/abgeschlossene-forschungsprojekte/duennwandige-beton-fertigteiltraeger-im-bruecken-und-ingenieurbau",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "at_tuwien"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BH",
+      "name": "Bahrain",
+      "sources": [
+        {
+          "title": "Prestressed bridge beams and segmental bridge units",
+          "url": "https://www.nasscorporation.com/delmon-precast/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "BH-DELMON"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "sources": [
+        {
+          "title": "Preliminary standard PC-I girders",
+          "url": "https://openjicareport.jica.go.jp/pdf/12249504_02.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "BD-JICA-PC-I"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BB",
+      "name": "Barbados",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "sources": [
+        {
+          "title": "Products",
+          "url": "https://ozjbk.by/produkciya/obshhegrazhdanskoe-stroitelstvo/progony-zhelezobetonnye/",
+          "status": "web_access_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "by_ozjbk"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "sources": [],
+      "families": [
+        {
+          "name": "FebeISection",
+          "module": "bridgebeams.be.febe_i_beams",
+          "count": 0,
+          "profiles": [],
+          "note": "Parametric template: source does not specify all flange thicknesses; zero fixed profiles counted."
+        }
+      ],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BZ",
+      "name": "Belize",
+      "sources": [
+        {
+          "title": "Precast concrete bridge products",
+          "url": "https://mnmengineeringbz.com/products",
+          "status": "primary_search_index_lead",
+          "registry": "europe-americas-sources.json",
+          "id": "bz_mnm"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BM",
+      "name": "Bermuda",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BT",
+      "name": "Bhutan",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BO",
+      "name": "Bolivia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia and Herzegovina",
+      "sources": [
+        {
+          "title": "Precast elements",
+          "url": "https://mucic.ba/predgotovljeni-elementi/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "ba_mucic"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "sources": [
+        {
+          "title": "Platjan precast prestressed T-beam project",
+          "url": "https://www.corestruc.co.za/wp-content/uploads/2019/05/sa-botswana-platjan-brdge.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "BW-CORESTRUC-PLATJAN"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "sources": [
+        {
+          "title": "Products",
+          "url": "https://www.protensul.com.br/site/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "br_protensul"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "IO",
+      "name": "British Indian Ocean Territory",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "VG",
+      "name": "British Virgin Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BN",
+      "name": "Brunei",
+      "sources": [
+        {
+          "title": "Jalan Telanai precast post-tensioned I girders",
+          "url": "https://assets.ctfassets.net/wz1xpzqb46pe/2C80OZ0JEm8ItSlLOyXVd7/23aa08d4f7624777cf75fcdca467569b/Case-Study2015Info-2346DYWIDAG-Strand-Tendons-for-flowing-Road-TrafficNew-Viaducts-in-BruneiDSI-ConstructionBrunei.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "BN-DYWIDAG"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "sources": [
+        {
+          "title": "Road construction elements",
+          "url": "https://www.rila-bg.com/bg/\u0435\u043b\u0435\u043c\u0435\u043d\u0442\u0438-\u0437\u0430-\u043f\u044a\u0442\u043d\u043e-\u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u0441\u0442\u0432\u043e.html",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "bg_rila"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "sources": [
+        {
+          "title": "Precast PC composite T-girder approaches",
+          "url": "https://openjicareport.jica.go.jp/pdf/12026142_02.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "KH-NEAK-LOEUNG"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "sources": [
+        {
+          "title": "Logone post-tensioned precast girder bridge option",
+          "url": "https://www.afdb.org/fileadmin/uploads/afdb/Documents/Environmental-and-Social-Assessments/Cameroun-Tchad-projet_de_pont_sur_le_logone-resume_EIES_07_2017-fr.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "CM-AFDB-LOGONE"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "sources": [
+        {
+          "title": "Prestressed NU Girders and Bearings",
+          "url": "https://tcp.mto.gov.on.ca/sites/default/files/2023-08/NU-Girder-July-2023.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "ca_mto_nu"
+        },
+        {
+          "title": "Prestressed Concrete Girder Guidelines August 2023",
+          "url": "https://tcp.mto.gov.on.ca/sites/default/files/2023-08/Prestressed%20Concrete%20Girder%20Guidelines%20%28August11%202023%29.pdf",
+          "status": "downloaded_not_fully_transcribed",
+          "registry": "europe-americas-sources.json",
+          "id": "ca_mto_guide"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "CV",
+      "name": "Cape Verde",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "KY",
+      "name": "Cayman Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "sources": [
+        {
+          "title": "Bridge and grade-separated crossing beams",
+          "url": "https://www.hormisur.cl/vigas-de-puente-y-pasos-desnivelados.php",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "cl_hormisur"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "sources": [
+        {
+          "title": "Infrastructure",
+          "url": "https://preansa.com.co/infraestructura/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "co_preansa"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "CK",
+      "name": "Cook Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "sources": [
+        {
+          "title": "Precast bridge elements",
+          "url": "https://www.puenteprefa.cr/elementos_prefabricados.html",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "cr_puenteprefa"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "sources": [
+        {
+          "title": "Precast elements catalogue",
+          "url": "https://www.gp-krk.hr/img/Katalog.pdf",
+          "status": "adjacent_catalogue_bridge_applicability_unverified",
+          "registry": "europe-americas-sources.json",
+          "id": "hr_gpkrk"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CU",
+      "name": "Cuba",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "CW",
+      "name": "Cura\u00e7ao",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "CZ",
+      "name": "Czech Republic",
+      "sources": [
+        {
+          "title": "Concrete products catalogue 2022",
+          "url": "https://www.zpsv.cz/wp-content/uploads/2023/04/ZPSV-katalog-2022.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "cz_zpsv"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "sources": [
+        {
+          "title": "Inverted-T beams",
+          "url": "https://crhconcrete.dk/betonelementer/produktsortiment/bjaelker/ot-bjaelker/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "dk_crh"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "DM",
+      "name": "Dominica",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "DO",
+      "name": "Dominican Republic",
+      "sources": [
+        {
+          "title": "Precast beams for bridges and elevated roads",
+          "url": "https://www.conde.com.do/prefabricados.html",
+          "status": "primary_search_index_lead",
+          "registry": "europe-americas-sources.json",
+          "id": "do_conde"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "TL",
+      "name": "East Timor",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "EC",
+      "name": "Ecuador",
+      "sources": [
+        {
+          "title": "Vicolinci Daule bridge tender documents",
+          "url": "https://www.obraspublicas.gob.ec/wp-content/uploads/downloads/2012/08/19-12-2011_documentos_licitacion_puente_vicolinci_daule.pdf",
+          "status": "download_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "ec_mtop"
+        },
+        {
+          "title": "Precast and prestressed concrete products",
+          "url": "https://mavisa.ec/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "ec_mavisa"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "sources": [
+        {
+          "title": "Precast bridge girder producer",
+          "url": "https://www.ecpc.com.eg/about-us-precast-concrete-leaders/precast-concrete-infrastructure-history/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "EG-ECPC"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SV",
+      "name": "El Salvador",
+      "sources": [
+        {
+          "title": "Pretensioned and post-tensioned bridge girders",
+          "url": "https://www.platinium.com.sv/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "sv_platinium"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "sources": [
+        {
+          "title": "ViaPlus bridges, tunnels, noise barriers",
+          "url": "https://betoonelement.ee/lahendused/viaplus-infrastruktuur/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "ee_viaplus"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "sources": [
+        {
+          "title": "Original research on precast prestressed bridge girders",
+          "url": "https://etd.aau.edu.et/items/1eff2da6-0998-4b9b-902f-2c6e3b9c20a2",
+          "status": "research-lead",
+          "registry": "asia-africa-sources.json",
+          "id": "ET-AAU-2016"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "FK",
+      "name": "Falkland Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "FO",
+      "name": "Faroe Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "FM",
+      "name": "Federated States of Micronesia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "FJ",
+      "name": "Fiji",
+      "sources": [
+        {
+          "title": "Fiji precast bridge beam manufacture and construction",
+          "url": "https://www.higgins.co.nz/fletcher-higgins",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "FJ-FLETCHER-HIGGINS"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "sources": [
+        {
+          "title": "Parma prestressed beam bridge, general arrangement",
+          "url": "https://parma.fi/wp-content/uploads/2018/06/parma_jannepalkkisilta_yleispiirustus_2017.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "fi_parma"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "sources": [
+        {
+          "title": "Road bridges with precast pretensioned girders: design guide",
+          "url": "https://piles.cerema.fr/IMG/pdf/prad_-_ponts-routes_a_poutres_prefabriquees_precontraintes_par_adherence_-_guide_de_conception_-_1996_cle6a996f.pdf",
+          "status": "downloaded_not_fully_transcribed",
+          "registry": "europe-americas-sources.json",
+          "id": "fr_prad"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "PF",
+      "name": "French Polynesia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TF",
+      "name": "French Southern and Antarctic Lands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "sources": [
+        {
+          "title": "Third East-West Highway Improvement Project additional-financing EIA",
+          "url": "https://www.georoad.ge/uploads/files/TEWHIPAFEIA_1_Engl.pdf",
+          "status": "primary_indexed_project_download_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "ge_roads"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "sources": [
+        {
+          "title": "Construction indices: material quantities for precast-industry concrete production",
+          "url": "https://bauarchivddr.bbr-server.de/bauarchivddr/archiv/plarchiv/00125-0105/akten-und-mappen-pdf/00125-0105-z8463kme.pdf",
+          "status": "rejected_miscited_source",
+          "registry": "europe-americas-sources.json",
+          "id": "de_bt"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "sources": [
+        {
+          "title": "Precast producer bridge-project claim",
+          "url": "https://agcprecast.com.gh/",
+          "status": "research-lead",
+          "registry": "asia-africa-sources.json",
+          "id": "GH-AGC-LEAD"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "sources": [],
+      "families": [
+        {
+          "name": "GrExtendedISection",
+          "module": "bridgebeams.gr.egnatia_extended_i",
+          "count": 0,
+          "profiles": [],
+          "note": "Parametric template: source does not specify all flange thicknesses; zero fixed profiles counted."
+        }
+      ],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GL",
+      "name": "Greenland",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GD",
+      "name": "Grenada",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GU",
+      "name": "Guam",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GT",
+      "name": "Guatemala",
+      "sources": [
+        {
+          "title": "Benque Viejo bridge construction drawings, CA-9",
+          "url": "https://sistemas.segeplan.gob.gt/share/SCHE%24SINIP/PLANOS_DISENOS/24234-HCGGZEXDNP.pdf",
+          "status": "primary_indexed_drawing_download_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "gt_benque"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "GG",
+      "name": "Guernsey",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "sources": [
+        {
+          "title": "Preparatory survey for reconstruction of a bridge on National Road3 in Guinea",
+          "url": "https://openjicareport.jica.go.jp/pdf/12323457_01.pdf",
+          "status": "primary_project_alternatives_document",
+          "registry": "europe-americas-sources.json",
+          "id": "gn_jica"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GY",
+      "name": "Guyana",
+      "sources": [
+        {
+          "title": "Demerara River Bridge precast-girder installation",
+          "url": "https://dpi.gov.gy/first-precast-girder-installed-for-new-demerara-river-bridge/",
+          "status": "primary_project_source",
+          "registry": "europe-americas-sources.json",
+          "id": "gy_dpi"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "HT",
+      "name": "Haiti",
+      "sources": [
+        {
+          "title": "Fauch\u00e9 bridge reconstruction resettlement plan and structural alternatives",
+          "url": "https://www.mtptc.gouv.ht/media/upload/doc/publications/PAR_Fauch_FINAL_2011_10-13.pdf",
+          "status": "primary_project_alternatives_document",
+          "registry": "europe-americas-sources.json",
+          "id": "ht_fauche"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "HM",
+      "name": "Heard Island and McDonald Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "HN",
+      "name": "Honduras",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "sources": [
+        {
+          "title": "FPT bridge girder family",
+          "url": "https://ferrobeton.hu/images/upload/content/1492/files/FPT%20H%C3%8DDG.%20CSAL%C3%81D.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "hu_fpt"
+        },
+        {
+          "title": "FP bridge girder family",
+          "url": "https://ferrobeton.hu/images/upload/content/1490/files/FP%20H%C3%8DDG.%20CSAL%C3%81D.pdf",
+          "status": "downloaded_not_fully_transcribed",
+          "registry": "europe-americas-sources.json",
+          "id": "hu_fp"
+        },
+        {
+          "title": "FI-150 prestressed bridge girders",
+          "url": "https://ferrobeton.hu/images/upload/content/1489/files/FI%20150.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "hu_fi150"
+        },
+        {
+          "title": "ITG prestressed bridge girder family",
+          "url": "https://ferrobeton.hu/images/upload/content/1524/files/ITG%20H%C3%8DDG.%20CSAL%C3%81D0715.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "hu_itg"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 4,
+      "researched": true
+    },
+    {
+      "code": "IS",
+      "name": "Iceland",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "sources": [
+        {
+          "title": "Guidelines for Quality Control, Erection, Inspection & Maintenance of PSC Girders, BS-141, March2025",
+          "url": "https://rdso.indianrailways.gov.in/uploads/BS-141.pdf",
+          "status": "web-readable-local-download-blocked",
+          "registry": "india-followup.json",
+          "id": "IN-RDSO-BS141"
+        },
+        {
+          "title": "Delhi\u2013Vadodara Expressway packageII, VolumeIII structural drawings, July2019",
+          "url": "https://nhai.gov.in/nhai/sites/default/files/Agreements_document/pkg2-VOL-III.pdf",
+          "status": "downloaded-partial-dimensions-transcribed",
+          "registry": "india-followup.json",
+          "id": "IN-NHAI-DELHI-VADODARA-PKG2"
+        },
+        {
+          "title": "Standard RCC T-beam and slab superstructure,32mspan,13mwidth,zero skew,January2025",
+          "url": "https://www.morth.gov.in/sites/default/files/comprehensive_compendium_circular/1910.6-%2032m%20span%20with%200%20skew%20Bridge%20Drawing.pdf",
+          "status": "official-indexed-drawing-download-blocked",
+          "registry": "india-followup.json",
+          "id": "IN-MORTH-RCC32-2025"
+        },
+        {
+          "title": "Accelerated Bridge Construction,IPWEseminarNovember2023",
+          "url": "https://www.iricen.gov.in/iricen/ipwe_seminar/2017/2024%20Session-I/IPWE%20Nov%2023%20Vol-I%20Paper%207.pdf",
+          "status": "official-indexed-family-list",
+          "registry": "india-followup.json",
+          "id": "IN-IRICEN-ABC2023"
+        },
+        {
+          "title": "IRICENJournalNovember2021,RDSO-B/10273PSC-Ianalysisreference",
+          "url": "https://iricen.gov.in/iricen/journals/Nov-2021.pdf",
+          "status": "official-indexed-drawing-reference",
+          "registry": "india-followup.json",
+          "id": "IN-IRICEN-B10273"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 5,
+      "researched": true
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "sources": [
+        {
+          "title": "WIKA Beton product brochure 2022",
+          "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1660206289_Brosur%20WTON%202022.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ID-WIKA-2022"
+        },
+        {
+          "title": "Voided slab product manual",
+          "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1700029120_Manual%20Voided%20Slab.pdf",
+          "status": "downloaded-untranscribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ID-WIKA-VOIDED-MANUAL"
+        },
+        {
+          "title": "PC I girder handling manual",
+          "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1700029057_Manual%20Produk%20PC%20I%20Girder.pdf",
+          "status": "downloaded-untranscribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ID-WIKA-PCI-MANUAL"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 3,
+      "researched": true
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "sources": [
+        {
+          "title": "Completed projects",
+          "url": "https://www.pishtanideh.com/\u067e\u0631\u0648\u0698\u0647-\u0647\u0627/\u067e\u0631\u0648\u0698\u0647\u0647\u0627\u06cc-\u0627\u062c\u0631\u0627-\u0634\u062f\u0647/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "IR-PISHTANIDEH"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "sources": [
+        {
+          "title": "Prestressed and post-tensioned bridge girder production",
+          "url": "https://dijla-precast.com/production-lines/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "IQ-DIJLA"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "sources": [
+        {
+          "title": "Bridge Beam Manual, 3rd Edition",
+          "url": "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+          "status": "inherited_local_source_verified",
+          "registry": "europe-americas-sources.json",
+          "id": "ie_banagher"
+        },
+        {
+          "title": "Civil brochure",
+          "url": "http://concast.ie/wp-content/uploads/2020/03/Concast_Civil.pdf",
+          "status": "inherited_local_source_verified",
+          "registry": "europe-americas-sources.json",
+          "id": "ie_concast"
+        },
+        {
+          "title": "Bridge Beam Manual, 3rd Edition \u2014 Solid Box SD1-SD8, width classes (1)-(4)",
+          "url": "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+          "status": "nominal_dimensioned_geometry_32_sections_implemented_class4_property_discrepancies_preserved",
+          "registry": "banagher-pending-families.json",
+          "id": "banagher_solid_box_pending"
+        },
+        {
+          "title": "Bridge Beam Manual, 3rd Edition \u2014 W1,W3,W5,W7-W19",
+          "url": "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+          "status": "current_catalogue_geometry_16_sections_implemented_with_cad_lower_contour",
+          "registry": "banagher-pending-families.json",
+          "id": "banagher_w_pending"
+        }
+      ],
+      "families": [
+        {
+          "name": "IeMBeamSection",
+          "module": "bridgebeams.ie.ie_m_beam",
+          "count": 11,
+          "profiles": [
+            "M1",
+            "M680",
+            "M2",
+            "M3",
+            "M4",
+            "M5",
+            "M6",
+            "M7",
+            "M8",
+            "M9",
+            "M10"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeMYBeamSection",
+          "module": "bridgebeams.ie.ie_my_beam",
+          "count": 7,
+          "profiles": [
+            "MY1",
+            "MY2",
+            "MY3",
+            "MY4",
+            "MY5",
+            "MY6",
+            "MY7"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeMYEBeamSection",
+          "module": "bridgebeams.ie.ie_my_beam",
+          "count": 7,
+          "profiles": [
+            "MYE1",
+            "MYE2",
+            "MYE3",
+            "MYE4",
+            "MYE5",
+            "MYE6",
+            "MYE7"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeSYBeamSection",
+          "module": "bridgebeams.ie.ie_sy_beam",
+          "count": 6,
+          "profiles": [
+            "SY1",
+            "SY2",
+            "SY3",
+            "SY4",
+            "SY5",
+            "SY6"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeSYEBeamSection",
+          "module": "bridgebeams.ie.ie_sy_beam",
+          "count": 6,
+          "profiles": [
+            "SYE1",
+            "SYE2",
+            "SYE3",
+            "SYE4",
+            "SYE5",
+            "SYE6"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeSolidBoxBeamSection",
+          "module": "bridgebeams.ie.ie_solid_box",
+          "count": 32,
+          "profiles": [
+            "SD1 (1)",
+            "SD2 (1)",
+            "SD3 (1)",
+            "SD4 (1)",
+            "SD5 (1)",
+            "SD6 (1)",
+            "SD7 (1)",
+            "SD8 (1)",
+            "SD1 (2)",
+            "SD2 (2)",
+            "SD3 (2)",
+            "SD4 (2)",
+            "SD5 (2)",
+            "SD6 (2)",
+            "SD7 (2)",
+            "SD8 (2)",
+            "SD1 (3)",
+            "SD2 (3)",
+            "SD3 (3)",
+            "SD4 (3)",
+            "SD5 (3)",
+            "SD6 (3)",
+            "SD7 (3)",
+            "SD8 (3)",
+            "SD1 (4)",
+            "SD2 (4)",
+            "SD3 (4)",
+            "SD4 (4)",
+            "SD5 (4)",
+            "SD6 (4)",
+            "SD7 (4)",
+            "SD8 (4)"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeTBeamSection",
+          "module": "bridgebeams.ie.ie_t_beam",
+          "count": 10,
+          "profiles": [
+            "T1",
+            "T2",
+            "T3",
+            "T4",
+            "T5",
+            "T6",
+            "T7",
+            "T8",
+            "T9",
+            "T10"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeTYBeamSection",
+          "module": "bridgebeams.ie.ie_ty_beam",
+          "count": 40,
+          "profiles": [
+            "TY3 bs",
+            "TY4 bs",
+            "TY5 bs",
+            "TY6 bs",
+            "TY7 bs",
+            "TY8 bs",
+            "TY9 bs",
+            "TY10 bs",
+            "TY11 bs",
+            "TYE3 bs",
+            "TYE4 bs",
+            "TYE5 bs",
+            "TYE6 bs",
+            "TYE7 bs",
+            "TYE8 bs",
+            "TYE9 bs",
+            "TYE10 bs",
+            "TYE11 bs",
+            "TY1 ss",
+            "TY2 ss",
+            "TY3 ss",
+            "TY4 ss",
+            "TY5 ss",
+            "TY6 ss",
+            "TY7 ss",
+            "TY8 ss",
+            "TY9 ss",
+            "TY10 ss",
+            "TY11 ss",
+            "TYE1 ss",
+            "TYE2 ss",
+            "TYE3 ss",
+            "TYE4 ss",
+            "TYE5 ss",
+            "TYE6 ss",
+            "TYE7 ss",
+            "TYE8 ss",
+            "TYE9 ss",
+            "TYE10 ss",
+            "TYE11 ss"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeUBeamSection",
+          "module": "bridgebeams.ie.ie_u_beam",
+          "count": 13,
+          "profiles": [
+            "U600",
+            "U700",
+            "U1",
+            "U3",
+            "U5",
+            "U7",
+            "U8",
+            "U9",
+            "U10",
+            "U11",
+            "U12",
+            "SU11",
+            "SU12"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeUMBBeamSection",
+          "module": "bridgebeams.ie.ie_m_beam",
+          "count": 11,
+          "profiles": [
+            "UMB1",
+            "UMB680",
+            "UMB2",
+            "UMB3",
+            "UMB4",
+            "UMB5",
+            "UMB6",
+            "UMB7",
+            "UMB8",
+            "UMB9",
+            "UMB10"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeWBeamSection",
+          "module": "bridgebeams.ie.ie_w",
+          "count": 16,
+          "profiles": [
+            "W1",
+            "W3",
+            "W5",
+            "W7",
+            "W8",
+            "W9",
+            "W10",
+            "W11",
+            "W12",
+            "W13",
+            "W14",
+            "W15",
+            "W16",
+            "W17",
+            "W18",
+            "W19"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeYBeamSection",
+          "module": "bridgebeams.ie.ie_y_beam",
+          "count": 8,
+          "profiles": [
+            "Y1",
+            "Y2",
+            "Y3",
+            "Y4",
+            "Y5",
+            "Y6",
+            "Y7",
+            "Y8"
+          ],
+          "note": ""
+        },
+        {
+          "name": "IeYEBeamSection",
+          "module": "bridgebeams.ie.ie_ye_beam",
+          "count": 8,
+          "profiles": [
+            "YE1",
+            "YE2",
+            "YE3",
+            "YE4",
+            "YE5",
+            "YE6",
+            "YE7",
+            "YE8"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 175,
+      "source_count": 4,
+      "researched": true
+    },
+    {
+      "code": "IM",
+      "name": "Isle of Man",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "sources": [
+        {
+          "title": "Prestressed U, AASHTO and reversed-DT bridge products",
+          "url": "https://www.cebus-rimon.co.il/en/products/productsinfrastructure/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "IL-CEBUS-RIMON"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "sources": [
+        {
+          "title": "Bridge beams",
+          "url": "https://www.paver.it/wp-content/uploads/2024/08/paver-via_2021_travi-da-ponte.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "it_paver"
+        },
+        {
+          "title": "HP 125 constant section",
+          "url": "https://www.paver.it/wp-content/uploads/2024/08/hp-125-sezione-filante.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "it_hp125"
+        },
+        {
+          "title": "UHP 250 constant section",
+          "url": "https://www.paver.it/wp-content/uploads/2024/08/uhp-250-sezione-filante.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "it_uhp250"
+        },
+        {
+          "title": "HTP bridge beam",
+          "url": "https://www.paver.it/wp-content/uploads/2024/08/htp.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "it_htp"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 4,
+      "researched": true
+    },
+    {
+      "code": "CI",
+      "name": "Ivory Coast",
+      "sources": [
+        {
+          "title": "Yopougon precast bonded-wire girder specification",
+          "url": "https://www.mcacotedivoire.ci/uploads/pdf3/MCA-CI_QPBS290%20DAO%20BPaix%20et%20Yop%20Exp_Addendum%20n01_06092022_VF.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "CI-MCA-YOPOUGON"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "JM",
+      "name": "Jamaica",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "sources": [
+        {
+          "title": "Prestressed-concrete bridge girders",
+          "url": "https://precon.co.jp/download/doboku-catalog/04-bridge/pc-bridge-girder.pdf",
+          "status": "access-blocked",
+          "registry": "asia-africa-sources.json",
+          "id": "JP-SMC-PC"
+        },
+        {
+          "title": "PCCEN Tohoku: pretensioned beam-bridge girder design and construction in deicing-salt regions, 2017-03-23",
+          "url": "https://www.thr.mlit.go.jp/road/sesaku/manual/20170323point2.pdf",
+          "status": "PDF transcription",
+          "registry": "pdf-transcriptions.json",
+          "id": "jp"
+        }
+      ],
+      "families": [
+        {
+          "name": "JisTGirderSection",
+          "module": "bridgebeams.jp.jis_t_girders",
+          "count": 14,
+          "profiles": [
+            "AG18",
+            "AG19",
+            "AG20",
+            "AG21",
+            "AG22",
+            "AG23",
+            "AG24",
+            "BG18",
+            "BG19",
+            "BG20",
+            "BG21",
+            "BG22",
+            "BG23",
+            "BG24"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 14,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "JE",
+      "name": "Jersey",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "JO",
+      "name": "Jordan",
+      "sources": [
+        {
+          "title": "Wadi Mujib precast transverse bridge beams",
+          "url": "https://www.cecc.com.jo/projects.php?cat=31&id=84",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "JO-CECC-MUJIB"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "sources": [
+        {
+          "title": "TBN bridge beam",
+          "url": "https://www.azmk.kz/?cat=0&frame=product&item=71",
+          "status": "primary_search_index_table",
+          "registry": "europe-americas-sources.json",
+          "id": "kz_azmk_tbn"
+        },
+        {
+          "title": "VTK bridge beam 21,24,33 m",
+          "url": "https://www.azmk.kz/?cat=0&frame=product&item=73",
+          "status": "primary_search_index_table",
+          "registry": "europe-americas-sources.json",
+          "id": "kz_azmk_vtk"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "sources": [
+        {
+          "title": "Mombasa ring-road AASHTO girder moulds",
+          "url": "https://moldtechsl.es/en/projects/post-tensioned-bridge-girders-in-kenya/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "KE-MOLDTECH"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "KI",
+      "name": "Kiribati",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "XK",
+      "name": "Kosovo",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "sources": [
+        {
+          "title": "Sabah Al Ahmad Sea City precast bridge girders",
+          "url": "https://www.index-precast.com/infrastructure-projects",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "KW-INDEX"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "KG",
+      "name": "Kyrgyzstan",
+      "sources": [
+        {
+          "title": "Construction-material conformity-certificate register",
+          "url": "https://minstroy.gov.kg/ru/building/materials/sertificate?direction=desc&page=168&sort=c.validtyPeriod",
+          "status": "primary_authority_product_register",
+          "registry": "europe-americas-sources.json",
+          "id": "kg_ministry_pm"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "LA",
+      "name": "Laos",
+      "sources": [
+        {
+          "title": "Lao PC girder standard-drawing provenance",
+          "url": "https://openjicareport.jica.go.jp/pdf/12013090_02.pdf",
+          "status": "research-lead",
+          "registry": "asia-africa-sources.json",
+          "id": "LA-JICA-2010"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "sources": [
+        {
+          "title": "Reinforced concrete",
+          "url": "https://www.tilts.lv/dzelzsbetons",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "lv_tilts"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "sources": [
+        {
+          "title": "Fidar precast post-tensioned bridge beams",
+          "url": "https://www.cclint.com/case-studies/fidar-bridge-lebanon/",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "LB-CCL-FIDAR"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MO",
+      "name": "Macau",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "sources": [
+        {
+          "title": "JKR standard and OKA modified prestressed T beams",
+          "url": "https://www.oka.com.my/index.asp?CompanyID=29&LanguagesID=1&TitleReferenceID=1215",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "MY-OKA-PRT"
+        },
+        {
+          "title": "Prestasi beam range and properties",
+          "url": "https://prestasi-concrete.com/products/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "MY-PRESTASI"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "MV",
+      "name": "Maldives",
+      "sources": [
+        {
+          "title": "Greater Mal\u00e9 Connectivity Project precast segment dimensions",
+          "url": "https://www.afcons.com/sites/default/files/2023-08/INSIGHT-JULY-2023.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "MV-AFCONS-GMCP"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MH",
+      "name": "Marshall Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "sources": [
+        {
+          "title": "Precast components catalogue",
+          "url": "https://sepsacv.com.mx/wp-content/uploads/2022/02/CATALOGO-DE-PIEZAS-SEPSA-V-05-27-21.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "mx_sepsa"
+        },
+        {
+          "title": "Product catalogue version 1.1 March 2022",
+          "url": "https://anippac.org.mx/wp-content/uploads/2022/03/Catalogo-de-productos-ANIPPAC-Version-1.1-Mar-22.pdf",
+          "status": "download_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "mx_anippac"
+        }
+      ],
+      "families": [
+        {
+          "name": "SepsaIGirderSection",
+          "module": "bridgebeams.mx.sepsa_i_girder",
+          "count": 7,
+          "profiles": [
+            "I-MODIFIED",
+            "II",
+            "III",
+            "IV",
+            "IV-MODIFIED",
+            "V",
+            "VI"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 7,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "sources": [
+        {
+          "title": "Bridge rehabilitation execution-design update, M5 km215+530: explanatory report",
+          "url": "https://www.asd.md/storage/topic/thumbs/files/1.%2006-15_439.%20Volumul%201.%20Memoriu%20explicativ.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "md_asd"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "MC",
+      "name": "Monaco",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MN",
+      "name": "Mongolia",
+      "sources": [
+        {
+          "title": "First Ring Road, Ulaanbaatar \u2014 Technical Requirements, PartIII-B",
+          "url": "https://user.tender.gov.mn/uploads/techspec/68c2ce03aef2e.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "MN-FIRST-RING-ROAD"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "sources": [
+        {
+          "title": "Precast girder installation, Mijakovi\u0107i\u2013Vrulja bridges",
+          "url": "https://bemax.me/en/vijesti/the-installation-of-the-girders-on-the-bridge-on-the-mijakovici-vrulja-road-has-begun/",
+          "status": "primary_project_source",
+          "registry": "europe-americas-sources.json",
+          "id": "me_bemax"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "MS",
+      "name": "Montserrat",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "sources": [
+        {
+          "title": "Industrial prestressed beams for buildings and bridges",
+          "url": "https://sadet.ma/wp-content/uploads/2023/09/poutres-industrrielles.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "MA-SADET-I"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MM",
+      "name": "Myanmar",
+      "sources": [
+        {
+          "title": "PC-I and PC-box bridge drawing volume",
+          "url": "https://openjicareport.jica.go.jp/pdf/12304721_01.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "MM-JICA-DRAWINGS"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "NR",
+      "name": "Nauru",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "sources": [
+        {
+          "title": "Standard precast reinforced-concrete beams for 25 m span",
+          "url": "https://dor.gov.np/home/publication/standard-superstructures-for-road-bridges/force/25-m-simply-supported-span-rc-deck-with-precast-rc-beams-compressed",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "NP-DOR-PRECAST-25"
+        },
+        {
+          "title": "Standard precast reinforced-concrete beams for 20 m span",
+          "url": "https://dor.gov.np/home/publication/standard-superstructures-for-road-bridges/force/2-m-simply-supported-span-rc-deck-with-precast-rc-beams-compressed",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "NP-DOR-PRECAST-20"
+        },
+        {
+          "title": "Standard superstructure drawings library",
+          "url": "https://dor.gov.np/index.php/home/publication/standard-superstructures-for-road-bridges",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "NP-DOR-INDEX"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 3,
+      "researched": true
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "sources": [
+        {
+          "title": "HRP and HIP bridge girders",
+          "url": "https://www.haitsma.nl/media/241925/folder-hrp-hip.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "nl_hip"
+        },
+        {
+          "title": "HKO and HKO-XL slab girders",
+          "url": "https://www.haitsma.nl/media/kbqasilf/hko-hko-xl-folder.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "nl_hko"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "NC",
+      "name": "New Caledonia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "sources": [
+        {
+          "title": "NZTA Research Report 364, December 2008",
+          "url": "https://www.nzta.govt.nz/resources/research/reports/364/",
+          "status": "PDF transcription",
+          "registry": "pdf-transcriptions.json",
+          "id": "nz"
+        }
+      ],
+      "families": [
+        {
+          "name": "NzHollowCoreSection",
+          "module": "bridgebeams.nz.hollow_core",
+          "count": 4,
+          "profiles": [
+            "650 inner",
+            "900 inner",
+            "587 inner",
+            "587 outer"
+          ],
+          "note": "Outer650/900 unresolved; optional drip grooves/local holes excluded. Circular approximation resolution does not add profiles."
+        },
+        {
+          "name": "NzIBeamSection",
+          "module": "bridgebeams.nz.i_beams",
+          "count": 2,
+          "profiles": [
+            "1500",
+            "1600"
+          ],
+          "note": ""
+        },
+        {
+          "name": "NzSuperTSection",
+          "module": "bridgebeams.nz.super_t",
+          "count": 3,
+          "profiles": [
+            "1025 x2490",
+            "1225 x2490",
+            "1225 x1990"
+          ],
+          "note": "Three source width/depth arrangements; arbitrary top-width overrides excluded."
+        }
+      ],
+      "count": 9,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "NI",
+      "name": "Nicaragua",
+      "sources": [
+        {
+          "title": "Precast concrete bridge projects",
+          "url": "https://concreteratotal.com/proyectos-de-concreto-prefabricados/",
+          "status": "verified_web_project_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "ni_total"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "sources": [
+        {
+          "title": "Nwaja precast prestressed U-girder bridges",
+          "url": "https://www.kedmor.co.il/nwaja-bridges",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "NG-NWAJA"
+        },
+        {
+          "title": "Precast full-span and segmental bridge decks",
+          "url": "https://www.julius-berger.com/references/admiralty-alexander-link-bridge-lagos",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "NG-JULIUS-BERGER"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "NU",
+      "name": "Niue",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "NF",
+      "name": "Norfolk Island",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "KP",
+      "name": "North Korea",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "sources": [
+        {
+          "title": "Civil engineering",
+          "url": "https://www.fabrikakarpos.com.mk/niskogradba/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "mk_karpos"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "MP",
+      "name": "Northern Mariana Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "sources": [
+        {
+          "title": "Statens vegvesen V426 Prefabrikkerte brubjelker",
+          "url": "https://www.vegvesen.no/globalassets/fag/handboker/hb-v426-prefabrikkerte-brubjelker.pdf",
+          "status": "PDF transcription",
+          "registry": "pdf-transcriptions.json",
+          "id": "no"
+        }
+      ],
+      "families": [
+        {
+          "name": "NoNtbKtbSection",
+          "module": "bridgebeams.no.ntb_ktb",
+          "count": 10,
+          "profiles": [
+            "NTB800-400x1400",
+            "KTB570-400x1400",
+            "NTB1000-300x1200",
+            "KTB1200",
+            "NTB1200-220x1000",
+            "KTB1000",
+            "NTB1200-220x800",
+            "KTB800",
+            "NTB1200-220x600",
+            "KTB600"
+          ],
+          "note": "Includes explicitly recorded user-inferred15 mm bottom chamfers."
+        }
+      ],
+      "count": 10,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "sources": [
+        {
+          "title": "Precast beam types and applications",
+          "url": "https://ophioman.com/wp-content/uploads/2018/02/Corporate_Brochure.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "OM-OPHIOLITE"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "sources": [
+        {
+          "title": "Bridge girder casting-yard project capability",
+          "url": "https://www.edsintl-pk.com/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "PK-EDS"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "PW",
+      "name": "Palau",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "PS",
+      "name": "Palestine",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "PA",
+      "name": "Panama",
+      "sources": [
+        {
+          "title": "Bridges",
+          "url": "https://pacadar.com/category/soluciones/puentes/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "pa_pacadar"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "sources": [
+        {
+          "title": "Prestressed precast concrete for PNG bridges",
+          "url": "https://cbbuilders.com.pg/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "PG-CB-BUILDERS"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "PY",
+      "name": "Paraguay",
+      "sources": [
+        {
+          "title": "Precast pretensioned girder bridge",
+          "url": "https://covipa.com.py/portfolio/obra-puentes-consorcio-santa-lucia-ii/",
+          "status": "web_access_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "py_covipa"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CN",
+      "name": "People's Republic of China",
+      "sources": [
+        {
+          "title": "Consultation on standard drawings for precast prestressed concrete T girders",
+          "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/t20220329_10565851.html",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "CN-CQ-T-DRAFT-2022"
+        },
+        {
+          "title": "Precast prestressed T-girder standard drawings, 30m, C series",
+          "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/W020220329617790453573.pdf",
+          "status": "access-blocked",
+          "registry": "asia-africa-sources.json",
+          "id": "CN-CQ-T30-C-DRAWINGS"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "sources": [
+        {
+          "title": "Precast concrete products",
+          "url": "https://www.supermix.com.pe/wp-content/uploads/2024/07/brochure-prefabricados-concreto.pdf",
+          "status": "download_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "pe_supermix"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "sources": [
+        {
+          "title": "DPWH project drawings for AASHTO Type IV girders",
+          "url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/webform/civil_works/advertisement/25a00296_plans.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "PH-DPWH-25A00296"
+        },
+        {
+          "title": "Precast prestressed girder producer",
+          "url": "https://www.freyfil.com.ph/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "PH-FREYFIL"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "PN",
+      "name": "Pitcairn Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "sources": [],
+      "families": [
+        {
+          "name": "MostostalTSection",
+          "module": "bridgebeams.pl.mostostal_t_girders",
+          "count": 6,
+          "profiles": [
+            "T12",
+            "T15",
+            "T18",
+            "T21",
+            "T24",
+            "T27"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 6,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "sources": [
+        {
+          "title": "Factory production control certificate annex",
+          "url": "https://www.vigobloco.pt/uploads/base/ficheiros/6842f78929a7c932576145.pdf",
+          "status": "download_blocked",
+          "registry": "europe-americas-sources.json",
+          "id": "pt_vigobloco"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "sources": [
+        {
+          "title": "Ashghal SD 5-1-101 Rev 1, October 2013",
+          "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-101%20Rev%201%20Q-Girder%20Sections.pdf",
+          "status": "PDF transcription",
+          "registry": "pdf-transcriptions.json",
+          "id": "qa"
+        }
+      ],
+      "families": [
+        {
+          "name": "QaQBeamSection",
+          "module": "bridgebeams.qa.q_beams",
+          "count": 5,
+          "profiles": [
+            "T1",
+            "T2",
+            "T3",
+            "T4",
+            "T5"
+          ],
+          "note": "Documented reconstructed profiles with source-rounding residuals."
+        }
+      ],
+      "count": 5,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CG",
+      "name": "Republic of the Congo",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "sources": [
+        {
+          "title": "Product catalogue",
+          "url": "https://asacons.ro/wp-content/uploads/2025/09/ASA-CONSOLIS-catalog.pdf",
+          "status": "downloaded_not_fully_transcribed",
+          "registry": "europe-americas-sources.json",
+          "id": "ro_asa"
+        },
+        {
+          "title": "Precast elements for road infrastructure",
+          "url": "https://www.somaco.ro/sites/somaco/files/docs/b-infrastructura-rutiera-somaco_2025_web_.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "ro_somaco"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "sources": [
+        {
+          "title": "Bridge girders",
+          "url": "https://mgbkrb.ru/produkcziya-i-uslugi/mostovyie-balki.html",
+          "status": "verified_web_table",
+          "registry": "europe-americas-sources.json",
+          "id": "ru_mgbk"
+        }
+      ],
+      "families": [
+        {
+          "name": "Su3503I33Section",
+          "module": "bridgebeams.ru.su3503_i33",
+          "count": 4,
+          "profiles": [
+            "B3300.174.153",
+            "B3300.194.153",
+            "B3300.174.173",
+            "B3300.194.173"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 4,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "BL",
+      "name": "Saint Barth\u00e9lemy",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SH",
+      "name": "Saint Helena",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "KN",
+      "name": "Saint Kitts and Nevis",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "LC",
+      "name": "Saint Lucia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "MF",
+      "name": "Saint Martin",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "PM",
+      "name": "Saint Pierre and Miquelon",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "VC",
+      "name": "Saint Vincent and the Grenadines",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "WS",
+      "name": "Samoa",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SM",
+      "name": "San Marino",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "sources": [
+        {
+          "title": "Riyadh Metro full-span precast deck beams",
+          "url": "https://www.dlteng.com/Download_files/DLT%20brochure_7.1.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "SA-DLT-RIYADH"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "sources": [
+        {
+          "title": "Dakar-Diamniadio precast RC I-beam structures",
+          "url": "https://www.editions-rgra.com/system/files/revues/rgra_903.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "SN-EIFFAGE-2012"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "sources": [
+        {
+          "title": "Civil engineering",
+          "url": "https://www.rajibelik.rs/niskogradnja",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "rs_raj"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "KAS",
+      "name": "Siachen Glacier",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "sources": [
+        {
+          "title": "Prestressed road and pedestrian bridge beams",
+          "url": "https://coninco.com.sg/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "SG-CONINCO"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SX",
+      "name": "Sint Maarten",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "sources": [
+        {
+          "title": "Bridge girder catalogue",
+          "url": "https://vph.sk/assets/Uploads/ProduktPage/14/Katalog-mostnych-nosnikov.pdf",
+          "status": "downloaded_not_fully_transcribed",
+          "registry": "europe-americas-sources.json",
+          "id": "sk_vph"
+        },
+        {
+          "title": "Prestressed beams VPH PTMN",
+          "url": "https://vph.sk/assets/Uploads/ProduktPage/14/PRESTRESSED-BEAMS-VPH-PTMN.pdf",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "sk_vph_en"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "SOL",
+      "name": "Somaliland",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "sources": [
+        {
+          "title": "Prestressed I/M/Y/T/U bridge-beam catalogue",
+          "url": "https://civilcon-za.co.za/catalog/",
+          "status": "existing-source",
+          "registry": "asia-africa-sources.json",
+          "id": "ZA-CIVILCON"
+        },
+        {
+          "title": "Civilcon I beam dimensions and properties",
+          "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBI.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZA-CIVILCON-I"
+        },
+        {
+          "title": "Civilcon M beam dimensions and properties",
+          "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBM.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZA-CIVILCON-M"
+        },
+        {
+          "title": "Civilcon Y beam dimensions and properties",
+          "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBY.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZA-CIVILCON-Y"
+        },
+        {
+          "title": "Civilcon T beam dimensions and properties",
+          "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBT.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZA-CIVILCON-T"
+        },
+        {
+          "title": "Civilcon U beam dimensions and properties",
+          "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBU.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZA-CIVILCON-U"
+        },
+        {
+          "title": "Civilcon US beam dimensions and properties",
+          "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBUS.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZA-CIVILCON-US"
+        }
+      ],
+      "families": [
+        {
+          "name": "CivilconIBeamSection",
+          "module": "bridgebeams.za.civilcon_i_beam",
+          "count": 20,
+          "profiles": [
+            "I1",
+            "I2",
+            "I3",
+            "I4",
+            "I5",
+            "I6",
+            "I7",
+            "I8",
+            "I9",
+            "I10",
+            "I11",
+            "I12",
+            "I13",
+            "I14",
+            "I15",
+            "I16",
+            "I17",
+            "I18",
+            "I19",
+            "I20"
+          ],
+          "note": ""
+        },
+        {
+          "name": "CivilconYBeamSection",
+          "module": "bridgebeams.za.civilcon_y_beam",
+          "count": 8,
+          "profiles": [
+            "Y1",
+            "Y2",
+            "Y3",
+            "Y4",
+            "Y5",
+            "Y6",
+            "Y7",
+            "Y8"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 28,
+      "source_count": 7,
+      "researched": true
+    },
+    {
+      "code": "GS",
+      "name": "South Georgia and the South Sandwich Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "sources": [
+        {
+          "title": "Historical PSC I girder standard-drawing tendon-work summary",
+          "url": "https://www.codil.or.kr/filebank/original/MA/OTMCMA500808/OTMCMA500808.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "KR-CODIL-HISTORICAL"
+        }
+      ],
+      "families": [
+        {
+          "name": "KhcISection",
+          "module": "bridgebeams.kr.kgm_i_section",
+          "count": 3,
+          "profiles": [
+            "KHC-25",
+            "KHC-30",
+            "KHC-35"
+          ],
+          "note": "Three source standard sizes; KHC-20 and KHC-40 extrapolations excluded."
+        }
+      ],
+      "count": 3,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "sources": [
+        {
+          "title": "Prestressed Concrete Beams",
+          "url": "https://www.geoquest-group.es/wp-content/uploads/sites/17/2023/12/F_Beams_May2012-4.pdf",
+          "status": "downloaded_not_fully_transcribed",
+          "registry": "europe-americas-sources.json",
+          "id": "es_tierra"
+        },
+        {
+          "title": "HP-1 standard bridge collection (historic)",
+          "url": "https://www.boe.es/boe/dias/1977/05/18/pdfs/A10886-10915.pdf",
+          "status": "downloaded_not_fully_transcribed",
+          "registry": "europe-americas-sources.json",
+          "id": "es_hp1"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "sources": [
+        {
+          "title": "ICC RDA precast bridge beams",
+          "url": "https://icc-construct.com/public/products/bridge-beam",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "LK-ICC-RDA"
+        },
+        {
+          "title": "Prestressed bridge beam data sheet",
+          "url": "https://icc-construct.com/wp-content/uploads/2023/04/2-Concrete-bridge-beams-_-bridge-component.pdf",
+          "status": "access-blocked",
+          "registry": "asia-africa-sources.json",
+          "id": "LK-ICC-PDF"
+        },
+        {
+          "title": "RDA I and flat bridge beams",
+          "url": "https://elslanka.com/product/bridge-beams/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "LK-ELS"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 3,
+      "researched": true
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "sources": [
+        {
+          "title": "Atbara precast post-tensioned girders, historical project",
+          "url": "https://documents1.worldbank.org/curated/en/270271468340280874/pdf/multi-page.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "SD-WB-ATBARA-1989"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SR",
+      "name": "Suriname",
+      "sources": [
+        {
+          "title": "Prestressed bridge-girder production",
+          "url": "https://kuldipsingh.net/en/ruwbouw/pre-stressed-concrete/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "sr_kuldipsingh"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "sources": [
+        {
+          "title": "Precast bridges and tunnels",
+          "url": "https://www.precastabetong.heidelbergmaterials.se/sv/prefabricerade_broar_tunnlar",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "se_abetong"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "sources": [
+        {
+          "title": "Precast concrete elements from Obwalden",
+          "url": "https://www.fanger.ch/",
+          "status": "producer_lead_unverified_beam_family",
+          "registry": "europe-americas-sources.json",
+          "id": "ch_fanger"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "ST",
+      "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "sources": [
+        {
+          "title": "Bridge and structural engineering design considerations, first edition May 2020",
+          "url": "https://www.freeway.gov.tw/Upload/DownloadFiles/\u767c\u6587\u9644\u4ef62_\u6a4b\u6881\u8a2d\u8a08\u6ce8\u610f\u4e8b\u9805(\u521d\u7248)%20109.05.04(\u9812\u5b9a\u7a3f)_250654.pdf",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "TW-FREEWAY-2020"
+        }
+      ],
+      "families": [
+        {
+          "name": "TaiwanISection",
+          "module": "bridgebeams.tw.i_section",
+          "count": 5,
+          "profiles": [
+            "IV",
+            "V",
+            "VI",
+            "VII",
+            "VIII"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 5,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "TJ",
+      "name": "Tajikistan",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "sources": [
+        {
+          "title": "Magufuli approach PSC beam construction",
+          "url": "https://ptmc.tongji.edu.cn/yyljsen/article/html/202502005",
+          "status": "research-lead",
+          "registry": "asia-africa-sources.json",
+          "id": "TZ-MAGUFULI"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "sources": [
+        {
+          "title": "Prestressed concrete bridge multibeams",
+          "url": "https://poundconcrete.co.th/product/i-shaped-prestressed-concrete-bridge-beam/",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "TH-POUND-MULTIBEAM"
+        }
+      ],
+      "families": [
+        {
+          "name": "ThDOHIGirderSection",
+          "module": "bridgebeams.th.doh_igirder",
+          "count": 1,
+          "profiles": [
+            "IG-205"
+          ],
+          "note": "Documented simplified reconstruction; see source limitations."
+        }
+      ],
+      "count": 1,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "BS",
+      "name": "The Bahamas",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "GM",
+      "name": "The Gambia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TO",
+      "name": "Tonga",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TT",
+      "name": "Trinidad and Tobago",
+      "sources": [
+        {
+          "title": "Prestressed concrete bridge products",
+          "url": "https://www.prestcon2021.com/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "tt_prestcon"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "sources": [
+        {
+          "title": "Bridge and civil-structure girders",
+          "url": "https://www.prefabind.com/poutres-pour-ouvrages-dart/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "TN-PREFAB-IND"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CYN",
+      "name": "Turkish Republic of Northern Cyprus",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TC",
+      "name": "Turks and Caicos Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TV",
+      "name": "Tuvalu",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "TR",
+      "name": "T\u00fcrkiye",
+      "sources": [
+        {
+          "title": "Bridge girders",
+          "url": "https://www.betonel.com.tr/assets/katalog/koprukirisleri.pdf",
+          "status": "downloaded-untranscribed",
+          "registry": "asia-africa-sources.json",
+          "id": "TR-BETONEL"
+        },
+        {
+          "title": "Precast association member product types 2024",
+          "url": "https://www.prefab.org.tr/uploads/pdfcatalog/2023-yili-sektor-raporu.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "TR-ASSOCIATION"
+        }
+      ],
+      "families": [
+        {
+          "name": "KGMISection",
+          "module": "bridgebeams.tr.kgm_i_section",
+          "count": 4,
+          "profiles": [
+            "I90",
+            "I120",
+            "I140",
+            "I170"
+          ],
+          "note": ""
+        }
+      ],
+      "count": 4,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "sources": [
+        {
+          "title": "Ugandan precast industry report",
+          "url": "https://www.unabcec.co.ug/site/assets/files/1378/the_contractor_magazine_-_issue_08.pdf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "UG-UNABCEC"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "sources": [
+        {
+          "title": "Bridge beams",
+          "url": "https://oberbeton.ua/uk/\u043c\u043e\u0441\u0442\u043e\u0432\u0456-\u0431\u0430\u043b\u043a\u0438/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "ua_oberbeton"
+        },
+        {
+          "title": "Bridge beams/slabs",
+          "url": "https://beton.kovalska.com/products/individual/balky-mostovi/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "ua_kovalska"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "sources": [
+        {
+          "title": "Civil engineering precast bridge girders",
+          "url": "https://www.dubaiprecast.ae/_files/ugd/7455ee_31bff935f5fe4a10a51d9f2dd41faf3a.pdf",
+          "status": "downloaded-untranscribed",
+          "registry": "asia-africa-sources.json",
+          "id": "AE-DUBAI-PRECAST"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "sources": [
+        {
+          "title": "Bridge Beam Manual, 3rd Edition",
+          "url": "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+          "status": "inherited_local_source_verified",
+          "registry": "europe-americas-sources.json",
+          "id": "uk_banagher"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "VI",
+      "name": "United States Virgin Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "US",
+      "name": "United States of America",
+      "sources": [
+        {
+          "title": "5.6-A1-10 Prestressed Concrete I and WF Girders",
+          "url": "https://wsdot.wa.gov/publications/fulltext/Bridge/Web_BSD/5.6_A1_10.PDF",
+          "status": "verified_partial_transcription",
+          "registry": "europe-americas-sources.json",
+          "id": "us_wsdot_iwf"
+        },
+        {
+          "title": "5.6-A1-11 Prestressed Concrete Deck Girders",
+          "url": "https://wsdot.wa.gov/publications/fulltext/Bridge/Web_BSD/5.6_A1_11.PDF",
+          "status": "verified_partial_transcription_preliminary",
+          "registry": "europe-americas-sources.json",
+          "id": "us_wsdot_deck"
+        },
+        {
+          "title": "5.6-A1-13 Prestressed Concrete Tub Girders",
+          "url": "https://wsdot.wa.gov/publications/fulltext/Bridge/Web_BSD/5.6_A1_13.PDF",
+          "status": "verified_partial_transcription_preliminary",
+          "registry": "europe-americas-sources.json",
+          "id": "us_wsdot_tub"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 3,
+      "researched": true
+    },
+    {
+      "code": "UY",
+      "name": "Uruguay",
+      "sources": [
+        {
+          "title": "Products",
+          "url": "https://www.schmidt.com.uy/productos/",
+          "status": "primary_web_source",
+          "registry": "europe-americas-sources.json",
+          "id": "uy_schmidt"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "UZ",
+      "name": "Uzbekistan",
+      "sources": [
+        {
+          "title": "Kuylyuk experimental bridge reinforced-concrete structures plant",
+          "url": "https://www.uzavtoyul.uz/ru/post/qoyliq-tbktzk.html",
+          "status": "primary_authority_producer_identity",
+          "registry": "europe-americas-sources.json",
+          "id": "uz_road_committee"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "VU",
+      "name": "Vanuatu",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "VA",
+      "name": "Vatican City",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "VE",
+      "name": "Venezuela",
+      "sources": [
+        {
+          "title": "Second bridge over the Chama River and associated precast-beam bridges",
+          "url": "https://pilperca.com/proyecto/segundo-puente-sobre-el-rio-chama/",
+          "status": "primary_project_source",
+          "registry": "europe-americas-sources.json",
+          "id": "ve_pilperca"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "sources": [
+        {
+          "title": "Bridge girder product table",
+          "url": "https://tnec.com.vn/dam-super-t/",
+          "status": "dimensions-transcribed",
+          "registry": "asia-africa-sources.json",
+          "id": "VN-TNEC"
+        },
+        {
+          "title": "Girder products",
+          "url": "https://620chauthoi.com/danh-muc-sanpham/san-pham-dam/",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "VN-620"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "WF",
+      "name": "Wallis and Futuna",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "EH",
+      "name": "Western Sahara",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "YE",
+      "name": "Yemen",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "sources": [
+        {
+          "title": "Precast and prestressed bridge beam production",
+          "url": "https://tensor.co.zw/services",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZW-TENSOR"
+        },
+        {
+          "title": "Mbudzi interchange Y8 precast beam decks",
+          "url": "https://www.linkedin.com/pulse/new-mbudzi-interchange-harare-zimbabwe-ovum-corporation-1c2gf",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "ZW-OVUM-Y8"
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "AX",
+      "name": "\u00c5land",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false
+    }
+  ]
+}

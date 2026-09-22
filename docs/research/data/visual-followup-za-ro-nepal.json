@@ -1,0 +1,295 @@
+{
+  "provenance": {
+    "reviewer": "Colin Caprani",
+    "queue_version": 3,
+    "queue_updated": "2026-09-22",
+    "exported": "2026-09-22T11:24:10.339Z",
+    "method": "User supplied visual reading, checked against locally retained source rendering."
+  },
+  "records": [
+    {
+      "id": "za-y",
+      "source_id": "ZA-CIVILCON-Y",
+      "status": "implemented-40mm-ledge",
+      "notch_width_mm": 40,
+      "notch_depth_mm": 50,
+      "dimensions": [
+        {
+          "mark": "Y1",
+          "depth_mm": 700,
+          "top_width_between_notches_mm": 198,
+          "width_across_ledges_mm": 278
+        },
+        {
+          "mark": "Y2",
+          "depth_mm": 800,
+          "top_width_between_notches_mm": 227,
+          "width_across_ledges_mm": 307
+        },
+        {
+          "mark": "Y3",
+          "depth_mm": 900,
+          "top_width_between_notches_mm": 256,
+          "width_across_ledges_mm": 336
+        },
+        {
+          "mark": "Y4",
+          "depth_mm": 1000,
+          "top_width_between_notches_mm": 285,
+          "width_across_ledges_mm": 365
+        },
+        {
+          "mark": "Y5",
+          "depth_mm": 1100,
+          "top_width_between_notches_mm": 313,
+          "width_across_ledges_mm": 393
+        },
+        {
+          "mark": "Y6",
+          "depth_mm": 1200,
+          "top_width_between_notches_mm": 342,
+          "width_across_ledges_mm": 422
+        },
+        {
+          "mark": "Y7",
+          "depth_mm": 1300,
+          "top_width_between_notches_mm": 371,
+          "width_across_ledges_mm": 451
+        },
+        {
+          "mark": "Y8",
+          "depth_mm": 1400,
+          "top_width_between_notches_mm": 400,
+          "width_across_ledges_mm": 480
+        }
+      ],
+      "separate_variant": "70mm topdeck ledge not implemented",
+      "validation": {
+        "tests_passed": 9,
+        "max_area_relative_error": 0.000367,
+        "max_centroid_error_mm": 0.476,
+        "Y1_Zt_relative_error": 0.0033978,
+        "Y1_Zb_relative_error": 0.0016862,
+        "other_moduli_max_relative_error": 0.001
+      },
+      "remaining": [
+        "Y1 published modulus discrepancy",
+        "70mm topdeck variant requires separate modelling"
+      ]
+    },
+    {
+      "id": "za-m",
+      "source_id": "ZA-CIVILCON-M",
+      "status": "visual-task-closed-insufficient-source-detail",
+      "tentative_reading": {
+        "notch_width_mm_approximate": 40,
+        "notch_depth_mm_approximate": 50,
+        "possible_uk_m_equivalence": "User hypothesis; unverified. No source identity or alias established."
+      },
+      "remaining": [
+        "Dimensioned producer/CAD comparison of complete outline",
+        "Source M4 area and M10 table-depth discrepancies"
+      ]
+    },
+    {
+      "id": "ro-42-52",
+      "source_id": "ro_asa",
+      "pdf_page": 97,
+      "status": "full-readable-chains-transcribed-outline-constraints-unresolved",
+      "marks": [
+        "42",
+        "52"
+      ],
+      "maximum_bottom_flange_width_mm": 600,
+      "flat_soffit_width_mm": 530,
+      "lower_width_chain_mm": [
+        10,
+        25,
+        530,
+        25,
+        10
+      ],
+      "half_width_x_coordinates_mm": {
+        "flat_soffit_chamfer_endpoint": 265,
+        "outer_chamfer_endpoint": 290,
+        "maximum_outer_face": 300
+      },
+      "remaining": [
+        "42:140mm waist callout does not explicitly identify tangent/minimum width versus theoretical straight-face intersection; source curve is a drawn cubic, not dimensioned tangent construction.",
+        "52:waist width is not independently printed in this section; copying140mm from42 requires an explicitly labelled shared-profile assumption.",
+        "Need a dimensioned CAD outline or explicit nominal geometry convention, not another reading of the resolved small numerals."
+      ],
+      "sections": [
+        {
+          "mark": "42",
+          "depth_mm": 420,
+          "top_width_mm": 220,
+          "bottom_max_width_mm": 600,
+          "flat_soffit_width_mm": 530,
+          "bottom_to_top_vertical_chain_mm": [
+            25,
+            75,
+            70,
+            200,
+            50
+          ],
+          "waist_width_callout_mm": 140,
+          "curve_callout_original": "5 (leader to curve, no R prefix)",
+          "curve_callout_interpretation_mm": 50
+        },
+        {
+          "mark": "52",
+          "depth_mm": 520,
+          "top_width_mm": 220,
+          "bottom_max_width_mm": 600,
+          "flat_soffit_width_mm": 530,
+          "bottom_to_top_vertical_chain_mm": [
+            25,
+            75,
+            70,
+            200,
+            150
+          ],
+          "waist_width_callout_mm": null,
+          "curve_callout_original": "5 (leader to curve, no R prefix)",
+          "curve_callout_interpretation_mm": 50
+        }
+      ]
+    },
+    {
+      "id": "ro-72-80",
+      "source_id": "ro_asa",
+      "pdf_page": 99,
+      "status": "full-readable-chains-transcribed-radius-closure-conflict",
+      "marks": [
+        "72",
+        "80"
+      ],
+      "maximum_bottom_flange_width_mm": 920,
+      "flat_soffit_width_mm": 850,
+      "lower_width_chain_mm": [
+        10,
+        25,
+        850,
+        25,
+        10
+      ],
+      "half_width_x_coordinates_mm": {
+        "flat_soffit_chamfer_endpoint": 425,
+        "outer_chamfer_endpoint": 450,
+        "maximum_outer_face": 460
+      },
+      "source_discrepancy": "72cm strand-layout view prints90cm, conflicting with92cm dimensioned section and confirmed width chain. Use dimensioned section for geometry; preserve inconsistency.",
+      "remaining": [
+        "The40mm horizontal and48mm vertical upper fillet transitions imply radius48.8mm when exactly tangent to the vertical web, conflicting with R50. Full straight-face tangency adds another constraint; do not silently stretch the radius or fit coordinates.",
+        "90cm strand-layout vs92cm dimensioned-section width conflict remains as documented.",
+        "Producer CAD or explicitly labelled nominal reconstruction convention required for an exact constructor."
+      ],
+      "sections": [
+        {
+          "mark": "72",
+          "depth_mm": 720,
+          "top_width_mm": 1020,
+          "web_width_mm": 270,
+          "bottom_max_width_mm": 920,
+          "flat_soffit_width_mm": 850,
+          "bottom_to_top_vertical_chain_mm": [
+            25,
+            85,
+            80,
+            50,
+            270,
+            48,
+            82,
+            80
+          ],
+          "top_horizontal_chain_mm": [
+            335,
+            40,
+            270,
+            40,
+            335
+          ],
+          "junction_radius_mm": 50
+        },
+        {
+          "mark": "80",
+          "depth_mm": 800,
+          "top_width_mm": 1020,
+          "web_width_mm": 270,
+          "bottom_max_width_mm": 920,
+          "flat_soffit_width_mm": 850,
+          "bottom_to_top_vertical_chain_mm": [
+            25,
+            85,
+            80,
+            50,
+            350,
+            48,
+            82,
+            80
+          ],
+          "top_horizontal_chain_mm": [
+            335,
+            40,
+            270,
+            40,
+            335
+          ],
+          "junction_radius_mm": 50
+        }
+      ],
+      "radius_closure_check": {
+        "assumed_transition_dx_mm": 40,
+        "assumed_transition_dy_mm": 48,
+        "radius_implied_by_vertical_tangency_mm": 48.8,
+        "printed_radius_mm": 50,
+        "dy_implied_by_R50_and_dx40_mm": 48.98979485566356,
+        "formula": "R=(dx^2+dy^2)/(2dx) for a circular arc departing a vertical tangent."
+      }
+    },
+    {
+      "id": "np-chamfers",
+      "source_ids": [
+        "NP-DOR-PRECAST-20",
+        "NP-DOR-PRECAST-25"
+      ],
+      "status": "question-withdrawn-source-detail-insufficient",
+      "user_reading": "there is no cross-sectional information on this.",
+      "followup": "Cross-section labels and width/depth dimensions do exist on PDF7/drawing5/10; supplied full-sheet views did not isolate them. They do not individually specify12mm chamfer applications. No further reading requested.",
+      "corrected_locators": [
+        {
+          "span_m": 20,
+          "pdf_page": 7,
+          "drawing": "5/10",
+          "position": "right centre",
+          "crop": "sources/expansion/asia-africa/nepal-precast20-p7-midspan.png",
+          "depth_stack_mm": [
+            150,
+            65,
+            685,
+            150,
+            250
+          ]
+        },
+        {
+          "span_m": 25,
+          "pdf_page": 7,
+          "drawing": "5/10",
+          "position": "bottom left",
+          "crop": "sources/expansion/asia-africa/nepal-precast25-p7-midspan.png",
+          "depth_stack_mm": [
+            150,
+            65,
+            1085,
+            150,
+            250
+          ]
+        }
+      ],
+      "remaining": [
+        "Explicit corner/chamfer detail or clearly labelled modelling assumption required before exact outline implementation"
+      ]
+    }
+  ]
+}

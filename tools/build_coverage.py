@@ -1,0 +1,147 @@
+#!/usr/bin/env python3
+"""Build offline country coverage from runtime families and research registries.
+
+Run with the project environment. No network is used. Boundaries are cached
+Natural Earth data; see docs/source/_static/coverage/README.md.
+"""
+from __future__ import annotations
+import importlib
+import inspect
+import json
+import sys
+from pathlib import Path
+from html import escape
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
+ASSETS = ROOT / 'docs/source/_static/coverage'
+COUNTRIES = {'aus':'AU','be':'BE','gr':'GR','ie':'IE','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','za':'ZA'}
+NAMES = {'AU':'Australia','BE':'Belgium','GB':'United Kingdom','GR':'Greece','IE':'Ireland','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','ZA':'South Africa'}
+
+
+def implemented():
+    result = {}
+    for package, code in COUNTRIES.items():
+        module = importlib.import_module('bridgebeams.'+package)
+        classes = {value for name,value in vars(module).items()
+                   if inspect.isclass(value) and name.endswith('Section')
+                   and value.__module__.startswith('bridgebeams.'+package+'.')}
+        families=[]
+        for cls in sorted(classes,key=lambda value:value.__name__):
+            name=cls.__name__
+            note=''; variants=[]
+            if name in ('FebeISection','GrExtendedISection'):
+                note='Parametric template: source does not specify all flange thicknesses; zero fixed profiles counted.'
+            elif name=='SuperTGirderSection':
+                variants=[(f'T{i}, subtype{s}',(i,s),{}) for s in (1,2) for i in range(1,6) if not(i==5 and s==1)]
+                note='Nine documented type/subtype combinations; nominal default flange only. Continuous width and web overrides are not additional profiles.'
+            elif name=='IGirderSection':
+                variants=[(f'T{i}',(i,),{}) for i in range(1,5)]
+            elif name=='IeTYBeamSection':
+                variants=[(size+' '+variant,(size,),{'variant':variant})
+                          for variant in ('bs','ss')
+                          for attr in ('SIZES_'+variant.upper(),'SIZES_EDGE_'+variant.upper())
+                          for size in getattr(cls,attr)]
+            elif name=='NzSuperTSection':
+                variants=[('1025 x2490',(1025,),{}),('1225 x2490',(1225,),{}),('1225 x1990',(1225,),{'top_width':1990})]
+                note='Three source width/depth arrangements; arbitrary top-width overrides excluded.'
+            elif name=='NzHollowCoreSection':
+                variants=[(f'{d} {u}',(d,u),{}) for d,u in [(650,'inner'),(900,'inner'),(587,'inner'),(587,'outer')]]
+                note='Outer650/900 unresolved; optional drip grooves/local holes excluded. Circular approximation resolution does not add profiles.'
+            elif name=='ThDOHIGirderSection':
+                variants=[('IG-205',(),{})]
+                note='Documented simplified reconstruction; see source limitations.'
+            else:
+                sizes=getattr(cls,'STANDARD_SIZES',None) or getattr(cls,'SIZES',None) or getattr(cls,'TYPES',None)
+                if sizes is None:
+                    raise RuntimeError(f'No explicit counting rule for {cls.__module__}.{name}')
+                variants=[(str(size),(size,),{}) for size in sizes]
+                if name=='KhcISection':note='Three source standard sizes; KHC-20 and KHC-40 extrapolations excluded.'
+                if name=='NoNtbKtbSection':note='Includes explicitly recorded user-inferred15 mm bottom chamfers.'
+                if name=='QaQBeamSection':note='Documented reconstructed profiles with source-rounding residuals.'
+            # Construct each counted choice; namespace aliases are removed above.
+            labels=[]
+            for label,args,kwargs in variants:
+                beam=cls(*args,**kwargs)
+                poly=getattr(beam,'polygon',None)
+                if poly is None:poly=beam.geometry.geom
+                if poly.is_empty:raise RuntimeError(f'Empty profile: {name} {label}')
+                labels.append(label)
+            families.append({'name':name,'module':cls.__module__,'count':len(labels),'profiles':labels,'note':note})
+        result[code]=families
+    return result
+
+
+def build():
+    boundaries=json.loads((ASSETS/'boundaries.json').read_text())
+    countries={f['code']:{'code':f['code'],'name':f['name'],'sources':[],'families':[]} for f in boundaries['features']}
+    seen_sources={}
+    def add(code,name,source):
+        row=countries.setdefault(code,{'code':code,'name':name,'sources':[],'families':[]})
+        key=(code,source['id'])
+        if key in seen_sources:
+            row['sources'][seen_sources[key]]=source
+            return False
+        seen_sources[key]=len(row['sources'])
+        row['sources'].append(source)
+        return True
+    records=0
+    files=['europe-americas-sources.json','asia-africa-sources.json']
+    if (ROOT/'docs/research/data/india-followup.json').exists():
+        files.append('india-followup.json')
+    for filename in files:
+        data=json.loads((ROOT/'docs/research/data'/filename).read_text())
+        for s in data['sources']:
+            added=add(s['country_code'],s['country'],{'title':s.get('title_en') or s.get('title_original') or s['id'],
+                'url':s.get('url',''),'status':s.get('status','recorded'),'registry':filename,'id':s['id']})
+            records+=int(added)
+    data=json.loads((ROOT/'docs/research/data/pdf-transcriptions.json').read_text())
+    for code,s in data['sources'].items():
+        add(code.upper(),NAMES[code.upper()],{'title':s['title'],'url':s['url'],'status':'PDF transcription','registry':'pdf-transcriptions.json','id':code})
+        records+=1
+    data=json.loads((ROOT/'docs/research/data/banagher-pending-families.json').read_text())
+    for s in data['sources']:
+        # Producer jurisdiction is Ireland. GB records remain independently
+        # sourced in the regional registry, not inferred from distribution.
+        add('IE','Ireland',{'title':s.get('title_en',s['id'])+' — '+', '.join(s.get('families',[])),
+            'url':s.get('url',''),'status':s.get('status','recorded'),'registry':'banagher-pending-families.json','id':s['id']})
+        records+=1
+    for code,families in implemented().items():
+        row=countries.setdefault(code,{'code':code,'name':NAMES[code],'sources':[],'families':[]})
+        row['families']=families
+    for code,row in countries.items():
+        row['name']=NAMES.get(code,row['name'])
+        row['count']=sum(f['count'] for f in row['families'])
+        row['source_count']=len(row['sources'])
+        row['researched']=bool(row['sources'])
+    result={'count_basis':'Named source-backed discrete geometry choices; includes documented reconstructions, excludes namespace aliases, arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.',
+        'source_count_basis':'Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.',
+        'researched_jurisdictions':sum(r['researched'] for r in countries.values()),
+        'source_records':records,'implemented_countries':sum(r['count']>0 for r in countries.values()),
+        'implemented_profiles':sum(r['count'] for r in countries.values()),
+        'countries':sorted(countries.values(),key=lambda r:r['name'])}
+    (ASSETS/'coverage-data.json').write_text(json.dumps(result,indent=2)+'\n')
+    # Fully rendered HTML has no fetch dependency and works through file:// too.
+    template=(ASSETS/'coverage-template.html').read_text()
+    svg=['<svg viewBox="0 0 1080 470" role="group" aria-label="World coverage by implemented profile count">']
+    for f in boundaries['features']:
+        if f['code']=='AQ':continue
+        row=countries[f['code']];count=row['count']
+        level='norecord' if not(row['sources'] or row['families']) else 'zero' if not count else 'low' if count<=5 else 'mid' if count<=15 else 'high' if count<=40 else 'max'
+        label=f"{row['name']}: {count} profiles; {row['source_count']} research records"
+        svg.append(f'<path class="country {level}" data-code="{escape(f["code"])}" tabindex="0" role="button" aria-label="{escape(label)}" d="{f["path"]}"><title>{escape(label)}</title></path>')
+    svg.append('</svg>')
+    rows=[]
+    for r in result['countries']:
+        family=', '.join(f"{f['name']} ({f['count']})" for f in r['families']) or '—'
+        rows.append(f'<tr data-code="{escape(r["code"])}"><th scope="row"><button class="country-select" data-code="{escape(r["code"])}">{escape(r["name"])}</button></th><td>{escape(r["code"])}</td><td>{r["count"]}</td><td>{r["source_count"]}</td><td>{escape(family)}</td></tr>')
+    payload=json.dumps(result).replace('<','\\u003c')
+    output=template.replace('<!-- MAP -->',''.join(svg)).replace('<!-- ROWS -->','\n'.join(rows)).replace('/* DATA */',payload)
+    output=output.replace('<!-- SUMMARY -->',f"{result['implemented_profiles']} implemented profiles · {result['implemented_countries']} countries with fixed profiles · {result['researched_jurisdictions']} researched jurisdictions · {records} source records")
+    (ASSETS/'index.html').write_text(output)
+    assert countries['GB']['count']==0 and countries['IE']['count']>0
+    assert countries['IN']['count']==0 and countries['IN']['researched']
+    print(json.dumps({k:v for k,v in result.items() if k!='countries'},indent=2))
+    print('Nonzero country counts:',{r['code']:r['count'] for r in result['countries'] if r['count']})
+
+if __name__=='__main__':build()

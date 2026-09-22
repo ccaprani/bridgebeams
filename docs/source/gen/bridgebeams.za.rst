@@ -27,4 +27,5 @@ bridgebeams.za
    :recursive:
 
    civilcon_i_beam
+   civilcon_y_beam
 

@@ -1,5 +1,7 @@
 # Asia, Middle East and Africa: sources and translated data
 
+> **Follow-up after visual review:** Civilcon Y1–Y8 are now implemented, and the Nepal review prompt has been corrected; see [the visual follow-up](visual-followup-za-ro-nepal.md). India access and source evidence are refreshed in [the India follow-up](india-followup.md).
+
 Accessed 22 September 2026. This pass records 72 sources across 52 jurisdictions, plus seven jurisdictions with no usable primary girder source established in this pass. It adds 136 factual dimension/property rows (including explicitly flagged source contradictions). Source discovery is not equivalent to implementation readiness: a producer capability page, a project example, a historical standard, and a fully dimensioned authority drawing are separate evidence classes.
 
 The machine-readable register is [asia-africa-sources.json](data/asia-africa-sources.json). Each record preserves original and English titles, organisation, URL, access status, evidence scope, and blockers. Downloaded PDFs and rendered reference images are private working materials in `sources/expansion/asia-africa/`; the register preserves their SHA-256 hashes and PDF page counts. The source PDFs retain their owners' copyright; this report translates technical labels and records dimensional facts rather than reproducing manuals.
@@ -108,7 +110,7 @@ These translations support reading the existing `sources/research/research-china
 
 ### India
 
-- **IN-RDSO-BS141** — [Railway PSC girder and slab standard-drawing index](https://rdso.indianrailways.gov.in/uploads/BS-141.pdf); access-blocked. Official PDF indexed with standard drawing numbers including B-10256/10258/10275/10276/10270/10290. Local connection refused; table column semantic check pending, so no structural-height numbers promoted.
+- **IN-RDSO-BS141** — [Railway PSC girder and slab standard-drawing index](https://rdso.indianrailways.gov.in/uploads/BS-141.pdf); web-readable; local download blocked. The106-page March2025guideline opens through the web reader; local connection remains refused. Standard drawing leads include B-10256/10258/10275/10276/10270/10290; no structural-height numbers are promoted. See the [India follow-up](india-followup.md) for four further primary sources and a downloaded NHAI precast drawing.
 
 ### Pakistan
 

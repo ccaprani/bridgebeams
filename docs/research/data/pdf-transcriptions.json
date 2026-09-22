@@ -436,7 +436,9 @@
       "status": "visually_read",
       "notes": [
         "Void maximum width830 derived from100+630+100 callouts. Outer unit is asymmetric, top1122, bottom1138, void flat430/max630; do not use inner geometry for outer. Source says inner units shall not be used individually in isolation."
-      ]
+      ],
+      "implemented_status": "implemented_gross_profile;587_outer_also_implemented",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "nz",
@@ -463,7 +465,9 @@
       "status": "visually_read",
       "notes": [
         "Outer unit is asymmetric, top1123, bottom1138; void flat430/max630. Source says inner units shall not be used individually in isolation."
-      ]
+      ],
+      "implemented_status": "implemented_gross_profile;587_outer_also_implemented",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "nz",
@@ -491,7 +495,9 @@
       "status": "visually_read",
       "notes": [
         "Designation is587, not576 in earlier brief. Outer unit has one void,308 from right edge; inner unit has two. Note4 permits hexagonal voids provided area, cover, web thickness, location and unit weight maintained; no single universal void polygon."
-      ]
+      ],
+      "implemented_status": "implemented_gross_profile;587_outer_also_implemented",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -513,8 +519,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -535,8 +543,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -558,8 +568,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -580,8 +592,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -601,8 +615,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -621,8 +637,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -642,8 +660,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -662,8 +682,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -683,8 +705,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "no",
@@ -703,8 +727,10 @@
       },
       "status": "visually_read",
       "notes": [
-        "Dimensions selected from concrete-outline leaders; reinforcement dimensions excluded. KTB is asymmetric and has a sloping exterior; no constant web width inferred. Exact small rebates/chamfers still need a coordinate-level profile before implementation."
-      ]
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
     },
     {
       "source_id": "jp",
@@ -934,5 +960,6 @@
     "Norway designation middle number is top width, not universally web thickness;NTB800-400x1400 has220 mm web.",
     "Japan240/152/151 in p9 are stirrup dimensions, not concrete web/flange; they do not override300 mm concrete web.",
     "NZ double hollow core is587 mm, not576 mm."
-  ]
+  ],
+  "implementation_followup": "visual-followup-norway-nz.json"
 }

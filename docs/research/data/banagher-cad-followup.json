@@ -1,0 +1,1375 @@
+{
+  "date": "2026-09-22",
+  "source_workbook": "/mnt/data/sync/consulting/Roughan O'Donovan/Structure B01/05316 Beam Design/05316 Precast Beam Properties.xls",
+  "source_workbook_sha256": "6fef29031818d59e96600517c4e2012441fe2eebb57f998bb84261a30fe9855d",
+  "identical_workbook_copy": "/home/ccaprani/projects/PyBridge/05316 Precast Beam Properties.xls",
+  "worksheets": [
+    "T ",
+    "TX ",
+    "TY SS",
+    "TYE SS",
+    "TYS SS",
+    "TYR SS ",
+    "TY-TYE BS",
+    "TYS-TYR BS",
+    "JS",
+    "Y-YE BS",
+    "YS-YR BS",
+    "SY-HY BS",
+    "U",
+    "HU-SU BS",
+    "MB-UMB",
+    "BOX BEAM",
+    "GR-LR",
+    "DT 60+80",
+    "DT 80+80"
+  ],
+  "extraction": "olefile openstream Contents byte-for-byte; original DWG streams checked against inherited extraction. DXFs previously made with LibreDWG 0.11.3876, copied to persistent ignored local source directory. ezdxf.recover read each DXF and reported zero errors.",
+  "records": [
+    {
+      "ole_stream": "MBD00004C53/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00004C53.dwg",
+      "dwg_sha256": "897a67b452f5541ce11460452adfc123fdcbe5021d4aadcbb99fd3be10119ab8",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00004C53.dxf",
+      "dxf_sha256": "a17890933443379c1cb42d8d48a1ba351e2591daadb4d30f10aaa502cf31b422",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "DIMENSION": 6,
+        "LINE": 6,
+        "LWPOLYLINE": 1,
+        "TEXT": 5
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00007A4B/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00007A4B.dwg",
+      "dwg_sha256": "326394279bc102c964eb99539d065ddefa9e2c7c5e013cd02cf7ae15466f81ba",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00007A4B.dxf",
+      "dxf_sha256": "91f26d27f12caf7f021633abcfab1e2cbe50633c3dfe1b04b4414e76819b7f85",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 17,
+        "LINE": 215,
+        "DIMENSION": 23
+      },
+      "layers": [
+        "DIM",
+        "DIMS",
+        "OUTLINE",
+        "STRANDS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0000B526/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0000B526.dwg",
+      "dwg_sha256": "49d93512360c642c1c182a6ac3906430c9265fa133cd61843d3f067d28269a4e",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0000B526.dxf",
+      "dxf_sha256": "34a45105323e5ceb13b63826d2295460d6dda508bc227502c0c623381b77349c",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 17,
+        "LINE": 193,
+        "DIMENSION": 22
+      },
+      "layers": [
+        "0",
+        "DIM",
+        "DIMS",
+        "OUTLINE",
+        "STRANDS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0000C24A/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0000C24A.dwg",
+      "dwg_sha256": "28126af3f19c98a25d45913a57b54bbb20b148661015166da82c69e5275daf6f",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0000C24A.dxf",
+      "dxf_sha256": "a5ef618d9e57f50d5ad32e355b5f5e330b50feaf286da3396c1e11835d4d9487",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 17,
+        "TEXT": 4,
+        "LINE": 4,
+        "REGION": 1
+      },
+      "layers": [
+        "0",
+        "DIM"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00011256/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00011256.dwg",
+      "dwg_sha256": "db78779b2ce1d60dfd61afaa5273882adb5b80b594c4704251143d77a3a6f356",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00011256.dxf",
+      "dxf_sha256": "bebc5dc0fda93ed21a84d0f5047ab43df2c93d319cd7f8b5d998f35550c43136",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "HATCH": 1,
+        "DIMENSION": 4,
+        "LINE": 2,
+        "REGION": 1
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00011259/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00011259.dwg",
+      "dwg_sha256": "727e9eb81f9a26db603e5f4ca5edc3a661ef85fbbbd71e1e2c9c7df72525d76e",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00011259.dxf",
+      "dxf_sha256": "2f12429392648f2280cfd9c87640755b7ce511ba97702df2928de082d3cb9f69",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "DIMENSION": 18,
+        "LINE": 29,
+        "TEXT": 4
+      },
+      "layers": [
+        "DIM"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00020331/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00020331.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00020331.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000236BF/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000236BF.dwg",
+      "dwg_sha256": "dcb6186f176bfd0efdabaa21d6d95abb8c3a06d34f84f94ae7da8b3276202c69",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000236BF.dxf",
+      "dxf_sha256": "19bda7d71ce96b5be33202cc459265cdc661d0140cad28b85869ecbd0a5b8408",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "LINE": 133,
+        "TEXT": 367,
+        "ARC": 23,
+        "POINT": 500,
+        "DIMENSION": 27,
+        "MTEXT": 6,
+        "HATCH": 2,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "0",
+        "DIM",
+        "LINK01",
+        "OUTLINE",
+        "Y4",
+        "links"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD000282FD/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000282FD.dwg",
+      "dwg_sha256": "10f97952f5c81cb46a934c76ce755f5c3770899fb2872113c568b25d1883afca",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000282FD.dxf",
+      "dxf_sha256": "6432d02ce2f0cb4efa7a25964083bc2dff15fbc0decc8c4fdfd18bc5c6de84e8",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "HATCH": 1,
+        "DIMENSION": 8,
+        "LINE": 2,
+        "LWPOLYLINE": 1,
+        "TEXT": 5
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000288D9/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000288D9.dwg",
+      "dwg_sha256": "8b8530c2d91ec6948b8572a71a630506fd23d5e8c5ad38adf56d9dd5f1a61b69",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000288D9.dxf",
+      "dxf_sha256": "07ec0a149bb3df30d4764f746650d99816c12a78a08ad84bad86f949094b01d8",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "LINE": 6,
+        "DIMENSION": 8,
+        "LWPOLYLINE": 1,
+        "TEXT": 5
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD000393FD/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000393FD.dwg",
+      "dwg_sha256": "5b0c1aeb899be4fbae9303f6a78ce2d935f981729f9f5ff5a6b5b5de81954dde",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000393FD.dxf",
+      "dxf_sha256": "e759af4969f5bab2f9d59c05f7db9857559ef92ba91af5b91b76dab751d3468c",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 4,
+        "DIMENSION": 8,
+        "LINE": 2,
+        "LWPOLYLINE": 1
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00039404/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00039404.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00039404.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0003A6B1/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0003A6B1.dwg",
+      "dwg_sha256": "5ce4d770622686fc9155ac48f41d9f6d7e44c3b83e58b4685374a26b5db67579",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0003A6B1.dxf",
+      "dxf_sha256": "e073d186f2887c7de3f599b7fdfa7232d33839ec95e0c1b1783718da69bf4215",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "LINE": 35,
+        "TEXT": 137,
+        "ARC": 14,
+        "POINT": 130,
+        "DIMENSION": 6,
+        "MTEXT": 4,
+        "HATCH": 1,
+        "LWPOLYLINE": 4
+      },
+      "layers": [
+        "0",
+        "DIM",
+        "LINK01",
+        "Y4"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00044CE7/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00044CE7.dwg",
+      "dwg_sha256": "ca59efd0c118144e3b5aa22d547e571b17cb52631285b0aedd8abd5fed404e73",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00044CE7.dxf",
+      "dxf_sha256": "168c72b4e557c8dc6bc1dd6f961bef4e13e4f3e9470bca18c24d1216d5b715bf",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "HATCH": 1,
+        "DIMENSION": 6,
+        "LINE": 5,
+        "LWPOLYLINE": 1,
+        "TEXT": 5,
+        "ARC": 1
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0006C278/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0006C278.dwg",
+      "dwg_sha256": "e65916e0b4631e8600404a70aa30405b4c3d777ecdf0b628300bff30db452307",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0006C278.dxf",
+      "dxf_sha256": "222fcaade9243c400f54efbe0036124e6de58b2700a3dfe7a91a36bb610cce56",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 15,
+        "TEXT": 4,
+        "LINE": 18,
+        "REGION": 1
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0008DFFE/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0008DFFE.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0008DFFE.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00090E10/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00090E10.dwg",
+      "dwg_sha256": "4164ec1fc52899a6f14a1c171c7da83bcb2c3b733cb2f838bca6152098cec7a4",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00090E10.dxf",
+      "dxf_sha256": "6cf124744ac7d12aa2406c78bfbb260518ac98b539f147c9809d1c70f0554862",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "DIMENSION": 6,
+        "TEXT": 4,
+        "LINE": 2,
+        "LWPOLYLINE": 1
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00090E19/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00090E19.dwg",
+      "dwg_sha256": "ee7b0c67946780b4a12436d7212feb6299a2b74958eb34b1786a144014e646af",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00090E19.dxf",
+      "dxf_sha256": "49b8599ece54fe90200fd61e9cd3ed7cebcab194fd3b792b134f33af559510a0",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 6,
+        "DIMENSION": 4,
+        "POINT": 6,
+        "SOLID": 4,
+        "LINE": 10,
+        "LWPOLYLINE": 1
+      },
+      "layers": [
+        "0",
+        "DEFPOINTS",
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00090E1B/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00090E1B.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00090E1B.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00097A20/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00097A20.dwg",
+      "dwg_sha256": "bc36e98b831805060f3dd7eaf23b6c3cf2a069e68d4c80e570e8cc8e2fff657b",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00097A20.dxf",
+      "dxf_sha256": "c4e00c20d12c6dca2f76ded9eab147c94137866a4ca1aebcfe0d2bd82985c94f",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "HATCH": 1,
+        "LINE": 2,
+        "LWPOLYLINE": 1,
+        "DIMENSION": 4,
+        "TEXT": 5
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00097A25/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00097A25.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00097A25.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0009CC58/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0009CC58.dwg",
+      "dwg_sha256": "8cd54b83851fe18b7491be444b9300ac6a8c4a825fb016e28ff34e6266c0adde",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0009CC58.dxf",
+      "dxf_sha256": "f6e30fa8088166a199d7ea39b53c25198e4f718df433b0041e8bdeebb3990fba",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "LINE": 6,
+        "LWPOLYLINE": 1,
+        "DIMENSION": 6,
+        "TEXT": 5
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD0009CC60/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0009CC60.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0009CC60.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000A0F9F/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000A0F9F.dwg",
+      "dwg_sha256": "a7bece6809e7ac529759925112bb81af98042303e065f4e1d22d4150bdb7a965",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000A0F9F.dxf",
+      "dxf_sha256": "c2735be603a31546576da703faf2d1713803756216b0f59badad3ca9404cd5ae",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "HATCH": 1,
+        "DIMENSION": 8,
+        "LINE": 5,
+        "LWPOLYLINE": 1,
+        "TEXT": 5,
+        "ARC": 1
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000A0FA5/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000A0FA5.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000A0FA5.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000A7FBD/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000A7FBD.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000A7FBD.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000AA36D/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000AA36D.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000AA36D.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000AF2B2/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000AF2B2.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000AF2B2.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000B7747/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000B7747.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000B7747.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000BD293/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000BD293.dwg",
+      "dwg_sha256": "b51dc18d6780c20deb89ede02e146a1428042885845a6a8349f37590a80f966f",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000BD293.dxf",
+      "dxf_sha256": "246a50a2a1aa69447599fdb3b5e13dd01b7b60352e34cfb646dd2512e63ec7ed",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "TEXT": 4,
+        "DIMENSION": 9,
+        "LINE": 5,
+        "REGION": 2
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000C723E/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000C723E.dwg",
+      "dwg_sha256": "e8facf19d5c03188dc4761f4d4e525f3e2cbaf429a47a0e664d5b462842a8b8e",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000C723E.dxf",
+      "dxf_sha256": "36199510a96e3cea20547ac01eebb55280a0ba08759608d40e69c1f4af7ed40b",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 7,
+        "REGION": 1
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000F5A99/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000F5A99.dwg",
+      "dwg_sha256": "569bedbb7be96fc02379823f3ba5f7b29db65252af6ba95952416e67aa9394d4",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000F5A99.dxf",
+      "dxf_sha256": "b85ab2a25b008be688f22e6c5c3b739af88e17233e3e8f5bc23c928fba263517",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 16,
+        "HATCH": 1,
+        "LINE": 4,
+        "REGION": 1,
+        "TEXT": 4
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD000F648C/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD000F648C.dwg",
+      "dwg_sha256": "74070d7bada17b8fe9e94b9eda418a6fee903efe7b7e8535e1ac14b84bb27ef7",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD000F648C.dxf",
+      "dxf_sha256": "12a4ad1cd7741cb53fee4860cd7db394c582c67bd9debf8c7c99c72621e44ee9",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 17,
+        "HATCH": 2,
+        "LINE": 34,
+        "TEXT": 4
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00107C8A/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00107C8A.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00107C8A.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD001203BA/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD001203BA.dwg",
+      "dwg_sha256": "9c186051610675eb364ed7d8aaec7265ad733f5014357b7c8a93bf6ed54f5eb8",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD001203BA.dxf",
+      "dxf_sha256": "c8e9e25904a620cc7f4af9dcb5939c145b5e9c744a065303c046e7ab760fbc9d",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "HATCH": 1,
+        "DIMENSION": 14,
+        "LINE": 3,
+        "REGION": 1
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00120B68/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00120B68.dwg",
+      "dwg_sha256": "e39208405417bd5ffee789ff6195a145a17366349641c4504a83d4ce30c18dd6",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00120B68.dxf",
+      "dxf_sha256": "82504d6195ecc48caf3e3b52de5334e07a9c6110824fb4a1e2c6f39a4e900806",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 14,
+        "LINE": 4,
+        "REGION": 1,
+        "HATCH": 1
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0012DF05/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0012DF05.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0012DF05.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00154289/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00154289.dwg",
+      "dwg_sha256": "848296e9dda21229391111fdfa5414200e16223a5b7d030b0963d22742a5196d",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00154289.dxf",
+      "dxf_sha256": "130ef6cfe9a280de46af7e868ab29263c2f5b7d4c1e74fb0707fb4b233687b56",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 5,
+        "TEXT": 4,
+        "LINE": 2,
+        "REGION": 1,
+        "HATCH": 1
+      },
+      "layers": [
+        "0",
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0016380C/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0016380C.dwg",
+      "dwg_sha256": "1d2f5ca9444be35e53ffbbdc9d12868170fa13c7c5e8f65c051fa36a7430d943",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0016380C.dxf",
+      "dxf_sha256": "9ec4e3866543c19564a282d5988d4409262b8cb3af9a9c197e5f0536b7c5d059",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "LINE": 89,
+        "TEXT": 17,
+        "DIMENSION": 22
+      },
+      "layers": [
+        "BLINKS",
+        "DIM",
+        "DIMS",
+        "OUTLINE",
+        "SCH"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0016CC8F/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0016CC8F.dwg",
+      "dwg_sha256": "adc5fd8ef577913da36a8a0649654486127314cd7af0859d9d42cbfc60460e8e",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0016CC8F.dxf",
+      "dxf_sha256": "98752241215be3766065947495d8b83e4df6e9b10a6411d2b690ed573efb7050",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "LINE": 77,
+        "DIMENSION": 37,
+        "TEXT": 1
+      },
+      "layers": [
+        "DIM",
+        "DIMS",
+        "OUTLINE",
+        "STRAND"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0016F73D/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0016F73D.dwg",
+      "dwg_sha256": "9efce624ed8bd4fcd3375816386d84552cae651b38762610ffa823029c8f3b09",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0016F73D.dxf",
+      "dxf_sha256": "025bb01cb811947bfcc3677fb6adb665b7475f2952b5d252f54094ef59a8ec7c",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 8,
+        "LINE": 15,
+        "TEXT": 4
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD001710F9/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD001710F9.dwg",
+      "dwg_sha256": "e2da82b4cd57711c02c7e099a4ac9ffb093c92e79bba340d8aaf091d35aa2887",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD001710F9.dxf",
+      "dxf_sha256": "9aa9114ee9dbdc01628d657bec11ae2a21a783a094669ea90d93c6f65f5a547c",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "LINE": 15,
+        "DIMENSION": 8,
+        "TEXT": 4
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0017243D/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0017243D.dwg",
+      "dwg_sha256": "c7602e0e4e022ba711bc82624274d064431f7f2e1b3a954a7d4f3cd78186aaa4",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0017243D.dxf",
+      "dxf_sha256": "83ba40ef6d32e84767eb2c9ca59e64c27cd8b48b8bab91a5d2b14a79354ca70b",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "LINE": 6,
+        "DIMENSION": 4,
+        "LWPOLYLINE": 1,
+        "TEXT": 5
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00172FF3/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00172FF3.dwg",
+      "dwg_sha256": "19ceb04cbc032b4844e0083031818ca0cf3163e8982faac10f6e836b7ec83227",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00172FF3.dxf",
+      "dxf_sha256": "0127ddb561738ad7d970d5e1da1c651341f615e01aa82cf4802d347c13f1b365",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 4,
+        "LINE": 2,
+        "DIMENSION": 6,
+        "LWPOLYLINE": 1
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00173B4D/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00173B4D.dwg",
+      "dwg_sha256": "4138cdaef2f9a122afe27aca455dadb63153acc970e72bcc265bc8c608987e30",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00173B4D.dxf",
+      "dxf_sha256": "5750481d1298ee7ca4b56254bfafb129334257387433dfd52c0de50f861fc36f",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 4,
+        "DIMENSION": 6,
+        "LINE": 2,
+        "LWPOLYLINE": 1
+      },
+      "layers": [
+        "DIMENSIONS"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 2
+    },
+    {
+      "ole_stream": "MBD00174438/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00174438.dwg",
+      "dwg_sha256": "82d426aa938cae1267dc4c33e699727c9570a4f77e8453909c00797f7e91002c",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00174438.dxf",
+      "dxf_sha256": "f3e82e2e185c9bcdcb4143e895d4983ad6b010882a35e9534eb45a411275663d",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 15,
+        "LINE": 154,
+        "DIMENSION": 19
+      },
+      "layers": [
+        "DIM",
+        "DIMS",
+        "OUTLINE",
+        "STRAND"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD00175E3A/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD00175E3A.dwg",
+      "dwg_sha256": "cbf2da95dbd7026121bac8e1802e17a37ce5cd2bf0b5409bc7fe73eab1ae8343",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD00175E3A.dxf",
+      "dxf_sha256": "ddff0fc7ccd9fac645b4026b85230caa3096eacf5a7b309416a09a0d81cc3d36",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "TEXT": 17,
+        "LINE": 216,
+        "DIMENSION": 22
+      },
+      "layers": [
+        "DIM",
+        "DIMS",
+        "OUTLINE",
+        "STRAND"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD001787A4/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD001787A4.dwg",
+      "dwg_sha256": "490168ab5f18e6399666a3590e63e044ad2b21431b2c18104fe6d06e2eb00f81",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD001787A4.dxf",
+      "dxf_sha256": "4e6e620e565446992d7a1d03df33165139f9c1db1051cd9b96fe301808c0f6f7",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "DIMENSION": 10,
+        "LINE": 6,
+        "REGION": 1,
+        "TEXT": 4
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0018627B/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0018627B.dwg",
+      "dwg_sha256": "c666e7b5b6f8942423c2a2c297c0dbd046703d0cf69505c4bab7e4a8af830303",
+      "signature": "AC1014",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0018627B.dxf",
+      "dxf_sha256": "f7c189b64396ef32a142948076686e3944788d79ae22878830e2e4833ecd7241",
+      "dxf_units_code": 0,
+      "modelspace_entity_types": {
+        "SOLID": 9,
+        "LWPOLYLINE": 5
+      },
+      "layers": [
+        "DRGSHLOGO"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    },
+    {
+      "ole_stream": "MBD0018C0AB/Contents",
+      "dwg_file": "sources/expansion/banagher-cad/dwg/MBD0018C0AB.dwg",
+      "dwg_sha256": "fc72e7a378c46d88bfd418d74a9acc63b531b3c0f879561106b3e7f09a3f4e3a",
+      "signature": "AC1015",
+      "dxf_file": "sources/expansion/banagher-cad/dxf/MBD0018C0AB.dxf",
+      "dxf_sha256": "409b3c0a0696e57285cb52cb2c6ccb54fd3a6f8944b965fb26a78f89e718584d",
+      "dxf_units_code": 4,
+      "modelspace_entity_types": {
+        "REGION": 1,
+        "LINE": 3,
+        "DIMENSION": 13,
+        "TEXT": 4
+      },
+      "layers": [
+        "0"
+      ],
+      "recover_errors": 0,
+      "recover_fixes": 1
+    }
+  ],
+  "w19_project_drawing": {
+    "source_file": "/mnt/data/sync/consulting/Roughan O'Donovan/W19 BEAM STRUCTURE B06 BALLYKEEFFE BOREEN OB.dwg",
+    "local_copy": "sources/expansion/banagher-cad/w19-ballykeeffe.dwg",
+    "sha256": "0dbd088c63454ae40845e609a147214973cf525015b202bdc630077d1e2959a0",
+    "converted_file": "sources/expansion/banagher-cad/w19-ballykeeffe.dxf",
+    "converted_sha256": "2e2b3bb0e1c0fd9cf65c215c48a7341cc10d54d6b36048cde25d5fb0103bdfd6",
+    "converter": "LibreDWG0.11.3876 dwg2dxf -o <output> <source>; ezdxf.recover audit0errors4fixes",
+    "dxf_units_code": 4,
+    "scale_factor_to_mm": 25,
+    "scale_evidence": "2300mm depth dimension118A85 spans92 drawing units;1500mm width118A84 spans60drawing units. Dimension style applies factor25.",
+    "origin_drawing_units": [
+      63696.90410819828,
+      -34592.18789708106
+    ],
+    "outline_line_entities": [
+      {
+        "handle": "118A65",
+        "layer": "0",
+        "start_mm": [
+          0.0,
+          0.0
+        ],
+        "end_mm": [
+          730.0,
+          0.0
+        ]
+      },
+      {
+        "handle": "118A66",
+        "layer": "0",
+        "start_mm": [
+          750.0,
+          20.0
+        ],
+        "end_mm": [
+          730.0,
+          0.0
+        ]
+      },
+      {
+        "handle": "118A67",
+        "layer": "0",
+        "start_mm": [
+          1062.2,
+          2250.0
+        ],
+        "end_mm": [
+          750.0,
+          20.0
+        ]
+      },
+      {
+        "handle": "118A68",
+        "layer": "0",
+        "start_mm": [
+          1062.2,
+          2250.0
+        ],
+        "end_mm": [
+          1022.2,
+          2250.0
+        ]
+      },
+      {
+        "handle": "118A69",
+        "layer": "0",
+        "start_mm": [
+          1022.2,
+          2250.0
+        ],
+        "end_mm": [
+          1022.2,
+          2300.0
+        ]
+      },
+      {
+        "handle": "118A6A",
+        "layer": "0",
+        "start_mm": [
+          1022.2,
+          2300.0
+        ],
+        "end_mm": [
+          674.0,
+          2300.0
+        ]
+      },
+      {
+        "handle": "118A6B",
+        "layer": "0",
+        "start_mm": [
+          674.0,
+          2300.0
+        ],
+        "end_mm": [
+          674.0,
+          2250.0
+        ]
+      },
+      {
+        "handle": "118A6C",
+        "layer": "0",
+        "start_mm": [
+          674.0,
+          2250.0
+        ],
+        "end_mm": [
+          634.0,
+          2250.0
+        ]
+      },
+      {
+        "handle": "118A6D",
+        "layer": "0",
+        "start_mm": [
+          634.0,
+          2250.0
+        ],
+        "end_mm": [
+          634.0,
+          2198.0
+        ]
+      },
+      {
+        "handle": "118AA4",
+        "layer": "0",
+        "start_mm": [
+          634.0,
+          2198.0
+        ],
+        "end_mm": [
+          772.0,
+          1922.0
+        ]
+      },
+      {
+        "handle": "118AA5",
+        "layer": "0",
+        "start_mm": [
+          772.0,
+          1922.0
+        ],
+        "end_mm": [
+          772.0,
+          1410.0
+        ]
+      },
+      {
+        "handle": "118A6E",
+        "layer": "0",
+        "start_mm": [
+          625.0,
+          360.0
+        ],
+        "end_mm": [
+          772.0,
+          1410.0
+        ]
+      },
+      {
+        "handle": "118A6F",
+        "layer": "0",
+        "start_mm": [
+          500.0,
+          210.0
+        ],
+        "end_mm": [
+          625.0,
+          360.0
+        ]
+      },
+      {
+        "handle": "118A71",
+        "layer": "0",
+        "start_mm": [
+          500.0,
+          210.0
+        ],
+        "end_mm": [
+          0.0,
+          160.0
+        ]
+      }
+    ],
+    "drawing_revision": "2006 project drawing; filemtime2006-11-24; full issue date not asserted",
+    "current_manual_difference": {
+      "F_old_mm": 52,
+      "F_current_mm": 100,
+      "V_old_mm": 512,
+      "V_current_mm": 464
+    },
+    "common_lower_dimensions_mm": {
+      "bottom_chamfer": [
+        20,
+        20
+      ],
+      "bottom_flat": 1460,
+      "bottom_overall": 1500,
+      "valley_height": 160,
+      "valley_to_haunch_rise": 50,
+      "haunch_rise": 150,
+      "haunch_run": 125,
+      "inner_half_flat_run": 500
+    },
+    "dimension_handles": [
+      "118A81",
+      "118A82",
+      "118A83",
+      "118A84",
+      "118A85",
+      "118A89",
+      "118A8A",
+      "118A8B",
+      "118A8D",
+      "118A97",
+      "118AA8"
+    ],
+    "rendered_local_file": "sources/expansion/banagher-cad/w19-cad-section.png"
+  },
+  "current_catalogue_validation": [
+    {
+      "designation": "W1",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": 0.007838711105193852,
+      "Ixx_relative_residual": 1.3565292440897991e-05
+    },
+    {
+      "designation": "W3",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": 0.019386057997564876,
+      "Ixx_relative_residual": -8.921027310870855e-06
+    },
+    {
+      "designation": "W5",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": 0.0415084180963845,
+      "Ixx_relative_residual": -6.839514974488203e-06
+    },
+    {
+      "designation": "W7",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": 0.013142280781380578,
+      "Ixx_relative_residual": -1.2737347949709488e-06
+    },
+    {
+      "designation": "W8",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": -0.0030737214161149495,
+      "Ixx_relative_residual": 1.0873026480284764e-05
+    },
+    {
+      "designation": "W9",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": 0.026470503215136887,
+      "Ixx_relative_residual": -2.462527508950707e-05
+    },
+    {
+      "designation": "W10",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": 0.012269221742371883,
+      "Ixx_relative_residual": 3.864103328643509e-06
+    },
+    {
+      "designation": "W11",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": -0.05261930738504361,
+      "Ixx_relative_residual": 1.2275907854242263e-05
+    },
+    {
+      "designation": "W12",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": -0.006951081341526333,
+      "Ixx_relative_residual": 1.809301065702762e-05
+    },
+    {
+      "designation": "W13",
+      "area_calculated_minus_published_mm2": -4.0,
+      "centroid_calculated_minus_published_mm": 0.011645987463111851,
+      "Ixx_relative_residual": 1.4376235862423314e-05
+    },
+    {
+      "designation": "W14",
+      "area_calculated_minus_published_mm2": 4.0,
+      "centroid_calculated_minus_published_mm": 0.019383878512144292,
+      "Ixx_relative_residual": 1.5789619451922476e-06
+    },
+    {
+      "designation": "W15",
+      "area_calculated_minus_published_mm2": -2.0,
+      "centroid_calculated_minus_published_mm": -0.01575244720277169,
+      "Ixx_relative_residual": 9.433171209494162e-06
+    },
+    {
+      "designation": "W16",
+      "area_calculated_minus_published_mm2": 0.0,
+      "centroid_calculated_minus_published_mm": 0.007107321883722761,
+      "Ixx_relative_residual": 4.830034735725519e-06
+    },
+    {
+      "designation": "W17",
+      "area_calculated_minus_published_mm2": 2.0,
+      "centroid_calculated_minus_published_mm": -0.009970538499146642,
+      "Ixx_relative_residual": 7.702475699256084e-06
+    },
+    {
+      "designation": "W18",
+      "area_calculated_minus_published_mm2": 4.0,
+      "centroid_calculated_minus_published_mm": 0.029833923668547868,
+      "Ixx_relative_residual": -4.454109524099081e-06
+    },
+    {
+      "designation": "W19",
+      "area_calculated_minus_published_mm2": 4.0,
+      "centroid_calculated_minus_published_mm": -0.04306644234884516,
+      "Ixx_relative_residual": -4.61179115474053e-06
+    }
+  ],
+  "solid_box_resolution": {
+    "cad_identified": false,
+    "status": "8 width4variants implemented from fully dimensioned manual nominaloutline with source-property discrepancies retained",
+    "published_minus_calculated_area_mm2": {
+      "SD1-SD5": 225,
+      "SD6-SD8": 275
+    },
+    "excluded_as_match": "Workbook BOX BEAM sheet is hollowB1-B10 etc, not SolidBoxSD. WorkbookU family bottomwidth970isnotW1500."
+  },
+  "search_locations": [
+    "IndexedCodexsessions with bridgebeamscwd",
+    "/tmp/xls_extract",
+    "/mnt/data/sync/consulting",
+    "/mnt/data/sync (targeted DWG/DXF and beam-property XLS filename search)",
+    "/home/ccaprani/projects",
+    "/home/ccaprani/Downloads"
+  ]
+}

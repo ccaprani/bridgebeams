@@ -1,5 +1,7 @@
 # Banagher Solid Box and W families: existing-PDF transcription
 
+> **Follow-up after visual review:** All sixteen W and all32 Solid Box profiles are now implemented; see [CAD recovery and nominal-profile qualifications](banagher-cad-followup.md). Earlier blockers below describe the pre-review audit, not current implementation status.
+
 Read on 22 September 2026 from the existing 62-page **Bridge Beam Manual, 3rd Edition**, Banagher Precast Concrete. [Original registry source](https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf). This pass re-opened the local PDF; it did not re-fetch that inherited external URL.
 
 Local source: `sources/banagher-bridge-beam-manual-3ed.pdf`. SHA-256: `5432e2db0b2f95045320f91254c52ce3f7b1f6d62279c6f05ae6aef4e46bb7bf`. Machine-readable transcription: `data/banagher-pending-families.json`.

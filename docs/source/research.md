@@ -14,6 +14,12 @@ research-asia-africa
 research-pdf-transcription
 research-banagher
 research-verification
+research-visual-review
+visual-review-followup-2026-09
+visual-followup-norway-nz
+banagher-cad-followup
+visual-followup-za-ro-nepal
+india-followup
 ```
 
 Download the structured records:

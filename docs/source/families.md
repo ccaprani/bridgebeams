@@ -2,14 +2,14 @@
 
 The Irish sections below are recovered from (or validated against) manufacturers'
 published property tables, with the Banagher Precast Concrete *Bridge Beam
-Manual* (3rd edition) as the principal UK/IE source. Where manufacturers
+Manual* (3rd edition) as the principal Irish producer source. Where manufacturers
 publish section properties and key widths but not internal profile
 dimensions, the profile is a documented least-squares reconstruction, and
 the tests enforce the deviation limits quoted below. Sources and URLs are
 available in {doc}`research` and the local working registry `sources/SOURCES.md`.
 See {doc}`global` for other implemented jurisdictions and their evidence limits.
 
-## Ireland / UK
+## Ireland
 
 ### T beams (T1–T10) — solid slab construction
 
@@ -56,16 +56,30 @@ upstands. Validated to **≤ 0.7%**.
 
 1500–2000 mm deep, 750 mm bottom flange. Validated to **< 0.6% rms**.
 
-### Solid Box beams (SD1–SD8, width classes 1–3)
+### Solid Box beams (SD1–SD8, width classes 1–4)
 
 `IeSolidBoxBeamSection("SD4 (2)")` selects a 600 mm deep, 750 mm overall
-width solid box. The 24 profiles span depths 300–1000 mm and widths
-495/750/970 mm. The dimensioned lower shoulders and 25 mm chamfers reproduce
-published area, centroid and top/bottom section moduli within documented
-rounding allowances. Width class 4 (1500 mm) remains research-only because
-its table disagrees with the nominal drawing. The W family tables are also
-transcribed, with unresolved internal geometry identified in
-{doc}`research-banagher`.
+width solid box. The 32 profiles span depths 300–1000 mm and widths
+495/750/970/1500 mm. Classes (1)–(3) reproduce published properties within
+documented rounding allowances. Class (4) uses the dimensioned nominal
+outline: its published areas exceed geometry by 225/275 mm². Those source
+discrepancies are recorded and tested separately; the shape is not fitted.
+
+### W beams
+
+`IeWBeamSection("W19")` selects the current 2300 mm profile. Sixteen
+published sizes use the current manual's upper dimensions and the straight
+lower contour recovered from a producer W19 DWG. The older project's upper
+F/V dimensions are not substituted into the current range. Published areas
+match within 4 mm² and Ixx within 0.0025%; W11's centroid rounding exception
+is individually recorded. See {doc}`banagher-cad-followup`.
+
+## United Kingdom
+
+UK sources and profile coverage are separate from Irish producer families.
+`bridgebeams.uk` currently exports no sections. Shared beam names and use
+in UK projects do not transfer the source jurisdiction or establish
+identical geometry. See the UK entry in {doc}`coverage`.
 
 ## Australia
 
@@ -132,3 +146,21 @@ tested separately. The full source audit is in {doc}`research-asia-africa`.
 
 Suitable for preliminary design and assessment workflows; for detailed
 design, confirm against the manufacturer's drawings/BIM.
+
+### Sections added after visual review
+
+`NoNtbKtbSection` supplies five NTB and five KTB profiles from Norway's V426.
+The 15 mm bottom chamfers are a recorded reviewer inference. NTB uses a
+mid-soffit origin; asymmetric KTB uses the nominal left soffit corner.
+
+`NzHollowCoreSection(650)` and `(900)` supply inner units;
+`NzHollowCoreSection(587, unit="inner"/"outer")` selects the two-void inner
+or one-void outer unit. The 587 outer profile omits the optional drip groove.
+The 650/900 outer void-location endpoints remain unresolved and are not
+implemented. See {doc}`visual-followup-norway-nz`.
+
+`CivilconYBeamSection("Y1"…"Y8")` includes the confirmed 40 × 50 mm ledges
+and R100 web junction for the in-situ slab arrangement. Area differences
+are below 0.037% and centroid differences below 0.476 mm. Y1's source
+modulus discrepancy is retained separately; Y2–Y8 moduli agree within 0.1%.
+See {doc}`visual-followup-za-ro-nepal`.

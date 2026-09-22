@@ -1,5 +1,18 @@
 # Expansion verification, 22 September 2026
 
+## Latest visual-review follow-up
+
+An additional 46 profiles are implemented: 16 W, 8 SD class 4, 10 Norway, 4 NZ hollow-core
+and 8 Civilcon Y. The full suite passes **314 tests**, with 14 existing dependency
+warnings. The isolated wheel contains **24 family JSON files**, and all 46 new
+profiles construct outside the checkout. See the [follow-up record](visual-review-followup-2026-09.md)
+for evidence, individual source discrepancies and the corrected review queue.
+UK/Ireland are now separate coverage entries; the complete map/table separates
+research records from implemented profiles. The checks below describe the
+initial expansion and its then-current blockers, retained as history.
+
+## Initial expansion
+
 The regional registries contain **149 source records across 111 jurisdiction
 codes and 530 dimension/property rows**. The separate PDF backlog adds 28
 records and the Banagher transcription adds 48, for **606 recorded rows**.

@@ -1,5 +1,11 @@
 # Global precast bridge beam source collection
 
+The [visual-review follow-up](visual-review-followup-2026-09.md) records the
+received readings, recovered CAD and 46 additional implemented profiles.
+The [India follow-up](india-followup.md) adds primary sources and updates
+the RDSO access result. The Sphinx [coverage page](../source/coverage.md) provides the complete
+country list and map, separating source counts from implemented profiles.
+
 This directory is the versioned research record for expanding `bridgebeams`.
 The regional reports preserve original source titles alongside English
 translations, links, dimension transcriptions, and remaining uncertainties.

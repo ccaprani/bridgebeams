@@ -4,7 +4,7 @@ with the ``sectionproperties`` package.
 Subpackages
 -----------
 - ``bridgebeams.aus``: Australian Super-T and I-girders to AS5100.5 App. D.
-- ``bridgebeams.ie``: Irish/UK standard precast beams (T, Y and YE
+- ``bridgebeams.ie``: Irish producer precast beams (T, Y and YE
   families).
 
 All geometry is in millimetres and returned as ``sectionproperties``
@@ -22,14 +22,23 @@ from bridgebeams.pl import MostostalTDimensions, MostostalTSection
 from bridgebeams.jp import JisTGirderDimensions, JisTGirderSection
 from bridgebeams.kr import KhcIGirderDimensions, KhcISection
 from bridgebeams.mx import SepsaIGirderDimensions, SepsaIGirderSection
-from bridgebeams.nz import NzIBeamDimensions, NzIBeamSection, NzSuperTDimensions, NzSuperTSection
+from bridgebeams.nz import (
+    NzIBeamDimensions, NzIBeamSection, NzSuperTDimensions, NzSuperTSection,
+    NzHollowCoreDimensions, NzHollowCoreSection,
+)
+from bridgebeams.no import NoNtbKtbDimensions, NoNtbKtbSection
 from bridgebeams.qa import QaQBeamDimensions, QaQBeamSection
 from bridgebeams.ru import Su3503I33Dimensions, Su3503I33Section
 from bridgebeams.th import ThDOHIGirderDimensions, ThDOHIGirderSection
 from bridgebeams.tr import KGMIDimensions, KGMISection
 from bridgebeams.tw import TaiwanIDimensions, TaiwanISection
-from bridgebeams.za import CivilconIBeamDimensions, CivilconIBeamSection
+from bridgebeams.za import (
+    CivilconIBeamDimensions, CivilconIBeamSection,
+    CivilconYBeamDimensions, CivilconYBeamSection,
+)
 from bridgebeams.ie import (
+    IeWBeamDimensions,
+    IeWBeamSection,
     IeSolidBoxBeamDimensions,
     IeSolidBoxBeamSection,
     IeTBeamDimensions,
@@ -63,6 +72,10 @@ __all__ = [
     "NzSuperTSection",
     "NzIBeamDimensions",
     "NzIBeamSection",
+    "NzHollowCoreDimensions",
+    "NzHollowCoreSection",
+    "NoNtbKtbDimensions",
+    "NoNtbKtbSection",
     "QaQBeamDimensions",
     "QaQBeamSection",
     "GrExtendedISection",
@@ -76,10 +89,14 @@ __all__ = [
     "Su3503I33Section",
     "CivilconIBeamDimensions",
     "CivilconIBeamSection",
+    "CivilconYBeamDimensions",
+    "CivilconYBeamSection",
     "IeTBeamDimensions",
     "IeTBeamSection",
     "IeSolidBoxBeamDimensions",
     "IeSolidBoxBeamSection",
+    "IeWBeamDimensions",
+    "IeWBeamSection",
     "IeYBeamDimensions",
     "IeYBeamSection",
     "IeYEBeamDimensions",

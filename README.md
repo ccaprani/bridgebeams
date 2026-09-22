@@ -14,7 +14,7 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 
 ## Families
 
-### Ireland / UK (`bridgebeams.ie`)
+### Ireland (`bridgebeams.ie`)
 
 - **T beams (T1–T10)** — solid slab construction; exact published profile,
   validated to <0.02% against published properties.
@@ -28,15 +28,16 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 - **M beams (M1–M10) / UMB edge beams** — validated to ≤0.7%.
 - **SY / SYE beams (SY1–SY6)** — long span; validated to <0.6% rms.
 - **MY / MYE beams (MY1–MY7)** — solid slab; validated to ≤2.2%.
-- **Solid Box (SD1–SD8, width classes 1–3)** — 24 dimensioned profiles,
-  checked against published area, centroid and section moduli.
-- Solid Box width class 4 and W beams: transcribed tables; unresolved
-  source discrepancies or profile details remain explicit.
+- **Solid Box (SD1–SD8, width classes 1–4)** — 32 nominal profiles;
+  class 4 retains explicit source-property discrepancies.
+- **W beams** — 16 current profiles, verified against published properties
+  using current manual dimensions and recovered producer CAD.
 
-#### United Kingdom (`bridgebeams.uk`) — planned
+### United Kingdom (`bridgebeams.uk`) — planned
 
-The historic UK CBDG families (inverted-T, M, I, box) — ancestors of the
-Irish ranges; shared geometry backend with `bridgebeams.ie`.
+UK source families are tracked separately from Ireland. The UK namespace
+does not yet export implemented sections. Irish producer profiles are not
+counted as UK sections merely because they are also used in UK projects.
 
 ## Australia (`bridgebeams.aus`)
 
@@ -46,7 +47,7 @@ Irish ranges; shared geometry backend with `bridgebeams.ie`.
 ## Global collection
 
 The library also includes families for Belgium, Greece, Japan, Korea,
-Mexico, New Zealand, Poland, Qatar, Russia, South Africa, Taiwan, Thailand and
+Mexico, New Zealand, Norway, Poland, Qatar, Russia, South Africa, Taiwan, Thailand and
 Türkiye. Evidence
 quality varies by family: some profiles are exact transcriptions, some are
 documented reconstructions, and others require designer-supplied dimensions.
@@ -56,7 +57,22 @@ research, original titles with English translations, structured source records,
 and page-based PDF transcriptions. A source appearing in the catalogue does not
 mean that its beam family is implemented or that every profile dimension is known.
 
-Recent additions include seven SEPSA I-girders for Mexico, five Taiwanese
+The [visual-review record](docs/source/research-visual-review.md) preserves
+the received answers and their implementation outcomes. With the local source
+materials present, run `python tools/build_local_docs.py --with-review`, then
+`python -m http.server 8766 --bind 127.0.0.1 --directory docs/_build/html`.
+Open <http://localhost:8766/research-visual-review.html> for the guide and
+illustrated review link.
+
+The [coverage map and complete country table](docs/source/coverage.md)
+separate researched sources from implemented profiles. UK and Ireland are
+separate entries. The research footprint spans 114 jurisdictions; many
+currently have source evidence only.
+
+The visual-review follow-up adds 46 profiles: 16 Irish W, eight wide Solid
+Box, ten Norwegian NTB/KTB, four NZ hollow-core and eight Civilcon Y.
+
+Earlier additions include seven SEPSA I-girders for Mexico, five Taiwanese
 Freeway Bureau I-girders, five Ashghal Q-girder reconstructions for Qatar,
 and two NZTA I-beams. The NZ Super-T
 geometry now preserves the open centre and each size's distinct lower profile.

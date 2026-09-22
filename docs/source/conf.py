@@ -44,7 +44,7 @@ add_module_names = False
 
 templates_path = ["_templates"]
 source_suffix = [".rst", ".md"]
-exclude_patterns = ["backups/**", "gen/bridgebeams.ukie*"]
+exclude_patterns = ["backups/**", "gen/bridgebeams.ukie*", "_static/**"]
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -52,3 +52,6 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "github_url": "https://github.com/ccaprani/bridgebeams",
 }
+
+# Copy the offline coverage application and its cached data into HTML output.
+html_static_path = ["_static"]

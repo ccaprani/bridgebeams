@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bridgebeams — country coverage</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#142d3a;background:#fff}*{box-sizing:border-box}body{max-width:1300px;margin:0 auto;padding:20px}h1{font-size:1.7rem;margin:0 0 6px}h2{font-size:1.15rem}a{color:#075e86}.muted{color:#506473}.summary{font-weight:650;background:#eaf3f7;padding:12px;border-radius:8px}.map{background:#f6f9fc;border:1px solid #cad6df;border-radius:8px;overflow:hidden}svg{width:100%;height:auto;display:block;max-height:475px}.country{stroke:#fff;stroke-width:.45;fill-rule:evenodd;cursor:pointer}.country:hover,.country:focus,.country.selected{stroke:#e54724;stroke-width:1.8;outline:none}.norecord{fill:#dfe4e8}.zero{fill:#edf2fb}.low{fill:#add8de}.mid{fill:#50aabd}.high{fill:#167898}.max{fill:#074967}.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.85rem;margin:10px 0}.legend i{display:inline-block;width:18px;height:12px;border:1px solid #778896;margin-right:5px}.toolbar{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin:16px 0}label{display:flex;flex-direction:column;font-weight:600}input,select,button{font:inherit}input,select{padding:7px;border:1px solid #a9bac8;border-radius:5px}button{cursor:pointer}.reset{padding:7px 12px}.details{padding:14px 18px;margin:14px 0;background:#f7fafb;border:1px solid #c2d5df;border-left:5px solid #1685a5;border-radius:7px}.details h2{margin-top:0}.details ul{padding-left:24px}.details li{margin:7px 0}.status{font-size:.85em;color:#506473}details{margin:8px 0}summary{cursor:pointer}.table-wrap{overflow:auto;max-height:580px;border:1px solid #d3dfe6}table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{text-align:left;padding:9px 10px;vertical-align:top;border-bottom:1px solid #dbe4eb}thead th{position:sticky;top:0;background:#eef4f7;z-index:1}tbody tr.selected{background:#e2f1f7}.country-select{border:0;padding:0;background:none;color:#075e86;text-align:left;text-decoration:underline}caption{text-align:left;padding:10px;background:#f7fafb}.note{font-size:.88rem}.empty{display:none}button:focus,input:focus,select:focus,summary:focus{outline:2px solid #e54724;outline-offset:2px}@media(max-width:650px){body{padding:10px}h1{font-size:1.35rem}.toolbar label{width:100%}.table-wrap{max-height:420px}}
+</style></head><body>
+<h1>Implemented sections by country</h1>
+<p class="muted">Click a country, or choose it from the searchable table. Ireland and the United Kingdom have separate records.</p>
+<p class="summary"><!-- SUMMARY --></p>
+<div class="map"><!-- MAP --></div>
+<div class="legend" aria-label="Map legend">
+<span><i style="background:#dfe4e8"></i>No catalogue record</span><span><i style="background:#edf2fb"></i>0 fixed profiles; research/template present</span><span><i style="background:#add8de"></i>1–5 profiles</span><span><i style="background:#50aabd"></i>6–15</span><span><i style="background:#167898"></i>16–40</span><span><i style="background:#074967"></i>41+</span></div>
+<p class="note">Small jurisdictions are easier to select in the table. Boundaries are Natural Earth’s de facto cartographic representation; the catalogue’s jurisdiction codes do not imply a position on sovereignty.</p>
+<section class="details" id="details" aria-live="polite" aria-atomic="true"><h2>Select a country</h2><p>The panel shows counted families, named sizes, source links and recorded research status. A research record does not mean a usable geometry is implemented.</p></section>
+<div class="toolbar"><label>Find a country or family<input type="search" id="search" placeholder="e.g. India, IE, HollowCore" autocomplete="off"></label><label>Show<select id="scope"><option value="recorded">Catalogue countries</option><option value="implemented">Countries with fixed profiles</option><option value="research">Research records only</option><option value="all">All mapped countries</option></select></label><button class="reset" id="reset">Reset selection</button><span id="row-count" aria-live="polite"></span></div>
+<div class="table-wrap"><table><caption>Complete country table — counts and status are separate</caption><thead><tr><th scope="col">Country / jurisdiction</th><th scope="col">Code</th><th scope="col">Fixed profiles</th><th scope="col">Research records</th><th scope="col">Implemented families (profile count)</th></tr></thead><tbody id="country-rows"><!-- ROWS --></tbody></table></div>
+<details><summary>How the counts work</summary><p>One count per named, source-backed discrete geometry choice. Documented reconstructions are included; namespace aliases, arbitrary continuous inputs, incomplete templates and Korean extrapolations are excluded. Counts show available catalogue geometries, not certification or design suitability.</p><p>Australian Super-T has nine type/subtype combinations at the nominal default flange. NZ Super-T has three documented width/depth arrangements. Ireland TY/TYE includes its distinct beam-and-slab and solid-slab shapes. Belgian and Greek templates need user-selected flange thicknesses and contribute zero fixed profiles. Source records include partial, inaccessible and rejected leads; multiple family records can refer to the same publication. Legacy implementations can exist outside the two recent regional research registries.</p><p>The United Kingdom currently has no profiles in <code>bridgebeams.uk</code>. Irish producer sections are attributed to Ireland, even when used or sold in the UK.</p></details>
+<p class="note">Map: <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/" target="_blank" rel="noopener">Natural Earth 1:50m Admin 0 countries</a>, public domain, simplified for display. All interaction and data are local. <a href="coverage-data.json">Download coverage data</a> · <a href="../../sources.html" target="_top">Implementation sources</a> · <a href="../../research.html" target="_top">Research catalogue</a></p>
+<script>
+'use strict';
+const DATA=/* DATA */;
+const countries=new Map(DATA.countries.map(r=>[r.code,r]));
+const search=document.querySelector('#search'),scope=document.querySelector('#scope'),details=document.querySelector('#details');
+let selected='';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function selectCountry(code){
+ const r=countries.get(code);if(!r)return;selected=code;
+ document.querySelectorAll('[data-code]').forEach(e=>e.classList.toggle('selected',e.dataset.code===code));
+ const families=r.families.map(f=>`<li><strong>${esc(f.name)}</strong>: ${f.count} fixed profiles${f.note?`<br><span class="status">${esc(f.note)}</span>`:''}${f.profiles.length?`<details><summary>Show ${f.count} counted sizes</summary><p>${f.profiles.map(esc).join(', ')}</p></details>`:''}</li>`).join('');
+ const sources=r.sources.map(s=>`<li>${/^https?:\/\//.test(s.url)?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`:esc(s.title)}<br><span class="status">${esc(s.status)} · ${esc(s.registry)}</span></li>`).join('');
+ const extra=r.code==='GB'?'<p>The UK namespace is empty. Ireland’s producer profiles are counted under IE.</p>':r.code==='IN'?'<p>India is represented in the research catalogue. No Indian geometry is implemented yet; source availability and transcription status are shown below.</p>':'';
+ details.innerHTML=`<h2>${esc(r.name)} (${esc(r.code)})</h2><p><strong>${r.count} implemented fixed profiles</strong> · ${r.source_count} research source records</p>${extra}${families?`<ul>${families}</ul>`:'<p>No fixed or parametric family is implemented for this jurisdiction.</p>'}<details ${r.count?'':'open'}><summary>Research sources (${r.source_count})</summary>${sources?`<ul>${sources}</ul>`:'<p>No source record in the current research registries. See implementation sources for legacy families.</p>'}</details>`;
+ history.replaceState(null,'','#'+encodeURIComponent(code));
+}
+function filter(){
+ const query=search.value.trim().toLowerCase();let n=0;
+ document.querySelectorAll('#country-rows tr').forEach(tr=>{
+ const r=countries.get(tr.dataset.code),text=[r.name,r.code,...r.families.map(f=>f.name)].join(' ').toLowerCase();
+ const pass=scope.value==='all'||scope.value==='implemented'&&r.count>0||scope.value==='research'&&r.researched||scope.value==='recorded'&&(r.researched||r.families.length||r.code==='GB');
+ tr.hidden=!(pass&&text.includes(query));if(!tr.hidden)n++;
+ });document.querySelector('#row-count').textContent=`${n} jurisdictions shown`;
+}
+document.querySelectorAll('[data-code]').forEach(e=>{if(e.tagName.toLowerCase()==='tr')return;e.addEventListener('click',()=>selectCountry(e.dataset.code));if(e.tagName.toLowerCase()==='path')e.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();selectCountry(e.dataset.code);}});});
+search.addEventListener('input',filter);scope.addEventListener('change',filter);
+document.querySelector('#reset').addEventListener('click',()=>{search.value='';scope.value='recorded';selected='';document.querySelectorAll('.selected').forEach(e=>e.classList.remove('selected'));details.innerHTML='<h2>Select a country</h2><p>Use the map or table to inspect families and sources.</p>';history.replaceState(null,'',location.pathname);filter();});
+filter();if(location.hash)selectCountry(decodeURIComponent(location.hash.slice(1)));
+</script></body></html>

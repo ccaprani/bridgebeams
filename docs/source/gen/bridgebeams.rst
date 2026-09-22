@@ -34,6 +34,7 @@
    jp
    kr
    mx
+   no
    nz
    pl
    qa
