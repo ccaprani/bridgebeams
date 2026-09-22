@@ -1,109 +1,109 @@
-"""New Zealand standard Super-T beams (NZTA RR 364, 2008): 1025 and 1225.
+"""NZTA RR 364 Super-T gross sections, dimensions in millimetres.
 
-Proprietary twin-web Super-T section as standardised by NZTA RR 364
-(drawing S1.01/S1.25, read and confirmed by C. Caprani from the official
-drawing sheet): overall 2490 wide; bottom flange 852 wide x 240 deep with
-100 wide x 75 high bottom-edge chamfers; two 100 mm webs whose inner faces
-are 709 mm apart at the bottom flange and 840 mm apart at the top, on a
-1:10.56 slope; top slab 100 mm thick x 2490 wide with 100 mm tips; a
-15 x 45 formwork lip recess at the top of the void (omitted from the
-structural outline). The 1225 shares the cross-section with webs
-extended 200 mm; flagged as inferred.
+Visually transcribed from S1.01 (PDF page 8), S1.11 (page 15), and
+S1.21 (page 22). These are OPEN TOP twin-web sections. The 1225 section
+has a narrower base and thicker bottom than the 1025, rather than just
+longer webs. For the 30 m arrangement, use ``top_width=1990``.
 
-Geometry convention: origin at the middle of the soffit, y positive
-upwards, millimetres. Symmetric about x = 0.
+This is an explicitly simplified gross profile: the 15 mm formwork ledge
+(detail A, depth 45 MAX, not a prescribed depth) is omitted, and its
+840 mm clear dimension is placed at the top surface. This adjusts the
+inner web taper slightly. The dimensioned 1:10.56 outer slope, lower
+valley dimensions, upper 100 x 75 haunches and 20 mm corner chamfers are
+retained. No published section-property table validates this approximation.
+The source transcription supersedes the earlier interpretation of the
+user's S1.01 reading, which mistook the top haunch for bottom chamfers.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
+import math
 
 from shapely.geometry import Polygon
 
 from bridgebeams._geometry import geometry_from_polygon
 
-_BOTTOM_W = 852.0
-_CHAMFER_W = 100.0
-_CHAMFER_H = 75.0
-_BOTTOM_H = 240.0
-_WEB_T = 100.0
-_CLEAR_TOP = 840.0
-_CLEAR_BOT = 709.0
-_SLAB_T = 100.0
-_TOP_W = 2490.0
-
 
 @dataclass(frozen=True)
 class NzSuperTDimensions:
-    """Dimensions of one NZ Super-T size, millimetres."""
+    """Source dimensions; ``bottom_flange_height`` is the valley level.
 
-    depth: float  # 1025 or 1225
-    top_width: float = _TOP_W
-    bottom_flange_width: float = _BOTTOM_W
-    bottom_flange_height: float = _BOTTOM_H
-    web_thickness: float = _WEB_T
-    web_clear_top: float = _CLEAR_TOP
-    web_clear_bottom: float = _CLEAR_BOT
-    top_slab_thickness: float = _SLAB_T
-    chamfer_width: float = _CHAMFER_W
-    chamfer_height: float = _CHAMFER_H
+    ``web_thickness`` records the published nominal 100 mm dimension.
+    It does not override the independently dimensioned inner/outer
+    boundaries of this simplified profile.
+    """
+
+    depth: float
+    top_width: float = 2490.0
+    bottom_flange_width: float | None = None
+    bottom_flange_height: float | None = None
+    web_thickness: float = 100.0
+    web_clear_top: float = 840.0
+    web_clear_bottom: float | None = None
+    top_slab_thickness: float = 100.0
+    chamfer_width: float = 20.0
+    chamfer_height: float = 20.0
+    void_rise: float | None = None
+    outer_slope: float = 10.56
+    haunch_width: float = 100.0
+    haunch_height: float = 75.0
+
+    def __post_init__(self):
+        if self.depth not in (1025, 1225):
+            raise ValueError("depth must be 1025 or 1225 mm")
+        if not math.isfinite(self.top_width) or self.top_width not in (1990, 2490):
+            raise ValueError("top_width must be 1990 or 2490 mm")
+        if self.depth == 1025 and self.top_width != 2490:
+            raise ValueError("the 1025 mm drawing specifies top_width=2490")
+        values = (852.0, 240.0, 709.0, 67.0) if self.depth == 1025 else (
+            814.0, 260.0, 674.0, 64.0
+        )
+        for name, value in zip(
+            ("bottom_flange_width", "bottom_flange_height", "web_clear_bottom", "void_rise"),
+            values,
+        ):
+            if getattr(self, name) is None:
+                object.__setattr__(self, name, value)
 
     @property
     def outline(self) -> list[tuple[float, float]]:
-        """Half-section per NZTA RR 364 S1.01 (C. Caprani reading):
-
-        bottom face 652 (852 less 2x100 chamfers); chamfers 100 wide x 75
-        high; flange sides vertical to 240; 67 step; webs 100 thick with
-        inner faces 709 clear at the step rising to 840 clear at the slab
-        soffit (slope 1:9.4 as drawn, Colin's 1:10.56 reading noted);
-        top slab 2490 x 100 with 100 tips.
-        """
+        """Anticlockwise open-top boundary, origin at mid-soffit."""
         d = self.depth
-        bf = self.bottom_flange_width / 2.0      # 426
-        cw = self.chamfer_width                  # 100
-        ch = self.chamfer_height                 # 75
-        step = 67.0
-        wt = self.web_thickness / 2.0            # 50
-        in_bot = self.web_clear_bottom / 2.0     # 354.5
-        in_top = self.web_clear_top / 2.0        # 420.0
-        y_step = self.bottom_flange_height + step  # 307
-        y_slab = d - self.top_slab_thickness       # 925 / 1125
-
-        r = [
-            (bf, 0.0) if False else (bf - cw, 0.0),
-            (bf, ch),
-            (bf, self.bottom_flange_height),
-            # step out to the web base outer face
-            (in_bot + wt, y_step),
-            # web inner face: from the step the inner face rises
-            (in_bot - wt, y_step),
-            (in_top - wt, y_slab),
-            # top slab
-            (self.top_width / 2.0, y_slab),
-            (self.top_width / 2.0, d),
+        bf = self.bottom_flange_width / 2.0
+        tip = self.top_width / 2.0
+        y_haunch = d - self.top_slab_thickness - self.haunch_height
+        x_haunch = bf + y_haunch / self.outer_slope
+        c, ch = self.chamfer_width, self.chamfer_height
+        right = [
+            (0.0, 0.0),
+            (bf - c, 0.0),
+            (bf + ch / self.outer_slope, ch),
+            (x_haunch, y_haunch),
+            (x_haunch + self.haunch_width, d - self.top_slab_thickness),
+            (tip - c, d - self.top_slab_thickness),
+            (tip, d - self.top_slab_thickness + ch),
+            (tip, d),
+            (self.web_clear_top / 2.0, d),
+            (self.web_clear_bottom / 2.0, self.bottom_flange_height + self.void_rise),
+            (0.0, self.bottom_flange_height),
         ]
-        l = [(-x, y) for x, y in reversed(r)]
-        return l + r
+        return right + [(-x, y) for x, y in reversed(right[1:-1])]
 
 
 class NzSuperTSection:
-    """NZ standard Super-T (RR 364) as a ``sectionproperties`` Geometry.
+    """Simplified precast Super-T without permanent formwork or deck.
 
-    Examples
-    --------
-    >>> from bridgebeams.nz import NzSuperTSection
-    >>> st = NzSuperTSection(1025)
-    >>> st.dimensions.depth
-    1025.0
+    Default widths follow S1.01/S1.11 (2490 mm); the 1225 mm, 30 m-span
+    arrangement S1.21 is selected with ``top_width=1990``. These geometry
+    choices do not establish structural capacity for a selected span.
     """
 
     SIZES = (1025, 1225)
 
-    def __init__(self, depth: int = 1025):
-        if depth not in self.SIZES:
-            raise ValueError(f"depth must be one of {self.SIZES}, got {depth!r}")
+    def __init__(self, depth: int = 1025, *, top_width: float = 2490.0):
+        self.dimensions = NzSuperTDimensions(depth=float(depth), top_width=float(top_width))
         self.depth = depth
-        self.dimensions = NzSuperTDimensions(depth=float(depth))
 
     @property
     def polygon(self) -> Polygon:
@@ -111,7 +111,6 @@ class NzSuperTSection:
 
     @property
     def geometry(self):
-        """``sectionproperties`` Geometry of the beam (millimetres)."""
         return geometry_from_polygon(self.polygon)
 
 

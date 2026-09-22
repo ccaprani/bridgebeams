@@ -8,10 +8,13 @@ from .ie_y_beam import IeYBeamDimensions, IeYBeamSection, strand_locations
 from .ie_ye_beam import IeYEBeamDimensions, IeYEBeamSection, wf_of_depth
 from .ie_u_beam import IeUBeamDimensions, IeUBeamSection
 from .ie_ty_beam import IeTYBeamDimensions, IeTYBeamSection
+from .ie_solid_box import IeSolidBoxBeamDimensions, IeSolidBoxBeamSection
 
 __all__ = [
     "IeTBeamDimensions",
     "IeTBeamSection",
+    "IeSolidBoxBeamDimensions",
+    "IeSolidBoxBeamSection",
     "IeYBeamDimensions",
     "IeYBeamSection",
     "IeYEBeamDimensions",

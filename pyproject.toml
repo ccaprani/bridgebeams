@@ -48,7 +48,7 @@ Homepage = "https://github.com/ccaprani/bridgebeams"
 where = ["src"]
 
 [tool.setuptools.package-data]
-"bridgebeams.ukie.data" = ["*.json"]
+"*" = ["data/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

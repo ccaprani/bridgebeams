@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "family": "SEPSA AASHTO-labelled producer I-girders",
+  "country": "Mexico",
+  "source": {
+    "organisation": "Grupo Constructor SEPSA",
+    "title": "Catálogo de piezas SEPSA V-05 27-21",
+    "url": "https://sepsacv.com.mx/wp-content/uploads/2022/02/CATALOGO-DE-PIEZAS-SEPSA-V-05-27-21.pdf",
+    "accessed": "2026-09-22",
+    "sha256": "4bf8d28b4d5165d893df215f484ddab996a9e6849a3410049ba4e0cb69133feb",
+    "pdf_page_1_based": 4,
+    "transcription": "Dimension labels and table visually checked from a rendered original PDF page; coordinates calculated from those labelled dimensions."
+  },
+  "units": {
+    "drawing": "cm",
+    "published_area": "m2",
+    "outline_output": "mm"
+  },
+  "scope": "Producer-specific metric sections; not universal AASHTO profiles. Geometric data only, not a capacity or current-code certification.",
+  "translation": {
+    "peralte": "overall depth",
+    "ancho inferior": "bottom flange width",
+    "ancho superior": "top flange width",
+    "alma": "web",
+    "área sección transversal": "cross-sectional area",
+    "modificada": "modified"
+  },
+  "geometry_notes": [
+    "Origin at mid-soffit; y positive upwards. Right-half vertices run bottom to top.",
+    "Types II through VI have two bottom corner chamfers 2 cm by 2 cm; modified Type I has no chamfers.",
+    "Modified IV upper haunch has two slopes; Types V/VI have two slopes below the top flange.",
+    "Published area is rounded to up to 4 decimal places in m2. Maximum observed difference is 50 mm2; no dimension fitting or interpolation used.",
+    "No independent published centroid or inertia table on this page."
+  ],
+  "published_properties": [
+    {
+      "section": "I-MODIFIED",
+      "source_designation": "I TIPO I - MODIFICADA",
+      "depth_cm": 54,
+      "top_flange_width_cm": 59,
+      "bottom_flange_width_cm": 59,
+      "web_width_cm": 14,
+      "area_m2": 0.2106,
+      "right_half_cm": [
+        [
+          29.5,
+          0
+        ],
+        [
+          29.5,
+          10
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          7,
+          34
+        ],
+        [
+          29.5,
+          44
+        ],
+        [
+          29.5,
+          54
+        ]
+      ]
+    },
+    {
+      "section": "II",
+      "source_designation": "I TIPO II",
+      "depth_cm": 91,
+      "top_flange_width_cm": 30,
+      "bottom_flange_width_cm": 45,
+      "web_width_cm": 15,
+      "area_m2": 0.2321,
+      "right_half_cm": [
+        [
+          20.5,
+          0
+        ],
+        [
+          22.5,
+          2
+        ],
+        [
+          22.5,
+          15
+        ],
+        [
+          7.5,
+          30
+        ],
+        [
+          7.5,
+          68
+        ],
+        [
+          15,
+          76
+        ],
+        [
+          15,
+          91
+        ]
+      ]
+    },
+    {
+      "section": "III",
+      "source_designation": "I TIPO III",
+      "depth_cm": 115,
+      "top_flange_width_cm": 40,
+      "bottom_flange_width_cm": 56,
+      "web_width_cm": 18,
+      "area_m2": 0.3625,
+      "right_half_cm": [
+        [
+          26,
+          0
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          28,
+          18
+        ],
+        [
+          9,
+          38
+        ],
+        [
+          9,
+          88
+        ],
+        [
+          20,
+          97
+        ],
+        [
+          20,
+          115
+        ]
+      ]
+    },
+    {
+      "section": "IV",
+      "source_designation": "I TIPO IV",
+      "depth_cm": 135,
+      "top_flange_width_cm": 50,
+      "bottom_flange_width_cm": 66,
+      "web_width_cm": 20,
+      "area_m2": 0.497,
+      "right_half_cm": [
+        [
+          31,
+          0
+        ],
+        [
+          33,
+          2
+        ],
+        [
+          33,
+          20
+        ],
+        [
+          10,
+          43
+        ],
+        [
+          10,
+          100
+        ],
+        [
+          25,
+          115
+        ],
+        [
+          25,
+          135
+        ]
+      ]
+    },
+    {
+      "section": "IV-MODIFIED",
+      "source_designation": "I TIPO IV - MODIFICADA",
+      "depth_cm": 135,
+      "top_flange_width_cm": 125,
+      "bottom_flange_width_cm": 66,
+      "web_width_cm": 20,
+      "area_m2": 0.5233,
+      "right_half_cm": [
+        [
+          31,
+          0
+        ],
+        [
+          33,
+          2
+        ],
+        [
+          33,
+          20
+        ],
+        [
+          10,
+          43
+        ],
+        [
+          10,
+          110
+        ],
+        [
+          25,
+          125
+        ],
+        [
+          62.5,
+          130
+        ],
+        [
+          62.5,
+          135
+        ]
+      ]
+    },
+    {
+      "section": "V",
+      "source_designation": "I TIPO V",
+      "depth_cm": 160,
+      "top_flange_width_cm": 107,
+      "bottom_flange_width_cm": 71,
+      "web_width_cm": 20,
+      "area_m2": 0.6451,
+      "right_half_cm": [
+        [
+          33.5,
+          0
+        ],
+        [
+          35.5,
+          2
+        ],
+        [
+          35.5,
+          20
+        ],
+        [
+          10,
+          45
+        ],
+        [
+          10,
+          130
+        ],
+        [
+          19.5,
+          140
+        ],
+        [
+          53.5,
+          147
+        ],
+        [
+          53.5,
+          160
+        ]
+      ]
+    },
+    {
+      "section": "VI",
+      "source_designation": "I TIPO VI",
+      "depth_cm": 183,
+      "top_flange_width_cm": 107,
+      "bottom_flange_width_cm": 71,
+      "web_width_cm": 20,
+      "area_m2": 0.6911,
+      "right_half_cm": [
+        [
+          33.5,
+          0
+        ],
+        [
+          35.5,
+          2
+        ],
+        [
+          35.5,
+          20
+        ],
+        [
+          10,
+          45
+        ],
+        [
+          10,
+          153
+        ],
+        [
+          19.5,
+          163
+        ],
+        [
+          53.5,
+          170
+        ],
+        [
+          53.5,
+          183
+        ]
+      ]
+    }
+  ]
+}

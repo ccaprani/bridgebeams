@@ -1,28 +1,15 @@
-"""South African standard I beams (Civilcon I1-I20, beam & slab construction).
+"""South African Civilcon I1-I20 gross sections, in source drawing orientation.
 
-Dimensions and section properties per the Civilcon PPBI datasheet (TMH7
-NA+NB loading). The profile is decoded exactly from the PPBI vector
-drawing:
+PPBI.pdf page 1 shows B1 at the soffit and B4 at the top. B2 is the
+bottom flange width at its upper edge; B3 is the web. From the soffit,
+D2/D3/D4/D5/D6 are bottom edge / bottom splay / clear web / top splay /
+top edge heights. Origin is the B1 soffit centre, y positive upwards.
 
-- ``B1``: top flange width (at the top face; the flange sides taper
-  slightly to ``B2`` at the flange base over depth ``D2``)
-- ``B2``: top flange base width
-- ``B3``: web width (constant)
-- ``B4``: bottom flange width (constant, vertical sides)
-- ``D2``/``D3``/``D4``/``D5``/``D6``: top flange / upper splay / web /
-  lower splay (45 deg) / bottom flange depths; they sum exactly to the
-  overall depth ``D1``.
-
-The PPBI drawing shows the as-cast orientation (``B1`` face down, hence
-the published "Yb over soffit" is measured from the ``B1`` face). This
-module returns the section in the drawn orientation: origin at the middle
-of the ``B4`` bottom-flange face, y positive towards the ``B1`` face,
-millimetres. All 20 sizes reproduce the published area exactly (0.000%)
-and the published second moment of area exactly.
-
-No published geometric interpretation was available for ``B4`` beyond the
-drawing itself; it is confirmed as the constant bottom-flange width by
-exact area/centroid/inertia agreement for all 20 sizes.
+Published Yb is therefore the centroid height above y=0. Earlier versions
+returned a vertically reflected profile; its area and centroidal inertia
+were unchanged, but centroid and top/bottom section moduli were reversed.
+The source I18 top modulus is inconsistent with its dimensions; preserve
+that printed value and flag it rather than relaxing every section check.
 """
 
 from __future__ import annotations
@@ -30,7 +17,6 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from importlib import resources
-from typing import Optional
 
 from shapely.geometry import Polygon
 
@@ -49,11 +35,10 @@ def _load_data() -> dict:
 class CivilconIBeamDimensions:
     """Dimensions of one Civilcon I-beam size, millimetres.
 
-    Attributes follow the manufacturer's labels: ``b1`` top flange width,
-    ``b2`` top flange base width, ``b3`` web width, ``b4`` bottom flange
-    width, ``d1`` overall depth, ``d2`` top flange depth, ``d3`` upper
-    splay, ``d4`` web depth, ``d5`` lower splay (45 deg), ``d6`` bottom
-    flange depth.
+    Attributes retain the source labels: b1 soffit width, b2 upper
+    bottom-flange width, b3 web width, b4 top width; d1 overall depth,
+    d2 bottom-edge height, d3 bottom splay, d4 clear web height,
+    d5 top splay and d6 top-edge height.
     """
 
     size: str
@@ -71,15 +56,14 @@ class CivilconIBeamDimensions:
     @property
     def outline(self) -> list[tuple[float, float]]:
         r = [
-            (self.b4 / 2.0, 0.0),
-            (self.b4 / 2.0, self.d6),
-            (self.b3 / 2.0, self.d6 + self.d5),
-            (self.b3 / 2.0, self.d6 + self.d5 + self.d4),
-            (self.b2 / 2.0, self.d6 + self.d5 + self.d4 + self.d3),
-            (self.b1 / 2.0, self.d1),
+            (self.b1 / 2.0, 0.0),
+            (self.b2 / 2.0, self.d2),
+            (self.b3 / 2.0, self.d2 + self.d3),
+            (self.b3 / 2.0, self.d2 + self.d3 + self.d4),
+            (self.b4 / 2.0, self.d1 - self.d6),
+            (self.b4 / 2.0, self.d1),
         ]
-        l = [(-x, y) for x, y in reversed(r)]
-        return l + r
+        return r + [(-x, y) for x, y in reversed(r)]
 
 
 class CivilconIBeamSection:
@@ -105,16 +89,16 @@ class CivilconIBeamSection:
         self.published = row
         self.dimensions = CivilconIBeamDimensions(
             size=size,
-            b1=float(row["b1_top_flange_width"]),
-            b2=float(row["b2_flange_base_width"]),
+            b1=float(row["b1_soffit_width"]),
+            b2=float(row["b2_bottom_flange_upper_width"]),
             b3=float(row["b3_web_width"]),
-            b4=float(row["b4_bottom_flange_width"]),
+            b4=float(row["b4_top_flange_width"]),
             d1=float(row["d1_depth"]),
-            d2=float(row["d2_top_flange_depth"]),
-            d3=float(row["d3_upper_splay"]),
+            d2=float(row["d2_bottom_flange_depth"]),
+            d3=float(row["d3_bottom_splay"]),
             d4=float(row["d4_web"]),
-            d5=float(row["d5_lower_splay"]),
-            d6=float(row["d6_bottom_flange_depth"]),
+            d5=float(row["d5_top_splay"]),
+            d6=float(row["d6_top_flange_depth"]),
         )
 
     @property
