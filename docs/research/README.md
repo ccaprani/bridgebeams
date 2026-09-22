@@ -42,6 +42,7 @@ profiles and completed checks.
 | Pakistan: NHA PSC I-girder Types A–H | [Design-code and geometry follow-up](pakistan-us-section-followup-2026-09.md) | [Three source leads](data/deep-search-pakistan-2026-09.json) |
 | AASHTO-named beams outside the US | [Cross-jurisdiction follow-up](aashto-cross-jurisdiction-followup-2026-09.md) | [Seven source leads](data/deep-search-aashto-global-2026-09.json) |
 | Korea, Argentina and Philippines follow-up | [Standardisation and authority leads](deep-search-korea-argentina-philippines-2026-09.md) | [Four source leads](data/deep-search-korea-argentina-philippines-2026-09.json) |
+| Brazil: Portuguese papers and DNIT guidance | [Brazilian beam sources](deep-search-brazil-2026-09.md) | [Three source leads](data/deep-search-brazil-2026-09.json) |
 
 ## Reading the evidence
 
@@ -102,8 +103,8 @@ country table below. The separate PDF-backlog and Banagher transcriptions
 retain their own source manifests and are not included in these regional
 row counts.
 
-Run `python3 tools/check_discovery_sources.py` to validate the nine newer
-discovery queues. Their 53 records are searchable on the coverage map;
+Run `python3 tools/check_discovery_sources.py` to validate the ten newer
+discovery queues. Their 56 records are searchable on the coverage map;
 the historical country index below remains the original regional-batch index,
 so its 149-record total should not be mistaken for the complete map total.
 

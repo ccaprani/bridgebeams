@@ -2,7 +2,7 @@
   "count_basis": "Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 122,
-  "source_records": 229,
+  "source_records": 232,
   "implemented_countries": 18,
   "implemented_profiles": 301,
   "country_profile_assignments": 476,
@@ -539,6 +539,48 @@
           "title_original": "Produtos"
         },
         {
+          "title": "Assessment of a precast concrete beam for a highway bridge deck",
+          "url": "https://repositorio.ufc.br/bitstream/riufc/68766/1/2016_tcc_dlfilgueira.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-brazil-2026-09.json",
+          "id": "BR-UFC-FILGUEIRA-2016-PRESTRESSED-I",
+          "language": "Portuguese",
+          "source_type": "university_thesis",
+          "locator": "2016 undergraduate thesis; PDF pp. 35\u201336, Figures 8\u201310 and the defined I-section; abstract pp. 6\u20137",
+          "family_names": [
+            "UFC 2016 prestressed precast I beam"
+          ],
+          "title_original": "Avalia\u00e7\u00e3o de viga de concreto pr\u00e9-moldado para tabuleiro de ponte rodovi\u00e1ria"
+        },
+        {
+          "title": "Reliability analysis of a prestressed bridge beam designed to Brazilian standards",
+          "url": "https://www.scielo.br/j/riem/a/k55Zx3qyqfFyNRVvLCf8ccB/abstract/?lang=pt",
+          "status": "partial_dimensions",
+          "registry": "deep-search-brazil-2026-09.json",
+          "id": "BR-IBRACON-LYRA-2020-U-BEAM",
+          "language": "Portuguese and English",
+          "source_type": "journal_paper",
+          "locator": "Revista IBRACON 13(2), 2020, DOI 10.1590/S1983-41952020000200010; Table 1 geometry and Figures 4\u20135; open PDF mirror at USP",
+          "family_names": [
+            "Brazilian 33.5 m prestressed U beam"
+          ],
+          "title_original": "An\u00e1lise de confiabilidade de uma viga pr\u00e9-moldada protendida de ponte dimensionada no estado limite de servi\u00e7o preconizado pela NBR 6118 e 7188"
+        },
+        {
+          "title": "IPR 751/2022 \u2014 Manual for design of semipermanent bridges",
+          "url": "https://www.gov.br/dnit/pt-br/central-de-conteudos/atos-normativos/tipo/instrucao-normativa/2026/sei_24795123_anexo_vii.pdf",
+          "status": "named_only",
+          "registry": "deep-search-brazil-2026-09.json",
+          "id": "BR-DNIT-IPR-751-2022-PRESTRESSED-LONGARINAS",
+          "language": "Portuguese",
+          "source_type": "federal_transport_guidance",
+          "locator": "official DNIT annex, PDF p. 4; section on Pontes em Concreto Protendido (PCP)",
+          "family_names": [
+            "DNIT PCP prestressed I/T longitudinal beams"
+          ],
+          "title_original": "IPR 751/2022 \u2014 Manual de Projeto de Pontes Semipermanentes"
+        },
+        {
           "title": "Pretensioned UHPFRC girders for highway bridges: design, performance and design solutions",
           "url": "https://repositorio.utfpr.edu.br/jspui/handle/1/41433",
           "status": "blocked",
@@ -555,7 +597,7 @@
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 5,
       "researched": true
     },
     {

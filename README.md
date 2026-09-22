@@ -65,6 +65,8 @@ from the six US AASHTO/PCI reference outlines; common geometry is unverified.
 The latest search adds Korean PSC-I standardisation/drawing records, a
 historical Argentine draft standard with four beam types, and a Philippine
 authority EIS contrasting AASHTO Type VI with NU 2000 girders.
+Brazilian Portuguese sources now add a UFC I-beam thesis, an IBRACON/SciELO
+U-beam reliability paper and DNIT IPR guidance for prestressed I/T beams.
 
 The [visual-review record](docs/source/research-visual-review.md) preserves
 the received answers and their implementation outcomes. With the local source
