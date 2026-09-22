@@ -1,0 +1,24 @@
+{
+  "family": "FEBE standardised prestressed bridge I-beams (Belgium)",
+  "description": "FEBE (Federation de l'Industrie du Beton), 'Standardisation des poutres prefabriquees en beton precontraint pour ouvrages d'art', 4th ed. 2017: I-sections h = 900-2050 mm in 50 mm steps, two sub-families. Designation convention h/b (e.g. 900/620, 2050/880). The FEBE drawing labels b on BOTH flanges (symmetric I, per Ergon's 2018 reproduction). Governing standard for precast prestressed bridge beams in Wallonia (CCT Qualiroutes K.7.1).",
+  "sources": {
+    "defining_document": "FEBE brochure 4th ed. 2017 - PDF at https://www.febe.be/wp-content/uploads/2017/07/FEBE_Standardisation-Poutres-Prefabriquees-pour-Ouvrages-dart_4e-editon-2017_sec.pdf (HTTP 403 to automated fetchers - open in a browser)",
+    "independent_confirmation": "Ergon nv Guide technique 2018, section 4.1 (https://www.ergon.be/wp-content/uploads/2018/02/04_ERG2018_TG_Ouvrages-d%E2%80%99art_FR.pdf) - reproduces the FEBE standard sections with the same numbers",
+    "spec_context": "CCT Qualiroutes K.7.1: https://qc.spw.wallonie.be/fr/qualiroutes/1999/site/k/k.7.1.poutresprefabriqueesenbetonprecontraint.htm"
+  },
+  "subfamilies": {
+    "small": {"h_range": [900, 1650], "b_values": [620, 640], "bw_values": [140, 160], "n": 60, "r": 80, "s": 200},
+    "large": {"h_range": [1700, 2050], "b_values": [800, 820, 840, 860, 880], "bw_values": [140, 160, 180, 200, 220], "n": 80, "r": 120, "s": 210}
+  },
+  "pairing_rules": {
+    "small": {"b_from_bw": 480, "g_from_b": 240},
+    "large": {"b_from_bw": 660, "g_from_b": 320}
+  },
+  "evidence_levels": {
+    "widths_and_pairings": "attested (FEBE brochure structure cross-checked against Ergon Guide technique 2018)",
+    "gorge_g": "attested (pairs with b: g = b - 240 small / b - 320 large)",
+    "n_r_s": "attested per sub-family (n 60/80, r 80/120, s 200/210)",
+    "m_cycle": "SEARCH-ATTESTED ONLY: m cycles 150->200->250->300->150 across successive 50 mm height steps (e.g. 900/620 m=150; 2050/880 m=300); letter-to-dimension mapping for m/n/r/s is UNVERIFIED (requires the FEBE drawing)",
+    "flange_thicknesses": "NOT PUBLISHED in open sources - required constructor arguments (top/bottom); hints for 2050/880 only: top-associated 300, bottom-associated 210 (search-attested)"
+  }
+}

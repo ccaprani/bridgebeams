@@ -1,0 +1,30 @@
+{
+  "family": "Mosty-Łódź precast prestressed T-girders T12-T27 (Poland)",
+  "description": "Polish standard precast pretensioned T-girders by Mosty-Łódź S.A. (catalogue editions 2002/2005/2010; still produced by Mosty-Łódź, Betard, FABUD WKB, SIBET). T-section with a tapered/bulbed stem: top flange 890 mm wide, web 200 mm at the top widening continuously to B at the soffit. The type number is the nominal catalogue span in metres. T15 and T18 share one cross-section (750/360). NOTE: T22 does not exist in this family.",
+  "sources": {
+    "table": "Betard product page 'Belka mostowa T' (read directly from Wayback capture https://web.archive.org/web/20241204131619/https://betard.pl/produkty/belka-mostowa-t) attested identically by SIBET (https://p.izbudujemy.pl/inzynierbudownictwa/pliki/21_Sibet.pdf); corroborated by Gąćkowski 2018 (T27: 0.89 m flange, web 0.20→0.465 m; catalogue spacing 0.90 m) and Cieśla/Biskup/Skawiński, Drogi i Mosty 1/2009 (T27 provenance, B45, 22 strands).",
+    "source_urls": [
+      "https://web.archive.org/web/20241204131619/https://betard.pl/produkty/belka-mostowa-t",
+      "https://betard.pl/produkty/belka-mostowa-t",
+      "https://p.izbudujemy.pl/inzynierbudownictwa/pliki/21_Sibet.pdf",
+      "https://www.journalssystem.com/znpc_sb/pdf-103701-40818",
+      "https://www.rabdim.pl/index.php/rb/article/viewFile/v8n1p13/318",
+      "https://www.mostylodz.pl/pl/produkcja-prefabrykatow.html"
+    ],
+    "validation_note": "No published A/yc/Ixx tables exist in the captured sources; validation is internal consistency (polygon vs closed-form trapezoidal-stem values) plus the attested cross-sectional constants. The ~210 mm top flange thickness is attested second-hand (Cieśla 2013, for T27) and is a constructor parameter - confirm per Mosty-Łódź catalogue before structural use."
+  },
+  "published_properties": [
+    {"section": "T12", "length_m": 11.5, "length_with_extensions_m": 12.0, "depth": 600, "web_bottom_width": 315},
+    {"section": "T15", "length_m": 14.5, "length_with_extensions_m": 15.0, "depth": 750, "web_bottom_width": 360},
+    {"section": "T18", "length_m": 17.5, "length_with_extensions_m": 18.0, "depth": 750, "web_bottom_width": 360},
+    {"section": "T21", "length_m": 20.5, "length_with_extensions_m": 21.0, "depth": 900, "web_bottom_width": 405},
+    {"section": "T24", "length_m": 23.5, "length_with_extensions_m": 24.0, "depth": 1000, "web_bottom_width": 435},
+    {"section": "T27", "length_m": 26.5, "length_with_extensions_m": 27.0, "depth": 1100, "web_bottom_width": 465}
+  ],
+  "constants": {
+    "top_flange_width": 890.0,
+    "web_top_width": 200.0,
+    "top_flange_thickness_attested": 210.0,
+    "deck": {"beam_spacing": 900.0, "cip_slab": 240.0}
+  }
+}
