@@ -2,7 +2,7 @@
   "count_basis": "Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 122,
-  "source_records": 225,
+  "source_records": 229,
   "implemented_countries": 18,
   "implemented_profiles": 301,
   "country_profile_assignments": 476,
@@ -139,6 +139,23 @@
           "title_original": "Sistema de puentes"
         },
         {
+          "title": "Bridges consisting of premoulded prestressed concrete beams",
+          "url": "https://trid.trb.org/View/1060145",
+          "status": "named_only",
+          "registry": "deep-search-korea-argentina-philippines-2026-09.json",
+          "id": "AR-ARGENTINIAN-DRAFT-PRESTRESSED-BEAMS-1972",
+          "language": "Spanish",
+          "source_type": "conference_draft_standard",
+          "locator": "Seventh Argentinian Road and Traffic Congress, Group 4, Report 164, pp. 303\u2013318, December 1972; TRID abstract",
+          "family_names": [
+            "Argentine premoulded prestressed beam Type 1",
+            "Argentine premoulded prestressed beam Type 2",
+            "Argentine premoulded prestressed beam Type 3",
+            "Argentine premoulded prestressed beam Type 4"
+          ],
+          "title_original": "Puentes de vigas premoldeadas de hormig\u00f3n pretensado"
+        },
+        {
           "title": "Theoretical study of service cracking and deformation limits in prestressed composite concrete beams under time- and cycle-dependent actions",
           "url": "https://www.fio.unicen.edu.ar/images/stories/carreras/posgrado/hormigon/tesis/TesisRivas.pdf",
           "status": "named_only",
@@ -156,7 +173,7 @@
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -4269,11 +4286,26 @@
             "AASHTO Type IV-B"
           ],
           "title_original": "POW 17J00028"
+        },
+        {
+          "title": "Laguna Lakeshore Road Network EIS: AASHTO Type VI and NU 2000 girder alternatives",
+          "url": "https://eia.emb.gov.ph/wp-content/uploads/2022/02/EIS.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-korea-argentina-philippines-2026-09.json",
+          "id": "PH-DPWH-LAGUNA-EIS-AASHTO-NU2000-2022",
+          "language": "English",
+          "source_type": "government_environmental_impact_statement",
+          "locator": "PDF p.65, section 1.4.6.5 and Figures 1-48/1-49: 40 m AASHTO Type VI option and 45 m NU 2000 option",
+          "family_names": [
+            "AASHTO Type VI",
+            "NU 2000 girder"
+          ],
+          "title_original": "Laguna Lakeshore Road Network Infrastructure Preparation and Innovation Facility Output 1"
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 4,
+      "source_count": 5,
       "researched": true
     },
     {
@@ -5102,6 +5134,34 @@
             "1975 ADB PSC I"
           ],
           "title_original": "PSC I \uac70\ub354 Tendon Work \uc694\uc57d"
+        },
+        {
+          "title": "Optimum design and standardisation study of PSC I-girder bridges",
+          "url": "https://www.codil.or.kr/viewDtlConRpt.do?gubun=rpt&pMetaCode=OTKHRKX60613",
+          "status": "named_only",
+          "registry": "deep-search-korea-argentina-philippines-2026-09.json",
+          "id": "KR-KICT-PSC-I-STANDARDIZATION-2005",
+          "language": "Korean",
+          "source_type": "government_research_report",
+          "locator": "CODIL record, 2005 report; authors Park Young-ha, Park Min-seok, Gil Hong-bae, Lee Yong-gu and Yoo Ho-in; original PDF link on record",
+          "family_names": [
+            "Korean PSC I-girder standard sections"
+          ],
+          "title_original": "PSC I \uac70\ub354\uad50\uc758 \ucd5c\uc801\uc124\uacc4 \ubc0f \ud45c\uc900\ud654 \uc5f0\uad6c"
+        },
+        {
+          "title": "Tendon work drawing for a 30 m PSC I-girder bridge",
+          "url": "https://www.codil.or.kr/filebank/original/MA/OTMCMA500808/OTMCMA500808.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-korea-argentina-philippines-2026-09.json",
+          "id": "KR-CODIL-30M-PSC-I-1999",
+          "language": "Korean and English",
+          "source_type": "government_project_drawing",
+          "locator": "Drawing ID SD 1999-24-30-9; archive text gives girder geometry and end/centre tendon sections",
+          "family_names": [
+            "30 m PSC I-girder"
+          ],
+          "title_original": "TENDON WORK OF PSC I-GIRDER BRIDGE"
         }
       ],
       "families": [
@@ -5127,7 +5187,7 @@
         }
       ],
       "count": 3,
-      "source_count": 1,
+      "source_count": 3,
       "researched": true
     },
     {

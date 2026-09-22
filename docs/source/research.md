@@ -31,6 +31,7 @@ us-washington-followup
 pci-aashto-reference-2026-09
 pakistan-us-section-followup-2026-09
 aashto-cross-jurisdiction-followup-2026-09
+deep-search-korea-argentina-philippines-2026-09
 ```
 
 Download the structured records:
@@ -50,6 +51,7 @@ Download the structured records:
 - {download}`PCI AASHTO I-beam reference <../research/data/deep-search-us-aashto-2026-09.json>`
 - {download}`Pakistan NHA girder leads <../research/data/deep-search-pakistan-2026-09.json>`
 - {download}`AASHTO-named international leads <../research/data/deep-search-aashto-global-2026-09.json>`
+- {download}`Korean, Argentine and Philippine follow-up leads <../research/data/deep-search-korea-argentina-philippines-2026-09.json>`
 
 Original publications retain their own copyright. Downloaded source PDFs
 are not distributed with the package. The reports retain URLs and, for

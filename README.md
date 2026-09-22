@@ -62,6 +62,9 @@ university, standards-library and technical-publication leads, with exact
 designations and drawing locators where found. Pakistan's NHA PSC I-girder
 Types A–H are [recorded separately](docs/research/pakistan-us-section-followup-2026-09.md)
 from the six US AASHTO/PCI reference outlines; common geometry is unverified.
+The latest search adds Korean PSC-I standardisation/drawing records, a
+historical Argentine draft standard with four beam types, and a Philippine
+authority EIS contrasting AASHTO Type VI with NU 2000 girders.
 
 The [visual-review record](docs/source/research-visual-review.md) preserves
 the received answers and their implementation outcomes. With the local source
