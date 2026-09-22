@@ -23,6 +23,10 @@ jobs:
         with:
           python-version: '3.11'
           cache: pip
+      - name: Install Pandoc for notebook rendering
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
       - name: Install package and documentation dependencies
         run: python -m pip install -e '.[docs]'
       - name: Build Sphinx site and coverage map
