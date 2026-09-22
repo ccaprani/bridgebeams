@@ -28,7 +28,10 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 - **M beams (M1–M10) / UMB edge beams** — validated to ≤0.7%.
 - **SY / SYE beams (SY1–SY6)** — long span; validated to <0.6% rms.
 - **MY / MYE beams (MY1–MY7)** — solid slab; validated to ≤2.2%.
-- Solid Box (SD series) and W beams: sources collected, planned.
+- **Solid Box (SD1–SD8, width classes 1–3)** — 24 dimensioned profiles,
+  checked against published area, centroid and section moduli.
+- Solid Box width class 4 and W beams: transcribed tables; unresolved
+  source discrepancies or profile details remain explicit.
 
 #### United Kingdom (`bridgebeams.uk`) — planned
 
@@ -39,6 +42,27 @@ Irish ranges; shared geometry backend with `bridgebeams.ie`.
 
 - **Super-T girders (T1–T5)** to AS5100.5 App. D, pre- and post-2001 variants.
 - **I-girders (types 1–4)** to AS5100.5 App. D.
+
+## Global collection
+
+The library also includes families for Belgium, Greece, Japan, Korea,
+Mexico, New Zealand, Poland, Qatar, Russia, South Africa, Taiwan, Thailand and
+Türkiye. Evidence
+quality varies by family: some profiles are exact transcriptions, some are
+documented reconstructions, and others require designer-supplied dimensions.
+
+The [global source collection](docs/research/README.md) contains country-by-country
+research, original titles with English translations, structured source records,
+and page-based PDF transcriptions. A source appearing in the catalogue does not
+mean that its beam family is implemented or that every profile dimension is known.
+
+Recent additions include seven SEPSA I-girders for Mexico, five Taiwanese
+Freeway Bureau I-girders, five Ashghal Q-girder reconstructions for Qatar,
+and two NZTA I-beams. The NZ Super-T
+geometry now preserves the open centre and each size's distinct lower profile.
+Civilcon I-beams now use the source's B1 soffit as `y=0`; the previous
+vertical inversion is corrected, so centroid heights and top/bottom section
+moduli change. Existing analyses using these two families should be recomputed.
 
 ## Quick start
 
@@ -67,7 +91,7 @@ strands = strand_locations("Y4")
 Manufacturers publish `Wf`, section properties and strand layouts but not
 the internal profile dimensions, so the Y-beam internals are a documented
 least-squares reconstruction fitted to the published properties of all eight
-sizes (`src/bridgebeams/ukie/data/ie_y_beam.json`):
+sizes (`src/bridgebeams/ie/data/ie_y_beam.json`):
 
 | Quantity | Max deviation from published (Y1–Y8) |
 |---|---|
@@ -86,11 +110,12 @@ dimension tables. Convert externally for other unit systems.
 
 ## Sources & provenance
 
-All dimension sources are registered with URLs in
-[`sources/SOURCES.md`](sources/SOURCES.md). Regional research briefs for
-future families (US AASHTO/PCI, China JTG, Canada CPCI/NU, Brazil, India,
-Europe) live in `sources/research/`. Source documents are working
-references and are not committed.
+The versioned [source collection](docs/research/README.md) records source
+URLs, translations, dimensions and remaining blockers. Earlier working notes
+are retained locally in `sources/SOURCES.md` and `sources/research/`.
+Source PDFs and rendered drawings are private working references and are not
+committed; published factual dimensions and provenance are retained in the
+research records and family data files.
 
 ## Documentation
 

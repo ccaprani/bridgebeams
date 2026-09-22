@@ -18,4 +18,10 @@
     bridgebeams.ie.ie_u_beam
     bridgebeams.ie.ie_m_beam
     bridgebeams.ie.ie_sy_beam
+    bridgebeams.ie.ie_solid_box
+    bridgebeams.nz.super_t
+    bridgebeams.nz.i_beams
+    bridgebeams.qa.q_beams
+    bridgebeams.mx.sepsa_i_girder
+    bridgebeams.tw.i_section
 ```

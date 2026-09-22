@@ -1,170 +1,170 @@
-# HANDOFF — bridgebeams agent briefing
+# HANDOFF — bridgebeams global collection
 
-Read this fully before touching anything. It covers state, conventions,
-blockers, and the exact next actions.
+Updated 22 September 2026. Read before changing geometry or using old research
+notes. This briefing supersedes the previous handoff: several source locators,
+width interpretations and blocker claims in it were wrong.
 
-## Repository
+## Repository and verification
 
-- Local: `~/projects/bridgebeams`, branch **`ukie-beams`** (all work is on
-  this branch; PR #1 `aus-sections` and PR #2 `ukie-beams` are open,
-  stacked, NOT merged).
-- Remote: `github.com/ccaprani/bridgebeams` (private until merged).
-- Environment: `source ~/anaconda3/etc/profile.d/conda.sh && conda activate pybridge`
-  then `python -m pytest tests/ -q` — 180 tests, all passing.
-- Install: `python -m pip install -e .`
+- Repository: `~/projects/bridgebeams`; working branch `ukie-beams`.
+- Remote: `github.com/ccaprani/bridgebeams`. Preserve the review-before-merge
+  workflow. Do not merge or push to main. Keep changes on this branch or a
+  new jurisdiction branch, with descriptive commits.
+- Python: `/home/ccaprani/anaconda3/envs/pybridge/bin/python`.
+- Full test suite after the geometry changes: **266 passed**, 14 existing
+  Matplotlib/Pyparsing deprecation warnings. Command:
+  `timeout 180 /home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`.
+- Wheel checked outside the checkout: **all 21 family JSON tables included**;
+  all 43 newly implemented profiles construct from the extracted wheel.
+  The old `bridgebeams.ukie.data` package-data rule silently omitted BE/JP/PL
+  tables; the new wildcard includes each family's `data/*.json`.
+- Sphinx command:
+  `/home/ccaprani/anaconda3/envs/pybridge/bin/python -m sphinx -b html docs/source docs/_build/html`.
+  Obsolete generated `gen/bridgebeams.ukie*` pages are excluded. Research
+  includes use `:relative-docs: data/` so JSON links resolve as downloads.
 
-## What this package is
+## Durable source collection
 
-Standard precast/prestressed concrete bridge beam sections as
-`sectionproperties` `Geometry` objects (millimetres), for use with
-`sectionproperties`, `concreteproperties`, `PyBridge`, and `ospgrillage`.
-**22 families across 15 subpackages, 10 jurisdictions.**
+Start at **`docs/research/README.md`**, not the ignored historical registry.
+It links the current country index, translated titles/terminology, original
+source URLs, source-status distinctions, tables, and outstanding blockers.
 
-## Package layout
+- `docs/research/europe-americas-2026-09.md` and
+  `data/europe-americas-sources.json`.
+- `docs/research/asia-africa-2026-09.md` and
+  `data/asia-africa-sources.json`.
+- `docs/research/pdf-transcription-2026-09.md` and
+  `data/pdf-transcriptions.json`: 28 drawing records, 17 Norwegian/Japanese
+  translated terms, four source PDF manifests.
+- `docs/research/banagher-pending-families-2026-09.md` and
+  `data/banagher-pending-families.json`: 32 Solid Box and 16 W table rows.
+
+Counts for the evolving regional registries are generated, not hardcoded here:
 
 ```
-src/bridgebeams/
-├── _geometry.py        # shared: mirror-symmetric polygon builder, shoelace props
-├── adapters.py         # to_concreteproperties(), osp_grillage_properties()
-├── aus/                # Super-T (T1-T5), I-girders (1-4) — AS5100.5 App D
-├── ie/                 # Ireland: T, TY/TYE, Y/YE, U/SU, M/UMB, SY/SYE, MY/MYE
-│   └── data/*.json     # published tables + reconstruction params + sources
-├── jp/                 # Japan: JIS A 5373 T-girders (AG18-24, BG18-24)
-├── kr/                 # Korea: KHC PSC I-girders (25/30/35 m)
-├── tr/                 # Türkiye: KGM I-girders (I90-I170)
-├── za/                 # South Africa: Civilcon I-beams (I1-I20)
-├── ru/                 # Russia: Soyuzdorproekt 3.503.1-81 33 m I-beams
-├── th/                 # Thailand: DOH IG-205 (20 m)
-├── gr/                 # Greece: Egnatia extended-I (45 parametric sections)
-├── be/                 # Belgium: FEBE standardised I-beams (900-2050)
-├── pl/                 # Poland: Mosty-Łódź T12-T27
-└── uk/                 # UK: STUB — planned CBDG families (inverted-T, M, I, box)
+python3 tools/check_source_catalogue.py
+python3 tools/check_source_catalogue.py --verify-downloads --write-index
 ```
 
-Each family module follows the same pattern: a frozen `Dimensions`
-dataclass with an `.outline` property (list of (x, y) points, anti-clockwise,
-origin at mid-soffit, y up), and a `Section` class exposing `.polygon`
-(shapely) and `.geometry` (sectionproperties). Data JSONs carry the
-published tables (test fixtures), fitted parameters, residual summaries,
-and source citations.
+The second command requires the ignored local downloads and `pdfinfo`.
+It verifies PDF/HTML hashes and PDF page counts, then refreshes the country
+index. Regional counts exclude the separate PDF and Banagher audit records.
+Citation-only inherited standards may have a null URL rather than a guessed
+link. Access-blocked, rejected, draft and preliminary sources are explicitly
+labelled; they must not be counted as verified implementation-ready profiles.
 
-## Conventions and gotchas (READ BEFORE CODING)
+PDFs, HTML snapshots, extracts and visual evidence are retained under
+`sources/expansion/{europe-americas,asia-africa,pdf-backlog}/`; these are
+ignored private working materials. Original Banagher/Concast PDFs remain
+under `sources/`. Do not force-add original publications or snapshots.
+All numeric conversions preserve source units or identify derived SI values.
 
-1. **The mirror bug.** When building a mirror-symmetric polygon from a
-   right-half profile, you MUST include the soffit corner point in the
-   mirrored list. Omitting it silently produces a self-intersecting
-   polygon whose shoelace area is wrong (typically halves it). This bug
-   has bitten three times. Always hand-verify: compute the area of one
-   known size analytically and compare.
-2. **y-reference bug.** Published `Ixx` is about the horizontal
-   *centroidal* axis. Polygon shoelace gives I₀ about y=0 (soffit).
-   Convert: `Ic = I0 − A·cy²`. Forgetting this produces Ixx errors of
-   ±50–300%. Also: when computing `cy` from the shoelace formula, use the
-   *signed* area denominator (`signed = cr.sum()/2`) so the centroid is
-   correct regardless of winding direction.
-3. **Mixed y-references in outlines.** Top flange underside: measured from
-   the TOP of the section (`y = d − ttf`). Bottom flange top: measured
-   from the SOFFIT (`y = bft`). Mixing these causes self-intersection at
-   the flange edges. Always construct half-outlines bottom-up with
-   monotonic y.
-4. **Fitted-family tolerances.** Where the profile is a documented
-   reconstruction (not exact published dims), the test tolerances are
-   set to the documented residual + margin. Do not tighten without
-   refitting. Do not loosen without justification in the data JSON.
-5. **Stroke-font labels.** Dimension annotations in manufacturer CAD
-   drawings are stroke-font vector paths — invisible to text extraction
-   AND to OCR (they are graphics, not text). The only way to read them is
-   a human or a vision model looking at a rendered image.
-6. **Skip-file patterns.** Some package `__init__.py` files use lazy
-   imports; the top-level `bridgebeams/__init__.py` re-exports
-   everything. When adding a new family, update BOTH the subpackage
-   `__init__` and the top-level `__init__`, plus create a test file.
+## New implementations and corrected geometry
 
-## Validation philosophy
+The new and audited families below use millimetres, origin at mid-soffit,
+y upwards, a frozen Dimensions dataclass and a Section exposing Shapely
+`.polygon` and sectionproperties `.geometry`. New classes are exported from
+their country package and the top-level `bridgebeams` package. Legacy
+Australian classes retain their earlier dictionary dimensions, interface and
+negative-y convention; do not assume the new interface applies to them.
 
-Where the manufacturer publishes section properties (A, yc, Ixx), the
-tests validate computed geometry against those tables. Tolerances:
-
-| Family | Area | Centroid | Ixx | Why not exact |
-|---|---|---|---|---|
-| IE T | <0.01% | <0.02% | <0.02% | exact published profile |
-| IE TY/TYE | <0.01% | <0.02% | <0.02% | exact |
-| IE U/SU | ≤0.05% | ≤0.05% | ≤0.3% | exact |
-| IE Y | 3.5% | 2.1% | 4.8% | fitted reconstruction |
-| IE YE | 0.8% | 1.1% | 1.5% | fitted |
-| IE M | ≤0.7% | ≤0.7% | ≤0.7% | fitted web/block |
-| IE SY/SYE | <0.05% | <0.05% | <0.05% | near-exact |
-| JP AG/BG | N/A | N/A | N/A | no published tables; structural checks only |
-| TR KGM | N/A | N/A | N/A | analytic validation |
-| ZA Civilcon | exact | exact | exact | exact published profile |
-| KR KHC | +2% | +2% | +3% | tabulated haunches heavier than as-built |
-| RU Б3300 | 0.3% rms | 0.3% | 0.3% | fitted |
-| GR Egnatia | N/A | N/A | N/A | thicknesses are user parameters |
-
-## Remaining work — by blocker
-
-### 1. Vision-digitisation tasks (documents in hand, dims visible to a
-human/vision reader but not machine-extractable)
-
-These require rendering PDF pages to PNG and reading them visually
-(e.g. the `read` tool on a saved image). All PDFs are already downloaded.
-
-| Family | Document | Location | What to read |
-|---|---|---|---|
-| Japan AG/BG web+flange | THR/PCCEN Tohoku PDF (44 pp) | `/tmp/dims_review/thr_pccen.pdf` | pp. 27–31 may have the standard-section drawing; Table 6 of the source paper has full dims for the Korean KHC equivalents |
-| NZ Super-T 1225 confirmation | RR 364 S1.25 | `/tmp/dim_extract/nz/rr364.pdf` p. 26 (index 25) | same section, +200 mm deeper; confirm web taper dims |
-| Norway NTB/KTB flange thicknesses | V426 form drawings K201/K202 | `/tmp/dims_review/v426.pdf` (12 MB, drawings-only) | locate form drawing pages by rendering; read flange/web dims per height (600–1400) |
-| Qatar Q-beams T2–T5 | Ashghal SD 5-1-101 | `/tmp/qatar_sdd/SD-5-1-101_Rev1_Q-Girder-Sections.pdf` | render regions T2 (330,45,655,360), T3 (645,45,970,400), T4 (15,505,340,740), T5 (335,505,665,790) pt; read per-type: base width, tent low level, tent rise |
-| Greece flange thicknesses | Frontiers 2020 Fig. 2–5 | `/tmp/dim_extract/gr/g002.jpg` etc. | the paper's figures are charts, NOT dimensioned sections; the cross-section detail is left to the designer by intent |
-
-### 2. Purchase-gated (no free source exists)
-
-| Family | Source | Cost |
+| Module / public class | Coverage | Evidence and limitations |
 |---|---|---|
-| Japan full per-part dims | PCCEN handbook 2020 | ¥3,080 https://www.pcken.or.jp/publications/list/ |
-| Norway V426 printed copy | Statens vegvesen | free but raster-only |
+| `ie.ie_solid_box.IeSolidBoxBeamSection` | 24 SD variants: SD1–SD8, width classes (1)–(3) | 495/750/970 mm overall widths, depths 300–1000; nominal drawing checked against A/Yb/Zt/Zb |
+| `mx.SepsaIGirderSection` | 7: I-MODIFIED, II, III, IV, IV-MODIFIED, V, VI | Producer-specific metric profiles, not aliases for US AASHTO; published area within 50 mm² rounding |
+| `tw.TaiwanISection` | IV–VIII | Freeway Bureau Fig.10/Table 14, PDF p34/printed p30; post-tensioned gross midspan, ducts/end blocks omitted; analytic A/cy/I validation |
+| `qa.QaQBeamSection` | T1–T5 | Ashghal SD 5-1-101 Rev1; directly read lower dimensions; documented reconstruction, not an exact manufacturing profile |
+| `nz.NzIBeamSection` | 1500/1600 | RR364 S4.01/S4.10, PDF pp 45/51; source's 20 mm chamfer option, analytic area checks |
+| `nz.NzSuperTSection` | 1025/1225; 1225 also with `top_width=1990` | Corrected open-top twin-web gross profile; formwork ledge omitted explicitly |
+| `za.CivilconIBeamSection` | I1–I20 | Corrected vertical orientation: B1 at soffit, B4 at top; direct published centroid and actual top/bottom moduli checked |
 
-### 3. No national catalogue exists (documented, not blocked)
+The new families add **43 profiles**, plus the newly supported narrower NZ
+Super-T arrangement. Existing AU/IE/BE/GR/JP/KR/PL/RU/TH/TR/ZA families remain.
+The UK namespace is still a separate historic-family stub.
 
-Mexico, Argentina, Chile, Colombia, Sweden, Saudi Arabia, UAE, Vietnam,
-Philippines — these countries adopt AASHTO/BS/EN standards or use
-producer catalogues. Producer leads are in
-`sources/research/research-global-catalogue.md`.
+### Corrections that affect existing analyses
 
-### 4. Implementation candidates (data in hand, not yet coded)
+1. **NZ Super-T:** the old polygon filled the open centre. It also mistook
+   the upper 100×75 haunch for bottom chamfers and gave 1225 the 1025 lower
+   profile. Current drawings: S1.01/PDF8 = base852, valley240, rise67,
+   bottom clear709; S1.11/PDF15 = base814, valley260, rise64, clear674.
+   S1.21/PDF22 uses the 1990 top width. S1.25/PDF26 is unit data, not the
+   section drawing. The small 15 mm ledge has a 45 MAX depth, not an exact
+   depth, so the gross-profile approximation omits it and states this.
+2. **Civilcon I:** no evidence supported the old invented as-cast inversion.
+   The drawing is B1 at y=0, B4 at y=depth. I1 centroid is about 318.221 mm
+   above the 410 mm soffit, with 360 mm top. Area/inertia are invariant under
+   reflection and could not detect the old error. Centroid and Zt/Zb do
+   change. Internal data keys have been renamed to match the source labels;
+   the dimensions dataclass retains its b1…d6 attribute names. Source I18
+   Zt is inconsistent by about 0.417%; only that discrepancy is separately
+   pinned in tests, not hidden by widening every family's tolerances.
+3. **Qatar:** 200+1069+200 brackets the haunch, not overall flange width.
+   Nominal overall width is 2150. Lower concrete has a central valley, not
+   a peak. T2–T4 values were read directly, replacing interpolation. Rounded
+   source callouts do not close perfectly: nominal 125 mm webs become about
+   122–123 mm in the chosen reconstruction. Maximum source residuals are
+   0.88% area, 0.85% centroid and1.26% Ixx; full per-type residuals are in JSON.
+4. **Japan:** 240 and151/152 in the Tohoku source are stirrup dimensions,
+   not concrete web/flange dimensions. Existing JP code already uses the
+   correct 300 mm web; the stale research brief was wrong. Relevant PDF
+   pages are 9–10, printed 5–6. BG reinforcement changes do not define a new
+   universal concrete profile.
 
-| Family | Status | Blocker |
-|---|---|---|
-| Qatar Q-beams (5 types) | Type 1 + Type 5 dims fully read; T2–T4 interpolation scripted | one careful topology pass (see gotcha #1); all dims in `sources/research/research-qatar-ashghal.md` Appendices B–C |
-| Greece flange thicknesses | published as design choices, not dims | encode as required constructor args (already done in `gr` module) |
-| South Africa M/Y/T/U | same British families as IE; Civilcon publishes full tables | needs its own module + decoding (the Civilcon tables use a different notation from Banagher) |
-| Russia other series | Б1200–Б3300 range, several widths | data recovery from Russian-language mirrors |
-| NZ hollow-core (587/650/900) + I-beams (1500/1600) | RR 364 drawings available | same vision-digitisation task |
+Representative new/corrected profiles are rendered in
+`docs/source/_static/images/global-additions.svg`. Regenerate with
+`/home/ccaprani/anaconda3/envs/pybridge/bin/python examples/plot_global_additions.py`.
 
-## Source registry
+## Remaining blockers and productive next work
 
-All URLs, access dates, licensing notes, and research briefs are in
-`sources/SOURCES.md` and `sources/research/*.md` (14 briefs). The
-`sources/` directory is **gitignored** (working materials, not
-committed). If you need the source PDFs, re-download them — the URLs are
-in the registry.
+- **Norway NTB/KTB:** the free V426 PDF is 96 pages with useful text, not
+  drawings-only or purchase-gated. Ten profiles are transcribed from
+  pp 37–46. NTB800-400x1400 means400 TOP width; actual stem is 220. Small
+  rebates/top recesses are partly resolved, but the controlling bottom
+  chamfer size and KTB asymmetric coordinates still need form drawings or
+  an explicit source note. Do not treat nearby reinforcement dimensions
+  as concrete dimensions. See the exact unresolved callouts in JSON.
+- **NZ hollow-core650/900/587:** overall dimensions and voids are transcribed.
+  Side keys, edge/inner variants and optional drip details need a deliberate
+  outline. The double hollow-core depth is 587, not576. Do not silently
+  substitute an inner unit for an edge unit.
+- **Banagher Solid Box width class (4):** nominal profile differs from source
+  area by 225/275 mm², beyond its printed rounding. Keep it research-only.
+  **W:** all 16 published rows transcribed; internal concrete vertices/radii
+  remain unresolved. Appendix strand coordinates are not profile vertices.
+- **Civilcon M/Y/T/U:** all 58 rows across the six producer PDFs are retained,
+  with notation decoded. M4 area, M10 tabulated depth, T10 depth, U5/U10
+  values and I18 top modulus have explicit source discrepancies. Do not
+  overwrite literal source tables with plausible repairs.
+- **Other countries:** the versioned regional reports identify many further
+  primary drawing/property sources and exact current blockers. Slovakia,
+  Netherlands, Romania, Indonesia and the expanded Mexican box/U tables
+  have useful numeric data. Published properties alone are not enough to
+  define missing profile coordinates. Ontario draft and WSDOT preliminary
+  overview sheets retain those statuses. The inherited German BT link was
+  a miscited materials-production catalogue and is rejected as beam data.
+- Do not repeat old blanket claims that countries have no national
+  catalogue. Unsuccessful searches are bounded search outcomes, not proof
+  of absence. Producer and regional highway-agency catalogues are useful.
 
-## The dims_review.html tool
+## Geometry and provenance rules
 
-`dims_review.html` at the repo root (gitignored) is a self-contained
-HTML page for human vision-reading of drawing images. It embeds
-rendered drawing sheets as base64 images with labelled input boxes per
-dimension, zoom sliders, localStorage persistence, and a "Copy results"
-button that outputs all entries as `key: value` lines.
-
-To rebuild it with different images, see `sources/SOURCES.md` for the
-render commands (PyMuPDF `get_pixmap` at 3–5× zoom on the target PDF
-page). The pattern: render → base64 → embed in HTML → human reads →
-copy results → parse → implement.
-
-## Commit and push protocol
-
-The user (Colin Caprani) reviews all work before merge. Push to the
-`ukie-beams` branch (or a new branch for new jurisdictions). PR #2
-tracks this branch. Do NOT merge. Do NOT push to main. Commit with
-descriptive messages. `sources/` is gitignored — do not force-add it.
+- Include the soffit corner when mirroring half-profiles. Check polygon
+  validity, winding, analytical area and actual void topology.
+- Convert shoelace inertia about y=0 to centroidal inertia:
+  `Ic = I0 - A*cy**2`; use signed area for centroid calculations.
+- Measure upper flange depths down from the TOP and lower features up from
+  the SOFFIT. Confirm physical top/bottom widths from source leaders.
+- Preserve original dimensions, revisions, page numbers and units alongside
+  translations. Distinguish exact transcription, derived values, fitted
+  reconstruction and designer-supplied dimensions.
+- Stroke-font CAD labels require rendered visual inspection. OCR or a
+  nearby reinforcement label is not adequate evidence.
+- Validate against independent published properties where possible. Analytic
+  checks without a property table prove implementation consistency, not
+  manufacturer approval or structural capacity.
+- Do not loosen tolerances to hide source contradictions. Record individual
+  exceptions with evidence; do not transfer national/producer geometry
+  solely because two sources share an AASHTO or British family name.
+- Back up pre-existing docs/configs to adjacent `backups/` directories.
+  Source-tree test passes do not replace an isolated wheel/data-file check.

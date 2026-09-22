@@ -1,0 +1,1943 @@
+{
+  "accessed": "2026-09-22",
+  "sources": [
+    {
+      "organisation": "Banagher Precast Concrete",
+      "title_original": "Bridge Beam Manual, 3rd Edition",
+      "title_en": "Bridge Beam Manual, 3rd Edition",
+      "country": "Ireland / United Kingdom",
+      "country_codes": [
+        "IE",
+        "GB"
+      ],
+      "url": "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+      "local_file": "sources/banagher-bridge-beam-manual-3ed.pdf",
+      "sha256": "5432e2db0b2f95045320f91254c52ce3f7b1f6d62279c6f05ae6aef4e46bb7bf",
+      "pages": 62,
+      "discovery": "inherited_local_pdf_new_transcription",
+      "status": "verified_table_transcription_24_sections_implemented",
+      "id": "banagher_solid_box_pending",
+      "families": [
+        "Solid Box SD1-SD8, width classes (1)-(4)"
+      ],
+      "evidence": {
+        "pdf_pages": [
+          14
+        ],
+        "printed_pages": [
+          12
+        ],
+        "method": "PDF text extraction checked against rendered page and enlarged profile detail."
+      },
+      "profile_dimensions_mm": {
+        "side_projection_each": 65,
+        "shoulder_rise": 30,
+        "outer_vertical_face_height": 35,
+        "bottom_chamfer_horizontal": 25,
+        "bottom_chamfer_vertical": 25,
+        "full_depth_reference_drawing": 1000,
+        "straight_upper_side_reference_height": 910
+      },
+      "dimensions": [
+        {
+          "designation": "SD1 (1)",
+          "depth_mm": 300.0,
+          "area_mm2": 118630.0,
+          "centroid_from_soffit_mm": 141.5,
+          "section_modulus_top_1e6_mm3": 5.85,
+          "section_modulus_bottom_1e6_mm3": 6.55,
+          "self_weight_kN_per_m": 2.97,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                300.0
+              ]
+            ],
+            "calculated_area_mm2": 118625.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 141.54092026694767,
+            "calculated_Ixx_mm4": 927434061.7828708,
+            "calculated_section_modulus_top_1e6_mm3": 5.852830038804151,
+            "calculated_section_modulus_bottom_1e6_mm3": 6.552409437735182
+          }
+        },
+        {
+          "designation": "SD2 (1)",
+          "depth_mm": 400.0,
+          "area_mm2": 155130.0,
+          "centroid_from_soffit_mm": 190.6,
+          "section_modulus_top_1e6_mm3": 10.37,
+          "section_modulus_bottom_1e6_mm3": 11.39,
+          "self_weight_kN_per_m": 3.88,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                400.0
+              ]
+            ],
+            "calculated_area_mm2": 155125.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 190.5901154982541,
+            "calculated_Ixx_mm4": 2170761709.0104303,
+            "calculated_section_modulus_top_1e6_mm3": 10.366089997018896,
+            "calculated_section_modulus_bottom_1e6_mm3": 11.389686728167787
+          }
+        },
+        {
+          "designation": "SD3 (1)",
+          "depth_mm": 500.0,
+          "area_mm2": 191630.0,
+          "centroid_from_soffit_mm": 240.0,
+          "section_modulus_top_1e6_mm3": 16.11,
+          "section_modulus_bottom_1e6_mm3": 17.46,
+          "self_weight_kN_per_m": 4.79,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                500.0
+              ]
+            ],
+            "calculated_area_mm2": 191625.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 240.00152207001523,
+            "calculated_Ixx_mm4": 4189540728.7227287,
+            "calculated_section_modulus_top_1e6_mm3": 16.113712518928413,
+            "calculated_section_modulus_bottom_1e6_mm3": 17.456308995825957
+          }
+        },
+        {
+          "designation": "SD4 (1)",
+          "depth_mm": 600.0,
+          "area_mm2": 228130.0,
+          "centroid_from_soffit_mm": 289.6,
+          "section_modulus_top_1e6_mm3": 23.09,
+          "section_modulus_bottom_1e6_mm3": 24.75,
+          "self_weight_kN_per_m": 5.7,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                600.0
+              ]
+            ],
+            "calculated_area_mm2": 228125.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 289.6012785388128,
+            "calculated_Ixx_mm4": 7166354462.127094,
+            "calculated_section_modulus_top_1e6_mm3": 23.087577256735532,
+            "calculated_section_modulus_bottom_1e6_mm3": 24.74558986163678
+          }
+        },
+        {
+          "designation": "SD5 (1)",
+          "depth_mm": 700.0,
+          "area_mm2": 264630.0,
+          "centroid_from_soffit_mm": 339.3,
+          "section_modulus_top_1e6_mm3": 31.28,
+          "section_modulus_bottom_1e6_mm3": 33.26,
+          "self_weight_kN_per_m": 6.62,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                700.0
+              ]
+            ],
+            "calculated_area_mm2": 264625.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 339.3114470162179,
+            "calculated_Ixx_mm4": 11283740269.075077,
+            "calculated_section_modulus_top_1e6_mm3": 31.283887929713245,
+            "calculated_section_modulus_bottom_1e6_mm3": 33.25481756745965
+          }
+        },
+        {
+          "designation": "SD6 (1)",
+          "depth_mm": 800.0,
+          "area_mm2": 301130.0,
+          "centroid_from_soffit_mm": 389.1,
+          "section_modulus_top_1e6_mm3": 40.7,
+          "section_modulus_bottom_1e6_mm3": 42.98,
+          "self_weight_kN_per_m": 7.53,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                800.0
+              ]
+            ],
+            "calculated_area_mm2": 301125.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 389.0918776809188,
+            "calculated_Ixx_mm4": 16724217395.55082,
+            "calculated_section_modulus_top_1e6_mm3": 40.70062499899677,
+            "calculated_section_modulus_bottom_1e6_mm3": 42.98269471784191
+          }
+        },
+        {
+          "designation": "SD7 (1)",
+          "depth_mm": 900.0,
+          "area_mm2": 337630.0,
+          "centroid_from_soffit_mm": 438.9,
+          "section_modulus_top_1e6_mm3": 51.34,
+          "section_modulus_bottom_1e6_mm3": 53.93,
+          "self_weight_kN_per_m": 8.44,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                900.0
+              ]
+            ],
+            "calculated_area_mm2": 337625.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 438.9197827964951,
+            "calculated_Ixx_mm4": 23670296764.950745,
+            "calculated_section_modulus_top_1e6_mm3": 51.336613200439025,
+            "calculated_section_modulus_bottom_1e6_mm3": 53.92852565026777
+          }
+        },
+        {
+          "designation": "SD8 (1)",
+          "depth_mm": 1000.0,
+          "area_mm2": 374130.0,
+          "centroid_from_soffit_mm": 488.8,
+          "section_modulus_top_1e6_mm3": 63.19,
+          "section_modulus_bottom_1e6_mm3": 66.09,
+          "self_weight_kN_per_m": 9.35,
+          "upper_width_mm": 365,
+          "overall_base_width_mm": 495,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                222.5,
+                0
+              ],
+              [
+                247.5,
+                25
+              ],
+              [
+                247.5,
+                60
+              ],
+              [
+                182.5,
+                90
+              ],
+              [
+                182.5,
+                1000.0
+              ]
+            ],
+            "calculated_area_mm2": 374125.0,
+            "published_minus_calculated_area_mm2": 5.0,
+            "calculated_centroid_from_soffit_mm": 488.7812674017151,
+            "calculated_Ixx_mm4": 32304485037.882355,
+            "calculated_section_modulus_top_1e6_mm3": 63.19112148667522,
+            "calculated_section_modulus_bottom_1e6_mm3": 66.09190489154372
+          }
+        },
+        {
+          "designation": "SD1 (2)",
+          "depth_mm": 300.0,
+          "area_mm2": 195125.0,
+          "centroid_from_soffit_mm": 144.9,
+          "section_modulus_top_1e6_mm3": 9.7,
+          "section_modulus_bottom_1e6_mm3": 10.39,
+          "self_weight_kN_per_m": 4.88,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                300.0
+              ]
+            ],
+            "calculated_area_mm2": 195125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 144.85735639547298,
+            "calculated_Ixx_mm4": 1504511967.253008,
+            "calculated_section_modulus_top_1e6_mm3": 9.697604296908516,
+            "calculated_section_modulus_bottom_1e6_mm3": 10.386161978170867
+          }
+        },
+        {
+          "designation": "SD2 (2)",
+          "depth_mm": 400.0,
+          "area_mm2": 257125.0,
+          "centroid_from_soffit_mm": 194.3,
+          "section_modulus_top_1e6_mm3": 17.19,
+          "section_modulus_bottom_1e6_mm3": 18.2,
+          "self_weight_kN_per_m": 6.43,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                400.0
+              ]
+            ],
+            "calculated_area_mm2": 257125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 194.32296224274833,
+            "calculated_Ixx_mm4": 3536210576.5104256,
+            "calculated_section_modulus_top_1e6_mm3": 17.193025604948684,
+            "calculated_section_modulus_bottom_1e6_mm3": 18.197595053604573
+          }
+        },
+        {
+          "designation": "SD3 (2)",
+          "depth_mm": 500.0,
+          "area_mm2": 319125.0,
+          "centroid_from_soffit_mm": 244.0,
+          "section_modulus_top_1e6_mm3": 26.77,
+          "section_modulus_bottom_1e6_mm3": 28.09,
+          "self_weight_kN_per_m": 7.98,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                500.0
+              ]
+            ],
+            "calculated_area_mm2": 319125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 243.99621360490926,
+            "calculated_Ixx_mm4": 6853444391.258106,
+            "calculated_section_modulus_top_1e6_mm3": 26.770871195948576,
+            "calculated_section_modulus_bottom_1e6_mm3": 28.0883227243663
+          }
+        },
+        {
+          "designation": "SD4 (2)",
+          "depth_mm": 600.0,
+          "area_mm2": 381125.0,
+          "centroid_from_soffit_mm": 293.8,
+          "section_modulus_top_1e6_mm3": 38.42,
+          "section_modulus_bottom_1e6_mm3": 40.05,
+          "self_weight_kN_per_m": 9.53,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                600.0
+              ]
+            ],
+            "calculated_area_mm2": 381125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 293.77577347764293,
+            "calculated_Ixx_mm4": 11766257233.808449,
+            "calculated_section_modulus_top_1e6_mm3": 38.423665454011385,
+            "calculated_section_modulus_bottom_1e6_mm3": 40.05182964722545
+          }
+        },
+        {
+          "designation": "SD5 (2)",
+          "depth_mm": 700.0,
+          "area_mm2": 443125.0,
+          "centroid_from_soffit_mm": 343.6,
+          "section_modulus_top_1e6_mm3": 52.15,
+          "section_modulus_bottom_1e6_mm3": 54.09,
+          "self_weight_kN_per_m": 11.08,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                700.0
+              ]
+            ],
+            "calculated_area_mm2": 443125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 343.61701927597557,
+            "calculated_Ixx_mm4": 18584668400.81295,
+            "calculated_section_modulus_top_1e6_mm3": 52.14802447371787,
+            "calculated_section_modulus_bottom_1e6_mm3": 54.08541299837857
+          }
+        },
+        {
+          "designation": "SD6 (2)",
+          "depth_mm": 800.0,
+          "area_mm2": 505125.0,
+          "centroid_from_soffit_mm": 393.5,
+          "section_modulus_top_1e6_mm3": 67.94,
+          "section_modulus_bottom_1e6_mm3": 70.19,
+          "self_weight_kN_per_m": 12.63,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                800.0
+              ]
+            ],
+            "calculated_area_mm2": 505125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 393.497236657593,
+            "calculated_Ixx_mm4": 27618687714.892822,
+            "calculated_section_modulus_top_1e6_mm3": 67.9421893415985,
+            "calculated_section_modulus_bottom_1e6_mm3": 70.18775519108817
+          }
+        },
+        {
+          "designation": "SD7 (2)",
+          "depth_mm": 900.0,
+          "area_mm2": 567125.0,
+          "centroid_from_soffit_mm": 443.4,
+          "section_modulus_top_1e6_mm3": 85.81,
+          "section_modulus_bottom_1e6_mm3": 88.36,
+          "self_weight_kN_per_m": 14.18,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                900.0
+              ]
+            ],
+            "calculated_area_mm2": 567125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 443.4036441113805,
+            "calculated_Ixx_mm4": 39178320703.30217,
+            "calculated_section_modulus_top_1e6_mm3": 85.80515415427274,
+            "calculated_section_modulus_bottom_1e6_mm3": 88.35813873794145
+          }
+        },
+        {
+          "designation": "SD8 (2)",
+          "depth_mm": 1000.0,
+          "area_mm2": 629125.0,
+          "centroid_from_soffit_mm": 493.3,
+          "section_modulus_top_1e6_mm3": 105.74,
+          "section_modulus_bottom_1e6_mm3": 108.6,
+          "self_weight_kN_per_m": 15.73,
+          "upper_width_mm": 620,
+          "overall_base_width_mm": 750,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                350.0,
+                0
+              ],
+              [
+                375.0,
+                25
+              ],
+              [
+                375.0,
+                60
+              ],
+              [
+                310.0,
+                90
+              ],
+              [
+                310.0,
+                1000.0
+              ]
+            ],
+            "calculated_area_mm2": 629125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 493.32849857606465,
+            "calculated_Ixx_mm4": 53573570714.46094,
+            "calculated_section_modulus_top_1e6_mm3": 105.7363016548183,
+            "calculated_section_modulus_bottom_1e6_mm3": 108.59614003467227
+          }
+        },
+        {
+          "designation": "SD1 (3)",
+          "depth_mm": 300.0,
+          "area_mm2": 261125.0,
+          "centroid_from_soffit_mm": 146.2,
+          "section_modulus_top_1e6_mm3": 13.01,
+          "section_modulus_bottom_1e6_mm3": 13.69,
+          "self_weight_kN_per_m": 6.53,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                300.0
+              ]
+            ],
+            "calculated_area_mm2": 261125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 146.15717249082496,
+            "calculated_Ixx_mm4": 2000816278.5456877,
+            "calculated_section_modulus_top_1e6_mm3": 13.005587006819418,
+            "calculated_section_modulus_bottom_1e6_mm3": 13.689484029059807
+          }
+        },
+        {
+          "designation": "SD2 (3)",
+          "depth_mm": 400.0,
+          "area_mm2": 345125.0,
+          "centroid_from_soffit_mm": 195.8,
+          "section_modulus_top_1e6_mm3": 23.07,
+          "section_modulus_bottom_1e6_mm3": 24.07,
+          "self_weight_kN_per_m": 8.63,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                400.0
+              ]
+            ],
+            "calculated_area_mm2": 345125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 195.77049378244598,
+            "calculated_Ixx_mm4": 4711656883.695015,
+            "calculated_section_modulus_top_1e6_mm3": 23.070402367207194,
+            "calculated_section_modulus_bottom_1e6_mm3": 24.06724727849408
+          }
+        },
+        {
+          "designation": "SD3 (3)",
+          "depth_mm": 500.0,
+          "area_mm2": 429125.0,
+          "centroid_from_soffit_mm": 245.5,
+          "section_modulus_top_1e6_mm3": 35.95,
+          "section_modulus_bottom_1e6_mm3": 37.26,
+          "self_weight_kN_per_m": 10.73,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                500.0
+              ]
+            ],
+            "calculated_area_mm2": 429125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 245.53519759199924,
+            "calculated_Ixx_mm4": 9148059687.119705,
+            "calculated_section_modulus_top_1e6_mm3": 35.95019665019132,
+            "calculated_section_modulus_bottom_1e6_mm3": 37.25763058346057
+          }
+        },
+        {
+          "designation": "SD4 (3)",
+          "depth_mm": 600.0,
+          "area_mm2": 513125.0,
+          "centroid_from_soffit_mm": 295.4,
+          "section_modulus_top_1e6_mm3": 51.64,
+          "section_modulus_bottom_1e6_mm3": 53.25,
+          "self_weight_kN_per_m": 12.83,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                600.0
+              ]
+            ],
+            "calculated_area_mm2": 513125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 295.37693869265127,
+            "calculated_Ixx_mm4": 15730055531.27452,
+            "calculated_section_modulus_top_1e6_mm3": 51.63776985158624,
+            "calculated_section_modulus_bottom_1e6_mm3": 53.25417617535174
+          }
+        },
+        {
+          "designation": "SD5 (3)",
+          "depth_mm": 700.0,
+          "area_mm2": 597125.0,
+          "centroid_from_soffit_mm": 345.3,
+          "section_modulus_top_1e6_mm3": 70.13,
+          "section_modulus_bottom_1e6_mm3": 72.05,
+          "self_weight_kN_per_m": 14.93,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                700.0
+              ]
+            ],
+            "calculated_area_mm2": 597125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 345.26320563812715,
+            "calculated_Ixx_mm4": 24877657903.680527,
+            "calculated_section_modulus_top_1e6_mm3": 70.12990560630261,
+            "calculated_section_modulus_bottom_1e6_mm3": 72.05418213533873
+          }
+        },
+        {
+          "designation": "SD6 (3)",
+          "depth_mm": 800.0,
+          "area_mm2": 681125.0,
+          "centroid_from_soffit_mm": 395.2,
+          "section_modulus_top_1e6_mm3": 91.43,
+          "section_modulus_bottom_1e6_mm3": 93.66,
+          "self_weight_kN_per_m": 17.03,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                800.0
+              ]
+            ],
+            "calculated_area_mm2": 681125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 395.1775249281214,
+            "calculated_Ixx_mm4": 37010873638.44411,
+            "calculated_section_modulus_top_1e6_mm3": 91.42494776722218,
+            "calculated_section_modulus_bottom_1e6_mm3": 93.65632229509002
+          }
+        },
+        {
+          "designation": "SD7 (3)",
+          "depth_mm": 900.0,
+          "area_mm2": 765125.0,
+          "centroid_from_soffit_mm": 445.1,
+          "section_modulus_top_1e6_mm3": 115.52,
+          "section_modulus_bottom_1e6_mm3": 118.06,
+          "self_weight_kN_per_m": 19.13,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                900.0
+              ]
+            ],
+            "calculated_area_mm2": 765125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 445.11065730000547,
+            "calculated_Ixx_mm4": 52549706568.51526,
+            "calculated_section_modulus_top_1e6_mm3": 115.52195585987266,
+            "calculated_section_modulus_bottom_1e6_mm3": 118.05987052135814
+          }
+        },
+        {
+          "designation": "SD8 (3)",
+          "depth_mm": 1000.0,
+          "area_mm2": 849125.0,
+          "centroid_from_soffit_mm": 495.1,
+          "section_modulus_top_1e6_mm3": 142.42,
+          "section_modulus_bottom_1e6_mm3": 145.26,
+          "self_weight_kN_per_m": 21.23,
+          "upper_width_mm": 840,
+          "overall_base_width_mm": 970,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                460.0,
+                0
+              ],
+              [
+                485.0,
+                25
+              ],
+              [
+                485.0,
+                60
+              ],
+              [
+                420.0,
+                90
+              ],
+              [
+                420.0,
+                1000.0
+              ]
+            ],
+            "calculated_area_mm2": 849125.0,
+            "published_minus_calculated_area_mm2": 0.0,
+            "calculated_centroid_from_soffit_mm": 495.0570194808381,
+            "calculated_Ixx_mm4": 71914159010.1401,
+            "calculated_section_modulus_top_1e6_mm3": 142.4203559304872,
+            "calculated_section_modulus_bottom_1e6_mm3": 145.264396181183
+          }
+        },
+        {
+          "designation": "SD1 (4)",
+          "depth_mm": 300.0,
+          "area_mm2": 420350.0,
+          "centroid_from_soffit_mm": 147.5,
+          "section_modulus_top_1e6_mm3": 20.98,
+          "section_modulus_bottom_1e6_mm3": 21.68,
+          "self_weight_kN_per_m": 10.51,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                300.0
+              ]
+            ],
+            "calculated_area_mm2": 420125.0,
+            "published_minus_calculated_area_mm2": 225.0,
+            "calculated_centroid_from_soffit_mm": 147.61152434791234,
+            "calculated_Ixx_mm4": 3194775660.0362816,
+            "calculated_section_modulus_top_1e6_mm3": 20.96468021197451,
+            "calculated_section_modulus_bottom_1e6_mm3": 21.64313168737672
+          }
+        },
+        {
+          "designation": "SD2 (4)",
+          "depth_mm": 400.0,
+          "area_mm2": 557350.0,
+          "centroid_from_soffit_mm": 197.3,
+          "section_modulus_top_1e6_mm3": 37.24,
+          "section_modulus_bottom_1e6_mm3": 38.26,
+          "self_weight_kN_per_m": 13.93,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                400.0
+              ]
+            ],
+            "calculated_area_mm2": 557125.0,
+            "published_minus_calculated_area_mm2": 225.0,
+            "calculated_centroid_from_soffit_mm": 197.3799267070526,
+            "calculated_Ixx_mm4": 7540672853.013672,
+            "calculated_section_modulus_top_1e6_mm3": 37.215823341014165,
+            "calculated_section_modulus_bottom_1e6_mm3": 38.2038486831814
+          }
+        },
+        {
+          "designation": "SD3 (4)",
+          "depth_mm": 500.0,
+          "area_mm2": 694350.0,
+          "centroid_from_soffit_mm": 247.2,
+          "section_modulus_top_1e6_mm3": 58.08,
+          "section_modulus_bottom_1e6_mm3": 59.41,
+          "self_weight_kN_per_m": 17.36,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                500.0
+              ]
+            ],
+            "calculated_area_mm2": 694125.0,
+            "published_minus_calculated_area_mm2": 225.0,
+            "calculated_centroid_from_soffit_mm": 247.23975028513115,
+            "calculated_Ixx_mm4": 14672158872.390053,
+            "calculated_section_modulus_top_1e6_mm3": 58.04773056262315,
+            "calculated_section_modulus_bottom_1e6_mm3": 59.34385087943696
+          }
+        },
+        {
+          "designation": "SD4 (4)",
+          "depth_mm": 600.0,
+          "area_mm2": 831350.0,
+          "centroid_from_soffit_mm": 297.1,
+          "section_modulus_top_1e6_mm3": 83.49,
+          "section_modulus_bottom_1e6_mm3": 85.14,
+          "self_weight_kN_per_m": 20.78,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                600.0
+              ]
+            ],
+            "calculated_area_mm2": 831125.0,
+            "published_minus_calculated_area_mm2": 225.0,
+            "calculated_centroid_from_soffit_mm": 297.14578633378454,
+            "calculated_Ixx_mm4": 25274251606.389206,
+            "calculated_section_modulus_top_1e6_mm3": 83.45352471880977,
+            "calculated_section_modulus_bottom_1e6_mm3": 85.0567390445799
+          }
+        },
+        {
+          "designation": "SD5 (4)",
+          "depth_mm": 700.0,
+          "area_mm2": 968350.0,
+          "centroid_from_soffit_mm": 347.0,
+          "section_modulus_top_1e6_mm3": 113.48,
+          "section_modulus_bottom_1e6_mm3": 115.44,
+          "self_weight_kN_per_m": 24.21,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                700.0
+              ]
+            ],
+            "calculated_area_mm2": 968125.0,
+            "published_minus_calculated_area_mm2": 225.0,
+            "calculated_centroid_from_soffit_mm": 347.0784161824833,
+            "calculated_Ixx_mm4": 40031958817.738174,
+            "calculated_section_modulus_top_1e6_mm3": 113.43018011173068,
+            "calculated_section_modulus_bottom_1e6_mm3": 115.33981069191749
+          }
+        },
+        {
+          "designation": "SD6 (4)",
+          "depth_mm": 800.0,
+          "area_mm2": 1105400.0,
+          "centroid_from_soffit_mm": 397.0,
+          "section_modulus_top_1e6_mm3": 148.03,
+          "section_modulus_bottom_1e6_mm3": 150.31,
+          "self_weight_kN_per_m": 27.64,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                800.0
+              ]
+            ],
+            "calculated_area_mm2": 1105125.0,
+            "published_minus_calculated_area_mm2": 275.0,
+            "calculated_centroid_from_soffit_mm": 397.0277495004336,
+            "calculated_Ixx_mm4": 59630284419.84866,
+            "calculated_section_modulus_top_1e6_mm3": 147.97615554402256,
+            "calculated_section_modulus_bottom_1e6_mm3": 150.1917296583914
+          }
+        },
+        {
+          "designation": "SD7 (4)",
+          "depth_mm": 900.0,
+          "area_mm2": 1242400.0,
+          "centroid_from_soffit_mm": 446.9,
+          "section_modulus_top_1e6_mm3": 187.15,
+          "section_modulus_bottom_1e6_mm3": 189.74,
+          "self_weight_kN_per_m": 31.06,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                900.0
+              ]
+            ],
+            "calculated_area_mm2": 1242125.0,
+            "published_minus_calculated_area_mm2": 275.0,
+            "calculated_centroid_from_soffit_mm": 446.9882593673476,
+            "calculated_Ixx_mm4": 84754230599.61578,
+            "calculated_section_modulus_top_1e6_mm3": 187.09058286492197,
+            "calculated_section_modulus_bottom_1e6_mm3": 189.611760093149
+          }
+        },
+        {
+          "designation": "SD8 (4)",
+          "depth_mm": 1000.0,
+          "area_mm2": 1379400.0,
+          "centroid_from_soffit_mm": 496.9,
+          "section_modulus_top_1e6_mm3": 230.84,
+          "section_modulus_bottom_1e6_mm3": 233.74,
+          "self_weight_kN_per_m": 34.49,
+          "upper_width_mm": 1370,
+          "overall_base_width_mm": 1500,
+          "evidence": {
+            "pdf_page": 14,
+            "printed_page": 12
+          },
+          "nominal_drawing_check": {
+            "method": "Independent polygon integration using explicit 65 mm shoulders, 30 mm shoulder rise, 35 mm vertical outside face and 25 x 25 mm bottom chamfers; not fitted to table.",
+            "right_half_vertices_mm": [
+              [
+                725.0,
+                0
+              ],
+              [
+                750.0,
+                25
+              ],
+              [
+                750.0,
+                60
+              ],
+              [
+                685.0,
+                90
+              ],
+              [
+                685.0,
+                1000.0
+              ]
+            ],
+            "calculated_area_mm2": 1379125.0,
+            "published_minus_calculated_area_mm2": 275.0,
+            "calculated_centroid_from_soffit_mm": 496.95661500347444,
+            "calculated_Ixx_mm4": 116088798674.96436,
+            "calculated_section_modulus_top_1e6_mm3": 230.77293557048995,
+            "calculated_section_modulus_bottom_1e6_mm3": 233.59946355508868
+          }
+        }
+      ],
+      "notes": [
+        "750 mm and 970 mm overall base widths are preferred sizes according to source.",
+        "Section modulus header mm3 x 10^6; no published Ixx column for Solid Box.",
+        "Nominal drawing polygon for width classes (2) and (3) reproduces all published areas exactly. Class (1) area rounds to nearest 10 mm2 with a +5 mm2 difference. Class (4) published areas differ by +225 mm2 for SD1-SD5 and +275 mm2 for SD6-SD8; do not modify geometry silently to match."
+      ],
+      "blockers": [
+        "Resolve width class (4) area/centroid/modulus discrepancy with producer or original dimensioned drawings before implementing that width."
+      ],
+      "implementation": {
+        "module": "src/bridgebeams/ie/ie_solid_box.py",
+        "implemented_width_classes": [
+          1,
+          2,
+          3
+        ],
+        "research_only_width_classes": [
+          4
+        ],
+        "targeted_tests": "tests/test_ie_solid_box.py",
+        "test_result": "27 passed"
+      }
+    },
+    {
+      "organisation": "Banagher Precast Concrete",
+      "title_original": "Bridge Beam Manual, 3rd Edition",
+      "title_en": "Bridge Beam Manual, 3rd Edition",
+      "country": "Ireland / United Kingdom",
+      "country_codes": [
+        "IE",
+        "GB"
+      ],
+      "url": "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+      "local_file": "sources/banagher-bridge-beam-manual-3ed.pdf",
+      "sha256": "5432e2db0b2f95045320f91254c52ce3f7b1f6d62279c6f05ae6aef4e46bb7bf",
+      "pages": 62,
+      "discovery": "inherited_local_pdf_new_transcription",
+      "status": "verified_table_transcription_geometry_review_pending",
+      "id": "banagher_w_pending",
+      "families": [
+        "W1,W3,W5,W7-W19"
+      ],
+      "evidence": {
+        "pdf_pages": [
+          30,
+          32,
+          33,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58
+        ],
+        "printed_pages": [
+          28,
+          30,
+          31,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ],
+        "method": "Property/dimension table p30 checked against rendered page; Appendix C reinforcement outlines inspected for missing profile information."
+      },
+      "profile_dimensions_mm": {
+        "nominal_base_width": 1500,
+        "bottom_flat_width": 1460,
+        "lower_corner_horizontal_projection_each": 20,
+        "top_step_height": 50,
+        "top_step_inner_horizontal_projection": 40,
+        "W16_to_W19_web_horizontal_dimension_at_kink": 171
+      },
+      "dimensions": [
+        {
+          "designation": "W1",
+          "depth_mm": 800.0,
+          "area_mm2": 572360.0,
+          "centroid_from_soffit_mm": 305.3,
+          "section_modulus_top_1e6_mm3": 71.88,
+          "section_modulus_bottom_1e6_mm3": 116.46,
+          "Ixx_1e9_mm4": 35.556,
+          "self_weight_kN_per_m": 14.31,
+          "overall_width_W1_mm": 1704.4,
+          "W2_mm": 243.2,
+          "W3_mm": 1058.0,
+          "Web_mm": 100.0,
+          "S_mm": 220.0,
+          "F_mm": 70.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W3",
+          "depth_mm": 900.0,
+          "area_mm2": 606880.0,
+          "centroid_from_soffit_mm": 345.9,
+          "section_modulus_top_1e6_mm3": 89.54,
+          "section_modulus_bottom_1e6_mm3": 143.43,
+          "Ixx_1e9_mm4": 49.614,
+          "self_weight_kN_per_m": 15.17,
+          "overall_width_W1_mm": 1732.4,
+          "W2_mm": 243.2,
+          "W3_mm": 1086.0,
+          "Web_mm": 200.0,
+          "S_mm": 220.0,
+          "F_mm": 70.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W5",
+          "depth_mm": 1000.0,
+          "area_mm2": 641400.0,
+          "centroid_from_soffit_mm": 387.5,
+          "section_modulus_top_1e6_mm3": 108.76,
+          "section_modulus_bottom_1e6_mm3": 171.88,
+          "Ixx_1e9_mm4": 66.61,
+          "self_weight_kN_per_m": 16.04,
+          "overall_width_W1_mm": 1760.4,
+          "W2_mm": 243.2,
+          "W3_mm": 1114.0,
+          "Web_mm": 300.0,
+          "S_mm": 220.0,
+          "F_mm": 70.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W7",
+          "depth_mm": 1100.0,
+          "area_mm2": 692030.0,
+          "centroid_from_soffit_mm": 440.2,
+          "section_modulus_top_1e6_mm3": 136.21,
+          "section_modulus_bottom_1e6_mm3": 204.15,
+          "Ixx_1e9_mm4": 89.871,
+          "self_weight_kN_per_m": 17.3,
+          "overall_width_W1_mm": 1788.4,
+          "W2_mm": 250.2,
+          "W3_mm": 1128.0,
+          "Web_mm": 350.0,
+          "S_mm": 220.0,
+          "F_mm": 120.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W8",
+          "depth_mm": 1200.0,
+          "area_mm2": 726550.0,
+          "centroid_from_soffit_mm": 484.2,
+          "section_modulus_top_1e6_mm3": 159.46,
+          "section_modulus_bottom_1e6_mm3": 235.73,
+          "Ixx_1e9_mm4": 114.14,
+          "self_weight_kN_per_m": 18.16,
+          "overall_width_W1_mm": 1816.4,
+          "W2_mm": 250.2,
+          "W3_mm": 1156.0,
+          "Web_mm": 450.0,
+          "S_mm": 220.0,
+          "F_mm": 120.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W9",
+          "depth_mm": 1300.0,
+          "area_mm2": 761070.0,
+          "centroid_from_soffit_mm": 528.7,
+          "section_modulus_top_1e6_mm3": 184.11,
+          "section_modulus_bottom_1e6_mm3": 268.56,
+          "Ixx_1e9_mm4": 142.0,
+          "self_weight_kN_per_m": 19.03,
+          "overall_width_W1_mm": 1844.4,
+          "W2_mm": 250.2,
+          "W3_mm": 1184.0,
+          "Web_mm": 550.0,
+          "S_mm": 220.0,
+          "F_mm": 120.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W10",
+          "depth_mm": 1400.0,
+          "area_mm2": 812400.0,
+          "centroid_from_soffit_mm": 585.2,
+          "section_modulus_top_1e6_mm3": 219.51,
+          "section_modulus_bottom_1e6_mm3": 305.62,
+          "Ixx_1e9_mm4": 178.85,
+          "self_weight_kN_per_m": 20.31,
+          "overall_width_W1_mm": 1872.4,
+          "W2_mm": 257.2,
+          "W3_mm": 1198.0,
+          "Web_mm": 600.0,
+          "S_mm": 220.0,
+          "F_mm": 170.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W11",
+          "depth_mm": 1500.0,
+          "area_mm2": 846920.0,
+          "centroid_from_soffit_mm": 631.3,
+          "section_modulus_top_1e6_mm3": 248.01,
+          "section_modulus_bottom_1e6_mm3": 341.33,
+          "Ixx_1e9_mm4": 215.46,
+          "self_weight_kN_per_m": 21.17,
+          "overall_width_W1_mm": 1900.4,
+          "W2_mm": 257.2,
+          "W3_mm": 1226.0,
+          "Web_mm": 700.0,
+          "S_mm": 220.0,
+          "F_mm": 170.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W12",
+          "depth_mm": 1600.0,
+          "area_mm2": 881440.0,
+          "centroid_from_soffit_mm": 677.6,
+          "section_modulus_top_1e6_mm3": 277.84,
+          "section_modulus_bottom_1e6_mm3": 378.23,
+          "Ixx_1e9_mm4": 256.28,
+          "self_weight_kN_per_m": 22.04,
+          "overall_width_W1_mm": 1928.4,
+          "W2_mm": 257.2,
+          "W3_mm": 1254.0,
+          "Web_mm": 800.0,
+          "S_mm": 220.0,
+          "F_mm": 170.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W13",
+          "depth_mm": 1700.0,
+          "area_mm2": 933470.0,
+          "centroid_from_soffit_mm": 736.7,
+          "section_modulus_top_1e6_mm3": 321.13,
+          "section_modulus_bottom_1e6_mm3": 419.9,
+          "Ixx_1e9_mm4": 309.34,
+          "self_weight_kN_per_m": 23.34,
+          "overall_width_W1_mm": 1956.4,
+          "W2_mm": 264.2,
+          "W3_mm": 1268.0,
+          "Web_mm": 850.0,
+          "S_mm": 220.0,
+          "F_mm": 220.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W14",
+          "depth_mm": 1800.0,
+          "area_mm2": 975150.0,
+          "centroid_from_soffit_mm": 790.6,
+          "section_modulus_top_1e6_mm3": 362.63,
+          "section_modulus_bottom_1e6_mm3": 462.97,
+          "Ixx_1e9_mm4": 366.03,
+          "self_weight_kN_per_m": 24.38,
+          "overall_width_W1_mm": 1984.4,
+          "W2_mm": 278.2,
+          "W3_mm": 1268.0,
+          "Web_mm": 950.0,
+          "S_mm": 248.0,
+          "F_mm": 192.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W15",
+          "depth_mm": 1900.0,
+          "area_mm2": 1016060.0,
+          "centroid_from_soffit_mm": 844.3,
+          "section_modulus_top_1e6_mm3": 405.7,
+          "section_modulus_bottom_1e6_mm3": 507.3,
+          "Ixx_1e9_mm4": 428.3,
+          "self_weight_kN_per_m": 25.4,
+          "overall_width_W1_mm": 2012.4,
+          "W2_mm": 292.2,
+          "W3_mm": 1268.0,
+          "Web_mm": 1050.0,
+          "S_mm": 276.0,
+          "F_mm": 164.0,
+          "V_mm": null,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W16",
+          "depth_mm": 2000.0,
+          "area_mm2": 1057970.0,
+          "centroid_from_soffit_mm": 898.6,
+          "section_modulus_top_1e6_mm3": 451.09,
+          "section_modulus_bottom_1e6_mm3": 552.89,
+          "Ixx_1e9_mm4": 496.83,
+          "self_weight_kN_per_m": 26.45,
+          "overall_width_W1_mm": 2040.4,
+          "W2_mm": 306.2,
+          "W3_mm": 1268.0,
+          "Web_mm": 1050.0,
+          "S_mm": 276.0,
+          "F_mm": 136.0,
+          "V_mm": 128,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W17",
+          "depth_mm": 2100.0,
+          "area_mm2": 1102680.0,
+          "centroid_from_soffit_mm": 954.5,
+          "section_modulus_top_1e6_mm3": 499.74,
+          "section_modulus_bottom_1e6_mm3": 599.75,
+          "Ixx_1e9_mm4": 572.45,
+          "self_weight_kN_per_m": 27.57,
+          "overall_width_W1_mm": 2068.4,
+          "W2_mm": 320.2,
+          "W3_mm": 1268.0,
+          "Web_mm": 1050.0,
+          "S_mm": 276.0,
+          "F_mm": 108.0,
+          "V_mm": 256,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W18",
+          "depth_mm": 2200.0,
+          "area_mm2": 1150190.0,
+          "centroid_from_soffit_mm": 1011.8,
+          "section_modulus_top_1e6_mm3": 551.68,
+          "section_modulus_bottom_1e6_mm3": 647.82,
+          "Ixx_1e9_mm4": 655.49,
+          "self_weight_kN_per_m": 28.75,
+          "overall_width_W1_mm": 2096.4,
+          "W2_mm": 334.2,
+          "W3_mm": 1268.0,
+          "Web_mm": 1050.0,
+          "S_mm": 276.0,
+          "F_mm": 80.0,
+          "V_mm": 384,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        },
+        {
+          "designation": "W19",
+          "depth_mm": 2300.0,
+          "area_mm2": 1213750.0,
+          "centroid_from_soffit_mm": 1081.1,
+          "section_modulus_top_1e6_mm3": 622.31,
+          "section_modulus_bottom_1e6_mm3": 701.68,
+          "Ixx_1e9_mm4": 758.56,
+          "self_weight_kN_per_m": 30.34,
+          "overall_width_W1_mm": 2124.4,
+          "W2_mm": 348.2,
+          "W3_mm": 1268.0,
+          "Web_mm": 1050.0,
+          "S_mm": 276.0,
+          "F_mm": 100.0,
+          "V_mm": 464,
+          "evidence": {
+            "pdf_page": 30,
+            "printed_page": 28
+          }
+        }
+      ],
+      "notes": [
+        "W1/W2/W3 in column headings are drawing dimension symbols; they are not girder designations.",
+        "Web is a vertical dimension of the sloping inner web segment, not thickness.",
+        "V is absent for W1-W15; null retains the source dash rather than treating it as a measured zero.",
+        "Appendix C strand pitches, reinforcement offsets and strand elevations are not concrete-profile dimensions.",
+        "Drawings show two outline regimes: W1-W15 and W16-W19."
+      ],
+      "blockers": [
+        "Published drawings do not explicitly dimension all inner bottom-slab vertices, corner radii or lower corner vertical extent. Do not derive these from drawing scale or strand coordinates. Obtain mould/CAD profile or additional authoritative dimensioned drawing before geometry implementation."
+      ]
+    }
+  ]
+}

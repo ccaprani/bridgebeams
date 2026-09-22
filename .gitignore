@@ -132,3 +132,6 @@ dmypy.json
 sources/
 examples/*.png
 dims_review.html
+
+# Generated Sphinx autosummary stubs (existing tracked legacy stubs retained)
+docs/source/gen/

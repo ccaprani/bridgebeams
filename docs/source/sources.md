@@ -1,7 +1,12 @@
 # Sources
 
-All section data are recovered from, or validated against, published
-manufacturer documentation:
+The expanded country-by-country source catalogue, English translations and
+PDF transcriptions are available in {doc}`research`. These records are
+versioned with the repository, including structured JSON evidence. Local
+downloaded PDFs remain in the ignored `sources/` directory.
+
+The original Irish section data are recovered from, or validated against,
+published manufacturer documentation:
 
 - **Banagher Precast Concrete**, *Bridge Beam Manual*, 3rd edition —
   <https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf>
@@ -15,9 +20,11 @@ manufacturer documentation:
   E. Stack) — property tables matching the above, with 50 embedded
   AutoCAD drawings of family profiles and strand grids.
 
-The Banagher manual's pages are true-scale CAD art in vector form;
-profiles in this library were recovered from those vector paths and
-validated against the published section properties (see {doc}`families`).
+The Banagher manual includes dimensioned vector drawings and property tables.
+Some profiles were recovered directly from the drawings; others use
+documented reconstructions fitted to published properties. The new Solid Box
+profiles follow explicit drawing dimensions. See {doc}`families` for each
+family's method and validation limits.
 
 Manufacturer brochures are copyrighted; they are held as private working
 references (not committed). Dimensional data of standard sections are

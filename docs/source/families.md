@@ -1,12 +1,13 @@
 # Beam families
 
-All sections are recovered from (or validated against) the manufacturers'
+The Irish sections below are recovered from (or validated against) manufacturers'
 published property tables, with the Banagher Precast Concrete *Bridge Beam
 Manual* (3rd edition) as the principal UK/IE source. Where manufacturers
 publish section properties and key widths but not internal profile
 dimensions, the profile is a documented least-squares reconstruction, and
 the tests enforce the deviation limits quoted below. Sources and URLs are
-registered in `sources/SOURCES.md` of the repository.
+available in {doc}`research` and the local working registry `sources/SOURCES.md`.
+See {doc}`global` for other implemented jurisdictions and their evidence limits.
 
 ## Ireland / UK
 
@@ -55,6 +56,17 @@ upstands. Validated to **≤ 0.7%**.
 
 1500–2000 mm deep, 750 mm bottom flange. Validated to **< 0.6% rms**.
 
+### Solid Box beams (SD1–SD8, width classes 1–3)
+
+`IeSolidBoxBeamSection("SD4 (2)")` selects a 600 mm deep, 750 mm overall
+width solid box. The 24 profiles span depths 300–1000 mm and widths
+495/750/970 mm. The dimensioned lower shoulders and 25 mm chamfers reproduce
+published area, centroid and top/bottom section moduli within documented
+rounding allowances. Width class 4 (1500 mm) remains research-only because
+its table disagrees with the nominal drawing. The W family tables are also
+transcribed, with unresolved internal geometry identified in
+{doc}`research-banagher`.
+
 ## Australia
 
 ### Super-T girders (T1–T5)
@@ -67,6 +79,42 @@ subtypes and selectable web/flange thicknesses (VIC/NSW).
 To AS5100.5 Appendix D Fig. D1(A).
 
 ## Accuracy summary
+
+### New Zealand and Qatar additions
+
+`NzSuperTSection(1025)` and `NzSuperTSection(1225)` use the open-top
+twin-web sections of NZTA RR364 S1.01/S1.11. The 1225 mm section has its
+own lower geometry. `NzSuperTSection(1225, top_width=1990)` selects the
+narrower S1.21 arrangement. The small formwork ledge is omitted from this
+gross-profile approximation. This corrects earlier library geometry that
+filled the open centre and misread upper haunches as bottom chamfers.
+
+`NzIBeamSection(1500)` and `NzIBeamSection(1600)` transcribe RR364 S4.01
+and S4.10, selecting the drawing's 20 mm chamfer option. Independent
+analytic area checks validate the implementation; no published section
+property table was located for these New Zealand profiles.
+
+`QaQBeamSection("T1")` through `QaQBeamSection("T5")` implement Ashghal
+SD 5-1-101 Rev 1 at the published 2150 mm top width. All five lower
+profiles were read directly. Rounded and overdetermined source dimensions
+do not close exactly; the documented reconstruction differs from the
+published tables by at most **0.88% area, 0.85% centroid height and 1.26%
+centroidal Ixx**. The nominal 125 mm web becomes approximately 122–123 mm
+in this reconstruction. See {doc}`research-pdf-transcription` for the
+source audit and explicit approximation choices.
+
+### South Africa orientation correction
+
+Civilcon PPBI places B1 at the soffit and B4 at the top. The previous
+implementation reflected the section vertically and then compared the
+complement of its centroid against the source. The corrected geometry uses
+the drawn orientation: I1's centroid is about 318.221 mm above its 410 mm
+wide soffit, with a 360 mm top flange. Area and centroidal inertia are
+unchanged by reflection, but centroid height and top/bottom section moduli
+are corrected. The source I18 top-modulus inconsistency is preserved and
+tested separately. The full source audit is in {doc}`research-asia-africa`.
+
+### Irish families
 
 | Family | Area | Centroid | Ixx | Source of profile |
 |---|---|---|---|---|

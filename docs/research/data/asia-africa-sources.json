@@ -1,0 +1,3543 @@
+{
+  "accessed": "2026-09-22",
+  "scope": "Asia, Middle East and Africa; source survey plus verified factual transcriptions",
+  "sources": [
+    {
+      "id": "ID-WIKA-2022",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "organisation": "PT Wijaya Karya Beton",
+      "title_original": "Brosur WTON 2022",
+      "title_en": "WIKA Beton product brochure 2022",
+      "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1660206289_Brosur%20WTON%202022.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "PC I",
+        "PC U",
+        "PC voided slab",
+        "PC bulb tee",
+        "PC channel",
+        "segmental box"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "family": "PC I",
+          "mark": "H-90",
+          "depth_mm": 900,
+          "top_width_mm": 350,
+          "bottom_width_mm": 650,
+          "web_mm": 170,
+          "area_mm2": 257200,
+          "inertia_mm4": 22666070000,
+          "pdf_page": 18,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC I",
+          "mark": "H-125",
+          "depth_mm": 1250,
+          "top_width_mm": 350,
+          "bottom_width_mm": 650,
+          "web_mm": 170,
+          "area_mm2": 316700,
+          "inertia_mm4": 54962550000,
+          "pdf_page": 18,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC I",
+          "mark": "H-160",
+          "depth_mm": 1600,
+          "top_width_mm": 550,
+          "bottom_width_mm": 650,
+          "web_mm": 180,
+          "area_mm2": 477300,
+          "inertia_mm4": 146111040000,
+          "pdf_page": 18,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC I",
+          "mark": "H-170",
+          "depth_mm": 1700,
+          "top_width_mm": 800,
+          "bottom_width_mm": 700,
+          "web_mm": 200,
+          "area_mm2": 669500,
+          "inertia_mm4": 236410850000,
+          "pdf_page": 18,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC I",
+          "mark": "H-210",
+          "depth_mm": 2100,
+          "top_width_mm": 800,
+          "bottom_width_mm": 700,
+          "web_mm": 200,
+          "area_mm2": 749500,
+          "inertia_mm4": 410870330000,
+          "pdf_page": 18,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC U",
+          "mark": "H-120",
+          "depth_mm": 1200,
+          "overall_top_width_mm": 1720,
+          "area_mm2": 917800,
+          "inertia_mm4": 126332910000,
+          "pdf_page": 17,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC U",
+          "mark": "H-140",
+          "depth_mm": 1400,
+          "overall_top_width_mm": 1720,
+          "area_mm2": 1036600,
+          "inertia_mm4": 196344690000,
+          "pdf_page": 17,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC U",
+          "mark": "H-165",
+          "depth_mm": 1650,
+          "overall_top_width_mm": 1900,
+          "area_mm2": 1187800,
+          "inertia_mm4": 313587760000,
+          "pdf_page": 17,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC U",
+          "mark": "H-185",
+          "depth_mm": 1850,
+          "overall_top_width_mm": 1900,
+          "area_mm2": 1306600,
+          "inertia_mm4": 433404060000,
+          "pdf_page": 17,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC U",
+          "mark": "H-210",
+          "depth_mm": 2100,
+          "overall_top_width_mm": 1900,
+          "area_mm2": 1467800,
+          "inertia_mm4": 623280880000,
+          "pdf_page": 17,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC U",
+          "mark": "H-230",
+          "depth_mm": 2300,
+          "overall_top_width_mm": 2080,
+          "area_mm2": 1593600,
+          "inertia_mm4": 807424480000,
+          "pdf_page": 17,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC voided slab",
+          "mark": "VS-57/97",
+          "depth_mm": 570,
+          "width_mm": 970,
+          "area_mm2": 439700,
+          "inertia_mm4": 14113720000,
+          "pdf_page": 19,
+          "geometry_status": "partial",
+          "note": "Bare precast values; separate composite-with-180mm-topping figures must not replace these."
+        },
+        {
+          "family": "PC voided slab",
+          "mark": "VS-62/97",
+          "depth_mm": 620,
+          "width_mm": 970,
+          "area_mm2": 442000,
+          "inertia_mm4": 17855200000,
+          "pdf_page": 19,
+          "geometry_status": "partial",
+          "note": "Bare precast values; separate composite-with-180mm-topping figures must not replace these."
+        },
+        {
+          "family": "PC voided slab",
+          "mark": "VS-66/97",
+          "depth_mm": 660,
+          "width_mm": 970,
+          "area_mm2": 478400,
+          "inertia_mm4": 21702990000,
+          "pdf_page": 19,
+          "geometry_status": "partial",
+          "note": "Bare precast values; separate composite-with-180mm-topping figures must not replace these."
+        },
+        {
+          "family": "PC voided slab",
+          "mark": "VS-74/97",
+          "depth_mm": 740,
+          "width_mm": 970,
+          "area_mm2": 503200,
+          "inertia_mm4": 29775510000,
+          "pdf_page": 19,
+          "geometry_status": "partial",
+          "note": "Bare precast values; separate composite-with-180mm-topping figures must not replace these."
+        },
+        {
+          "family": "PC channel",
+          "mark": "CG 60x120",
+          "depth_mm": 600,
+          "width_mm": 1200,
+          "top_flat_width_mm": 1170,
+          "area_mm2": 432900,
+          "inertia_mm4": 12931030000,
+          "pdf_page": 22,
+          "geometry_status": "dimensioned-drawing-needs-corner-detail-check"
+        },
+        {
+          "family": "PC channel",
+          "mark": "CG 70x120",
+          "depth_mm": 700,
+          "width_mm": 1200,
+          "top_flat_width_mm": 1170,
+          "area_mm2": 480600,
+          "inertia_mm4": 20231710000,
+          "pdf_page": 22,
+          "geometry_status": "dimensioned-drawing-needs-corner-detail-check"
+        },
+        {
+          "family": "PC channel",
+          "mark": "CG 80x120",
+          "depth_mm": 800,
+          "width_mm": 1200,
+          "top_flat_width_mm": 1170,
+          "area_mm2": 527400,
+          "inertia_mm4": 29680870000,
+          "pdf_page": 22,
+          "geometry_status": "dimensioned-drawing-needs-corner-detail-check"
+        },
+        {
+          "family": "PC channel",
+          "mark": "CG 100x120",
+          "depth_mm": 1000,
+          "width_mm": 1200,
+          "top_flat_width_mm": 1170,
+          "area_mm2": 633400,
+          "inertia_mm4": 57176990000,
+          "pdf_page": 22,
+          "geometry_status": "dimensioned-drawing-needs-corner-detail-check"
+        },
+        {
+          "family": "PC bulb tee",
+          "mark": "H-220",
+          "depth_mm": 2200,
+          "top_width_mm": 2400,
+          "bottom_width_mm": 1200,
+          "web_mm": 250,
+          "area_mm2": 1292500,
+          "inertia_mm4": 901061590000,
+          "pdf_page": 20,
+          "geometry_status": "partial"
+        },
+        {
+          "family": "PC voided slab plus topping",
+          "mark": "VS-57+18/97",
+          "precast_depth_mm": 570,
+          "topping_mm": 180,
+          "precast_width_mm": 970,
+          "published_composite_area_mm2": 576600,
+          "published_composite_inertia_mm4": 28555600000,
+          "pdf_page": 19,
+          "geometry_status": "composite-properties-only",
+          "note": "Published composite figures, not bare concrete outline properties. Effective transformed topping-width/material basis not specified here."
+        },
+        {
+          "family": "PC voided slab plus topping",
+          "mark": "VS-62+18/97",
+          "precast_depth_mm": 620,
+          "topping_mm": 180,
+          "precast_width_mm": 970,
+          "published_composite_area_mm2": 581500,
+          "published_composite_inertia_mm4": 34351860000,
+          "pdf_page": 19,
+          "geometry_status": "composite-properties-only",
+          "note": "Published composite figures, not bare concrete outline properties. Effective transformed topping-width/material basis not specified here."
+        },
+        {
+          "family": "PC voided slab plus topping",
+          "mark": "VS-66+18/97",
+          "precast_depth_mm": 660,
+          "topping_mm": 180,
+          "precast_width_mm": 970,
+          "published_composite_area_mm2": 620100,
+          "published_composite_inertia_mm4": 40201540000,
+          "pdf_page": 19,
+          "geometry_status": "composite-properties-only",
+          "note": "Published composite figures, not bare concrete outline properties. Effective transformed topping-width/material basis not specified here."
+        },
+        {
+          "family": "PC voided slab plus topping",
+          "mark": "VS-74+18/97",
+          "precast_depth_mm": 740,
+          "topping_mm": 180,
+          "precast_width_mm": 970,
+          "published_composite_area_mm2": 649200,
+          "published_composite_inertia_mm4": 53004990000,
+          "pdf_page": 19,
+          "geometry_status": "composite-properties-only",
+          "note": "Published composite figures, not bare concrete outline properties. Effective transformed topping-width/material basis not specified here."
+        },
+        {
+          "family": "segmental PC box",
+          "mark": "50m-road-LRT",
+          "published_table_depth_mm": 2600,
+          "top_width_mm": 10300,
+          "bottom_width_mm": 4000,
+          "published_table_top_slab_mm": 225,
+          "published_table_bottom_slab_mm": 300,
+          "web_mm": 277,
+          "pdf_page": 20,
+          "geometry_status": "conflicting-drawing-and-table",
+          "discrepancy": "Diagram bottom slab200; table300."
+        },
+        {
+          "family": "segmental PC box",
+          "mark": "100m-road-LRT",
+          "published_table_depth_mm": [
+            2500,
+            3484
+          ],
+          "top_width_mm": 13000,
+          "bottom_width_mm": 5000,
+          "published_table_top_slab_mm": 225,
+          "published_table_bottom_slab_mm": [
+            250,
+            443
+          ],
+          "web_mm": 450,
+          "pdf_page": 20,
+          "geometry_status": "conflicting-drawing-and-table",
+          "discrepancy": "Diagram depth2500-3483 versus table2500-3484; diagram top slab250 versus table225."
+        },
+        {
+          "family": "segmental PC box",
+          "mark": "40m-rail",
+          "published_table_depth_mm": 2400,
+          "top_width_mm": 10300,
+          "bottom_width_mm": 4300,
+          "published_table_top_slab_mm": 300,
+          "published_table_bottom_slab_mm": 250,
+          "web_mm": 300,
+          "pdf_page": 20,
+          "geometry_status": "conflicting-drawing-and-table",
+          "discrepancy": "Diagram top slab250; table300."
+        }
+      ],
+      "evidence": {
+        "method": "download, text extraction and rendered-page visual comparison",
+        "pdf_pages": [
+          17,
+          18,
+          19,
+          20,
+          22
+        ]
+      },
+      "notes": "Manufacturer catalogue, not a national section mandate. cm dimensions converted by x10; cm2 by x100; cm4 by x10000. Dots in Indonesian property values are thousands separators. Flange/haunch details remain missing for I/U/bulb tee; do not reconstruct by scaling sketches.",
+      "local_file": "sources/expansion/asia-africa/wika-2022.pdf",
+      "sha256": "7ec2716d3c3b2575d6366c492c7f883ed9655041b7a3d1e93527baa42bbffa23",
+      "pages": 44,
+      "bytes": 9839691
+    },
+    {
+      "id": "ID-WIKA-VOIDED-MANUAL",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "organisation": "PT Wijaya Karya Beton",
+      "title_original": "Manual Produk Voided Slab",
+      "title_en": "Voided slab product manual",
+      "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1700029120_Manual%20Voided%20Slab.pdf",
+      "accessed": "2026-09-22",
+      "status": "downloaded-untranscribed",
+      "families": [
+        "voided slab"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Dated 2009 internally; web upload date 2023 is not design edition.",
+      "local_file": "sources/expansion/asia-africa/wika-voided.pdf",
+      "sha256": "6914ec56a7811b321d61bc77f321ddca491407f98bd2866e3ad7553eb9605d00",
+      "pages": 24,
+      "bytes": 764792
+    },
+    {
+      "id": "ID-WIKA-PCI-MANUAL",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "organisation": "PT Wijaya Karya Beton",
+      "title_original": "Manual Produk PC I Girder",
+      "title_en": "PC I girder handling manual",
+      "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1700029057_Manual%20Produk%20PC%20I%20Girder.pdf",
+      "accessed": "2026-09-22",
+      "status": "downloaded-untranscribed",
+      "families": [
+        "PC I"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Six raster pages; inspected pp2-3 describe transport, stacking, segment alignment and stressing beds. This is a handling manual, not the missing geometric dimension schedule.",
+      "local_file": "sources/expansion/asia-africa/wika-pci-manual.pdf",
+      "sha256": "100161ed88634817ba55c9599c0895004426d57dd3d80892d4abc018b90e3bc7",
+      "pages": 6,
+      "bytes": 18928816
+    },
+    {
+      "id": "TW-FREEWAY-2020",
+      "country": "Taiwan",
+      "country_code": "TW",
+      "organisation": "Ministry of Transportation and Communications, Freeway Bureau",
+      "title_original": "橋梁及結構工程設計注意事項",
+      "title_en": "Bridge and structural engineering design considerations, first edition May 2020",
+      "url": "https://www.freeway.gov.tw/Upload/DownloadFiles/發文附件2_橋梁設計注意事項(初版)%20109.05.04(頒定稿)_250654.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "Type IV",
+        "Type V",
+        "Type VI",
+        "Type VII",
+        "Type VIII"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "IV",
+          "depth_mm": 1350,
+          "end_block_constant_length_mm": 1000,
+          "end_block_transition_length_mm": 300,
+          "web_mm": 200,
+          "top_width_mm": 500,
+          "bottom_width_mm": 650,
+          "bottom_flange_edge_mm": 200,
+          "bottom_haunch_height_mm": 225,
+          "top_flange_edge_mm": 200,
+          "top_haunch_heights_mm": [
+            150
+          ],
+          "geometry_status": "fully-dimensioned-midspan"
+        },
+        {
+          "mark": "V",
+          "depth_mm": 1600,
+          "end_block_constant_length_mm": 1200,
+          "end_block_transition_length_mm": 500,
+          "web_mm": 200,
+          "top_width_mm": 1050,
+          "bottom_width_mm": 700,
+          "bottom_flange_edge_mm": 200,
+          "bottom_haunch_height_mm": 250,
+          "top_flange_edge_mm": 125,
+          "top_haunch_heights_mm": [
+            75,
+            100
+          ],
+          "geometry_status": "fully-dimensioned-midspan",
+          "top_outer_slope_horizontal_mm": 325
+        },
+        {
+          "mark": "VI",
+          "depth_mm": 1850,
+          "end_block_constant_length_mm": 1400,
+          "end_block_transition_length_mm": 500,
+          "web_mm": 200,
+          "top_width_mm": 1050,
+          "bottom_width_mm": 700,
+          "bottom_flange_edge_mm": 200,
+          "bottom_haunch_height_mm": 250,
+          "top_flange_edge_mm": 125,
+          "top_haunch_heights_mm": [
+            75,
+            100
+          ],
+          "geometry_status": "fully-dimensioned-midspan",
+          "top_outer_slope_horizontal_mm": 325
+        },
+        {
+          "mark": "VII",
+          "depth_mm": 2000,
+          "end_block_constant_length_mm": 1500,
+          "end_block_transition_length_mm": 500,
+          "web_mm": 200,
+          "top_width_mm": 1050,
+          "bottom_width_mm": 700,
+          "bottom_flange_edge_mm": 200,
+          "bottom_haunch_height_mm": 250,
+          "top_flange_edge_mm": 125,
+          "top_haunch_heights_mm": [
+            75,
+            100
+          ],
+          "geometry_status": "fully-dimensioned-midspan",
+          "top_outer_slope_horizontal_mm": 325
+        },
+        {
+          "mark": "VIII",
+          "depth_mm": 2100,
+          "end_block_constant_length_mm": 1600,
+          "end_block_transition_length_mm": 500,
+          "web_mm": 200,
+          "top_width_mm": 1050,
+          "bottom_width_mm": 700,
+          "bottom_flange_edge_mm": 200,
+          "bottom_haunch_height_mm": 250,
+          "top_flange_edge_mm": 125,
+          "top_haunch_heights_mm": [
+            75,
+            100
+          ],
+          "geometry_status": "fully-dimensioned-midspan",
+          "top_outer_slope_horizontal_mm": 325
+        }
+      ],
+      "evidence": {
+        "method": "download and visual transcription",
+        "pdf_pages": [
+          34
+        ],
+        "printed_pages": [
+          "30"
+        ],
+        "figures": [
+          "10"
+        ],
+        "tables": [
+          "14"
+        ]
+      },
+      "notes": "PDF p34 = printed p30, Fig10/Table14. All drawing dimensions cm. A is beam depth; B and C are longitudinal end-block dimensions, not flange dimensions. Applies to standard precast post-tensioned midspan sections.",
+      "local_file": "sources/expansion/asia-africa/taiwan.pdf",
+      "sha256": "31c95d4978d4bd8446923ff5379186b6f5e2d2fa3c8808f3c627a2d8add66628",
+      "pages": 89,
+      "bytes": 4614653
+    },
+    {
+      "id": "NP-DOR-PRECAST-25",
+      "country": "Nepal",
+      "country_code": "NP",
+      "organisation": "Department of Roads, Bridge Branch",
+      "title_original": "25.0m simply supported span, RC deck with Precast RC Beams",
+      "title_en": "Standard precast reinforced-concrete beams for 25 m span",
+      "url": "https://dor.gov.np/home/publication/standard-superstructures-for-road-bridges/force/25-m-simply-supported-span-rc-deck-with-precast-rc-beams-compressed",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "precast RC I girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "RC-25m",
+          "span_m": 25,
+          "depth_mm": 1700,
+          "top_width_mm": 700,
+          "bottom_width_mm": 700,
+          "web_mm": 325,
+          "top_flange_edge_mm": 150,
+          "top_haunch_height_mm": 65,
+          "clear_web_height_mm": 1085,
+          "bottom_haunch_height_mm": 150,
+          "bottom_flange_edge_mm": 250,
+          "formwork_chamfer_mm": 12,
+          "geometry_status": "main-dimensions-transcribed-chamfer-application-needs-check"
+        }
+      ],
+      "evidence": {
+        "method": "raster PDF visual transcription",
+        "pdf_pages": [
+          7,
+          9
+        ],
+        "drawing": "5/10 general arrangement; 7/10 outer beam reinforcement"
+      },
+      "notes": "Reinforced concrete, NOT prestressed. Sheet 5/10; plain outline dimensions transcribed, 12x12mm formwork chamfer note retained. Span and full beam mass are not sectional properties. Midspan differs from 700mm-wide full rectangular end blocks.",
+      "local_file": "sources/expansion/asia-africa/nepal-precast25.pdf",
+      "sha256": "d7b9eeed9de4293b90b44a478d6ef67837c53984d3191fca70fb2fd6cb685ba4",
+      "pages": 12,
+      "bytes": 6253976
+    },
+    {
+      "id": "NP-DOR-PRECAST-20",
+      "country": "Nepal",
+      "country_code": "NP",
+      "organisation": "Department of Roads, Bridge Branch",
+      "title_original": "20.0m simply supported span, RC deck with Precast RC Beams",
+      "title_en": "Standard precast reinforced-concrete beams for 20 m span",
+      "url": "https://dor.gov.np/home/publication/standard-superstructures-for-road-bridges/force/2-m-simply-supported-span-rc-deck-with-precast-rc-beams-compressed",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "precast RC I girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "RC-20m",
+          "span_m": 20,
+          "depth_mm": 1300,
+          "top_width_mm": 700,
+          "bottom_width_mm": 700,
+          "web_mm": 325,
+          "top_flange_edge_mm": 150,
+          "top_haunch_height_mm": 65,
+          "clear_web_height_mm": 685,
+          "bottom_haunch_height_mm": 150,
+          "bottom_flange_edge_mm": 250,
+          "formwork_chamfer_mm": 12,
+          "geometry_status": "main-dimensions-transcribed-chamfer-application-needs-check"
+        }
+      ],
+      "evidence": {
+        "method": "raster PDF visual transcription",
+        "pdf_pages": [
+          7,
+          9
+        ],
+        "drawing": "5/10 general arrangement; 7/10 outer beam reinforcement"
+      },
+      "notes": "Reinforced concrete, NOT prestressed. Sheet 5/10; plain outline dimensions transcribed, 12x12mm formwork chamfer note retained. Span and full beam mass are not sectional properties. Midspan differs from 700mm-wide full rectangular end blocks.",
+      "local_file": "sources/expansion/asia-africa/nepal-precast20.pdf",
+      "sha256": "16fb263279d3b626fdfb6d852e953380a1aa4a95c40801fa1113f5acc659376f",
+      "pages": 12,
+      "bytes": 5776177
+    },
+    {
+      "id": "NP-DOR-INDEX",
+      "country": "Nepal",
+      "country_code": "NP",
+      "organisation": "Department of Roads",
+      "title_original": "Standard Superstructures Drawings For Road Bridges",
+      "title_en": "Standard superstructure drawings library",
+      "url": "https://dor.gov.np/index.php/home/publication/standard-superstructures-for-road-bridges",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast RC 15m",
+        "precast RC 20m",
+        "precast RC 25m"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "15m precast volume also available. Separate 30/35/40m prestressed slab-deck entries are cast in situ: exclude those from precast families."
+    },
+    {
+      "id": "LK-ICC-RDA",
+      "country": "Sri Lanka",
+      "country_code": "LK",
+      "organisation": "International Construction Consortium",
+      "title_original": "ICC Precast Bridge Beams",
+      "title_en": "ICC RDA precast bridge beams",
+      "url": "https://icc-construct.com/public/products/bridge-beam",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "RDA flat and I beams"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "drawing": "T/B/030",
+          "length_mm": 7010,
+          "width_mm": 610,
+          "depth_mm": 225,
+          "mass_kg": 2300,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/507",
+          "length_mm": 9500,
+          "width_mm": 500,
+          "depth_mm": 380,
+          "mass_kg": 2320,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/506",
+          "length_mm": 11500,
+          "width_mm": 500,
+          "depth_mm": 450,
+          "mass_kg": 3210,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/505",
+          "length_mm": 13500,
+          "width_mm": 500,
+          "depth_mm": 525,
+          "mass_kg": 4200,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/503 A",
+          "length_mm": 14500,
+          "width_mm": 500,
+          "depth_mm": 600,
+          "mass_kg": 4710,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/502 A",
+          "length_mm": 15500,
+          "width_mm": 500,
+          "depth_mm": 650,
+          "mass_kg": 5440,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/501 A",
+          "length_mm": 16500,
+          "width_mm": 500,
+          "depth_mm": 700,
+          "mass_kg": 6160,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/515",
+          "length_mm": 17500,
+          "width_mm": 500,
+          "depth_mm": 700,
+          "mass_kg": 6880,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "drawing": "T/B/508 Rev 1",
+          "length_mm": 19000,
+          "width_mm": 500,
+          "depth_mm": 825,
+          "mass_kg": 8120,
+          "geometry_status": "overall-dimensions-only"
+        }
+      ],
+      "evidence": {
+        "method": "manufacturer HTML product table"
+      },
+      "notes": "Producer states RDA-standard products. Overall dimensions only; profile classification per each drawing still requires PDF. Companion PDF download returns 406."
+    },
+    {
+      "id": "LK-ICC-PDF",
+      "country": "Sri Lanka",
+      "country_code": "LK",
+      "organisation": "International Construction Consortium",
+      "title_original": "Pre-stressed, Pre-cast Concrete Bridge Beams & Bridge Component Data Sheet",
+      "title_en": "Prestressed bridge beam data sheet",
+      "url": "https://icc-construct.com/wp-content/uploads/2023/04/2-Concrete-bridge-beams-_-bridge-component.pdf",
+      "accessed": "2026-09-22",
+      "status": "access-blocked",
+      "families": [
+        "RDA beams"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Web index confirms source; local server response 406. HTML table recovered separately.",
+      "download_blocker": "406 Client Error: Not Acceptable for url: https://icc-construct.com/wp-content/uploads/2023/04/2-Concrete-bridge-beams-_-bridge-component.pdf"
+    },
+    {
+      "id": "LK-ELS",
+      "country": "Sri Lanka",
+      "country_code": "LK",
+      "organisation": "ELS Group",
+      "title_original": "Bridge Beams",
+      "title_en": "RDA I and flat bridge beams",
+      "url": "https://elslanka.com/product/bridge-beams/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "RDA I",
+        "RDA flat"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Manufacturer confirms standard range 5–25m and RDA drawing basis; no outline dimensions captured."
+    },
+    {
+      "id": "MY-OKA-PRT",
+      "country": "Malaysia",
+      "country_code": "MY",
+      "organisation": "OKA Corporation",
+      "title_original": "OKA T-BEAMS",
+      "title_en": "JKR standard and OKA modified prestressed T beams",
+      "url": "https://www.oka.com.my/index.asp?CompanyID=29&LanguagesID=1&TitleReferenceID=1215",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "PRT1",
+        "PRT2",
+        "PRT3",
+        "PRT-M"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "PRT1",
+          "span_m": 18,
+          "length_m": 18.6,
+          "depth_mm": 1250,
+          "web_depth_mm": 1055,
+          "area_mm2": 458350,
+          "geometry_status": "partial"
+        },
+        {
+          "mark": "PRT2",
+          "span_m": 20,
+          "length_m": 20.6,
+          "depth_mm": 1350,
+          "web_depth_mm": 1155,
+          "area_mm2": 488350,
+          "geometry_status": "partial"
+        },
+        {
+          "mark": "PRT3",
+          "span_m": 22,
+          "length_m": 22.6,
+          "depth_mm": 1400,
+          "web_depth_mm": 1205,
+          "area_mm2": 503350,
+          "geometry_status": "partial"
+        }
+      ],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Page explicitly marked old version. PRT-M depths 1450/1500/1550/1600/1650/1700/1800; area range 518350–623350 mm2. Do not infer individual PRT-M rows."
+    },
+    {
+      "id": "MY-PRESTASI",
+      "country": "Malaysia",
+      "country_code": "MY",
+      "organisation": "Prestasi Concrete",
+      "title_original": "Precast Prestressed Beams",
+      "title_en": "Prestasi beam range and properties",
+      "url": "https://prestasi-concrete.com/products/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "PRT",
+        "M",
+        "TM",
+        "U",
+        "I",
+        "PRHS"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Product page provides per-family beam-property links and brochure; local brochure fetch 403 while web reader can parse 4-page PDF.",
+      "download_blocker": "403 Client Error: Forbidden for url: https://prestasi-concrete.com/wp-content/uploads/2021/06/prestasi-concrete-products.pdf"
+    },
+    {
+      "id": "VN-TNEC",
+      "country": "Vietnam",
+      "country_code": "VN",
+      "organisation": "TN E&C",
+      "title_original": "Dầm Super T",
+      "title_en": "Bridge girder product table",
+      "url": "https://tnec.com.vn/dam-super-t/",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "I",
+        "box",
+        "inverted T"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "I33",
+          "length_m": 33,
+          "width_mm": 610,
+          "depth_mm": 1400,
+          "mass_t": 36.4,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "mark": "I24.54",
+          "length_m": 24.54,
+          "width_mm": 558,
+          "depth_mm": 1143,
+          "mass_t": 22.5,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "mark": "I18.6",
+          "length_m": 18.6,
+          "width_mm": 400,
+          "depth_mm": 950,
+          "mass_t": 13.5,
+          "geometry_status": "overall-dimensions-only"
+        },
+        {
+          "mark": "I12.5",
+          "length_m": 12.5,
+          "width_mm": 400,
+          "depth_mm": 700,
+          "mass_t": 5.55,
+          "geometry_status": "overall-dimensions-only"
+        }
+      ],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Page title says Super T but numeric table contains I, box and inverted T: do not label its I-section numbers as Super-T. Vietnamese Dài/Rộng/Cao = length/width/depth; comma decimal separator."
+    },
+    {
+      "id": "VN-620",
+      "country": "Vietnam",
+      "country_code": "VN",
+      "organisation": "620 Châu Thới",
+      "title_original": "Sản phẩm Dầm",
+      "title_en": "Girder products",
+      "url": "https://620chauthoi.com/danh-muc-sanpham/san-pham-dam/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "Super T",
+        "I",
+        "T",
+        "voided slab"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary producer catalogue with separate family product links; drawings not transcribed."
+    },
+    {
+      "id": "SG-CONINCO",
+      "country": "Singapore",
+      "country_code": "SG",
+      "organisation": "Concrete Innovators",
+      "title_original": "Concrete Innovators products",
+      "title_en": "Prestressed road and pedestrian bridge beams",
+      "url": "https://coninco.com.sg/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "road bridge beams",
+        "pedestrian bridge beams"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Producer confirms bridge applications but no numeric section catalogue captured. BCA structural precast handbook found in search is predominantly buildings, not a bridge-family authority."
+    },
+    {
+      "id": "PH-DPWH-25A00296",
+      "country": "Philippines",
+      "country_code": "PH",
+      "organisation": "Department of Public Works and Highways",
+      "title_original": "25A00296 Plans",
+      "title_en": "DPWH project drawings for AASHTO Type IV girders",
+      "url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/webform/civil_works/advertisement/25a00296_plans.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "AASHTO Type IV"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary procurement plans identify 24.70 and 24.40m Type IV girders. Drawing geometry not visually transcribed this pass; adoption evidence only."
+    },
+    {
+      "id": "PH-FREYFIL",
+      "country": "Philippines",
+      "country_code": "PH",
+      "organisation": "Frey-Fil Corporation",
+      "title_original": "Frey-Fil Corporation",
+      "title_en": "Precast prestressed girder producer",
+      "url": "https://www.freyfil.com.ph/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "prestressed girders"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Producer capability lead; no dimensions captured."
+    },
+    {
+      "id": "BD-JICA-PC-I",
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "organisation": "JICA and Roads and Highways Department",
+      "title_original": "Preparatory Survey on the Cross-Border Road Network Improvement Project (Bangladesh), Final Report",
+      "title_en": "Preliminary standard PC-I girders",
+      "url": "https://openjicareport.jica.go.jp/pdf/12249504_02.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "PC I"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "span_m": 25,
+          "depth_mm": 1600,
+          "bottom_width_mm": 700,
+          "geometry_status": "partial-preliminary-design"
+        },
+        {
+          "span_m": 30,
+          "depth_mm": 1700,
+          "bottom_width_mm": 700,
+          "geometry_status": "partial-preliminary-design"
+        },
+        {
+          "span_m": 35,
+          "depth_mm": 1850,
+          "bottom_width_mm": 650,
+          "geometry_status": "partial-preliminary-design"
+        },
+        {
+          "span_m": 40,
+          "depth_mm": 2100,
+          "bottom_width_mm": 650,
+          "geometry_status": "partial-preliminary-design"
+        },
+        {
+          "span_m": 45,
+          "depth_mm": 2200,
+          "bottom_width_mm": 800,
+          "geometry_status": "partial-preliminary-design"
+        }
+      ],
+      "evidence": {
+        "method": "PDF text and figure",
+        "pdf_pages": [
+          94
+        ],
+        "printed_pages": [
+          "8-14"
+        ],
+        "table": "8.3.1"
+      },
+      "notes": "Explicitly preliminary design for civil cost estimation, not final national standard. Report Fig8.3.2 maps b6 to bottom flange width; Table8.3.1 gives H and b6.",
+      "local_file": "sources/expansion/asia-africa/bangladesh-jica.pdf",
+      "sha256": "64819e66246a6f88936a9a2ab64edf522a4a2d8e6e9db80b4e149bcbbb1d6784",
+      "pages": 252,
+      "bytes": 8324754
+    },
+    {
+      "id": "IN-RDSO-BS141",
+      "country": "India",
+      "country_code": "IN",
+      "organisation": "Research Designs and Standards Organisation, Indian Railways",
+      "title_original": "BS-141",
+      "title_en": "Railway PSC girder and slab standard-drawing index",
+      "url": "https://rdso.indianrailways.gov.in/uploads/BS-141.pdf",
+      "accessed": "2026-09-22",
+      "status": "access-blocked",
+      "families": [
+        "2I",
+        "4I",
+        "U",
+        "box"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Official PDF indexed with standard drawing numbers including B-10256/10258/10275/10276/10270/10290. Local connection refused; table column semantic check pending, so no structural-height numbers promoted.",
+      "download_blocker": "HTTPSConnectionPool(host='rdso.indianrailways.gov.in', port=443): Max retries exceeded with url: /uploads/BS-141.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='rdso.indianrailways.gov.in', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+    },
+    {
+      "id": "PK-EDS",
+      "country": "Pakistan",
+      "country_code": "PK",
+      "organisation": "EDS International",
+      "title_original": "EDS International",
+      "title_en": "Bridge girder casting-yard project capability",
+      "url": "https://www.edsintl-pk.com/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast bridge girders"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary engineering practice shows precast bridge girder yard; no cross-section schedule found. Roofing girder/slab vendors excluded from bridge data."
+    },
+    {
+      "id": "CN-CQ-T-DRAFT-2022",
+      "country": "China",
+      "country_code": "CN",
+      "organisation": "Chongqing Municipal Transport Commission",
+      "title_original": "关于《装配式预应力混凝土T梁通用图》的公示",
+      "title_en": "Consultation on standard drawings for precast prestressed concrete T girders",
+      "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/t20220329_10565851.html",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "20/30/40m T girders"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Official notice links 12 complete volumes. March 2022 consultation draft status explicitly retained; July 2022 indexed attachment is a further publication lead. Local network cannot reach host. This corrects older implication that only reseller copies can be located; full dimensions not yet transcribed."
+    },
+    {
+      "id": "CN-CQ-T30-C-DRAWINGS",
+      "country": "China",
+      "country_code": "CN",
+      "organisation": "Chongqing Municipal Transport Commission",
+      "title_original": "装配式预应力混凝土T梁通用图",
+      "title_en": "Precast prestressed T-girder standard drawings, 30m, C series",
+      "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/W020220329617790453573.pdf",
+      "accessed": "2026-09-22",
+      "status": "access-blocked",
+      "families": [
+        "T30"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Indexed title block identifies Ver1.0, highway-I loading, span30m, deck16.25m, skew0°, TL-30-I-C-12. Not copied into section dimensions.",
+      "download_blocker": "HTTPSConnectionPool(host='jtj.cq.gov.cn', port=443): Max retries exceeded with url: /zwgk_240/zfxxgkml/gggs/tzgg/202203/W020220329617790453573.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='jtj.cq.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "id": "JP-SMC-PC",
+      "country": "Japan",
+      "country_code": "JP",
+      "organisation": "SMC Preconcrete",
+      "title_original": "PC橋げた",
+      "title_en": "Prestressed-concrete bridge girders",
+      "url": "https://precon.co.jp/download/doboku-catalog/04-bridge/pc-bridge-girder.pdf",
+      "accessed": "2026-09-22",
+      "status": "access-blocked",
+      "families": [
+        "PC bridge girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "New free producer PDF: six raster pages; linked from https://precon.co.jp/doboku-top/catalog/ alongside CAD download link. Direct fetch and web screenshot timeout. Strong residual alternative to buying handbook; no dimensions claimed.",
+      "download_blocker": "HTTPSConnectionPool(host='precon.co.jp', port=443): Max retries exceeded with url: /download/doboku-catalog/04-bridge/pc-bridge-girder.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='precon.co.jp', port=443) at 0x70dbde0e2c10>, 'Connection to precon.co.jp timed out. (connect timeout=15)'))"
+    },
+    {
+      "id": "KR-CODIL-HISTORICAL",
+      "country": "South Korea",
+      "country_code": "KR",
+      "organisation": "CODIL public construction information library",
+      "title_original": "PSC I 거더 Tendon Work 요약",
+      "title_en": "Historical PSC I girder standard-drawing tendon-work summary",
+      "url": "https://www.codil.or.kr/filebank/original/MA/OTMCMA500808/OTMCMA500808.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "1963/1978 Ministry PSC I",
+        "1975 ADB PSC I"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "Ministry1963-20",
+          "span_m": 20,
+          "depth_mm": 1350,
+          "top_width_mm": 480,
+          "bottom_width_mm": 520,
+          "geometry_status": "partial-historical"
+        },
+        {
+          "mark": "Ministry1963-25",
+          "span_m": 25,
+          "depth_mm": 1600,
+          "top_width_mm": 580,
+          "bottom_width_mm": 520,
+          "geometry_status": "partial-historical"
+        },
+        {
+          "mark": "Ministry1978-30",
+          "span_m": 30,
+          "depth_mm": 1950,
+          "top_width_mm": 700,
+          "bottom_width_mm": 660,
+          "geometry_status": "partial-historical"
+        },
+        {
+          "mark": "ADB1975-20",
+          "span_m": 20,
+          "depth_mm": 1350,
+          "top_width_mm": 880,
+          "bottom_width_mm": 450,
+          "geometry_status": "partial-historical"
+        },
+        {
+          "mark": "ADB1975-25",
+          "span_m": 25,
+          "depth_mm": 1350,
+          "top_width_mm": 880,
+          "bottom_width_mm": 450,
+          "geometry_status": "partial-historical"
+        },
+        {
+          "mark": "ADB1975-30",
+          "span_m": 30,
+          "depth_mm": 1650,
+          "top_width_mm": 880,
+          "bottom_width_mm": 450,
+          "geometry_status": "partial-historical"
+        }
+      ],
+      "evidence": {
+        "method": "indexed primary PDF tables",
+        "tables": [
+          "2.4",
+          "2.5"
+        ],
+        "pdf_pages_unverified": true
+      },
+      "notes": "Table2.4/2.5 distinguish historical standard families from KHC current-family data. 도심 is tendon centroid, not concrete-section centroid. H/BU/BB are depth/top width/bottom width in cm. Local TLS trust failure.",
+      "download_blocker": "HTTPSConnectionPool(host='www.codil.or.kr', port=443): Max retries exceeded with url: /filebank/original/MA/OTMCMA500808/OTMCMA500808.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
+    },
+    {
+      "id": "TH-POUND-MULTIBEAM",
+      "country": "Thailand",
+      "country_code": "TH",
+      "organisation": "Pound Concrete",
+      "title_original": "คานสะพานคอนกรีตอัดแรง(มัลติบีม)",
+      "title_en": "Prestressed concrete bridge multibeams",
+      "url": "https://poundconcrete.co.th/product/i-shaped-prestressed-concrete-bridge-beam/",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "Type A multibeam",
+        "Type B multibeam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "A",
+          "span_range_m": [
+            5,
+            8
+          ],
+          "published_dimensions_cm": {
+            "w": 20,
+            "W": 33,
+            "D": 34,
+            "T": 8
+          },
+          "geometry_status": "labels-not-yet-mapped"
+        },
+        {
+          "mark": "A9",
+          "span_range_m": [
+            9,
+            9
+          ],
+          "published_dimensions_cm": {
+            "w": 20,
+            "W": 33,
+            "D": 42,
+            "T": 8
+          },
+          "geometry_status": "labels-not-yet-mapped"
+        },
+        {
+          "mark": "A10",
+          "span_range_m": [
+            10,
+            10
+          ],
+          "published_dimensions_cm": {
+            "w": 20,
+            "W": 33,
+            "D": 42,
+            "T": 10
+          },
+          "geometry_status": "labels-not-yet-mapped"
+        },
+        {
+          "mark": "B70",
+          "span_range_m": [
+            9,
+            14
+          ],
+          "published_dimensions_cm": {
+            "w": 30,
+            "W": 40,
+            "D": 70,
+            "T": 15
+          },
+          "geometry_status": "labels-not-yet-mapped"
+        },
+        {
+          "mark": "B90",
+          "span_range_m": [
+            12,
+            18
+          ],
+          "published_dimensions_cm": {
+            "w": 30,
+            "W": 45,
+            "D": 90,
+            "T": 15
+          },
+          "geometry_status": "labels-not-yet-mapped"
+        },
+        {
+          "mark": "B115",
+          "span_range_m": [
+            16,
+            24
+          ],
+          "published_dimensions_cm": {
+            "w": 40,
+            "W": 50,
+            "D": 115,
+            "T": 18
+          },
+          "geometry_status": "labels-not-yet-mapped"
+        },
+        {
+          "mark": "B135",
+          "span_range_m": [
+            21,
+            30
+          ],
+          "published_dimensions_cm": {
+            "w": 50,
+            "W": 65,
+            "D": 135,
+            "T": 18
+          },
+          "geometry_status": "labels-not-yet-mapped"
+        }
+      ],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Published column labels w,W,D,T retained without assuming which flange each width describes until dimension sketch read. Dimensions cm; spans m."
+    },
+    {
+      "id": "TR-BETONEL",
+      "country": "Türkiye",
+      "country_code": "TR",
+      "organisation": "Betonel",
+      "title_original": "Köprü Kirişleri",
+      "title_en": "Bridge girders",
+      "url": "https://www.betonel.com.tr/assets/katalog/koprukirisleri.pdf",
+      "accessed": "2026-09-22",
+      "status": "downloaded-untranscribed",
+      "families": [
+        "prestressed bridge girders"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Concise translation: high-strength prestressed bridge beams are made in varying sections and sizes to project requirements, erected spaced or adjacent. No dimension table in extracted text.",
+      "local_file": "sources/expansion/asia-africa/betonel.pdf",
+      "sha256": "0e63ccfcb9b1d2834438e6fa2ef6e92602ee3f983f11a1270f2b6902aad2f252",
+      "pages": 4,
+      "bytes": 713572
+    },
+    {
+      "id": "TR-ASSOCIATION",
+      "country": "Türkiye",
+      "country_code": "TR",
+      "organisation": "Türkiye Prefabrik Birliği",
+      "title_original": "Türkiye Prefabrik Birliği Üyeleri Ürün Türleri (2024)",
+      "title_en": "Precast association member product types 2024",
+      "url": "https://www.prefab.org.tr/uploads/pdfcatalog/2023-yili-sektor-raporu.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "bridge girders"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Authoritative supplier index names bridge-beam manufacturers; scope does not assert one national KGM geometry."
+    },
+    {
+      "id": "IR-PISHTANIDEH",
+      "country": "Iran",
+      "country_code": "IR",
+      "organisation": "Prestressed Concrete Engineering Company",
+      "title_original": "پروژه‌های اجرا شده",
+      "title_en": "Completed projects",
+      "url": "https://www.pishtanideh.com/پروژه-ها/پروژههای-اجرا-شده/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast bridge beam",
+        "precast bridge slab"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Project heading translates: decking of Bouin Baneh bridge using precast beams with 19m span. No section drawing captured; span is project evidence."
+    },
+    {
+      "id": "AE-DUBAI-PRECAST",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "organisation": "Dubai Precast",
+      "title_original": "Products: Civil Engineering",
+      "title_en": "Civil engineering precast bridge girders",
+      "url": "https://www.dubaiprecast.ae/_files/ugd/7455ee_31bff935f5fe4a10a51d9f2dd41faf3a.pdf",
+      "accessed": "2026-09-22",
+      "status": "downloaded-untranscribed",
+      "families": [
+        "TY",
+        "T",
+        "Y",
+        "SY",
+        "M",
+        "UM",
+        "U",
+        "box"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary family list confirms local production. Do not silently assign Irish geometry to UAE types; project cover and mould details may differ.",
+      "local_file": "sources/expansion/asia-africa/dubai.pdf",
+      "sha256": "ae48119d36cf173cfb5f9da256a122c202bb586acb511b4ce142c163f93e5781",
+      "pages": 12,
+      "bytes": 4431213
+    },
+    {
+      "id": "SA-DLT-RIYADH",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "organisation": "DLT Engineering",
+      "title_original": "Reference Projects",
+      "title_en": "Riyadh Metro full-span precast deck beams",
+      "url": "https://www.dlteng.com/Download_files/DLT%20brochure_7.1.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "full-span deck girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Equipment supplier describes 35m, 500tonne deck beams for Line4. This is project-scale evidence, not a highway I-girder section catalogue."
+    },
+    {
+      "id": "OM-OPHIOLITE",
+      "country": "Oman",
+      "country_code": "OM",
+      "organisation": "Oman Ophiolite",
+      "title_original": "Corporate Brochure",
+      "title_en": "Precast beam types and applications",
+      "url": "https://ophioman.com/wp-content/uploads/2018/02/Corporate_Brochure.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "I",
+        "box",
+        "inverted T"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Printed p11 explicitly includes bridges in applications. Dimension labels are placeholders Depth/Breadth, not numbers; bespoke producer lead."
+    },
+    {
+      "id": "KW-INDEX",
+      "country": "Kuwait",
+      "country_code": "KW",
+      "organisation": "Index Co",
+      "title_original": "Infrastructure Projects",
+      "title_en": "Sabah Al Ahmad Sea City precast bridge girders",
+      "url": "https://www.index-precast.com/infrastructure-projects",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "bridge girders"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary producer project confirms casting/installation of girder beams. No standard dimensions captured."
+    },
+    {
+      "id": "BH-DELMON",
+      "country": "Bahrain",
+      "country_code": "BH",
+      "organisation": "Nass Corporation / Delmon Precast",
+      "title_original": "Delmon Precast",
+      "title_en": "Prestressed bridge beams and segmental bridge units",
+      "url": "https://www.nasscorporation.com/delmon-precast/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "prestressed bridge beams",
+        "segmental bridge units"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary manufacturer infrastructure product list, without numeric catalogue."
+    },
+    {
+      "id": "EG-ECPC",
+      "country": "Egypt",
+      "country_code": "EG",
+      "organisation": "Egyptian Company for Prestressed Concrete",
+      "title_original": "Precast Concrete Infrastructure History",
+      "title_en": "Precast bridge girder producer",
+      "url": "https://www.ecpc.com.eg/about-us-precast-concrete-leaders/precast-concrete-infrastructure-history/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "bridge girders"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary producer confirms bridge girder portfolio; dimension request lead only."
+    },
+    {
+      "id": "MA-SADET-I",
+      "country": "Morocco",
+      "country_code": "MA",
+      "organisation": "SADET",
+      "title_original": "Poutres industrielles",
+      "title_en": "Industrial prestressed beams for buildings and bridges",
+      "url": "https://sadet.ma/wp-content/uploads/2023/09/poutres-industrrielles.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "I40",
+        "I45",
+        "I50",
+        "I55"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "I40",
+          "base_width_mm": 400,
+          "published_limiting_span_m": 25,
+          "published_mass_kg_per_m": 282,
+          "geometry_status": "partial"
+        },
+        {
+          "mark": "I45",
+          "base_width_mm": 450,
+          "published_limiting_span_m": 26,
+          "published_mass_kg_per_m": 888,
+          "geometry_status": "partial"
+        },
+        {
+          "mark": "I50",
+          "base_width_mm": 500,
+          "published_limiting_span_m": 28,
+          "published_mass_kg_per_m": 995,
+          "geometry_status": "partial"
+        },
+        {
+          "mark": "I55",
+          "base_width_mm": 550,
+          "published_limiting_span_m": 29,
+          "published_mass_kg_per_m": 1150,
+          "geometry_status": "partial"
+        }
+      ],
+      "evidence": {
+        "method": "raster PDF visual transcription",
+        "pdf_pages": [
+          2
+        ]
+      },
+      "notes": "Raster p2 explicitly lists bridge decks and civil bridges. Base = flange base width; Portées limites = limiting spans; Poids kg/ml = mass per linear metre. I40 mass printed282kg/m is retained as published, not corrected to fit progression. Depth and haunches absent; small web labels are not reliable enough to transcribe.",
+      "local_file": "sources/expansion/asia-africa/sadet-morocco.pdf",
+      "sha256": "8f60ff2b42d0266c48ed6ef9a32759ad79732dbfe77cc476547fca0ed9a5bffd",
+      "pages": 2,
+      "bytes": 1735777
+    },
+    {
+      "id": "DZ-ENP-2018",
+      "country": "Algeria",
+      "country_code": "DZ",
+      "organisation": "École Nationale Polytechnique",
+      "title_original": "Étude et calcul d’un pont à poutres en béton précontraint réalisé par post-tension",
+      "title_en": "Design of a post-tensioned prestressed beam bridge",
+      "url": "https://repository.enp.edu.dz/jspui/handle/123456789/2543",
+      "accessed": "2026-09-22",
+      "status": "research-lead",
+      "families": [
+        "project precast post-tensioned beam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "2018 original student project in institutional repository, not an issued manufacturer/national catalogue. 36m project spans; design PDF available, not transcribed."
+    },
+    {
+      "id": "TN-PREFAB-IND",
+      "country": "Tunisia",
+      "country_code": "TN",
+      "organisation": "PREFAB Industries",
+      "title_original": "Poutres pour ouvrages d’art",
+      "title_en": "Bridge and civil-structure girders",
+      "url": "https://www.prefabind.com/poutres-pour-ouvrages-dart/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "double-T (I)",
+        "wide-bottom-flange"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "French double T means I-section in this context, not two-web US double tee. Fils adhérents means pretensioned bonded wire. Producer gives lengths up to30m, no cross-section dimensions."
+    },
+    {
+      "id": "KE-MOLDTECH",
+      "country": "Kenya",
+      "country_code": "KE",
+      "organisation": "Moldtech",
+      "title_original": "Post-tensioned girders for bridge construction",
+      "title_en": "Mombasa ring-road AASHTO girder moulds",
+      "url": "https://moldtechsl.es/en/projects/post-tensioned-bridge-girders-in-kenya/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "AASHTO IV",
+        "AASHTO VI",
+        "hollow-core deck slab"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "2021 supplier project: IV approximately30m/48t; VI approximately40m/81t. Adoption evidence, not certification that dimensions match unmodified AASHTO sections."
+    },
+    {
+      "id": "ZW-TENSOR",
+      "country": "Zimbabwe",
+      "country_code": "ZW",
+      "organisation": "Tensor Systems",
+      "title_original": "Services",
+      "title_en": "Precast and prestressed bridge beam production",
+      "url": "https://tensor.co.zw/services",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "prestressed bridge beams"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Primary local producer confirms bridge-beam production; no section tables."
+    },
+    {
+      "id": "ZW-OVUM-Y8",
+      "country": "Zimbabwe",
+      "country_code": "ZW",
+      "organisation": "Ovum Corporation",
+      "title_original": "New Mbudzi Interchange, Harare - Zimbabwe",
+      "title_en": "Mbudzi interchange Y8 precast beam decks",
+      "url": "https://www.linkedin.com/pulse/new-mbudzi-interchange-harare-zimbabwe-ovum-corporation-1c2gf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "Y8"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Designer-authored project article identifies Y8 beams at 23.85m and22.4m spans. Do not assume Irish Y8 cross-section is identical."
+    },
+    {
+      "id": "ZA-CIVILCON",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "organisation": "Civilcon",
+      "title_original": "Product catalogue",
+      "title_en": "Prestressed I/M/Y/T/U bridge-beam catalogue",
+      "url": "https://civilcon-za.co.za/catalog/",
+      "accessed": "2026-09-22",
+      "status": "existing-source",
+      "families": [
+        "I",
+        "M",
+        "Y",
+        "T",
+        "U"
+      ],
+      "discovery": "existing-source-reverified",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Existing repository source re-opened live. Catalogue confirms family ranges; dimension sheets downloaded for further decoding. Existing M10 depth discrepancy must not be silently repaired by interpolation."
+    },
+    {
+      "id": "ET-AAU-2016",
+      "country": "Ethiopia",
+      "country_code": "ET",
+      "organisation": "Addis Ababa University",
+      "title_original": "Design of Precast Pre-Stressed Concrete Girder Bridges as an Economical Solution for Congested Urban Areas & Waterways",
+      "title_en": "Original research on precast prestressed bridge girders",
+      "url": "https://etd.aau.edu.et/items/1eff2da6-0998-4b9b-902f-2c6e3b9c20a2",
+      "accessed": "2026-09-22",
+      "status": "research-lead",
+      "families": [
+        "precast prestressed girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Institutional research source, not a national catalogue. No dimensions promoted; ERA2002 manual reseller copies not used as authority."
+    },
+    {
+      "id": "TZ-MAGUFULI",
+      "country": "Tanzania",
+      "country_code": "TZ",
+      "organisation": "Project-author technical paper, Tongji bridge journal",
+      "title_original": "Construction of J.P. Magufuli Extradosed Cable-Stayed Bridge (3.0 km) at Mwanza, Tanzania",
+      "title_en": "Magufuli approach PSC beam construction",
+      "url": "https://ptmc.tongji.edu.cn/yyljsen/article/html/202502005",
+      "accessed": "2026-09-22",
+      "status": "research-lead",
+      "families": [
+        "PSC approach girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Original technical paper documents62 approach spans of40m; figure-level beam outline still untranscribed. Deck-panel dimensions are not beam dimensions."
+    },
+    {
+      "id": "UG-UNABCEC",
+      "country": "Uganda",
+      "country_code": "UG",
+      "organisation": "Uganda National Association of Building and Civil Engineering Contractors",
+      "title_original": "The Contractor Magazine, Issue8 March2016",
+      "title_en": "Ugandan precast industry report",
+      "url": "https://www.unabcec.co.ug/site/assets/files/1378/the_contractor_magazine_-_issue_08.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "bridge beams"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Association publication confirms bridge beams among local precast applications; no supplier section table found in pass."
+    },
+    {
+      "id": "GH-AGC-LEAD",
+      "country": "Ghana",
+      "country_code": "GH",
+      "organisation": "AGC PreCast",
+      "title_original": "Engineered Precast. Built for Ghana.",
+      "title_en": "Precast producer bridge-project claim",
+      "url": "https://agcprecast.com.gh/",
+      "accessed": "2026-09-22",
+      "status": "research-lead",
+      "families": [
+        "claimed bridge beams"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Uncorroborated commercial-site claim; internally inconsistent experience claims and placeholder-like phone number. Not trusted as established manufacturer evidence; keep only a low-priority verification lead."
+    },
+    {
+      "id": "NG-NWAJA",
+      "country": "Nigeria",
+      "country_code": "NG",
+      "organisation": "Kedmor Engineers",
+      "title_original": "Nwaja Bridges",
+      "title_en": "Nwaja precast prestressed U-girder bridges",
+      "url": "https://www.kedmor.co.il/nwaja-bridges",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "U girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "Nwaja-U",
+          "length_mm": 20000,
+          "depth_mm": 1200,
+          "topping_mm": 220,
+          "geometry_status": "overall-dimensions-only"
+        }
+      ],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Designer primary project source: each20m bridge uses three precast prestressed U girders, depth1.2m, structural in-situ topping220mm. Overall project geometry only."
+    },
+    {
+      "id": "NG-JULIUS-BERGER",
+      "country": "Nigeria",
+      "country_code": "NG",
+      "organisation": "Julius Berger",
+      "title_original": "Admiralty Alexander Link-Bridge, Lagos",
+      "title_en": "Precast full-span and segmental bridge decks",
+      "url": "https://www.julius-berger.com/references/admiralty-alexander-link-bridge-lagos",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "full-span deck",
+        "segmental box"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Design-build contractor confirms full-span precast approach elements and segmental box main bridge; no section schedule."
+    },
+    {
+      "id": "KH-NEAK-LOEUNG",
+      "country": "Cambodia",
+      "country_code": "KH",
+      "organisation": "JICA",
+      "title_original": "Preparatory Survey on the Project for Construction of Neak Loeung Bridge",
+      "title_en": "Precast PC composite T-girder approaches",
+      "url": "https://openjicareport.jica.go.jp/pdf/12026142_02.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "PC composite T"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Printed p3-68 Fig3.2-39 has approach cross-section; main girders erected simply supported then connected with RC over supports. Figure dimensions remain untranscribed."
+    },
+    {
+      "id": "LA-JICA-2010",
+      "country": "Laos",
+      "country_code": "LA",
+      "organisation": "JICA",
+      "title_original": "Preparatory Study for Improvement of Roads and Bridges in the Southern Region in Lao PDR",
+      "title_en": "Lao PC girder standard-drawing provenance",
+      "url": "https://openjicareport.jica.go.jp/pdf/12013090_02.pdf",
+      "accessed": "2026-09-22",
+      "status": "research-lead",
+      "families": [
+        "PC girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Printed p2-87 explicitly begins discussion of standard PC girder drawings. Follow following page to identify issuing source; do not repeat its dated no-design-standard statement as a current fact."
+    },
+    {
+      "id": "MM-JICA-DRAWINGS",
+      "country": "Myanmar",
+      "country_code": "MM",
+      "organisation": "JICA / Ministry of Construction",
+      "title_original": "Republic of the Union of Myanmar, bridge construction drawings",
+      "title_en": "PC-I and PC-box bridge drawing volume",
+      "url": "https://openjicareport.jica.go.jp/pdf/12304721_01.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "PC I",
+        "PC box"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Official consultant drawing volume; PC I specified separately from segmental box and RC deck. Precise report title and section pages need catalogue lookup; no dimensions promoted."
+    },
+    {
+      "id": "BN-DYWIDAG",
+      "country": "Brunei",
+      "country_code": "BN",
+      "organisation": "DYWIDAG / Utracon",
+      "title_original": "DYWIDAG Strand Tendons for flowing Road Traffic: New Viaducts in Brunei",
+      "title_en": "Jalan Telanai precast post-tensioned I girders",
+      "url": "https://assets.ctfassets.net/wz1xpzqb46pe/2C80OZ0JEm8ItSlLOyXVd7/23aa08d4f7624777cf75fcdca467569b/Case-Study2015Info-2346DYWIDAG-Strand-Tendons-for-flowing-Road-TrafficNew-Viaducts-in-BruneiDSI-ConstructionBrunei.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "PSPC I"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Supplier case study printed46 identifies27m and36m precast girders plus mould/stressing-bed supply. No transverse dimensions."
+    },
+    {
+      "id": "ZA-CIVILCON-I",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "organisation": "Civilcon",
+      "title_original": "PPBI: I beam dimension and property sheet",
+      "title_en": "Civilcon I beam dimensions and properties",
+      "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBI.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "I"
+      ],
+      "discovery": "existing-source-reverified",
+      "dimensions": [
+        {
+          "mark": "I1",
+          "published_depth_mm": 710.0,
+          "published_area_mm2": 176375.0,
+          "centroid_from_soffit_mm": 318.0,
+          "section_modulus_top_mm3": 24375500.0,
+          "section_modulus_bottom_mm3": 30010000.0,
+          "published_self_weight": 4.409,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 410.0,
+            "B2": 410.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 710.0,
+            "D2": 125.0,
+            "D3": 130.0,
+            "D4": 305.0,
+            "D5": 105.0,
+            "D6": 45.0
+          }
+        },
+        {
+          "mark": "I2",
+          "published_depth_mm": 760.0,
+          "published_area_mm2": 194375.0,
+          "centroid_from_soffit_mm": 357.0,
+          "section_modulus_top_mm3": 30732200.0,
+          "section_modulus_bottom_mm3": 34725700.0,
+          "published_self_weight": 4.859,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 410.0,
+            "B2": 410.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 760.0,
+            "D2": 125.0,
+            "D3": 130.0,
+            "D4": 305.0,
+            "D5": 105.0,
+            "D6": 95.0
+          }
+        },
+        {
+          "mark": "I3",
+          "published_depth_mm": 840.0,
+          "published_area_mm2": 206375.0,
+          "centroid_from_soffit_mm": 395.0,
+          "section_modulus_top_mm3": 36539600.0,
+          "section_modulus_bottom_mm3": 41245000.0,
+          "published_self_weight": 5.159,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 410.0,
+            "B2": 410.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 840.0,
+            "D2": 125.0,
+            "D3": 130.0,
+            "D4": 385.0,
+            "D5": 105.0,
+            "D6": 95.0
+          }
+        },
+        {
+          "mark": "I4",
+          "published_depth_mm": 915.0,
+          "published_area_mm2": 254625.0,
+          "centroid_from_soffit_mm": 391.0,
+          "section_modulus_top_mm3": 44021600.0,
+          "section_modulus_bottom_mm3": 58945300.0,
+          "published_self_weight": 6.366,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 510.0,
+            "B2": 510.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 915.0,
+            "D2": 150.0,
+            "D3": 180.0,
+            "D4": 385.0,
+            "D5": 105.0,
+            "D6": 95.0
+          }
+        },
+        {
+          "mark": "I5",
+          "published_depth_mm": 965.0,
+          "published_area_mm2": 272625.0,
+          "centroid_from_soffit_mm": 427.0,
+          "section_modulus_top_mm3": 52320400.0,
+          "section_modulus_bottom_mm3": 65803400.0,
+          "published_self_weight": 6.816,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 510.0,
+            "B2": 510.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 965.0,
+            "D2": 150.0,
+            "D3": 180.0,
+            "D4": 385.0,
+            "D5": 105.0,
+            "D6": 145.0
+          }
+        },
+        {
+          "mark": "I6",
+          "published_depth_mm": 1040.0,
+          "published_area_mm2": 283875.0,
+          "centroid_from_soffit_mm": 461.0,
+          "section_modulus_top_mm3": 59564400.0,
+          "section_modulus_bottom_mm3": 74760000.0,
+          "published_self_weight": 7.097,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 510.0,
+            "B2": 510.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 1040.0,
+            "D2": 150.0,
+            "D3": 180.0,
+            "D4": 460.0,
+            "D5": 105.0,
+            "D6": 145.0
+          }
+        },
+        {
+          "mark": "I7",
+          "published_depth_mm": 1120.0,
+          "published_area_mm2": 295875.0,
+          "centroid_from_soffit_mm": 497.0,
+          "section_modulus_top_mm3": 67668900.0,
+          "section_modulus_bottom_mm3": 84675300.0,
+          "published_self_weight": 7.397,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 510.0,
+            "B2": 510.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 1120.0,
+            "D2": 150.0,
+            "D3": 180.0,
+            "D4": 540.0,
+            "D5": 105.0,
+            "D6": 145.0
+          }
+        },
+        {
+          "mark": "I8",
+          "published_depth_mm": 1220.0,
+          "published_area_mm2": 370525.0,
+          "centroid_from_soffit_mm": 492.0,
+          "section_modulus_top_mm3": 80698600.0,
+          "section_modulus_bottom_mm3": 119452000.0,
+          "published_self_weight": 9.263,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 600.0,
+            "B2": 620.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 1220.0,
+            "D2": 200.0,
+            "D3": 230.0,
+            "D4": 540.0,
+            "D5": 105.0,
+            "D6": 145.0
+          }
+        },
+        {
+          "mark": "I9",
+          "published_depth_mm": 1295.0,
+          "published_area_mm2": 381775.0,
+          "centroid_from_soffit_mm": 523.0,
+          "section_modulus_top_mm3": 89501800.0,
+          "section_modulus_bottom_mm3": 132282999.99999999,
+          "published_self_weight": 9.544,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 600.0,
+            "B2": 620.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 1295.0,
+            "D2": 200.0,
+            "D3": 230.0,
+            "D4": 615.0,
+            "D5": 105.0,
+            "D6": 145.0
+          }
+        },
+        {
+          "mark": "I10",
+          "published_depth_mm": 1370.0,
+          "published_area_mm2": 393025.0,
+          "centroid_from_soffit_mm": 554.0,
+          "section_modulus_top_mm3": 98671000.0,
+          "section_modulus_bottom_mm3": 145469000.0,
+          "published_self_weight": 9.826,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 600.0,
+            "B2": 620.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 1370.0,
+            "D2": 200.0,
+            "D3": 230.0,
+            "D4": 690.0,
+            "D5": 105.0,
+            "D6": 145.0
+          }
+        },
+        {
+          "mark": "I11",
+          "published_depth_mm": 1425.0,
+          "published_area_mm2": 412825.0,
+          "centroid_from_soffit_mm": 594.0,
+          "section_modulus_top_mm3": 113106000.0,
+          "section_modulus_bottom_mm3": 158158000.0,
+          "published_self_weight": 10.321,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 600.0,
+            "B2": 620.0,
+            "B3": 150.0,
+            "B4": 360.0,
+            "D1": 1425.0,
+            "D2": 200.0,
+            "D3": 230.0,
+            "D4": 690.0,
+            "D5": 105.0,
+            "D6": 200.0
+          }
+        },
+        {
+          "mark": "I12",
+          "published_depth_mm": 1420.0,
+          "published_area_mm2": 423050.0,
+          "centroid_from_soffit_mm": 668.0,
+          "section_modulus_top_mm3": 124356000.0,
+          "section_modulus_bottom_mm3": 140186000.0,
+          "published_self_weight": 10.576,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 510.0,
+            "B2": 510.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1420.0,
+            "D2": 200.0,
+            "D3": 155.0,
+            "D4": 760.0,
+            "D5": 105.0,
+            "D6": 200.0
+          }
+        },
+        {
+          "mark": "I13",
+          "published_depth_mm": 1475.0,
+          "published_area_mm2": 445600.0,
+          "centroid_from_soffit_mm": 707.0,
+          "section_modulus_top_mm3": 138808000.0,
+          "section_modulus_bottom_mm3": 150791000.0,
+          "published_self_weight": 11.14,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 510.0,
+            "B2": 510.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1475.0,
+            "D2": 200.0,
+            "D3": 155.0,
+            "D4": 760.0,
+            "D5": 105.0,
+            "D6": 255.0
+          }
+        },
+        {
+          "mark": "I14",
+          "published_depth_mm": 1550.0,
+          "published_area_mm2": 460600.0,
+          "centroid_from_soffit_mm": 744.0,
+          "section_modulus_top_mm3": 151343000.0,
+          "section_modulus_bottom_mm3": 164069000.0,
+          "published_self_weight": 11.515,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 510.0,
+            "B2": 510.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1550.0,
+            "D2": 200.0,
+            "D3": 155.0,
+            "D4": 835.0,
+            "D5": 105.0,
+            "D6": 255.0
+          }
+        },
+        {
+          "mark": "I15",
+          "published_depth_mm": 1600.0,
+          "published_area_mm2": 509625.0,
+          "centroid_from_soffit_mm": 724.0,
+          "section_modulus_top_mm3": 165987000.0,
+          "section_modulus_bottom_mm3": 200691000.0,
+          "published_self_weight": 12.741,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 600.0,
+            "B2": 620.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1600.0,
+            "D2": 200.0,
+            "D3": 205.0,
+            "D4": 835.0,
+            "D5": 105.0,
+            "D6": 255.0
+          }
+        },
+        {
+          "mark": "I16",
+          "published_depth_mm": 1675.0,
+          "published_area_mm2": 524625.0,
+          "centroid_from_soffit_mm": 760.0,
+          "section_modulus_top_mm3": 179774000.0,
+          "section_modulus_bottom_mm3": 216634000.0,
+          "published_self_weight": 13.116,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 600.0,
+            "B2": 620.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1675.0,
+            "D2": 200.0,
+            "D3": 205.0,
+            "D4": 910.0,
+            "D5": 105.0,
+            "D6": 255.0
+          }
+        },
+        {
+          "mark": "I17",
+          "published_depth_mm": 1725.0,
+          "published_area_mm2": 555125.0,
+          "centroid_from_soffit_mm": 767.0,
+          "section_modulus_top_mm3": 190169000.0,
+          "section_modulus_bottom_mm3": 237757000.0,
+          "published_self_weight": 13.878,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 600.0,
+            "B2": 620.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1725.0,
+            "D2": 250.0,
+            "D3": 205.0,
+            "D4": 910.0,
+            "D5": 105.0,
+            "D6": 255.0
+          }
+        },
+        {
+          "mark": "I18",
+          "published_depth_mm": 1830.0,
+          "published_area_mm2": 599625.0,
+          "centroid_from_soffit_mm": 792.0,
+          "section_modulus_top_mm3": 213098700.0,
+          "section_modulus_bottom_mm3": 280172000.0,
+          "published_self_weight": 14.991,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 650.0,
+            "B2": 670.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1830.0,
+            "D2": 250.0,
+            "D3": 230.0,
+            "D4": 990.0,
+            "D5": 105.0,
+            "D6": 255.0
+          },
+          "discrepancy": "Published top modulus213.0987e6 differs0.417% from integration of written dimensions; area and bottom modulus agree."
+        },
+        {
+          "mark": "I19",
+          "published_depth_mm": 1905.0,
+          "published_area_mm2": 614625.0,
+          "centroid_from_soffit_mm": 827.0,
+          "section_modulus_top_mm3": 229555000.0,
+          "section_modulus_bottom_mm3": 299504000.0,
+          "published_self_weight": 15.366,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 650.0,
+            "B2": 670.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1905.0,
+            "D2": 250.0,
+            "D3": 230.0,
+            "D4": 1065.0,
+            "D5": 105.0,
+            "D6": 255.0
+          }
+        },
+        {
+          "mark": "I20",
+          "published_depth_mm": 1980.0,
+          "published_area_mm2": 629625.0,
+          "centroid_from_soffit_mm": 861.0,
+          "section_modulus_top_mm3": 245553000.0,
+          "section_modulus_bottom_mm3": 319235000.0,
+          "published_self_weight": 15.741,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "fully-dimensioned-profile",
+          "drawing_dimensions_mm": {
+            "B1": 650.0,
+            "B2": 670.0,
+            "B3": 200.0,
+            "B4": 410.0,
+            "D1": 1980.0,
+            "D2": 250.0,
+            "D3": 230.0,
+            "D4": 1140.0,
+            "D5": 105.0,
+            "D6": 255.0
+          }
+        }
+      ],
+      "evidence": {
+        "method": "download, rendered-page visual table check; I geometry independently integrated as linear-width strips",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "notes": "B1=soffit width; B2=upper bottom-flange width; B3=web; B4=top flange. D1=overall depth, D2=bottom edge height, D3=bottom splay, D4=clear web, D5=top splay, D6=top edge height. Independent strip integration reproduces all20 areas exactly and centroid rounding within0.49mm; section moduli within0.0003% except I18 top modulus0.417% discrepancy. Weight header erroneously says kN/m3; numbers represent kN/m at25kN/m3.",
+      "local_file": "sources/expansion/asia-africa/civilcon-I.pdf",
+      "sha256": "9f3923626ca23511aed2d1f33ac1797847da7fcdba818aff9ee554d43cd055ef",
+      "pages": 1,
+      "bytes": 36191
+    },
+    {
+      "id": "ZA-CIVILCON-M",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "organisation": "Civilcon",
+      "title_original": "PPBM: M beam dimension and property sheet",
+      "title_en": "Civilcon M beam dimensions and properties",
+      "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBM.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "M"
+      ],
+      "discovery": "existing-source-reverified",
+      "dimensions": [
+        {
+          "mark": "M2",
+          "published_depth_mm": 720.0,
+          "published_area_mm2": 314600.0,
+          "centroid_from_soffit_mm": 266.0,
+          "section_modulus_top_mm3": 35370000.0,
+          "section_modulus_bottom_mm3": 60360000.0,
+          "published_self_weight": 7.87,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "M3",
+          "published_depth_mm": 800.0,
+          "published_area_mm2": 346600.0,
+          "centroid_from_soffit_mm": 310.0,
+          "section_modulus_top_mm3": 46600000.0,
+          "section_modulus_bottom_mm3": 73650000.0,
+          "published_self_weight": 8.67,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "M4",
+          "published_depth_mm": 880.0,
+          "published_area_mm2": 37860.0,
+          "centroid_from_soffit_mm": 354.0,
+          "section_modulus_top_mm3": 58370000.0,
+          "section_modulus_bottom_mm3": 86730000.0,
+          "published_self_weight": 9.47,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending",
+          "discrepancy": "Area37860 is printed in table; incompatible with9.47kN/m at25kN/m3. No corrected area substituted."
+        },
+        {
+          "mark": "M5",
+          "published_depth_mm": 960.0,
+          "published_area_mm2": 353000.0,
+          "centroid_from_soffit_mm": 357.0,
+          "section_modulus_top_mm3": 58920000.0,
+          "section_modulus_bottom_mm3": 99520000.0,
+          "published_self_weight": 8.83,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "M6",
+          "published_depth_mm": 1040.0,
+          "published_area_mm2": 384999.0,
+          "centroid_from_soffit_mm": 410.0,
+          "section_modulus_top_mm3": 74940000.0,
+          "section_modulus_bottom_mm3": 115150000.0,
+          "published_self_weight": 9.63,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "M7",
+          "published_depth_mm": 1120.0,
+          "published_area_mm2": 417000.0,
+          "centroid_from_soffit_mm": 460.0,
+          "section_modulus_top_mm3": 90950000.0,
+          "section_modulus_bottom_mm3": 130490000.00000001,
+          "published_self_weight": 10.43,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "M8",
+          "published_depth_mm": 1200.0,
+          "published_area_mm2": 391399.0,
+          "centroid_from_soffit_mm": 455.0,
+          "section_modulus_top_mm3": 87870000.0,
+          "section_modulus_bottom_mm3": 142230000.0,
+          "published_self_weight": 9.79,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "M9",
+          "published_depth_mm": 1280.0,
+          "published_area_mm2": 423399.0,
+          "centroid_from_soffit_mm": 513.0,
+          "section_modulus_top_mm3": 107450000.0,
+          "section_modulus_bottom_mm3": 160660000.0,
+          "published_self_weight": 10.59,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "M10",
+          "published_depth_mm": 360.0,
+          "published_area_mm2": 455399.0,
+          "centroid_from_soffit_mm": 569.0,
+          "section_modulus_top_mm3": 127970000.0,
+          "section_modulus_bottom_mm3": 177900000.0,
+          "published_self_weight": 11.39,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending",
+          "drawing_depth_mm": 1360,
+          "discrepancy": "Property table depth360 conflicts with explicit drawing label M10-1360. Prefer drawing depth; retain raw table."
+        }
+      ],
+      "evidence": {
+        "method": "download, rendered-page visual table check; I geometry independently integrated as linear-width strips",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "notes": "970mm maximum base width. Drawing explicitly labels M10 depth1360; property table prints360. M4 area prints37860, not silently corrected. Upper flange/step contour still needs full dimensional decoding. Not interchangeable with Irish M geometry.",
+      "local_file": "sources/expansion/asia-africa/civilcon-M.pdf",
+      "sha256": "0c6d2b0234fc3e7f6fb8e46bff4841aea7e3a46b579a5c8e88fbe8f0796f7401",
+      "pages": 1,
+      "bytes": 42444
+    },
+    {
+      "id": "ZA-CIVILCON-Y",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "organisation": "Civilcon",
+      "title_original": "PPBY: Y beam dimension and property sheet",
+      "title_en": "Civilcon Y beam dimensions and properties",
+      "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBY.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "Y"
+      ],
+      "discovery": "existing-source-reverified",
+      "dimensions": [
+        {
+          "mark": "Y1",
+          "published_depth_mm": 700.0,
+          "published_area_mm2": 309245.0,
+          "centroid_from_soffit_mm": 255.0,
+          "section_modulus_top_mm3": 24780000.0,
+          "section_modulus_bottom_mm3": 43240000.0,
+          "published_self_weight": 7.73,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "Y2",
+          "published_depth_mm": 800.0,
+          "published_area_mm2": 339943.0,
+          "centroid_from_soffit_mm": 299.0,
+          "section_modulus_top_mm3": 35060000.0,
+          "section_modulus_bottom_mm3": 58750000.0,
+          "published_self_weight": 8.5,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "Y3",
+          "published_depth_mm": 900.0,
+          "published_area_mm2": 373525.0,
+          "centroid_from_soffit_mm": 347.0,
+          "section_modulus_top_mm3": 47900000.0,
+          "section_modulus_bottom_mm3": 76330000.0,
+          "published_self_weight": 9.34,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "Y4",
+          "published_depth_mm": 1000.0,
+          "published_area_mm2": 409990.0,
+          "centroid_from_soffit_mm": 400.0,
+          "section_modulus_top_mm3": 63590000.0,
+          "section_modulus_bottom_mm3": 95380000.0,
+          "published_self_weight": 10.25,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "Y5",
+          "published_depth_mm": 1100.0,
+          "published_area_mm2": 449339.0,
+          "centroid_from_soffit_mm": 456.0,
+          "section_modulus_top_mm3": 82130000.0,
+          "section_modulus_bottom_mm3": 116000000.0,
+          "published_self_weight": 11.23,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "Y6",
+          "published_depth_mm": 1200.0,
+          "published_area_mm2": 491572.0,
+          "centroid_from_soffit_mm": 515.0,
+          "section_modulus_top_mm3": 103690000.0,
+          "section_modulus_bottom_mm3": 137920000.0,
+          "published_self_weight": 12.29,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "Y7",
+          "published_depth_mm": 1300.0,
+          "published_area_mm2": 536689.0,
+          "centroid_from_soffit_mm": 576.0,
+          "section_modulus_top_mm3": 128280000.0,
+          "section_modulus_bottom_mm3": 161240000.0,
+          "published_self_weight": 13.42,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "Y8",
+          "published_depth_mm": 1400.0,
+          "published_area_mm2": 584688.0,
+          "centroid_from_soffit_mm": 639.0,
+          "section_modulus_top_mm3": 156070000.0,
+          "section_modulus_bottom_mm3": 185860000.0,
+          "published_self_weight": 14.62,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        }
+      ],
+      "evidence": {
+        "method": "download, rendered-page visual table check; I geometry independently integrated as linear-width strips",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "notes": "750mm maximum base; bottom chamfers25, lower vertical zone177 and upper bottom splay177, outer side offset5; radius100 at web-bottom junction. Top deck step has two stated arrangements70(topdeck)/40(insitu slab). Baseline top-width/step interpretation must be resolved before implementation; do not alias Irish Y.",
+      "local_file": "sources/expansion/asia-africa/civilcon-Y.pdf",
+      "sha256": "e96298b5d9cdcceb16148c2bafcb43a032d239323a78c3c41242d3d8345c6a16",
+      "pages": 1,
+      "bytes": 48494
+    },
+    {
+      "id": "ZA-CIVILCON-T",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "organisation": "Civilcon",
+      "title_original": "PPBT: T beam dimension and property sheet",
+      "title_en": "Civilcon T beam dimensions and properties",
+      "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBT.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "T"
+      ],
+      "discovery": "existing-source-reverified",
+      "dimensions": [
+        {
+          "mark": "T1",
+          "published_depth_mm": 380.0,
+          "published_area_mm2": 97385.0,
+          "centroid_from_soffit_mm": 139.0,
+          "section_modulus_top_mm3": 5110000.0,
+          "section_modulus_bottom_mm3": 8850000.0,
+          "published_self_weight": 2.44,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T2",
+          "published_depth_mm": 420.0,
+          "published_area_mm2": 105585.0,
+          "centroid_from_soffit_mm": 159.0,
+          "section_modulus_top_mm3": 6690000.0,
+          "section_modulus_bottom_mm3": 10980000.0,
+          "published_self_weight": 2.64,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T3",
+          "published_depth_mm": 535.0,
+          "published_area_mm2": 114160.0,
+          "centroid_from_soffit_mm": 196.0,
+          "section_modulus_top_mm3": 9610000.0,
+          "section_modulus_bottom_mm3": 16540000.0,
+          "published_self_weight": 2.86,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T4",
+          "published_depth_mm": 575.0,
+          "published_area_mm2": 122360.0,
+          "centroid_from_soffit_mm": 220.0,
+          "section_modulus_top_mm3": 11920000.0,
+          "section_modulus_bottom_mm3": 19220000.0,
+          "published_self_weight": 3.06,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T5",
+          "published_depth_mm": 615.0,
+          "published_area_mm2": 130560.0,
+          "centroid_from_soffit_mm": 244.0,
+          "section_modulus_top_mm3": 14310000.0,
+          "section_modulus_bottom_mm3": 21760000.0,
+          "published_self_weight": 3.27,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T6",
+          "published_depth_mm": 655.0,
+          "published_area_mm2": 138760.0,
+          "centroid_from_soffit_mm": 267.0,
+          "section_modulus_top_mm3": 16730000.0,
+          "section_modulus_bottom_mm3": 24320000.0,
+          "published_self_weight": 3.47,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T7",
+          "published_depth_mm": 695.0,
+          "published_area_mm2": 146960.0,
+          "centroid_from_soffit_mm": 290.0,
+          "section_modulus_top_mm3": 19220000.0,
+          "section_modulus_bottom_mm3": 26840000.0,
+          "published_self_weight": 3.68,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T8",
+          "published_depth_mm": 735.0,
+          "published_area_mm2": 155160.0,
+          "centroid_from_soffit_mm": 312.0,
+          "section_modulus_top_mm3": 21720000.0,
+          "section_modulus_bottom_mm3": 29450000.0,
+          "published_self_weight": 3.88,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T9",
+          "published_depth_mm": 775.0,
+          "published_area_mm2": 163360.0,
+          "centroid_from_soffit_mm": 334.0,
+          "section_modulus_top_mm3": 24310000.0,
+          "section_modulus_bottom_mm3": 32090000.000000004,
+          "published_self_weight": 4.09,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "T10",
+          "published_depth_mm": 815.0,
+          "published_area_mm2": 171560.0,
+          "centroid_from_soffit_mm": 356.0,
+          "section_modulus_top_mm3": 26960000.0,
+          "section_modulus_bottom_mm3": 34480000.0,
+          "published_self_weight": 4.29,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending",
+          "drawing_depth_mm": 850,
+          "discrepancy": "Drawing label850 conflicts with table815; unresolved."
+        }
+      ],
+      "evidence": {
+        "method": "download, rendered-page visual table check; I geometry independently integrated as linear-width strips",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "notes": "Base495, web105, upper flange205, bottom chamfer25, bottom side offset6. T10 sketch says850 versus table815; source contradiction unresolved. Other published depths differ from Irish T nomenclature.",
+      "local_file": "sources/expansion/asia-africa/civilcon-T.pdf",
+      "sha256": "76748c16a8296cb22b2f1e9b4fb41f5e6d9d80c3d127695fbe2cfae193eeb30c",
+      "pages": 1,
+      "bytes": 40834
+    },
+    {
+      "id": "ZA-CIVILCON-U",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "organisation": "Civilcon",
+      "title_original": "PPBU: U beam dimension and property sheet",
+      "title_en": "Civilcon U beam dimensions and properties",
+      "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBU.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "U"
+      ],
+      "discovery": "existing-source-reverified",
+      "dimensions": [
+        {
+          "mark": "U1",
+          "published_depth_mm": 800.0,
+          "published_area_mm2": 476970.0,
+          "centroid_from_soffit_mm": 356.5,
+          "section_modulus_top_mm3": 68900000.0,
+          "section_modulus_bottom_mm3": 85710000.0,
+          "published_self_weight": 11.93,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "U3",
+          "published_depth_mm": 900.0,
+          "published_area_mm2": 510493.0,
+          "centroid_from_soffit_mm": 403.0,
+          "section_modulus_top_mm3": 85840000.0,
+          "section_modulus_bottom_mm3": 105810000.0,
+          "published_self_weight": 12.77,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "U5",
+          "published_depth_mm": 1000.0,
+          "published_area_mm2": 544016.0,
+          "centroid_from_soffit_mm": 450.0,
+          "section_modulus_top_mm3": 104180000.0,
+          "section_modulus_bottom_mm3": 127280000.0,
+          "published_self_weight": 13.76,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending",
+          "discrepancy": "Published weight13.76kN/m differs from area544016mm2 x25kN/m3=13.6004kN/m."
+        },
+        {
+          "mark": "U7",
+          "published_depth_mm": 1100.0,
+          "published_area_mm2": 577539.0,
+          "centroid_from_soffit_mm": 497.5,
+          "section_modulus_top_mm3": 123860000.0,
+          "section_modulus_bottom_mm3": 150060000.0,
+          "published_self_weight": 14.44,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "U8",
+          "published_depth_mm": 1200.0,
+          "published_area_mm2": 611062.0,
+          "centroid_from_soffit_mm": 545.0,
+          "section_modulus_top_mm3": 144860000.0,
+          "section_modulus_bottom_mm3": 174040000.0,
+          "published_self_weight": 15.28,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "U9",
+          "published_depth_mm": 1300.0,
+          "published_area_mm2": 644584.0,
+          "centroid_from_soffit_mm": 593.0,
+          "section_modulus_top_mm3": 167080000.0,
+          "section_modulus_bottom_mm3": 199270000.0,
+          "published_self_weight": 16.12,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "U10",
+          "published_depth_mm": 1400.0,
+          "published_area_mm2": 678107.0,
+          "centroid_from_soffit_mm": 641.0,
+          "section_modulus_top_mm3": 190570000.0,
+          "section_modulus_bottom_mm3": 255650000.0,
+          "published_self_weight": 16.96,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending",
+          "discrepancy": "Zb255.65e6 inconsistent with Zt and centroid; raw number preserved."
+        },
+        {
+          "mark": "U11",
+          "published_depth_mm": 1500.0,
+          "published_area_mm2": 711630.0,
+          "centroid_from_soffit_mm": 689.0,
+          "section_modulus_top_mm3": 215270000.0,
+          "section_modulus_bottom_mm3": 253180000.0,
+          "published_self_weight": 17.79,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        },
+        {
+          "mark": "U12",
+          "published_depth_mm": 1600.0,
+          "published_area_mm2": 745153.0,
+          "centroid_from_soffit_mm": 737.7,
+          "section_modulus_top_mm3": 241160000.0,
+          "section_modulus_bottom_mm3": 281900000.0,
+          "published_self_weight": 18.63,
+          "published_self_weight_unit": "kN/m",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending"
+        }
+      ],
+      "evidence": {
+        "method": "download, rendered-page visual table check; I geometry independently integrated as linear-width strips",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "notes": "Published sizes U1,U3,U5,U7,U8,U9,U10,U11,U12; U2/U4/U6 absent despite index U1-U12. Base970; outer web batter6.75 vertical:1 horizontal; web dimension165, top step30 and top flange250. U10 bottom modulus anomalous; U5 weight13.76 also inconsistent with area at25kN/m3.",
+      "local_file": "sources/expansion/asia-africa/civilcon-U.pdf",
+      "sha256": "6033d5d21b764f771cf7c081a78e2c773f46dc6b394b835314e4e64c97dece18",
+      "pages": 1,
+      "bytes": 52656
+    },
+    {
+      "id": "ZA-CIVILCON-US",
+      "country": "South Africa",
+      "country_code": "ZA",
+      "organisation": "Civilcon",
+      "title_original": "PPBUS: US beam dimension and property sheet",
+      "title_en": "Civilcon US beam dimensions and properties",
+      "url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBUS.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "US"
+      ],
+      "discovery": "existing-source-reverified",
+      "dimensions": [
+        {
+          "mark": "SU1",
+          "published_depth_mm": 900.0,
+          "published_area_mm2": 764590.0,
+          "centroid_from_soffit_mm": 320.0,
+          "section_modulus_top_mm3": 100760000.0,
+          "section_modulus_bottom_mm3": 182960000.0,
+          "published_self_weight": 19.5,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending",
+          "discrepancy": "Catalogue names US1/US2 but sheet names SU1/SU2. Self-weight header reads kN/m3; values are numerically consistent with line weight at stated25.5kN/m3."
+        },
+        {
+          "mark": "SU2",
+          "published_depth_mm": 1200.0,
+          "published_area_mm2": 884590.0,
+          "centroid_from_soffit_mm": 439.0,
+          "section_modulus_top_mm3": 172960000.0,
+          "section_modulus_bottom_mm3": 299730000.0,
+          "published_self_weight": 22.56,
+          "published_self_weight_unit": "kN/m3",
+          "pdf_page": 1,
+          "geometry_status": "outline-decoding-pending",
+          "discrepancy": "Catalogue names US1/US2 but sheet names SU1/SU2. Self-weight header reads kN/m3; values are numerically consistent with line weight at stated25.5kN/m3."
+        }
+      ],
+      "evidence": {
+        "method": "download, rendered-page visual table check; I geometry independently integrated as linear-width strips",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "notes": "Index names US1/US2 whereas drawing/table names SU1/SU2. Base2000; depths900/1200; top lobes350wide with50high steps;125 normal web dimension. Explicit density25.5kN/m3 (not25). Weight header kN/m3 is inconsistent with the displayed line-weight values.",
+      "local_file": "sources/expansion/asia-africa/civilcon-US.pdf",
+      "sha256": "d7a4d8e53c8c2bf3798b852098d49024bd4c5c0b421ba3e45bb27339fefc6999",
+      "pages": 1,
+      "bytes": 48677
+    },
+    {
+      "id": "JO-CECC-MUJIB",
+      "country": "Jordan",
+      "country_code": "JO",
+      "organisation": "CECC",
+      "title_original": "Wadi Mujib Cable Stay Bridge",
+      "title_en": "Wadi Mujib precast transverse bridge beams",
+      "url": "https://www.cecc.com.jo/projects.php?cat=31&id=84",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast transverse beam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Contractor project page specifically identifies precast concrete transverse beams stitched with in-situ concrete in the1992–94 bridge. These are transverse members, not a reusable longitudinal-girder series. No section dimensions supplied."
+    },
+    {
+      "id": "LB-CCL-FIDAR",
+      "country": "Lebanon",
+      "country_code": "LB",
+      "organisation": "CCL",
+      "title_original": "FIDAR BRIDGE, LEBANON",
+      "title_en": "Fidar precast post-tensioned bridge beams",
+      "url": "https://www.cclint.com/case-studies/fidar-bridge-lebanon/",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "precast post-tensioned beam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "Fidar-project",
+          "length_mm": 34000,
+          "geometry_status": "length-only"
+        }
+      ],
+      "evidence": {
+        "method": "contractor HTML case study"
+      },
+      "notes": "Specialist contractor reports100 precast post-tensioned beams, each34m long, installed with launching gantry. Length is project evidence only; no transverse profile."
+    },
+    {
+      "id": "IL-CEBUS-RIMON",
+      "country": "Israel",
+      "country_code": "IL",
+      "organisation": "Cebus Rimon",
+      "title_original": "Infrastructure Products",
+      "title_en": "Prestressed U, AASHTO and reversed-DT bridge products",
+      "url": "https://www.cebus-rimon.co.il/en/products/productsinfrastructure/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "prestressed U",
+        "AASHTO",
+        "reversed DT",
+        "match-cast segmental box"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Manufacturer bridging section explicitly lists these families. Advertised span70m applies to match-cast segmental technology, not every beam. No numeric section schedule found; no automatic AASHTO geometry alias."
+    },
+    {
+      "id": "IQ-DIJLA",
+      "country": "Iraq",
+      "country_code": "IQ",
+      "organisation": "Dijla Precast",
+      "title_original": "Production Lines",
+      "title_en": "Prestressed and post-tensioned bridge girder production",
+      "url": "https://dijla-precast.com/production-lines/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "prestressed bridge girder",
+        "post-tensioned bridge girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "indexed manufacturer-page extract",
+        "fresh_open": "timeout"
+      },
+      "notes": "Baghdad producer explicitly lists bridge girders as two production lines. Indexed primary-page content recovered; fresh open timed out. No dimensional catalogue captured."
+    },
+    {
+      "id": "SN-EIFFAGE-2012",
+      "country": "Senegal",
+      "country_code": "SN",
+      "organisation": "Bruno Theaudin, Eiffage TP; RGRA903",
+      "title_original": "Les ouvrages d’art — Dakar-Diamniadio",
+      "title_en": "Dakar-Diamniadio precast RC I-beam structures",
+      "url": "https://www.editions-rgra.com/system/files/revues/rgra_903.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast reinforced-concrete I beam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "download, author verification and visual page check",
+        "pdf_pages": [
+          43,
+          44,
+          45
+        ],
+        "printed_pages": [
+          "44",
+          "45",
+          "46"
+        ]
+      },
+      "notes": "Constructor-authored technical article, author/title on PDFp43; p44 explicitly identifies precast I sections made at Bargny in C35/45, reinforced concrete rather than prestressed. p44 Table1 gives19.0/19.5m spans; p45 Table3 gives22.58m spans. These are spans, not beam lengths/section dimensions.",
+      "local_file": "sources/expansion/asia-africa/gap-senegal.pdf",
+      "sha256": "acc7832b2789b670e538e1bdc5a4b5792aa290bdbe638392c7e7d092bde2f9a5",
+      "pages": 72,
+      "bytes": 7362214
+    },
+    {
+      "id": "CI-MCA-YOPOUGON",
+      "country": "Côte d’Ivoire",
+      "country_code": "CI",
+      "organisation": "Millennium Challenge Account Côte d’Ivoire",
+      "title_original": "Addendum n°01, DAO Boulevard de la Paix et Voie express de Yopougon",
+      "title_en": "Yopougon precast bonded-wire girder specification",
+      "url": "https://www.mcacotedivoire.ci/uploads/pdf3/MCA-CI_QPBS290%20DAO%20BPaix%20et%20Yop%20Exp_Addendum%20n01_06092022_VF.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "pretensioned bonded-wire beam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "indexed official PDF extract",
+        "printed_pages": [
+          "5"
+        ]
+      },
+      "notes": "Official project procurement addendum identifies FasciculeE07: Ouvrages d’Art Eléments préfabriqués and poutres préfabriquées par fils adhérents (pretensioned bonded-wire beams). Superseded material table is not promoted as current requirement; replacement and geometric drawings remain untranscribed. Local fetch could not connect.",
+      "download_blocker": "HTTPSConnectionPool(host='www.mcacotedivoire.ci', port=443): Max retries exceeded with url: /uploads/pdf3/MCA-CI_QPBS290%20DAO%20BPaix%20et%20Yop%20Exp_Addendum%20n01_06092022_VF.pdf (Caused by NewConnectionError(\"HTTPSC"
+    },
+    {
+      "id": "CM-AFDB-LOGONE",
+      "country": "Cameroon",
+      "country_code": "CM",
+      "organisation": "African Development Bank / project agencies",
+      "title_original": "Projet de pont sur le Logone — Résumé EIES, juillet2017",
+      "title_en": "Logone post-tensioned precast girder bridge option",
+      "url": "https://www.afdb.org/fileadmin/uploads/afdb/Documents/Environmental-and-Social-Assessments/Cameroun-Tchad-projet_de_pont_sur_le_logone-resume_EIES_07_2017-fr.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "VIPP post-tensioned precast girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "indexed agency PDF extract",
+        "pdf_pages_unverified": true
+      },
+      "notes": "Agency project assessment explicitly selects VIPP (Viaduc à travées Indépendantes à Poutres Préfabriquées précontraintes par post-tension). Also a Cameroon–Chad cross-border source; this record uses Cameroon and does not duplicate Chad. No section dimensions promoted. PDF access403 locally/402 through web reader.",
+      "download_blocker": "403 Client Error: Forbidden for url: https://www.afdb.org/fileadmin/uploads/afdb/Documents/Environmental-and-Social-Assessments/Cameroun-Tchad-projet_de_pont_sur_le_logone-resume_EIES_07_2017-fr.pdf"
+    },
+    {
+      "id": "BW-CORESTRUC-PLATJAN",
+      "country": "Botswana",
+      "country_code": "BW",
+      "organisation": "Corestruc / CoreSlab; Civil Engineering Contractor",
+      "title_original": "SA–Botswana Platjan bridge",
+      "title_en": "Platjan precast prestressed T-beam project",
+      "url": "https://www.corestruc.co.za/wp-content/uploads/2019/05/sa-botswana-platjan-brdge.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "prestressed T beam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "Platjan-T",
+          "depth_mm": 800,
+          "length_mm": 15300,
+          "span_m": 15.5,
+          "quantity": 210,
+          "geometry_status": "overall-dimensions-only"
+        }
+      ],
+      "evidence": {
+        "method": "download and raster-page visual verification",
+        "pdf_pages": [
+          2
+        ],
+        "printed_pages": [
+          "21"
+        ],
+        "edition": "May2019"
+      },
+      "notes": "Supplier-hosted site report quotes project contractor and names the precaster. Cross-border bridge; beams manufactured in South Africa for Botswana-led project. Published beam length15.3m and structural span15.5m are distinct quantities; do not merge them.",
+      "local_file": "sources/expansion/asia-africa/gap-botswana.pdf",
+      "sha256": "f64e3fd0d83e8b7252d5aff6120f55de152e09d1666456ab36d93bac2d7e5283",
+      "pages": 4,
+      "bytes": 3295930
+    },
+    {
+      "id": "AO-TECNOVIA-PUMANGOL",
+      "country": "Angola",
+      "country_code": "AO",
+      "organisation": "Tecnovia Angola",
+      "title_original": "Pré-esforço em vigas do tabuleiro — Viaduto da Pumangol",
+      "title_en": "Prestressing of Pumangol viaduct deck beams",
+      "url": "https://tecnovia.pt/portfolio-posts/pre-esforco-em-vigas-do-tabuleiro-viaduto-da-pumangol/",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "precast prestressed girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "Pumangol-project",
+          "depth_mm": 1350,
+          "web_mm": 180,
+          "manufacturing_lengths_mm": [
+            17400,
+            20500,
+            20400,
+            22900,
+            13900,
+            19600
+          ],
+          "spacing_mm": 2300,
+          "precast_panel_mm": 70,
+          "total_deck_slab_mm": 250,
+          "geometry_status": "partial"
+        }
+      ],
+      "evidence": {
+        "method": "contractor HTML project description"
+      },
+      "notes": "Contractor source. Altura=depth; alma=web; comprimentos de fabrico=manufacturing lengths; pré-lajes=precast subdeck panels. Six stated lengths retained as a list for one common depth/web profile. Does not provide flange or haunch dimensions."
+    },
+    {
+      "id": "AO-BETAR-SOYO",
+      "country": "Angola",
+      "country_code": "AO",
+      "organisation": "BETAR",
+      "title_original": "Ponte do Soyo sobre o canal Cadal",
+      "title_en": "Soyo bridge over Cadal Channel",
+      "url": "https://www.betar.pt/projecto/ponte-do-soyo-sobre-o-canal-cadal-para-acesso-a-base-do-kwanda-da-alng/",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "pretensioned I"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "Soyo-I",
+          "depth_mm": 1200,
+          "beams_across": 4,
+          "typical_span_m": 22,
+          "geometry_status": "depth-only"
+        }
+      ],
+      "evidence": {
+        "method": "designer HTML case study"
+      },
+      "notes": "Designer identifies four parallel1200mm-deep I beams, fabricated in Portugal with bonded pretensioned strands. Span sequence20.5+22x22+20.5m is deck layout, not manufacture lengths. Local adoption of imported precast geometry, not an Angolan national series."
+    },
+    {
+      "id": "SD-WB-ATBARA-1989",
+      "country": "Sudan",
+      "country_code": "SD",
+      "organisation": "World Bank",
+      "title_original": "Khartoum–Port Sudan Road Rehabilitation Project, Staff Appraisal Report7443-SU",
+      "title_en": "Atbara precast post-tensioned girders, historical project",
+      "url": "https://documents1.worldbank.org/curated/en/270271468340280874/pdf/multi-page.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast post-tensioned girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "official PDF text reader",
+        "pdf_pages": [
+          23
+        ],
+        "printed_pages": [
+          "14"
+        ],
+        "paragraph": "2.07"
+      },
+      "notes": "Report dated14November1989, PDFp23/printed14 paragraph2.07 identifies Atbara bridge with9 spans about40m, precast post-tensioned girders and in-situ slab. Historical evidence; no current product availability or cross-section claimed."
+    },
+    {
+      "id": "MN-FIRST-RING-ROAD",
+      "country": "Mongolia",
+      "country_code": "MN",
+      "organisation": "Mongolia public procurement portal / Ulaanbaatar project employer",
+      "title_original": "Нэгдүгээр тойрог зам — III Бүлэг-Б Техникийн шаардлага",
+      "title_en": "First Ring Road, Ulaanbaatar — Technical Requirements, PartIII-B",
+      "url": "https://user.tender.gov.mn/uploads/techspec/68c2ce03aef2e.pdf",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast prestressed small box girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "download, Mongolian text translation and selected rendered-page checks",
+        "pdf_pages": [
+          66,
+          77,
+          78,
+          79,
+          92
+        ]
+      },
+      "notes": "220-page official EPC+F tender requirements recovered locally despite web403. Chapter4 identifies assembled/precast small boxes, typically25–30m, separately from cast-in-place continuous boxes for special crossings. Tender design intent, not as-built confirmation or a national section standard. Exact beam cross-section not transcribed.",
+      "local_file": "sources/expansion/asia-africa/gap-mongolia.pdf",
+      "sha256": "06b49d8bae52d5d99b90428102f87e67819e5fcc885bceafd20691d87692752b",
+      "pages": 220,
+      "bytes": 15649873
+    },
+    {
+      "id": "MV-AFCONS-GMCP",
+      "country": "Maldives",
+      "country_code": "MV",
+      "organisation": "Afcons Infrastructure",
+      "title_original": "Insight July2023: GMCP Bridge to get world’s tallest precast segments",
+      "title_en": "Greater Malé Connectivity Project precast segment dimensions",
+      "url": "https://www.afcons.com/sites/default/files/2023-08/INSIGHT-JULY-2023.pdf",
+      "accessed": "2026-09-22",
+      "status": "dimensions-transcribed",
+      "families": [
+        "precast segmental bridge girder"
+      ],
+      "discovery": "new-source",
+      "dimensions": [
+        {
+          "mark": "GMCP-maximum-segment",
+          "maximum_segment_height_mm": 8177,
+          "geometry_status": "single-overall-dimension"
+        }
+      ],
+      "evidence": {
+        "method": "indexed constructor PDF extract",
+        "pdf_pages_unverified": true
+      },
+      "notes": "Constructor publication reports1228 precast segments and maximum segment height8.177m; long-line and short-line casting both used. Do not repeat unverified world-record marketing claim. Indexed primary PDF extract only; local403 and web fetch failure, page number unverified.",
+      "download_blocker": "403 Client Error: Forbidden for url: https://www.afcons.com/sites/default/files/2023-08/INSIGHT-JULY-2023.pdf"
+    },
+    {
+      "id": "FJ-FLETCHER-HIGGINS",
+      "country": "Fiji",
+      "country_code": "FJ",
+      "organisation": "Fletcher Higgins Fiji",
+      "title_original": "Fletcher Higgins — Fiji critical bridges",
+      "title_en": "Fiji precast bridge beam manufacture and construction",
+      "url": "https://www.higgins.co.nz/fletcher-higgins",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "precast bridge beam"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "primary source web content or indexed primary-source extract"
+      },
+      "notes": "Constructor states beams manufactured on its Suva casting bed with local concrete, including four bridge replacements completed2016 and a later critical-bridges programme. No cross-section catalogue captured; programme schedules are not treated as completion evidence."
+    },
+    {
+      "id": "PG-CB-BUILDERS",
+      "country": "Papua New Guinea",
+      "country_code": "PG",
+      "organisation": "CB Builders",
+      "title_original": "Concrete / Precast Concrete",
+      "title_en": "Prestressed precast concrete for PNG bridges",
+      "url": "https://cbbuilders.com.pg/",
+      "accessed": "2026-09-22",
+      "status": "source-confirmed",
+      "families": [
+        "prestressed precast bridge member"
+      ],
+      "discovery": "new-source",
+      "dimensions": [],
+      "evidence": {
+        "method": "indexed manufacturer-page extract",
+        "fresh_open": "timeout"
+      },
+      "notes": "Producer explicitly identifies supply of prestressed concrete sections for bridges and wharves in PNG. Separate steel bridge/crane girder fabrication paragraph is excluded. Indexed primary-page extract recovered; fresh open timed out. No beam dimensions captured."
+    }
+  ],
+  "coverage_without_verified_source": [
+    {
+      "country": "Mozambique",
+      "country_code": "MZ",
+      "queries": [
+        "Moçambique vigas pré-esforçado pontes"
+      ],
+      "result": "No primary reusable beam section source established in this pass; historical Tete bridge paper mirrors not promoted. This is a search limit, not proof of catalogue absence."
+    },
+    {
+      "country": "Rwanda",
+      "country_code": "RW",
+      "queries": [
+        "Rwanda precast girders",
+        "Rwanda prestressed bridge beams"
+      ],
+      "result": "Only generic specifications, third-party mirrors and unrelated project posts were established; no primary reusable bridge-beam source in this pass.",
+      "accessed": "2026-09-22"
+    },
+    {
+      "country": "Zambia",
+      "country_code": "ZM",
+      "queries": [
+        "Zambia precast bridge beams",
+        "Zambia precast concrete girders"
+      ],
+      "result": "Results concerned steel bridge lifts or broad regional contractors; no specific primary concrete bridge-beam source established.",
+      "accessed": "2026-09-22"
+    },
+    {
+      "country": "Namibia",
+      "country_code": "NA",
+      "queries": [
+        "Namibia precast bridge beams",
+        "Namibia prestressed bridge precast"
+      ],
+      "result": "Primary OTESA/SMEC projects describe prestressed twin-spine decks but do not establish precast beam production; not promoted.",
+      "accessed": "2026-09-22"
+    },
+    {
+      "country": "Mauritius",
+      "country_code": "MU",
+      "queries": [
+        "Mauritius precast girders",
+        "Mauritius precast beam bridge Transinvest"
+      ],
+      "result": "Results include fascia details and unnamed precast footbridge references, but no sufficiently specific girder product or dimension source established.",
+      "accessed": "2026-09-22"
+    },
+    {
+      "country": "Bhutan",
+      "country_code": "BT",
+      "queries": [
+        "Bhutan precast girders",
+        "Bhutan prestressed bridge precast"
+      ],
+      "result": "Official specifications contain general precast handling clauses. Dechencholing paper describes cast-in-place longitudinal girders and precast slab formwork; no precast main-beam catalogue established.",
+      "accessed": "2026-09-22"
+    },
+    {
+      "country": "Timor-Leste",
+      "country_code": "TL",
+      "queries": [
+        "Timor-Leste precast girders",
+        "Timor precast bridge JICA"
+      ],
+      "result": "Upriver Comoro JICA source distinguishes precast kerbs/blocks from cast-in-place other structures; port report lists imported piles/slabs, not a bridge-girder family. No usable main-beam source established.",
+      "accessed": "2026-09-22"
+    }
+  ]
+}

@@ -28,11 +28,19 @@
 
    adapters
    aus
+   be
    gr
+   ie
+   jp
    kr
+   mx
+   nz
+   pl
+   qa
    ru
    th
    tr
-   ukie
+   tw
+   uk
    za
 
