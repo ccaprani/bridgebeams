@@ -131,3 +131,4 @@ dmypy.json
 # uncommitted working materials (see sources/SOURCES.md)
 sources/
 examples/*.png
+dims_review.html
