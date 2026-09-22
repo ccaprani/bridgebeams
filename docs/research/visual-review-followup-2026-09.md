@@ -66,23 +66,21 @@ is repeated. Remaining tasks are specific source or modelling issues:
 
 ## Coverage presentation
 
-Ireland and the United Kingdom are separate jurisdictions throughout the
-family tables and coverage data. The UK namespace currently exports no
-implemented profiles. Use the complete country table and clickable map in
+Ireland and the United Kingdom are separate jurisdictions throughout the family tables and coverage data. Banagher's shared producer catalogue is assigned to both; UK aliases retain the same profile IDs and do not create new distinct geometry. Use the complete country table and clickable map in
 the Sphinx coverage page; the short family table is not the research-country
 list. Fixed profile counts, parametric templates and source records are
 separate measures. India is included as research evidence even while it has
 no implemented constructor.
 
-The final coverage build counts **284 fixed profiles across14 countries**,
-**114 researched jurisdictions** and **159 source records** across the
-regional, PDF, Banagher and India collections. These 159 records are not 159
+The current coverage build counts **294 distinct fixed profiles across 17 countries**,
+**114 researched jurisdictions**, **176 source records**, and **469 country-profile assignments** across the
+regional, PDF, Banagher, India, US, Canada and producer-availability records. These 176 records are not 176
 unique publications. The default country table also includes Belgium,
 Greece and Poland from legacy implementation/template coverage. The
 [India follow-up](india-followup.md) has five primary records: four additions
 and one updated RDSO record, deduplicated by identifier.
 
-The isolated wheel contains 24 family JSON files and constructs all 46 new
+The isolated wheel at the visual-review checkpoint contained 24 family JSON files and constructed all 46 new
 profiles outside the checkout. The source manifests and review answers are
 versioned; local original PDFs, workbook and CAD remain ignored.
 

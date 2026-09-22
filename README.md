@@ -33,11 +33,9 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 - **W beams** — 16 current profiles, verified against published properties
   using current manual dimensions and recovered producer CAD.
 
-### United Kingdom (`bridgebeams.uk`) — planned
+### United Kingdom (`bridgebeams.uk`)
 
-UK source families are tracked separately from Ireland. The UK namespace
-does not yet export implemented sections. Irish producer profiles are not
-counted as UK sections merely because they are also used in UK projects.
+The UK namespace exports aliases for Banagher's 13 shared Ireland/UK families (175 named profiles). Each alias refers to the Irish producer geometry; a profile has one stable ID and can be assigned to both countries. Other UK producers and standards still require separate source-backed profiles.
 
 ## Australia (`bridgebeams.aus`)
 
@@ -68,6 +66,12 @@ The [coverage map and complete country table](docs/source/coverage.md)
 separate researched sources from implemented profiles. UK and Ireland are
 separate entries. The research footprint spans 114 jurisdictions; many
 currently have source evidence only.
+
+The United States now includes four WSDOT W-series girders and three
+edition-specific Minnesota rectangular beams; ten further state DOT records
+are in the [US follow-up](docs/research/us-states-followup.md). Canada's
+Ontario MTO S300/S400/S500 solid slabs are in the
+[Ontario follow-up](docs/research/canada-followup.md).
 
 The visual-review follow-up adds 46 profiles: 16 Irish W, eight wide Solid
 Box, ten Norwegian NTB/KTB, four NZ hollow-core and eight Civilcon Y.

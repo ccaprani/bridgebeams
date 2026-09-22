@@ -1,14 +1,20 @@
 # Country coverage
 
-**Research coverage and implemented geometry are different counts.** This map colours countries by the number of fixed, source-backed profiles available in the library. The table also includes every jurisdiction in the research registries, including countries with no implemented geometry. Ireland and the United Kingdom are separate: Irish producer sections are counted under Ireland; the UK namespace currently has zero profiles.
+**Research coverage and implemented geometry are different counts.** This map colours countries by the number of fixed, source-backed profiles available in the library. The table also includes every jurisdiction in the research registries, including countries with no implemented geometry. Ireland and the United Kingdom are separate jurisdictions. Banagher profiles with documented availability in both appear in both country rows, with stable profile IDs; the global distinct-profile total counts each once.
+
+The legend uses grey for places with no research record and no fixed section,
+light blue for researched places with zero implemented sections, then deeper
+colours for 1–5, 6–15, 16–40 and 41 or more sections. A few legacy families
+have implemented sections without an entry in the recent research registries;
+their section count determines their map colour.
 
 [Open the map and complete table in a full window](_static/coverage/index.html).
 
 ```{raw} html
-<iframe src="_static/coverage/index.html" title="Bridgebeams country coverage map and searchable complete country table" style="width:100%;height:1250px;border:1px solid #cbd7df;border-radius:8px" loading="lazy"></iframe>
+<iframe src="_static/coverage/index.html" title="Bridgebeams country coverage map and searchable complete country table" style="width:100%;height:1250px;border:1px solid #d1d5da;border-radius:8px" loading="lazy"></iframe>
 ```
 
-The count includes documented gross reconstructions and distinct named source variants. It excludes namespace aliases, arbitrary continuous parameter choices, extrapolated Korean sizes, and incomplete Belgian/Greek templates requiring user-selected flange thicknesses. A profile count does not establish suitability for structural design. The map's **How the counts work** panel records specific counting choices.
+Country counts include documented gross reconstructions and distinct named source variants available in each jurisdiction. Shared Banagher profiles count in both the UK and Ireland; the distinct global total deduplicates their profile IDs. Arbitrary continuous parameter choices, extrapolated Korean sizes, and incomplete Belgian/Greek templates requiring user-selected flange thicknesses are excluded. A profile count does not establish suitability for structural design. The map's **How the counts work** panel records specific counting choices.
 
 The default table includes 117 catalogue jurisdictions: 114 with recent
 research records plus Belgium, Greece and Poland, whose legacy

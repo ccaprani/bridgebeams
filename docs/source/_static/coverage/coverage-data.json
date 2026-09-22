@@ -1,10 +1,11 @@
 {
-  "count_basis": "Named source-backed discrete geometry choices; includes documented reconstructions, excludes namespace aliases, arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
+  "count_basis": "Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 114,
-  "source_records": 159,
-  "implemented_countries": 14,
-  "implemented_profiles": 284,
+  "source_records": 176,
+  "implemented_countries": 17,
+  "implemented_profiles": 294,
+  "country_profile_assignments": 469,
   "countries": [
     {
       "code": "AF",
@@ -167,6 +168,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.aus.sections.IGirderSection",
           "name": "IGirderSection",
           "module": "bridgebeams.aus.sections",
           "count": 4,
@@ -176,9 +178,19 @@
             "T3",
             "T4"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.aus.sections.IGirderSection:T1",
+            "bridgebeams.aus.sections.IGirderSection:T2",
+            "bridgebeams.aus.sections.IGirderSection:T3",
+            "bridgebeams.aus.sections.IGirderSection:T4"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "AU"
+          ]
         },
         {
+          "id": "bridgebeams.aus.sections.SuperTGirderSection",
           "name": "SuperTGirderSection",
           "module": "bridgebeams.aus.sections",
           "count": 9,
@@ -193,7 +205,21 @@
             "T4, subtype2",
             "T5, subtype2"
           ],
-          "note": "Nine documented type/subtype combinations; nominal default flange only. Continuous width and web overrides are not additional profiles."
+          "profile_ids": [
+            "bridgebeams.aus.sections.SuperTGirderSection:T1, subtype1",
+            "bridgebeams.aus.sections.SuperTGirderSection:T2, subtype1",
+            "bridgebeams.aus.sections.SuperTGirderSection:T3, subtype1",
+            "bridgebeams.aus.sections.SuperTGirderSection:T4, subtype1",
+            "bridgebeams.aus.sections.SuperTGirderSection:T1, subtype2",
+            "bridgebeams.aus.sections.SuperTGirderSection:T2, subtype2",
+            "bridgebeams.aus.sections.SuperTGirderSection:T3, subtype2",
+            "bridgebeams.aus.sections.SuperTGirderSection:T4, subtype2",
+            "bridgebeams.aus.sections.SuperTGirderSection:T5, subtype2"
+          ],
+          "note": "Nine documented type/subtype combinations; nominal default flange only. Continuous width and web overrides are not additional profiles.",
+          "jurisdictions": [
+            "AU"
+          ]
         }
       ],
       "count": 13,
@@ -292,11 +318,16 @@
       "sources": [],
       "families": [
         {
+          "id": "bridgebeams.be.febe_i_beams.FebeISection",
           "name": "FebeISection",
           "module": "bridgebeams.be.febe_i_beams",
           "count": 0,
           "profiles": [],
-          "note": "Parametric template: source does not specify all flange thicknesses; zero fixed profiles counted."
+          "profile_ids": [],
+          "note": "Parametric template: source does not specify all flange thicknesses; zero fixed profiles counted.",
+          "jurisdictions": [
+            "BE"
+          ]
         }
       ],
       "count": 0,
@@ -528,11 +559,53 @@
           "status": "downloaded_not_fully_transcribed",
           "registry": "europe-americas-sources.json",
           "id": "ca_mto_guide"
+        },
+        {
+          "title": "Ontario MTO SS107-25: Prestressed Solid Slabs and Bearings (S300, S400, S500)",
+          "url": "https://www.library.mto.gov.on.ca/SydneyPLUS/TechPubs/Portal/tp/ssdViews.aspx",
+          "status": "current standard drawing",
+          "registry": "canada-followup.json",
+          "id": "SS107-25"
+        },
+        {
+          "title": "Ontario MTO SS107-26: Prestressed Solid Slabs Details",
+          "url": "https://www.library.mto.gov.on.ca/SydneyPLUS/TechPubs/Portal/tp/ssdViews.aspx",
+          "status": "current standard drawing",
+          "registry": "canada-followup.json",
+          "id": "SS107-26"
+        },
+        {
+          "title": "Ontario MTO SS107-16: Prestressed NU Girders and Bearings (NU 900)",
+          "url": "https://www.library.mto.gov.on.ca/SydneyPLUS/TechPubs/Portal/tp/ssdViews.aspx",
+          "status": "read_not_implemented",
+          "registry": "canada-followup.json",
+          "id": "SS107-16"
         }
       ],
-      "families": [],
-      "count": 0,
-      "source_count": 2,
+      "families": [
+        {
+          "id": "bridgebeams.ca.mto_solid_slab.CaMtoSolidSlabSection",
+          "name": "CaMtoSolidSlabSection",
+          "module": "bridgebeams.ca.mto_solid_slab",
+          "count": 3,
+          "profiles": [
+            "S300",
+            "S400",
+            "S500"
+          ],
+          "profile_ids": [
+            "bridgebeams.ca.mto_solid_slab.CaMtoSolidSlabSection:S300",
+            "bridgebeams.ca.mto_solid_slab.CaMtoSolidSlabSection:S400",
+            "bridgebeams.ca.mto_solid_slab.CaMtoSolidSlabSection:S500"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "CA"
+          ]
+        }
+      ],
+      "count": 3,
+      "source_count": 5,
       "researched": true
     },
     {
@@ -1052,11 +1125,16 @@
       "sources": [],
       "families": [
         {
+          "id": "bridgebeams.gr.egnatia_extended_i.GrExtendedISection",
           "name": "GrExtendedISection",
           "module": "bridgebeams.gr.egnatia_extended_i",
           "count": 0,
           "profiles": [],
-          "note": "Parametric template: source does not specify all flange thicknesses; zero fixed profiles counted."
+          "profile_ids": [],
+          "note": "Parametric template: source does not specify all flange thicknesses; zero fixed profiles counted.",
+          "jurisdictions": [
+            "GR"
+          ]
         }
       ],
       "count": 0,
@@ -1391,10 +1469,18 @@
           "status": "current_catalogue_geometry_16_sections_implemented_with_cad_lower_contour",
           "registry": "banagher-pending-families.json",
           "id": "banagher_w_pending"
+        },
+        {
+          "title": "Banagher Bridge Beams \u2014 shared Ireland/UK product range",
+          "url": "https://banagherprecast.com/products/bridge-beams/",
+          "status": "producer confirms range and UK/Ireland supply",
+          "registry": "producer availability",
+          "id": "banagher_shared_range"
         }
       ],
       "families": [
         {
+          "id": "bridgebeams.ie.ie_m_beam.IeMBeamSection",
           "name": "IeMBeamSection",
           "module": "bridgebeams.ie.ie_m_beam",
           "count": 11,
@@ -1411,9 +1497,27 @@
             "M9",
             "M10"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M1",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M680",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M2",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M3",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M4",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M5",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M6",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M7",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M8",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M9",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M10"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_my_beam.IeMYBeamSection",
           "name": "IeMYBeamSection",
           "module": "bridgebeams.ie.ie_my_beam",
           "count": 7,
@@ -1426,9 +1530,23 @@
             "MY6",
             "MY7"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY1",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY2",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY3",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY4",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY5",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY6",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY7"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_my_beam.IeMYEBeamSection",
           "name": "IeMYEBeamSection",
           "module": "bridgebeams.ie.ie_my_beam",
           "count": 7,
@@ -1441,9 +1559,23 @@
             "MYE6",
             "MYE7"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE1",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE2",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE3",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE4",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE5",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE6",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE7"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_sy_beam.IeSYBeamSection",
           "name": "IeSYBeamSection",
           "module": "bridgebeams.ie.ie_sy_beam",
           "count": 6,
@@ -1455,9 +1587,22 @@
             "SY5",
             "SY6"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY1",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY2",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY3",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY4",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY5",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY6"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection",
           "name": "IeSYEBeamSection",
           "module": "bridgebeams.ie.ie_sy_beam",
           "count": 6,
@@ -1469,9 +1614,22 @@
             "SYE5",
             "SYE6"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE1",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE2",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE3",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE4",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE5",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE6"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection",
           "name": "IeSolidBoxBeamSection",
           "module": "bridgebeams.ie.ie_solid_box",
           "count": 32,
@@ -1509,9 +1667,48 @@
             "SD7 (4)",
             "SD8 (4)"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (4)"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_t_beam.IeTBeamSection",
           "name": "IeTBeamSection",
           "module": "bridgebeams.ie.ie_t_beam",
           "count": 10,
@@ -1527,9 +1724,26 @@
             "T9",
             "T10"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T1",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T2",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T3",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T4",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T5",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T6",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T7",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T8",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T9",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T10"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_ty_beam.IeTYBeamSection",
           "name": "IeTYBeamSection",
           "module": "bridgebeams.ie.ie_ty_beam",
           "count": 40,
@@ -1575,9 +1789,56 @@
             "TYE10 ss",
             "TYE11 ss"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY3 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY4 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY5 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY6 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY7 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY8 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY9 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY10 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY11 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE3 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE4 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE5 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE6 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE7 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE8 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE9 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE10 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE11 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY1 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY2 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY3 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY4 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY5 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY6 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY7 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY8 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY9 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY10 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY11 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE1 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE2 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE3 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE4 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE5 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE6 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE7 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE8 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE9 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE10 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE11 ss"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_u_beam.IeUBeamSection",
           "name": "IeUBeamSection",
           "module": "bridgebeams.ie.ie_u_beam",
           "count": 13,
@@ -1596,9 +1857,29 @@
             "SU11",
             "SU12"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U600",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U700",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U1",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U3",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U5",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U7",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U8",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U9",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U10",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U11",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U12",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:SU11",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:SU12"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_m_beam.IeUMBBeamSection",
           "name": "IeUMBBeamSection",
           "module": "bridgebeams.ie.ie_m_beam",
           "count": 11,
@@ -1615,9 +1896,27 @@
             "UMB9",
             "UMB10"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB1",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB680",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB2",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB3",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB4",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB5",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB6",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB7",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB8",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB9",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB10"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_w.IeWBeamSection",
           "name": "IeWBeamSection",
           "module": "bridgebeams.ie.ie_w",
           "count": 16,
@@ -1639,9 +1938,32 @@
             "W18",
             "W19"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_w.IeWBeamSection:W1",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W3",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W5",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W7",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W8",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W9",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W10",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W11",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W12",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W13",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W14",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W15",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W16",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W17",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W18",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W19"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_y_beam.IeYBeamSection",
           "name": "IeYBeamSection",
           "module": "bridgebeams.ie.ie_y_beam",
           "count": 8,
@@ -1655,9 +1977,24 @@
             "Y7",
             "Y8"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y1",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y2",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y3",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y4",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y5",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y6",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y7",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y8"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         },
         {
+          "id": "bridgebeams.ie.ie_ye_beam.IeYEBeamSection",
           "name": "IeYEBeamSection",
           "module": "bridgebeams.ie.ie_ye_beam",
           "count": 8,
@@ -1671,11 +2008,25 @@
             "YE7",
             "YE8"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE1",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE2",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE3",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE4",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE5",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE6",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE7",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE8"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
         }
       ],
       "count": 175,
-      "source_count": 4,
+      "source_count": 5,
       "researched": true
     },
     {
@@ -1789,6 +2140,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.jp.jis_t_girders.JisTGirderSection",
           "name": "JisTGirderSection",
           "module": "bridgebeams.jp.jis_t_girders",
           "count": 14,
@@ -1808,7 +2160,26 @@
             "BG23",
             "BG24"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:AG18",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:AG19",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:AG20",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:AG21",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:AG22",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:AG23",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:AG24",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:BG18",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:BG19",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:BG20",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:BG21",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:BG22",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:BG23",
+            "bridgebeams.jp.jis_t_girders.JisTGirderSection:BG24"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "JP"
+          ]
         }
       ],
       "count": 14,
@@ -2173,6 +2544,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection",
           "name": "SepsaIGirderSection",
           "module": "bridgebeams.mx.sepsa_i_girder",
           "count": 7,
@@ -2185,7 +2557,19 @@
             "V",
             "VI"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection:I-MODIFIED",
+            "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection:II",
+            "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection:III",
+            "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection:IV",
+            "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection:IV-MODIFIED",
+            "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection:V",
+            "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection:VI"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "MX"
+          ]
         }
       ],
       "count": 7,
@@ -2400,6 +2784,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.nz.hollow_core.NzHollowCoreSection",
           "name": "NzHollowCoreSection",
           "module": "bridgebeams.nz.hollow_core",
           "count": 4,
@@ -2409,9 +2794,19 @@
             "587 inner",
             "587 outer"
           ],
-          "note": "Outer650/900 unresolved; optional drip grooves/local holes excluded. Circular approximation resolution does not add profiles."
+          "profile_ids": [
+            "bridgebeams.nz.hollow_core.NzHollowCoreSection:650 inner",
+            "bridgebeams.nz.hollow_core.NzHollowCoreSection:900 inner",
+            "bridgebeams.nz.hollow_core.NzHollowCoreSection:587 inner",
+            "bridgebeams.nz.hollow_core.NzHollowCoreSection:587 outer"
+          ],
+          "note": "Outer650/900 unresolved; optional drip grooves/local holes excluded. Circular approximation resolution does not add profiles.",
+          "jurisdictions": [
+            "NZ"
+          ]
         },
         {
+          "id": "bridgebeams.nz.i_beams.NzIBeamSection",
           "name": "NzIBeamSection",
           "module": "bridgebeams.nz.i_beams",
           "count": 2,
@@ -2419,9 +2814,17 @@
             "1500",
             "1600"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.nz.i_beams.NzIBeamSection:1500",
+            "bridgebeams.nz.i_beams.NzIBeamSection:1600"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "NZ"
+          ]
         },
         {
+          "id": "bridgebeams.nz.super_t.NzSuperTSection",
           "name": "NzSuperTSection",
           "module": "bridgebeams.nz.super_t",
           "count": 3,
@@ -2430,7 +2833,15 @@
             "1225 x2490",
             "1225 x1990"
           ],
-          "note": "Three source width/depth arrangements; arbitrary top-width overrides excluded."
+          "profile_ids": [
+            "bridgebeams.nz.super_t.NzSuperTSection:1025 x2490",
+            "bridgebeams.nz.super_t.NzSuperTSection:1225 x2490",
+            "bridgebeams.nz.super_t.NzSuperTSection:1225 x1990"
+          ],
+          "note": "Three source width/depth arrangements; arbitrary top-width overrides excluded.",
+          "jurisdictions": [
+            "NZ"
+          ]
         }
       ],
       "count": 9,
@@ -2554,6 +2965,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.no.ntb_ktb.NoNtbKtbSection",
           "name": "NoNtbKtbSection",
           "module": "bridgebeams.no.ntb_ktb",
           "count": 10,
@@ -2569,7 +2981,22 @@
             "NTB1200-220x600",
             "KTB600"
           ],
-          "note": "Includes explicitly recorded user-inferred15 mm bottom chamfers."
+          "profile_ids": [
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:NTB800-400x1400",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:KTB570-400x1400",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:NTB1000-300x1200",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:KTB1200",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:NTB1200-220x1000",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:KTB1000",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:NTB1200-220x800",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:KTB800",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:NTB1200-220x600",
+            "bridgebeams.no.ntb_ktb.NoNtbKtbSection:KTB600"
+          ],
+          "note": "Includes explicitly recorded user-inferred15 mm bottom chamfers.",
+          "jurisdictions": [
+            "NO"
+          ]
         }
       ],
       "count": 10,
@@ -2759,6 +3186,7 @@
       "sources": [],
       "families": [
         {
+          "id": "bridgebeams.pl.mostostal_t_girders.MostostalTSection",
           "name": "MostostalTSection",
           "module": "bridgebeams.pl.mostostal_t_girders",
           "count": 6,
@@ -2770,7 +3198,18 @@
             "T24",
             "T27"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.pl.mostostal_t_girders.MostostalTSection:T12",
+            "bridgebeams.pl.mostostal_t_girders.MostostalTSection:T15",
+            "bridgebeams.pl.mostostal_t_girders.MostostalTSection:T18",
+            "bridgebeams.pl.mostostal_t_girders.MostostalTSection:T21",
+            "bridgebeams.pl.mostostal_t_girders.MostostalTSection:T24",
+            "bridgebeams.pl.mostostal_t_girders.MostostalTSection:T27"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "PL"
+          ]
         }
       ],
       "count": 6,
@@ -2817,6 +3256,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.qa.q_beams.QaQBeamSection",
           "name": "QaQBeamSection",
           "module": "bridgebeams.qa.q_beams",
           "count": 5,
@@ -2827,7 +3267,17 @@
             "T4",
             "T5"
           ],
-          "note": "Documented reconstructed profiles with source-rounding residuals."
+          "profile_ids": [
+            "bridgebeams.qa.q_beams.QaQBeamSection:T1",
+            "bridgebeams.qa.q_beams.QaQBeamSection:T2",
+            "bridgebeams.qa.q_beams.QaQBeamSection:T3",
+            "bridgebeams.qa.q_beams.QaQBeamSection:T4",
+            "bridgebeams.qa.q_beams.QaQBeamSection:T5"
+          ],
+          "note": "Documented reconstructed profiles with source-rounding residuals.",
+          "jurisdictions": [
+            "QA"
+          ]
         }
       ],
       "count": 5,
@@ -2881,6 +3331,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.ru.su3503_i33.Su3503I33Section",
           "name": "Su3503I33Section",
           "module": "bridgebeams.ru.su3503_i33",
           "count": 4,
@@ -2890,7 +3341,16 @@
             "B3300.174.173",
             "B3300.194.173"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.ru.su3503_i33.Su3503I33Section:B3300.174.153",
+            "bridgebeams.ru.su3503_i33.Su3503I33Section:B3300.194.153",
+            "bridgebeams.ru.su3503_i33.Su3503I33Section:B3300.174.173",
+            "bridgebeams.ru.su3503_i33.Su3503I33Section:B3300.194.173"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "RU"
+          ]
         }
       ],
       "count": 4,
@@ -3207,6 +3667,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection",
           "name": "CivilconIBeamSection",
           "module": "bridgebeams.za.civilcon_i_beam",
           "count": 20,
@@ -3232,9 +3693,35 @@
             "I19",
             "I20"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I1",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I2",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I3",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I4",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I5",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I6",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I7",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I8",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I9",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I10",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I11",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I12",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I13",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I14",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I15",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I16",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I17",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I18",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I19",
+            "bridgebeams.za.civilcon_i_beam.CivilconIBeamSection:I20"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ZA"
+          ]
         },
         {
+          "id": "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection",
           "name": "CivilconYBeamSection",
           "module": "bridgebeams.za.civilcon_y_beam",
           "count": 8,
@@ -3248,7 +3735,20 @@
             "Y7",
             "Y8"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y1",
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y2",
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y3",
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y4",
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y5",
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y6",
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y7",
+            "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection:Y8"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ZA"
+          ]
         }
       ],
       "count": 28,
@@ -3278,6 +3778,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.kr.kgm_i_section.KhcISection",
           "name": "KhcISection",
           "module": "bridgebeams.kr.kgm_i_section",
           "count": 3,
@@ -3286,7 +3787,15 @@
             "KHC-30",
             "KHC-35"
           ],
-          "note": "Three source standard sizes; KHC-20 and KHC-40 extrapolations excluded."
+          "profile_ids": [
+            "bridgebeams.kr.kgm_i_section.KhcISection:KHC-25",
+            "bridgebeams.kr.kgm_i_section.KhcISection:KHC-30",
+            "bridgebeams.kr.kgm_i_section.KhcISection:KHC-35"
+          ],
+          "note": "Three source standard sizes; KHC-20 and KHC-40 extrapolations excluded.",
+          "jurisdictions": [
+            "KR"
+          ]
         }
       ],
       "count": 3,
@@ -3457,6 +3966,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.tw.i_section.TaiwanISection",
           "name": "TaiwanISection",
           "module": "bridgebeams.tw.i_section",
           "count": 5,
@@ -3467,7 +3977,17 @@
             "VII",
             "VIII"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.tw.i_section.TaiwanISection:IV",
+            "bridgebeams.tw.i_section.TaiwanISection:V",
+            "bridgebeams.tw.i_section.TaiwanISection:VI",
+            "bridgebeams.tw.i_section.TaiwanISection:VII",
+            "bridgebeams.tw.i_section.TaiwanISection:VIII"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "TW"
+          ]
         }
       ],
       "count": 5,
@@ -3514,13 +4034,20 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.th.doh_igirder.ThDOHIGirderSection",
           "name": "ThDOHIGirderSection",
           "module": "bridgebeams.th.doh_igirder",
           "count": 1,
           "profiles": [
             "IG-205"
           ],
-          "note": "Documented simplified reconstruction; see source limitations."
+          "profile_ids": [
+            "bridgebeams.th.doh_igirder.ThDOHIGirderSection:IG-205"
+          ],
+          "note": "Documented simplified reconstruction; see source limitations.",
+          "jurisdictions": [
+            "TH"
+          ]
         }
       ],
       "count": 1,
@@ -3654,6 +4181,7 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.tr.kgm_i_section.KGMISection",
           "name": "KGMISection",
           "module": "bridgebeams.tr.kgm_i_section",
           "count": 4,
@@ -3663,7 +4191,16 @@
             "I140",
             "I170"
           ],
-          "note": ""
+          "profile_ids": [
+            "bridgebeams.tr.kgm_i_section.KGMISection:I90",
+            "bridgebeams.tr.kgm_i_section.KGMISection:I120",
+            "bridgebeams.tr.kgm_i_section.KGMISection:I140",
+            "bridgebeams.tr.kgm_i_section.KGMISection:I170"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "TR"
+          ]
         }
       ],
       "count": 4,
@@ -3738,25 +4275,569 @@
           "status": "inherited_local_source_verified",
           "registry": "europe-americas-sources.json",
           "id": "uk_banagher"
+        },
+        {
+          "title": "Banagher Bridge Beams \u2014 shared Ireland/UK product range",
+          "url": "https://banagherprecast.com/products/bridge-beams/",
+          "status": "producer confirms range and UK/Ireland supply",
+          "registry": "producer availability",
+          "id": "banagher_shared_range"
         }
       ],
-      "families": [],
-      "count": 0,
-      "source_count": 1,
+      "families": [
+        {
+          "id": "bridgebeams.ie.ie_m_beam.IeMBeamSection",
+          "name": "UkMBeamSection",
+          "module": "bridgebeams.ie.ie_m_beam",
+          "count": 11,
+          "profiles": [
+            "M1",
+            "M680",
+            "M2",
+            "M3",
+            "M4",
+            "M5",
+            "M6",
+            "M7",
+            "M8",
+            "M9",
+            "M10"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M1",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M680",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M2",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M3",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M4",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M5",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M6",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M7",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M8",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M9",
+            "bridgebeams.ie.ie_m_beam.IeMBeamSection:M10"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_my_beam.IeMYBeamSection",
+          "name": "UkMYBeamSection",
+          "module": "bridgebeams.ie.ie_my_beam",
+          "count": 7,
+          "profiles": [
+            "MY1",
+            "MY2",
+            "MY3",
+            "MY4",
+            "MY5",
+            "MY6",
+            "MY7"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY1",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY2",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY3",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY4",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY5",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY6",
+            "bridgebeams.ie.ie_my_beam.IeMYBeamSection:MY7"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_my_beam.IeMYEBeamSection",
+          "name": "UkMYEBeamSection",
+          "module": "bridgebeams.ie.ie_my_beam",
+          "count": 7,
+          "profiles": [
+            "MYE1",
+            "MYE2",
+            "MYE3",
+            "MYE4",
+            "MYE5",
+            "MYE6",
+            "MYE7"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE1",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE2",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE3",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE4",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE5",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE6",
+            "bridgebeams.ie.ie_my_beam.IeMYEBeamSection:MYE7"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_sy_beam.IeSYBeamSection",
+          "name": "UkSYBeamSection",
+          "module": "bridgebeams.ie.ie_sy_beam",
+          "count": 6,
+          "profiles": [
+            "SY1",
+            "SY2",
+            "SY3",
+            "SY4",
+            "SY5",
+            "SY6"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY1",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY2",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY3",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY4",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY5",
+            "bridgebeams.ie.ie_sy_beam.IeSYBeamSection:SY6"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection",
+          "name": "UkSYEBeamSection",
+          "module": "bridgebeams.ie.ie_sy_beam",
+          "count": 6,
+          "profiles": [
+            "SYE1",
+            "SYE2",
+            "SYE3",
+            "SYE4",
+            "SYE5",
+            "SYE6"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE1",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE2",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE3",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE4",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE5",
+            "bridgebeams.ie.ie_sy_beam.IeSYEBeamSection:SYE6"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection",
+          "name": "UkSolidBoxBeamSection",
+          "module": "bridgebeams.ie.ie_solid_box",
+          "count": 32,
+          "profiles": [
+            "SD1 (1)",
+            "SD2 (1)",
+            "SD3 (1)",
+            "SD4 (1)",
+            "SD5 (1)",
+            "SD6 (1)",
+            "SD7 (1)",
+            "SD8 (1)",
+            "SD1 (2)",
+            "SD2 (2)",
+            "SD3 (2)",
+            "SD4 (2)",
+            "SD5 (2)",
+            "SD6 (2)",
+            "SD7 (2)",
+            "SD8 (2)",
+            "SD1 (3)",
+            "SD2 (3)",
+            "SD3 (3)",
+            "SD4 (3)",
+            "SD5 (3)",
+            "SD6 (3)",
+            "SD7 (3)",
+            "SD8 (3)",
+            "SD1 (4)",
+            "SD2 (4)",
+            "SD3 (4)",
+            "SD4 (4)",
+            "SD5 (4)",
+            "SD6 (4)",
+            "SD7 (4)",
+            "SD8 (4)"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (1)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (2)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (3)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD1 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD2 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD3 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD4 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD5 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD6 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD7 (4)",
+            "bridgebeams.ie.ie_solid_box.IeSolidBoxBeamSection:SD8 (4)"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_t_beam.IeTBeamSection",
+          "name": "UkTBeamSection",
+          "module": "bridgebeams.ie.ie_t_beam",
+          "count": 10,
+          "profiles": [
+            "T1",
+            "T2",
+            "T3",
+            "T4",
+            "T5",
+            "T6",
+            "T7",
+            "T8",
+            "T9",
+            "T10"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T1",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T2",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T3",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T4",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T5",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T6",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T7",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T8",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T9",
+            "bridgebeams.ie.ie_t_beam.IeTBeamSection:T10"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_ty_beam.IeTYBeamSection",
+          "name": "UkTYBeamSection",
+          "module": "bridgebeams.ie.ie_ty_beam",
+          "count": 40,
+          "profiles": [
+            "TY3 bs",
+            "TY4 bs",
+            "TY5 bs",
+            "TY6 bs",
+            "TY7 bs",
+            "TY8 bs",
+            "TY9 bs",
+            "TY10 bs",
+            "TY11 bs",
+            "TYE3 bs",
+            "TYE4 bs",
+            "TYE5 bs",
+            "TYE6 bs",
+            "TYE7 bs",
+            "TYE8 bs",
+            "TYE9 bs",
+            "TYE10 bs",
+            "TYE11 bs",
+            "TY1 ss",
+            "TY2 ss",
+            "TY3 ss",
+            "TY4 ss",
+            "TY5 ss",
+            "TY6 ss",
+            "TY7 ss",
+            "TY8 ss",
+            "TY9 ss",
+            "TY10 ss",
+            "TY11 ss",
+            "TYE1 ss",
+            "TYE2 ss",
+            "TYE3 ss",
+            "TYE4 ss",
+            "TYE5 ss",
+            "TYE6 ss",
+            "TYE7 ss",
+            "TYE8 ss",
+            "TYE9 ss",
+            "TYE10 ss",
+            "TYE11 ss"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY3 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY4 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY5 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY6 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY7 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY8 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY9 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY10 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY11 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE3 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE4 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE5 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE6 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE7 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE8 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE9 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE10 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE11 bs",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY1 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY2 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY3 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY4 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY5 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY6 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY7 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY8 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY9 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY10 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TY11 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE1 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE2 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE3 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE4 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE5 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE6 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE7 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE8 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE9 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE10 ss",
+            "bridgebeams.ie.ie_ty_beam.IeTYBeamSection:TYE11 ss"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_u_beam.IeUBeamSection",
+          "name": "UkUBeamSection",
+          "module": "bridgebeams.ie.ie_u_beam",
+          "count": 13,
+          "profiles": [
+            "U600",
+            "U700",
+            "U1",
+            "U3",
+            "U5",
+            "U7",
+            "U8",
+            "U9",
+            "U10",
+            "U11",
+            "U12",
+            "SU11",
+            "SU12"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U600",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U700",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U1",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U3",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U5",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U7",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U8",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U9",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U10",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U11",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:U12",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:SU11",
+            "bridgebeams.ie.ie_u_beam.IeUBeamSection:SU12"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_m_beam.IeUMBBeamSection",
+          "name": "UkUMBBeamSection",
+          "module": "bridgebeams.ie.ie_m_beam",
+          "count": 11,
+          "profiles": [
+            "UMB1",
+            "UMB680",
+            "UMB2",
+            "UMB3",
+            "UMB4",
+            "UMB5",
+            "UMB6",
+            "UMB7",
+            "UMB8",
+            "UMB9",
+            "UMB10"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB1",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB680",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB2",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB3",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB4",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB5",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB6",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB7",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB8",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB9",
+            "bridgebeams.ie.ie_m_beam.IeUMBBeamSection:UMB10"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_w.IeWBeamSection",
+          "name": "UkWBeamSection",
+          "module": "bridgebeams.ie.ie_w",
+          "count": 16,
+          "profiles": [
+            "W1",
+            "W3",
+            "W5",
+            "W7",
+            "W8",
+            "W9",
+            "W10",
+            "W11",
+            "W12",
+            "W13",
+            "W14",
+            "W15",
+            "W16",
+            "W17",
+            "W18",
+            "W19"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_w.IeWBeamSection:W1",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W3",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W5",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W7",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W8",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W9",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W10",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W11",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W12",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W13",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W14",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W15",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W16",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W17",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W18",
+            "bridgebeams.ie.ie_w.IeWBeamSection:W19"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_y_beam.IeYBeamSection",
+          "name": "UkYBeamSection",
+          "module": "bridgebeams.ie.ie_y_beam",
+          "count": 8,
+          "profiles": [
+            "Y1",
+            "Y2",
+            "Y3",
+            "Y4",
+            "Y5",
+            "Y6",
+            "Y7",
+            "Y8"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y1",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y2",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y3",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y4",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y5",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y6",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y7",
+            "bridgebeams.ie.ie_y_beam.IeYBeamSection:Y8"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        },
+        {
+          "id": "bridgebeams.ie.ie_ye_beam.IeYEBeamSection",
+          "name": "UkYEBeamSection",
+          "module": "bridgebeams.ie.ie_ye_beam",
+          "count": 8,
+          "profiles": [
+            "YE1",
+            "YE2",
+            "YE3",
+            "YE4",
+            "YE5",
+            "YE6",
+            "YE7",
+            "YE8"
+          ],
+          "profile_ids": [
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE1",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE2",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE3",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE4",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE5",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE6",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE7",
+            "bridgebeams.ie.ie_ye_beam.IeYEBeamSection:YE8"
+          ],
+          "note": "Shared Banagher Ireland/UK producer catalogue; UK export aliases the same geometry.",
+          "jurisdictions": [
+            "IE",
+            "GB"
+          ]
+        }
+      ],
+      "count": 175,
+      "source_count": 2,
       "researched": true
     },
     {
-      "code": "VI",
-      "name": "United States Virgin Islands",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
-    },
-    {
       "code": "US",
-      "name": "United States of America",
+      "name": "United States",
       "sources": [
         {
           "title": "5.6-A1-10 Prestressed Concrete I and WF Girders",
@@ -3778,12 +4859,148 @@
           "status": "verified_partial_transcription_preliminary",
           "registry": "europe-americas-sources.json",
           "id": "us_wsdot_tub"
+        },
+        {
+          "title": "CA \u00b7 PC/Pretensioned Bulb-Tee Girder (Debonded Strands), xs1-121-1",
+          "url": "https://dot.ca.gov/-/media/dot-media/programs/engineering/documents/bridgestandarddetails/chap-1/202007-xs1-121-1-a11y/xs1-121-1-a11y.pdf",
+          "status": "source_verified_project_variable",
+          "registry": "us-states-followup.json",
+          "id": "US-CA-XS1-121-1"
+        },
+        {
+          "title": "FL \u00b7 FY 2026-27 Standard Plans, Florida-I 36 Beam, Index 450-036",
+          "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-036.pdf?sfvrsn=797b8c54_1",
+          "status": "dimensioned_arc_requires_reconstruction",
+          "registry": "us-states-followup.json",
+          "id": "US-FL-450-036"
+        },
+        {
+          "title": "IA \u00b7 Bridge Standards, Beams collection",
+          "url": "https://iowadot.gov/consultants-contractors/bridges-structures/bridge-culvert-standards/bridge-standards",
+          "status": "index_verified_pdf_download_blocked",
+          "registry": "us-states-followup.json",
+          "id": "US-IA-BEAMS-2026"
+        },
+        {
+          "title": "MN \u00b7 LRFD Bridge Design Manual, Section 5, Figure 5.4.6.1",
+          "url": "https://www.dot.state.mn.us/bridge/pdf/lrfdmanual/section05.pdf",
+          "status": "implemented_historical_edition",
+          "registry": "us-states-followup.json",
+          "id": "US-MN-RB-2019"
+        },
+        {
+          "title": "MO \u00b7 Engineering Policy Guide 751.22 Prestressed Concrete I Girders",
+          "url": "https://epg.modot.org/index.php/751.22_Prestressed_Concrete_I_Girders",
+          "status": "family_verified_not_transcribed",
+          "registry": "us-states-followup.json",
+          "id": "US-MO-EPG-75122"
+        },
+        {
+          "title": "NE \u00b7 Bridge Design Manual, Figure 5.4 and Table 5.7",
+          "url": "https://dot.nebraska.gov/media/4dapkdwu/2026-02-23_ndot-bdm-ch-1-3-5-6-7-8-9-10-13-app-c.pdf",
+          "status": "dimension_and_properties_verified_not_implemented",
+          "registry": "us-states-followup.json",
+          "id": "US-NE-BDM-2026"
+        },
+        {
+          "title": "NY \u00b7 2026 Bridge Detail Sheets BD-PC1 and BD-PC2: slab units and box beams",
+          "url": "https://www.dot.ny.gov/main/business-center/engineering/cadd-info/bridge-details-sheets-repostitory-usc/BD-PC_01-26.pdf",
+          "status": "dimension_and_properties_verified_not_implemented",
+          "registry": "us-states-followup.json",
+          "id": "US-NY-BD-PC-2026"
+        },
+        {
+          "title": "PA \u00b7 BD-652M Standard Beam Sizes and Section Properties",
+          "url": "https://docs.penndot.pa.gov/Public/Bureaus/Bridge/BD-Stds/2003Ed/Change6/BD652M.pdf",
+          "status": "historical_geometry_needs_corner_resolution",
+          "registry": "us-states-followup.json",
+          "id": "US-PA-BD652M-2008"
+        },
+        {
+          "title": "TX \u00b7 Prestressed Concrete I-Girder Details IGD-23",
+          "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGD-23.pdf",
+          "status": "dimension_and_properties_verified_not_implemented",
+          "registry": "us-states-followup.json",
+          "id": "US-TX-IGD-23"
+        },
+        {
+          "title": "WI \u00b7 Bridge Manual Standard Drawings, Chapter 19 Prestressed Concrete",
+          "url": "https://wisconsindot.gov/Pages/doing-bus/eng-consultants/cnslt-rsrces/strct/bridge-manual-standards.aspx",
+          "status": "family_verified_not_transcribed",
+          "registry": "us-states-followup.json",
+          "id": "US-WI-STANDARDS-19"
+        },
+        {
+          "title": "WSDOT Bridge Design Manual M 23-50.01, Appendix A, Standard I-Girder Sections",
+          "url": "https://wsdot.wa.gov/publications/manuals/fulltext/M23-50/M23-50.01Complete.pdf",
+          "status": "official drawing and independent property check",
+          "registry": "us-washington-followup.json",
+          "id": "wsdot_source_outlines"
+        },
+        {
+          "title": "WSDOT Bridge Design Manual M 23-50.24, Table 5.6.1-1",
+          "url": "https://www.wsdot.wa.gov/publications/manuals/fulltext/m23-50/chapter5.pdf",
+          "status": "official drawing and independent property check",
+          "registry": "us-washington-followup.json",
+          "id": "wsdot_source_properties"
         }
       ],
+      "families": [
+        {
+          "id": "bridgebeams.us.other_state_mn_rectangular.MnRectangularBeamSection",
+          "name": "MnRectangularBeamSection",
+          "module": "bridgebeams.us.other_state_mn_rectangular",
+          "count": 3,
+          "profiles": [
+            "14RB",
+            "18RB",
+            "22RB"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.other_state_mn_rectangular.MnRectangularBeamSection:14RB",
+            "bridgebeams.us.other_state_mn_rectangular.MnRectangularBeamSection:18RB",
+            "bridgebeams.us.other_state_mn_rectangular.MnRectangularBeamSection:22RB"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.wsdot_w_girders.WsdotWSection",
+          "name": "WsdotWSection",
+          "module": "bridgebeams.us.wsdot_w_girders",
+          "count": 4,
+          "profiles": [
+            "W42G",
+            "W50G",
+            "W58G",
+            "W74G"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.wsdot_w_girders.WsdotWSection:W42G",
+            "bridgebeams.us.wsdot_w_girders.WsdotWSection:W50G",
+            "bridgebeams.us.wsdot_w_girders.WsdotWSection:W58G",
+            "bridgebeams.us.wsdot_w_girders.WsdotWSection:W74G"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
+        }
+      ],
+      "count": 7,
+      "source_count": 15,
+      "researched": true
+    },
+    {
+      "code": "VI",
+      "name": "United States Virgin Islands",
+      "sources": [],
       "families": [],
       "count": 0,
-      "source_count": 3,
-      "researched": true
+      "source_count": 0,
+      "researched": false
     },
     {
       "code": "UY",

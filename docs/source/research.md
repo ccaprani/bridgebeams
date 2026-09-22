@@ -20,6 +20,9 @@ visual-followup-norway-nz
 banagher-cad-followup
 visual-followup-za-ro-nepal
 india-followup
+canada-followup
+us-states-followup
+us-washington-followup
 ```
 
 Download the structured records:
@@ -28,6 +31,9 @@ Download the structured records:
 - {download}`Asia and Africa sources <../research/data/asia-africa-sources.json>`
 - {download}`PDF transcriptions <../research/data/pdf-transcriptions.json>`
 - {download}`Banagher Solid Box / W transcriptions <../research/data/banagher-pending-families.json>`
+- {download}`Ontario MTO current-drawing follow-up <../research/data/canada-followup.json>`
+- {download}`Ten US state DOT source records <../research/data/us-states-followup.json>`
+- {download}`Washington W-series drawing and property audit <../research/data/us-washington-followup.json>`
 
 Original publications retain their own copyright. Downloaded source PDFs
 are not distributed with the package. The reports retain URLs and, for

@@ -20,6 +20,9 @@
     bridgebeams.ie.ie_sy_beam
     bridgebeams.ie.ie_solid_box
     bridgebeams.ie.ie_w
+    bridgebeams.ca.mto_solid_slab
+    bridgebeams.us.other_state_mn_rectangular
+    bridgebeams.us.wsdot_w_girders
     bridgebeams.nz.super_t
     bridgebeams.nz.i_beams
     bridgebeams.nz.hollow_core

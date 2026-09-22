@@ -29,6 +29,7 @@
    adapters
    aus
    be
+   ca
    gr
    ie
    jp
@@ -43,5 +44,6 @@
    tr
    tw
    uk
+   us
    za
 

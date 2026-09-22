@@ -11,12 +11,24 @@ import json
 import sys
 from pathlib import Path
 from html import escape
+from copy import deepcopy
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 ASSETS = ROOT / 'docs/source/_static/coverage'
-COUNTRIES = {'aus':'AU','be':'BE','gr':'GR','ie':'IE','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','za':'ZA'}
-NAMES = {'AU':'Australia','BE':'Belgium','GB':'United Kingdom','GR':'Greece','IE':'Ireland','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','ZA':'South Africa'}
+COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA'}
+NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa'}
+
+# Producer's range is offered in both countries, with the same manual/profile
+# definitions. Keep an explicit family allowlist so future Ireland-only ranges
+# are not silently attributed to the UK. See Banagher's Bridge Beams page.
+SHARED_IE_GB_FAMILIES = {
+    'IeMBeamSection', 'IeMYBeamSection', 'IeMYEBeamSection',
+    'IeSYBeamSection', 'IeSYEBeamSection', 'IeSolidBoxBeamSection',
+    'IeTBeamSection', 'IeTYBeamSection', 'IeUBeamSection',
+    'IeUMBBeamSection', 'IeWBeamSection', 'IeYBeamSection',
+    'IeYEBeamSection',
+}
 
 
 def implemented():
@@ -67,7 +79,11 @@ def implemented():
                 if poly is None:poly=beam.geometry.geom
                 if poly.is_empty:raise RuntimeError(f'Empty profile: {name} {label}')
                 labels.append(label)
-            families.append({'name':name,'module':cls.__module__,'count':len(labels),'profiles':labels,'note':note})
+            family_id=f'{cls.__module__}.{name}'
+            families.append({'id':family_id,'name':name,'module':cls.__module__,
+                             'count':len(labels),'profiles':labels,
+                             'profile_ids':[f'{family_id}:{label}' for label in labels],
+                             'note':note})
         result[code]=families
     return result
 
@@ -106,19 +122,63 @@ def build():
         add('IE','Ireland',{'title':s.get('title_en',s['id'])+' — '+', '.join(s.get('families',[])),
             'url':s.get('url',''),'status':s.get('status','recorded'),'registry':'banagher-pending-families.json','id':s['id']})
         records+=1
-    for code,families in implemented().items():
+    followup = ROOT/'docs/research/data/canada-followup.json'
+    if followup.exists():
+        canada=json.loads(followup.read_text())
+        for s in canada['sources']:
+            records+=int(add('CA','Canada',{'title':f"Ontario MTO {s['drawing']}: {s['title']}",
+                'url':canada['official_index_url'],'status':s.get('status','current standard drawing'),
+                'registry':'canada-followup.json','id':s['drawing']}))
+    us_states=ROOT/'docs/research/data/us-states-followup.json'
+    if us_states.exists():
+        for s in json.loads(us_states.read_text())['records']:
+            records+=int(add('US','United States',{'title':f"{s['state']} · {s['title']}",
+                'url':s['url'],'status':s['readiness'],
+                'registry':'us-states-followup.json','id':s['id']}))
+    washington=ROOT/'docs/research/data/us-washington-followup.json'
+    if washington.exists():
+        ws=json.loads(washington.read_text())
+        for key in ('source_outlines','source_properties'):
+            s=ws[key]
+            records+=int(add('US','United States',{'title':s['title'],'url':s['url'],
+                'status':'official drawing and independent property check',
+                'registry':'us-washington-followup.json','id':'wsdot_'+key}))
+    producer_url='https://banagherprecast.com/products/bridge-beams/'
+    for code in ('IE','GB'):
+        records+=int(add(code,NAMES[code],{'title':'Banagher Bridge Beams — shared Ireland/UK product range',
+            'url':producer_url,'status':'producer confirms range and UK/Ireland supply',
+            'registry':'producer availability','id':'banagher_shared_range'}))
+    unique_families = implemented()
+    for code,families in unique_families.items():
+        for family in families:
+            family['jurisdictions'] = [code]
         row=countries.setdefault(code,{'code':code,'name':NAMES[code],'sources':[],'families':[]})
         row['families']=families
+    # Country rows express availability. A shared profile belongs to both
+    # jurisdictions but contributes only once to the distinct global total.
+    irish = {family['name']: family for family in unique_families['IE']}
+    missing = SHARED_IE_GB_FAMILIES - irish.keys()
+    if missing:
+        raise RuntimeError(f'Missing shared Banagher families: {sorted(missing)}')
+    for name in sorted(SHARED_IE_GB_FAMILIES):
+        irish[name]['jurisdictions'] = ['IE', 'GB']
+        shared = deepcopy(irish[name])
+        shared['name'] = name.replace('Ie', 'Uk', 1)
+        shared['note'] = ('Shared Banagher Ireland/UK producer catalogue; '
+                          'UK export aliases the same geometry. ' + shared['note']).strip()
+        countries['GB']['families'].append(shared)
     for code,row in countries.items():
         row['name']=NAMES.get(code,row['name'])
         row['count']=sum(f['count'] for f in row['families'])
         row['source_count']=len(row['sources'])
         row['researched']=bool(row['sources'])
-    result={'count_basis':'Named source-backed discrete geometry choices; includes documented reconstructions, excludes namespace aliases, arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.',
+    result={'count_basis':'Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.',
         'source_count_basis':'Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.',
         'researched_jurisdictions':sum(r['researched'] for r in countries.values()),
         'source_records':records,'implemented_countries':sum(r['count']>0 for r in countries.values()),
-        'implemented_profiles':sum(r['count'] for r in countries.values()),
+        'implemented_profiles':len({profile_id for families in unique_families.values()
+                                    for family in families for profile_id in family['profile_ids']}),
+        'country_profile_assignments':sum(r['count'] for r in countries.values()),
         'countries':sorted(countries.values(),key=lambda r:r['name'])}
     (ASSETS/'coverage-data.json').write_text(json.dumps(result,indent=2)+'\n')
     # Fully rendered HTML has no fetch dependency and works through file:// too.
@@ -127,7 +187,7 @@ def build():
     for f in boundaries['features']:
         if f['code']=='AQ':continue
         row=countries[f['code']];count=row['count']
-        level='norecord' if not(row['sources'] or row['families']) else 'zero' if not count else 'low' if count<=5 else 'mid' if count<=15 else 'high' if count<=40 else 'max'
+        level=('low' if count<=5 else 'mid' if count<=15 else 'high' if count<=40 else 'max') if count else ('zero' if row['researched'] else 'norecord')
         label=f"{row['name']}: {count} profiles; {row['source_count']} research records"
         svg.append(f'<path class="country {level}" data-code="{escape(f["code"])}" tabindex="0" role="button" aria-label="{escape(label)}" d="{f["path"]}"><title>{escape(label)}</title></path>')
     svg.append('</svg>')
@@ -137,9 +197,11 @@ def build():
         rows.append(f'<tr data-code="{escape(r["code"])}"><th scope="row"><button class="country-select" data-code="{escape(r["code"])}">{escape(r["name"])}</button></th><td>{escape(r["code"])}</td><td>{r["count"]}</td><td>{r["source_count"]}</td><td>{escape(family)}</td></tr>')
     payload=json.dumps(result).replace('<','\\u003c')
     output=template.replace('<!-- MAP -->',''.join(svg)).replace('<!-- ROWS -->','\n'.join(rows)).replace('/* DATA */',payload)
-    output=output.replace('<!-- SUMMARY -->',f"{result['implemented_profiles']} implemented profiles · {result['implemented_countries']} countries with fixed profiles · {result['researched_jurisdictions']} researched jurisdictions · {records} source records")
+    output=output.replace('<!-- SUMMARY -->',f"{result['implemented_profiles']} distinct implemented profiles · {result['country_profile_assignments']} country-profile assignments · {result['implemented_countries']} countries with fixed profiles · {result['researched_jurisdictions']} researched jurisdictions · {records} source records")
     (ASSETS/'index.html').write_text(output)
-    assert countries['GB']['count']==0 and countries['IE']['count']>0
+    assert countries['GB']['count']==sum(irish[name]['count'] for name in SHARED_IE_GB_FAMILIES)>0
+    assert {pid for f in countries['GB']['families'] for pid in f['profile_ids']} == {
+        pid for name in SHARED_IE_GB_FAMILIES for pid in irish[name]['profile_ids']}
     assert countries['IN']['count']==0 and countries['IN']['researched']
     print(json.dumps({k:v for k,v in result.items() if k!='countries'},indent=2))
     print('Nonzero country counts:',{r['code']:r['count'] for r in result['countries'] if r['count']})

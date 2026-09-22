@@ -27,8 +27,10 @@ All geometry is in **millimetres** and returned as `sectionproperties`
 `Geometry` objects, so sections can be meshed and analysed directly, or
 wrapped with materials for concrete section design checks.
 
-The complete coverage view currently counts **284 fixed profiles across
-14 countries**, separately from **114 jurisdictions with research records**.
+The complete coverage view currently counts **294 distinct fixed profiles across
+17 countries**, separately from **114 jurisdictions with research records**.
+The UK and Ireland each show 175 shared Banagher profiles; those country assignments
+do not create new distinct geometry.
 Belgian and Greek parametric templates are listed separately because their
 flange thicknesses must be supplied.
 
@@ -37,13 +39,14 @@ flange thicknesses must be supplied.
 This table lists implemented families, not every researched country.
 See {doc}`coverage` for the clickable map and complete country table, with
 separate counts for source records, fixed profiles and parametric templates.
-The UK and Ireland are separate jurisdictions; UK sources are catalogued
-but the UK namespace currently exports no profiles.
+The UK and Ireland are separate jurisdictions. Banagher's shared producer
+catalogue is assigned to both; the UK exports alias the same profile IDs.
 
 | Jurisdiction | Family | Sizes | Validation vs published tables |
 |---|---|---|---|
 | Australia | Super-T (T1–T5) | 675–1725 mm deep | ported from v0.1; AS5100.5 App. D |
 | Australia | I-girders (1–4) | 750–965 mm deep | ported from v0.1 |
+| Canada (Ontario) | MTO prestressed solid slabs | S300, S400, S500 | June 2025 SS107-25/26 dimensions; analytic properties |
 | Ireland | T (T1–T10) | 380–815 mm | **exact** (<0.02%) |
 | Ireland | TY / TYE | 400–900 mm | **exact** (<0.02%) |
 | Ireland | Y / YE | 700–1400 mm | 2.6% / 0.8% rms |
@@ -59,6 +62,9 @@ but the UK namespace currently exports no profiles.
 | Greece | Egnatia extended-I (45) | 1250–2150 mm | depth law + widths published |
 | Ireland | Solid Box SD, width classes 1–4 | 32 variants, 300–1000 mm | nominal dimensions; class 4 source discrepancies recorded |
 | Ireland | W | 16 variants, 800–2300 mm | current manual and producer CAD; Ixx residual <0.0025% |
+| United Kingdom | Banagher T, TY/TYE, Y/YE, U/SU, M/UMB, SY/SYE, MY/MYE, Solid Box, W | 175 shared profiles | same producer geometry/profile IDs as Ireland |
+| United States (Minnesota) | prestressed rectangular beams | 14RB, 18RB, 22RB | February 2019 MnDOT drawing and property checks |
+| United States (Washington) | W-series girders | W42G, W50G, W58G, W74G | 2006 standard outlines checked against June 2025 WSDOT properties |
 | Norway | NTB/KTB | 10 profiles, 600–1400 mm | reconstructed gross sections; reviewer-inferred 15 mm chamfers |
 | South Africa | Civilcon Y | Y1–Y8, 700–1400 mm | source and reviewed ledges; Y1 modulus discrepancy retained |
 | New Zealand | Super-T; I-beams; hollow-core | 1025/1225; 1500/1600; 587/650/900 mm | hollow-core inner variants and 587 outer; drawing/analytic checks |

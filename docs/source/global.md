@@ -19,7 +19,10 @@ sources. The table below is only the implemented-family summary.
 | Jurisdiction | Module | Families | Evidence limits |
 |---|---|---|---|
 | Australia | `bridgebeams.aus` | Super-T T1–T5; I-girders 1–4 | AS5100.5 Appendix D; historical variants retained |
+| Canada (Ontario) | `bridgebeams.ca` | MTO S300/S400/S500 solid slabs | June 2025 standard drawings; Ontario-specific gross sections |
 | Ireland | `bridgebeams.ie` | T, TY/TYE, Y/YE, U/SU, M/UMB, SY/SYE, MY/MYE, Solid Box, W | Source-specific exact and reconstructed profiles; SD class 4 discrepancies retained |
+| United Kingdom | `bridgebeams.uk` | Banagher producer range, shared with Ireland | Availability aliases retain the same profile IDs and geometry; not a separate national standard |
+| United States (MN, WA) | `bridgebeams.us` | MnDOT 14RB/18RB/22RB; WSDOT W42G/W50G/W58G/W74G | Edition-specific official drawings; WSDOT geometry independently checked against 2025 published properties |
 | Belgium | `bridgebeams.be` | FEBE standardised I-beams | Flange thicknesses must be supplied by the designer |
 | Greece | `bridgebeams.gr` | Egnatia extended-I families | Published depth law/widths; flange thicknesses are design inputs |
 | Japan | `bridgebeams.jp` | JIS/PCCEN AG/BG T-girders | Chubu drawing metadata; additional drawing audit is in the PDF report |
@@ -35,9 +38,7 @@ sources. The table below is only the implemented-family summary.
 | Thailand | `bridgebeams.th` | DOH IG-205 | Published 20 m standard drawing |
 | Türkiye | `bridgebeams.tr` | KGM-lineage I90/I120/I140/I170 | Worked-example profile assumptions; project drawing confirmation needed |
 
-The United Kingdom has its own source and coverage entry. The
-`bridgebeams.uk` namespace currently exports no implemented profiles. Shared British ancestry does not establish that all national or
-producer variants have identical dimensions.
+Banagher's documented Ireland/UK catalogue is available through both `bridgebeams.ie` and `bridgebeams.uk`; the UK exports alias the same producer geometry. Other UK designs require their own evidence and implementations.
 
 ![Examples implemented after visual review](_static/images/review-additions.svg)
 

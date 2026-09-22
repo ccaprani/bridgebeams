@@ -76,10 +76,7 @@ is individually recorded. See {doc}`banagher-cad-followup`.
 
 ## United Kingdom
 
-UK sources and profile coverage are separate from Irish producer families.
-`bridgebeams.uk` currently exports no sections. Shared beam names and use
-in UK projects do not transfer the source jurisdiction or establish
-identical geometry. See the UK entry in {doc}`coverage`.
+`bridgebeams.uk` exports aliases for the 13 Banagher families documented for both Ireland and the UK (175 named profiles). Their geometry and profile IDs are identical to the Irish exports; no duplicate UK geometry is created. This is producer catalogue availability, not a claim that every UK manufacturer uses the same dimensions. See {doc}`coverage`.
 
 ## Australia
 

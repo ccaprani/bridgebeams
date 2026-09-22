@@ -5,6 +5,10 @@ received readings, recovered CAD and 46 additional implemented profiles.
 The [India follow-up](india-followup.md) adds primary sources and updates
 the RDSO access result. The Sphinx [coverage page](../source/coverage.md) provides the complete
 country list and map, separating source counts from implemented profiles.
+The [Ontario follow-up](canada-followup.md) records current MTO solid-slab drawings
+and three profiles. The [US state follow-up](us-states-followup.md) records ten
+state DOT source leads and three Minnesota profiles; Washington W-series
+profiles are also implemented from official drawings.
 
 This directory is the versioned research record for expanding `bridgebeams`.
 The regional reports preserve original source titles alongside English
@@ -26,6 +30,9 @@ profiles and completed checks.
 | Asia, Middle East and Africa | [Sources and translations](asia-africa-2026-09.md) | [Source records](data/asia-africa-sources.json) |
 | Existing PDF backlog: Qatar, New Zealand, Norway and Japan | [Visual transcription and corrections](pdf-transcription-2026-09.md) | [Transcriptions](data/pdf-transcriptions.json) |
 | Existing Banagher manual: Solid Box and W families | [Tables and geometry audit](banagher-pending-families-2026-09.md) | [Transcriptions](data/banagher-pending-families.json) |
+| Canada: Ontario MTO current drawings | [Source and geometry follow-up](canada-followup.md) | [Drawing record](data/canada-followup.json) |
+| United States: ten state DOTs | [State source follow-up](us-states-followup.md) | [State records](data/us-states-followup.json) |
+| Washington W-series | [Drawing and property audit](us-washington-followup.md) | [Source hashes and checks](data/us-washington-followup.json) |
 
 ## Reading the evidence
 
