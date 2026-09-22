@@ -16,12 +16,15 @@ their section count determines their map colour.
 
 Country counts include documented gross reconstructions and distinct named source variants available in each jurisdiction. Shared Banagher profiles count in both the UK and Ireland; the distinct global total deduplicates their profile IDs. Arbitrary continuous parameter choices, extrapolated Korean sizes, and incomplete Belgian/Greek templates requiring user-selected flange thicknesses are excluded. A profile count does not establish suitability for structural design. The map's **How the counts work** panel records specific counting choices.
 
-The default table includes 117 catalogue jurisdictions: 114 with recent
-research records plus Belgium, Greece and Poland, whose legacy
-implementations/templates sit outside those recent registries. The all-country
+The default table includes 117 catalogue jurisdictions: 115 with recent
+research records plus Belgium and Greece, whose legacy templates sit outside
+those recent registries. Poland now has both implemented sections and new
+manufacturer research. The all-country
 view also displays jurisdictions with no catalogue record.
 
 Research-record counts include partial transcriptions, inaccessible documents and rejected leads. Multiple records can refer to the same publication. These counts are neither unique-document counts nor implemented profiles. Legacy implementation sources are listed separately in [Sources](sources.md); the recent collection work is in the [Research catalogue](research.md).
+
+The September named-section search adds 31 records from manufacturers, standard-drawing libraries, universities and technical publications across 19 countries. Poland is newly added to the research registry. Country details on the map show original source links, local-language titles, drawing locators and section names where available. A blocked lead's indexed terms are explicitly unverified.
 
 The map, search, country details and source table work offline without external scripts or a map service. External source links need internet access. Small jurisdictions remain selectable in the complete table. Boundaries use [Natural Earth’s public-domain 1:50m country data](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/), simplified for display; they are a cartographic representation, not a catalogue claim about sovereignty.
 

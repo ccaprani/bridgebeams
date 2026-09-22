@@ -11,6 +11,9 @@ dimensions to reconstruct its sections.
 
 research-europe-americas
 research-asia-africa
+deep-search-central-europe-2026-09
+deep-search-romance-2026-09
+deep-search-asia-africa-2026-09
 research-pdf-transcription
 research-banagher
 research-verification
@@ -29,6 +32,9 @@ Download the structured records:
 
 - {download}`Europe and Americas sources <../research/data/europe-americas-sources.json>`
 - {download}`Asia and Africa sources <../research/data/asia-africa-sources.json>`
+- {download}`Central European named-section leads <../research/data/deep-search-central-europe-2026-09.json>`
+- {download}`Romance-language named-section leads <../research/data/deep-search-romance-2026-09.json>`
+- {download}`Asia, Africa and Middle East named-section leads <../research/data/deep-search-asia-africa-2026-09.json>`
 - {download}`PDF transcriptions <../research/data/pdf-transcriptions.json>`
 - {download}`Banagher Solid Box / W transcriptions <../research/data/banagher-pending-families.json>`
 - {download}`Ontario MTO current-drawing follow-up <../research/data/canada-followup.json>`

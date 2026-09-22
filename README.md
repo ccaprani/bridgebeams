@@ -54,6 +54,9 @@ The [global source collection](docs/research/README.md) contains country-by-coun
 research, original titles with English translations, structured source records,
 and page-based PDF transcriptions. A source appearing in the catalogue does not
 mean that its beam family is implemented or that every profile dimension is known.
+The [named-section deep-search queue](docs/source/research.md) adds 31
+manufacturer, university, standards-library and technical-publication leads
+across 19 countries, with exact designations and drawing locators where found.
 
 The [visual-review record](docs/source/research-visual-review.md) preserves
 the received answers and their implementation outcomes. With the local source
@@ -64,7 +67,7 @@ illustrated review link.
 
 The [live coverage map and complete country table](https://ccaprani.github.io/bridgebeams/coverage.html)
 separate researched sources from implemented profiles. UK and Ireland are
-separate entries. The research footprint spans 114 jurisdictions; many
+separate entries. The research footprint spans 115 jurisdictions; many
 currently have source evidence only.
 
 The United States now includes four WSDOT W-series girders and three

@@ -109,7 +109,8 @@ def build():
         data=json.loads((ROOT/'docs/research/data'/filename).read_text())
         for s in data['sources']:
             added=add(s['country_code'],s['country'],{'title':s.get('title_en') or s.get('title_original') or s['id'],
-                'url':s.get('url',''),'status':s.get('status','recorded'),'registry':filename,'id':s['id']})
+                'url':s.get('url',''),'status':s.get('status','recorded'),'registry':filename,'id':s['id'],
+                'family_names':s.get('families',[]),'title_original':s.get('title_original','')})
             records+=int(added)
     data=json.loads((ROOT/'docs/research/data/pdf-transcriptions.json').read_text())
     for code,s in data['sources'].items():
@@ -143,6 +144,14 @@ def build():
             records+=int(add('US','United States',{'title':s['title'],'url':s['url'],
                 'status':'official drawing and independent property check',
                 'registry':'us-washington-followup.json','id':'wsdot_'+key}))
+    for deep_search in sorted((ROOT/'docs/research/data').glob('deep-search-*-2026-09.json')):
+        for s in json.loads(deep_search.read_text())['records']:
+            records+=int(add(s['country_code'],s['country'],{
+                'title':s.get('title_en') or s['title_original'],
+                'url':s['url'],'status':s['status'],'registry':deep_search.name,
+                'id':s['id'],'language':s['language'],'source_type':s['source_type'],
+                'locator':s.get('locator',''),'family_names':s['family_names'],
+                'title_original':s['title_original']}))
     producer_url='https://banagherprecast.com/products/bridge-beams/'
     for code in ('IE','GB'):
         records+=int(add(code,NAMES[code],{'title':'Banagher Bridge Beams — shared Ireland/UK product range',
