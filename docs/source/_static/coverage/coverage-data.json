@@ -1,11 +1,11 @@
 {
   "count_basis": "Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
-  "researched_jurisdictions": 115,
-  "source_records": 207,
-  "implemented_countries": 17,
-  "implemented_profiles": 294,
-  "country_profile_assignments": 469,
+  "researched_jurisdictions": 121,
+  "source_records": 214,
+  "implemented_countries": 18,
+  "implemented_profiles": 295,
+  "country_profile_assignments": 470,
   "countries": [
     {
       "code": "AF",
@@ -435,11 +435,24 @@
     {
       "code": "BT",
       "name": "Bhutan",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Same as original",
+          "url": "https://www.moit.gov.bt/wp-content/uploads/2016/07/Dopshari-Drawings.pdf",
+          "status": "blocked",
+          "registry": "deep-search-new-regions-2026-09.json",
+          "id": "BT-DOR-DOPSHARI-DSZ-SUP-08",
+          "language": "English",
+          "source_type": "transport_authority_project_drawing_set",
+          "locator": "drawing index DSZ-SUP-07 Girder Plan, DSZ-SUP-08 Girder Section, DSZ-SUP-10 Sections of the Bridge; title block gives 29.10 m span",
+          "family_names": [],
+          "title_original": "Construction of Dopshari Bridge, Paro: Prestressed Concrete Girder Bridge Drawings"
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "BO",
@@ -1413,7 +1426,36 @@
     {
       "code": "GR",
       "name": "Greece",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Technical description: improvement of the Ancient Nemea junction\u2013Dervenakia\u2013Mycenae road, Argolis",
+          "url": "https://www.ppel.gov.gr/wp-content/uploads/2022/07/8_-%CE%A4%CE%95%CE%A7%CE%9D%CE%99%CE%9A%CE%97-%CE%A0%CE%95%CE%A1%CE%99%CE%93%CE%A1%CE%91%CE%A6%CE%97-%CE%94%CE%95%CE%A1%CE%92%CE%95%CE%9D%CE%91%CE%9A%CE%99%CE%91_final_signed-2.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-new-europe-2026-09.json",
+          "id": "gr_peloponnese_dervenakia_g3",
+          "language": "Greek",
+          "source_type": "regional_authority_technical_description",
+          "locator": "PDF pp. 32\u201335, printed pp. 32\u201335; \u0393\u03ad\u03c6\u03c5\u03c1\u03b1 \u03933 description and typical bridge section, especially printed p. 35",
+          "family_names": [
+            "\u0393\u03ad\u03c6\u03c5\u03c1\u03b1 \u03933 \u2013 \u03c0\u03c1\u03bf\u03b5\u03bd\u03c4\u03b5\u03c4\u03b1\u03bc\u03ad\u03bd\u03b7 \u03b4\u03bf\u03ba\u03cc\u03c2 \u03b4\u03b9\u03c0\u03bb\u03bf\u03cd \u03a4"
+          ],
+          "title_original": "\u03a4\u03b5\u03c7\u03bd\u03b9\u03ba\u03ae \u03a0\u03b5\u03c1\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae: \u0392\u03b5\u03bb\u03c4\u03af\u03c9\u03c3\u03b7 \u0395\u03c0. \u039f\u03b4\u03bf\u03cd \u03b1\u03c0\u03cc \u03ba\u03cc\u03bc\u03b2\u03bf \u0391\u03c1\u03c7\u03b1\u03af\u03b1\u03c2 \u039d\u03b5\u03bc\u03ad\u03b1\u03c2 - \u0394\u03b5\u03c1\u03b2\u03b5\u03bd\u03ac\u03ba\u03b9\u03b1 - \u039c\u03c5\u03ba\u03ae\u03bd\u03b5\u03c2 \u039d\u03bf\u03bc\u03bf\u03cd \u0391\u03c1\u03b3\u03bf\u03bb\u03af\u03b4\u03b1\u03c2"
+        },
+        {
+          "title": "Investigation of the seismic response of a bridge with a pier founded on liquefiable soil",
+          "url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/51220/diploma_thesis_eleftheriou_evgenia_2020.pdf?isAllowed=y&sequence=1",
+          "status": "partial_dimensions",
+          "registry": "deep-search-new-europe-2026-09.json",
+          "id": "gr_ntua_eleftheriou_strymonas_case",
+          "language": "Greek",
+          "source_type": "university_thesis",
+          "locator": "Evgenia Eleftheriou (2020), PDF/printed pp. 15, 18\u201319; section 2.3 and Figures 8\u20139 (beam elevation/plan and cross-section)",
+          "family_names": [
+            "Strymonas study bridge \u2013 \u03b1\u03c3\u03cd\u03bc\u03bc\u03b5\u03c4\u03c1\u03b7 \u03b4\u03bf\u03ba\u03cc\u03c2 \u03b4\u03b9\u03c0\u03bb\u03bf\u03cd \u03a4"
+          ],
+          "title_original": "\u0394\u03b9\u03b5\u03c1\u03b5\u03cd\u03bd\u03b7\u03c3\u03b7 \u03c4\u03b7\u03c2 \u03c3\u03b5\u03b9\u03c3\u03bc\u03b9\u03ba\u03ae\u03c2 \u03b1\u03c0\u03cc\u03ba\u03c1\u03b9\u03c3\u03b7\u03c2 \u03b3\u03ad\u03c6\u03c5\u03c1\u03b1\u03c2 \u03bc\u03b5 \u03b2\u03ac\u03b8\u03c1\u03bf \u03b8\u03b5\u03bc\u03b5\u03bb\u03b9\u03c9\u03bc\u03ad\u03bd\u03bf \u03c3\u03b5 \u03c1\u03b5\u03c5\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03ae\u03c3\u03b9\u03bc\u03bf \u03ad\u03b4\u03b1\u03c6\u03bf\u03c2"
+        }
+      ],
       "families": [
         {
           "id": "bridgebeams.gr.egnatia_extended_i.GrExtendedISection",
@@ -1429,8 +1471,8 @@
         }
       ],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 2,
+      "researched": true
     },
     {
       "code": "GL",
@@ -1583,11 +1625,24 @@
     {
       "code": "HK",
       "name": "Hong Kong",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Same as original",
+          "url": "https://www.epd.gov.hk/eia/files/applications/tc/pp_689/eia_1498/progress/action_3475/report/html/Sec2-RevA.htm",
+          "status": "blocked",
+          "registry": "deep-search-new-regions-2026-09.json",
+          "id": "HK-EPD-IEC-LINK-U-BEAM",
+          "language": "English",
+          "source_type": "government_project_eia",
+          "locator": "\u00a72.5.2, transition to the Island Eastern Corridor",
+          "family_names": [],
+          "title_original": "Central\u2013Wan Chai Bypass and Island Eastern Corridor Link Environmental Impact Assessment, Chapter 2"
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "HU",
@@ -1718,20 +1773,37 @@
         {
           "title": "NHAI Package II structural drawings for NH 45-A",
           "url": "https://nhai.gov.in/nhai/sites/default/files/2020/PKG_II_Modified_Structural_drawings.pdf",
-          "status": "named_only",
+          "status": "complete_outline",
           "registry": "deep-search-asia-africa-2026-09.json",
           "id": "IN-NHAI-PKGII-PUDUCHERRY",
           "language": "English",
           "source_type": "transport_authority_project_drawing",
-          "locator": "General arrangement drawing for major bridge 9\u00d735.0 m at design chainage 50+473, drawing FIPL-HD-TPT-117-V-N-45A-MJB-CH-50+473-GA-01, sheet 03/03, detail 'SECTION AT MID / SECTION AT END, DETAILED FOR PRECAST PSC I GIRDER'",
+          "locator": "PDF p50, General arrangement drawing for major bridge 9\u00d735.0 m at design chainage 50+473, drawing FIPL-HD-TPT-117-V-N-45A-MJB-CH-50+473-GA-01, sheet 03/03, detail 'SECTION AT MID / SECTION AT END, DETAILED FOR PRECAST PSC I GIRDER'",
           "family_names": [
             "NH 45-A Ch 50+473 precast PSC I girder"
           ],
           "title_original": "PKG II Modified Structural Drawings, Puducherry to Poondiyankuppam, NH 45-A"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.india.nhai_nh45a_psc_i.Nh45aPscISection",
+          "name": "Nh45aPscISection",
+          "module": "bridgebeams.india.nhai_nh45a_psc_i",
+          "count": 1,
+          "profiles": [
+            "CH50+473-MID"
+          ],
+          "profile_ids": [
+            "bridgebeams.india.nhai_nh45a_psc_i.Nh45aPscISection:CH50+473-MID"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IN"
+          ]
+        }
+      ],
+      "count": 1,
       "source_count": 6,
       "researched": true
     },
@@ -2609,11 +2681,24 @@
     {
       "code": "JM",
       "name": "Jamaica",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Same as original",
+          "url": "https://www.nwa.gov.jm/sites/default/files/publications/october%202017%20EIA_SCHIPSeg1_HarbourViewYallahs_Draft%20Final%20NEPA_Rev%202.pdf",
+          "status": "blocked",
+          "registry": "deep-search-new-regions-2026-09.json",
+          "id": "JM-NWA-SCHIP-1A-2017",
+          "language": "English",
+          "source_type": "transport_authority_project_eia",
+          "locator": "printed p. 95, bridge construction method and post-tensioning subsections",
+          "family_names": [],
+          "title_original": "Environmental Impact Assessment for the Proposed Road Improvement Project from Harbour View, Kingston to Yallahs, St. Thomas (Section 1A of the Southern Highway Improvement Project)"
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "JP",
@@ -3092,11 +3177,24 @@
     {
       "code": "MU",
       "name": "Mauritius",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Same as original",
+          "url": "https://environment.govmu.org/Documents/eia/eiareports/2017/2712-preskil/append.pdf",
+          "status": "blocked",
+          "registry": "deep-search-new-regions-2026-09.json",
+          "id": "MU-PRESKIL-17-143-SW1",
+          "language": "English",
+          "source_type": "government_eia_project_design_concept",
+          "locator": "Design Concept for Civil Works, \u00a71.0\u20131.1, drawing 17-143-SW1 reference",
+          "family_names": [],
+          "title_original": "Preskil Renovation: Design Concept for Civil Works"
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "MX",
@@ -3956,7 +4054,7 @@
           "id": "CN-BEIJING-20BGQL2",
           "language": "Simplified Chinese",
           "source_type": "transport_authority_standard_atlas",
-          "locator": "PDF p9/printed p1 design note; PDF p22\u201324/printed pp14\u201316 precast box-girder construction drawings and parameter table",
+          "locator": "PDF p9/printed p1 design note; PDF p22/printed p14 longitudinal section; PDF p23/printed p15 cross-sections I\u2013I, II\u2013II and III\u2013III plus span table",
           "family_names": [
             "20BGQL2 25 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881",
             "20BGQL2 30 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881",
@@ -4140,11 +4238,27 @@
     {
       "code": "PR",
       "name": "Puerto Rico",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Highway Design Manual, Chapter 6: Bridges",
+          "url": "https://act.dtop.pr.gov/wp-content/uploads/2023/03/PRHTA-Highway-Design-Manual-1979.pdf",
+          "status": "named_only",
+          "registry": "deep-search-new-regions-2026-09.json",
+          "id": "PR-PRHTA-1979-AASHTO",
+          "language": "English",
+          "source_type": "transport_authority_design_manual",
+          "locator": "Chapter 6, prestressed-concrete beam shapes and transfer-strength provisions (indexed text; PDF retrieval blocked)",
+          "family_names": [
+            "AASHTO Type V",
+            "AASHTO Type VI"
+          ],
+          "title_original": "Highway Design Manual, Chapter 6: Bridges"
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "QA",

@@ -44,19 +44,22 @@ The UK namespace exports aliases for Banagher's 13 shared Ireland/UK families (1
 
 ## Global collection
 
-The library also includes families for Belgium, Greece, Japan, Korea,
+The library also includes families for Belgium, Greece, India, Japan, Korea,
 Mexico, New Zealand, Norway, Poland, Qatar, Russia, South Africa, Taiwan, Thailand and
 Türkiye. Evidence
 quality varies by family: some profiles are exact transcriptions, some are
 documented reconstructions, and others require designer-supplied dimensions.
+India's first constructor is one NHAI NH 45-A project midspan PSC I-girder
+from a dimensioned **Final Feasibility Report**, not a national standard or
+evidence of construction.
 
 The [global source collection](docs/research/README.md) contains country-by-country
 research, original titles with English translations, structured source records,
 and page-based PDF transcriptions. A source appearing in the catalogue does not
 mean that its beam family is implemented or that every profile dimension is known.
-The [named-section deep-search queue](docs/source/research.md) adds 31
+The [multilingual discovery queue](docs/source/research.md) adds 38
 manufacturer, university, standards-library and technical-publication leads
-across 19 countries, with exact designations and drawing locators where found.
+across 25 countries, with exact designations and drawing locators where found.
 
 The [visual-review record](docs/source/research-visual-review.md) preserves
 the received answers and their implementation outcomes. With the local source
@@ -67,7 +70,7 @@ illustrated review link.
 
 The [live coverage map and complete country table](https://ccaprani.github.io/bridgebeams/coverage.html)
 separate researched sources from implemented profiles. UK and Ireland are
-separate entries. The research footprint spans 115 jurisdictions; many
+separate entries. The research footprint spans 121 jurisdictions; many
 currently have source evidence only.
 
 The United States now includes four WSDOT W-series girders and three

@@ -27,7 +27,7 @@
       ],
       "printed_dimensions": "Section-properties table gives depths TY1–TY10 = 400, 450, 500, 550, 600, 650, 700, 750, 800, 850 mm; areas and inertias are also tabulated.",
       "status": "partial_dimensions",
-      "missing_information": "Transcribe the stepped outline and confirm each depth-dependent dimension visually. Generic drawing still requires project-specific design.",
+      "missing_information": "The indexed table can be read, but direct PDF retrieval redirected to Ashghal sign-in on 2026-09-22. Obtain the sheet, transcribe the stepped outline and confirm each depth-dependent dimension visually. Generic drawing still requires project-specific design.",
       "contact_route": "Ashghal contact center 188 (authority website)"
     },
     {
@@ -55,7 +55,7 @@
       ],
       "printed_dimensions": "Section-properties table gives depths TYE1–TYE10 = 400, 450, 500, 550, 600, 650, 700, 750, 800, 850 mm; areas and inertias are also tabulated.",
       "status": "partial_dimensions",
-      "missing_information": "Transcribe full asymmetric edge outline, including chamfers and depth-varying dimensions. Generic drawing still requires project-specific design.",
+      "missing_information": "Direct PDF access requires rechecking because the matching TY sheet redirected to Ashghal sign-in on 2026-09-22. Obtain the sheet, transcribe the full asymmetric edge outline, including chamfers and depth-varying dimensions. Generic drawing still requires project-specific design.",
       "contact_route": "Ashghal contact center 188 (authority website)"
     },
     {
@@ -68,15 +68,17 @@
       "title_original": "20BGQL2 时速100公里及以下城市轨道交通后张法预应力混凝土单线预制箱梁",
       "title_en": "20BGQL2 single-track post-tensioned precast box girders for urban rail at up to 100 km/h",
       "url": "https://ghzrzyw.beijing.gov.cn/biaozhunguanli/bzgj/tytj/202105/P020210527325354365083.pdf",
-      "locator": "PDF p9/printed p1 design note; PDF p22–24/printed pp14–16 precast box-girder construction drawings and parameter table",
+      "locator": "PDF p9/printed p1 design note; PDF p22/printed p14 longitudinal section; PDF p23/printed p15 cross-sections I–I, II–II and III–III plus span table",
       "family_names": [
         "20BGQL2 25 m 单线预制箱梁",
         "20BGQL2 30 m 单线预制箱梁",
         "20BGQL2 32 m 单线预制箱梁"
       ],
-      "printed_dimensions": "Printed p1 identifies 25, 30 and 32 m design spans; printed p15 parameter table gives L = 25, 30, 32 m and associated layout parameters. A 1600 mm outer depth is dimensioned on printed p14; do not assume the same section throughout the series without checking the other drawings.",
+      "printed_dimensions": "Visual check of local PDF p23/printed p15: the span table gives L = 25, 30 and 32 m; section width is 5200 + 2a mm, with a = 0–300 mm in Note 1; outer section depth is shown as 150 + 1450 = 1600 mm at II–II. PDF p22/printed p14 is a longitudinal section with an 1800 mm plan-width dimension, not the beam's outer depth.",
       "status": "partial_dimensions",
-      "missing_information": "Transcribe midspan and support contours for each span, variable a, haunches, drain recesses and whether cross-section dimensions vary by span. This is an urban-rail standard atlas, not a highway approval.",
+      "missing_information": "This atlas explicitly allows a = 0–300 mm, so the drawing does not define one fixed-width profile. Transcribe the complete midspan and support contours, haunches and drain recesses; decide whether a documented nominal choice exists before implementation. This is an urban-rail atlas, not a highway approval.",
+      "local_pdf": "sources/expansion/asia-africa/beijing-20bgql2.pdf",
+      "sha256": "5aecbbfc522af84605987b5746c5eb28909bb8361634704ec4460f6a235cffa6",
       "contact_route": "Beijing Municipal Commission of Planning and Natural Resources, via the published authority page"
     },
     {
@@ -156,13 +158,15 @@
       "title_original": "PKG II Modified Structural Drawings, Puducherry to Poondiyankuppam, NH 45-A",
       "title_en": "NHAI Package II structural drawings for NH 45-A",
       "url": "https://nhai.gov.in/nhai/sites/default/files/2020/PKG_II_Modified_Structural_drawings.pdf",
-      "locator": "General arrangement drawing for major bridge 9×35.0 m at design chainage 50+473, drawing FIPL-HD-TPT-117-V-N-45A-MJB-CH-50+473-GA-01, sheet 03/03, detail 'SECTION AT MID / SECTION AT END, DETAILED FOR PRECAST PSC I GIRDER'",
+      "locator": "PDF p50, General arrangement drawing for major bridge 9×35.0 m at design chainage 50+473, drawing FIPL-HD-TPT-117-V-N-45A-MJB-CH-50+473-GA-01, sheet 03/03, detail 'SECTION AT MID / SECTION AT END, DETAILED FOR PRECAST PSC I GIRDER'",
       "family_names": [
         "NH 45-A Ch 50+473 precast PSC I girder"
       ],
-      "printed_dimensions": "The drawing title states 9×35.0 m bridge span arrangement; this is not a beam depth or complete profile measurement.",
-      "status": "named_only",
-      "missing_information": "Inspect the project PDF drawing at high resolution to recover the complete beam contour and distinguish midspan from end block. Drawing title block says FINAL FEASIBILITY REPORT, so do not treat it as issued-for-construction geometry.",
+      "printed_dimensions": "PDF p50 visually checked at 175 dpi: midspan I section is 2250 mm deep with 900 mm top flange, 300 mm web and 750 mm bottom flange. From soffit upward: 250 mm vertical bottom flange; 150 mm lower splay; 1600 mm web; 100 mm upper splay; 150 mm vertical top flange. Gross area from this dimension chain is 941250 mm². The separate end section is an end block, not this midspan outline.",
+      "status": "complete_outline",
+      "missing_information": "The title block says FINAL FEASIBILITY REPORT. Confirm against later approved design or as-built drawings before treating this as constructed geometry; no independent published area or inertia is available. End block is not implemented.",
+      "local_pdf": "sources/expansion/asia-africa/nhai-pkg-ii-modified-structural-drawings.pdf",
+      "sha256": "7f21b6abd44f339680aa5f7d1d91cfad75edb3055f09d0f6cbd635765fa09227",
       "contact_route": "NHAI public website; drawing title block identifies Feedback Infra Pvt Ltd as design consultant"
     },
     {

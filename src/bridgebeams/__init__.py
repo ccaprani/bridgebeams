@@ -18,6 +18,7 @@ from bridgebeams.adapters import osp_grillage_properties, to_concreteproperties
 from bridgebeams.aus import IGirderSection, SuperTGirderSection
 from bridgebeams.be import FebeIDimensions, FebeISection
 from bridgebeams.gr import GrExtendedISection, depth_law as gr_depth_law, web_width as gr_web_width
+from bridgebeams.india import Nh45aPscIDimensions, Nh45aPscISection
 from bridgebeams.pl import MostostalTDimensions, MostostalTSection
 from bridgebeams.jp import JisTGirderDimensions, JisTGirderSection
 from bridgebeams.kr import KhcIGirderDimensions, KhcISection
@@ -83,6 +84,8 @@ __all__ = [
     "gr_web_width",
     "FebeIDimensions",
     "FebeISection",
+    "Nh45aPscIDimensions",
+    "Nh45aPscISection",
     "MostostalTDimensions",
     "MostostalTSection",
     "Su3503I33Dimensions",

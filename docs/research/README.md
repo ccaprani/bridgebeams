@@ -31,6 +31,8 @@ profiles and completed checks.
 | Central Europe: manufacturers and technical catalogues | [Named-section deep search](deep-search-central-europe-2026-09.md) | [12 source leads](data/deep-search-central-europe-2026-09.json) |
 | Romance-language regions: producers, guides and theses | [Named-section deep search](deep-search-romance-2026-09.md) | [10 source leads](data/deep-search-romance-2026-09.json) |
 | Asia, Africa and Middle East: standard drawings and academic work | [Named-section deep search](deep-search-asia-africa-2026-09.md) | [9 source leads](data/deep-search-asia-africa-2026-09.json) |
+| Greece: two dimensioned project proposals | [Project-girder search](deep-search-new-europe-2026-09.md) | [2 source leads](data/deep-search-new-europe-2026-09.json) |
+| Puerto Rico, Bhutan, Jamaica, Hong Kong and Mauritius | [Project and jurisdiction search](deep-search-new-regions-2026-09.md) | [5 source leads](data/deep-search-new-regions-2026-09.json) |
 | Existing PDF backlog: Qatar, New Zealand, Norway and Japan | [Visual transcription and corrections](pdf-transcription-2026-09.md) | [Transcriptions](data/pdf-transcriptions.json) |
 | Existing Banagher manual: Solid Box and W families | [Tables and geometry audit](banagher-pending-families-2026-09.md) | [Transcriptions](data/banagher-pending-families.json) |
 | Canada: Ontario MTO current drawings | [Source and geometry follow-up](canada-followup.md) | [Drawing record](data/canada-followup.json) |
@@ -96,8 +98,8 @@ country table below. The separate PDF-backlog and Banagher transcriptions
 retain their own source manifests and are not included in these regional
 row counts.
 
-Run `python3 tools/check_discovery_sources.py` to validate the three newer
-named-section queues. Their 31 records are searchable on the coverage map;
+Run `python3 tools/check_discovery_sources.py` to validate the five newer
+discovery queues. Their 38 records are searchable on the coverage map;
 the historical country index below remains the original regional-batch index,
 so its 149-record total should not be mistaken for the complete map total.
 

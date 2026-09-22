@@ -16,8 +16,8 @@ from copy import deepcopy
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 ASSETS = ROOT / 'docs/source/_static/coverage'
-COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA'}
-NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa'}
+COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','india':'IN','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA'}
+NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','IN':'India','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa'}
 
 # Producer's range is offered in both countries, with the same manual/profile
 # definitions. Keep an explicit family allowlist so future Ireland-only ranges
@@ -211,7 +211,7 @@ def build():
     assert countries['GB']['count']==sum(irish[name]['count'] for name in SHARED_IE_GB_FAMILIES)>0
     assert {pid for f in countries['GB']['families'] for pid in f['profile_ids']} == {
         pid for name in SHARED_IE_GB_FAMILIES for pid in irish[name]['profile_ids']}
-    assert countries['IN']['count']==0 and countries['IN']['researched']
+    assert countries['IN']['count']==1 and countries['IN']['researched']
     print(json.dumps({k:v for k,v in result.items() if k!='countries'},indent=2))
     print('Nonzero country counts:',{r['code']:r['count'] for r in result['countries'] if r['count']})
 

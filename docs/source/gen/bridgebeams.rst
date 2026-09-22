@@ -32,6 +32,7 @@
    ca
    gr
    ie
+   india
    jp
    kr
    mx

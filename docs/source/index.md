@@ -27,12 +27,13 @@ All geometry is in **millimetres** and returned as `sectionproperties`
 `Geometry` objects, so sections can be meshed and analysed directly, or
 wrapped with materials for concrete section design checks.
 
-The complete coverage view currently counts **294 distinct fixed profiles across
-17 countries**, separately from **114 jurisdictions with research records**.
+The complete coverage view currently counts **295 distinct fixed profiles across
+18 countries**, separately from **121 jurisdictions with research records**.
 The UK and Ireland each show 175 shared Banagher profiles; those country assignments
 do not create new distinct geometry.
 Belgian and Greek parametric templates are listed separately because their
-flange thicknesses must be supplied.
+flange thicknesses must be supplied. India has one dimensioned NHAI project
+feasibility profile; that does not imply a national standard.
 
 ## Implemented families
 

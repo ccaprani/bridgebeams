@@ -69,14 +69,14 @@ is repeated. Remaining tasks are specific source or modelling issues:
 Ireland and the United Kingdom are separate jurisdictions throughout the family tables and coverage data. Banagher's shared producer catalogue is assigned to both; UK aliases retain the same profile IDs and do not create new distinct geometry. Use the complete country table and clickable map in
 the Sphinx coverage page; the short family table is not the research-country
 list. Fixed profile counts, parametric templates and source records are
-separate measures. India is included as research evidence even while it has
-no implemented constructor.
+separate measures. India has since gained one NHAI project-feasibility
+midspan profile; see the [multilingual discovery audit](deep-search-asia-africa-2026-09.md).
 
-The current coverage build counts **294 distinct fixed profiles across 17 countries**,
-**114 researched jurisdictions**, **176 source records**, and **469 country-profile assignments** across the
-regional, PDF, Banagher, India, US, Canada and producer-availability records. These 176 records are not 176
-unique publications. The default country table also includes Belgium,
-Greece and Poland from legacy implementation/template coverage. The
+The [live coverage page](../source/coverage.md) provides current totals.
+At the close of this visual-review batch there were 294 distinct fixed profiles
+across 17 countries, 114 researched jurisdictions, 176 source records and 469
+country-profile assignments. Later search and geometry work changed these
+figures; the 176 records were not 176 unique publications. The
 [India follow-up](india-followup.md) has five primary records: four additions
 and one updated RDSO record, deduplicated by identifier.
 

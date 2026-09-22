@@ -6,8 +6,8 @@ The [research catalogue](research.md) records original titles, English
 translations, dimensions, source URLs and remaining blockers from the
 September 2026 international search.
 
-The **research footprint** includes source records for 114 jurisdictions;
-this is not a claim of 114 countries with implemented beam geometry.
+The **research footprint** includes source records for many more jurisdictions
+than have implemented beam geometry; the live count is on {doc}`coverage`.
 See {doc}`coverage` for the complete country list and clickable heat map.
 Its counts distinguish fixed profiles, parametric templates and researched
 sources. The table below is only the implemented-family summary.
@@ -25,6 +25,7 @@ sources. The table below is only the implemented-family summary.
 | United States (MN, WA) | `bridgebeams.us` | MnDOT 14RB/18RB/22RB; WSDOT W42G/W50G/W58G/W74G | Edition-specific official drawings; WSDOT geometry independently checked against 2025 published properties |
 | Belgium | `bridgebeams.be` | FEBE standardised I-beams | Flange thicknesses must be supplied by the designer |
 | Greece | `bridgebeams.gr` | Egnatia extended-I families | Published depth law/widths; flange thicknesses are design inputs |
+| India (NH 45-A project) | `bridgebeams.india` | Ch 50+473 midspan PSC I girder | Dimensioned NHAI feasibility drawing, PDF p50; one project profile, not a national standard or construction drawing |
 | Japan | `bridgebeams.jp` | JIS/PCCEN AG/BG T-girders | Chubu drawing metadata; additional drawing audit is in the PDF report |
 | Korea | `bridgebeams.kr` | KHC PSC I-girders | Published 25/30/35 m data; 20/40 m sizes are extrapolated |
 | Mexico | `bridgebeams.mx` | SEPSA I-MODIFIED, II, III, IV, IV-MODIFIED, V, VI | Producer-specific metric profiles; published areas match within 50 mm² rounding |
@@ -44,12 +45,13 @@ Banagher's documented Ireland/UK catalogue is available through both `bridgebeam
 
 ## India and research-only countries
 
-India has its own coverage entry and {doc}`india-followup` source report.
-Official evidence includes RDSO railway standard girders, MoRTH precast RCC
-standard drawings, an NHAI precast PSC-I drawing and IRICEN references.
-No Indian profile constructor is claimed yet: the surviving section details
-need complete readable dimensions. An earlier failed local download was an
-access limitation, not absence of Indian precast beams.
+India has one project-specific midspan constructor,
+`bridgebeams.india.Nh45aPscISection("CH50+473-MID")`, traced to the NHAI
+NH 45-A drawing sheet 03/03. Its 2250 mm gross I outline is dimensioned,
+but the title block calls the issue a **Final Feasibility Report**. It does
+not establish a national standard, a built girder or approved final design.
+The separate {doc}`india-followup` records RDSO railway, MoRTH RCC, IRICEN
+and another NHAI project whose full contours remain unresolved.
 
 ## Expanded source collection
 

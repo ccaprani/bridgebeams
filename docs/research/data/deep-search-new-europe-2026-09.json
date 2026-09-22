@@ -1,0 +1,40 @@
+{
+  "accessed": "2026-09-22",
+  "scope": "New project-specific Greek precast bridge girder source leads; research queue, not implemented or national standard sections",
+  "records": [
+    {
+      "id": "gr_peloponnese_dervenakia_g3",
+      "country_code": "GR",
+      "country": "Greece",
+      "language": "Greek",
+      "source_type": "regional_authority_technical_description",
+      "organisation": "Region of Peloponnese, Directorate of Technical Works",
+      "title_original": "Τεχνική Περιγραφή: Βελτίωση Επ. Οδού από κόμβο Αρχαίας Νεμέας - Δερβενάκια - Μυκήνες Νομού Αργολίδας",
+      "title_en": "Technical description: improvement of the Ancient Nemea junction–Dervenakia–Mycenae road, Argolis",
+      "url": "https://www.ppel.gov.gr/wp-content/uploads/2022/07/8_-%CE%A4%CE%95%CE%A7%CE%9D%CE%99%CE%9A%CE%97-%CE%A0%CE%95%CE%A1%CE%99%CE%93%CE%A1%CE%91%CE%A6%CE%97-%CE%94%CE%95%CE%A1%CE%92%CE%95%CE%9D%CE%91%CE%9A%CE%99%CE%91_final_signed-2.pdf",
+      "locator": "PDF pp. 32–35, printed pp. 32–35; Γέφυρα Γ3 description and typical bridge section, especially printed p. 35",
+      "family_names": ["Γέφυρα Γ3 – προεντεταμένη δοκός διπλού Τ"],
+      "printed_dimensions": "Bridge G3 proposal: 6 precast prestressed I/double-T girders per span, each 39.0 m long; beam depth 2.40 m, bottom flange width 0.90 m, top flange width 1.40 m, web thickness at mid-height 0.30 m; 2.40 m girder centre spacing. Each end has a 1.50–2.00 m long solid rectangular zone. Cast-in-place deck slab is 0.35 m thick.",
+      "status": "partial_dimensions",
+      "missing_information": "No fully dimensioned girder cross-section or fixed family code. Obtain design drawings for flange thicknesses, tapers, chamfers, end-block section and longitudinal transitions. This is a project design, not evidence of a standard Greek section or completed construction.",
+      "contact_route": "Region of Peloponnese Directorate of Technical Works, identified on the PDF cover; staff contact is not printed in the inspected pages."
+    },
+    {
+      "id": "gr_ntua_eleftheriou_strymonas_case",
+      "country_code": "GR",
+      "country": "Greece",
+      "language": "Greek",
+      "source_type": "university_thesis",
+      "organisation": "National Technical University of Athens, School of Civil Engineering",
+      "title_original": "Διερεύνηση της σεισμικής απόκρισης γέφυρας με βάθρο θεμελιωμένο σε ρευστοποιήσιμο έδαφος",
+      "title_en": "Investigation of the seismic response of a bridge with a pier founded on liquefiable soil",
+      "url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/51220/diploma_thesis_eleftheriou_evgenia_2020.pdf?isAllowed=y&sequence=1",
+      "locator": "Evgenia Eleftheriou (2020), PDF/printed pp. 15, 18–19; section 2.3 and Figures 8–9 (beam elevation/plan and cross-section)",
+      "family_names": ["Strymonas study bridge – ασύμμετρη δοκός διπλού Τ"],
+      "printed_dimensions": "Seven variable-section precast prestressed girders per 42 m span; beam length 40.5 m. Figure 9 midspan asymmetric I/double-T cross-section labels total depth 2.05 m, top flange width 1.25 m, bottom flange width 0.90 m and central web width 0.25 m; deck slab thickness 0.25 m. Figure 8 additionally shows a widened end/support zone and plan/elevation dimensions.",
+      "status": "partial_dimensions",
+      "missing_information": "Transcribe all Figure 8–9 contour dimensions and the variable section at support and along the 40.5 m girder before implementation. The thesis uses an assumed bridge/geotechnical model based on an existing Strymonas-area site; it does not establish that this precise girder was manufactured or is a national standard.",
+      "contact_route": "NTUA institutional repository handle 123456789/51220; supervisor Prof. Ioannis Psycharis is named on thesis title page, but no direct contact is printed there."
+    }
+  ]
+}

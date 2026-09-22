@@ -5,6 +5,13 @@ PDF transcriptions are available in {doc}`research`. These records are
 versioned with the repository, including structured JSON evidence. Local
 downloaded PDFs remain in the ignored `sources/` directory.
 
+The first implemented Indian profile, `Nh45aPscISection`, comes from
+[NHAI's NH 45-A Package II structural drawing pack](https://nhai.gov.in/nhai/sites/default/files/2020/PKG_II_Modified_Structural_drawings.pdf),
+PDF p50, drawing `FIPL-HD-TPT-117-V-N-45A-MJB-CH-50+473-GA-01`, sheet 03/03
+(November 2017). The midspan gross contour is fully dimensioned. The
+title block says **Final Feasibility Report**; the library does not claim
+that this profile was built or approved for construction.
+
 The original Irish section data are recovered from, or validated against,
 published manufacturer documentation:
 

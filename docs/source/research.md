@@ -14,6 +14,8 @@ research-asia-africa
 deep-search-central-europe-2026-09
 deep-search-romance-2026-09
 deep-search-asia-africa-2026-09
+deep-search-new-europe-2026-09
+deep-search-new-regions-2026-09
 research-pdf-transcription
 research-banagher
 research-verification
@@ -35,6 +37,8 @@ Download the structured records:
 - {download}`Central European named-section leads <../research/data/deep-search-central-europe-2026-09.json>`
 - {download}`Romance-language named-section leads <../research/data/deep-search-romance-2026-09.json>`
 - {download}`Asia, Africa and Middle East named-section leads <../research/data/deep-search-asia-africa-2026-09.json>`
+- {download}`Greek project-specific girder leads <../research/data/deep-search-new-europe-2026-09.json>`
+- {download}`New-region project and jurisdiction leads <../research/data/deep-search-new-regions-2026-09.json>`
 - {download}`PDF transcriptions <../research/data/pdf-transcriptions.json>`
 - {download}`Banagher Solid Box / W transcriptions <../research/data/banagher-pending-families.json>`
 - {download}`Ontario MTO current-drawing follow-up <../research/data/canada-followup.json>`

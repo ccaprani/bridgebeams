@@ -1,8 +1,10 @@
 # India source follow-up
 
-Checked 2026-09-22. India was already present in the regional source register as `IN-RDSO-BS141`, but had no implemented constructor. It should appear on a research-coverage map even while geometry remains incomplete. This follow-up provides **five primary-source records: one update to that existing record and four additional records**. Do not count the repeated BS-141 entry twice. Structured evidence is in [india-followup.json](data/india-followup.json).
+Checked 2026-09-22. India was already present in the regional source register as `IN-RDSO-BS141`. This follow-up provides **five primary-source records: one update to that existing record and four additional records**. Do not count the repeated BS-141 entry twice. Structured evidence is in [india-followup.json](data/india-followup.json). A later [NH 45-A drawing audit](deep-search-asia-africa-2026-09.md) added one project-specific midspan constructor; the other leads below remain incomplete.
 
 ## Downloaded project drawings: NHAI precast PSC I girder
+
+The separate [NHAI NH 45-A Package II drawing pack](https://nhai.gov.in/nhai/sites/default/files/2020/PKG_II_Modified_Structural_drawings.pdf), PDF p50, provides a complete 2250 mm gross midspan contour for design Ch 50+473. It is now implemented as `bridgebeams.india.Nh45aPscISection`; see the [new source queue](deep-search-asia-africa-2026-09.md) for its full dimension chain and feasibility-report limitation. It is **not** the Delhi–Vadodara project below.
 
 The [NHAI Delhi–Vadodara Expressway package II, Volume III drawings](https://nhai.gov.in/nhai/sites/default/files/Agreements_document/pkg2-VOL-III.pdf) downloaded successfully. The cover identifies the Sohna–Firozpur Jhirka section, km 18+500 to 47+000, Haryana, July 2019. It is a **project source**, not a national profile catalogue.
 
@@ -33,4 +35,4 @@ The [November 2021 IRICEN Journal](https://iricen.gov.in/iricen/journals/Nov-202
 
 ## Next concrete work
 
-Retrieve a higher-resolution NHAI girder sheet or its original drawing; recover MoRTH sheets 1003/1007 through a functioning publication link; obtain the RDSO-B/10273 drawing and BS-141 Annexure XXIII. Existing source coverage now includes an actually downloaded precast project section, a national RCC drawing-set lead and railway slab/I/U/box leads. It does not yet establish an implemented Indian beam family.
+Retrieve a higher-resolution Delhi–Vadodara NHAI girder sheet or its original drawing; recover MoRTH sheets 1003/1007 through a functioning publication link; obtain the RDSO-B/10273 drawing and BS-141 Annexure XXIII. The NH 45-A feasibility midspan profile is implemented separately; no Indian national beam family has yet been implemented.
