@@ -52,6 +52,23 @@
       "status": "named_only",
       "missing_information": "Locate the referenced IPR 751/2022 bridge album and PCP drawings, then determine whether DNIT publishes standard beam shapes or only project-level design guidance.",
       "contact_route": "DNIT IPR manuals and PROARTE document archive"
+    },
+    {
+      "id": "BR-IFES-SAO-DOMINGOS-2016-I-GIRDER",
+      "country_code": "BR",
+      "country": "Brazil",
+      "language": "Portuguese",
+      "source_type": "university_project_case_study",
+      "organisation": "Instituto Federal do Espírito Santo / IFES",
+      "title_original": "Estudo de caso: viga I protendida da ponte sobre Córrego São Domingos",
+      "title_en": "Case study: prestressed I girder of the São Domingos Creek bridge",
+      "url": "https://repositorio.ifes.edu.br/bitstream/handle/123456789/2795/Template_ARTIGO_ABNT_Biblioteca_Rodrigo_revisado_final.pdf?isAllowed=y&sequence=1",
+      "locator": "PDF p.20–22, Figure 7 and Figure 8; project drawing source dated 2016; bridge on ES-010, Conceição da Barra, Espírito Santo",
+      "family_names": ["São Domingos bridge I girder"],
+      "printed_dimensions": "Indexed figure description gives a 1,300 mm overall I-girder depth, 600 mm top width, 450 mm bottom width, 200 mm web, 300 mm upper block and 850 mm web-height callout, with 75/100 mm transition labels. The bridge has six prestressed girders over a 20.10 m span.",
+      "status": "partial_dimensions",
+      "missing_information": "Retrieve the original IFES PDF or engineering drawing at readable resolution and resolve the transition dimension chain before implementation. The indexed description may conflate horizontal offsets and vertical depths; do not infer the polygon from the summary alone.",
+      "contact_route": "IFES repository item 123456789/2795; ES-010 project engineering archive"
     }
   ]
 }

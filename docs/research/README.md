@@ -104,7 +104,7 @@ retain their own source manifests and are not included in these regional
 row counts.
 
 Run `python3 tools/check_discovery_sources.py` to validate the ten newer
-discovery queues. Their 56 records are searchable on the coverage map;
+discovery queues. Their 57 records are searchable on the coverage map;
 the historical country index below remains the original regional-batch index,
 so its 149-record total should not be mistaken for the complete map total.
 
