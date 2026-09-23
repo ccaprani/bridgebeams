@@ -1,6 +1,6 @@
 # HANDOFF — bridgebeams global collection
 
-Updated 22 September 2026. Read before changing geometry or using old research
+Updated 23 September 2026. Read before changing geometry or using old research
 notes. This briefing supersedes the previous handoff: several source locators,
 width interpretations and blocker claims in it were wrong.
 
@@ -11,20 +11,20 @@ width interpretations and blocker claims in it were wrong.
   workflow. Do not merge or push to main. Keep changes on this branch or a
   new jurisdiction branch, with descriptive commits.
 - Python: `/home/ccaprani/anaconda3/envs/pybridge/bin/python`.
-- Full test suite after the NHAI profile and multilingual research additions: **334 passed**, 14 existing
+- Full test suite after the NHAI profile, PCI AASHTO implementation and multilingual research additions: **342 passed**, 14 existing
   Matplotlib/Pyparsing deprecation warnings. Command:
   `timeout 180 /home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`.
-- Wheel checked outside the checkout: **all 25 family JSON tables included**;
+- Wheel checked outside the checkout: **all family JSON tables included**;
   Ontario, Minnesota and Washington classes construct from the installed wheel,
   and UK aliases resolve to the same Irish geometry classes. Earlier isolated
   wheel checks covered all 46 visual-review and 43 preceding expansion profiles.
-  The new India module also built and constructed from an isolated wheel install;
-  its gross midspan area is 941250 mm².
+  The new India and US AASHTO modules also built and constructed from isolated
+  wheel installs; the India gross midspan area is 941250 mm².
   The old `bridgebeams.ukie.data` package-data rule silently omitted BE/JP/PL
   tables; the new wildcard includes each family's `data/*.json`.
 - Sphinx command:
   `/home/ccaprani/anaconda3/envs/pybridge/bin/python tools/build_local_docs.py`.
-  Strict (`-E -W`) build passed after the India and multilingual research additions.
+  Strict (`-E -W`) build passed after the India, AASHTO, Brazil and multilingual research additions.
   Obsolete generated `gen/bridgebeams.ukie*` pages are excluded. Research
   includes use `:relative-docs: data/` so JSON links resolve as downloads.
 - Pages site: `https://ccaprani.github.io/bridgebeams/coverage.html` contains
@@ -32,6 +32,15 @@ width interpretations and blocker claims in it were wrong.
   `ukie-beams`, installs Pandoc for the tutorial notebook, and publishes the
   static artifact. The `github-pages` deployment environment permits exactly
   `main` and `ukie-beams`; the repository homepage points to the site.
+
+Latest commits on `ukie-beams` are `728a14b` (PCI AASHTO I–VI and Pakistan
+follow-up), `cb1a82b` (Korea/Argentina/Philippines leads), `4717e74` (Brazilian
+papers and DNIT guidance), and `d22bc38` (IFES São Domingos retrieval lead).
+The latest Pages deployment for `d22bc38` passed. Live coverage data reads 301
+profiles, 476 country-profile assignments, 122 researched jurisdictions and
+233 source records. Brazil, Pakistan, the Philippines and Argentina remain
+researched countries with zero implemented profiles; Korea has three existing
+implemented profiles but its new PSC-I records are not yet implemented.
 
 ## Jurisdictions and coverage
 
@@ -75,8 +84,9 @@ source URLs, source-status distinctions, tables, and outstanding blockers.
 - `docs/research/banagher-pending-families-2026-09.md` and
   `data/banagher-pending-families.json`: 32 Solid Box and 16 W table rows.
 - `docs/research/deep-search-*-2026-09.md` and matching `data/*.json`:
-  38 additional manufacturer, academic, project, technical-guide and
-  standard-drawing leads across 25 countries. One NHAI feasibility midspan
+  57 current discovery records across 10 queues, covering manufacturers,
+  academic papers, project drawings, technical guides and standard leads.
+  One NHAI feasibility midspan
   contour is implemented; the others remain source or contact leads.
   Pekabex MG-T and Haitsma HKP/HGKO are strong producer-drawing targets.
   Ashghal TY/TYE sheets have indexed tables but direct access redirected to
@@ -85,6 +95,16 @@ source URLs, source-status distinctions, tables, and outstanding blockers.
   manufacturer or authority contact targets. Portuguese ISEP PDF retrieval
   timed out; Waskita's catalogue returned HTTP 403, so its indexed H-series
   terms remain unverified.
+  Brazil now has five new discovery records (six map records including the
+  earlier registry): UFC I-beam thesis, IBRACON/SciELO U-beam
+  paper, DNIT IPR guidance, and the IFES São Domingos completed-bridge drawing
+  lead. Brazil remains research-only until the transition dimensions are read
+  from the original figures.
+  The most recent focused reports are `deep-search-brazil-2026-09.md`,
+  `deep-search-korea-argentina-philippines-2026-09.md`,
+  `pakistan-us-section-followup-2026-09.md`,
+  `aashto-cross-jurisdiction-followup-2026-09.md` and
+  `pci-aashto-reference-2026-09.md`.
 
 Counts for the evolving regional registries are generated, not hardcoded here:
 
