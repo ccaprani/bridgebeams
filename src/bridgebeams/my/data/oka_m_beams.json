@@ -1,0 +1,234 @@
+{
+ "schema_version": 1,
+ "family": "OKA pretensioned M-beams M2-M10",
+ "country": "MY",
+ "source_status": "producer catalogue (OKA Concrete Industries, 2018 sheet)",
+ "sources": [
+  {
+   "title_original": "OKA Prestressed (Pretensioned) T-Beams / M-Beams brochure (March 2018 on sheet)",
+   "producer": "OKA Concrete Industries Sdn Bhd, Ipoh",
+   "url": "http://www.oka.com.my/index.asp?CompanyID=29&FileName=T-Beams_M-Beams.pdf",
+   "page_url": "http://www.oka.com.my/index.asp?LanguagesID=1&TitleReferenceID=1295&CompanyID=29",
+   "local_file": "sources/expansion/round2/my/oka-T-Beams_M-Beams.pdf",
+   "sha256": "e74ebcc04aaf9dc111acfa1388de2b0941dc832294f0323a79dd8a6c56623ec8",
+   "retrieved": "2026-09-23",
+   "pdf_page": 2,
+   "printed_page": null,
+   "content": "Three dimensioned M-beam sections (M2-4, M5-7, M8-10) + property tables"
+  }
+ ],
+ "units": "mm, mm2, mm4, mm3; kN/m",
+ "transcribed_dimensions": {
+  "bottom_width": 970,
+  "chamfer": "20 x 20",
+  "flange_edge": 160,
+  "edge_lean": "10 (chain 10 + 315 + 80 = 405 from flange edge to web face)",
+  "taper": "50 high",
+  "bottom_splay": "80 x 80",
+  "web": 160,
+  "lower_web": "200 / 440 / 680 per group",
+  "top_splay": "60 high x 120 wide",
+  "top_width": 400,
+  "shoulders": "50 x 50 each side, 300 strip",
+  "top_flange_edge": "120 / 200 / 280 mm within each group (dashed M2/M3 lines; group step 80 mm)"
+ },
+ "geometry_notes": [
+  "Scanned brochure read at 250 dpi. All callouts are printed; no dimension is estimated.",
+  "Every row computes ~500 mm2 (0.12-0.16 %) below the printed area; Ixx is 0.3-0.5 % low and Yb within 1 mm. Likely the table ignores the chamfers/edge lean; recorded, not fitted.",
+  "Printed M10 area 457150 is 300 mm2 below the constant +32000 mm2 per 80 mm pattern of the other rows (M9 425450 + 32000 = 457450). Pinned in tests.",
+  "Diaphragm/web holes and strand positions are not part of the gross section.",
+  "These OKA outlines are Malaysian producer sections; they are not asserted identical to Civilcon (za) or UK M-beams."
+ ],
+ "sections": {
+  "M2": {
+   "depth": 720,
+   "lower_web": 200,
+   "area": 316650,
+   "yt": 455,
+   "yb": 265,
+   "ixx": 16200000000.0,
+   "zt": 35640000.0,
+   "zb": 61040000.0,
+   "weight_kN_per_m": 7.71,
+   "span_range_m": "16.0-18.0",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 316150.0,
+    "yb_calc": 264.76,
+    "ixx_calc": 16118570164.0,
+    "area_rel_pct": -0.158,
+    "yb_diff_mm": -0.24,
+    "ixx_rel_pct": -0.503
+   }
+  },
+  "M3": {
+   "depth": 800,
+   "lower_web": 200,
+   "area": 348650,
+   "yt": 490,
+   "yb": 310,
+   "ixx": 23020000000.0,
+   "zt": 46960000.0,
+   "zb": 74310000.0,
+   "weight_kN_per_m": 8.49,
+   "span_range_m": "17.5-19.5",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 348150.0,
+    "yb_calc": 309.13,
+    "ixx_calc": 22922339444.0,
+    "area_rel_pct": -0.143,
+    "yb_diff_mm": -0.87,
+    "ixx_rel_pct": -0.424
+   }
+  },
+  "M4": {
+   "depth": 880,
+   "lower_web": 200,
+   "area": 380650,
+   "yt": 527,
+   "yb": 353,
+   "ixx": 30940000000.0,
+   "zt": 58770000.0,
+   "zb": 87570000.0,
+   "weight_kN_per_m": 9.26,
+   "span_range_m": "19.0-21.5",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 380150.0,
+    "yb_calc": 352.77,
+    "ixx_calc": 30829127758.0,
+    "area_rel_pct": -0.131,
+    "yb_diff_mm": -0.23,
+    "ixx_rel_pct": -0.358
+   }
+  },
+  "M5": {
+   "depth": 960,
+   "lower_web": 440,
+   "area": 355050,
+   "yt": 603,
+   "yb": 357,
+   "ixx": 35810000000.0,
+   "zt": 59390000.0,
+   "zb": 100330000.0,
+   "weight_kN_per_m": 8.6,
+   "span_range_m": "20.5-22.5",
+   "provenance": "transcribed",
+   "weight_note": "printed '8.@' (scan defect); 8.6 inferred from neighbours, not used",
+   "residuals": {
+    "area_calc": 354550.0,
+    "yb_calc": 356.17,
+    "ixx_calc": 35658480794.0,
+    "area_rel_pct": -0.141,
+    "yb_diff_mm": -0.83,
+    "ixx_rel_pct": -0.423
+   }
+  },
+  "M6": {
+   "depth": 1040,
+   "lower_web": 440,
+   "area": 387050,
+   "yt": 631,
+   "yb": 409,
+   "ixx": 47560000000.0,
+   "zt": 75390000.0,
+   "zb": 116230000.0,
+   "weight_kN_per_m": 9.42,
+   "span_range_m": "22.0-24.0",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 386550.0,
+    "yb_calc": 408.44,
+    "ixx_calc": 47389088308.0,
+    "area_rel_pct": -0.129,
+    "yb_diff_mm": -0.56,
+    "ixx_rel_pct": -0.359
+   }
+  },
+  "M7": {
+   "depth": 1120,
+   "lower_web": 440,
+   "area": 419050,
+   "yt": 660,
+   "yb": 460,
+   "ixx": 60460000000.0,
+   "zt": 91530000.0,
+   "zb": 131540000.0,
+   "weight_kN_per_m": 10.2,
+   "span_range_m": "23.5-26.0",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 418550.0,
+    "yb_calc": 458.82,
+    "ixx_calc": 60258163769.0,
+    "area_rel_pct": -0.119,
+    "yb_diff_mm": -1.18,
+    "ixx_rel_pct": -0.334
+   }
+  },
+  "M8": {
+   "depth": 1200,
+   "lower_web": 680,
+   "area": 393450,
+   "yt": 746,
+   "yb": 454,
+   "ixx": 65190000000.0,
+   "zt": 87390000.0,
+   "zb": 143570000.0,
+   "weight_kN_per_m": 9.58,
+   "span_range_m": "25.0-27.0",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 392950.0,
+    "yb_calc": 453.17,
+    "ixx_calc": 64943074135.0,
+    "area_rel_pct": -0.127,
+    "yb_diff_mm": -0.83,
+    "ixx_rel_pct": -0.379
+   }
+  },
+  "M9": {
+   "depth": 1280,
+   "lower_web": 680,
+   "area": 425450,
+   "yt": 768,
+   "yb": 512,
+   "ixx": 82980000000.0,
+   "zt": 108090000.0,
+   "zb": 161570000.0,
+   "weight_kN_per_m": 10.35,
+   "span_range_m": "26.5-28.5",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 424950.0,
+    "yb_calc": 511.48,
+    "ixx_calc": 82717138443.0,
+    "area_rel_pct": -0.118,
+    "yb_diff_mm": -0.52,
+    "ixx_rel_pct": -0.317
+   }
+  },
+  "M10": {
+   "depth": 1360,
+   "lower_web": 680,
+   "area": 457150,
+   "yt": 792,
+   "yb": 568,
+   "ixx": 101880000000.0,
+   "zt": 128650000.0,
+   "zb": 179350000.0,
+   "weight_kN_per_m": 11.13,
+   "span_range_m": "28.0-29.0",
+   "provenance": "transcribed",
+   "residuals": {
+    "area_calc": 456950.0,
+    "yb_calc": 567.22,
+    "ixx_calc": 101606031866.0,
+    "area_rel_pct": -0.044,
+    "yb_diff_mm": -0.78,
+    "ixx_rel_pct": -0.269
+   }
+  }
+ }
+}

@@ -73,6 +73,9 @@ class AashtoIBeamSection:
 
     SIZES = ("I", "II", "III", "IV", "V", "VI")
 
+    provenance = "transcribed"
+    source_status = "historic standard (PCI BDM App. B-7, Nov 2011)"
+
     def __init__(self, size: str = "I") -> None:
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

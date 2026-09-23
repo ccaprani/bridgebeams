@@ -1,0 +1,4765 @@
+{
+ "schema": "round2-us-texas-states-v1",
+ "topic": "us-texas-states",
+ "date": "2026-09-23",
+ "profiles_total": 433,
+ "package_data_files": [
+  "txdot_beams.json",
+  "state_co_cbt.json",
+  "state_va_girders.json",
+  "state_ca_girders.json",
+  "state_mo_girders.json",
+  "state_mo_slabs_boxes.json",
+  "state_ia_beams.json",
+  "state_ne_nu.json",
+  "state_wi_girders.json",
+  "state_il_deck_beams.json",
+  "state_or_girders.json",
+  "state_pa_bd652m.json",
+  "state_ny_bd_pc.json"
+ ],
+ "txdot": {
+  "schema": "bridgebeams-us-txdot-v1",
+  "units": "inch (source); public geometry in mm",
+  "origin": "soffit centre, y up",
+  "index_url": "https://www.dot.state.tx.us/insdtdot/orgchart/cmd/cserve/standard/bridge-e.htm",
+  "index_local": "sources/expansion/round2/us/txdot/index.htm",
+  "index_sha256": "64e33285875ca2eba7ad6e3445dd9b715948d129afcfed6c278deb0a87fc48ac",
+  "families": {
+   "TX": {
+    "source": {
+     "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGD-23.pdf",
+     "local_path": "sources/expansion/round2/us/txdot/IG-IGD-23.pdf",
+     "sha256": "35af35f82d321fbfdd69c5f43a13b39786bcf5b5c8d023e7edf65a860e2bab8e",
+     "pdf_page": 1,
+     "printed_page": "IGD sheet 1 of 2",
+     "retrieved": "2026-09-23",
+     "status": "current standard (IGD, (c) August 2017, rev. 10-19 and 3-23)"
+    },
+    "template_in": {
+     "bottom_width": 32,
+     "web_width": 7,
+     "bottom_taper_run": 9.5,
+     "bottom_taper_rise": 4.75,
+     "bottom_fillet": 3.0,
+     "top_edge": 3.5,
+     "top_fillet": 2.0,
+     "top_fillet_run": 2.0,
+     "soffit_chamfer": 0.75
+    },
+    "geometry_notes": [
+     "Right half: soffit chamfer 3/4 in (callout '3/4 in bottom chamfer (Typ)'); bottom flange edge height 6 3/4 (Tx28-40) or 8 3/4 (Tx46-70); 1:2 taper 9 1/2 run x 4 3/4 rise; 3x3 in web fillet; 7 in web; 2x2 in top fillet; top taper 12 1/2 (15 1/2 for Tx62/70) run with 2 (2 1/2) in rise; 3 1/2 in flange edge.",
+     "Clear web B = D - (3.5 + taper rise + 2 + 3 + 4.75 + edge height) reproduces the printed B column for all sizes.",
+     "Top-flange edges are square on the drawing; 6 in bar R projection and optional 3/4 in vertical end chamfer are not part of the section."
+    ],
+    "sections": {
+     "Tx28": {
+      "depth": 28,
+      "top_width": 36,
+      "bottom_edge": 6.75,
+      "top_taper_rise": 2.0,
+      "top_taper_run": 12.5,
+      "clear_web_B": 6,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT IGD, rev. March 2023)",
+      "published": {
+       "area": 585,
+       "yt": 15.02,
+       "yb": 12.98,
+       "ix": 52772,
+       "iy": 40559
+      },
+      "residuals": {
+       "area_in2": 0.312,
+       "area_pct": 0.053,
+       "yb_in": 0.0003,
+       "ix_pct": -0.0009,
+       "iy_pct": 0.0012
+      }
+     },
+     "Tx34": {
+      "depth": 34,
+      "top_width": 36,
+      "bottom_edge": 6.75,
+      "top_taper_rise": 2.0,
+      "top_taper_run": 12.5,
+      "clear_web_B": 12,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT IGD, rev. March 2023)",
+      "published": {
+       "area": 627,
+       "yt": 18.49,
+       "yb": 15.51,
+       "ix": 88355,
+       "iy": 40731
+      },
+      "residuals": {
+       "area_in2": 0.312,
+       "area_pct": 0.05,
+       "yb_in": 0.0015,
+       "ix_pct": 0.0005,
+       "iy_pct": -0.0
+      }
+     },
+     "Tx40": {
+      "depth": 40,
+      "top_width": 36,
+      "bottom_edge": 6.75,
+      "top_taper_rise": 2.0,
+      "top_taper_run": 12.5,
+      "clear_web_B": 18,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT IGD, rev. March 2023)",
+      "published": {
+       "area": 669,
+       "yt": 21.9,
+       "yb": 18.1,
+       "ix": 134990,
+       "iy": 40902
+      },
+      "residuals": {
+       "area_in2": 0.312,
+       "area_pct": 0.047,
+       "yb_in": 0.0015,
+       "ix_pct": -0.0001,
+       "iy_pct": 0.0012
+      }
+     },
+     "Tx46": {
+      "depth": 46,
+      "top_width": 36,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 2.0,
+      "top_taper_run": 12.5,
+      "clear_web_B": 22,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT IGD, rev. March 2023)",
+      "published": {
+       "area": 761,
+       "yt": 25.9,
+       "yb": 20.1,
+       "ix": 198089,
+       "iy": 46478
+      },
+      "residuals": {
+       "area_in2": 0.312,
+       "area_pct": 0.041,
+       "yb_in": 0.0038,
+       "ix_pct": 0.0002,
+       "iy_pct": 0.0003
+      }
+     },
+     "Tx54": {
+      "depth": 54,
+      "top_width": 36,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 2.0,
+      "top_taper_run": 12.5,
+      "clear_web_B": 30,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT IGD, rev. March 2023)",
+      "published": {
+       "area": 817,
+       "yt": 30.49,
+       "yb": 23.51,
+       "ix": 299740,
+       "iy": 46707
+      },
+      "residuals": {
+       "area_in2": 0.312,
+       "area_pct": 0.038,
+       "yb_in": -0.0021,
+       "ix_pct": -0.0001,
+       "iy_pct": -0.0004
+      }
+     },
+     "Tx62": {
+      "depth": 62,
+      "top_width": 42,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 2.5,
+      "top_taper_run": 15.5,
+      "clear_web_B": 37.5,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT IGD, rev. March 2023)",
+      "published": {
+       "area": 910,
+       "yt": 33.72,
+       "yb": 28.28,
+       "ix": 463072,
+       "iy": 57351
+      },
+      "residuals": {
+       "area_in2": 0.062,
+       "area_pct": 0.007,
+       "yb_in": -0.0031,
+       "ix_pct": -0.0,
+       "iy_pct": -0.0007
+      }
+     },
+     "Tx70": {
+      "depth": 70,
+      "top_width": 42,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 2.5,
+      "top_taper_run": 15.5,
+      "clear_web_B": 45.5,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT IGD, rev. March 2023)",
+      "published": {
+       "area": 966,
+       "yt": 38.09,
+       "yb": 31.91,
+       "ix": 628747,
+       "iy": 57579
+      },
+      "residuals": {
+       "area_in2": 0.062,
+       "area_pct": 0.006,
+       "yb_in": 0.0049,
+       "ix_pct": -0.0,
+       "iy_pct": 0.0005
+      }
+     }
+    }
+   },
+   "WF": {
+    "source": {
+     "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-WF-IGD-24.pdf",
+     "local_path": "sources/expansion/round2/us/txdot/IG-WF-IGD-24.pdf",
+     "sha256": "363dc8c44dbdaee42bf52a10a074cb50a746d958cfcf33955fce083a9cd0c6f7",
+     "pdf_page": 2,
+     "printed_page": "WF-IGD sheet 2 of 3",
+     "retrieved": "2026-09-23",
+     "status": "current standard (WF-IGD, (c) August 2024)"
+    },
+    "template_in": {
+     "bottom_width": 32,
+     "web_width": 7,
+     "bottom_taper_run": 9.5,
+     "bottom_taper_rise": 4.75,
+     "bottom_fillet": 3.0,
+     "top_edge": 3.5,
+     "top_fillet": 2.0,
+     "top_fillet_run": 2.0,
+     "soffit_chamfer": 0.75
+    },
+    "geometry_notes": [
+     "Same bottom flange/web template as IGD; 72 in (WF-Tx28-54) or 84 in (WF-Tx62/70) top flange; taper rise 4 7/8 (5 7/8) over 30 1/2 (36 1/2) run; 3 1/2 in edge.",
+     "Exterior-girder curb (6 in x 1'-0\") and 3/4 in drip bead are omitted: they are 'outer side of exterior girders only' (note 14) and the printed properties exclude them (exact match).",
+     "WF-Tx62 printed Ix 660,613 in^4 disagrees with the outline by exactly 20,000 in^4 while A, Yb, Iy and weight match; treated as a digit misprint of 680,613 and pinned."
+    ],
+    "sections": {
+     "WF-Tx28": {
+      "depth": 28,
+      "top_width": 72,
+      "bottom_edge": 6.75,
+      "top_taper_rise": 4.875,
+      "top_taper_run": 30.5,
+      "clear_web_B": 3.125,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT WF-IGD, August 2024)",
+      "published": {
+       "area": 847,
+       "yt": 11.53,
+       "yb": 16.47,
+       "ix": 77175,
+       "iy": 177678
+      },
+      "residuals": {
+       "area_in2": -0.5,
+       "area_pct": -0.059,
+       "yb_in": -0.0008,
+       "ix_pct": -0.0001,
+       "iy_pct": -0.0001
+      }
+     },
+     "WF-Tx34": {
+      "depth": 34,
+      "top_width": 72,
+      "bottom_edge": 6.75,
+      "top_taper_rise": 4.875,
+      "top_taper_run": 30.5,
+      "clear_web_B": 9.125,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT WF-IGD, August 2024)",
+      "published": {
+       "area": 889,
+       "yt": 14.14,
+       "yb": 19.86,
+       "ix": 129931,
+       "iy": 177849
+      },
+      "residuals": {
+       "area_in2": -0.5,
+       "area_pct": -0.056,
+       "yb_in": -0.0049,
+       "ix_pct": 0.0,
+       "iy_pct": 0.0002
+      }
+     },
+     "WF-Tx40": {
+      "depth": 40,
+      "top_width": 72,
+      "bottom_edge": 6.75,
+      "top_taper_rise": 4.875,
+      "top_taper_run": 30.5,
+      "clear_web_B": 15.125,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT WF-IGD, August 2024)",
+      "published": {
+       "area": 931,
+       "yt": 16.79,
+       "yb": 23.21,
+       "ix": 198439,
+       "iy": 178021
+      },
+      "residuals": {
+       "area_in2": -0.5,
+       "area_pct": -0.054,
+       "yb_in": -0.0038,
+       "ix_pct": 0.0002,
+       "iy_pct": -0.0001
+      }
+     },
+     "WF-Tx46": {
+      "depth": 46,
+      "top_width": 72,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 4.875,
+      "top_taper_run": 30.5,
+      "clear_web_B": 19.125,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT WF-IGD, August 2024)",
+      "published": {
+       "area": 1023,
+       "yt": 20.23,
+       "yb": 25.77,
+       "ix": 295105,
+       "iy": 183597
+      },
+      "residuals": {
+       "area_in2": -0.5,
+       "area_pct": -0.049,
+       "yb_in": 0.0004,
+       "ix_pct": -0.0,
+       "iy_pct": -0.0003
+      }
+     },
+     "WF-Tx54": {
+      "depth": 54,
+      "top_width": 72,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 4.875,
+      "top_taper_run": 30.5,
+      "clear_web_B": 27.125,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT WF-IGD, August 2024)",
+      "published": {
+       "area": 1079,
+       "yt": 24.01,
+       "yb": 29.99,
+       "ix": 443002,
+       "iy": 183825
+      },
+      "residuals": {
+       "area_in2": -0.5,
+       "area_pct": -0.046,
+       "yb_in": 0.0033,
+       "ix_pct": -0.0001,
+       "iy_pct": 0.0001
+      }
+     },
+     "WF-Tx62": {
+      "depth": 62,
+      "top_width": 84,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 5.875,
+      "top_taper_run": 36.5,
+      "clear_web_B": 34.125,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT WF-IGD, August 2024)",
+      "published": {
+       "area": 1246,
+       "yt": 25.73,
+       "yb": 36.27,
+       "ix": 660613,
+       "iy": 286765
+      },
+      "pinned_discrepancy": {
+       "field": "ix",
+       "printed": 660613,
+       "computed": 680613,
+       "note": "printed value 20,000 in^4 low; likely digit misprint"
+      },
+      "residuals": {
+       "area_in2": 0.25,
+       "area_pct": 0.02,
+       "yb_in": -0.0009,
+       "ix_pct": 3.0274,
+       "iy_pct": 0.0
+      }
+     },
+     "WF-Tx70": {
+      "depth": 70,
+      "top_width": 84,
+      "bottom_edge": 8.75,
+      "top_taper_rise": 5.875,
+      "top_taper_run": 36.5,
+      "clear_web_B": 42.125,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT WF-IGD, August 2024)",
+      "published": {
+       "area": 1302,
+       "yt": 29.31,
+       "yb": 40.69,
+       "ix": 918917,
+       "iy": 286994
+      },
+      "residuals": {
+       "area_in2": 0.25,
+       "area_pct": 0.019,
+       "yb_in": -0.0006,
+       "ix_pct": 0.0,
+       "iy_pct": -0.0001
+      }
+     }
+    }
+   },
+   "LEGACY_I": {
+    "source": {
+     "url": "https://ftp.dot.state.tx.us/pub/txdot-info/isd/txdotapps/support/user_guide_pstrs14.pdf",
+     "local_path": "sources/expansion/round2/us/txdot/pstrs14_user_guide.pdf",
+     "sha256": "9d805d2c6c4a34f16d4f90d6845182b200693f004cd83b665b0b7f67f3197041",
+     "pdf_page": 92,
+     "printed_page": "92",
+     "retrieved": "2026-09-23",
+     "status": "PSTRS14 v6.1 user guide, February 2016 (TxDOT program library figure)"
+    },
+    "geometry_notes": [
+     "Figure 1 dimension table A..W; outline: soffit, bottom edge C, bottom taper E, web F, top taper G, top edge H.",
+     "Soffit chamfer drawn but not dimensioned; a 3/4 in chamfer (TxDOT convention on current sheets) reproduces A, Yb and I exactly for Types A, B, C and 72.",
+     "Type 54: printed F = 30 in gives C+E+F+G+H = 52 in, not D = 54 in; F = 32 in reproduces A, Yb and I exactly, so F = 32 is used and the printed 30 is pinned as a misprint.",
+     "Type IV in the same figure is the AASHTO Type IV outline (owned by the PCI/AASHTO family module) and is not duplicated here."
+    ],
+    "sections": {
+     "A": {
+      "A": 12,
+      "B": 16,
+      "C": 5,
+      "D": 28,
+      "E": 5,
+      "F": 11,
+      "G": 3,
+      "H": 4,
+      "W": 6,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "legacy TxDOT I-beam (superseded by Tx girders; PSTRS14 library, Feb 2016)",
+      "published": {
+       "area": 275.4,
+       "yt": 15.39,
+       "yb": 12.61,
+       "ix": 22658
+      },
+      "residuals": {
+       "area_in2": 0.038,
+       "area_pct": 0.014,
+       "yb_in": 0.0046,
+       "ix_pct": 0.0013
+      }
+     },
+     "B": {
+      "A": 12,
+      "B": 18,
+      "C": 6,
+      "D": 34,
+      "E": 5.75,
+      "F": 14,
+      "G": 2.75,
+      "H": 5.5,
+      "W": 6.5,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "legacy TxDOT I-beam (superseded by Tx girders; PSTRS14 library, Feb 2016)",
+      "published": {
+       "area": 360.3,
+       "yt": 19.07,
+       "yb": 14.93,
+       "ix": 43177
+      },
+      "residuals": {
+       "area_in2": 0.012,
+       "area_pct": 0.003,
+       "yb_in": 0.0001,
+       "ix_pct": -0.0003
+      }
+     },
+     "C": {
+      "A": 14,
+      "B": 22,
+      "C": 7,
+      "D": 40,
+      "E": 7.5,
+      "F": 16,
+      "G": 3.5,
+      "H": 6,
+      "W": 7,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "legacy TxDOT I-beam (superseded by Tx girders; PSTRS14 library, Feb 2016)",
+      "published": {
+       "area": 494.9,
+       "yt": 22.91,
+       "yb": 17.09,
+       "ix": 82602
+      },
+      "residuals": {
+       "area_in2": 0.037,
+       "area_pct": 0.008,
+       "yb_in": -0.0011,
+       "ix_pct": -0.0003
+      }
+     },
+     "54": {
+      "A": 16,
+      "B": 16,
+      "C": 8,
+      "D": 54,
+      "E": 5,
+      "F": 32,
+      "G": 5,
+      "H": 4,
+      "W": 6,
+      "soffit_chamfer": 0.75,
+      "provenance": "fitted-reconstruction",
+      "source_status": "legacy TxDOT I-beam (superseded by Tx girders; PSTRS14 library, Feb 2016)",
+      "published": {
+       "area": 493.4,
+       "yt": 28.47,
+       "yb": 25.53,
+       "ix": 164022
+      },
+      "printed_F": 30,
+      "pinned_discrepancy": {
+       "field": "F",
+       "printed": 30,
+       "used": 32,
+       "note": "printed F inconsistent with D; F=32 reproduces A/Yb/I exactly"
+      },
+      "residuals": {
+       "area_in2": 0.037,
+       "area_pct": 0.008,
+       "yb_in": 0.0008,
+       "ix_pct": 0.0004
+      }
+     },
+     "72": {
+      "A": 22,
+      "B": 22,
+      "C": 11,
+      "D": 72,
+      "E": 7.5,
+      "F": 40.5,
+      "G": 7.5,
+      "H": 5.5,
+      "W": 7,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "legacy TxDOT I-beam (superseded by Tx girders; PSTRS14 library, Feb 2016)",
+      "published": {
+       "area": 863.4,
+       "yt": 38.27,
+       "yb": 33.73,
+       "ix": 532060
+      },
+      "residuals": {
+       "area_in2": 0.038,
+       "area_pct": 0.004,
+       "yb_in": 0.0001,
+       "ix_pct": 0.0001
+      }
+     }
+    }
+   },
+   "U": {
+    "source": {
+     "url": "https://ftp.dot.state.tx.us/pub/txdot-info/isd/txdotapps/support/user_guide_pstrs14.pdf",
+     "local_path": "sources/expansion/round2/us/txdot/pstrs14_user_guide.pdf",
+     "sha256": "9d805d2c6c4a34f16d4f90d6845182b200693f004cd83b665b0b7f67f3197041",
+     "pdf_page": 102,
+     "printed_page": "102",
+     "retrieved": "2026-09-23",
+     "status": "PSTRS14 v6.1 user guide, February 2016 (TxDOT program library figure)"
+    },
+    "supporting_sources": [
+     {
+      "url": "https://texashistory.unt.edu/ark:/67531/metapth637454/m2/1/high_res_d/u_beam_guide.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/u_beam_guide_2007.pdf",
+      "sha256": "8ff1cac7e958c0eb24d91305294d44a62c3ff13a785f7cbd5d89e6137f12aed4",
+      "pdf_page": null,
+      "printed_page": null,
+      "retrieved": "2026-09-23",
+      "status": "TxDOT (Draft) 11/16/2007 Prestressed Concrete U Beam Design Guide (no geometry)"
+     }
+    ],
+    "template_in": {
+     "bottom_width": 55,
+     "bottom_slab": 8.25,
+     "flange_top_width": 15.75,
+     "outer_edge_height": 5.875,
+     "outer_edge_batter": 0.375,
+     "flange_soffit_drop": 0.875,
+     "inner_chamfer_top_x": 25.25,
+     "inner_chamfer_top_y": 11.25,
+     "inner_chamfer_bottom_x": 21.5,
+     "web_normal_thickness": 5.0
+    },
+    "geometry_notes": [
+     "Figure 11 (PSTRS14): C top width, D depth, E soffit-to-flange-underside at web, F clear top opening, G inner kink half-width, H kink height above bottom slab, J/K outer offsets.",
+     "Outer web face from bottom corner (27.5, 0) to (27.5+J, E): slope J/E = 1:3.97 for both types. Flange outer edge: 3/8 in batter over 5 7/8 in; flange soffit falls 7/8 in to the web.",
+     "Inner web face: (F/2, D) -> (G, 8 1/4 + H) -> (25 1/4, 11 1/4) -> chamfer to (21 1/2, 8 1/4). The 1 3/4 in = F/2 - G run and 2'-1 1/4 / 1'-9 1/2 callouts are read from the figure.",
+     "Residuals vs printed: U40 area +2.8 in^2 (+0.28%), yb -0.01 in, I +0.23%; U54 area +1.7 in^2 (+0.15%), yb -0.02 in, I +0.23%. Likely small undimensioned corner rounding; not fitted away.",
+     "TxDOT retired the U-beam standard drawings (memo dated 06/11/2025 per the standards index); the UBD sheet is no longer on the TxDOT server (404)."
+    ],
+    "sections": {
+     "U40": {
+      "C": 89,
+      "D": 40,
+      "E": 33.25,
+      "F": 57.5,
+      "G": 27,
+      "H": 10.125,
+      "J": 8.375,
+      "K": 17.0,
+      "provenance": "transcribed-with-convention",
+      "source_status": "retired TxDOT standard (June 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 977.0,
+       "yt": 23.65,
+       "yb": 16.35,
+       "ix": 183050
+      },
+      "residuals": {
+       "area_in2": 2.766,
+       "area_pct": 0.283,
+       "yb_in": -0.0119,
+       "ix_pct": 0.2298
+      }
+     },
+     "U54": {
+      "C": 96,
+      "D": 54,
+      "E": 47.25,
+      "F": 64.5,
+      "G": 30.5,
+      "H": 24.125,
+      "J": 11.875,
+      "K": 20.5,
+      "provenance": "transcribed-with-convention",
+      "source_status": "retired TxDOT standard (June 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1121.1,
+       "yt": 31.54,
+       "yb": 22.46,
+       "ix": 403458
+      },
+      "residuals": {
+       "area_in2": 1.728,
+       "area_pct": 0.154,
+       "yb_in": -0.0193,
+       "ix_pct": 0.229
+      }
+     }
+    }
+   },
+   "BOX": {
+    "sources": {
+     "B20": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/BB-B20-12.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/BB-B20-12.pdf",
+      "sha256": "fdeee98ca7ca3482dd32c0a0281d29b4cbfb32d5c111387c102151b4a4a4b35f",
+      "pdf_page": 1,
+      "printed_page": "sheet 1 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (BB, (c) December 2006, rev. 01-12)"
+     },
+     "B28": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/BB-B28-12.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/BB-B28-12.pdf",
+      "sha256": "284b509b5baced386ba3f157fbc5ada00d4cf4e8237331f7eef28616b17c7eed",
+      "pdf_page": 1,
+      "printed_page": "sheet 1 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (BB, (c) December 2006, rev. 01-12)"
+     },
+     "B34": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/BB-B34-12.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/BB-B34-12.pdf",
+      "sha256": "0343643e7508cda1fab4348bf57c4e5b2fc5466cbf88c4075e49c21220fac3cb",
+      "pdf_page": 1,
+      "printed_page": "sheet 1 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (BB, (c) December 2006, rev. 01-12)"
+     },
+     "B40": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/BB-B40-12.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/BB-B40-12.pdf",
+      "sha256": "05148523edca4c027afdd7ea32357fa1b9329fb464fd3a8f2e22e2444dc870b8",
+      "pdf_page": 1,
+      "printed_page": "sheet 1 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (BB, (c) December 2006, rev. 01-12)"
+     }
+    },
+    "geometry_notes": [
+     "Outline (right half): 3/4 in soffit chamfer (general note 'Chamfer bottom beam corners 3/4 in'); full-width edge of height he; 45 deg taper inward by r; vertical recess face; 45 deg taper outward by r-2 to the top width (bottom width minus 4 in); vertical top edge.",
+     "Rectangular void: 5 in bottom slab, 5 1/2 in top slab, width M from the typical section. B40 'over 100 feet' variant adds 5x5 in void corner chamfers at the bottom (note 8); encoded as size suffix '-C'.",
+     "Transverse tendon holes, drain holes, optional chamfer strip and shear-key grout are excluded; all 10 profiles reproduce the printed A, Ytop, Ybott and I exactly."
+    ],
+    "sections": {
+     "4B20": {
+      "sheet": "B20",
+      "bottom_width": 47.75,
+      "depth": 20,
+      "edge_height": 5,
+      "recess": 4,
+      "top_edge_height": 5,
+      "void_width": 29.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 591.8,
+       "yt": 10.19,
+       "yb": 9.81,
+       "ix": 28086
+      },
+      "residuals": {
+       "area_in2": 0.012,
+       "area_pct": 0.002,
+       "yb_in": -0.0046,
+       "ix_pct": 0.0006
+      }
+     },
+     "5B20": {
+      "sheet": "B20",
+      "bottom_width": 59.75,
+      "depth": 20,
+      "edge_height": 5,
+      "recess": 4,
+      "top_edge_height": 5,
+      "void_width": 41.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 717.8,
+       "yt": 10.12,
+       "yb": 9.88,
+       "ix": 35234
+      },
+      "residuals": {
+       "area_in2": 0.013,
+       "area_pct": 0.002,
+       "yb_in": -0.0008,
+       "ix_pct": -0.001
+      }
+     },
+     "4B28": {
+      "sheet": "B28",
+      "bottom_width": 47.75,
+      "depth": 28,
+      "edge_height": 5,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 27.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 678.8,
+       "yt": 14.38,
+       "yb": 13.62,
+       "ix": 68745
+      },
+      "residuals": {
+       "area_in2": 0.012,
+       "area_pct": 0.002,
+       "yb_in": -0.0033,
+       "ix_pct": -0.0005
+      }
+     },
+     "5B28": {
+      "sheet": "B28",
+      "bottom_width": 59.75,
+      "depth": 28,
+      "edge_height": 5,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 39.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 804.8,
+       "yt": 14.26,
+       "yb": 13.74,
+       "ix": 85370
+      },
+      "residuals": {
+       "area_in2": 0.012,
+       "area_pct": 0.002,
+       "yb_in": 0.0019,
+       "ix_pct": 0.0003
+      }
+     },
+     "4B34": {
+      "sheet": "B34",
+      "bottom_width": 47.75,
+      "depth": 34,
+      "edge_height": 11,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 27.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 798.8,
+       "yt": 17.92,
+       "yb": 16.08,
+       "ix": 115655
+      },
+      "residuals": {
+       "area_in2": 0.012,
+       "area_pct": 0.002,
+       "yb_in": 0.0025,
+       "ix_pct": -0.0001
+      }
+     },
+     "5B34": {
+      "sheet": "B34",
+      "bottom_width": 59.75,
+      "depth": 34,
+      "edge_height": 11,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 39.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 924.8,
+       "yt": 17.72,
+       "yb": 16.28,
+       "ix": 142161
+      },
+      "residuals": {
+       "area_in2": 0.013,
+       "area_pct": 0.001,
+       "yb_in": 0.0038,
+       "ix_pct": 0.0002
+      }
+     },
+     "4B40": {
+      "sheet": "B40",
+      "bottom_width": 47.75,
+      "depth": 40,
+      "edge_height": 17,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 27.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 918.8,
+       "yt": 21.31,
+       "yb": 18.69,
+       "ix": 176607
+      },
+      "residuals": {
+       "area_in2": 0.013,
+       "area_pct": 0.001,
+       "yb_in": -0.0021,
+       "ix_pct": -0.0001
+      }
+     },
+     "4B40-C": {
+      "sheet": "B40",
+      "bottom_width": 47.75,
+      "depth": 40,
+      "edge_height": 17,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 27.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 5,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 943.8,
+       "yt": 21.63,
+       "yb": 18.37,
+       "ix": 180159
+      },
+      "residuals": {
+       "area_in2": 0.013,
+       "area_pct": 0.001,
+       "yb_in": -0.0005,
+       "ix_pct": -0.0002
+      }
+     },
+     "5B40": {
+      "sheet": "B40",
+      "bottom_width": 59.75,
+      "depth": 40,
+      "edge_height": 17,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 39.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 1044.8,
+       "yt": 21.07,
+       "yb": 18.93,
+       "ix": 215300
+      },
+      "residuals": {
+       "area_in2": 0.013,
+       "area_pct": 0.001,
+       "yb_in": 0.0008,
+       "ix_pct": -0.0001
+      }
+     },
+     "5B40-C": {
+      "sheet": "B40",
+      "bottom_width": 59.75,
+      "depth": 40,
+      "edge_height": 17,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 39.75,
+      "void_bottom": 5.0,
+      "top_slab": 5.5,
+      "void_chamfer": 5,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT BB, Dec 2006 rev. Jan 2012)",
+      "published": {
+       "area": 1069.8,
+       "yt": 21.36,
+       "yb": 18.64,
+       "ix": 219007
+      },
+      "residuals": {
+       "area_in2": 0.013,
+       "area_pct": 0.001,
+       "yb_in": 0.0042,
+       "ix_pct": -0.0
+      }
+     }
+    }
+   },
+   "XB": {
+    "sources": {
+     "XB20": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/XB-XB20-22.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/XB-XB20-22.pdf",
+      "sha256": "b065562e32de1b71ef587faef7795c02a4c7bdaa48601b9b2705181d30748fc3",
+      "pdf_page": 2,
+      "printed_page": "sheet 2 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (XB, (c) August 2022)"
+     },
+     "XB28": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/XB-XB28-22.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/XB-XB28-22.pdf",
+      "sha256": "79b8e47504fcba1e875ddc9321177309c7914980b345a91c37f94764b4a7d6f3",
+      "pdf_page": 2,
+      "printed_page": "sheet 2 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (XB, (c) August 2022)"
+     },
+     "XB34": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/XB-XB34-22.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/XB-XB34-22.pdf",
+      "sha256": "9fa57210c827ce0b1763a00f3c90b139ea753d2beb60e17ce2fbe443caa1b641",
+      "pdf_page": 2,
+      "printed_page": "sheet 2 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (XB, (c) August 2022)"
+     },
+     "XB40": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/XB-XB40-22.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/XB-XB40-22.pdf",
+      "sha256": "c337ecd62d19ffdcc06b3e26a20967b68d0e854bfe8f13f0e2997ec85e9c3c85",
+      "pdf_page": 2,
+      "printed_page": "sheet 2 of 3",
+      "retrieved": "2026-09-23",
+      "status": "current standard (XB, (c) August 2022)"
+     }
+    },
+    "geometry_notes": [
+     "Same exterior outline as the BB box of the same depth; 7 in bottom slab, 5 1/2 in top slab; void 2'-0 3/4 (4XB) or 3'-0 3/4 (5XB) wide.",
+     "Soffit corner chamfer is drawn but not called out on the XB sheets; the 3/4 in chamfer of the BB sheets is adopted (convention) and reproduces all printed A/Yt/Yb/I exactly (without it I is ~0.1-0.2% high)."
+    ],
+    "sections": {
+     "4XB20": {
+      "sheet": "XB20",
+      "bottom_width": 47.75,
+      "depth": 20,
+      "edge_height": 5,
+      "recess": 4,
+      "top_edge_height": 5,
+      "void_width": 24.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 689,
+       "yt": 10.47,
+       "yb": 9.53,
+       "ix": 29124
+      },
+      "residuals": {
+       "area_in2": -0.188,
+       "area_pct": -0.027,
+       "yb_in": -0.0019,
+       "ix_pct": -0.0003
+      }
+     },
+     "5XB20": {
+      "sheet": "XB20",
+      "bottom_width": 59.75,
+      "depth": 20,
+      "edge_height": 5,
+      "recess": 4,
+      "top_edge_height": 5,
+      "void_width": 36.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 839,
+       "yt": 10.47,
+       "yb": 9.53,
+       "ix": 36621
+      },
+      "residuals": {
+       "area_in2": -0.187,
+       "area_pct": -0.022,
+       "yb_in": 0.002,
+       "ix_pct": 0.0002
+      }
+     },
+     "4XB28": {
+      "sheet": "XB28",
+      "bottom_width": 47.75,
+      "depth": 28,
+      "edge_height": 5,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 24.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 781,
+       "yt": 14.86,
+       "yb": 13.14,
+       "ix": 72798
+      },
+      "residuals": {
+       "area_in2": -0.188,
+       "area_pct": -0.024,
+       "yb_in": 0.0028,
+       "ix_pct": 0.0004
+      }
+     },
+     "5XB28": {
+      "sheet": "XB28",
+      "bottom_width": 59.75,
+      "depth": 28,
+      "edge_height": 5,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 36.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 931,
+       "yt": 14.87,
+       "yb": 13.13,
+       "ix": 90793
+      },
+      "residuals": {
+       "area_in2": -0.188,
+       "area_pct": -0.02,
+       "yb_in": 0.0011,
+       "ix_pct": -0.0003
+      }
+     },
+     "4XB34": {
+      "sheet": "XB34",
+      "bottom_width": 47.75,
+      "depth": 34,
+      "edge_height": 11,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 24.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 919,
+       "yt": 18.41,
+       "yb": 15.59,
+       "ix": 123757
+      },
+      "residuals": {
+       "area_in2": -0.188,
+       "area_pct": -0.02,
+       "yb_in": 0.0006,
+       "ix_pct": -0.0001
+      }
+     },
+     "5XB34": {
+      "sheet": "XB34",
+      "bottom_width": 59.75,
+      "depth": 34,
+      "edge_height": 11,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 36.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 1069,
+       "yt": 18.39,
+       "yb": 15.61,
+       "ix": 152730
+      },
+      "residuals": {
+       "area_in2": -0.188,
+       "area_pct": -0.018,
+       "yb_in": -0.0027,
+       "ix_pct": -0.0003
+      }
+     },
+     "4XB40": {
+      "sheet": "XB40",
+      "bottom_width": 47.75,
+      "depth": 40,
+      "edge_height": 17,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 24.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 1057,
+       "yt": 21.82,
+       "yb": 18.18,
+       "ix": 190840
+      },
+      "residuals": {
+       "area_in2": -0.188,
+       "area_pct": -0.018,
+       "yb_in": 0.0026,
+       "ix_pct": 0.0
+      }
+     },
+     "5XB40": {
+      "sheet": "XB40",
+      "bottom_width": 59.75,
+      "depth": 40,
+      "edge_height": 17,
+      "recess": 5,
+      "top_edge_height": 4,
+      "void_width": 36.75,
+      "void_bottom": 7.0,
+      "top_slab": 5.5,
+      "void_chamfer": 0,
+      "soffit_chamfer": 0.75,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current standard (TxDOT XB, August 2022)",
+      "published": {
+       "area": 1207,
+       "yt": 21.8,
+       "yb": 18.2,
+       "ix": 233453
+      },
+      "residuals": {
+       "area_in2": -0.188,
+       "area_pct": -0.016,
+       "yb_in": 0.0034,
+       "ix_pct": -0.0
+      }
+     }
+    }
+   },
+   "SLAB": {
+    "sources": {
+     "4SB12": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/PSB-4SB12-17.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/PSB-4SB12-17.pdf",
+      "sha256": "17003d4f03a6137f46ecfdfea6a2050e77417bc32a1b7b5913db56faf458410e",
+      "pdf_page": 1,
+      "printed_page": "single sheet",
+      "retrieved": "2026-09-23",
+      "status": "current standard (PSB, (c) January 2017)"
+     },
+     "4SB15": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/PSB-4SB15-17.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/PSB-4SB15-17.pdf",
+      "sha256": "c99eff6d72fe18ab22214e5940b0e6ca5452a574d9284a8eb0f6f745be26dba9",
+      "pdf_page": 1,
+      "printed_page": "single sheet",
+      "retrieved": "2026-09-23",
+      "status": "current standard (PSB, (c) January 2017)"
+     },
+     "5SB12": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/PSB-5SB12-17.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/PSB-5SB12-17.pdf",
+      "sha256": "3b475742c684f5be86f5689857971164d5d11ae143da347783696b0d2f20ff17",
+      "pdf_page": 1,
+      "printed_page": "single sheet",
+      "retrieved": "2026-09-23",
+      "status": "current standard (PSB, (c) January 2017)"
+     },
+     "5SB15": {
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/PSB-5SB15-17.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/PSB-5SB15-17.pdf",
+      "sha256": "b7b920a87400a822e0a8b15b6b6460512b5368f3619be8b34d14d860dcc8b4d1",
+      "pdf_page": 1,
+      "printed_page": "single sheet",
+      "retrieved": "2026-09-23",
+      "status": "current standard (PSB, (c) January 2017)"
+     }
+    },
+    "geometry_notes": [
+     "Solid rectangle 3'-11 3/4 or 4'-11 3/4 wide by 12 or 15 in. General notes require 3/4 in chamfers on exposed corners, but the printed properties are those of the unchamfered rectangle (A = b*h exactly), so the rectangle is used.",
+     "4SB15 printed I = 13,429 in^4 vs 13,429.7 computed (truncated, not rounded)."
+    ],
+    "sections": {
+     "4SB12": {
+      "width": 47.75,
+      "depth": 12,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT PSB, January 2017)",
+      "published": {
+       "area": 573.0,
+       "yt": 6.0,
+       "yb": 6.0,
+       "ix": 6876
+      },
+      "residuals": {
+       "area_in2": -0.0,
+       "area_pct": -0.0,
+       "yb_in": -0.0,
+       "ix_pct": -0.0
+      }
+     },
+     "4SB15": {
+      "width": 47.75,
+      "depth": 15,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT PSB, January 2017)",
+      "published": {
+       "area": 716.2,
+       "yt": 7.5,
+       "yb": 7.5,
+       "ix": 13429
+      },
+      "residuals": {
+       "area_in2": 0.05,
+       "area_pct": 0.007,
+       "yb_in": 0.0,
+       "ix_pct": 0.0051
+      }
+     },
+     "5SB12": {
+      "width": 59.75,
+      "depth": 12,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT PSB, January 2017)",
+      "published": {
+       "area": 717.0,
+       "yt": 6.0,
+       "yb": 6.0,
+       "ix": 8604
+      },
+      "residuals": {
+       "area_in2": -0.0,
+       "area_pct": -0.0,
+       "yb_in": -0.0,
+       "ix_pct": 0.0
+      }
+     },
+     "5SB15": {
+      "width": 59.75,
+      "depth": 15,
+      "provenance": "transcribed",
+      "source_status": "current standard (TxDOT PSB, January 2017)",
+      "published": {
+       "area": 896.2,
+       "yt": 7.5,
+       "yb": 7.5,
+       "ix": 16805
+      },
+      "residuals": {
+       "area_in2": 0.05,
+       "area_pct": 0.006,
+       "yb_in": 0.0,
+       "ix_pct": -0.0019
+      }
+     }
+    }
+   },
+   "DS": {
+    "source": {
+     "url": "https://ftp.dot.state.tx.us/pub/txdot-info/isd/txdotapps/support/user_guide_pstrs14.pdf",
+     "local_path": "sources/expansion/round2/us/txdot/pstrs14_user_guide.pdf",
+     "sha256": "9d805d2c6c4a34f16d4f90d6845182b200693f004cd83b665b0b7f67f3197041",
+     "pdf_page": 107,
+     "printed_page": "107",
+     "retrieved": "2026-09-23",
+     "status": "PSTRS14 v6.1 user guide, February 2016 (TxDOT program library figure)"
+    },
+    "supporting_sources": [
+     {
+      "url": "https://www.pci.org/PCI_Docs/Papers/2006/Txdot-Standard-Prestressed-Bridge-Products.pdf",
+      "local_path": "sources/expansion/round2/us/txdot/pci2006_txdot_products.pdf",
+      "sha256": "e293ec418a0dcf59c423259236edaf10fdfa99fcaed8194039514bb7376aa025",
+      "pdf_page": 7,
+      "printed_page": "7",
+      "retrieved": "2026-09-23",
+      "status": "Eskridge & Holt, PCI NBC 2006, Fig. 9 (8 in deck on 5'-0 x 15 in slab beam)"
+     }
+    ],
+    "geometry_notes": [
+     "Printed: overall width A, overhang B, stem height C below an 8 in deck, stem width 4'-11 3/4.",
+     "NOT dimensioned: void size/position and the deck-edge slope. Fitted per depth family (common to 6/7/8 widths) by least squares to the 9 printed A/Yb/I values: DS20 void 35.480 x 6.608 in at 6.224 in above soffit, deck-edge undercut 2.194 in; DS23 void 44.321 x 8.432 in at 6.696 in, undercut 2.693 in. Deck edge modelled as a straight slope from (A/2 - t, C) to (A/2, D) as drawn in PSTRS Fig. 16.",
+     "Fit residuals <= 0.01% area, <= 0.004 in yb, <= 0.005% I, but the void and edge are reconstructions, not transcriptions.",
+     "TxDOT retired the decked slab beam standards (memo dated 01/31/2025 per the standards index)."
+    ],
+    "fit": {
+     "20": {
+      "void_width": 35.48,
+      "void_height": 6.608,
+      "void_bottom": 6.224,
+      "edge_undercut": 2.194
+     },
+     "23": {
+      "void_width": 44.321,
+      "void_height": 8.432,
+      "void_bottom": 6.696,
+      "edge_undercut": 2.693
+     }
+    },
+    "sections": {
+     "6DS20": {
+      "width": 77.75,
+      "overhang": 9,
+      "stem_height": 12,
+      "deck": 8,
+      "stem_width": 59.75,
+      "provenance": "fitted-reconstruction",
+      "source_status": "retired TxDOT standard (January 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1087,
+       "yt": 9.18,
+       "yb": 10.82,
+       "ix": 43704
+      },
+      "residuals": {
+       "area_in2": -0.004,
+       "area_pct": -0.0,
+       "yb_in": 0.0013,
+       "ix_pct": -0.0043
+      }
+     },
+     "7DS20": {
+      "width": 89.75,
+      "overhang": 15,
+      "stem_height": 12,
+      "deck": 8,
+      "stem_width": 59.75,
+      "provenance": "fitted-reconstruction",
+      "source_status": "retired TxDOT standard (January 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1183,
+       "yt": 8.76,
+       "yb": 11.24,
+       "ix": 46580
+      },
+      "residuals": {
+       "area_in2": -0.004,
+       "area_pct": -0.0,
+       "yb_in": 0.0016,
+       "ix_pct": -0.0004
+      }
+     },
+     "8DS20": {
+      "width": 95.75,
+      "overhang": 18,
+      "stem_height": 12,
+      "deck": 8,
+      "stem_width": 59.75,
+      "provenance": "fitted-reconstruction",
+      "source_status": "retired TxDOT standard (January 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1231,
+       "yt": 8.57,
+       "yb": 11.43,
+       "ix": 47879
+      },
+      "residuals": {
+       "area_in2": -0.004,
+       "area_pct": -0.0,
+       "yb_in": -0.0029,
+       "ix_pct": 0.0027
+      }
+     },
+     "6DS23": {
+      "width": 77.75,
+      "overhang": 9,
+      "stem_height": 15,
+      "deck": 8,
+      "stem_width": 59.75,
+      "provenance": "fitted-reconstruction",
+      "source_status": "retired TxDOT standard (January 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1123,
+       "yt": 10.46,
+       "yb": 12.54,
+       "ix": 64997
+      },
+      "residuals": {
+       "area_in2": -0.009,
+       "area_pct": -0.001,
+       "yb_in": -0.0009,
+       "ix_pct": 0.0011
+      }
+     },
+     "7DS23": {
+      "width": 89.75,
+      "overhang": 15,
+      "stem_height": 15,
+      "deck": 8,
+      "stem_width": 59.75,
+      "provenance": "fitted-reconstruction",
+      "source_status": "retired TxDOT standard (January 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1219,
+       "yt": 9.95,
+       "yb": 13.05,
+       "ix": 69202
+      },
+      "residuals": {
+       "area_in2": -0.009,
+       "area_pct": -0.001,
+       "yb_in": -0.0021,
+       "ix_pct": -0.0007
+      }
+     },
+     "8DS23": {
+      "width": 95.75,
+      "overhang": 18,
+      "stem_height": 15,
+      "deck": 8,
+      "stem_width": 59.75,
+      "provenance": "fitted-reconstruction",
+      "source_status": "retired TxDOT standard (January 2025); PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1267,
+       "yt": 9.73,
+       "yb": 13.27,
+       "ix": 71095
+      },
+      "residuals": {
+       "area_in2": -0.009,
+       "area_pct": -0.001,
+       "yb_in": 0.0034,
+       "ix_pct": -0.002
+      }
+     }
+    }
+   },
+   "DT": {
+    "source": {
+     "url": "https://ftp.dot.state.tx.us/pub/txdot-info/isd/txdotapps/support/user_guide_pstrs14.pdf",
+     "local_path": "sources/expansion/round2/us/txdot/pstrs14_user_guide.pdf",
+     "sha256": "9d805d2c6c4a34f16d4f90d6845182b200693f004cd83b665b0b7f67f3197041",
+     "pdf_page": 99,
+     "printed_page": "99",
+     "retrieved": "2026-09-23",
+     "status": "PSTRS14 v6.1 user guide, February 2016 (TxDOT program library figure)"
+    },
+    "geometry_notes": [
+     "Printed: 6 in flange, overall width A, stem bottom width C, depth D, stem faces battered 3/4 in 12, 4'-0 between stems.",
+     "Stem centre spacing 48 in assumed for both T and HT (T: B = (A-48)/2 checks; HT printed B = 1'-1 7/8 does not close with A, so B is taken as not the stem centreline offset). Both families give the same area excess, supporting 48 in.",
+     "Omitted (not dimensioned): stem-flange fillets, flange-edge shear keys, exterior edge detail. Residuals: area +4.0 to +4.5 in^2 (<= 0.64%), yb +0.03 to +0.06 in, I +0.54% to +0.95% (all per size in 'residuals').",
+     "Double-T standards are not on the current TxDOT index (retired; status date unverified)."
+    ],
+    "sections": {
+     "6T22": {
+      "width": 71.75,
+      "stem_bottom": 7.75,
+      "depth": 22,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 706,
+       "yt": 7.26,
+       "yb": 14.74,
+       "ix": 26395
+      },
+      "residuals": {
+       "area_in2": 4.5,
+       "area_pct": 0.637,
+       "yb_in": 0.0451,
+       "ix_pct": 0.9485
+      }
+     },
+     "7T22": {
+      "width": 83.75,
+      "stem_bottom": 7.75,
+      "depth": 22,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 778,
+       "yt": 6.87,
+       "yb": 15.13,
+       "ix": 27797
+      },
+      "residuals": {
+       "area_in2": 4.5,
+       "area_pct": 0.578,
+       "yb_in": 0.0429,
+       "ix_pct": 0.8122
+      }
+     },
+     "8T22": {
+      "width": 95.75,
+      "stem_bottom": 7.75,
+      "depth": 22,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 850,
+       "yt": 6.54,
+       "yb": 15.46,
+       "ix": 28998
+      },
+      "residuals": {
+       "area_in2": 4.5,
+       "area_pct": 0.529,
+       "yb_in": 0.0354,
+       "ix_pct": 0.7119
+      }
+     },
+     "6T28": {
+      "width": 71.75,
+      "stem_bottom": 7,
+      "depth": 28,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 795,
+       "yt": 9.23,
+       "yb": 18.77,
+       "ix": 51233
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.503,
+       "yb_in": 0.0508,
+       "ix_pct": 0.8361
+      }
+     },
+     "7T28": {
+      "width": 83.75,
+      "stem_bottom": 7,
+      "depth": 28,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 867,
+       "yt": 8.71,
+       "yb": 19.29,
+       "ix": 54010
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.461,
+       "yb_in": 0.0416,
+       "ix_pct": 0.7206
+      }
+     },
+     "8T28": {
+      "width": 95.75,
+      "stem_bottom": 7,
+      "depth": 28,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 939,
+       "yt": 8.27,
+       "yb": 19.73,
+       "ix": 56395
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.426,
+       "yb_in": 0.0344,
+       "ix_pct": 0.633
+      }
+     },
+     "6T36": {
+      "width": 71.75,
+      "stem_bottom": 6,
+      "depth": 36,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 899,
+       "yt": 11.85,
+       "yb": 24.15,
+       "ix": 98984
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.445,
+       "yb_in": 0.0543,
+       "ix_pct": 0.7327
+      }
+     },
+     "7T36": {
+      "width": 83.75,
+      "stem_bottom": 6,
+      "depth": 36,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 971,
+       "yt": 11.19,
+       "yb": 24.81,
+       "ix": 104422
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.412,
+       "yb_in": 0.0438,
+       "ix_pct": 0.6341
+      }
+     },
+     "8T36": {
+      "width": 95.75,
+      "stem_bottom": 6,
+      "depth": 36,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1043,
+       "yt": 10.63,
+       "yb": 25.37,
+       "ix": 109138
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.384,
+       "yb_in": 0.044,
+       "ix_pct": 0.5603
+      }
+     },
+     "6HT22": {
+      "width": 71.75,
+      "stem_bottom": 11.75,
+      "depth": 22,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 834,
+       "yt": 8.3,
+       "yb": 13.7,
+       "ix": 34048
+      },
+      "residuals": {
+       "area_in2": 4.5,
+       "area_pct": 0.54,
+       "yb_in": 0.0494,
+       "ix_pct": 0.9437
+      }
+     },
+     "7HT22": {
+      "width": 83.75,
+      "stem_bottom": 11.75,
+      "depth": 22,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 906,
+       "yt": 7.87,
+       "yb": 14.13,
+       "ix": 36122
+      },
+      "residuals": {
+       "area_in2": 4.5,
+       "area_pct": 0.497,
+       "yb_in": 0.0346,
+       "ix_pct": 0.8066
+      }
+     },
+     "8HT22": {
+      "width": 95.75,
+      "stem_bottom": 11.75,
+      "depth": 22,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 978,
+       "yt": 7.52,
+       "yb": 14.48,
+       "ix": 37922
+      },
+      "residuals": {
+       "area_in2": 4.5,
+       "area_pct": 0.46,
+       "yb_in": 0.0389,
+       "ix_pct": 0.7052
+      }
+     },
+     "6HT28": {
+      "width": 71.75,
+      "stem_bottom": 11,
+      "depth": 28,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 971,
+       "yt": 10.64,
+       "yb": 17.36,
+       "ix": 67033
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.412,
+       "yb_in": 0.0491,
+       "ix_pct": 0.8188
+      }
+     },
+     "7HT28": {
+      "width": 83.75,
+      "stem_bottom": 11,
+      "depth": 28,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1043,
+       "yt": 10.11,
+       "yb": 17.89,
+       "ix": 71159
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.384,
+       "yb_in": 0.0411,
+       "ix_pct": 0.706
+      }
+     },
+     "8HT28": {
+      "width": 95.75,
+      "stem_bottom": 11,
+      "depth": 28,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1115,
+       "yt": 9.65,
+       "yb": 18.35,
+       "ix": 74780
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.359,
+       "yb_in": 0.0359,
+       "ix_pct": 0.6201
+      }
+     },
+     "6HT36": {
+      "width": 71.75,
+      "stem_bottom": 10,
+      "depth": 36,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1139,
+       "yt": 13.78,
+       "yb": 22.22,
+       "ix": 132841
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.351,
+       "yb_in": 0.0517,
+       "ix_pct": 0.7013
+      }
+     },
+     "7HT36": {
+      "width": 83.75,
+      "stem_bottom": 10,
+      "depth": 36,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1211,
+       "yt": 13.14,
+       "yb": 22.86,
+       "ix": 140925
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.33,
+       "yb_in": 0.0474,
+       "ix_pct": 0.61
+      }
+     },
+     "8HT36": {
+      "width": 95.75,
+      "stem_bottom": 10,
+      "depth": 36,
+      "flange": 6,
+      "stem_spacing": 48,
+      "batter": 0.0625,
+      "provenance": "estimate",
+      "source_status": "legacy/retired TxDOT double-T; PSTRS14 library figure Feb 2016",
+      "published": {
+       "area": 1283,
+       "yt": 12.57,
+       "yb": 23.43,
+       "ix": 148125
+      },
+      "residuals": {
+       "area_in2": 4.0,
+       "area_pct": 0.312,
+       "yb_in": 0.042,
+       "ix_pct": 0.5396
+      }
+     }
+    }
+   }
+  }
+ },
+ "subslices": {
+  "va-co-ga-ca": {
+   "topic": "us-texas-states / fork va-co-ga-ca",
+   "date": "2026-09-23",
+   "implemented": [
+    {
+     "state": "CO",
+     "module": "bridgebeams.us.state_co_cbt",
+     "class": "CoCbtGirderSection",
+     "count": 7,
+     "provenance": "transcribed",
+     "data": "src/bridgebeams/us/data/state_co_cbt.json",
+     "source_url": "https://www.codot.gov/programs/bridge/bridge-manuals/design-standards/structural-worksheets-pdfs/b-600/sheet_b-618-cbt2.pdf",
+     "sha256": "76c3495a789abd4e93d655f589d5de36977f8090e75dab5ce0717bf2d8d2e16b",
+     "locator": "single sheet B-618-CBT2, CBT 90 DETAIL + table",
+     "max_residual": "exact; CBT81 Ix +4 in^4 pinned"
+    },
+    {
+     "state": "VA",
+     "module": "bridgebeams.us.state_va_girders",
+     "class": "VaPcbtSection",
+     "count": 9,
+     "provenance": "transcribed-with-convention",
+     "data": "src/bridgebeams/us/data/state_va_girders.json",
+     "source_url": "https://www.vdot.virginia.gov/x/vdotvirginiagov/doing-business/technical-guidance-and-support/technical-guidance-documents/structure-and-bridge/manuals-of-structure-and-bridge-acc/part2/Chapter12.pdf",
+     "sha256": "54d681c62ed1a8bc5f57e3100ee565ede2bbfaec9387a6f1163e859820659223",
+     "locator": "File 12.03-5 PDF p31; PCBT-53S sheet 1",
+     "max_residual": "exact with 3/4 in soffit chamfer convention"
+    },
+    {
+     "state": "VA",
+     "module": "bridgebeams.us.state_va_girders",
+     "class": "VaVoidedSlabSection",
+     "count": 6,
+     "provenance": "transcribed",
+     "locator": "File 12.05-5 PDF p50; key 12.05-10 PDF p55",
+     "max_residual": "key-less exact; keyed default -8.3 in^2 by design"
+    },
+    {
+     "state": "VA",
+     "module": "bridgebeams.us.state_va_girders",
+     "class": "VaBoxBeamSection",
+     "count": 8,
+     "provenance": "transcribed-with-convention",
+     "locator": "File 12.06-6 PDF p64; key 12.06-11 PDF p69",
+     "max_residual": "A +1.2%, I +1.4% (PCI vs VDOT key) pinned"
+    },
+    {
+     "state": "CA",
+     "module": "bridgebeams.us.state_ca_girders",
+     "class": "CaIGirderSection",
+     "count": 6,
+     "provenance": "transcribed",
+     "source_url": "https://dot.ca.gov/-/media/dot-media/programs/engineering/documents/bridgedesignmemos/09/092023bdm-53--precast-prestressed-girders-a11y.pdf",
+     "sha256": "748701c73a5a0765ef3f49a3f247df95f7d5242c44ca545429d57a267b244bb1",
+     "locator": "BDM 5.3 Fig/Table 5.3.4.1-1 PDF p3",
+     "max_residual": "A exact, yb 0.05, I 0.14%"
+    },
+    {
+     "state": "CA",
+     "class": "CaBulbTeeSection",
+     "count": 7,
+     "provenance": "transcribed-with-convention",
+     "locator": "Fig/Table 5.3.4.1-2 PDF p4",
+     "max_residual": "A 0.11%, I 0.41%; BT49 area misprint pinned"
+    },
+    {
+     "state": "CA",
+     "class": "CaWideFlangeSection",
+     "count": 26,
+     "provenance": "transcribed-with-convention",
+     "locator": "Fig/Table 5.3.4.1-3 p5 and -4 p6",
+     "max_residual": "A 0.03%, I 0.30%; odd rows pinned"
+    },
+    {
+     "state": "CA",
+     "class": "CaBathTubSection",
+     "count": 6,
+     "provenance": "transcribed-with-convention",
+     "locator": "Fig/Table 5.3.4.1-5 p7",
+     "max_residual": "A 0.1%, I 0.25%; 'D (in)' column is h"
+    },
+    {
+     "state": "CA",
+     "class": "CaVoidedSlabSection",
+     "count": 8,
+     "provenance": "estimate",
+     "locator": "Fig 5.3.4.1-6 p8",
+     "max_residual": "no published properties"
+    }
+   ],
+   "total_profiles": 83,
+   "not_implemented": [
+    {
+     "state": "GA",
+     "reason": "bulb63.pdf shows AASHTO-PCI BT-63 geometry (PCI-national family); policy manual and box-beam guide blocked by WAF (Request Rejected)",
+     "url": "https://www.dot.ga.gov/PartnerSmart/DesignSoftware/Bridge/PDF/bulb63.pdf",
+     "sha256": "6c8e004bd1878f36b8fae2393ea3aa51fceb95c14531ad9f4613b8d2afbdda92"
+    },
+    {
+     "state": "CO",
+     "item": "B-618-U Prestressed Concrete U",
+     "reason": "parametric; flange width project-variable; no property table",
+     "sha256": "32b7df65759c602abee131adb46088049a8d2d52bea9513ff9f5ce866a153147"
+    },
+    {
+     "state": "CA",
+     "item": "xs1-121-1 bulb-tee sheet",
+     "reason": "depth D is a project variable; BDM 5.3 named BT sizes used instead"
+    },
+    {
+     "state": "VA",
+     "item": "PCB-2..6 AASHTO Type II-VI standards",
+     "reason": "PCI-national geometry, not duplicated"
+    }
+   ]
+  },
+  "ne-mo-ia": {
+   "topic": "us-texas-states (sub-slice NE/MO/IA)",
+   "date": "2026-09-23",
+   "sources": [
+    {
+     "id": "US-NE-NU-DESIGN-AIDS",
+     "url": "https://dot.nebraska.gov/media/cf4norno/design-aids-nu-i-girder-bridges.pdf",
+     "via": "http://web.archive.org/web/20250515024112id_/http://dot.nebraska.gov/media/cf4norno/design-aids-nu-i-girder-bridges.pdf",
+     "local_path": "sources/expansion/round2/us/ne_design-aids-nu-i-girder-bridges.pdf",
+     "sha256": "676284eab4721ae99b1add10ae10e570b683216853b2259e1e0ef686a7b47dda",
+     "locators": "Figure 1 PDF/printed p13; Table 1 PDF/printed p14",
+     "status": "NDOR design aid report, PDF dated 2010-08-01"
+    },
+    {
+     "id": "US-MO-EPG-751.22",
+     "url": "https://epg.modot.org/index.php/751.22_Prestressed_Concrete_I_Girders",
+     "local_path": "sources/expansion/round2/us/mo_epg_751_22.html",
+     "sha256": "bedf92b121abf5857a1573ea5e3f2ad094cd97c88d3d22b65f92e9ce6b66c14b",
+     "locators": "751.22.1.2 Geometric Properties; 7 figure JPGs (dated 2022) under sources/expansion/round2/us/modot/ (URLs and SHA-256 in src/bridgebeams/us/data/state_mo_girders.json)",
+     "status": "live guide"
+    },
+    {
+     "id": "US-MO-EPG-751.21",
+     "url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+     "local_path": "sources/expansion/round2/us/mo_epg_751_21.html",
+     "sha256": "2f75e851125408837a92dd9b7990e159ba21e0560257cc0c475a6541829f9d40",
+     "locators": "751.21.1.3 Geometric Properties; 8 figure JPGs (dated 2021) incl. shear-key detail 751.21.1.3_box_and_solid.jpg",
+     "status": "live guide"
+    },
+    {
+     "id": "US-IA-BDM-5.4.1",
+     "url": "https://iowadot.gov/media/4637/download?inline",
+     "via": "http://web.archive.org/web/20250522092537id_/https://iowadot.gov/media/4637/download?inline",
+     "local_path": "sources/expansion/round2/us/ia_bdm_5-4-2_ppcb.pdf",
+     "sha256": "970097a53980916dd9331dbf5fb2e8e04718636cc357bd6bb0b118ab05a3e707",
+     "locators": "Figures 5.4.1.1.1-1 and -2, PDF p3, printed 5.4.1: 3",
+     "status": "Iowa DOT LRFD BDM, January 2025"
+    }
+   ],
+   "implemented": {
+    "MoDotIGirderSection": 14,
+    "MoDotNuGirderSection": 6,
+    "MoDotBoxBeamSection": 18,
+    "MoDotVoidedSlabSection": 9,
+    "MoDotSolidSlabSection": 2,
+    "IaIBeamSection": 4,
+    "IaBulbTeeSection": 4,
+    "NeNuGirderSection": 6
+   },
+   "total_profiles": 63,
+   "data_files": [
+    "src/bridgebeams/us/data/state_mo_girders.json",
+    "src/bridgebeams/us/data/state_mo_slabs_boxes.json",
+    "src/bridgebeams/us/data/state_ia_beams.json",
+    "src/bridgebeams/us/data/state_ne_nu.json"
+   ],
+   "geometry_notes": {
+    "MO girders": [
+     "Every dimension is printed on the EPG figures; nothing is fitted.",
+     "I girders: flange tapers end on the web faces; 3/4 in soffit bevels (Typ.); top-flange corners are unbevelled ('3/4\" bevel not req'd').",
+     "Type 7/8 top flange: 4 in tip, then a 2 in rise over 16 in run, then a 2 in by 2 in haunch to the 6 in web.",
+     "NU: 1 3/8 in top taper (not 1 3/4 in as in the NDOR design aid); taper extension lines end on the web faces (thin construction lines on the figure). R 7 7/8 in web fillets and R 2 in flange corner radii are tangent arcs (64 segments); 3/4 in soffit chamfers.",
+     "MoDOT NU outlines are MoDOT's own inch-rounded drawings and are not asserted equal to NDOT NU girders."
+    ],
+    "MO slabs/boxes": [
+     "Adjacent-beam side key (751.21.1.3 'Box Beams & Voided Slab Beams' detail): top 4 in zone set back 5/8 in from the soffit-width face (top width = width - 1 1/4 in); a 5/8 in by 3/8 in chamfer steps a further 5/8 in into a vertical recess face 1 1/4 in inside the soffit-width face; recess spans the 'Varies' zone = depth - 10 in; the recess returns to the bottom 6 in zone by a 3/4 in rise over 1 1/4 in run.",
+     "Solid beams: same key with a 3 in top zone, 4 in recess and 4 in bottom zone (11 in deep).",
+     "Spread beams have no key: full-width rectangle.",
+     "Soffit corners: 1 1/2 in bevels ('** 1 1/2 in (Typ.)' boxes, '* 1 1/2 in (Typ.)' slabs). Top corners are square.",
+     "Box voids: rectangles 5 in below the top and 6 in above the soffit, centred, with 2 in by 2 in chamfers at all four corners (printed void areas confirm four chamfers).",
+     "Voided slab voids: circles; 48 in 21 in slab has a 10 1/2 in centre void between two 12 1/2 in voids (printed). Void circles are 64-gons, so computed areas are ~0.16% low on the voids.",
+     "Void-area and gross-area checks close to print precision for every row (see residuals)."
+    ],
+    "IA": [
+     "A-D: every dimension printed; flange tapers end on the web faces; 3/4 in by 3/4 in soffit bevels drawn and dimensioned.",
+     "A-D published A/yb/I equal the section WITHOUT the two soffit bevels to print precision (bevel area 2 x 0.28125 in2). The polygon includes the bevels as drawn; the tests compare the published values with polygon + bevel triangles and pin this explicitly.",
+     "BTB-BTE: top 2'-10, 3 13/16 in flange tip, 1 11/16 in taper to the web face, 6 1/2 in web, R=8 in web fillets, 2'-6 bottom, 7 1/2 in edge, 5 1/2 in taper to the web face, R=2 in at the bottom-flange shoulder, '3/4\" FILLET' at the soffit corners (taken as a 3/4 in radius: convention). Top-flange tip corners are drawn square. Secondary callouts (4 5/8, 7 1/16, 7 15/16, 6 3/16, 1 13/16) are fillet tangent points and agree with the construction to 1/32 in.",
+     "BTB-BTE published properties are not internally consistent between depths (area steps of 60.1/57.0/58.6 in2 for identical 9 in web additions of 58.5 in2); residuals are pinned per size. BTB printed yb 17.14 in is 0.52 in above the computed 16.62 in, inconsistent with the other three sizes (<=0.16 in); pinned as a probable source error."
+    ],
+    "NE NU": [
+     "Table 1 gives heights, web and flange widths in mm (900-2000, 150, 1225, 975); Figure 1 gives the flange stack in rounded inches, each the conversion of a round metric value (2.56=65, 1.75~45, 5.3~135, 5.5~140, 7.9~200, 2~50 mm). The metric values are used.",
+     "Taper extension lines end on the web faces; R200 web fillets and R50 flange-corner radii are tangent arcs (64 segments).",
+     "Estimate: a 20 mm x 20 mm soffit chamfer, not shown on Figure 1, is included. Without it every size is +527 mm2 (+0.08%) in area and +0.09% in I against Table 1; with it residuals fall to <=0.01% area and <=0.05% I. Soffit chamfers of this size appear on the MoDOT NU (3/4 in) and MTO NU (20 mm) drawings, but the value here is justified only by the area fit.",
+     "Table 1 NU1350 metric inertia (126,841 x10^6 mm4) disagrees with its inch value (302,334 in4 = 125,840 x10^6 mm4); the inch value is used and the metric cell pinned as a source typo.",
+     "Not asserted identical to the current (2026) NDOT BDM Figure 5.4 or to other states' NU drawings."
+    ]
+   },
+   "residuals": {
+    "MoDotIGirderSection": {
+     "Type2": {
+      "provenance": "transcribed",
+      "area_in2": [
+       310.938,
+       310.9
+      ],
+      "yb_in": [
+       14.0774,
+       14.08
+      ],
+      "ix_in4": [
+       33974.4,
+       33974
+      ],
+      "residual_area_pct": 0.012,
+      "residual_ix_pct": 0.001,
+      "iy_in4": [
+       4044.6,
+       4045
+      ]
+     },
+     "Type2-7": {
+      "provenance": "transcribed",
+      "area_in2": [
+       342.937,
+       342.9
+      ],
+      "yb_in": [
+       14.2568,
+       14.26
+      ],
+      "ix_in4": [
+       36812.3,
+       36812
+      ],
+      "residual_area_pct": 0.011,
+      "residual_ix_pct": 0.001,
+      "iy_in4": [
+       5031.7,
+       5032
+      ]
+     },
+     "Type2-8": {
+      "provenance": "transcribed",
+      "area_in2": [
+       374.938,
+       374.9
+      ],
+      "yb_in": [
+       14.4056,
+       14.41
+      ],
+      "ix_in4": [
+       39631.9,
+       39632
+      ],
+      "residual_area_pct": 0.01,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       6190.3,
+       6190
+      ]
+     },
+     "Type3": {
+      "provenance": "transcribed",
+      "area_in2": [
+       381.937,
+       381.9
+      ],
+      "yb_in": [
+       17.0831,
+       17.08
+      ],
+      "ix_in4": [
+       61841.3,
+       61841
+      ],
+      "residual_area_pct": 0.01,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       5118.6,
+       5119
+      ]
+     },
+     "Type3-7": {
+      "provenance": "transcribed",
+      "area_in2": [
+       420.937,
+       420.9
+      ],
+      "yb_in": [
+       17.3071,
+       17.31
+      ],
+      "ix_in4": [
+       66991.2,
+       66991
+      ],
+      "residual_area_pct": 0.009,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       6346.7,
+       6347
+      ]
+     },
+     "Type3-8": {
+      "provenance": "transcribed",
+      "area_in2": [
+       459.938,
+       459.9
+      ],
+      "yb_in": [
+       17.493,
+       17.49
+      ],
+      "ix_in4": [
+       72106.1,
+       72106
+      ],
+      "residual_area_pct": 0.008,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       7785.4,
+       7785
+      ]
+     },
+     "Type4": {
+      "provenance": "transcribed",
+      "area_in2": [
+       428.937,
+       428.9
+      ],
+      "yb_in": [
+       19.5441,
+       19.54
+      ],
+      "ix_in4": [
+       92450.3,
+       92450
+      ],
+      "residual_area_pct": 0.009,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       5618.0,
+       5618
+      ]
+     },
+     "Type4-7": {
+      "provenance": "transcribed",
+      "area_in2": [
+       473.937,
+       473.9
+      ],
+      "yb_in": [
+       19.8248,
+       19.82
+      ],
+      "ix_in4": [
+       100399.9,
+       100400
+      ],
+      "residual_area_pct": 0.008,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       6975.6,
+       6976
+      ]
+     },
+     "Type4-8": {
+      "provenance": "transcribed",
+      "area_in2": [
+       518.938,
+       518.9
+      ],
+      "yb_in": [
+       20.0567,
+       20.06
+      ],
+      "ix_in4": [
+       108287.8,
+       108288
+      ],
+      "residual_area_pct": 0.007,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       8570.3,
+       8570
+      ]
+     },
+     "Type6": {
+      "provenance": "transcribed",
+      "area_in2": [
+       643.562,
+       643.6
+      ],
+      "yb_in": [
+       25.9164,
+       25.92
+      ],
+      "ix_in4": [
+       235734.6,
+       235735
+      ],
+      "residual_area_pct": -0.006,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       17832.9,
+       17833
+      ]
+     },
+     "Type6-7.5": {
+      "provenance": "transcribed",
+      "area_in2": [
+       697.563,
+       697.6
+      ],
+      "yb_in": [
+       26.0003,
+       26.0
+      ],
+      "ix_in4": [
+       248915.1,
+       248915
+      ],
+      "residual_area_pct": -0.005,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       20650.4,
+       20650
+      ]
+     },
+     "Type6-8.5": {
+      "provenance": "transcribed",
+      "area_in2": [
+       751.562,
+       751.6
+      ],
+      "yb_in": [
+       26.0721,
+       26.07
+      ],
+      "ix_in4": [
+       262087.2,
+       262087
+      ],
+      "residual_area_pct": -0.005,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       23816.7,
+       23817
+      ]
+     },
+     "Type7": {
+      "provenance": "transcribed",
+      "area_in2": [
+       787.437,
+       787.4
+      ],
+      "yb_in": [
+       37.5803,
+       37.58
+      ],
+      "ix_in4": [
+       571047.1,
+       571047
+      ],
+      "residual_area_pct": 0.005,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       40629.9,
+       40630
+      ]
+     },
+     "Type8": {
+      "provenance": "transcribed",
+      "area_in2": [
+       733.437,
+       733.4
+      ],
+      "yb_in": [
+       33.0336,
+       33.03
+      ],
+      "ix_in4": [
+       411683.3,
+       411683
+      ],
+      "residual_area_pct": 0.005,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       40467.9,
+       40468
+      ]
+     }
+    },
+    "MoDotNuGirderSection": {
+     "NU35": {
+      "provenance": "transcribed",
+      "area_in2": [
+       639.798,
+       639.8
+      ],
+      "yb_in": [
+       15.9562,
+       15.96
+      ],
+      "ix_in4": [
+       108499.3,
+       108498
+      ],
+      "residual_area_pct": -0.0,
+      "residual_ix_pct": 0.001,
+      "iy_in4": [
+       60085.6,
+       60086
+      ]
+     },
+     "NU43": {
+      "provenance": "transcribed",
+      "area_in2": [
+       686.064,
+       686.1
+      ],
+      "yb_in": [
+       19.3617,
+       19.36
+      ],
+      "ix_in4": [
+       179345.3,
+       179343
+      ],
+      "residual_area_pct": -0.005,
+      "residual_ix_pct": 0.001,
+      "iy_in4": [
+       60218.7,
+       60219
+      ]
+     },
+     "NU53": {
+      "provenance": "transcribed",
+      "area_in2": [
+       743.896,
+       743.9
+      ],
+      "yb_in": [
+       23.7117,
+       23.71
+      ],
+      "ix_in4": [
+       297516.9,
+       297512
+      ],
+      "residual_area_pct": -0.001,
+      "residual_ix_pct": 0.002,
+      "iy_in4": [
+       60385.0,
+       60385
+      ]
+     },
+     "NU63": {
+      "provenance": "transcribed",
+      "area_in2": [
+       801.728,
+       801.7
+      ],
+      "yb_in": [
+       28.1441,
+       28.14
+      ],
+      "ix_in4": [
+       451313.5,
+       451306
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": 0.002,
+      "iy_in4": [
+       60551.4,
+       60551
+      ]
+     },
+     "NU70": {
+      "provenance": "transcribed",
+      "area_in2": [
+       847.993,
+       848.0
+      ],
+      "yb_in": [
+       31.7382,
+       31.74
+      ],
+      "ix_in4": [
+       601941.1,
+       601931
+      ],
+      "residual_area_pct": -0.001,
+      "residual_ix_pct": 0.002,
+      "iy_in4": [
+       60684.4,
+       60684
+      ]
+     },
+     "NU78": {
+      "provenance": "transcribed",
+      "area_in2": [
+       894.259,
+       894.2
+      ],
+      "yb_in": [
+       35.3677,
+       35.37
+      ],
+      "ix_in4": [
+       778683.7,
+       778670
+      ],
+      "residual_area_pct": 0.007,
+      "residual_ix_pct": 0.002,
+      "iy_in4": [
+       60817.5,
+       60817
+      ]
+     }
+    },
+    "MoDotBoxBeamSection": {
+     "ADJ36-17": {
+      "provenance": "transcribed",
+      "area_in2": [
+       464.422,
+       464.4
+      ],
+      "yb_in": [
+       8.2953,
+       8.3
+      ],
+      "ix_in4": [
+       13896.0,
+       13896
+      ],
+      "residual_area_pct": 0.005,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       54432.7,
+       54433
+      ]
+     },
+     "ADJ36-21": {
+      "provenance": "transcribed",
+      "area_in2": [
+       510.422,
+       510.4
+      ],
+      "yb_in": [
+       10.1944,
+       10.19
+      ],
+      "ix_in4": [
+       25129.5,
+       25129
+      ],
+      "residual_area_pct": 0.004,
+      "residual_ix_pct": 0.002,
+      "iy_in4": [
+       63415.1,
+       63415
+      ]
+     },
+     "ADJ36-27": {
+      "provenance": "transcribed",
+      "area_in2": [
+       547.422,
+       547.4
+      ],
+      "yb_in": [
+       13.0189,
+       13.02
+      ],
+      "ix_in4": [
+       49023.7,
+       49024
+      ],
+      "residual_area_pct": 0.004,
+      "residual_ix_pct": -0.001,
+      "iy_in4": [
+       72827.5,
+       72827
+      ]
+     },
+     "ADJ36-33": {
+      "provenance": "transcribed",
+      "area_in2": [
+       604.422,
+       604.4
+      ],
+      "yb_in": [
+       15.9032,
+       15.9
+      ],
+      "ix_in4": [
+       82933.7,
+       82934
+      ],
+      "residual_area_pct": 0.004,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       84713.2,
+       84713
+      ]
+     },
+     "ADJ36-39": {
+      "provenance": "transcribed",
+      "area_in2": [
+       661.422,
+       661.4
+      ],
+      "yb_in": [
+       18.8074,
+       18.81
+      ],
+      "ix_in4": [
+       127709.8,
+       127710
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       96598.8,
+       96599
+      ]
+     },
+     "ADJ36-42": {
+      "provenance": "transcribed",
+      "area_in2": [
+       689.922,
+       689.9
+      ],
+      "yb_in": [
+       20.2655,
+       20.27
+      ],
+      "ix_in4": [
+       154494.4,
+       154494
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       102541.7,
+       102542
+      ]
+     },
+     "ADJ48-17": {
+      "provenance": "transcribed",
+      "area_in2": [
+       608.422,
+       608.4
+      ],
+      "yb_in": [
+       8.2944,
+       8.29
+      ],
+      "ix_in4": [
+       18607.7,
+       18608
+      ],
+      "residual_area_pct": 0.004,
+      "residual_ix_pct": -0.001,
+      "iy_in4": [
+       129184.8,
+       129185
+      ]
+     },
+     "ADJ48-21": {
+      "provenance": "transcribed",
+      "area_in2": [
+       662.422,
+       662.4
+      ],
+      "yb_in": [
+       10.189,
+       10.19
+      ],
+      "ix_in4": [
+       33515.8,
+       33516
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": -0.001,
+      "iy_in4": [
+       149661.0,
+       149661
+      ]
+     },
+     "ADJ48-27": {
+      "provenance": "transcribed",
+      "area_in2": [
+       679.422,
+       679.4
+      ],
+      "yb_in": [
+       12.9711,
+       12.97
+      ],
+      "ix_in4": [
+       64499.4,
+       64499
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": 0.001,
+      "iy_in4": [
+       162380.5,
+       162380
+      ]
+     },
+     "ADJ48-33": {
+      "provenance": "transcribed",
+      "area_in2": [
+       736.422,
+       736.4
+      ],
+      "yb_in": [
+       15.8309,
+       15.83
+      ],
+      "ix_in4": [
+       108042.3,
+       108042
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       186150.7,
+       186151
+      ]
+     },
+     "ADJ48-39": {
+      "provenance": "transcribed",
+      "area_in2": [
+       793.422,
+       793.4
+      ],
+      "yb_in": [
+       18.7109,
+       18.71
+      ],
+      "ix_in4": [
+       164816.0,
+       164816
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       209920.9,
+       209921
+      ]
+     },
+     "ADJ48-42": {
+      "provenance": "transcribed",
+      "area_in2": [
+       821.922,
+       821.9
+      ],
+      "yb_in": [
+       20.1572,
+       20.16
+      ],
+      "ix_in4": [
+       198486.7,
+       198487
+      ],
+      "residual_area_pct": 0.003,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       221805.9,
+       221806
+      ]
+     },
+     "SPR48-17": {
+      "provenance": "transcribed",
+      "area_in2": [
+       629.75,
+       629.8
+      ],
+      "yb_in": [
+       8.3825,
+       8.38
+      ],
+      "ix_in4": [
+       18922.4,
+       18922
+      ],
+      "residual_area_pct": -0.008,
+      "residual_ix_pct": 0.002,
+      "iy_in4": [
+       140927.8,
+       140928
+      ]
+     },
+     "SPR48-21": {
+      "provenance": "transcribed",
+      "area_in2": [
+       693.75,
+       693.8
+      ],
+      "yb_in": [
+       10.3076,
+       10.31
+      ],
+      "ix_in4": [
+       34200.4,
+       34200
+      ],
+      "residual_area_pct": -0.007,
+      "residual_ix_pct": 0.001,
+      "iy_in4": [
+       166869.2,
+       166869
+      ]
+     },
+     "SPR48-27": {
+      "provenance": "transcribed",
+      "area_in2": [
+       725.75,
+       725.8
+      ],
+      "yb_in": [
+       13.149,
+       13.15
+      ],
+      "ix_in4": [
+       66264.0,
+       66264
+      ],
+      "residual_area_pct": -0.007,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       187786.5,
+       187786
+      ]
+     },
+     "SPR48-33": {
+      "provenance": "transcribed",
+      "area_in2": [
+       797.75,
+       797.8
+      ],
+      "yb_in": [
+       16.0537,
+       16.05
+      ],
+      "ix_in4": [
+       111728.9,
+       111729
+      ],
+      "residual_area_pct": -0.006,
+      "residual_ix_pct": -0.0,
+      "iy_in4": [
+       219754.5,
+       219754
+      ]
+     },
+     "SPR48-39": {
+      "provenance": "transcribed",
+      "area_in2": [
+       869.75,
+       869.8
+      ],
+      "yb_in": [
+       18.9743,
+       18.97
+      ],
+      "ix_in4": [
+       171541.1,
+       171541
+      ],
+      "residual_area_pct": -0.006,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       251722.5,
+       251722
+      ]
+     },
+     "SPR48-42": {
+      "provenance": "transcribed",
+      "area_in2": [
+       905.75,
+       905.8
+      ],
+      "yb_in": [
+       20.4393,
+       20.44
+      ],
+      "ix_in4": [
+       207233.4,
+       207233
+      ],
+      "residual_area_pct": -0.006,
+      "residual_ix_pct": 0.0,
+      "iy_in4": [
+       267706.5,
+       267706
+      ]
+     }
+    },
+    "MoDotVoidedSlabSection": {
+     "ADJ36-15": {
+      "provenance": "transcribed",
+      "area_in2": [
+       407.977,
+       407.9
+      ],
+      "yb_in": [
+       7.3006,
+       7.3
+      ],
+      "ix_in4": [
+       9265.5,
+       9265
+      ],
+      "residual_area_pct": 0.019,
+      "residual_ix_pct": 0.006,
+      "iy_in4": [
+       44862.2,
+       44859
+      ]
+     },
+     "ADJ36-18": {
+      "provenance": "transcribed",
+      "area_in2": [
+       414.267,
+       414.2
+      ],
+      "yb_in": [
+       8.6593,
+       8.66
+      ],
+      "ix_in4": [
+       15151.8,
+       15150
+      ],
+      "residual_area_pct": 0.016,
+      "residual_ix_pct": 0.012,
+      "iy_in4": [
+       47028.0,
+       47021
+      ]
+     },
+     "ADJ36-21": {
+      "provenance": "transcribed",
+      "area_in2": [
+       477.084,
+       477.0
+      ],
+      "yb_in": [
+       10.3952,
+       10.4
+      ],
+      "ix_in4": [
+       24511.3,
+       24509
+      ],
+      "residual_area_pct": 0.018,
+      "residual_ix_pct": 0.01,
+      "iy_in4": [
+       53335.9,
+       53328
+      ]
+     },
+     "ADJ48-15": {
+      "provenance": "transcribed",
+      "area_in2": [
+       531.255,
+       531.2
+      ],
+      "yb_in": [
+       7.2935,
+       7.29
+      ],
+      "ix_in4": [
+       12363.9,
+       12363
+      ],
+      "residual_area_pct": 0.01,
+      "residual_ix_pct": 0.007,
+      "iy_in4": [
+       104983.6,
+       104974
+      ]
+     },
+     "ADJ48-18": {
+      "provenance": "transcribed",
+      "area_in2": [
+       526.44,
+       526.3
+      ],
+      "yb_in": [
+       8.6333,
+       8.63
+      ],
+      "ix_in4": [
+       20077.3,
+       20075
+      ],
+      "residual_area_pct": 0.027,
+      "residual_ix_pct": 0.011,
+      "iy_in4": [
+       108262.0,
+       108244
+      ]
+     },
+     "ADJ48-21": {
+      "provenance": "transcribed",
+      "area_in2": [
+       642.528,
+       642.4
+      ],
+      "yb_in": [
+       10.4222,
+       10.42
+      ],
+      "ix_in4": [
+       33177.5,
+       33175
+      ],
+      "residual_area_pct": 0.02,
+      "residual_ix_pct": 0.008,
+      "iy_in4": [
+       124007.5,
+       123986
+      ]
+     },
+     "SPR48-15": {
+      "provenance": "transcribed",
+      "area_in2": [
+       547.583,
+       547.5
+      ],
+      "yb_in": [
+       7.3734,
+       7.37
+      ],
+      "ix_in4": [
+       12570.0,
+       12569
+      ],
+      "residual_area_pct": 0.015,
+      "residual_ix_pct": 0.008,
+      "iy_in4": [
+       113993.9,
+       113984
+      ]
+     },
+     "SPR48-18": {
+      "provenance": "transcribed",
+      "area_in2": [
+       550.268,
+       550.1
+      ],
+      "yb_in": [
+       8.7517,
+       8.75
+      ],
+      "ix_in4": [
+       20479.8,
+       20478
+      ],
+      "residual_area_pct": 0.031,
+      "residual_ix_pct": 0.009,
+      "iy_in4": [
+       121371.3,
+       121353
+      ]
+     },
+     "SPR48-21": {
+      "provenance": "transcribed",
+      "area_in2": [
+       673.856,
+       673.7
+      ],
+      "yb_in": [
+       10.5334,
+       10.53
+      ],
+      "ix_in4": [
+       33826.9,
+       33824
+      ],
+      "residual_area_pct": 0.023,
+      "residual_ix_pct": 0.008,
+      "iy_in4": [
+       141215.7,
+       141194
+      ]
+     }
+    },
+    "MoDotSolidSlabSection": {
+     "SOLID48": {
+      "provenance": "transcribed",
+      "area_in2": [
+       513.172,
+       513.2
+      ],
+      "yb_in": [
+       5.4818,
+       5.48
+      ],
+      "ix_in4": [
+       5191.5,
+       5191
+      ],
+      "residual_area_pct": -0.005,
+      "residual_ix_pct": 0.009,
+      "iy_in4": [
+       93190.5,
+       93190
+      ]
+     },
+     "SOLID52": {
+      "provenance": "transcribed",
+      "area_in2": [
+       557.172,
+       557.2
+      ],
+      "yb_in": [
+       5.4832,
+       5.48
+      ],
+      "ix_in4": [
+       5635.2,
+       5635
+      ],
+      "residual_area_pct": -0.005,
+      "residual_ix_pct": 0.003,
+      "iy_in4": [
+       119252.4,
+       119252
+      ]
+     }
+    },
+    "IaIBeamSection": {
+     "A": {
+      "provenance": "transcribed",
+      "area_in2": [
+       310.938,
+       311.5
+      ],
+      "yb_in": [
+       14.0774,
+       14.05
+      ],
+      "ix_in4": [
+       33974.4,
+       34082
+      ],
+      "residual_area_pct": -0.181,
+      "residual_ix_pct": -0.316
+     },
+     "B": {
+      "provenance": "transcribed",
+      "area_in2": [
+       381.937,
+       382.5
+      ],
+      "yb_in": [
+       17.0831,
+       17.06
+      ],
+      "ix_in4": [
+       61841.3,
+       62000
+      ],
+      "residual_area_pct": -0.147,
+      "residual_ix_pct": -0.256
+     },
+     "C": {
+      "provenance": "transcribed",
+      "area_in2": [
+       563.938,
+       564.5
+      ],
+      "yb_in": [
+       20.2517,
+       20.23
+      ],
+      "ix_in4": [
+       116128.8,
+       116354
+      ],
+      "residual_area_pct": -0.1,
+      "residual_ix_pct": -0.194
+     },
+     "D": {
+      "provenance": "transcribed",
+      "area_in2": [
+       638.188,
+       638.75
+      ],
+      "yb_in": [
+       24.3883,
+       24.37
+      ],
+      "ix_in4": [
+       214646.9,
+       214974
+      ],
+      "residual_area_pct": -0.088,
+      "residual_ix_pct": -0.152
+     }
+    },
+    "IaBulbTeeSection": {
+     "BTB": {
+      "provenance": "transcribed-with-convention",
+      "area_in2": [
+       631.573,
+       631.7
+      ],
+      "yb_in": [
+       16.6254,
+       17.14
+      ],
+      "ix_in4": [
+       99882.7,
+       99980
+      ],
+      "residual_area_pct": -0.02,
+      "residual_ix_pct": -0.097
+     },
+     "BTC": {
+      "provenance": "transcribed-with-convention",
+      "area_in2": [
+       690.073,
+       691.8
+      ],
+      "yb_in": [
+       20.5872,
+       20.74
+      ],
+      "ix_in4": [
+       178683.3,
+       178971
+      ],
+      "residual_area_pct": -0.25,
+      "residual_ix_pct": -0.161
+     },
+     "BTD": {
+      "provenance": "transcribed-with-convention",
+      "area_in2": [
+       748.573,
+       748.8
+      ],
+      "yb_in": [
+       24.6332,
+       24.64
+      ],
+      "ix_in4": [
+       285094.6,
+       285860
+      ],
+      "residual_area_pct": -0.03,
+      "residual_ix_pct": -0.268
+     },
+     "BTE": {
+      "provenance": "transcribed-with-convention",
+      "area_in2": [
+       807.073,
+       807.4
+      ],
+      "yb_in": [
+       28.745,
+       28.75
+      ],
+      "ix_in4": [
+       421559.3,
+       422790
+      ],
+      "residual_area_pct": -0.041,
+      "residual_ix_pct": -0.291
+     }
+    },
+    "NeNuGirderSection": {
+     "NU900": {
+      "provenance": "fitted-reconstruction",
+      "area_in2": [
+       648.085,
+       648.1
+      ],
+      "yb_in": [
+       16.1257,
+       16.1
+      ],
+      "ix_in4": [
+       110197.2,
+       110262
+      ],
+      "residual_area_pct": -0.002,
+      "residual_ix_pct": -0.059
+     },
+     "NU1100": {
+      "provenance": "fitted-reconstruction",
+      "area_in2": [
+       694.585,
+       694.6
+      ],
+      "yb_in": [
+       19.5668,
+       19.6
+      ],
+      "ix_in4": [
+       182215.3,
+       182279
+      ],
+      "residual_area_pct": -0.002,
+      "residual_ix_pct": -0.035
+     },
+     "NU1350": {
+      "provenance": "fitted-reconstruction",
+      "area_in2": [
+       752.71,
+       752.7
+      ],
+      "yb_in": [
+       23.9544,
+       24.0
+      ],
+      "ix_in4": [
+       302272.9,
+       302334
+      ],
+      "residual_area_pct": 0.001,
+      "residual_ix_pct": -0.02
+     },
+     "NU1600": {
+      "provenance": "fitted-reconstruction",
+      "area_in2": [
+       810.835,
+       810.8
+      ],
+      "yb_in": [
+       28.4185,
+       28.4
+      ],
+      "ix_in4": [
+       458422.7,
+       458482
+      ],
+      "residual_area_pct": 0.004,
+      "residual_ix_pct": -0.013
+     },
+     "NU1800": {
+      "provenance": "fitted-reconstruction",
+      "area_in2": [
+       857.335,
+       857.3
+      ],
+      "yb_in": [
+       32.0344,
+       32.0
+      ],
+      "ix_in4": [
+       611271.1,
+       611328
+      ],
+      "residual_area_pct": 0.004,
+      "residual_ix_pct": -0.009
+     },
+     "NU2000": {
+      "provenance": "fitted-reconstruction",
+      "area_in2": [
+       903.835,
+       903.8
+      ],
+      "yb_in": [
+       35.6834,
+       35.7
+      ],
+      "ix_in4": [
+       790538.3,
+       790592
+      ],
+      "residual_area_pct": 0.004,
+      "residual_ix_pct": -0.007
+     }
+    }
+   },
+   "leads_not_implemented": [
+    {
+     "state": "NE",
+     "item": "NDOT BDM 2026-02-23 Figure 5.4 / Table 5.7 NU35-NU78",
+     "url": "https://dot.nebraska.gov/media/4dapkdwu/2026-02-23_ndot-bdm-ch-1-3-5-6-7-8-9-10-13-app-c.pdf",
+     "reason": "dot.nebraska.gov refuses connections from this machine; no Wayback snapshot"
+    },
+    {
+     "state": "IA",
+     "item": "BSB standard sheets 4600-4790 (A-D, BTB-BTE) and index",
+     "url": "https://iowadot.gov/consultants-contractors/bridges-structures/bridge-culvert-standards/bridge-standards",
+     "reason": "HTTP 403; BDM figure used instead"
+    },
+    {
+     "state": "MO",
+     "item": "Bridge standard drawing PDFs (PSI/PSNU/box)",
+     "url": "https://www.modot.org/bridge-standard-drawings",
+     "reason": "HTTP 202 bot challenge; EPG figures used instead"
+    },
+    {
+     "state": "NE",
+     "item": "NDOR/UNL NU 2000 span report and TRB 'Longer Bridge Spans with Nebraska's NU I-Girders'",
+     "url": "http://govdocs.nebraska.gov/epubs/R6000/B316-2004.pdf",
+     "reason": "not needed; possible cross-check"
+    }
+   ]
+  },
+  "wi-il-mi-or": {
+   "topic": "us-texas-states (fork: WI/IL/MI/OR)",
+   "reviewed_on": "2026-09-23",
+   "implemented": [
+    {
+     "state": "WI",
+     "module": "bridgebeams.us.state_wi_girders",
+     "class": "WiGirderSection",
+     "sizes": [
+      "28",
+      "36W",
+      "45W",
+      "54W",
+      "72W",
+      "82W"
+     ],
+     "provenance": "transcribed",
+     "data": "src/bridgebeams/us/data/state_wi_girders.json",
+     "pinned": [
+      "28 Ix -2.26%",
+      "45W yb -0.121 in"
+     ]
+    },
+    {
+     "state": "WI",
+     "module": "bridgebeams.us.state_wi_girders",
+     "class": "WiBoxGirderSection",
+     "sizes": [
+      "36x12",
+      "36x17",
+      "36x21",
+      "36x27",
+      "36x33",
+      "36x42",
+      "48x12",
+      "48x17",
+      "48x21",
+      "48x27",
+      "48x33",
+      "48x42"
+     ],
+     "provenance": "estimate",
+     "data": "src/bridgebeams/us/data/state_wi_girders.json",
+     "pinned": [
+      "systematic A +3.1..3.6 in2, Ix +0.59..1.04% (key recess interpretation)"
+     ]
+    },
+    {
+     "state": "IL",
+     "module": "bridgebeams.us.state_il_deck_beams",
+     "class": "IlDeckBeamSection",
+     "sizes": [
+      "11x48",
+      "11x52",
+      "17x36",
+      "17x48",
+      "21x36",
+      "21x48",
+      "27x36",
+      "27x48",
+      "33x36",
+      "33x48",
+      "42x36",
+      "42x48"
+     ],
+     "provenance": "transcribed",
+     "data": "src/bridgebeams/us/data/state_il_deck_beams.json",
+     "validated": [
+      "27x36 vs DG 3.5 example"
+     ]
+    },
+    {
+     "state": "OR",
+     "module": "bridgebeams.us.state_or_girders",
+     "class": "OrSlabSection",
+     "sizes": [
+      "12",
+      "15",
+      "18",
+      "21",
+      "26",
+      "30"
+     ],
+     "provenance": "transcribed",
+     "data": "src/bridgebeams/us/data/state_or_girders.json"
+    },
+    {
+     "state": "OR",
+     "module": "bridgebeams.us.state_or_girders",
+     "class": "OrBoxSection",
+     "sizes": [
+      "33",
+      "39",
+      "42",
+      "48"
+     ],
+     "provenance": "transcribed",
+     "data": "src/bridgebeams/us/data/state_or_girders.json"
+    },
+    {
+     "state": "OR",
+     "module": "bridgebeams.us.state_or_girders",
+     "class": "OrIGirderSection",
+     "sizes": [
+      "II",
+      "III",
+      "IV",
+      "V"
+     ],
+     "provenance": "transcribed-with-convention",
+     "data": "src/bridgebeams/us/data/state_or_girders.json",
+     "note": "no printed properties; 1 in soffit chamfer at stated max"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wisconsindot.gov/dtsdManuals/strct/manuals/bridge/std-ch19.pdf",
+     "local": "sources/expansion/round2/us/wi_std-ch19.pdf",
+     "sha256": "7690db40f29143fcc135c5352022606f1fbd7e834b5d8d7ce9acbba8b00c613f"
+    },
+    {
+     "url": "https://wisconsindot.gov/dtsdManuals/strct/manuals/bridge/ch19.pdf",
+     "local": "sources/expansion/round2/us/wi_bm_ch19.pdf",
+     "sha256": "cd99e94862a5189c5d7e9bf631c0e64600cd3fc3110c9adc4776e03bef8736d1"
+    },
+    {
+     "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/doing-business/specialty-lists/highways/bridges/cell-libraries/bridge/beams-prestressed-deck-beams.pdf",
+     "local": "sources/expansion/round2/us/il_cell_beams-prestressed-deck-beams.pdf",
+     "sha256": "178fadf3285a73336f4c690cd1b4b68f0ad146d9bc6cc5bacfaac46ba6c5d822"
+    },
+    {
+     "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/doing-business/memorandums-and-letters/highways/bridges/bm-design-guides/bm-3.5-lrfd-ppc-deck-beam-design.pdf",
+     "local": "sources/expansion/round2/us/il_dg35.pdf",
+     "sha256": "9f3c20e171774d5599402450079f4565f8f640a889b72ed69f22bc877654d013"
+    },
+    {
+     "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/doing-business/memorandums-and-letters/highways/bridges/bm-design-guides/bm-3.4-lrfd-ppc-i-design.pdf",
+     "local": "sources/expansion/round2/us/il_dg34.pdf",
+     "sha256": "f7882451865dd66a482ffd165059e61bc43790b002a80bca0fa310c4f17f14a3"
+    },
+    {
+     "url": "https://www.oregon.gov/odot/engineering/202601/br400s_all.pdf",
+     "local": "sources/expansion/round2/us/or_br400s_all_202601.pdf",
+     "sha256": "5dc35c69833a40ed8e13b866535f7781f91e3bf68912bbdf53aa2fea5cd702a2"
+    },
+    {
+     "url": "https://www.oregon.gov/odot/engineering/202607/br400s_all.pdf",
+     "local": "sources/expansion/round2/us/or_br400s_all_202607.pdf",
+     "sha256": "6113d0f93fd595d8b4c1f84964607f574ad1f35a668c176922bbe190b3e9d2cf"
+    },
+    {
+     "url": "https://www.oregon.gov/odot/engineering/202601/br300s_all.pdf",
+     "local": "sources/expansion/round2/us/or_br300s_all_202601.pdf",
+     "sha256": "6476990177f23054db2b51610d895cb05187b76088fbbf69f0de696aa92f3314"
+    }
+   ],
+   "blocked": [
+    {
+     "state": "MI",
+     "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=556a1eda-a130-4f7f-96e2-85be1dd12d75",
+     "reason": "Cloudflare challenge / HTTP 403; not bypassed"
+    },
+    {
+     "state": "IL",
+     "item": "IDOT Bridge Manual (PowerDMS, JS-only) and ABD 15.2 Fig. 1 IL-beam dims",
+     "reason": "not retrievable"
+    }
+   ],
+   "leads": [
+    "IDOT IL27-IL90 IL-beams (IL72-2438 A=980 in2, I=624180 in4, Cb=29.39 in, DG 3.4 p3.4-67)",
+    "ODOT BR360/365/375 BT36/45/60 deck bulb-tees (variable flange width)",
+    "MDOT MI 1800 girder (BDG 6.60.03, PC-4G)"
+   ]
+  },
+  "pa-ny-oh": {
+   "fork": "pa-ny-oh",
+   "date": "2026-09-23",
+   "sources": [
+    {
+     "id": "PennDOT-BD-652M-2016",
+     "url": "https://docs.penndot.pa.gov/Public/Bureaus/Bridge/BD-Stds/BD652M.pdf",
+     "local_path": "sources/expansion/round2/us/penndot_cur_BD652M.pdf",
+     "sha256": "65e8961429f0d08c8e71a526ad4d84e8cd166e7a3938bdf678875634a5d52e95",
+     "edition": "recommended 2016-04-29",
+     "pages": {
+      "sheet1": 1,
+      "sheet2": 2,
+      "sheet3": 3
+     }
+    },
+    {
+     "id": "PennDOT-BC-775M",
+     "url": "https://docs.penndot.pa.gov/Public/Bureaus/Bridge/BC-Stds/BC775M.pdf",
+     "local_path": "sources/expansion/round2/us/penndot_BC775M.pdf",
+     "sha256": "d9eeb34e8a4425997a0d0eb8afea98bd3488475c2b992bfef12ba3e53682d1fd",
+     "edition": "recommended 2022-11-23",
+     "pages": {
+      "shear_key_detail": 2
+     }
+    },
+    {
+     "id": "PennDOT-BD-652M-2008",
+     "url": "https://docs.penndot.pa.gov/Public/Bureaus/Bridge/BD-Stds/2003Ed/Change6/BD652M.pdf",
+     "local_path": "sources/expansion/round2/us/penndot_BD652M.pdf",
+     "sha256": "73217534214998652e06eb4126f6f64b8d866d5233b4c62d0967c13fb7024551",
+     "edition": "2008-12-29 (superseded)"
+    },
+    {
+     "id": "NYSDOT-BD-PC-2026",
+     "url": "https://www.dot.ny.gov/main/business-center/engineering/cadd-info/bridge-details-sheets-repostitory-usc/BD-PC_01-26.pdf",
+     "local_path": "sources/expansion/round2/us/nysdot_BD-PC_01-26.pdf",
+     "sha256": "3ea2cf78993dc01ae0993fc90042e84fad3551c64054d5f7829398bb28e864d5",
+     "edition": "approved 2026-01-13, EB 26-004",
+     "pages": {
+      "BD-PC1": 1,
+      "BD-PC2": 2,
+      "BD-PC14": 14,
+      "BD-PC15": 15,
+      "BD-PC31": 31,
+      "BD-PC36": 36
+     }
+    }
+   ],
+   "implemented": [
+    {
+     "class": "PaIBeamSection",
+     "module": "bridgebeams.us.state_pa_beams",
+     "count": 21,
+     "provenance": "transcribed-with-convention",
+     "data": "state_pa_bd652m.json"
+    },
+    {
+     "class": "PaAashtoIBeamSection",
+     "module": "bridgebeams.us.state_pa_beams",
+     "count": 7,
+     "provenance": "transcribed-with-convention",
+     "data": "state_pa_bd652m.json"
+    },
+    {
+     "class": "PaBulbTeeSection",
+     "module": "bridgebeams.us.state_pa_beams",
+     "count": 54,
+     "provenance": "transcribed-with-convention",
+     "data": "state_pa_bd652m.json"
+    },
+    {
+     "class": "PaBoxBeamSection",
+     "module": "bridgebeams.us.state_pa_beams",
+     "count": 58,
+     "provenance": "transcribed-with-convention",
+     "data": "state_pa_bd652m.json"
+    },
+    {
+     "class": "NyBoxBeamSection",
+     "module": "bridgebeams.us.state_ny_beams",
+     "count": 22,
+     "provenance": "transcribed",
+     "data": "state_ny_bd_pc.json"
+    },
+    {
+     "class": "NySlabUnitSection",
+     "module": "bridgebeams.us.state_ny_beams",
+     "count": 8,
+     "provenance": "transcribed",
+     "data": "state_ny_bd_pc.json"
+    },
+    {
+     "class": "NyPcefBulbTeeSection",
+     "module": "bridgebeams.us.state_ny_beams",
+     "count": 6,
+     "provenance": "transcribed-with-convention",
+     "data": "state_ny_bd_pc.json"
+    },
+    {
+     "class": "NyNebtSection",
+     "module": "bridgebeams.us.state_ny_beams",
+     "count": 6,
+     "provenance": "fitted-reconstruction",
+     "data": "state_ny_bd_pc.json"
+    },
+    {
+     "class": "NyNextBeamSection",
+     "module": "bridgebeams.us.state_ny_beams",
+     "count": 16,
+     "provenance": "transcribed-with-convention",
+     "data": "state_ny_bd_pc.json"
+    }
+   ],
+   "per_size_residuals": "stored in each section's 'residuals' field of the package JSON files",
+   "pinned": [
+    "PA adjacent box 17-30 in: table uses 3in/4in key, BC-775M specifies 6in/6in; area -0.76..-1.11%",
+    "PA 2008 24/63 property row inconsistent with dims; 2016 corrected (used)",
+    "NY box/slab yb printed as D/2",
+    "NY box Ix column non-smooth (-0.40..+0.92%); B48 areas +0.44..+0.88% model vs table",
+    "NY S48x21 table uses three 12in voids vs drawn 12/10/12 (+5.4% area)",
+    "NY S36x15/S48x15 table areas exceed drawn voids by 0.9/2.9 in2",
+    "NY PCEF-63 Ix 500945 transposition of 500495"
+   ],
+   "leads_not_implemented": [
+    {
+     "state": "OH",
+     "status": "blocked",
+     "detail": "ODOT Standard Bridge Drawings moved to transportation.ohio.gov/working/engineering/structural/design/02-active-drawings (404 on 2026-09-23); PSBD PDF guesses 404; web search budget exhausted"
+    },
+    {
+     "state": "NY",
+     "status": "skipped",
+     "detail": "BD-PC14 AASHTO Type I-VI (PCI national family, already implemented)"
+    },
+    {
+     "state": "NY",
+     "status": "partial",
+     "detail": "NEXT D/F non-tabulated flange widths (range allowed) not enumerated"
+    }
+   ]
+  }
+ },
+ "brice_crosscheck": {
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/Publications/PCI%20Journal/2021/May-June/19-0034%20Brice_Appendix_MJ21.pdf",
+   "local_path": "sources/expansion/round2/us/pcij-2021-mj-brice-appendix.pdf",
+   "sha256": "59570b50e78c1cafdd1feebc820abb22bf88ece9be603f917a22b279ffc4c5f9"
+  },
+  "rows": [
+   {
+    "state": "TX",
+    "cls": "TxDotIGirderSection",
+    "size": "Tx28",
+    "brice": {
+     "area": 585.3,
+     "yt": 15.02,
+     "yb": 12.98,
+     "ix": 52772.0,
+     "iy": 40559.0
+    },
+    "d_area_pct": 0.002,
+    "d_yb_in": 0.0,
+    "d_ix_pct": -0.001,
+    "d_iy_pct": 0.001
+   },
+   {
+    "state": "TX",
+    "cls": "TxDotIGirderSection",
+    "size": "Tx34",
+    "brice": {
+     "area": 627.3,
+     "yt": 18.49,
+     "yb": 15.51,
+     "ix": 88355.0,
+     "iy": 40731.0
+    },
+    "d_area_pct": 0.002,
+    "d_yb_in": 0.001,
+    "d_ix_pct": 0.001,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "TX",
+    "cls": "TxDotIGirderSection",
+    "size": "Tx40",
+    "brice": {
+     "area": 669.3,
+     "yt": 21.9,
+     "yb": 18.1,
+     "ix": 134990.0,
+     "iy": 40902.0
+    },
+    "d_area_pct": 0.002,
+    "d_yb_in": 0.001,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": 0.001
+   },
+   {
+    "state": "TX",
+    "cls": "TxDotIGirderSection",
+    "size": "Tx46",
+    "brice": {
+     "area": 761.3,
+     "yt": 25.9,
+     "yb": 20.1,
+     "ix": 198089.0,
+     "iy": 46478.0
+    },
+    "d_area_pct": 0.002,
+    "d_yb_in": 0.004,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "TX",
+    "cls": "TxDotIGirderSection",
+    "size": "Tx54",
+    "brice": {
+     "area": 817.3,
+     "yt": 30.49,
+     "yb": 23.51,
+     "ix": 299740.0,
+     "iy": 46707.0
+    },
+    "d_area_pct": 0.002,
+    "d_yb_in": -0.002,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "TX",
+    "cls": "TxDotIGirderSection",
+    "size": "Tx62",
+    "brice": {
+     "area": 910.1,
+     "yt": 33.72,
+     "yb": 28.28,
+     "ix": 463072.0,
+     "iy": 57351.0
+    },
+    "d_area_pct": -0.004,
+    "d_yb_in": -0.003,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": -0.001
+   },
+   {
+    "state": "TX",
+    "cls": "TxDotIGirderSection",
+    "size": "Tx70",
+    "brice": {
+     "area": 966.1,
+     "yt": 38.09,
+     "yb": 31.91,
+     "ix": 628747.0,
+     "iy": 57579.0
+    },
+    "d_area_pct": -0.004,
+    "d_yb_in": 0.005,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "CO",
+    "cls": "CoCbtGirderSection",
+    "size": "CBT45",
+    "brice": {
+     "area": 844.8,
+     "yt": 22.92,
+     "yb": 22.08,
+     "ix": 240424.0,
+     "iy": 89212.0
+    },
+    "d_area_pct": -0.006,
+    "d_yb_in": -0.005,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "CO",
+    "cls": "CoCbtGirderSection",
+    "size": "CBT54",
+    "brice": {
+     "area": 907.8,
+     "yt": 27.6,
+     "yb": 26.4,
+     "ix": 378473.0,
+     "iy": 89469.0
+    },
+    "d_area_pct": -0.006,
+    "d_yb_in": -0.005,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "CO",
+    "cls": "CoCbtGirderSection",
+    "size": "CBT63",
+    "brice": {
+     "area": 970.8,
+     "yt": 32.26,
+     "yb": 30.74,
+     "ix": 553233.0,
+     "iy": 89727.0
+    },
+    "d_area_pct": -0.005,
+    "d_yb_in": -0.001,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "CO",
+    "cls": "CoCbtGirderSection",
+    "size": "CBT72",
+    "brice": {
+     "area": 1033.8,
+     "yt": 36.9,
+     "yb": 35.1,
+     "ix": 767268.0,
+     "iy": 89984.0
+    },
+    "d_area_pct": -0.005,
+    "d_yb_in": 0.001,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "CO",
+    "cls": "CoCbtGirderSection",
+    "size": "CBT81",
+    "brice": {
+     "area": 1096.8,
+     "yt": 41.52,
+     "yb": 39.48,
+     "ix": 1023134.0,
+     "iy": 90241.0
+    },
+    "d_area_pct": -0.005,
+    "d_yb_in": -0.0,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "CO",
+    "cls": "CoCbtGirderSection",
+    "size": "CBT90",
+    "brice": {
+     "area": 1159.8,
+     "yt": 46.13,
+     "yb": 43.87,
+     "ix": 1323390.0,
+     "iy": 90498.0
+    },
+    "d_area_pct": -0.004,
+    "d_yb_in": 0.001,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "CA",
+    "cls": "CaIGirderSection",
+    "size": "CA I36",
+    "brice": {
+     "area": 432.0,
+     "yt": 18.88,
+     "yb": 17.13,
+     "ix": 62957.0,
+     "iy": 8238.0
+    },
+    "d_area_pct": -0.0,
+    "d_yb_in": -0.005,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "CA",
+    "cls": "CaIGirderSection",
+    "size": "CA I42",
+    "brice": {
+     "area": 474.0,
+     "yt": 22.03,
+     "yb": 19.97,
+     "ix": 95424.0,
+     "iy": 8410.0
+    },
+    "d_area_pct": 0.0,
+    "d_yb_in": 0.005,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": -0.006
+   },
+   {
+    "state": "CA",
+    "cls": "CaIGirderSection",
+    "size": "CA I48",
+    "brice": {
+     "area": 516.0,
+     "yt": 25.15,
+     "yb": 22.85,
+     "ix": 136404.0,
+     "iy": 8581.0
+    },
+    "d_area_pct": -0.0,
+    "d_yb_in": -0.001,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "CA",
+    "cls": "CaIGirderSection",
+    "size": "CA I54",
+    "brice": {
+     "area": 558.0,
+     "yt": 28.26,
+     "yb": 25.74,
+     "ix": 186659.0,
+     "iy": 8753.0
+    },
+    "d_area_pct": 0.0,
+    "d_yb_in": 0.002,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": -0.006
+   },
+   {
+    "state": "CA",
+    "cls": "CaIGirderSection",
+    "size": "CA I60",
+    "brice": {
+     "area": 600.0,
+     "yt": 31.35,
+     "yb": 28.65,
+     "ix": 246947.0,
+     "iy": 8924.0
+    },
+    "d_area_pct": 0.0,
+    "d_yb_in": 0.0,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "CA",
+    "cls": "CaIGirderSection",
+    "size": "CA I66",
+    "brice": {
+     "area": 642.0,
+     "yt": 34.43,
+     "yb": 31.57,
+     "ix": 318025.0,
+     "iy": 9096.0
+    },
+    "d_area_pct": -0.0,
+    "d_yb_in": 0.0,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": -0.005
+   },
+   {
+    "state": "CA",
+    "cls": "CaBulbTeeSection",
+    "size": "CA BT49",
+    "brice": {
+     "area": 876.1,
+     "yt": 23.66,
+     "yb": 25.34,
+     "ix": 275738.0,
+     "iy": 67877.0
+    },
+    "d_area_pct": 0.004,
+    "d_yb_in": -0.001,
+    "d_ix_pct": 0.004,
+    "d_iy_pct": 0.006
+   },
+   {
+    "state": "CA",
+    "cls": "CaBulbTeeSection",
+    "size": "CA BT55",
+    "brice": {
+     "area": 924.3,
+     "yt": 26.74,
+     "yb": 28.38,
+     "ix": 372768.0,
+     "iy": 68126.0
+    },
+    "d_area_pct": 0.008,
+    "d_yb_in": 0.005,
+    "d_ix_pct": 0.004,
+    "d_iy_pct": 0.006
+   },
+   {
+    "state": "CA",
+    "cls": "CaBulbTeeSection",
+    "size": "CA BT61",
+    "brice": {
+     "area": 970.6,
+     "yt": 29.69,
+     "yb": 31.31,
+     "ix": 482117.0,
+     "iy": 68366.0
+    },
+    "d_area_pct": 0.004,
+    "d_yb_in": -0.003,
+    "d_ix_pct": 0.005,
+    "d_iy_pct": 0.005
+   },
+   {
+    "state": "CA",
+    "cls": "CaBulbTeeSection",
+    "size": "CA BT67",
+    "brice": {
+     "area": 1017.0,
+     "yt": 32.66,
+     "yb": 34.24,
+     "ix": 608811.0,
+     "iy": 68606.0
+    },
+    "d_area_pct": -0.01,
+    "d_yb_in": -0.009,
+    "d_ix_pct": -0.093,
+    "d_iy_pct": 0.004
+   },
+   {
+    "state": "CA",
+    "cls": "CaBulbTeeSection",
+    "size": "CA BT73",
+    "brice": {
+     "area": 1064.1,
+     "yt": 35.66,
+     "yb": 37.22,
+     "ix": 755114.0,
+     "iy": 68849.0
+    },
+    "d_area_pct": 0.005,
+    "d_yb_in": -0.001,
+    "d_ix_pct": 0.005,
+    "d_iy_pct": 0.005
+   },
+   {
+    "state": "CA",
+    "cls": "CaBulbTeeSection",
+    "size": "CA BT79",
+    "brice": {
+     "area": 1110.4,
+     "yt": 38.61,
+     "yb": 40.14,
+     "ix": 917506.0,
+     "iy": 69088.0
+    },
+    "d_area_pct": 0.001,
+    "d_yb_in": 0.005,
+    "d_ix_pct": 0.005,
+    "d_iy_pct": 0.005
+   },
+   {
+    "state": "CA",
+    "cls": "CaBulbTeeSection",
+    "size": "CA BT85",
+    "brice": {
+     "area": 1156.6,
+     "yt": 41.55,
+     "yb": 43.07,
+     "ix": 1099060.0,
+     "iy": 69327.0
+    },
+    "d_area_pct": 0.007,
+    "d_yb_in": 0.002,
+    "d_ix_pct": 0.005,
+    "d_iy_pct": 0.006
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF48",
+    "brice": {
+     "area": 885.2,
+     "yt": 27.09,
+     "yb": 20.91,
+     "ix": 273886.0,
+     "iy": 89512.0
+    },
+    "d_area_pct": -0.337,
+    "d_yb_in": -0.228,
+    "d_ix_pct": 0.236,
+    "d_iy_pct": 4.038
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF54",
+    "brice": {
+     "area": 924.2,
+     "yt": 30.54,
+     "yb": 23.46,
+     "ix": 368045.0,
+     "iy": 89649.0
+    },
+    "d_area_pct": -0.323,
+    "d_yb_in": -0.231,
+    "d_ix_pct": 0.138,
+    "d_iy_pct": 4.032
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF60",
+    "brice": {
+     "area": 963.2,
+     "yt": 33.95,
+     "yb": 26.05,
+     "ix": 478505.0,
+     "iy": 89786.0
+    },
+    "d_area_pct": -0.31,
+    "d_yb_in": -0.238,
+    "d_ix_pct": 0.064,
+    "d_iy_pct": 4.026
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF66",
+    "brice": {
+     "area": 1002.2,
+     "yt": 37.32,
+     "yb": 28.68,
+     "ix": 606007.0,
+     "iy": 89924.0
+    },
+    "d_area_pct": -0.297,
+    "d_yb_in": -0.251,
+    "d_ix_pct": 0.007,
+    "d_iy_pct": 4.019
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF72",
+    "brice": {
+     "area": 1041.2,
+     "yt": 40.67,
+     "yb": 31.33,
+     "ix": 751287.0,
+     "iy": 90061.0
+    },
+    "d_area_pct": -0.286,
+    "d_yb_in": -0.256,
+    "d_ix_pct": -0.039,
+    "d_iy_pct": 4.013
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF78",
+    "brice": {
+     "area": 1080.2,
+     "yt": 43.99,
+     "yb": 34.01,
+     "ix": 915075.0,
+     "iy": 90198.0
+    },
+    "d_area_pct": -0.276,
+    "d_yb_in": -0.265,
+    "d_ix_pct": -0.075,
+    "d_iy_pct": 4.008
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF84",
+    "brice": {
+     "area": 1119.2,
+     "yt": 47.29,
+     "yb": 36.71,
+     "ix": 1098097.0,
+     "iy": 90336.0
+    },
+    "d_area_pct": -0.266,
+    "d_yb_in": -0.271,
+    "d_ix_pct": -0.104,
+    "d_iy_pct": 4.001
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF90",
+    "brice": {
+     "area": 1158.2,
+     "yt": 50.57,
+     "yb": 39.43,
+     "ix": 1301077.0,
+     "iy": 90473.0
+    },
+    "d_area_pct": -0.257,
+    "d_yb_in": -0.277,
+    "d_ix_pct": -0.127,
+    "d_iy_pct": 3.995
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF96",
+    "brice": {
+     "area": 1197.2,
+     "yt": 53.83,
+     "yb": 42.17,
+     "ix": 1524734.0,
+     "iy": 90610.0
+    },
+    "d_area_pct": -0.249,
+    "d_yb_in": -0.284,
+    "d_ix_pct": -0.146,
+    "d_iy_pct": 3.989
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF102",
+    "brice": {
+     "area": 1236.2,
+     "yt": 57.08,
+     "yb": 44.92,
+     "ix": 1769788.0,
+     "iy": 90748.0
+    },
+    "d_area_pct": -0.241,
+    "d_yb_in": -0.284,
+    "d_ix_pct": -0.162,
+    "d_iy_pct": 3.982
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF108",
+    "brice": {
+     "area": 1275.2,
+     "yt": 60.31,
+     "yb": 47.69,
+     "ix": 2036953.0,
+     "iy": 90885.0
+    },
+    "d_area_pct": -0.234,
+    "d_yb_in": -0.288,
+    "d_ix_pct": -0.175,
+    "d_iy_pct": 3.977
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF114",
+    "brice": {
+     "area": 1314.2,
+     "yt": 63.53,
+     "yb": 50.47,
+     "ix": 2326945.0,
+     "iy": 91022.0
+    },
+    "d_area_pct": -0.227,
+    "d_yb_in": -0.289,
+    "d_ix_pct": -0.185,
+    "d_iy_pct": 3.971
+   },
+   {
+    "state": "CA",
+    "cls": "CaWideFlangeSection",
+    "size": "CA WF120",
+    "brice": {
+     "area": 1353.2,
+     "yt": 66.73,
+     "yb": 53.27,
+     "ix": 2640476.0,
+     "iy": 91160.0
+    },
+    "d_area_pct": -0.22,
+    "d_yb_in": -0.297,
+    "d_ix_pct": -0.194,
+    "d_iy_pct": 3.964
+   },
+   {
+    "state": "CA",
+    "cls": "CaBathTubSection",
+    "size": "CA TUB55",
+    "brice": {
+     "area": 1337.0,
+     "yt": 30.94,
+     "yb": 24.19,
+     "ix": 462263.0,
+     "iy": 1131753.0
+    },
+    "d_area_pct": 0.139,
+    "d_yb_in": -0.073,
+    "d_ix_pct": -0.44,
+    "d_iy_pct": 0.028
+   },
+   {
+    "state": "CA",
+    "cls": "CaBathTubSection",
+    "size": "CA TUB61",
+    "brice": {
+     "area": 1432.4,
+     "yt": 34.03,
+     "yb": 26.97,
+     "ix": 605522.0,
+     "iy": 1296561.0
+    },
+    "d_area_pct": 0.128,
+    "d_yb_in": -0.067,
+    "d_ix_pct": -0.355,
+    "d_iy_pct": 0.02
+   },
+   {
+    "state": "CA",
+    "cls": "CaBathTubSection",
+    "size": "CA TUB67",
+    "brice": {
+     "area": 1527.8,
+     "yt": 37.1,
+     "yb": 29.78,
+     "ix": 773444.0,
+     "iy": 1473328.0
+    },
+    "d_area_pct": 0.119,
+    "d_yb_in": -0.071,
+    "d_ix_pct": -0.289,
+    "d_iy_pct": 0.014
+   },
+   {
+    "state": "CA",
+    "cls": "CaBathTubSection",
+    "size": "CA TUB73",
+    "brice": {
+     "area": 1623.8,
+     "yt": 40.17,
+     "yb": 32.62,
+     "ix": 968969.0,
+     "iy": 1664925.0
+    },
+    "d_area_pct": 0.198,
+    "d_yb_in": -0.031,
+    "d_ix_pct": 0.088,
+    "d_iy_pct": 0.111
+   },
+   {
+    "state": "CA",
+    "cls": "CaBathTubSection",
+    "size": "CA TUB79",
+    "brice": {
+     "area": 1720.6,
+     "yt": 43.26,
+     "yb": 35.49,
+     "ix": 1194944.0,
+     "iy": 1868824.0
+    },
+    "d_area_pct": 0.105,
+    "d_yb_in": -0.067,
+    "d_ix_pct": -0.194,
+    "d_iy_pct": 0.004
+   },
+   {
+    "state": "CA",
+    "cls": "CaBathTubSection",
+    "size": "CA TUB85",
+    "brice": {
+     "area": 1815.9,
+     "yt": 46.29,
+     "yb": 38.34,
+     "ix": 1447432.0,
+     "iy": 2084224.0
+    },
+    "d_area_pct": 0.103,
+    "d_yb_in": -0.072,
+    "d_ix_pct": -0.159,
+    "d_iy_pct": 0.001
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-29",
+    "brice": {
+     "area": 634.7,
+     "yt": 14.34,
+     "yb": 14.66,
+     "ix": 66823.0,
+     "iy": 62045.0
+    },
+    "d_area_pct": -0.002,
+    "d_yb_in": 0.002,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-37",
+    "brice": {
+     "area": 690.7,
+     "yt": 18.57,
+     "yb": 18.43,
+     "ix": 126033.0,
+     "iy": 62273.0
+    },
+    "d_area_pct": -0.002,
+    "d_yb_in": 0.0,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.001
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-45",
+    "brice": {
+     "area": 746.7,
+     "yt": 22.77,
+     "yb": 22.23,
+     "ix": 207282.0,
+     "iy": 62502.0
+    },
+    "d_area_pct": -0.002,
+    "d_yb_in": 0.004,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-53",
+    "brice": {
+     "area": 802.7,
+     "yt": 26.94,
+     "yb": 26.06,
+     "ix": 312376.0,
+     "iy": 62731.0
+    },
+    "d_area_pct": -0.002,
+    "d_yb_in": 0.004,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-61",
+    "brice": {
+     "area": 858.7,
+     "yt": 31.08,
+     "yb": 29.92,
+     "ix": 443115.0,
+     "iy": 62959.0
+    },
+    "d_area_pct": -0.001,
+    "d_yb_in": -0.003,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.001
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-69",
+    "brice": {
+     "area": 914.7,
+     "yt": 35.21,
+     "yb": 33.79,
+     "ix": 601300.0,
+     "iy": 63188.0
+    },
+    "d_area_pct": -0.001,
+    "d_yb_in": -0.002,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-77",
+    "brice": {
+     "area": 970.7,
+     "yt": 39.33,
+     "yb": 37.67,
+     "ix": 788728.0,
+     "iy": 63417.0
+    },
+    "d_area_pct": -0.001,
+    "d_yb_in": 0.004,
+    "d_ix_pct": 0.0,
+    "d_iy_pct": -0.0
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-85",
+    "brice": {
+     "area": 1026.7,
+     "yt": 43.43,
+     "yb": 41.57,
+     "ix": 1007196.0,
+     "iy": 63645.0
+    },
+    "d_area_pct": -0.001,
+    "d_yb_in": 0.002,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": 0.001
+   },
+   {
+    "state": "VA",
+    "cls": "VaPcbtSection",
+    "size": "PCBT-93",
+    "brice": {
+     "area": 1082.7,
+     "yt": 47.52,
+     "yb": 45.48,
+     "ix": 1258498.0,
+     "iy": 63874.0
+    },
+    "d_area_pct": -0.001,
+    "d_yb_in": 0.001,
+    "d_ix_pct": -0.0,
+    "d_iy_pct": 0.0
+   },
+   {
+    "state": "NE",
+    "cls": "NeNuGirderSection",
+    "size": "NU900",
+    "brice": {
+     "area": 647.6,
+     "yt": 19.31,
+     "yb": 16.09,
+     "ix": 109971.0,
+     "iy": 61200.0
+    },
+    "d_area_pct": 0.075,
+    "d_yb_in": 0.036,
+    "d_ix_pct": 0.206,
+    "d_iy_pct": -0.07
+   },
+   {
+    "state": "NE",
+    "cls": "NeNuGirderSection",
+    "size": "NU1100",
+    "brice": {
+     "area": 694.3,
+     "yt": 23.76,
+     "yb": 19.54,
+     "ix": 182159.0,
+     "iy": 61335.0
+    },
+    "d_area_pct": 0.041,
+    "d_yb_in": 0.027,
+    "d_ix_pct": 0.031,
+    "d_iy_pct": -0.07
+   },
+   {
+    "state": "NE",
+    "cls": "NeNuGirderSection",
+    "size": "NU1350",
+    "brice": {
+     "area": 752.1,
+     "yt": 29.19,
+     "yb": 23.91,
+     "ix": 301563.0,
+     "iy": 61503.0
+    },
+    "d_area_pct": 0.081,
+    "d_yb_in": 0.044,
+    "d_ix_pct": 0.235,
+    "d_iy_pct": -0.068
+   },
+   {
+    "state": "NE",
+    "cls": "NeNuGirderSection",
+    "size": "NU1600",
+    "brice": {
+     "area": 810.5,
+     "yt": 34.6,
+     "yb": 28.4,
+     "ix": 458491.0,
+     "iy": 61672.0
+    },
+    "d_area_pct": 0.041,
+    "d_yb_in": 0.019,
+    "d_ix_pct": -0.015,
+    "d_iy_pct": -0.068
+   },
+   {
+    "state": "NE",
+    "cls": "NeNuGirderSection",
+    "size": "NU1800",
+    "brice": {
+     "area": 857.1,
+     "yt": 38.88,
+     "yb": 32.02,
+     "ix": 611854.0,
+     "iy": 61808.0
+    },
+    "d_area_pct": 0.027,
+    "d_yb_in": 0.014,
+    "d_ix_pct": -0.095,
+    "d_iy_pct": -0.07
+   },
+   {
+    "state": "NE",
+    "cls": "NeNuGirderSection",
+    "size": "NU2000",
+    "brice": {
+     "area": 903.1,
+     "yt": 43.06,
+     "yb": 35.64,
+     "ix": 789351.0,
+     "iy": 61941.0
+    },
+    "d_area_pct": 0.081,
+    "d_yb_in": 0.043,
+    "d_ix_pct": 0.15,
+    "d_iy_pct": -0.066
+   }
+  ]
+ },
+ "removed_duplicates": [
+  "NyNebtSection (6) and NyNextBeamSection (16): duplicate PCI Northeast family in us.pci_regional_products"
+ ]
+}

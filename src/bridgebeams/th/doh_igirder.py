@@ -76,6 +76,10 @@ class ThDOHIGirderSection:
     1200.0
     """
 
+    # Unresolved web/splay split modelled as plain web; not fitted, so estimate over fitted-reconstruction.
+    provenance = "estimate"
+    source_status = "DOH Standard Drawings 2015 Edition"
+
     def __init__(self):
         data = _load_data()
         self.published = data["published_properties"][0]

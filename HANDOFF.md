@@ -11,7 +11,7 @@ width interpretations and blocker claims in it were wrong.
   workflow. Do not merge or push to main. Keep changes on this branch or a
   new jurisdiction branch, with descriptive commits.
 - Python: `/home/ccaprani/anaconda3/envs/pybridge/bin/python`.
-- Full test suite after the September 2026 extraction round: **827 passed**,
+- Full test suite after round 2 (web retrieval): **3369 passed**,
   14 existing Matplotlib/Pyparsing deprecation warnings. Command:
   `timeout 180 /home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`.
 - Wheel checked outside the checkout: **all family JSON tables included**;
@@ -42,7 +42,48 @@ profiles, 476 country-profile assignments, 122 researched jurisdictions and
 researched countries with zero implemented profiles; Korea has three existing
 implemented profiles but its new PSC-I records are not yet implemented.
 
-## Extraction round, 23 September 2026 (read first)
+## Round 2 web retrieval and publication stance, 23 September 2026 (read first)
+
+Owner's stance (Colin): keep pushing, do our best, then **crowd-source
+corrections**. The catalogue is explicitly *not authoritative*, only useful.
+There is a prominent disclaimer in the README, docs index, coverage map,
+package docstring and `bridgebeams.DISCLAIMER`. `docs/source/corrections.md`
+explains the provenance levels and how to report errors. GitHub issue form:
+`.github/ISSUE_TEMPLATE/profile-correction.yml`. **Never delete downloaded
+reference material**, even irrelevant files or HTML block pages; record their
+status instead.
+
+Totals now: **1728 distinct profiles, 1903 country-profile assignments, 44
+countries**. Every profile has `provenance`: 543 transcribed, 760
+with-convention, 190 fitted, 235 estimate. The 301 pre-September profiles
+were backfilled (`tests/test_provenance_legacy.py`). The coverage map shows the
+provenance split and the per-family estimate counts.
+
+Round 2 records are in `docs/research/round2-*-2026-09.md` and JSON (sources,
+hashes, leads not implemented). Downloads are in `sources/expansion/round2/<cc>/`.
+The whole session scratchpad (retrieval tables, extra PDFs, page renders) is
+preserved at `sources/expansion/round2/session-scratch-20260923/`.
+
+| Area | Added | Highlights / caveats |
+|---|---:|---|
+| US PCI national + Florida (`us/pci_*`, `us/fdot_*`) | 130 | Full PCI BDM 2011 App. B/C; FIB within 0.005%; PCI heavy double-T residuals pinned |
+| US Texas + 11 states (`us/txdot_*`, `us/state_*`) | 433 | Independently checked against Brice et al. 2021 PCI Journal tables; PA contributes 140 (width × depth matrix) |
+| Europe (new it, fr, dk, ua, bg, lt, hr; `r2_*` in pl, ro, es, nl, gr, uk, hu, tr, ru) | 381 | UK FP McCann (84) is GB-only; Spanbeton ZIPXL/PIQ/SRP table conflicts pinned; Paver, MG-T, Tierra, Somaco are estimates |
+| Latin America (br, ar, cr; `mx/r2_*`) | 23 | DNIT IPR-751 PCP-15/20 exact; Pretensa all estimates |
+| South Asia + Korea (pk, lk, bd; `kr/r2_*`) | 19 | NHA A–H come from a 2025 journal table; the original NHA sheets are only on Scribd |
+| East/SE Asia + Oceania (vn, kh, my; `r2_*` in cn, jp, tw, th, id, aus) | 162 | JIS slab girders exact; Shanghai atlas is a 2021 draft; old Thai IG-205 class superseded for counting by `ThDohIGirderR2Section("IG20")` |
+| Africa + Middle East (ma; `qa/r2_*`) | 24 | Ashghal TY/TYE now public; SADET estimates |
+
+Integration decisions: a round-2 Delhi–Vadodara duplicate was removed (same
+PDF and geometry as round 1). The GB coverage count = Banagher aliases + UK-only
+modules. UA 3Bet/Б count 17 SIZES but only 7 distinct sections. FP McCann box
+SD and TY Type 2 are identical to Banagher geometry but counted as a separate
+producer. **Open for review:**
+- A Bedrock (ZA) reprint of Civilcon M prints a 10 mm edge inset against the fitted 15 mm, with a constant +875 mm² area offset. Consider refitting `CivilconMBeamSection`.
+- OKA (MY) M-beam dimensions could inform Civilcon M, but they were not transferred.
+- The shared web-search budget ran out in round 2. The Gulf states, Iran, parts of North Africa, the other UK producers and legacy UK standards, and several Nordic and Balkan countries got little or no coverage. Blocked leads (Cloudflare, Incapsula, CAPTCHA, Scribd) are listed per record.
+
+## Extraction round 1, 23 September 2026
 
 Every downloaded but unimplemented source was assessed by visual page
 inspection, then 255 further profiles were implemented from it. Coverage is now

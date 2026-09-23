@@ -1,0 +1,364 @@
+{
+ "schema_version": 1,
+ "family": "Waskita Beton Precast PC-I girders and voided slabs (2026 catalogue)",
+ "country": "ID",
+ "source_status": "producer catalogue (Waskita Beton Precast, 2026)",
+ "source": {
+  "title_original": "Product Catalogue PT Waskita Beton Precast Tbk (WSBP) 2026",
+  "url": "https://waskitaprecast.co.id/uploads/pdf/waskita-katalog-produk-2026.pdf",
+  "local_file": "sources/expansion/round2/id/waskita-katalog-produk-2026.pdf",
+  "sha256": "e16e05d22b723cc364bbc058df341a7e46ebf19e90c8aba63286661d61ad0825",
+  "retrieved": "2026-09-23",
+  "retrieval_note": "Earlier local fetch returned HTTP 403; on 2026-09-23 a plain curl with a desktop browser User-Agent returned the PDF (no login or other control involved)."
+ },
+ "units": "mm (catalogue: 'All units in mm'); H designations in cm",
+ "pc_i": {
+  "pages": {
+   "notation_sketch": "PDF p14 / printed 13 (Edge/Middle Section Type 1 and Type 2)",
+   "table": "PDF p15 / printed 14 (Product Dimension)"
+  },
+  "geometry_notes": [
+   "Middle (midspan) section implemented; Tw2 and h5-h8 belong to the thickened edge (end) section.",
+   "h1 is the vertical flange edge BELOW the 70 mm shoulder level (notation sketch: the 70 dimension and h1 are stacked). Web height = H - 70 - h1 - h2 - h3 - h4.",
+   "Top shoulders 80 wide x 70 deep are printed on the sketch for all types.",
+   "No soffit chamfer shown; none modelled.",
+   "No area/inertia is published by Waskita; checks are analytic only. For context only: WIKA's H-170 (same 800/700/200 widths) publishes 6695 cm2; the Waskita H170 outline computes 6723 cm2 (different producer, not a validation).",
+   "The p15 'Typical of Girder' photos show 2400 mm wide flanged girders (dims 2300 deep, 1200 base) that do not correspond to any table column; not used.",
+   "Semi-T column (A 1200, B 750, Tw1 250, h1 100, h2 170, h3 250, h4 250) has no depth H in the table; not implemented."
+  ],
+  "sections": {
+   "H90": {
+    "source_type": "Type 1",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 900,
+     "A": 550,
+     "B": 650,
+     "Tw1": 170,
+     "Tw2": null,
+     "h1": 130,
+     "h2": 75,
+     "h3": 100,
+     "h4": 125,
+     "h5": null,
+     "h6": null,
+     "h7": 21,
+     "h8": 125
+    },
+    "analytic": {
+     "area": 316050.0,
+     "yb": 433.89,
+     "ixx": 29743668310,
+     "web_height": 400.0
+    }
+   },
+   "H125": {
+    "source_type": "Type 1",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 1250,
+     "A": 550,
+     "B": 650,
+     "Tw1": 170,
+     "Tw2": null,
+     "h1": 130,
+     "h2": 75,
+     "h3": 100,
+     "h4": 125,
+     "h5": null,
+     "h6": null,
+     "h7": 22,
+     "h8": 175
+    },
+    "analytic": {
+     "area": 375550.0,
+     "yb": 609.14,
+     "ixx": 71459241887,
+     "web_height": 750.0
+    }
+   },
+   "H140": {
+    "source_type": "Type 2",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 1400,
+     "A": 700,
+     "B": 650,
+     "Tw1": 180,
+     "Tw2": 550,
+     "h1": 130,
+     "h2": 75,
+     "h3": 100,
+     "h4": 225,
+     "h5": 130,
+     "h6": 22,
+     "h7": 21,
+     "h8": 225
+    },
+    "analytic": {
+     "area": 493550.0,
+     "yb": 683.2,
+     "ixx": 119799210083,
+     "web_height": 800.0
+    }
+   },
+   "H160": {
+    "source_type": "Type 2",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 1600,
+     "A": 700,
+     "B": 650,
+     "Tw1": 180,
+     "Tw2": 550,
+     "h1": 130,
+     "h2": 75,
+     "h3": 100,
+     "h4": 225,
+     "h5": 130,
+     "h6": 22,
+     "h7": 22,
+     "h8": 225
+    },
+    "analytic": {
+     "area": 529550.0,
+     "yb": 781.14,
+     "ixx": 169790027888,
+     "web_height": 1000.0
+    }
+   },
+   "H170": {
+    "source_type": "Type 2",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 1700,
+     "A": 800,
+     "B": 700,
+     "Tw1": 200,
+     "Tw2": 600,
+     "h1": 130,
+     "h2": 120,
+     "h3": 250,
+     "h4": 250,
+     "h5": 130,
+     "h6": 40,
+     "h7": 50,
+     "h8": 250
+    },
+    "analytic": {
+     "area": 672300.0,
+     "yb": 820.13,
+     "ixx": 238419027755,
+     "web_height": 880.0
+    }
+   },
+   "H185": {
+    "source_type": "Type 2",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 1850,
+     "A": 800,
+     "B": 700,
+     "Tw1": 200,
+     "Tw2": 600,
+     "h1": 130,
+     "h2": 120,
+     "h3": 250,
+     "h4": 250,
+     "h5": 130,
+     "h6": 40,
+     "h7": 50,
+     "h8": 250
+    },
+    "analytic": {
+     "area": 702300.0,
+     "yb": 891.84,
+     "ixx": 297622119905,
+     "web_height": 1030.0
+    }
+   },
+   "H210": {
+    "source_type": "Type 2",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 2100,
+     "A": 800,
+     "B": 700,
+     "Tw1": 200,
+     "Tw2": 600,
+     "h1": 130,
+     "h2": 120,
+     "h3": 250,
+     "h4": 250,
+     "h5": 130,
+     "h6": 40,
+     "h7": 50,
+     "h8": 250
+    },
+    "analytic": {
+     "area": 752300.0,
+     "yb": 1011.95,
+     "ixx": 413988026354,
+     "web_height": 1280.0
+    }
+   },
+   "H230": {
+    "source_type": "Type 2",
+    "provenance": "transcribed-with-convention",
+    "notation_mm": {
+     "H": 2300,
+     "A": 850,
+     "B": 750,
+     "Tw1": 250,
+     "Tw2": 600,
+     "h1": 130,
+     "h2": 120,
+     "h3": 250,
+     "h4": 250,
+     "h5": 130,
+     "h6": 40,
+     "h7": 50,
+     "h8": 250
+    },
+    "analytic": {
+     "area": 907300.0,
+     "yb": 1113.74,
+     "ixx": 574778467212,
+     "web_height": 1480.0
+    }
+   }
+  }
+ },
+ "voided_slab": {
+  "pages": {
+   "sketch": "PDF p44 / printed 43 (Typical Cross Section Type 1 B=970, Type 2 B=1200)",
+   "table": "PDF p45 / printed 44"
+  },
+  "geometry_notes": [
+   "Printed: B, H, h = H/2 (void centre), h1 = 25, h2 (top key face), b = 50 (key width), D (void diameter).",
+   "Interpretation (from sketch): key is b = 50 wide; vertical face h2 below the top, then a sloping return over h1 = 25 to full width.",
+   "ESTIMATES: void lateral positions (Type 1 two voids at +-240; Type 2 three voids at 0, +-320) scaled from the schematic sketch; 25 x 25 soffit chamfers (sketch shows small chamfers; size not printed).",
+   "No published properties; provenance estimate.",
+   "Type 1 H66 prints D = 350 (WIKA VS-66 uses 300); transcribed as printed."
+  ],
+  "sections": {
+   "H57": {
+    "source_type": "Type 1",
+    "provenance": "estimate",
+    "notation_mm": {
+     "H": 570,
+     "B": 970,
+     "h": 285,
+     "h1": 25,
+     "h2": 75,
+     "b": 50,
+     "D": 250
+    },
+    "estimated_void_x_mm": [
+     -240,
+     240
+    ],
+    "estimated_chamfer_mm": 25,
+    "analytic": {
+     "area": 445352.7,
+     "yb": 280.65,
+     "ixx": 14016200920
+    }
+   },
+   "H62": {
+    "source_type": "Type 1",
+    "provenance": "estimate",
+    "notation_mm": {
+     "H": 620,
+     "B": 970,
+     "h": 310,
+     "h1": 25,
+     "h2": 100,
+     "b": 50,
+     "D": 300
+    },
+    "estimated_void_x_mm": [
+     -240,
+     240
+    ],
+    "estimated_chamfer_mm": 25,
+    "analytic": {
+     "area": 448156.9,
+     "yb": 304.06,
+     "ixx": 17661728674
+    }
+   },
+   "H66": {
+    "source_type": "Type 1",
+    "provenance": "estimate",
+    "notation_mm": {
+     "H": 660,
+     "B": 970,
+     "h": 330,
+     "h1": 25,
+     "h2": 120,
+     "b": 50,
+     "D": 350
+    },
+    "estimated_void_x_mm": [
+     -240,
+     240
+    ],
+    "estimated_chamfer_mm": 25,
+    "analytic": {
+     "area": 433907.3,
+     "yb": 322.42,
+     "ixx": 20736367042
+    }
+   },
+   "H52.5": {
+    "source_type": "Type 2",
+    "provenance": "estimate",
+    "notation_mm": {
+     "H": 525,
+     "B": 1200,
+     "h": 262.5,
+     "h1": 25,
+     "h2": 75,
+     "b": 50,
+     "D": 250
+    },
+    "estimated_void_x_mm": [
+     -320,
+     0,
+     320
+    ],
+    "estimated_chamfer_mm": 25,
+    "analytic": {
+     "area": 473366.5,
+     "yb": 258.8,
+     "ixx": 13424840164
+    }
+   },
+   "H62.5": {
+    "source_type": "Type 2",
+    "provenance": "estimate",
+    "notation_mm": {
+     "H": 625,
+     "B": 1200,
+     "h": 312.5,
+     "h1": 25,
+     "h2": 100,
+     "b": 50,
+     "D": 300
+    },
+    "estimated_void_x_mm": [
+     -320,
+     0,
+     320
+    ],
+    "estimated_chamfer_mm": 25,
+    "analytic": {
+     "area": 526072.8,
+     "yb": 307.39,
+     "ixx": 22400153589
+    }
+   }
+  }
+ }
+}

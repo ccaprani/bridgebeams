@@ -1,0 +1,26 @@
+{
+ "producer": "ЗБЕ ЕООД — Завод за бетонови елементи (ZBE, Bulgaria)",
+ "product_title_original": "Мостови греди",
+ "source_status": "producer web catalogue (single product drawing; 95 cm variant mentioned but not drawn)",
+ "retrieved": "2026-09-23",
+ "sources": {
+  "page": {"url": "https://zbe.bg/продукти/сглобяеми-елементи/мостови-греди/", "local": "sources/expansion/round2/bg/zbe_mostovi_gredi.html",
+           "text_original": "ЗБЕ ЕООД произвежда мостови греди със средна височина 75 cм и 95 см с вариращ наклон. Дължината на кофража е 100 m, което не ограничава дължината на гредите."},
+  "drawing": {"image_url": "https://zbe.bg/wp-content/uploads/2020/11/MG1.png", "local": "sources/expansion/round2/bg/zbe_MG1.png", "sha256": "b2dc79bfa5b81c7296e93b65775bd27097e8c815d6b8eb996fb6885a632ecc95", "view": "Напречен разрез (cross-section)"}
+ },
+ "units": "cm",
+ "published_properties": "none",
+ "sizes": {
+  "MG75": {"name_original": "мостова греда Hср = 75", "B": 110, "fillet_h": 5, "fillet_v": 5, "web": 18, "bottom_width": 70, "haunch_h": 10, "side_total": 14, "chamfer": 2, "web_h": 35,
+           "left": [5.5, 7, 76.5], "right": [2.5, 7, 73.5], "right_taper_label_read": "2 (crowded label; 2.5 closes the chain on the printed 73.5)", "H_mean": 75,
+           "provenance": "transcribed-with-convention"}
+ },
+ "skipped": {"MG95": "stated in the page text (средна височина 95 см) but not drawn; no defensible outline"},
+ "geometry_notes": [
+  "Printed: top width 110, web 18, bottom width 70 (26 + 18 + 26), left chain 14 + 10 + 35 + 5 + 5.5 + 7 = 76.5, right chain 14 + 10 + 35 + 5 + ? + 7 = 73.5, Hcp = 75 (mean).",
+  "Right underside taper label reads '2' in a crowded stack; 2.5 is used so that the chain closes on the printed 73.5 total.",
+  "Web-flange fillet horizontal leg not dimensioned; scaled from the drawing as 5 cm (vertical leg printed 5): estimate.",
+  "Soffit chamfer not dimensioned; scaled ~2 x 2 cm from the drawing (same as the Rila GT family): estimate; the printed 14 includes it.",
+  "Crossfall varies per project ('с вариращ наклон'); the drawn instance (left high, 3 cm over 110 cm) is implemented."
+ ]
+}

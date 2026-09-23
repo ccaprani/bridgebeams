@@ -58,6 +58,9 @@ class SepsaIGirderSection:
 
     SIZES = ("I-MODIFIED", "II", "III", "IV", "IV-MODIFIED", "V", "VI")
 
+    provenance = "transcribed"
+    source_status = "producer catalogue V-05-27-21"
+
     def __init__(self, size: str = "IV"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

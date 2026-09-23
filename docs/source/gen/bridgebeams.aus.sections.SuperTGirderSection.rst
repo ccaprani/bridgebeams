@@ -1,4 +1,4 @@
-bridgebeams.aus.sections.SuperTGirderSection
+﻿bridgebeams.aus.sections.SuperTGirderSection
 ============================================
 
 .. currentmodule:: bridgebeams.aus.sections
@@ -21,5 +21,12 @@ bridgebeams.aus.sections.SuperTGirderSection
    
 
    
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~SuperTGirderSection.provenance
+      ~SuperTGirderSection.source_status
    
    

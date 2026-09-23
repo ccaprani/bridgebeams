@@ -1,0 +1,221 @@
+{
+ "schema_version": 1,
+ "family": "Estructuras Pretensa 'Viga VI' bridge I-beams and VPI-45 juxtaposed beam",
+ "country": "Argentina",
+ "source_status": "producer brochure (undated); outline estimated from schematic",
+ "source": {
+  "organisation": "Estructuras Pretensa S.A. (Córdoba / Buenos Aires)",
+  "title": "Puentes (brochure, 2 pp.)",
+  "url": "https://www.pretensa.com.ar/multimedia/downloads/11/12/puentes.pdf",
+  "local_file": "sources/expansion/europe-americas/ar_pretensa.pdf",
+  "sha256": "8b4193429371c1d1f1cd07037ab5aa511571128f74f3004a533eb24153b37f33",
+  "accessed": "2026-09-22",
+  "locators": {
+   "VI": "PDF p1: 'Vigas VI + prelosas' schematic and table (Peso propio kg/m, Altura m, Luz máxima)",
+   "VPI-45": "PDF p2: 'Vigas VI45 yuxtapuestas' schematic (0.45 dimensioned) and table"
+  }
+ },
+ "units": {
+  "table_depth": "m",
+  "table_mass": "kg/m",
+  "outline_output": "mm"
+ },
+ "translation": {
+  "viga": "beam",
+  "peso propio": "self-weight",
+  "altura": "depth",
+  "luz máxima": "maximum span",
+  "separación entre ejes": "beam spacing",
+  "yuxtapuestas": "juxtaposed (side by side)",
+  "prelosa": "precast deck panel"
+ },
+ "assumptions": {
+  "density_kg_m3": 2500,
+  "vi_schematic_depth_mm": 1600
+ },
+ "geometry_notes": [
+  "ESTIMATE (all sizes). The brochure prints only depth, self-weight and spans. Outline shape (plain I: top flange with a short taper to the web, bottom bulb with a taper, equal top and bottom widths as drawn) is taken from the PDF p1 schematic, rendered at 500 dpi and measured by pixel run-lengths.",
+  "VI schematic assumed drawn at the maximum 1.60 m depth (its dimension reads 'Altura de viga Mín.=0.90 Máx.=1.60'). Measured at that scale and rounded to 5 mm: flange widths 585, top flange 110, top taper 45, web ~140, bottom taper 120, bottom flange 230 mm. Unfitted, that outline gives 0.412 m2 = 1030 kg/m at 2500 kg/m3 vs published 948 kg/m (+8.6%), supporting the scale assumption.",
+  "CONVENTION: for each VI type the four flange heights are scaled by depth/1600, flange widths held at 585 mm, and the web width solved so the gross area equals published kg/m / 2500 kg/m3. Held-width/fixed-flange and uniformly scaled templates were rejected: the published masses are not linear in depth (e.g. VI-154 864 kg/m vs VI-130 811), so flange proportions must vary between moulds.",
+  "Fitted webs: VI-90 116, VI-100 145, VI-120 124, VI-130 129, VI-154 95, VI-160 112 mm. The non-monotonic webs reflect the tabulated masses, not a producer rule; treat every dimension as uncertain by at least +/-20%.",
+  "VPI-45: scaled from the PDF p2 schematic using its printed 0.45 m depth (591 px/m at 600 dpi): width 415, top flange 70, top taper 50, bottom taper 100, bottom flange 95, web ~95 mm (measured). Web solved to 296 kg/m at 2500 kg/m3 (measured-web outline is +1.0% heavier). The deck shows these beams side by side with the in-situ slab; width 415 mm is the module.",
+  "No section properties published; the only validation is self-weight, which is enforced by construction."
+ ],
+ "types": {
+  "VI-90": {
+   "provenance": "estimate",
+   "published_depth_m": 0.9,
+   "published_self_weight_kg_m": 540,
+   "published_max_span_m_for_spacing_2_2.5_3m": [
+    16.0,
+    15.0,
+    12.0
+   ],
+   "target_area_mm2": 216000.0,
+   "dimensions_mm": {
+    "depth": 900,
+    "flange_width": 585,
+    "web_width": 116.2,
+    "top_flange": 61.9,
+    "top_taper": 25.3,
+    "bottom_flange": 129.4,
+    "bottom_taper": 67.5
+   },
+   "calculated": {
+    "area_mm2": 216013.8,
+    "yb_mm": 386.7,
+    "ixx_mm4": 22654000000.0
+   }
+  },
+  "VI-100": {
+   "provenance": "estimate",
+   "published_depth_m": 1.0,
+   "published_self_weight_kg_m": 652,
+   "published_max_span_m_for_spacing_2_2.5_3m": [
+    19.0,
+    17.0,
+    15.0
+   ],
+   "target_area_mm2": 260800.0,
+   "dimensions_mm": {
+    "depth": 1000,
+    "flange_width": 585,
+    "web_width": 144.4,
+    "top_flange": 68.8,
+    "top_taper": 28.1,
+    "bottom_flange": 143.8,
+    "bottom_taper": 75.0
+   },
+   "calculated": {
+    "area_mm2": 260784.5,
+    "yb_mm": 439.1,
+    "ixx_mm4": 32291000000.0
+   }
+  },
+  "VI-120": {
+   "provenance": "estimate",
+   "published_depth_m": 1.2,
+   "published_self_weight_kg_m": 736,
+   "published_max_span_m_for_spacing_2_2.5_3m": [
+    23.0,
+    21.0,
+    18.0
+   ],
+   "target_area_mm2": 294400.0,
+   "dimensions_mm": {
+    "depth": 1200,
+    "flange_width": 585,
+    "web_width": 123.4,
+    "top_flange": 82.5,
+    "top_taper": 33.8,
+    "bottom_flange": 172.5,
+    "bottom_taper": 90.0
+   },
+   "calculated": {
+    "area_mm2": 294361.0,
+    "yb_mm": 518.7,
+    "ixx_mm4": 54239000000.0
+   }
+  },
+  "VI-130": {
+   "provenance": "estimate",
+   "published_depth_m": 1.3,
+   "published_self_weight_kg_m": 811,
+   "published_max_span_m_for_spacing_2_2.5_3m": [
+    25.0,
+    22.0,
+    20.0
+   ],
+   "target_area_mm2": 324400.0,
+   "dimensions_mm": {
+    "depth": 1300,
+    "flange_width": 585,
+    "web_width": 129.1,
+    "top_flange": 89.4,
+    "top_taper": 36.6,
+    "bottom_flange": 186.9,
+    "bottom_taper": 97.5
+   },
+   "calculated": {
+    "area_mm2": 324363.3,
+    "yb_mm": 564.5,
+    "ixx_mm4": 69506000000.0
+   }
+  },
+  "VI-154": {
+   "provenance": "estimate",
+   "published_depth_m": 1.54,
+   "published_self_weight_kg_m": 864,
+   "published_max_span_m_for_spacing_2_2.5_3m": [
+    30.0,
+    27.0,
+    23.0
+   ],
+   "target_area_mm2": 345600.0,
+   "dimensions_mm": {
+    "depth": 1540,
+    "flange_width": 585,
+    "web_width": 95.0,
+    "top_flange": 105.9,
+    "top_taper": 43.3,
+    "bottom_flange": 221.4,
+    "bottom_taper": 115.5
+   },
+   "calculated": {
+    "area_mm2": 345583.0,
+    "yb_mm": 648.9,
+    "ixx_mm4": 110030000000.0
+   }
+  },
+  "VI-160": {
+   "provenance": "estimate",
+   "published_depth_m": 1.6,
+   "published_self_weight_kg_m": 948,
+   "published_max_span_m_for_spacing_2_2.5_3m": [
+    31.0,
+    28.0,
+    25.0
+   ],
+   "target_area_mm2": 379200.0,
+   "dimensions_mm": {
+    "depth": 1600,
+    "flange_width": 585,
+    "web_width": 112.1,
+    "top_flange": 110.0,
+    "top_taper": 45.0,
+    "bottom_flange": 230.0,
+    "bottom_taper": 120.0
+   },
+   "calculated": {
+    "area_mm2": 379160.2,
+    "yb_mm": 685.0,
+    "ixx_mm4": 126530000000.0
+   }
+  },
+  "VPI-45": {
+   "provenance": "estimate",
+   "published_depth_m": 0.45,
+   "published_self_weight_kg_m": 296,
+   "published_max_span_m_A25_A30": [
+    14.0,
+    12.0
+   ],
+   "target_area_mm2": 118400.0,
+   "measured_web_mm": 95,
+   "dimensions_mm": {
+    "depth": 450,
+    "flange_width": 415,
+    "web_width": 89.5,
+    "top_flange": 70,
+    "top_taper": 50,
+    "bottom_flange": 95,
+    "bottom_taper": 100
+   },
+   "calculated": {
+    "area_mm2": 118395.0,
+    "yb_mm": 211.4,
+    "ixx_mm4": 2805100000.0
+   }
+  }
+ }
+}

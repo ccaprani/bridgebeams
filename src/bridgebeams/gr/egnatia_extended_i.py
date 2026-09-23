@@ -132,6 +132,9 @@ class GrExtendedISection:
                  37.0, 38.5, 40.0, 41.5, 43.0)
     WEFF_CLASSES_M = (2.0, 2.5, 3.0)
 
+    provenance = "estimate"
+    source_status = "research proposal (Marinelli et al. 2020); flange thicknesses user-supplied"
+
     def __init__(
         self,
         span_m: float = 35.0,

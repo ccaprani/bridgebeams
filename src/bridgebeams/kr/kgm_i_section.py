@@ -85,6 +85,16 @@ class KhcISection:
     SIZES = ("KHC-20", "KHC-25", "KHC-30", "KHC-35", "KHC-40")
     STANDARD_SIZES = ("KHC-25", "KHC-30", "KHC-35")  # KHC-recommended; 20/40 extrapolated
 
+    source_status = "secondary academic source (Paik, Hwang & Shin, Table 6)"
+
+    @property
+    def provenance(self) -> str:
+        # Tabulated dims, but +2.2% A / +3.2% Ixx vs literature KHC-35 values:
+        # labelled with-convention (cautious). KHC-20/40 are extrapolations.
+        if self.size not in self.STANDARD_SIZES:
+            return "estimate"
+        return "transcribed-with-convention"
+
     def __init__(self, size: str = "KHC-35"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

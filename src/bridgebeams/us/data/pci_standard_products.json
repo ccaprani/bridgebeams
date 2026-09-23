@@ -1,0 +1,1340 @@
+{
+ "slab": {
+  "title": "AASHTO Solid and Voided Slab Beams",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "title": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 (MNL-133-11), Appendices B and C (ePub compressed)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": 4,
+  "printed_page": "Appendix B-3 (drawings B-4, PDF p5)",
+  "also_published_as": {
+   "url": "https://www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/Slab%20Shapes.pdf",
+   "local_path": "sources/expansion/round2/us/pci-slab-shapes.pdf",
+   "sha256": "956d3bb9cc078826860357a4ccebbe0647b9246a96331aebe35a4a1fcc8d823c"
+  },
+  "units": "in, in2, in4",
+  "columns": [
+   "L",
+   "H",
+   "L1",
+   "L2",
+   "voids",
+   "D1",
+   "D2"
+  ],
+  "rows": {
+   "SI-36": [
+    36,
+    12,
+    null,
+    null,
+    0,
+    null,
+    null
+   ],
+   "SII-36": [
+    36,
+    15,
+    10.5,
+    7.5,
+    2,
+    8,
+    null
+   ],
+   "SIII-36": [
+    36,
+    18,
+    10.5,
+    7.5,
+    2,
+    10,
+    null
+   ],
+   "SIV-36": [
+    36,
+    21,
+    10,
+    8,
+    2,
+    12,
+    null
+   ],
+   "SI-48": [
+    48,
+    12,
+    null,
+    null,
+    0,
+    null,
+    null
+   ],
+   "SII-48": [
+    48,
+    15,
+    10,
+    14,
+    3,
+    8,
+    8
+   ],
+   "SIII-48": [
+    48,
+    18,
+    9.5,
+    14.5,
+    3,
+    10,
+    10
+   ],
+   "SIV-48": [
+    48,
+    21,
+    10,
+    14,
+    3,
+    12,
+    10
+   ]
+  },
+  "published": {
+   "SI-36": [
+    432,
+    6,
+    5184
+   ],
+   "SII-36": [
+    439,
+    7.5,
+    9725
+   ],
+   "SIII-36": [
+    491,
+    9,
+    16514
+   ],
+   "SIV-36": [
+    530,
+    10.5,
+    25747
+   ],
+   "SI-48": [
+    576,
+    6,
+    6912
+   ],
+   "SII-48": [
+    569,
+    7.5,
+    12897
+   ],
+   "SIII-48": [
+    628,
+    9,
+    21855
+   ],
+   "SIV-48": [
+    703,
+    10.5,
+    34517
+   ]
+  },
+  "published_columns": [
+   "area",
+   "yb",
+   "ixx"
+  ],
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "Void centres at mid-depth (drawn on the centreline CL); L1 edge-to-first-void-centre, L2 between void centres (L1+L2+L2+L1 = L for three voids; L1+L2 = L/2 for two voids, so two-void centres are at +/-L2).",
+   "Keyways (1/2 in x 6 in or 3/8 in stepped detail) are omitted: the published areas equal L*H minus the circular voids exactly (SI-36 = 36*12 = 432 in2), i.e. PCI's properties also exclude keyways.",
+   "Circular voids polygonised with 128 chords (void area understated by about 0.04 %)."
+  ],
+  "residuals_vs_published": {
+   "SI-36": {
+    "area": {
+     "computed": 432.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 6.0,
+     "residual_pct": -0.0
+    },
+    "ixx": {
+     "computed": 5184.0,
+     "residual_pct": 0.0
+    }
+   },
+   "SII-36": {
+    "area": {
+     "computed": 439.509,
+     "residual_pct": 0.116
+    },
+    "yb": {
+     "computed": 7.5,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 9723.199,
+     "residual_pct": -0.019
+    }
+   },
+   "SIII-36": {
+    "area": {
+     "computed": 490.983,
+     "residual_pct": -0.003
+    },
+    "yb": {
+     "computed": 9.0,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 16515.041,
+     "residual_pct": 0.006
+    }
+   },
+   "SIV-36": {
+    "area": {
+     "computed": 529.896,
+     "residual_pct": -0.02
+    },
+    "yb": {
+     "computed": 10.5,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 25748.882,
+     "residual_pct": 0.007
+    }
+   },
+   "SI-48": {
+    "area": {
+     "computed": 576.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 6.0,
+     "residual_pct": -0.0
+    },
+    "ixx": {
+     "computed": 6912.0,
+     "residual_pct": 0.0
+    }
+   },
+   "SII-48": {
+    "area": {
+     "computed": 569.264,
+     "residual_pct": 0.046
+    },
+    "yb": {
+     "computed": 7.5,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 12897.299,
+     "residual_pct": 0.002
+    }
+   },
+   "SIII-48": {
+    "area": {
+     "computed": 628.475,
+     "residual_pct": 0.076
+    },
+    "yb": {
+     "computed": 9.0,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 21856.561,
+     "residual_pct": 0.007
+    }
+   },
+   "SIV-48": {
+    "area": {
+     "computed": 703.388,
+     "residual_pct": 0.055
+    },
+    "yb": {
+     "computed": 10.5,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 34519.403,
+     "residual_pct": 0.007
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "box": {
+  "title": "AASHTO Box Beams",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "title": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 (MNL-133-11), Appendices B and C (ePub compressed)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": 6,
+  "printed_page": "Appendix B-5 (drawings B-6, PDF p7)",
+  "also_published_as": {
+   "url": "https://www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/Box%20Shapes.pdf",
+   "local_path": "sources/expansion/round2/us/pci-box-shapes.pdf",
+   "sha256": "d376c884f5696f63d9703b300b7000176af85e0368023dd06a49b0102a416544"
+  },
+  "units": "in, in2, in4",
+  "columns": [
+   "W",
+   "H"
+  ],
+  "common_dimensions": {
+   "web": 5,
+   "top_flange": 5.5,
+   "bottom_flange": 5.5,
+   "void_chamfer": 3,
+   "keyway_upper_inset": 0.375,
+   "keyway_upper_depth": 6,
+   "keyway_lower_inset": 0.75,
+   "keyway_lower_depth": 6
+  },
+  "rows": {
+   "BI-36": [
+    36,
+    27
+   ],
+   "BI-48": [
+    48,
+    27
+   ],
+   "BII-36": [
+    36,
+    33
+   ],
+   "BII-48": [
+    48,
+    33
+   ],
+   "BIII-36": [
+    36,
+    39
+   ],
+   "BIII-48": [
+    48,
+    39
+   ],
+   "BIV-36": [
+    36,
+    42
+   ],
+   "BIV-48": [
+    48,
+    42
+   ]
+  },
+  "published": {
+   "BI-36": [
+    560.5,
+    13.35,
+    50334
+   ],
+   "BI-48": [
+    692.5,
+    13.37,
+    65941
+   ],
+   "BII-36": [
+    620.5,
+    16.29,
+    85153
+   ],
+   "BII-48": [
+    752.5,
+    16.33,
+    110499
+   ],
+   "BIII-36": [
+    680.5,
+    19.25,
+    131145
+   ],
+   "BIII-48": [
+    812.5,
+    19.29,
+    168367
+   ],
+   "BIV-36": [
+    710.5,
+    20.73,
+    158644
+   ],
+   "BIV-48": [
+    842.5,
+    20.78,
+    203088
+   ]
+  },
+  "published_columns": [
+   "area",
+   "yb",
+   "ixx"
+  ],
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "Void: 5 in webs, 5.5 in top and bottom flanges, 3 in x 3 in chamfers at all four void corners (B-5 sketch).",
+   "Every published area is exactly 13.5 in2 below W*H minus the chamfered void, i.e. 6.75 in2 per side. The second 'Typical Keyway Detail' (3/8 in inset over the top 6 in, 3/4 in inset over the next 6 in) removes exactly 6.75 in2 per side and puts its centroid about 7 in below the top, matching the published yb shift; it is therefore used on both sides. The short sloped transitions drawn between the inset steps are squared off (convention).",
+   "The alternative 1/2 in / 1 in x 8 in keyway detail is not modelled."
+  ],
+  "residuals_vs_published": {
+   "BI-36": {
+    "area": {
+     "computed": 560.5,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 13.343,
+     "residual_pct": -0.049
+    },
+    "ixx": {
+     "computed": 50332.72,
+     "residual_pct": -0.003
+    }
+   },
+   "BI-48": {
+    "area": {
+     "computed": 692.5,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 13.373,
+     "residual_pct": 0.025
+    },
+    "ixx": {
+     "computed": 65922.339,
+     "residual_pct": -0.028
+    }
+   },
+   "BII-36": {
+    "area": {
+     "computed": 620.5,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 16.293,
+     "residual_pct": 0.02
+    },
+    "ixx": {
+     "computed": 85155.951,
+     "residual_pct": 0.003
+    }
+   },
+   "BII-48": {
+    "area": {
+     "computed": 752.5,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 16.33,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 110449.6,
+     "residual_pct": -0.045
+    }
+   },
+   "BIII-36": {
+    "area": {
+     "computed": 680.5,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 19.252,
+     "residual_pct": 0.01
+    },
+    "ixx": {
+     "computed": 131145.612,
+     "residual_pct": 0.0
+    }
+   },
+   "BIII-48": {
+    "area": {
+     "computed": 812.5,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 19.292,
+     "residual_pct": 0.012
+    },
+    "ixx": {
+     "computed": 168519.41,
+     "residual_pct": 0.091
+    }
+   },
+   "BIV-36": {
+    "area": {
+     "computed": 710.5,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 20.734,
+     "residual_pct": 0.019
+    },
+    "ixx": {
+     "computed": 158665.557,
+     "residual_pct": 0.014
+    }
+   },
+   "BIV-48": {
+    "area": {
+     "computed": 842.5,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 20.776,
+     "residual_pct": -0.021
+    },
+    "ixx": {
+     "computed": 202970.435,
+     "residual_pct": -0.058
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "bulb_tee": {
+  "title": "AASHTO-PCI Bulb-Tees",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "title": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 (MNL-133-11), Appendices B and C (ePub compressed)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": 10,
+  "printed_page": "Appendix B-9",
+  "also_published_as": {
+   "url": "https://ems-www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/AASHTO-PCI%20Bulb-Tees.pdf",
+   "local_path": "sources/expansion/round2/us/pci-aashto-pci-bulb-tees.pdf",
+   "sha256": "d9eeb34e8a4425997a0d0eb8afea98bd3488475c2b992bfef12ba3e53682d1fd"
+  },
+  "units": "in, in2, in4",
+  "common_dimensions": {
+   "top_width": 42,
+   "top_edge": 3.5,
+   "top_taper_drop": 2,
+   "top_taper_run": 16,
+   "fillet": 2,
+   "web": 6,
+   "bottom_width": 26,
+   "bottom_edge": 6,
+   "bottom_taper_rise": 4.5,
+   "bottom_taper_run": 10
+  },
+  "rows": {
+   "BT-54": [
+    54,
+    36
+   ],
+   "BT-63": [
+    63,
+    45
+   ],
+   "BT-72": [
+    72,
+    54
+   ]
+  },
+  "columns": [
+   "H",
+   "Hw"
+  ],
+  "published": {
+   "BT-54": [
+    659,
+    27.63,
+    268077
+   ],
+   "BT-63": [
+    713,
+    32.12,
+    392638
+   ],
+   "BT-72": [
+    767,
+    36.6,
+    545894
+   ]
+  },
+  "published_columns": [
+   "area",
+   "yb",
+   "ixx"
+  ],
+  "independent_check": "PCI Journal May-June 2021 Brice & Pickings appendix Table A.1: BT-54 A=659.0, yb=27.63, Ix=268,051, Iy=37,310 in4.",
+  "provenance": "transcribed",
+  "geometry_notes": [
+   "Stack 3.5 + 2 + 2 + Hw + 4.5 + 6 = H. The small radii drawn at the soffit corners are undimensioned and omitted, as in PCI's own properties (area closes exactly)."
+  ],
+  "residuals_vs_published": {
+   "BT-54": {
+    "area": {
+     "computed": 659.0,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 27.634,
+     "residual_pct": 0.016
+    },
+    "ixx": {
+     "computed": 268050.573,
+     "residual_pct": -0.01
+    }
+   },
+   "BT-63": {
+    "area": {
+     "computed": 713.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 32.118,
+     "residual_pct": -0.007
+    },
+    "ixx": {
+     "computed": 392515.812,
+     "residual_pct": -0.031
+    }
+   },
+   "BT-72": {
+    "area": {
+     "computed": 767.0,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 36.604,
+     "residual_pct": 0.01
+    },
+    "ixx": {
+     "computed": 545857.218,
+     "residual_pct": -0.007
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "deck_bulb_tee": {
+  "title": "Deck Bulb-Tees",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "title": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 (MNL-133-11), Appendices B and C (ePub compressed)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": 12,
+  "printed_page": "Appendix B-11",
+  "also_published_as": {
+   "url": "https://ems-www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/Deck%20Bulb-Tees.pdf",
+   "local_path": "sources/expansion/round2/us/pci-deck-bulb-tees.pdf",
+   "sha256": "032120d040737fb0f45bb2316b64b8c828d411cb12bbedf5855244c24388a52c"
+  },
+  "units": "in, in2, in4",
+  "common_dimensions": {
+   "flange": 6,
+   "flange_taper": 3,
+   "fillet": 2,
+   "web": 6,
+   "taper_run": 19.5,
+   "bottom_width": 25,
+   "bottom_taper": 3,
+   "bottom_edge": 6
+  },
+  "rows": {
+   "DBT35-48": [
+    35,
+    15,
+    48
+   ],
+   "DBT35-72": [
+    35,
+    15,
+    72
+   ],
+   "DBT35-96": [
+    35,
+    15,
+    96
+   ],
+   "DBT53-48": [
+    53,
+    33,
+    48
+   ],
+   "DBT53-72": [
+    53,
+    33,
+    72
+   ],
+   "DBT53-96": [
+    53,
+    33,
+    96
+   ],
+   "DBT65-48": [
+    65,
+    45,
+    48
+   ],
+   "DBT65-72": [
+    65,
+    45,
+    72
+   ],
+   "DBT65-96": [
+    65,
+    45,
+    96
+   ]
+  },
+  "columns": [
+   "H",
+   "Hw",
+   "W"
+  ],
+  "published": {
+   "DBT35-48": [
+    677,
+    21.12,
+    101540
+   ],
+   "DBT35-72": [
+    823,
+    23.04,
+    116071
+   ],
+   "DBT35-96": [
+    967,
+    24.37,
+    126353
+   ],
+   "DBT53-48": [
+    785,
+    31.71,
+    294350
+   ],
+   "DBT53-72": [
+    931,
+    34.56,
+    335679
+   ],
+   "DBT53-96": [
+    1075,
+    36.63,
+    365827
+   ],
+   "DBT65-48": [
+    857,
+    38.55,
+    490755
+   ],
+   "DBT65-72": [
+    1003,
+    41.95,
+    559367
+   ],
+   "DBT65-96": [
+    1147,
+    44.46,
+    610435
+   ]
+  },
+  "published_columns": [
+   "area",
+   "yb",
+   "ixx"
+  ],
+  "provenance": {
+   "DBT35-48": "transcribed-with-convention",
+   "DBT53-48": "transcribed-with-convention",
+   "DBT65-48": "transcribed-with-convention"
+  },
+  "provenance_default": "transcribed",
+  "geometry_notes": [
+   "Stack 6 + 3 + 2 + Hw + 3 + 6 = H; web 6 in; 2 in x 2 in fillet chamfer; 1'-7 1/2\" flange taper run beyond the fillet, then a VAR flat to the edge; bottom flange 2'-1\" wide.",
+   "Flange-edge shear keys and the small soffit radii are omitted; the 72 in and 96 in areas close exactly without them.",
+   "For W = 48 in the 19.5 in taper run would overshoot the 24 in half width by 0.5 in. Convention: the taper keeps its full 3 in drop but ends at the flange edge (19 in run); this gives 677.5 in2 against the published 677."
+  ],
+  "residuals_vs_published": {
+   "DBT35-48": {
+    "area": {
+     "computed": 677.5,
+     "residual_pct": 0.074
+    },
+    "yb": {
+     "computed": 21.119,
+     "residual_pct": -0.007
+    },
+    "ixx": {
+     "computed": 101540.225,
+     "residual_pct": 0.0
+    }
+   },
+   "DBT35-72": {
+    "area": {
+     "computed": 823.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 23.035,
+     "residual_pct": -0.022
+    },
+    "ixx": {
+     "computed": 116071.657,
+     "residual_pct": 0.001
+    }
+   },
+   "DBT35-96": {
+    "area": {
+     "computed": 967.0,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 24.37,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 126353.586,
+     "residual_pct": 0.0
+    }
+   },
+   "DBT53-48": {
+    "area": {
+     "computed": 785.5,
+     "residual_pct": 0.064
+    },
+    "yb": {
+     "computed": 31.712,
+     "residual_pct": 0.007
+    },
+    "ixx": {
+     "computed": 294350.797,
+     "residual_pct": 0.0
+    }
+   },
+   "DBT53-72": {
+    "area": {
+     "computed": 931.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 34.564,
+     "residual_pct": 0.011
+    },
+    "ixx": {
+     "computed": 335679.469,
+     "residual_pct": 0.0
+    }
+   },
+   "DBT53-96": {
+    "area": {
+     "computed": 1075.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 36.631,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 365827.335,
+     "residual_pct": 0.0
+    }
+   },
+   "DBT65-48": {
+    "area": {
+     "computed": 857.5,
+     "residual_pct": 0.058
+    },
+    "yb": {
+     "computed": 38.551,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 490755.192,
+     "residual_pct": 0.0
+    }
+   },
+   "DBT65-72": {
+    "area": {
+     "computed": 1003.0,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 41.947,
+     "residual_pct": -0.007
+    },
+    "ixx": {
+     "computed": 559367.182,
+     "residual_pct": 0.0
+    }
+   },
+   "DBT65-96": {
+    "area": {
+     "computed": 1147.0,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 44.465,
+     "residual_pct": 0.01
+    },
+    "ixx": {
+     "computed": 610435.142,
+     "residual_pct": 0.0
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "double_tee": {
+  "title": "Double Tee Beams",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "title": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 (MNL-133-11), Appendices B and C (ePub compressed)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": 14,
+  "printed_page": "Appendix B-13",
+  "units": "W in ft; other dimensions in, in2, in4",
+  "columns": [
+   "W_ft",
+   "H",
+   "T",
+   "A",
+   "C",
+   "E"
+  ],
+  "rows": {
+   "L5-27": [
+    5,
+    27,
+    5,
+    4.5,
+    8,
+    36
+   ],
+   "L6-23": [
+    6,
+    23,
+    5,
+    4.5,
+    6.5,
+    36
+   ],
+   "L6-27": [
+    6,
+    27,
+    5,
+    4.5,
+    8,
+    36
+   ],
+   "L8-27": [
+    8,
+    27,
+    5,
+    3.75,
+    5.75,
+    48
+   ],
+   "L8-35": [
+    8,
+    35,
+    5,
+    3.75,
+    6.5,
+    48
+   ],
+   "H5-36": [
+    5,
+    36,
+    6,
+    6,
+    8,
+    30
+   ],
+   "H6-35": [
+    6,
+    35,
+    5,
+    6,
+    9.75,
+    48
+   ],
+   "H7-35": [
+    7,
+    35,
+    5,
+    6,
+    9.75,
+    48
+   ],
+   "H8-35": [
+    8,
+    35,
+    5,
+    6,
+    9.75,
+    48
+   ],
+   "H6-27": [
+    6,
+    27,
+    5,
+    7,
+    9.75,
+    48
+   ],
+   "H7-27": [
+    7,
+    27,
+    5,
+    7,
+    9.75,
+    48
+   ],
+   "H8-27": [
+    8,
+    27,
+    5,
+    7,
+    9.75,
+    48
+   ],
+   "H6-21": [
+    6,
+    21,
+    5,
+    7.75,
+    9.75,
+    48
+   ],
+   "H7-21": [
+    7,
+    21,
+    5,
+    7.75,
+    9.75,
+    48
+   ],
+   "H8-21": [
+    8,
+    21,
+    5,
+    7.75,
+    9.75,
+    48
+   ]
+  },
+  "published": {
+   "L5-27": [
+    575,
+    18.6,
+    33740
+   ],
+   "L6-23": [
+    558,
+    16.61,
+    21366
+   ],
+   "L6-27": [
+    635,
+    19.15,
+    35758
+   ],
+   "L8-27": [
+    689,
+    20.64,
+    32888
+   ],
+   "L8-35": [
+    787,
+    26.2,
+    72421
+   ],
+   "H5-36": [
+    780,
+    23.69,
+    90286
+   ],
+   "H6-35": [
+    840,
+    23.3,
+    90164
+   ],
+   "H7-35": [
+    900,
+    23.91,
+    95028
+   ],
+   "H8-35": [
+    960,
+    24.45,
+    99299
+   ],
+   "H6-27": [
+    731,
+    18.09,
+    45084
+   ],
+   "H7-27": [
+    791,
+    18.58,
+    47486
+   ],
+   "H8-27": [
+    851,
+    19,
+    49566
+   ],
+   "H6-21": [
+    644,
+    14.11,
+    22720
+   ],
+   "H7-21": [
+    704,
+    14.48,
+    23903
+   ],
+   "H8-21": [
+    764,
+    14.8,
+    24920
+   ]
+  },
+  "published_columns": [
+   "area",
+   "yb",
+   "ixx"
+  ],
+  "provenance": "transcribed",
+  "geometry_notes": [
+   "Stems are trapezoids of width A at the soffit and C at the flange underside, centred E apart. The drawn stem-to-flange fillets are undimensioned and omitted; published areas close exactly without them. Light (L) and heavy (H) tables are separate profiles even where W and H coincide.",
+   "Pinned source discrepancies (not fitted): the five light sections and H5-36 close to <=0.07 % area; the nine other heavy sections are 2.5-7.5 in2 (0.3-0.9 %) below the published areas with Ixx up to +1.7 % (H8-27) and yb up to -0.63 %. No single undimensioned detail (fillet, chamfer) explains all nine, so the table geometry is kept as printed and the residuals are pinned per size in the tests. L5-27 yb -0.35 % and L6-27 Ixx +0.14 % are also pinned."
+  ],
+  "residuals_vs_published": {
+   "L5-27": {
+    "area": {
+     "computed": 575.0,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 18.534,
+     "residual_pct": -0.352
+    },
+    "ixx": {
+     "computed": 33749.733,
+     "residual_pct": 0.029
+    }
+   },
+   "L6-23": {
+    "area": {
+     "computed": 558.0,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 16.613,
+     "residual_pct": 0.017
+    },
+    "ixx": {
+     "computed": 21366.387,
+     "residual_pct": 0.002
+    }
+   },
+   "L6-27": {
+    "area": {
+     "computed": 635.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 19.098,
+     "residual_pct": -0.271
+    },
+    "ixx": {
+     "computed": 35808.215,
+     "residual_pct": 0.14
+    }
+   },
+   "L8-27": {
+    "area": {
+     "computed": 689.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 20.639,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 32893.254,
+     "residual_pct": 0.016
+    }
+   },
+   "L8-35": {
+    "area": {
+     "computed": 787.5,
+     "residual_pct": 0.064
+    },
+    "yb": {
+     "computed": 26.19,
+     "residual_pct": -0.036
+    },
+    "ixx": {
+     "computed": 72446.429,
+     "residual_pct": 0.035
+    }
+   },
+   "H5-36": {
+    "area": {
+     "computed": 780.0,
+     "residual_pct": -0.0
+    },
+    "yb": {
+     "computed": 23.692,
+     "residual_pct": 0.01
+    },
+    "ixx": {
+     "computed": 90286.154,
+     "residual_pct": 0.0
+    }
+   },
+   "H6-35": {
+    "area": {
+     "computed": 832.5,
+     "residual_pct": -0.893
+    },
+    "yb": {
+     "computed": 23.243,
+     "residual_pct": -0.244
+    },
+    "ixx": {
+     "computed": 89868.243,
+     "residual_pct": -0.328
+    }
+   },
+   "H7-35": {
+    "area": {
+     "computed": 892.5,
+     "residual_pct": -0.833
+    },
+    "yb": {
+     "computed": 23.866,
+     "residual_pct": -0.186
+    },
+    "ixx": {
+     "computed": 94788.866,
+     "residual_pct": -0.252
+    }
+   },
+   "H8-35": {
+    "area": {
+     "computed": 952.5,
+     "residual_pct": -0.781
+    },
+    "yb": {
+     "computed": 24.409,
+     "residual_pct": -0.166
+    },
+    "ixx": {
+     "computed": 99105.315,
+     "residual_pct": -0.195
+    }
+   },
+   "H6-27": {
+    "area": {
+     "computed": 728.5,
+     "residual_pct": -0.342
+    },
+    "yb": {
+     "computed": 17.976,
+     "residual_pct": -0.632
+    },
+    "ixx": {
+     "computed": 45773.238,
+     "residual_pct": 1.529
+    }
+   },
+   "H7-27": {
+    "area": {
+     "computed": 788.5,
+     "residual_pct": -0.316
+    },
+    "yb": {
+     "computed": 18.472,
+     "residual_pct": -0.58
+    },
+    "ixx": {
+     "computed": 48257.849,
+     "residual_pct": 1.625
+    }
+   },
+   "H8-27": {
+    "area": {
+     "computed": 848.5,
+     "residual_pct": -0.294
+    },
+    "yb": {
+     "computed": 18.898,
+     "residual_pct": -0.534
+    },
+    "ixx": {
+     "computed": 50408.75,
+     "residual_pct": 1.7
+    }
+   },
+   "H6-21": {
+    "area": {
+     "computed": 640.0,
+     "residual_pct": -0.621
+    },
+    "yb": {
+     "computed": 14.04,
+     "residual_pct": -0.499
+    },
+    "ixx": {
+     "computed": 23068.331,
+     "residual_pct": 1.533
+    }
+   },
+   "H7-21": {
+    "area": {
+     "computed": 700.0,
+     "residual_pct": -0.568
+    },
+    "yb": {
+     "computed": 14.422,
+     "residual_pct": -0.401
+    },
+    "ixx": {
+     "computed": 24284.731,
+     "residual_pct": 1.597
+    }
+   },
+   "H8-21": {
+    "area": {
+     "computed": 760.0,
+     "residual_pct": -0.524
+    },
+    "yb": {
+     "computed": 14.744,
+     "residual_pct": -0.379
+    },
+    "ixx": {
+     "computed": 25328.805,
+     "residual_pct": 1.64
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ }
+}

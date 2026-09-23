@@ -108,6 +108,9 @@ class IeTBeamSection:
 
     SIZES = tuple(f"T{i}" for i in range(1, 11))
 
+    provenance = "transcribed"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
     def __init__(self, size: str = "T5"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

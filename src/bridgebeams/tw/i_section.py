@@ -92,6 +92,9 @@ class TaiwanISection:
 
     SIZES = ("IV", "V", "VI", "VII", "VIII")
 
+    provenance = "transcribed"
+    source_status = "Freeway Bureau design notes (May 2020)"
+
     def __init__(self, size: str = "VI"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

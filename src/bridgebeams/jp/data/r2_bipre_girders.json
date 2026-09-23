@@ -1,0 +1,176 @@
+{
+ "family": "Bi-Prestressing (バイプレ方式) precast I and hollow girders, trial designs",
+ "jurisdiction": "Japan",
+ "units": {
+  "source": "mm",
+  "library": "mm"
+ },
+ "source_status": "association trial design (試設計), web page (c) 2009; not a national standard",
+ "sources": [
+  {
+   "id": "JP-BIPRE-CROSS",
+   "title": "バイプレストレッシング工法協会 プレキャスト桁の標準断面 (バイプレ方式プレキャストI桁 / 中空桁 試設計)",
+   "url": "https://bipre.sakura.ne.jp/cross/index.html",
+   "retrieved": "2026-09-23",
+   "files": [
+    {
+     "url": "https://bipre.sakura.ne.jp/cross/images/img3.gif",
+     "local_path": "sources/expansion/round2/jp/bipre-img3.gif",
+     "sha256": "dc8dc6de56a1c0d461f601717b74ee2f1658cb6ab85b9c9bddfa5226b4037cfd",
+     "content": "I-girder sections, spans 25-50 m"
+    },
+    {
+     "url": "https://bipre.sakura.ne.jp/cross/images/img11.gif",
+     "local_path": "sources/expansion/round2/jp/bipre-img11.gif",
+     "sha256": "904f52d0eeab38e2f7a38f7947195a3fb5dc29b2b6fff51a862311b81d1700a0",
+     "content": "hollow girder sections, spans 25-35 m"
+    },
+    {
+     "url": "https://bipre.sakura.ne.jp/cross/index.html",
+     "local_path": "sources/expansion/round2/jp/bipre.html",
+     "sha256": "e0308f54fa3d059386ff119f0f44d3fd057a3b52386599d7f897eb6ad2f4de48",
+     "content": "design conditions: B live load, spans 25-50 m @5 m, width 9 m, sigma_ck 40 N/mm2"
+    }
+   ]
+  }
+ ],
+ "geometry_notes": [
+  "Low-resolution GIF drawings (475 px wide) read after 4x upscaling; every printed callout legible except the 45 m I-girder vertical chain.",
+  "I-girders: top flange has a 30 mm set-back on each side at the top surface (top width = overall - 60) and a 30 mm high full-width lip at the bottom of the flange edge; the set-back to lip transition is modelled as a horizontal step (convention; the GIF shows a short kink).",
+  "I-girders: flange underside/overside is two straight tapers meeting at x = +/-200 mm (web half + inner_run); outer taper (60 or 90 high) spans from the flange edge to x=200, inner taper (90 or 120 high) from x=200 to the web.",
+  "I45: only the 1400 mm total depth is printed; 270/90/120/440/120/90/270 read by scaling the drawing (0.371 px/mm; each scaled level within 10 mm of these values) and matches the 40/50 m pattern. Provenance estimate.",
+  "Hollow girders: 750 mm body, 850 mm bottom ledge (50 mm outstand, 100 mm vertical edge then 50x50 splay); void 370 wide (190 mm walls), top slab 200, vertical void sides 375/475/625, V bottom 75 high; apex 200 mm above soffit closes the printed 850/950/1100 depths.",
+  "Compression bars, tendons and ducts are not deducted. No published section properties."
+ ],
+ "sections": {
+  "I25": {
+   "span_m": 25,
+   "depth": 850,
+   "top_width": 800,
+   "bottom_width": 800,
+   "web_width": 200,
+   "flange": 210,
+   "outer_taper": 60,
+   "inner_taper": 90,
+   "outer_run": 200,
+   "inner_run": 100,
+   "provenance": "transcribed-with-convention",
+   "clear_web": 130
+  },
+  "I30": {
+   "span_m": 30,
+   "depth": 950,
+   "top_width": 800,
+   "bottom_width": 800,
+   "web_width": 200,
+   "flange": 230,
+   "outer_taper": 60,
+   "inner_taper": 90,
+   "outer_run": 200,
+   "inner_run": 100,
+   "provenance": "transcribed-with-convention",
+   "clear_web": 190
+  },
+  "I35": {
+   "span_m": 35,
+   "depth": 1100,
+   "top_width": 800,
+   "bottom_width": 800,
+   "web_width": 200,
+   "flange": 250,
+   "outer_taper": 60,
+   "inner_taper": 90,
+   "outer_run": 200,
+   "inner_run": 100,
+   "provenance": "transcribed-with-convention",
+   "clear_web": 300
+  },
+  "I40": {
+   "span_m": 40,
+   "depth": 1250,
+   "top_width": 1000,
+   "bottom_width": 1000,
+   "web_width": 210,
+   "flange": 250,
+   "outer_taper": 90,
+   "inner_taper": 120,
+   "outer_run": 300,
+   "inner_run": 95,
+   "provenance": "transcribed-with-convention",
+   "clear_web": 330
+  },
+  "I45": {
+   "span_m": 45,
+   "depth": 1400,
+   "top_width": 1000,
+   "bottom_width": 1000,
+   "web_width": 210,
+   "flange": 270,
+   "outer_taper": 90,
+   "inner_taper": 120,
+   "outer_run": 300,
+   "inner_run": 95,
+   "provenance": "estimate",
+   "clear_web": 440
+  },
+  "I50": {
+   "span_m": 50,
+   "depth": 1550,
+   "top_width": 1000,
+   "bottom_width": 1000,
+   "web_width": 210,
+   "flange": 270,
+   "outer_taper": 90,
+   "inner_taper": 120,
+   "outer_run": 300,
+   "inner_run": 95,
+   "provenance": "transcribed-with-convention",
+   "clear_web": 590
+  },
+  "H25": {
+   "span_m": 25,
+   "depth": 850,
+   "top_width": 750,
+   "bottom_width": 850,
+   "wall": 190,
+   "void_width": 370,
+   "top_slab": 200,
+   "void_side": 375,
+   "void_v": 75,
+   "ledge": 50,
+   "ledge_edge": 100,
+   "provenance": "transcribed",
+   "void_apex_height": 200
+  },
+  "H30": {
+   "span_m": 30,
+   "depth": 950,
+   "top_width": 750,
+   "bottom_width": 850,
+   "wall": 190,
+   "void_width": 370,
+   "top_slab": 200,
+   "void_side": 475,
+   "void_v": 75,
+   "ledge": 50,
+   "ledge_edge": 100,
+   "provenance": "transcribed",
+   "void_apex_height": 200
+  },
+  "H35": {
+   "span_m": 35,
+   "depth": 1100,
+   "top_width": 750,
+   "bottom_width": 850,
+   "wall": 190,
+   "void_width": 370,
+   "top_slab": 200,
+   "void_side": 625,
+   "void_v": 75,
+   "ledge": 50,
+   "ledge_edge": 100,
+   "provenance": "transcribed",
+   "void_apex_height": 200
+  }
+ }
+}

@@ -53,6 +53,9 @@ class WsdotWSection:
 
     SIZES = ("W42G", "W50G", "W58G", "W74G")
 
+    provenance = "transcribed"
+    source_status = "historic June 2006 standard (2025 WSDOT BDM property table)"
+
     def __init__(self, size: str = "W42G"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

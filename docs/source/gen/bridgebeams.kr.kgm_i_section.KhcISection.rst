@@ -1,4 +1,4 @@
-bridgebeams.kr.kgm\_i\_section.KhcISection
+﻿bridgebeams.kr.kgm\_i\_section.KhcISection
 ==========================================
 
 .. currentmodule:: bridgebeams.kr.kgm_i_section
@@ -29,5 +29,7 @@ bridgebeams.kr.kgm\_i\_section.KhcISection
       ~KhcISection.STANDARD_SIZES
       ~KhcISection.geometry
       ~KhcISection.polygon
+      ~KhcISection.provenance
+      ~KhcISection.source_status
    
    

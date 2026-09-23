@@ -14,7 +14,12 @@ def test_shared_banagher_geometry_and_catalogue_identity():
     by_code = {row["code"]: row for row in data["countries"]}
     uk = {pid for family in by_code["GB"]["families"] for pid in family["profile_ids"]}
     ireland = {pid for family in by_code["IE"]["families"] for pid in family["profile_ids"]}
-    assert uk and uk <= ireland
+    # Shared Banagher aliases keep their Irish IDs; UK-only producer families
+    # (e.g. FP McCann) live in bridgebeams.uk modules and are GB-only.
+    uk_own = {pid for family in by_code["GB"]["families"]
+              if family["module"].startswith("bridgebeams.uk.") for pid in family["profile_ids"]}
+    assert uk - uk_own and (uk - uk_own) <= ireland
+    assert not uk_own & ireland
     assert data["country_profile_assignments"] == sum(row["count"] for row in data["countries"])
     assert data["implemented_profiles"] == len({
         pid for row in data["countries"] for family in row["families"]

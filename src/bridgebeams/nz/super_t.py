@@ -101,6 +101,10 @@ class NzSuperTSection:
 
     SIZES = (1025, 1225)
 
+    # Formwork ledge omitted (documented simplification); no property table to validate.
+    provenance = "transcribed-with-convention"
+    source_status = "NZTA RR364 standard drawings"
+
     def __init__(self, depth: int = 1025, *, top_width: float = 2490.0):
         self.dimensions = NzSuperTDimensions(depth=float(depth), top_width=float(top_width))
         self.depth = depth

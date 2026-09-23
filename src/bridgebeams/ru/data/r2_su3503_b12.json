@@ -1,0 +1,162 @@
+{
+ "family": "Союздорпроект серия 3.503.1-81, Выпуск 5-1 — 12 m precast pretensioned I-beams (Russia/USSR)",
+ "title_original": "Серия 3.503.1-81. Пролетные строения сборные железобетонные длиной 12, 15, 18, 21, 24 и 33 м из балок двутаврового сечения с предварительно напрягаемой арматурой для мостов и путепроводов... Выпуск 5-1. Балки пролетного строения длиной 12 м цельноперевозимые с натяжением на упоры. Рабочие чертежи",
+ "producer": "Союздорпроект (Soyuzdorproekt); approved by Mintransstroy USSR, in force from 01.11.1988 (title page, partly legible)",
+ "source_url": "http://gost.gtsever.ru/Data2/1/4293849/4293849831.pdf",
+ "source_local_file": "sources/expansion/round2/ru/3.503.1-81_vyp5-1_gtsever.pdf",
+ "source_sha256": "fce25f9435c9b9a9bd12fbe500aa1468a301c078e56dd1a3fed97fa99fa4a45a",
+ "retrieved": "2026-09-23",
+ "source_status": "historic standard (series 3.503.1-81, Vypusk 5-1, 1988)",
+ "units": "mm (source and polygons); volume m3, mass t",
+ "page_locators": {
+  "marking_rules": "PDF p9 (sheet 3.503.1-81.5-1-T): 1200 = length cm; 174/140/194/180 = top slab width by concrete, cm; 90 = height cm; prestressing B-II wire bundles or K-7 strand (pretensioned, 'с натяжением на упоры')",
+  "edge_beams_formwork": "PDF p10, sheet 3.503.1-81.5-1-1ФЧ, sections Б-Б (midspan) and В-В (support)",
+  "edge_beams_table": "PDF p13, sheet 4 of -1ФЧ, Таблица 1 (e, concrete class, volume, mass)",
+  "intermediate_beams_formwork": "PDF p23, sheet 3.503.1-81.5-1-11ФЧ, sections Б-Б and В-В",
+  "intermediate_beams_table": "PDF p25, sheet 3 of -11ФЧ, Таблица 1"
+ },
+ "transcribed_dims_mm": {
+  "height": 900,
+  "slab_thickness": 150,
+  "slab_outer_cantilever_edge_beams": 1040,
+  "e": "700 / 900",
+  "web_midspan": 160,
+  "web_support": 260,
+  "R_haunch": 300,
+  "R_fillet": 200,
+  "vertical_chain_midspan_from_soffit": [
+   100,
+   172,
+   141
+  ],
+  "vertical_chain_support_from_soffit": [
+   100,
+   122,
+   141
+  ],
+  "splay": "1:1",
+  "bottom_flange_width_at_100": 620,
+  "soffit_width": 600,
+  "soffit_chamfer": "10 horizontal each side over 100",
+  "joint_loops_outstand": 264,
+  "drip_groove_edge_beams": "30 from outer edge, ~30 wide (size not legible)"
+ },
+ "geometry_notes": [
+  "Midspan section Б-Б modelled (web 160). Support section В-В (web 260, 1:1 splay 122 high, thickened over ~0.8 m + ~0.5 m taper at each end per plan А-А) is not modelled.",
+  "R300 haunch tangent to the slab underside and to the web: the R300 dimension box spans 300 below the slab (measured 304 mm at scale), confirming the tangent construction; a 37 mm straight web length remains between haunch and fillet (derived).",
+  "R200 fillet tangent to the web and to the 1:1 splay: its printed vertical projection 141 = 200·sin45° confirms the construction; the splay then reaches x = 310.6 at y = 100 (printed 620/2 = 310).",
+  "Top slab of edge beams B1200.174.90/194.90 is asymmetric: 1040 (outer cantilever) + e (700/900) = 1740/1940 = marked width; placed with the 1040 side at -x. Intermediate beams B1200.140.90/180.90 have e both sides (1400/1800). The existing su3503_i33 module symmetrises its slab; this module does not.",
+  "The 264 mm rectangles beyond e are protruding joint reinforcement loops (thin lines; the marking width is 'по бетону', i.e. concrete only) and are excluded.",
+  "Edge beams: a small drip groove on the slab underside 30 mm from the outer edge (size not legible, ~30 mm) is omitted (convention; < 0.1% of area) -> provenance 'transcribed-with-convention'. Intermediate beams: 'transcribed'.",
+  "Validation: published volume/mass (Таблица 1, mass = 2.5 t/m3 × volume). Volume differences between marks (0.36, 0.72, 0.61 m3) equal exactly the slab-width differences × 150 × 12000, confirming the slab dims. Midspan area × 12 m is 3.0–3.5% below the volume for all four marks, a constant excess of 0.200–0.202 m3 per beam attributable to the thickened support webs (≈0.09 m3 from В-В over ~1.05 m per end) plus end details; pinned in tests.",
+  "Beam length taken as the marked 12000 mm (the drawing dimension '12000/2' is ambiguous as to whether it is measured from the bearing axis)."
+ ],
+ "not_implemented": [
+  "Серия 3.503.1-73 Выпуск 1 Доп.1, Б1406.130.93 (Klyazma repair, sources/expansion/round2/ru/3.503.1-73_vyp1_dop1_klyazma.pdf): ordinary (non-prestressed) reinforcement — out of scope.",
+  "Серия 3.503.1-81 Выпуск 1-1: layout/clearance schemes only, no beam sections."
+ ],
+ "sizes": {
+  "B1200.174.90": {
+   "top_width_mm": 1740,
+   "slab_left_mm": 1040,
+   "e_mm": 700,
+   "volume_m3": 6.44,
+   "mass_t": 16.1,
+   "beam_type": "edge (outer 1040 cantilever)",
+   "formwork": "3.503.1-81.5-1-1ФЧ",
+   "pdf_page_section": 10,
+   "pdf_page_table": 13,
+   "provenance": "transcribed-with-convention",
+   "length_mm": 12000,
+   "height_mm": 900,
+   "concrete": "B35 (B40 permitted)",
+   "frost": "F200 (zones 1-3) / F300 (zones 4-5)"
+  },
+  "B1200.194.90": {
+   "top_width_mm": 1940,
+   "slab_left_mm": 1040,
+   "e_mm": 900,
+   "volume_m3": 6.8,
+   "mass_t": 17.0,
+   "beam_type": "edge (outer 1040 cantilever)",
+   "formwork": "3.503.1-81.5-1-1ФЧ",
+   "pdf_page_section": 10,
+   "pdf_page_table": 13,
+   "provenance": "transcribed-with-convention",
+   "length_mm": 12000,
+   "height_mm": 900,
+   "concrete": "B35 (B40 permitted)",
+   "frost": "F200 (zones 1-3) / F300 (zones 4-5)"
+  },
+  "B1200.140.90": {
+   "top_width_mm": 1400,
+   "slab_left_mm": 700,
+   "e_mm": 700,
+   "volume_m3": 5.83,
+   "mass_t": 14.6,
+   "beam_type": "intermediate (e both sides)",
+   "formwork": "3.503.1-81.5-1-11ФЧ",
+   "pdf_page_section": 23,
+   "pdf_page_table": 25,
+   "provenance": "transcribed",
+   "length_mm": 12000,
+   "height_mm": 900,
+   "concrete": "B35 (B40 permitted)",
+   "frost": "F200 (zones 1-3) / F300 (zones 4-5)"
+  },
+  "B1200.180.90": {
+   "top_width_mm": 1800,
+   "slab_left_mm": 900,
+   "e_mm": 900,
+   "volume_m3": 6.55,
+   "mass_t": 16.4,
+   "beam_type": "intermediate (e both sides)",
+   "formwork": "3.503.1-81.5-1-11ФЧ",
+   "pdf_page_section": 23,
+   "pdf_page_table": 25,
+   "provenance": "transcribed",
+   "length_mm": 12000,
+   "height_mm": 900,
+   "concrete": "B35 (B40 permitted)",
+   "frost": "F200 (zones 1-3) / F300 (zones 4-5)"
+  }
+ },
+ "residuals": {
+  "B1200.174.90": {
+   "midspan_area_mm2": 520028,
+   "cy_mm": 575.4,
+   "ixx_mm4": 48930000000.0,
+   "volume_area_mm2": 536667,
+   "ratio_midspan_to_volume_area": 0.969,
+   "mass_over_volume_t_m3": 2.5,
+   "excess_volume_m3": 0.1997
+  },
+  "B1200.194.90": {
+   "midspan_area_mm2": 550028,
+   "cy_mm": 589.0,
+   "ixx_mm4": 50753000000.0,
+   "volume_area_mm2": 566667,
+   "ratio_midspan_to_volume_area": 0.9706,
+   "mass_over_volume_t_m3": 2.5,
+   "excess_volume_m3": 0.1997
+  },
+  "B1200.140.90": {
+   "midspan_area_mm2": 469028,
+   "cy_mm": 548.3,
+   "ixx_mm4": 45312000000.0,
+   "volume_area_mm2": 485833,
+   "ratio_midspan_to_volume_area": 0.9654,
+   "mass_over_volume_t_m3": 2.504,
+   "excess_volume_m3": 0.2017
+  },
+  "B1200.180.90": {
+   "midspan_area_mm2": 529028,
+   "cy_mm": 579.7,
+   "ixx_mm4": 49498000000.0,
+   "volume_area_mm2": 545833,
+   "ratio_midspan_to_volume_area": 0.9692,
+   "mass_over_volume_t_m3": 2.504,
+   "excess_volume_m3": 0.2017
+  }
+ }
+}

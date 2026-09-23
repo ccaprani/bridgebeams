@@ -1,0 +1,57 @@
+{
+ "producer": "Haitsma Beton (Kootstertille, NL)",
+ "retrieved": "2026-09-23",
+ "sources": {
+  "hkp_drawings": {"title_original": "Doorsnede HKP 600…1400-ligger (tekeningen HKP-600 … HKP-1400, april 09, schaal 1:20)", "url": "https://www.haitsma-beton.de/media/4402/hkp-april-2009.pdf", "local": "sources/expansion/round2/nl/nl_haitsma-hkp.pdf", "sha256": "eb04bb01dd6ee85ef49279bd519e90016ff52b1c3aaff8e1fe010697d836a6a8", "pages": "1-9 (one size per page)"},
+  "hkp_folder": {"title_original": "HKP-ligger (folder)", "url": "https://www.haitsma-beton.de/media/4390/folder-hkp-ligger.pdf", "local": "sources/expansion/round2/nl/nl_haitsma-folder-hkp.pdf", "sha256": "598dd9ef8d96339e82eac3dabffbc8c80df34e862c53758f84090e98666cdb40", "pages": "4 (table 'Element, h.o.h. 1500 mm' + dimensioned sketch)"},
+  "hbm_drawings": {"title_original": "Doorsnede HBM-450 / HBM-550 (april 2009, schaal 1:10)", "url": "https://www.haitsma-beton.de/media/4395/hbm-april-2009.pdf", "local": "sources/expansion/round2/nl/nl_haitsma-hbm.pdf", "sha256": "32462f5a803cfd10003de4ad361545a6018557a6c2192812bd3e74b0c7905ac2", "pages": "1 (HBM-450), 2 (HBM-550), 3 (plan/elevation)"},
+  "hbm_folder": {"title_original": "HBM-ligger Boogbrug (folder)", "url": "https://www.haitsma-beton.de/media/4408/folder-hbm-ligger-boogbrug.pdf", "local": "sources/expansion/round2/nl/nl_haitsma-folder-hbm.pdf", "sha256": "4947e4f878c8d99dc61dc36f59bb7f4146ef5d4f10019ec2d3da981a59e17c53"},
+  "hgko_hgr_drawings": {"title_original": "Doorsnede HGKO-350-ligger / Doorsnede HGR-500-ligger (april 2009, schaal 1:10)", "url": "https://www.haitsma-beton.de/media/4399/hgko-hgr-april-2-2009.pdf", "local": "sources/expansion/round2/nl/nl_haitsma-hgko-hgr.pdf", "sha256": "fa933f212f89c02c2ed87b52d9408ca74984fe5c2e756f7df8e1097eeb530d2d", "pages": "1 (HGKO-350 and HGR-500), 7 (HGKO summary)"},
+  "hgko_folder": {"title_original": "HGKO-ligger (folder)", "url": "https://www.haitsma-beton.de/media/4409/folder-hgko-ligger.pdf", "local": "sources/expansion/round2/nl/nl_haitsma-folder-hgko.pdf", "sha256": "1d843929eef366754d7fd8717a2884ae9b24bdf63ba11f23d4fa57f078f59f5f"}
+ },
+ "hkp": {
+  "source_status": "producer catalogue (folder, NEN EN 1991-2 era; profile drawings april 2009)",
+  "provenance": "transcribed-with-convention",
+  "folder_sketch_mm": {"width": 1480, "top_slab": 230, "bottom_slab": 155, "webs": 140, "void_width": 1200, "void_chamfers": "100 x 100", "side_band": "top 300 mm of each side with a 10 mm step (sketch chains 10/1430/10, 90/300/10)"},
+  "published": {"_columns": "H mm: [A 1e5 mm2, v mm (centroid from soffit), I 1e9 mm4, Qeg kN/m]",
+   "600": [6.44, 312, 25.15, 13.11], "650": [6.58, 340, 31.41, 13.81], "700": [6.72, 368, 38.49, 16.80],
+   "800": [7.00, 423, 55.14, 17.50], "900": [7.28, 478, 75.25, 18.20], "1000": [7.56, 533, 98.98, 18.90],
+   "1100": [7.84, 587, 126.45, 19.60], "1200": [8.12, 641, 157.82, 20.30], "1300": [8.40, 694, 193.22, 21.00],
+   "1400": [8.68, 748, 232.80, 21.70]},
+  "residuals": {"_columns": "dA %, dv mm, dI %", "600": [-0.05, 0.6, -0.07], "650": [-0.05, 0.5, -0.07], "700": [-0.05, 0.3, -0.09], "800": [-0.05, 0.6, -0.07], "900": [-0.04, 0.5, -0.06], "1000": [-0.04, 0.0, -0.06], "1100": [-0.04, 0.2, -0.06], "1200": [-0.04, 0.1, -0.06], "1300": [-0.04, 0.7, -0.05], "1400": [-0.04, 0.1, -0.05]},
+  "geometry_notes": [
+   "Implemented from the folder table/sketch edition because it reproduces the published A, v, I within 0.1 % for all ten sizes.",
+   "EDITION CONFLICT: the april 2009 1:20 profile drawings show top slab 250 and bottom slab 160 (same 1200 void, 140 webs, 100 chamfers) and HKP-600 as a SOLID section; with those drawings A would be 3.6e4 mm2 higher (HKP-1000: 7.92e5 vs 7.56e5) and HKP-600 2.4e5 higher. Not implemented; recorded only.",
+   "Convention: the 10 mm side step is modelled as a 10 mm recess of the top 300 mm of each side face with a 10 mm 45-degree transition (area 6100 mm2); this is what closes the constant 6000 mm2 difference between the plain box and the table for every size.",
+   "Bottom edge chamfers 15 x 15 taken from the 2009 drawings; the drawn ~20 mm top-edge chamfer is omitted (the step already defines the top corner).",
+   "Void: straight 100 x 100 chamfers; for H = 600/650 the void is only 215/265 mm high (100 + 15/65 + 100)."
+  ]
+ },
+ "hbm": {
+  "source_status": "producer profile drawings (april 2009)",
+  "provenance": "transcribed",
+  "drawn_chains_mm": {"HBM-450": {"top": "15 / 1150 / 15 (1180)", "bottom": "10 / 380 / 400 / 380 / 10 (1180)", "vertical": "125 / 320 / 130 / 450", "side_callouts": [4, 6]},
+                      "HBM-550": {"top": "15 / 1156 / 15 (1180)", "bottom": "13 / 380 / 400 / 380 / 13 (1186)", "vertical": "125 / 420 / 130 / 550", "side_callouts": [4, 9]}},
+  "half_profiles_mm": {
+   "HBM-450": [[200.0, 0.0], [580.0, 130.0], [586.0, 325.0], [571.0, 325.0], [575.0, 450.0]],
+   "HBM-550": [[200.0, 0.0], [580.0, 130.0], [589.0, 425.0], [574.0, 425.0], [578.0, 550.0]]
+  },
+  "geometry_notes": [
+   "Vertices are the CAD vector coordinates of the 1:10 drawings (PDF units x 25.4/72 x 10), rounded to 0.5 mm; they reproduce every printed vertical dimension (125/320/130, 125/420/130) and the 400/1150/1156 widths exactly.",
+   "The printed horizontal chains are internally inconsistent (15 + 1150 + 15 = 1180 but the step width is 1172; 13 + 1160 + 13 = 1186); the vector geometry is used.",
+   "The HBM folder table (heading 'HUP', element h.o.h. 1200) lists Ab 3.62 / 2.75 / 3.93 e5 mm2 for 350/450/550, which cannot be the solid drawn sections (HBM-450 model 4.8e5 mm2) and is non-monotonic; recorded, not used for validation (pinned in tests)."
+  ],
+  "folder_table": {"_columns": "B mm, Ab 1e5 mm2, v mm, I 1e9 mm4, Qeg kN/m", "350": [1180, 3.62, 193, 3.17, 9.06], "450": [1180, 2.75, 176, 3.16, 11.65], "550": [1180, 3.93, 221, 6.24, 14.24]}
+ },
+ "hgr": {
+  "source_status": "producer profile drawing (april 2009)",
+  "provenance": "transcribed",
+  "outline_mm_from_soffit_left": [[0.0, 0.0], [485.0, 0.0], [501.5, 15.0], [535.5, 365.0], [625.0, 365.0], [635.0, 376.0], [645.5, 365.0], [720.0, 365.0], [736.5, 380.5], [773.5, 745.5], [755.0, 765.5], [525.0, 765.5], [403.0, 500.5], [0.0, 500.5]],
+  "geometry_notes": [
+   "Asymmetric edge (rand) beam used with HGKO-350; outline = CAD vector coordinates of the 1:10 drawing rounded to 0.5 mm. Printed: 500 / 265 / 400 / 365, widths 403 / 122 / 250 and 10 / 500 / 35 / 100 / 100 / 40, vellingkant 20x20 and 15x15.",
+   "The small V drip groove (~10 mm) under the ledge is included as drawn.",
+   "Origin convention for this asymmetric section: x = 0 at the middle of the 485 mm flat soffit; the inner (left) face is at x = -242.5."
+  ]
+ },
+ "hgko_note": "HGKO-350…600 folder properties (B, Ab, v, I) are digit-for-digit identical to the already-implemented HKO350…600 (bridgebeams.nl.hko); the HGKO-350 drawing shows the same 990 / 360-270-360 outline. HGKO is therefore not re-implemented (no new profile)."
+}

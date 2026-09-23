@@ -117,6 +117,10 @@ class IeTYBeamSection:
     SIZES_EDGE_BS = tuple(f"TYE{i}" for i in range(3, 12))
     SIZES_EDGE_SS = tuple(f"TYE{i}" for i in range(1, 12))
 
+    # Measured from true-scale vector drawings rather than printed dims (cf. Hungarian FPT precedent).
+    provenance = "transcribed-with-convention"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
     def __init__(self, size: str, variant: str = "bs"):
         if variant not in ("bs", "ss"):
             raise ValueError("variant must be 'bs' or 'ss'")

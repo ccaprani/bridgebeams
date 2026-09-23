@@ -89,6 +89,9 @@ class KGMISection:
 
     SIZES = ("I90", "I120", "I140", "I170")
 
+    provenance = "estimate"
+    source_status = "worked-example assumptions"
+
     def __init__(self, size: str = "I140"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

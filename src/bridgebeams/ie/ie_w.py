@@ -61,6 +61,10 @@ class IeWBeamSection:
     SIZES = ("W1", "W3", "W5", "W7", "W8", "W9", "W10", "W11",
              "W12", "W13", "W14", "W15", "W16", "W17", "W18", "W19")
 
+    # Lower contour and chamfers taken from an older W19 project drawing.
+    provenance = "transcribed-with-convention"
+    source_status = "producer catalogue (Banagher 3rd ed.) with 2006 producer CAD lower contour"
+
     def __init__(self, size: str = "W10"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

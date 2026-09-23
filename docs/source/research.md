@@ -41,6 +41,13 @@ extraction-netherlands-romania-2026-09
 extraction-civilcon-tum-2026-09
 extraction-nhai-nepal-2026-09
 extraction-china-indonesia-mexico-2026-09
+round2-us-pci-florida-2026-09
+round2-us-texas-states-2026-09
+round2-europe-2026-09
+round2-latin-america-2026-09
+round2-south-asia-korea-philippines-2026-09
+round2-east-asia-oceania-2026-09
+round2-africa-middle-east-2026-09
 ```
 
 Download the structured records:
@@ -70,6 +77,13 @@ Download the structured records:
 - {download}`Extraction record: Civilcon T, U, Special U and M <../research/data/extraction-civilcon-tum-2026-09.json>`
 - {download}`Extraction record: NHAI NH 45-A / Delhi–Vadodara and Nepal DoR girders <../research/data/extraction-nhai-nepal-2026-09.json>`
 - {download}`Extraction record: Beijing 20BGQL2, WIKA and SEPSA extensions <../research/data/extraction-china-indonesia-mexico-2026-09.json>`
+- {download}`Round 2 record: US PCI national families and Florida <../research/data/round2-us-pci-florida-2026-09.json>`
+- {download}`Round 2 record: Texas and other US states <../research/data/round2-us-texas-states-2026-09.json>`
+- {download}`Round 2 record: Europe <../research/data/round2-europe-2026-09.json>`
+- {download}`Round 2 record: Latin America <../research/data/round2-latin-america-2026-09.json>`
+- {download}`Round 2 record: South Asia, Korea and the Philippines <../research/data/round2-south-asia-korea-philippines-2026-09.json>`
+- {download}`Round 2 record: East and Southeast Asia and Oceania <../research/data/round2-east-asia-oceania-2026-09.json>`
+- {download}`Round 2 record: Africa and the Middle East <../research/data/round2-africa-middle-east-2026-09.json>`
 
 Original publications retain their own copyright. Downloaded source PDFs
 are not distributed with the package. The reports retain URLs and, for

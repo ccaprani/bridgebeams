@@ -27,4 +27,5 @@ bridgebeams.gr
    :recursive:
 
    egnatia_extended_i
+   r2_projects
 

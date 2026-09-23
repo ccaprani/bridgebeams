@@ -1,0 +1,525 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Wisconsin Department of Transportation (WisDOT), Bureau of Structures",
+ "units": "inches (source); package geometry in mm (1 in = 25.4 mm)",
+ "sources": {
+  "standards": {
+   "title": "WisDOT Bridge Manual Chapter 19 Standard Details (combined std-ch19.pdf)",
+   "url": "https://wisconsindot.gov/dtsdManuals/strct/manuals/bridge/std-ch19.pdf",
+   "index_url": "https://wisconsindot.gov/Pages/doing-bus/eng-consultants/cnslt-rsrces/strct/bridge-manual-standards.aspx",
+   "local_path": "sources/expansion/round2/us/wi_std-ch19.pdf",
+   "sha256": "7690db40f29143fcc135c5352022606f1fbd7e834b5d8d7ce9acbba8b00c613f",
+   "retrieved": "2026-09-23"
+  },
+  "bridge_manual": {
+   "title": "WisDOT Bridge Manual Chapter 19 - Prestressed Concrete (January 2023)",
+   "url": "https://wisconsindot.gov/dtsdManuals/strct/manuals/bridge/ch19.pdf",
+   "local_path": "sources/expansion/round2/us/wi_bm_ch19.pdf",
+   "sha256": "cd99e94862a5189c5d7e9bf631c0e64600cd3fc3110c9adc4776e03bef8736d1",
+   "retrieved": "2026-09-23"
+  }
+ },
+ "i_girders": {
+  "source_status": "current standard (WisDOT Chapter 19 standard details; sheet dates 1-22 to 7-26)",
+  "template_in": {
+   "bottom_width": 30.0,
+   "web_width": 6.5,
+   "bottom_edge": 7.5,
+   "bottom_taper_rise": 5.5,
+   "fillet_radius": 8.0,
+   "soffit_bevel": 0.75
+  },
+  "geometry_notes": [
+   "36W-82W: one template read from each 'SECTION THRU GIRDER' view: 30 in bottom, 6 1/2 in web, 7 1/2 in bottom edge, 5 1/2 in taper rise to the web face, R=8 in tangent fillets at both web/flange junctions, 3/4 x 3/4 in soffit bevels, square top corners.",
+   "Top flange: 36W/45W 34 in wide, 3 7/8 in edge + 1 5/8 in taper to the web face; 54W/72W/82W 48 in wide, 3 in edge + 2 1/2 in taper.",
+   "Web height between the taper intersections = depth - 18 1/2 in (17 1/2, 26 1/2, 35 1/2, 53 1/2, 63 1/2 in printed). Printed fillet tangent offsets (4 5/8, 7 15/16, 7 1/16, 7 1/4, 10 13/16, 4 5/8 in) agree with the tangent construction to <=0.05 in; the construction is used.",
+   "28 in girder (Std 19.01): 18 in top and bottom, 6 in web, stack 3/4/11/6/4 in, straight tapers (no fillets), 3/4 in soffit bevel shown, 'NO BEVEL ON TOP OF GIRDER'.",
+   "Gross concrete only: no strands, reinforcement, deck, haunch or end blocks."
+  ],
+  "sections": {
+   "28": {
+    "depth": 28,
+    "type": "straight",
+    "top_width": 18,
+    "bottom_width": 18,
+    "web_width": 6,
+    "top_edge": 3,
+    "top_taper": 4,
+    "bottom_edge": 4,
+    "bottom_taper": 6,
+    "soffit_bevel": 0.75,
+    "drawing": "Std 19.01, PDF p1",
+    "properties_sheet": "Std 19.02, PDF p2",
+    "published": {
+     "area": 312,
+     "yb": 13.42,
+     "ix": 28687
+    },
+    "provenance": "transcribed",
+    "source_status": "current standard (Std 19.01 dated 7-23)"
+   },
+   "36W": {
+    "depth": 36,
+    "type": "filleted",
+    "top_width": 34,
+    "top_edge": 3.875,
+    "top_taper": 1.625,
+    "drawing": "Std 19.11, PDF p3",
+    "properties_sheet": "Std 19.12, PDF p4",
+    "published": {
+     "area": 632,
+     "yb": 16.63,
+     "ix": 99980
+    },
+    "provenance": "transcribed",
+    "source_status": "current standard (Std 19.11 dated 1-25)"
+   },
+   "45W": {
+    "depth": 45,
+    "type": "filleted",
+    "top_width": 34,
+    "top_edge": 3.875,
+    "top_taper": 1.625,
+    "drawing": "Std 19.13, PDF p5",
+    "properties_sheet": "Std 19.14, PDF p6",
+    "published": {
+     "area": 692,
+     "yb": 20.74,
+     "ix": 178971
+    },
+    "provenance": "transcribed",
+    "source_status": "current standard (Std 19.13 dated 1-25)"
+   },
+   "54W": {
+    "depth": 54,
+    "type": "filleted",
+    "top_width": 48,
+    "top_edge": 3.0,
+    "top_taper": 2.5,
+    "drawing": "Std 19.15, PDF p7",
+    "properties_sheet": "Std 19.16, PDF p8",
+    "published": {
+     "area": 798,
+     "yb": 26.3,
+     "ix": 321049
+    },
+    "provenance": "transcribed",
+    "source_status": "current standard (Std 19.15 dated 1-26)"
+   },
+   "72W": {
+    "depth": 72,
+    "type": "filleted",
+    "top_width": 48,
+    "top_edge": 3.0,
+    "top_taper": 2.5,
+    "drawing": "Std 19.17, PDF p9",
+    "properties_sheet": "Std 19.18, PDF p10",
+    "published": {
+     "area": 915,
+     "yb": 34.87,
+     "ix": 656426
+    },
+    "provenance": "transcribed",
+    "source_status": "current standard (Std 19.17 dated 7-23)"
+   },
+   "82W": {
+    "depth": 82,
+    "type": "filleted",
+    "top_width": 48,
+    "top_edge": 3.0,
+    "top_taper": 2.5,
+    "drawing": "Std 19.19, PDF p11",
+    "properties_sheet": "Std 19.20, PDF p12",
+    "published": {
+     "area": 980,
+     "yb": 39.68,
+     "ix": 905453
+    },
+    "provenance": "transcribed",
+    "source_status": "current standard (Std 19.19 dated 7-23; sheet notes a moratorium on the use of 82W girders)"
+   }
+  },
+  "residuals": {
+   "28": {
+    "model_in": {
+     "area": 311.437,
+     "yb": 13.44,
+     "ix": 28040.124,
+     "iy": 5356.916
+    },
+    "residual": {
+     "area_in2": -0.563,
+     "area_pct": -0.18,
+     "ix_pct": -2.255,
+     "yb_in": 0.02
+    }
+   },
+   "36W": {
+    "model_in": {
+     "area": 633.07,
+     "yb": 16.652,
+     "ix": 100083.946,
+     "iy": 36114.681
+    },
+    "residual": {
+     "area_in2": 1.07,
+     "area_pct": 0.169,
+     "ix_pct": 0.104,
+     "yb_in": 0.022
+    }
+   },
+   "45W": {
+    "model_in": {
+     "area": 691.57,
+     "yb": 20.619,
+     "ix": 179089.341,
+     "iy": 36320.65
+    },
+    "residual": {
+     "area_in2": -0.43,
+     "area_pct": -0.062,
+     "ix_pct": 0.066,
+     "yb_in": -0.121
+    }
+   },
+   "54W": {
+    "model_in": {
+     "area": 797.424,
+     "yb": 26.311,
+     "ix": 319870.358,
+     "iy": 56495.777
+    },
+    "residual": {
+     "area_in2": -0.576,
+     "area_pct": -0.072,
+     "ix_pct": -0.367,
+     "yb_in": 0.011
+    }
+   },
+   "72W": {
+    "model_in": {
+     "area": 914.424,
+     "yb": 34.886,
+     "ix": 654657.864,
+     "iy": 56907.714
+    },
+    "residual": {
+     "area_in2": -0.576,
+     "area_pct": -0.063,
+     "ix_pct": -0.269,
+     "yb_in": 0.016
+    }
+   },
+   "82W": {
+    "model_in": {
+     "area": 979.424,
+     "yb": 39.694,
+     "ix": 903331.132,
+     "iy": 57136.569
+    },
+    "residual": {
+     "area_in2": -0.576,
+     "area_pct": -0.059,
+     "ix_pct": -0.234,
+     "yb_in": 0.014
+    }
+   }
+  }
+ },
+ "box_girders": {
+  "source_status": "current standard (Std 19.50 dated 7-18, Std 19.51 dated 1-18); properties Bridge Manual Table 19.3-3 (January 2023)",
+  "drawings": {
+   "36": "Std 19.50 '3'-0\" PRESTRESSED BOX GIRDER SECTIONS', PDF p21",
+   "48": "Std 19.51 '4'-0\" PRESTRESSED BOX GIRDER SECTIONS' incl. SHEAR KEY RECESS DETAIL, PDF p22"
+  },
+  "properties_table": "Bridge Manual Table 19.3-3, printed p19-46, PDF p46",
+  "template_in": {
+   "web": 5.0,
+   "top_slab": 5.5,
+   "bottom_slab": 5.5,
+   "soffit_chamfer": 0.75,
+   "key_top_band": 4.0,
+   "key_bottom_band": 3.0,
+   "key_recess": 0.75,
+   "void_chamfer_shallow": 1.5,
+   "void_chamfer_deep": 3.0,
+   "void_chamfer_switch_depth": 27
+  },
+  "geometry_notes": [
+   "Widths 36/48 in; depths 12/17/21/27/33/42 in (sections 1-6); section 1 (12 in) is solid.",
+   "5 in webs and 5 1/2 in top/bottom slabs printed; void chamfers 1 1/2 x 1 1/2 in (sections 2-3) and 3 x 3 in (sections 4-6); 3/4 in soffit chamfers.",
+   "ESTIMATE: the shear-key recess detail prints 4 in (top band), 3/8 in, 3/4 in and 3 in (bottom band) without an unambiguous recess depth. Modelled as a 3/4 in recess from 4 in below the top to 3 in above the soffit with 45-degree transitions, and the printed 5 in web measured from the recessed face (the 42 in drawing places the 5 in arrow on the recessed face). This interpretation makes the area residual depth-independent (+3.1 to +3.6 in2), which the alternative (web from the full face) does not.",
+   "Residual pattern: modelled area +0.5 to +0.8% and Ix +0.6 to +1.0% above Table 19.3-3 for every row; the published yb (from St/Sb) sits 0.01-0.04 in BELOW mid-depth whereas the drawn key (4 in band on top, 3 in band at bottom) puts it 0.01-0.04 in above. The table appears to use a slightly different (possibly inverted) key idealisation; pinned as one systematic discrepancy, not hidden.",
+   "The keyway is omitted on the exterior face of exterior girders; the profile here is the interior (both faces keyed) unit."
+  ],
+  "published": {
+   "36x12": {
+    "section_no": 1,
+    "area": 422,
+    "ix": 5101,
+    "st": 848,
+    "sb": 852,
+    "j": 15955
+   },
+   "36x17": {
+    "section_no": 2,
+    "area": 452,
+    "ix": 14047,
+    "st": 1648,
+    "sb": 1657,
+    "j": 23797
+   },
+   "36x21": {
+    "section_no": 3,
+    "area": 492,
+    "ix": 25240,
+    "st": 2398,
+    "sb": 2410,
+    "j": 39928
+   },
+   "36x27": {
+    "section_no": 4,
+    "area": 565,
+    "ix": 50141,
+    "st": 3706,
+    "sb": 3722,
+    "j": 68925
+   },
+   "36x33": {
+    "section_no": 5,
+    "area": 625,
+    "ix": 85010,
+    "st": 5142,
+    "sb": 5162,
+    "j": 102251
+   },
+   "36x42": {
+    "section_no": 6,
+    "area": 715,
+    "ix": 158749,
+    "st": 7546,
+    "sb": 7573,
+    "j": 158033
+   },
+   "48x12": {
+    "section_no": 1,
+    "area": 566,
+    "ix": 6829,
+    "st": 1136,
+    "sb": 1140,
+    "j": 22600
+   },
+   "48x17": {
+    "section_no": 2,
+    "area": 584,
+    "ix": 18744,
+    "st": 2201,
+    "sb": 2210,
+    "j": 38427
+   },
+   "48x21": {
+    "section_no": 3,
+    "area": 624,
+    "ix": 33501,
+    "st": 3184,
+    "sb": 3197,
+    "j": 65395
+   },
+   "48x27": {
+    "section_no": 4,
+    "area": 697,
+    "ix": 65728,
+    "st": 4860,
+    "sb": 4877,
+    "j": 114924
+   },
+   "48x33": {
+    "section_no": 5,
+    "area": 757,
+    "ix": 110299,
+    "st": 6674,
+    "sb": 6696,
+    "j": 173031
+   },
+   "48x42": {
+    "section_no": 6,
+    "area": 847,
+    "ix": 203046,
+    "st": 9655,
+    "sb": 9683,
+    "j": 272267
+   }
+  },
+  "provenance": "estimate",
+  "residuals": {
+   "36x12": {
+    "model_in": {
+     "area": 425.062,
+     "yb": 6.015,
+     "ix": 5153.799,
+     "iy": 44493.17
+    },
+    "residual": {
+     "area_in2": 3.062,
+     "area_pct": 0.726,
+     "ix_pct": 1.035,
+     "yb_in": 0.028
+    }
+   },
+   "36x17": {
+    "model_in": {
+     "area": 455.062,
+     "yb": 8.525,
+     "ix": 14185.039,
+     "iy": 54871.795
+    },
+    "residual": {
+     "area_in2": 3.062,
+     "area_pct": 0.678,
+     "ix_pct": 0.983,
+     "yb_in": 0.048
+    }
+   },
+   "36x21": {
+    "model_in": {
+     "area": 495.062,
+     "yb": 10.532,
+     "ix": 25476.732,
+     "iy": 63657.628
+    },
+    "residual": {
+     "area_in2": 3.062,
+     "area_pct": 0.622,
+     "ix_pct": 0.938,
+     "yb_in": 0.059
+    }
+   },
+   "36x27": {
+    "model_in": {
+     "area": 568.562,
+     "yb": 13.539,
+     "ix": 50577.481,
+     "iy": 78501.66
+    },
+    "residual": {
+     "area_in2": 3.562,
+     "area_pct": 0.631,
+     "ix_pct": 0.871,
+     "yb_in": 0.067
+    }
+   },
+   "36x33": {
+    "model_in": {
+     "area": 628.562,
+     "yb": 16.545,
+     "ix": 85706.976,
+     "iy": 91680.41
+    },
+    "residual": {
+     "area_in2": 3.562,
+     "area_pct": 0.57,
+     "ix_pct": 0.82,
+     "yb_in": 0.076
+    }
+   },
+   "36x42": {
+    "model_in": {
+     "area": 718.563,
+     "yb": 21.052,
+     "ix": 159952.631,
+     "iy": 111448.535
+    },
+    "residual": {
+     "area_in2": 3.563,
+     "area_pct": 0.498,
+     "ix_pct": 0.758,
+     "yb_in": 0.089
+    }
+   },
+   "48x12": {
+    "model_in": {
+     "area": 569.062,
+     "yb": 6.011,
+     "ix": 6881.824,
+     "iy": 106709.607
+    },
+    "residual": {
+     "area_in2": 3.062,
+     "area_pct": 0.541,
+     "ix_pct": 0.774,
+     "yb_in": 0.021
+    }
+   },
+   "48x17": {
+    "model_in": {
+     "area": 587.062,
+     "yb": 8.52,
+     "ix": 18882.106,
+     "iy": 125707.982
+    },
+    "residual": {
+     "area_in2": 3.062,
+     "area_pct": 0.524,
+     "ix_pct": 0.737,
+     "yb_in": 0.038
+    }
+   },
+   "48x21": {
+    "model_in": {
+     "area": 627.062,
+     "yb": 10.525,
+     "ix": 33737.837,
+     "iy": 143013.816
+    },
+    "residual": {
+     "area_in2": 3.062,
+     "area_pct": 0.491,
+     "ix_pct": 0.707,
+     "yb_in": 0.046
+    }
+   },
+   "48x27": {
+    "model_in": {
+     "area": 700.562,
+     "yb": 13.531,
+     "ix": 66164.64,
+     "iy": 172919.347
+    },
+    "residual": {
+     "area_in2": 3.562,
+     "area_pct": 0.511,
+     "ix_pct": 0.664,
+     "yb_in": 0.054
+    }
+   },
+   "48x33": {
+    "model_in": {
+     "area": 760.562,
+     "yb": 16.537,
+     "ix": 110996.193,
+     "iy": 198878.097
+    },
+    "residual": {
+     "area_in2": 3.562,
+     "area_pct": 0.471,
+     "ix_pct": 0.632,
+     "yb_in": 0.065
+    }
+   },
+   "48x42": {
+    "model_in": {
+     "area": 850.563,
+     "yb": 21.044,
+     "ix": 204249.933,
+     "iy": 237816.222
+    },
+    "residual": {
+     "area_in2": 3.563,
+     "area_pct": 0.421,
+     "ix_pct": 0.593,
+     "yb_in": 0.075
+    }
+   }
+  }
+ }
+}

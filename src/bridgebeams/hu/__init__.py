@@ -18,3 +18,6 @@ __all__ = [
     "FerrobetonItgDimensions", "FerrobetonItgSection",
     "FerrobetonFi150Dimensions", "FerrobetonFi150Section",
 ]
+
+from .r2_sw_shp import (SwShpDimensions, SwShpSection)
+__all__ += ['SwShpDimensions', 'SwShpSection']

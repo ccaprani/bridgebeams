@@ -1,0 +1,464 @@
+{
+ "topic": "us-pci-florida",
+ "accessed": "2026-09-23",
+ "scope": "US national PCI standard product families (Appendix B/C, PCI Northeast) and Florida DOT precast girders; round 2 extraction.",
+ "implemented": {
+  "PciSlabBeamSection": 8,
+  "PciBoxBeamSection": 8,
+  "PciBulbTeeSection": 3,
+  "PciDeckBulbTeeSection": 9,
+  "PciDoubleTeeSection": 15,
+  "PciNextBeamSection": 16,
+  "PciNeBulbTeeSection": 8,
+  "PciNeDeckBulbTeeSection": 6,
+  "PciZone6UGirderSection": 6,
+  "FdotFloridaIBeamSection": 8,
+  "FdotFloridaUBeamSection": 4,
+  "FdotFloridaSlabBeamSection": 39
+ },
+ "provenance_counts": {
+  "transcribed": 24,
+  "transcribed-with-convention": 106,
+  "fitted-reconstruction": 0,
+  "estimate": 0
+ },
+ "data_files": [
+  "src/bridgebeams/us/data/pci_standard_products.json",
+  "src/bridgebeams/us/data/pci_regional_products.json",
+  "src/bridgebeams/us/data/fdot_girders.json"
+ ],
+ "pinned_discrepancies": [
+  "PCI heavy double tees (9 sizes) area -0.29..-0.89 %, Ixx up to +1.70 %; L5-27 yb -0.35 %, L6-27 yb -0.27 %/Ixx +0.14 %",
+  "FDOT FSB 18 in x 5'-0\" Iyy +0.51 % (probable table typo 195,689 vs ~196,689)"
+ ],
+ "leads_not_implemented": [
+  "FDOT Index 450-120 AASHTO Type II = PCI Type II (use AashtoIBeamSection('II'))",
+  "FIB-102 (PCI Journal 2021 only; retired FDOT index)",
+  "PCI Zone 6 U84/132 haunched pier girder (non-prismatic)",
+  "AASHTO-PCI-ASBI segmental box segments (App. B-15..B-18)",
+  "FDOT IDS-20010 (2017) PDF truncated on server; superseded by SPI 450-010"
+ ],
+ "records": [
+  {
+   "id": "US-PCI-BDM-2011-APP-BC",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 - Appendix B (AASHTO/PCI Standard Products) and Appendix C (Regional Products)",
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "retrieved": "2026-09-23",
+   "locator": "PDF p4-5 slab (B-3/4); p6-7 box (B-5/6); p10 bulb-tee (B-9); p12 deck bulb-tee (B-11); p14 double tee (B-13); p22-23 NEXT D/F (C-3/4); p30 Zone 6 U-7 (C-11)",
+   "family_names": [
+    "SI-SIV",
+    "BI-BIV",
+    "BT-54/63/72",
+    "Deck bulb-tee",
+    "Double tee",
+    "NEXT D",
+    "NEXT F",
+    "Zone 6 spliced U"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed / transcribed-with-convention",
+   "notes": "Heavy double-tee table residuals pinned; B-15..B-18 ASBI segments not implemented."
+  },
+  {
+   "id": "US-PCINE-NEBT",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "PCI Bridge Design Manual Appendix C, Regional Products: Northeast Bulb-Tees (US customary)",
+   "url": "https://www.pci.org/PCI_Docs/PCI_Northeast/Technical_Resources/Bridge/NEBT_US_Customary.pdf",
+   "local_path": "sources/expansion/round2/us/pcine-nebt-us-customary.pdf",
+   "sha256": "93917cbced5561aea39be1f8f9a93c34448d226560e0d341ea86ded958b080e0",
+   "retrieved": "2026-09-23",
+   "locator": "PDF p1 typical section and property table; p2 bottom bulb layout",
+   "family_names": [
+    "NEBT 39-87"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-PCINE-NEDBT-2018",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "Northeast Deck Bulb Tee Beam (NEDBT), PCI Northeast, issue 2018-03-06",
+   "url": "https://www.pci.org/PCI_Docs/PCI_Northeast/Technical_Resources/Bridge/2018_03_06_NEDBT_plot.pdf",
+   "local_path": "sources/expansion/round2/us/pcine-nedbt-2018.pdf",
+   "sha256": "c4ecfaa542af09f4a8733dee44ea4520e05ebdf47ff4429ee63e191f89b16be9",
+   "retrieved": "2026-09-23",
+   "locator": "PDF p3 (sheet NEDBT-03) details 1 and 7",
+   "family_names": [
+    "NEDBT40-80"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": "Bulb radius from NEBT; edge key scaled."
+  },
+  {
+   "id": "US-PCIJ-2021-BRICE-APPX",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "Appendix: Section properties of standard precast concrete girders (Brice & Pickings, PCI Journal May-June 2021)",
+   "url": "https://www.pci.org/PCI_Docs/Publications/PCI%20Journal/2021/May-June/19-0034%20Brice_Appendix_MJ21.pdf",
+   "local_path": "sources/expansion/round2/us/pcij-2021-mj-brice-appendix.pdf",
+   "sha256": "59570b50e78c1cafdd1feebc820abb22bf88ece9be603f917a22b279ffc4c5f9",
+   "retrieved": "2026-09-23",
+   "locator": "Tables A.1 (AASHTO/BT), A.4 (FDOT), A.8 (NEBT); also A.2-A.14 other states",
+   "family_names": [
+    "validation"
+   ],
+   "status": "validation_only",
+   "provenance": "n/a",
+   "notes": "Independent A/yb/Ix/Iy/J; covers many other states (lead for other agents)."
+  },
+  {
+   "id": "US-FL-450-036",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-036 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-036.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-036.pdf",
+   "sha256": "f7d970f181b502b9584c817006e08acec4d1424dab27866027b5c439e3c8513e",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-045",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-045 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-045.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-045.pdf",
+   "sha256": "08a80ec2b8b761848ed68afc26750a3b3c29530c94bc753f0e14115af14f8d2b",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-054",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-054 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-054.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-054.pdf",
+   "sha256": "ae4d247a625b3abe85a7d3b0a6c40d12e006d078b3292666a950591a7f72f33f",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-063",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-063 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-063.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-063.pdf",
+   "sha256": "d7e858806b68c0d3c16821c4d2ee4c06d0e607a1d928e6dbf24989bfa6b367b9",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-072",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-072 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-072.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-072.pdf",
+   "sha256": "22b573af157a9a575a33e521fa81af314c0f0bde1ae1fa4fe57f0a9e6eba7ef0",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-078",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-078 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-078.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-078.pdf",
+   "sha256": "68b25a41fd082c42d9003b7f6da419465eb2c5f59bf4f5bad4ca76ecf282977f",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-084",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-084 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-084.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-084.pdf",
+   "sha256": "1c1ad12536fc10158014d1544848eb33dcfe1b99081d4320b40e6304209419c9",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-096",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-096 (Florida-I Beams FIB-36..96)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-096.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-096.pdf",
+   "sha256": "f82b88ef391f119f3f713618ebc1a55d4c750cbbbb21827909289e56993d910c",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 END VIEW",
+   "family_names": [
+    "Florida-I Beams FIB-36..96"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-248",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-248 (Florida-U Beams FUB-48..72)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-248.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-248.pdf",
+   "sha256": "7214eae0bf8f83fb164f45393ebed0a7d15c6cf887ae4120dd775121b970bfd4",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 TYPICAL SECTION",
+   "family_names": [
+    "Florida-U Beams FUB-48..72"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-254",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-254 (Florida-U Beams FUB-48..72)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-254.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-254.pdf",
+   "sha256": "7a2c80e285df90726f5ad6b2bf34df26461ee0d61182665d6fe3d46d76a18cec",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 TYPICAL SECTION",
+   "family_names": [
+    "Florida-U Beams FUB-48..72"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-263",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-263 (Florida-U Beams FUB-48..72)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-263.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-263.pdf",
+   "sha256": "09ba98a87440bdaa269c9baac0b70334031d745103babcef6550e408a2f8a707",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 TYPICAL SECTION",
+   "family_names": [
+    "Florida-U Beams FUB-48..72"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-272",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-272 (Florida-U Beams FUB-48..72)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-272.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-272.pdf",
+   "sha256": "627a1f450de288b9f59f183b049f3de8aedeb4f417bd377e4bb398b0afe97567",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 TYPICAL SECTION",
+   "family_names": [
+    "Florida-U Beams FUB-48..72"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-451",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-451 (Florida Slab Beams 12/15/18 in)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-451.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-451.pdf",
+   "sha256": "439942b5b7339f61a693e9028bc5d11047ae9ddd3c94c11582fd42572992f7ff",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 TYPICAL SECTION and FLANGE DETAIL",
+   "family_names": [
+    "Florida Slab Beams 12/15/18 in"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-452",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-452 (Florida Slab Beams 12/15/18 in)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-452.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-452.pdf",
+   "sha256": "2a0b771017c77db765b890cd282697b6aea5f968dc3d50836343a49411a2350a",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 TYPICAL SECTION and FLANGE DETAIL",
+   "family_names": [
+    "Florida Slab Beams 12/15/18 in"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-450-453",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT FY 2026-27 Standard Plans Index 450-453 (Florida Slab Beams 12/15/18 in)",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-453.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-450-453.pdf",
+   "sha256": "3495028fe167f9b7bf00bc0923671211becf4aab6426109ba9037cb500b61745",
+   "retrieved": "2026-09-23",
+   "locator": "sheet 1 TYPICAL SECTION and FLANGE DETAIL",
+   "family_names": [
+    "Florida Slab Beams 12/15/18 in"
+   ],
+   "status": "implemented",
+   "provenance": "transcribed-with-convention",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-SPI-450-010",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT Standard Plans Instructions (Topic 625-010-003) FY 2026-27, Index 450-010",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-010.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-010.pdf",
+   "sha256": "0de1674a84be0e8cd567f3feb3305e05eff7df48a2a07ea30cf0bae0178a2a1c",
+   "retrieved": "2026-09-23",
+   "locator": "PDF p9 Section Properties (FIB)",
+   "family_names": [
+    "FIB"
+   ],
+   "status": "validation",
+   "provenance": "n/a",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-SPI-450-210",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT Standard Plans Instructions (Topic 625-010-003) FY 2026-27, Index 450-210",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-210.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-210.pdf",
+   "sha256": "ef0dc4f956c8b93b6c5b60a15aab7bb550c0794eaae5c3e6ec834deab63350ad",
+   "retrieved": "2026-09-23",
+   "locator": "PDF p10 Section Properties (FUB)",
+   "family_names": [
+    "FUB"
+   ],
+   "status": "validation",
+   "provenance": "n/a",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-SPI-450-450",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT Standard Plans Instructions (Topic 625-010-003) FY 2026-27, Index 450-450",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-450.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-450.pdf",
+   "sha256": "a77eae740c0ca95e580a3dc725869e306ac3b9673c3db892fa990837e5e7e0d7",
+   "retrieved": "2026-09-23",
+   "locator": "PDF pp32-34 Cross Section Properties (FSB)",
+   "family_names": [
+    "FSB"
+   ],
+   "status": "validation",
+   "provenance": "n/a",
+   "notes": ""
+  },
+  {
+   "id": "US-FL-SPI-450-120",
+   "country_code": "US",
+   "country": "United States",
+   "language": "English",
+   "title_original": "FDOT Standard Plans Instructions (Topic 625-010-003) FY 2026-27, Index 450-120",
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-120.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-120.pdf",
+   "sha256": "c1048fc45305eb2e6a5459f70f804960e2121a099c298f6d466fd82ba1f410ae",
+   "retrieved": "2026-09-23",
+   "locator": "PDF p7 Section Properties (AASHTO Type II, identical to PCI)",
+   "family_names": [
+    "AASHTO Type II"
+   ],
+   "status": "not_implemented_duplicate",
+   "provenance": "n/a",
+   "notes": ""
+  }
+ ]
+}

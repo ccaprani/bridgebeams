@@ -92,6 +92,9 @@ class JisTGirderSection:
         [f"AG{i}" for i in range(18, 25)] + [f"BG{i}" for i in range(18, 25)]
     )
 
+    provenance = "transcribed"
+    source_status = "regional design guideline (MLIT Chubu 2014, citing JIS A 5373:2004)"
+
     def __init__(self, size: str = "AG21"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

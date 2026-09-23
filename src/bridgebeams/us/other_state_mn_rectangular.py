@@ -49,6 +49,9 @@ class MnRectangularBeamSection:
     DEPTHS_IN = {"14RB": 14, "18RB": 18, "22RB": 22}
     TYPES = tuple(DEPTHS_IN)
 
+    provenance = "transcribed"
+    source_status = "MnDOT LRFD BDM Feb 2019 edition"
+
     def __init__(self, section_type: str = "14RB") -> None:
         if section_type not in self.DEPTHS_IN:
             raise ValueError(f"section_type must be one of {self.TYPES}, got {section_type!r}")

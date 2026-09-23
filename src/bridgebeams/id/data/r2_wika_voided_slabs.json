@@ -1,0 +1,180 @@
+{
+ "schema_version": 1,
+ "family": "WIKA Beton PC voided slab 970 (bare unit)",
+ "country": "ID",
+ "source_status": "producer brochure (WIKA Beton, July 2022)",
+ "source": {
+  "title_original": "Brosur WTON 2022 (WIKA Beton)",
+  "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1660206289_Brosur%20WTON%202022.pdf",
+  "local_file": "sources/expansion/asia-africa/wika-2022.pdf",
+  "sha256": "7ec2716d3c3b2575d6366c492c7f883ed9655041b7a3d1e93527baa42bbffa23",
+  "pdf_page": 19,
+  "printed_page": null,
+  "corroborating": {
+   "title_original": "WIKA Beton BRIDGE PRODUCT sheet (December 2017)",
+   "url": "https://wika-beton.co.id/wp-content/uploads/2023/12/03-5-BRIDGE.pdf",
+   "local_file": "sources/expansion/round2/id/wika-2023-bridge.pdf",
+   "sha256": "f530caf28005bb89cf37421659c6623c243da3bc4068a6c6d47c23a5f715d0ff",
+   "retrieved": "2026-09-23"
+  }
+ },
+ "units": "source cm, cm2, cm4 (dots = thousands separators); library mm",
+ "vector_measurements_cm": {
+  "method": "PyMuPDF get_drawings() on PDF p19; filled outline paths; scale set by the printed 97 cm width (0.618 pt/cm); origin mid-soffit",
+  "depth_drawn": {
+   "VS57": 57.42,
+   "VS62": 62.74,
+   "VS66": 66.13,
+   "VS74": 74.44
+  },
+  "void_centre_x": 22.95,
+  "void_diameter_drawn": {
+   "VS57": 24.96,
+   "VS62": 29.96,
+   "VS66": 29.96,
+   "VS74": "29.96 wide x 36.60 high stadium"
+  },
+  "void_centre_y_drawn": {
+   "VS57": 28.71,
+   "VS62": 31.37,
+   "VS66": 33.15,
+   "VS74": 40.45
+  },
+  "key": "half-width 48.5 below y=30.13, 45.5 above y=34.05 (all four sizes)",
+  "chamfer": "1.50 wide x 1.06 high"
+ },
+ "geometry_notes": [
+  "Dimensions printed on the drawing (width, depth, void size, void-centre height) are used as printed; lateral void position, shear key and chamfer are scaled from the vector drawing (constant across sizes). Provenance transcribed-with-convention for VS57/62/66.",
+  "The printed void-centre heights (28.5/31/33 cm) are used; the drawn centres are 0.2-0.4 cm higher, within drawing tolerance.",
+  "VS74 oval height fitted to the published area (fitted-reconstruction).",
+  "The p19 composite '+18' rows include a 180 mm cast-in-place topping and are not modelled; published values retained for reference.",
+  "wika-voided.pdf (handling manual, 2009) was re-checked: erection/handling only, no dimensions."
+ ],
+ "sections": {
+  "VS57": {
+   "source_designation": "PC VS-57/97",
+   "provenance": "transcribed-with-convention",
+   "dimensions_mm": {
+    "depth": 570,
+    "void_width": 250,
+    "void_height": 250,
+    "void_centre_height": 285
+   },
+   "published_cm": {
+    "width": 97,
+    "depth": 57.0,
+    "void": 25.0,
+    "void_centre_label": 28.5,
+    "area_cm2": 4397,
+    "inertia_cm4": 1411372
+   },
+   "published_composite_plus18_not_modelled": {
+    "area_cm2": 5766,
+    "inertia_cm4": 2855560
+   },
+   "area": 439700,
+   "ixx": 14113720000.0,
+   "residuals_256_segments": {
+    "area_calc": 439622.7,
+    "yb_calc": 279.66,
+    "ixx_calc": 14099356254,
+    "area_rel_pct": -0.018,
+    "ixx_rel_pct": -0.102
+   }
+  },
+  "VS62": {
+   "source_designation": "PC VS-62/97",
+   "provenance": "transcribed-with-convention",
+   "dimensions_mm": {
+    "depth": 620,
+    "void_width": 300,
+    "void_height": 300,
+    "void_centre_height": 310
+   },
+   "published_cm": {
+    "width": 97,
+    "depth": 62.0,
+    "void": 30.0,
+    "void_centre_label": 31.0,
+    "area_cm2": 4420,
+    "inertia_cm4": 1785520
+   },
+   "published_composite_plus18_not_modelled": {
+    "area_cm2": 5815,
+    "inertia_cm4": 3435186
+   },
+   "area": 442000,
+   "ixx": 17855200000.0,
+   "residuals_256_segments": {
+    "area_calc": 441926.9,
+    "yb_calc": 303.6,
+    "ixx_calc": 17840943467,
+    "area_rel_pct": -0.017,
+    "ixx_rel_pct": -0.08
+   }
+  },
+  "VS66": {
+   "source_designation": "PC VS-66/97",
+   "provenance": "transcribed-with-convention",
+   "dimensions_mm": {
+    "depth": 660,
+    "void_width": 300,
+    "void_height": 300,
+    "void_centre_height": 330
+   },
+   "published_cm": {
+    "width": 97,
+    "depth": 66.0,
+    "void": 30.0,
+    "void_centre_label": 33.0,
+    "area_cm2": 4784,
+    "inertia_cm4": 2170299
+   },
+   "published_composite_plus18_not_modelled": {
+    "area_cm2": 6201,
+    "inertia_cm4": 4020154
+   },
+   "area": 478400,
+   "ixx": 21702990000.0,
+   "residuals_256_segments": {
+    "area_calc": 478326.9,
+    "yb_calc": 323.29,
+    "ixx_calc": 21686786597,
+    "area_rel_pct": -0.015,
+    "ixx_rel_pct": -0.075
+   }
+  },
+  "VS74": {
+   "source_designation": "PC VS-74/97",
+   "provenance": "fitted-reconstruction",
+   "dimensions_mm": {
+    "depth": 740,
+    "void_width": 300,
+    "void_height": 380,
+    "void_centre_height": 390
+   },
+   "published_cm": {
+    "width": 97,
+    "depth": 74.0,
+    "void": 30.0,
+    "void_centre_label": 39.0,
+    "area_cm2": 5032,
+    "inertia_cm4": 2977551
+   },
+   "published_composite_plus18_not_modelled": {
+    "area_cm2": 6492,
+    "inertia_cm4": 5300499
+   },
+   "area": 503200,
+   "ixx": 29775510000.0,
+   "notes": "Oval drawn 300 wide x 366 high (stadium, R150, 64.6 mm straights) centred at ~404 mm; printed centre 39 cm. Drawn size gives A +1.8 %; oval height fitted to A = 380 mm (80 mm straights) at the printed 390 mm centre, giving I -0.06 %.",
+   "residuals_256_segments": {
+    "area_calc": 503126.9,
+    "yb_calc": 354.58,
+    "ixx_calc": 29756078307,
+    "area_rel_pct": -0.015,
+    "ixx_rel_pct": -0.065
+   }
+  }
+ }
+}

@@ -27,4 +27,5 @@ bridgebeams.tr
    :recursive:
 
    kgm_i_section
+   r2_itu_tip
 

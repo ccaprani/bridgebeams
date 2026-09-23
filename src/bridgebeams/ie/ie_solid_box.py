@@ -71,6 +71,15 @@ class IeSolidBoxBeamSection:
 
     SIZES = tuple(f"SD{i} ({width})" for width in (1, 2, 3, 4) for i in range(1, 9))
 
+    provenance = "transcribed"
+
+    @property
+    def source_status(self) -> str:
+        base = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+        if self.size.endswith("(4)"):
+            return base + "; nominal drawing, published area differs by 225/275 mm2"
+        return base
+
     def __init__(self, size: str = "SD4 (2)"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

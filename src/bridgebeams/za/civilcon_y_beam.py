@@ -75,6 +75,10 @@ class CivilconYBeamSection:
 
     SIZES = tuple(f"Y{i}" for i in range(1, 9))
 
+    # 40 x 50 mm ledge confirmed by reviewer reading; R100 fillet polygonised.
+    provenance = "transcribed-with-convention"
+    source_status = "producer catalogue (Civilcon PPBY)"
+
     def __init__(self, size: str = "Y4"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

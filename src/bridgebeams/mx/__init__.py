@@ -15,3 +15,6 @@ __all__ = [
     "SepsaNebraskaDimensions",
     "SepsaNebraskaSection",
 ]
+
+from .r2_producer_aashto import (DragonAashtoSection, R2AashtoIDimensions, TubecoAashtoSection)
+__all__ += ['DragonAashtoSection', 'R2AashtoIDimensions', 'TubecoAashtoSection']

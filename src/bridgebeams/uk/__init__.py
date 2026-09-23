@@ -28,3 +28,6 @@ __all__ = [
     "UkUMBBeamSection", "UkWBeamSection", "UkYBeamSection",
     "UkYEBeamSection",
 ]
+
+from .r2_fpmccann import (FpMcCannBoxBeamDimensions, FpMcCannBoxBeamSection, FpMcCannMyBeamDimensions, FpMcCannMyBeamSection, FpMcCannMyeBeamSection, FpMcCannSyBeamDimensions, FpMcCannSyBeamSection, FpMcCannTyBeamDimensions, FpMcCannTyBeamSection, FpMcCannTyeBeamSection, FpMcCannWBeamDimensions, FpMcCannWBeamSection, FpMcCannYBeamDimensions, FpMcCannYBeamSection, FpMcCannYeBeamSection)
+__all__ += ['FpMcCannBoxBeamDimensions', 'FpMcCannBoxBeamSection', 'FpMcCannMyBeamDimensions', 'FpMcCannMyBeamSection', 'FpMcCannMyeBeamSection', 'FpMcCannSyBeamDimensions', 'FpMcCannSyBeamSection', 'FpMcCannTyBeamDimensions', 'FpMcCannTyBeamSection', 'FpMcCannTyeBeamSection', 'FpMcCannWBeamDimensions', 'FpMcCannWBeamSection', 'FpMcCannYBeamDimensions', 'FpMcCannYBeamSection', 'FpMcCannYeBeamSection']

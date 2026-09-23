@@ -80,6 +80,9 @@ class CivilconIBeamSection:
 
     SIZES = tuple(f"I{i}" for i in range(1, 21))
 
+    provenance = "transcribed"
+    source_status = "producer catalogue (Civilcon PPBI)"
+
     def __init__(self, size: str = "I8"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

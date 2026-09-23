@@ -1,4 +1,4 @@
-bridgebeams.gr.egnatia\_extended\_i.GrExtendedISection
+﻿bridgebeams.gr.egnatia\_extended\_i.GrExtendedISection
 ======================================================
 
 .. currentmodule:: bridgebeams.gr.egnatia_extended_i
@@ -29,5 +29,7 @@ bridgebeams.gr.egnatia\_extended\_i.GrExtendedISection
       ~GrExtendedISection.WEFF_CLASSES_M
       ~GrExtendedISection.geometry
       ~GrExtendedISection.polygon
+      ~GrExtendedISection.provenance
+      ~GrExtendedISection.source_status
    
    

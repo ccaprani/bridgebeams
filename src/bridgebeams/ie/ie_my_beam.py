@@ -108,6 +108,9 @@ class IeMYBeamSection:
 
     SIZES = tuple(f"MY{i}" for i in range(1, 8))
 
+    provenance = "fitted-reconstruction"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
     def __init__(self, size: str = "MY4"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")
@@ -131,6 +134,9 @@ class IeMYEBeamSection:
     Geometry."""
 
     SIZES = tuple(f"MYE{i}" for i in range(1, 8))
+
+    provenance = "fitted-reconstruction"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
 
     def __init__(self, size: str = "MYE4"):
         if size not in self.SIZES:

@@ -16,8 +16,8 @@ from copy import deepcopy
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 ASSETS = ROOT / 'docs/source/_static/coverage'
-COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','india':'IN','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA','cn':'CN','es':'ES','hu':'HU','id':'ID','nl':'NL','np':'NP','ro':'RO','sk':'SK'}
-NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','IN':'India','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa','CN':'China','ES':'Spain','HU':'Hungary','ID':'Indonesia','NL':'Netherlands','NP':'Nepal','RO':'Romania','SK':'Slovakia'}
+COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','india':'IN','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA','cn':'CN','es':'ES','hu':'HU','id':'ID','nl':'NL','np':'NP','ro':'RO','sk':'SK','vn':'VN','kh':'KH','my':'MY','pk':'PK','lk':'LK','bd':'BD','ma':'MA','it':'IT','fr':'FR','dk':'DK','ua':'UA','bg':'BG','lt':'LT','hr':'HR','br':'BR','ar':'AR','cr':'CR'}
+NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','IN':'India','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa','CN':'China','ES':'Spain','HU':'Hungary','ID':'Indonesia','NL':'Netherlands','NP':'Nepal','RO':'Romania','SK':'Slovakia','VN':'Vietnam','KH':'Cambodia','MY':'Malaysia','PK':'Pakistan','LK':'Sri Lanka','BD':'Bangladesh','MA':'Morocco','IT':'Italy','FR':'France','DK':'Denmark','UA':'Ukraine','BG':'Bulgaria','LT':'Lithuania','HR':'Croatia','BR':'Brazil','AR':'Argentina','CR':'Costa Rica'}
 
 # Producer's range is offered in both countries, with the same manual/profile
 # definitions. Keep an explicit family allowlist so future Ireland-only ranges
@@ -61,8 +61,8 @@ def implemented():
                 variants=[(f'{d} {u}',(d,u),{}) for d,u in [(650,'inner'),(900,'inner'),(587,'inner'),(587,'outer')]]
                 note='Outer650/900 unresolved; optional drip grooves/local holes excluded. Circular approximation resolution does not add profiles.'
             elif name=='ThDOHIGirderSection':
-                variants=[('IG-205',(),{})]
-                note='Documented simplified reconstruction; see source limitations.'
+                variants=[]
+                note='Superseded for counting by ThDohIGirderR2Section("IG20"), which resolves the separate web and splay from the 2015 DOH standard; the old plain-web estimate is retained for compatibility.'
             else:
                 sizes=getattr(cls,'STANDARD_SIZES',None) or getattr(cls,'SIZES',None) or getattr(cls,'TYPES',None)
                 if sizes is None:
@@ -72,9 +72,10 @@ def implemented():
                 if name=='NoNtbKtbSection':note='Includes explicitly recorded user-inferred15 mm bottom chamfers.'
                 if name=='QaQBeamSection':note='Documented reconstructed profiles with source-rounding residuals.'
             # Construct each counted choice; namespace aliases are removed above.
-            labels=[]
+            labels=[]; provenance={}
             for label,args,kwargs in variants:
                 beam=cls(*args,**kwargs)
+                provenance[label]=getattr(beam,'provenance',None) or 'unlabelled'
                 poly=getattr(beam,'polygon',None)
                 if poly is None:poly=beam.geometry.geom
                 if poly.is_empty:raise RuntimeError(f'Empty profile: {name} {label}')
@@ -83,9 +84,21 @@ def implemented():
             families.append({'id':family_id,'name':name,'module':cls.__module__,
                              'count':len(labels),'profiles':labels,
                              'profile_ids':[f'{family_id}:{label}' for label in labels],
-                             'note':note})
+                             'note':note,'provenance':provenance})
         result[code]=families
     return result
+
+
+def provenance_counts(unique_families):
+    seen={}
+    for families in unique_families.values():
+        for family in families:
+            for label,pid in zip(family['profiles'],family['profile_ids']):
+                seen[pid]=family['provenance'][label]
+    counts={}
+    for value in seen.values():
+        counts[value]=counts.get(value,0)+1
+    return dict(sorted(counts.items()))
 
 
 def build():
@@ -188,6 +201,8 @@ def build():
         'implemented_profiles':len({profile_id for families in unique_families.values()
                                     for family in families for profile_id in family['profile_ids']}),
         'country_profile_assignments':sum(r['count'] for r in countries.values()),
+        'provenance_basis':'Distinct profiles by provenance. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.',
+        'provenance_counts':provenance_counts(unique_families),
         'countries':sorted(countries.values(),key=lambda r:r['name'])}
     (ASSETS/'coverage-data.json').write_text(json.dumps(result,indent=2)+'\n')
     # Fully rendered HTML has no fetch dependency and works through file:// too.
@@ -202,15 +217,22 @@ def build():
     svg.append('</svg>')
     rows=[]
     for r in result['countries']:
-        family=', '.join(f"{f['name']} ({f['count']})" for f in r['families']) or '—'
+        def label(f):
+            n=sum(v=='estimate' for v in f.get('provenance',{}).values())
+            return f"{f['name']} ({f['count']}{', '+str(n)+' estimate' if n else ''})"
+        family=', '.join(label(f) for f in r['families']) or '—'
         rows.append(f'<tr data-code="{escape(r["code"])}"><th scope="row"><button class="country-select" data-code="{escape(r["code"])}">{escape(r["name"])}</button></th><td>{escape(r["code"])}</td><td>{r["count"]}</td><td>{r["source_count"]}</td><td>{escape(family)}</td></tr>')
     payload=json.dumps(result).replace('<','\\u003c')
     output=template.replace('<!-- MAP -->',''.join(svg)).replace('<!-- ROWS -->','\n'.join(rows)).replace('/* DATA */',payload)
-    output=output.replace('<!-- SUMMARY -->',f"{result['implemented_profiles']} distinct implemented profiles · {result['country_profile_assignments']} country-profile assignments · {result['implemented_countries']} countries with fixed profiles · {result['researched_jurisdictions']} researched jurisdictions · {records} source records")
+    output=output.replace('<!-- SUMMARY -->',f"{result['implemented_profiles']} distinct implemented profiles ({', '.join(f'{v} {k}' for k,v in result['provenance_counts'].items())}) · {result['country_profile_assignments']} country-profile assignments · {result['implemented_countries']} countries with fixed profiles · {result['researched_jurisdictions']} researched jurisdictions · {records} source records")
     (ASSETS/'index.html').write_text(output)
-    assert countries['GB']['count']==sum(irish[name]['count'] for name in SHARED_IE_GB_FAMILIES)>0
+    # GB = shared Banagher aliases plus UK-only producer families (e.g. FP McCann).
+    uk_own=[f for f in unique_families['GB'] if f['module'].startswith('bridgebeams.uk.')]
+    uk_only=sum(f['count'] for f in uk_own)
+    assert countries['GB']['count']==sum(irish[name]['count'] for name in SHARED_IE_GB_FAMILIES)+uk_only>0
     assert {pid for f in countries['GB']['families'] for pid in f['profile_ids']} == {
-        pid for name in SHARED_IE_GB_FAMILIES for pid in irish[name]['profile_ids']}
+        pid for name in SHARED_IE_GB_FAMILIES for pid in irish[name]['profile_ids']} | {
+        pid for f in uk_own for pid in f['profile_ids']}
     assert countries['IN']['count']==9 and countries['IN']['researched']
     print(json.dumps({k:v for k,v in result.items() if k!='countries'},indent=2))
     print('Nonzero country counts:',{r['code']:r['count'] for r in result['countries'] if r['count']})

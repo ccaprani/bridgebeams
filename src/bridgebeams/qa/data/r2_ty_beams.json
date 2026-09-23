@@ -1,0 +1,468 @@
+{
+  "source_status": "current standard (Ashghal QCS 2014 standard detail, Rev 1, Oct 2013)",
+  "publisher": "Ashghal (Public Works Authority, Qatar)",
+  "units": "mm, mm2, mm4, mm3",
+  "families": {
+    "TY": {
+      "title": "SD 5-1-111 Rev 1 TY - Beams",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-111%20Rev%201%20TY%20-%20Beams.pdf",
+      "local_file": "sources/expansion/round2/qa/sd-5-1-111.pdf",
+      "sha256": "2ffa5e85015932561188f207e23920ddd3159960da878ee83d94a8992d3d662a",
+      "pdf_page": 1,
+      "printed_page": "sheet 1 of 1",
+      "retrieved": "2026-09-23",
+      "drawing_date": "October 2013 (Rev 1 23/10/2013)",
+      "geometry_notes": [
+        "Transcribed dimensions (mm): base 750; bottom chamfer 25x25; flange edge 110 high, inset 5 over its height; sloping flange top 105 high over 227.5 horizontal; splay 80 high over 50 horizontal to 185 web at y=320; web tapers linearly to 400 at y=850 (TY10).",
+        "Shallower members are the same mould truncated at 400+50(n-1) mm (depth ladder printed on the section). Printed web widths at each ladder level (217..400) are rounded values of the linear taper; the implementation uses the exact taper (max difference 0.5 mm).",
+        "Property table header prints I as 'x10^10 mm^4'; the values are x10^8 mm^4 (I/yb and I/(D-yb) reproduce the printed Zb/Zt). Stored ixx is printed value x1e8.",
+        "Gross concrete section only; strands, links, transverse holes (140 wide slots in elevation), dowel notches and 25x25 end chamfers are not modelled.",
+        "Geometry is identical in form to the UK/Irish TY family, but is implemented here from the Ashghal sheet's own dimensions; Ashghal published areas differ from Banagher's (e.g. TY1 188663 vs 188790 mm2)."
+      ],
+      "sections": [
+        {
+          "section": "TY1",
+          "indicative_span_m": "4-8",
+          "depth": 400.0,
+          "area": 188663.0,
+          "ixx_printed_x1e10_label": 19.579,
+          "ixx": 1957900000.0,
+          "yb": 146.0,
+          "zt": 7710000.0,
+          "zb": 13410000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 217,
+          "residuals": {
+            "area_pct": 0.065,
+            "yb_mm": -0.49,
+            "ixx_pct": 0.011,
+            "zt_pct": -0.204,
+            "zb_pct": 0.35
+          }
+        },
+        {
+          "section": "TY2",
+          "indicative_span_m": "7-9",
+          "depth": 450.0,
+          "area": 200046.0,
+          "ixx_printed_x1e10_label": 27.998,
+          "ixx": 2799800000.0,
+          "yb": 161.0,
+          "zt": 9690000.0,
+          "zb": 17390000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 238,
+          "residuals": {
+            "area_pct": 0.06,
+            "yb_mm": 0.42,
+            "ixx_pct": 0.047,
+            "zt_pct": 0.171,
+            "zb_pct": -0.214
+          }
+        },
+        {
+          "section": "TY3",
+          "indicative_span_m": "8-10",
+          "depth": 500.0,
+          "area": 212444.0,
+          "ixx_printed_x1e10_label": 39.528,
+          "ixx": 3952800000.0,
+          "yb": 180.0,
+          "zt": 12350000.0,
+          "zb": 21960000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 258,
+          "residuals": {
+            "area_pct": 0.054,
+            "yb_mm": -0.28,
+            "ixx_pct": 0.026,
+            "zt_pct": -0.04,
+            "zb_pct": 0.18
+          }
+        },
+        {
+          "section": "TY4",
+          "indicative_span_m": "9-11",
+          "depth": 550.0,
+          "area": 225858.0,
+          "ixx_printed_x1e10_label": 54.62,
+          "ixx": 5462000000.0,
+          "yb": 200.0,
+          "zt": 15610000.0,
+          "zb": 27310000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 278,
+          "residuals": {
+            "area_pct": 0.048,
+            "yb_mm": 0.23,
+            "ixx_pct": 0.018,
+            "zt_pct": 0.056,
+            "zb_pct": -0.097
+          }
+        },
+        {
+          "section": "TY5",
+          "indicative_span_m": "10-12",
+          "depth": 600.0,
+          "area": 240288.0,
+          "ixx_printed_x1e10_label": 73.724,
+          "ixx": 7372400000.0,
+          "yb": 223.0,
+          "zt": 19550000.0,
+          "zb": 33060000.000000004,
+          "provenance": "transcribed",
+          "printed_top_width": 299,
+          "residuals": {
+            "area_pct": 0.042,
+            "yb_mm": -0.27,
+            "ixx_pct": 0.009,
+            "zt_pct": -0.034,
+            "zb_pct": 0.129
+          }
+        },
+        {
+          "section": "TY6",
+          "indicative_span_m": "11-13",
+          "depth": 650.0,
+          "area": 255733.0,
+          "ixx_printed_x1e10_label": 97.244,
+          "ixx": 9724400000.0,
+          "yb": 247.0,
+          "zt": 24130000.0,
+          "zb": 39370000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 319,
+          "residuals": {
+            "area_pct": 0.036,
+            "yb_mm": 0.02,
+            "ixx_pct": 0.023,
+            "zt_pct": 0.028,
+            "zb_pct": 0.014
+          }
+        },
+        {
+          "section": "TY7",
+          "indicative_span_m": "12-14",
+          "depth": 700.0,
+          "area": 272194.0,
+          "ixx_printed_x1e10_label": 125.635,
+          "ixx": 12563500000.0,
+          "yb": 273.0,
+          "zt": 29420000.0,
+          "zb": 46020000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 339,
+          "residuals": {
+            "area_pct": 0.03,
+            "yb_mm": -0.11,
+            "ixx_pct": 0.008,
+            "zt_pct": -0.007,
+            "zb_pct": 0.047
+          }
+        },
+        {
+          "section": "TY8",
+          "indicative_span_m": "13-15",
+          "depth": 750.0,
+          "area": 289671.0,
+          "ixx_printed_x1e10_label": 159.24,
+          "ixx": 15924000000.0,
+          "yb": 300.0,
+          "zt": 35390000.0,
+          "zb": 53080000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 359,
+          "residuals": {
+            "area_pct": 0.024,
+            "yb_mm": 0.16,
+            "ixx_pct": 0.015,
+            "zt_pct": 0.041,
+            "zb_pct": -0.039
+          }
+        },
+        {
+          "section": "TY9",
+          "indicative_span_m": "14-16",
+          "depth": 800.0,
+          "area": 308163.0,
+          "ixx_printed_x1e10_label": 198.486,
+          "ixx": 19848600000.0,
+          "yb": 329.0,
+          "zt": 42140000.0,
+          "zb": 60330000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 380,
+          "residuals": {
+            "area_pct": 0.018,
+            "yb_mm": -0.36,
+            "ixx_pct": 0.01,
+            "zt_pct": -0.062,
+            "zb_pct": 0.119
+          }
+        },
+        {
+          "section": "TY10",
+          "indicative_span_m": "15-17",
+          "depth": 850.0,
+          "area": 327671.0,
+          "ixx_printed_x1e10_label": 243.726,
+          "ixx": 24372600000.0,
+          "yb": 358.0,
+          "zt": 49540000.0,
+          "zb": 68080000.0,
+          "provenance": "transcribed",
+          "printed_top_width": 400,
+          "residuals": {
+            "area_pct": 0.013,
+            "yb_mm": 0.18,
+            "ixx_pct": 0.012,
+            "zt_pct": 0.044,
+            "zb_pct": -0.039
+          }
+        }
+      ]
+    },
+    "TYE": {
+      "title": "SD 5-1-112 Rev 1 TYE - Beams",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-112%20Rev%201%20TYE%20-%20Beams.pdf",
+      "local_file": "sources/expansion/round2/qa/sd-5-1-112.pdf",
+      "sha256": "12ee6ccfa2a0b9cd65ed42c740a343703ef83ee96f633f11e0af31432de16c5c",
+      "pdf_page": 1,
+      "printed_page": "sheet 1 of 1",
+      "retrieved": "2026-09-23",
+      "drawing_date": "October 2013 (Rev 1 23/10/2013)",
+      "geometry_notes": [
+        "Transcribed dimensions (mm): base 750; bottom chamfer 25x25; flange edge 110 high, inset 5 over its height; sloping flange top 105 high over 227.5 horizontal; splay 80 high over 50 horizontal to 185 web at y=320; web tapers linearly to 400 at y=850 (TY10).",
+        "Shallower members are the same mould truncated at 400+50(n-1) mm (depth ladder printed on the section). Printed web widths at each ladder level (217..400) are rounded values of the linear taper; the implementation uses the exact taper (max difference 0.5 mm).",
+        "Property table header prints I as 'x10^10 mm^4'; the values are x10^8 mm^4 (I/yb and I/(D-yb) reproduce the printed Zb/Zt). Stored ixx is printed value x1e8.",
+        "Gross concrete section only; strands, links, transverse holes (140 wide slots in elevation), dowel notches and 25x25 end chamfers are not modelled.",
+        "Geometry is identical in form to the UK/Irish TY family, but is implemented here from the Ashghal sheet's own dimensions; Ashghal published areas differ from Banagher's (e.g. TY1 188663 vs 188790 mm2).",
+        "TYE = TY right half plus vertical outer face at x=-375; 25x25 chamfer only at that face's soffit corner; top-outer corner square as drawn; top width 575 at TYE10 (printed).",
+        "PINNED: implemented areas are 0.13-0.16% below the published TYE areas (-310 mm2 at TYE1 growing to -756 mm2 at TYE10) and Ixx 0.13-0.15% low. Not fitted. The constant part is close to the 312.5 mm2 left chamfer, suggesting the published calculation may omit it; the depth-proportional part (~1 mm2/mm) is unexplained. TY rows on the companion sheet agree within 0.07%.",
+        "Extra table column 'Xc from vertical face' (mm) is stored as xc_from_vertical_face; implemented values agree within 1 mm."
+      ],
+      "sections": [
+        {
+          "section": "TYE1",
+          "indicative_span_m": "4-8",
+          "depth": 400.0,
+          "area": 244390.0,
+          "ixx_printed_x1e10_label": 31.468,
+          "ixx": 3146800000.0,
+          "yb": 179.0,
+          "zt": 14240000.0,
+          "zb": 17580000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 318.0,
+          "printed_top_width": 484,
+          "residuals": {
+            "area_pct": -0.127,
+            "yb_mm": 0.17,
+            "ixx_pct": -0.154,
+            "zt_pct": -0.083,
+            "zb_pct": -0.251,
+            "xc_mm": -0.75
+          }
+        },
+        {
+          "section": "TYE2",
+          "indicative_span_m": "7-9",
+          "depth": 450.0,
+          "area": 268877.0,
+          "ixx_printed_x1e10_label": 44.965,
+          "ixx": 4496500000.0,
+          "yb": 202.0,
+          "zt": 18130000.0,
+          "zb": 22260000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 311.0,
+          "printed_top_width": 494,
+          "residuals": {
+            "area_pct": -0.133,
+            "yb_mm": -0.45,
+            "ixx_pct": -0.133,
+            "zt_pct": -0.307,
+            "zb_pct": 0.087,
+            "xc_mm": -0.38
+          }
+        },
+        {
+          "section": "TYE3",
+          "indicative_span_m": "8-10",
+          "depth": 500.0,
+          "area": 293872.0,
+          "ixx_printed_x1e10_label": 62.123,
+          "ixx": 6212300000.0,
+          "yb": 225.0,
+          "zt": 22590000.0,
+          "zb": 27610000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 306.0,
+          "printed_top_width": 504,
+          "residuals": {
+            "area_pct": -0.138,
+            "yb_mm": -0.19,
+            "ixx_pct": -0.141,
+            "zt_pct": -0.211,
+            "zb_pct": -0.055,
+            "xc_mm": -0.58
+          }
+        },
+        {
+          "section": "TYE4",
+          "indicative_span_m": "9-11",
+          "depth": 550.0,
+          "area": 319376.0,
+          "ixx_printed_x1e10_label": 83.315,
+          "ixx": 8331500000.0,
+          "yb": 249.0,
+          "zt": 27680000.0,
+          "zb": 33460000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 302.0,
+          "printed_top_width": 514,
+          "residuals": {
+            "area_pct": -0.142,
+            "yb_mm": -0.23,
+            "ixx_pct": -0.129,
+            "zt_pct": -0.207,
+            "zb_pct": -0.039,
+            "xc_mm": -0.64
+          }
+        },
+        {
+          "section": "TYE5",
+          "indicative_span_m": "10-12",
+          "depth": 600.0,
+          "area": 345387.0,
+          "ixx_printed_x1e10_label": 108.982,
+          "ixx": 10898200000.0,
+          "yb": 273.0,
+          "zt": 33330000.0,
+          "zb": 39920000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 299.0,
+          "printed_top_width": 524,
+          "residuals": {
+            "area_pct": -0.146,
+            "yb_mm": 0.34,
+            "ixx_pct": -0.146,
+            "zt_pct": -0.05,
+            "zb_pct": -0.268,
+            "xc_mm": -0.78
+          }
+        },
+        {
+          "section": "TYE6",
+          "indicative_span_m": "11-13",
+          "depth": 650.0,
+          "area": 371906.0,
+          "ixx_printed_x1e10_label": 139.484,
+          "ixx": 13948400000.0,
+          "yb": 299.0,
+          "zt": 39740000.0,
+          "zb": 46650000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 296.0,
+          "printed_top_width": 534,
+          "residuals": {
+            "area_pct": -0.149,
+            "yb_mm": -0.59,
+            "ixx_pct": -0.138,
+            "zt_pct": -0.309,
+            "zb_pct": 0.061,
+            "xc_mm": -0.17
+          }
+        },
+        {
+          "section": "TYE7",
+          "indicative_span_m": "12-14",
+          "depth": 700.0,
+          "area": 398932.0,
+          "ixx_printed_x1e10_label": 175.284,
+          "ixx": 17528400000.0,
+          "yb": 324.0,
+          "zt": 46620000.0,
+          "zb": 54100000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 294.0,
+          "printed_top_width": 545,
+          "residuals": {
+            "area_pct": -0.152,
+            "yb_mm": -0.08,
+            "ixx_pct": -0.146,
+            "zt_pct": -0.172,
+            "zb_pct": -0.119,
+            "xc_mm": 0.07
+          }
+        },
+        {
+          "section": "TYE8",
+          "indicative_span_m": "13-15",
+          "depth": 750.0,
+          "area": 426467.0,
+          "ixx_printed_x1e10_label": 216.755,
+          "ixx": 21675500000.0,
+          "yb": 350.0,
+          "zt": 54190000.0,
+          "zb": 61930000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 293.0,
+          "printed_top_width": 555,
+          "residuals": {
+            "area_pct": -0.155,
+            "yb_mm": -0.19,
+            "ixx_pct": -0.137,
+            "zt_pct": -0.187,
+            "zb_pct": -0.081,
+            "xc_mm": -0.18
+          }
+        },
+        {
+          "section": "TYE9",
+          "indicative_span_m": "14-16",
+          "depth": 800.0,
+          "area": 454509.0,
+          "ixx_printed_x1e10_label": 264.366,
+          "ixx": 26436600000.0,
+          "yb": 376.0,
+          "zt": 62350000.0,
+          "zb": 70310000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 292.0,
+          "printed_top_width": 565,
+          "residuals": {
+            "area_pct": -0.157,
+            "yb_mm": 0.04,
+            "ixx_pct": -0.133,
+            "zt_pct": -0.123,
+            "zb_pct": -0.142,
+            "xc_mm": 0.03
+          }
+        },
+        {
+          "section": "TYE10",
+          "indicative_span_m": "15-17",
+          "depth": 850.0,
+          "area": 483050.0,
+          "ixx_printed_x1e10_label": 318.572,
+          "ixx": 31857200000.0,
+          "yb": 403.0,
+          "zt": 71270000.0,
+          "zb": 79050000.0,
+          "provenance": "transcribed",
+          "xc_from_vertical_face": 292.0,
+          "printed_top_width": 575,
+          "residuals": {
+            "area_pct": -0.157,
+            "yb_mm": -0.43,
+            "ixx_pct": -0.136,
+            "zt_pct": -0.234,
+            "zb_pct": -0.029,
+            "xc_mm": -0.39
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+ "producer": "UAB \"Tilsta\" (Vilnius, Lithuania)",
+ "document_title_original": "UAB \"Tilsta\" gelžbetonio gaminių katalogas (2025)",
+ "source_status": "producer catalogue 2025",
+ "retrieved": "2026-09-23",
+ "source": {"url": "https://tilsta.lt/wp-content/uploads/sites/5/2025/06/2025-Gelzbetonio-Gaminiu-Katalogas.pdf",
+            "local": "sources/expansion/round2/lt/tilsta_2025_gelzbetonio_gaminiu_katalogas.pdf",
+            "sha256": "3f698d53191af21ae495cff42c9f846e6da5afe4d0d84b488477d55eb709be23",
+            "pages": {"S-1150": "pdf p4 (sheet 04)", "S-850-710": "pdf p5 (sheet 05)", "S-1000": "pdf p6 (sheet 06)", "S-850-700": "pdf p7 (sheet 07)"},
+            "view": "'Vaizdas iš šono' M 1:50 (vector CAD; 1 pt = 17.639 mm at 1:50)"},
+ "units": "mm",
+ "printed": {
+  "S-1150":    {"title_original": "TILTO SIJA S-1150", "H": 1150, "top_width": 750, "flange": 150, "web_below_flange": 1000, "soffit": 280, "bottom_width": 320, "chamfer": 20, "Lmax_m": 24, "camber_max_mm": 78},
+  "S-850-710": {"title_original": "TILTO SIJA S-850",  "H": 850,  "top_width": 710, "flange": 150, "web_below_flange": 700,  "soffit": 300, "bottom_width": 340, "chamfer": 20, "Lmax_m": 24, "camber_max_mm": 83},
+  "S-1000":    {"title_original": "Tilto Sija S-1000", "H": 1000, "top_width": 650, "flange": 150, "web_below_flange": 850,  "soffit": null, "bottom_width": 340, "chamfer": 20, "Lmax_m": 24, "camber_max_mm": 76, "volume_without_flange_m3_per_m": 0.29},
+  "S-850-700": {"title_original": "TILTO SIJA S-850",  "H": 850,  "top_width": 700, "flange": 150, "web_below_flange": 700,  "soffit": 300, "bottom_width": 340, "chamfer": 20, "Lmax_m": 20.3, "camber_max_mm": 75, "volume_without_flange_m3_per_m": 0.29}
+ },
+ "volume_note_original": "Standartinio gaminio be lentynos 1 m ilgio tūris ~ 0,29 m3 (sheets 06 and 07). 'Lentyna' = the top flange (notes: height is increased by thickening the lentyna).",
+ "half_profiles_mm": {
+  "_note": "right half, from soffit centre-line edge upwards; x from axis, y from soffit. Vector coordinates scaled 1:50 and snapped to printed H, H-150 and bottom dimensions.",
+  "S-1150": [[140, 0], [160, 20], [275.6, 924.3], [280.4, 943.5], [289.3, 961.2], [302.0, 976.4], [317.7, 988.4], [335.8, 996.5], [355.2, 1000.4], [375, 1000], [375, 1150]],
+  "S-1000": [[150, 0], [170, 20], [237.4, 773.9], [242.3, 794.5], [252.2, 813.2], [266.3, 829.0], [283.9, 840.8], [303.9, 847.9], [325, 850], [325, 1000]],
+  "S-850-700": [[150, 0], [170, 20], [236.7, 617.4], [245.3, 641.3], [259.3, 662.5], [277.9, 679.8], [300.1, 692.2], [324.6, 699.0], [350, 700], [350, 850]],
+  "S-850-710": [[150, 0], [170, 20], [236.7, 617.4], [245.3, 641.3], [259.3, 662.5], [277.9, 679.8], [300.1, 692.2], [324.6, 699.0], [350, 700], [355, 700], [355, 850]]
+ },
+ "provenance": {"S-1150": "transcribed-with-convention", "S-850-710": "transcribed-with-convention", "S-1000": "transcribed", "S-850-700": "transcribed"},
+ "residuals": {
+  "S-850-700": {"A_below_flange_m2": 0.2930, "A_total_m2": 0.3980, "published_m3_per_m": 0.29, "note": "matches '~0,29'"},
+  "S-1000": {"A_below_flange_m2": 0.3528, "A_total_m2": 0.4503, "published_m3_per_m": 0.29, "note": "does NOT match: +22 %; the note on sheet 06 appears copied from the S-850 sheet (drawing is dimensionally consistent at 1:50: 650/150/850/1000/340 all within 1 mm). Pinned in tests."},
+  "S-1150": {"drawn_soffit_mm": 276, "drawn_bottom_mm": 316, "printed": [280, 320], "note": "drawing ~4 mm narrow at the base; printed values used, web line re-drawn to the vector fillet end"},
+  "S-850-710": {"drawn_top_width_mm": 700, "printed": 710, "note": "sheet 05 geometry is identical to sheet 07 (700 wide) but labelled 710; implemented with 710 by adding a 5 mm flat to the flange underside at each edge"}
+ },
+ "geometry_notes": [
+  "Outlines are the vector CAD polylines of the side views (PyMuPDF), scaled at 1:50; printed H, flange 150, web 1000/850/700 and bottom widths agree with the vectors to <= 1 mm except as listed in residuals.",
+  "The flange-to-web transition is a curved haunch drawn as a 6-chord polyline starting at the flange edge; the chords are kept as drawn.",
+  "All sections are solid T/trapezoid girders (no voids); the S-850 two variants differ only by printed top width (710 vs 700) and Lmax (24 vs 20.3 m).",
+  "Taller versions obtained by thickening the flange (e.g. S-1150 -> H 1200 with 200 flange) are not separate catalogue sizes and are not implemented."
+ ]
+}

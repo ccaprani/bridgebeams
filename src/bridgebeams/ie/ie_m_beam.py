@@ -90,6 +90,10 @@ class IeMBeamSection:
 
     SIZES = ("M1", "M680", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "M10")
 
+    # Internal dims not published; fixed profile reconstructed to <=0.66% of published properties.
+    provenance = "fitted-reconstruction"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
     def __init__(self, size: str = "M4"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")
@@ -177,6 +181,13 @@ class IeUMBBeamSection:
         "UMB1", "UMB680", "UMB2", "UMB3", "UMB4", "UMB5",
         "UMB6", "UMB7", "UMB8", "UMB9", "UMB10",
     )
+
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
+    @property
+    def provenance(self) -> str:
+        # UMB10 matches the drawing exactly; other depths reuse its fixed dims (<=0.58%).
+        return "transcribed" if self.size == "UMB10" else "transcribed-with-convention"
 
     def __init__(self, size: str = "UMB10"):
         if size not in self.SIZES:

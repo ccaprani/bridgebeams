@@ -11,7 +11,7 @@ state DOT source leads and three Minnesota profiles; Washington W-series
 profiles are also implemented from official drawings.
 
 The September 2026 extraction round implemented 255 further profiles from
-already-downloaded sources; each record states per-profile `provenance`
+already-downloaded sources, and a second web-retrieval round a further 1172; each record states per-profile `provenance`
 and pinned source discrepancies.
 
 This directory is the versioned research record for expanding `bridgebeams`.
@@ -55,6 +55,13 @@ profiles and completed checks.
 | Extraction round (Sept 2026): Civilcon T, U, Special U and M | [Implementation record](extraction-civilcon-tum-2026-09.md) | [Transcriptions and residuals](data/extraction-civilcon-tum-2026-09.json) |
 | Extraction round (Sept 2026): NHAI and Nepal DoR girders | [Implementation record](extraction-nhai-nepal-2026-09.md) | [Transcriptions and residuals](data/extraction-nhai-nepal-2026-09.json) |
 | Extraction round (Sept 2026): Beijing 20BGQL2, WIKA and SEPSA extensions | [Implementation record](extraction-china-indonesia-mexico-2026-09.md) | [Transcriptions and residuals](data/extraction-china-indonesia-mexico-2026-09.json) |
+| Round 2 web retrieval (Sept 2026): US PCI national families and Florida | [Implementation record](round2-us-pci-florida-2026-09.md) | [Sources, transcriptions and leads](data/round2-us-pci-florida-2026-09.json) |
+| Round 2 web retrieval (Sept 2026): Texas and other US states | [Implementation record](round2-us-texas-states-2026-09.md) | [Sources, transcriptions and leads](data/round2-us-texas-states-2026-09.json) |
+| Round 2 web retrieval (Sept 2026): Europe | [Implementation record](round2-europe-2026-09.md) | [Sources, transcriptions and leads](data/round2-europe-2026-09.json) |
+| Round 2 web retrieval (Sept 2026): Latin America | [Implementation record](round2-latin-america-2026-09.md) | [Sources, transcriptions and leads](data/round2-latin-america-2026-09.json) |
+| Round 2 web retrieval (Sept 2026): South Asia, Korea and the Philippines | [Implementation record](round2-south-asia-korea-philippines-2026-09.md) | [Sources, transcriptions and leads](data/round2-south-asia-korea-philippines-2026-09.json) |
+| Round 2 web retrieval (Sept 2026): East and Southeast Asia and Oceania | [Implementation record](round2-east-asia-oceania-2026-09.md) | [Sources, transcriptions and leads](data/round2-east-asia-oceania-2026-09.json) |
+| Round 2 web retrieval (Sept 2026): Africa and the Middle East | [Implementation record](round2-africa-middle-east-2026-09.md) | [Sources, transcriptions and leads](data/round2-africa-middle-east-2026-09.json) |
 
 ## Reading the evidence
 

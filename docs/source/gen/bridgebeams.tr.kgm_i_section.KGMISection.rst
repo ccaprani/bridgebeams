@@ -1,4 +1,4 @@
-bridgebeams.tr.kgm\_i\_section.KGMISection
+﻿bridgebeams.tr.kgm\_i\_section.KGMISection
 ==========================================
 
 .. currentmodule:: bridgebeams.tr.kgm_i_section
@@ -29,5 +29,7 @@ bridgebeams.tr.kgm\_i\_section.KGMISection
       ~KGMISection.SIZES
       ~KGMISection.geometry
       ~KGMISection.polygon
+      ~KGMISection.provenance
+      ~KGMISection.source_status
    
    

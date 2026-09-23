@@ -64,6 +64,10 @@ class NoNtbKtbSection:
     """
     TYPES = tuple(_DATA['sections'])
 
+    # 15 x 15 mm bottom chamfers are a reviewer inference, not printed.
+    provenance = "transcribed-with-convention"
+    source_status = "Statens vegvesen V426 handbook figures"
+
     def __init__(self, section_type: str = 'NTB800-400x1400'):
         if section_type not in self.TYPES:
             raise ValueError(f'section_type must be one of {self.TYPES}, got {section_type!r}')

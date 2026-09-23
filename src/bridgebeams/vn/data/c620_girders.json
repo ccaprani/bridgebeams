@@ -1,0 +1,65 @@
+{
+  "family": "Công ty Cổ phần Bê tông 620 Châu Thới (620 Chau Thoi Concrete Corporation) precast prestressed bridge girders",
+  "producer": "Công ty Cổ phần Bê tông 620 Châu Thới (Bình Dương / Vĩnh Long, Vietnam)",
+  "source_status": "producer product drawings published on the manufacturer website (undated; uploads 2019-11/2019-12); not a Bộ GTVT standard",
+  "retrieved": "2026-09-23",
+  "units": "mm",
+  "terms": {"MẶT CẮT": "section", "MẶT CHÍNH DẦM": "girder elevation", "TỶ LỆ / TL": "scale", "VÁT CẠNH / vát góc": "edge chamfer", "TẠO NHÁM": "roughened surface", "dầm trong / dầm biên": "interior / exterior girder", "đầu dầm / giữa dầm": "girder end / midspan", "cải tiến": "improved", "T ngược": "inverted T", "căng trước": "pretensioned"},
+  "sections": {
+    "I33": {
+      "title": "Dầm I 33 m (22TCN 272-05), mặt cắt 4-4 (midspan)",
+      "product_page": "https://620chauthoi.com/en/san-pham/dam-i33/",
+      "url": "https://620chauthoi.com/wp-content/uploads/2019/11/DAM-I33-272-05.jpg",
+      "local_path": "sources/expansion/round2/vn/c620/DAM-I33-272-05.jpg",
+      "sha256": "161a01d52e3dc6892563f6f87e10bd6bd00f2cbdbd3ff81b6845ebcca28d8f6d",
+      "locator": "single sheet 4960x3224 px; sections 3-3 and 4-4 (scale 1/20), lower middle",
+      "dimensions_mm": {"depth": 1400, "top_width": 500, "top_edge": 160, "top_haunch": 120, "web": 160, "web_height": 770, "bottom_splay": 170, "bottom_edge": 180, "bottom_width": 610, "chamfer": 25},
+      "provenance": "transcribed",
+      "notes": "Chain 160+120+770+170+180 = 1400; 170+160+170 = 500; 225+160+225 = 610. 'VÁT CẠNH 25x25' labelled on section 1-1 and the same soffit chamfers drawn on 3-3/4-4. TNEC's product table lists an I33 at width 610 / height 1400, consistent."
+    },
+    "I24.54": {
+      "title": "Dầm chữ I 24,54 m, mặt cắt D-D (midspan) and C-C",
+      "product_page": "https://620chauthoi.com/en/san-pham/dam-i33/",
+      "url": "https://620chauthoi.com/wp-content/uploads/2019/11/dam-chu-I.2454m-.jpg",
+      "local_path": "sources/expansion/round2/vn/c620/dam-chu-I.2454m-.jpg",
+      "sha256": "f8acc52d9b63111494a5c552eb897fd0f1ed2372735ae266fdf2186175e0db29",
+      "locator": "single sheet 4960x3216 px; sections C-C/E-E and D-D (scale 1/15)",
+      "dimensions_mm": {"depth": 1143, "top_width": 410, "top_edge": 178, "top_haunch": 114, "web": 178, "web_height": 483, "bottom_splay": 190, "bottom_edge": 178, "bottom_width": 558, "chamfer": 25},
+      "provenance": "transcribed-with-convention",
+      "notes": "Chain 178+114+483+190+178 = 1143; 116+178+116 = 410; 190+178+190 = 558. Soffit chamfers drawn but not dimensioned on this sheet: 25 mm adopted from the producer's I33 sheet (scaled ~25-27 mm). The inch-derived values (1143 = 45 in, 178 = 7 in, 114 = 4.5 in, 190 = 7.5 in, 558 ~ 22 in) resemble AASHTO Type III, but the 410 mm top (vs 16 in = 406) and 116 mm haunch offsets are this producer's; no identity with the US profile is claimed."
+    },
+    "I18.6": {
+      "title": "Dầm I 18,6 m, mặt cắt D-D (midspan)",
+      "product_page": "https://620chauthoi.com/en/san-pham/dam-i33/",
+      "url": "https://620chauthoi.com/wp-content/uploads/2019/11/DAM-I-18.6M.jpg",
+      "local_path": "sources/expansion/round2/vn/c620/DAM-I-18.6M.jpg",
+      "sha256": "09d0b038ae3e5b70096293f55ccda4ebc8415ca13a59de7dd1cf083ff244c072",
+      "locator": "single sheet 4960x3240 px; sections C-C and D-D (TL 1/10)",
+      "dimensions_mm": {"depth": 700, "top_width": 390, "flange_width": 430, "top_rebate": 50, "flange_edge": 85, "top_haunch": 75, "web": 160, "web_height": 220, "bottom_splay": 100, "bottom_edge": 145, "bottom_width": 560, "chamfer": 25},
+      "provenance": "transcribed",
+      "notes": "Chain 50+85+75+220+100+145+25 = 700; top 20+390+20 = 430; 135+160+135 = 430; 200+160+200 = 560; soffit 25+510+25 = 560 (25x25 chamfers dimensioned). The 20 x 50 mm top rebates are included."
+    },
+    "T18.6": {
+      "title": "Dầm T 18,6 m cải tiến, mặt cắt C-C (midspan)",
+      "product_page": "https://620chauthoi.com/en/san-pham/dam-t/",
+      "url": "https://620chauthoi.com/wp-content/uploads/2019/12/T.186m-c%E1%BA%A3i-ti%E1%BA%BFn.jpg",
+      "local_path": "sources/expansion/round2/vn/c620/T.186m-cải-tiến.jpg",
+      "sha256": "90b92740260cbbf8f5117b53ffe5c6090693b79327533cda3c0b9eae25dd2e6e",
+      "locator": "single sheet 4960x3168 px; sections A-A, B-B (770 deep, support region) and C-C (950 deep, midspan), scale 1/20",
+      "dimensions_mm": {"depth": 950, "block_width": 400, "top_width": 340, "top_rebate": 30, "block_depth": 313, "soffit_width": 200, "web_taper_h_per_v": 0.0833333333, "fillet_radius": 130},
+      "provenance": "transcribed-with-convention",
+      "notes": "Upper rectangular block 400 wide x 313 deep (incl. 30 x 30 top rebates, top 340). Below it a web tapering 1:12 per face to a 200 mm soffit at midspan (B-B: 230 mm soffit at 770 depth; both give a 306 mm web at the block underside, confirming the 1:12 reading). Soffit depth varies along the girder (770 at the ends, 950 over the middle 2x2590 mm). Convention: the drawn R130 arc is tangent to the tapered web and ends at the block's bottom outer corner (the 47 mm ledge is too short for an arc tangent to both faces)."
+    },
+    "TN20": {
+      "title": "Dầm T ngược 20 m (inverted T), mặt cắt giữa dầm (midspan), dầm trong / dầm biên",
+      "product_page": "https://620chauthoi.com/en/san-pham/dam-t/",
+      "url": "https://620chauthoi.com/wp-content/uploads/2019/12/t-nguoc.jpg",
+      "local_path": "sources/expansion/round2/vn/c620/t-nguoc.jpg",
+      "sha256": "a0caf3c0cca279a549110225c9fe7f2b29c34a3774330e4adb07e6ac5d716bcb",
+      "locator": "single sheet 4960x3160 px; midspan sections (1/30) for interior and exterior girders - same outline",
+      "dimensions_mm": {"depth": 750, "bottom_width": 980, "bottom_edge": 100, "flange_rise": 70, "fillet_zone": 70, "fillet_radius": 70, "web": 160, "web_height": 250, "top_haunch": 70, "flange_width": 440, "flange_edge": 160, "top_rebate": 30, "top_width": 360, "chamfer": 20},
+      "provenance": "transcribed-with-convention",
+      "notes": "Right-hand chain 30+160+70+250+70+70+100 = 750; top 40+360+40 = 440; 140+160+140 = 440; 'vát góc 20x20' soffit chamfers. Convention: the sloping flange top runs from the 100 mm edge to the theoretical web intersection 170 mm above the soffit, and the R70 fillet is a true tangent arc at that corner (its web tangent point falls ~11 mm below the 240 mm level implied by the 70 mm fillet-zone callout). The left-hand 480/270 callouts locate the transverse hole, not the outline."
+    }
+  }
+}

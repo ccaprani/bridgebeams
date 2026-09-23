@@ -1,4 +1,4 @@
-bridgebeams.za.civilcon\_i\_beam.CivilconIBeamSection
+﻿bridgebeams.za.civilcon\_i\_beam.CivilconIBeamSection
 =====================================================
 
 .. currentmodule:: bridgebeams.za.civilcon_i_beam
@@ -28,5 +28,7 @@ bridgebeams.za.civilcon\_i\_beam.CivilconIBeamSection
       ~CivilconIBeamSection.SIZES
       ~CivilconIBeamSection.geometry
       ~CivilconIBeamSection.polygon
+      ~CivilconIBeamSection.provenance
+      ~CivilconIBeamSection.source_status
    
    

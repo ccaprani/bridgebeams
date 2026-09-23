@@ -140,6 +140,9 @@ class FebeISection:
     900.0
     """
 
+    provenance = "estimate"
+    source_status = "parametric template (FEBE 4th ed. 2017); flange thicknesses user-supplied"
+
     def __init__(
         self,
         size: str = "900/620",

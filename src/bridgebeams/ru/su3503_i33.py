@@ -113,6 +113,10 @@ class Su3503I33Section:
         "B3300.194.173",
     )
 
+    # Bottom flange thickness least-squares fitted to producer volumes.
+    provenance = "fitted-reconstruction"
+    source_status = "historic standard (series 3.503.1-81)"
+
     def __init__(self, size: str = "B3300.174.173"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

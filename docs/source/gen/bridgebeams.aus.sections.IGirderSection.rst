@@ -1,4 +1,4 @@
-bridgebeams.aus.sections.IGirderSection
+﻿bridgebeams.aus.sections.IGirderSection
 =======================================
 
 .. currentmodule:: bridgebeams.aus.sections
@@ -21,5 +21,12 @@ bridgebeams.aus.sections.IGirderSection
    
 
    
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~IGirderSection.provenance
+      ~IGirderSection.source_status
    
    

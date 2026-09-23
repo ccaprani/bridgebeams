@@ -26,5 +26,7 @@ bridgebeams.aus
    :template: custom-module-template.rst
    :recursive:
 
+   r2_tfnsw_cbs_modules
+   r2_tmr_deck_units
    sections
 

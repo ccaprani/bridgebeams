@@ -12,6 +12,18 @@ coverage
 research
 api
 sources
+corrections
+```
+
+```{warning}
+**Not authoritative — use at your own risk.** `bridgebeams` is a best-effort,
+crowd-correctable catalogue. Many profiles are reconstructions or estimates
+from incomplete, draft, feasibility-stage or historic sources, and some
+sources contradict themselves. It is useful for research, teaching,
+screening and cross-checking, but it does not replace the governing
+standard drawing, the producer's current data or engineering judgement.
+Check each profile's `provenance` and `source_status`. No warranty is given.
+See {doc}`corrections` to report an error.
 ```
 
 ## Overview
@@ -27,8 +39,8 @@ All geometry is in **millimetres** and returned as `sectionproperties`
 `Geometry` objects, so sections can be meshed and analysed directly, or
 wrapped with materials for concrete section design checks.
 
-The complete coverage view currently counts **556 distinct fixed profiles across
-26 countries**, separately from **122 jurisdictions with research records**.
+The complete coverage view currently counts **1728 distinct fixed profiles across
+44 countries**, separately from **122 jurisdictions with research records**.
 The UK and Ireland each show 175 shared Banagher profiles; those country assignments
 do not create new distinct geometry.
 Belgian and Greek parametric templates are listed separately because their

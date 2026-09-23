@@ -43,6 +43,10 @@ class NzIBeamSection:
 
     SIZES = (1500, 1600)
 
+    # Source allows chamfers or radii; chamfers selected.
+    provenance = "transcribed-with-convention"
+    source_status = "NZTA RR364 standard drawings"
+
     def __init__(self, depth: int = 1500):
         if depth not in self.SIZES:
             raise ValueError(f"depth must be one of {self.SIZES}, got {depth!r}")

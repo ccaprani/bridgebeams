@@ -32,6 +32,9 @@ class CaMtoSolidSlabSection:
 
     SIZES = ("S300", "S400", "S500")
 
+    provenance = "transcribed"
+    source_status = "current SS107-25 (June 2025)"
+
     def __init__(self, size: str = "S300"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

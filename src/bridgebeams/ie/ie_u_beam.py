@@ -109,6 +109,10 @@ class IeUBeamSection:
         + ["SU11", "SU12"]
     )
 
+    # Measured from the vector drawing; W2 derived. More cautious than "transcribed".
+    provenance = "transcribed-with-convention"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
     def __init__(self, size: str = "U8"):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

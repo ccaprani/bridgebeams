@@ -27,4 +27,5 @@ bridgebeams.th
    :recursive:
 
    doh_igirder
+   r2_doh_girders
 

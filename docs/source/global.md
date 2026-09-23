@@ -53,6 +53,21 @@ Pakistan's NHA Type A–H PSC I-girders are [documented research leads](pakistan
 
 ![Examples implemented after visual review](_static/images/review-additions.svg)
 
+## Round 2 web-retrieval additions (September 2026)
+
+A second round retrieved public sources and added 1172 profiles. It extends
+the United States (PCI national families; Florida, Texas and 11 other
+states), Europe (UK FP McCann, Spain, the Netherlands, Italy, Romania,
+Poland, Denmark, Ukraine, Bulgaria, Lithuania, Croatia, France, Türkiye,
+Russia, Greece, Hungary), Latin America (Brazil DNIT, Argentina,
+Costa Rica, Mexico), South Asia (Pakistan, Sri Lanka, Bangladesh, Korea),
+East and Southeast Asia and Oceania (Japan, Shanghai, Taiwan, Thailand,
+Vietnam, Cambodia, Malaysia, Indonesia, Queensland and NSW), and Qatar and
+Morocco. The table above is not exhaustive. The {doc}`coverage` map lists
+every family and profile count by country, including how many profiles are
+estimates, and the round 2 records in {doc}`research` give sources,
+conventions and pinned discrepancies.
+
 ## India and research-only countries
 
 India has project-specific constructors from NHAI drawings:

@@ -1,0 +1,190 @@
+{
+ "producer": "Строителна фирма Рила (Rila construction company, Kyustendil, Bulgaria)",
+ "product_title_original": "Мостови греди ГТ 75 / ГТ 95 / ГТ 115 / ГТ 140 / ГТ 185",
+ "source_status": "producer web catalogue (product drawings; certified to БДС EN 15050:2007+A1:2012)",
+ "retrieved": "2026-09-23",
+ "sources": {
+  "page": {
+   "title_original": "Елементи за пътно строителство",
+   "url": "https://www.rila-bg.com/bg/%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B8-%D0%B7%D0%B0-%D0%BF%D1%8A%D1%82%D0%BD%D0%BE-%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%81%D1%82%D0%B2%D0%BE.html",
+   "local": "sources/expansion/round2/bg/rila_patno_stroitelstvo.html"
+  },
+  "capture18": {
+   "image_url": "https://www.rila-bg.com/admin/files/pictures/879/879_4391_v400_capture18.png",
+   "local": "sources/expansion/round2/bg/rila_capture18.png",
+   "sha256": "26dce27c34d46faae4db91756836742e8879c3c3b0d8028c986d8c0f0e65732d",
+   "shows": [
+    "GT75",
+    "GT95"
+   ]
+  },
+  "capture17": {
+   "image_url": "https://www.rila-bg.com/admin/files/pictures/879/879_4390_v400_capture17.png",
+   "local": "sources/expansion/round2/bg/rila_capture17.png",
+   "sha256": "0b1cf44db498bc0ccb24cdd5f5432c1de7cf411a696b6acd44c1b08e85fb3497",
+   "shows": [
+    "GT115",
+    "GT140"
+   ]
+  },
+  "capture19": {
+   "image_url": "https://www.rila-bg.com/admin/files/pictures/879/879_4392_v400_capture19.png",
+   "local": "sources/expansion/round2/bg/rila_capture19.png",
+   "sha256": "930d4c332f36f2a0f1c4571840bdecef1cf4bc33a3cb3398106ec62282fdfec5",
+   "shows": [
+    "GT185"
+   ]
+  }
+ },
+ "image_url_note": "Image URLs as linked from the page HTML (relative /admin/files/pictures/879/...); the page also links 1440/1920 px versions of the same drawings.",
+ "units": "cm",
+ "published_properties": "none (no area, mass, inertia or volume on the page)",
+ "_columns": "B top width; outstand = flange outstand beyond fillet; fillet_h = horizontal leg of web-flange fillet; web; bottom_width; haunch_h = bottom haunch height (horizontal leg = (bottom_width-web)/2); side_h = vertical bottom-flange side ABOVE the soffit chamfer; chamfer = soffit corner chamfer (both legs); web_h = straight web height; left/right = [fillet_v, underside taper, edge thickness, printed total height at that edge]; centre = printed height at the axis",
+ "sizes": {
+  "GT75": {
+   "name_original": "ГТ 75",
+   "image": "capture18",
+   "B": 112,
+   "outstand": 42,
+   "fillet_h": 5,
+   "web": 18,
+   "bottom_width": 70,
+   "haunch_h": 10,
+   "side_h": 12,
+   "chamfer": 2,
+   "web_h": 35,
+   "left": [
+    5,
+    4,
+    7,
+    75
+   ],
+   "right": [
+    5,
+    4,
+    7,
+    75
+   ],
+   "centre": null,
+   "provenance": "transcribed"
+  },
+  "GT95": {
+   "name_original": "ГТ 95",
+   "image": "capture18",
+   "B": 112,
+   "outstand": 42,
+   "fillet_h": 5,
+   "web": 18,
+   "bottom_width": 70,
+   "haunch_h": 10,
+   "side_h": 12,
+   "chamfer": 2,
+   "web_h": 55,
+   "left": [
+    5,
+    2.6,
+    7,
+    93.6
+   ],
+   "right": [
+    5,
+    5.4,
+    7,
+    96.4
+   ],
+   "centre": 95,
+   "provenance": "transcribed"
+  },
+  "GT115": {
+   "name_original": "ГТ 115",
+   "image": "capture17",
+   "B": 112,
+   "outstand": 42,
+   "fillet_h": 5,
+   "web": 18,
+   "bottom_width": 70,
+   "haunch_h": 10,
+   "side_h": 12,
+   "chamfer": 2,
+   "web_h": 74.9,
+   "left": [
+    5,
+    5.5,
+    7,
+    116.4
+   ],
+   "right": [
+    5,
+    2.7,
+    7,
+    113.6
+   ],
+   "right_taper_printed": 2.8,
+   "centre": 115,
+   "provenance": "transcribed-with-convention"
+  },
+  "GT140": {
+   "name_original": "ГТ 140",
+   "image": "capture17",
+   "B": 120,
+   "outstand": 46,
+   "fillet_h": 5,
+   "web": 18,
+   "bottom_width": 70,
+   "haunch_h": 10,
+   "side_h": 12,
+   "chamfer": 2,
+   "web_h": 100,
+   "left": [
+    4.9,
+    2.6,
+    7,
+    138.5
+   ],
+   "right": [
+    5.2,
+    5.3,
+    7,
+    141.5
+   ],
+   "centre": 140,
+   "provenance": "transcribed"
+  },
+  "GT185": {
+   "name_original": "ГТ 185",
+   "image": "capture19",
+   "B": 180,
+   "outstand": 73,
+   "fillet_h": 7,
+   "web": 20,
+   "bottom_width": 70,
+   "haunch_h": 13,
+   "side_h": 18.5,
+   "chamfer": 1.5,
+   "web_h": 127.5,
+   "left": [
+    13,
+    3,
+    7,
+    183.5
+   ],
+   "right": [
+    13,
+    7,
+    7,
+    187.5
+   ],
+   "centre": 185,
+   "side_h_note": "printed 20 includes the 1.5 x 1.5 chamfer",
+   "provenance": "transcribed"
+  }
+ },
+ "geometry_notes": [
+  "All dimensions read visually from the raster drawings (zoomed), cm; the vertical chains on both sides and the widths close exactly on the printed totals except GT115 (below).",
+  "Top flange carries a 2.5 % crossfall drawn in different directions per size (GT95/GT140/GT185 high on the right, GT115 high on the left); implemented exactly as drawn, so the outline is asymmetric. Origin at mid-soffit.",
+  "GT115 right chain prints 7 + 2.8 + 5 + 74.9 + 10 + 12 + 2 = 113.7 but the right total is printed 113.6 (= 116.4 - 112 x 2.5 %); the right underside taper is taken as 2.7 so the printed total governs (0.1 cm).",
+  "GT185: printed edge-height difference 187.5 - 183.5 = 4.0 cm over 180 cm (2.2 %, not 2.5 %), and their mean 185.5 differs from the printed nominal 185; printed chain totals used (pinned in tests).",
+  "GT185 soffit chamfer 1.5 x 1.5 is dimensioned on the right corner only; applied to both corners (symmetric convention).",
+  "Top flange edges are vertical; web-flange junctions are straight chamfer-type fillets with the printed legs; bottom haunches straight from web face to flange edge."
+ ]
+}

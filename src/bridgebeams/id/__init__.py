@@ -15,3 +15,9 @@ __all__ = [
     "WikaPcIGirderSection",
     "WikaPcUGirderSection",
 ]
+
+from .r2_waskita import (WaskitaPcIDimensions, WaskitaPcIGirderSection, WaskitaVoidedSlabDimensions, WaskitaVoidedSlabSection)
+__all__ += ['WaskitaPcIDimensions', 'WaskitaPcIGirderSection', 'WaskitaVoidedSlabDimensions', 'WaskitaVoidedSlabSection']
+
+from .r2_wika_voided_slab import (WikaVoidedSlabDimensions, WikaVoidedSlabSection)
+__all__ += ['WikaVoidedSlabDimensions', 'WikaVoidedSlabSection']

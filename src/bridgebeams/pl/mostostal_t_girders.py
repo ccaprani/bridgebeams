@@ -81,6 +81,10 @@ class MostostalTSection:
 
     SIZES = ("T12", "T15", "T18", "T21", "T24", "T27")
 
+    # Top flange thickness ~210 mm is second-hand (T27 only) and applied to all; cautious over with-convention.
+    provenance = "estimate"
+    source_status = "producer catalogue data (Betard/SIBET pages)"
+
     def __init__(self, size: str = "T27", *, top_flange_thickness: float = 210.0):
         """
         Parameters

@@ -55,6 +55,9 @@ class Nh45aPscISection:
 
     SIZES = ("CH50+473-MID",)
 
+    provenance = "transcribed"
+    source_status = "Final Feasibility Report"
+
     def __init__(self, size: str = "CH50+473-MID") -> None:
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

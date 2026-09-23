@@ -1,0 +1,95 @@
+{
+ "schema_version": 1,
+ "family": "Mexican producer trabes tipo AASHTO (round 2)",
+ "country": "Mexico",
+ "scope": "Producer-specific metric I-girders named after the AASHTO/PCI types. Geometry taken only from each Mexican document; not aliases of the US PCI profiles.",
+ "translation": {
+  "trabe": "girder",
+  "ficha técnica": "technical data sheet",
+  "peralte": "depth",
+  "claro": "span",
+  "elementos presforzados": "prestressed elements"
+ },
+ "producers": {
+  "dragon": {
+   "organisation": "Prefabricados Dragón",
+   "title": "Ficha técnica — Trabes tipo AASHTO",
+   "url": "https://prefabricadosdragon.com/pdf/TRABE_AASHTO.pdf",
+   "local_file": "sources/expansion/round2/mx/dragon_trabe_aashto.pdf",
+   "sha256": "76de6da76a4ca35a169be78816c7e10bf4b1991c27277fae6279334192fb4590",
+   "accessed": "2026-09-23",
+   "pdf_page_1_based": 1,
+   "printed_page": null,
+   "source_status": "producer data sheet (undated)",
+   "units": "m",
+   "transcription": "Read visually from a 400-dpi render; every printed vertical chain sums to the printed depth.",
+   "published_properties": null,
+   "geometry_notes": [
+    "Sharp-cornered polygons as drawn; no chamfers or fillets are drawn or dimensioned.",
+    "Tipo I web printed 0.13 m (drawn 0.132 m at the sheet scale); Tipo V and VI webs printed and drawn 0.26 m. Transcribed as printed; they differ from the US PCI 6 in / 8 in webs.",
+    "CONVENTION (Tipo V, VI): the horizontal break point between the 0.08 m outer and 0.10 m inner top tapers is not printed. Scaled from the drawing (half-width 0.231 m for V, 0.229 m for VI against the 1.06 m printed top width), i.e. a 45-degree 0.10 x 0.10 m inner bevel; knee width 0.46 m used.",
+    "Tipo I–IV have a single top taper from the flange edge to the web, as drawn."
+   ],
+   "types": {
+    "I": {"provenance": "transcribed", "printed_chain_m": [0.1, 0.08, 0.26, 0.13, 0.13],
+          "dimensions": {"depth": 0.70, "top_width": 0.30, "web_width": 0.13, "bottom_width": 0.406,
+                         "top_flange": 0.10, "top_outer_taper": 0.08, "bottom_flange": 0.13, "bottom_taper": 0.13}},
+    "II": {"provenance": "transcribed", "printed_chain_m": [0.15, 0.08, 0.38, 0.15, 0.15],
+          "dimensions": {"depth": 0.91, "top_width": 0.30, "web_width": 0.15, "bottom_width": 0.45,
+                         "top_flange": 0.15, "top_outer_taper": 0.08, "bottom_flange": 0.15, "bottom_taper": 0.15}},
+    "III": {"provenance": "transcribed", "printed_chain_m": [0.18, 0.09, 0.5, 0.2, 0.18],
+          "dimensions": {"depth": 1.15, "top_width": 0.40, "web_width": 0.18, "bottom_width": 0.56,
+                         "top_flange": 0.18, "top_outer_taper": 0.09, "bottom_flange": 0.18, "bottom_taper": 0.20}},
+    "IV": {"provenance": "transcribed", "printed_chain_m": [0.2, 0.15, 0.57, 0.23, 0.2],
+          "dimensions": {"depth": 1.35, "top_width": 0.50, "web_width": 0.20, "bottom_width": 0.66,
+                         "top_flange": 0.20, "top_outer_taper": 0.15, "bottom_flange": 0.20, "bottom_taper": 0.23}},
+    "V": {"provenance": "transcribed-with-convention", "printed_chain_m": [0.13, 0.08, 0.1, 0.91, 0.2, 0.18],
+          "dimensions": {"depth": 1.60, "top_width": 1.06, "web_width": 0.26, "bottom_width": 0.71,
+                         "top_flange": 0.13, "top_outer_taper": 0.08, "top_inner_taper": 0.10, "top_knee_width": 0.46,
+                         "bottom_flange": 0.18, "bottom_taper": 0.20}},
+    "VI": {"provenance": "transcribed-with-convention", "printed_chain_m": [0.13, 0.08, 0.1, 1.09, 0.25, 0.2],
+          "dimensions": {"depth": 1.85, "top_width": 1.06, "web_width": 0.26, "bottom_width": 0.71,
+                         "top_flange": 0.13, "top_outer_taper": 0.08, "top_inner_taper": 0.10, "top_knee_width": 0.46,
+                         "bottom_flange": 0.20, "bottom_taper": 0.25}}
+   }
+  },
+  "tubeco": {
+   "organisation": "Tubeco (Tubos y Estructuras de Concreto)",
+   "title": "Elementos presforzados (brochure)",
+   "url": "https://www.tubeco.com.mx/catalogos/presforzados.pdf",
+   "local_file": "sources/expansion/round2/mx/tubeco_presforzados.pdf",
+   "sha256": "90f40d2e338ab43b30f45992de49ba352e16d901ec74975f6895167bf7e04035",
+   "accessed": "2026-09-23",
+   "pdf_page_1_based": 7,
+   "printed_page": 6,
+   "source_status": "producer brochure (2022-2023 project list)",
+   "units": "cm",
+   "transcription": "Read visually from a 400-dpi render of PDF p7. PDF p8 (printed 7) shows a Nebraska girder identical in callouts to SEPSA's (125/127 top, 100/102 base, 10+22, H-74, 27+15, R20, R5) with only an H range 135-240 cm; not implemented separately (corroborates mx.SepsaNebraskaSection).",
+   "published_properties": null,
+   "published_span_ranges_m": {"III": [16, 24], "IV": [20, 32], "V": [27, 36], "VI": [33, 42]},
+   "geometry_notes": [
+    "Soffit chamfer: printed 2 cm horizontal leg (56 = 2 + 52 + 2 etc.); vertical leg not printed, taken as 2 cm (45 degrees). Area effect 4 cm2.",
+    "Top-flange edge corners are drawn slightly rounded but not dimensioned; modelled square.",
+    "SOURCE TYPO (Tipo III): overall top width printed '30' but the printed sub-chain is 11 + 18 + 11 = 40 and the drawn width scales to 38.8 cm against the printed 56 cm base. 40 cm used.",
+    "SOURCE TYPO (Tipo IV): vertical chain printed 20 + 9 + 57 + 23 + 20 = 129 against printed depth 135. The drawn top taper scales to 15.2 cm (other segments 19.3/56.7/23.7/20.1); 15 cm used, closing the chain at 135. The '9' appears copied from Tipo III.",
+    "Tipo V and VI: printed horizontal chain 34 + 9.5 + 20 + 9.5 + 34 = 107 fixes the knee width at 39 cm; chain 13 + 7 + 10 + web + 25 + 20 sums to the printed depth."
+   ],
+   "types": {
+    "III": {"provenance": "transcribed-with-convention", "printed_top_width_cm": 30, "printed_chain_cm": [18, 9, 50, 20, 18],
+          "dimensions": {"depth": 115, "top_width": 40, "web_width": 18, "bottom_width": 56,
+                         "top_flange": 18, "top_outer_taper": 9, "bottom_flange": 18, "bottom_taper": 20, "soffit_chamfer": 2}},
+    "IV": {"provenance": "transcribed-with-convention", "printed_chain_cm": [20, 9, 57, 23, 20],
+          "dimensions": {"depth": 135, "top_width": 50, "web_width": 20, "bottom_width": 66,
+                         "top_flange": 20, "top_outer_taper": 15, "bottom_flange": 20, "bottom_taper": 23, "soffit_chamfer": 2}},
+    "V": {"provenance": "transcribed-with-convention", "printed_chain_cm": [13, 7, 10, 85, 25, 20],
+          "dimensions": {"depth": 160, "top_width": 107, "web_width": 20, "bottom_width": 71,
+                         "top_flange": 13, "top_outer_taper": 7, "top_inner_taper": 10, "top_knee_width": 39,
+                         "bottom_flange": 20, "bottom_taper": 25, "soffit_chamfer": 2}},
+    "VI": {"provenance": "transcribed-with-convention", "printed_chain_cm": [13, 7, 10, 108, 25, 20],
+          "dimensions": {"depth": 183, "top_width": 107, "web_width": 20, "bottom_width": 71,
+                         "top_flange": 13, "top_outer_taper": 7, "top_inner_taper": 10, "top_knee_width": 39,
+                         "bottom_flange": 20, "bottom_taper": 25, "soffit_chamfer": 2}}
+   }
+  }
+ }
+}

@@ -15,3 +15,6 @@ __all__ = [
     "standard_depth",
     "web_width",
 ]
+
+from .r2_projects import (GrProjectGirderDimensions, GrProjectGirderSection)
+__all__ += ['GrProjectGirderDimensions', 'GrProjectGirderSection']

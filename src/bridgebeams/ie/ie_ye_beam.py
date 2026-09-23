@@ -92,6 +92,9 @@ class IeYEBeamSection:
 
     SIZES = tuple(f"YE{i}" for i in range(1, 9))
 
+    provenance = "fitted-reconstruction"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
     def __init__(self, size: str = "YE4", *, depth: Optional[float] = None):
         if size not in self.SIZES:
             raise ValueError(f"size must be one of {self.SIZES}, got {size!r}")

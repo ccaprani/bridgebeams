@@ -1,4 +1,4 @@
-bridgebeams.th.doh\_igirder.ThDOHIGirderSection
+﻿bridgebeams.th.doh\_igirder.ThDOHIGirderSection
 ===============================================
 
 .. currentmodule:: bridgebeams.th.doh_igirder
@@ -27,5 +27,7 @@ bridgebeams.th.doh\_igirder.ThDOHIGirderSection
    
       ~ThDOHIGirderSection.geometry
       ~ThDOHIGirderSection.polygon
+      ~ThDOHIGirderSection.provenance
+      ~ThDOHIGirderSection.source_status
    
    

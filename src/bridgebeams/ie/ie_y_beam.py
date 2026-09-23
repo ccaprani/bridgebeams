@@ -101,6 +101,9 @@ class IeYBeamSection:
 
     SIZES = ("Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8")
 
+    provenance = "fitted-reconstruction"
+    source_status = "producer catalogue (Banagher Bridge Beam Manual 3rd ed.)"
+
     def __init__(self, size: str = "Y4", *, depth: Optional[float] = None):
         """
         Parameters

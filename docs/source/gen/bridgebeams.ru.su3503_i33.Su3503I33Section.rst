@@ -1,4 +1,4 @@
-bridgebeams.ru.su3503\_i33.Su3503I33Section
+﻿bridgebeams.ru.su3503\_i33.Su3503I33Section
 ===========================================
 
 .. currentmodule:: bridgebeams.ru.su3503_i33
@@ -28,6 +28,8 @@ bridgebeams.ru.su3503\_i33.Su3503I33Section
       ~Su3503I33Section.SIZES
       ~Su3503I33Section.geometry
       ~Su3503I33Section.polygon
+      ~Su3503I33Section.provenance
+      ~Su3503I33Section.source_status
       ~Su3503I33Section.target_area
    
    

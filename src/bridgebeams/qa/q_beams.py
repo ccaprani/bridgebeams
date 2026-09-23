@@ -81,6 +81,10 @@ class QaQBeamSection:
 
     TYPES = tuple(_DATA["sections"])
 
+    # Documented reconstruction; dimensions do not close, residuals <=1.26% recorded.
+    provenance = "fitted-reconstruction"
+    source_status = "Ashghal SD 5-1-101 Rev 1 (Oct 2013)"
+
     def __init__(self, section_type: str = "T1"):
         if section_type not in self.TYPES:
             raise ValueError(f"section_type must be one of {self.TYPES}, got {section_type!r}")

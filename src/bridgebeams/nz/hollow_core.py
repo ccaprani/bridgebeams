@@ -56,6 +56,10 @@ class NzHollowCoreSection:
     UNITS = ('inner', 'outer')
     SIZES = (587, 650, 900)
 
+    # Chamfer option selected, recess derived, circular voids polygonised.
+    provenance = "transcribed-with-convention"
+    source_status = "NZTA RR364 standard drawings"
+
     def __init__(self, depth: int = 587, unit: str = 'inner', circle_points: int = 256):
         if depth not in self.SIZES:
             raise ValueError(f'depth must be one of {self.SIZES}')
