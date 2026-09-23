@@ -1,0 +1,95 @@
+{
+  "source_title_original": "PPBUS: SPECIAL U BEAM (dimension and section-property sheet)",
+  "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBUS.pdf",
+  "source_local_file": "sources/expansion/asia-africa/civilcon-US.pdf",
+  "source_sha256": "d7a4d8e53c8c2bf3798b852098d49024bd4c5c0b421ba3e45bb27339fefc6999",
+  "source_pdf_page": 1,
+  "source_printed_page": null,
+  "source_status": "producer catalogue",
+  "producer": "Civilcon (South Africa)",
+  "accessed": "2026-09-22",
+  "units": "mm, mm2, mm3; self weight kN/m",
+  "reviewed": "Rendered at 300 dpi and scaled from line centres on 2026-09-23 (extraction-civilcon-tum).",
+  "transcribed_dimensions": {
+    "base_width": 2000,
+    "lobe_top_chain": "175 + 175 (lobe) + 850 (lobe inner edge to centreline)",
+    "lobe_vertical": "50 (raised strip) + 150 + 100 (splay)",
+    "outer_splay_offset": 75,
+    "inner_splay_length": 125,
+    "shoulder_width": 75,
+    "web_horizontal_chain": "60 + 80 + 60 = 200",
+    "SU1_lobe_inner_edge": 810,
+    "depth_labels": {
+      "SU1": 900,
+      "SU2": 1200
+    },
+    "density": "25.5 kN/m3",
+    "bottom_strand_chain": "50, 80, 80, 75, 70, then 80 c/c, 85|85 (strand positions)"
+  },
+  "fitted_parameters": {
+    "floor_thickness": 200.0,
+    "splay_start_half_width": 700.0,
+    "floor_splay": "45 degrees to the inner web face",
+    "method": "Scaled from the drawing (floor line centre 199.7 mm; splay points on x = y + 499.5) and confirmed against both property rows. Round values were retained because they reproduce A within 0.010%."
+  },
+  "derived_dimensions": {
+    "raised_strip": "350 - 2*75 = 200",
+    "neck": "x = 925 to 1125 at y = D - 300",
+    "batter": "(1125-1000)/900 -> 1:7.2 (scaled 1:7.23)",
+    "splay_top": "(848.4, 348.4)"
+  },
+  "geometry_notes": [
+    "The catalogue index says US1/US2; the sheet and table say SU1/SU2. The sheet names are used.",
+    "SU2 is drawn solid. SU1 is modelled as the same section with the top lobe moved 300 mm down the 1:7.2 webs. This puts the SU1 lobe inner edge at 808.3 mm, against the printed 810. The 1.7 mm discrepancy is recorded and not forced.",
+    "Published areas differ by exactly 120000 mm2 = 2 x 200 x 300, which confirms the 200 mm horizontal web width.",
+    "The soffit has no chamfer drawn. None is modelled.",
+    "The self-weight column header reads kN/m3; values equal area x 25.5 kN/m3 in kN/m.",
+    "Diaphragms (400 wide at L/3 or L/4) are not part of the section."
+  ],
+  "sections": [
+    {
+      "section": "SU1",
+      "published_depth": 900.0,
+      "area": 764590.0,
+      "yb": 320.0,
+      "zt": 100760000.0,
+      "zb": 182960000.0,
+      "self_weight_kN_per_m": 19.5,
+      "depth": 900.0,
+      "provenance": "fitted-reconstruction",
+      "naming_note": "catalogue index: US1",
+      "residuals": {
+        "area_calc": 764516.1,
+        "yb_calc": 319.61,
+        "zt_calc": 100748352,
+        "zb_calc": 182953668,
+        "area_rel_pct": -0.01,
+        "yb_diff_mm": -0.39,
+        "zt_rel_pct": -0.012,
+        "zb_rel_pct": -0.003
+      }
+    },
+    {
+      "section": "SU2",
+      "published_depth": 1200.0,
+      "area": 884590.0,
+      "yb": 439.0,
+      "zt": 172960000.0,
+      "zb": 299730000.0,
+      "self_weight_kN_per_m": 22.56,
+      "depth": 1200.0,
+      "provenance": "fitted-reconstruction",
+      "naming_note": "catalogue index: US2",
+      "residuals": {
+        "area_calc": 884516.1,
+        "yb_calc": 439.05,
+        "zt_calc": 172929250,
+        "zb_calc": 299717820,
+        "area_rel_pct": -0.008,
+        "yb_diff_mm": 0.05,
+        "zt_rel_pct": -0.018,
+        "zb_rel_pct": -0.004
+      }
+    }
+  ]
+}

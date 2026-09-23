@@ -1,0 +1,637 @@
+{
+ "topic": "spain-hungary",
+ "date": "2026-09-23",
+ "packages": {
+  "es": [
+   "Hp1BeamSection"
+  ],
+  "hu": [
+   "FerrobetonFpSection",
+   "FerrobetonFptSection",
+   "FerrobetonItgSection",
+   "FerrobetonFi150Section"
+  ]
+ },
+ "method": "Spain: native 300 dpi JBIG2 images extracted with pdfimages, SECCION I-I and Mediciones cropped/upscaled and read visually. Hungary: 500-600 dpi renders read visually for callouts; vector CAD paths parsed from pdftocairo -svg for undimensioned arcs/chamfers (circle fits); implemented outlines agree with the vector vertices within 0.01-0.25 mm.",
+ "sources": {
+  "es_hp1": {
+   "title_original": "Obras de Paso de Carreteras. Colección de tramos con vigas pretensadas. Tipo HP 1",
+   "approval": "Orden de 9 de febrero de 1977 (Ministerio de Obras Públicas), BOE núm. 118, 18 mayo 1977, pp. 10886-10915",
+   "source_url": "https://www.boe.es/boe/dias/1977/05/18/pdfs/A10886-10915.pdf",
+   "source_local_file": "sources/expansion/europe-americas/es_hp1.pdf",
+   "source_sha256": "79e5556d26a2c39db9d36989437e6e23e4ac8734d3bedc2ecc4a8fcaf68683a7",
+   "source_status": "historic 1977 standard",
+   "status_notes": [
+    "Approved by Orden 9 Feb 1977; use was declared non-obligatory (apartado 2.º). An earlier project registry states it was annulled in 1985; that supersession was not independently audited. Do not describe as a current standard."
+   ]
+  },
+  "hu_fp": {
+   "title_original": "FP-20A / FP-30A / FP-37A jelű feszített hídgerenda",
+   "source_url": "https://ferrobeton.hu/images/upload/content/1490/files/FP%20H%C3%8DDG.%20CSAL%C3%81D.pdf",
+   "source_local_file": "sources/expansion/europe-americas/hu_fp.pdf",
+   "source_sha256": "612f6be52a2993cbf226e93bd29389a6f892eba7a6653870cb8733fad1d6f35a",
+   "approval": "Eng. Szám: ÉME 58/2004; MF-01/2004"
+  },
+  "hu_fpt": {
+   "title_original": "FPT jelű feszített hídgerenda család",
+   "source_url": "https://ferrobeton.hu/images/upload/content/1492/files/FPT%20H%C3%8DDG.%20CSAL%C3%81D.pdf",
+   "source_local_file": "sources/expansion/europe-americas/hu_fpt.pdf",
+   "source_sha256": "d8454ca3481405e7e408f866cf56caf7dbbf69349a838322230e4cd0d0096c38",
+   "pdf_page": 1,
+   "approval": "MF 04/2002, AKMI: 7751/2002"
+  },
+  "hu_itg": {
+   "title_original": "ITG jelű feszített hídgerenda család",
+   "source_url": "https://ferrobeton.hu/images/upload/content/1524/files/ITG%20H%C3%8DDG.%20CSAL%C3%81D0715.pdf",
+   "source_local_file": "sources/expansion/europe-americas/hu_itg.pdf",
+   "source_sha256": "1668284a851b7c45db7954a32d873565eb7ccab5d6cbe26655ac2cd19f7aeabb",
+   "pdf_page": 1,
+   "approval": "MF 04/2002, AKMI: 7751/2002"
+  },
+  "hu_fi150": {
+   "title_original": "FI-150 jelű feszített hídgerendák",
+   "source_url": "https://ferrobeton.hu/images/upload/content/1489/files/FI%20150.pdf",
+   "source_local_file": "sources/expansion/europe-americas/hu_fi150.pdf",
+   "source_sha256": "e661f3753aa5479364c765e651459b79f4b098acd3711e537b8d42ca96cb0240",
+   "pdf_page": 1
+  }
+ },
+ "transcriptions": {
+  "es_hp1": {
+   "I": {
+    "pdf_page": 6,
+    "printed_page": "BOE 10891",
+    "sheet": 3,
+    "span_for_measurement_m": 16,
+    "dimensions_m": {
+     "depth": 1.3,
+     "top_width": 0.8,
+     "web_width": 0.16,
+     "bottom_width": 0.56,
+     "top_edge_height": 0.1,
+     "top_splay_height": 0.14,
+     "web_height": 0.64,
+     "bottom_splay_height": 0.2,
+     "bottom_edge_height": 0.22
+    },
+    "published": {
+     "hormigon_m3_per_m": 0.445,
+     "molde_m2_per_m": 3.74,
+     "acero_kg_per_m": 35.84
+    },
+    "residuals": {
+     "area_m2": 0.4448,
+     "area_pct": -0.045,
+     "molde_m": 3.7443,
+     "molde_pct": 0.11
+    }
+   },
+   "II": {
+    "pdf_page": 9,
+    "printed_page": "BOE 10894",
+    "sheet": 6,
+    "span_for_measurement_m": 18,
+    "dimensions_m": {
+     "depth": 1.5,
+     "top_width": 0.8,
+     "web_width": 0.16,
+     "bottom_width": 0.6,
+     "top_edge_height": 0.1,
+     "top_splay_height": 0.13,
+     "web_height": 0.8,
+     "bottom_splay_height": 0.22,
+     "bottom_edge_height": 0.25
+    },
+    "published": {
+     "hormigon_m3_per_m": 0.504,
+     "molde_m2_per_m": 4.21,
+     "acero_kg_per_m": 37.08
+    },
+    "residuals": {
+     "area_m2": 0.504,
+     "area_pct": 0.0,
+     "molde_m": 4.2131,
+     "molde_pct": 0.07
+    }
+   },
+   "III": {
+    "pdf_page": 13,
+    "printed_page": "BOE 10898",
+    "sheet": 10,
+    "span_for_measurement_m": 22,
+    "dimensions_m": {
+     "depth": 1.7,
+     "top_width": 0.9,
+     "web_width": 0.16,
+     "bottom_width": 0.7,
+     "top_edge_height": 0.1,
+     "top_splay_height": 0.15,
+     "web_height": 0.91,
+     "bottom_splay_height": 0.27,
+     "bottom_edge_height": 0.27
+    },
+    "published": {
+     "hormigon_m3_per_m": 0.62,
+     "molde_m2_per_m": 4.82,
+     "acero_kg_per_m": 40.05
+    },
+    "residuals": {
+     "area_m2": 0.6202,
+     "area_pct": 0.032,
+     "molde_m": 4.8222,
+     "molde_pct": 0.05
+    }
+   },
+   "IV": {
+    "pdf_page": 17,
+    "printed_page": "BOE 10902",
+    "sheet": 14,
+    "span_for_measurement_m": 26,
+    "dimensions_m": {
+     "depth": 1.9,
+     "top_width": 1.0,
+     "web_width": 0.19,
+     "bottom_width": 0.75,
+     "top_edge_height": 0.1,
+     "top_splay_height": 0.16,
+     "web_height": 1.06,
+     "bottom_splay_height": 0.28,
+     "bottom_edge_height": 0.3
+    },
+    "published": {
+     "hormigon_m3_per_m": 0.753,
+     "molde_m2_per_m": 5.33,
+     "acero_kg_per_m": 43.77
+    },
+    "residuals": {
+     "area_m2": 0.7532,
+     "area_pct": 0.027,
+     "molde_m": 5.3329,
+     "molde_pct": 0.05
+    },
+    "reading_note": "Top width callout '1,00' is faint in the scan; confirmed by the area and molde checks."
+   },
+   "V": {
+    "pdf_page": 20,
+    "printed_page": "BOE 10905",
+    "sheet": 17,
+    "span_for_measurement_m": 30,
+    "dimensions_m": {
+     "depth": 2.1,
+     "top_width": 1.1,
+     "web_width": 0.19,
+     "bottom_width": 0.8,
+     "top_edge_height": 0.1,
+     "top_splay_height": 0.17,
+     "web_height": 1.23,
+     "bottom_splay_height": 0.3,
+     "bottom_edge_height": 0.3
+    },
+    "published": {
+     "hormigon_m3_per_m": 0.842,
+     "molde_m2_per_m": 5.89,
+     "acero_kg_per_m": 47.24
+    },
+    "residuals": {
+     "area_m2": 0.84185,
+     "area_pct": -0.018,
+     "molde_m": 5.8871,
+     "molde_pct": -0.05
+    }
+   },
+   "VI": {
+    "pdf_page": 24,
+    "printed_page": "BOE 10909",
+    "sheet": 21,
+    "span_for_measurement_m": 32,
+    "dimensions_m": {
+     "depth": 2.3,
+     "top_width": 1.2,
+     "web_width": 0.19,
+     "bottom_width": 0.8,
+     "top_edge_height": 0.1,
+     "top_splay_height": 0.18,
+     "web_height": 1.37,
+     "bottom_splay_height": 0.3,
+     "bottom_edge_height": 0.35
+    },
+    "published": {
+     "hormigon_m3_per_m": 0.934,
+     "molde_m2_per_m": 6.37,
+     "acero_kg_per_m": 49.85
+    },
+    "residuals": {
+     "area_m2": 0.9339,
+     "area_pct": -0.011,
+     "molde_m": 6.3679,
+     "molde_pct": -0.03
+    }
+   }
+  },
+  "hu": {
+   "FP": {
+    "sections": {
+     "FP-20A": {
+      "pdf_page": 1,
+      "printed_page": null,
+      "provenance": "transcribed",
+      "recommended_span_m": "2.6-5.6",
+      "dimensions_cm": {
+       "depth": 20,
+       "body_height": 13.5
+      }
+     },
+     "FP-30A": {
+      "pdf_page": 2,
+      "printed_page": null,
+      "provenance": "transcribed",
+      "recommended_span_m": "5.0-12.0",
+      "dimensions_cm": {
+       "depth": 30,
+       "body_height": 23.5
+      }
+     },
+     "FP-37A": {
+      "pdf_page": 3,
+      "printed_page": null,
+      "provenance": "transcribed",
+      "recommended_span_m": "10.0-14.0",
+      "dimensions_cm": {
+       "depth": 37,
+       "body_height": 30.5
+      }
+     }
+    },
+    "common_dimensions_cm": {
+     "overall_width": 50,
+     "soffit_width": 47,
+     "chamfer": 1.5,
+     "edge_height": 4.5,
+     "ledge_width": 3.5,
+     "ledge_rise": 0.5,
+     "body_width": 43
+    }
+   },
+   "FPT": {
+    "template_cm": {
+     "top_face_width": 58,
+     "overall_width": 70,
+     "web_width": 30,
+     "ledge_root_half_width": 30.0,
+     "ledge_root_below_top": 4.0,
+     "ledge_tip_below_top": 4.5,
+     "flange_edge_bottom_below_top": 15.0,
+     "flange_root_below_top": 18.5,
+     "bottom_chamfer": 2.0,
+     "r_ledge_root": 1.0,
+     "r_ledge_tip": 1.0,
+     "r_flange_corner": 2.5,
+     "r_web_fillet": 2.5
+    },
+    "sections": {
+     "FPT-45": {
+      "depth_cm": 45,
+      "mass_kg_m": 455,
+      "recommended_length_m": "6.8-14.8",
+      "max_strands": "2+19",
+      "provenance": "estimate",
+      "residual_mass_pct": 8.21
+     },
+     "FPT-70": {
+      "depth_cm": 70,
+      "mass_kg_m": 680,
+      "recommended_length_m": "8.8-20.8",
+      "max_strands": "2+26",
+      "provenance": "transcribed-with-convention",
+      "residual_mass_pct": -0.02
+     },
+     "FPT-70/50": {
+      "depth_cm": 70,
+      "mass_kg_m": 620,
+      "recommended_length_m": "8.8-20.8",
+      "max_strands": "2+28",
+      "provenance": "transcribed",
+      "residual_mass_pct": -1.11,
+      "title_original": "Az FPT70/50 jelű hídgerenda keresztmetszete (Az EHGE 70 hídgerendákkal készült felszerkezet esetén szélső tartó cseréjénél ajánlott)",
+      "dimensions_cm": {
+       "top_width": 50,
+       "flange_edge_height": 16.75,
+       "splay_height": 1.75,
+       "web_height": 51.5,
+       "web_width": 30
+      }
+     },
+     "FPT-80": {
+      "depth_cm": 80,
+      "mass_kg_m": 755,
+      "recommended_length_m": "8.8-23.8",
+      "max_strands": "2+30",
+      "provenance": "transcribed-with-convention",
+      "residual_mass_pct": -0.02
+     },
+     "FPT-90": {
+      "depth_cm": 90,
+      "mass_kg_m": 830,
+      "recommended_length_m": "8.8-26.8",
+      "max_strands": "2+35",
+      "provenance": "transcribed-with-convention",
+      "residual_mass_pct": -0.02
+     },
+     "FPT-100": {
+      "depth_cm": 100,
+      "mass_kg_m": 905,
+      "recommended_length_m": "8.8-28.8",
+      "max_strands": "2+37",
+      "provenance": "transcribed-with-convention",
+      "residual_mass_pct": -0.02
+     },
+     "FPT-130": {
+      "depth_cm": 130,
+      "mass_kg_m": 1130,
+      "recommended_length_m": "16.3-34.8",
+      "max_strands": "2+46",
+      "provenance": "transcribed-with-convention",
+      "residual_mass_pct": -0.01
+     }
+    }
+   },
+   "ITG": {
+    "template_cm": {
+     "top_face_width": 46.6,
+     "top_slope_offset": 1.0,
+     "ledge_width": 5.7,
+     "side_batter": 0.6,
+     "overall_width": 61.2,
+     "web_width": 16,
+     "bottom_width": 35,
+     "bottom_batter": 0.7,
+     "ledge_depth": 4.5,
+     "side_height": 9.8,
+     "underside_fall": 2.8,
+     "top_haunch_height": 11.1,
+     "bottom_splay_height": 8.6,
+     "bottom_flange_height": 18
+    },
+    "sections": {
+     "ITG-70": {
+      "depth_cm": 70,
+      "web_segment_cm": 15.2,
+      "recommended_length_m": "6.80-21.80",
+      "provenance": "estimate"
+     },
+     "ITG-90": {
+      "depth_cm": 90,
+      "web_segment_cm": 35.2,
+      "recommended_length_m": "10.80-28.80",
+      "provenance": "transcribed"
+     },
+     "ITG-110": {
+      "depth_cm": 110,
+      "web_segment_cm": 55.2,
+      "recommended_length_m": "9.80-32.80",
+      "provenance": "estimate"
+     }
+    },
+    "not_implemented": {
+     "ITG-45": {
+      "depth_cm": 45,
+      "recommended_length_m": "6.80-15.80",
+      "reason": "Template non-web chain 54.8 cm exceeds 45 cm depth; geometry for the 45 cm unit is not drawn."
+     }
+    }
+   },
+   "FI-150": {
+    "dimensions_cm": {
+     "depth": 150,
+     "top_face_width": 71,
+     "top_width": 80,
+     "web_width": 14.6,
+     "bottom_width": 60,
+     "soffit_width": 57,
+     "chamfer_height": 4,
+     "bulb_edge_height": 12,
+     "bulb_splay_height": 23,
+     "web_height": 93,
+     "flange_haunch_height": 8,
+     "flange_edge_height": 7.5,
+     "ledge_fall": 0.5,
+     "top_slope_height": 2,
+     "top_slope_offset": 0.5,
+     "ledge_width": 4
+    },
+    "radii_cm": {
+     "ledge_root": 1.0,
+     "ledge_tip": 1.0,
+     "flange_tip": 2.5,
+     "top_web_fillet": 7.5,
+     "bottom_web_fillet": 15.0,
+     "bulb_corner": 2.5
+    }
+   }
+  }
+ },
+ "conventions_and_estimates": [
+  "Straight-line doble T outline exactly as drawn in SECCION I-I: no fillets or chamfers are drawn or dimensioned.",
+  "Vertical chain (top to soffit): top flange edge, top splay, web, bottom splay, bottom flange edge; each chain closes exactly to the printed canto total and matches the chain on the SEMIALZADO LONGITUDINAL elevation.",
+  "Only the central (midspan) section is modelled. End blocks (ensanchamiento/blochet) at the supports and the riostra are excluded.",
+  "Validation: gross area vs 'Mediciones - Sección central - Hormigón' m3/m (= m2 of section) within 3-decimal rounding for all six types (max 0.045%). Independent second check: 'Molde' m2/m equals the outline perimeter minus the top face within 2-decimal rounding.",
+  "No published centroid or inertia exists in the source; yb and I are analytic only.",
+  "FP: Plain polygon, every vertex dimensioned: 47 flat soffit, 1.5 x 1.5 bottom chamfers to 50 overall, 4.5 vertical edge, 3.5 wide side ledge rising 0.5 to the 43 wide upper body.",
+  "FP: The 13/15 cm closed stirrups projecting above the top (helyszíni betonnal együttdolgozás) are reinforcement, not concrete, and are excluded.",
+  "FP: No mass or section property is printed; validation is analytic only.",
+  "FPT: Printed: top 70 = 6 + 58 + 6, web 30 (bottom chain 20 + 30 + 20), flange chain from top 4 + 0.5 + 10.5 + 3.5, web length 'változó' (variable), overall depth chain '45;70;80;90;100;130'. Drawing is FPT-70 at 1:15.",
+  "FPT: Measured from the vector CAD outline (not printed): top-face slope reaches the ledge root at half-width 30.0 cm at 4.0 cm below top (1.0 horizontal over 4.0); ledge-root fillet R1, ledge-tip fillet R1, lower flange outer corner R2.5, web-flange fillet R2.5, bottom arrises 2 x 2 chamfers.",
+  "FPT: Only the web length varies with depth (explicit 'változó'). Mass step of 75 kg/m per 10 cm equals 30 x 10 cm x 2500 kg/m3.",
+  "FPT: Check: FPT-70...130 gross areas x 2500 kg/m3 reproduce the tabulated Súly within 0.02%. Nothing was fitted to the masses.",
+  "FPT: FPT-45 is PINNED: the same template gives 492.3 kg/m vs tabulated 455 kg/m (+8.2%); the 45 cm unit evidently differs from the drawn template in some undrawn way. Implemented as a template estimate.",
+  "FPT: FPT-70/50: separate fully dimensioned sharp outline (50 top, 16.75 + 1.75 + 51.5, web 30, no fillets or chamfers in the vector drawing). Area gives 613.1 kg/m vs 620 tabulated (-1.1%); PINNED, cause unknown (rounding, reinforcement or undrawn detail).",
+  "ITG: Tartóközép (midspan) section only; the Tartóvég (support) section with the full-width web is excluded.",
+  "ITG: ITG-90 fully chained: top 0.6 + 5.7 + 1 + 46.6 + 1 + 5.7 + 0.6 = 61.2; vertical 4.5 + 9.8 + 2.8 + 11.1 + 35.2 + 8.6 + 18 = 90; web 16 (12.4 + 10.2 + 16 + 10.2 + 12.4); bottom 12.4 + 0.7 + 35 + 0.7 + 12.4. Polygonal outline, no arcs in the vector drawing. Vector coordinates agree with the chain to <=0.03 cm.",
+  "ITG: Top: 46.6 top face slopes outward 1.0 over 4.5 to a horizontal ledge 5.7 wide, then a battered side (0.6 over 9.8) to the 61.2 overall width, underside 2.8 fall to 36.4 width, 11.1 haunch to the 16 web. Bottom: 36.4 widest at 18 cm, battered 0.7 to the 35 soffit, 8.6 splay to the web.",
+  "ITG: ITG-70 and ITG-110 are ESTIMATES: only the 90 depth is drawn; the depth callout '(45);70;90;110' is on the overall dimension. Assumed only the 35.2 web segment changes (15.2 / 55.2).",
+  "ITG: ITG-45 is NOT implemented: the fixed non-web chain totals 54.8 cm > 45 cm, so the drawn template cannot produce a 45 cm unit (it is also bracketed '(45)'). No defensible outline.",
+  "ITG: No mass or property table is printed.",
+  "FI-150: Printed: top 80 = 4 + 71 + 4 with 0.5 top-edge slopes (0.5 + 4 + 71/2 = 40 half width); web 14.6 (32.7 + 14.6 + 32.7 = 80; 22.7 + 14.6 + 22.7 = 60); bottom 60 = 1.5 + 57 + 1.5; vertical from soffit 4 + 12 + 23 + 93 + 8 + 7.5 + 0.5 + 2 = 150. The 20 cm projecting stirrup is reinforcement.",
+  "FI-150: Fillet radii are NOT printed. Radii taken from circle fits to the vector CAD arcs: ledge root R1, ledge tip R1, top-flange lower tip R2.5, web/top-flange R7.5, web/bottom-bulb R15, bulb upper corner R2.5 (fit residuals <=0.001 cm). Tangent points reproduce the vector vertices within 0.01 cm.",
+  "FI-150: Bottom arrises: 1.5 horizontal x 4 vertical chamfers (dimensioned).",
+  "FI-150: No mass or property table is printed; validation is analytic only."
+ ],
+ "pinned_discrepancies": [
+  {
+   "profile": "FPT-45",
+   "issue": "Template area x 2500 kg/m3 = 492.3 kg/m vs tabulated 455 kg/m (+8.2%)",
+   "status": "unresolved; implemented as estimate"
+  },
+  {
+   "profile": "FPT-70/50",
+   "issue": "Sharp fully-dimensioned outline gives 613.1 kg/m vs 620 kg/m (-1.1%)",
+   "status": "unresolved"
+  }
+ ],
+ "not_implemented": [
+  {
+   "profile": "ITG-45",
+   "reason": "Drawn template's fixed non-web chain (54.8 cm) exceeds 45 cm; 45 is bracketed '(45)' in the depth callout. No defensible outline.",
+   "known": {
+    "depth_cm": 45,
+    "recommended_length_m": "6.80-15.80",
+    "top_width_cm_if_same_family": 61.2,
+    "bottom_width_cm_if_same_family": 35,
+    "web_width_cm_if_same_family": 16
+   }
+  }
+ ],
+ "corrections_to_assessment": [
+  "FPT-70 mass check: assessment reported +1.8%; the CAD-exact outline (with ledge root at 30.0 half-width, R1/R1/R2.5/R2.5 arcs and 2x2 chamfers) gives -0.02%.",
+  "HP-1 Type I published hormigon is 0.445 m3/m (confirmed at native resolution).",
+  "FI-150 and FPT radii are drawn in the vector CAD even though not printed; they were measured rather than guessed."
+ ],
+ "analytic_properties": {
+  "HP-1 I": {
+   "class": "Hp1BeamSection",
+   "provenance": "transcribed",
+   "area_mm2": 444800.0,
+   "yb_mm": 647.52,
+   "ixx_mm4": 95167600000.0
+  },
+  "HP-1 II": {
+   "class": "Hp1BeamSection",
+   "provenance": "transcribed",
+   "area_mm2": 504000.0,
+   "yb_mm": 711.58,
+   "ixx_mm4": 143502000000.0
+  },
+  "HP-1 III": {
+   "class": "Hp1BeamSection",
+   "provenance": "transcribed",
+   "area_mm2": 620200.0,
+   "yb_mm": 782.41,
+   "ixx_mm4": 230580000000.0
+  },
+  "HP-1 IV": {
+   "class": "Hp1BeamSection",
+   "provenance": "transcribed",
+   "area_mm2": 753200.0,
+   "yb_mm": 878.94,
+   "ixx_mm4": 345111000000.0
+  },
+  "HP-1 V": {
+   "class": "Hp1BeamSection",
+   "provenance": "transcribed",
+   "area_mm2": 841850.0,
+   "yb_mm": 973.89,
+   "ixx_mm4": 483403000000.0
+  },
+  "HP-1 VI": {
+   "class": "Hp1BeamSection",
+   "provenance": "transcribed",
+   "area_mm2": 933900.0,
+   "yb_mm": 1073.84,
+   "ixx_mm4": 649207000000.0
+  },
+  "FP-20A": {
+   "class": "FerrobetonFpSection",
+   "provenance": "transcribed",
+   "area_mm2": 90150.0,
+   "yb_mm": 96.9,
+   "ixx_mm4": 305865000.0
+  },
+  "FP-30A": {
+   "class": "FerrobetonFpSection",
+   "provenance": "transcribed",
+   "area_mm2": 133150.0,
+   "yb_mm": 146.34,
+   "ixx_mm4": 1024090000.0
+  },
+  "FP-37A": {
+   "class": "FerrobetonFpSection",
+   "provenance": "transcribed",
+   "area_mm2": 163250.0,
+   "yb_mm": 181.13,
+   "ixx_mm4": 1910150000.0
+  },
+  "FPT-45": {
+   "class": "FerrobetonFptSection",
+   "provenance": "estimate",
+   "area_mm2": 196934.1,
+   "yb_mm": 268.52,
+   "ixx_mm4": 3180850000.0
+  },
+  "FPT-70": {
+   "class": "FerrobetonFptSection",
+   "provenance": "transcribed-with-convention",
+   "area_mm2": 271934.1,
+   "yb_mm": 410.35,
+   "ixx_mm4": 11926700000.0
+  },
+  "FPT-70/50": {
+   "class": "FerrobetonFptSection",
+   "provenance": "transcribed",
+   "area_mm2": 245250.0,
+   "yb_mm": 387.63,
+   "ixx_mm4": 10735500000.0
+  },
+  "FPT-80": {
+   "class": "FerrobetonFptSection",
+   "provenance": "transcribed-with-convention",
+   "area_mm2": 301934.1,
+   "yb_mm": 464.74,
+   "ixx_mm4": 17645100000.0
+  },
+  "FPT-90": {
+   "class": "FerrobetonFptSection",
+   "provenance": "transcribed-with-convention",
+   "area_mm2": 331934.1,
+   "yb_mm": 518.34,
+   "ixx_mm4": 24863600000.0
+  },
+  "FPT-100": {
+   "class": "FerrobetonFptSection",
+   "provenance": "transcribed-with-convention",
+   "area_mm2": 361934.1,
+   "yb_mm": 571.34,
+   "ixx_mm4": 33734600000.0
+  },
+  "FPT-130": {
+   "class": "FerrobetonFptSection",
+   "provenance": "transcribed-with-convention",
+   "area_mm2": 451934.1,
+   "yb_mm": 727.96,
+   "ixx_mm4": 71776900000.0
+  },
+  "ITG-70": {
+   "class": "FerrobetonItgSection",
+   "provenance": "estimate",
+   "area_mm2": 234666.0,
+   "yb_mm": 387.53,
+   "ixx_mm4": 11899600000.0
+  },
+  "ITG-90": {
+   "class": "FerrobetonItgSection",
+   "provenance": "transcribed",
+   "area_mm2": 266666.0,
+   "yb_mm": 495.86,
+   "ixx_mm4": 23973100000.0
+  },
+  "ITG-110": {
+   "class": "FerrobetonItgSection",
+   "provenance": "estimate",
+   "area_mm2": 298666.0,
+   "yb_mm": 602.39,
+   "ixx_mm4": 41350800000.0
+  },
+  "FI-150": {
+   "class": "FerrobetonFi150Section",
+   "provenance": "estimate",
+   "area_mm2": 435020.3,
+   "yb_mm": 717.77,
+   "ixx_mm4": 128660000000.0
+  }
+ },
+ "remaining_uncertainties": [
+  "HP-1 legal status after 1977 (reported annulment 1985) not audited.",
+  "ITG-70/110 assume only the 35.2 cm web segment changes.",
+  "Ferrobeton sheets carry no revision date in the drawing; the ITG file name suggests 07/2015 (unverified).",
+  "Mass-based FPT check depends on the assumed 2500 kg/m3 density."
+ ]
+}

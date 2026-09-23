@@ -1,0 +1,1323 @@
+{
+ "topic": "wsdot",
+ "date": "2026-09-23",
+ "package": "us",
+ "record": "docs/research/extraction-wsdot-2026-09.md",
+ "data_file": "src/bridgebeams/us/data/wsdot_extended_girders.json",
+ "modules": [
+  "src/bridgebeams/us/wsdot_wf_girders.py",
+  "src/bridgebeams/us/wsdot_tub_girders.py",
+  "src/bridgebeams/us/wsdot_legacy_girders.py",
+  "src/bridgebeams/us/_wsdot_common.py"
+ ],
+ "tests": "tests/test_us_wsdot_extended.py",
+ "sources": {
+  "wsdot_2006": {
+   "organisation": "Washington State Department of Transportation",
+   "title": "Bridge Design Manual M 23-50.01 (Complete), Chapter 5 and Appendix 5.6-A",
+   "date": "June 2006 (sheets) / August 2006 (manual pages)",
+   "url": "https://wsdot.wa.gov/publications/manuals/fulltext/M23-50/M23-50.01Complete.pdf",
+   "local_path": "sources/expansion/europe-americas/us_wsdot_2006_complete.pdf",
+   "sha256": "db8e991abdbaf8eb6ffe68e58c7a0110dabf0be08e0dd848728344f02f3676af",
+   "locators": {
+    "table_5.6.1-1_2006_properties": {
+     "pdf_page": 306,
+     "printed_page": "5-96"
+    },
+    "5.6-A1-2_wide_flange_girders": {
+     "pdf_page": 441,
+     "printed_sheet": "5.6-A1-2"
+    },
+    "5.6-A1-3_bulb_tee": {
+     "pdf_page": 442,
+     "printed_sheet": "5.6-A1-3"
+    },
+    "5.6-A1-4_wide_flange_bulb_tee": {
+     "pdf_page": 443,
+     "printed_sheet": "5.6-A1-4"
+    },
+    "5.6-A1-5_tub": {
+     "pdf_page": 444,
+     "printed_sheet": "5.6-A1-5"
+    },
+    "5.6-A1-6_tub_with_flange": {
+     "pdf_page": 445,
+     "printed_sheet": "5.6-A1-6"
+    },
+    "5.6-A1-7_deck_bulb_tee": {
+     "pdf_page": 446,
+     "printed_sheet": "5.6-A1-7"
+    },
+    "5.6-A1-8_slabs": {
+     "pdf_page": 447,
+     "printed_sheet": "5.6-A1-8"
+    },
+    "5.6-A13-1_W32BTG_details_section_C": {
+     "pdf_page": 534,
+     "printed_sheet": "5.6-A13-1"
+    },
+    "5.6-A16-1_tub_details_typical_section": {
+     "pdf_page": 546,
+     "printed_sheet": "5.6-A16-1"
+    },
+    "5.6-A24-1_W35DG_details_section": {
+     "pdf_page": 580,
+     "printed_sheet": "5.6-A24-1"
+    },
+    "5.6-A24-2_W35DG_keyway_section_A": {
+     "pdf_page": 581,
+     "printed_sheet": "5.6-A24-2"
+    },
+    "appendix_5-B8_W35DG_worked_example": {
+     "pdf_page": 737,
+     "printed_page": "5-B8-2"
+    }
+   }
+  },
+  "wsdot_2025": {
+   "organisation": "Washington State Department of Transportation",
+   "title": "Bridge Design Manual M 23-50.24, Chapter 5, Table 5.6.1-1 Section Properties of WSDOT Standard Prestressed Concrete Girders",
+   "date": "June 2025",
+   "url": "https://www.wsdot.wa.gov/publications/manuals/fulltext/m23-50/chapter5.pdf",
+   "local_path": "sources/expansion/europe-americas/us_wsdot_chapter5_2025.pdf",
+   "sha256": "6af4c603fd17fa738361ad3764d6ddcb2035457e0ed002e4da68c9ab84205da0",
+   "locators": {
+    "table_5.6.1-1": {
+     "pdf_page": 95,
+     "printed_page": "5-85"
+    }
+   }
+  },
+  "wsdot_2026_deck_sheet": {
+   "organisation": "Washington State Department of Transportation",
+   "title": "Standard Design Drawing 5.6-A1-11 Prestressed Concrete Deck Girders (typical slab girder configurations table)",
+   "date": "last revised 2026-07-30; stamped PRELIMINARY PLAN - NOT FOR CONSTRUCTION",
+   "url": "https://wsdot.wa.gov/publications/fulltext/Bridge/Web_BSD/5.6_A1_11.PDF",
+   "local_path": "sources/expansion/europe-americas/us_wsdot_deck.pdf",
+   "sha256": "033bcab1b0c739eefd0c07a9b861eed0077d014b5fda98b52725a9bdb25fb46b",
+   "locators": {
+    "slab_girder_table": {
+     "pdf_page": 1,
+     "printed_sheet": "5.6-A1-11"
+    }
+   }
+  }
+ },
+ "general_notes": [
+  "Gross concrete only: no strands, deck slab, end blocks, bearing recesses, sawteeth or lifting details.",
+  "Finding: the 2006 Table 5.6.1-1 values omit the 1 in bottom chamfers. With chamfers removed, the 2006 table is reproduced exactly for W50G, WF42G, WF50G and WF58G. The 2025 table includes the chamfers and matches the drawn outlines exactly. Therefore 2025 values are the validation target where they exist.",
+  "2006 WF74G/W83G/W95G table rows differ from both conventions by <0.3% (older depth values 82.62/94.49 in); not used for validation."
+ ],
+ "classes": {
+  "WsdotWfGirderSection": "WF",
+  "WsdotTubGirderSection": "TUB",
+  "WsdotBulbTeeSection": "BTG",
+  "WsdotDeckBulbTeeSection": "DG",
+  "WsdotSlabGirderSection": "SLAB"
+ },
+ "families": {
+  "WF": {
+   "geometry_notes": [
+    "Depth-parametric template: only the web height varies with depth.",
+    "WF36G, WF66G and WF100G are not drawn on the 2006 sheet; they are the same template at the 2025 depths and reproduce 2025 A/Yb/Ix/Iy exactly (provenance transcribed-with-convention).",
+    "2006 sheet labels W83G/W95G (6'-10 5/8\", 7'-10 1/2\") = 2025 WF83G/WF95G.",
+    "WF100G-61 (2025 'WF100G with 5'-1\" Top Flange'): not drawn in sources held; reconstructed as a 3 in thick flat extension from x = 24.5 in to 30.5 in on each side. This reproduces 2025 A, Yb, Ix and Iy exactly (1118.78/49.890/1612834/99849)."
+   ],
+   "sections": {
+    "WF36G": {
+     "depth_in": 36,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 690.8,
+      "yb_in": 17.54,
+      "ix_in4": 124772,
+      "iy_in4": 71291
+     },
+     "calculated_in": {
+      "area_in2": 690.781,
+      "yb_in": 17.5364,
+      "ix_in4": 124771.6,
+      "iy_in4": 71290.8
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.019,
+       "area_pct": -0.003,
+       "yb_in": -0.0036,
+       "ix_pct": -0.0,
+       "iy_pct": -0.0
+      }
+     }
+    },
+    "WF42G": {
+     "depth_in": 42,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 727.5,
+      "yb_in": 20.36,
+      "ix_in4": 183642,
+      "iy_in4": 71406
+     },
+     "calculated_in": {
+      "area_in2": 727.531,
+      "yb_in": 20.3602,
+      "ix_in4": 183642.4,
+      "iy_in4": 71405.7
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.031,
+       "area_pct": 0.004,
+       "yb_in": 0.0002,
+       "ix_pct": 0.0,
+       "iy_pct": -0.0
+      }
+     }
+    },
+    "WF50G": {
+     "depth_in": 50,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 776.5,
+      "yb_in": 24.15,
+      "ix_in4": 282559,
+      "iy_in4": 71559
+     },
+     "calculated_in": {
+      "area_in2": 776.531,
+      "yb_in": 24.1512,
+      "ix_in4": 282559.4,
+      "iy_in4": 71558.9
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.031,
+       "area_pct": 0.004,
+       "yb_in": 0.0012,
+       "ix_pct": 0.0,
+       "iy_pct": -0.0
+      }
+     }
+    },
+    "WF58G": {
+     "depth_in": 58,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 825.5,
+      "yb_in": 27.97,
+      "ix_in4": 406266,
+      "iy_in4": 71712
+     },
+     "calculated_in": {
+      "area_in2": 825.531,
+      "yb_in": 27.9671,
+      "ix_in4": 406265.7,
+      "iy_in4": 71712.1
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.031,
+       "area_pct": 0.004,
+       "yb_in": -0.0029,
+       "ix_pct": -0.0,
+       "iy_pct": 0.0
+      }
+     }
+    },
+    "WF66G": {
+     "depth_in": 66,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 874.5,
+      "yb_in": 31.8,
+      "ix_in4": 556339,
+      "iy_in4": 71865
+     },
+     "calculated_in": {
+      "area_in2": 874.531,
+      "yb_in": 31.8035,
+      "ix_in4": 556339.2,
+      "iy_in4": 71865.3
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.031,
+       "area_pct": 0.004,
+       "yb_in": 0.0035,
+       "ix_pct": 0.0,
+       "iy_pct": 0.0
+      }
+     }
+    },
+    "WF74G": {
+     "depth_in": 74,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 923.5,
+      "yb_in": 35.66,
+      "ix_in4": 734356,
+      "iy_in4": 72018
+     },
+     "calculated_in": {
+      "area_in2": 923.531,
+      "yb_in": 35.6573,
+      "ix_in4": 734356.0,
+      "iy_in4": 72018.4
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.031,
+       "area_pct": 0.003,
+       "yb_in": -0.0027,
+       "ix_pct": -0.0,
+       "iy_pct": 0.001
+      }
+     }
+    },
+    "WF83G": {
+     "depth_in": 82.625,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 976.4,
+      "yb_in": 39.83,
+      "ix_in4": 959393,
+      "iy_in4": 72184
+     },
+     "calculated_in": {
+      "area_in2": 976.359,
+      "yb_in": 39.8287,
+      "ix_in4": 959392.9,
+      "iy_in4": 72183.6
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.041,
+       "area_pct": -0.004,
+       "yb_in": -0.0013,
+       "ix_pct": -0.0,
+       "iy_pct": -0.001
+      }
+     }
+    },
+    "WF95G": {
+     "depth_in": 94.5,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 1049.1,
+      "yb_in": 45.6,
+      "ix_in4": 1328995,
+      "iy_in4": 72411
+     },
+     "calculated_in": {
+      "area_in2": 1049.094,
+      "yb_in": 45.5951,
+      "ix_in4": 1328994.7,
+      "iy_in4": 72411.0
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.006,
+       "area_pct": -0.001,
+       "yb_in": -0.0049,
+       "ix_pct": -0.0,
+       "iy_pct": -0.0
+      }
+     }
+    },
+    "WF100G": {
+     "depth_in": 100,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 1082.8,
+      "yb_in": 48.27,
+      "ix_in4": 1524912,
+      "iy_in4": 72516
+     },
+     "calculated_in": {
+      "area_in2": 1082.781,
+      "yb_in": 48.2736,
+      "ix_in4": 1524912.4,
+      "iy_in4": 72516.3
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.019,
+       "area_pct": -0.002,
+       "yb_in": 0.0036,
+       "ix_pct": 0.0,
+       "iy_pct": 0.0
+      }
+     }
+    },
+    "WF100G-61": {
+     "depth_in": 100,
+     "provenance": "fitted-reconstruction",
+     "source_status": "current (2025 property table row only; outline reconstructed)",
+     "published_2025": {
+      "area_in2": 1118.8,
+      "yb_in": 49.89,
+      "ix_in4": 1612834,
+      "iy_in4": 99849
+     },
+     "calculated_in": {
+      "area_in2": 1118.781,
+      "yb_in": 49.8898,
+      "ix_in4": 1612833.9,
+      "iy_in4": 99849.3
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.019,
+       "area_pct": -0.002,
+       "yb_in": -0.0002,
+       "ix_pct": -0.0,
+       "iy_pct": 0.0
+      }
+     }
+    }
+   }
+  },
+  "TUB": {
+   "geometry_notes": [
+    "Web slope 7 vertical : 1 horizontal (drawn slope triangle); 7\" (TYP.) thickness arrow is square to the sloping web, so horizontal thickness = 7*sqrt(50)/7 = 7.0711 in.",
+    "Fillets: 1'-0\" (TYP.) vertical from soffit to the web/fillet junction; horizontal run 1'-0\" (G4, G5) or 1'-6\" (G6) as drawn; 6\" bottom slab.",
+    "UF flange: 3\" inner overhang from the inner web face and 5\" outer overhang from the outer web face, both at the web junction 6 in below the top; 4 1/2\" square edges; 1 1/2\" taper. Printed block width 1'-3 1/16\" = 15.0625 in is the 1/16-rounded 15.0711 in implied by the overhangs; the overhang convention reproduces all properties exactly, the printed width would not (-0.1 in2).",
+    "G6 discrepancy (2006 table only; G6 dropped by 2025): the drawn 1'-6\" fillet run gives areas 36.0 in2 below the table for all six G6 sizes. Re-diagnosis: a 2'-0\" run reproduces the 2006 table A, Yb and Ix exactly for all six (e.g. U54G6 1254.82/18.164/341728 vs 1254.8/18.16/341728). Measured on the 200 dpi render the drawn run scales to ~18 in, so the 2006 drawing and table disagree. Tub detail sheet 5.6-A16-1 (PDF p546) breaks the fillet in its typical section and does not resolve it. The drawn 1'-6\" is implemented (provenance transcribed-with-convention) and the -36 in2 residual pinned in tests.",
+    "Iy is checked against the 2025 table for all G4/G5 sizes."
+   ],
+   "sections": {
+    "U54G4": {
+     "depth_in": 54,
+     "fillet_run_in": 12,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1038.8,
+      "yb_in": 20.97,
+      "ix_in4": 292423
+     },
+     "published_2025": {
+      "area_in2": 1038.8,
+      "yb_in": 20.97,
+      "ix_in4": 292423,
+      "iy_in4": 493926
+     },
+     "calculated_in": {
+      "area_in2": 1038.823,
+      "yb_in": 20.97,
+      "ix_in4": 292422.8,
+      "iy_in4": 493926.2
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.023,
+       "area_pct": 0.002,
+       "yb_in": -0.0,
+       "ix_pct": -0.0,
+       "iy_pct": 0.0
+      },
+      "vs_2006": {
+       "area_in2": 0.023,
+       "area_pct": 0.002,
+       "yb_in": -0.0,
+       "ix_pct": -0.0
+      }
+     }
+    },
+    "U54G5": {
+     "depth_in": 54,
+     "fillet_run_in": 12,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1110.8,
+      "yb_in": 19.81,
+      "ix_in4": 314382
+     },
+     "published_2025": {
+      "area_in2": 1110.8,
+      "yb_in": 19.81,
+      "ix_in4": 314382,
+      "iy_in4": 788289
+     },
+     "calculated_in": {
+      "area_in2": 1110.823,
+      "yb_in": 19.8052,
+      "ix_in4": 314382.0,
+      "iy_in4": 788289.2
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.023,
+       "area_pct": 0.002,
+       "yb_in": -0.0048,
+       "ix_pct": 0.0,
+       "iy_pct": 0.0
+      },
+      "vs_2006": {
+       "area_in2": 0.023,
+       "area_pct": 0.002,
+       "yb_in": -0.0048,
+       "ix_pct": 0.0
+      }
+     }
+    },
+    "U54G6": {
+     "depth_in": 54,
+     "fillet_run_in": 18,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (G6 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1254.8,
+      "yb_in": 18.16,
+      "ix_in4": 341728
+     },
+     "fillet_run_that_reproduces_2006_table_in": 24,
+     "calculated_in": {
+      "area_in2": 1218.823,
+      "yb_in": 18.4638,
+      "ix_in4": 337827.9,
+      "iy_in4": 1178476.5
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -35.977,
+       "area_pct": -2.867,
+       "yb_in": 0.3038,
+       "ix_pct": -1.141
+      }
+     }
+    },
+    "U66G4": {
+     "depth_in": 66,
+     "fillet_run_in": 12,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1208.5,
+      "yb_in": 26.45,
+      "ix_in4": 516677
+     },
+     "published_2025": {
+      "area_in2": 1208.5,
+      "yb_in": 26.45,
+      "ix_in4": 516677,
+      "iy_in4": 637751
+     },
+     "calculated_in": {
+      "area_in2": 1208.528,
+      "yb_in": 26.4507,
+      "ix_in4": 516676.6,
+      "iy_in4": 637750.8
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.028,
+       "area_pct": 0.002,
+       "yb_in": 0.0007,
+       "ix_pct": -0.0,
+       "iy_pct": -0.0
+      },
+      "vs_2006": {
+       "area_in2": 0.028,
+       "area_pct": 0.002,
+       "yb_in": 0.0007,
+       "ix_pct": -0.0
+      }
+     }
+    },
+    "U66G5": {
+     "depth_in": 66,
+     "fillet_run_in": 12,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1280.5,
+      "yb_in": 25.13,
+      "ix_in4": 554262
+     },
+     "published_2025": {
+      "area_in2": 1280.5,
+      "yb_in": 25.13,
+      "ix_in4": 554262,
+      "iy_in4": 997354
+     },
+     "calculated_in": {
+      "area_in2": 1280.528,
+      "yb_in": 25.1322,
+      "ix_in4": 554261.7,
+      "iy_in4": 997353.8
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.028,
+       "area_pct": 0.002,
+       "yb_in": 0.0022,
+       "ix_pct": -0.0,
+       "iy_pct": -0.0
+      },
+      "vs_2006": {
+       "area_in2": 0.028,
+       "area_pct": 0.002,
+       "yb_in": 0.0022,
+       "ix_pct": -0.0
+      }
+     }
+    },
+    "U66G6": {
+     "depth_in": 66,
+     "fillet_run_in": 18,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (G6 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1424.5,
+      "yb_in": 23.15,
+      "ix_in4": 605412
+     },
+     "fillet_run_that_reproduces_2006_table_in": 24,
+     "calculated_in": {
+      "area_in2": 1388.528,
+      "yb_in": 23.5404,
+      "ix_in4": 596865.7,
+      "iy_in4": 1465000.0
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -35.972,
+       "area_pct": -2.525,
+       "yb_in": 0.3904,
+       "ix_pct": -1.412
+      }
+     }
+    },
+    "U78G4": {
+     "depth_in": 78,
+     "fillet_run_in": 12,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1378.2,
+      "yb_in": 32.06,
+      "ix_in4": 827453
+     },
+     "published_2025": {
+      "area_in2": 1378.2,
+      "yb_in": 32.06,
+      "ix_in4": 827453,
+      "iy_in4": 798969
+     },
+     "calculated_in": {
+      "area_in2": 1378.234,
+      "yb_in": 32.0593,
+      "ix_in4": 827453.2,
+      "iy_in4": 798968.7
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.034,
+       "area_pct": 0.002,
+       "yb_in": -0.0007,
+       "ix_pct": 0.0,
+       "iy_pct": -0.0
+      },
+      "vs_2006": {
+       "area_in2": 0.034,
+       "area_pct": 0.002,
+       "yb_in": -0.0007,
+       "ix_pct": 0.0
+      }
+     }
+    },
+    "U78G5": {
+     "depth_in": 78,
+     "fillet_run_in": 12,
+     "provenance": "transcribed",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1450.2,
+      "yb_in": 30.62,
+      "ix_in4": 885451
+     },
+     "published_2025": {
+      "area_in2": 1450.2,
+      "yb_in": 30.62,
+      "ix_in4": 885451,
+      "iy_in4": 1227303
+     },
+     "calculated_in": {
+      "area_in2": 1450.234,
+      "yb_in": 30.6166,
+      "ix_in4": 885450.7,
+      "iy_in4": 1227302.8
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.034,
+       "area_pct": 0.002,
+       "yb_in": -0.0034,
+       "ix_pct": -0.0,
+       "iy_pct": -0.0
+      },
+      "vs_2006": {
+       "area_in2": 0.034,
+       "area_pct": 0.002,
+       "yb_in": -0.0034,
+       "ix_pct": -0.0
+      }
+     }
+    },
+    "U78G6": {
+     "depth_in": 78,
+     "fillet_run_in": 18,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (G6 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1594.2,
+      "yb_in": 28.35,
+      "ix_in4": 969347
+     },
+     "fillet_run_that_reproduces_2006_table_in": 24,
+     "calculated_in": {
+      "area_in2": 1558.234,
+      "yb_in": 28.818,
+      "ix_in4": 954025.2,
+      "iy_in4": 1775898.9
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -35.966,
+       "area_pct": -2.256,
+       "yb_in": 0.468,
+       "ix_pct": -1.581
+      }
+     }
+    },
+    "UF60G4": {
+     "depth_in": 60,
+     "fillet_run_in": 12,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1207.7,
+      "yb_in": 26.03,
+      "ix_in4": 483298
+     },
+     "published_2025": {
+      "area_in2": 1207.7,
+      "yb_in": 26.03,
+      "ix_in4": 483298,
+      "iy_in4": 639795
+     },
+     "calculated_in": {
+      "area_in2": 1207.675,
+      "yb_in": 26.0324,
+      "ix_in4": 483298.3,
+      "iy_in4": 639795.0
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.025,
+       "area_pct": -0.002,
+       "yb_in": 0.0024,
+       "ix_pct": 0.0,
+       "iy_pct": -0.0
+      },
+      "vs_2006": {
+       "area_in2": -0.025,
+       "area_pct": -0.002,
+       "yb_in": 0.0024,
+       "ix_pct": 0.0
+      }
+     }
+    },
+    "UF60G5": {
+     "depth_in": 60,
+     "fillet_run_in": 12,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1279.7,
+      "yb_in": 24.74,
+      "ix_in4": 519561
+     },
+     "published_2025": {
+      "area_in2": 1279.7,
+      "yb_in": 24.74,
+      "ix_in4": 519561,
+      "iy_in4": 999184
+     },
+     "calculated_in": {
+      "area_in2": 1279.675,
+      "yb_in": 24.7365,
+      "ix_in4": 519560.7,
+      "iy_in4": 999184.4
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.025,
+       "area_pct": -0.002,
+       "yb_in": -0.0035,
+       "ix_pct": -0.0,
+       "iy_pct": 0.0
+      },
+      "vs_2006": {
+       "area_in2": -0.025,
+       "area_pct": -0.002,
+       "yb_in": -0.0035,
+       "ix_pct": -0.0
+      }
+     }
+    },
+    "UF60G6": {
+     "depth_in": 60,
+     "fillet_run_in": 18,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (G6 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1423.7,
+      "yb_in": 22.79,
+      "ix_in4": 568717
+     },
+     "fillet_run_that_reproduces_2006_table_in": 24,
+     "calculated_in": {
+      "area_in2": 1387.675,
+      "yb_in": 23.1745,
+      "ix_in4": 560565.3,
+      "iy_in4": 1466555.5
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -36.025,
+       "area_pct": -2.53,
+       "yb_in": 0.3845,
+       "ix_pct": -1.433
+      }
+     }
+    },
+    "UF72G4": {
+     "depth_in": 72,
+     "fillet_run_in": 12,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1377.4,
+      "yb_in": 31.69,
+      "ix_in4": 787605
+     },
+     "published_2025": {
+      "area_in2": 1377.4,
+      "yb_in": 31.69,
+      "ix_in4": 787605,
+      "iy_in4": 800958
+     },
+     "calculated_in": {
+      "area_in2": 1377.381,
+      "yb_in": 31.6886,
+      "ix_in4": 787604.6,
+      "iy_in4": 800958.0
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.019,
+       "area_pct": -0.001,
+       "yb_in": -0.0014,
+       "ix_pct": -0.0,
+       "iy_pct": 0.0
+      },
+      "vs_2006": {
+       "area_in2": -0.019,
+       "area_pct": -0.001,
+       "yb_in": -0.0014,
+       "ix_pct": -0.0
+      }
+     }
+    },
+    "UF72G5": {
+     "depth_in": 72,
+     "fillet_run_in": 12,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2006": {
+      "area_in2": 1449.4,
+      "yb_in": 30.26,
+      "ix_in4": 844135
+     },
+     "published_2025": {
+      "area_in2": 1449.4,
+      "yb_in": 30.26,
+      "ix_in4": 844135,
+      "iy_in4": 1229061
+     },
+     "calculated_in": {
+      "area_in2": 1449.381,
+      "yb_in": 30.2635,
+      "ix_in4": 844135.5,
+      "iy_in4": 1229061.0
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.019,
+       "area_pct": -0.001,
+       "yb_in": 0.0035,
+       "ix_pct": 0.0,
+       "iy_pct": 0.0
+      },
+      "vs_2006": {
+       "area_in2": -0.019,
+       "area_pct": -0.001,
+       "yb_in": 0.0035,
+       "ix_pct": 0.0
+      }
+     }
+    },
+    "UF72G6": {
+     "depth_in": 72,
+     "fillet_run_in": 18,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (G6 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1593.4,
+      "yb_in": 28.03,
+      "ix_in4": 925720
+     },
+     "fillet_run_that_reproduces_2006_table_in": 24,
+     "calculated_in": {
+      "area_in2": 1557.381,
+      "yb_in": 28.4884,
+      "ix_in4": 910877.5,
+      "iy_in4": 1777364.5
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -36.019,
+       "area_pct": -2.261,
+       "yb_in": 0.4584,
+       "ix_pct": -1.603
+      }
+     }
+    },
+    "UF84G4": {
+     "depth_in": 84,
+     "fillet_run_in": 12,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (UF84 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1547.1,
+      "yb_in": 37.42,
+      "ix_in4": 1190828
+     },
+     "calculated_in": {
+      "area_in2": 1547.087,
+      "yb_in": 37.4202,
+      "ix_in4": 1190828.2,
+      "iy_in4": 980506.7
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -0.013,
+       "area_pct": -0.001,
+       "yb_in": 0.0002,
+       "ix_pct": 0.0
+      }
+     }
+    },
+    "UF84G5": {
+     "depth_in": 84,
+     "fillet_run_in": 12,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (UF84 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1619.1,
+      "yb_in": 35.89,
+      "ix_in4": 1272553
+     },
+     "calculated_in": {
+      "area_in2": 1619.087,
+      "yb_in": 35.8896,
+      "ix_in4": 1272553.0,
+      "iy_in4": 1480814.4
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -0.013,
+       "area_pct": -0.001,
+       "yb_in": -0.0004,
+       "ix_pct": -0.0
+      }
+     }
+    },
+    "UF84G6": {
+     "depth_in": 84,
+     "fillet_run_in": 18,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard (G6 dropped by 2025)",
+     "published_2006": {
+      "area_in2": 1763.1,
+      "yb_in": 33.41,
+      "ix_in4": 1395939
+     },
+     "fillet_run_that_reproduces_2006_table_in": 24,
+     "calculated_in": {
+      "area_in2": 1727.087,
+      "yb_in": 33.9371,
+      "ix_in4": 1372143.0,
+      "iy_in4": 2113541.4
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": -36.013,
+       "area_pct": -2.043,
+       "yb_in": 0.5271,
+       "ix_pct": -1.705
+      }
+     }
+    }
+   }
+  },
+  "BTG": {
+   "geometry_notes": [
+    "W*BTG: 4'-1\" top flange; 3\"/3\"/2\" stack at the web; 1'-6 1/2\" taper run and 3\" bevel run (so 3 + 3 + 18.5 = 24.5 in half width); 6\" web; 2'-1\" bottom flange with 6\" edge and 3\" taper over 9 1/2\". The 1\" bottom chamfer is not labelled on 5.6-A1-3 but is labelled '1\" CHAMFER (TYP.)' on detail 5.6-A13-1 Section C.",
+    "Residual vs 2006 Table 5.6.1-1 (the only published set): drawn outline is +4.0 in2 (+0.74 to +0.56%), Yb +0.10 to +0.20 in, Iz +0.06 to +0.37%. The 2006 table omits bottom chamfers elsewhere; without chamfers the excess is 5.0 in2, located (by first-moment balance) about 6 in below the top, i.e. at the flange-taper/bevel junction. No simple reading of the callouts explains it (tested: 2.5/2.75 in edge, narrower flange, no bevel, top chamfers). Drawn geometry kept; residual pinned.",
+    "WF*BTG (5.6-A1-4): same depth stack as W*BTG; flange width variable 4'-0\" MIN to 8'-0\" MAX (default 72 in used here). Horizontal taper/bevel runs are not dimensioned on this sheet: assumed equal to W*BTG (18.5 + 3 in), a constant 3 in flat extension beyond (scaled drawing ~19-20 in taper run, consistent). No published properties. Provenance estimate."
+   ],
+   "sections": {
+    "W32BTG": {
+     "depth_in": 32,
+     "provenance": "transcribed",
+     "source_status": "historic June 2006 standard (not in the 2025 property table)",
+     "published_2006": {
+      "area_in2": 538.0,
+      "yb_in": 17.88,
+      "ix_in4": 74039
+     },
+     "calculated_in": {
+      "area_in2": 542.0,
+      "yb_in": 17.9865,
+      "ix_in4": 74087.2,
+      "iy_in4": 48465.2
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": 4.0,
+       "area_pct": 0.743,
+       "yb_in": 0.1065,
+       "ix_pct": 0.065
+      }
+     }
+    },
+    "W38BTG": {
+     "depth_in": 38,
+     "provenance": "transcribed",
+     "source_status": "historic June 2006 standard (not in the 2025 property table)",
+     "published_2006": {
+      "area_in2": 574.0,
+      "yb_in": 21.08,
+      "ix_in4": 114540
+     },
+     "calculated_in": {
+      "area_in2": 578.0,
+      "yb_in": 21.2105,
+      "ix_in4": 114737.7,
+      "iy_in4": 48573.2
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": 4.0,
+       "area_pct": 0.697,
+       "yb_in": 0.1305,
+       "ix_pct": 0.173
+      }
+     }
+    },
+    "W62BTG": {
+     "depth_in": 62,
+     "provenance": "transcribed",
+     "source_status": "historic June 2006 standard (not in the 2025 property table)",
+     "published_2006": {
+      "area_in2": 718.0,
+      "yb_in": 33.68,
+      "ix_in4": 385995
+     },
+     "calculated_in": {
+      "area_in2": 722.0,
+      "yb_in": 33.8832,
+      "ix_in4": 387424.1,
+      "iy_in4": 49005.2
+     },
+     "residuals": {
+      "vs_2006": {
+       "area_in2": 4.0,
+       "area_pct": 0.557,
+       "yb_in": 0.2032,
+       "ix_pct": 0.37
+      }
+     }
+    },
+    "WF32BTG": {
+     "depth_in": 32,
+     "provenance": "estimate",
+     "source_status": "historic June 2006 standard (not in the 2025 property table)",
+     "calculated_in": {
+      "area_in2": 611.0,
+      "yb_in": 19.3996,
+      "ix_in4": 83723.4,
+      "iy_in4": 112364.9
+     },
+     "residuals": {}
+    },
+    "WF38BTG": {
+     "depth_in": 38,
+     "provenance": "estimate",
+     "source_status": "historic June 2006 standard (not in the 2025 property table)",
+     "calculated_in": {
+      "area_in2": 647.0,
+      "yb_in": 22.8411,
+      "ix_in4": 129199.3,
+      "iy_in4": 112472.9
+     },
+     "residuals": {}
+    },
+    "WF50BTG": {
+     "depth_in": 50,
+     "provenance": "estimate",
+     "source_status": "historic June 2006 standard (not in the 2025 property table)",
+     "calculated_in": {
+      "area_in2": 719.0,
+      "yb_in": 29.5913,
+      "ix_in4": 255094.3,
+      "iy_in4": 112688.9
+     },
+     "residuals": {}
+    },
+    "WF62BTG": {
+     "depth_in": 62,
+     "provenance": "estimate",
+     "source_status": "historic June 2006 standard (not in the 2025 property table)",
+     "calculated_in": {
+      "area_in2": 791.0,
+      "yb_in": 36.205,
+      "ix_in4": 432095.1,
+      "iy_in4": 112904.9
+     },
+     "residuals": {}
+    }
+   }
+  },
+  "DG": {
+   "geometry_notes": [
+    "Stack at the web: 6\" flange, 3\" taper, 2\" bevel (2\" horizontal); taper run 1'-7 1/2\" from bevel start; web 6\"; 2'-1\" bottom flange, 6\" edge, 3\" taper over 9 1/2\"; 1\" chamfer.",
+    "Flange width: sheet dimension '4'-0\" MIN. - 6'-0\" MAX.' runs to the joint centreline; concrete edge is 1/2\" (TYP.) from the joint at the top and 3/16\" (TYP.) at the bottom lip, so concrete top width = spacing - 1 in. The 2026 PRELIMINARY sheet gives 4'-1\" MIN.",
+    "At 48 in spacing the 19.5 in taper would pass the flange tip (3 + 2 + 19.5 = 24.5 > 23.81 in); the taper is clipped at the tip (the 'VARIES' flat is zero). Convention.",
+    "Keyway (5.6-A24-2 Section A): 1\" vertical face at top, V recess 2\" deep with apex 3 in below top, returning to the bottom lip at 5 in below top; lower lip at 3/16\" from joint. The lower sloping face end point (lip edge vs upper face line) is a drawing-read convention.",
+    "Small half-round drip notch on the flange underside near the tip (drawn, undimensioned) is omitted.",
+    "W35DG at 48 in vs Appendix 5-B8 worked example (A 669, yb 20.9, I 100096, Ip 169341 so Iy 69245): A -0.57%, yb +0.25%, I -0.52%, Iy -3.4%. Without the keyway the residuals are +0.43%, +0.8%, +0.34%, +1.6%. Keyway kept because it is drawn and dimensioned. The worked example's own geometry is not given."
+   ],
+   "sections": {
+    "W35DG": {
+     "depth_in": 35,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard; current 2026 replacement sheet 5.6-A1-11 is PRELIMINARY",
+     "published_worked_example": {
+      "area_in2": 669,
+      "yb_in": 20.9,
+      "ix_in4": 100096,
+      "iy_in4": 69245,
+      "spacing_in": 48,
+      "polar_ip_in4": 169341,
+      "source": "Appendix 5-B8 PDF p737"
+     },
+     "calculated_in": {
+      "area_in2": 665.177,
+      "yb_in": 20.9523,
+      "ix_in4": 99577.1,
+      "iy_in4": 66903.8
+     },
+     "residuals": {
+      "vs_worked_example": {
+       "area_in2": -3.823,
+       "area_pct": -0.571,
+       "yb_in": 0.0523,
+       "ix_pct": -0.518,
+       "iy_pct": -3.381
+      }
+     }
+    },
+    "W41DG": {
+     "depth_in": 41,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard; current 2026 replacement sheet 5.6-A1-11 is PRELIMINARY",
+     "calculated_in": {
+      "area_in2": 701.177,
+      "yb_in": 24.5117,
+      "ix_in4": 150339.3,
+      "iy_in4": 67011.8
+     },
+     "residuals": {}
+    },
+    "W53DG": {
+     "depth_in": 53,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard; current 2026 replacement sheet 5.6-A1-11 is PRELIMINARY",
+     "calculated_in": {
+      "area_in2": 773.177,
+      "yb_in": 31.4743,
+      "ix_in4": 289242.5,
+      "iy_in4": 67227.8
+     },
+     "residuals": {}
+    },
+    "W65DG": {
+     "depth_in": 65,
+     "provenance": "transcribed-with-convention",
+     "source_status": "historic June 2006 standard; current 2026 replacement sheet 5.6-A1-11 is PRELIMINARY",
+     "calculated_in": {
+      "area_in2": 845.177,
+      "yb_in": 38.2728,
+      "ix_in4": 482625.8,
+      "iy_in4": 67443.8
+     },
+     "residuals": {}
+    }
+   }
+  },
+  "SLAB": {
+   "geometry_notes": [
+    "2025 properties equal a (module - 1 in) rectangle minus circular voids centred at mid-depth, with keys ignored: 12\": 47x12 = 564, I = 6768 exactly; 18\": 846 - 3*63.62 = 655.1, I 21876; 26\": 1222 - 2*193.59 = 834.8, I 62875; 24\": 740.8, I 48178; 30\"x4'-4\": 51x30 - 2*254.47 = 1021.1, I 104444. The implementation uses that convention (joint shear keys omitted: 5.6-A1-8 shows a V key with 1\" top and 3/16\" bottom joint offsets only).",
+    "2006 void layouts: 18\": 9\" voids at 0 and +/-12 1/2\" (1'-0 1/2\"), 11 1/2\" from joint; 26\": 15.7\" voids at +/-9\", 1'-3\" from joint.",
+    "24\" (2 x 15.7\") and 30\" x 4'-4\" (2 x 18\") are not in 2006; H, W, count and diameter from the 2026 PRELIMINARY table. Horizontal void positions are estimates: 24\" uses the 26\" layout (+/-9\"); 30\" uses +/-10\" (2\" between voids, 6.5\" edge walls). These affect Iy only, not A/Yb/Ix."
+   ],
+   "sections": {
+    "SLAB12x48": {
+     "depth_in": 12,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 564,
+      "yb_in": 6.0,
+      "ix_in4": 6768
+     },
+     "calculated_in": {
+      "area_in2": 564.0,
+      "yb_in": 6.0,
+      "ix_in4": 6768.0,
+      "iy_in4": 103823.0
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.0,
+       "area_pct": -0.0,
+       "yb_in": -0.0,
+       "ix_pct": 0.0
+      }
+     }
+    },
+    "SLAB18x48": {
+     "depth_in": 18,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 655,
+      "yb_in": 9.0,
+      "ix_in4": 21876
+     },
+     "calculated_in": {
+      "area_in2": 655.167,
+      "yb_in": 9.0,
+      "ix_in4": 21876.0,
+      "iy_in4": 134890.1
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.167,
+       "area_pct": 0.026,
+       "yb_in": 0.0,
+       "ix_pct": 0.0
+      }
+     }
+    },
+    "SLAB24x48": {
+     "depth_in": 24,
+     "provenance": "estimate",
+     "source_status": "current (2025 properties); layout from 2026 PRELIMINARY sheet 5.6-A1-11",
+     "published_2025": {
+      "area_in2": 741,
+      "yb_in": 12.0,
+      "ix_in4": 48179
+     },
+     "calculated_in": {
+      "area_in2": 740.853,
+      "yb_in": 12.0,
+      "ix_in4": 48180.4,
+      "iy_in4": 170323.5
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.147,
+       "area_pct": -0.02,
+       "yb_in": -0.0,
+       "ix_pct": 0.003
+      }
+     }
+    },
+    "SLAB26x48": {
+     "depth_in": 26,
+     "provenance": "transcribed-with-convention",
+     "source_status": "current (WSDOT BDM M 23-50.24 June 2025 properties; 2006 standard sheet geometry)",
+     "published_2025": {
+      "area_in2": 835,
+      "yb_in": 13.0,
+      "ix_in4": 62874
+     },
+     "calculated_in": {
+      "area_in2": 834.853,
+      "yb_in": 13.0,
+      "ix_in4": 62875.7,
+      "iy_in4": 187627.3
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": -0.147,
+       "area_pct": -0.018,
+       "yb_in": -0.0,
+       "ix_pct": 0.003
+      }
+     }
+    },
+    "SLAB30x52": {
+     "depth_in": 30,
+     "provenance": "estimate",
+     "source_status": "current (2025 properties); layout from 2026 PRELIMINARY sheet 5.6-A1-11",
+     "published_2025": {
+      "area_in2": 1021,
+      "yb_in": 15.0,
+      "ix_in4": 104444
+     },
+     "calculated_in": {
+      "area_in2": 1021.113,
+      "yb_in": 15.0,
+      "ix_in4": 104446.1,
+      "iy_in4": 270434.9
+     },
+     "residuals": {
+      "vs_2025": {
+       "area_in2": 0.113,
+       "area_pct": 0.011,
+       "yb_in": 0.0,
+       "ix_pct": 0.002
+      }
+     }
+    }
+   }
+  }
+ },
+ "profile_count": 44
+}

@@ -10,6 +10,10 @@ and three profiles. The [US state follow-up](us-states-followup.md) records ten
 state DOT source leads and three Minnesota profiles; Washington W-series
 profiles are also implemented from official drawings.
 
+The September 2026 extraction round implemented 255 further profiles from
+already-downloaded sources; each record states per-profile `provenance`
+and pinned source discrepancies.
+
 This directory is the versioned research record for expanding `bridgebeams`.
 The regional reports preserve original source titles alongside English
 translations, links, dimension transcriptions, and remaining uncertainties.
@@ -43,6 +47,14 @@ profiles and completed checks.
 | AASHTO-named beams outside the US | [Cross-jurisdiction follow-up](aashto-cross-jurisdiction-followup-2026-09.md) | [Seven source leads](data/deep-search-aashto-global-2026-09.json) |
 | Korea, Argentina and Philippines follow-up | [Standardisation and authority leads](deep-search-korea-argentina-philippines-2026-09.md) | [Four source leads](data/deep-search-korea-argentina-philippines-2026-09.json) |
 | Brazil: Portuguese papers and DNIT guidance | [Brazilian beam sources](deep-search-brazil-2026-09.md) | [Three source leads](data/deep-search-brazil-2026-09.json) |
+| Extraction round (Sept 2026): WSDOT WF, tub, bulb-tee, deck and slab girders | [Implementation record](extraction-wsdot-2026-09.md) | [Transcriptions and residuals](data/extraction-wsdot-2026-09.json) |
+| Extraction round (Sept 2026): Ontario MTO NU and box girders | [Implementation record](extraction-ontario-2026-09.md) | [Transcriptions and residuals](data/extraction-ontario-2026-09.json) |
+| Extraction round (Sept 2026): Slovak VPH-PTMN girders and slab beams | [Implementation record](extraction-slovakia-vph-2026-09.md) | [Transcriptions and residuals](data/extraction-slovakia-vph-2026-09.json) |
+| Extraction round (Sept 2026): Spanish HP-1 and Hungarian Ferrobeton | [Implementation record](extraction-spain-hungary-2026-09.md) | [Transcriptions and residuals](data/extraction-spain-hungary-2026-09.json) |
+| Extraction round (Sept 2026): Haitsma and Romanian ASA girders | [Implementation record](extraction-netherlands-romania-2026-09.md) | [Transcriptions and residuals](data/extraction-netherlands-romania-2026-09.json) |
+| Extraction round (Sept 2026): Civilcon T, U, Special U and M | [Implementation record](extraction-civilcon-tum-2026-09.md) | [Transcriptions and residuals](data/extraction-civilcon-tum-2026-09.json) |
+| Extraction round (Sept 2026): NHAI and Nepal DoR girders | [Implementation record](extraction-nhai-nepal-2026-09.md) | [Transcriptions and residuals](data/extraction-nhai-nepal-2026-09.json) |
+| Extraction round (Sept 2026): Beijing 20BGQL2, WIKA and SEPSA extensions | [Implementation record](extraction-china-indonesia-mexico-2026-09.md) | [Transcriptions and residuals](data/extraction-china-indonesia-mexico-2026-09.json) |
 
 ## Reading the evidence
 

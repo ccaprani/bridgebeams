@@ -1,0 +1,276 @@
+{
+  "source_title_original": "PPBT: T BEAM (dimension and section-property sheet)",
+  "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBT.pdf",
+  "source_local_file": "sources/expansion/asia-africa/civilcon-T.pdf",
+  "source_sha256": "76748c16a8296cb22b2f1e9b4fb41f5e6d9d80c3d127695fbe2cfae193eeb30c",
+  "source_pdf_page": 1,
+  "source_printed_page": null,
+  "source_status": "producer catalogue",
+  "producer": "Civilcon (South Africa)",
+  "accessed": "2026-09-22",
+  "units": "mm, mm2, mm3; self weight kN/m",
+  "reviewed": "Rendered at 300 dpi and scaled from line centres on 2026-09-23 (extraction-civilcon-tum).",
+  "transcribed_dimensions": {
+    "base_width": 495,
+    "bottom_chamfer": "25 x 25",
+    "flange_edge_height": 75,
+    "flange_side_inset": 6,
+    "flange_taper_height": 40,
+    "lower_splay_height": 50,
+    "web_width": 105,
+    "clear_web_T3_T10": 240,
+    "upper_splay_height": 50,
+    "bulb_width": 205,
+    "bulb_height": "335 max",
+    "T1_T2_chain": "90 (web) + 50 (splay, 50 horizontal offset) + 90 (bulb, T2)",
+    "depth_labels": {
+      "T1": 380,
+      "T2": 420,
+      "T3": 535,
+      "T4": 575,
+      "T5": 615,
+      "T6": 655,
+      "T7": 695,
+      "T8": 735,
+      "T9": 775,
+      "T10": "850 (label) / 815 (table)"
+    }
+  },
+  "derived_dimensions": {
+    "taper_width": {
+      "value": 205,
+      "basis": "Not printed. Closes all 10 published areas exactly; visually aligned with the 205 bulb and the T1/T2 dashed 50 mm offset."
+    }
+  },
+  "geometry_notes": [
+    "Half profile from soffit: (222.5,0) (247.5,25) (241.5,100) (102.5,140) (52.5,190) (52.5,web_top) (102.5,web_top+50) (102.5,D).",
+    "web_top = 430 for T3-T10 (190+240) and 280 for T1/T2 (190+90), from the dashed T1/T2 outline and its 90/50/90 chain.",
+    "T10 depth: drawing label 850 conflicts with table 815. Implemented 815: table, '335 max' + 480, the 40 mm label pitch, and exact area closure all support 815. At 850 the area would be 178735 mm2 (+4.2%).",
+    "Published Yb values agree within 0.5 mm; Zt/Zb within 0.45% except T10 Zb, which is 0.72% above the published value. That T10 discrepancy is preserved.",
+    "Strand positions and the 45 c/c strand grid are not modelled."
+  ],
+  "sections": [
+    {
+      "section": "T1",
+      "published_depth": 380.0,
+      "area": 97385.0,
+      "yb": 139.0,
+      "zt": 5110000.0,
+      "zb": 8850000.0,
+      "self_weight_kN_per_m": 2.44,
+      "depth_used": 380.0,
+      "web_top": 280.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 97385.0,
+        "yb_calc": 139.16,
+        "zt_calc": 5109471,
+        "zb_calc": 8842725,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.16,
+        "zt_rel_pct": -0.01,
+        "zb_rel_pct": -0.082
+      }
+    },
+    {
+      "section": "T2",
+      "published_depth": 420.0,
+      "area": 105585.0,
+      "yb": 159.0,
+      "zt": 6690000.0,
+      "zb": 10980000.0,
+      "self_weight_kN_per_m": 2.64,
+      "depth_used": 420.0,
+      "web_top": 280.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 105585.0,
+        "yb_calc": 159.42,
+        "zt_calc": 6701275,
+        "zb_calc": 10953765,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.42,
+        "zt_rel_pct": 0.169,
+        "zb_rel_pct": -0.239
+      }
+    },
+    {
+      "section": "T3",
+      "published_depth": 535.0,
+      "area": 114160.0,
+      "yb": 196.0,
+      "zt": 9610000.0,
+      "zb": 16540000.0,
+      "self_weight_kN_per_m": 2.86,
+      "depth_used": 535.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 114160.0,
+        "yb_calc": 196.12,
+        "zt_calc": 9568483,
+        "zb_calc": 16533381,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.12,
+        "zt_rel_pct": -0.432,
+        "zb_rel_pct": -0.04
+      }
+    },
+    {
+      "section": "T4",
+      "published_depth": 575.0,
+      "area": 122360.0,
+      "yb": 220.0,
+      "zt": 11920000.0,
+      "zb": 19220000.0,
+      "self_weight_kN_per_m": 3.06,
+      "depth_used": 575.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 122360.0,
+        "yb_calc": 220.17,
+        "zt_calc": 11918389,
+        "zb_calc": 19207620,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.17,
+        "zt_rel_pct": -0.014,
+        "zb_rel_pct": -0.064
+      }
+    },
+    {
+      "section": "T5",
+      "published_depth": 615.0,
+      "area": 130560.0,
+      "yb": 244.0,
+      "zt": 14310000.0,
+      "zb": 21760000.0,
+      "self_weight_kN_per_m": 3.27,
+      "depth_used": 615.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 130560.0,
+        "yb_calc": 243.71,
+        "zt_calc": 14301040,
+        "zb_calc": 21786985,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": -0.29,
+        "zt_rel_pct": -0.063,
+        "zb_rel_pct": 0.124
+      }
+    },
+    {
+      "section": "T6",
+      "published_depth": 655.0,
+      "area": 138760.0,
+      "yb": 267.0,
+      "zt": 16730000.0,
+      "zb": 24320000.0,
+      "self_weight_kN_per_m": 3.47,
+      "depth_used": 655.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 138760.0,
+        "yb_calc": 266.84,
+        "zt_calc": 16725291,
+        "zb_calc": 24330052,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": -0.16,
+        "zt_rel_pct": -0.028,
+        "zb_rel_pct": 0.041
+      }
+    },
+    {
+      "section": "T7",
+      "published_depth": 695.0,
+      "area": 146960.0,
+      "yb": 290.0,
+      "zt": 19220000.0,
+      "zb": 26840000.0,
+      "self_weight_kN_per_m": 3.68,
+      "depth_used": 695.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 146960.0,
+        "yb_calc": 289.61,
+        "zt_calc": 19199126,
+        "zb_calc": 26874370,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": -0.39,
+        "zt_rel_pct": -0.109,
+        "zb_rel_pct": 0.128
+      }
+    },
+    {
+      "section": "T8",
+      "published_depth": 735.0,
+      "area": 155160.0,
+      "yb": 312.0,
+      "zt": 21720000.0,
+      "zb": 29450000.0,
+      "self_weight_kN_per_m": 3.88,
+      "depth_used": 735.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 155160.0,
+        "yb_calc": 312.09,
+        "zt_calc": 21729624,
+        "zb_calc": 29445220,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.09,
+        "zt_rel_pct": 0.044,
+        "zb_rel_pct": -0.016
+      }
+    },
+    {
+      "section": "T9",
+      "published_depth": 775.0,
+      "area": 163360.0,
+      "yb": 334.0,
+      "zt": 24310000.0,
+      "zb": 32090000.000000004,
+      "self_weight_kN_per_m": 4.09,
+      "depth_used": 775.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "residuals": {
+        "area_calc": 163360.0,
+        "yb_calc": 334.32,
+        "zt_calc": 24322988,
+        "zb_calc": 32060317,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.32,
+        "zt_rel_pct": 0.053,
+        "zb_rel_pct": -0.092
+      }
+    },
+    {
+      "section": "T10",
+      "published_depth": 815.0,
+      "area": 171560.0,
+      "yb": 356.0,
+      "zt": 26960000.0,
+      "zb": 34480000.0,
+      "self_weight_kN_per_m": 4.29,
+      "depth_used": 815.0,
+      "web_top": 430.0,
+      "provenance": "transcribed-with-convention",
+      "drawing_depth_label": 850,
+      "discrepancy": "Drawing label 850 vs table 815; 815 used. Published Zb 0.72% below calculated; retained.",
+      "residuals": {
+        "area_calc": 171560.0,
+        "yb_calc": 356.34,
+        "zt_calc": 26984629,
+        "zb_calc": 34732483,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.34,
+        "zt_rel_pct": 0.091,
+        "zb_rel_pct": 0.732
+      }
+    }
+  ]
+}

@@ -30,17 +30,25 @@
    aus
    be
    ca
+   cn
+   es
    gr
+   hu
+   id
    ie
    india
    jp
    kr
    mx
+   nl
    no
+   np
    nz
    pl
    qa
+   ro
    ru
+   sk
    th
    tr
    tw

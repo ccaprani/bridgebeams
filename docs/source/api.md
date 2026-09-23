@@ -31,4 +31,26 @@
     bridgebeams.qa.q_beams
     bridgebeams.mx.sepsa_i_girder
     bridgebeams.tw.i_section
+    bridgebeams.ca.mto_nu_girder
+    bridgebeams.ca.mto_box_girder
+    bridgebeams.cn.beijing_box
+    bridgebeams.es.hp1
+    bridgebeams.hu.ferrobeton
+    bridgebeams.id.wika_girders
+    bridgebeams.india.nhai_i_girders
+    bridgebeams.mx.sepsa_box
+    bridgebeams.mx.sepsa_double_tee
+    bridgebeams.mx.sepsa_nebraska
+    bridgebeams.nl.hko
+    bridgebeams.nl.hrp_hip
+    bridgebeams.np.precast_rc_i
+    bridgebeams.ro.asa
+    bridgebeams.sk.vph_ptmn
+    bridgebeams.us.wsdot_wf_girders
+    bridgebeams.us.wsdot_tub_girders
+    bridgebeams.us.wsdot_legacy_girders
+    bridgebeams.za.civilcon_t_beam
+    bridgebeams.za.civilcon_u_beam
+    bridgebeams.za.civilcon_special_u_beam
+    bridgebeams.za.civilcon_m_beam
 ```

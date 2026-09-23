@@ -1,0 +1,1506 @@
+{
+ "schema_version": 1,
+ "family": "SEPSA Trabe Cajón box girders and first-stage Type U sections",
+ "country": "Mexico",
+ "source_status": "producer catalogue V-05-27-21",
+ "source": {
+  "organisation": "Grupo Constructor SEPSA",
+  "title": "Catálogo de piezas SEPSA V-05 27-21",
+  "url": "https://sepsacv.com.mx/wp-content/uploads/2022/02/CATALOGO-DE-PIEZAS-SEPSA-V-05-27-21.pdf",
+  "local_file": "sources/expansion/europe-americas/mx_sepsa.pdf",
+  "sha256": "4bf8d28b4d5165d893df215f484ddab996a9e6849a3410049ba4e0cb69133feb",
+  "accessed": "2026-09-22",
+  "pdf_pages_1_based": [
+   6,
+   7,
+   8,
+   9
+  ],
+  "printed_pages": "unnumbered catalogue pages",
+  "transcription": "Every printed dimension re-read from 400-dpi renders (2026-09-23). Table rows are the 2026-09-22 text extraction (docs/research/data/europe-americas-sources.json, mx_sepsa), visually re-checked. Undimensioned radii were measured from the catalogue's vector drawing paths, which are drawn at uniform scale (x/y scale agree to 0.2% on CA-85, CA-150, CA-135-U, CA-150-U, CA-180-U and B-400)."
+ },
+ "units": {
+  "drawing": "cm",
+  "published_area": "cm2",
+  "outline_output": "mm"
+ },
+ "translation": {
+  "trabe cajón": "box girder",
+  "aleta": "wing (top flange overhang)",
+  "sección tipo U": "Type U (open first-stage) section",
+  "espacio colado en 2da etapa": "space cast in the second stage",
+  "área sección transversal": "cross-sectional area"
+ },
+ "geometry_notes": [
+  "Origin at mid-soffit, y up. Outline built in cm and scaled to mm.",
+  "Closed void: printed top width, bottom width, height and chamfer runs; chamfers taken at 45° (drawn 45°, rise not printed).",
+  "Inner web face passes through the two chamfer end points; outer web face is offset by the printed web thickness (9 cm; B-400 17 cm) measured NORMAL to the web (the CA-150/180/B-400 dimension lines are drawn perpendicular to the web; horizontal and normal differ by <0.1 cm here).",
+  "Soffit corners: tangent arc R5 (B-400: R40) between the soffit and the outer web line. B-400 R40 is not printed; it was measured from the vector drawing (circle through the drawn tangent points (43.1,0) and (82.8,35.3) cm gives R=39.97 cm) and agrees with the printed 86.3 flat / 35.3 arc-height / 165.7 base.",
+  "Upper web–wing junction: tangent arc R22 (B-400: R20). The wing soffit line passes through the tip at a_max (tip thickness b=5) and its slope is solved so that the fillet's wing tangent point lies b1 (7.8; B-400 7.1) below the tip soffit, i.e. the printed 5 + b1 + 20.2 (17.6) chain. The resulting web-tangent height is compared with the printed straight-web height.",
+  "Wing widths below a_max: tip moves inward along the fixed wing soffit line (catalogue b+b1 is constant for every row).",
+  "Drip notches, lifting inserts, shear keys and the small leader-line artefacts in the drawing fill are omitted.",
+  "CA-135 closed drawing prints a=300 cm while its table and overview use 310 cm; a_max=310 is used (the table governs; the drawing width is a known source inconsistency).",
+  "CA-180 closed drawing prints a 147.2 cm straight web (147.2+20.2+7.8+5 = 180.2); the Type U drawing prints 147. The fillet solution gives the value reported in residuals.",
+  "Type U (first stage): same outer profile. Wing ends at gap/2 + stub (printed 7 cm; B-400 12 cm) and drops to the closed-void top level, where a ledge runs inward to gap/2. CA Type U: a 45° chamfer runs from that ledge edge down to the inner web face, which is offset by the printed U web thickness (11 cm; B-400 15 cm) from the outer web; the inner bottom corners are tangent arcs of radius 27 cm (NOT printed; measured from the vector drawing of CA-135-U, CA-150-U and CA-180-U, all ~27 cm) to the printed 20/20/25 cm bottom slab. B-400 Type U: vertical face at gap/2 down to a 45° chamfer whose line x+y=206.1 cm was measured from the drawing, then the web; bottom corners are the closed-box 25 cm 45° chamfers relative to the U web face. The small (~1.5 cm) rounding at the stub bottom corner is omitted.",
+  "CA-150-U/CA-180-U chains close to 309.8/310 cm; gap/2 + stub is used for the wing end (0.1 cm closure error on CA-150-U).",
+  "Source table anomalies retained verbatim: TC180 Type U a=190 repeats 7280 cm2 (a=200)."
+ ],
+ "families": [
+  {
+   "b_at_max_cm": 5,
+   "b1_at_max_cm": 7.8,
+   "upper_fillet_radius_cm": 22,
+   "soffit_radius_cm": 5,
+   "bottom_slab_cm": 15,
+   "void_bottom_width_cm": 39.6,
+   "void_top_chamfer_cm": 10,
+   "void_bottom_chamfer_cm": 15,
+   "web_thickness_cm": 9,
+   "printed_base_width_cm": 83.8,
+   "printed_soffit_flat_cm": 73.8,
+   "family": "CA-85",
+   "pdf_page": 6,
+   "depth_cm": 85,
+   "wing_width_max_cm": 300,
+   "wing_width_min_cm": 140,
+   "void_height_cm": 58,
+   "void_top_width_cm": 54.7,
+   "web_straight_height_cm": 52,
+   "provenance": "transcribed-with-convention",
+   "table_label": "TC85",
+   "published_areas": [
+    {
+     "a_cm": 300.0,
+     "b_cm": 5.0,
+     "b1_cm": 7.8,
+     "area_closed_cm2": 5904,
+     "calc_closed_cm2": 5890.9,
+     "residual_closed_cm2": -13.1,
+     "calc_b_cm": 5.0
+    },
+    {
+     "a_cm": 290.0,
+     "b_cm": 5.5,
+     "b1_cm": 7.3,
+     "area_closed_cm2": 5854,
+     "calc_closed_cm2": 5838.6,
+     "residual_closed_cm2": -15.4,
+     "calc_b_cm": 5.461
+    },
+    {
+     "a_cm": 280.0,
+     "b_cm": 5.92,
+     "b1_cm": 6.88,
+     "area_closed_cm2": 5793,
+     "calc_closed_cm2": 5781.7,
+     "residual_closed_cm2": -11.3,
+     "calc_b_cm": 5.922
+    },
+    {
+     "a_cm": 270.0,
+     "b_cm": 6.4,
+     "b1_cm": 6.4,
+     "area_closed_cm2": 5734,
+     "calc_closed_cm2": 5720.1,
+     "residual_closed_cm2": -13.9,
+     "calc_b_cm": 6.384
+    },
+    {
+     "a_cm": 260.0,
+     "b_cm": 6.8,
+     "b1_cm": 6.0,
+     "area_closed_cm2": 5664,
+     "calc_closed_cm2": 5654.0,
+     "residual_closed_cm2": -10.0,
+     "calc_b_cm": 6.845
+    },
+    {
+     "a_cm": 250.0,
+     "b_cm": 7.3,
+     "b1_cm": 5.5,
+     "area_closed_cm2": 5595,
+     "calc_closed_cm2": 5583.2,
+     "residual_closed_cm2": -11.8,
+     "calc_b_cm": 7.306
+    },
+    {
+     "a_cm": 240.0,
+     "b_cm": 7.76,
+     "b1_cm": 5.04,
+     "area_closed_cm2": 5520,
+     "calc_closed_cm2": 5507.9,
+     "residual_closed_cm2": -12.1,
+     "calc_b_cm": 7.767
+    },
+    {
+     "a_cm": 230.0,
+     "b_cm": 8.22,
+     "b1_cm": 4.58,
+     "area_closed_cm2": 5439,
+     "calc_closed_cm2": 5427.9,
+     "residual_closed_cm2": -11.1,
+     "calc_b_cm": 8.228
+    },
+    {
+     "a_cm": 220.0,
+     "b_cm": 8.7,
+     "b1_cm": 4.1,
+     "area_closed_cm2": 5356,
+     "calc_closed_cm2": 5343.3,
+     "residual_closed_cm2": -12.7,
+     "calc_b_cm": 8.69
+    },
+    {
+     "a_cm": 210.0,
+     "b_cm": 9.14,
+     "b1_cm": 3.66,
+     "area_closed_cm2": 5266,
+     "calc_closed_cm2": 5254.1,
+     "residual_closed_cm2": -11.9,
+     "calc_b_cm": 9.151
+    },
+    {
+     "a_cm": 200.0,
+     "b_cm": 9.6,
+     "b1_cm": 3.2,
+     "area_closed_cm2": 5172,
+     "calc_closed_cm2": 5160.3,
+     "residual_closed_cm2": -11.7,
+     "calc_b_cm": 9.612
+    },
+    {
+     "a_cm": 190.0,
+     "b_cm": 10.07,
+     "b1_cm": 2.73,
+     "area_closed_cm2": 5074,
+     "calc_closed_cm2": 5061.9,
+     "residual_closed_cm2": -12.1,
+     "calc_b_cm": 10.073
+    },
+    {
+     "a_cm": 180.0,
+     "b_cm": 10.5,
+     "b1_cm": 2.3,
+     "area_closed_cm2": 4971,
+     "calc_closed_cm2": 4958.8,
+     "residual_closed_cm2": -12.2,
+     "calc_b_cm": 10.535
+    },
+    {
+     "a_cm": 170.0,
+     "b_cm": 11.0,
+     "b1_cm": 1.8,
+     "area_closed_cm2": 4863,
+     "calc_closed_cm2": 4851.2,
+     "residual_closed_cm2": -11.8,
+     "calc_b_cm": 10.996
+    },
+    {
+     "a_cm": 160.0,
+     "b_cm": 11.45,
+     "b1_cm": 1.35,
+     "area_closed_cm2": 4751,
+     "calc_closed_cm2": 4738.9,
+     "residual_closed_cm2": -12.1,
+     "calc_b_cm": 11.457
+    },
+    {
+     "a_cm": 150.0,
+     "b_cm": 11.9,
+     "b1_cm": 0.9,
+     "area_closed_cm2": 4634,
+     "calc_closed_cm2": 4622.0,
+     "residual_closed_cm2": -12.0,
+     "calc_b_cm": 11.918
+    },
+    {
+     "a_cm": 140.0,
+     "b_cm": 12.37,
+     "b1_cm": 0.43,
+     "area_closed_cm2": 4512,
+     "calc_closed_cm2": 4500.5,
+     "residual_closed_cm2": -11.5,
+     "calc_b_cm": 12.379
+    }
+   ],
+   "derived_at_max_width": {
+    "wing_soffit_slope": 0.0922,
+    "upper_fillet_web_tangent_height_cm": 51.9879,
+    "upper_fillet_wing_tangent_x_cm": 65.4398,
+    "soffit_flat_half_width_cm": 36.8801,
+    "soffit_tangent_half_width_cm": 41.8652
+   },
+   "analytic_at_max_width": {
+    "CA-85": {
+     "area_mm2": 589089,
+     "yb_mm": 552.96,
+     "ixx_mm4": 54795582484
+    }
+   }
+  },
+  {
+   "b_at_max_cm": 5,
+   "b1_at_max_cm": 7.8,
+   "upper_fillet_radius_cm": 22,
+   "soffit_radius_cm": 5,
+   "bottom_slab_cm": 15,
+   "void_bottom_width_cm": 39.6,
+   "void_top_chamfer_cm": 10,
+   "void_bottom_chamfer_cm": 15,
+   "web_thickness_cm": 9,
+   "printed_base_width_cm": 83.8,
+   "printed_soffit_flat_cm": 73.8,
+   "family": "CA-115",
+   "pdf_page": 6,
+   "depth_cm": 115,
+   "wing_width_max_cm": 300,
+   "wing_width_min_cm": 140,
+   "void_height_cm": 88,
+   "void_top_width_cm": 59.4,
+   "web_straight_height_cm": 82,
+   "provenance": "transcribed-with-convention",
+   "table_label": "TC115",
+   "published_areas": [
+    {
+     "a_cm": 300.0,
+     "b_cm": 5.0,
+     "b1_cm": 7.8,
+     "area_closed_cm2": 6476,
+     "calc_closed_cm2": 6445.9,
+     "residual_closed_cm2": -30.1,
+     "calc_b_cm": 5.0
+    },
+    {
+     "a_cm": 290.0,
+     "b_cm": 5.46,
+     "b1_cm": 7.34,
+     "area_closed_cm2": 6424,
+     "calc_closed_cm2": 6393.5,
+     "residual_closed_cm2": -30.5,
+     "calc_b_cm": 5.474
+    },
+    {
+     "a_cm": 280.0,
+     "b_cm": 5.92,
+     "b1_cm": 6.88,
+     "area_closed_cm2": 6361,
+     "calc_closed_cm2": 6336.4,
+     "residual_closed_cm2": -24.6,
+     "calc_b_cm": 5.948
+    },
+    {
+     "a_cm": 270.0,
+     "b_cm": 6.38,
+     "b1_cm": 6.42,
+     "area_closed_cm2": 6300,
+     "calc_closed_cm2": 6274.5,
+     "residual_closed_cm2": -25.5,
+     "calc_b_cm": 6.422
+    },
+    {
+     "a_cm": 260.0,
+     "b_cm": 6.84,
+     "b1_cm": 5.96,
+     "area_closed_cm2": 6234,
+     "calc_closed_cm2": 6208.0,
+     "residual_closed_cm2": -26.0,
+     "calc_b_cm": 6.896
+    },
+    {
+     "a_cm": 250.0,
+     "b_cm": 7.3,
+     "b1_cm": 5.5,
+     "area_closed_cm2": 6157,
+     "calc_closed_cm2": 6136.6,
+     "residual_closed_cm2": -20.4,
+     "calc_b_cm": 7.37
+    },
+    {
+     "a_cm": 240.0,
+     "b_cm": 7.76,
+     "b1_cm": 5.04,
+     "area_closed_cm2": 6082,
+     "calc_closed_cm2": 6060.5,
+     "residual_closed_cm2": -21.5,
+     "calc_b_cm": 7.844
+    },
+    {
+     "a_cm": 230.0,
+     "b_cm": 8.22,
+     "b1_cm": 4.58,
+     "area_closed_cm2": 6001,
+     "calc_closed_cm2": 5979.7,
+     "residual_closed_cm2": -21.3,
+     "calc_b_cm": 8.318
+    },
+    {
+     "a_cm": 220.0,
+     "b_cm": 8.68,
+     "b1_cm": 4.12,
+     "area_closed_cm2": 5912,
+     "calc_closed_cm2": 5894.2,
+     "residual_closed_cm2": -17.8,
+     "calc_b_cm": 8.792
+    },
+    {
+     "a_cm": 210.0,
+     "b_cm": 9.14,
+     "b1_cm": 3.66,
+     "area_closed_cm2": 5820,
+     "calc_closed_cm2": 5803.9,
+     "residual_closed_cm2": -16.1,
+     "calc_b_cm": 9.266
+    },
+    {
+     "a_cm": 200.0,
+     "b_cm": 9.61,
+     "b1_cm": 3.19,
+     "area_closed_cm2": 5723,
+     "calc_closed_cm2": 5708.9,
+     "residual_closed_cm2": -14.1,
+     "calc_b_cm": 9.74
+    },
+    {
+     "a_cm": 190.0,
+     "b_cm": 10.07,
+     "b1_cm": 2.73,
+     "area_closed_cm2": 5624,
+     "calc_closed_cm2": 5609.1,
+     "residual_closed_cm2": -14.9,
+     "calc_b_cm": 10.214
+    },
+    {
+     "a_cm": 180.0,
+     "b_cm": 10.53,
+     "b1_cm": 2.27,
+     "area_closed_cm2": 5518,
+     "calc_closed_cm2": 5504.6,
+     "residual_closed_cm2": -13.4,
+     "calc_b_cm": 10.689
+    },
+    {
+     "a_cm": 170.0,
+     "b_cm": 10.99,
+     "b1_cm": 1.81,
+     "area_closed_cm2": 5408,
+     "calc_closed_cm2": 5395.3,
+     "residual_closed_cm2": -12.7,
+     "calc_b_cm": 11.163
+    },
+    {
+     "a_cm": 160.0,
+     "b_cm": 11.45,
+     "b1_cm": 1.35,
+     "area_closed_cm2": 5294,
+     "calc_closed_cm2": 5281.3,
+     "residual_closed_cm2": -12.7,
+     "calc_b_cm": 11.637
+    },
+    {
+     "a_cm": 150.0,
+     "b_cm": 11.91,
+     "b1_cm": 0.89,
+     "area_closed_cm2": 5175,
+     "calc_closed_cm2": 5162.6,
+     "residual_closed_cm2": -12.4,
+     "calc_b_cm": 12.111
+    },
+    {
+     "a_cm": 140.0,
+     "b_cm": 12.37,
+     "b1_cm": 0.43,
+     "area_closed_cm2": 5051,
+     "calc_closed_cm2": 5039.1,
+     "residual_closed_cm2": -11.9,
+     "calc_b_cm": 12.585
+    }
+   ],
+   "derived_at_max_width": {
+    "wing_soffit_slope": 0.0948,
+    "upper_fillet_web_tangent_height_cm": 82.0042,
+    "upper_fillet_wing_tangent_x_cm": 67.7292,
+    "soffit_flat_half_width_cm": 36.8676,
+    "soffit_tangent_half_width_cm": 41.8526
+   },
+   "analytic_at_max_width": {
+    "CA-115": {
+     "area_mm2": 644587,
+     "yb_mm": 738.96,
+     "ixx_mm4": 116859507388
+    }
+   }
+  },
+  {
+   "b_at_max_cm": 5,
+   "b1_at_max_cm": 7.8,
+   "upper_fillet_radius_cm": 22,
+   "soffit_radius_cm": 5,
+   "bottom_slab_cm": 15,
+   "void_bottom_width_cm": 39.6,
+   "void_top_chamfer_cm": 10,
+   "void_bottom_chamfer_cm": 15,
+   "web_thickness_cm": 9,
+   "printed_base_width_cm": 83.8,
+   "printed_soffit_flat_cm": 73.8,
+   "family": "CA-135",
+   "pdf_page": 7,
+   "depth_cm": 135,
+   "wing_width_max_cm": 310,
+   "wing_width_min_cm": 150,
+   "void_height_cm": 108,
+   "void_top_width_cm": 62.5,
+   "web_straight_height_cm": 102,
+   "type_u": {
+    "gap_cm": 58.5,
+    "stub_cm": 7,
+    "web_thickness_cm": 11,
+    "bottom_slab_cm": 20,
+    "inner_bottom_radius_cm": 27,
+    "printed_wing_chain_cm": [
+     118.7,
+     7,
+     58.5,
+     7,
+     118.7
+    ]
+   },
+   "provenance": "transcribed-with-convention",
+   "provenance_u": "transcribed-with-convention",
+   "table_label": "TC135",
+   "published_areas": [
+    {
+     "a_cm": 310.0,
+     "b_cm": 5.0,
+     "b1_cm": 7.8,
+     "area_closed_cm2": 6864,
+     "area_type_u_cm2": 6807,
+     "calc_closed_cm2": 6906.6,
+     "residual_closed_cm2": 42.6,
+     "calc_b_cm": 5.0,
+     "calc_type_u_cm2": 6841.1,
+     "residual_type_u_cm2": 34.1
+    },
+    {
+     "a_cm": 300.0,
+     "b_cm": 5.45,
+     "b1_cm": 7.35,
+     "area_closed_cm2": 6807,
+     "area_type_u_cm2": 6767,
+     "calc_closed_cm2": 6854.3,
+     "residual_closed_cm2": 47.3,
+     "calc_b_cm": 5.455,
+     "calc_type_u_cm2": 6788.9,
+     "residual_type_u_cm2": 21.9
+    },
+    {
+     "a_cm": 290.0,
+     "b_cm": 5.91,
+     "b1_cm": 6.89,
+     "area_closed_cm2": 6749,
+     "area_type_u_cm2": 6711,
+     "calc_closed_cm2": 6797.4,
+     "residual_closed_cm2": 48.4,
+     "calc_b_cm": 5.911,
+     "calc_type_u_cm2": 6732.0,
+     "residual_type_u_cm2": 21.0
+    },
+    {
+     "a_cm": 280.0,
+     "b_cm": 6.36,
+     "b1_cm": 6.44,
+     "area_closed_cm2": 6680,
+     "area_type_u_cm2": 6651,
+     "calc_closed_cm2": 6736.1,
+     "residual_closed_cm2": 56.1,
+     "calc_b_cm": 6.366,
+     "calc_type_u_cm2": 6670.6,
+     "residual_type_u_cm2": 19.6
+    },
+    {
+     "a_cm": 270.0,
+     "b_cm": 6.82,
+     "b1_cm": 5.98,
+     "area_closed_cm2": 6613,
+     "area_type_u_cm2": 6586,
+     "calc_closed_cm2": 6670.1,
+     "residual_closed_cm2": 57.1,
+     "calc_b_cm": 6.822,
+     "calc_type_u_cm2": 6604.7,
+     "residual_type_u_cm2": 18.7
+    },
+    {
+     "a_cm": 260.0,
+     "b_cm": 7.27,
+     "b1_cm": 5.53,
+     "area_closed_cm2": 6538,
+     "area_type_u_cm2": 6516,
+     "calc_closed_cm2": 6599.6,
+     "residual_closed_cm2": 61.6,
+     "calc_b_cm": 7.277,
+     "calc_type_u_cm2": 6534.2,
+     "residual_type_u_cm2": 18.2
+    },
+    {
+     "a_cm": 250.0,
+     "b_cm": 7.73,
+     "b1_cm": 5.07,
+     "area_closed_cm2": 6458,
+     "area_type_u_cm2": 6442,
+     "calc_closed_cm2": 6524.6,
+     "residual_closed_cm2": 66.6,
+     "calc_b_cm": 7.732,
+     "calc_type_u_cm2": 6459.2,
+     "residual_type_u_cm2": 17.2
+    },
+    {
+     "a_cm": 240.0,
+     "b_cm": 8.18,
+     "b1_cm": 4.62,
+     "area_closed_cm2": 6376,
+     "area_type_u_cm2": 6363,
+     "calc_closed_cm2": 6445.0,
+     "residual_closed_cm2": 69.0,
+     "calc_b_cm": 8.188,
+     "calc_type_u_cm2": 6379.6,
+     "residual_type_u_cm2": 16.6
+    },
+    {
+     "a_cm": 230.0,
+     "b_cm": 8.64,
+     "b1_cm": 4.16,
+     "area_closed_cm2": 6286,
+     "area_type_u_cm2": 6279,
+     "calc_closed_cm2": 6360.8,
+     "residual_closed_cm2": 74.8,
+     "calc_b_cm": 8.643,
+     "calc_type_u_cm2": 6295.4,
+     "residual_type_u_cm2": 16.4
+    },
+    {
+     "a_cm": 220.0,
+     "b_cm": 9.09,
+     "b1_cm": 3.71,
+     "area_closed_cm2": 6195,
+     "area_type_u_cm2": 6191,
+     "calc_closed_cm2": 6272.1,
+     "residual_closed_cm2": 77.1,
+     "calc_b_cm": 9.099,
+     "calc_type_u_cm2": 6206.7,
+     "residual_type_u_cm2": 15.7
+    },
+    {
+     "a_cm": 210.0,
+     "b_cm": 9.54,
+     "b1_cm": 3.26,
+     "area_closed_cm2": 6097,
+     "area_type_u_cm2": 6098,
+     "calc_closed_cm2": 6178.9,
+     "residual_closed_cm2": 81.9,
+     "calc_b_cm": 9.554,
+     "calc_type_u_cm2": 6113.4,
+     "residual_type_u_cm2": 15.4
+    },
+    {
+     "a_cm": 200.0,
+     "b_cm": 10.0,
+     "b1_cm": 2.8,
+     "area_closed_cm2": 5995,
+     "area_type_u_cm2": 6001,
+     "calc_closed_cm2": 6081.0,
+     "residual_closed_cm2": 86.0,
+     "calc_b_cm": 10.009,
+     "calc_type_u_cm2": 6015.6,
+     "residual_type_u_cm2": 14.6
+    },
+    {
+     "a_cm": 190.0,
+     "b_cm": 10.45,
+     "b1_cm": 2.35,
+     "area_closed_cm2": 5889,
+     "area_type_u_cm2": 5899,
+     "calc_closed_cm2": 5978.7,
+     "residual_closed_cm2": 89.7,
+     "calc_b_cm": 10.465,
+     "calc_type_u_cm2": 5913.3,
+     "residual_type_u_cm2": 14.3
+    },
+    {
+     "a_cm": 180.0,
+     "b_cm": 10.91,
+     "b1_cm": 1.89,
+     "area_closed_cm2": 5777,
+     "area_type_u_cm2": 5792,
+     "calc_closed_cm2": 5871.7,
+     "residual_closed_cm2": 94.7,
+     "calc_b_cm": 10.92,
+     "calc_type_u_cm2": 5806.3,
+     "residual_type_u_cm2": 14.3
+    },
+    {
+     "a_cm": 170.0,
+     "b_cm": 11.36,
+     "b1_cm": 1.44,
+     "area_closed_cm2": 5661,
+     "area_type_u_cm2": 5681,
+     "calc_closed_cm2": 5760.3,
+     "residual_closed_cm2": 99.3,
+     "calc_b_cm": 11.376,
+     "calc_type_u_cm2": 5694.9,
+     "residual_type_u_cm2": 13.9
+    },
+    {
+     "a_cm": 160.0,
+     "b_cm": 11.82,
+     "b1_cm": 0.98,
+     "area_closed_cm2": 5541,
+     "area_type_u_cm2": 5565,
+     "calc_closed_cm2": 5644.2,
+     "residual_closed_cm2": 103.2,
+     "calc_b_cm": 11.831,
+     "calc_type_u_cm2": 5578.8,
+     "residual_type_u_cm2": 13.8
+    },
+    {
+     "a_cm": 150.0,
+     "b_cm": 12.27,
+     "b1_cm": 0.53,
+     "area_closed_cm2": 5416,
+     "area_type_u_cm2": 5444,
+     "calc_closed_cm2": 5523.6,
+     "residual_closed_cm2": 107.6,
+     "calc_b_cm": 12.286,
+     "calc_type_u_cm2": 5458.2,
+     "residual_type_u_cm2": 14.2
+    }
+   ],
+   "derived_at_max_width": {
+    "wing_soffit_slope": 0.0911,
+    "upper_fillet_web_tangent_height_cm": 101.9952,
+    "upper_fillet_wing_tangent_x_cm": 69.3603,
+    "soffit_flat_half_width_cm": 36.8693,
+    "soffit_tangent_half_width_cm": 41.8543
+   },
+   "analytic_at_max_width": {
+    "CA-135": {
+     "area_mm2": 690655,
+     "yb_mm": 865.8,
+     "ixx_mm4": 175278640051
+    },
+    "CA-135-U": {
+     "area_mm2": 684114,
+     "yb_mm": 765.5,
+     "ixx_mm4": 173932540803
+    }
+   }
+  },
+  {
+   "b_at_max_cm": 5,
+   "b1_at_max_cm": 7.8,
+   "upper_fillet_radius_cm": 22,
+   "soffit_radius_cm": 5,
+   "bottom_slab_cm": 15,
+   "void_bottom_width_cm": 39.6,
+   "void_top_chamfer_cm": 10,
+   "void_bottom_chamfer_cm": 15,
+   "web_thickness_cm": 9,
+   "printed_base_width_cm": 83.8,
+   "printed_soffit_flat_cm": 73.8,
+   "family": "CA-150",
+   "pdf_page": 7,
+   "depth_cm": 150,
+   "wing_width_max_cm": 310,
+   "wing_width_min_cm": 150,
+   "void_height_cm": 123,
+   "void_top_width_cm": 65.2,
+   "web_straight_height_cm": 117,
+   "type_u": {
+    "gap_cm": 60.8,
+    "stub_cm": 7,
+    "web_thickness_cm": 11,
+    "bottom_slab_cm": 20,
+    "inner_bottom_radius_cm": 27,
+    "printed_wing_chain_cm": [
+     117.5,
+     7,
+     60.8,
+     7,
+     117.5
+    ]
+   },
+   "provenance": "transcribed-with-convention",
+   "provenance_u": "transcribed-with-convention",
+   "table_label": "TC150",
+   "published_areas": [
+    {
+     "a_cm": 310.0,
+     "b_cm": 5.0,
+     "b1_cm": 7.8,
+     "area_closed_cm2": 7169,
+     "area_type_u_cm2": 7157,
+     "calc_closed_cm2": 7183.3,
+     "residual_closed_cm2": 14.3,
+     "calc_b_cm": 5.0,
+     "calc_type_u_cm2": 7153.6,
+     "residual_type_u_cm2": -3.4
+    },
+    {
+     "a_cm": 300.0,
+     "b_cm": 5.46,
+     "b1_cm": 7.34,
+     "area_closed_cm2": 7115,
+     "area_type_u_cm2": 7104,
+     "calc_closed_cm2": 7131.0,
+     "residual_closed_cm2": 16.0,
+     "calc_b_cm": 5.462,
+     "calc_type_u_cm2": 7101.3,
+     "residual_type_u_cm2": -2.7
+    },
+    {
+     "a_cm": 290.0,
+     "b_cm": 5.92,
+     "b1_cm": 6.88,
+     "area_closed_cm2": 7058,
+     "area_type_u_cm2": 7047,
+     "calc_closed_cm2": 7074.1,
+     "residual_closed_cm2": 16.1,
+     "calc_b_cm": 5.925,
+     "calc_type_u_cm2": 7044.4,
+     "residual_type_u_cm2": -2.6
+    },
+    {
+     "a_cm": 280.0,
+     "b_cm": 6.38,
+     "b1_cm": 6.42,
+     "area_closed_cm2": 6999,
+     "area_type_u_cm2": 6986,
+     "calc_closed_cm2": 7012.5,
+     "residual_closed_cm2": 13.5,
+     "calc_b_cm": 6.387,
+     "calc_type_u_cm2": 6982.8,
+     "residual_type_u_cm2": -3.2
+    },
+    {
+     "a_cm": 270.0,
+     "b_cm": 6.84,
+     "b1_cm": 5.96,
+     "area_closed_cm2": 6929,
+     "area_type_u_cm2": 6920,
+     "calc_closed_cm2": 6946.4,
+     "residual_closed_cm2": 17.4,
+     "calc_b_cm": 6.85,
+     "calc_type_u_cm2": 6916.6,
+     "residual_type_u_cm2": -3.4
+    },
+    {
+     "a_cm": 260.0,
+     "b_cm": 7.3,
+     "b1_cm": 5.5,
+     "area_closed_cm2": 6860,
+     "area_type_u_cm2": 6849,
+     "calc_closed_cm2": 6875.5,
+     "residual_closed_cm2": 15.5,
+     "calc_b_cm": 7.312,
+     "calc_type_u_cm2": 6845.8,
+     "residual_type_u_cm2": -3.2
+    },
+    {
+     "a_cm": 250.0,
+     "b_cm": 7.76,
+     "b1_cm": 5.04,
+     "area_closed_cm2": 6784,
+     "area_type_u_cm2": 6774,
+     "calc_closed_cm2": 6800.1,
+     "residual_closed_cm2": 16.1,
+     "calc_b_cm": 7.775,
+     "calc_type_u_cm2": 6770.4,
+     "residual_type_u_cm2": -3.6
+    },
+    {
+     "a_cm": 240.0,
+     "b_cm": 8.22,
+     "b1_cm": 4.58,
+     "area_closed_cm2": 6704,
+     "area_type_u_cm2": 6693,
+     "calc_closed_cm2": 6720.1,
+     "residual_closed_cm2": 16.1,
+     "calc_b_cm": 8.237,
+     "calc_type_u_cm2": 6690.3,
+     "residual_type_u_cm2": -2.7
+    },
+    {
+     "a_cm": 230.0,
+     "b_cm": 8.68,
+     "b1_cm": 4.12,
+     "area_closed_cm2": 6621,
+     "area_type_u_cm2": 6609,
+     "calc_closed_cm2": 6635.4,
+     "residual_closed_cm2": 14.4,
+     "calc_b_cm": 8.699,
+     "calc_type_u_cm2": 6605.7,
+     "residual_type_u_cm2": -3.3
+    },
+    {
+     "a_cm": 220.0,
+     "b_cm": 9.14,
+     "b1_cm": 3.66,
+     "area_closed_cm2": 6531,
+     "area_type_u_cm2": 6520,
+     "calc_closed_cm2": 6546.1,
+     "residual_closed_cm2": 15.1,
+     "calc_b_cm": 9.162,
+     "calc_type_u_cm2": 6516.4,
+     "residual_type_u_cm2": -3.6
+    },
+    {
+     "a_cm": 210.0,
+     "b_cm": 9.61,
+     "b1_cm": 3.19,
+     "area_closed_cm2": 6437,
+     "area_type_u_cm2": 6426,
+     "calc_closed_cm2": 6452.1,
+     "residual_closed_cm2": 15.1,
+     "calc_b_cm": 9.624,
+     "calc_type_u_cm2": 6422.4,
+     "residual_type_u_cm2": -3.6
+    },
+    {
+     "a_cm": 200.0,
+     "b_cm": 10.07,
+     "b1_cm": 2.73,
+     "area_closed_cm2": 6338,
+     "area_type_u_cm2": 6327,
+     "calc_closed_cm2": 6353.6,
+     "residual_closed_cm2": 15.6,
+     "calc_b_cm": 10.087,
+     "calc_type_u_cm2": 6323.9,
+     "residual_type_u_cm2": -3.1
+    },
+    {
+     "a_cm": 190.0,
+     "b_cm": 10.53,
+     "b1_cm": 2.27,
+     "area_closed_cm2": 6235,
+     "area_type_u_cm2": 6224,
+     "calc_closed_cm2": 6250.4,
+     "residual_closed_cm2": 15.4,
+     "calc_b_cm": 10.549,
+     "calc_type_u_cm2": 6220.7,
+     "residual_type_u_cm2": -3.3
+    },
+    {
+     "a_cm": 180.0,
+     "b_cm": 10.99,
+     "b1_cm": 1.81,
+     "area_closed_cm2": 6128,
+     "area_type_u_cm2": 6116,
+     "calc_closed_cm2": 6142.6,
+     "residual_closed_cm2": 14.6,
+     "calc_b_cm": 11.011,
+     "calc_type_u_cm2": 6112.9,
+     "residual_type_u_cm2": -3.1
+    },
+    {
+     "a_cm": 170.0,
+     "b_cm": 11.45,
+     "b1_cm": 1.35,
+     "area_closed_cm2": 6016,
+     "area_type_u_cm2": 6004,
+     "calc_closed_cm2": 6030.2,
+     "residual_closed_cm2": 14.2,
+     "calc_b_cm": 11.474,
+     "calc_type_u_cm2": 6000.5,
+     "residual_type_u_cm2": -3.5
+    },
+    {
+     "a_cm": 160.0,
+     "b_cm": 11.91,
+     "b1_cm": 0.89,
+     "area_closed_cm2": 5899,
+     "area_type_u_cm2": 5887,
+     "calc_closed_cm2": 5913.1,
+     "residual_closed_cm2": 14.1,
+     "calc_b_cm": 11.936,
+     "calc_type_u_cm2": 5883.4,
+     "residual_type_u_cm2": -3.6
+    },
+    {
+     "a_cm": 150.0,
+     "b_cm": 12.37,
+     "b1_cm": 0.43,
+     "area_closed_cm2": 5777,
+     "area_type_u_cm2": 5766,
+     "calc_closed_cm2": 5791.5,
+     "residual_closed_cm2": 14.5,
+     "calc_b_cm": 12.399,
+     "calc_type_u_cm2": 5761.7,
+     "residual_type_u_cm2": -4.3
+    }
+   ],
+   "derived_at_max_width": {
+    "wing_soffit_slope": 0.0925,
+    "upper_fillet_web_tangent_height_cm": 117.039,
+    "upper_fillet_wing_tangent_x_cm": 70.6607,
+    "soffit_flat_half_width_cm": 36.8229,
+    "soffit_tangent_half_width_cm": 41.8071
+   },
+   "analytic_at_max_width": {
+    "CA-150": {
+     "area_mm2": 718335,
+     "yb_mm": 956.07,
+     "ixx_mm4": 226825704513
+    },
+    "CA-150-U": {
+     "area_mm2": 715364,
+     "yb_mm": 844.11,
+     "ixx_mm4": 225162758128
+    }
+   }
+  },
+  {
+   "b_at_max_cm": 5,
+   "b1_at_max_cm": 7.8,
+   "upper_fillet_radius_cm": 22,
+   "soffit_radius_cm": 5,
+   "bottom_slab_cm": 15,
+   "void_bottom_width_cm": 39.6,
+   "void_top_chamfer_cm": 10,
+   "void_bottom_chamfer_cm": 15,
+   "web_thickness_cm": 9,
+   "printed_base_width_cm": 83.8,
+   "printed_soffit_flat_cm": 73.8,
+   "family": "CA-180",
+   "pdf_page": 8,
+   "depth_cm": 180,
+   "wing_width_max_cm": 310,
+   "wing_width_min_cm": 150,
+   "void_height_cm": 153,
+   "void_top_width_cm": 69.4,
+   "web_straight_height_cm": 147.2,
+   "type_u": {
+    "gap_cm": 65.2,
+    "stub_cm": 7,
+    "web_thickness_cm": 11,
+    "bottom_slab_cm": 25,
+    "inner_bottom_radius_cm": 27,
+    "printed_wing_chain_cm": [
+     115.4,
+     7,
+     65.2,
+     7,
+     115.4
+    ],
+    "printed_web_straight_height_cm": 147
+   },
+   "provenance": "transcribed-with-convention",
+   "provenance_u": "transcribed-with-convention",
+   "table_label": "TC180",
+   "published_areas": [
+    {
+     "a_cm": 310.0,
+     "b_cm": 5.0,
+     "b1_cm": 7.8,
+     "area_closed_cm2": 8108,
+     "area_type_u_cm2": 8133,
+     "calc_closed_cm2": 7739.9,
+     "residual_closed_cm2": -368.1,
+     "calc_b_cm": 5.0,
+     "calc_type_u_cm2": 8098.9,
+     "residual_type_u_cm2": -34.1
+    },
+    {
+     "a_cm": 300.0,
+     "b_cm": 5.65,
+     "b1_cm": 7.15,
+     "area_closed_cm2": 8053,
+     "area_type_u_cm2": 8078,
+     "calc_closed_cm2": 7687.5,
+     "residual_closed_cm2": -365.5,
+     "calc_b_cm": 5.474,
+     "calc_type_u_cm2": 8046.5,
+     "residual_type_u_cm2": -31.5
+    },
+    {
+     "a_cm": 290.0,
+     "b_cm": 6.1,
+     "b1_cm": 6.7,
+     "area_closed_cm2": 7993,
+     "area_type_u_cm2": 8019,
+     "calc_closed_cm2": 7630.4,
+     "residual_closed_cm2": -362.6,
+     "calc_b_cm": 5.948,
+     "calc_type_u_cm2": 7989.4,
+     "residual_type_u_cm2": -29.6
+    },
+    {
+     "a_cm": 280.0,
+     "b_cm": 6.6,
+     "b1_cm": 6.2,
+     "area_closed_cm2": 7932,
+     "area_type_u_cm2": 7956,
+     "calc_closed_cm2": 7568.5,
+     "residual_closed_cm2": -363.5,
+     "calc_b_cm": 6.422,
+     "calc_type_u_cm2": 7927.6,
+     "residual_type_u_cm2": -28.4
+    },
+    {
+     "a_cm": 270.0,
+     "b_cm": 7.05,
+     "b1_cm": 5.75,
+     "area_closed_cm2": 7863,
+     "area_type_u_cm2": 7887,
+     "calc_closed_cm2": 7501.9,
+     "residual_closed_cm2": -361.1,
+     "calc_b_cm": 6.896,
+     "calc_type_u_cm2": 7861.0,
+     "residual_type_u_cm2": -26.0
+    },
+    {
+     "a_cm": 260.0,
+     "b_cm": 7.5,
+     "b1_cm": 5.3,
+     "area_closed_cm2": 7789,
+     "area_type_u_cm2": 7814,
+     "calc_closed_cm2": 7430.6,
+     "residual_closed_cm2": -358.4,
+     "calc_b_cm": 7.37,
+     "calc_type_u_cm2": 7789.7,
+     "residual_type_u_cm2": -24.3
+    },
+    {
+     "a_cm": 250.0,
+     "b_cm": 8.0,
+     "b1_cm": 4.8,
+     "area_closed_cm2": 7714,
+     "area_type_u_cm2": 7737,
+     "calc_closed_cm2": 7354.5,
+     "residual_closed_cm2": -359.5,
+     "calc_b_cm": 7.844,
+     "calc_type_u_cm2": 7713.6,
+     "residual_type_u_cm2": -23.4
+    },
+    {
+     "a_cm": 240.0,
+     "b_cm": 8.45,
+     "b1_cm": 4.35,
+     "area_closed_cm2": 7631,
+     "area_type_u_cm2": 7655,
+     "calc_closed_cm2": 7273.7,
+     "residual_closed_cm2": -357.3,
+     "calc_b_cm": 8.318,
+     "calc_type_u_cm2": 7632.8,
+     "residual_type_u_cm2": -22.2
+    },
+    {
+     "a_cm": 230.0,
+     "b_cm": 8.9,
+     "b1_cm": 3.9,
+     "area_closed_cm2": 7544,
+     "area_type_u_cm2": 7567,
+     "calc_closed_cm2": 7188.2,
+     "residual_closed_cm2": -355.8,
+     "calc_b_cm": 8.793,
+     "calc_type_u_cm2": 7547.2,
+     "residual_type_u_cm2": -19.8
+    },
+    {
+     "a_cm": 220.0,
+     "b_cm": 9.35,
+     "b1_cm": 3.45,
+     "area_closed_cm2": 7452,
+     "area_type_u_cm2": 7477,
+     "calc_closed_cm2": 7097.9,
+     "residual_closed_cm2": -354.1,
+     "calc_b_cm": 9.267,
+     "calc_type_u_cm2": 7456.9,
+     "residual_type_u_cm2": -20.1
+    },
+    {
+     "a_cm": 210.0,
+     "b_cm": 9.8,
+     "b1_cm": 3.0,
+     "area_closed_cm2": 7356,
+     "area_type_u_cm2": 7381,
+     "calc_closed_cm2": 7002.8,
+     "residual_closed_cm2": -353.2,
+     "calc_b_cm": 9.741,
+     "calc_type_u_cm2": 7361.9,
+     "residual_type_u_cm2": -19.1
+    },
+    {
+     "a_cm": 200.0,
+     "b_cm": 10.3,
+     "b1_cm": 2.5,
+     "area_closed_cm2": 7256,
+     "area_type_u_cm2": 7280,
+     "calc_closed_cm2": 6903.1,
+     "residual_closed_cm2": -352.9,
+     "calc_b_cm": 10.215,
+     "calc_type_u_cm2": 7262.1,
+     "residual_type_u_cm2": -17.9
+    },
+    {
+     "a_cm": 190.0,
+     "b_cm": 10.75,
+     "b1_cm": 2.05,
+     "area_closed_cm2": 7151,
+     "area_type_u_cm2": 7280,
+     "calc_closed_cm2": 6798.5,
+     "residual_closed_cm2": -352.5,
+     "calc_b_cm": 10.689,
+     "calc_type_u_cm2": 7157.6,
+     "residual_type_u_cm2": -122.4
+    },
+    {
+     "a_cm": 180.0,
+     "b_cm": 11.2,
+     "b1_cm": 1.6,
+     "area_closed_cm2": 7041,
+     "area_type_u_cm2": 7065,
+     "calc_closed_cm2": 6689.3,
+     "residual_closed_cm2": -351.7,
+     "calc_b_cm": 11.163,
+     "calc_type_u_cm2": 7048.3,
+     "residual_type_u_cm2": -16.7
+    },
+    {
+     "a_cm": 170.0,
+     "b_cm": 11.65,
+     "b1_cm": 1.15,
+     "area_closed_cm2": 6926,
+     "area_type_u_cm2": 6950,
+     "calc_closed_cm2": 6575.3,
+     "residual_closed_cm2": -350.7,
+     "calc_b_cm": 11.637,
+     "calc_type_u_cm2": 6934.3,
+     "residual_type_u_cm2": -15.7
+    },
+    {
+     "a_cm": 160.0,
+     "b_cm": 12.1,
+     "b1_cm": 0.7,
+     "area_closed_cm2": 6807,
+     "area_type_u_cm2": 6831,
+     "calc_closed_cm2": 6456.5,
+     "residual_closed_cm2": -350.5,
+     "calc_b_cm": 12.111,
+     "calc_type_u_cm2": 6815.6,
+     "residual_type_u_cm2": -15.4
+    },
+    {
+     "a_cm": 150.0,
+     "b_cm": 12.6,
+     "b1_cm": 0.2,
+     "area_closed_cm2": 6684,
+     "area_type_u_cm2": 6708,
+     "calc_closed_cm2": 6333.1,
+     "residual_closed_cm2": -350.9,
+     "calc_b_cm": 12.585,
+     "calc_type_u_cm2": 6692.1,
+     "residual_type_u_cm2": -15.9
+    }
+   ],
+   "derived_at_max_width": {
+    "wing_soffit_slope": 0.0948,
+    "upper_fillet_web_tangent_height_cm": 146.9947,
+    "upper_fillet_wing_tangent_x_cm": 72.7336,
+    "soffit_flat_half_width_cm": 36.8784,
+    "soffit_tangent_half_width_cm": 41.8635
+   },
+   "analytic_at_max_width": {
+    "CA-180": {
+     "area_mm2": 773986,
+     "yb_mm": 1133.09,
+     "ixx_mm4": 354213164569
+    },
+    "CA-180-U": {
+     "area_mm2": 809892,
+     "yb_mm": 968.93,
+     "ixx_mm4": 367840465177
+    }
+   }
+  },
+  {
+   "b_at_max_cm": 5,
+   "b1_at_max_cm": 7.1,
+   "upper_fillet_radius_cm": 20,
+   "soffit_radius_cm": 40,
+   "bottom_slab_cm": 20,
+   "void_bottom_width_cm": 83.8,
+   "void_top_chamfer_cm": 15,
+   "void_bottom_chamfer_cm": 25,
+   "web_thickness_cm": 17,
+   "printed_base_width_cm": 165.7,
+   "printed_soffit_flat_cm": 86.3,
+   "family": "B-400",
+   "pdf_page": 9,
+   "depth_cm": 160,
+   "wing_width_max_cm": 400,
+   "wing_width_min_cm": 230,
+   "void_height_cm": 125,
+   "void_top_width_cm": 124,
+   "web_straight_height_cm": 130.3,
+   "printed_soffit_arc_height_cm": 35.3,
+   "type_u": {
+    "gap_cm": 138,
+    "stub_cm": 12,
+    "web_thickness_cm": 15,
+    "bottom_slab_cm": 20,
+    "bottom_chamfer_cm": 25,
+    "top_chamfer_line_x_plus_y_cm": 206.1,
+    "printed_wing_chain_cm": [
+     119,
+     12,
+     138,
+     12,
+     119
+    ],
+    "printed_bottom_chain_cm": [
+     39.7,
+     86.3,
+     39.7
+    ]
+   },
+   "provenance": "transcribed-with-convention",
+   "provenance_u": "transcribed-with-convention",
+   "table_label": "B400",
+   "published_areas": [
+    {
+     "a_cm": 400.0,
+     "b_cm": 5.0,
+     "b1_cm": 7.1,
+     "area_closed_cm2": 12564,
+     "area_type_u_cm2": 9766,
+     "calc_closed_cm2": 12661.0,
+     "residual_closed_cm2": 97.0,
+     "calc_b_cm": 5.0,
+     "calc_type_u_cm2": 9760.0,
+     "residual_type_u_cm2": -6.0
+    },
+    {
+     "a_cm": 390.0,
+     "b_cm": 5.41,
+     "b1_cm": 6.69,
+     "area_closed_cm2": 12520,
+     "area_type_u_cm2": 9714,
+     "calc_closed_cm2": 12608.9,
+     "residual_closed_cm2": 88.9,
+     "calc_b_cm": 5.405,
+     "calc_type_u_cm2": 9708.0,
+     "residual_type_u_cm2": -6.0
+    },
+    {
+     "a_cm": 380.0,
+     "b_cm": 5.81,
+     "b1_cm": 6.29,
+     "area_closed_cm2": 12455,
+     "area_type_u_cm2": 9658,
+     "calc_closed_cm2": 12552.8,
+     "residual_closed_cm2": 97.8,
+     "calc_b_cm": 5.811,
+     "calc_type_u_cm2": 9651.9,
+     "residual_type_u_cm2": -6.1
+    },
+    {
+     "a_cm": 370.0,
+     "b_cm": 6.22,
+     "b1_cm": 5.88,
+     "area_closed_cm2": 12395,
+     "area_type_u_cm2": 9598,
+     "calc_closed_cm2": 12492.7,
+     "residual_closed_cm2": 97.7,
+     "calc_b_cm": 6.216,
+     "calc_type_u_cm2": 9591.8,
+     "residual_type_u_cm2": -6.2
+    },
+    {
+     "a_cm": 360.0,
+     "b_cm": 6.63,
+     "b1_cm": 5.47,
+     "area_closed_cm2": 12331,
+     "area_type_u_cm2": 9534,
+     "calc_closed_cm2": 12428.5,
+     "residual_closed_cm2": 97.5,
+     "calc_b_cm": 6.621,
+     "calc_type_u_cm2": 9527.6,
+     "residual_type_u_cm2": -6.4
+    },
+    {
+     "a_cm": 350.0,
+     "b_cm": 7.03,
+     "b1_cm": 5.07,
+     "area_closed_cm2": 12268,
+     "area_type_u_cm2": 9465,
+     "calc_closed_cm2": 12360.3,
+     "residual_closed_cm2": 92.3,
+     "calc_b_cm": 7.026,
+     "calc_type_u_cm2": 9459.4,
+     "residual_type_u_cm2": -5.6
+    },
+    {
+     "a_cm": 340.0,
+     "b_cm": 7.44,
+     "b1_cm": 4.66,
+     "area_closed_cm2": 12195,
+     "area_type_u_cm2": 9393,
+     "calc_closed_cm2": 12288.0,
+     "residual_closed_cm2": 93.0,
+     "calc_b_cm": 7.432,
+     "calc_type_u_cm2": 9387.1,
+     "residual_type_u_cm2": -5.9
+    },
+    {
+     "a_cm": 330.0,
+     "b_cm": 7.75,
+     "b1_cm": 4.35,
+     "area_closed_cm2": 12108,
+     "area_type_u_cm2": 9316,
+     "calc_closed_cm2": 12211.7,
+     "residual_closed_cm2": 103.7,
+     "calc_b_cm": 7.837,
+     "calc_type_u_cm2": 9310.7,
+     "residual_type_u_cm2": -5.3
+    },
+    {
+     "a_cm": 320.0,
+     "b_cm": 8.26,
+     "b1_cm": 3.84,
+     "area_closed_cm2": 12038,
+     "area_type_u_cm2": 9236,
+     "calc_closed_cm2": 12131.3,
+     "residual_closed_cm2": 93.3,
+     "calc_b_cm": 8.242,
+     "calc_type_u_cm2": 9230.4,
+     "residual_type_u_cm2": -5.6
+    },
+    {
+     "a_cm": 310.0,
+     "b_cm": 8.66,
+     "b1_cm": 3.44,
+     "area_closed_cm2": 11953,
+     "area_type_u_cm2": 9151,
+     "calc_closed_cm2": 12046.8,
+     "residual_closed_cm2": 93.8,
+     "calc_b_cm": 8.647,
+     "calc_type_u_cm2": 9145.9,
+     "residual_type_u_cm2": -5.1
+    },
+    {
+     "a_cm": 300.0,
+     "b_cm": 9.07,
+     "b1_cm": 3.03,
+     "area_closed_cm2": 11864,
+     "area_type_u_cm2": 9063,
+     "calc_closed_cm2": 11958.3,
+     "residual_closed_cm2": 94.3,
+     "calc_b_cm": 9.053,
+     "calc_type_u_cm2": 9057.4,
+     "residual_type_u_cm2": -5.6
+    },
+    {
+     "a_cm": 290.0,
+     "b_cm": 9.48,
+     "b1_cm": 2.62,
+     "area_closed_cm2": 11771,
+     "area_type_u_cm2": 8970,
+     "calc_closed_cm2": 11865.8,
+     "residual_closed_cm2": 94.8,
+     "calc_b_cm": 9.458,
+     "calc_type_u_cm2": 8964.9,
+     "residual_type_u_cm2": -5.1
+    },
+    {
+     "a_cm": 280.0,
+     "b_cm": 9.88,
+     "b1_cm": 2.22,
+     "area_closed_cm2": 11674,
+     "area_type_u_cm2": 8873,
+     "calc_closed_cm2": 11769.2,
+     "residual_closed_cm2": 95.2,
+     "calc_b_cm": 9.863,
+     "calc_type_u_cm2": 8868.2,
+     "residual_type_u_cm2": -4.8
+    },
+    {
+     "a_cm": 270.0,
+     "b_cm": 10.29,
+     "b1_cm": 1.81,
+     "area_closed_cm2": 11573,
+     "area_type_u_cm2": 8772,
+     "calc_closed_cm2": 11668.5,
+     "residual_closed_cm2": 95.5,
+     "calc_b_cm": 10.268,
+     "calc_type_u_cm2": 8767.6,
+     "residual_type_u_cm2": -4.4
+    },
+    {
+     "a_cm": 260.0,
+     "b_cm": 10.7,
+     "b1_cm": 1.4,
+     "area_closed_cm2": 11468,
+     "area_type_u_cm2": 8667,
+     "calc_closed_cm2": 11563.8,
+     "residual_closed_cm2": 95.8,
+     "calc_b_cm": 10.674,
+     "calc_type_u_cm2": 8662.9,
+     "residual_type_u_cm2": -4.1
+    },
+    {
+     "a_cm": 250.0,
+     "b_cm": 11.1,
+     "b1_cm": 1.0,
+     "area_closed_cm2": 11359,
+     "area_type_u_cm2": 8558,
+     "calc_closed_cm2": 11455.0,
+     "residual_closed_cm2": 96.0,
+     "calc_b_cm": 11.079,
+     "calc_type_u_cm2": 8554.1,
+     "residual_type_u_cm2": -3.9
+    },
+    {
+     "a_cm": 240.0,
+     "b_cm": 11.51,
+     "b1_cm": 0.59,
+     "area_closed_cm2": 11247,
+     "area_type_u_cm2": 8445,
+     "calc_closed_cm2": 11342.2,
+     "residual_closed_cm2": 95.2,
+     "calc_b_cm": 11.484,
+     "calc_type_u_cm2": 8441.3,
+     "residual_type_u_cm2": -3.7
+    },
+    {
+     "a_cm": 230.0,
+     "b_cm": 11.92,
+     "b1_cm": 0.18,
+     "area_closed_cm2": 11129,
+     "area_type_u_cm2": 8328,
+     "calc_closed_cm2": 11225.3,
+     "residual_closed_cm2": 96.3,
+     "calc_b_cm": 11.889,
+     "calc_type_u_cm2": 8324.4,
+     "residual_type_u_cm2": -3.6
+    }
+   ],
+   "derived_at_max_width": {
+    "wing_soffit_slope": 0.0811,
+    "upper_fillet_web_tangent_height_cm": 130.3252,
+    "upper_fillet_wing_tangent_x_cm": 112.4028,
+    "soffit_flat_half_width_cm": 43.1441,
+    "soffit_tangent_half_width_cm": 82.8647
+   },
+   "analytic_at_max_width": {
+    "B-400": {
+     "area_mm2": 1266095,
+     "yb_mm": 934.88,
+     "ixx_mm4": 451421456613
+    },
+    "B-400-U": {
+     "area_mm2": 976004,
+     "yb_mm": 794.71,
+     "ixx_mm4": 340317127404
+    }
+   }
+  }
+ ]
+}

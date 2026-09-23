@@ -32,6 +32,11 @@ R50 and R200 curved transitions and was not converted into a straight-sided
 polygon. The catalogue's partial 2023 NU dimensions should be superseded with
 the 2025 sheets before NU implementation or claims of current MTO approval.
 
+> **Update 23 September 2026:** SS107-13 to SS107-24 (June 2025) are now
+> downloaded and hash-recorded. NU900–NU2400 (eight depths) and the
+> 1220 mm box girders are implemented from them; see the
+> [Ontario extraction record](extraction-ontario-2026-09.md).
+
 Further official Canadian drawing leads:
 
 - [British Columbia, Volume 3 standard drawings](https://www2.gov.bc.ca/gov/content/transportation/transportation-infrastructure/engineering-standards-guidelines/structural/standards-procedures/volume-3), **D202 Standard Prestressed Concrete I Beams** (listing updated 25 March 2026). The PDF link needs a direct download and visual transcription.

@@ -33,6 +33,14 @@ pakistan-us-section-followup-2026-09
 aashto-cross-jurisdiction-followup-2026-09
 deep-search-korea-argentina-philippines-2026-09
 deep-search-brazil-2026-09
+extraction-wsdot-2026-09
+extraction-ontario-2026-09
+extraction-slovakia-vph-2026-09
+extraction-spain-hungary-2026-09
+extraction-netherlands-romania-2026-09
+extraction-civilcon-tum-2026-09
+extraction-nhai-nepal-2026-09
+extraction-china-indonesia-mexico-2026-09
 ```
 
 Download the structured records:
@@ -54,6 +62,14 @@ Download the structured records:
 - {download}`AASHTO-named international leads <../research/data/deep-search-aashto-global-2026-09.json>`
 - {download}`Korean, Argentine and Philippine follow-up leads <../research/data/deep-search-korea-argentina-philippines-2026-09.json>`
 - {download}`Brazilian Portuguese beam sources <../research/data/deep-search-brazil-2026-09.json>`
+- {download}`Extraction record: WSDOT WF, tub, bulb-tee, deck and slab girders <../research/data/extraction-wsdot-2026-09.json>`
+- {download}`Extraction record: Ontario MTO NU and box girders <../research/data/extraction-ontario-2026-09.json>`
+- {download}`Extraction record: Slovak VPH-PTMN girders and slab beams <../research/data/extraction-slovakia-vph-2026-09.json>`
+- {download}`Extraction record: Spanish HP-1 and Hungarian Ferrobeton <../research/data/extraction-spain-hungary-2026-09.json>`
+- {download}`Extraction record: Haitsma (Netherlands) and Romanian ASA girders <../research/data/extraction-netherlands-romania-2026-09.json>`
+- {download}`Extraction record: Civilcon T, U, Special U and M <../research/data/extraction-civilcon-tum-2026-09.json>`
+- {download}`Extraction record: NHAI NH 45-A / Delhi–Vadodara and Nepal DoR girders <../research/data/extraction-nhai-nepal-2026-09.json>`
+- {download}`Extraction record: Beijing 20BGQL2, WIKA and SEPSA extensions <../research/data/extraction-china-indonesia-mexico-2026-09.json>`
 
 Original publications retain their own copyright. Downloaded source PDFs
 are not distributed with the package. The reports retain URLs and, for

@@ -19,22 +19,30 @@ sources. The table below is only the implemented-family summary.
 | Jurisdiction | Module | Families | Evidence limits |
 |---|---|---|---|
 | Australia | `bridgebeams.aus` | Super-T T1–T5; I-girders 1–4 | AS5100.5 Appendix D; historical variants retained |
-| Canada (Ontario) | `bridgebeams.ca` | MTO S300/S400/S500 solid slabs | June 2025 standard drawings; Ontario-specific gross sections |
+| Canada (Ontario) | `bridgebeams.ca` | MTO S300/S400/S500 solid slabs; NU900–NU2400 (8); box girders B700–B1000 (8) | June 2025 SS107 drawings; NU fillets are exact tangent arcs; 915 mm boxes are DRAFT 2023 estimates |
 | Ireland | `bridgebeams.ie` | T, TY/TYE, Y/YE, U/SU, M/UMB, SY/SYE, MY/MYE, Solid Box, W | Source-specific exact and reconstructed profiles; SD class 4 discrepancies retained |
 | United Kingdom | `bridgebeams.uk` | Banagher producer range, shared with Ireland | Availability aliases retain the same profile IDs and geometry; not a separate national standard |
-| United States | `bridgebeams.us` | PCI AASHTO I-beams I–VI; MnDOT 14RB/18RB/22RB; WSDOT W42G/W50G/W58G/W74G | PCI November 2011 reference outlines match rounded published properties; state shapes use edition-specific official drawings |
+| United States | `bridgebeams.us` | PCI AASHTO I-beams I–VI; MnDOT 14RB/18RB/22RB; WSDOT W42G–W74G, WF36G–WF100G, U/UF tubs G4–G6, bulb tees, deck bulb tees, slabs | WF and U/UF G4/G5 reproduce 2025 WSDOT properties; G6, W*BTG and deck-tee residuals pinned; WF*BTG and 24/30 in slabs are estimates |
 | Belgium | `bridgebeams.be` | FEBE standardised I-beams | Flange thicknesses must be supplied by the designer |
 | Greece | `bridgebeams.gr` | Egnatia extended-I families | Published depth law/widths; flange thicknesses are design inputs |
-| India (NH 45-A project) | `bridgebeams.india` | Ch 50+473 midspan PSC I girder | Dimensioned NHAI feasibility drawing, PDF p50; one project profile, not a national standard or construction drawing |
+| India (NHAI projects) | `bridgebeams.india` | NH 45-A Ch 50+473 PSC I; NH 45-A Package II PSC/RCC 1300–2250 (7); Delhi–Vadodara PSC I | Final Feasibility Report drawings; RCC girders are reinforced, not prestressed; Delhi–Vadodara web width is a scan-measured estimate |
 | Japan | `bridgebeams.jp` | JIS/PCCEN AG/BG T-girders | Chubu drawing metadata; additional drawing audit is in the PDF report |
 | Korea | `bridgebeams.kr` | KHC PSC I-girders | Published 25/30/35 m data; 20/40 m sizes are extrapolated |
-| Mexico | `bridgebeams.mx` | SEPSA I-MODIFIED, II, III, IV, IV-MODIFIED, V, VI | Producer-specific metric profiles; published areas match within 50 mm² rounding |
+| Mexico | `bridgebeams.mx` | SEPSA I-girders (7); box and Type U (10); double tees (26); Nebraska (13) | Producer-specific; box table contradictions (CA-180, CA-135, B-400) pinned; Nebraska flange details estimated |
 | New Zealand | `bridgebeams.nz` | RR364 Super-T; I-beams; 587/650/900 hollow-core | Gross profiles; 650/900 outer units remain excluded |
 | Norway | `bridgebeams.no` | Five NTB and five KTB profiles | 15 mm bottom chamfers are reviewer-inferred |
 | Poland | `bridgebeams.pl` | Mosty-Łódź T12–T27 | Family-specific dimension/provenance metadata |
 | Qatar | `bridgebeams.qa` | Ashghal Q-girders T1–T5 | Documented reconstruction; maximum A/centroid/Ixx deviations 0.88%/0.85%/1.26% |
 | Russia | `bridgebeams.ru` | 3.503.1-81, 33 m I-beams | Fitted flange profile validated against producer volumes |
-| South Africa | `bridgebeams.za` | Civilcon I1–I20, Y1–Y8 | Reviewed source geometry; individual property discrepancies preserved |
+| South Africa | `bridgebeams.za` | Civilcon I1–I20, Y1–Y8, T1–T10, U (9), Special U (2), M2–M10 | T is transcribed; U, Special U and M are reconstructions fitted to published properties; individual table discrepancies preserved |
+| China (Beijing) | `bridgebeams.cn` | 20BGQL2 1800 mm urban-rail box, a = 0 and 300 mm | Dimensioned atlas section I–I; no published properties |
+| Hungary | `bridgebeams.hu` | Ferrobeton FP, FPT, ITG, FI-150 (14) | Producer catalogue; radii measured from vector drawings; FPT-45, ITG-70/110 and FI-150 are estimates |
+| Indonesia | `bridgebeams.id` | WIKA channel girders CG60–CG100; PC-I, PC-U, bulb tee | Channel girders fitted within 0.1%; I/U/bulb-tee outlines are estimates fitted to published A and I |
+| Nepal | `bridgebeams.np` | DoR precast RC I 1300/1700 | 2015 standard drawing; stated 12 mm chamfer convention |
+| Netherlands | `bridgebeams.nl` | Haitsma HKO, HKO-XL, HRP, HIP (50) | Producer tables; HRP/HIP keys fitted; HKO-XL outlines are estimates |
+| Romania | `bridgebeams.ro` | ASA Grindă pod 42/52/72/80/95/105 | Transcribed with R-fillet conventions; 52 and 105 estimated; no published properties |
+| Slovakia | `bridgebeams.sk` | VPH-PTMN girders and slab beams (12) | Published A/centroid/I; 2.1 m girder table conflict pinned |
+| Spain | `bridgebeams.es` | HP-1 Tipo I–VI | Historic 1977 standard; areas match published volumes within 0.05% |
 | Taiwan | `bridgebeams.tw` | Freeway Bureau Types IV–VIII | Dimensioned post-tensioned gross midspan profiles; analytically checked |
 | Thailand | `bridgebeams.th` | DOH IG-205 | Published 20 m standard drawing |
 | Türkiye | `bridgebeams.tr` | KGM-lineage I90/I120/I140/I170 | Worked-example profile assumptions; project drawing confirmation needed |
@@ -47,13 +55,19 @@ Pakistan's NHA Type A–H PSC I-girders are [documented research leads](pakistan
 
 ## India and research-only countries
 
-India has one project-specific midspan constructor,
-`bridgebeams.india.Nh45aPscISection("CH50+473-MID")`, traced to the NHAI
-NH 45-A drawing sheet 03/03. Its 2250 mm gross I outline is dimensioned,
-but the title block calls the issue a **Final Feasibility Report**. It does
-not establish a national standard, a built girder or approved final design.
-The separate {doc}`india-followup` records RDSO railway, MoRTH RCC, IRICEN
-and another NHAI project whose full contours remain unresolved.
+India has project-specific constructors from NHAI drawings:
+`bridgebeams.india.Nh45aPscISection("CH50+473-MID")`, the seven NH 45-A
+Package II outlines in `Nh45aIGirderSection`, and the Delhi–Vadodara
+`DelhiVadodaraPscISection`. Every source title block says **Final
+Feasibility Report**. They do not establish a national standard, a built
+girder or an approved final design. The separate {doc}`india-followup`
+records RDSO railway, MoRTH RCC and IRICEN leads.
+
+Every family added in the September 2026 extraction round exposes
+`provenance` (`transcribed`, `transcribed-with-convention`,
+`fitted-reconstruction` or `estimate`) and `source_status`. Check both
+before relying on a profile. The extraction records in {doc}`research`
+list each convention, estimate and pinned discrepancy.
 
 ## Expanded source collection
 

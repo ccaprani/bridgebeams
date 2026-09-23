@@ -1,0 +1,494 @@
+{
+ "source": {
+  "organisation": "Haitsma Beton",
+  "title_original": "HKO-ligger / HKO-XL-ligger (HKO HKO-XL folder)",
+  "url": "https://www.haitsma.nl/media/kbqasilf/hko-hko-xl-folder.pdf",
+  "local_file": "sources/expansion/europe-americas/nl_hko.pdf",
+  "sha256": "85d308096544126a912bf748c464dd2fde88206b436c2105b9683980274c4513",
+  "pdf_page": 2,
+  "printed_page": null,
+  "pdf_creation_date": "2021-04-14",
+  "source_status": "producer catalogue (PDF created 2021-04-14)",
+  "units": "mm (drawing and tables)",
+  "registry_id": "nl_hko"
+ },
+ "hko": {
+  "title_original": "HKO-ligger",
+  "table_heading_original": "Element, h.o.h. 1000 mm",
+  "provenance": "transcribed-with-convention",
+  "section_dimensions_mm": {
+   "width_at_top_of_flange_edge": 990,
+   "flange_chain": [
+    360,
+    270,
+    360
+   ],
+   "stem_width_at_theoretical_root": 270,
+   "root_level_above_soffit": 105,
+   "root_level_chain": [
+    88,
+    17
+   ],
+   "flange_edge_height": 75,
+   "edge_chamfer_chain": {
+    "flat_mm": 30,
+    "chamfer_horizontal_mm": 30,
+    "chamfer_rise_mm": 13
+   },
+   "side_face_draft": 5,
+   "soffit_corner_radius": 15,
+   "stem_height_drawn_for_HKO600": 495,
+   "top_width": "table column B (varies with H)",
+   "transverse_holes_original": "Sparingen ø75/105 h.o.h. 250 mm, centre 170 mm above soffit"
+  },
+  "published_properties": [
+   {
+    "section": "HKO300",
+    "H": 300,
+    "B": 354,
+    "Ab_mm2": 157000,
+    "v_mm": 110,
+    "I_printed": 1.2,
+    "I_mm4": 1200000000.0
+   },
+   {
+    "section": "HKO350",
+    "H": 350,
+    "B": 376,
+    "Ab_mm2": 175000,
+    "v_mm": 133,
+    "I_printed": 1.96,
+    "I_mm4": 1960000000.0
+   },
+   {
+    "section": "HKO400",
+    "H": 400,
+    "B": 397,
+    "Ab_mm2": 195000,
+    "v_mm": 157,
+    "I_printed": 2.99,
+    "I_mm4": 2990000000.0
+   },
+   {
+    "section": "HKO450",
+    "H": 450,
+    "B": 419,
+    "Ab_mm2": 215000,
+    "v_mm": 182,
+    "I_printed": 4.32,
+    "I_mm4": 4320000000.0
+   },
+   {
+    "section": "HKO500",
+    "H": 500,
+    "B": 441,
+    "Ab_mm2": 237000,
+    "v_mm": 209,
+    "I_printed": 6.01,
+    "I_mm4": 6010000000.0
+   },
+   {
+    "section": "HKO550",
+    "H": 550,
+    "B": 462,
+    "Ab_mm2": 259000,
+    "v_mm": 236,
+    "I_printed": 8.07,
+    "I_mm4": 8070000000.0
+   },
+   {
+    "section": "HKO600",
+    "H": 600,
+    "B": 484,
+    "Ab_mm2": 283000,
+    "v_mm": 265,
+    "I_printed": 10.57,
+    "I_mm4": 10570000000.0
+   },
+   {
+    "section": "HKO650",
+    "H": 650,
+    "B": 505,
+    "Ab_mm2": 307000,
+    "v_mm": 294,
+    "I_printed": 13.27,
+    "I_mm4": 13270000000.0
+   },
+   {
+    "section": "HKO700",
+    "H": 700,
+    "B": 527,
+    "Ab_mm2": 333000,
+    "v_mm": 324,
+    "I_printed": 16.95,
+    "I_mm4": 16950000000.0
+   }
+  ],
+  "inertia_multiplier_finding": "The printed I column header reads 'mm4' with no multiplier. The sharp and filleted outlines give I = 1.20e9 (HKO300, sharp) / 1.196e9 (model) and 10.56e9 (sharp) / 10.53e9 (model, HKO600) mm4, so the missing multiplier is x10^9. I_mm4 above applies it; I_printed is verbatim.",
+  "geometry_notes": [
+   "Origin at mid-soffit, y up. The stem faces are straight lines from the theoretical root point (+/-135, 105) to the table top width B at y = H; 495 = 600 - 105 for the drawn HKO600 and 484 = B(HKO600), confirming this reading.",
+   "990 is the width at the top of the 75 mm flange edge; the side face drafts 5 mm inward to the soffit (the '5' callout), with the dimensioned r=15 soffit corner.",
+   "Flange edge: 30 mm flat at y = 75, then a 30 mm wide chamfer rising 13 mm to (435, 88); the flange top then rises 17 mm to the theoretical root at (135, 105).",
+   "Stem/flange root fillet is drawn but undimensioned; ESTIMATE r = 15 mm (the dimensioned soffit radius; scaled drawing radius about 13 mm).",
+   "The ø75/105 transverse holes at 250 mm centres are intermittent and excluded from the gross section.",
+   "Published areas are three significant figures (+/-0.3%)."
+  ],
+  "pinned_discrepancies": {
+   "HKO650": "Printed I = 13.27 (x10^9) is about 1.5% below the model value 13.47e9 and breaks the smooth HKO600/HKO700 progression (10.57, 13.27, 16.95); treated as a source error, pinned in tests."
+  },
+  "residuals": [
+   {
+    "section": "HKO300",
+    "model_area_mm2": 156159,
+    "area_rel": -0.0054,
+    "model_centroid_mm": 110.5,
+    "centroid_diff_mm": 0.5,
+    "model_I_mm4": 1196000000.0,
+    "I_rel": -0.0034
+   },
+   {
+    "section": "HKO350",
+    "model_area_mm2": 174455,
+    "area_rel": -0.0031,
+    "model_centroid_mm": 133.0,
+    "centroid_diff_mm": -0.0,
+    "model_I_mm4": 1954400000.0,
+    "I_rel": -0.0029
+   },
+   {
+    "section": "HKO400",
+    "model_area_mm2": 193702,
+    "area_rel": -0.0067,
+    "model_centroid_mm": 157.1,
+    "centroid_diff_mm": 0.1,
+    "model_I_mm4": 2977900000.0,
+    "I_rel": -0.0041
+   },
+   {
+    "section": "HKO450",
+    "model_area_mm2": 214172,
+    "area_rel": -0.0039,
+    "model_centroid_mm": 182.7,
+    "centroid_diff_mm": 0.7,
+    "model_I_mm4": 4310900000.0,
+    "I_rel": -0.0021
+   },
+   {
+    "section": "HKO500",
+    "model_area_mm2": 235742,
+    "area_rel": -0.0053,
+    "model_centroid_mm": 209.4,
+    "centroid_diff_mm": 0.4,
+    "model_I_mm4": 5989500000.0,
+    "I_rel": -0.0034
+   },
+   {
+    "section": "HKO550",
+    "model_area_mm2": 258190,
+    "area_rel": -0.0031,
+    "model_centroid_mm": 236.9,
+    "centroid_diff_mm": 0.9,
+    "model_I_mm4": 8044700000.0,
+    "I_rel": -0.0031
+   },
+   {
+    "section": "HKO600",
+    "model_area_mm2": 281935,
+    "area_rel": -0.0038,
+    "model_centroid_mm": 265.4,
+    "centroid_diff_mm": 0.4,
+    "model_I_mm4": 10532000000.0,
+    "I_rel": -0.0036
+   },
+   {
+    "section": "HKO650",
+    "model_area_mm2": 306507,
+    "area_rel": -0.0016,
+    "model_centroid_mm": 294.3,
+    "centroid_diff_mm": 0.3,
+    "model_I_mm4": 13474000000.0,
+    "I_rel": 0.0154
+   },
+   {
+    "section": "HKO700",
+    "model_area_mm2": 332427,
+    "area_rel": -0.0017,
+    "model_centroid_mm": 323.9,
+    "centroid_diff_mm": -0.1,
+    "model_I_mm4": 16937000000.0,
+    "I_rel": -0.0008
+   }
+  ]
+ },
+ "hko_xl": {
+  "title_original": "HKO-XL-ligger",
+  "table_heading_original": "Element, h.o.h. 1200 mm",
+  "provenance": "estimate",
+  "printed_dimensions_mm": {
+   "width_chain": [
+    415,
+    350,
+    415
+   ],
+   "overall_width": 1180,
+   "depth_range_original": "min 300 max 800"
+  },
+  "estimated_outline_mm": {
+   "method": "Right-half outline scaled from the undimensioned 2400 dpi drawing (drawn at H = 800; 1.98 px/mm, horizontal and vertical scales agree within 0.1% against the printed 1180), then two offsets fitted by least squares to the 11 published A/Z/I rows: splay shifted inward 9 mm, flange-top band lowered 9 mm (fit 8.6/9.4, rounded).",
+   "soffit_half_width": 585,
+   "soffit_corner_radius": 10,
+   "edge_top": [
+    590,
+    82
+   ],
+   "edge_lip": [
+    [
+     583,
+     82
+    ],
+    [
+     583,
+     99
+    ]
+   ],
+   "flange_top": [
+    [
+     505,
+     99
+    ],
+    [
+     490,
+     118
+    ],
+    [
+     200,
+     131
+    ],
+    [
+     175,
+     137
+    ]
+   ],
+   "stem_half_width": 175,
+   "splay_start_y": 303,
+   "splay_end": [
+    308,
+    602
+   ],
+   "top_step": [
+    300,
+    620
+   ],
+   "top_half_width": 300,
+   "truncation": "Each HKO-XL size is the H=800 outline truncated at y = H (published area increments are 600 mm2/mm above about y = 620 and grow linearly below, supporting this)."
+  },
+  "published_properties": [
+   {
+    "section": "HKO-XL300",
+    "H": 300,
+    "Z_mm": 106,
+    "A_mm2": 202830,
+    "I_1e6mm4": 1318,
+    "Wo_1e6mm3": 12.4,
+    "Wb_1e6mm3": 6.8
+   },
+   {
+    "section": "HKO-XL350",
+    "H": 350,
+    "Z_mm": 125,
+    "A_mm2": 221430,
+    "I_1e6mm4": 2140,
+    "Wo_1e6mm3": 17.1,
+    "Wb_1e6mm3": 9.5
+   },
+   {
+    "section": "HKO-XL400",
+    "H": 400,
+    "Z_mm": 146,
+    "A_mm2": 242330,
+    "I_1e6mm4": 3344,
+    "Wo_1e6mm3": 22.8,
+    "Wb_1e6mm3": 13.2
+   },
+   {
+    "section": "HKO-XL450",
+    "H": 450,
+    "Z_mm": 171,
+    "A_mm2": 265380,
+    "I_1e6mm4": 4987,
+    "Wo_1e6mm3": 29.2,
+    "Wb_1e6mm3": 17.9
+   },
+   {
+    "section": "HKO-XL500",
+    "H": 500,
+    "Z_mm": 197,
+    "A_mm2": 290630,
+    "I_1e6mm4": 7134,
+    "Wo_1e6mm3": 36.2,
+    "Wb_1e6mm3": 23.6
+   },
+   {
+    "section": "HKO-XL550",
+    "H": 550,
+    "Z_mm": 226,
+    "A_mm2": 318330,
+    "I_1e6mm4": 9859,
+    "Wo_1e6mm3": 43.7,
+    "Wb_1e6mm3": 30.4
+   },
+   {
+    "section": "HKO-XL600",
+    "H": 600,
+    "Z_mm": 255,
+    "A_mm2": 347830,
+    "I_1e6mm4": 13169,
+    "Wo_1e6mm3": 51.6,
+    "Wb_1e6mm3": 38.2
+   },
+   {
+    "section": "HKO-XL650",
+    "H": 650,
+    "Z_mm": 285,
+    "A_mm2": 377830,
+    "I_1e6mm4": 16949,
+    "Wo_1e6mm3": 59.5,
+    "Wb_1e6mm3": 46.4
+   },
+   {
+    "section": "HKO-XL700",
+    "H": 700,
+    "Z_mm": 312,
+    "A_mm2": 405330,
+    "I_1e6mm4": 21096,
+    "Wo_1e6mm3": 67.5,
+    "Wb_1e6mm3": 54.4
+   },
+   {
+    "section": "HKO-XL750",
+    "H": 750,
+    "Z_mm": 341,
+    "A_mm2": 435330,
+    "I_1e6mm4": 25859,
+    "Wo_1e6mm3": 75.9,
+    "Wb_1e6mm3": 63.2
+   },
+   {
+    "section": "HKO-XL800",
+    "H": 800,
+    "Z_mm": 369,
+    "A_mm2": 465330,
+    "I_1e6mm4": 31158,
+    "Wo_1e6mm3": 84.5,
+    "Wb_1e6mm3": 72.2
+   }
+  ],
+  "geometry_notes": [
+   "HKO-XL prints only 415/350/415 = 1180 and 'min 300 max 800'. Every other coordinate is scaled from the drawing and two of them are fitted; the result is an estimate, not a transcription.",
+   "Z is the centroid height from the soffit (the table footnote: 'v (vs) = zwaartepuntsafstand ... vanaf onderzijde').",
+   "Published A increments: 650->700 is 27500 mm2 while 600->650, 700->750 and 750->800 are 30000; the fitted outline cannot follow that step and has about +0.5% area residual from HKO-XL700 upwards.",
+   "A hidden/overlapping text layer on the PDF page contains an older-looking HKO-XL table (e.g. '400 390 2,39E+05 147 3,28'); it is not rendered and is not used."
+  ],
+  "residuals": [
+   {
+    "section": "HKO-XL300",
+    "model_area_mm2": 203309,
+    "area_rel": 0.0024,
+    "model_centroid_mm": 106.6,
+    "centroid_diff_mm": 0.6,
+    "model_I_mm4": 1318800000.0,
+    "I_rel": 0.0006
+   },
+   {
+    "section": "HKO-XL350",
+    "model_area_mm2": 221792,
+    "area_rel": 0.0016,
+    "model_centroid_mm": 124.9,
+    "centroid_diff_mm": -0.1,
+    "model_I_mm4": 2134300000.0,
+    "I_rel": -0.0026
+   },
+   {
+    "section": "HKO-XL400",
+    "model_area_mm2": 242494,
+    "area_rel": 0.0007,
+    "model_centroid_mm": 146.2,
+    "centroid_diff_mm": 0.2,
+    "model_I_mm4": 3327700000.0,
+    "I_rel": -0.0049
+   },
+   {
+    "section": "HKO-XL450",
+    "model_area_mm2": 265421,
+    "area_rel": 0.0002,
+    "model_centroid_mm": 170.4,
+    "centroid_diff_mm": -0.6,
+    "model_I_mm4": 4964800000.0,
+    "I_rel": -0.0044
+   },
+   {
+    "section": "HKO-XL500",
+    "model_area_mm2": 290572,
+    "area_rel": -0.0002,
+    "model_centroid_mm": 196.8,
+    "centroid_diff_mm": -0.2,
+    "model_I_mm4": 7107300000.0,
+    "I_rel": -0.0037
+   },
+   {
+    "section": "HKO-XL550",
+    "model_area_mm2": 317947,
+    "area_rel": -0.0012,
+    "model_centroid_mm": 225.1,
+    "centroid_diff_mm": -0.9,
+    "model_I_mm4": 9814000000.0,
+    "I_rel": -0.0046
+   },
+   {
+    "section": "HKO-XL600",
+    "model_area_mm2": 347546,
+    "area_rel": -0.0008,
+    "model_centroid_mm": 254.9,
+    "centroid_diff_mm": -0.1,
+    "model_I_mm4": 13142000000.0,
+    "I_rel": -0.002
+   },
+   {
+    "section": "HKO-XL650",
+    "model_area_mm2": 377720,
+    "area_rel": -0.0003,
+    "model_centroid_mm": 284.4,
+    "centroid_diff_mm": -0.6,
+    "model_I_mm4": 16950000000.0,
+    "I_rel": 0.0
+   },
+   {
+    "section": "HKO-XL700",
+    "model_area_mm2": 407720,
+    "area_rel": 0.0059,
+    "model_centroid_mm": 313.2,
+    "centroid_diff_mm": 1.2,
+    "model_I_mm4": 21195000000.0,
+    "I_rel": 0.0047
+   },
+   {
+    "section": "HKO-XL750",
+    "model_area_mm2": 437720,
+    "area_rel": 0.0055,
+    "model_centroid_mm": 341.4,
+    "centroid_diff_mm": 0.4,
+    "model_I_mm4": 25941000000.0,
+    "I_rel": 0.0032
+   },
+   {
+    "section": "HKO-XL800",
+    "model_area_mm2": 467720,
+    "area_rel": 0.0051,
+    "model_centroid_mm": 369.2,
+    "centroid_diff_mm": 0.2,
+    "model_I_mm4": 31225000000.0,
+    "I_rel": 0.0022
+   }
+  ]
+ }
+}

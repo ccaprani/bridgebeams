@@ -3,9 +3,9 @@
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 122,
   "source_records": 233,
-  "implemented_countries": 18,
-  "implemented_profiles": 301,
-  "country_profile_assignments": 476,
+  "implemented_countries": 26,
+  "implemented_profiles": 556,
+  "country_profile_assignments": 731,
   "countries": [
     {
       "code": "AF",
@@ -786,6 +786,66 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection",
+          "name": "CaMtoBoxGirderSection",
+          "module": "bridgebeams.ca.mto_box_girder",
+          "count": 8,
+          "profiles": [
+            "B700-1220",
+            "B800-1220",
+            "B900-1220",
+            "B1000-1220",
+            "B700-915",
+            "B800-915",
+            "B900-915",
+            "B1000-915"
+          ],
+          "profile_ids": [
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B700-1220",
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B800-1220",
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B900-1220",
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B1000-1220",
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B700-915",
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B800-915",
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B900-915",
+            "bridgebeams.ca.mto_box_girder.CaMtoBoxGirderSection:B1000-915"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "CA"
+          ]
+        },
+        {
+          "id": "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection",
+          "name": "CaMtoNuGirderSection",
+          "module": "bridgebeams.ca.mto_nu_girder",
+          "count": 8,
+          "profiles": [
+            "NU900",
+            "NU1200",
+            "NU1400",
+            "NU1600",
+            "NU1800",
+            "NU1900",
+            "NU2000",
+            "NU2400"
+          ],
+          "profile_ids": [
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU900",
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU1200",
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU1400",
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU1600",
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU1800",
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU1900",
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU2000",
+            "bridgebeams.ca.mto_nu_girder.CaMtoNuGirderSection:NU2400"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "CA"
+          ]
+        },
+        {
           "id": "bridgebeams.ca.mto_solid_slab.CaMtoSolidSlabSection",
           "name": "CaMtoSolidSlabSection",
           "module": "bridgebeams.ca.mto_solid_slab",
@@ -806,7 +866,7 @@
           ]
         }
       ],
-      "count": 3,
+      "count": 19,
       "source_count": 5,
       "researched": true
     },
@@ -865,6 +925,73 @@
       "families": [],
       "count": 0,
       "source_count": 1,
+      "researched": true
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "sources": [
+        {
+          "title": "Consultation on standard drawings for precast prestressed concrete T girders",
+          "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/t20220329_10565851.html",
+          "status": "source-confirmed",
+          "registry": "asia-africa-sources.json",
+          "id": "CN-CQ-T-DRAFT-2022",
+          "family_names": [
+            "20/30/40m T girders"
+          ],
+          "title_original": "\u5173\u4e8e\u300a\u88c5\u914d\u5f0f\u9884\u5e94\u529b\u6df7\u51dd\u571fT\u6881\u901a\u7528\u56fe\u300b\u7684\u516c\u793a"
+        },
+        {
+          "title": "Precast prestressed T-girder standard drawings, 30m, C series",
+          "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/W020220329617790453573.pdf",
+          "status": "access-blocked",
+          "registry": "asia-africa-sources.json",
+          "id": "CN-CQ-T30-C-DRAWINGS",
+          "family_names": [
+            "T30"
+          ],
+          "title_original": "\u88c5\u914d\u5f0f\u9884\u5e94\u529b\u6df7\u51dd\u571fT\u6881\u901a\u7528\u56fe"
+        },
+        {
+          "title": "20BGQL2 single-track post-tensioned precast box girders for urban rail at up to 100 km/h",
+          "url": "https://ghzrzyw.beijing.gov.cn/biaozhunguanli/bzgj/tytj/202105/P020210527325354365083.pdf",
+          "status": "partial_dimensions",
+          "registry": "deep-search-asia-africa-2026-09.json",
+          "id": "CN-BEIJING-20BGQL2",
+          "language": "Simplified Chinese",
+          "source_type": "transport_authority_standard_atlas",
+          "locator": "PDF p9/printed p1 design note; PDF p22/printed p14 longitudinal section; PDF p23/printed p15 cross-sections I\u2013I, II\u2013II and III\u2013III plus span table",
+          "family_names": [
+            "20BGQL2 25 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881",
+            "20BGQL2 30 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881",
+            "20BGQL2 32 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881"
+          ],
+          "title_original": "20BGQL2 \u65f6\u901f100\u516c\u91cc\u53ca\u4ee5\u4e0b\u57ce\u5e02\u8f68\u9053\u4ea4\u901a\u540e\u5f20\u6cd5\u9884\u5e94\u529b\u6df7\u51dd\u571f\u5355\u7ebf\u9884\u5236\u7bb1\u6881"
+        }
+      ],
+      "families": [
+        {
+          "id": "bridgebeams.cn.beijing_box.Beijing20bgql2BoxSection",
+          "name": "Beijing20bgql2BoxSection",
+          "module": "bridgebeams.cn.beijing_box",
+          "count": 2,
+          "profiles": [
+            "a=0",
+            "a=300"
+          ],
+          "profile_ids": [
+            "bridgebeams.cn.beijing_box.Beijing20bgql2BoxSection:a=0",
+            "bridgebeams.cn.beijing_box.Beijing20bgql2BoxSection:a=300"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "CN"
+          ]
+        }
+      ],
+      "count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -1809,8 +1936,93 @@
           "title_original": "ITG jel\u0171 fesz\u00edtett h\u00eddgerenda csal\u00e1d"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.hu.ferrobeton.FerrobetonFi150Section",
+          "name": "FerrobetonFi150Section",
+          "module": "bridgebeams.hu.ferrobeton",
+          "count": 1,
+          "profiles": [
+            "FI-150"
+          ],
+          "profile_ids": [
+            "bridgebeams.hu.ferrobeton.FerrobetonFi150Section:FI-150"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "HU"
+          ]
+        },
+        {
+          "id": "bridgebeams.hu.ferrobeton.FerrobetonFpSection",
+          "name": "FerrobetonFpSection",
+          "module": "bridgebeams.hu.ferrobeton",
+          "count": 3,
+          "profiles": [
+            "FP-20A",
+            "FP-30A",
+            "FP-37A"
+          ],
+          "profile_ids": [
+            "bridgebeams.hu.ferrobeton.FerrobetonFpSection:FP-20A",
+            "bridgebeams.hu.ferrobeton.FerrobetonFpSection:FP-30A",
+            "bridgebeams.hu.ferrobeton.FerrobetonFpSection:FP-37A"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "HU"
+          ]
+        },
+        {
+          "id": "bridgebeams.hu.ferrobeton.FerrobetonFptSection",
+          "name": "FerrobetonFptSection",
+          "module": "bridgebeams.hu.ferrobeton",
+          "count": 7,
+          "profiles": [
+            "FPT-45",
+            "FPT-70",
+            "FPT-70/50",
+            "FPT-80",
+            "FPT-90",
+            "FPT-100",
+            "FPT-130"
+          ],
+          "profile_ids": [
+            "bridgebeams.hu.ferrobeton.FerrobetonFptSection:FPT-45",
+            "bridgebeams.hu.ferrobeton.FerrobetonFptSection:FPT-70",
+            "bridgebeams.hu.ferrobeton.FerrobetonFptSection:FPT-70/50",
+            "bridgebeams.hu.ferrobeton.FerrobetonFptSection:FPT-80",
+            "bridgebeams.hu.ferrobeton.FerrobetonFptSection:FPT-90",
+            "bridgebeams.hu.ferrobeton.FerrobetonFptSection:FPT-100",
+            "bridgebeams.hu.ferrobeton.FerrobetonFptSection:FPT-130"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "HU"
+          ]
+        },
+        {
+          "id": "bridgebeams.hu.ferrobeton.FerrobetonItgSection",
+          "name": "FerrobetonItgSection",
+          "module": "bridgebeams.hu.ferrobeton",
+          "count": 3,
+          "profiles": [
+            "ITG-70",
+            "ITG-90",
+            "ITG-110"
+          ],
+          "profile_ids": [
+            "bridgebeams.hu.ferrobeton.FerrobetonItgSection:ITG-70",
+            "bridgebeams.hu.ferrobeton.FerrobetonItgSection:ITG-90",
+            "bridgebeams.hu.ferrobeton.FerrobetonItgSection:ITG-110"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "HU"
+          ]
+        }
+      ],
+      "count": 14,
       "source_count": 4,
       "researched": true
     },
@@ -1903,6 +2115,50 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.india.nhai_i_girders.DelhiVadodaraPscISection",
+          "name": "DelhiVadodaraPscISection",
+          "module": "bridgebeams.india.nhai_i_girders",
+          "count": 1,
+          "profiles": [
+            "KM37+744-MID"
+          ],
+          "profile_ids": [
+            "bridgebeams.india.nhai_i_girders.DelhiVadodaraPscISection:KM37+744-MID"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IN"
+          ]
+        },
+        {
+          "id": "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection",
+          "name": "Nh45aIGirderSection",
+          "module": "bridgebeams.india.nhai_i_girders",
+          "count": 7,
+          "profiles": [
+            "PSC-1500",
+            "PSC-2000",
+            "RCC-1300",
+            "RCC-1400",
+            "RCC-1500",
+            "RCC-2000",
+            "RCC-2250"
+          ],
+          "profile_ids": [
+            "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection:PSC-1500",
+            "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection:PSC-2000",
+            "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection:RCC-1300",
+            "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection:RCC-1400",
+            "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection:RCC-1500",
+            "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection:RCC-2000",
+            "bridgebeams.india.nhai_i_girders.Nh45aIGirderSection:RCC-2250"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "IN"
+          ]
+        },
+        {
           "id": "bridgebeams.india.nhai_nh45a_psc_i.Nh45aPscISection",
           "name": "Nh45aPscISection",
           "module": "bridgebeams.india.nhai_nh45a_psc_i",
@@ -1919,7 +2175,7 @@
           ]
         }
       ],
-      "count": 1,
+      "count": 9,
       "source_count": 6,
       "researched": true
     },
@@ -2004,8 +2260,97 @@
           "title_original": "Analisis Perbandingan Kapasitas Struktur Beton Prategang Penampang PCI Girder dengan PCU Girder (Studi Kasus Proyek Pembangunan KA Elevated Solo Balapan \u2013 Kadipiro Fase 1 Sta.105+950 S/d Sta.106+070)"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.id.wika_girders.WikaBulbTeeSection",
+          "name": "WikaBulbTeeSection",
+          "module": "bridgebeams.id.wika_girders",
+          "count": 1,
+          "profiles": [
+            "H220"
+          ],
+          "profile_ids": [
+            "bridgebeams.id.wika_girders.WikaBulbTeeSection:H220"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ID"
+          ]
+        },
+        {
+          "id": "bridgebeams.id.wika_girders.WikaChannelGirderSection",
+          "name": "WikaChannelGirderSection",
+          "module": "bridgebeams.id.wika_girders",
+          "count": 4,
+          "profiles": [
+            "CG60",
+            "CG70",
+            "CG80",
+            "CG100"
+          ],
+          "profile_ids": [
+            "bridgebeams.id.wika_girders.WikaChannelGirderSection:CG60",
+            "bridgebeams.id.wika_girders.WikaChannelGirderSection:CG70",
+            "bridgebeams.id.wika_girders.WikaChannelGirderSection:CG80",
+            "bridgebeams.id.wika_girders.WikaChannelGirderSection:CG100"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ID"
+          ]
+        },
+        {
+          "id": "bridgebeams.id.wika_girders.WikaPcIGirderSection",
+          "name": "WikaPcIGirderSection",
+          "module": "bridgebeams.id.wika_girders",
+          "count": 5,
+          "profiles": [
+            "H90",
+            "H125",
+            "H160",
+            "H170",
+            "H210"
+          ],
+          "profile_ids": [
+            "bridgebeams.id.wika_girders.WikaPcIGirderSection:H90",
+            "bridgebeams.id.wika_girders.WikaPcIGirderSection:H125",
+            "bridgebeams.id.wika_girders.WikaPcIGirderSection:H160",
+            "bridgebeams.id.wika_girders.WikaPcIGirderSection:H170",
+            "bridgebeams.id.wika_girders.WikaPcIGirderSection:H210"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ID"
+          ]
+        },
+        {
+          "id": "bridgebeams.id.wika_girders.WikaPcUGirderSection",
+          "name": "WikaPcUGirderSection",
+          "module": "bridgebeams.id.wika_girders",
+          "count": 6,
+          "profiles": [
+            "H120",
+            "H140",
+            "H165",
+            "H185",
+            "H210",
+            "H230"
+          ],
+          "profile_ids": [
+            "bridgebeams.id.wika_girders.WikaPcUGirderSection:H120",
+            "bridgebeams.id.wika_girders.WikaPcUGirderSection:H140",
+            "bridgebeams.id.wika_girders.WikaPcUGirderSection:H165",
+            "bridgebeams.id.wika_girders.WikaPcUGirderSection:H185",
+            "bridgebeams.id.wika_girders.WikaPcUGirderSection:H210",
+            "bridgebeams.id.wika_girders.WikaPcUGirderSection:H230"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ID"
+          ]
+        }
+      ],
+      "count": 16,
       "source_count": 5,
       "researched": true
     },
@@ -3387,6 +3732,106 @@
       ],
       "families": [
         {
+          "id": "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection",
+          "name": "SepsaBoxGirderSection",
+          "module": "bridgebeams.mx.sepsa_box",
+          "count": 10,
+          "profiles": [
+            "CA-85",
+            "CA-115",
+            "CA-135",
+            "CA-150",
+            "CA-180",
+            "B-400",
+            "CA-135-U",
+            "CA-150-U",
+            "CA-180-U",
+            "B-400-U"
+          ],
+          "profile_ids": [
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-85",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-115",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-135",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-150",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-180",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:B-400",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-135-U",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-150-U",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:CA-180-U",
+            "bridgebeams.mx.sepsa_box.SepsaBoxGirderSection:B-400-U"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "MX"
+          ]
+        },
+        {
+          "id": "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection",
+          "name": "SepsaDoubleTeeSection",
+          "module": "bridgebeams.mx.sepsa_double_tee",
+          "count": 26,
+          "profiles": [
+            "LIGERA-85",
+            "LIGERA-80",
+            "LIGERA-75",
+            "LIGERA-70",
+            "LIGERA-65",
+            "LIGERA-60",
+            "LIGERA-55",
+            "LIGERA-50",
+            "LIGERA-45",
+            "PESADA-85",
+            "PESADA-80",
+            "PESADA-75",
+            "PESADA-70",
+            "PESADA-65",
+            "PESADA-60",
+            "PESADA-55",
+            "PESADA-50",
+            "PESADA-45",
+            "AMERICANA-81",
+            "AMERICANA-75",
+            "AMERICANA-70",
+            "AMERICANA-65",
+            "AMERICANA-60",
+            "AMERICANA-55",
+            "AMERICANA-50",
+            "AMERICANA-45"
+          ],
+          "profile_ids": [
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-85",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-80",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-75",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-70",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-65",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-60",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-55",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-50",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:LIGERA-45",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-85",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-80",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-75",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-70",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-65",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-60",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-55",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-50",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:PESADA-45",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-81",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-75",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-70",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-65",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-60",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-55",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-50",
+            "bridgebeams.mx.sepsa_double_tee.SepsaDoubleTeeSection:AMERICANA-45"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "MX"
+          ]
+        },
+        {
           "id": "bridgebeams.mx.sepsa_i_girder.SepsaIGirderSection",
           "name": "SepsaIGirderSection",
           "module": "bridgebeams.mx.sepsa_i_girder",
@@ -3413,9 +3858,49 @@
           "jurisdictions": [
             "MX"
           ]
+        },
+        {
+          "id": "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection",
+          "name": "SepsaNebraskaSection",
+          "module": "bridgebeams.mx.sepsa_nebraska",
+          "count": 13,
+          "profiles": [
+            "135-W18",
+            "180-W18",
+            "180-W20",
+            "200-ALERO-ESPECIAL-W18",
+            "200-ALERO-ESPECIAL-W20",
+            "210-W18",
+            "210-W20",
+            "220-W18",
+            "220-W20",
+            "240-W18",
+            "240-W20",
+            "240-BASE-ESPECIAL-W18",
+            "240-BASE-ESPECIAL-W20"
+          ],
+          "profile_ids": [
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:135-W18",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:180-W18",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:180-W20",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:200-ALERO-ESPECIAL-W18",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:200-ALERO-ESPECIAL-W20",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:210-W18",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:210-W20",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:220-W18",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:220-W20",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:240-W18",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:240-W20",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:240-BASE-ESPECIAL-W18",
+            "bridgebeams.mx.sepsa_nebraska.SepsaNebraskaSection:240-BASE-ESPECIAL-W20"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "MX"
+          ]
         }
       ],
-      "count": 7,
+      "count": 56,
       "source_count": 4,
       "researched": true
     },
@@ -3613,8 +4098,27 @@
           "title_original": "Standard Superstructures Drawings For Road Bridges"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.np.precast_rc_i.DorPrecastRcISection",
+          "name": "DorPrecastRcISection",
+          "module": "bridgebeams.np.precast_rc_i",
+          "count": 2,
+          "profiles": [
+            "1300",
+            "1700"
+          ],
+          "profile_ids": [
+            "bridgebeams.np.precast_rc_i.DorPrecastRcISection:1300",
+            "bridgebeams.np.precast_rc_i.DorPrecastRcISection:1700"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "NP"
+          ]
+        }
+      ],
+      "count": 2,
       "source_count": 3,
       "researched": true
     },
@@ -3744,8 +4248,165 @@
           "title_original": "HMP-ligger"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.nl.hrp_hip.HaitsmaHipSection",
+          "name": "HaitsmaHipSection",
+          "module": "bridgebeams.nl.hrp_hip",
+          "count": 18,
+          "profiles": [
+            "HIP1200-natte-knoop",
+            "HIP1300-natte-knoop",
+            "HIP1400-natte-knoop",
+            "HIP1500-natte-knoop",
+            "HIP1600-natte-knoop",
+            "HIP1700-natte-knoop",
+            "HIP1800-natte-knoop",
+            "HIP1900-natte-knoop",
+            "HIP2000-natte-knoop",
+            "HIP1200-druklaag",
+            "HIP1300-druklaag",
+            "HIP1400-druklaag",
+            "HIP1500-druklaag",
+            "HIP1600-druklaag",
+            "HIP1700-druklaag",
+            "HIP1800-druklaag",
+            "HIP1900-druklaag",
+            "HIP2000-druklaag"
+          ],
+          "profile_ids": [
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1200-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1300-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1400-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1500-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1600-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1700-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1800-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1900-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP2000-natte-knoop",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1200-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1300-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1400-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1500-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1600-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1700-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1800-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP1900-druklaag",
+            "bridgebeams.nl.hrp_hip.HaitsmaHipSection:HIP2000-druklaag"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "NL"
+          ]
+        },
+        {
+          "id": "bridgebeams.nl.hko.HaitsmaHkoSection",
+          "name": "HaitsmaHkoSection",
+          "module": "bridgebeams.nl.hko",
+          "count": 9,
+          "profiles": [
+            "HKO300",
+            "HKO350",
+            "HKO400",
+            "HKO450",
+            "HKO500",
+            "HKO550",
+            "HKO600",
+            "HKO650",
+            "HKO700"
+          ],
+          "profile_ids": [
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO300",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO350",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO400",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO450",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO500",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO550",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO600",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO650",
+            "bridgebeams.nl.hko.HaitsmaHkoSection:HKO700"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "NL"
+          ]
+        },
+        {
+          "id": "bridgebeams.nl.hko.HaitsmaHkoXlSection",
+          "name": "HaitsmaHkoXlSection",
+          "module": "bridgebeams.nl.hko",
+          "count": 11,
+          "profiles": [
+            "HKO-XL300",
+            "HKO-XL350",
+            "HKO-XL400",
+            "HKO-XL450",
+            "HKO-XL500",
+            "HKO-XL550",
+            "HKO-XL600",
+            "HKO-XL650",
+            "HKO-XL700",
+            "HKO-XL750",
+            "HKO-XL800"
+          ],
+          "profile_ids": [
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL300",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL350",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL400",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL450",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL500",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL550",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL600",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL650",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL700",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL750",
+            "bridgebeams.nl.hko.HaitsmaHkoXlSection:HKO-XL800"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "NL"
+          ]
+        },
+        {
+          "id": "bridgebeams.nl.hrp_hip.HaitsmaHrpSection",
+          "name": "HaitsmaHrpSection",
+          "module": "bridgebeams.nl.hrp_hip",
+          "count": 12,
+          "profiles": [
+            "HRP500",
+            "HRP600",
+            "HRP700",
+            "HRP800",
+            "HRP900",
+            "HRP1000",
+            "HRP1100",
+            "HRP1200",
+            "HRP1300",
+            "HRP1400",
+            "HRP1500",
+            "HRP1600"
+          ],
+          "profile_ids": [
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP500",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP600",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP700",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP800",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP900",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP1000",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP1100",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP1200",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP1300",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP1400",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP1500",
+            "bridgebeams.nl.hrp_hip.HaitsmaHrpSection:HRP1600"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "NL"
+          ]
+        }
+      ],
+      "count": 50,
       "source_count": 8,
       "researched": true
     },
@@ -4207,54 +4868,6 @@
       "researched": true
     },
     {
-      "code": "CN",
-      "name": "People's Republic of China",
-      "sources": [
-        {
-          "title": "Consultation on standard drawings for precast prestressed concrete T girders",
-          "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/t20220329_10565851.html",
-          "status": "source-confirmed",
-          "registry": "asia-africa-sources.json",
-          "id": "CN-CQ-T-DRAFT-2022",
-          "family_names": [
-            "20/30/40m T girders"
-          ],
-          "title_original": "\u5173\u4e8e\u300a\u88c5\u914d\u5f0f\u9884\u5e94\u529b\u6df7\u51dd\u571fT\u6881\u901a\u7528\u56fe\u300b\u7684\u516c\u793a"
-        },
-        {
-          "title": "Precast prestressed T-girder standard drawings, 30m, C series",
-          "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/W020220329617790453573.pdf",
-          "status": "access-blocked",
-          "registry": "asia-africa-sources.json",
-          "id": "CN-CQ-T30-C-DRAWINGS",
-          "family_names": [
-            "T30"
-          ],
-          "title_original": "\u88c5\u914d\u5f0f\u9884\u5e94\u529b\u6df7\u51dd\u571fT\u6881\u901a\u7528\u56fe"
-        },
-        {
-          "title": "20BGQL2 single-track post-tensioned precast box girders for urban rail at up to 100 km/h",
-          "url": "https://ghzrzyw.beijing.gov.cn/biaozhunguanli/bzgj/tytj/202105/P020210527325354365083.pdf",
-          "status": "partial_dimensions",
-          "registry": "deep-search-asia-africa-2026-09.json",
-          "id": "CN-BEIJING-20BGQL2",
-          "language": "Simplified Chinese",
-          "source_type": "transport_authority_standard_atlas",
-          "locator": "PDF p9/printed p1 design note; PDF p22/printed p14 longitudinal section; PDF p23/printed p15 cross-sections I\u2013I, II\u2013II and III\u2013III plus span table",
-          "family_names": [
-            "20BGQL2 25 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881",
-            "20BGQL2 30 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881",
-            "20BGQL2 32 m \u5355\u7ebf\u9884\u5236\u7bb1\u6881"
-          ],
-          "title_original": "20BGQL2 \u65f6\u901f100\u516c\u91cc\u53ca\u4ee5\u4e0b\u57ce\u5e02\u8f68\u9053\u4ea4\u901a\u540e\u5f20\u6cd5\u9884\u5e94\u529b\u6df7\u51dd\u571f\u5355\u7ebf\u9884\u5236\u7bb1\u6881"
-        }
-      ],
-      "families": [],
-      "count": 0,
-      "source_count": 3,
-      "researched": true
-    },
-    {
       "code": "PE",
       "name": "Peru",
       "sources": [
@@ -4629,8 +5242,35 @@
           "title_original": "Elemente prefabricate pentru infrastructura rutier\u0103"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.ro.asa.AsaGrindaPodSection",
+          "name": "AsaGrindaPodSection",
+          "module": "bridgebeams.ro.asa",
+          "count": 6,
+          "profiles": [
+            "42",
+            "52",
+            "72",
+            "80",
+            "95",
+            "105"
+          ],
+          "profile_ids": [
+            "bridgebeams.ro.asa.AsaGrindaPodSection:42",
+            "bridgebeams.ro.asa.AsaGrindaPodSection:52",
+            "bridgebeams.ro.asa.AsaGrindaPodSection:72",
+            "bridgebeams.ro.asa.AsaGrindaPodSection:80",
+            "bridgebeams.ro.asa.AsaGrindaPodSection:95",
+            "bridgebeams.ro.asa.AsaGrindaPodSection:105"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "RO"
+          ]
+        }
+      ],
+      "count": 6,
       "source_count": 2,
       "researched": true
     },
@@ -4949,8 +5589,61 @@
           "title_original": "Mostn\u00e9 predp\u00e4t\u00e9 prefabrikovan\u00e9 nosn\u00edky DPS VP I/10 12-21 m"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.sk.vph_ptmn.VphGirderSection",
+          "name": "VphGirderSection",
+          "module": "bridgebeams.sk.vph_ptmn",
+          "count": 6,
+          "profiles": [
+            "2016-T",
+            "2010-I-1.2",
+            "2016-I",
+            "2010-I-1.4",
+            "2010-R2-1.9",
+            "2010-R2-2.1"
+          ],
+          "profile_ids": [
+            "bridgebeams.sk.vph_ptmn.VphGirderSection:2016-T",
+            "bridgebeams.sk.vph_ptmn.VphGirderSection:2010-I-1.2",
+            "bridgebeams.sk.vph_ptmn.VphGirderSection:2016-I",
+            "bridgebeams.sk.vph_ptmn.VphGirderSection:2010-I-1.4",
+            "bridgebeams.sk.vph_ptmn.VphGirderSection:2010-R2-1.9",
+            "bridgebeams.sk.vph_ptmn.VphGirderSection:2010-R2-2.1"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "SK"
+          ]
+        },
+        {
+          "id": "bridgebeams.sk.vph_ptmn.VphSlabBeamSection",
+          "name": "VphSlabBeamSection",
+          "module": "bridgebeams.sk.vph_ptmn",
+          "count": 6,
+          "profiles": [
+            "2016-PM11-K",
+            "2016-PM11-M",
+            "2016-PM13-K",
+            "2016-PM13-M",
+            "2016-PM15-K",
+            "2016-PM15-M"
+          ],
+          "profile_ids": [
+            "bridgebeams.sk.vph_ptmn.VphSlabBeamSection:2016-PM11-K",
+            "bridgebeams.sk.vph_ptmn.VphSlabBeamSection:2016-PM11-M",
+            "bridgebeams.sk.vph_ptmn.VphSlabBeamSection:2016-PM13-K",
+            "bridgebeams.sk.vph_ptmn.VphSlabBeamSection:2016-PM13-M",
+            "bridgebeams.sk.vph_ptmn.VphSlabBeamSection:2016-PM15-K",
+            "bridgebeams.sk.vph_ptmn.VphSlabBeamSection:2016-PM15-M"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "SK"
+          ]
+        }
+      ],
+      "count": 12,
       "source_count": 4,
       "researched": true
     },
@@ -5132,6 +5825,122 @@
           ]
         },
         {
+          "id": "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection",
+          "name": "CivilconMBeamSection",
+          "module": "bridgebeams.za.civilcon_m_beam",
+          "count": 9,
+          "profiles": [
+            "M2",
+            "M3",
+            "M4",
+            "M5",
+            "M6",
+            "M7",
+            "M8",
+            "M9",
+            "M10"
+          ],
+          "profile_ids": [
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M2",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M3",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M4",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M5",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M6",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M7",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M8",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M9",
+            "bridgebeams.za.civilcon_m_beam.CivilconMBeamSection:M10"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ZA"
+          ]
+        },
+        {
+          "id": "bridgebeams.za.civilcon_special_u_beam.CivilconSpecialUBeamSection",
+          "name": "CivilconSpecialUBeamSection",
+          "module": "bridgebeams.za.civilcon_special_u_beam",
+          "count": 2,
+          "profiles": [
+            "SU1",
+            "SU2"
+          ],
+          "profile_ids": [
+            "bridgebeams.za.civilcon_special_u_beam.CivilconSpecialUBeamSection:SU1",
+            "bridgebeams.za.civilcon_special_u_beam.CivilconSpecialUBeamSection:SU2"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ZA"
+          ]
+        },
+        {
+          "id": "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection",
+          "name": "CivilconTBeamSection",
+          "module": "bridgebeams.za.civilcon_t_beam",
+          "count": 10,
+          "profiles": [
+            "T1",
+            "T2",
+            "T3",
+            "T4",
+            "T5",
+            "T6",
+            "T7",
+            "T8",
+            "T9",
+            "T10"
+          ],
+          "profile_ids": [
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T1",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T2",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T3",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T4",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T5",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T6",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T7",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T8",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T9",
+            "bridgebeams.za.civilcon_t_beam.CivilconTBeamSection:T10"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ZA"
+          ]
+        },
+        {
+          "id": "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection",
+          "name": "CivilconUBeamSection",
+          "module": "bridgebeams.za.civilcon_u_beam",
+          "count": 9,
+          "profiles": [
+            "U1",
+            "U3",
+            "U5",
+            "U7",
+            "U8",
+            "U9",
+            "U10",
+            "U11",
+            "U12"
+          ],
+          "profile_ids": [
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U1",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U3",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U5",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U7",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U8",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U9",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U10",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U11",
+            "bridgebeams.za.civilcon_u_beam.CivilconUBeamSection:U12"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ZA"
+          ]
+        },
+        {
           "id": "bridgebeams.za.civilcon_y_beam.CivilconYBeamSection",
           "name": "CivilconYBeamSection",
           "module": "bridgebeams.za.civilcon_y_beam",
@@ -5162,7 +5971,7 @@
           ]
         }
       ],
-      "count": 28,
+      "count": 58,
       "source_count": 7,
       "researched": true
     },
@@ -5322,8 +6131,35 @@
           "title_original": "Puentes isost\u00e1ticos y hiperst\u00e1ticos"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.es.hp1.Hp1BeamSection",
+          "name": "Hp1BeamSection",
+          "module": "bridgebeams.es.hp1",
+          "count": 6,
+          "profiles": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI"
+          ],
+          "profile_ids": [
+            "bridgebeams.es.hp1.Hp1BeamSection:I",
+            "bridgebeams.es.hp1.Hp1BeamSection:II",
+            "bridgebeams.es.hp1.Hp1BeamSection:III",
+            "bridgebeams.es.hp1.Hp1BeamSection:IV",
+            "bridgebeams.es.hp1.Hp1BeamSection:V",
+            "bridgebeams.es.hp1.Hp1BeamSection:VI"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "ES"
+          ]
+        }
+      ],
+      "count": 6,
       "source_count": 4,
       "researched": true
     },
@@ -6642,6 +7478,130 @@
           ]
         },
         {
+          "id": "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection",
+          "name": "WsdotBulbTeeSection",
+          "module": "bridgebeams.us.wsdot_legacy_girders",
+          "count": 7,
+          "profiles": [
+            "W32BTG",
+            "W38BTG",
+            "W62BTG",
+            "WF32BTG",
+            "WF38BTG",
+            "WF50BTG",
+            "WF62BTG"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection:W32BTG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection:W38BTG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection:W62BTG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection:WF32BTG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection:WF38BTG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection:WF50BTG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotBulbTeeSection:WF62BTG"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.wsdot_legacy_girders.WsdotDeckBulbTeeSection",
+          "name": "WsdotDeckBulbTeeSection",
+          "module": "bridgebeams.us.wsdot_legacy_girders",
+          "count": 4,
+          "profiles": [
+            "W35DG",
+            "W41DG",
+            "W53DG",
+            "W65DG"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.wsdot_legacy_girders.WsdotDeckBulbTeeSection:W35DG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotDeckBulbTeeSection:W41DG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotDeckBulbTeeSection:W53DG",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotDeckBulbTeeSection:W65DG"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.wsdot_legacy_girders.WsdotSlabGirderSection",
+          "name": "WsdotSlabGirderSection",
+          "module": "bridgebeams.us.wsdot_legacy_girders",
+          "count": 5,
+          "profiles": [
+            "SLAB12x48",
+            "SLAB18x48",
+            "SLAB24x48",
+            "SLAB26x48",
+            "SLAB30x52"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.wsdot_legacy_girders.WsdotSlabGirderSection:SLAB12x48",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotSlabGirderSection:SLAB18x48",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotSlabGirderSection:SLAB24x48",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotSlabGirderSection:SLAB26x48",
+            "bridgebeams.us.wsdot_legacy_girders.WsdotSlabGirderSection:SLAB30x52"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection",
+          "name": "WsdotTubGirderSection",
+          "module": "bridgebeams.us.wsdot_tub_girders",
+          "count": 18,
+          "profiles": [
+            "U54G4",
+            "U54G5",
+            "U54G6",
+            "U66G4",
+            "U66G5",
+            "U66G6",
+            "U78G4",
+            "U78G5",
+            "U78G6",
+            "UF60G4",
+            "UF60G5",
+            "UF60G6",
+            "UF72G4",
+            "UF72G5",
+            "UF72G6",
+            "UF84G4",
+            "UF84G5",
+            "UF84G6"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U54G4",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U54G5",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U54G6",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U66G4",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U66G5",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U66G6",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U78G4",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U78G5",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:U78G6",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF60G4",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF60G5",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF60G6",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF72G4",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF72G5",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF72G6",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF84G4",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF84G5",
+            "bridgebeams.us.wsdot_tub_girders.WsdotTubGirderSection:UF84G6"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
           "id": "bridgebeams.us.wsdot_w_girders.WsdotWSection",
           "name": "WsdotWSection",
           "module": "bridgebeams.us.wsdot_w_girders",
@@ -6662,9 +7622,43 @@
           "jurisdictions": [
             "US"
           ]
+        },
+        {
+          "id": "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection",
+          "name": "WsdotWfGirderSection",
+          "module": "bridgebeams.us.wsdot_wf_girders",
+          "count": 10,
+          "profiles": [
+            "WF36G",
+            "WF42G",
+            "WF50G",
+            "WF58G",
+            "WF66G",
+            "WF74G",
+            "WF83G",
+            "WF95G",
+            "WF100G",
+            "WF100G-61"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF36G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF42G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF50G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF58G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF66G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF74G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF83G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF95G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF100G",
+            "bridgebeams.us.wsdot_wf_girders.WsdotWfGirderSection:WF100G-61"
+          ],
+          "note": "",
+          "jurisdictions": [
+            "US"
+          ]
         }
       ],
-      "count": 13,
+      "count": 57,
       "source_count": 16,
       "researched": true
     },
