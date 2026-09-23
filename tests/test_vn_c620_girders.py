@@ -6,9 +6,10 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.vn.c620_girders import Vn620GirderSection
 
+from _aggregate import P, run_checks
 
-@pytest.mark.parametrize("size", Vn620GirderSection.SIZES)
-def test_valid_and_labelled(size):
+
+def _check_valid_and_labelled(size):
     sec = Vn620GirderSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -23,20 +24,20 @@ def _i_area(top, tf, th, web, wh, bs, be, bot, ch):
     return (top * tf + (top + web) / 2 * th + web * wh + (web + bot) / 2 * bs + bot * be - ch * ch)
 
 
-def test_i33_exact():
+def _check_i33_exact():
     s = Vn620GirderSection("I33")
     assert 160 + 120 + 770 + 170 + 180 == 1400
     assert s.polygon.area == pytest.approx(_i_area(500, 160, 120, 160, 770, 170, 180, 610, 25))
     assert s.polygon.bounds == (-305, 0, 305, 1400)
 
 
-def test_i2454_exact():
+def _check_i2454_exact():
     s = Vn620GirderSection("I24.54")
     assert 178 + 114 + 483 + 190 + 178 == 1143 and 116 * 2 + 178 == 410 and 190 * 2 + 178 == 558
     assert s.polygon.area == pytest.approx(_i_area(410, 178, 114, 178, 483, 190, 178, 558, 25))
 
 
-def test_i186_exact():
+def _check_i186_exact():
     s = Vn620GirderSection("I18.6")
     assert 50 + 85 + 75 + 220 + 100 + 145 + 25 == 700
     expected = (390 * 50 + 430 * 85 + (430 + 160) / 2 * 75 + 160 * 220 + (160 + 560) / 2 * 100
@@ -44,7 +45,7 @@ def test_i186_exact():
     assert s.polygon.area == pytest.approx(expected)
 
 
-def test_t186_taper_and_block():
+def _check_t186_taper_and_block():
     s = Vn620GirderSection("T18.6")
     p = s.polygon
     # soffit 200 wide, block 400 wide from 637 to 920, top 340
@@ -56,7 +57,7 @@ def test_t186_taper_and_block():
     assert straight < p.area < straight + 2 * 47 * 130
 
 
-def test_inverted_t_bounds_and_area():
+def _check_inverted_t_bounds_and_area():
     s = Vn620GirderSection("TN20")
     p = s.polygon
     assert p.bounds == pytest.approx((-490, 0, 490, 750))
@@ -67,6 +68,18 @@ def test_inverted_t_bounds_and_area():
     assert 250 < props["cy"] < 375
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         Vn620GirderSection("I40")
+
+
+def test_vn_c620_girders_catalogue_checks():
+    run_checks(
+        (_check_valid_and_labelled, P("size", Vn620GirderSection.SIZES)),
+        _check_i33_exact,
+        _check_i2454_exact,
+        _check_i186_exact,
+        _check_t186_taper_and_block,
+        _check_inverted_t_bounds_and_area,
+        _check_invalid_size,
+    )

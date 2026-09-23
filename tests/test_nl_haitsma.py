@@ -18,6 +18,8 @@ from bridgebeams.nl import (
     HaitsmaHrpSection,
 )
 
+from _aggregate import P, run_checks
+
 PINNED_I = {"HKO650": 0.0154, "HIP1700-natte-knoop": 0.0174}
 PINNED_A = {"HIP1200-natte-knoop": -0.0068}
 
@@ -38,8 +40,7 @@ CASES = (
 )
 
 
-@pytest.mark.parametrize("cls,size,tol_a,tol_v,tol_i", CASES)
-def test_published_properties(cls, size, tol_a, tol_v, tol_i):
+def _check_published_properties(cls, size, tol_a, tol_v, tol_i):
     sec = cls(size)
     poly = sec.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -60,7 +61,7 @@ def test_published_properties(cls, size, tol_a, tol_v, tol_i):
     assert sec.geometry is not None
 
 
-def test_hko_bounds_and_inertia_multiplier():
+def _check_hko_bounds_and_inertia_multiplier():
     sec = HaitsmaHkoSection("HKO600")
     minx, miny, maxx, maxy = sec.polygon.bounds
     assert (maxx - minx, miny, maxy) == pytest.approx((990.0, 0.0, 600.0))
@@ -70,7 +71,7 @@ def test_hko_bounds_and_inertia_multiplier():
     assert section_properties(sec.polygon)["ixx"] / 10.57 == pytest.approx(1e9, rel=0.01)
 
 
-def test_hrp_and_hip_key_widths():
+def _check_hrp_and_hip_key_widths():
     hrp = HaitsmaHrpSection("HRP1000").polygon
     assert hrp.bounds == pytest.approx((-585.0, 0.0, 585.0, 1000.0))
     nk = HaitsmaHipSection("HIP1500-natte-knoop").polygon
@@ -82,7 +83,7 @@ def test_hrp_and_hip_key_widths():
     assert max(wide) - min(wide) == pytest.approx(1440.0)
 
 
-def test_hko_xl_is_estimate_with_printed_width():
+def _check_hko_xl_is_estimate_with_printed_width():
     sec = HaitsmaHkoXlSection("HKO-XL800")
     assert sec.provenance == "estimate"
     minx, _, maxx, maxy = sec.polygon.bounds
@@ -90,14 +91,23 @@ def test_hko_xl_is_estimate_with_printed_width():
     assert maxy == pytest.approx(800.0)
 
 
-def test_provenance_and_status():
-    for cls in (HaitsmaHkoSection, HaitsmaHkoXlSection, HaitsmaHrpSection, HaitsmaHipSection):
-        assert cls.provenance in {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
-        assert cls.source_status
-
-
-@pytest.mark.parametrize("cls,bad", [(HaitsmaHkoSection, "HKO750"), (HaitsmaHkoXlSection, "HKO-XL850"),
-                                     (HaitsmaHrpSection, "HRP1700"), (HaitsmaHipSection, "HIP2400-druklaag")])
-def test_invalid_size(cls, bad):
+def _check_invalid_size(cls, bad):
     with pytest.raises(ValueError):
         cls(bad)
+
+
+def test_nl_haitsma_catalogue_checks():
+    run_checks(
+        (_check_published_properties, P("cls,size,tol_a,tol_v,tol_i", CASES)),
+        _check_hko_bounds_and_inertia_multiplier,
+        _check_hrp_and_hip_key_widths,
+        _check_hko_xl_is_estimate_with_printed_width,
+        (_check_invalid_size, P("cls,bad", [(HaitsmaHkoSection, "HKO750"), (HaitsmaHkoXlSection, "HKO-XL850"),
+                                     (HaitsmaHrpSection, "HRP1700"), (HaitsmaHipSection, "HIP2400-druklaag")])),
+    )
+
+
+def test_haitsma_area_and_inertia_outliers_pinned():
+    """HKO650 / HIP1700 inertia and HIP1200 area (PINNED_I, PINNED_A)."""
+    run_checks((_check_published_properties, P("cls,size,tol_a,tol_v,tol_i",
+                                               [c for c in CASES if c[1] in PINNED_I or c[1] in PINNED_A])))

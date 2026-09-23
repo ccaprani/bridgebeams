@@ -6,14 +6,14 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.fr import AfgcVippBeamSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(p, y):
     return p.intersection(LineString([(-3000, y), (3000, y)])).length
 
 
-@pytest.mark.parametrize("size,web,bottom,top,yl,yr", [
-    ("support", 420, 920, 1310, 1390, 1470), ("mid-span", 220, 910, 1280, 1440, 1400)])
-def test_dimensions(size, web, bottom, top, yl, yr):
+def _check_dimensions(size, web, bottom, top, yl, yr):
     sec = AfgcVippBeamSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -35,11 +35,20 @@ def test_printed_total_conflicts_pinned():
     assert sum(mid["top_parts_m"]) == pytest.approx(1.28) and mid["top_total_m"] == 1.29
 
 
-def test_support_heavier_than_midspan():
+def _check_support_heavier_than_midspan():
     a = [section_properties(AfgcVippBeamSection(s).polygon)["area"] for s in AfgcVippBeamSection.SIZES]
     assert a[0] > a[1]
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         AfgcVippBeamSection("end-block")
+
+
+def test_fr_afgc_vipp_catalogue_checks():
+    run_checks(
+        (_check_dimensions, P("size,web,bottom,top,yl,yr", [
+    ("support", 420, 920, 1310, 1390, 1470), ("mid-span", 220, 910, 1280, 1440, 1400)])),
+        _check_support_heavier_than_midspan,
+        _check_invalid,
+    )

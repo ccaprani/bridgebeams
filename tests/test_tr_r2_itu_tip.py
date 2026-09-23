@@ -7,13 +7,14 @@ from shapely.ops import unary_union
 from bridgebeams._geometry import section_properties
 from bridgebeams.tr.r2_itu_tip import ItuTipBeamSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size", ItuTipBeamSection.SIZES)
-def test_valid_and_envelope(size):
+def _check_valid_and_envelope(size):
     sec = ItuTipBeamSection(size)
     p, d = sec.polygon, sec.dimensions
     assert p.is_valid and p.exterior.is_ccw
@@ -25,8 +26,7 @@ def test_valid_and_envelope(size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", ItuTipBeamSection.SIZES)
-def test_precast_properties_match_thesis(size):
+def _check_precast_properties_match_thesis(size):
     """Exact to the printed rounding (TİP III with the 13.0 cm splay convention)."""
     sec = ItuTipBeamSection(size)
     sp = section_properties(sec.polygon)
@@ -37,8 +37,7 @@ def test_precast_properties_match_thesis(size):
     assert sp["ixx"] == pytest.approx(pub["Ix_cm4"] * 1e4, rel=2e-6)
 
 
-@pytest.mark.parametrize("size", ItuTipBeamSection.SIZES)
-def test_composite_properties_match_thesis(size):
+def _check_composite_properties_match_thesis(size):
     """Precast + 250 mm slab of the published transformed width b."""
     sec = ItuTipBeamSection(size)
     h, b = sec.dimensions.depth, sec.composite_effective_width
@@ -54,7 +53,7 @@ def test_composite_properties_match_thesis(size):
     assert h - sp["cy"] == pytest.approx(pub["ycust_cm"] * 10, abs=0.1)  # to precast top
 
 
-def test_provenance():
+def _check_provenance():
     assert ItuTipBeamSection("TIP-I-B").provenance == "transcribed"
     assert ItuTipBeamSection("TIP-II-C").provenance == "transcribed"
     assert ItuTipBeamSection("TIP-III-A").provenance == "transcribed-with-convention"
@@ -67,6 +66,16 @@ def test_tip_iii_printed_splay_would_miss_published_area():
     assert a + 1375.0 == pytest.approx(3615.0 * 100)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         ItuTipBeamSection("TIP-IV-A")
+
+
+def test_tr_r2_itu_tip_catalogue_checks():
+    run_checks(
+        (_check_valid_and_envelope, P("size", ItuTipBeamSection.SIZES)),
+        (_check_precast_properties_match_thesis, P("size", ItuTipBeamSection.SIZES)),
+        (_check_composite_properties_match_thesis, P("size", ItuTipBeamSection.SIZES)),
+        _check_provenance,
+        _check_invalid,
+    )

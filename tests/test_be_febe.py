@@ -11,6 +11,8 @@ import pytest
 from bridgebeams._geometry import section_properties, as_polygon
 from bridgebeams.be import FebeIDimensions, FebeISection
 
+from _aggregate import P, run_checks
+
 DATA = json.loads(
     resources.files("bridgebeams.be.data").joinpath("febe_i_beams.json").read_text()
 )
@@ -19,15 +21,13 @@ SMALL_H = list(range(900, 1651, 50))
 LARGE_H = list(range(1700, 2051, 50))
 
 
-def test_designation_count():
+def _check_designation_count():
     # 16 small heights x 2 b + 8 large heights x 5 b = 72 designations
     assert len(SMALL_H) == 16 and len(LARGE_H) == 8
     assert len(SMALL_H) * 2 + len(LARGE_H) * 5 == 72
 
 
-@pytest.mark.parametrize("h", SMALL_H)
-@pytest.mark.parametrize("b", [620, 640])
-def test_small_family(h, b):
+def _check_small_family(h, b):
     beam = FebeISection(f"{h}/{b}", top_flange_thickness=150, bottom_flange_thickness=150)
     d = beam.dimensions
     assert d.subfamily == "small"
@@ -39,9 +39,7 @@ def test_small_family(h, b):
     assert poly.area > 0
 
 
-@pytest.mark.parametrize("h", LARGE_H)
-@pytest.mark.parametrize("b", [800, 820, 840, 860, 880])
-def test_large_family(h, b):
+def _check_large_family(h, b):
     beam = FebeISection(f"{h}/{b}", top_flange_thickness=250, bottom_flange_thickness=250)
     d = beam.dimensions
     assert d.subfamily == "large"
@@ -51,7 +49,7 @@ def test_large_family(h, b):
     assert beam.polygon.is_valid
 
 
-def test_symmetric_and_stack():
+def _check_symmetric_and_stack():
     beam = FebeISection("1200/640", top_flange_thickness=200, bottom_flange_thickness=250)
     props = section_properties(as_polygon(beam.geometry))
     d = beam.dimensions
@@ -66,19 +64,19 @@ def test_symmetric_and_stack():
     assert props["area"] > 0
 
 
-def test_gorge_narrower_than_flange():
+def _check_gorge_narrower_than_flange():
     for b in (620, 640):
         assert b - 240 < b
     for b in (800, 820, 840, 860, 880):
         assert b - 320 < b
 
 
-def test_thickness_required():
+def _check_thickness_required():
     with pytest.raises(ValueError, match="not published"):
         FebeISection("900/620")
 
 
-def test_invalid_designations_raise():
+def _check_invalid_designations_raise():
     with pytest.raises(ValueError):  # h outside family
         FebeISection("850/620", top_flange_thickness=150, bottom_flange_thickness=150)
     with pytest.raises(ValueError):  # gap between sub-families
@@ -89,7 +87,7 @@ def test_invalid_designations_raise():
         FebeISection("900", top_flange_thickness=150, bottom_flange_thickness=150)
 
 
-def test_m_cycle_search_attested_metadata():
+def _check_m_cycle_search_attested_metadata():
     # attested cycle 150->200->250->300 across successive 50 mm steps
     assert FebeISection("900/620", top_flange_thickness=150,
                         bottom_flange_thickness=150).dimensions.m_search_attested == 150.0
@@ -99,8 +97,22 @@ def test_m_cycle_search_attested_metadata():
                         bottom_flange_thickness=210).dimensions.m_search_attested == 300.0
 
 
-def test_data_file_evidence_levels():
+def _check_data_file_evidence_levels():
     ev = DATA["evidence_levels"]
     assert "SEARCH-ATTESTED" in ev["m_cycle"]
     assert "NOT PUBLISHED" in ev["flange_thicknesses"]
     assert "attested" in ev["widths_and_pairings"]
+
+
+def test_be_febe_catalogue_checks():
+    run_checks(
+        _check_designation_count,
+        (_check_small_family, P("h", SMALL_H), P("b", [620, 640])),
+        (_check_large_family, P("h", LARGE_H), P("b", [800, 820, 840, 860, 880])),
+        _check_symmetric_and_stack,
+        _check_gorge_narrower_than_flange,
+        _check_thickness_required,
+        _check_invalid_designations_raise,
+        _check_m_cycle_search_attested_metadata,
+        _check_data_file_evidence_levels,
+    )

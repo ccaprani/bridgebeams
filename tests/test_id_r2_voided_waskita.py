@@ -6,6 +6,8 @@ import pytest
 from bridgebeams.id.r2_waskita import WaskitaPcIGirderSection, WaskitaVoidedSlabSection
 from bridgebeams.id.r2_wika_voided_slab import WikaVoidedSlabSection
 
+from _aggregate import P, run_checks
+
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 
 
@@ -25,8 +27,7 @@ def props(poly):
     return A, cy, I0 - A * cy * cy
 
 
-@pytest.mark.parametrize("cls", [WikaVoidedSlabSection, WaskitaPcIGirderSection, WaskitaVoidedSlabSection])
-def test_valid_and_invalid(cls):
+def _check_valid_and_invalid(cls):
     for s in cls.SIZES:
         sec = cls(s)
         p = sec.polygon
@@ -40,7 +41,7 @@ def test_valid_and_invalid(cls):
         cls("X1")
 
 
-def test_wika_vs_published():
+def _check_wika_vs_published():
     # Circles/stadia approximated by 256 segments per semicircle.
     for s in WikaVoidedSlabSection.SIZES:
         sec = WikaVoidedSlabSection(s, segments=256)
@@ -54,7 +55,7 @@ def test_wika_vs_published():
     assert WikaVoidedSlabSection("VS74").provenance == "fitted-reconstruction"
 
 
-def test_waskita_pci_chain():
+def _check_waskita_pci_chain():
     sec = WaskitaPcIGirderSection("H170")
     d = sec.dimensions
     assert d.web_height == 1700 - 70 - 130 - 120 - 250 - 250
@@ -65,7 +66,7 @@ def test_waskita_pci_chain():
         assert WaskitaPcIGirderSection(s).dimensions.web_height > 0
 
 
-def test_waskita_vs():
+def _check_waskita_vs():
     t1 = WaskitaVoidedSlabSection("H66")
     assert len(t1.polygon.interiors) == 2 and t1.polygon.bounds[2] == 485
     t2 = WaskitaVoidedSlabSection("H62.5")
@@ -73,3 +74,12 @@ def test_waskita_vs():
     assert t2.provenance == "estimate"
     a, cy, _ = props(t2.polygon)
     assert cy == pytest.approx(312.5, abs=15)
+
+
+def test_id_r2_voided_waskita_catalogue_checks():
+    run_checks(
+        (_check_valid_and_invalid, P("cls", [WikaVoidedSlabSection, WaskitaPcIGirderSection, WaskitaVoidedSlabSection])),
+        _check_wika_vs_published,
+        _check_waskita_pci_chain,
+        _check_waskita_vs,
+    )

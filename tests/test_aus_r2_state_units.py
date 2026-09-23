@@ -6,6 +6,8 @@ from shapely.geometry import LineString
 from bridgebeams.aus.r2_tfnsw_cbs_modules import TfnswCbsModuleSection
 from bridgebeams.aus.r2_tmr_deck_units import TmrDeckUnitSection
 
+from _aggregate import P, run_checks
+
 S = 17.6  # printed web batter
 
 
@@ -34,9 +36,7 @@ def _props_with_holes(poly):
 
 # --- TMR deck units ---------------------------------------------------
 
-@pytest.mark.parametrize("size,depth,void_h", [
-    ("500", 500, 0), ("540", 540, 0), ("650", 650, 220), ("760", 760, 330), ("1100", 1100, 670)])
-def test_tmr_area_and_chain(size, depth, void_h):
+def _check_tmr_area_and_chain(size, depth, void_h):
     sec = TmrDeckUnitSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -58,14 +58,14 @@ def test_tmr_area_and_chain(size, depth, void_h):
     assert "TMR" in sec.source_status
 
 
-def test_tmr_shared_span_profiles():
+def _check_tmr_shared_span_profiles():
     assert TmrDeckUnitSection("500").spans_m == (10, 11)
     assert TmrDeckUnitSection("540").spans_m == (12, 13)
     assert TmrDeckUnitSection(1100).spans_m == (25,)
     assert len(TmrDeckUnitSection("760").geometry.geom.interiors) == 1
 
 
-def test_tmr_invalid():
+def _check_tmr_invalid():
     with pytest.raises(ValueError):
         TmrDeckUnitSection("600")
 
@@ -76,7 +76,7 @@ def _inner(y):
     return 405 - y / S
 
 
-def test_cbs_internal_independent_area():
+def _check_cbs_internal_independent_area():
     p = TfnswCbsModuleSection("T1-internal").polygon
     assert p.is_valid and p.exterior.is_ccw
     assert p.bounds == pytest.approx((-1235, 0, 1235, 600))
@@ -87,7 +87,7 @@ def test_cbs_internal_independent_area():
     assert p.centroid.x == pytest.approx(0, abs=1e-6)
 
 
-def test_cbs_printed_chains():
+def _check_cbs_printed_chains():
     p = TfnswCbsModuleSection("T1-internal").polygon
     # 79 / 366 / 760 top chain and 100/320/810 soffit chain
     assert 725 + 365 / S == pytest.approx(825 - 79, abs=0.5)
@@ -96,7 +96,7 @@ def test_cbs_printed_chains():
     assert _width(p, 500) == pytest.approx(1650)
 
 
-def test_cbs_external_widths():
+def _check_cbs_external_widths():
     t1 = TfnswCbsModuleSection("T1-external").polygon
     assert t1.bounds == pytest.approx((-825, 0, 1235, 755))
     kerb_face = -525 + 25 * (755 - 700) / 155
@@ -117,7 +117,7 @@ def test_cbs_external_widths():
         assert sec.geometry is not None
 
 
-def test_cbs_mass_increment_consistency():
+def _check_cbs_mass_increment_consistency():
     # Type 1 internal: 13.1 / 16.4 / 19.7 t for 8/10/12 m sets, 2550 kg/m3.
     # Increment 3.3 t per 2 m -> 0.647 m2 (+/-3 % from 0.1 t rounding).
     implied = 3.3 / 2.0 / 2.55 * 1e6
@@ -126,6 +126,20 @@ def test_cbs_mass_increment_consistency():
     assert area / implied - 1 == pytest.approx(-0.0087, abs=0.001)
 
 
-def test_cbs_invalid():
+def _check_cbs_invalid():
     with pytest.raises(ValueError):
         TfnswCbsModuleSection("T4-internal")
+
+
+def test_aus_r2_state_units_catalogue_checks():
+    run_checks(
+        (_check_tmr_area_and_chain, P("size,depth,void_h", [
+    ("500", 500, 0), ("540", 540, 0), ("650", 650, 220), ("760", 760, 330), ("1100", 1100, 670)])),
+        _check_tmr_shared_span_profiles,
+        _check_tmr_invalid,
+        _check_cbs_internal_independent_area,
+        _check_cbs_printed_chains,
+        _check_cbs_external_widths,
+        _check_cbs_mass_increment_consistency,
+        _check_cbs_invalid,
+    )

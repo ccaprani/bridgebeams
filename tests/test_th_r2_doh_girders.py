@@ -10,6 +10,8 @@ from bridgebeams.th.r2_doh_girders import (
     ThDohPlankGirderSection,
 )
 
+from _aggregate import P, run_checks
+
 
 def _ring_area(coords):
     pts = list(coords)[:-1]
@@ -23,8 +25,7 @@ def _net_area(poly):
 ALL = [(C, s) for C in (ThDohPlankGirderSection, ThDohBoxBeamSection, ThDohIGirderR2Section) for s in C.SIZES]
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_valid_ccw_and_labelled(cls, size):
+def _check_valid_ccw_and_labelled(cls, size):
     sec = cls(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -38,10 +39,7 @@ def _side_cut(h, y_face, y_key, key=70.0, top=45.0):
     return key / 2 * (y_key - y_face) + (key + top) / 2 * (h - y_key)
 
 
-@pytest.mark.parametrize("span,h,h1,h2", [(5, 180, 50, 90), (6, 210, 50, 90), (7, 240, 50, 90),
-                                          (8, 280, 50, 100), (9, 310, 80, 140), (10, 350, 80, 140),
-                                          (12, 450, 80, 140)])
-def test_plank_table_and_area(span, h, h1, h2):
+def _check_plank_table_and_area(span, h, h1, h2):
     for unit, sides in (("INT", 2), ("EXT", 1)):
         sec = ThDohPlankGirderSection(f"PG{span}-{unit}", circle_points=256)
         d = sec.dimensions
@@ -56,16 +54,13 @@ def test_plank_table_and_area(span, h, h1, h2):
         assert (minx, miny, maxx, maxy) == (-495, 0, 495, h)
 
 
-def test_plank_exterior_void_positions():
+def _check_plank_exterior_void_positions():
     p = ThDohPlankGirderSection("PG12-EXT").polygon
     xs = sorted(round(r.centroid.x) for r in p.interiors)
     assert xs == [-255, 45, 315]
 
 
-@pytest.mark.parametrize("size,h,h1,h3,h4,h5,h7,b3", [
-    ("BB15-INT", 600, 180, 140, 90, 100, 350, 290), ("BB15-EXT", 600, 180, 140, 90, 100, 350, 360),
-    ("BB20-INT", 700, 180, 160, 80, 200, 400, 290), ("BB20-EXT", 700, 180, 160, 80, 200, 400, 360)])
-def test_box_closure_and_area(size, h, h1, h3, h4, h5, h7, b3):
+def _check_box_closure_and_area(size, h, h1, h3, h4, h5, h7, b3):
     sec = ThDohBoxBeamSection(size)
     assert h3 + 2 * h4 + h5 + h1 == h
     sides = 1 if size.endswith("EXT") else 2
@@ -77,12 +72,12 @@ def test_box_closure_and_area(size, h, h1, h3, h4, h5, h7, b3):
     assert sec.polygon.interiors[0].bounds[3] == h - h1
 
 
-def test_box_void_wall_on_exposed_side():
+def _check_box_void_wall_on_exposed_side():
     p = ThDohBoxBeamSection("BB15-EXT").polygon
     assert 495 - p.interiors[0].bounds[2] == pytest.approx(180)
 
 
-def test_igirder_areas():
+def _check_igirder_areas():
     ig15 = ThDohIGirderR2Section("IG15")
     a15 = 450 * 100 + (450 + 150) / 2 * 75 + 150 * 225 + (150 + 500) / 2 * 150 + 500 * 200 - 2 * 200
     assert ig15.polygon.area == pytest.approx(a15)
@@ -93,7 +88,22 @@ def test_igirder_areas():
     assert ig20.polygon.bounds == (-250, 0, 250, 1200)
 
 
-@pytest.mark.parametrize("cls", [ThDohPlankGirderSection, ThDohBoxBeamSection, ThDohIGirderR2Section])
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("PG11-INT")
+
+
+def test_th_r2_doh_girders_catalogue_checks():
+    run_checks(
+        (_check_valid_ccw_and_labelled, P("cls,size", ALL)),
+        (_check_plank_table_and_area, P("span,h,h1,h2", [(5, 180, 50, 90), (6, 210, 50, 90), (7, 240, 50, 90),
+                                          (8, 280, 50, 100), (9, 310, 80, 140), (10, 350, 80, 140),
+                                          (12, 450, 80, 140)])),
+        _check_plank_exterior_void_positions,
+        (_check_box_closure_and_area, P("size,h,h1,h3,h4,h5,h7,b3", [
+    ("BB15-INT", 600, 180, 140, 90, 100, 350, 290), ("BB15-EXT", 600, 180, 140, 90, 100, 350, 360),
+    ("BB20-INT", 700, 180, 160, 80, 200, 400, 290), ("BB20-EXT", 700, 180, 160, 80, 200, 400, 360)])),
+        _check_box_void_wall_on_exposed_side,
+        _check_igirder_areas,
+        (_check_invalid_size, P("cls", [ThDohPlankGirderSection, ThDohBoxBeamSection, ThDohIGirderR2Section])),
+    )

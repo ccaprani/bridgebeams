@@ -6,10 +6,12 @@ from shapely.affinity import scale
 from bridgebeams.us.state_common import gross_properties
 from bridgebeams.us.state_il_deck_beams import IlDeckBeamSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 
 
-def test_every_size_valid_symmetric():
+def _check_every_size_valid_symmetric():
     for size in IlDeckBeamSection.SIZES:
         s = IlDeckBeamSection(size)
         p = s.polygon
@@ -22,13 +24,12 @@ def test_every_size_valid_symmetric():
         assert s.geometry is not None
 
 
-def test_invalid_size_raises():
+def _check_invalid_size_raises():
     with pytest.raises(ValueError):
         IlDeckBeamSection("27x40")
 
 
-@pytest.mark.parametrize("size", IlDeckBeamSection.SIZES)
-def test_widths_depth_voids(size):
+def _check_widths_depth_voids(size):
     s = IlDeckBeamSection(size)
     depth, width = (float(v) for v in size.split("x"))
     x0, _, x1, y1 = s.polygon.bounds
@@ -38,7 +39,7 @@ def test_widths_depth_voids(size):
     assert len(s.polygon.interiors) == (0 if depth == 11 else 1)
 
 
-def test_11x48_solid_area_analytic():
+def _check_11x48_solid_area_analytic():
     # 48x11 minus two 1.5 in chamfers and two keys (the key removes
     # 3*0.625 + 0.375*(0.625+1.25)/2 + (4-1.125)*1.25 + 0.75*1.25/2 per side).
     per_side = 3 * 0.625 + 0.375 * (0.625 + 1.25) / 2 + (4 - 1.125) * 1.25 + 0.75 * 1.25 / 2
@@ -46,7 +47,7 @@ def test_11x48_solid_area_analytic():
     assert gross_properties(IlDeckBeamSection("11x48").polygon, IN)["area"] == pytest.approx(expected)
 
 
-def test_27x36_matches_design_guide_example():
+def _check_27x36_matches_design_guide_example():
     """DG 3.5: A = 569.9 in2, I = 49,697 in4, Cb = 13.30 in, Ct = 13.71 in.
 
     Cb + Ct = 27.01 in, so the printed centroid carries ~0.01 in rounding
@@ -57,3 +58,13 @@ def test_27x36_matches_design_guide_example():
     assert g["ix"] == pytest.approx(49697, abs=1.0)
     assert g["yb"] == pytest.approx(13.30, abs=0.01)
     assert 27 - g["yb"] == pytest.approx(13.71, abs=0.01)
+
+
+def test_us_state_il_deck_beams_catalogue_checks():
+    run_checks(
+        _check_every_size_valid_symmetric,
+        _check_invalid_size_raises,
+        (_check_widths_depth_voids, P("size", IlDeckBeamSection.SIZES)),
+        _check_11x48_solid_area_analytic,
+        _check_27x36_matches_design_guide_example,
+    )

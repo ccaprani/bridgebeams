@@ -14,7 +14,7 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 
 > [!WARNING]
 > **Not authoritative — use at your own risk.** `bridgebeams` is a best-effort,
-> crowd-correctable catalogue of precast bridge-beam geometry gathered from
+> development-stage catalogue of precast bridge-beam geometry gathered from
 > public standards, producer catalogues, project drawings and papers. Many
 > profiles are **reconstructions or estimates** from incomplete, draft,
 > feasibility-stage or historic sources, and some sources contradict
@@ -25,9 +25,6 @@ the computed properties (`A`, `I`, `J`, `Ay`, `Az`) into `og.create_section`.
 > `transcribed-with-convention`, `fitted-reconstruction`, `estimate`) and
 > `source_status`; check both. No warranty is given and the authors accept no
 > liability (see LICENSE).
->
-> **Found an error?** Please [report a profile correction](https://github.com/ccaprani/bridgebeams/issues/new?template=profile-correction.yml)
-> with the source document and page. Corrections are how this catalogue improves.
 
 ## Families
 

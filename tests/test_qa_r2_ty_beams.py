@@ -4,13 +4,14 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.qa.r2_ty_beams import QaTyBeamSection, QaTyeBeamSection
 
+from _aggregate import P, run_checks
+
 ALL = [(QaTyBeamSection, s) for s in QaTyBeamSection.SIZES] + [
     (QaTyeBeamSection, s) for s in QaTyeBeamSection.SIZES
 ]
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_valid_ccw_and_depth(cls, size):
+def _check_valid_ccw_and_depth(cls, size):
     s = cls(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -22,8 +23,7 @@ def test_valid_ccw_and_depth(cls, size):
     s.geometry
 
 
-@pytest.mark.parametrize("size", QaTyBeamSection.SIZES)
-def test_ty_published(size):
+def _check_ty_published(size):
     s = QaTyBeamSection(size)
     r = s.published
     p = section_properties(s.polygon)
@@ -36,8 +36,7 @@ def test_ty_published(size):
     assert top == pytest.approx(r["printed_top_width"], abs=0.6)
 
 
-@pytest.mark.parametrize("size", QaTyeBeamSection.SIZES)
-def test_tye_published_pinned_offset(size):
+def _check_tye_published_pinned_offset(size):
     """TYE areas/inertias are consistently 0.13-0.16% below the table (pinned)."""
     s = QaTyeBeamSection(size)
     r = s.published
@@ -49,14 +48,26 @@ def test_tye_published_pinned_offset(size):
     assert p["cx"] + 375 == pytest.approx(r["xc_from_vertical_face"], abs=1.0)
 
 
-def test_tye_top_width_and_edge_face():
+def test_tye_published_pinned_offset():
+    run_checks((_check_tye_published_pinned_offset, P("size", QaTyeBeamSection.SIZES)))
+
+
+def _check_tye_top_width_and_edge_face():
     s = QaTyeBeamSection("TYE10")
     xs = [x for x, y in s.polygon.exterior.coords if y == 850]
     assert max(xs) - min(xs) == pytest.approx(575.0)
     assert min(xs) == -375.0
 
 
-@pytest.mark.parametrize("cls,bad", [(QaTyBeamSection, "TY11"), (QaTyeBeamSection, "TY1")])
-def test_invalid(cls, bad):
+def _check_invalid(cls, bad):
     with pytest.raises(ValueError):
         cls(bad)
+
+
+def test_qa_r2_ty_beams_catalogue_checks():
+    run_checks(
+        (_check_valid_ccw_and_depth, P("cls,size", ALL)),
+        (_check_ty_published, P("size", QaTyBeamSection.SIZES)),
+        _check_tye_top_width_and_edge_face,
+        (_check_invalid, P("cls,bad", [(QaTyBeamSection, "TY11"), (QaTyeBeamSection, "TY1")])),
+    )

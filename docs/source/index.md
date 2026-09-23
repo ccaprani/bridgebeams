@@ -12,18 +12,18 @@ coverage
 research
 api
 sources
-corrections
+disclaimer
 ```
 
 ```{warning}
 **Not authoritative — use at your own risk.** `bridgebeams` is a best-effort,
-crowd-correctable catalogue. Many profiles are reconstructions or estimates
+development-stage catalogue. Many profiles are reconstructions or estimates
 from incomplete, draft, feasibility-stage or historic sources, and some
 sources contradict themselves. It is useful for research, teaching,
 screening and cross-checking, but it does not replace the governing
 standard drawing, the producer's current data or engineering judgement.
 Check each profile's `provenance` and `source_status`. No warranty is given.
-See {doc}`corrections` to report an error.
+See {doc}`disclaimer`.
 ```
 
 ## Overview

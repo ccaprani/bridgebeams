@@ -5,6 +5,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.us import MnRectangularBeamSection
 
+from _aggregate import P, run_checks
+
 # Figure 5.4.6.1, Section 5, February 2019; inch-based source literals.
 # Rows are designation, depth, A (in2), yb (in), Ixx (in4), Sb (in3).
 PUBLISHED = [
@@ -14,8 +16,7 @@ PUBLISHED = [
 ]
 
 
-@pytest.mark.parametrize("kind,depth,area,yb,ixx,sb", PUBLISHED)
-def test_mndot_published_gross_properties(kind, depth, area, yb, ixx, sb):
+def _check_mndot_published_gross_properties(kind, depth, area, yb, ixx, sb):
     beam = MnRectangularBeamSection(kind)
     poly = beam.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -32,7 +33,13 @@ def test_mndot_published_gross_properties(kind, depth, area, yb, ixx, sb):
     assert beam.geometry is not None
 
 
-@pytest.mark.parametrize("invalid", ["27M", "14rb", "", None])
-def test_mndot_rejects_non_rb_and_unknown_names(invalid):
+def _check_mndot_rejects_non_rb_and_unknown_names(invalid):
     with pytest.raises(ValueError):
         MnRectangularBeamSection(invalid)
+
+
+def test_us_states_mn_catalogue_checks():
+    run_checks(
+        (_check_mndot_published_gross_properties, P("kind,depth,area,yb,ixx,sb", PUBLISHED)),
+        (_check_mndot_rejects_non_rb_and_unknown_names, P("invalid", ["27M", "14rb", "", None])),
+    )

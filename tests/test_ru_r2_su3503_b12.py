@@ -6,13 +6,14 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.ru.r2_su3503_b12 import Su3503B12Section
 
+from _aggregate import P, run_checks
+
 
 def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size", Su3503B12Section.SIZES)
-def test_valid_and_printed_dims(size):
+def _check_valid_and_printed_dims(size):
     sec = Su3503B12Section(size)
     p, d = sec.polygon, sec.dimensions
     assert p.is_valid and p.exterior.is_ccw
@@ -27,14 +28,12 @@ def test_valid_and_printed_dims(size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", Su3503B12Section.SIZES)
-def test_mass_is_2_5_t_per_m3(size):
+def _check_mass_is_2_5_t_per_m3(size):
     pub = Su3503B12Section(size).published
     assert pub["mass_t"] / pub["volume_m3"] == pytest.approx(2.5, abs=0.01)
 
 
-@pytest.mark.parametrize("size", Su3503B12Section.SIZES)
-def test_midspan_area_vs_published_volume(size):
+def _check_midspan_area_vs_published_volume(size):
     """Pinned: midspan area x 12 m is 3.0-3.5 % below the published volume,
     a constant ~0.20 m3 excess for all marks (thickened support webs and end
     details, not modelled)."""
@@ -45,7 +44,7 @@ def test_midspan_area_vs_published_volume(size):
     assert 0.964 < a / sec.volume_area < 0.972
 
 
-def test_volume_steps_equal_slab_width_steps():
+def _check_volume_steps_equal_slab_width_steps():
     """Published volume differences = slab width difference x 150 x 12 m."""
     area = {s: section_properties(Su3503B12Section(s).polygon)["area"] for s in Su3503B12Section.SIZES}
     vol = {s: Su3503B12Section(s).published["volume_m3"] for s in Su3503B12Section.SIZES}
@@ -53,13 +52,27 @@ def test_volume_steps_equal_slab_width_steps():
         assert (area[b] - area[a]) * 12000 / 1e9 == pytest.approx(vol[b] - vol[a], abs=0.005)
 
 
-def test_edge_beam_is_asymmetric():
+def _check_edge_beam_is_asymmetric():
     d = Su3503B12Section("B1200.194.90").dimensions
     assert (d.slab_left, d.slab_right) == (1040.0, 900.0)
     assert Su3503B12Section("B1200.174.90").provenance == "transcribed-with-convention"
     assert Su3503B12Section("B1200.140.90").provenance == "transcribed"
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         Su3503B12Section("B1406.130.93")
+
+
+def test_ru_r2_su3503_b12_catalogue_checks():
+    run_checks(
+        (_check_valid_and_printed_dims, P("size", Su3503B12Section.SIZES)),
+        (_check_mass_is_2_5_t_per_m3, P("size", Su3503B12Section.SIZES)),
+        _check_volume_steps_equal_slab_width_steps,
+        _check_edge_beam_is_asymmetric,
+        _check_invalid,
+    )
+
+
+def test_su3503_b12_midspan_volume_excess_pinned():
+    run_checks((_check_midspan_area_vs_published_volume, P("size", Su3503B12Section.SIZES)))

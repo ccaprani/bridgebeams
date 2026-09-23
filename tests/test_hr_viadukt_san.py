@@ -6,6 +6,8 @@ from shapely.geometry import LineString
 
 from bridgebeams.hr.viadukt_san import ViaduktSanSection
 
+from _aggregate import P, run_checks
+
 
 def props_with_holes(poly):
     def ring(coords):
@@ -21,8 +23,7 @@ def props_with_holes(poly):
     return a, s / a
 
 
-@pytest.mark.parametrize("size,h,nvoid", [("SAN 210/75", 750, 3), ("SAN 210/115", 1150, 1), ("SAN 210/135", 1350, 1)])
-def test_outline(size, h, nvoid):
+def _check_outline(size, h, nvoid):
     sec = ViaduktSanSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -35,8 +36,7 @@ def test_outline(size, h, nvoid):
     assert "teaching notes" in sec.source_status and "Viadukt" in sec.source_status
 
 
-@pytest.mark.parametrize("size,h", [("SAN 210/115", 1150), ("SAN 210/135", 1350)])
-def test_printed_walls(size, h):
+def _check_printed_walls(size, h):
     p = ViaduktSanSection(size).polygon
     vert = p.intersection(LineString([(0, -1), (0, h + 1)]))
     assert vert.length == pytest.approx(250)  # 15 top + 10 bottom
@@ -46,7 +46,7 @@ def test_printed_walls(size, h):
     assert ViaduktSanSection(size).provenance == "transcribed-with-convention"
 
 
-def test_san75_estimate():
+def _check_san75_estimate():
     sec = ViaduktSanSection("SAN 210/75")
     assert sec.provenance == "estimate"
     p = sec.polygon
@@ -55,6 +55,15 @@ def test_san75_estimate():
     assert p.intersection(LineString([(0, -1), (0, 751)])).length == pytest.approx(250, abs=0.5)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         ViaduktSanSection("SAN 210/95")
+
+
+def test_hr_viadukt_san_catalogue_checks():
+    run_checks(
+        (_check_outline, P("size,h,nvoid", [("SAN 210/75", 750, 3), ("SAN 210/115", 1150, 1), ("SAN 210/135", 1350, 1)])),
+        (_check_printed_walls, P("size,h", [("SAN 210/115", 1150), ("SAN 210/135", 1350)])),
+        _check_san75_estimate,
+        _check_invalid,
+    )

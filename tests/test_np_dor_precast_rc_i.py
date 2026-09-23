@@ -7,6 +7,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.np import DorPrecastRcIDimensions, DorPrecastRcISection
 
+from _aggregate import P, run_checks
+
 
 def _sharp_area(web_h):
     return 700 * 150 + (700 + 325) / 2 * 65 + 325 * web_h + (325 + 700) / 2 * 150 + 700 * 250
@@ -20,8 +22,7 @@ def _chamfer_loss():
     return 2 * (soffit + shoulder + top_under)
 
 
-@pytest.mark.parametrize("size,depth,web_h,span", [("1300", 1300, 685, 20.0), ("1700", 1700, 1085, 25.0)])
-def test_sharp_outline_matches_printed_chain(size, depth, web_h, span):
+def _check_sharp_outline_matches_printed_chain(size, depth, web_h, span):
     s = DorPrecastRcISection(size, chamfer=False)
     poly = s.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -33,8 +34,7 @@ def test_sharp_outline_matches_printed_chain(size, depth, web_h, span):
     assert (s.dimensions.bottom_width - s.dimensions.web_width) / 2 == 187.5
 
 
-@pytest.mark.parametrize("size,web_h", [("1300", 685), ("1700", 1085)])
-def test_chamfer_convention_area_effect(size, web_h):
+def _check_chamfer_convention_area_effect(size, web_h):
     s = DorPrecastRcISection(size)
     assert s.provenance == "transcribed-with-convention"
     assert s.source_status == "DoR standard drawing, July 2015"
@@ -53,8 +53,16 @@ def test_chamfer_convention_area_effect(size, web_h):
     assert abs(cham["cy"] - sharp["cy"]) < 0.5 and abs(cham["ixx"] / sharp["ixx"] - 1) < 1e-3
 
 
-def test_invalid_size_and_chain():
+def _check_invalid_size_and_chain():
     with pytest.raises(ValueError, match="size must be one of"):
         DorPrecastRcISection("1500")
     with pytest.raises(ValueError, match="does not close"):
         DorPrecastRcIDimensions(depth=1300, web_height=700)
+
+
+def test_np_dor_precast_rc_i_catalogue_checks():
+    run_checks(
+        (_check_sharp_outline_matches_printed_chain, P("size,depth,web_h,span", [("1300", 1300, 685, 20.0), ("1700", 1700, 1085, 25.0)])),
+        (_check_chamfer_convention_area_effect, P("size,web_h", [("1300", 685), ("1700", 1085)])),
+        _check_invalid_size_and_chain,
+    )

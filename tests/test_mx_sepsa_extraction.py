@@ -13,6 +13,8 @@ from bridgebeams.mx import (
 )
 from bridgebeams.mx._arcs import ring_properties
 
+from _aggregate import P, run_checks
+
 
 def _data(name):
     return json.loads(resources.files("bridgebeams.mx").joinpath(f"data/{name}").read_text())
@@ -36,8 +38,7 @@ PINNED_CLOSED = {
 }
 
 
-@pytest.mark.parametrize("size", SepsaBoxGirderSection.SIZES)
-def test_box_constructs(size):
+def _check_box_constructs(size):
     s = SepsaBoxGirderSection(size)
     p = s.polygon
     assert p.is_valid
@@ -54,8 +55,7 @@ def test_box_constructs(size):
     assert 2 * s.derived["soffit_tangent_half_width_cm"] == pytest.approx(fam["printed_base_width_cm"], abs=0.2)
 
 
-@pytest.mark.parametrize("family,row", ROWS)
-def test_box_area_table(family, row):
+def _check_box_area_table(family, row):
     s = SepsaBoxGirderSection(family, a=10 * row["a_cm"])
     # tip thickness b from the fixed wing soffit line (CA-115 table copies CA-85's b column)
     assert s.wing_tip_thickness() == pytest.approx(row["b_cm"], abs=0.25)
@@ -79,7 +79,7 @@ def test_box_area_table(family, row):
             assert abs(rel_u) <= 0.0051
 
 
-def test_box_wing_limits_and_invalid():
+def _check_box_wing_limits_and_invalid():
     with pytest.raises(ValueError):
         SepsaBoxGirderSection("CA-85-U")
     with pytest.raises(ValueError):
@@ -88,7 +88,7 @@ def test_box_wing_limits_and_invalid():
         SepsaBoxGirderSection("CA-100")
 
 
-def test_type_u_opening():
+def _check_type_u_opening():
     p = SepsaBoxGirderSection("CA-150-U").polygon
     # top: two wings with the 60.8 + 2x7 cm opening between them
     assert _width(p, 1499) == pytest.approx(3100 - 748, abs=0.5)
@@ -102,8 +102,7 @@ TT_ROWS = [(v["variant"], r) for v in TT["variants"] for r in v["rows"]]
 TT_PINNED = {("LIGERA", 75.0): -5.0, ("LIGERA", 60.0): -3.5}
 
 
-@pytest.mark.parametrize("variant,row", TT_ROWS)
-def test_double_tee_all_cells(variant, row):
+def _check_double_tee_all_cells(variant, row):
     size = f"{variant}-{row['h_cm']:g}"
     v = next(x for x in TT["variants"] if x["variant"] == variant)
     stem = row["h_cm"] - 5 - v["haunch_depth_cm"]
@@ -120,7 +119,7 @@ def test_double_tee_all_cells(variant, row):
             assert abs(diff) <= 0.05 * stem + 0.5
 
 
-def test_double_tee_invalid():
+def _check_double_tee_invalid():
     with pytest.raises(ValueError):
         SepsaDoubleTeeSection("AMERICANA-85")
     with pytest.raises(ValueError):
@@ -129,8 +128,7 @@ def test_double_tee_invalid():
 
 
 # ---------------------------------------------------------------- Nebraska
-@pytest.mark.parametrize("size", SepsaNebraskaSection.SIZES)
-def test_nebraska(size):
+def _check_nebraska(size):
     s = SepsaNebraskaSection(size)
     p = s.polygon
     assert p.is_valid and s.provenance == "estimate"
@@ -144,7 +142,7 @@ def test_nebraska(size):
     assert -0.0025 <= rel <= -0.0015
 
 
-def test_nebraska_web20_adds_2cm_per_depth():
+def _check_nebraska_web20_adds_2cm_per_depth():
     for t in ("180", "210", "240-BASE-ESPECIAL"):
         a18 = section_properties(SepsaNebraskaSection(t + "-W18").polygon)["area"]
         a20 = section_properties(SepsaNebraskaSection(t + "-W20").polygon)["area"]
@@ -152,3 +150,27 @@ def test_nebraska_web20_adds_2cm_per_depth():
         assert a20 - a18 == pytest.approx(20 * 10 * depth, rel=1e-9)
     with pytest.raises(ValueError):
         SepsaNebraskaSection("135-W20")
+
+
+def test_mx_sepsa_extraction_catalogue_checks():
+    run_checks(
+        (_check_box_constructs, P("size", SepsaBoxGirderSection.SIZES)),
+        (_check_box_area_table, P("family,row", ROWS)),
+        _check_box_wing_limits_and_invalid,
+        _check_type_u_opening,
+        (_check_double_tee_all_cells, P("variant,row", TT_ROWS)),
+        _check_double_tee_invalid,
+        (_check_nebraska, P("size", SepsaNebraskaSection.SIZES)),
+        _check_nebraska_web20_adds_2cm_per_depth,
+    )
+
+
+def test_sepsa_box_closed_area_discrepancies_pinned():
+    """PINNED_CLOSED bands (CA-135, B-400), CA-180 table offset and a=190 repeat."""
+    run_checks((_check_box_area_table, P("family,row", [(f, r) for f, r in ROWS
+                                                         if f in PINNED_CLOSED or f == "CA-180"])))
+
+
+def test_sepsa_double_tee_ligera_areas_pinned():
+    run_checks((_check_double_tee_all_cells, P("variant,row", [(v, r) for v, r in TT_ROWS
+                                                               if (v, r["h_cm"]) in TT_PINNED])))

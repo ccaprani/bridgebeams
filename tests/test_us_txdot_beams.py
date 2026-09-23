@@ -26,6 +26,8 @@ from bridgebeams.us.txdot_slabs_boxes import (
     TxDotXBeamSection,
 )
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 CLASSES = (
     TxDotIGirderSection, TxDotWideFlangeGirderSection, TxDotLegacyIBeamSection,
@@ -39,8 +41,7 @@ def props(sec):
     return gross_properties(sec.polygon, unit=IN)
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_every_size_valid_symmetric(cls):
+def _check_every_size_valid_symmetric(cls):
     for size in cls.SIZES:
         s = cls(size)
         p = s.polygon
@@ -53,8 +54,7 @@ def test_every_size_valid_symmetric(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_invalid_size_raises(cls):
+def _check_invalid_size_raises(cls):
     with pytest.raises(ValueError):
         cls("nonsense")
 
@@ -74,8 +74,7 @@ WF = {  # WF-IGD sheet 2, Aug 2024
 }
 
 
-@pytest.mark.parametrize("size", TX)
-def test_tx_girder_published(size):
+def _check_tx_girder_published(size):
     g = props(TxDotIGirderSection(size))
     a, yb, ix, iy = TX[size]
     assert g["area"] == pytest.approx(a, abs=0.51)
@@ -84,8 +83,7 @@ def test_tx_girder_published(size):
     assert g["iy"] == pytest.approx(iy, abs=0.5)
 
 
-@pytest.mark.parametrize("size", WF)
-def test_wf_girder_published(size):
+def _check_wf_girder_published(size):
     g = props(TxDotWideFlangeGirderSection(size))
     a, yb, ix, iy = WF[size]
     assert g["area"] == pytest.approx(a, abs=0.51)
@@ -98,7 +96,7 @@ def test_wf_girder_published(size):
         assert g["ix"] == pytest.approx(ix, abs=0.5)
 
 
-def test_tx_key_dimensions():
+def _check_tx_key_dimensions():
     s = TxDotIGirderSection("Tx62")
     assert s.dimensions.depth == pytest.approx(62 * IN)
     assert s.dimensions.top_width == pytest.approx(42 * IN)
@@ -111,8 +109,7 @@ LEG = {"A": (275.4, 12.61, 22658), "B": (360.3, 14.93, 43177), "C": (494.9, 17.0
        "54": (493.4, 25.53, 164022), "72": (863.4, 33.73, 532060)}
 
 
-@pytest.mark.parametrize("size", LEG)
-def test_legacy_i_published(size):
+def _check_legacy_i_published(size):
     g = props(TxDotLegacyIBeamSection(size))
     a, yb, ix = LEG[size]
     assert g["area"] == pytest.approx(a, abs=0.05)
@@ -152,8 +149,7 @@ DT = {
 }
 
 
-@pytest.mark.parametrize("size", DT)
-def test_double_t_estimate_envelope(size):
+def _check_double_t_estimate_envelope(size):
     g = props(TxDotDoubleTSection(size))
     a, yb, ix = DT[size]
     # Omitted fillets/edge keys: +4.0..4.5 in^2, yb +0.03..0.06 in, I +0.5..0.95%.
@@ -184,10 +180,7 @@ DS = {"6DS20": (1087, 10.82, 43704), "7DS20": (1183, 11.24, 46580), "8DS20": (12
 
 # ti: I tolerance (in^4). Decked slab void/edge are a 4-parameter least-squares
 # fit to 9 printed values per depth, leaving I residuals up to 2.1 in^4.
-@pytest.mark.parametrize("cls,table,ta,ti", [
-    (TxDotBoxBeamSection, BOX, 0.05, 1.0), (TxDotXBeamSection, XB, 0.5, 1.0),
-    (TxDotSlabBeamSection, SLAB, 0.1, 1.0), (TxDotDeckedSlabBeamSection, DS, 0.5, 2.5)])
-def test_voided_and_slab_published(cls, table, ta, ti):
+def _check_voided_and_slab_published(cls, table, ta, ti):
     for size, (a, yb, ix) in table.items():
         s = cls(size)
         g = props(s)
@@ -196,10 +189,30 @@ def test_voided_and_slab_published(cls, table, ta, ti):
         assert g["ix"] == pytest.approx(ix, abs=ti), size
 
 
-def test_box_voids_and_widths():
+def _check_box_voids_and_widths():
     s = TxDotBoxBeamSection("5B40-C")
     assert len(s.polygon.interiors) == 1
     assert s.dimensions.width == pytest.approx(59.75 * IN)
     assert TxDotXBeamSection("4XB20").dimensions.width == pytest.approx(47.75 * IN)
     assert TxDotDeckedSlabBeamSection("8DS23").dimensions.width == pytest.approx(95.75 * IN)
     assert TxDotDeckedSlabBeamSection("6DS20").provenance == "fitted-reconstruction"
+
+
+def test_us_txdot_beams_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid_symmetric, P("cls", CLASSES)),
+        (_check_invalid_size_raises, P("cls", CLASSES)),
+        (_check_tx_girder_published, P("size", TX)),
+        (_check_wf_girder_published, P("size", WF)),
+        _check_tx_key_dimensions,
+        (_check_legacy_i_published, P("size", LEG)),
+        (_check_double_t_estimate_envelope, P("size", DT)),
+        (_check_voided_and_slab_published, P("cls,table,ta,ti", [
+    (TxDotBoxBeamSection, BOX, 0.05, 1.0), (TxDotXBeamSection, XB, 0.5, 1.0),
+    (TxDotSlabBeamSection, SLAB, 0.1, 1.0), (TxDotDeckedSlabBeamSection, DS, 0.5, 2.5)])),
+        _check_box_voids_and_widths,
+    )
+
+
+def test_txdot_wf_tx62_inertia_pinned():
+    run_checks((_check_wf_girder_published, P("size", ["WF-Tx62"])))

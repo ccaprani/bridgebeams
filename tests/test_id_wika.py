@@ -10,6 +10,8 @@ from bridgebeams.id import (
     WikaPcUGirderSection,
 )
 
+from _aggregate import P, run_checks
+
 
 def _width(p, y):
     return p.intersection(LineString([(-5000, y), (5000, y)])).length
@@ -20,8 +22,7 @@ CG = {"CG60": (600, 4329, 1293103), "CG70": (700, 4806, 2023171),
       "CG80": (800, 5274, 2968087), "CG100": (1000, 6334, 5717699)}
 
 
-@pytest.mark.parametrize("size", list(CG))
-def test_channel_printed_dims_and_fit(size):
+def _check_channel_printed_dims_and_fit(size):
     d, a, i = CG[size]
     s = WikaChannelGirderSection(size)
     p = s.polygon
@@ -47,8 +48,7 @@ PCI = {"H90": (900, 350, 650, 170, 2572, 2266607), "H125": (1250, 350, 650, 170,
        "H210": (2100, 800, 700, 200, 7495, 41087033)}
 
 
-@pytest.mark.parametrize("size", list(PCI))
-def test_pc_i_estimate(size):
+def _check_pc_i_estimate(size):
     h, bt, bb, tw, a, i = PCI[size]
     s = WikaPcIGirderSection(size)
     p = s.polygon
@@ -61,7 +61,7 @@ def test_pc_i_estimate(size):
     assert props["ixx"] == pytest.approx(1e4 * i, rel=1e-4)
 
 
-def test_bulb_tee_estimate():
+def _check_bulb_tee_estimate():
     s = WikaBulbTeeSection("H220")
     p = s.polygon
     assert p.is_valid and p.bounds == pytest.approx((-1200, 0, 1200, 2200))
@@ -76,8 +76,7 @@ PCU = {"H120": (1200, 1720, 9178, 12633291), "H140": (1400, 1720, 10366, 1963446
        "H210": (2100, 1900, 14678, 62328088), "H230": (2300, 2080, 15936, 80742448)}
 
 
-@pytest.mark.parametrize("size", list(PCU))
-def test_pc_u_estimate(size):
+def _check_pc_u_estimate(size):
     h, top, a, i = PCU[size]
     s = WikaPcUGirderSection(size)
     p = s.polygon
@@ -92,8 +91,17 @@ def test_pc_u_estimate(size):
     assert props["area"] / (100 * a) - 1 == pytest.approx(stored["area_rel"], abs=2e-6)
 
 
-@pytest.mark.parametrize("cls", [WikaChannelGirderSection, WikaPcIGirderSection,
-                                 WikaPcUGirderSection, WikaBulbTeeSection])
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("H999")
+
+
+def test_id_wika_catalogue_checks():
+    run_checks(
+        (_check_channel_printed_dims_and_fit, P("size", list(CG))),
+        (_check_pc_i_estimate, P("size", list(PCI))),
+        _check_bulb_tee_estimate,
+        (_check_pc_u_estimate, P("size", list(PCU))),
+        (_check_invalid_size, P("cls", [WikaChannelGirderSection, WikaPcIGirderSection,
+                                 WikaPcUGirderSection, WikaBulbTeeSection])),
+    )

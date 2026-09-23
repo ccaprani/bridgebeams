@@ -5,13 +5,14 @@ from shapely.geometry import LineString, box
 
 from bridgebeams.lt.tilsta import TilstaSijaSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size", TilstaSijaSection.SIZES)
-def test_printed_dimensions(size):
+def _check_printed_dimensions(size):
     sec = TilstaSijaSection(size)
     d = sec.dimensions
     p = sec.polygon
@@ -30,8 +31,7 @@ def below_flange(size):
     return sec.polygon.intersection(box(-1000, 0, 1000, h - sec.dimensions.flange)).area / 1e6
 
 
-@pytest.mark.parametrize("size", ["S-850-700", "S-850-710"])
-def test_volume_without_flange_s850(size):
+def _check_volume_without_flange_s850(size):
     # "Standartinio gaminio be lentynos 1 m ilgio tūris ~ 0,29 m3" (printed to 2 d.p.)
     assert below_flange(size) == pytest.approx(0.29, abs=0.005)
 
@@ -43,11 +43,20 @@ def test_s1000_volume_note_pinned():
     assert TilstaSijaSection("S-1000").published["volume_without_flange_m3_per_m"] == 0.29
 
 
-def test_provenance():
+def _check_provenance():
     assert TilstaSijaSection("S-1000").provenance == "transcribed"
     assert TilstaSijaSection("S-850-710").provenance == "transcribed-with-convention"
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         TilstaSijaSection("S-1200")
+
+
+def test_lt_tilsta_catalogue_checks():
+    run_checks(
+        (_check_printed_dimensions, P("size", TilstaSijaSection.SIZES)),
+        (_check_volume_without_flange_s850, P("size", ["S-850-700", "S-850-710"])),
+        _check_provenance,
+        _check_invalid,
+    )

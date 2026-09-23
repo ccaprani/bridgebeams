@@ -22,6 +22,8 @@ from bridgebeams.us.state_ca_girders import (
 )
 from bridgebeams.us.state_common import gross_properties
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 CLASSES = (CaIGirderSection, CaBulbTeeSection, CaWideFlangeSection, CaBathTubSection, CaVoidedSlabSection)
@@ -47,8 +49,7 @@ TUB_TAB = {"CA TUB55": (1339, 460081, 24.1), "CA TUB61": (1435, 604231, 26.9), "
 WF_ODD = {f"CA WF{d}{v}" for d in (78, 90, 102, 114) for v in ("", "PT")}
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_every_size_valid(cls):
+def _check_every_size_valid(cls):
     for size in cls.SIZES:
         s = cls(size)
         poly = s.polygon
@@ -60,13 +61,12 @@ def test_every_size_valid(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("nope")
 
 
-def test_table_coverage():
+def _check_table_coverage():
     assert set(CaIGirderSection.SIZES) == set(I_TAB)
     assert set(CaBulbTeeSection.SIZES) == set(BT_TAB)
     assert set(CaWideFlangeSection.SIZES) == set(WF_TAB)
@@ -77,8 +77,7 @@ def _props(cls, size):
     return gross_properties(cls(size).polygon, IN)
 
 
-@pytest.mark.parametrize("size", sorted(I_TAB))
-def test_i_girder(size):
+def _check_i_girder(size):
     a, i, yb = I_TAB[size]
     p = _props(CaIGirderSection, size)
     assert p["area"] == pytest.approx(a, abs=1e-6)
@@ -87,8 +86,7 @@ def test_i_girder(size):
     assert CaIGirderSection(size).polygon.bounds[2] * 2 == pytest.approx(19 * IN)
 
 
-@pytest.mark.parametrize("size", sorted(BT_TAB))
-def test_bulb_tee(size):
+def _check_bulb_tee(size):
     a, i, yb = BT_TAB[size]
     p = _props(CaBulbTeeSection, size)
     assert p["yb"] == pytest.approx(yb, abs=0.05)
@@ -101,8 +99,7 @@ def test_bulb_tee(size):
         assert p["ix"] == pytest.approx(i, rel=4.5e-3)
 
 
-@pytest.mark.parametrize("size", sorted(WF_TAB))
-def test_wide_flange(size):
+def _check_wide_flange(size):
     a, i, yb = WF_TAB[size]
     p = _props(CaWideFlangeSection, size)
     if size in WF_ODD:
@@ -116,8 +113,7 @@ def test_wide_flange(size):
         assert p["ix"] == pytest.approx(i, rel=3.5e-3)
 
 
-@pytest.mark.parametrize("size", sorted(TUB_TAB))
-def test_bath_tub(size):
+def _check_bath_tub(size):
     a, i, yb = TUB_TAB[size]
     p = _props(CaBathTubSection, size)
     assert p["area"] == pytest.approx(a, rel=1e-3)
@@ -128,7 +124,7 @@ def test_bath_tub(size):
     assert s.dimensions.bottom_width == pytest.approx(59 * IN)
 
 
-def test_voided_slab_printed_dimensions():
+def _check_voided_slab_printed_dimensions():
     s = CaVoidedSlabSection("SIV-48")
     b = s.polygon.bounds
     assert b[2] - b[0] == pytest.approx(48 * IN)
@@ -136,3 +132,24 @@ def test_voided_slab_printed_dimensions():
     assert [round(v[2] / IN, 6) for v in s.dimensions.voids] == [12, 9, 12]
     assert len(CaVoidedSlabSection("SI-36").polygon.interiors) == 0
     assert all(CaVoidedSlabSection(k).provenance == "estimate" for k in CaVoidedSlabSection.SIZES)
+
+
+def test_us_state_ca_girders_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid, P("cls", CLASSES)),
+        (_check_invalid_size, P("cls", CLASSES)),
+        _check_table_coverage,
+        (_check_i_girder, P("size", sorted(I_TAB))),
+        (_check_bulb_tee, P("size", sorted(BT_TAB))),
+        (_check_wide_flange, P("size", sorted(WF_TAB))),
+        (_check_bath_tub, P("size", sorted(TUB_TAB))),
+        _check_voided_slab_printed_dimensions,
+    )
+
+
+def test_ca_bt49_area_misprint_pinned():
+    run_checks((_check_bulb_tee, P("size", ["CA BT49"])))
+
+
+def test_ca_wf_odd_rows_pinned():
+    run_checks((_check_wide_flange, P("size", sorted(WF_ODD))))

@@ -8,6 +8,8 @@ from shapely.affinity import scale
 from bridgebeams.us.state_common import gross_properties
 from bridgebeams.us.state_or_girders import OrBoxSection, OrIGirderSection, OrSlabSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 ALL = (OrSlabSection, OrBoxSection, OrIGirderSection)
 # size: (Area in2, c.g. in, I in4) as printed on each BR sheet
@@ -17,8 +19,7 @@ BOX_PUB = {"33": (753, 16.33, 110540), "39": (813, 19.29, 168600),
            "42": (843, 20.78, 203050), "48": (903, 23.75, 283450)}
 
 
-@pytest.mark.parametrize("cls", ALL)
-def test_every_size_valid_symmetric(cls):
+def _check_every_size_valid_symmetric(cls):
     for size in cls.SIZES:
         s = cls(size)
         p = s.polygon
@@ -31,16 +32,14 @@ def test_every_size_valid_symmetric(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", ALL)
-def test_invalid_size_raises(cls):
+def _check_invalid_size_raises(cls):
     with pytest.raises(ValueError):
         cls("VI0")
 
 
 # Area printed to 1 in2 (a 96-gon void loses <0.1 in2), c.g. to 0.01 in,
 # I to 4-5 significant figures; residuals are <=0.5 in2, 0.01 in, 0.06 %.
-@pytest.mark.parametrize("size", OrSlabSection.SIZES)
-def test_slab_published(size):
+def _check_slab_published(size):
     s = OrSlabSection(size)
     g = gross_properties(s.polygon, IN)
     a, yb, ix = SLAB_PUB[size]
@@ -50,8 +49,7 @@ def test_slab_published(size):
     assert s.polygon.bounds[2] - s.polygon.bounds[0] == pytest.approx(48 * IN)
 
 
-@pytest.mark.parametrize("size", OrBoxSection.SIZES)
-def test_box_published(size):
+def _check_box_published(size):
     g = gross_properties(OrBoxSection(size).polygon, IN)
     a, yb, ix = BOX_PUB[size]
     assert g["area"] == pytest.approx(a, abs=0.5)
@@ -59,13 +57,7 @@ def test_box_published(size):
     assert g["ix"] == pytest.approx(ix, rel=0.0006)
 
 
-@pytest.mark.parametrize("size,depth,top,bot,web,area", [
-    ("II", 36, 12, 18, 6, 12 * 6 + 3 * 9 + 6 * 15 + 6 * 12 + 18 * 6 - 1),
-    ("III", 45, 16, 22, 7, 16 * 7 + 4.5 * 11.5 + 7 * 19 + 7.5 * 14.5 + 22 * 7 - 1),
-    ("IV", 54, 20, 26, 8, 20 * 8 + 6 * 14 + 8 * 23 + 9 * 17 + 26 * 8 - 1),
-    ("V", 63, 20, 26, 8, 20 * 8 + 6 * 14 + 8 * 32 + 9 * 17 + 26 * 8 - 1),
-])
-def test_i_girder_analytic(size, depth, top, bot, web, area):
+def _check_i_girder_analytic(size, depth, top, bot, web, area):
     """No ODOT printed properties: check dims and trapezoid-sum area (1 in chamfers)."""
     s = OrIGirderSection(size)
     x0, _, x1, y1 = s.polygon.bounds
@@ -75,3 +67,18 @@ def test_i_girder_analytic(size, depth, top, bot, web, area):
     assert s.dimensions.web_width == pytest.approx(web * IN)
     assert gross_properties(s.polygon, IN)["area"] == pytest.approx(area)
     assert not math.isnan(gross_properties(s.polygon, IN)["ix"])
+
+
+def test_us_state_or_girders_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid_symmetric, P("cls", ALL)),
+        (_check_invalid_size_raises, P("cls", ALL)),
+        (_check_slab_published, P("size", OrSlabSection.SIZES)),
+        (_check_box_published, P("size", OrBoxSection.SIZES)),
+        (_check_i_girder_analytic, P("size,depth,top,bot,web,area", [
+    ("II", 36, 12, 18, 6, 12 * 6 + 3 * 9 + 6 * 15 + 6 * 12 + 18 * 6 - 1),
+    ("III", 45, 16, 22, 7, 16 * 7 + 4.5 * 11.5 + 7 * 19 + 7.5 * 14.5 + 22 * 7 - 1),
+    ("IV", 54, 20, 26, 8, 20 * 8 + 6 * 14 + 8 * 23 + 9 * 17 + 26 * 8 - 1),
+    ("V", 63, 20, 26, 8, 20 * 8 + 6 * 14 + 8 * 32 + 9 * 17 + 26 * 8 - 1),
+])),
+    )

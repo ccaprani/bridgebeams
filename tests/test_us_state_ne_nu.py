@@ -13,6 +13,8 @@ from shapely.affinity import scale
 
 from bridgebeams.us.state_ne_nu import NeNuGirderSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 PUB = {  # depth_mm: (area in2, yb in, I in4)
     "NU900": (648.1, 16.1, 110262),
@@ -37,7 +39,7 @@ def props_mm(poly):
     return a, cy, i - a * cy * cy
 
 
-def test_every_size_valid():
+def _check_every_size_valid():
     for size in NeNuGirderSection.SIZES:
         s = NeNuGirderSection(size)
         p = s.polygon
@@ -51,13 +53,12 @@ def test_every_size_valid():
         assert s.geometry is not None
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         NeNuGirderSection("NU35")
 
 
-@pytest.mark.parametrize("size,pub", PUB.items())
-def test_published_properties(size, pub):
+def _check_published_properties(size, pub):
     a, yb, i = props_mm(NeNuGirderSection(size).polygon)
     assert a / IN**2 == pytest.approx(pub[0], rel=2e-4)
     assert yb / IN == pytest.approx(pub[1], abs=0.06)
@@ -72,7 +73,16 @@ def test_nu1350_metric_inertia_typo_pinned():
     assert abs(i / 1e6 / 126841 - 1) > 0.005
 
 
-def test_soffit_chamfer_estimate():
+def _check_soffit_chamfer_estimate():
     p = NeNuGirderSection("NU900").polygon
     soffit = [x for x, y in p.exterior.coords if abs(y) < 1e-9]
     assert max(soffit) - min(soffit) == pytest.approx(975 - 40)
+
+
+def test_us_state_ne_nu_catalogue_checks():
+    run_checks(
+        _check_every_size_valid,
+        _check_invalid_size,
+        (_check_published_properties, P("size,pub", PUB.items())),
+        _check_soffit_chamfer_estimate,
+    )

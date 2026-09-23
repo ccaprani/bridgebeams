@@ -5,6 +5,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.pk.nha_i_girders import LsmPscIGirderSection, NhaStandardIGirderSection
 
+from _aggregate import P, run_checks
+
 # Table 1, Mustafa & Javed (2025), PDF p2: (H, B1, B2, B3, D1..D5)
 NHA_TABLE = {
     "A": (1200, 550, 180, 550, 250, 90, 475, 185, 200),
@@ -38,8 +40,7 @@ def _analytic(h, t, w, b, e1, s1, hw, s2, e2):
     return area, sum(a * y for a, y in parts) / area
 
 
-@pytest.mark.parametrize("size", NhaStandardIGirderSection.SIZES)
-def test_nha_types(size):
+def _check_nha_types(size):
     sec = NhaStandardIGirderSection(size)
     h, b1, b2, b3, d1, d2, d3, d4, d5 = NHA_TABLE[size]
     assert d1 + d2 + d3 + d4 + d5 == h
@@ -56,7 +57,7 @@ def test_nha_types(size):
     assert "NHA" in sec.source_status
 
 
-def test_nha_physical_widths():
+def _check_nha_physical_widths():
     sec = NhaStandardIGirderSection("H")
     pts = list(sec.polygon.exterior.coords)
     top = sorted(x for x, y in pts if y == 2600)
@@ -67,8 +68,7 @@ def test_nha_physical_widths():
     assert NhaStandardIGirderSection("A").span_range_m == "12-20"
 
 
-@pytest.mark.parametrize("size", LsmPscIGirderSection.SIZES)
-def test_lsm_sizes(size):
+def _check_lsm_sizes(size):
     sec = LsmPscIGirderSection(size)
     h, t, w, b, *_ = LSM[size]
     poly = sec.polygon
@@ -82,26 +82,31 @@ def test_lsm_sizes(size):
     assert sec.drawing.startswith("LSM-EBP-BR-ST-")
 
 
-def test_lsm_30m_known_area():
+def _check_lsm_30m_known_area():
     # 900x170 + (900+200)/2*170 + 200*1170 + (600+200)/2*200 + 600*290
     assert section_properties(LsmPscIGirderSection("30m").polygon)["area"] == pytest.approx(
         153000 + 93500 + 234000 + 80000 + 174000
     )
 
 
-def test_lsm_differs_from_nha_type_e():
+def _check_lsm_differs_from_nha_type_e():
     lsm = LsmPscIGirderSection("30m").dimensions
     nha = NhaStandardIGirderSection("E").dimensions
     assert lsm.depth == nha.depth == 2000
     assert (lsm.top_width, lsm.web_width) != (nha.top_width, nha.web_width)
 
 
-def test_geometry_builds():
-    assert NhaStandardIGirderSection("C").geometry is not None
-    assert LsmPscIGirderSection("45m").geometry is not None
-
-
-@pytest.mark.parametrize("cls", [NhaStandardIGirderSection, LsmPscIGirderSection])
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("Z")
+
+
+def test_pk_nha_i_girders_catalogue_checks():
+    run_checks(
+        (_check_nha_types, P("size", NhaStandardIGirderSection.SIZES)),
+        _check_nha_physical_widths,
+        (_check_lsm_sizes, P("size", LsmPscIGirderSection.SIZES)),
+        _check_lsm_30m_known_area,
+        _check_lsm_differs_from_nha_type_e,
+        (_check_invalid_size, P("cls", [NhaStandardIGirderSection, LsmPscIGirderSection])),
+    )

@@ -12,6 +12,8 @@ from bridgebeams.my.gcast_beams import (
 from bridgebeams.my.jkr_prt import JkrPrtBeamSection
 from bridgebeams.my.oka_m_beam import OkaMBeamSection
 
+from _aggregate import P, run_checks
+
 CLASSES = [JkrPrtBeamSection, OkaMBeamSection, GcastUBeamSection, GcastTmBeamSection, GcastIBeamSection, GcastTBeamSection]
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 
@@ -27,8 +29,7 @@ def props(poly):
     return abs(a), cy, abs(i0) - abs(a) * cy * cy
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_all_sizes_valid(cls):
+def _check_all_sizes_valid(cls):
     for s in cls.SIZES:
         sec = cls(s)
         p = sec.polygon
@@ -40,13 +41,12 @@ def test_all_sizes_valid(cls):
         assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("nope")
 
 
-def test_prt_exact_areas_and_hw():
+def _check_prt_exact_areas_and_hw():
     for s in JkrPrtBeamSection.SIZES:
         sec = JkrPrtBeamSection(s)
         assert sec.dimensions.web_depth == sec.published["printed_hw"]
@@ -62,7 +62,7 @@ def test_prt_exact_areas_and_hw():
     assert JkrPrtBeamSection("PRT1").polygon.bounds[2] == 400
 
 
-def test_oka_m_properties():
+def _check_oka_m_properties():
     # Systematic -500 mm2 (chamfer/lean likely ignored by the table): 0.2 % tol.
     for s in OkaMBeamSection.SIZES:
         sec = OkaMBeamSection(s)
@@ -79,7 +79,7 @@ def test_oka_m_properties():
     assert OkaMBeamSection("M9").published["area"] + 32000 == 457450
 
 
-def test_gcast_u_fit():
+def _check_gcast_u_fit():
     for s in GcastUBeamSection.SIZES:
         sec = GcastUBeamSection(s)
         p = sec.published
@@ -93,7 +93,7 @@ def test_gcast_u_fit():
     assert d.valley_height == 150 and d.toe_height == 355
 
 
-def test_gcast_tm_estimate():
+def _check_gcast_tm_estimate():
     for s in GcastTmBeamSection.SIZES:
         sec = GcastTmBeamSection(s)
         p = sec.published
@@ -104,7 +104,7 @@ def test_gcast_tm_estimate():
         assert i == pytest.approx(p["ixx"], rel=5e-3)
 
 
-def test_gcast_i_and_t():
+def _check_gcast_i_and_t():
     sec = GcastIBeamSection()
     a, cy, i = props(sec.polygon)
     assert a == pytest.approx(645144, rel=1e-3)
@@ -116,3 +116,20 @@ def test_gcast_i_and_t():
     assert a == pytest.approx(757115, rel=1e-3)
     assert cy == pytest.approx(944, abs=1)
     assert i == pytest.approx(311.46e9, rel=2e-3)
+
+
+def test_my_beams_catalogue_checks():
+    run_checks(
+        (_check_all_sizes_valid, P("cls", CLASSES)),
+        (_check_invalid_size, P("cls", CLASSES)),
+        _check_prt_exact_areas_and_hw,
+        _check_oka_m_properties,
+        _check_gcast_u_fit,
+        _check_gcast_tm_estimate,
+        _check_gcast_i_and_t,
+    )
+
+
+def test_oka_m10_area_discrepancy_pinned():
+    """Printed M10 area breaks the 32000 mm2 per 80 mm pattern (inside the OKA M check)."""
+    run_checks(_check_oka_m_properties)

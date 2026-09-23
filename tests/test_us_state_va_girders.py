@@ -10,6 +10,8 @@ from shapely.affinity import scale
 from bridgebeams.us.state_common import gross_properties
 from bridgebeams.us.state_va_girders import VaBoxBeamSection, VaPcbtSection, VaVoidedSlabSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 CLASSES = (VaPcbtSection, VaVoidedSlabSection, VaBoxBeamSection)
@@ -27,8 +29,7 @@ BOX = {"36x27": (580, 13.31, 51070), "36x33": (640, 16.25, 86820), "36x39": (700
        "48x39": (844, 19.25, 173700), "48x42": (874, 20.73, 209500)}
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_every_size_valid(cls):
+def _check_every_size_valid(cls):
     for size in cls.SIZES:
         s = cls(size)
         poly = s.polygon
@@ -40,14 +41,12 @@ def test_every_size_valid(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("nope")
 
 
-@pytest.mark.parametrize("depth", sorted(PCBT))
-def test_pcbt_properties(depth):
+def _check_pcbt_properties(depth):
     a, yb, i = PCBT[depth]
     s = VaPcbtSection(f"PCBT-{depth}")
     p = gross_properties(s.polygon, IN)
@@ -66,8 +65,7 @@ def test_pcbt_without_chamfer_would_be_high():
     assert p["area"] + 2 * 0.75**2 / 2 == pytest.approx(802.7 + 0.55, abs=0.05)
 
 
-@pytest.mark.parametrize("size", sorted(SLAB))
-def test_voided_slab_published_convention_exact(size):
+def _check_voided_slab_published_convention_exact(size):
     a, i = SLAB[size]
     p = gross_properties(VaVoidedSlabSection(size, shear_keys=False).polygon, IN)
     assert p["area"] == pytest.approx(a, abs=0.6)  # table rounds to 1 in^2; 96-gon voids
@@ -75,8 +73,7 @@ def test_voided_slab_published_convention_exact(size):
     assert p["yb"] == pytest.approx(int(size.split("x")[1]) / 2, abs=1e-6)
 
 
-@pytest.mark.parametrize("size", sorted(SLAB))
-def test_voided_slab_with_vdot_key(size):
+def _check_voided_slab_with_vdot_key(size):
     # Default outline includes the File 12.05-10 key (8.3 in^2 deducted in total).
     a, _ = SLAB[size]
     keyed = gross_properties(VaVoidedSlabSection(size).polygon, IN)
@@ -85,16 +82,14 @@ def test_voided_slab_with_vdot_key(size):
     assert keyed["area"] == pytest.approx(a - 8.3, abs=0.6)
 
 
-@pytest.mark.parametrize("size", sorted(BOX))
-def test_box_keyless_is_published_plus_20(size):
+def _check_box_keyless_is_published_plus_20(size):
     # Confirms 6 in slabs / 5 in webs / 3x3 chamfers: PCI key deduction is 20 in^2.
     a, _, _ = BOX[size]
     plain = gross_properties(VaBoxBeamSection(size, shear_keys=False).polygon, IN)
     assert plain["area"] == pytest.approx(a + 20, abs=1e-6)
 
 
-@pytest.mark.parametrize("size", sorted(BOX))
-def test_box_with_vdot_key_pinned_residuals(size):
+def _check_box_with_vdot_key_pinned_residuals(size):
     # Pinned: VDOT-drawn key removes 12.8 in^2 rather than the 20 in^2 of the
     # PCI key used by the table, so area is +7.2 in^2, yb +0.03..0.07 in, I +1.0..1.4 %.
     a, yb, i = BOX[size]
@@ -102,3 +97,18 @@ def test_box_with_vdot_key_pinned_residuals(size):
     assert p["area"] == pytest.approx(a + 7.2, abs=0.01)
     assert 0.02 < p["yb"] - yb < 0.08
     assert 1.0 < (p["ix"] / i - 1) * 100 < 1.45
+
+
+def test_box_with_vdot_key_pinned_residuals():
+    run_checks((_check_box_with_vdot_key_pinned_residuals, P("size", sorted(BOX))))
+
+
+def test_us_state_va_girders_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid, P("cls", CLASSES)),
+        (_check_invalid_size, P("cls", CLASSES)),
+        (_check_pcbt_properties, P("depth", sorted(PCBT))),
+        (_check_voided_slab_published_convention_exact, P("size", sorted(SLAB))),
+        (_check_voided_slab_with_vdot_key, P("size", sorted(SLAB))),
+        (_check_box_keyless_is_published_plus_20, P("size", sorted(BOX))),
+    )

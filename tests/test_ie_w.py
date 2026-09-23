@@ -4,6 +4,8 @@ from shapely.affinity import scale
 from bridgebeams._geometry import section_properties
 from bridgebeams.ie.ie_w import IeWBeamSection
 
+from _aggregate import P, run_checks
+
 # Manual PDF30 / printed28; independent literals, A(mm2), cy(mm), I(1e9 mm4).
 PUBLISHED = [
     ("W1",572360,305.3,35.556), ("W3",606880,345.9,49.614),
@@ -16,8 +18,7 @@ PUBLISHED = [
     ("W18",1150190,1011.8,655.490), ("W19",1213750,1081.1,758.560),
 ]
 
-@pytest.mark.parametrize("size,area,cy,ixx",PUBLISHED)
-def test_published_properties(size,area,cy,ixx):
+def _check_published_properties(size,area,cy,ixx):
     beam=IeWBeamSection(size);p=beam.polygon;d=beam.dimensions
     assert p.is_valid and p.exterior.is_ccw and not p.interiors
     assert p.symmetric_difference(scale(p,xfact=-1,origin=(0,0))).area < 1e-6
@@ -42,8 +43,15 @@ def test_cad_lower_vertices_and_catalogue_revision_are_preserved():
     assert beam.dimensions.v == 464
 
 
-def test_size_validation_and_mesh():
+def _check_size_validation_and_mesh():
     with pytest.raises(ValueError):IeWBeamSection('W2')
     g=IeWBeamSection('W19').geometry
     g.create_mesh(mesh_sizes=[10000])
     assert g.mesh is not None
+
+
+def test_ie_w_catalogue_checks():
+    run_checks(
+        (_check_published_properties, P("size,area,cy,ixx",PUBLISHED)),
+        _check_size_validation_and_mesh,
+    )

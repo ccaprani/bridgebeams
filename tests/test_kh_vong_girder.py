@@ -4,8 +4,10 @@ import pytest
 
 from bridgebeams.kh.vong_scc_girder import KhVongGirderSection
 
+from _aggregate import P, run_checks
 
-def test_geometry():
+
+def _check_geometry():
     s = KhVongGirderSection()
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -16,6 +18,13 @@ def test_geometry():
     assert s.geometry is not None
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         KhVongGirderSection("TB_14_f60")
+
+
+def test_kh_vong_girder_catalogue_checks():
+    run_checks(
+        _check_geometry,
+        _check_invalid_size,
+    )

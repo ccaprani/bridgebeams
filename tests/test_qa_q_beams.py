@@ -6,6 +6,8 @@ from shapely.geometry import Point, LineString
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.qa import QaQBeamSection
 
+from _aggregate import P, run_checks
+
 # Directly transcribed SD 5-1-101 property-table fixtures, not implementation data.
 PUBLISHED = [
     ("T1", 800, 565861, 381, 4.043e10),
@@ -16,8 +18,7 @@ PUBLISHED = [
 ]
 
 
-@pytest.mark.parametrize("kind,depth,area,cy,ixx", PUBLISHED)
-def test_source_table_and_topology(kind, depth, area, cy, ixx):
+def _check_source_table_and_topology(kind, depth, area, cy, ixx):
     beam = QaQBeamSection(kind)
     poly = as_polygon(beam.geometry)
     assert poly.is_valid and poly.exterior.is_ccw
@@ -35,7 +36,7 @@ def test_source_table_and_topology(kind, depth, area, cy, ixx):
     assert len(cut.geoms) == 2
 
 
-def test_t1_independent_integrated_area():
+def _check_t1_independent_integrated_area():
     # Gross outer trapezoid + haunch zone + flange band minus opening.
     d, b, low, rise, slope = 800, 939, 290, 71, 10.55
     yh = d - 117 - 75
@@ -49,7 +50,14 @@ def test_t1_independent_integrated_area():
     assert QaQBeamSection("T1").polygon.area == pytest.approx(outer - void - chamfers)
 
 
-@pytest.mark.parametrize("invalid", ["T0", "T6", 1, None])
-def test_invalid_type(invalid):
+def _check_invalid_type(invalid):
     with pytest.raises(ValueError):
         QaQBeamSection(invalid)
+
+
+def test_qa_q_beams_catalogue_checks():
+    run_checks(
+        (_check_source_table_and_topology, P("kind,depth,area,cy,ixx", PUBLISHED)),
+        _check_t1_independent_integrated_area,
+        (_check_invalid_type, P("invalid", ["T0", "T6", 1, None])),
+    )

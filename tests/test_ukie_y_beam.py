@@ -16,6 +16,8 @@ import pytest
 from bridgebeams.ie import IeYBeamSection, strand_locations
 from bridgebeams._geometry import as_polygon, section_properties
 
+from _aggregate import P, run_checks
+
 DATA = json.loads(
     resources.files("bridgebeams.ie.data").joinpath("ie_y_beam.json").read_text()
 )
@@ -23,7 +25,7 @@ DATA = json.loads(
 TOL = {"area": 0.04, "yc": 0.025, "ixx": 0.05}
 
 
-def test_all_sizes_against_published_properties():
+def _check_all_sizes_against_published_properties():
     for row in DATA["published_properties"]:
         beam = IeYBeamSection(row["section"])
         props = section_properties(beam.polygon)
@@ -50,13 +52,13 @@ def test_reconstruction_rms_matches_documented_value():
     assert rms * 100 <= DATA["fit"]["rms_error_pct"] + 0.05
 
 
-def test_top_width_matches_published_wf():
+def _check_top_width_matches_published_wf():
     for row in DATA["published_properties"]:
         beam = IeYBeamSection(row["section"])
         assert beam.dimensions.top_width == pytest.approx(row["wf"], rel=0.005)
 
 
-def test_geometry_valid_and_symmetric():
+def _check_geometry_valid_and_symmetric():
     for size in IeYBeamSection.SIZES:
         poly = as_polygon(IeYBeamSection(size).geometry)
         assert poly.is_valid
@@ -66,12 +68,12 @@ def test_geometry_valid_and_symmetric():
         assert maxx == pytest.approx(375.0, abs=1e-6)
 
 
-def test_invalid_size_raises():
+def _check_invalid_size_raises():
     with pytest.raises(ValueError):
         IeYBeamSection("Y9")
 
 
-def test_strand_locations_inside_section():
+def _check_strand_locations_inside_section():
     for size in IeYBeamSection.SIZES:
         beam = IeYBeamSection(size)
         pts = strand_locations(size)
@@ -81,7 +83,7 @@ def test_strand_locations_inside_section():
             assert 0 < y < beam.depth
 
 
-def test_strand_row_counts():
+def _check_strand_row_counts():
     pts = strand_locations("Y8")
     heights = sorted({round(y) for x, y in pts})
     assert heights[0] == 60  # bottom row at 60 mm
@@ -91,6 +93,18 @@ def test_strand_row_counts():
     assert bottom == 13 + 14 + 14 + 10
 
 
-def test_strand_locations_exclude_rows_near_top():
+def _check_strand_locations_exclude_rows_near_top():
     pts = strand_locations("Y1", min_top_cover=60.0)
     assert max(y for x, y in pts) <= 700 - 60
+
+
+def test_ukie_y_beam_catalogue_checks():
+    run_checks(
+        _check_all_sizes_against_published_properties,
+        _check_top_width_matches_published_wf,
+        _check_geometry_valid_and_symmetric,
+        _check_invalid_size_raises,
+        _check_strand_locations_inside_section,
+        _check_strand_row_counts,
+        _check_strand_locations_exclude_rows_near_top,
+    )

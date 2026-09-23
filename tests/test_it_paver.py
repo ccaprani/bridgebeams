@@ -6,13 +6,14 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.it import PaverBeamSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(p, y):
     return p.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size", PaverBeamSection.SIZES)
-def test_valid_and_printed_envelope(size):
+def _check_valid_and_printed_envelope(size):
     sec = PaverBeamSection(size)
     p, d = sec.polygon, sec.dimensions
     assert p.is_valid and p.exterior.is_ccw
@@ -22,8 +23,7 @@ def test_valid_and_printed_envelope(size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", [s for s in PaverBeamSection.SIZES if s[:3] in ("VHP", "UHP")])
-def test_troughs(size):
+def _check_troughs(size):
     p = PaverBeamSection(size).polygon
     bottom = 974 if size.startswith("VHP") else 2500
     assert width_at(p, 1) == pytest.approx(bottom, abs=1)
@@ -34,14 +34,12 @@ def test_troughs(size):
     assert not p.contains(LineString([(0, 300), (0, 590)]).centroid)
 
 
-@pytest.mark.parametrize("size,area", [("UHP170", 1.005e6), ("UHP80", 0.745e6), ("VHP80", 0.531e6),
-                                       ("HP100", 0.480e6), ("IHP65", 0.236e6)])
-def test_area_vs_traced_sketch(size, area):
+def _check_area_vs_traced_sketch(size, area):
     # parametric model vs the scaled raster trace of the drawn sketch
     assert section_properties(PaverBeamSection(size).polygon)["area"] == pytest.approx(area, rel=0.02)
 
 
-def test_printed_widths_other_families():
+def _check_printed_widths_other_families():
     assert width_at(PaverBeamSection("HP100").polygon, 999) == pytest.approx(1250)
     assert width_at(PaverBeamSection("HTP50").polygon, 499) == pytest.approx(1500)
     assert width_at(PaverBeamSection("HTP50").polygon, 200) == pytest.approx(600)
@@ -49,6 +47,17 @@ def test_printed_widths_other_families():
     assert width_at(PaverBeamSection("IHP80").polygon, 1) == pytest.approx(600)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         PaverBeamSection("IHP120")
+
+
+def test_it_paver_catalogue_checks():
+    run_checks(
+        (_check_valid_and_printed_envelope, P("size", PaverBeamSection.SIZES)),
+        (_check_troughs, P("size", [s for s in PaverBeamSection.SIZES if s[:3] in ("VHP", "UHP")])),
+        (_check_area_vs_traced_sketch, P("size,area", [("UHP170", 1.005e6), ("UHP80", 0.745e6), ("VHP80", 0.531e6),
+                                       ("HP100", 0.480e6), ("IHP65", 0.236e6)])),
+        _check_printed_widths_other_families,
+        _check_invalid,
+    )

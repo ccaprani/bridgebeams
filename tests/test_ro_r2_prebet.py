@@ -16,6 +16,8 @@ from bridgebeams._geometry import section_properties
 from bridgebeams.ro.asa import AsaGrindaPodSection
 from bridgebeams.ro.r2_prebet import PrebetGirderSection
 
+from _aggregate import P, run_checks
+
 DATA = json.loads(resources.files("bridgebeams.ro").joinpath("data/r2_prebet.json").read_text(encoding="utf-8"))
 
 # depth, top width, max lower width (mm)
@@ -35,13 +37,12 @@ def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-def test_sizes_cover_json():
+def _check_sizes_cover_json():
     assert set(PrebetGirderSection.SIZES) == set(DATA["sizes"]) == set(EXPECTED)
     assert len(PrebetGirderSection.SIZES) == 21
 
 
-@pytest.mark.parametrize("size", PrebetGirderSection.SIZES)
-def test_outline(size):
+def _check_outline(size):
     sec = PrebetGirderSection(size)
     poly = sec.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -56,8 +57,7 @@ def test_outline(size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", PrebetGirderSection.SIZES)
-def test_recorded_area_and_image(size):
+def _check_recorded_area_and_image(size):
     row = DATA["sizes"][size]
     props = section_properties(PrebetGirderSection(size).polygon)
     assert props["area"] == pytest.approx(row["model_properties_mm"]["area_mm2"], abs=1)
@@ -67,8 +67,7 @@ def test_recorded_area_and_image(size):
     assert len(img["sha256"]) == 64
 
 
-@pytest.mark.parametrize("size", PrebetGirderSection.SIZES)
-def test_width_chains_sum(size):
+def _check_width_chains_sum(size):
     pr = DATA["sizes"][size]["printed_cm"]
     if "top_chain" in pr and "top_overall" in pr:
         assert sum(pr["top_chain"]) == pytest.approx(pr["top_overall"])
@@ -76,9 +75,7 @@ def test_width_chains_sum(size):
         assert sum(pr["bottom_chain"]) == pytest.approx(pr["bottom_overall"])
 
 
-@pytest.mark.parametrize("size", [s for s in PrebetGirderSection.SIZES
-                                  if DATA["sizes"][s]["kind"] == "polyline"])
-def test_polyline_chain_closes_to_depth(size):
+def _check_polyline_chain_closes_to_depth(size):
     row = DATA["sizes"][size]
     chain = row["printed_cm"]["vertical_chain_from_soffit"]
     chain = [float(str(c).replace("max ", "")) for c in chain]
@@ -93,15 +90,7 @@ def test_polyline_chain_closes_to_depth(size):
     assert row["provenance"] == "transcribed"
 
 
-@pytest.mark.parametrize("size,chain", [
-    ("INVT52-EC", [15, 6, 8, 13, 10]), ("INVT52-TIP", [10, 7, 20, 5, 10]),
-    ("I72-TIP", [11, 8.2, 4.8, 27, 4.8, 8.2, 8]), ("I80-TIP", [11, 8.2, 4.8, 35, 4.8, 8.2, 8]),
-    ("T93-TIP", [12, 6.1, 15.4, 39.5, 10, 2, 8]), ("T95-EC", [12, 6.1, 15.4, 39.5, 10, 2, 10]),
-    ("T105-EC", [12, 6, 15.5, 49.5, 10, 2, 10]),
-    # T103-TIP: labels as read sum to 102.4; web label taken as 47.9 (see JSON)
-    ("T103-TIP", [12, 6.8, 16.3, 47.9, 10, 2, 8]),
-])
-def test_filleted_chains_close(size, chain):
+def _check_filleted_chains_close(size, chain):
     assert sum(chain) == pytest.approx(DATA["sizes"][size]["depth_cm"])
 
 
@@ -131,8 +120,7 @@ PINNED = {
 }
 
 
-@pytest.mark.parametrize("key,tol", PINNED.items())
-def test_fillet_residuals(key, tol):
+def _check_fillet_residuals(key, tol):
     size, name = key
     r = DATA["sizes"][size]["residuals_model_vs_printed"][name]
     assert abs(r["model"] - r["printed"]) <= tol
@@ -145,8 +133,7 @@ def test_invt_ec_42_is_52_cut_at_dashed_line():
     assert width_at(a, 419.9) == pytest.approx(207.0, abs=0.5)
 
 
-@pytest.mark.parametrize("size", ["42", "52"])
-def test_invt_tip_identical_to_asa_above_chamfer(size):
+def _check_invt_tip_identical_to_asa_above_chamfer(size):
     pre = PrebetGirderSection(f"INVT{size}-TIP").polygon
     asa = AsaGrindaPodSection(size).polygon
     for y in range(100, int(size) * 10, 10):  # identical above the flange edge
@@ -156,8 +143,7 @@ def test_invt_tip_identical_to_asa_above_chamfer(size):
     assert DATA["sizes"][f"INVT{size}-TIP"]["identity"]["size"] == size
 
 
-@pytest.mark.parametrize("size", ["72", "80"])
-def test_i_tip_matches_asa_above_lower_flange(size):
+def _check_i_tip_matches_asa_above_lower_flange(size):
     pre = PrebetGirderSection(f"I{size}-TIP").polygon
     asa = AsaGrindaPodSection(size).polygon
     depth = int(size) * 10
@@ -178,13 +164,37 @@ def test_t93_is_iptana_95_with_8cm_flange_edge():
     assert width_at(pre.polygon, 929) == width_at(asa.polygon, 949) == pytest.approx(1200)
 
 
-def test_areas_increase_within_families():
+def _check_areas_increase_within_families():
     for fam in (("T140", "T160", "T180", "T200"), ("I130", "I150", "I160", "I180"),
                 ("TS160-TIP", "TS184-EC", "TS210-EC"), ("I72-TIP", "I80-TIP")):
         a = [section_properties(PrebetGirderSection(s).polygon)["area"] for s in fam]
         assert a == sorted(a)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         PrebetGirderSection("T180-EC")
+
+
+def test_ro_r2_prebet_catalogue_checks():
+    run_checks(
+        _check_sizes_cover_json,
+        (_check_outline, P("size", PrebetGirderSection.SIZES)),
+        (_check_recorded_area_and_image, P("size", PrebetGirderSection.SIZES)),
+        (_check_width_chains_sum, P("size", PrebetGirderSection.SIZES)),
+        (_check_polyline_chain_closes_to_depth, P("size", [s for s in PrebetGirderSection.SIZES
+                                  if DATA["sizes"][s]["kind"] == "polyline"])),
+        (_check_filleted_chains_close, P("size,chain", [
+    ("INVT52-EC", [15, 6, 8, 13, 10]), ("INVT52-TIP", [10, 7, 20, 5, 10]),
+    ("I72-TIP", [11, 8.2, 4.8, 27, 4.8, 8.2, 8]), ("I80-TIP", [11, 8.2, 4.8, 35, 4.8, 8.2, 8]),
+    ("T93-TIP", [12, 6.1, 15.4, 39.5, 10, 2, 8]), ("T95-EC", [12, 6.1, 15.4, 39.5, 10, 2, 10]),
+    ("T105-EC", [12, 6, 15.5, 49.5, 10, 2, 10]),
+    # T103-TIP: labels as read sum to 102.4; web label taken as 47.9 (see JSON)
+    ("T103-TIP", [12, 6.8, 16.3, 47.9, 10, 2, 8]),
+])),
+        (_check_fillet_residuals, P("key,tol", PINNED.items())),
+        (_check_invt_tip_identical_to_asa_above_chamfer, P("size", ["42", "52"])),
+        (_check_i_tip_matches_asa_above_lower_flange, P("size", ["72", "80"])),
+        _check_areas_increase_within_families,
+        _check_invalid,
+    )

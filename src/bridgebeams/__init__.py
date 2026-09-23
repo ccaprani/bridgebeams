@@ -332,9 +332,9 @@ from bridgebeams.cr.puenteprefa import PuentePrefaBeamDimensions
 from bridgebeams.cr.puenteprefa import PuentePrefaBeamSection
 
 DISCLAIMER = (
-    "Not authoritative. bridgebeams is a best-effort, crowd-correctable research catalogue. Many profiles are reconstructions or estimates from incomplete, draft or historic sources, and some sources contradict themselves. Check every profile's `provenance` and `source_status` and verify dimensions against the governing drawing before any design, assessment or procurement use. No warranty; the authors accept no liability. Corrections are welcome."
+    "Not authoritative. bridgebeams is a best-effort, development-stage research catalogue. Many profiles are reconstructions or estimates from incomplete, draft or historic sources, and some sources contradict themselves. Check every profile's `provenance` and `source_status` and verify dimensions against the governing drawing before any design, assessment or procurement use. No warranty; the authors accept no liability."
 )
-"""Short usage disclaimer; see the documentation's *Disclaimer and corrections* page."""
+"""Short usage disclaimer; see the documentation's *Disclaimer* page."""
 
 __version__ = "0.3.0"
 

@@ -5,14 +5,14 @@ from shapely.geometry import LineString
 
 from bridgebeams.gr.r2_projects import GrProjectGirderSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(p, y):
     return p.intersection(LineString([(-3000, y), (3000, y)])).length
 
 
-@pytest.mark.parametrize("size,depth,top,bottom,web", [
-    ("Dervenakia-G3", 2400, 1400, 900, 300), ("Strymonas-study", 2050, 1250, 900, 250)])
-def test_printed_dimensions(size, depth, top, bottom, web):
+def _check_printed_dimensions(size, depth, top, bottom, web):
     sec = GrProjectGirderSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -22,7 +22,7 @@ def test_printed_dimensions(size, depth, top, bottom, web):
     assert sec.geometry is not None
 
 
-def test_chains_close():
+def _check_chains_close():
     d = GrProjectGirderSection("Dervenakia-G3").published
     assert sum(d["vertical_chain_top_down"]) == pytest.approx(2.40)
     s = GrProjectGirderSection("Strymonas-study").published
@@ -30,6 +30,15 @@ def test_chains_close():
     assert sum(s["top_chain"]) == pytest.approx(1.25)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         GrProjectGirderSection("Egnatia")
+
+
+def test_gr_r2_projects_catalogue_checks():
+    run_checks(
+        (_check_printed_dimensions, P("size,depth,top,bottom,web", [
+    ("Dervenakia-G3", 2400, 1400, 900, 300), ("Strymonas-study", 2050, 1250, 900, 250)])),
+        _check_chains_close,
+        _check_invalid,
+    )

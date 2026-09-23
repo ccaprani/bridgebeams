@@ -10,6 +10,8 @@ from bridgebeams.hu import (
     FerrobetonItgSection,
 )
 
+from _aggregate import P, run_checks
+
 ALL = [
     (cls, size)
     for cls in (FerrobetonFpSection, FerrobetonFptSection, FerrobetonItgSection, FerrobetonFi150Section)
@@ -18,8 +20,7 @@ ALL = [
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_valid_polygon(cls, size):
+def _check_valid_polygon(cls, size):
     sec = cls(size)
     poly = sec.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -30,8 +31,7 @@ def test_valid_polygon(cls, size):
 
 
 # ---- FP: plain polygon, analytic area from printed chain (cm)
-@pytest.mark.parametrize("size,depth,body", [("FP-20A", 20, 13.5), ("FP-30A", 30, 23.5), ("FP-37A", 37, 30.5)])
-def test_fp_area_and_widths(size, depth, body):
+def _check_fp_area_and_widths(size, depth, body):
     sec = FerrobetonFpSection(size)
     area_cm2 = 50 * 6.0 - 2 * 0.5 * 1.5 * 1.5 + 0.5 * (50 + 43) / 2 + 43 * body
     assert section_properties(sec.polygon)["area"] == pytest.approx(area_cm2 * 100, rel=1e-12)
@@ -40,8 +40,7 @@ def test_fp_area_and_widths(size, depth, body):
 
 
 # ---- FPT: tabulated Súly at 2500 kg/m³
-@pytest.mark.parametrize("size", ["FPT-70", "FPT-80", "FPT-90", "FPT-100", "FPT-130"])
-def test_fpt_mass_matches_catalogue(size):
+def _check_fpt_mass_matches_catalogue(size):
     sec = FerrobetonFptSection(size)
     mass = section_properties(sec.polygon)["area"] * 1e-6 * 2500
     # nothing fitted: CAD-measured outline reproduces Súly within 0.1%
@@ -66,14 +65,14 @@ def test_fpt_70_50_outline_and_mass_discrepancy_pinned():
     assert area * 1e-6 * 2500 / 620 - 1 == pytest.approx(-0.0111, abs=0.0005)
 
 
-def test_fpt_web_step_equals_mass_step():
+def _check_fpt_web_step_equals_mass_step():
     a70 = section_properties(FerrobetonFptSection("FPT-70").polygon)["area"]
     a80 = section_properties(FerrobetonFptSection("FPT-80").polygon)["area"]
     assert a80 - a70 == pytest.approx(300 * 100)
 
 
 # ---- ITG
-def test_itg90_chain_and_area():
+def _check_itg90_chain_and_area():
     sec = FerrobetonItgSection("ITG-90")
     d = sec.dimensions
     assert d.overall_width == pytest.approx(612)
@@ -87,7 +86,7 @@ def test_itg90_chain_and_area():
     assert sec.provenance == "transcribed"
 
 
-def test_itg_other_depths_are_estimates_and_differ_only_in_web():
+def _check_itg_other_depths_are_estimates_and_differ_only_in_web():
     a90 = section_properties(FerrobetonItgSection("ITG-90").polygon)["area"]
     for size, dh in (("ITG-70", -200), ("ITG-110", 200)):
         sec = FerrobetonItgSection(size)
@@ -97,7 +96,7 @@ def test_itg_other_depths_are_estimates_and_differ_only_in_web():
 
 
 # ---- FI-150
-def test_fi150_bounds_and_fillets_reduce_little():
+def _check_fi150_bounds_and_fillets_reduce_little():
     sec = FerrobetonFi150Section()
     assert sec.polygon.bounds == pytest.approx((-400, 0, 400, 1500))
     sharp = (
@@ -111,7 +110,19 @@ def test_fi150_bounds_and_fillets_reduce_little():
     assert sec.provenance == "estimate"
 
 
-@pytest.mark.parametrize("cls", [FerrobetonFpSection, FerrobetonFptSection, FerrobetonItgSection, FerrobetonFi150Section])
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("ITG-45" if cls is FerrobetonItgSection else "bogus")
+
+
+def test_hu_ferrobeton_catalogue_checks():
+    run_checks(
+        (_check_valid_polygon, P("cls,size", ALL)),
+        (_check_fp_area_and_widths, P("size,depth,body", [("FP-20A", 20, 13.5), ("FP-30A", 30, 23.5), ("FP-37A", 37, 30.5)])),
+        (_check_fpt_mass_matches_catalogue, P("size", ["FPT-70", "FPT-80", "FPT-90", "FPT-100", "FPT-130"])),
+        _check_fpt_web_step_equals_mass_step,
+        _check_itg90_chain_and_area,
+        _check_itg_other_depths_are_estimates_and_differ_only_in_web,
+        _check_fi150_bounds_and_fillets_reduce_little,
+        (_check_invalid_size, P("cls", [FerrobetonFpSection, FerrobetonFptSection, FerrobetonItgSection, FerrobetonFi150Section])),
+    )

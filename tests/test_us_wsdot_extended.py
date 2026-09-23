@@ -19,6 +19,8 @@ from bridgebeams.us.wsdot_legacy_girders import (
 from bridgebeams.us.wsdot_tub_girders import WsdotTubGirderSection
 from bridgebeams.us.wsdot_wf_girders import WsdotWfGirderSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 ALL_CLASSES = (
     WsdotWfGirderSection,
@@ -62,8 +64,7 @@ def _check(poly, pub, tol_a=0.05, tol_y=0.005, tol_i=0.5, tol_iy=0.5):
 
 
 # ---------------------------------------------------------------- generic
-@pytest.mark.parametrize("cls", ALL_CLASSES)
-def test_every_size_builds_valid_ccw_symmetric(cls):
+def _check_every_size_builds_valid_ccw_symmetric(cls):
     for size in cls.SIZES:
         s = cls(size)
         poly = s.polygon
@@ -76,8 +77,7 @@ def test_every_size_builds_valid_ccw_symmetric(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", ALL_CLASSES)
-def test_invalid_size_raises(cls):
+def _check_invalid_size_raises(cls):
     with pytest.raises(ValueError):
         cls("NOT-A-SIZE")
 
@@ -99,8 +99,7 @@ WF_2025 = {
 }
 
 
-@pytest.mark.parametrize("size", WF_2025)
-def test_wf_matches_2025_table(size):
+def _check_wf_matches_2025_table(size):
     depth, *pub = WF_2025[size]
     s = WsdotWfGirderSection(size)
     top = 61 if size.endswith("-61") else 49
@@ -109,7 +108,7 @@ def test_wf_matches_2025_table(size):
     _check(s.polygon, pub, tol_a=0.05, tol_y=0.005, tol_i=0.5, tol_iy=0.5)
 
 
-def test_wf_provenance_split():
+def _check_wf_provenance_split():
     assert WsdotWfGirderSection("WF42G").provenance == "transcribed"
     assert WsdotWfGirderSection("WF66G").provenance == "transcribed-with-convention"
     assert WsdotWfGirderSection("WF100G-61").provenance == "fitted-reconstruction"
@@ -154,18 +153,15 @@ TUB_G6_2006 = {
 }
 
 
-@pytest.mark.parametrize("size", TUB_2025)
-def test_tub_g4_g5_match_2025_table(size):
+def _check_tub_g4_g5_match_2025_table(size):
     _check(WsdotTubGirderSection(size).polygon, TUB_2025[size], tol_a=0.05, tol_y=0.005, tol_i=0.5, tol_iy=0.5)
 
 
-@pytest.mark.parametrize("size", TUB_2006_ONLY)
-def test_uf84_matches_2006_table(size):
+def _check_uf84_matches_2006_table(size):
     _check(WsdotTubGirderSection(size).polygon, TUB_2006_ONLY[size], tol_a=0.05, tol_y=0.005, tol_i=0.5)
 
 
-@pytest.mark.parametrize("size", TUB_G6_2006)
-def test_g6_drawn_outline_is_36in2_short_of_2006_table(size):
+def _check_g6_drawn_outline_is_36in2_short_of_2006_table(size):
     """Pinned discrepancy: drawn 1'-6" fillet run vs 2006 table (2'-0" run fits)."""
     s = WsdotTubGirderSection(size)
     assert s.provenance == "transcribed-with-convention"
@@ -174,7 +170,11 @@ def test_g6_drawn_outline_is_36in2_short_of_2006_table(size):
     assert a - TUB_G6_2006[size][0] == pytest.approx(-36.0, abs=0.05)
 
 
-def test_tub_geometry_callouts():
+def test_g6_drawn_outline_is_36in2_short_of_2006_table():
+    run_checks((_check_g6_drawn_outline_is_36in2_short_of_2006_table, P("size", TUB_G6_2006)))
+
+
+def _check_tub_geometry_callouts():
     s = WsdotTubGirderSection("U54G4")
     minx, miny, maxx, maxy = s.polygon.bounds
     assert maxy == pytest.approx(54 * IN)
@@ -188,8 +188,7 @@ def test_tub_geometry_callouts():
 BTG_2006 = {"W32BTG": (538.0, 17.88, 74039), "W38BTG": (574.0, 21.08, 114540), "W62BTG": (718.0, 33.68, 385995)}
 
 
-@pytest.mark.parametrize("size", BTG_2006)
-def test_btg_pinned_residual_vs_2006_table(size):
+def _check_btg_pinned_residual_vs_2006_table(size):
     """Drawn outline is exactly +4.0 in^2 over the 2006 table (unexplained)."""
     a, yb, ix, _ = props_in(WsdotBulbTeeSection(size).polygon)
     pa, pyb, pix = BTG_2006[size]
@@ -198,7 +197,11 @@ def test_btg_pinned_residual_vs_2006_table(size):
     assert 0 < (ix - pix) / pix < 0.004
 
 
-def test_wfbtg_flange_width_parameter():
+def test_btg_pinned_residual_vs_2006_table():
+    run_checks((_check_btg_pinned_residual_vs_2006_table, P("size", BTG_2006)))
+
+
+def _check_wfbtg_flange_width_parameter():
     s = WsdotBulbTeeSection("WF50BTG")
     assert s.provenance == "estimate"
     assert s.polygon.bounds[2] == pytest.approx(36 * IN)
@@ -225,7 +228,7 @@ def test_w35dg_vs_worked_example_pinned():
     assert (iy - 69245) / 69245 == pytest.approx(-0.0338, abs=0.001)
 
 
-def test_dg_spacing_range():
+def _check_dg_spacing_range():
     w = WsdotDeckBulbTeeSection("W65DG", spacing_in=72)
     assert w.polygon.is_valid
     assert w.polygon.bounds[3] == pytest.approx(65 * IN)
@@ -243,13 +246,28 @@ SLAB_2025 = {
 }
 
 
-@pytest.mark.parametrize("size", SLAB_2025)
-def test_slabs_match_2025_table(size):
+def _check_slabs_match_2025_table(size):
     # Table prints integer areas and inertias; voids are 256-gons (<0.02%).
     s = WsdotSlabGirderSection(size)
     _check(s.polygon, SLAB_2025[size], tol_a=0.5, tol_y=0.005, tol_i=max(0.5, 3e-5 * SLAB_2025[size][2]))
 
 
-def test_slab_voids_are_interiors():
+def _check_slab_voids_are_interiors():
     assert len(WsdotSlabGirderSection("SLAB18x48").polygon.interiors) == 3
     assert len(WsdotSlabGirderSection("SLAB12x48").polygon.interiors) == 0
+
+
+def test_us_wsdot_extended_catalogue_checks():
+    run_checks(
+        (_check_every_size_builds_valid_ccw_symmetric, P("cls", ALL_CLASSES)),
+        (_check_invalid_size_raises, P("cls", ALL_CLASSES)),
+        (_check_wf_matches_2025_table, P("size", WF_2025)),
+        _check_wf_provenance_split,
+        (_check_tub_g4_g5_match_2025_table, P("size", TUB_2025)),
+        (_check_uf84_matches_2006_table, P("size", TUB_2006_ONLY)),
+        _check_tub_geometry_callouts,
+        _check_wfbtg_flange_width_parameter,
+        _check_dg_spacing_range,
+        (_check_slabs_match_2025_table, P("size", SLAB_2025)),
+        _check_slab_voids_are_interiors,
+    )

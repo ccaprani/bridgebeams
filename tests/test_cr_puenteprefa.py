@@ -5,13 +5,14 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.cr import PuentePrefaBeamSection
 
+from _aggregate import P, run_checks
+
 
 def _width(p, y):
     return p.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size", PuentePrefaBeamSection.SIZES)
-def test_valid(size):
+def _check_valid(size):
     s = PuentePrefaBeamSection(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -19,14 +20,13 @@ def test_valid(size):
     assert s.provenance in {"estimate", "transcribed-with-convention"}
 
 
-@pytest.mark.parametrize("size", ["CALIFORNIA-137", "CALIFORNIA-167"])
-def test_california_printed(size):
+def _check_california_printed(size):
     p = PuentePrefaBeamSection(size).polygon
     assert _width(p, 10) == pytest.approx(480)  # printed bottom 48
     assert _width(p, 700) == pytest.approx(180)  # web 18 = 48 - 2 x 15 overhang
 
 
-def test_simple_te():
+def _check_simple_te():
     s = PuentePrefaBeamSection("SIMPLE-TE-97")
     p = s.polygon
     assert _width(p, 965) == pytest.approx(930)
@@ -36,6 +36,15 @@ def test_simple_te():
     assert section_properties(p)["area"] == pytest.approx(930 * 100 + 0.5 * (200 + 110) * 870)
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         PuentePrefaBeamSection("DOBLE-TE")
+
+
+def test_cr_puenteprefa_catalogue_checks():
+    run_checks(
+        (_check_valid, P("size", PuentePrefaBeamSection.SIZES)),
+        (_check_california_printed, P("size", ["CALIFORNIA-137", "CALIFORNIA-167"])),
+        _check_simple_te,
+        _check_invalid_size,
+    )

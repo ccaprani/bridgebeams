@@ -6,13 +6,14 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.es.r2_tierra import TierraBeamSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size", TierraBeamSection.SIZES)
-def test_valid_and_printed_envelope(size):
+def _check_valid_and_printed_envelope(size):
     sec = TierraBeamSection(size)
     p = sec.polygon
     d = sec.dimensions
@@ -27,19 +28,27 @@ def test_valid_and_printed_envelope(size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", ["TA90A", "TA150A", "TA210A"])
-def test_wide_u_soffit_is_3_20(size):
+def _check_wide_u_soffit_is_3_20(size):
     p = TierraBeamSection(size).polygon
     assert width_at(p, 0.5) == pytest.approx(3200, abs=5)
     # open-top trough: nothing on the centreline above the bottom slab
     assert width_at(p, p.bounds[3] - 1) < p.bounds[2] - p.bounds[0]
 
 
-def test_area_increases_with_depth_within_series():
+def _check_area_increases_with_depth_within_series():
     a = [section_properties(TierraBeamSection(s).polygon)["area"] for s in ("IP-120", "IP-160", "IP-190")]
     assert a[0] < a[1] < a[2]
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         TierraBeamSection("TA90E")
+
+
+def test_es_r2_tierra_catalogue_checks():
+    run_checks(
+        (_check_valid_and_printed_envelope, P("size", TierraBeamSection.SIZES)),
+        (_check_wide_u_soffit_is_3_20, P("size", ["TA90A", "TA150A", "TA210A"])),
+        _check_area_increases_with_depth_within_series,
+        _check_invalid,
+    )

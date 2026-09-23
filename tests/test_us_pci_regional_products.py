@@ -14,6 +14,8 @@ from bridgebeams.us.pci_regional_products import (
     PciNeBulbTeeSection, PciNeDeckBulbTeeSection, PciNextBeamSection, PciZone6UGirderSection,
 )
 
+from _aggregate import P, run_checks
+
 CLASSES = [PciNextBeamSection, PciNeBulbTeeSection, PciNeDeckBulbTeeSection, PciZone6UGirderSection]
 TOL = {
     PciNextBeamSection: {"area": 0.11, "ixx": 0.10, "yb": 0.15},
@@ -24,8 +26,7 @@ TOL = {
 CASES = [(c, s) for c in CLASSES for s in c.SIZES]
 
 
-@pytest.mark.parametrize("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])
-def test_published_properties(cls, size):
+def _check_published_properties(cls, size):
     beam = cls(size)
     g = gross_properties_in(beam.polygon)
     calc = {"area": g["area"], "yb": g["cy"], "ixx": g["ixx"]}
@@ -34,8 +35,7 @@ def test_published_properties(cls, size):
         assert abs(res) <= TOL[cls][prop], (size, prop, res)
 
 
-@pytest.mark.parametrize("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])
-def test_valid_symmetric_polygon(cls, size):
+def _check_valid_symmetric_polygon(cls, size):
     beam = cls(size)
     poly = beam.polygon
     assert poly.is_valid and poly.exterior.is_ccw and not poly.interiors
@@ -48,7 +48,7 @@ def test_valid_symmetric_polygon(cls, size):
     assert beam.geometry is not None
 
 
-def test_key_widths():
+def _check_key_widths():
     assert PciNextBeamSection("NEXT36D-120").polygon.bounds[2] * 2 == pytest.approx(120 * INCH_MM)
     assert PciNextBeamSection("NEXT24F-95.5").polygon.bounds[2] * 2 == pytest.approx(95.5 * INCH_MM)
     assert PciNeBulbTeeSection("NEBT87").polygon.bounds[2] * 2 == pytest.approx(47.24 * INCH_MM)
@@ -60,14 +60,14 @@ def test_key_widths():
         assert u.row["W"] == u.row["T"] + 2 * u.row["tf"]
 
 
-def test_next_stem_batter_closes():
+def _check_next_stem_batter_closes():
     # 15 in stem top minus 0.375/12 batter per face over the stem height = base width C
     for size in PciNextBeamSection.SIZES:
         d = PciNextBeamSection(size).dimensions
         assert d.stem_top - 2 * 0.375 / 12 * (d.depth - d.flange) == pytest.approx(d.stem_base)
 
 
-def test_zone6_is_open_top_u():
+def _check_zone6_is_open_top_u():
     u = PciZone6UGirderSection("U84-4").polygon
     # centre of the girder at mid-depth is void
     from shapely.geometry import Point
@@ -75,7 +75,17 @@ def test_zone6_is_open_top_u():
     assert u.contains(Point(0, 4 * INCH_MM))
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_unknown_size_rejected(cls):
+def _check_unknown_size_rejected(cls):
     with pytest.raises(ValueError):
         cls("NEXT 40")
+
+
+def test_us_pci_regional_products_catalogue_checks():
+    run_checks(
+        (_check_published_properties, P("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])),
+        (_check_valid_symmetric_polygon, P("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])),
+        _check_key_widths,
+        _check_next_stem_batter_closes,
+        _check_zone6_is_open_top_u,
+        (_check_unknown_size_rejected, P("cls", CLASSES)),
+    )

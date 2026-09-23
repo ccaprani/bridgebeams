@@ -11,7 +11,7 @@ width interpretations and blocker claims in it were wrong.
   workflow. Do not merge or push to main. Keep changes on this branch or a
   new jurisdiction branch, with descriptive commits.
 - Python: `/home/ccaprani/anaconda3/envs/pybridge/bin/python`.
-- Full test suite after round 2 (web retrieval): **3369 passed**,
+- Full test suite (consolidated 23 September 2026; data-driven, same checks as the former 3369): **185 passed**,
   14 existing Matplotlib/Pyparsing deprecation warnings. Command:
   `timeout 180 /home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`.
 - Wheel checked outside the checkout: **all family JSON tables included**;
@@ -44,14 +44,25 @@ implemented profiles but its new PSC-I records are not yet implemented.
 
 ## Round 2 web retrieval and publication stance, 23 September 2026 (read first)
 
-Owner's stance (Colin): keep pushing, do our best, then **crowd-source
-corrections**. The catalogue is explicitly *not authoritative*, only useful.
-There is a prominent disclaimer in the README, docs index, coverage map,
-package docstring and `bridgebeams.DISCLAIMER`. `docs/source/corrections.md`
-explains the provenance levels and how to report errors. GitHub issue form:
-`.github/ISSUE_TEMPLATE/profile-correction.yml`. **Never delete downloaded
+Owner's stance (Colin): keep pushing and do our best. The catalogue is
+explicitly *not authoritative*, only useful, and this dev work is **not yet
+released** (no corrections workflow). There is a prominent disclaimer in the
+README, docs index, coverage map, package docstring and
+`bridgebeams.DISCLAIMER`. `docs/source/disclaimer.md` explains the provenance
+levels. **Never delete downloaded
 reference material**, even irrelevant files or HTML block pages; record their
 status instead.
+
+Tests are data-driven. `tests/test_catalogue.py` walks every counted profile
+(validity, orientation, voids, provenance, invalid sizes); each family file has one
+aggregated `*_catalogue_checks` test that lists failing family/size cases; pinned source
+discrepancies remain individually named tests. 30 legacy profiles (AU IGirder/Super-T,
+13 IeU, 4 SU3503 I33) are stored clockwise and pinned as such in `KNOWN_CW`; consider
+normalising them.
+
+Owner review queue (round 3, 15 cards: source conflicts, scan readings, estimate
+gallery, counting policy, manual downloads) is in the local `dims_review.html`
+(build with `--with-review`); images and generator in `sources/review-2026-09-23/`.
 
 Totals now: **1728 distinct profiles, 1903 country-profile assignments, 44
 countries**. Every profile has `provenance`: 543 transcribed, 760

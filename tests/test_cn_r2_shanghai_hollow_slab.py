@@ -10,6 +10,8 @@ from bridgebeams.cn.r2_shanghai_hollow_slab import (
     ShanghaiRigidHollowSlabSection,
 )
 
+from _aggregate import P, run_checks
+
 
 def _ring(coords):
     xs = np.array([c[0] for c in coords[:-1]])
@@ -33,8 +35,7 @@ ALL = [(cls, s) for cls in (ShanghaiRigidHollowSlabSection, ShanghaiHingedHollow
        for s in cls.SIZES]
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_valid_ccw_two_voids(cls, size):
+def _check_valid_ccw_two_voids(cls, size):
     sec = cls(size)
     p = sec.polygon
     assert p.is_valid
@@ -48,8 +49,7 @@ def test_valid_ccw_two_voids(cls, size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", ShanghaiRigidHollowSlabSection.SIZES)
-def test_rigid_printed_heights(size):
+def _check_rigid_printed_heights(size):
     sec = ShanghaiRigidHollowSlabSection(size)
     d = sec.dimensions
     yl, yr = d.ledge_heights
@@ -67,8 +67,7 @@ def test_rigid_printed_heights(size):
     assert maxy == pytest.approx(d.top_y(600.0))  # right top corner, 2% crossfall
 
 
-@pytest.mark.parametrize("size", ShanghaiRigidHollowSlabSection.SIZES)
-def test_rigid_analytic_area(size):
+def _check_rigid_analytic_area(size):
     """Independent hand area (no published table for volume 1).
 
     Core 1100 x D (the 2 % top line averages to D about x = 0), plus the
@@ -96,8 +95,7 @@ def test_rigid_analytic_area(size):
     assert a == pytest.approx(expected, rel=2e-5)
 
 
-@pytest.mark.parametrize("size", ShanghaiHingedHollowSlabSection.SIZES)
-def test_hinged_matches_published(size):
+def _check_hinged_matches_published(size):
     """Table 1 (PDF p130) gives A/Yx/I to 5 decimals in m units.
 
     Tolerances: area and centroid 0.05 % (5-figure rounding plus 64-point
@@ -114,8 +112,7 @@ def test_hinged_matches_published(size):
     assert sec.dimensions.depth == pytest.approx(pub["h"] * 1e3)
 
 
-@pytest.mark.parametrize("size", ShanghaiHingedHollowSlabSection.SIZES)
-def test_hinged_chains_close(size):
+def _check_hinged_chains_close(size):
     d = ShanghaiHingedHollowSlabSection(size).dimensions
     assert d.void_bottom + d.void_height + d.void_top == pytest.approx(d.depth)
     assert 2 * d.void_side_cover + 2 * d.void_width + d.void_gap == pytest.approx(d.width)
@@ -123,16 +120,27 @@ def test_hinged_chains_close(size):
     assert maxx == pytest.approx(495.0 if d.unit == "middle" else 497.5 + 400)
 
 
-def test_for_span():
+def _check_for_span():
     assert ShanghaiRigidHollowSlabSection.for_span(18).size == "16-18m-middle"
     assert ShanghaiHingedHollowSlabSection.for_span(22, "edge").size == "20-22m-edge"
     with pytest.raises(ValueError):
         ShanghaiRigidHollowSlabSection.for_span(25)
 
 
-@pytest.mark.parametrize("cls", [ShanghaiRigidHollowSlabSection, ShanghaiHingedHollowSlabSection])
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("25m-middle")
     with pytest.raises(ValueError):
         cls("10m-middle", arc_points=4)
+
+
+def test_cn_r2_shanghai_hollow_slab_catalogue_checks():
+    run_checks(
+        (_check_valid_ccw_two_voids, P("cls,size", ALL)),
+        (_check_rigid_printed_heights, P("size", ShanghaiRigidHollowSlabSection.SIZES)),
+        (_check_rigid_analytic_area, P("size", ShanghaiRigidHollowSlabSection.SIZES)),
+        (_check_hinged_matches_published, P("size", ShanghaiHingedHollowSlabSection.SIZES)),
+        (_check_hinged_chains_close, P("size", ShanghaiHingedHollowSlabSection.SIZES)),
+        _check_for_span,
+        (_check_invalid_size, P("cls", [ShanghaiRigidHollowSlabSection, ShanghaiHingedHollowSlabSection])),
+    )

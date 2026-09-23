@@ -12,6 +12,8 @@ from shapely.affinity import scale
 
 from bridgebeams.us.state_mo_girders import MoDotIGirderSection, MoDotNuGirderSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 
@@ -64,8 +66,7 @@ NU_PUB = {
 }
 
 
-@pytest.mark.parametrize("cls", (MoDotIGirderSection, MoDotNuGirderSection))
-def test_every_size_valid_symmetric(cls):
+def _check_every_size_valid_symmetric(cls):
     for size in cls.SIZES:
         s = cls(size)
         p = s.polygon
@@ -77,14 +78,12 @@ def test_every_size_valid_symmetric(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", (MoDotIGirderSection, MoDotNuGirderSection))
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("Type5")
 
 
-@pytest.mark.parametrize("size,pub", list(I_PUB.items()) + list(NU_PUB.items()))
-def test_published_properties(size, pub):
+def _check_published_properties(size, pub):
     cls = MoDotNuGirderSection if size.startswith("NU") else MoDotIGirderSection
     s = cls(size)
     a, yb, ix, iy = props_in(s.polygon)
@@ -95,7 +94,7 @@ def test_published_properties(size, pub):
     assert iy == pytest.approx(pub[3], rel=1e-4)
 
 
-def test_key_widths():
+def _check_key_widths():
     t6 = MoDotIGirderSection("Type6").polygon.bounds
     assert (t6[2] - t6[0]) / IN == pytest.approx(24)
     t7 = MoDotIGirderSection("Type7").polygon.bounds
@@ -106,3 +105,12 @@ def test_key_widths():
     # soffit width reduced by the two 3/4 in chamfers
     soffit = [x for x, y in nu.polygon.exterior.coords if abs(y) < 1e-9]
     assert (max(soffit) - min(soffit)) / IN == pytest.approx(38.375 - 1.5)
+
+
+def test_us_state_mo_girders_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid_symmetric, P("cls", (MoDotIGirderSection, MoDotNuGirderSection))),
+        (_check_invalid_size, P("cls", (MoDotIGirderSection, MoDotNuGirderSection))),
+        (_check_published_properties, P("size,pub", list(I_PUB.items()) + list(NU_PUB.items()))),
+        _check_key_widths,
+    )

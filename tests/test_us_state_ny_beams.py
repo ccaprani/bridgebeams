@@ -18,6 +18,8 @@ from bridgebeams.us.state_ny_beams import (
     keyed_unit_half_in,
 )
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 CLASSES = (NyBoxBeamSection, NySlabUnitSection, NyPcefBulbTeeSection)
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
@@ -27,8 +29,7 @@ def props(sec):
     return gross_properties(sec.polygon, IN)
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_all_sizes_valid_symmetric(cls):
+def _check_all_sizes_valid_symmetric(cls):
     for size in cls.SIZES:
         s = cls(size)
         poly = s.polygon
@@ -41,13 +42,12 @@ def test_all_sizes_valid_symmetric(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_invalid_size_raises(cls):
+def _check_invalid_size_raises(cls):
     with pytest.raises(ValueError):
         cls("B99x99")
 
 
-def test_counts_and_widths():
+def _check_counts_and_widths():
     assert len(NyBoxBeamSection.SIZES) == 22
     assert len(NySlabUnitSection.SIZES) == 8
     assert len(NyPcefBulbTeeSection.SIZES) == 6
@@ -56,7 +56,7 @@ def test_counts_and_widths():
 
 
 # ----------------------------------------------------------- boxes / slabs
-def test_b36_box_areas_exact():
+def _check_b36_box_areas_exact():
     for d in range(24, 55, 3):
         s = NyBoxBeamSection(f"B36x{d}")
         assert props(s)["area"] == pytest.approx(s.published["area_in2"], abs=0.1)
@@ -92,7 +92,7 @@ def test_pinned_b48_box_areas_below_model():
         assert 0.004 < r < 0.009, d
 
 
-def test_solid_and_18in_slabs_match():
+def _check_solid_and_18in_slabs_match():
     for size in ("S36x12", "S48x12", "S36x18", "S48x18"):
         s = NySlabUnitSection(size)
         p = props(s)
@@ -130,7 +130,7 @@ def test_pinned_s48x21_table_uses_three_12in_voids():
 
 
 # ----------------------------------------------------------------- girders
-def test_pcef_matches_table():
+def _check_pcef_matches_table():
     for size in NyPcefBulbTeeSection.SIZES:
         s = NyPcefBulbTeeSection(size)
         p = props(s)
@@ -142,3 +142,14 @@ def test_pcef_matches_table():
             assert p["ix"] == pytest.approx(500495, abs=1)
         else:
             assert p["ix"] == pytest.approx(s.published["ix_in4"], rel=1e-5), size
+
+
+def test_us_state_ny_beams_catalogue_checks():
+    run_checks(
+        (_check_all_sizes_valid_symmetric, P("cls", CLASSES)),
+        (_check_invalid_size_raises, P("cls", CLASSES)),
+        _check_counts_and_widths,
+        _check_b36_box_areas_exact,
+        _check_solid_and_18in_slabs_match,
+        _check_pcef_matches_table,
+    )

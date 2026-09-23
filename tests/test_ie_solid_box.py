@@ -6,6 +6,8 @@ from shapely.affinity import scale
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.ie.ie_solid_box import IeSolidBoxBeamSection
 
+from _aggregate import P, run_checks
+
 
 # PDF p14 / printed p12: area mm2, centroid mm, top and bottom Z in 1e6 mm3.
 PUBLISHED = {
@@ -30,9 +32,7 @@ PUBLISHED = {
 }
 
 
-@pytest.mark.parametrize("width_class", [1, 2, 3])
-@pytest.mark.parametrize("depth_index", range(8))
-def test_matches_published_properties(width_class, depth_index):
+def _check_matches_published_properties(width_class, depth_index):
     beam = IeSolidBoxBeamSection(f"SD{depth_index + 1} ({width_class})")
     poly = as_polygon(beam.geometry)
     expected_area, yc, zt, zb = PUBLISHED[width_class][depth_index]
@@ -55,7 +55,7 @@ def test_matches_published_properties(width_class, depth_index):
     )
 
 
-def test_area_from_independent_layer_calculation():
+def _check_area_from_independent_layer_calculation():
     # Upper-width rectangle plus two lower wings, less two corner triangles.
     expected = 620 * 300 + 2 * (65 * 60 + 65 * 30 / 2 - 25 * 25 / 2)
     assert IeSolidBoxBeamSection("SD1 (2)").polygon.area == expected == 195125
@@ -76,7 +76,15 @@ def test_width_class_four_is_nominal_with_recorded_discrepancies():
         IeSolidBoxBeamSection("SD1 (5)")
 
 
-def test_sectionproperties_mesh_smoke():
+def _check_sectionproperties_mesh_smoke():
     geometry = IeSolidBoxBeamSection("SD8 (3)").geometry
     geometry.create_mesh(mesh_sizes=[10000])
     assert geometry.mesh is not None
+
+
+def test_ie_solid_box_catalogue_checks():
+    run_checks(
+        (_check_matches_published_properties, P("width_class", [1, 2, 3]), P("depth_index", range(8))),
+        _check_area_from_independent_layer_calculation,
+        _check_sectionproperties_mesh_smoke,
+    )

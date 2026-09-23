@@ -5,13 +5,14 @@ from shapely.geometry import LineString
 
 from bridgebeams.hu.r2_sw_shp import SwShpSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size,h,soffit", [("SHP-22", 220, 520), ("SHP-32", 320, 480), ("SHP-40", 400, 440)])
-def test_printed(size, h, soffit):
+def _check_printed(size, h, soffit):
     sec = SwShpSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw and len(p.interiors) == 0
@@ -24,13 +25,20 @@ def test_printed(size, h, soffit):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size,tol", [("SHP-22", 0.012), ("SHP-32", 0.005), ("SHP-40", 0.005)])
-def test_mass_per_metre_at_2p5(size, tol):
+def _check_mass_per_metre_at_2p5(size, tol):
     # table slope (t per m of length) vs A x 2.5 t/m3; SHP-22 +1.0 % (table masses to 0.01 t)
     sec = SwShpSection(size)
     assert sec.polygon.area / 1e6 * 2.5 == pytest.approx(sec.mass_per_metre_t, rel=tol)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         SwShpSection("SHP-50")
+
+
+def test_hu_r2_sw_shp_catalogue_checks():
+    run_checks(
+        (_check_printed, P("size,h,soffit", [("SHP-22", 220, 520), ("SHP-32", 320, 480), ("SHP-40", 400, 440)])),
+        (_check_mass_per_metre_at_2p5, P("size,tol", [("SHP-22", 0.012), ("SHP-32", 0.005), ("SHP-40", 0.005)])),
+        _check_invalid,
+    )

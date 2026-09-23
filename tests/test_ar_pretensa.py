@@ -4,9 +4,10 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.ar import PretensaViSection
 
+from _aggregate import P, run_checks
 
-@pytest.mark.parametrize("size", PretensaViSection.SIZES)
-def test_valid_estimate_and_mass(size):
+
+def _check_valid_estimate_and_mass(size):
     s = PretensaViSection(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -22,6 +23,13 @@ def test_valid_estimate_and_mass(size):
     assert d.web_height > 0
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         PretensaViSection("VI-200")
+
+
+def test_ar_pretensa_catalogue_checks():
+    run_checks(
+        (_check_valid_estimate_and_mass, P("size", PretensaViSection.SIZES)),
+        _check_invalid_size,
+    )

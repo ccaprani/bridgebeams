@@ -11,12 +11,10 @@ from shapely.geometry import LineString, Point
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.nz import NzSuperTSection
 
+from _aggregate import P, run_checks
 
-@pytest.mark.parametrize("depth,base,low,rise,clear", [
-    (1025, 852, 240, 67, 709),
-    (1225, 814, 260, 64, 674),
-])
-def test_source_dimensions_and_open_void(depth, base, low, rise, clear):
+
+def _check_source_dimensions_and_open_void(depth, base, low, rise, clear):
     beam = NzSuperTSection(depth)
     dims, poly = beam.dimensions, as_polygon(beam.geometry)
     assert poly.is_valid and poly.exterior.is_ccw
@@ -35,8 +33,7 @@ def test_source_dimensions_and_open_void(depth, base, low, rise, clear):
     assert poly.symmetric_difference(scale(poly, xfact=-1, origin=(0, 0))).area < 1e-8
 
 
-@pytest.mark.parametrize("depth,top", [(1025, 2490), (1225, 2490), (1225, 1990)])
-def test_independent_trapezoid_area(depth, top):
+def _check_independent_trapezoid_area(depth, top):
     beam = NzSuperTSection(depth, top_width=top)
     p = beam.dimensions
     # Outer widths in three vertical bands minus the open valley/void.
@@ -56,17 +53,28 @@ def test_independent_trapezoid_area(depth, top):
     assert props["ixx"] > 0
 
 
-def test_30m_drawing_has_narrower_top():
+def _check_30m_drawing_has_narrower_top():
     wide = NzSuperTSection(1225)
     narrow = NzSuperTSection(1225, top_width=1990)
     assert narrow.polygon.bounds == (-995, 0, 995, 1225)
     assert wide.polygon.area - narrow.polygon.area == pytest.approx(500 * 100)
 
 
-@pytest.mark.parametrize("kwargs", [
-    {"depth": 1100}, {"depth": 1025, "top_width": 1990},
-    {"depth": 1225, "top_width": 2500}, {"depth": 1225, "top_width": float("nan")},
-])
-def test_invalid_source_size_raises(kwargs):
+def _check_invalid_source_size_raises(kwargs):
     with pytest.raises(ValueError):
         NzSuperTSection(**kwargs)
+
+
+def test_nz_supert_catalogue_checks():
+    run_checks(
+        (_check_source_dimensions_and_open_void, P("depth,base,low,rise,clear", [
+    (1025, 852, 240, 67, 709),
+    (1225, 814, 260, 64, 674),
+])),
+        (_check_independent_trapezoid_area, P("depth,top", [(1025, 2490), (1225, 2490), (1225, 1990)])),
+        _check_30m_drawing_has_narrower_top,
+        (_check_invalid_source_size_raises, P("kwargs", [
+    {"depth": 1100}, {"depth": 1025, "top_width": 1990},
+    {"depth": 1225, "top_width": 2500}, {"depth": 1225, "top_width": float("nan")},
+])),
+    )

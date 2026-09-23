@@ -21,6 +21,34 @@ retain distinct provenance. In particular, the Norwegian 15 mm bottom
 chamfer is a reviewer interpretation; the proposed Civilcon M notch and
 UK equivalence are not treated as manufacturer-certified facts.
 
+## Round 3 queue (23 September 2026)
+
+The illustrated page now opens with a new queue of 15 cards covering the
+two extraction rounds. The 12 answered round-2 cards are archived below it.
+
+- **Source contradictions (1–9).** Civilcon M edge inset (fitted 15 mm vs
+  printed 10 mm), VPH 2010-R2 2.1 m, WSDOT G6 fillet run and W*BTG +4 in²,
+  SEPSA box tables, Spanbeton ZIPXL/PIQ/SRP, Pakistan NHA A–H, Ferrobeton
+  FPT-45 and FPT-70/50, and DNIT PCP-10.
+- **Visual readings (10–12).** NHAI Delhi–Vadodara web width, ASA 52 stem
+  and 105 lower slope, and the Thai DOH IG20 web and splay.
+- **Estimate gallery (13).** One outline per family with `estimate`
+  profiles, each marked plausible, wrong shape or can't tell.
+- **Policy (14).** Counting width matrices, shared sections and identical
+  producer geometry, and whether estimates count in the headline.
+- **Manual retrieval (15).** Blocked sources to download by hand into
+  `sources/expansion/round2/manual/<cc>/`.
+
+Each contradiction or reading card places a source crop beside the
+implemented outline and states the question. It offers concrete options, a
+note field and a status (not reviewed, answered or skip). The toolbar
+counts progress. Answers save under a new browser-storage prefix
+(`bbdims5_`); archived clarifications keep `bbdims4_`. **Copy answers**
+or **Download answers** exports "BRIDGEBEAMS REVIEW v5 — ROUND 3",
+round-3 answers first, then any archived clarifications. Paste that text
+into the conversation. Review images are in the ignored
+`sources/review-2026-09-23/`.
+
 ## Review-page behaviour
 
 Each answered card is collapsed by default. Open it to see the received

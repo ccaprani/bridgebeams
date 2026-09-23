@@ -11,6 +11,8 @@ from shapely.affinity import scale
 from bridgebeams.us.state_common import gross_properties
 from bridgebeams.us.state_wi_girders import WiBoxGirderSection, WiGirderSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 
@@ -32,8 +34,7 @@ BOX_PUB = {
 }
 
 
-@pytest.mark.parametrize("cls", (WiGirderSection, WiBoxGirderSection))
-def test_every_size_valid_symmetric(cls):
+def _check_every_size_valid_symmetric(cls):
     for size in cls.SIZES:
         s = cls(size)
         p = s.polygon
@@ -46,14 +47,12 @@ def test_every_size_valid_symmetric(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", (WiGirderSection, WiBoxGirderSection))
-def test_invalid_size_raises(cls):
+def _check_invalid_size_raises(cls):
     with pytest.raises(ValueError):
         cls("99X")
 
 
-@pytest.mark.parametrize("size", WiGirderSection.SIZES)
-def test_girder_bounds(size):
+def _check_girder_bounds(size):
     s = WiGirderSection(size)
     x0, y0, x1, y1 = s.polygon.bounds
     assert y1 == pytest.approx(s.dimensions.depth)
@@ -67,8 +66,7 @@ def test_girder_bounds(size):
 # Published A is rounded to 1 in2 and yb to 0.01 in. Tolerances: 1.1 in2
 # (36W prints 632 while 45W prints 692 = 632 + 9 in x 6.5 in - 1.5, i.e. the
 # two printed areas are mutually inconsistent by ~1.5 in2), 0.03 in, 0.4 % I.
-@pytest.mark.parametrize("size", ("36W", "54W", "72W", "82W"))
-def test_girder_published_properties(size):
+def _check_girder_published_properties(size):
     g = gross_properties(WiGirderSection(size).polygon, IN)
     a, yb, ix = I_PUB[size]
     assert g["area"] == pytest.approx(a, abs=1.1)
@@ -94,8 +92,7 @@ def test_28in_pinned_inertia_discrepancy():
     assert g["ix"] / ix - 1 == pytest.approx(-0.02255, abs=0.001)
 
 
-@pytest.mark.parametrize("size", WiBoxGirderSection.SIZES)
-def test_box_pinned_systematic_residual(size):
+def _check_box_pinned_systematic_residual(size):
     """Key-recess estimate: one systematic offset against Table 19.3-3.
 
     Every row is 3.0-3.6 in2 (<=0.8 %) heavier and 0.5-1.1 % stiffer than
@@ -113,3 +110,16 @@ def test_box_pinned_systematic_residual(size):
     x0, _, x1, y1 = s.polygon.bounds
     assert x1 - x0 == pytest.approx(float(size.split("x")[0]) * IN)
     assert y1 == pytest.approx(depth * IN)
+
+
+def test_box_pinned_systematic_residual():
+    run_checks((_check_box_pinned_systematic_residual, P("size", WiBoxGirderSection.SIZES)))
+
+
+def test_us_state_wi_girders_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid_symmetric, P("cls", (WiGirderSection, WiBoxGirderSection))),
+        (_check_invalid_size_raises, P("cls", (WiGirderSection, WiBoxGirderSection))),
+        (_check_girder_bounds, P("size", WiGirderSection.SIZES)),
+        (_check_girder_published_properties, P("size", ("36W", "54W", "72W", "82W"))),
+    )

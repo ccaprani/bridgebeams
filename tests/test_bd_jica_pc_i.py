@@ -5,11 +5,12 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.bd.jica_pc_i import JicaPcIGirderSection
 
+from _aggregate import P, run_checks
+
 PUBLISHED_M2 = {"25m": 0.5290, "30m": 0.6723, "35m": 0.6960, "40m": 0.7523}
 
 
-@pytest.mark.parametrize("size", ["30m", "35m", "40m"])
-def test_area_with_200_web(size):
+def _check_area_with_200_web(size):
     sec = JicaPcIGirderSection(size)
     assert sec.dimensions.web_width == 200
     area = section_properties(sec.polygon)["area"]
@@ -30,8 +31,7 @@ def test_25m_pinned_residual():
     assert area - PUBLISHED_M2["25m"] * 1e6 == pytest.approx(550.0)
 
 
-@pytest.mark.parametrize("size", JicaPcIGirderSection.SIZES)
-def test_outline(size):
+def _check_outline(size):
     sec = JicaPcIGirderSection(size)
     d = sec.dimensions
     poly = sec.polygon
@@ -44,6 +44,14 @@ def test_outline(size):
     assert "JICA" in sec.source_status
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         JicaPcIGirderSection("45m")
+
+
+def test_bd_jica_pc_i_catalogue_checks():
+    run_checks(
+        (_check_area_with_200_web, P("size", ["30m", "35m", "40m"])),
+        (_check_outline, P("size", JicaPcIGirderSection.SIZES)),
+        _check_invalid,
+    )

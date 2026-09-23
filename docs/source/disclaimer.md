@@ -1,6 +1,4 @@
-# Disclaimer and corrections
-
-## Disclaimer
+# Disclaimer
 
 `bridgebeams` is **not an authoritative source** of bridge-beam geometry. It
 collects public information from national and state standards, producer
@@ -27,20 +25,3 @@ Nothing here certifies structural adequacy, manufacturability or current
 availability. Verify dimensions against the governing document before any
 design, assessment or procurement use. The software is provided under the
 MIT licence without warranty of any kind.
-
-## Reporting a correction
-
-Corrections from engineers, producers and agencies are the best way to
-improve the catalogue. Please
-[open a profile-correction issue](https://github.com/ccaprani/bridgebeams/issues/new?template=profile-correction.yml)
-and include:
-
-- the class and size, for example `CivilconMBeamSection("M6")`;
-- what is wrong: dimension, missing detail, status, source edition or attribution;
-- the source that shows the correct value: title, edition or date, URL, and
-  page or drawing number;
-- if you can, the published area, centroid and second moment of area for validation.
-
-Pull requests are also welcome. Keep the existing conventions: millimetres,
-origin at mid-soffit, y upwards, a source record with page locators, and tests
-that pin rather than hide source discrepancies.

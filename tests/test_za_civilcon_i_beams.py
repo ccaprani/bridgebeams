@@ -13,14 +13,15 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.za import CivilconIBeamSection
 
+from _aggregate import P, run_checks
+
 DATA = json.loads(
     resources.files("bridgebeams.za.data").joinpath("civilcon_i_beams.json").read_text()
 )
 ROWS = DATA["published_properties"]
 
 
-@pytest.mark.parametrize("row", ROWS, ids=lambda row: row["section"])
-def test_published_properties_and_source_orientation(row):
+def _check_published_properties_and_source_orientation(row):
     beam = CivilconIBeamSection(row["section"])
     poly = beam.polygon
     props = section_properties(poly)
@@ -51,7 +52,7 @@ def test_i1_source_soffit_and_centroid_regression():
     assert poly.intersection(LineString([(-1000, 710), (1000, 710)])).length == 360
 
 
-def test_depth_stack_and_symmetry():
+def _check_depth_stack_and_symmetry():
     for size in CivilconIBeamSection.SIZES:
         beam = CivilconIBeamSection(size)
         d = beam.dimensions
@@ -62,10 +63,24 @@ def test_depth_stack_and_symmetry():
         assert (d.b4 - d.b3) / 2 == d.d5
 
 
-def test_invalid_size_raises():
+def _check_invalid_size_raises():
     with pytest.raises(ValueError):
         CivilconIBeamSection("I21")
 
 
-def test_all_20_sizes_present():
+def _check_all_20_sizes_present():
     assert CivilconIBeamSection.SIZES == tuple(f"I{i}" for i in range(1, 21))
+
+
+def test_za_civilcon_i_beams_catalogue_checks():
+    run_checks(
+        (_check_published_properties_and_source_orientation, P("row", ROWS, ids=lambda row: row["section"])),
+        _check_depth_stack_and_symmetry,
+        _check_invalid_size_raises,
+        _check_all_20_sizes_present,
+    )
+
+
+def test_civilcon_i18_published_zt_pinned():
+    run_checks((_check_published_properties_and_source_orientation,
+                P("row", [r for r in ROWS if r["section"] == "I18"], ids=lambda row: row["section"])))

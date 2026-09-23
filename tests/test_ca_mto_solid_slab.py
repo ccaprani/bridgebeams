@@ -6,9 +6,10 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.ca import CaMtoSolidSlabSection
 
+from _aggregate import P, run_checks
 
-@pytest.mark.parametrize("size,depth", [("S300", 300), ("S400", 400), ("S500", 500)])
-def test_mto_ss107_25(size, depth):
+
+def _check_mto_ss107_25(size, depth):
     beam = CaMtoSolidSlabSection(size)
     poly = as_polygon(beam.geometry)
     assert poly.is_valid
@@ -25,6 +26,13 @@ def test_mto_ss107_25(size, depth):
         assert cut.length == pytest.approx(expected_width)
 
 
-def test_invalid_designation():
+def _check_invalid_designation():
     with pytest.raises(ValueError):
         CaMtoSolidSlabSection("S600")
+
+
+def test_ca_mto_solid_slab_catalogue_checks():
+    run_checks(
+        (_check_mto_ss107_25, P("size,depth", [("S300", 300), ("S400", 400), ("S500", 500)])),
+        _check_invalid_designation,
+    )

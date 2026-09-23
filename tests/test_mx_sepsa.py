@@ -6,6 +6,8 @@ from shapely.affinity import scale
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.mx import SepsaIGirderSection
 
+from _aggregate import P, run_checks
+
 
 # Source p4: published areas (m2), independently transcribed from the table.
 PUBLISHED = {
@@ -19,8 +21,7 @@ PUBLISHED = {
 }
 
 
-@pytest.mark.parametrize("size", PUBLISHED)
-def test_geometry_matches_published_area_and_depth(size):
+def _check_geometry_matches_published_area_and_depth(size):
     expected_area, depth = PUBLISHED[size]
     poly = as_polygon(SepsaIGirderSection(size).geometry)
     assert poly.is_valid
@@ -35,13 +36,13 @@ def test_geometry_matches_published_area_and_depth(size):
     assert props["ixx"] > 0
 
 
-def test_modified_i_area_from_independent_layer_calculation():
+def _check_modified_i_area_from_independent_layer_calculation():
     # Two 590x100 flanges, two 100-deep trapezoids and a 140x140 web.
     analytical = 2 * 590 * 100 + 2 * (590 + 140) / 2 * 100 + 140 * 140
     assert SepsaIGirderSection("I-MODIFIED").polygon.area == analytical == 210600
 
 
-def test_modifications_are_distinct_and_explicit():
+def _check_modifications_are_distinct_and_explicit():
     normal = SepsaIGirderSection("IV")
     modified = SepsaIGirderSection("IV-MODIFIED")
     assert normal.dimensions.top_flange_width == 500
@@ -51,7 +52,16 @@ def test_modifications_are_distinct_and_explicit():
         SepsaIGirderSection("I")
 
 
-def test_sectionproperties_mesh_smoke():
+def _check_sectionproperties_mesh_smoke():
     geometry = SepsaIGirderSection("VI").geometry
     geometry.create_mesh(mesh_sizes=[10000])
     assert geometry.mesh is not None
+
+
+def test_mx_sepsa_catalogue_checks():
+    run_checks(
+        (_check_geometry_matches_published_area_and_depth, P("size", PUBLISHED)),
+        _check_modified_i_area_from_independent_layer_calculation,
+        _check_modifications_are_distinct_and_explicit,
+        _check_sectionproperties_mesh_smoke,
+    )

@@ -6,6 +6,8 @@ from shapely.geometry import LineString
 
 from bridgebeams.nl.r2_haitsma import HaitsmaHbmSection, HaitsmaHgrSection, HaitsmaHkpSection
 
+from _aggregate import P, run_checks
+
 
 def props_with_holes(poly):
     def ring(coords):
@@ -22,8 +24,7 @@ def props_with_holes(poly):
     return a, cy, i - a * cy * cy
 
 
-@pytest.mark.parametrize("size", HaitsmaHkpSection.SIZES)
-def test_hkp_matches_folder_table(size):
+def _check_hkp_matches_folder_table(size):
     sec = HaitsmaHkpSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw and len(p.interiors) == 1
@@ -38,14 +39,13 @@ def test_hkp_matches_folder_table(size):
     assert sec.geometry is not None
 
 
-def test_hkp_web_thickness():
+def _check_hkp_web_thickness():
     p = HaitsmaHkpSection("HKP-1000").polygon
     cut = p.intersection(LineString([(-800, 500), (800, 500)]))
     assert cut.length == pytest.approx(280.0)
 
 
-@pytest.mark.parametrize("size,depth,top,bottom", [("HBM-450", 450, 1150, 400), ("HBM-550", 550, 1156, 400)])
-def test_hbm_printed(size, depth, top, bottom):
+def _check_hbm_printed(size, depth, top, bottom):
     sec = HaitsmaHbmSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -62,7 +62,7 @@ def test_hbm_folder_table_conflict_pinned():
     assert a > 4.5e5 and HaitsmaHbmSection("HBM-450").published[1] == 2.75
 
 
-def test_hgr():
+def _check_hgr():
     sec = HaitsmaHgrSection()
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -71,7 +71,17 @@ def test_hgr():
     assert sec.geometry is not None
 
 
-def test_invalid():
+def _check_invalid():
     for cls, bad in ((HaitsmaHkpSection, "HKP-1500"), (HaitsmaHbmSection, "HBM-350"), (HaitsmaHgrSection, "HGR-600")):
         with pytest.raises(ValueError):
             cls(bad)
+
+
+def test_nl_r2_haitsma_catalogue_checks():
+    run_checks(
+        (_check_hkp_matches_folder_table, P("size", HaitsmaHkpSection.SIZES)),
+        _check_hkp_web_thickness,
+        (_check_hbm_printed, P("size,depth,top,bottom", [("HBM-450", 450, 1150, 400), ("HBM-550", 550, 1156, 400)])),
+        _check_hgr,
+        _check_invalid,
+    )

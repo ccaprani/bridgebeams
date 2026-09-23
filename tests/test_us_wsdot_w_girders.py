@@ -6,6 +6,8 @@ from shapely.affinity import scale
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.us import WsdotWSection
 
+from _aggregate import P, run_checks
+
 
 # WSDOT Bridge Design Manual M 23-50.24, Table 5.6.1-1, printed p. 5-85.
 # Values are literal source-table readings rather than copied from the JSON.
@@ -28,8 +30,7 @@ def _iy_about_centroid(poly):
     )
 
 
-@pytest.mark.parametrize("size", PUBLISHED)
-def test_source_dimensions_and_gross_properties(size):
+def _check_source_dimensions_and_gross_properties(size):
     depth, top, bottom, area, yb, ix, iy = PUBLISHED[size]
     section = WsdotWSection(size)
     d = section.dimensions
@@ -53,7 +54,7 @@ def test_source_dimensions_and_gross_properties(size):
     assert _iy_about_centroid(poly) / 25.4**4 == pytest.approx(iy, abs=0.5)
 
 
-def test_drawing_features_are_not_smoothed_or_omitted():
+def _check_drawing_features_are_not_smoothed_or_omitted():
     # June 2006 printed drawing 5.6-A1-1, PDF p. 440. Coordinates in inches.
     w42 = WsdotWSection("W42G").dimensions.right_half
     for actual, expected in zip(
@@ -70,7 +71,15 @@ def test_drawing_features_are_not_smoothed_or_omitted():
         WsdotWSection("WF42G")
 
 
-def test_sectionproperties_mesh_smoke():
+def _check_sectionproperties_mesh_smoke():
     geometry = WsdotWSection("W74G").geometry
     geometry.create_mesh(mesh_sizes=[20000])
     assert geometry.mesh is not None
+
+
+def test_us_wsdot_w_girders_catalogue_checks():
+    run_checks(
+        (_check_source_dimensions_and_gross_properties, P("size", PUBLISHED)),
+        _check_drawing_features_are_not_smoothed_or_omitted,
+        _check_sectionproperties_mesh_smoke,
+    )

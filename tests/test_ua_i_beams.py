@@ -6,6 +6,8 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.ua import ThreeBetBeamSection, UaB40BeamSection, UaBmBeamSection
 
+from _aggregate import P, run_checks
+
 ALL = [(C, s) for C in (UaB40BeamSection, ThreeBetBeamSection, UaBmBeamSection) for s in C.SIZES]
 
 
@@ -13,8 +15,7 @@ def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_valid_envelope_and_metadata(cls, size):
+def _check_valid_envelope_and_metadata(cls, size):
     sec = cls(size)
     p, d = sec.polygon, sec.dimensions
     assert p.is_valid and p.exterior.is_ccw
@@ -31,8 +32,7 @@ B40_DEPTH = {"B1200.100.40": 1000, "B1500.100.40": 1000, "B1800.110.40": 1100,
              "B2100.110.40": 1100, "B2400.110.40": 1100, "B3300.120.40": 1200}
 
 
-@pytest.mark.parametrize("size", UaB40BeamSection.SIZES)
-def test_b40_printed_widths(size):
+def _check_b40_printed_widths(size):
     sec = UaB40BeamSection(size)
     p, h = sec.polygon, sec.dimensions.depth
     assert h == B40_DEPTH[size]
@@ -42,8 +42,7 @@ def test_b40_printed_widths(size):
     assert width_at(p, 0.001) == pytest.approx(460, abs=0.1)  # 20 x 20 chamfers
 
 
-@pytest.mark.parametrize("size", UaB40BeamSection.SIZES)
-def test_b40_section_chain_tangent_points(size):
+def _check_b40_section_chain_tangent_points(size):
     """Fillet tangent points reproduce the printed chain 131/31/63/39/512/31/106/31/f/20."""
     sec = UaB40BeamSection(size)
     h = sec.dimensions.depth
@@ -69,7 +68,7 @@ def test_b40_section_chain_tangent_points(size):
     assert width_at(p, levels[7] + 2) < 499.9
 
 
-def test_b40_same_depth_same_section():
+def _check_b40_same_depth_same_section():
     a = section_properties(UaB40BeamSection("B1800.110.40").polygon)
     b = section_properties(UaB40BeamSection("B2400.110.40").polygon)
     assert a["area"] == pytest.approx(b["area"])
@@ -77,8 +76,7 @@ def test_b40_same_depth_same_section():
 
 # ---- 3Bet-90 / 3Bet-120 -----------------------------------------------------
 
-@pytest.mark.parametrize("size", ThreeBetBeamSection.SIZES)
-def test_3bet_volume(size):
+def _check_3bet_volume(size):
     """Area vs producer volume / nominal length (no end blocks: V/L is constant per type).
 
     3Bet-90 (fully chained drawing) agrees within 0.25 %. 3Bet-120 is pinned
@@ -97,7 +95,7 @@ def test_3bet_volume(size):
         assert sec.provenance == "transcribed-with-convention"
 
 
-def test_3bet90_printed_widths():
+def _check_3bet90_printed_widths():
     p = ThreeBetBeamSection("3Bet-90-18").polygon
     assert width_at(p, 900) == pytest.approx(420)
     assert width_at(p, 860) == pytest.approx(440)
@@ -111,7 +109,7 @@ def test_3bet90_printed_widths():
     assert width_at(p, 0) == pytest.approx(480)
 
 
-def test_3bet120_printed_widths():
+def _check_3bet120_printed_widths():
     p = ThreeBetBeamSection("3Bet-120-33").polygon
     assert width_at(p, 1200) == pytest.approx(610)
     assert width_at(p, 1179.9) == pytest.approx(680, abs=3)  # on the R10 arc near its tangent point
@@ -124,8 +122,7 @@ def test_3bet120_printed_widths():
 
 # ---- БМ-24 / БМ-33 ----------------------------------------------------------
 
-@pytest.mark.parametrize("size,h", [("BM-24", 1100), ("BM-33", 1500)])
-def test_bm_printed(size, h):
+def _check_bm_printed(size, h):
     p = UaBmBeamSection(size).polygon
     assert p.bounds[3] == h
     assert width_at(p, h - 20) == pytest.approx(480)
@@ -138,15 +135,34 @@ def test_bm_printed(size, h):
     assert width_at(p, 233) == pytest.approx(480 - 2 * 80)
 
 
-def test_bm_web_difference_is_400():
+def _check_bm_web_difference_is_400():
     a24 = section_properties(UaBmBeamSection("BM-24").polygon)["area"]
     a33 = section_properties(UaBmBeamSection("BM-33").polygon)["area"]
     assert a33 - a24 == pytest.approx(400 * 160)
 
 
-@pytest.mark.parametrize("cls,bad", [(UaB40BeamSection, "B2700.110.40"),
-                                     (ThreeBetBeamSection, "3Bet-90-33"),
-                                     (UaBmBeamSection, "BM-18")])
-def test_invalid(cls, bad):
+def _check_invalid(cls, bad):
     with pytest.raises(ValueError):
         cls(bad)
+
+
+def test_ua_i_beams_catalogue_checks():
+    run_checks(
+        (_check_valid_envelope_and_metadata, P("cls,size", ALL)),
+        (_check_b40_printed_widths, P("size", UaB40BeamSection.SIZES)),
+        (_check_b40_section_chain_tangent_points, P("size", UaB40BeamSection.SIZES)),
+        _check_b40_same_depth_same_section,
+        (_check_3bet_volume, P("size", ThreeBetBeamSection.SIZES)),
+        _check_3bet90_printed_widths,
+        _check_3bet120_printed_widths,
+        (_check_bm_printed, P("size,h", [("BM-24", 1100), ("BM-33", 1500)])),
+        _check_bm_web_difference_is_400,
+        (_check_invalid, P("cls,bad", [(UaB40BeamSection, "B2700.110.40"),
+                                     (ThreeBetBeamSection, "3Bet-90-33"),
+                                     (UaBmBeamSection, "BM-18")])),
+    )
+
+
+def test_3bet120_volume_residual_pinned():
+    run_checks((_check_3bet_volume, P("size", [s for s in ThreeBetBeamSection.SIZES
+                                                if ThreeBetBeamSection(s).type == "3Bet-120"])))

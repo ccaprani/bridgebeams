@@ -5,6 +5,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.ro.r2_somaco import SomacoGirderSection
 
+from _aggregate import P, run_checks
+
 # size: (depth mm, catalogue volume/length m2, allowed relative residual, sign-pinned)
 EXPECTED = {
     "GP 52E": (520, 0.178, 0.01),
@@ -14,8 +16,7 @@ EXPECTED = {
 }
 
 
-@pytest.mark.parametrize("size", SomacoGirderSection.SIZES)
-def test_valid(size):
+def _check_valid(size):
     sec = SomacoGirderSection(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -24,8 +25,7 @@ def test_valid(size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", list(EXPECTED))
-def test_area_vs_volume_per_length(size):
+def _check_area_vs_volume_per_length(size):
     depth, mean, tol = EXPECTED[size]
     p = SomacoGirderSection(size).polygon
     assert p.bounds[3] == pytest.approx(depth)
@@ -40,7 +40,7 @@ def test_gp95e_and_gp93_pinned_low():
     assert -0.045 < a93 / 0.316 - 1 < -0.025
 
 
-def test_gp220_printed_widths_and_end_zone():
+def _check_gp220_printed_widths_and_end_zone():
     p = SomacoGirderSection("GP 220-40").polygon
     assert p.bounds == pytest.approx((-600, 0, 600, 2200), abs=1.0)
     assert p.bounds[2] - p.bounds[0] == pytest.approx(1200, abs=1)
@@ -51,6 +51,15 @@ def test_gp220_printed_widths_and_end_zone():
     assert 0.78 < area / 0.871 < 0.88
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         SomacoGirderSection("GP 85E")
+
+
+def test_ro_r2_somaco_catalogue_checks():
+    run_checks(
+        (_check_valid, P("size", SomacoGirderSection.SIZES)),
+        (_check_area_vs_volume_per_length, P("size", list(EXPECTED))),
+        _check_gp220_printed_widths_and_end_zone,
+        _check_invalid,
+    )

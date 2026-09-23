@@ -7,6 +7,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.es import Hp1BeamSection
 
+from _aggregate import P, run_checks
+
 # (depth, top, web, bottom) in mm and the published Mediciones per metre:
 # hormigón m³/m (3 decimals) and molde m²/m (2 decimals).
 EXPECTED = {
@@ -19,8 +21,7 @@ EXPECTED = {
 }
 
 
-@pytest.mark.parametrize("size", Hp1BeamSection.SIZES)
-def test_valid_ccw_and_bounds(size):
+def _check_valid_ccw_and_bounds(size):
     sec = Hp1BeamSection(size)
     poly = sec.polygon
     depth, top, web, bottom, _, _ = EXPECTED[size]
@@ -33,15 +34,13 @@ def test_valid_ccw_and_bounds(size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("size", Hp1BeamSection.SIZES)
-def test_area_matches_published_concrete_volume(size):
+def _check_area_matches_published_concrete_volume(size):
     # Published m³/m is rounded to 0.001 m² → ±500 mm² half-unit.
     area = section_properties(Hp1BeamSection(size).polygon)["area"]
     assert abs(area - EXPECTED[size][4] * 1e6) <= 500.0 + 1e-6
 
 
-@pytest.mark.parametrize("size", Hp1BeamSection.SIZES)
-def test_formwork_matches_published_molde(size):
+def _check_formwork_matches_published_molde(size):
     # Molde m²/m = wetted perimeter excluding the top (deck-contact) face;
     # rounded to 0.01 m → ±5 mm.
     coords = list(Hp1BeamSection(size).polygon.exterior.coords)
@@ -50,11 +49,21 @@ def test_formwork_matches_published_molde(size):
     assert abs(perim - top - EXPECTED[size][5] * 1000) <= 5.0 + 1e-6
 
 
-def test_centroid_below_mid_depth_type_i():
+def _check_centroid_below_mid_depth_type_i():
     props = section_properties(Hp1BeamSection("I").polygon)
     assert 0.40 * 1300 < props["cy"] < 0.55 * 1300
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         Hp1BeamSection("VII")
+
+
+def test_es_hp1_catalogue_checks():
+    run_checks(
+        (_check_valid_ccw_and_bounds, P("size", Hp1BeamSection.SIZES)),
+        (_check_area_matches_published_concrete_volume, P("size", Hp1BeamSection.SIZES)),
+        (_check_formwork_matches_published_molde, P("size", Hp1BeamSection.SIZES)),
+        _check_centroid_below_mid_depth_type_i,
+        _check_invalid_size,
+    )

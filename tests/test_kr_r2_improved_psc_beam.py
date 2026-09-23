@@ -7,6 +7,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.kr.r2_improved_psc_beam import ImprovedPscBeamDimensions, ImprovedPscBeamSection
 
+from _aggregate import P, run_checks
+
 WEB = {"H1400": (1400, 865), "H1700": (1700, 1165), "H2000": (2000, 1465)}
 
 
@@ -23,8 +25,7 @@ def _fillet_delta(v_prev, v, v_next, r):
     return r * r * (1 / math.tan(th / 2) - (math.pi - th) / 2)
 
 
-@pytest.mark.parametrize("size", ImprovedPscBeamSection.SIZES)
-def test_chain_and_area(size):
+def _check_chain_and_area(size):
     h, hw = WEB[size]
     sec = ImprovedPscBeamSection(size)
     d = sec.dimensions
@@ -45,7 +46,7 @@ def test_chain_and_area(size):
     assert section_properties(poly)["area"] == pytest.approx(expected, rel=2e-4)
 
 
-def test_provenance_and_status():
+def _check_provenance_and_status():
     assert ImprovedPscBeamSection("H2000").provenance == "transcribed"
     assert ImprovedPscBeamSection("H1400").provenance == "transcribed-with-convention"
     assert "2008" in ImprovedPscBeamSection("H1700").source_status
@@ -58,7 +59,15 @@ def test_printed_75_does_not_close():
         ImprovedPscBeamDimensions(depth=1400, web_height=865, bottom_edge=75)
 
 
-def test_geometry_and_invalid():
+def _check_geometry_and_invalid():
     assert ImprovedPscBeamSection("H1400").geometry is not None
     with pytest.raises(ValueError):
         ImprovedPscBeamSection("H1500")
+
+
+def test_kr_r2_improved_psc_beam_catalogue_checks():
+    run_checks(
+        (_check_chain_and_area, P("size", ImprovedPscBeamSection.SIZES)),
+        _check_provenance_and_status,
+        _check_geometry_and_invalid,
+    )

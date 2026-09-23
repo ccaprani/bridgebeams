@@ -13,6 +13,8 @@ from bridgebeams.us.fdot_girders import (
 )
 from bridgebeams.us.pci_common import INCH_MM, gross_properties_in
 
+from _aggregate import P, run_checks
+
 CLASSES = [FdotFloridaIBeamSection, FdotFloridaUBeamSection, FdotFloridaSlabBeamSection]
 TOL = {
     FdotFloridaIBeamSection: {"area": 0.01, "perimeter": 0.001, "ixx": 0.006, "iyy": 0.005, "yt": 0.03, "yb": 0.02},
@@ -24,8 +26,7 @@ PINNED = {("FSB18-60", "iyy"): 0.511}
 CASES = [(c, s) for c in CLASSES for s in c.SIZES]
 
 
-@pytest.mark.parametrize("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])
-def test_published_properties(cls, size):
+def _check_published_properties(cls, size):
     beam = cls(size)
     g = gross_properties_in(beam.polygon)
     calc = {"area": g["area"], "yb": g["cy"], "yt": beam.dimensions.depth - g["cy"], "ixx": g["ixx"],
@@ -38,8 +39,7 @@ def test_published_properties(cls, size):
             assert abs(res) <= TOL[cls][prop], (size, prop, res)
 
 
-@pytest.mark.parametrize("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])
-def test_valid_symmetric_polygon(cls, size):
+def _check_valid_symmetric_polygon(cls, size):
     beam = cls(size)
     poly = beam.polygon
     assert poly.is_valid and poly.exterior.is_ccw and not poly.interiors
@@ -52,7 +52,7 @@ def test_valid_symmetric_polygon(cls, size):
     assert beam.geometry is not None
 
 
-def test_overall_widths():
+def _check_overall_widths():
     assert FdotFloridaIBeamSection("FIB-96").polygon.bounds[2] * 2 == pytest.approx(48 * INCH_MM)
     # Sheet top widths: 7'-10", 8'-1", 8'-10"
     for size, width in (("FUB-48", 94), ("FUB-54", 97), ("FUB-72", 106)):
@@ -64,7 +64,7 @@ def test_overall_widths():
     assert fsb.dimensions.width == 53
 
 
-def test_fib_web_height_is_depth_minus_23():
+def _check_fib_web_height_is_depth_minus_23():
     # 1'-1" (FIB-36) and 6'-1" (FIB-96) straight-web labels
     for size, web in (("FIB-36", 13), ("FIB-96", 73)):
         d = FdotFloridaIBeamSection(size).dimensions
@@ -72,7 +72,20 @@ def test_fib_web_height_is_depth_minus_23():
         assert top_web - (d.bottom_edge + d.bottom_taper_rise) == pytest.approx(web)
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_unknown_size_rejected(cls):
+def _check_unknown_size_rejected(cls):
     with pytest.raises(ValueError):
         cls("FIB-102")
+
+
+def test_us_fdot_girders_catalogue_checks():
+    run_checks(
+        (_check_published_properties, P("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])),
+        (_check_valid_symmetric_polygon, P("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])),
+        _check_overall_widths,
+        _check_fib_web_height_is_depth_minus_23,
+        (_check_unknown_size_rejected, P("cls", CLASSES)),
+    )
+
+
+def test_fdot_fsb18_60_iyy_outlier_pinned():
+    run_checks((_check_published_properties, P("cls,size", [(FdotFloridaSlabBeamSection, "FSB18-60")])))

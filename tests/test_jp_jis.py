@@ -6,23 +6,17 @@ import pytest
 from bridgebeams.jp import JisTGirderSection
 from bridgebeams._geometry import section_properties, as_polygon
 
-
-def test_all_sizes_construct_and_valid():
-    for size in JisTGirderSection.SIZES:
-        beam = JisTGirderSection(size)
-        poly = beam.polygon
-        assert poly.is_valid, size
-        assert poly.area > 0, size
+from _aggregate import P, run_checks
 
 
-def test_symmetric():
+def _check_symmetric():
     for size in JisTGirderSection.SIZES:
         beam = JisTGirderSection(size)
         xmin, xmax, _, _ = beam.geometry.calculate_extents()
         assert -xmin == pytest.approx(xmax), size
 
 
-def test_depths_match_jis():
+def _check_depths_match_jis():
     expected = {"AG18": 900, "AG19": 1000, "AG20": 1000, "AG21": 1100,
                 "AG22": 1100, "AG23": 1200, "AG24": 1200,
                 "BG18": 1000, "BG19": 1000, "BG20": 1100, "BG21": 1100,
@@ -31,7 +25,7 @@ def test_depths_match_jis():
         assert JisTGirderSection(size).dimensions.depth == depth
 
 
-def test_section_constants():
+def _check_section_constants():
     beam = JisTGirderSection("AG18")
     d = beam.dimensions
     assert d.top_flange_width == 800
@@ -40,7 +34,7 @@ def test_section_constants():
     assert d.haunch == 35
 
 
-def test_area_positive_and_plausible():
+def _check_area_positive_and_plausible():
     # web 300 x full depth dominates; rough bounds for a 900-1300 deep section
     for size in JisTGirderSection.SIZES:
         beam = JisTGirderSection(size)
@@ -48,6 +42,16 @@ def test_area_positive_and_plausible():
         assert 0.3 < props["area"] / 1e6 < 0.8, size
 
 
-def test_invalid_size_raises():
+def _check_invalid_size_raises():
     with pytest.raises(ValueError):
         JisTGirderSection("AG25")
+
+
+def test_jp_jis_catalogue_checks():
+    run_checks(
+        _check_symmetric,
+        _check_depths_match_jis,
+        _check_section_constants,
+        _check_area_positive_and_plausible,
+        _check_invalid_size_raises,
+    )

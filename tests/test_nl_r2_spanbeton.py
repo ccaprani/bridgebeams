@@ -38,6 +38,8 @@ from bridgebeams.nl.r2_spanbeton import (
     SpanbetonZipxlSection,
 )
 
+from _aggregate import P, run_checks
+
 CLASSES = {
     "skk": SpanbetonSkkSection,
     "piq": SpanbetonPiqSection,
@@ -104,8 +106,7 @@ def _width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("key,size", ALL)
-def test_valid_ccw_and_metadata(key, size):
+def _check_valid_ccw_and_metadata(key, size):
     sec = CLASSES[key](size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -121,8 +122,7 @@ def test_valid_ccw_and_metadata(key, size):
         assert abs(sum(x for x, _ in p.exterior.coords[:-1])) < 1e-6  # symmetric
 
 
-@pytest.mark.parametrize("size", SpanbetonSkkSection.SIZES)
-def test_skk_printed_dimensions(size):
+def _check_skk_printed_dimensions(size):
     sec = SpanbetonSkkSection(size)
     d, p = sec.dimensions, sec.polygon
     h = d.depth
@@ -137,8 +137,7 @@ def test_skk_printed_dimensions(size):
     assert d.width == (1480 if h <= 1600 else 1180)
 
 
-@pytest.mark.parametrize("size", SpanbetonPiqSection.SIZES)
-def test_piq_printed_dimensions(size):
+def _check_piq_printed_dimensions(size):
     sec = SpanbetonPiqSection(size)
     p, h = sec.polygon, sec.dimensions.depth
     assert p.bounds[3] == pytest.approx(h)
@@ -151,8 +150,7 @@ def test_piq_printed_dimensions(size):
     assert _width_at(p, 237) == pytest.approx(2 * 183, abs=6)
 
 
-@pytest.mark.parametrize("size", SpanbetonSjpSection.SIZES)
-def test_sjp_printed_dimensions(size):
+def _check_sjp_printed_dimensions(size):
     sec = SpanbetonSjpSection(size)
     d, p = sec.dimensions, sec.polygon
     assert p.bounds[3] == pytest.approx(d.h1)
@@ -163,8 +161,7 @@ def test_sjp_printed_dimensions(size):
     assert slope == pytest.approx(0.225, abs=0.002)
 
 
-@pytest.mark.parametrize("size", SpanbetonSjpFlexSection.SIZES)
-def test_sjp_flex_printed_dimensions(size):
+def _check_sjp_flex_printed_dimensions(size):
     sec = SpanbetonSjpFlexSection(size)
     d, p = sec.dimensions, sec.polygon
     assert p.bounds[3] == pytest.approx(d.h1)
@@ -184,8 +181,7 @@ def test_sjp_flex_550_printed_width_pinned():
     assert all(o["b_mm"] == o["b_mm_printed"] for o in others)
 
 
-@pytest.mark.parametrize("size", SpanbetonSrpSection.SIZES)
-def test_srp_printed_dimensions(size):
+def _check_srp_printed_dimensions(size):
     sec = SpanbetonSrpSection(size)
     d, p = sec.dimensions, sec.polygon
     assert p.bounds[3] == pytest.approx(d.h1)
@@ -196,9 +192,7 @@ def test_srp_printed_dimensions(size):
     assert d.h2 == r["h2_mm"] and d.h3 == r["h3_mm"]
 
 
-@pytest.mark.parametrize("cls,size", [(SpanbetonZipSection, s) for s in SpanbetonZipSection.SIZES]
-                         + [(SpanbetonZipxlSection, s) for s in SpanbetonZipxlSection.SIZES])
-def test_zip_printed_dimensions(cls, size):
+def _check_zip_printed_dimensions(cls, size):
     sec = cls(size)
     d, p = sec.dimensions, sec.polygon
     assert p.bounds[3] == pytest.approx(d.total_depth)
@@ -216,8 +210,7 @@ def test_zip_printed_dimensions(cls, size):
         assert _width_at(p, d.h - 1) == pytest.approx(1370)
 
 
-@pytest.mark.parametrize("key,size", ALL)
-def test_residuals_recorded_in_json(key, size):
+def _check_residuals_recorded_in_json(key, size):
     sec = CLASSES[key](size)
     got = _residuals(key, sec)
     rec = sec.residuals
@@ -225,6 +218,10 @@ def test_residuals_recorded_in_json(key, size):
     for k in ("dA_rel", "dI_rel", "dSelfWeight_rel"):
         assert got[k] == pytest.approx(rec[k], abs=2e-5)
     assert got["dZb_mm"] == pytest.approx(rec["dZb_mm"], abs=0.01)
+
+
+def test_residuals_recorded_in_json():
+    run_checks((_check_residuals_recorded_in_json, P("key,size", ALL)))
 
 
 def _zipkey(key, size):
@@ -265,8 +262,7 @@ PINNED_BANDS = {
 }
 
 
-@pytest.mark.parametrize("key,size", ALL)
-def test_published_properties(key, size):
+def _check_published_properties(key, size):
     fam = _zipkey(key, size)
     res = _residuals(key, CLASSES[key](size))
     for j, q in enumerate(("dA_rel", "dZb_mm", "dI_rel", "dSelfWeight_rel")):
@@ -281,7 +277,7 @@ def test_published_properties(key, size):
             assert abs(res[q]) < TOL[fam][j], (size, q, res[q])
 
 
-def test_skk_1600_row_matches_outline():
+def _check_skk_1600_row_matches_outline():
     """The one SKK 1480 row whose Zb is not ~h/2 agrees with the drawn outline."""
     res = _residuals("skk", SpanbetonSkkSection("SKK-1600"))
     assert abs(res["dZb_mm"]) < 1.0 and abs(res["dA_rel"]) < 0.005
@@ -293,7 +289,7 @@ def test_zip700_printed_zb_is_inconsistent_with_its_wb():
     assert r["Zb_mm"] == 225
 
 
-def test_json_provenance_block():
+def _check_json_provenance_block():
     for k in ("skk_piq", "sjp", "zip"):
         src = DATA["sources"][k]
         assert src["url"].startswith("https://web.archive.org/web/2016") and src["original_url"].startswith("http://www.spanbeton.nl/")
@@ -301,7 +297,31 @@ def test_json_provenance_block():
         assert src["local_file"].startswith("sources/expansion/round2/nl/")
 
 
-@pytest.mark.parametrize("cls", list(CLASSES.values()))
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("SKK-650")
+
+
+def test_nl_r2_spanbeton_catalogue_checks():
+    run_checks(
+        (_check_valid_ccw_and_metadata, P("key,size", ALL)),
+        (_check_skk_printed_dimensions, P("size", SpanbetonSkkSection.SIZES)),
+        (_check_piq_printed_dimensions, P("size", SpanbetonPiqSection.SIZES)),
+        (_check_sjp_printed_dimensions, P("size", SpanbetonSjpSection.SIZES)),
+        (_check_sjp_flex_printed_dimensions, P("size", SpanbetonSjpFlexSection.SIZES)),
+        (_check_srp_printed_dimensions, P("size", SpanbetonSrpSection.SIZES)),
+        (_check_zip_printed_dimensions, P("cls,size", [(SpanbetonZipSection, s) for s in SpanbetonZipSection.SIZES]
+                         + [(SpanbetonZipxlSection, s) for s in SpanbetonZipxlSection.SIZES])),
+        (_check_published_properties, P("key,size", ALL)),
+        _check_skk_1600_row_matches_outline,
+        _check_json_provenance_block,
+        (_check_invalid_size, P("cls", list(CLASSES.values()))),
+    )
+
+
+def test_spanbeton_pinned_residuals_and_bands():
+    """Individual PINNED outliers and family-wide PINNED_BANDS (PIQ, SRP, ZIPXL 1000-1700)."""
+    qs = ("dA_rel", "dZb_mm", "dI_rel", "dSelfWeight_rel")
+    cases = [(k, s) for k, s in ALL
+             if any((s, q) in PINNED or (_zipkey(k, s), q) in PINNED_BANDS for q in qs)]
+    run_checks((_check_published_properties, P("key,size", cases)))

@@ -13,6 +13,8 @@ from bridgebeams._geometry import section_properties
 from bridgebeams.ca import CaMtoBoxGirderSection, CaMtoNuGirderSection
 from bridgebeams.ca.mto_nu_girder import _load_data as nu_data
 
+from _aggregate import P, run_checks
+
 
 def _props_with_holes(poly):
     """Area, centroid y and Ixx including interiors."""
@@ -37,8 +39,7 @@ def _fillet_correction(r, theta):
 
 
 # ---------------------------------------------------------------- NU girders
-@pytest.mark.parametrize("size", CaMtoNuGirderSection.SIZES)
-def test_nu_valid_and_bounds(size):
+def _check_nu_valid_and_bounds(size):
     s = CaMtoNuGirderSection(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw and not p.interiors
@@ -55,8 +56,7 @@ def test_nu_valid_and_bounds(size):
     assert s.source_status.startswith("current SS107-")
 
 
-@pytest.mark.parametrize("size", CaMtoNuGirderSection.SIZES)
-def test_nu_area_closed_form(size):
+def _check_nu_area_closed_form(size):
     s = CaMtoNuGirderSection(size, arc_segments=2048)
     d = s.dimensions
     # straight-line polygon: bottom flange + two tapers + web + top flange
@@ -81,7 +81,7 @@ def test_nu_area_closed_form(size):
     assert ixx == pytest.approx(ref["ixx_mm4"], rel=1e-5)
 
 
-def test_nu_default_tessellation_close_to_exact_arcs():
+def _check_nu_default_tessellation_close_to_exact_arcs():
     for size in CaMtoNuGirderSection.SIZES:
         a, _, ixx = _props_with_holes(CaMtoNuGirderSection(size).polygon)
         ref = nu_data()["sizes"][size]["analytic_reference"]
@@ -89,7 +89,7 @@ def test_nu_default_tessellation_close_to_exact_arcs():
         assert ixx == pytest.approx(ref["ixx_mm4"], rel=1e-4)
 
 
-def test_nu_2023_draft_and_2025_share_template():
+def _check_nu_2023_draft_and_2025_share_template():
     data = nu_data()
     assert [data["sizes"][s]["drawing"] for s in CaMtoNuGirderSection.SIZES] == [
         f"SS107-{n}" for n in range(16, 24)]
@@ -97,7 +97,7 @@ def test_nu_2023_draft_and_2025_share_template():
         515, 815, 1015, 1215, 1415, 1515, 1615, 2015]
 
 
-def test_nu_invalid():
+def _check_nu_invalid():
     with pytest.raises(ValueError):
         CaMtoNuGirderSection("NU1000")
     with pytest.raises(ValueError):
@@ -106,8 +106,7 @@ def test_nu_invalid():
 
 
 # --------------------------------------------------------------- box girders
-@pytest.mark.parametrize("size", CaMtoBoxGirderSection.SIZES)
-def test_box_valid_and_area(size):
+def _check_box_valid_and_area(size):
     s = CaMtoBoxGirderSection(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -125,7 +124,7 @@ def test_box_valid_and_area(size):
     assert ixx > 0
 
 
-def test_box_provenance_split():
+def _check_box_provenance_split():
     for size in CaMtoBoxGirderSection.SIZES:
         s = CaMtoBoxGirderSection(size)
         if size.endswith("-1220"):
@@ -136,12 +135,26 @@ def test_box_provenance_split():
             assert "DRAFT" in s.source_status
 
 
-def test_box_b1000_1220_values():
+def _check_box_b1000_1220_values():
     a, _, _ = _props_with_holes(CaMtoBoxGirderSection("B1000-1220").polygon)
     assert a == pytest.approx(1220 * 1000 - 800 - (970 * 720 - 11250))
 
 
-def test_box_invalid():
+def _check_box_invalid():
     with pytest.raises(ValueError):
         CaMtoBoxGirderSection("B1100-1220")
     CaMtoBoxGirderSection().geometry
+
+
+def test_ca_mto_nu_box_catalogue_checks():
+    run_checks(
+        (_check_nu_valid_and_bounds, P("size", CaMtoNuGirderSection.SIZES)),
+        (_check_nu_area_closed_form, P("size", CaMtoNuGirderSection.SIZES)),
+        _check_nu_default_tessellation_close_to_exact_arcs,
+        _check_nu_2023_draft_and_2025_share_template,
+        _check_nu_invalid,
+        (_check_box_valid_and_area, P("size", CaMtoBoxGirderSection.SIZES)),
+        _check_box_provenance_split,
+        _check_box_b1000_1220_values,
+        _check_box_invalid,
+    )

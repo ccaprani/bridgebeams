@@ -15,6 +15,8 @@ from bridgebeams.us.state_mo_slabs_boxes import (
     MoDotVoidedSlabSection,
 )
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 CLASSES = (MoDotBoxBeamSection, MoDotVoidedSlabSection, MoDotSolidSlabSection)
 
@@ -74,8 +76,7 @@ VOIDED = {
 SOLID = {"SOLID48": (513.2, 5.48, 5191, 93190), "SOLID52": (557.2, 5.48, 5635, 119252)}
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_every_size_valid(cls):
+def _check_every_size_valid(cls):
     for size in cls.SIZES:
         s = cls(size)
         p = s.polygon
@@ -88,20 +89,18 @@ def test_every_size_valid(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("ADJ48-99")
 
 
-def test_counts():
+def _check_counts():
     assert len(MoDotBoxBeamSection.SIZES) == 18
     assert len(MoDotVoidedSlabSection.SIZES) == 9
     assert len(MoDotSolidSlabSection.SIZES) == 2
 
 
-@pytest.mark.parametrize("size,pub", BOX.items())
-def test_box_published(size, pub):
+def _check_box_published(size, pub):
     s = MoDotBoxBeamSection(size)
     a, yb, ix, iy = props_in(s.polygon)
     void = s.polygon.interiors[0]
@@ -112,8 +111,7 @@ def test_box_published(size, pub):
     assert iy == pytest.approx(pub[3], rel=1e-4)
 
 
-@pytest.mark.parametrize("size,pub", VOIDED.items())
-def test_voided_published(size, pub):
+def _check_voided_published(size, pub):
     s = MoDotVoidedSlabSection(size)
     a, yb, ix, iy = props_in(s.polygon)
     voids = sum(abs(_ring(h.coords)[0]) for h in s.polygon.interiors) / IN**2
@@ -124,8 +122,7 @@ def test_voided_published(size, pub):
     assert iy == pytest.approx(pub[3], rel=2e-4)
 
 
-@pytest.mark.parametrize("size,pub", SOLID.items())
-def test_solid_published(size, pub):
+def _check_solid_published(size, pub):
     a, yb, ix, iy = props_in(MoDotSolidSlabSection(size).polygon)
     assert a == pytest.approx(pub[0], abs=0.06)
     assert yb == pytest.approx(pub[1], abs=0.006)
@@ -133,7 +130,7 @@ def test_solid_published(size, pub):
     assert iy == pytest.approx(pub[3], rel=1e-4)
 
 
-def test_adjacent_top_width_and_key():
+def _check_adjacent_top_width_and_key():
     s = MoDotBoxBeamSection("ADJ48-27")
     top = [x for x, y in s.polygon.exterior.coords if abs(y - 27 * IN) < 1e-6]
     assert (max(top) - min(top)) / IN == pytest.approx(46.75)
@@ -141,3 +138,15 @@ def test_adjacent_top_width_and_key():
     sp = MoDotBoxBeamSection("SPR48-27")
     top = [x for x, y in sp.polygon.exterior.coords if abs(y - 27 * IN) < 1e-6]
     assert (max(top) - min(top)) / IN == pytest.approx(48)
+
+
+def test_us_state_mo_slabs_boxes_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid, P("cls", CLASSES)),
+        (_check_invalid_size, P("cls", CLASSES)),
+        _check_counts,
+        (_check_box_published, P("size,pub", BOX.items())),
+        (_check_voided_published, P("size,pub", VOIDED.items())),
+        (_check_solid_published, P("size,pub", SOLID.items())),
+        _check_adjacent_top_width_and_key,
+    )

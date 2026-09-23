@@ -19,6 +19,8 @@ from shapely.geometry import Polygon
 
 from bridgebeams.us.state_ia_beams import IaBulbTeeSection, IaIBeamSection
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 
 
@@ -52,8 +54,7 @@ BT_RESID = {"BTB": (-0.13, -0.515, -0.00097), "BTC": (-1.73, -0.153, -0.00161),
             "BTD": (-0.23, -0.007, -0.00268), "BTE": (-0.33, -0.005, -0.00291)}
 
 
-@pytest.mark.parametrize("cls", (IaIBeamSection, IaBulbTeeSection))
-def test_every_size_valid(cls):
+def _check_every_size_valid(cls):
     for size in cls.SIZES:
         s = cls(size)
         p = s.polygon
@@ -65,14 +66,12 @@ def test_every_size_valid(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", (IaIBeamSection, IaBulbTeeSection))
-def test_invalid_size(cls):
+def _check_invalid_size(cls):
     with pytest.raises(ValueError):
         cls("BTA")
 
 
-@pytest.mark.parametrize("size,pub", AD.items())
-def test_ad_published_excludes_bevels(size, pub):
+def _check_ad_published_excludes_bevels(size, pub):
     s = IaIBeamSection(size)
     p = s.polygon
     b = pub[4] / 2 * IN
@@ -88,8 +87,11 @@ def test_ad_published_excludes_bevels(size, pub):
     assert props_in([p])[0] - pub[0] == pytest.approx(-0.5625, abs=0.005)
 
 
-@pytest.mark.parametrize("size,pub", BT.items())
-def test_bt_published_pinned(size, pub):
+def test_ad_published_excludes_bevels():
+    run_checks((_check_ad_published_excludes_bevels, P("size,pub", AD.items())))
+
+
+def _check_bt_published_pinned(size, pub):
     s = IaBulbTeeSection(size)
     a, yb, ix = props_in([s.polygon])
     da, dy, di = BT_RESID[size]
@@ -104,6 +106,18 @@ def test_bt_published_pinned(size, pub):
         assert abs(yb - pub[1]) < 0.16
 
 
-def test_bt_widths():
+def test_bt_published_pinned():
+    run_checks((_check_bt_published_pinned, P("size,pub", BT.items())))
+
+
+def _check_bt_widths():
     p = IaBulbTeeSection("BTD").polygon
     assert (p.bounds[2] - p.bounds[0]) / IN == pytest.approx(34)
+
+
+def test_us_state_ia_beams_catalogue_checks():
+    run_checks(
+        (_check_every_size_valid, P("cls", (IaIBeamSection, IaBulbTeeSection))),
+        (_check_invalid_size, P("cls", (IaIBeamSection, IaBulbTeeSection))),
+        _check_bt_widths,
+    )

@@ -4,6 +4,8 @@ from shapely.geometry import LineString, Point
 
 from bridgebeams.no import NoNtbKtbSection
 
+from _aggregate import P, run_checks
+
 # Fig3.3.2a-j: depth, bottom, stem, top, shoulder, top thickness/haunch.
 NTB = [
  ('NTB800-400x1400',1400,800,220,400,197,125,75),
@@ -13,8 +15,7 @@ NTB = [
  ('NTB1200-220x600',600,1200,220,220,150,0,0),
 ]
 
-@pytest.mark.parametrize('name,h,b,w,t,s,f,a',NTB)
-def test_ntb_independent_strip_integral(name,h,b,w,t,s,f,a):
+def _check_ntb_independent_strip_integral(name,h,b,w,t,s,f,a):
     p=NoNtbKtbSection(name).polygon
     # Horizontal strips: full bottom, rebate, haunch, stem, head.
     expected=b*(s-40)+(b-35)*40+(b-30+w)/2*(265-s)
@@ -29,14 +30,7 @@ def test_ntb_independent_strip_integral(name,h,b,w,t,s,f,a):
     assert not p.covers(Point(b/2-10,s-20))
     assert not p.covers(Point(t/2-15,h-15))
 
-@pytest.mark.parametrize('name,h,b,t,s,f,a,offset',[
- ('KTB570-400x1400',1400,570,370,197,125,75,-30),
- ('KTB1200',1200,670,320,173,125,37,0),
- ('KTB1000',1000,770,280,150,0,0,0),
- ('KTB800',800,770,280,150,0,0,0),
- ('KTB600',600,770,280,150,0,0,0),
-])
-def test_ktb_independent_integral_and_exterior(name,h,b,t,s,f,a,offset):
+def _check_ktb_independent_integral_and_exterior(name,h,b,t,s,f,a,offset):
     p=NoNtbKtbSection(name).polygon
     expected=b*(s-40)+(b-17.5)*40+(b-15+280)/2*(265-s)
     expected+=280*(h-f-a-265)+(280+t)/2*a+t*f
@@ -49,5 +43,19 @@ def test_ktb_independent_integral_and_exterior(name,h,b,t,s,f,a,offset):
     assert cut.bounds[2]==280
 
 
-def test_unknown_type_rejected():
+def _check_unknown_type_rejected():
     with pytest.raises(ValueError): NoNtbKtbSection('KTB900')
+
+
+def test_no_ntb_ktb_catalogue_checks():
+    run_checks(
+        (_check_ntb_independent_strip_integral, P('name,h,b,w,t,s,f,a',NTB)),
+        (_check_ktb_independent_integral_and_exterior, P('name,h,b,t,s,f,a,offset',[
+ ('KTB570-400x1400',1400,570,370,197,125,75,-30),
+ ('KTB1200',1200,670,320,173,125,37,0),
+ ('KTB1000',1000,770,280,150,0,0,0),
+ ('KTB800',800,770,280,150,0,0,0),
+ ('KTB600',600,770,280,150,0,0,0),
+])),
+        _check_unknown_type_rejected,
+    )

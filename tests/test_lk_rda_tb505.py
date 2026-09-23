@@ -5,8 +5,10 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.lk.rda_beams import RdaTB505BeamSection
 
+from _aggregate import P, run_checks
 
-def test_outline():
+
+def _check_outline():
     sec = RdaTB505BeamSection()
     poly = sec.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -19,7 +21,7 @@ def test_outline():
     assert (sec.dimensions.top_width - sec.dimensions.web_width) / 2 == sec.dimensions.top_splay
 
 
-def test_area_and_centroid():
+def _check_area_and_centroid():
     # parts from soffit: chamfered strip, rectangle, taper, web, splay, bulb
     parts = [
         (500 * 25 - 25 * 25, None),
@@ -39,7 +41,7 @@ def test_area_and_centroid():
     assert props["cy"] == pytest.approx(yb, rel=1e-12)
 
 
-def test_meta_and_invalid():
+def _check_meta_and_invalid():
     sec = RdaTB505BeamSection("TB505")
     assert sec.provenance == "transcribed"
     assert "T/B/505" in sec.source_status
@@ -47,3 +49,11 @@ def test_meta_and_invalid():
     assert sec.geometry is not None
     with pytest.raises(ValueError):
         RdaTB505BeamSection("TB506")
+
+
+def test_lk_rda_tb505_catalogue_checks():
+    run_checks(
+        _check_outline,
+        _check_area_and_centroid,
+        _check_meta_and_invalid,
+    )

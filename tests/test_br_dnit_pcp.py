@@ -4,9 +4,10 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.br import DnitPcpLongarinaSection
 
+from _aggregate import P, run_checks
 
-@pytest.mark.parametrize("size", DnitPcpLongarinaSection.SIZES)
-def test_valid_and_bounds(size):
+
+def _check_valid_and_bounds(size):
     s = DnitPcpLongarinaSection(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -16,8 +17,7 @@ def test_valid_and_bounds(size):
     assert "IPR-751" in s.source_status
 
 
-@pytest.mark.parametrize("size", ["PCP-15", "PCP-20"])
-def test_published_stage1_properties(size):
+def _check_published_stage1_properties(size):
     s = DnitPcpLongarinaSection(size)
     pub = s.published["published_stage1"]
     props = section_properties(s.polygon)
@@ -38,6 +38,14 @@ def test_pcp10_pinned_area_discrepancy():
     assert props["ixx"] / 1e12 == pytest.approx(pub["I_m4"], abs=0.0005)
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         DnitPcpLongarinaSection("PCP-25")
+
+
+def test_br_dnit_pcp_catalogue_checks():
+    run_checks(
+        (_check_valid_and_bounds, P("size", DnitPcpLongarinaSection.SIZES)),
+        (_check_published_stage1_properties, P("size", ["PCP-15", "PCP-20"])),
+        _check_invalid_size,
+    )

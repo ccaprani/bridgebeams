@@ -12,6 +12,8 @@ from bridgebeams.es.r2_prethor import (
     _load_data,
 )
 
+from _aggregate import P, run_checks
+
 CLASSES = (PrethorViSection, PrethorVaSection, PrethorVuSection, PrethorVcSection, PrethorVaaSection)
 ALL = [(cls, s) for cls in CLASSES for s in cls.SIZES]
 
@@ -28,12 +30,11 @@ def width_at(poly, y):
     return poly.intersection(LineString([(-9000, y), (9000, y)])).length
 
 
-def test_counts():
+def _check_counts():
     assert [len(c.SIZES) for c in CLASSES] == [17, 9, 12, 29, 10]
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_valid_envelope(cls, size):
+def _check_valid_envelope(cls, size):
     sec = cls(size)
     p, d = sec.polygon, sec.dimensions
     assert p.is_valid and p.exterior.is_ccw and len(p.interiors) == 0
@@ -46,8 +47,7 @@ def test_valid_envelope(cls, size):
     assert sec.source_status.startswith("producer catalogue")
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_bottom_width(cls, size):
+def _check_bottom_width(cls, size):
     sec = cls(size)
     p, b = sec.polygon, sec.dimensions.bottom_width
     if cls is PrethorViSection:
@@ -61,8 +61,7 @@ def test_bottom_width(cls, size):
         assert width_at(p, y) == pytest.approx(b + 2 * y / 4, abs=0.01)
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_mass_vs_published(cls, size):
+def _check_mass_vs_published(cls, size):
     sec = cls(size)
     area_m2 = sec.polygon.area / 1e6
     res = 100 * (area_m2 * sec.density_t_m3 / sec.published["P_t_per_m"] - 1)
@@ -75,20 +74,20 @@ def test_mass_vs_published(cls, size):
         assert abs(res) <= TOL[sec.family], res
 
 
-def test_flanges_fixed_web_grows():
+def _check_flanges_fixed_web_grows():
     a = PrethorViSection("VI-60").polygon
     b = PrethorViSection("VI-140").polygon
     assert (b.area - a.area) == pytest.approx(160 * 800)  # 16 cm web x 80 cm extra depth
     assert width_at(b, 700) == pytest.approx(160)
 
 
-def test_open_troughs_have_no_top_slab():
+def _check_open_troughs_have_no_top_slab():
     for cls, size in ((PrethorVuSection, "VUG-160"), (PrethorVcSection, "VCG80/220-240"), (PrethorVaSection, "VA-260")):
         p = cls(size).polygon
         assert width_at(p, p.bounds[3] - 1) < 0.5 * (p.bounds[2] - p.bounds[0])
 
 
-def test_vaa_asymmetric_and_fitted():
+def _check_vaa_asymmetric_and_fitted():
     a = PrethorVaaSection("VAA-A-240")
     b = PrethorVaaSection("VAA-B-240")
     assert a.polygon.bounds == pytest.approx((-1500, 0, 2100, 2400))
@@ -96,8 +95,26 @@ def test_vaa_asymmetric_and_fitted():
     assert b.geometry is not None
 
 
-def test_invalid():
+def _check_invalid():
     for cls, bad in ((PrethorViSection, "VI-160"), (PrethorVaSection, "VA-280"), (PrethorVuSection, "VUP-220"),
                      (PrethorVcSection, "VCP80/220-240"), (PrethorVaaSection, "VAA-180")):
         with pytest.raises(ValueError):
             cls(bad)
+
+
+def test_es_r2_prethor_catalogue_checks():
+    run_checks(
+        _check_counts,
+        (_check_valid_envelope, P("cls,size", ALL)),
+        (_check_bottom_width, P("cls,size", ALL)),
+        (_check_mass_vs_published, P("cls,size", ALL)),
+        _check_flanges_fixed_web_grows,
+        _check_open_troughs_have_no_top_slab,
+        _check_vaa_asymmetric_and_fitted,
+        _check_invalid,
+    )
+
+
+def test_prethor_pinned_mass_contradictions():
+    """VUP-120, VCP80/220-95 and VAA-A: P-table contradictions (see JSON "pinned")."""
+    run_checks((_check_mass_vs_published, P("cls,size", [(c, s) for c, s in ALL if s in PINNED])))

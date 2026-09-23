@@ -5,6 +5,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.us import AashtoIBeamSection
 
+from _aggregate import P, run_checks
+
 
 # Type, area (in²), centroid from soffit (in), centroidal Ixx (in⁴).
 PUBLISHED = [
@@ -17,8 +19,7 @@ PUBLISHED = [
 ]
 
 
-@pytest.mark.parametrize("size,area,y_bottom,ixx", PUBLISHED)
-def test_pci_dimension_chain_reproduces_published_properties(size, area, y_bottom, ixx):
+def _check_pci_dimension_chain_reproduces_published_properties(size, area, y_bottom, ixx):
     beam = AashtoIBeamSection(size)
     polygon = beam.polygon
     assert polygon.is_valid and polygon.exterior.is_ccw
@@ -33,7 +34,7 @@ def test_pci_dimension_chain_reproduces_published_properties(size, area, y_botto
     assert beam.geometry is not None
 
 
-def test_type_v_upper_flange_has_two_source_slopes():
+def _check_type_v_upper_flange_has_two_source_slopes():
     beam = AashtoIBeamSection("V")
     d = beam.dimensions
     points_in = [(round(x / 25.4, 3), round(y / 25.4, 3)) for x, y in d.outline]
@@ -41,6 +42,14 @@ def test_type_v_upper_flange_has_two_source_slopes():
     assert (21, 58) in points_in
 
 
-def test_unknown_aashto_size_rejected():
+def _check_unknown_aashto_size_rejected():
     with pytest.raises(ValueError):
         AashtoIBeamSection("Type IV Pakistan")
+
+
+def test_us_aashto_i_catalogue_checks():
+    run_checks(
+        (_check_pci_dimension_chain_reproduces_published_properties, P("size,area,y_bottom,ixx", PUBLISHED)),
+        _check_type_v_upper_flange_has_two_source_slopes,
+        _check_unknown_aashto_size_rejected,
+    )

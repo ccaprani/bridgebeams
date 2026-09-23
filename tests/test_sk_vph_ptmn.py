@@ -5,6 +5,8 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.sk import VphGirderSection, VphSlabBeamSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(poly, y):
     return poly.intersection(LineString([(-2000, y), (2000, y)])).length
@@ -23,14 +25,13 @@ PINNED_AREA_PCT = {"2016-PM13-M": 0.481}
 PINNED_2100 = {"area_pct": -0.129, "yt_mm": -30.17, "Iy_pct": -4.804}
 
 
-def test_counts():
+def _check_counts():
     assert len(VphSlabBeamSection.SIZES) == 6
     assert len(VphGirderSection.SIZES) == 6
     assert sum(len(section(s).designations) for s in ALL) == 20
 
 
-@pytest.mark.parametrize("size", ALL)
-def test_polygon_valid_and_geometry(size):
+def _check_polygon_valid_and_geometry(size):
     s = section(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw and not p.interiors
@@ -42,8 +43,7 @@ def test_polygon_valid_and_geometry(size):
     assert maxx == pytest.approx(-minx)
 
 
-@pytest.mark.parametrize("size", ALL)
-def test_published_properties(size):
+def _check_published_properties(size):
     s = section(size)
     props = section_properties(s.polygon)
     pub = s.published
@@ -76,15 +76,7 @@ def test_published_properties(size):
                                   "Iy_pct": pytest.approx(di, abs=0.001)}
 
 
-@pytest.mark.parametrize("size,bottom,web,top,rebate,chamfer", [
-    ("2016-T", 820, 220, None, None, 15),
-    ("2010-I-1.2", 800, 200, 800, 30, 15),
-    ("2016-I", 820, 220, 820, 40, 15),
-    ("2010-I-1.4", 800, 200, 800, 30, 15),
-    ("2010-R2-1.9", 800, 200, 800, 40, 15),
-    ("2010-R2-2.1", 800, 200, 1100, 40, 15),
-])
-def test_girder_widths_and_tangent_extents(size, bottom, web, top, rebate, chamfer):
+def _check_girder_widths_and_tangent_extents(size, bottom, web, top, rebate, chamfer):
     s = section(size)
     p, h = s.polygon, s.dimensions.depth
     assert width_at(p, 0) == pytest.approx(bottom - 2 * chamfer)
@@ -116,9 +108,7 @@ def test_girder_widths_and_tangent_extents(size, bottom, web, top, rebate, chamf
         assert width_at(p, h - 76) < top
 
 
-@pytest.mark.parametrize("size,depth", [("2016-PM11-M", 400), ("2016-PM13-M", 500),
-                                        ("2016-PM15-M", 575)])
-def test_m_units(size, depth):
+def _check_m_units(size, depth):
     p = section(size).polygon
     assert width_at(p, 30) == pytest.approx(820)
     assert width_at(p, 55) == pytest.approx(820)
@@ -128,9 +118,7 @@ def test_m_units(size, depth):
     assert width_at(p, depth - 1) == pytest.approx(220)
 
 
-@pytest.mark.parametrize("size,depth", [("2016-PM11-K", 400), ("2016-PM13-K", 500),
-                                        ("2016-PM15-K", 575)])
-def test_k_units(size, depth):
+def _check_k_units(size, depth):
     s = section(size)
     p = s.polygon
     assert p.bounds == pytest.approx((-390, 0, 390, depth))
@@ -140,8 +128,34 @@ def test_k_units(size, depth):
     assert section_properties(p)["cx"] < -50  # block on the left
 
 
-def test_invalid_sizes():
+def _check_invalid_sizes():
     with pytest.raises(ValueError):
         VphGirderSection("2010-R2-2.3")
     with pytest.raises(ValueError):
         VphSlabBeamSection("2016-PM17-K")
+
+
+def test_sk_vph_ptmn_catalogue_checks():
+    run_checks(
+        _check_counts,
+        (_check_polygon_valid_and_geometry, P("size", ALL)),
+        (_check_published_properties, P("size", ALL)),
+        (_check_girder_widths_and_tangent_extents, P("size,bottom,web,top,rebate,chamfer", [
+    ("2016-T", 820, 220, None, None, 15),
+    ("2010-I-1.2", 800, 200, 800, 30, 15),
+    ("2016-I", 820, 220, 820, 40, 15),
+    ("2010-I-1.4", 800, 200, 800, 30, 15),
+    ("2010-R2-1.9", 800, 200, 800, 40, 15),
+    ("2010-R2-2.1", 800, 200, 1100, 40, 15),
+])),
+        (_check_m_units, P("size,depth", [("2016-PM11-M", 400), ("2016-PM13-M", 500),
+                                        ("2016-PM15-M", 575)])),
+        (_check_k_units, P("size,depth", [("2016-PM11-K", 400), ("2016-PM13-K", 500),
+                                        ("2016-PM15-K", 575)])),
+        _check_invalid_sizes,
+    )
+
+
+def test_vph_table_contradictions_pinned():
+    """VPH 2.1 m girder (2010-R2-2.1) table contradiction and PM13-M area."""
+    run_checks((_check_published_properties, P("size", ["2010-R2-2.1", *PINNED_AREA_PCT])))

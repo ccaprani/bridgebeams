@@ -21,6 +21,8 @@ from bridgebeams.uk.r2_fpmccann import (
     FpMcCannYeBeamSection,
 )
 
+from _aggregate import P, run_checks
+
 DATA = json.loads(resources.files("bridgebeams.uk").joinpath("data/r2_fpmccann.json").read_text(encoding="utf-8"))
 FAM = DATA["families"]
 CLASSES = [FpMcCannTyBeamSection, FpMcCannTyeBeamSection, FpMcCannYBeamSection, FpMcCannYeBeamSection,
@@ -60,19 +62,18 @@ def width_at(poly, y):
     return poly.intersection(LineString([(-2000, y), (2000, y)])).length
 
 
-def test_tolerances_match_data():
+def _check_tolerances_match_data():
     for fam, (ta, ty, ti, tc) in TOL.items():
         t = FAM[fam]["tolerances"]
         assert (t["area_rel"], t["yb_abs_mm"], t["I_rel"], t["yc_abs_mm"]) == (ta, ty, ti, tc)
     assert DATA["source"]["sha256"] == "243c2d0f902f52842eeb161a6082d4d0cf1a0d0d90e096996075f116b3723644"
 
 
-def test_profile_count():
+def _check_profile_count():
     assert sum(len(c.SIZES) for c in CLASSES) == 84
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_valid_outline(cls, size):
+def _check_valid_outline(cls, size):
     sec = cls(size)
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw and not p.interiors
@@ -82,8 +83,7 @@ def test_valid_outline(cls, size):
     assert sec.geometry is not None
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_published_properties(cls, size):
+def _check_published_properties(cls, size):
     sec = cls(size)
     fam = sec.family
     pub = sec.published
@@ -121,8 +121,7 @@ def test_pins_are_the_expected_ones():
 
 
 # ---- printed dimensions ----------------------------------------------------------------
-@pytest.mark.parametrize("size", FpMcCannTyBeamSection.SIZES)
-def test_ty_printed(size):
+def _check_ty_printed(size):
     sec = FpMcCannTyBeamSection(size)
     p, d = sec.polygon, sec.dimensions.depth
     assert width_at(p, 0) == pytest.approx(700) and width_at(p, 25) == pytest.approx(750)
@@ -136,15 +135,14 @@ def test_ty_printed(size):
         assert 40.0 <= ledge <= 42.0
 
 
-def test_ty_web_line_construction_point():
+def _check_ty_web_line_construction_point():
     # printed 164 wide at y = 268 on the web-line extension, 400 at TY10 top (Type 2)
     p = FpMcCannTyBeamSection("TY10 (Type 2)").polygon
     assert width_at(p, 850 - 1e-6) == pytest.approx(400, abs=0.01)
     assert 185 + 2 * (268 - 320) * 107.5 / 530 == pytest.approx(164, abs=0.2)
 
 
-@pytest.mark.parametrize("size", FpMcCannTyeBeamSection.SIZES)
-def test_tye_face(size):
+def _check_tye_face(size):
     sec = FpMcCannTyeBeamSection(size)
     p, d = sec.polygon, sec.dimensions.depth
     assert p.bounds[2] == pytest.approx(375)
@@ -154,8 +152,7 @@ def test_tye_face(size):
     assert width_at(p, 320) == pytest.approx(467.5)
 
 
-@pytest.mark.parametrize("size", FpMcCannYBeamSection.SIZES)
-def test_y_printed(size):
+def _check_y_printed(size):
     sec = FpMcCannYBeamSection(size)
     p, d = sec.polygon, sec.dimensions.depth
     assert width_at(p, 25) == pytest.approx(750) and width_at(p, 202) == pytest.approx(740)
@@ -166,8 +163,7 @@ def test_y_printed(size):
     assert 214 <= webmin <= 220
 
 
-@pytest.mark.parametrize("size", FpMcCannYeBeamSection.SIZES)
-def test_ye_printed(size):
+def _check_ye_printed(size):
     sec = FpMcCannYeBeamSection(size)
     p, d = sec.polygon, sec.dimensions.depth
     assert p.bounds[0] == pytest.approx(-375)
@@ -179,8 +175,7 @@ def test_ye_printed(size):
         y.intersection(LineString([(0, 300), (2000, 300)])).length)
 
 
-@pytest.mark.parametrize("size", FpMcCannMyBeamSection.SIZES)
-def test_my_printed(size):
+def _check_my_printed(size):
     sec = FpMcCannMyBeamSection(size)
     p, d = sec.polygon, sec.dimensions.depth
     assert width_at(p, 0) == pytest.approx(920) and width_at(p, 50) == pytest.approx(970)
@@ -190,16 +185,14 @@ def test_my_printed(size):
     assert sec.provenance == "fitted-reconstruction"
 
 
-@pytest.mark.parametrize("size", FpMcCannMyeBeamSection.SIZES)
-def test_mye_printed(size):
+def _check_mye_printed(size):
     sec = FpMcCannMyeBeamSection(size)
     p = sec.polygon
     assert p.bounds[2] == pytest.approx(485)
     assert p.intersection(LineString([(-2000, 150.0001), (2000, 150.0001)])).length == pytest.approx(635, abs=0.01)
 
 
-@pytest.mark.parametrize("size", FpMcCannSyBeamSection.SIZES)
-def test_sy_printed(size):
+def _check_sy_printed(size):
     sec = FpMcCannSyBeamSection(size)
     p, d = sec.polygon, sec.dimensions.depth
     assert width_at(p, 202) == pytest.approx(750 - 2 * 5 * 177 / 227, abs=0.01)
@@ -207,8 +200,7 @@ def test_sy_printed(size):
     assert width_at(p, d - 50 - 1e-6) == pytest.approx(320, abs=0.01)
 
 
-@pytest.mark.parametrize("size", FpMcCannWBeamSection.SIZES)
-def test_w_printed(size):
+def _check_w_printed(size):
     sec = FpMcCannWBeamSection(size)
     p, dim = sec.polygon, sec.dimensions
     top = FAM["w"]["transcribed_dims_mm"]["top"][size]
@@ -225,8 +217,7 @@ def test_w_printed(size):
     assert np.degrees(np.arctan2(dim.depth - 50 - 25, top["L1"] / 2 - 755)) == pytest.approx(82, abs=0.4)
 
 
-@pytest.mark.parametrize("size", FpMcCannBoxBeamSection.SIZES)
-def test_box_printed(size):
+def _check_box_printed(size):
     sec = FpMcCannBoxBeamSection(size)
     p, dim = sec.polygon, sec.dimensions
     assert width_at(p, 30) == pytest.approx(dim.bottom_width)
@@ -260,8 +251,7 @@ def ie_polygon(cls, size):
 VERDICT_BOUNDS = {"identical": (0, 10), "near-identical": (10, 150), "different": (1000, 1e9)}
 
 
-@pytest.mark.parametrize("cls,size", ALL)
-def test_banagher_comparison(cls, size):
+def _check_banagher_comparison(cls, size):
     sec = cls(size)
     comp = FAM[sec.family]["banagher_ie_comparison"]
     rec = comp["per_size"][key_of(sec)]
@@ -274,14 +264,14 @@ def test_banagher_comparison(cls, size):
         assert lo <= sd <= hi
 
 
-def test_banagher_verdicts():
+def _check_banagher_verdicts():
     v = {fam: FAM[fam]["banagher_ie_comparison"]["verdict"] for fam in FAM}
     assert v == {"ty_type1": "near-identical", "ty_type2": "identical", "tye": "near-identical", "y": "different",
                  "ye": "different", "my": "different", "mye": "different", "sy": "different", "w": "different",
                  "box": "identical"}
 
 
-def test_invalid_sizes():
+def _check_invalid_sizes():
     for cls, bad in ((FpMcCannTyBeamSection, "TY3 (Type 1)"), (FpMcCannTyBeamSection, "TY11 (Type 2)"),
                      (FpMcCannTyeBeamSection, "TYE3"), (FpMcCannYBeamSection, "Y9"), (FpMcCannYeBeamSection, "YE9"),
                      (FpMcCannMyBeamSection, "MY8"), (FpMcCannMyeBeamSection, "MYE8"), (FpMcCannSyBeamSection, "SY7"),
@@ -289,3 +279,36 @@ def test_invalid_sizes():
                      (FpMcCannBoxBeamSection, "SD1 (1500)")):
         with pytest.raises(ValueError):
             cls(bad)
+
+
+def test_uk_r2_fpmccann_catalogue_checks():
+    run_checks(
+        _check_tolerances_match_data,
+        _check_profile_count,
+        (_check_valid_outline, P("cls,size", ALL)),
+        (_check_published_properties, P("cls,size", ALL)),
+        (_check_ty_printed, P("size", FpMcCannTyBeamSection.SIZES)),
+        _check_ty_web_line_construction_point,
+        (_check_tye_face, P("size", FpMcCannTyeBeamSection.SIZES)),
+        (_check_y_printed, P("size", FpMcCannYBeamSection.SIZES)),
+        (_check_ye_printed, P("size", FpMcCannYeBeamSection.SIZES)),
+        (_check_my_printed, P("size", FpMcCannMyBeamSection.SIZES)),
+        (_check_mye_printed, P("size", FpMcCannMyeBeamSection.SIZES)),
+        (_check_sy_printed, P("size", FpMcCannSyBeamSection.SIZES)),
+        (_check_w_printed, P("size", FpMcCannWBeamSection.SIZES)),
+        (_check_box_printed, P("size", FpMcCannBoxBeamSection.SIZES)),
+        (_check_banagher_comparison, P("cls,size", ALL)),
+        _check_banagher_verdicts,
+        _check_invalid_sizes,
+    )
+
+
+def test_fpmccann_published_discrepancies_pinned():
+    """TYE4/TYE6, SY6, MYE, W, YE8 and SD6 (750) residuals recorded under JSON "pinned"."""
+    run_checks((_check_published_properties, P("cls,size", [(c, s) for c, s in ALL
+                                                             if key_of(c(s)) in FAM[c(s).family]["pinned"]])))
+
+
+def test_fpmccann_sy_cap_and_w_l3_misprint_pinned():
+    run_checks((_check_sy_printed, P("size", FpMcCannSyBeamSection.SIZES)),
+               (_check_w_printed, P("size", FpMcCannWBeamSection.SIZES)))

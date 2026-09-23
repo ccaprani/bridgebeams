@@ -14,6 +14,8 @@ from bridgebeams.india import (
     NhaiIGirderDimensions,
 )
 
+from _aggregate import P, run_checks
+
 
 def _hand_area(top, web, base, web_h):
     return (top * 150 + (top + web) / 2 * 100 + web * web_h
@@ -32,8 +34,7 @@ EXPECTED = {
 }
 
 
-@pytest.mark.parametrize("size", Nh45aIGirderSection.SIZES)
-def test_nh45a_outline_bounds_area_and_labels(size):
+def _check_nh45a_outline_bounds_area_and_labels(size):
     depth, top, web, base, web_h, kind, pages = EXPECTED[size]
     s = Nh45aIGirderSection(size)
     poly = s.polygon
@@ -48,21 +49,21 @@ def test_nh45a_outline_bounds_area_and_labels(size):
     assert s.pdf_pages == pages
 
 
-def test_nh45a_gross_areas_match_assessment_values():
+def _check_nh45a_gross_areas_match_assessment_values():
     areas = {sz: Nh45aIGirderSection(sz).polygon.area for sz in Nh45aIGirderSection.SIZES}
     assert areas == {"PSC-1500": 716250, "PSC-2000": 866250, "RCC-1300": 587500,
                      "RCC-1400": 617500, "RCC-1500": 647500, "RCC-2000": 866250,
                      "RCC-2250": 941250}
 
 
-def test_nh45a_splay_widths_match_printed_callouts():
+def _check_nh45a_splay_widths_match_printed_callouts():
     d900 = Nh45aIGirderSection("PSC-1500").dimensions
     d800 = Nh45aIGirderSection("RCC-1300").dimensions
     assert (d900.upper_splay_width, d900.lower_splay_width) == (300, 225)
     assert (d800.upper_splay_width, d800.lower_splay_width) == (250, 150)
 
 
-def test_identical_outlines_are_recorded_and_really_identical():
+def _check_identical_outlines_are_recorded_and_really_identical():
     psc, rcc = Nh45aIGirderSection("PSC-2000"), Nh45aIGirderSection("RCC-2000")
     assert psc.dimensions.outline == rcc.dimensions.outline
     assert "RCC-2000" in psc.identical_to and "PSC-2000" in rcc.identical_to
@@ -75,7 +76,7 @@ def test_identical_outlines_are_recorded_and_really_identical():
             != Nh45aIGirderSection("RCC-1500").dimensions.outline)
 
 
-def test_delhi_vadodara_estimate():
+def _check_delhi_vadodara_estimate():
     s = DelhiVadodaraPscISection()
     assert s.provenance == "estimate"
     assert s.construction == "PSC" and s.pdf_pages == (41,)
@@ -87,10 +88,21 @@ def test_delhi_vadodara_estimate():
     assert 0 < props["cy"] < 2000 and props["ixx"] > 0
 
 
-def test_invalid_sizes_and_open_chain_raise():
+def _check_invalid_sizes_and_open_chain_raise():
     with pytest.raises(ValueError, match="size must be one of"):
         Nh45aIGirderSection("PSC-2250")
     with pytest.raises(ValueError, match="size must be one of"):
         DelhiVadodaraPscISection("KM37+744-END")
     with pytest.raises(ValueError, match="does not close"):
         NhaiIGirderDimensions(1500, 900, 300, 750, 150, 100, 800, 150, 250)
+
+
+def test_india_nhai_i_girders_catalogue_checks():
+    run_checks(
+        (_check_nh45a_outline_bounds_area_and_labels, P("size", Nh45aIGirderSection.SIZES)),
+        _check_nh45a_gross_areas_match_assessment_values,
+        _check_nh45a_splay_widths_match_printed_callouts,
+        _check_identical_outlines_are_recorded_and_really_identical,
+        _check_delhi_vadodara_estimate,
+        _check_invalid_sizes_and_open_chain_raise,
+    )

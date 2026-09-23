@@ -18,6 +18,8 @@ from bridgebeams.ie import (
     IeUBeamSection,
 )
 
+from _aggregate import P, run_checks
+
 U_DATA = json.loads(
     resources.files("bridgebeams.ie.data").joinpath("ie_u_beam.json").read_text()
 )
@@ -35,7 +37,7 @@ TOL_EXACT = {"area": 0.005, "yc": 0.005, "ixx": 0.005}
 TOL_M = {"area": 0.01, "yc": 0.01, "ixx": 0.01}
 
 
-def test_u_family_all_sizes():
+def _check_u_family_all_sizes():
     for row in U_DATA["published_properties"]:
         beam = IeUBeamSection(row["section"])
         props = section_properties(as_polygon(beam.geometry))
@@ -44,18 +46,12 @@ def test_u_family_all_sizes():
         assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=0.004), row["section"]
 
 
-def test_u_invalid_size_raises():
+def _check_u_invalid_size_raises():
     with pytest.raises(ValueError):
         IeUBeamSection("U2")
 
 
-@pytest.mark.parametrize("variant,edge,key", [
-    ("bs", False, "ty_bs"),
-    ("ss", False, "ty_ss"),
-    ("bs", True, "tye_bs"),
-    ("ss", True, "tye_ss"),
-])
-def test_ty_family_all_sizes(variant, edge, key):
+def _check_ty_family_all_sizes(variant, edge, key):
     for row in TY_DATA["published_properties"][key]:
         size = row["section"]
         beam = IeTYBeamSection(size, variant=variant)
@@ -68,14 +64,14 @@ def test_ty_family_all_sizes(variant, edge, key):
             assert xc == pytest.approx(row["xc"], rel=0.01), size
 
 
-def test_ty_invalid_size_raises():
+def _check_ty_invalid_size_raises():
     with pytest.raises(ValueError):
         IeTYBeamSection("TY1", variant="bs")  # bs starts at TY3
     with pytest.raises(ValueError):
         IeTYBeamSection("TY12", variant="ss")
 
 
-def test_sy_family_all_sizes():
+def _check_sy_family_all_sizes():
     for row in SY_DATA["published_properties"]["sy"]:
         beam = IeSYBeamSection(row["section"])
         props = section_properties(as_polygon(beam.geometry))
@@ -84,7 +80,7 @@ def test_sy_family_all_sizes():
         assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=0.001), row["section"]
 
 
-def test_sye_family_all_sizes():
+def _check_sye_family_all_sizes():
     # fitted family: max deviation 1.2%
     for row in SY_DATA["published_properties"]["sye"]:
         beam = IeSYEBeamSection(row["section"])
@@ -98,7 +94,7 @@ def test_sye_family_all_sizes():
         assert xc == pytest.approx(row["xc"], rel=0.02), row["section"]
 
 
-def test_m_family_all_sizes():
+def _check_m_family_all_sizes():
     for row in M_DATA["published_properties"]["m"]:
         beam = IeMBeamSection(row["section"])
         props = section_properties(as_polygon(beam.geometry))
@@ -107,7 +103,7 @@ def test_m_family_all_sizes():
         assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=TOL_M["ixx"]), row["section"]
 
 
-def test_umb_family_all_sizes():
+def _check_umb_family_all_sizes():
     for row in M_DATA["published_properties"]["umb"]:
         beam = IeUMBBeamSection(row["section"])
         props = section_properties(as_polygon(beam.geometry))
@@ -116,19 +112,19 @@ def test_umb_family_all_sizes():
         assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=0.007), row["section"]
 
 
-def test_m_umb_invalid_size_raises():
+def _check_m_umb_invalid_size_raises():
     with pytest.raises(ValueError):
         IeMBeamSection("M11")
     with pytest.raises(ValueError):
         IeUMBBeamSection("UMB11")
 
 
-def test_sy_invalid_size_raises():
+def _check_sy_invalid_size_raises():
     with pytest.raises(ValueError):
         IeSYBeamSection("SY7")
 
 
-def test_my_family_all_sizes():
+def _check_my_family_all_sizes():
     my_data = json.loads(
         resources.files("bridgebeams.ie.data").joinpath("ie_my_beam.json").read_text()
     )
@@ -143,7 +139,7 @@ def test_my_family_all_sizes():
         assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=0.025), row["section"]
 
 
-def test_mye_family_all_sizes():
+def _check_mye_family_all_sizes():
     my_data = json.loads(
         resources.files("bridgebeams.ie.data").joinpath("ie_my_beam.json").read_text()
     )
@@ -158,3 +154,25 @@ def test_mye_family_all_sizes():
         assert props["ixx"] == pytest.approx(row["ixx_e9"] * 1e9, rel=0.01), row["section"]
         xc = props["cx"] + 485.0
         assert xc == pytest.approx(row["xc"], rel=0.02), row["section"]
+
+
+def test_ukie_u_ty_sy_m_catalogue_checks():
+    run_checks(
+        _check_u_family_all_sizes,
+        _check_u_invalid_size_raises,
+        (_check_ty_family_all_sizes, P("variant,edge,key", [
+    ("bs", False, "ty_bs"),
+    ("ss", False, "ty_ss"),
+    ("bs", True, "tye_bs"),
+    ("ss", True, "tye_ss"),
+])),
+        _check_ty_invalid_size_raises,
+        _check_sy_family_all_sizes,
+        _check_sye_family_all_sizes,
+        _check_m_family_all_sizes,
+        _check_umb_family_all_sizes,
+        _check_m_umb_invalid_size_raises,
+        _check_sy_invalid_size_raises,
+        _check_my_family_all_sizes,
+        _check_mye_family_all_sizes,
+    )

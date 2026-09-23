@@ -6,13 +6,14 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.dk import CrhOtBeamSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(p, y):
     return p.intersection(LineString([(-2000, y), (2000, y)])).length
 
 
-@pytest.mark.parametrize("size", CrhOtBeamSection.SIZES)
-def test_printed_outline(size):
+def _check_printed_outline(size):
     sec = CrhOtBeamSection(size)
     p = sec.polygon
     h = sec.dimensions.depth
@@ -25,12 +26,20 @@ def test_printed_outline(size):
     assert sec.geometry is not None
 
 
-def test_area_formula():
+def _check_area_formula():
     # flange: 1180*140 + trapezoid (1180+560)/2*30 + haunch (560+300)/2*85 ; web 300*(H-255)
     a = section_properties(CrhOtBeamSection("OT 118/1000").polygon)["area"]
     assert a == pytest.approx(1180 * 140 + 870 * 30 + 430 * 85 + 300 * 745)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         CrhOtBeamSection("OT 118/1450")
+
+
+def test_dk_crh_ot_catalogue_checks():
+    run_checks(
+        (_check_printed_outline, P("size", CrhOtBeamSection.SIZES)),
+        _check_area_formula,
+        _check_invalid,
+    )

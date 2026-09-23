@@ -18,6 +18,8 @@ from bridgebeams.us.state_pa_beams import (
     bc775_key_right_in,
 )
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 CLASSES = (PaIBeamSection, PaAashtoIBeamSection, PaBulbTeeSection, PaBoxBeamSection)
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
@@ -27,8 +29,7 @@ def props(sec):
     return gross_properties(sec.polygon, IN)
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_all_sizes_valid_symmetric(cls):
+def _check_all_sizes_valid_symmetric(cls):
     for size in cls.SIZES:
         s = cls(size)
         poly = s.polygon
@@ -41,21 +42,19 @@ def test_all_sizes_valid_symmetric(cls):
         assert s.geometry is not None
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_invalid_size_raises(cls):
+def _check_invalid_size_raises(cls):
     with pytest.raises(ValueError):
         cls("nope")
 
 
-def test_counts():
+def _check_counts():
     assert len(PaIBeamSection.SIZES) == 21
     assert len(PaAashtoIBeamSection.SIZES) == 7
     assert len(PaBulbTeeSection.SIZES) == 54
     assert len(PaBoxBeamSection.SIZES) == 58
 
 
-@pytest.mark.parametrize("cls", (PaIBeamSection, PaAashtoIBeamSection, PaBulbTeeSection))
-def test_girders_match_published_to_print_precision(cls):
+def _check_girders_match_published_to_print_precision(cls):
     for size in cls.SIZES:
         s = cls(size)
         p, pub = props(s), s.published
@@ -64,7 +63,7 @@ def test_girders_match_published_to_print_precision(cls):
         assert p["ix"] == pytest.approx(pub["ix_in4"], rel=1e-4), size
 
 
-def test_literal_spot_checks():
+def _check_literal_spot_checks():
     # sheet 2: 24/48 -> 708 in2, 21.39 in, 172712 in4
     p = props(PaIBeamSection("24/48"))
     assert (round(p["area"]), round(p["yb"], 2), round(p["ix"])) == (708, 21.39, 172712)
@@ -86,7 +85,7 @@ def test_24_63_uses_2016_corrected_row():
     assert round(p["area"]) == 920 and round(p["yb"], 2) == 30.90
 
 
-def test_spread_boxes_match_published():
+def _check_spread_boxes_match_published():
     for size in PaBoxBeamSection.SIZES:
         if not size.startswith("spread"):
             continue
@@ -98,7 +97,7 @@ def test_spread_boxes_match_published():
         assert len(s.polygon.interiors) == 1
 
 
-def test_adjacent_boxes_33_and_deeper_with_bc775_key():
+def _check_adjacent_boxes_33_and_deeper_with_bc775_key():
     for size in PaBoxBeamSection.SIZES:
         if not size.startswith("adjacent"):
             continue
@@ -140,7 +139,7 @@ def _key_area(k):
     return area
 
 
-def test_planks_match_published():
+def _check_planks_match_published():
     for w in (48, 36):
         s = PaBoxBeamSection(f"plank-{w}x12")
         p, pub = props(s), s.published
@@ -148,3 +147,16 @@ def test_planks_match_published():
         assert p["yb"] == pytest.approx(pub["yb_in"], abs=0.006)
         assert p["ix"] == pytest.approx(pub["ix_in4"], rel=4e-4)
         assert not s.polygon.interiors
+
+
+def test_us_state_pa_beams_catalogue_checks():
+    run_checks(
+        (_check_all_sizes_valid_symmetric, P("cls", CLASSES)),
+        (_check_invalid_size_raises, P("cls", CLASSES)),
+        _check_counts,
+        (_check_girders_match_published_to_print_precision, P("cls", (PaIBeamSection, PaAashtoIBeamSection, PaBulbTeeSection))),
+        _check_literal_spot_checks,
+        _check_spread_boxes_match_published,
+        _check_adjacent_boxes_33_and_deeper_with_bc775_key,
+        _check_planks_match_published,
+    )

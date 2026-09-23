@@ -11,14 +11,15 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.ro import AsaGrindaPodSection
 
+from _aggregate import P, run_checks
+
 EXPECTED = {  # depth, top width, max bottom width (mm)
     "42": (420, 220, 600), "52": (520, 220, 600), "72": (720, 1020, 920),
     "80": (800, 1020, 920), "95": (950, 1200, 470), "105": (1050, 1180, 500),
 }
 
 
-@pytest.mark.parametrize("size", AsaGrindaPodSection.SIZES)
-def test_outline(size):
+def _check_outline(size):
     sec = AsaGrindaPodSection(size)
     poly = sec.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -41,15 +42,18 @@ def _web_tangents(sec):
     return min(ys), max(ys)
 
 
-@pytest.mark.parametrize("size,low,high", [("72", 240.0, 509.0), ("80", 240.0, 589.0),
-                                           ("95", 331.9, 729.9), ("105", 362.8, 809.9)])
-def test_fillet_tangent_residuals(size, low, high):
+def _check_fillet_tangent_residuals(size, low, high):
     lo, hi = _web_tangents(AsaGrindaPodSection(size))
     assert lo == pytest.approx(low, abs=0.1)
     assert hi == pytest.approx(high, abs=0.1)
 
 
-def test_72_upper_fillet_extents_vs_printed_4_and_4_8_cm():
+def test_fillet_tangent_residuals():
+    run_checks((_check_fillet_tangent_residuals, P("size,low,high", [("72", 240.0, 509.0), ("80", 240.0, 589.0),
+                                           ("95", 331.9, 729.9), ("105", 362.8, 809.9)])))
+
+
+def _check_72_upper_fillet_extents_vs_printed_4_and_4_8_cm():
     sec = AsaGrindaPodSection("72")
     pts = sec.dimensions.outline
     xw = 135.0
@@ -66,7 +70,7 @@ def test_42_throat_convention():
     assert min(stem) > 70.0
 
 
-def test_provenance():
+def _check_provenance():
     prov = {s: AsaGrindaPodSection(s).provenance for s in AsaGrindaPodSection.SIZES}
     assert prov == {"42": "transcribed-with-convention", "52": "estimate",
                     "72": "transcribed-with-convention", "80": "transcribed-with-convention",
@@ -74,6 +78,15 @@ def test_provenance():
     assert AsaGrindaPodSection.source_status
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         AsaGrindaPodSection("62")
+
+
+def test_ro_asa_catalogue_checks():
+    run_checks(
+        (_check_outline, P("size", AsaGrindaPodSection.SIZES)),
+        _check_72_upper_fillet_extents_vs_printed_4_and_4_8_cm,
+        _check_provenance,
+        _check_invalid_size,
+    )

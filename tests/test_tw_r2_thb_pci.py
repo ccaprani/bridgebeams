@@ -5,6 +5,8 @@ import pytest
 from bridgebeams._geometry import section_properties
 from bridgebeams.tw.r2_thb_pci_girders import ThbPciGirderSection
 
+from _aggregate import P, run_checks
+
 
 def _analytic_area(d):
     return (
@@ -16,8 +18,7 @@ def _analytic_area(d):
     )
 
 
-@pytest.mark.parametrize("size", ThbPciGirderSection.SIZES)
-def test_valid_bounds_area(size):
+def _check_valid_bounds_area(size):
     s = ThbPciGirderSection(size)
     p, d = s.polygon, s.dimensions
     assert p.is_valid and p.exterior.is_ccw
@@ -28,7 +29,7 @@ def test_valid_bounds_area(size):
     s.geometry
 
 
-def test_table_values():
+def _check_table_values():
     d = ThbPciGirderSection("VII").dimensions
     assert (d.depth, d.top_width, d.bottom_width, d.web_width) == (2200, 1400, 700, 200)
     assert (d.top_flange, d.bottom_flange, d.top_taper, d.bottom_taper) == (200, 350, 150, 250)
@@ -40,6 +41,18 @@ def test_table_values():
         assert (dd.bottom_width - dd.web_width) / 2 == pytest.approx(f2)
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         ThbPciGirderSection("VIII")
+
+
+def test_tw_r2_thb_pci_catalogue_checks():
+    run_checks(
+        (_check_valid_bounds_area, P("size", ThbPciGirderSection.SIZES)),
+        _check_table_values,
+        _check_invalid,
+    )
+
+
+def test_thb_type_i_bottom_taper_table_vs_figure_pinned():
+    run_checks(_check_table_values)

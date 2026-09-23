@@ -4,8 +4,10 @@ import pytest
 
 from bridgebeams.india import Nh45aPscISection
 
+from _aggregate import P, run_checks
 
-def test_nh45a_midspan_dimension_chain_and_gross_area():
+
+def _check_nh45a_midspan_dimension_chain_and_gross_area():
     section = Nh45aPscISection()
     polygon = section.polygon
     assert polygon.is_valid
@@ -23,6 +25,13 @@ def test_nh45a_midspan_dimension_chain_and_gross_area():
     assert section.geometry.geom.area == expected
 
 
-def test_nh45a_has_only_the_dimensioned_midspan_variant():
+def _check_nh45a_has_only_the_dimensioned_midspan_variant():
     with pytest.raises(ValueError, match="CH50\\+473-MID"):
         Nh45aPscISection("CH50+473-END")
+
+
+def test_india_nhai_catalogue_checks():
+    run_checks(
+        _check_nh45a_midspan_dimension_chain_and_gross_area,
+        _check_nh45a_has_only_the_dimensioned_midspan_variant,
+    )

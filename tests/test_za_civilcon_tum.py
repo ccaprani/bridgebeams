@@ -8,6 +8,8 @@ from bridgebeams.za.civilcon_special_u_beam import CivilconSpecialUBeamSection
 from bridgebeams.za.civilcon_t_beam import CivilconTBeamSection
 from bridgebeams.za.civilcon_u_beam import CivilconUBeamSection
 
+from _aggregate import P, run_checks
+
 
 def _width(p, y):
     return p.intersection(LineString([(-5000, y), (5000, y)])).length
@@ -40,8 +42,7 @@ T_ROWS = [
 ]
 
 
-@pytest.mark.parametrize("size,h,area,yb,zt,zb", T_ROWS)
-def test_t_beam(size, h, area, yb, zt, zb):
+def _check_t_beam(size, h, area, yb, zt, zb):
     s = CivilconTBeamSection(size)
     assert s.provenance == "transcribed-with-convention"
     assert s.source_status == "producer catalogue"
@@ -87,8 +88,7 @@ U_ROWS = [
 ]
 
 
-@pytest.mark.parametrize("size,h,area,yb,zt,zb", U_ROWS)
-def test_u_beam(size, h, area, yb, zt, zb):
+def _check_u_beam(size, h, area, yb, zt, zb):
     s = CivilconUBeamSection(size)
     assert s.provenance == "fitted-reconstruction"
     pr, depth, zt_c, zb_c = _props(s)
@@ -125,11 +125,7 @@ def test_u_area_increment_pinned():
 
 
 # ------------------------------------------------------- Special U beams
-@pytest.mark.parametrize("size,h,area,yb,zt,zb", [
-    ("SU1", 900, 764590, 320, 100.76e6, 182.96e6),
-    ("SU2", 1200, 884590, 439, 172.96e6, 299.73e6),
-])
-def test_special_u_beam(size, h, area, yb, zt, zb):
+def _check_special_u_beam(size, h, area, yb, zt, zb):
     s = CivilconSpecialUBeamSection(size)
     assert s.provenance == "fitted-reconstruction"
     pr, depth, zt_c, zb_c = _props(s)
@@ -169,8 +165,7 @@ M_ROWS = [
 ]
 
 
-@pytest.mark.parametrize("size,h,area,yb,zt,zb", M_ROWS)
-def test_m_beam(size, h, area, yb, zt, zb):
+def _check_m_beam(size, h, area, yb, zt, zb):
     s = CivilconMBeamSection(size)
     assert s.provenance == "fitted-reconstruction"
     pr, depth, zt_c, zb_c = _props(s)
@@ -202,12 +197,24 @@ def test_m10_uses_drawing_depth():
     assert s.dimensions.depth == 1360
 
 
-@pytest.mark.parametrize("cls,bad", [
+def _check_invalid_size(cls, bad):
+    with pytest.raises(ValueError):
+        cls(bad)
+
+
+def test_za_civilcon_tum_catalogue_checks():
+    run_checks(
+        (_check_t_beam, P("size,h,area,yb,zt,zb", T_ROWS)),
+        (_check_u_beam, P("size,h,area,yb,zt,zb", U_ROWS)),
+        (_check_special_u_beam, P("size,h,area,yb,zt,zb", [
+    ("SU1", 900, 764590, 320, 100.76e6, 182.96e6),
+    ("SU2", 1200, 884590, 439, 172.96e6, 299.73e6),
+])),
+        (_check_m_beam, P("size,h,area,yb,zt,zb", M_ROWS)),
+        (_check_invalid_size, P("cls,bad", [
     (CivilconTBeamSection, "T11"),
     (CivilconUBeamSection, "U2"),
     (CivilconSpecialUBeamSection, "US1"),
     (CivilconMBeamSection, "M1"),
-])
-def test_invalid_size(cls, bad):
-    with pytest.raises(ValueError):
-        cls(bad)
+])),
+    )

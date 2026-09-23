@@ -9,6 +9,8 @@ from shapely.geometry import LineString
 from bridgebeams.cn import Beijing20bgql2BoxSection
 from bridgebeams.mx._arcs import ring_properties
 
+from _aggregate import P, run_checks
+
 
 def _props(p):
     return ring_properties([list(p.exterior.coords)] + [list(r.coords) for r in p.interiors])
@@ -18,8 +20,7 @@ def _width(p, y):
     return p.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("size,a", [("a=0", 0.0), ("a=300", 300.0)])
-def test_sizes_construct_and_bounds(size, a):
+def _check_sizes_construct_and_bounds(size, a):
     s = Beijing20bgql2BoxSection(size)
     p = s.polygon
     assert p.is_valid and len(p.interiors) == 1
@@ -36,7 +37,7 @@ def test_sizes_construct_and_bounds(size, a):
     assert _width(p, y) == pytest.approx(outer - void, abs=1e-6)
 
 
-def test_void_consistent_with_280_web():
+def _check_void_consistent_with_280_web():
     import math
     slope = 250 / 1450
     horiz = 280 * math.sqrt(1 + slope**2)
@@ -45,8 +46,7 @@ def test_void_consistent_with_280_web():
     assert 950 + slope * 370 - horiz == pytest.approx(730, abs=0.5)
 
 
-@pytest.mark.parametrize("a", [0.0, 150.0, 300.0])
-def test_analytic_area(a):
+def _check_analytic_area(a):
     s = Beijing20bgql2BoxSection(a=a, drip_groove=False)
     # Fillet-free closed form (mm2): 2 568 520 at a=0, +2*200*a
     sharp = 2568520 + 400 * a
@@ -60,7 +60,7 @@ def test_analytic_area(a):
     assert area - grooved == pytest.approx(3.14159265 * 400, rel=0.01 if a != 150 else 0.04)
 
 
-def test_parameter_limits_and_invalid_size():
+def _check_parameter_limits_and_invalid_size():
     with pytest.raises(ValueError):
         Beijing20bgql2BoxSection("a=150")
     with pytest.raises(ValueError):
@@ -68,6 +68,16 @@ def test_parameter_limits_and_invalid_size():
     assert Beijing20bgql2BoxSection(a=150).polygon.bounds[2] == pytest.approx(2750)
 
 
-def test_geometry_roundtrip():
+def _check_geometry_roundtrip():
     s = Beijing20bgql2BoxSection("a=0")
     assert s.geometry.geom.symmetric_difference(s.polygon).area < 1e-3
+
+
+def test_cn_beijing_box_catalogue_checks():
+    run_checks(
+        (_check_sizes_construct_and_bounds, P("size,a", [("a=0", 0.0), ("a=300", 300.0)])),
+        _check_void_consistent_with_280_web,
+        (_check_analytic_area, P("a", [0.0, 150.0, 300.0])),
+        _check_parameter_limits_and_invalid_size,
+        _check_geometry_roundtrip,
+    )

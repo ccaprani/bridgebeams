@@ -11,6 +11,8 @@ from shapely.affinity import scale
 from bridgebeams.us.state_co_cbt import CoCbtGirderSection
 from bridgebeams.us.state_common import gross_properties
 
+from _aggregate import P, run_checks
+
 IN = 25.4
 PROVENANCE = {"transcribed", "transcribed-with-convention", "fitted-reconstruction", "estimate"}
 # size: (depth, A in^2, Ix in^4, Iy in^4, yb in)
@@ -25,12 +27,11 @@ PUBLISHED = {
 }
 
 
-def test_sizes_match_table():
+def _check_sizes_match_table():
     assert set(CoCbtGirderSection.SIZES) == set(PUBLISHED)
 
 
-@pytest.mark.parametrize("size", CoCbtGirderSection.SIZES)
-def test_valid_symmetric_outline(size):
+def _check_valid_symmetric_outline(size):
     s = CoCbtGirderSection(size)
     poly = s.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -42,8 +43,7 @@ def test_valid_symmetric_outline(size):
     assert s.geometry is not None
 
 
-@pytest.mark.parametrize("size", CoCbtGirderSection.SIZES)
-def test_published_properties(size):
+def _check_published_properties(size):
     depth, a, ix, iy, yb = PUBLISHED[size]
     p = gross_properties(CoCbtGirderSection(size).polygon, IN)
     assert p["area"] == pytest.approx(a, abs=0.5)  # table rounds to 1 in^2
@@ -56,6 +56,19 @@ def test_published_properties(size):
         assert p["ix"] == pytest.approx(ix, abs=0.5)
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         CoCbtGirderSection("CBT100")
+
+
+def test_us_state_co_cbt_catalogue_checks():
+    run_checks(
+        _check_sizes_match_table,
+        (_check_valid_symmetric_outline, P("size", CoCbtGirderSection.SIZES)),
+        (_check_published_properties, P("size", CoCbtGirderSection.SIZES)),
+        _check_invalid_size,
+    )
+
+
+def test_co_cbt81_inertia_pinned():
+    run_checks((_check_published_properties, P("size", ["CBT81"])))

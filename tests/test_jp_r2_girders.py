@@ -6,6 +6,8 @@ import pytest
 from bridgebeams.jp.r2_bipre_girders import BipreHollowGirderSection, BipreIGirderSection
 from bridgebeams.jp.r2_jis_slab_girders import JisSlabGirderSection
 
+from _aggregate import P, run_checks
+
 
 def _props(poly):
     """Area, centroid height, centroidal Ixx including interior rings."""
@@ -25,8 +27,7 @@ def _props(poly):
     return a, cy, i - a * cy * cy
 
 
-@pytest.mark.parametrize("size", JisSlabGirderSection.SIZES)
-def test_jis_slab_valid_and_bounds(size):
+def _check_jis_slab_valid_and_bounds(size):
     s = JisSlabGirderSection(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -39,8 +40,7 @@ def test_jis_slab_valid_and_bounds(size):
     s.geometry
 
 
-@pytest.mark.parametrize("size", JisSlabGirderSection.SIZES)
-def test_jis_slab_matches_published_gross_properties(size):
+def _check_jis_slab_matches_published_gross_properties(size):
     # Nihon Koatsu 2024 table: A to 1 cm2, I to 4-5 sig figs, y to 0.1 cm. Exact
     # centroids often fall on x.x5 cm and the table rounds those ties either way
     # (AS13 yuc 25.3 vs identical BS12 25.4), hence 0.06 cm.
@@ -60,13 +60,12 @@ def test_jis_slab_as19_misprint_resolved():
     assert _props(s.polygon)[0] == pytest.approx(_props(JisSlabGirderSection("AS20").polygon)[0])
 
 
-def test_jis_slab_invalid():
+def _check_jis_slab_invalid():
     with pytest.raises(ValueError):
         JisSlabGirderSection("AS25")
 
 
-@pytest.mark.parametrize("size", BipreIGirderSection.SIZES)
-def test_bipre_i(size):
+def _check_bipre_i(size):
     s = BipreIGirderSection(size)
     p = s.polygon
     d = s.dimensions
@@ -81,14 +80,13 @@ def test_bipre_i(size):
     s.geometry
 
 
-def test_bipre_i_printed_chains():
+def _check_bipre_i_printed_chains():
     webs = {k: BipreIGirderSection(k).dimensions.clear_web for k in BipreIGirderSection.SIZES}
     assert webs == {"I25": 130, "I30": 190, "I35": 300, "I40": 330, "I45": 440, "I50": 590}
     assert BipreIGirderSection("I45").provenance == "estimate"
 
 
-@pytest.mark.parametrize("size", BipreHollowGirderSection.SIZES)
-def test_bipre_hollow(size):
+def _check_bipre_hollow(size):
     s = BipreHollowGirderSection(size)
     p = s.polygon
     d = s.dimensions
@@ -101,8 +99,20 @@ def test_bipre_hollow(size):
     assert a == pytest.approx(solid - void)
 
 
-def test_bipre_invalid():
+def _check_bipre_invalid():
     with pytest.raises(ValueError):
         BipreIGirderSection("I55")
     with pytest.raises(ValueError):
         BipreHollowGirderSection("H40")
+
+
+def test_jp_r2_girders_catalogue_checks():
+    run_checks(
+        (_check_jis_slab_valid_and_bounds, P("size", JisSlabGirderSection.SIZES)),
+        (_check_jis_slab_matches_published_gross_properties, P("size", JisSlabGirderSection.SIZES)),
+        _check_jis_slab_invalid,
+        (_check_bipre_i, P("size", BipreIGirderSection.SIZES)),
+        _check_bipre_i_printed_chains,
+        (_check_bipre_hollow, P("size", BipreHollowGirderSection.SIZES)),
+        _check_bipre_invalid,
+    )

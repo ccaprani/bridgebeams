@@ -10,6 +10,8 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import as_polygon, section_properties
 from bridgebeams.tw import TaiwanISection
 
+from _aggregate import P, run_checks
+
 
 # Independently transcribed Figure 10 / Table 14 depths in millimetres.
 DEPTHS = {"IV": 1350, "V": 1600, "VI": 1850, "VII": 2000, "VIII": 2100}
@@ -52,8 +54,7 @@ def strip_integrals(strips):
     return area, cy, second - area * cy**2
 
 
-@pytest.mark.parametrize("size", DEPTHS)
-def test_shape_and_analytic_properties(size):
+def _check_shape_and_analytic_properties(size):
     beam = TaiwanISection(size)
     poly = beam.polygon
     assert poly.is_valid
@@ -69,8 +70,7 @@ def test_shape_and_analytic_properties(size):
     assert as_polygon(beam.geometry).equals(poly)
 
 
-@pytest.mark.parametrize("size", DEPTHS)
-def test_off_grid_slice_widths(size):
+def _check_off_grid_slice_widths(size):
     # Samples inside every flange and splay catch shifted y references and
     # top-flange knees even if a coincidental overall area matches.
     poly = TaiwanISection(size).polygon
@@ -80,7 +80,7 @@ def test_off_grid_slice_widths(size):
         assert cut.length == pytest.approx(b0 + 0.37 * (b1 - b0), abs=1e-9)
 
 
-def test_end_block_lengths_do_not_enter_midspan_profile():
+def _check_end_block_lengths_do_not_enter_midspan_profile():
     beam = TaiwanISection("VIII")
     assert beam.published["end_block_B_mm"] == 1600
     assert beam.published["end_block_C_mm"] == 500
@@ -89,7 +89,15 @@ def test_end_block_lengths_do_not_enter_midspan_profile():
     assert beam.polygon.area - TaiwanISection("V").polygon.area == pytest.approx(100000)
 
 
-@pytest.mark.parametrize("invalid", ["I", "IX", "Type IV", "iv", 4])
-def test_invalid_size(invalid):
+def _check_invalid_size(invalid):
     with pytest.raises(ValueError):
         TaiwanISection(invalid)
+
+
+def test_tw_girders_catalogue_checks():
+    run_checks(
+        (_check_shape_and_analytic_properties, P("size", DEPTHS)),
+        (_check_off_grid_slice_widths, P("size", DEPTHS)),
+        _check_end_block_lengths_do_not_enter_midspan_profile,
+        (_check_invalid_size, P("invalid", ["I", "IX", "Type IV", "iv", 4])),
+    )

@@ -6,7 +6,7 @@
  "source": {
   "title_original": "Product Catalogue PT Waskita Beton Precast Tbk (WSBP) 2026",
   "url": "https://waskitaprecast.co.id/uploads/pdf/waskita-katalog-produk-2026.pdf",
-  "local_file": "sources/expansion/round2/id/waskita-katalog-produk-2026.pdf",
+  "local_file": "sources/expansion/round2/id/waskita-katalog-2026.pdf",
   "sha256": "e16e05d22b723cc364bbc058df341a7e46ebf19e90c8aba63286661d61ad0825",
   "retrieved": "2026-09-23",
   "retrieval_note": "Earlier local fetch returned HTTP 403; on 2026-09-23 a plain curl with a desktop browser User-Agent returned the PDF (no login or other control involved)."

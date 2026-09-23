@@ -6,6 +6,8 @@ from shapely.geometry import LineString
 from bridgebeams.bg.rila_gt import RilaGtSection
 from bridgebeams.bg.zbe_mg import ZbeMgSection
 
+from _aggregate import P, run_checks
+
 
 def width_at(poly, y):
     return poly.intersection(LineString([(-5000, y), (5000, y)])).length
@@ -25,8 +27,7 @@ RILA = {
 }
 
 
-@pytest.mark.parametrize("size", RilaGtSection.SIZES)
-def test_rila_printed(size):
+def _check_rila_printed(size):
     sec = RilaGtSection(size)
     p = sec.polygon
     top, web, bot, hl, hr, hc = RILA[size]
@@ -64,7 +65,7 @@ def test_rila_gt115_right_chain_pinned():
     assert sec.provenance == "transcribed-with-convention"
 
 
-def test_zbe_mg75():
+def _check_zbe_mg75():
     sec = ZbeMgSection()
     p = sec.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -78,8 +79,16 @@ def test_zbe_mg75():
     assert sec.geometry is not None
 
 
-def test_invalid():
+def _check_invalid():
     with pytest.raises(ValueError):
         RilaGtSection("GT100")
     with pytest.raises(ValueError):
         ZbeMgSection("MG95")
+
+
+def test_bg_beams_catalogue_checks():
+    run_checks(
+        (_check_rila_printed, P("size", RilaGtSection.SIZES)),
+        _check_zbe_mg75,
+        _check_invalid,
+    )

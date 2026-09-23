@@ -14,6 +14,8 @@ from bridgebeams.us.pci_standard_products import (
     PciSlabBeamSection,
 )
 
+from _aggregate import P, run_checks
+
 CLASSES = [PciSlabBeamSection, PciBoxBeamSection, PciBulbTeeSection, PciDeckBulbTeeSection, PciDoubleTeeSection]
 # max |residual| in percent for unpinned sizes
 TOL = {
@@ -55,8 +57,7 @@ def _calc(beam):
     return {"area": g["area"], "yb": g["cy"], "ixx": g["ixx"], "iyy": g["iyy"], "perimeter": g["perimeter"]}
 
 
-@pytest.mark.parametrize("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])
-def test_published_properties(cls, size):
+def _check_published_properties(cls, size):
     beam = cls(size)
     calc = _calc(beam)
     for prop, value in beam.published.items():
@@ -68,8 +69,7 @@ def test_published_properties(cls, size):
             assert abs(res) <= TOL[cls][prop], (size, prop, res)
 
 
-@pytest.mark.parametrize("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])
-def test_valid_symmetric_polygon(cls, size):
+def _check_valid_symmetric_polygon(cls, size):
     beam = cls(size)
     poly = beam.polygon
     assert poly.is_valid and poly.exterior.is_ccw
@@ -84,7 +84,7 @@ def test_valid_symmetric_polygon(cls, size):
     assert beam.geometry is not None
 
 
-def test_widths_and_voids():
+def _check_widths_and_voids():
     assert PciSlabBeamSection("SIV-48").polygon.bounds[2] * 2 == pytest.approx(48 * INCH_MM)
     assert len(PciSlabBeamSection("SIV-48").polygon.interiors) == 3
     assert len(PciSlabBeamSection("SIII-36").polygon.interiors) == 2
@@ -112,7 +112,21 @@ def test_deck_bulb_tee_48_convention():
     assert PciDeckBulbTeeSection("DBT35-72").provenance == "transcribed"
 
 
-@pytest.mark.parametrize("cls", CLASSES)
-def test_unknown_size_rejected(cls):
+def _check_unknown_size_rejected(cls):
     with pytest.raises(ValueError):
         cls("Type IV")
+
+
+def test_us_pci_standard_products_catalogue_checks():
+    run_checks(
+        (_check_published_properties, P("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])),
+        (_check_valid_symmetric_polygon, P("cls,size", CASES, ids=[f"{c.__name__}-{s}" for c, s in CASES])),
+        _check_widths_and_voids,
+        (_check_unknown_size_rejected, P("cls", CLASSES)),
+    )
+
+
+def test_pci_double_tee_discrepancies_pinned():
+    pinned = {(c, s) for c, s, _ in PINNED}
+    run_checks((_check_published_properties, P("cls,size", [(c, s) for c, s in CASES
+                                                             if (c.__name__, s) in pinned])))

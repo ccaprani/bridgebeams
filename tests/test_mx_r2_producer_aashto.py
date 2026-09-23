@@ -5,6 +5,8 @@ from shapely.geometry import LineString
 from bridgebeams._geometry import section_properties
 from bridgebeams.mx.r2_producer_aashto import DragonAashtoSection, TubecoAashtoSection
 
+from _aggregate import P, run_checks
+
 CASES = [(DragonAashtoSection, s) for s in DragonAashtoSection.SIZES] + [
     (TubecoAashtoSection, s) for s in TubecoAashtoSection.SIZES
 ]
@@ -14,8 +16,7 @@ def _width(p, y):
     return p.intersection(LineString([(-5000, y), (5000, y)])).length
 
 
-@pytest.mark.parametrize("cls,size", CASES)
-def test_valid_ccw_and_bounds(cls, size):
+def _check_valid_ccw_and_bounds(cls, size):
     s = cls(size)
     p = s.polygon
     assert p.is_valid and p.exterior.is_ccw
@@ -31,8 +32,7 @@ def test_valid_ccw_and_bounds(cls, size):
     assert _width(p, d.soffit_chamfer + 1) == pytest.approx(d.bottom_width, abs=1e-6)
 
 
-@pytest.mark.parametrize("cls,size", CASES)
-def test_printed_vertical_chain_closes(cls, size):
+def _check_printed_vertical_chain_closes(cls, size):
     s = cls(size)
     chain = s.published.get("printed_chain_m") or s.published["printed_chain_cm"]
     scale = 1000.0 if "printed_chain_m" in s.published else 10.0
@@ -51,14 +51,14 @@ def test_tubeco_iii_top_width_typo_pinned():
     assert s.dimensions.top_width == pytest.approx(400.0)
 
 
-def test_tubeco_knee_from_printed_chain():
+def _check_tubeco_knee_from_printed_chain():
     for size in ("V", "VI"):
         d = TubecoAashtoSection(size).dimensions
         assert d.top_knee_width == pytest.approx(200 + 2 * 95)
         assert (d.top_width - d.top_knee_width) / 2 == pytest.approx(340)
 
 
-def test_analytic_areas():
+def _check_analytic_areas():
     # Hand-computed trapezoid sums (mm^2)
     assert section_properties(DragonAashtoSection("IV").polygon)["area"] == pytest.approx(497400.0)
     assert section_properties(DragonAashtoSection("I").polygon)["area"] == pytest.approx(168620.0)
@@ -67,8 +67,18 @@ def test_analytic_areas():
     assert t4 == pytest.approx(497400.0 - 2 * 0.5 * 20.0 * 20.0)
 
 
-def test_invalid_size():
+def _check_invalid_size():
     with pytest.raises(ValueError):
         DragonAashtoSection("VII")
     with pytest.raises(ValueError):
         TubecoAashtoSection("I")
+
+
+def test_mx_r2_producer_aashto_catalogue_checks():
+    run_checks(
+        (_check_valid_ccw_and_bounds, P("cls,size", CASES)),
+        (_check_printed_vertical_chain_closes, P("cls,size", CASES)),
+        _check_tubeco_knee_from_printed_chain,
+        _check_analytic_areas,
+        _check_invalid_size,
+    )
