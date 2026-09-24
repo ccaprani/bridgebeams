@@ -1,0 +1,89 @@
+{
+ "schema_version": 1,
+ "family": "MOP Manual de Carreteras Volumen 4 §4.604 — Tableros de un tramo 11,0 m ≤ L ≤ 15,0 m (viga postensada; viga prefabricada de losa nervada)",
+ "country": "Chile",
+ "source": {
+  "organisation": "Ministerio de Obras Públicas (MOP) – Dirección General de Obras Públicas – Dirección de Vialidad, Chile",
+  "title": "Manual de Carreteras, Volumen Nº 4 — Planos de Obras Tipo, Edición 2018",
+  "url": null,
+  "url_note": "Manually downloaded by the owner from the MOP Manual de Carreteras site (https://mc.mop.gob.cl/ per the round-2 lead record); the exact file URL was not recorded.",
+  "local_file": "sources/expansion/round2/manual/cl/volumen-4-planos-obras-tipo-ondac.pdf",
+  "sha256": "c3878fc531a6e252b32dbc75049c66c73311c85b6c45b1377f8e1ec33e68648f",
+  "pdf_pages": 411,
+  "accessed": "2026-09-25",
+  "edition": "EDICIÓN 2018 (cover and page footers; © MOP-DGOP-Dirección de Vialidad – Chile, 2018). Índice Láminas Cap. 4.600 dated Marzo 2015."
+ },
+ "units": {"drawing": "cm", "published_volume": "m3", "outline_output": "mm"},
+ "translation": {
+  "tablero": "deck",
+  "viga postensada": "post-tensioned beam",
+  "vigas pretensadas (de fábrica)": "factory pretensioned beams",
+  "losa nervada": "ribbed slab (slab on closely spaced beams)",
+  "viga prefabricada": "precast beam",
+  "corte": "section",
+  "calzada ... con/sin pasillo": "carriageway ... with/without footway",
+  "al eje": "on the centreline",
+  "tip.": "típico (typical)",
+  "cubicación": "quantity take-off"
+ },
+ "viga_postensada": {
+  "source_status": "Chilean national standard drawing (MOP Manual de Carreteras Vol. 4, Ed. 2018; lámina 4.604.203 dated Noviembre 2000)",
+  "sheets": {
+   "4.604.201": {"pdf_page": 370, "date": "Marzo 2015", "title": "Tablero con Viga de Hormigón Postensado de un Tramo 11,0 m ≤ L ≤ 15,0 m, Sección Transversal, Geometría y Especificaciones"},
+   "4.604.203": {"pdf_page": 372, "date": "Noviembre 2000", "title": "Tablero con Viga de Hormigón Postensado de un Tramo 11,0 m ≤ L ≤ 15,0 m, Geometría y Cables Viga Postensada"}
+  },
+  "section_view": "Corte C-C (lámina 4.604.203); Corte D-D confirms the 2,5 cm typical soffit chamfers",
+  "common_dimensions_cm": {"depth": 80, "top_flange": 15, "top_fillet_vertical": 5, "top_fillet_horizontal": 5, "bottom_taper": 10, "soffit_chamfer": 2.5},
+  "table_rows": {
+   "C8-L11":  {"calzada": "8,0 m con pasillo", "L_cm": 1100, "h4": 15, "e": 15, "a1": 40, "a2": 55, "ducto_1": 13, "ducto_2": null},
+   "C8-L12":  {"calzada": "8,0 m con pasillo", "L_cm": 1200, "h4": 15, "e": 15, "a1": 40, "a2": 65, "ducto_1": 16, "ducto_2": null},
+   "C8-L13":  {"calzada": "8,0 m con pasillo", "L_cm": 1300, "h4": 15, "e": 15, "a1": 40, "a2": 75, "ducto_1": 10, "ducto_2": 9},
+   "C8-L14":  {"calzada": "8,0 m con pasillo", "L_cm": 1400, "h4": 20, "e": 20, "a1": 50, "a2": 85, "ducto_1": 11, "ducto_2": 11},
+   "C8-L15":  {"calzada": "8,0 m con pasillo", "L_cm": 1500, "h4": 20, "e": 20, "a1": 65, "a2": 95, "ducto_1": 13, "ducto_2": 12},
+   "C10-L11": {"calzada": "10,0 m sin pasillo", "L_cm": 1100, "h4": 15, "e": 15, "a1": 40, "a2": 45, "ducto_1": 12, "ducto_2": null},
+   "C10-L12": {"calzada": "10,0 m sin pasillo", "L_cm": 1200, "h4": 15, "e": 15, "a1": 40, "a2": 55, "ducto_1": 14, "ducto_2": null},
+   "C10-L13": {"calzada": "10,0 m sin pasillo", "L_cm": 1300, "h4": 15, "e": 15, "a1": 40, "a2": 65, "ducto_1": 17, "ducto_2": null},
+   "C10-L14": {"calzada": "10,0 m sin pasillo", "L_cm": 1400, "h4": 20, "e": 20, "a1": 40, "a2": 75, "ducto_1": 10, "ducto_2": 10},
+   "C10-L15": {"calzada": "10,0 m sin pasillo", "L_cm": 1500, "h4": 20, "e": 20, "a1": 40, "a2": 85, "ducto_1": 12, "ducto_2": 11}
+  },
+  "counted_sizes": ["C8-L11", "C8-L12", "C8-L13", "C8-L14", "C8-L15", "C10-L11", "C10-L14", "C10-L15"],
+  "aliases": {"C10-L12": "C8-L11", "C10-L13": "C8-L12"},
+  "provenance": "transcribed-with-convention",
+  "published_properties": null,
+  "geometry_notes": [
+   "Every outline dimension is printed (Corte C-C plus the Geometría table); the outline is a polygonal I: top flange a1 x 15, 5 x 5 cm 45° fillets into the web e, web, a 10 cm straight taper from e to a2, bulb sides h4, 2,5 x 2,5 cm chamfers at both soffit corners ('tip. 2,5', Corte D-D).",
+   "The top-flange underside is flat for (a1 - e)/2 - 5 cm each side before the 5 x 5 fillet (derived from the chain, not printed separately).",
+   "CONVENTION: the top face carries the deck crossfall p% ('80 al eje', i.e. depth 80 cm on the beam axis). It is modelled horizontal at 80 cm; p is project-specific (Nota 5: bombeo o peralte según proyecto vial).",
+   "Midspan section (Corte C-C). The 200 cm solid end blocks (Cortes A-A, B-B) and the 60 cm transitions are excluded.",
+   "Ten table rows give eight distinct outlines: C10-L12 is identical to C8-L11 and C10-L13 to C8-L12 (they differ only in cables). Only the eight distinct outlines are counted in SIZES; the two duplicates are accepted as aliases.",
+   "Sheet 4.604.201 Nota: 'Vigas postensadas se pueden reemplazar por diseño con vigas pretensadas (de fábrica)'. Beam concrete H-40, deck slab 23 cm H-30; 3 beams at 390 cm (calzada 8,0 m con pasillo, 1180 cm deck) or 340 cm (calzada 10,0 m, 1080 cm deck).",
+   "No section properties or concrete volumes are published for this beam (lámina 4.604.205 is passive-steel take-off only), so no property check is possible."
+  ]
+ },
+ "losa_nervada": {
+  "source_status": "Chilean national standard drawing (MOP Manual de Carreteras Vol. 4, Ed. 2018; láminas 4.604.001 Marzo 2015 and 4.604.003 Noviembre 2000)",
+  "sheets": {
+   "4.604.001": {"pdf_page": 363, "date": "Marzo 2015", "title": "Tablero Losa Nervada de Hormigón Armado de un Tramo 11,0 m ≤ L ≤ 15,0 m, Sección Transversal, Geometría y Especificaciones"},
+   "4.604.003": {"pdf_page": 365, "date": "Noviembre 2000", "title": "Tablero Losa Nervada de Hormigón Armado de un Tramo 11,0 m ≤ L ≤ 15,0 m, Geometría, Armaduras y Cubicación Vigas"}
+  },
+  "section_view": "'SECCIÓN VIGA' (lámina 4.604.001): 25 top, 20 bottom, 70 deep; 'Viga prefabricada: Hormigón H-30'",
+  "dimensions_cm": {"depth": 70, "top_width": 25, "bottom_width": 20},
+  "counted_sizes": ["V25/20x70"],
+  "provenance": "transcribed",
+  "published": {
+   "cubicacion_H30_m3_per_viga": {"1100": 1.73, "1200": 1.89, "1300": 2.05, "1400": 2.21, "1500": 2.36},
+   "note": "Lámina 4.604.003 'Cubicación 1 viga'. Volume / L reproduces A = 0.1575 m2 for all five lengths (beam length = L)."
+  },
+  "geometry_notes": [
+   "Plain trapezoidal precast RC rib, all three dimensions printed; no chamfers drawn. Plan note 'var. 20 a 25' is the taper seen in plan.",
+   "Ribs at 75 cm (one 80 cm bay at the centreline; urbano o rural, 1160 cm deck, 16 ribs) or 74 cm (rural, 1060 cm deck, 15 ribs), with a 17 cm cast-in-place slab. Nota 14: the design permits prefabrication of the beams (planta o pie de obra).",
+   "Reinforced (not prestressed) concrete, H-30."
+  ],
+  "residuals": {"A_from_volume_rel": "max |dV|/V = 0.23% (L = 14 m: 2.205 vs 2.21) over L = 11-15 m (volumes printed to 0.01 m3)"}
+ },
+ "other_4604_items_not_implemented": [
+  "4.604.101-104 Tablero Mixto Hormigón-Acero: welded steel girders ('Viga acero'), not precast concrete.",
+  "4.110 Cajones Prefabricados de Hormigón: precast box culverts, not bridge beams.",
+  "4.602 Losas de Hormigón Armado (L ≤ 10 m): cast-in-place solid slabs."
+ ]
+}

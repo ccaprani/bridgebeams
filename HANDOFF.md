@@ -42,6 +42,19 @@ profiles, 476 country-profile assignments, 122 researched jurisdictions and
 researched countries with zero implemented profiles; Korea has three existing
 implemented profiles but its new PSC-I records are not yet implemented.
 
+## Round 3 manual downloads, 24–25 September 2026
+
+A browser agent fetched blocked sources into `~/Downloads/bridgebeams-manual/`
+(copied to `sources/expansion/round2/manual/`, README included). The Queensland
+SD sheets were duplicates. New: Chile MOP Manual de Carreteras Vol. 4
+§4.604 (`cl`, 8 post-tensioned beams + 1 rib; 2 alias rows not counted),
+Brazil IFES São Domingos 1.30 m I girder (`br/r3_*`, yGc pinned), Oregon
+DKBT36/45/60 × 4 flange widths (`us/state_r3_or_*`), Ohio PSID-1-13 AASHTO
+II–IV, Mod IV and WF36-49…72-49 read from the V8 DGN with a custom parser
+(`docs/research/data/round3-oregon-ohio-dgn-extract.py`), exact vs Brice 2021.
+Still needing Colin's signed-in Scribd or email: DPWH Type VI, NHA
+STANDARD/04–06, MDOT guide, NZTA RR252/Red Folder, TMR bridge ZIP.
+
 ## Round 2 web retrieval and publication stance, 23 September 2026 (read first)
 
 Owner's stance (Colin): keep pushing and do our best. The catalogue is
@@ -64,8 +77,8 @@ Owner review queue (round 3, 15 cards: source conflicts, scan readings, estimate
 gallery, counting policy, manual downloads) is in the local `dims_review.html`
 (build with `--with-review`); images and generator in `sources/review-2026-09-23/`.
 
-Totals now: **1728 distinct profiles, 1903 country-profile assignments, 44
-countries**. Every profile has `provenance`: 543 transcribed, 760
+Totals now: **1763 distinct profiles, 1938 country-profile assignments, 45
+countries** (after round 3 below). Every profile has `provenance`: 543 transcribed, 760
 with-convention, 190 fitted, 235 estimate. The 301 pre-September profiles
 were backfilled (`tests/test_provenance_legacy.py`). The coverage map shows the
 provenance split and the per-family estimate counts.

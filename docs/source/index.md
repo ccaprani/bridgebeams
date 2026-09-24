@@ -39,8 +39,8 @@ All geometry is in **millimetres** and returned as `sectionproperties`
 `Geometry` objects, so sections can be meshed and analysed directly, or
 wrapped with materials for concrete section design checks.
 
-The complete coverage view currently counts **1728 distinct fixed profiles across
-44 countries**, separately from **122 jurisdictions with research records**.
+The complete coverage view currently counts **1763 distinct fixed profiles across
+45 countries**, separately from **122 jurisdictions with research records**.
 The UK and Ireland each show 175 shared Banagher profiles; those country assignments
 do not create new distinct geometry.
 Belgian and Greek parametric templates are listed separately because their

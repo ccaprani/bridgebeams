@@ -1,0 +1,157 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Oregon Department of Transportation (ODOT), Bridge Engineering Section",
+ "units": "inches (source); package geometry in mm",
+ "sources": {
+  "br300_current": {
+   "title": "Oregon Standard Drawings 2024, BR300 Series - Precast Prestressed Girders (effective June 1 - November 30, 2026)",
+   "url": "https://www.oregon.gov/odot/engineering/202601/br300s_all.pdf",
+   "local_path": "sources/expansion/round2/us/or_br300s_all_202601.pdf",
+   "sha256": "6476990177f23054db2b51610d895cb05187b76088fbbf69f0de696aa92f3314",
+   "locators": {
+    "BR360 36\" Deck Bulb-T (DKBT36)": "PDF p9",
+    "BR365 45\" Deck Bulb-T (DKBT45)": "PDF p10",
+    "BR375 60\" Deck Bulb-T (DKBT60)": "PDF p11"
+   }
+  },
+  "br360_2021": {
+   "title": "Oregon Standard Drawings 2021, BR360 36\" Deck Bulb-T (Precast Prestressed Concrete) Girder (effective June 1 - November 30, 2023; SDR date 20-APR-2018)",
+   "url": null,
+   "url_note": "Downloaded manually by the owner; URL not recorded (unverified). Identical section dimensions to the 2024 edition.",
+   "local_path": "sources/expansion/round2/manual/us/or/BR360.pdf",
+   "sha256": "a001514fc6b973200a4b3cee59900768a432c3686b8903ca172bcc8cf9fd1323",
+   "pages": "PDF p1"
+  },
+  "br375_2021": {
+   "title": "Oregon Standard Drawings 2021, BR375 60\" Deck Bulb-T (Precast Prestressed Concrete) Girder (effective June 1 - November 30, 2023; SDR date 20-APR-2018)",
+   "url": null,
+   "url_note": "Downloaded manually by the owner; URL not recorded (unverified). Identical section dimensions to the 2024 edition.",
+   "local_path": "sources/expansion/round2/manual/us/or/BR375.pdf",
+   "sha256": "e59f96cf34f05764d01dee0d44c235c65361e68c9fe67446f16336a7c9dec4bf",
+   "pages": "PDF p1"
+  }
+ },
+ "provenance": "transcribed-with-convention",
+ "source_status": "current standard (Oregon Standard Drawings 2024, eff. 2026-06-01; sheets dated 20-APR-2018)",
+ "flange_width_range": [
+  60,
+  102
+ ],
+ "standard_flange_widths": [
+  60,
+  72,
+  84,
+  102
+ ],
+ "flange_width_note": "Top flange width \"W\" is project-specific. The MINIMUM DECK REINFORCEMENT FOR INTERIOR GIRDERS table on each sheet gives W = 60 to 72, 72 to 84, 84 to 102 in; SIZES encode the minimum (60), the two table breakpoints (72, 84) and the maximum (102).",
+ "common_in": {
+  "bulb_width": 24,
+  "soffit_chamfer": 1.0,
+  "bulb_edge": 6,
+  "bulb_taper_rise": 3,
+  "web_width": 6,
+  "fillet_rise": 2,
+  "fillet_run": 3,
+  "flange_taper_rise": 4,
+  "flange_taper_run": 18,
+  "flange_edge": 6
+ },
+ "sections": {
+  "DKBT36": {
+   "drawing": "BR360 (2024 set PDF p9; 2021 sheet)",
+   "depth": 36,
+   "web_straight": 15
+  },
+  "DKBT45": {
+   "drawing": "BR365 (2024 set PDF p10)",
+   "depth": 45,
+   "web_straight": 24
+  },
+  "DKBT60": {
+   "drawing": "BR375 (2024 set PDF p11; 2021 sheet)",
+   "depth": 60,
+   "web_straight": 39
+  }
+ },
+ "geometry_notes": [
+  "END VIEW right-hand chain, bottom up: 6 in bulb edge, 3 in bulb taper (9 in run to web face, bulb 2'-0\" wide), web straight (1'-3\" / 2'-0\" / 3'-3\"), 2 in fillet over a 3 in run, 4 in flange taper over 1'-6\", 6 in (min.) flange edge thickness. Chains sum to 3'-0\", 3'-9\", 5'-0\". Web 6 in (MIDSPAN SECTION). Positions checked by pixel measurement on the 300 dpi BR360 render (all within 0.1 in).",
+  "Flange underside is flat from 2'-0\" off centreline to the tip, consistent with BAR \"C\" (2'-0\" each side, 5 in drop, total W - 4 in).",
+  "Soffit corners: 'Chamfer soffit corners 1\" max.' CONVENTION: 1 in chamfer.",
+  "CONVENTION: flat top (0.02 max. slope / tilt ignored); square flange tips. The interior-flange edge connection/shear key and the 3/4 in drip v-groove of exterior flanges are undimensioned and omitted.",
+  "No section properties are printed on the ODOT sheets. Brice et al. (2021) Table A.11 Oregon BT48-BT96/BI rows are the non-deck bulb-tee/bulb-I details, not the DKBT; no published property check is available."
+ ],
+ "analytic_properties_in": {
+  "DKBT36-W60": {
+   "area": 776.0,
+   "yb": 23.171,
+   "ix": 115054.986,
+   "iy": 128568.333
+  },
+  "DKBT36-W72": {
+   "area": 848.0,
+   "yb": 24.006,
+   "ix": 121636.308,
+   "iy": 207192.333
+  },
+  "DKBT36-W84": {
+   "area": 920.0,
+   "yb": 24.709,
+   "ix": 127221.318,
+   "iy": 316920.333
+  },
+  "DKBT36-W102": {
+   "area": 1028.0,
+   "yb": 25.58,
+   "ix": 134188.686,
+   "iy": 551172.333
+  },
+  "DKBT45-W60": {
+   "area": 830.0,
+   "yb": 28.918,
+   "ix": 205496.041,
+   "iy": 128730.333
+  },
+  "DKBT45-W72": {
+   "area": 902.0,
+   "yb": 29.962,
+   "ix": 217051.026,
+   "iy": 207354.333
+  },
+  "DKBT45-W84": {
+   "area": 974.0,
+   "yb": 30.852,
+   "ix": 226929.612,
+   "iy": 317082.333
+  },
+  "DKBT45-W102": {
+   "area": 1082.0,
+   "yb": 31.965,
+   "ix": 239336.309,
+   "iy": 551334.333
+  },
+  "DKBT60-W60": {
+   "area": 920.0,
+   "yb": 38.17,
+   "ix": 427174.988,
+   "iy": 129000.333
+  },
+  "DKBT60-W72": {
+   "area": 992.0,
+   "yb": 39.537,
+   "ix": 451066.311,
+   "iy": 207624.333
+  },
+  "DKBT60-W84": {
+   "area": 1064.0,
+   "yb": 40.719,
+   "ix": 471753.456,
+   "iy": 317352.333
+  },
+  "DKBT60-W102": {
+   "area": 1172.0,
+   "yb": 42.219,
+   "ix": 498068.124,
+   "iy": 551604.333
+  }
+ }
+}

@@ -75,3 +75,9 @@ __all__ += ['TxDotDoubleTSection', 'TxDotGirderDimensions', 'TxDotIGirderSection
 
 from .txdot_slabs_boxes import (TxDotBoxBeamSection, TxDotDeckedSlabBeamSection, TxDotSlabBeamSection, TxDotSlabBoxDimensions, TxDotXBeamSection)
 __all__ += ['TxDotBoxBeamSection', 'TxDotDeckedSlabBeamSection', 'TxDotSlabBeamSection', 'TxDotSlabBoxDimensions', 'TxDotXBeamSection']
+
+from .state_r3_or_deck_bulb_tee import (OrDeckBulbTeeDimensions, OrDeckBulbTeeSection)
+__all__ += ['OrDeckBulbTeeDimensions', 'OrDeckBulbTeeSection']
+
+from .state_r3_oh_i_beams import (OhAashtoIBeamSection, OhIBeamDimensions, OhWfBeamSection)
+__all__ += ['OhAashtoIBeamSection', 'OhIBeamDimensions', 'OhWfBeamSection']

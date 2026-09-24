@@ -128,4 +128,8 @@
     bridgebeams.us.txdot_slabs_boxes
     bridgebeams.vn.c620_girders
     bridgebeams.za.civilcon_i_beam
+    bridgebeams.us.state_r3_or_deck_bulb_tee
+    bridgebeams.us.state_r3_oh_i_beams
+    bridgebeams.br.r3_ifes_sao_domingos
+    bridgebeams.cl.mop_mc_v4
 ```

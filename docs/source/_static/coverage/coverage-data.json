@@ -3,15 +3,15 @@
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 122,
   "source_records": 233,
-  "implemented_countries": 44,
-  "implemented_profiles": 1728,
-  "country_profile_assignments": 1903,
+  "implemented_countries": 45,
+  "implemented_profiles": 1763,
+  "country_profile_assignments": 1938,
   "provenance_basis": "Distinct profiles by provenance. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.",
   "provenance_counts": {
     "estimate": 235,
     "fitted-reconstruction": 190,
-    "transcribed": 543,
-    "transcribed-with-convention": 760
+    "transcribed": 558,
+    "transcribed-with-convention": 780
   },
   "countries": [
     {
@@ -785,9 +785,28 @@
           "jurisdictions": [
             "BR"
           ]
+        },
+        {
+          "id": "bridgebeams.br.r3_ifes_sao_domingos.SaoDomingosLongarinaSection",
+          "name": "SaoDomingosLongarinaSection",
+          "module": "bridgebeams.br.r3_ifes_sao_domingos",
+          "count": 1,
+          "profiles": [
+            "SD-130"
+          ],
+          "profile_ids": [
+            "bridgebeams.br.r3_ifes_sao_domingos.SaoDomingosLongarinaSection:SD-130"
+          ],
+          "note": "",
+          "provenance": {
+            "SD-130": "transcribed"
+          },
+          "jurisdictions": [
+            "BR"
+          ]
         }
       ],
-      "count": 3,
+      "count": 4,
       "source_count": 6,
       "researched": true
     },
@@ -1195,8 +1214,68 @@
           "title_original": "Vigas de Puente y Pasos desnivelados"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.cl.mop_mc_v4.MopLosaNervadaVigaSection",
+          "name": "MopLosaNervadaVigaSection",
+          "module": "bridgebeams.cl.mop_mc_v4",
+          "count": 1,
+          "profiles": [
+            "V25/20x70"
+          ],
+          "profile_ids": [
+            "bridgebeams.cl.mop_mc_v4.MopLosaNervadaVigaSection:V25/20x70"
+          ],
+          "note": "",
+          "provenance": {
+            "V25/20x70": "transcribed"
+          },
+          "jurisdictions": [
+            "CL"
+          ]
+        },
+        {
+          "id": "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection",
+          "name": "MopVigaPostensadaSection",
+          "module": "bridgebeams.cl.mop_mc_v4",
+          "count": 8,
+          "profiles": [
+            "C8-L11",
+            "C8-L12",
+            "C8-L13",
+            "C8-L14",
+            "C8-L15",
+            "C10-L11",
+            "C10-L14",
+            "C10-L15"
+          ],
+          "profile_ids": [
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C8-L11",
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C8-L12",
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C8-L13",
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C8-L14",
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C8-L15",
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C10-L11",
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C10-L14",
+            "bridgebeams.cl.mop_mc_v4.MopVigaPostensadaSection:C10-L15"
+          ],
+          "note": "",
+          "provenance": {
+            "C8-L11": "transcribed-with-convention",
+            "C8-L12": "transcribed-with-convention",
+            "C8-L13": "transcribed-with-convention",
+            "C8-L14": "transcribed-with-convention",
+            "C8-L15": "transcribed-with-convention",
+            "C10-L11": "transcribed-with-convention",
+            "C10-L14": "transcribed-with-convention",
+            "C10-L15": "transcribed-with-convention"
+          },
+          "jurisdictions": [
+            "CL"
+          ]
+        }
+      ],
+      "count": 9,
       "source_count": 1,
       "researched": true
     },
@@ -12365,6 +12444,77 @@
           ]
         },
         {
+          "id": "bridgebeams.us.state_r3_oh_i_beams.OhAashtoIBeamSection",
+          "name": "OhAashtoIBeamSection",
+          "module": "bridgebeams.us.state_r3_oh_i_beams",
+          "count": 6,
+          "profiles": [
+            "II",
+            "III",
+            "IV",
+            "MOD-IV-60",
+            "MOD-IV-66",
+            "MOD-IV-72"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r3_oh_i_beams.OhAashtoIBeamSection:II",
+            "bridgebeams.us.state_r3_oh_i_beams.OhAashtoIBeamSection:III",
+            "bridgebeams.us.state_r3_oh_i_beams.OhAashtoIBeamSection:IV",
+            "bridgebeams.us.state_r3_oh_i_beams.OhAashtoIBeamSection:MOD-IV-60",
+            "bridgebeams.us.state_r3_oh_i_beams.OhAashtoIBeamSection:MOD-IV-66",
+            "bridgebeams.us.state_r3_oh_i_beams.OhAashtoIBeamSection:MOD-IV-72"
+          ],
+          "note": "",
+          "provenance": {
+            "II": "transcribed",
+            "III": "transcribed",
+            "IV": "transcribed",
+            "MOD-IV-60": "transcribed",
+            "MOD-IV-66": "transcribed",
+            "MOD-IV-72": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection",
+          "name": "OhWfBeamSection",
+          "module": "bridgebeams.us.state_r3_oh_i_beams",
+          "count": 7,
+          "profiles": [
+            "WF36-49",
+            "WF42-49",
+            "WF48-49",
+            "WF54-49",
+            "WF60-49",
+            "WF66-49",
+            "WF72-49"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection:WF36-49",
+            "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection:WF42-49",
+            "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection:WF48-49",
+            "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection:WF54-49",
+            "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection:WF60-49",
+            "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection:WF66-49",
+            "bridgebeams.us.state_r3_oh_i_beams.OhWfBeamSection:WF72-49"
+          ],
+          "note": "",
+          "provenance": {
+            "WF36-49": "transcribed",
+            "WF42-49": "transcribed",
+            "WF48-49": "transcribed",
+            "WF54-49": "transcribed",
+            "WF60-49": "transcribed",
+            "WF66-49": "transcribed",
+            "WF72-49": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
           "id": "bridgebeams.us.state_or_girders.OrBoxSection",
           "name": "OrBoxSection",
           "module": "bridgebeams.us.state_or_girders",
@@ -12387,6 +12537,58 @@
             "39": "transcribed",
             "42": "transcribed",
             "48": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection",
+          "name": "OrDeckBulbTeeSection",
+          "module": "bridgebeams.us.state_r3_or_deck_bulb_tee",
+          "count": 12,
+          "profiles": [
+            "DKBT36-W60",
+            "DKBT36-W72",
+            "DKBT36-W84",
+            "DKBT36-W102",
+            "DKBT45-W60",
+            "DKBT45-W72",
+            "DKBT45-W84",
+            "DKBT45-W102",
+            "DKBT60-W60",
+            "DKBT60-W72",
+            "DKBT60-W84",
+            "DKBT60-W102"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT36-W60",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT36-W72",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT36-W84",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT36-W102",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT45-W60",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT45-W72",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT45-W84",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT45-W102",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT60-W60",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT60-W72",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT60-W84",
+            "bridgebeams.us.state_r3_or_deck_bulb_tee.OrDeckBulbTeeSection:DKBT60-W102"
+          ],
+          "note": "",
+          "provenance": {
+            "DKBT36-W60": "transcribed-with-convention",
+            "DKBT36-W72": "transcribed-with-convention",
+            "DKBT36-W84": "transcribed-with-convention",
+            "DKBT36-W102": "transcribed-with-convention",
+            "DKBT45-W60": "transcribed-with-convention",
+            "DKBT45-W72": "transcribed-with-convention",
+            "DKBT45-W84": "transcribed-with-convention",
+            "DKBT45-W102": "transcribed-with-convention",
+            "DKBT60-W60": "transcribed-with-convention",
+            "DKBT60-W72": "transcribed-with-convention",
+            "DKBT60-W84": "transcribed-with-convention",
+            "DKBT60-W102": "transcribed-with-convention"
           },
           "jurisdictions": [
             "US"
@@ -14108,7 +14310,7 @@
           ]
         }
       ],
-      "count": 620,
+      "count": 645,
       "source_count": 16,
       "researched": true
     },

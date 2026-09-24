@@ -1,0 +1,57 @@
+{
+ "topic": "round3-chile-brazil",
+ "date": "2026-09-25",
+ "sources": [
+  {
+   "country": "CL",
+   "title_original": "Manual de Carreteras, Volumen Nº 4 — Planos de Obras Tipo, Edición 2018",
+   "organisation": "MOP – DGOP – Dirección de Vialidad, Chile",
+   "url": null,
+   "origin_note": "MOP Manual de Carreteras site (mc.mop.gob.cl); downloaded manually by the owner; exact file URL unverified",
+   "local": "sources/expansion/round2/manual/cl/volumen-4-planos-obras-tipo-ondac.pdf",
+   "sha256": "c3878fc531a6e252b32dbc75049c66c73311c85b6c45b1377f8e1ec33e68648f",
+   "pdf_pages": 411,
+   "edition": "Edición 2018",
+   "locators": {
+    "Índice Láminas Cap. 4.600 (Marzo 2015)": "PDF p27",
+    "4.604.001 Tablero Losa Nervada ... Sección Transversal, Geometría y Especificaciones (Mar. 2015)": "PDF p363",
+    "4.604.003 Tablero Losa Nervada ... Geometría, Armaduras y Cubicación Vigas (Nov. 2000)": "PDF p365",
+    "4.604.201 Tablero con Viga de Hormigón Postensado ... Sección Transversal, Geometría y Especificaciones (Mar. 2015)": "PDF p370",
+    "4.604.203 Tablero con Viga de Hormigón Postensado ... Geometría y Cables Viga Postensada (Nov. 2000)": "PDF p372"
+   },
+   "status": "implemented",
+   "implemented": {
+    "bridgebeams.cl.MopVigaPostensadaSection": {"sizes": ["C8-L11", "C8-L12", "C8-L13", "C8-L14", "C8-L15", "C10-L11", "C10-L14", "C10-L15"], "aliases": {"C10-L12": "C8-L11", "C10-L13": "C8-L12"}, "provenance": "transcribed-with-convention"},
+    "bridgebeams.cl.MopLosaNervadaVigaSection": {"sizes": ["V25/20x70"], "provenance": "transcribed"}
+   },
+   "data_file": "src/bridgebeams/cl/data/mop_mc_v4_4604.json"
+  },
+  {
+   "country": "BR",
+   "title_original": "Análise comparativa das normas NBR 6118/2014, NBR 7188/2013 e AASHTO LRFD 2012, baseada na teoria da confiabilidade – estudo de caso de uma viga I da ponte sobre Córrego São Domingos na rodovia estadual ES-010, trecho Itaúnas - ES-421",
+   "book": "Engenharias: pesquisa, desenvolvimento e inovação 2 (footers: 3), Atena Editora 2023, ISBN 978-65-258-0935-9",
+   "doi": "https://doi.org/10.22533/at.ed.3592318012",
+   "url": null,
+   "origin_note": "Atena Editora book PDF, downloaded manually by the owner; IFES repository original https://repositorio.ifes.edu.br/bitstream/handle/123456789/2795/Template_ARTIGO_ABNT_Biblioteca_Rodrigo_revisado_final.pdf?isAllowed=y&sequence=1 (blocked round 2)",
+   "local": "sources/expansion/round2/manual/br/ifes-sao-domingos-atena.pdf",
+   "sha256": "fbd41d70a651fcb808c3d57242ccd1c74bfa968f97e5638a85dbfce94d300567",
+   "pdf_pages": 242,
+   "locators": {"Figura 7": "PDF p33 (printed p21)", "Figura 8": "PDF p33", "Tabela 5": "PDF p34", "Tabela 8": "PDF p37"},
+   "status": "implemented",
+   "implemented": {
+    "bridgebeams.br.r3_ifes_sao_domingos.SaoDomingosLongarinaSection": {"sizes": ["SD-130"], "provenance": "transcribed"}
+   },
+   "data_file": "src/bridgebeams/br/data/r3_ifes_sao_domingos.json",
+   "pinned_discrepancies": ["Tabela 8 yGc = 0.921 m not reproduced (girder 0.651 m; composite b=2.2 m 1.031 m)"]
+  }
+ ],
+ "source_file_status": {
+  "sources/expansion/round2/manual/br/ifes-sao-domingos.pdf": "HTML bot-protection trace, not a PDF (retained per owner rule; not deleted)",
+  "sources/expansion/round2/manual/br/ufc-gondim-related-scribd.html": "Scribd anti-bot trace (retained)"
+ },
+ "leads_not_implemented": [
+  {"country": "CL", "lead": "MOP MC Vol. 4 4.604.101-104 Tablero Mixto Hormigón-Acero", "status": "steel girders, out of scope"},
+  {"country": "CL", "lead": "MOP MC Vol. 4 4.110 Cajones Prefabricados de Hormigón", "status": "precast box culverts, not bridge beams"},
+  {"country": "BR", "lead": "Other chapters of the Atena 2023 book", "status": "no further Brazilian precast bridge sections"}
+ ]
+}

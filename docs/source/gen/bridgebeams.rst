@@ -41,6 +41,7 @@
    bg
    br
    ca
+   cl
    cn
    cr
    dk
