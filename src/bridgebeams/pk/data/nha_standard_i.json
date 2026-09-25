@@ -1,7 +1,7 @@
 {
   "family": "NHA standard prestressed concrete I-girders, Types A-H",
   "organisation": "National Highway Authority (NHA) of Pakistan, Central Design Cell",
-  "source_status": "NHA 2005 standardisation ('Summary of proposed standard cross-section of girders'; drawings STANDARD/04-06, March 2005), corroborated by a 2025 journal table",
+  "source_status": "NHA standard drawings STANDARD/04-06 'Standard X-Section of Girders' (Central Design Cell, NHA Islamabad; March 2005, sheet 06 title block March 2006)",
   "units": "mm",
   "sources": {
     "primary_reproduction": {
@@ -23,7 +23,7 @@
       "url": "https://www.scribd.com/document/456777971/DESIGNING-OF-BRIDGES-ON-NATIONAL-HIGHWAYS-NHA-2006-pdf",
       "local_file": null,
       "sha256": null,
-      "note": "Third-party mirror; login-gated, not retrieved. The drawings themselves were not seen."
+      "note": "Superseded by the owner-supplied STANDARD/04-06 sheet images (nha_standard_sheets)."
     },
     "nha_summary_page": {
       "title": "SUMMARY OF PROPOSED STANDARD CROSS-SECTION OF GIRDERS (schematic with B1-B3, D1-D5, H; table of Types A-H with span ranges)",
@@ -31,6 +31,35 @@
       "local_file": "sources/expansion/round2/manual/pk/owner-supplied-nha-summary-standard-girders.png",
       "sha256": "0a67013e15dffe765dd3f0c93a1f0c0966948fa2919f28c4f23b575d7391deb7",
       "check": "All 72 tabulated values (8 types x B1, B2, B3, D1-D5, H) equal the journal Table 1 values implemented here; every D1..D5 chain closes to H."
+    },
+    "nha_standard_sheets": {
+      "title": "DETAIL OF STANDARD CROSS-SECTION OF GIRDERS - drawings STANDARD/04, STANDARD/05, STANDARD/06 ('Standard Sections', Central Design Cell, National Highway Authority, Islamabad; designed Lt Col (R) M. Iqbal)",
+      "origin": "Sheet images supplied by the owner on 2026-09-25 (from the NHA standardisation volume; exact URL unrecorded)",
+      "sheets": {
+        "STANDARD/04": {
+          "types": "A, B, C",
+          "date": "March 2005",
+          "local_file": "sources/expansion/round2/manual/pk/nha-STANDARD-04-owner-supplied.png",
+          "sha256": "9cab6899095e2c7a9d120f6f71c85cf8314b2fb7acb70e70e19f96f3ba90b7a3"
+        },
+        "STANDARD/05": {
+          "types": "D, E, F",
+          "date": "March 2005",
+          "local_file": "sources/expansion/round2/manual/pk/nha-STANDARD-05-owner-supplied.png",
+          "sha256": "c9733e59ad77d70cfbbcb5d90b2eae4473bacecd625e57180e0192caba7e70a7"
+        },
+        "STANDARD/06": {
+          "types": "G, H",
+          "date": "March 2006 (title block)",
+          "local_file": "sources/expansion/round2/manual/pk/nha-STANDARD-06-owner-supplied.png",
+          "sha256": "238fbb1dc1624796736e7d0b84c2417eb8f7a503470da5e2360a5a120e55d750"
+        }
+      },
+      "notes_on_sheets": [
+        "Minimum concrete strength 425 kg/cm2 cylinder at 28 days; trial mixes designed for 515 kg/cm2.",
+        "Number of girders and prestressing cables may vary per structural requirements."
+      ],
+      "check": "Every printed dimension equals the implemented values: flange widths are dimensioned as projection+web+projection (e.g. A 185+180+185; H 455+190+455 top, 280+190+280 bottom); D1-D5 chains close to H; bottom splays 1:1 (projection = D4) and top splays about 1:2 (projection/D2 = 2.0-2.06), consistent with the drawn 1:1 and 2:1 slope marks."
     }
   },
   "label_mapping": {
@@ -167,6 +196,7 @@
     "RESOLVED 2026-09-25: the paper's Figure 1 AASHTO-like schematic (p3) is not the NHA section. The NHA summary page's own schematic shows the five-segment I with straight top and bottom splays (D1 flange edge, D2 splay, D3 web, D4 splay, D5 flange edge) used here. the paper's Figure 1 schematic (p3) labels a different, AASHTO-like outline with a two-slope top flange underside (D2, D3, D4 and a break width B4) and a bottom D5/D6 chain. Its labels do not match Table 1, which has no B4 or D6. The Figure 1 outline is not used here. The NHA STANDARD/04-06 sheets must govern once they are retrieved.",
     "No section-property table is published. Gross properties are analytic only.",
     "These are Pakistani NHA types. They are not the US AASHTO Types I-VI, and no US geometry is transferred.",
-    "Midspan gross concrete only. End blocks, ducts and reinforcement are excluded."
+    "Midspan gross concrete only. End blocks, ducts and reinforcement are excluded.",
+    "2026-09-25: geometry confirmed directly against NHA drawings STANDARD/04-06; these govern. The journal table and summary page are corroborating reproductions."
   ]
 }

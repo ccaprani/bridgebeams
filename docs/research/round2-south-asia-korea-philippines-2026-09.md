@@ -121,3 +121,11 @@ scales to about 288 mm, so 300 is adopted as an **estimate** (±20 mm).
 > favour of the implemented reading. Provenance is raised to `transcribed`.
 > The page is headed "proposed"; the STANDARD/04–06 sheets themselves remain
 > unseen.
+
+> **Update, 25 September 2026: NHA STANDARD/04–06 sheets seen.** The owner
+> supplied the three "Detail of standard cross-section of girders" drawings from
+> the Central Design Cell, NHA Islamabad (STANDARD/04: Types A–C, March 2005;
+> /05: D–F, March 2005; /06: G–H, title block March 2006). Images are in
+> `sources/expansion/round2/manual/pk/nha-STANDARD-0{4,5,6}-owner-supplied.png`.
+> Every printed dimension, flange split, depth chain and 1:1 / about 1:2 splay
+> slope agrees with `pk.NhaStandardIGirderSection`. The drawings now govern.

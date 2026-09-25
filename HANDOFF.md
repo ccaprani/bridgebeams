@@ -61,8 +61,9 @@ designs, not MDOT standards; box shear key estimated). MI 1800 still a lead.
 Punjab 2022 C&W spec and NZ X261/X275 had no implementable sections.
 The coverage map now uses the Equal Earth projection (reprojected at build
 time from the cached equirectangular paths). TMR bridge ZIP: owner says ignore.
-Still needing Colin's signed-in Scribd or email: DPWH Type VI, NHA
-STANDARD/04–06, MDOT guide, NZTA RR252/Red Folder.
+Pakistan NHA STANDARD/04–06 sheets (owner-supplied images) now govern Types A–H;
+all dimensions agree (provenance `transcribed`).
+Still needing Colin's signed-in Scribd or email: DPWH Type VI, MDOT guide, NZTA RR252/Red Folder.
 
 ## Round 2 web retrieval and publication stance, 23 September 2026 (read first)
 
