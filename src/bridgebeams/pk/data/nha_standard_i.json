@@ -1,7 +1,7 @@
 {
   "family": "NHA standard prestressed concrete I-girders, Types A-H",
   "organisation": "National Highway Authority (NHA) of Pakistan, Central Design Cell",
-  "source_status": "NHA standard (drawings STANDARD/04-06, March 2005) as reproduced in a 2025 journal table",
+  "source_status": "NHA 2005 standardisation ('Summary of proposed standard cross-section of girders'; drawings STANDARD/04-06, March 2005), corroborated by a 2025 journal table",
   "units": "mm",
   "sources": {
     "primary_reproduction": {
@@ -24,6 +24,13 @@
       "local_file": null,
       "sha256": null,
       "note": "Third-party mirror; login-gated, not retrieved. The drawings themselves were not seen."
+    },
+    "nha_summary_page": {
+      "title": "SUMMARY OF PROPOSED STANDARD CROSS-SECTION OF GIRDERS (schematic with B1-B3, D1-D5, H; table of Types A-H with span ranges)",
+      "origin": "Page image supplied by the owner (Colin Caprani) on 2026-09-25; believed to come from NHA 'Designing of Bridges on National Highways' (2006), the standardisation volume mirrored at Scribd 456777971 - origin unverified",
+      "local_file": "sources/expansion/round2/manual/pk/owner-supplied-nha-summary-standard-girders.png",
+      "sha256": "0a67013e15dffe765dd3f0c93a1f0c0966948fa2919f28c4f23b575d7391deb7",
+      "check": "All 72 tabulated values (8 types x B1, B2, B3, D1-D5, H) equal the journal Table 1 values implemented here; every D1..D5 chain closes to H."
     }
   },
   "label_mapping": {
@@ -38,22 +45,126 @@
     "H": "depth"
   },
   "types": {
-    "A": {"span_m": "12-20", "dimensions_mm": {"depth": 1200, "top_width": 550, "web_width": 180, "bottom_width": 550, "top_edge": 250, "top_splay": 90, "web_height": 475, "bottom_splay": 185, "bottom_edge": 200}},
-    "B": {"span_m": "14-23", "dimensions_mm": {"depth": 1400, "top_width": 550, "web_width": 180, "bottom_width": 550, "top_edge": 250, "top_splay": 90, "web_height": 675, "bottom_splay": 185, "bottom_edge": 200}},
-    "C": {"span_m": "16-26", "dimensions_mm": {"depth": 1600, "top_width": 600, "web_width": 180, "bottom_width": 600, "top_edge": 250, "top_splay": 100, "web_height": 750, "bottom_splay": 210, "bottom_edge": 290}},
-    "D": {"span_m": "20-28", "dimensions_mm": {"depth": 1800, "top_width": 700, "web_width": 180, "bottom_width": 600, "top_edge": 230, "top_splay": 130, "web_height": 940, "bottom_splay": 210, "bottom_edge": 290}},
-    "E": {"span_m": "24-31", "dimensions_mm": {"depth": 2000, "top_width": 700, "web_width": 180, "bottom_width": 600, "top_edge": 230, "top_splay": 130, "web_height": 1140, "bottom_splay": 210, "bottom_edge": 290}},
-    "F": {"span_m": "27-34", "dimensions_mm": {"depth": 2200, "top_width": 900, "web_width": 190, "bottom_width": 620, "top_edge": 200, "top_splay": 175, "web_height": 1310, "bottom_splay": 215, "bottom_edge": 300}},
-    "G": {"span_m": "29-37", "dimensions_mm": {"depth": 2400, "top_width": 1000, "web_width": 190, "bottom_width": 650, "top_edge": 185, "top_splay": 200, "web_height": 1485, "bottom_splay": 230, "bottom_edge": 300}},
-    "H": {"span_m": "32-40", "dimensions_mm": {"depth": 2600, "top_width": 1100, "web_width": 190, "bottom_width": 750, "top_edge": 170, "top_splay": 225, "web_height": 1625, "bottom_splay": 280, "bottom_edge": 300}}
+    "A": {
+      "span_m": "12-20",
+      "dimensions_mm": {
+        "depth": 1200,
+        "top_width": 550,
+        "web_width": 180,
+        "bottom_width": 550,
+        "top_edge": 250,
+        "top_splay": 90,
+        "web_height": 475,
+        "bottom_splay": 185,
+        "bottom_edge": 200
+      }
+    },
+    "B": {
+      "span_m": "14-23",
+      "dimensions_mm": {
+        "depth": 1400,
+        "top_width": 550,
+        "web_width": 180,
+        "bottom_width": 550,
+        "top_edge": 250,
+        "top_splay": 90,
+        "web_height": 675,
+        "bottom_splay": 185,
+        "bottom_edge": 200
+      }
+    },
+    "C": {
+      "span_m": "16-26",
+      "dimensions_mm": {
+        "depth": 1600,
+        "top_width": 600,
+        "web_width": 180,
+        "bottom_width": 600,
+        "top_edge": 250,
+        "top_splay": 100,
+        "web_height": 750,
+        "bottom_splay": 210,
+        "bottom_edge": 290
+      }
+    },
+    "D": {
+      "span_m": "20-28",
+      "dimensions_mm": {
+        "depth": 1800,
+        "top_width": 700,
+        "web_width": 180,
+        "bottom_width": 600,
+        "top_edge": 230,
+        "top_splay": 130,
+        "web_height": 940,
+        "bottom_splay": 210,
+        "bottom_edge": 290
+      }
+    },
+    "E": {
+      "span_m": "24-31",
+      "dimensions_mm": {
+        "depth": 2000,
+        "top_width": 700,
+        "web_width": 180,
+        "bottom_width": 600,
+        "top_edge": 230,
+        "top_splay": 130,
+        "web_height": 1140,
+        "bottom_splay": 210,
+        "bottom_edge": 290
+      }
+    },
+    "F": {
+      "span_m": "27-34",
+      "dimensions_mm": {
+        "depth": 2200,
+        "top_width": 900,
+        "web_width": 190,
+        "bottom_width": 620,
+        "top_edge": 200,
+        "top_splay": 175,
+        "web_height": 1310,
+        "bottom_splay": 215,
+        "bottom_edge": 300
+      }
+    },
+    "G": {
+      "span_m": "29-37",
+      "dimensions_mm": {
+        "depth": 2400,
+        "top_width": 1000,
+        "web_width": 190,
+        "bottom_width": 650,
+        "top_edge": 185,
+        "top_splay": 200,
+        "web_height": 1485,
+        "bottom_splay": 230,
+        "bottom_edge": 300
+      }
+    },
+    "H": {
+      "span_m": "32-40",
+      "dimensions_mm": {
+        "depth": 2600,
+        "top_width": 1100,
+        "web_width": 190,
+        "bottom_width": 750,
+        "top_edge": 170,
+        "top_splay": 225,
+        "web_height": 1625,
+        "bottom_splay": 280,
+        "bottom_edge": 300
+      }
+    }
   },
   "published_properties": null,
-  "provenance": "transcribed-with-convention",
+  "provenance": "transcribed",
   "geometry_notes": [
     "All values are transcribed from Table 1 of the 2025 paper, PDF p2, checked visually and against its text layer. D1+D2+D3+D4+D5 = H closes exactly for all eight types.",
     "The paper's first span cell reads '20-Dec', a spreadsheet date conversion error; the NHA index text gives 12-20 m. It is recorded here as 12-20.",
     "CONVENTION: Table 1 is read as a five-segment I (top flange side D1, straight top splay D2, clear web D3, straight bottom splay D4, bottom flange side D5), with all splays straight and no chamfers or fillets. The table has no other parameters.",
-    "CONFLICT: the paper's Figure 1 schematic (p3) labels a different, AASHTO-like outline with a two-slope top flange underside (D2, D3, D4 and a break width B4) and a bottom D5/D6 chain. Its labels do not match Table 1, which has no B4 or D6. The Figure 1 outline is not used here. The NHA STANDARD/04-06 sheets must govern once they are retrieved.",
+    "RESOLVED 2026-09-25: the paper's Figure 1 AASHTO-like schematic (p3) is not the NHA section. The NHA summary page's own schematic shows the five-segment I with straight top and bottom splays (D1 flange edge, D2 splay, D3 web, D4 splay, D5 flange edge) used here. the paper's Figure 1 schematic (p3) labels a different, AASHTO-like outline with a two-slope top flange underside (D2, D3, D4 and a break width B4) and a bottom D5/D6 chain. Its labels do not match Table 1, which has no B4 or D6. The Figure 1 outline is not used here. The NHA STANDARD/04-06 sheets must govern once they are retrieved.",
     "No section-property table is published. Gross properties are analytic only.",
     "These are Pakistani NHA types. They are not the US AASHTO Types I-VI, and no US geometry is transferred.",
     "Midspan gross concrete only. End blocks, ducts and reinforcement are excluded."

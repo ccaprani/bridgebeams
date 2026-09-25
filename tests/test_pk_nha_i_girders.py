@@ -53,7 +53,7 @@ def _check_nha_types(size):
     area, yb = _analytic(h, b1, b2, b3, d1, d2, d3, d4, d5)
     assert props["area"] == pytest.approx(area, rel=1e-12)
     assert props["cy"] == pytest.approx(yb, rel=1e-12)
-    assert sec.provenance == "transcribed-with-convention"
+    assert sec.provenance == "transcribed"
     assert "NHA" in sec.source_status
 
 

@@ -10,8 +10,8 @@
   "provenance_counts": {
     "estimate": 235,
     "fitted-reconstruction": 190,
-    "transcribed": 570,
-    "transcribed-with-convention": 793
+    "transcribed": 578,
+    "transcribed-with-convention": 785
   },
   "countries": [
     {
@@ -6999,14 +6999,14 @@
           ],
           "note": "",
           "provenance": {
-            "A": "transcribed-with-convention",
-            "B": "transcribed-with-convention",
-            "C": "transcribed-with-convention",
-            "D": "transcribed-with-convention",
-            "E": "transcribed-with-convention",
-            "F": "transcribed-with-convention",
-            "G": "transcribed-with-convention",
-            "H": "transcribed-with-convention"
+            "A": "transcribed",
+            "B": "transcribed",
+            "C": "transcribed",
+            "D": "transcribed",
+            "E": "transcribed",
+            "F": "transcribed",
+            "G": "transcribed",
+            "H": "transcribed"
           },
           "jurisdictions": [
             "PK"

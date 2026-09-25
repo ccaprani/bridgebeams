@@ -111,3 +111,13 @@ scales to about 288 mm, so 300 is adopted as an **estimate** (±20 mm).
 > and give identical geometry (symmetric difference 0 mm²). The round-2 module
 > was removed; the independent 300 ± 20 mm web reading agrees with the
 > round-1 300 ± 26 mm estimate.
+
+> **Update, 25 September 2026: Pakistan NHA Types A–H confirmed.** The owner
+> supplied the NHA page "Summary of proposed standard cross-section of
+> girders" (`sources/expansion/round2/manual/pk/owner-supplied-nha-summary-standard-girders.png`,
+> SHA-256 `0a67013e…`). All 72 tabulated values equal the journal Table 1
+> implemented in `pk.NhaStandardIGirderSection`. Its schematic is the
+> five-segment I with straight splays, which resolves the Figure 1 conflict in
+> favour of the implemented reading. Provenance is raised to `transcribed`.
+> The page is headed "proposed"; the STANDARD/04–06 sheets themselves remain
+> unseen.
