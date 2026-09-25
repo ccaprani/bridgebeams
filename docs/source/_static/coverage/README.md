@@ -6,7 +6,7 @@ Run `python tools/build_coverage.py` from the project environment. This reads ru
 
 https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson
 
-The file retains its upstream SHA-256, retrieval date and attribution. It has 242 features, simplified with Shapely's topology-preserving 0.075-degree tolerance and projected equirectangularly into SVG coordinates (three pixels per degree). Labels and jurisdiction IDs use Natural Earth `NAME_EN` and `ISO_A2_EH`; features without an ISO-A2 code retain `ADM0_A3`. Antarctica is omitted from the displayed map, but remains in the all-country table. Small countries can be selected through the table.
+The file retains its upstream SHA-256, retrieval date and attribution. It has 242 features, simplified with Shapely's topology-preserving 0.075-degree tolerance and cached in equirectangular SVG coordinates (three pixels per degree). `tools/build_coverage.py` inverts those coordinates to longitude/latitude and draws the map in the equal-area Equal Earth projection (Šavrič, Patterson & Jenny, 2018), 1080 units wide. Labels and jurisdiction IDs use Natural Earth `NAME_EN` and `ISO_A2_EH`; features without an ISO-A2 code retain `ADM0_A3`. Antarctica is omitted from the displayed map, but remains in the all-country table. Small countries can be selected through the table.
 
 Natural Earth data is public domain: https://www.naturalearthdata.com/about/terms-of-use/
 

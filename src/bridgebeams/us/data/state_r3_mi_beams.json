@@ -1,0 +1,393 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Michigan Department of Transportation (MDOT) research report OR15-182 (2018), Appendix K 'Recommended Bridge Design Guide' - Secondary Route Bridge Design Plan Guidelines (local-agency bridges)",
+ "units": "inches (source); package geometry in mm",
+ "sources": {
+  "or15_182_appendix_k": {
+   "title": "MDOT Final Report OR15-182 (2018), Appendix K. Recommended Bridge Design Guide: Secondary Route Bridge Design Plan Guidelines, with Appendix A highlighted plan sheets (PDF title 'FinalReportOR15-182.docx'; created 2018-06-01)",
+   "url": null,
+   "url_note": "Downloaded manually by the owner as dot_36033_DS2.pdf; URL not recorded (unverified).",
+   "local_path": "sources/expansion/round2/manual/us/mi/dot_36033_DS2.pdf",
+   "sha256": "880dbc34ce940bdd0357f12c9bbb7410edd6015bc27f7888dd691021db67c533",
+   "locators": {
+    "SBB 003 Spread Box Beam Sections (dated 05/09/18)": "PDF p35",
+    "SBB 002 beam dimension table (sizes vs span)": "PDF p34",
+    "SSBB 003 Side by Side Box Beam Sections 17x36, 21x48, 27x48/33x48 interior + fascia": "PDF p39",
+    "SSBB 004 Side by Side Box Beam Sections 39x48 interior + fascia": "PDF p40",
+    "SSBB 002 beam dimension table (sizes vs span)": "PDF p38",
+    "BTB 002 Bulb Tee Girder Sections + BEAM DIMENSIONS table (dated 05/09/18)": "PDF p43",
+    "Plan-use text (sheet descriptions, beam sizes by span)": "PDF pp11-20 (printed pp10-19)"
+   },
+   "status_quote": "These plans are not meant to prescribe MDOT standards or requirements, but represent recommendations for design. (PDF p2)"
+  },
+  "cavalieri_2026": {
+   "title": "Michigan Bridge Design Standards and Guides, MDOT Bridge Week, March 17-19 2026 (60-slide deck)",
+   "url": null,
+   "local_path": "sources/expansion/round2/manual/us/mi/02.01_Cavalieri_DesignStandards.pdf",
+   "sha256": "762dc9ba2ce523968d6a9ab6a84e3d71472e13ce186796c3fb7643e2d21191c1",
+   "use": "Corroboration only: slide 8 shows Bridge Design Guide 8.43.01 (issued 02/24/25) sole-plate lengths 1'-4\" Type I, 1'-6\" Type II, 1'-10\" Type III, 2'-2\" Type IV and 70\" I-beam, 2'-11 3/8\" Michigan 1800, 3'-4\" Bulb Tee. The 3'-4\" bulb-tee value equals the 3'-4\" bottom-flange width on BTB 002. No section is dimensioned in the deck."
+  }
+ },
+ "source_status": "research-report recommended design (MDOT OR15-182 App. K, sheets dated 05/09/18); not an MDOT standard",
+ "spread_box": {
+  "provenance": "transcribed",
+  "sheet": "SBB 003, PDF p35",
+  "common_in": {
+   "soffit_bevel": 0.5
+  },
+  "geometry_notes": [
+   "All outline dimensions printed: overall depth x width, top and bottom slab thickness (dimension from face to void), web thickness ('5\" (TYP)' or '4\" (TYP)'), void corner chamfers ('1 1/2\" (TYP)' both legs for 17/21 in; '3\" (TYP)' both legs for 27-48 in) and '1/2\" BEVEL (TYP)' at the two soffit corners.",
+   "Top corners are square (no bevel drawn). Void = width - 2*web by depth - top - bottom slab, centred.",
+   "Gross midspan section; end blocks (3'-0\"), 2 in preformed holes, strands and reinforcement omitted."
+  ],
+  "sections": {
+   "SBB17x36": {
+    "depth": 17,
+    "width": 36,
+    "top_slab": 5,
+    "bottom_slab": 5,
+    "web": 5,
+    "void_chamfer": 1.5,
+    "calculated_in": {
+     "area_in2": 434.25,
+     "yb_in": 8.5048,
+     "ix_in4": 14019.5,
+     "iy_in4": 56467.5
+    }
+   },
+   "SBB21x36": {
+    "depth": 21,
+    "width": 36,
+    "top_slab": 5,
+    "bottom_slab": 5,
+    "web": 5,
+    "void_chamfer": 1.5,
+    "calculated_in": {
+     "area_in2": 474.25,
+     "yb_in": 10.5054,
+     "ix_in4": 24985.5,
+     "iy_in4": 66160.8
+    }
+   },
+   "SBB21x48": {
+    "depth": 21,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 1.5,
+    "calculated_in": {
+     "area_in2": 652.25,
+     "yb_in": 10.504,
+     "ix_in4": 34659.9,
+     "iy_in4": 147105.7
+    }
+   },
+   "SBB27x48": {
+    "depth": 27,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 3,
+    "calculated_in": {
+     "area_in2": 713.75,
+     "yb_in": 13.5047,
+     "ix_in4": 68207.0,
+     "iy_in4": 175197.0
+    }
+   },
+   "SBB33x48": {
+    "depth": 33,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 3,
+    "calculated_in": {
+     "area_in2": 761.75,
+     "yb_in": 16.5054,
+     "ix_in4": 114444.8,
+     "iy_in4": 198493.0
+    }
+   },
+   "SBB39x48": {
+    "depth": 39,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 3,
+    "calculated_in": {
+     "area_in2": 809.75,
+     "yb_in": 19.506,
+     "ix_in4": 174394.0,
+     "iy_in4": 221789.0
+    }
+   },
+   "SBB48x48": {
+    "depth": 48,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 3,
+    "calculated_in": {
+     "area_in2": 881.75,
+     "yb_in": 24.0068,
+     "ix_in4": 291916.9,
+     "iy_in4": 256733.0
+    }
+   }
+  }
+ },
+ "side_by_side_box": {
+  "provenance": "transcribed-with-convention",
+  "sheets": "SSBB 003 PDF p39 (17x36, 21x48, 27x48/33x48); SSBB 004 PDF p40 (39x48)",
+  "common_in": {
+   "soffit_bevel": 0.5
+  },
+  "shear_key_in": {
+   "top_zone": 3,
+   "key_height": 4,
+   "top_setback": 0.375,
+   "recess": 0.75,
+   "lower_slope_rise": 0.75,
+   "printed": [
+    "top_zone (3\")",
+    "key_height (4\")"
+   ],
+   "estimated": [
+    "top_setback",
+    "recess",
+    "lower_slope_rise"
+   ],
+   "estimate_basis": "The key's horizontal offsets are not dimensioned and the sheets are marked NO SCALE (the overall width is drawn about 1.6x too wide relative to the 5\"/4\" web callouts). Offsets were measured on 400 dpi renders against the local 3\"/4\"/5\" callouts on the 17x36 and 27x48 interior sections: top setback 0.38-0.39 in, recess 0.78-0.81 in, upper transition ~45 deg, lower slope ~0.75 in rise x 0.8 in run. Rounded to 3/8 in setback, 3/4 in recess with 45 deg transitions (upper 3/8 x 3/8, lower 3/4 x 3/4). The 4\" key height is taken from the start of the upper transition to the start of the lower slope, as drawn."
+  },
+  "geometry_notes": [
+   "Interior beams carry the shear key on both sides; fascia beams on the interior side only ('OMIT SHEAR KEY' on the exterior face). In this module the fascia key is on the -x side and the exterior face is +x, as drawn.",
+   "Nominal width (36 or 48 in) is the width below the key; the top 3 in zone is narrower by 2 x top_setback (interior) or 1 x top_setback (fascia) - estimate.",
+   "Fascia beams have a 9\" top slab (void lowered) for the barrier anchorage; the 17x36 fascia section is drawn with no void (solid), and is implemented solid.",
+   "Web thickness is measured from the full-width face below the key: 5\" (17x36), 4\" (48 in wide).",
+   "Gross midspan section; end blocks, transverse post-tensioning ducts, strands and reinforcement omitted."
+  ],
+  "sections": {
+   "SSBB17x36": {
+    "depth": 17,
+    "width": 36,
+    "top_slab": 5,
+    "bottom_slab": 5,
+    "web": 5,
+    "void_chamfer": 1.5,
+    "fascia_top_slab": null
+   },
+   "SSBB21x48": {
+    "depth": 21,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 1.5,
+    "fascia_top_slab": 9
+   },
+   "SSBB27x48": {
+    "depth": 27,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 3,
+    "fascia_top_slab": 9
+   },
+   "SSBB33x48": {
+    "depth": 33,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 3,
+    "fascia_top_slab": 9
+   },
+   "SSBB39x48": {
+    "depth": 39,
+    "width": 48,
+    "top_slab": 6,
+    "bottom_slab": 6,
+    "web": 4,
+    "void_chamfer": 3,
+    "fascia_top_slab": 9
+   }
+  },
+  "calculated_in": {
+   "SSBB17x36-INT": {
+    "area_in2": 425.578,
+    "yb_in": 8.4187,
+    "ix_in4": 13826.4
+   },
+   "SSBB17x36-FAS": {
+    "area_in2": 607.414,
+    "yb_in": 8.4732,
+    "ix_in4": 14626.1
+   },
+   "SSBB21x48-INT": {
+    "area_in2": 643.578,
+    "yb_in": 10.42,
+    "ix_in4": 34284.0
+   },
+   "SSBB21x48-FAS": {
+    "area_in2": 767.914,
+    "yb_in": 10.9282,
+    "ix_in4": 35469.4
+   },
+   "SSBB27x48-INT": {
+    "area_in2": 705.078,
+    "yb_in": 13.3912,
+    "ix_in4": 67424.7
+   },
+   "SSBB27x48-FAS": {
+    "area_in2": 829.414,
+    "yb_in": 14.2913,
+    "ix_in4": 71440.7
+   },
+   "SSBB33x48-INT": {
+    "area_in2": 753.078,
+    "yb_in": 16.3646,
+    "ix_in4": 113098.6
+   },
+   "SSBB33x48-FAS": {
+    "area_in2": 877.414,
+    "yb_in": 17.6443,
+    "ix_in4": 122007.6
+   },
+   "SSBB39x48-INT": {
+    "area_in2": 801.078,
+    "yb_in": 19.3411,
+    "ix_in4": 172326.9
+   },
+   "SSBB39x48-FAS": {
+    "area_in2": 925.414,
+    "yb_in": 20.9607,
+    "ix_in4": 188172.0
+   }
+  }
+ },
+ "bulb_tee": {
+  "provenance": "transcribed",
+  "sheet": "BTB 002, PDF p43 (Sections A-A/B-B, both halves)",
+  "template_in": {
+   "top_width": 49,
+   "top_edge": 5,
+   "top_taper_rise": 3,
+   "top_fillet_rise": 3,
+   "top_fillet_run": 3,
+   "web": 8,
+   "bottom_width": 40,
+   "bottom_bevel": 0.75,
+   "bottom_edge": 5.5,
+   "bottom_taper_rise": 7,
+   "bottom_taper_run": 14,
+   "bottom_fillet_rise": 2,
+   "bottom_fillet_run": 2
+  },
+  "transcription": {
+   "top_flange": "4'-1\" wide; right chain 5\" edge; left chain 5\" + 3\" + 3\"; horizontal 1'-5 1/2\" (edge to fillet start) + 3\" fillet run; 11\" total top zone",
+   "web": "8\"",
+   "bottom_flange": "3'-4\" wide; 3/4\" BEVEL (TYP); chain 5 1/2\" + 7\" + 2\" = 1'-2 1/2\"; 1'-2\" taper run + 2\" fillet run",
+   "closure_check": "24.5 - 17.5 - 3 = 4 = web/2; 20 - 14 - 2 = 4 = web/2 (both close exactly)"
+  },
+  "geometry_notes": [
+   "Depth-parametric: only the web height changes (3'-0\", 3'-6\" or 4'-0\").",
+   "Section B-B (midspan) and A-A (end) have the same concrete outline. The 3/4 in bevel is at the soffit corners only.",
+   "Distinct from WSDOT WF (6 1/8 in web, 38 3/8 in bottom flange), PCI BT and PCI NEBT (48 in top). Brice et al. (2021) appendix has no Michigan table."
+  ],
+  "published_weights": {
+   "note": "BEAM DIMENSIONS table 'APPROX WEIGHT (TONS)' by span (US short tons). The printed weights equal gross area x T x 150 pcf, where T = 70'-0\"..110'-0\" is the table's T row (Y is a longer forming length and does not fit). Independent area check.",
+   "rows": [
+    {
+     "span_ft": 70,
+     "depth": 36,
+     "length_Y": "71'-2\"",
+     "length_ft": 71.1667,
+     "tons": 32,
+     "T_ft": 70.0,
+     "calc_tons_150pcf": 32.008,
+     "residual_pct": 0.025,
+     "implied_area_in2": 877.7
+    },
+    {
+     "span_ft": 80,
+     "depth": 36,
+     "length_Y": "81'-3\"",
+     "length_ft": 81.25,
+     "tons": 36.6,
+     "T_ft": 80.0,
+     "calc_tons_150pcf": 36.581,
+     "residual_pct": -0.053,
+     "implied_area_in2": 878.4
+    },
+    {
+     "span_ft": 90,
+     "depth": 42,
+     "length_Y": "91'-4\"",
+     "length_ft": 91.3333,
+     "tons": 43.4,
+     "T_ft": 90.0,
+     "calc_tons_150pcf": 43.403,
+     "residual_pct": 0.008,
+     "implied_area_in2": 925.9
+    },
+    {
+     "span_ft": 100,
+     "depth": 48,
+     "length_Y": "101'-4\"",
+     "length_ft": 101.3333,
+     "tons": 50.8,
+     "T_ft": 100.0,
+     "calc_tons_150pcf": 50.726,
+     "residual_pct": -0.146,
+     "implied_area_in2": 975.4
+    },
+    {
+     "span_ft": 110,
+     "depth": 48,
+     "length_Y": "111'-5\"",
+     "length_ft": 111.4167,
+     "tons": 55.8,
+     "T_ft": 110.0,
+     "calc_tons_150pcf": 55.799,
+     "residual_pct": -0.003,
+     "implied_area_in2": 974.0
+    }
+   ]
+  },
+  "sections": {
+   "BT36": {
+    "depth": 36,
+    "calculated_in": {
+     "area_in2": 877.938,
+     "yb_in": 18.1752,
+     "ix_in4": 145539.4,
+     "iy_in4": 102564.2
+    }
+   },
+   "BT42": {
+    "depth": 42,
+    "calculated_in": {
+     "area_in2": 925.937,
+     "yb_in": 21.0983,
+     "ix_in4": 217377.9,
+     "iy_in4": 102820.2
+    }
+   },
+   "BT48": {
+    "depth": 48,
+    "calculated_in": {
+     "area_in2": 973.937,
+     "yb_in": 24.0289,
+     "ix_in4": 305873.5,
+     "iy_in4": 103076.2
+    }
+   }
+  }
+ }
+}

@@ -50,6 +50,8 @@ round2-east-asia-oceania-2026-09
 round2-africa-middle-east-2026-09
 round3-chile-brazil-2026-09
 round3-oregon-ohio-2026-09
+round3-philippines-2026-09
+round3-mi-pk-nz-2026-09
 ```
 
 Download the structured records:
@@ -88,6 +90,8 @@ Download the structured records:
 - {download}`Round 2 record: Africa and the Middle East <../research/data/round2-africa-middle-east-2026-09.json>`
 - {download}`Round 3 (manual downloads): Chile MOP and Brazil São Domingos <../research/data/round3-chile-brazil-2026-09.json>`
 - {download}`Round 3 (manual downloads): Oregon deck bulb-tees and Ohio I-beams <../research/data/round3-oregon-ohio-2026-09.json>`
+- {download}`Round 3: Philippines AASHTO I-girders (owner-supplied slide) <../research/data/round3-philippines-2026-09.json>`
+- {download}`Round 3: Michigan local-agency beams; Punjab and NZ checks <../research/data/round3-mi-pk-nz-2026-09.json>`
 
 Original publications retain their own copyright. Downloaded source PDFs
 are not distributed with the package. The reports retain URLs and, for

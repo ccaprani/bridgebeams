@@ -8,6 +8,8 @@ from __future__ import annotations
 import importlib
 import inspect
 import json
+import math
+import re
 import sys
 from pathlib import Path
 from html import escape
@@ -16,8 +18,8 @@ from copy import deepcopy
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 ASSETS = ROOT / 'docs/source/_static/coverage'
-COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','india':'IN','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA','cn':'CN','es':'ES','hu':'HU','id':'ID','nl':'NL','np':'NP','ro':'RO','sk':'SK','vn':'VN','kh':'KH','my':'MY','pk':'PK','lk':'LK','bd':'BD','ma':'MA','it':'IT','fr':'FR','dk':'DK','ua':'UA','bg':'BG','lt':'LT','hr':'HR','br':'BR','ar':'AR','cr':'CR','cl':'CL'}
-NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','IN':'India','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa','CN':'China','ES':'Spain','HU':'Hungary','ID':'Indonesia','NL':'Netherlands','NP':'Nepal','RO':'Romania','SK':'Slovakia','VN':'Vietnam','KH':'Cambodia','MY':'Malaysia','PK':'Pakistan','LK':'Sri Lanka','BD':'Bangladesh','MA':'Morocco','IT':'Italy','FR':'France','DK':'Denmark','UA':'Ukraine','BG':'Bulgaria','LT':'Lithuania','HR':'Croatia','BR':'Brazil','AR':'Argentina','CR':'Costa Rica','CL':'Chile'}
+COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','india':'IN','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA','cn':'CN','es':'ES','hu':'HU','id':'ID','nl':'NL','np':'NP','ro':'RO','sk':'SK','vn':'VN','kh':'KH','my':'MY','pk':'PK','lk':'LK','bd':'BD','ma':'MA','it':'IT','fr':'FR','dk':'DK','ua':'UA','bg':'BG','lt':'LT','hr':'HR','br':'BR','ar':'AR','cr':'CR','cl':'CL','ph':'PH'}
+NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','IN':'India','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa','CN':'China','ES':'Spain','HU':'Hungary','ID':'Indonesia','NL':'Netherlands','NP':'Nepal','RO':'Romania','SK':'Slovakia','VN':'Vietnam','KH':'Cambodia','MY':'Malaysia','PK':'Pakistan','LK':'Sri Lanka','BD':'Bangladesh','MA':'Morocco','IT':'Italy','FR':'France','DK':'Denmark','UA':'Ukraine','BG':'Bulgaria','LT':'Lithuania','HR':'Croatia','BR':'Brazil','AR':'Argentina','CR':'Costa Rica','CL':'Chile','PH':'Philippines'}
 
 # Producer's range is offered in both countries, with the same manual/profile
 # definitions. Keep an explicit family allowlist so future Ireland-only ranges
@@ -29,6 +31,36 @@ SHARED_IE_GB_FAMILIES = {
     'IeUMBBeamSection', 'IeWBeamSection', 'IeYBeamSection',
     'IeYEBeamSection',
 }
+
+
+# Equal Earth projection (Šavrič, Patterson & Jenny 2018): equal-area, so
+# shaded country areas are comparable. boundaries.json caches paths in
+# equirectangular SVG units, x = (lon + 180) * 3 and y = (90 - lat) * 3,
+# which invert exactly to degrees before reprojection.
+EE_A1, EE_A2, EE_A3, EE_A4 = 1.340264, -0.081106, 0.000893, 0.003796
+EE_M = math.sqrt(3) / 2
+EE_WIDTH = 1080.0
+EE_XMAX = 2.7063858
+
+
+def equal_earth(lon, lat):
+    lam, phi = math.radians(lon), math.radians(lat)
+    theta = math.asin(EE_M * math.sin(phi))
+    t2 = theta * theta; t6 = t2 ** 3
+    x = 2 * math.sqrt(3) * lam * math.cos(theta) / (3 * (9 * EE_A4 * t6 * t2 + 7 * EE_A3 * t6 + 3 * EE_A2 * t2 + EE_A1))
+    y = theta * (EE_A1 + EE_A2 * t2 + t6 * (EE_A3 + EE_A4 * t2))
+    return x, y
+
+
+def project_path(path, scale, y_top):
+    """Reproject a cached equirectangular M/L/Z path to Equal Earth SVG units."""
+    out = []
+    for cmd, xs, ys in re.findall(r'([MLZ])(?:(-?[\d.]+),(-?[\d.]+))?', path):
+        if cmd == 'Z':
+            out.append('Z'); continue
+        x, y = equal_earth(float(xs) / 3 - 180, 90 - float(ys) / 3)
+        out.append(f'{cmd}{(x + EE_XMAX) * scale:.2f},{(y_top - y) * scale:.2f}')
+    return ''.join(out)
 
 
 def implemented():
@@ -207,9 +239,14 @@ def build():
     (ASSETS/'coverage-data.json').write_text(json.dumps(result,indent=2)+'\n')
     # Fully rendered HTML has no fetch dependency and works through file:// too.
     template=(ASSETS/'coverage-template.html').read_text()
-    svg=['<svg viewBox="0 0 1080 470" role="group" aria-label="World coverage by implemented profile count">']
-    for f in boundaries['features']:
-        if f['code']=='AQ':continue
+    shown=[f for f in boundaries['features'] if f['code']!='AQ']
+    scale=EE_WIDTH/(2*EE_XMAX)
+    lats=[90-float(y)/3 for f in shown for y in re.findall(r'[ML]-?[\d.]+,(-?[\d.]+)',f['path'])]
+    y_top=equal_earth(0,max(lats))[1]; y_bottom=equal_earth(0,min(lats))[1]
+    height=math.ceil((y_top-y_bottom)*scale)+2
+    svg=[f'<svg viewBox="0 0 {EE_WIDTH:.0f} {height}" role="group" aria-label="World coverage by implemented profile count (Equal Earth projection)">']
+    for f in shown:
+        f=dict(f,path=project_path(f['path'],scale,y_top))
         row=countries[f['code']];count=row['count']
         level=('low' if count<=5 else 'mid' if count<=15 else 'high' if count<=40 else 'max') if count else ('zero' if row['researched'] else 'norecord')
         label=f"{row['name']}: {count} profiles; {row['source_count']} research records"

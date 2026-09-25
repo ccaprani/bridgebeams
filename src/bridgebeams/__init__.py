@@ -343,6 +343,14 @@ from bridgebeams.cl.mop_mc_v4 import MopLosaNervadaVigaSection
 from bridgebeams.cl.mop_mc_v4 import MopVigaPostensadaDimensions
 from bridgebeams.cl.mop_mc_v4 import MopVigaPostensadaSection
 
+from bridgebeams.us.state_r3_mi_beams import MiBoxBeamDimensions
+from bridgebeams.us.state_r3_mi_beams import MiBulbTeeDimensions
+from bridgebeams.us.state_r3_mi_beams import MiBulbTeeSection
+from bridgebeams.us.state_r3_mi_beams import MiSideBySideBoxBeamSection
+from bridgebeams.us.state_r3_mi_beams import MiSpreadBoxBeamSection
+from bridgebeams.ph.dpwh_aashto import PhDpwhAashtoDimensions
+from bridgebeams.ph.dpwh_aashto import PhDpwhAashtoSection
+
 DISCLAIMER = (
     "Not authoritative. bridgebeams is a best-effort, development-stage research catalogue. Many profiles are reconstructions or estimates from incomplete, draft or historic sources, and some sources contradict themselves. Check every profile's `provenance` and `source_status` and verify dimensions against the governing drawing before any design, assessment or procurement use. No warranty; the authors accept no liability."
 )
@@ -480,3 +488,5 @@ __all__ += ['FdotFloridaIBeamDimensions', 'FdotFloridaIBeamSection', 'FdotFlorid
 __all__ += ['PekabexMgtDimensions', 'PekabexMgtSection', 'SomacoGirderDimensions', 'SomacoGirderSection', 'PrebetGirderDimensions', 'PrebetGirderSection', 'TierraBeamDimensions', 'TierraBeamSection', 'PrethorBeamDimensions', 'PrethorVaSection', 'PrethorVaaSection', 'PrethorVcSection', 'PrethorViSection', 'PrethorVuSection', 'HaitsmaHbmDimensions', 'HaitsmaHbmSection', 'HaitsmaHgrDimensions', 'HaitsmaHgrSection', 'HaitsmaHkpDimensions', 'HaitsmaHkpSection', 'SpanbetonPiqDimensions', 'SpanbetonPiqSection', 'SpanbetonSjpDimensions', 'SpanbetonSjpFlexDimensions', 'SpanbetonSjpFlexSection', 'SpanbetonSjpSection', 'SpanbetonSkkDimensions', 'SpanbetonSkkSection', 'SpanbetonSrpDimensions', 'SpanbetonSrpSection', 'SpanbetonZipDimensions', 'SpanbetonZipSection', 'SpanbetonZipxlSection', 'GrProjectGirderDimensions', 'GrProjectGirderSection', 'FpMcCannBoxBeamDimensions', 'FpMcCannBoxBeamSection', 'FpMcCannMyBeamDimensions', 'FpMcCannMyBeamSection', 'FpMcCannMyeBeamSection', 'FpMcCannSyBeamDimensions', 'FpMcCannSyBeamSection', 'FpMcCannTyBeamDimensions', 'FpMcCannTyBeamSection', 'FpMcCannTyeBeamSection', 'FpMcCannWBeamDimensions', 'FpMcCannWBeamSection', 'FpMcCannYBeamDimensions', 'FpMcCannYBeamSection', 'FpMcCannYeBeamSection', 'SwShpDimensions', 'SwShpSection', 'ItuTipBeamDimensions', 'ItuTipBeamSection', 'Su3503B12Dimensions', 'Su3503B12Section', 'DragonAashtoSection', 'R2AashtoIDimensions', 'TubecoAashtoSection', 'PaverBeamDimensions', 'PaverBeamSection', 'AfgcVippBeamSection', 'AfgcVippDimensions', 'CrhOtBeamSection', 'CrhOtDimensions', 'ThreeBetBeamSection', 'UaB40BeamSection', 'UaBeamDimensions', 'UaBmBeamSection', 'RilaGtDimensions', 'RilaGtSection', 'ZbeMgDimensions', 'ZbeMgSection', 'TilstaSijaDimensions', 'TilstaSijaSection', 'ViaduktSanDimensions', 'ViaduktSanSection', 'DnitPcpLongarinaDimensions', 'DnitPcpLongarinaSection', 'PretensaViDimensions', 'PretensaViSection', 'PuentePrefaBeamDimensions', 'PuentePrefaBeamSection']
 
 __all__ += ['OrDeckBulbTeeDimensions', 'OrDeckBulbTeeSection', 'OhAashtoIBeamSection', 'OhIBeamDimensions', 'OhWfBeamSection', 'SaoDomingosLongarinaDimensions', 'SaoDomingosLongarinaSection', 'MopLosaNervadaVigaDimensions', 'MopLosaNervadaVigaSection', 'MopVigaPostensadaDimensions', 'MopVigaPostensadaSection']
+
+__all__ += ['MiBoxBeamDimensions', 'MiBulbTeeDimensions', 'MiBulbTeeSection', 'MiSideBySideBoxBeamSection', 'MiSpreadBoxBeamSection', 'PhDpwhAashtoDimensions', 'PhDpwhAashtoSection']

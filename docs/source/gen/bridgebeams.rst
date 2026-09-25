@@ -66,6 +66,7 @@
    no
    np
    nz
+   ph
    pk
    pl
    qa

@@ -52,8 +52,17 @@ Brazil IFES São Domingos 1.30 m I girder (`br/r3_*`, yGc pinned), Oregon
 DKBT36/45/60 × 4 flange widths (`us/state_r3_or_*`), Ohio PSID-1-13 AASHTO
 II–IV, Mod IV and WF36-49…72-49 read from the V8 DGN with a custom parser
 (`docs/research/data/round3-oregon-ohio-dgn-extract.py`), exact vs Brice 2021.
+Later on 25 September: Philippines `ph` Types I–IV and `V-as-drawn` from an
+owner-supplied slide. I–IV equal PCI to within inch→mm rounding. "Type V" has Type VI
+depth and upper geometry but a 660 mm bottom flange (both pinned; DPWH
+Odiongan sheet would settle it). Michigan OR15-182 App. K local-agency
+spread/side-by-side boxes and BT36/42/48 (`us/state_r3_mi_*`; research-report
+designs, not MDOT standards; box shear key estimated). MI 1800 still a lead.
+Punjab 2022 C&W spec and NZ X261/X275 had no implementable sections.
+The coverage map now uses the Equal Earth projection (reprojected at build
+time from the cached equirectangular paths). TMR bridge ZIP: owner says ignore.
 Still needing Colin's signed-in Scribd or email: DPWH Type VI, NHA
-STANDARD/04–06, MDOT guide, NZTA RR252/Red Folder, TMR bridge ZIP.
+STANDARD/04–06, MDOT guide, NZTA RR252/Red Folder.
 
 ## Round 2 web retrieval and publication stance, 23 September 2026 (read first)
 
@@ -77,7 +86,7 @@ Owner review queue (round 3, 15 cards: source conflicts, scan readings, estimate
 gallery, counting policy, manual downloads) is in the local `dims_review.html`
 (build with `--with-review`); images and generator in `sources/review-2026-09-23/`.
 
-Totals now: **1763 distinct profiles, 1938 country-profile assignments, 45
+Totals now: **1788 distinct profiles, 1963 country-profile assignments, 46
 countries** (after round 3 below). Every profile has `provenance`: 543 transcribed, 760
 with-convention, 190 fitted, 235 estimate. The 301 pre-September profiles
 were backfilled (`tests/test_provenance_legacy.py`). The coverage map shows the

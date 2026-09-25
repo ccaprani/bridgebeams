@@ -64,6 +64,8 @@ profiles and completed checks.
 | Round 2 web retrieval (Sept 2026): Africa and the Middle East | [Implementation record](round2-africa-middle-east-2026-09.md) | [Sources, transcriptions and leads](data/round2-africa-middle-east-2026-09.json) |
 | Round 3 (manual downloads): Chile MOP and Brazil São Domingos | [Implementation record](round3-chile-brazil-2026-09.md) | [Sources and residuals](data/round3-chile-brazil-2026-09.json) |
 | Round 3 (manual downloads): Oregon deck bulb-tees and Ohio I-beams | [Implementation record](round3-oregon-ohio-2026-09.md) | [Sources and residuals](data/round3-oregon-ohio-2026-09.json) |
+| Round 3: Philippines AASHTO I-girders (owner-supplied slide) | [Implementation record](round3-philippines-2026-09.md) | [Sources and residuals](data/round3-philippines-2026-09.json) |
+| Round 3: Michigan local-agency beams; Punjab and NZ checks | [Implementation record](round3-mi-pk-nz-2026-09.md) | [Sources and residuals](data/round3-mi-pk-nz-2026-09.json) |
 
 ## Reading the evidence
 

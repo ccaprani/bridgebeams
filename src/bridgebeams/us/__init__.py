@@ -81,3 +81,6 @@ __all__ += ['OrDeckBulbTeeDimensions', 'OrDeckBulbTeeSection']
 
 from .state_r3_oh_i_beams import (OhAashtoIBeamSection, OhIBeamDimensions, OhWfBeamSection)
 __all__ += ['OhAashtoIBeamSection', 'OhIBeamDimensions', 'OhWfBeamSection']
+
+from .state_r3_mi_beams import (MiBoxBeamDimensions, MiBulbTeeDimensions, MiBulbTeeSection, MiSideBySideBoxBeamSection, MiSpreadBoxBeamSection)
+__all__ += ['MiBoxBeamDimensions', 'MiBulbTeeDimensions', 'MiBulbTeeSection', 'MiSideBySideBoxBeamSection', 'MiSpreadBoxBeamSection']

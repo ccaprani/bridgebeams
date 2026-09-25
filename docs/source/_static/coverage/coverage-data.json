@@ -3,15 +3,15 @@
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 122,
   "source_records": 233,
-  "implemented_countries": 45,
-  "implemented_profiles": 1763,
-  "country_profile_assignments": 1938,
+  "implemented_countries": 46,
+  "implemented_profiles": 1788,
+  "country_profile_assignments": 1963,
   "provenance_basis": "Distinct profiles by provenance. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.",
   "provenance_counts": {
     "estimate": 235,
     "fitted-reconstruction": 190,
-    "transcribed": 558,
-    "transcribed-with-convention": 780
+    "transcribed": 570,
+    "transcribed-with-convention": 793
   },
   "countries": [
     {
@@ -7204,8 +7204,40 @@
           "title_original": "Laguna Lakeshore Road Network Infrastructure Preparation and Innovation Facility Output 1"
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.ph.dpwh_aashto.PhDpwhAashtoSection",
+          "name": "PhDpwhAashtoSection",
+          "module": "bridgebeams.ph.dpwh_aashto",
+          "count": 5,
+          "profiles": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V-as-drawn"
+          ],
+          "profile_ids": [
+            "bridgebeams.ph.dpwh_aashto.PhDpwhAashtoSection:I",
+            "bridgebeams.ph.dpwh_aashto.PhDpwhAashtoSection:II",
+            "bridgebeams.ph.dpwh_aashto.PhDpwhAashtoSection:III",
+            "bridgebeams.ph.dpwh_aashto.PhDpwhAashtoSection:IV",
+            "bridgebeams.ph.dpwh_aashto.PhDpwhAashtoSection:V-as-drawn"
+          ],
+          "note": "",
+          "provenance": {
+            "I": "transcribed",
+            "II": "transcribed-with-convention",
+            "III": "transcribed-with-convention",
+            "IV": "transcribed-with-convention",
+            "V-as-drawn": "transcribed"
+          },
+          "jurisdictions": [
+            "PH"
+          ]
+        }
+      ],
+      "count": 5,
       "source_count": 5,
       "researched": true
     },
@@ -12002,6 +12034,114 @@
           ]
         },
         {
+          "id": "bridgebeams.us.state_r3_mi_beams.MiBulbTeeSection",
+          "name": "MiBulbTeeSection",
+          "module": "bridgebeams.us.state_r3_mi_beams",
+          "count": 3,
+          "profiles": [
+            "BT36",
+            "BT42",
+            "BT48"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r3_mi_beams.MiBulbTeeSection:BT36",
+            "bridgebeams.us.state_r3_mi_beams.MiBulbTeeSection:BT42",
+            "bridgebeams.us.state_r3_mi_beams.MiBulbTeeSection:BT48"
+          ],
+          "note": "",
+          "provenance": {
+            "BT36": "transcribed",
+            "BT42": "transcribed",
+            "BT48": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection",
+          "name": "MiSideBySideBoxBeamSection",
+          "module": "bridgebeams.us.state_r3_mi_beams",
+          "count": 10,
+          "profiles": [
+            "SSBB17x36-INT",
+            "SSBB17x36-FAS",
+            "SSBB21x48-INT",
+            "SSBB21x48-FAS",
+            "SSBB27x48-INT",
+            "SSBB27x48-FAS",
+            "SSBB33x48-INT",
+            "SSBB33x48-FAS",
+            "SSBB39x48-INT",
+            "SSBB39x48-FAS"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB17x36-INT",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB17x36-FAS",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB21x48-INT",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB21x48-FAS",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB27x48-INT",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB27x48-FAS",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB33x48-INT",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB33x48-FAS",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB39x48-INT",
+            "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection:SSBB39x48-FAS"
+          ],
+          "note": "",
+          "provenance": {
+            "SSBB17x36-INT": "transcribed-with-convention",
+            "SSBB17x36-FAS": "transcribed-with-convention",
+            "SSBB21x48-INT": "transcribed-with-convention",
+            "SSBB21x48-FAS": "transcribed-with-convention",
+            "SSBB27x48-INT": "transcribed-with-convention",
+            "SSBB27x48-FAS": "transcribed-with-convention",
+            "SSBB33x48-INT": "transcribed-with-convention",
+            "SSBB33x48-FAS": "transcribed-with-convention",
+            "SSBB39x48-INT": "transcribed-with-convention",
+            "SSBB39x48-FAS": "transcribed-with-convention"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection",
+          "name": "MiSpreadBoxBeamSection",
+          "module": "bridgebeams.us.state_r3_mi_beams",
+          "count": 7,
+          "profiles": [
+            "SBB17x36",
+            "SBB21x36",
+            "SBB21x48",
+            "SBB27x48",
+            "SBB33x48",
+            "SBB39x48",
+            "SBB48x48"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection:SBB17x36",
+            "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection:SBB21x36",
+            "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection:SBB21x48",
+            "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection:SBB27x48",
+            "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection:SBB33x48",
+            "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection:SBB39x48",
+            "bridgebeams.us.state_r3_mi_beams.MiSpreadBoxBeamSection:SBB48x48"
+          ],
+          "note": "",
+          "provenance": {
+            "SBB17x36": "transcribed",
+            "SBB21x36": "transcribed",
+            "SBB21x48": "transcribed",
+            "SBB27x48": "transcribed",
+            "SBB33x48": "transcribed",
+            "SBB39x48": "transcribed",
+            "SBB48x48": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
           "id": "bridgebeams.us.other_state_mn_rectangular.MnRectangularBeamSection",
           "name": "MnRectangularBeamSection",
           "module": "bridgebeams.us.other_state_mn_rectangular",
@@ -14310,7 +14450,7 @@
           ]
         }
       ],
-      "count": 645,
+      "count": 665,
       "source_count": 16,
       "researched": true
     },

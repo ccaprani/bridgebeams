@@ -1,0 +1,144 @@
+{
+ "topic": "round3-mi-pk-nz",
+ "date": "2026-09-25",
+ "implemented": {
+  "MiSpreadBoxBeamSection": {
+   "module": "bridgebeams.us.state_r3_mi_beams",
+   "profiles": 7,
+   "provenance": "transcribed",
+   "data": "src/bridgebeams/us/data/state_r3_mi_beams.json"
+  },
+  "MiSideBySideBoxBeamSection": {
+   "module": "bridgebeams.us.state_r3_mi_beams",
+   "profiles": 10,
+   "provenance": "transcribed-with-convention",
+   "data": "src/bridgebeams/us/data/state_r3_mi_beams.json",
+   "estimates": "shear-key horizontal offsets (3/8 in top setback, 3/4 in recess, 45 deg transitions) measured on NO SCALE drawing"
+  },
+  "MiBulbTeeSection": {
+   "module": "bridgebeams.us.state_r3_mi_beams",
+   "profiles": 3,
+   "provenance": "transcribed",
+   "data": "src/bridgebeams/us/data/state_r3_mi_beams.json",
+   "validation": "printed APPROX WEIGHT = area x T x 150 pcf, residuals -0.15..+0.03 %"
+  }
+ },
+ "sources": [
+  {
+   "id": "MI-CAVALIERI-2026",
+   "title": "Michigan Bridge Design Standards and Guides, MDOT Bridge Week, March 17-19 2026 (60 slides)",
+   "url": null,
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/us/mi/02.01_Cavalieri_DesignStandards.pdf",
+   "sha256": "762dc9ba2ce523968d6a9ab6a84e3d71472e13ce186796c3fb7643e2d21191c1",
+   "pages": 60,
+   "contents": "Overview of MDOT BDM, Bridge Design Guides, Special Details, Standard Plans; galvanic anodes; PC beam lifting stability (slides 51-53 list BDG 6.65.14 and Special Details PC-1Q, PC-2L, PC-4J, PC-5D; slide 52 is an elevation of lifting loops only). Slide 8 shows BDG 8.43.01 (issued 02/24/25) with sole-plate lengths: Type I 1'-4\", Type II 1'-6\", Type III 1'-10\", Type IV and 70\" I-beam 2'-2\", Michigan 1800 2'-11 3/8\", Bulb Tee 3'-4\". No beam section, dimension table or property table anywhere (all 60 slides viewed on a contact sheet; slides 8, 26, 52 viewed at 150-300 dpi).",
+   "outcome": "Nothing implemented. MI 1800 remains a lead: only its bearing sole-plate length (2'-11 3/8\" ~ bottom-flange width, consistent with 900 mm) is shown. Lead: BDG 6.60.03 / Special Detail PC-4 series (not in hand)."
+  },
+  {
+   "id": "MI-OR15-182-APPK",
+   "title": "MDOT Final Report OR15-182 (2018) Appendix K, Recommended Bridge Design Guide - Secondary Route Bridge Design Plan Guidelines (52 pp incl. Appendix A highlighted plans)",
+   "url": null,
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/us/mi/dot_36033_DS2.pdf",
+   "sha256": "880dbc34ce940bdd0357f12c9bbb7410edd6015bc27f7888dd691021db67c533",
+   "pages": 52,
+   "contents": {
+    "pp1-23": "guide text: depth table by span (Table 1), costs, type selection, plan-use sheet descriptions",
+    "p34": "SBB 002 shear reinforcement + beam size/span table",
+    "p35": "SBB 003 spread box sections 17x36/21x36, 21x48, 27x48/33x48, 39x48/48x48",
+    "p36": "SBB 004 strands",
+    "p38": "SSBB 002",
+    "p39": "SSBB 003 side-by-side box sections interior + fascia 17x36, 21x48, 27x48/33x48",
+    "p40": "SSBB 004 39x48 interior + fascia",
+    "p43": "BTB 002 bulb tee 36/42/48 sections + BEAM DIMENSIONS table with approx weights",
+    "p44": "BTB 003 strands/diaphragms",
+    "pp45-52": "steel beams, camber, bearings, joints"
+   },
+   "status_quote": "These plans are not meant to prescribe MDOT standards or requirements, but represent recommendations for design. (PDF p2)",
+   "outcome": "20 profiles implemented (7 spread box, 10 side-by-side box, 3 bulb tee)."
+  },
+  {
+   "id": "MI-BRICE-2021",
+   "title": "Brice et al. (2021) PCI Journal appendix",
+   "local_path": "sources/expansion/round2/us/pcij-2021-mj-brice-appendix.pdf",
+   "outcome": "No Michigan table (tables cover AASHTO, FDOT, NDOR/NU, PCI NE, NCDOT, ODOT OR/OH, VDOT...). Not usable for MI validation."
+  },
+  {
+   "id": "PK-PUNJAB-CW-2022",
+   "title": "Punjab Communication and Works Department, Standard Specifications for Road & Bridge Construction 2022 (512 pp)",
+   "url": null,
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/pk/Specification of Road & Bridge 2022 C&W.pdf",
+   "sha256": "30f556d7b39c28b56e6ea0791e3b0322610a38165192c2670587b4f72b453e62",
+   "pages": 512,
+   "contents": "Text-only construction specification. pdftotext grep: 'girder' 52 hits (placement, curing, erection, formwork clauses e.g. text lines ~13673-13721, 15437-17012), 'precast' 48 (members, piles, posts, paving blocks), 'prestressed' 14, 'AASHTO' 350 (material/test standards), 'Type I/II/III' only for cement types, 'I-girder'/'box beam'/'Type IV' 0. Only two large raster images (PDF p3 cover, p245 bituminous paving record form).",
+   "outcome": "No girder sections specified or dimensioned. Nothing implemented; existing pk NHA Types A-H unaffected."
+  },
+  {
+   "id": "NZ-MOW-X261",
+   "title": "Ministry of Works and Development, Standard Bridge Design - Standard Steel Truss Deck Systems, Two lane through type truss, design report alternatives 1a, 1b, 1c & 2 (drawing X261/0/112/17/6004 sheet 1)",
+   "url": null,
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/nz/X261-0-112-17-6004-1R0.pdf",
+   "sha256": "d7c5c72941fad9efe567b2b5a0c4e42b9115285b5fe93d729e6de4bab2eb11e8",
+   "pages": 1,
+   "contents": "Scanned 1-bit drawing (299 dpi). Alternative 2 'Stahlton longspan deck, transoms 4 m crs': pairs of 230 mm deep Stahlton planks at 963 mm crs, 25 mm treated timber permanent formwork, 125 mm concrete deck, 762x267x173 UB transoms at 4.000 crs, 150x90x12 L seating. Plank shown schematically as narrow inverted-trapezoid webs; no width, web or flange dimension.",
+   "outcome": "Not implemented: only depth (230 mm) and pair spacing (963 mm) are given; no defensible outline. Lead: Stahlton Longspan plank product data."
+  },
+  {
+   "id": "NZ-MOW-X275",
+   "title": "MoW Standard Bridge Design - Standard Steel Trusses, Erection Equipment, Launching Anchor Beam (Double Truss) (X275/0/112/18/7004 sheet 19)",
+   "local_path": "sources/expansion/round2/manual/nz/X275-0-112-18-7004-19R0.pdf",
+   "sha256": "05ea24c501ecf6176c3aff9816d629c71a42d9c86913312fefcc4c406e34aa5a",
+   "pages": 1,
+   "outcome": "Steel launching equipment; not a precast beam. Not relevant."
+  },
+  {
+   "id": "NZ-HSDG-PAPER",
+   "title": "Reynolds, Lloyd & Dickson, 'NZ Transport Agency Highway Structures Design Guide' (conference paper, 10 pp)",
+   "local_path": "sources/expansion/round2/manual/nz/NZ-Transport-Agency-Highway-Structures-Design-Guide.pdf",
+   "sha256": "0f8290bc759d7100d49354209e23417b12e2e80ca71feb17a382c68fbb324b51",
+   "pages": 10,
+   "outcome": "Describes the 2016 HSDG; no standard beam references or dimensions. Not relevant."
+  }
+ ],
+ "michigan_transcription_in": {
+  "spread_box": {
+   "17x36": "5/5/5, chamfer 1.5",
+   "21x36": "5/5/5, chamfer 1.5",
+   "21x48": "top 6 / bottom 6 / web 4, chamfer 1.5",
+   "27x48,33x48,39x48,48x48": "6/6/4, chamfer 3",
+   "all": "1/2 in soffit bevel, square top corners"
+  },
+  "side_by_side_box": {
+   "sizes": "17x36, 21x48, 27x48, 33x48, 39x48 (interior + fascia)",
+   "slabs_webs": "as spread box; fascia top slab 9 in (21-39); 17x36 fascia drawn solid",
+   "key": "3 in top zone and 4 in key printed; setback 3/8, recess 3/4 estimated"
+  },
+  "bulb_tee": {
+   "top": "49 wide, 5 edge, 3 taper, 3x3 fillet to 8 web (1'-5 1/2\" + 3\" horizontal)",
+   "bottom": "40 wide, 3/4 bevel, 5 1/2 edge, 7 taper over 14 run, 2x2 fillet",
+   "depths": [
+    36,
+    42,
+    48
+   ]
+  }
+ },
+ "residuals": {
+  "bulb_tee_weight_pct": {
+   "BT36@70ft": 0.025,
+   "BT36@80ft": -0.053,
+   "BT42@90ft": 0.008,
+   "BT48@100ft": -0.146,
+   "BT48@110ft": -0.003
+  },
+  "boxes": "no published properties; analytic hand-sum area checks only"
+ },
+ "leads": [
+  "MDOT MI 1800 girder: BDG 6.60.03 / Special Detail PC-4 series (sheet not in hand); Cavalieri slide 8 gives only sole-plate length 2'-11 3/8\"",
+  "MDOT standard box beams (BDG 6.65 series / PC-5 special detail) - OR15-182 sheets are local-agency recommendations and may differ from MDOT standard boxes",
+  "Stahlton Longspan plank product sheet (NZ) for the 230 mm plank outline"
+ ]
+}
