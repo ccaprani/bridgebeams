@@ -18,8 +18,8 @@ from copy import deepcopy
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 ASSETS = ROOT / 'docs/source/_static/coverage'
-COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','india':'IN','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA','cn':'CN','es':'ES','hu':'HU','id':'ID','nl':'NL','np':'NP','ro':'RO','sk':'SK','vn':'VN','kh':'KH','my':'MY','pk':'PK','lk':'LK','bd':'BD','ma':'MA','it':'IT','fr':'FR','dk':'DK','ua':'UA','bg':'BG','lt':'LT','hr':'HR','br':'BR','ar':'AR','cr':'CR','cl':'CL','ph':'PH'}
-NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','IN':'India','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa','CN':'China','ES':'Spain','HU':'Hungary','ID':'Indonesia','NL':'Netherlands','NP':'Nepal','RO':'Romania','SK':'Slovakia','VN':'Vietnam','KH':'Cambodia','MY':'Malaysia','PK':'Pakistan','LK':'Sri Lanka','BD':'Bangladesh','MA':'Morocco','IT':'Italy','FR':'France','DK':'Denmark','UA':'Ukraine','BG':'Bulgaria','LT':'Lithuania','HR':'Croatia','BR':'Brazil','AR':'Argentina','CR':'Costa Rica','CL':'Chile','PH':'Philippines'}
+COUNTRIES = {'aus':'AU','be':'BE','ca':'CA','gr':'GR','ie':'IE','india':'IN','jp':'JP','kr':'KR','mx':'MX','no':'NO','nz':'NZ','pl':'PL','qa':'QA','ru':'RU','th':'TH','tr':'TR','tw':'TW','uk':'GB','us':'US','za':'ZA','cn':'CN','es':'ES','hu':'HU','id':'ID','nl':'NL','np':'NP','ro':'RO','sk':'SK','vn':'VN','kh':'KH','my':'MY','pk':'PK','lk':'LK','bd':'BD','ma':'MA','it':'IT','fr':'FR','dk':'DK','ua':'UA','bg':'BG','lt':'LT','hr':'HR','br':'BR','ar':'AR','cr':'CR','cl':'CL','ph':'PH','fi':'FI','ir':'IR'}
+NAMES = {'AU':'Australia','BE':'Belgium','CA':'Canada','GB':'United Kingdom','GR':'Greece','IE':'Ireland','IN':'India','JP':'Japan','KR':'South Korea','MX':'Mexico','NO':'Norway','NZ':'New Zealand','PL':'Poland','QA':'Qatar','RU':'Russia','TH':'Thailand','TR':'Türkiye','TW':'Taiwan','US':'United States','ZA':'South Africa','CN':'China','ES':'Spain','HU':'Hungary','ID':'Indonesia','NL':'Netherlands','NP':'Nepal','RO':'Romania','SK':'Slovakia','VN':'Vietnam','KH':'Cambodia','MY':'Malaysia','PK':'Pakistan','LK':'Sri Lanka','BD':'Bangladesh','MA':'Morocco','IT':'Italy','FR':'France','DK':'Denmark','UA':'Ukraine','BG':'Bulgaria','LT':'Lithuania','HR':'Croatia','BR':'Brazil','AR':'Argentina','CR':'Costa Rica','CL':'Chile','PH':'Philippines','FI':'Finland','IR':'Iran'}
 
 # Producer's range is offered in both countries, with the same manual/profile
 # definitions. Keep an explicit family allowlist so future Ireland-only ranges
@@ -103,6 +103,8 @@ def implemented():
                 if name=='KhcISection':note='Three source standard sizes; KHC-20 and KHC-40 extrapolations excluded.'
                 if name=='NoNtbKtbSection':note='Includes explicitly recorded user-inferred15 mm bottom chamfers.'
                 if name=='QaQBeamSection':note='Documented reconstructed profiles with source-rounding residuals.'
+                if name=='TielModelISection':note='One TIEL preliminary-design model A-A, not a national SKU or fixed size matrix; rounded rectangular-example properties are corroboration only.'
+                if name=='Rmto102InvertedTSection':note='Four RMTO 102 source-sheet-keyed nominal PSC girders from a mirror; current applicability unverified. h620 withheld; other PSC families untranscribed.'
             # Construct each counted choice; namespace aliases are removed above.
             labels=[]; provenance={}
             for label,args,kwargs in variants:

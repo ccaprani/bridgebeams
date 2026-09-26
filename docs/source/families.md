@@ -9,6 +9,31 @@ the tests enforce the deviation limits quoted below. Sources and URLs are
 available in {doc}`research` and the local working registry `sources/SOURCES.md`.
 See {doc}`global` for other implemented jurisdictions and their evidence limits.
 
+## Finland — one TIEL model example
+
+`bridgebeams.fi.TielModelISection("TIEL-model-AA-h1270")` transcribes the
+12-vertex bare A–A outline from TIEL2160004-2000, PDF p28, LIITE1.4.
+Depth1270 mm; bottom600/web180/top300 mm. It is a preliminary-design model,
+**not a national SKU or fixed size matrix**. Published rounded A0.39 m²,
+cy0.51 m and Ixx0.063 m⁴ are corroboration from a different rectangular
+idealization, not exact nominal polygon targets. CIP slab, reinforcement
+and end blocks are excluded; no extra sizes are extrapolated.
+
+## Iran — four RMTO102 nominal PSC sections
+
+`bridgebeams.ir.Rmto102InvertedTSection` offers source-sheet locators
+`RMTO102-8-4-h370`, `RMTO102-8-5-h470`, `RMTO102-8-7-h770` and
+`RMTO102-8-8A-h1000` (PDF pp52,51,54,56 respectively). Each 8-vertex bare
+inverted-T has bottom500/web200, bottom vertical80 and haunch rise150 mm.
+The separate180 mm slab, formwork, reinforcement and end blocks are excluded.
+No published bare properties were identified; tests independently derive
+A/cy/I using rectangle/triangle mechanics. The mirror's official version
+and current applicability are unverified. h620 remains withheld for missing
+web-width corroboration; other PSC families remain untranscribed.
+
+See {doc}`round5b-extraction-prep-2026-09` for corrected evidence and the
+still-blocked Estonian geometry and Cambodian standard-drawing acquisition.
+
 ## Ireland
 
 ### T beams (T1–T10) — solid slab construction

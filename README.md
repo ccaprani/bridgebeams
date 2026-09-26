@@ -105,8 +105,15 @@ are in the [US follow-up](docs/research/us-states-followup.md). Canada's
 Ontario MTO S300/S400/S500 solid slabs are in the
 [Ontario follow-up](docs/research/canada-followup.md).
 
-The visual-review follow-up adds 46 profiles: 16 Irish W, eight wide Solid
-Box, ten Norwegian NTB/KTB, four NZ hollow-core and eight Civilcon Y.
+The [round5b visual-audit follow-up](docs/research/round5b-extraction-prep-2026-09.md)
+adds exactly five profiles: one Finnish TIEL A–A h1270 model example (not a
+national SKU), and four Iranian RMTO102 nominal PSC inverted-T sections,
+h370/470/770/1000. Iran's mirror/current-status caveat remains; h620 is
+withheld. Estonia's geometry and Cambodia's standard-drawing acquisition
+remain incomplete. No size families are extrapolated.
+
+The earlier visual-review follow-up added 46 profiles: 16 Irish W, eight wide
+Solid Box, ten Norwegian NTB/KTB, four NZ hollow-core and eight Civilcon Y.
 
 Earlier additions include seven SEPSA I-girders for Mexico, five Taiwanese
 Freeway Bureau I-girders, five Ashghal Q-girder reconstructions for Qatar,

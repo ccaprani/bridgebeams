@@ -66,7 +66,9 @@
     bridgebeams.dk.crh_ot
     bridgebeams.es.r2_prethor
     bridgebeams.es.r2_tierra
+    bridgebeams.fi.tiel_model_i
     bridgebeams.fr.afgc_vipp
+    bridgebeams.ir.rmto_102
     bridgebeams.gr.egnatia_extended_i
     bridgebeams.gr.r2_projects
     bridgebeams.hr.viadukt_san

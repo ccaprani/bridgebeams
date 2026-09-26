@@ -1,6 +1,6 @@
 # HANDOFF — bridgebeams global collection
 
-Updated 23 September 2026 (extraction round). Read before changing geometry or using old research
+Updated 26 September 2026 (vision-assisted round 5b). Read before changing geometry or using old research
 notes. This briefing supersedes the previous handoff: several source locators,
 width interpretations and blocker claims in it were wrong.
 
@@ -11,8 +11,8 @@ width interpretations and blocker claims in it were wrong.
   workflow. Do not merge or push to main. Keep changes on this branch or a
   new jurisdiction branch, with descriptive commits.
 - Python: `/home/ccaprani/anaconda3/envs/pybridge/bin/python`.
-- Full test suite (consolidated 23 September 2026; data-driven, same checks as the former 3369): **199 passed**
-  (185 after round 3, +1 per new family test file),
+- Full test suite (26 September 2026; consolidated data-driven checks): **201 passed**
+  (199 before the new Finland and Iran test modules),
   14 existing Matplotlib/Pyparsing deprecation warnings. Command:
   `timeout 180 /home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`.
 - Wheel checked outside the checkout: **all family JSON tables included**;
@@ -34,7 +34,32 @@ width interpretations and blocker claims in it were wrong.
   static artifact. The `github-pages` deployment environment permits exactly
   `main` and `ukie-beams`; the repository homepage points to the site.
 
-Latest commits on `ukie-beams` are `728a14b` (PCI AASHTO I–VI and Pakistan
+## Current round 5b verification (26 September 2026)
+
+- Added five source-grounded profiles: `fi.TielModelISection` (one h1270
+  preliminary-design model, not a national SKU) and
+  `ir.Rmto102InvertedTSection` (four sheet-keyed h370/470/770/1000 profiles).
+- Regenerated local coverage: **1806 distinct profiles across 48 countries**.
+  The latest extraction has not yet been pushed; do not infer live-site state
+  from these local counts.
+- Full suite: 201 passed, 14 existing warnings. Strict docs (`-E -W`) passed.
+  An isolated installed wheel constructed all five added profiles outside
+  the checkout; new JSON resources were available.
+- Five source PDFs copied to `~/Downloads/bridgebeams-manual/{fi,ir,ee,kh}/`;
+  `round5-source-manifest.json` and `round5-SHA256SUMS` record them. All five
+  copies independently match their extraction originals by SHA-256.
+- The former no-vision blocker is resolved. Visual audit corrected earlier
+  claims: Finland quantities are design curves, not a fixed size catalogue;
+  Estonian chart labels are spans, not masses. Estonia lacks full section
+  dimensions. Cambodia's actual standard drawings remain unacquired (local
+  JICA PDF is an inspection report). Iran h620 and further PSC families are
+  not implemented; mirror provenance/current applicability remain caveated.
+- Details: `docs/research/round5b-extraction-prep-2026-09.md` and its data JSON.
+  Local audit crops/report: `sources/expansion/round5-extraction/vision-audit/`.
+
+### Historical pre-expansion snapshot (superseded counts)
+
+At that earlier checkpoint, commits on `ukie-beams` included `728a14b` (PCI AASHTO I–VI and Pakistan
 follow-up), `cb1a82b` (Korea/Argentina/Philippines leads), `4717e74` (Brazilian
 papers and DNIT guidance), and `d22bc38` (IFES São Domingos retrieval lead).
 The latest Pages deployment for `d22bc38` passed. Live coverage data reads 301

@@ -39,8 +39,10 @@ All geometry is in **millimetres** and returned as `sectionproperties`
 `Geometry` objects, so sections can be meshed and analysed directly, or
 wrapped with materials for concrete section design checks.
 
-The complete coverage view currently counts **1788 distinct fixed profiles across
-46 countries**, separately from **122 jurisdictions with research records**.
+The catalogue now has **1806 distinct fixed profiles across
+48 countries**, separately from **122 jurisdictions with research records**.
+The latest five are one Finnish TIEL model example (not a national SKU) and
+four Iranian RMTO102 nominal source-sheet sections; no families are extrapolated.
 The UK and Ireland each show 175 shared Banagher profiles; those country assignments
 do not create new distinct geometry.
 Belgian and Greek parametric templates are listed separately because their
@@ -67,6 +69,8 @@ catalogue is assigned to both; the UK exports alias the same profile IDs.
 | Ireland | M / UMB | 640–1360 mm | 0.7% / ≤0.6% |
 | Ireland | SY / SYE | 1500–2000 mm | <0.05% / 0.56% rms |
 | Ireland | MY / MYE | 300–600 mm | 0.8% / 0.3% rms |
+| Finland | TIEL LIITE1.4 A–A model (not national SKU) | one h1270 | nominal haunches; rounded rectangular-example properties corroborate only |
+| Iran | RMTO102 nominal PSC inverted-T | h370/470/770/1000 | independent analytic A/cy/I; mirror/current-status caveat |
 | Türkiye | KGM I-girders | 900–1700 mm | analytic (no tables published) |
 | South Africa | Civilcon I-beams | 710–1980 mm | corrected source orientation; published A/Yb/Z checks |
 | Korea | KHC PSC I-girders | 1650–2500 mm | +2–3% vs literature |

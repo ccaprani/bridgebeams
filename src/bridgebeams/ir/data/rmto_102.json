@@ -1,0 +1,36 @@
+{
+  "family": "RMTO Publication 102 nominal PSC inverted-T girders (Iran)",
+  "source": {
+    "title": "RMTO Publication 102, typical bridge deck drawings to 20 m span",
+    "url": "https://civil20.blogfa.com/post/8171",
+    "acquisition": "Previously acquired mirror via picofile generateDownloadLink; not a newly verified official RMTO download.",
+    "local_path": "sources/expansion/round5-extraction/ir/RMTO-102.pdf",
+    "manual_store_path": "~/Downloads/bridgebeams-manual/ir/RMTO-102.pdf",
+    "sha256": "981cc9d2461c67af694bd05130dcf4b29e22b726f464c20087730302ac848919",
+    "pdf_pages": 56,
+    "classification_evidence": "PDF p6 explicitly specifies WIRE, STRAND and PRETENSIONING. Selected sheets distinguish open prestressing strand circles from filled reinforcing bars. The document also includes ordinary RC.",
+    "current_status": "Official version and current applicability unverified."
+  },
+  "common_dimensions_mm": {
+    "bottom_width": 500,
+    "web_width": 200,
+    "bottom_thickness": 80,
+    "haunch_height": 150
+  },
+  "scope": "Eight-vertex nominal bare girder at the dimensioned underside-of-slab interface. Excludes 180 mm CIP slab, permanent formwork, reinforcement and end blocks; no undocumented chamfers/fillets.",
+  "published_properties": null,
+  "property_note": "No bare A/cy/I table identified; visible schedules are material/reinforcement quantities. Tests use independent rectangle/triangle mechanics, not published targets.",
+  "sections": {
+    "RMTO102-8-4-h370": {"pdf_page": 52, "printed_sheet": "8-4", "depth_mm": 370, "span_context_m": 8},
+    "RMTO102-8-5-h470": {"pdf_page": 51, "printed_sheet": "8-5", "depth_mm": 470, "span_context_m": 10},
+    "RMTO102-8-7-h770": {"pdf_page": 54, "printed_sheet": "8-7", "depth_mm": 770, "span_context_m": 16},
+    "RMTO102-8-8A-h1000": {"pdf_page": 56, "printed_sheet": "8-8, part A", "depth_mm": 1000, "span_context_m": 20}
+  },
+  "withheld": {
+    "pdf_page": 53,
+    "printed_sheet": "8-6",
+    "depth_mm": 620,
+    "reason": "Upper width chain absent; do not inherit a 200 mm web from adjacent sheets without corroboration."
+  },
+  "residual_families": "Other PSC slab, spaced-girder and small culvert/joist sections remain untranscribed; no claim of complete Iranian catalogue coverage."
+}

@@ -3,15 +3,15 @@
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 169,
   "source_records": 355,
-  "implemented_countries": 46,
-  "implemented_profiles": 1801,
-  "country_profile_assignments": 1976,
+  "implemented_countries": 48,
+  "implemented_profiles": 1806,
+  "country_profile_assignments": 1981,
   "provenance_basis": "Distinct profiles by provenance. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.",
   "provenance_counts": {
     "estimate": 235,
     "fitted-reconstruction": 190,
-    "transcribed": 590,
-    "transcribed-with-convention": 786
+    "transcribed": 591,
+    "transcribed-with-convention": 790
   },
   "countries": [
     {
@@ -1212,18 +1212,16 @@
           "title_original": "Preparatory Survey on the Project for Construction of Neak Loeung Bridge"
         },
         {
-          "title": "Standard Drawings Part2: Road Structure Bridge3 POST TENSION HOLLOW SLAB\" Prakas 511/2012 (KH/EN)",
+          "title": "Unverified MPWT/Prakas 511/2012 bridge standard-drawing lead (actual sheets not acquired)",
           "url": "https://www.mpwt.gov.kh/en/documents/declaration/39",
-          "status": "PSC beams used; drawings exist on MPWT viewer-walled page",
+          "status": "Standard-drawing lead only; actual sheets not acquired; public curl attempt timed out",
           "registry": "deep-search-multilingual-sweep-2026-09.json",
           "id": "R5-KH",
           "language": "EN",
           "source_type": "authority document",
           "locator": "",
           "family_names": [
-            "pre-tensioned hollow-slab PSC 15\u201325 m",
-            " PT deck girders (PCDG) 18\u201330 m",
-            " widths 7/8/10/12 m"
+            "Unverified hollow-slab/PCDG standard-drawing leads; prior spans and widths not confirmed"
           ],
           "title_original": ""
         }
@@ -2360,20 +2358,18 @@
           "title_original": "ViaPlus sillad, tunnelid, m\u00fcraseinad"
         },
         {
-          "title": "ViaPlus infrastructure product page (EN",
-          "url": "https://betoonelement.ee/en/solutions/viaplus-infrastructure/)",
-          "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+          "title": "ViaPlus infrastructure product page (EN)",
+          "url": "https://betoonelement.ee/en/solutions/viaplus-infrastructure/",
+          "status": "PSC lead; exact ZIP/edge/box section geometry incomplete after visual audit",
           "registry": "deep-search-multilingual-sweep-2026-09.json",
           "id": "R5-EE",
           "language": "EN",
           "source_type": "report/manual/catalogue",
-          "locator": "",
+          "locator": "ViaPlus PDF pp9-10; karptala_scr_2012.pdf p1",
           "family_names": [
-            "ZIP beams (inverted-T",
-            " side-by-side + CIP deck)",
-            " T-beams",
-            " box beams 950\u00d71000 mm",
-            " \u226427 m/42 t"
+            "ZIP inverted-T",
+            "edge beam",
+            "box beam (no discrete height catalogue verified)"
           ],
           "title_original": ""
         }
@@ -2535,26 +2531,43 @@
           "title_original": "Parman j\u00e4nnepalkkisilta, yleispiirustus"
         },
         {
-          "title": "TIEL 2160004-2000 \"J\u00e4nnitetty elementtisilta\" tyyppipiirustussarja + ohje, 84 pp (FI, PDF",
+          "title": "TIEL 2160004-2000 \"J\u00e4nnitetty elementtisilta\" tyyppipiirustussarja + ohje, 84 pp (FI, PDF)",
           "url": "https://www.tieh.fi/sillat/julkaisut/jbe00.pdf",
-          "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+          "status": "One nominal TIEL model A-A h1270 implemented; no fixed national size matrix",
           "registry": "deep-search-multilingual-sweep-2026-09.json",
           "id": "R5-FI",
           "language": "FI",
           "source_type": "report/manual/catalogue",
-          "locator": "",
+          "locator": "PDF p28 LIITE1.4 A-A; p11 Figure1; p39 LIITE3.1 curves; pp49/51 LIITE4 printed pp9/11",
           "family_names": [
-            "\"J\u00e4nnitetty elementtisilta\": prestressed rectangular/trapezoid/I beams",
-            " L=16\u201340 m",
-            " H=1200\u20132100 mm",
-            " spacing 1.5\u20132.7 m",
-            " strand \u00d812.5/12.9 St1570/1770\u20131630/1860"
+            "TIEL model A-A h1270",
+            "rectangular/trapezoid and other I choices not catalogued"
           ],
           "title_original": ""
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.fi.tiel_model_i.TielModelISection",
+          "name": "TielModelISection",
+          "module": "bridgebeams.fi.tiel_model_i",
+          "count": 1,
+          "profiles": [
+            "TIEL-model-AA-h1270"
+          ],
+          "profile_ids": [
+            "bridgebeams.fi.tiel_model_i.TielModelISection:TIEL-model-AA-h1270"
+          ],
+          "note": "One TIEL preliminary-design model A-A, not a national SKU or fixed size matrix; rounded rectangular-example properties are corroboration only.",
+          "provenance": {
+            "TIEL-model-AA-h1270": "transcribed"
+          },
+          "jurisdictions": [
+            "FI"
+          ]
+        }
+      ],
+      "count": 1,
       "source_count": 2,
       "researched": true
     },
@@ -3870,20 +3883,50 @@
         {
           "title": "\u0646\u0634\u0631\u06cc\u0647 \u06f1\u06f0\u06f2 \u00ab\u0645\u062c\u0645\u0648\u0639\u0647 \u0646\u0642\u0634\u0647\u200c\u0647\u0627\u06cc \u062a\u06cc\u067e \u062a\u0627\u0628\u0644\u06cc\u0647 \u067e\u0644\u200c\u0647\u0627 (\u067e\u06cc\u0634\u200c\u0633\u0627\u062e\u062a\u0647\u060c \u067e\u06cc\u0634\u200c\u062a\u0646\u06cc\u062f\u0647\u060c \u062f\u0631\u062c\u0627) \u062a\u0627 \u062f\u0647\u0627\u0646\u0647 \u06f2\u06f0 \u0645\u062a\u0631\u00bb, FA",
           "url": "https://civil20.blogfa.com/post/8171",
-          "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+          "status": "Four nominal PSC inverted-T sections implemented; residual families remain",
           "registry": "deep-search-multilingual-sweep-2026-09.json",
           "id": "R5-IR",
           "language": "FA",
           "source_type": "report/manual/catalogue",
-          "locator": "",
+          "locator": "PDF p52 sheet8-4; p51 sheet8-5; p54 sheet8-7; p56 sheet8-8 part A; p6 PSC specifications",
           "family_names": [
-            "precast/prestressed typical bridge decks to 20 m span"
+            "RMTO102 sheets8-4 h370,8-5 h470,8-7 h770,8-8A h1000",
+            "h620 withheld; other PSC slab/spaced-girder/joist families untranscribed"
           ],
           "title_original": ""
         }
       ],
-      "families": [],
-      "count": 0,
+      "families": [
+        {
+          "id": "bridgebeams.ir.rmto_102.Rmto102InvertedTSection",
+          "name": "Rmto102InvertedTSection",
+          "module": "bridgebeams.ir.rmto_102",
+          "count": 4,
+          "profiles": [
+            "RMTO102-8-4-h370",
+            "RMTO102-8-5-h470",
+            "RMTO102-8-7-h770",
+            "RMTO102-8-8A-h1000"
+          ],
+          "profile_ids": [
+            "bridgebeams.ir.rmto_102.Rmto102InvertedTSection:RMTO102-8-4-h370",
+            "bridgebeams.ir.rmto_102.Rmto102InvertedTSection:RMTO102-8-5-h470",
+            "bridgebeams.ir.rmto_102.Rmto102InvertedTSection:RMTO102-8-7-h770",
+            "bridgebeams.ir.rmto_102.Rmto102InvertedTSection:RMTO102-8-8A-h1000"
+          ],
+          "note": "Four RMTO 102 source-sheet-keyed nominal PSC girders from a mirror; current applicability unverified. h620 withheld; other PSC families untranscribed.",
+          "provenance": {
+            "RMTO102-8-4-h370": "transcribed-with-convention",
+            "RMTO102-8-5-h470": "transcribed-with-convention",
+            "RMTO102-8-7-h770": "transcribed-with-convention",
+            "RMTO102-8-8A-h1000": "transcribed-with-convention"
+          },
+          "jurisdictions": [
+            "IR"
+          ]
+        }
+      ],
+      "count": 4,
       "source_count": 2,
       "researched": true
     },
