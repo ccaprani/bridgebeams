@@ -95,8 +95,12 @@ separate entries. The research footprint spans 122 jurisdictions; many
 currently have source evidence only.
 
 The United States now includes six classic PCI AASHTO I-beam reference sections,
-four WSDOT W-series girders and three edition-specific Minnesota rectangular
-beams; ten further state DOT records
+four WSDOT W-series girders, three edition-specific Minnesota rectangular
+beams, and thirteen MDOT-standard prestressed beams from the Michigan
+special details and Bridge Design Guides (I-beam Types I–IV, the 70 in
+I-beam, the metric 1800 beam, and 49 in bulb tees 36–72 in deep, each
+validated against MDOT's printed section properties);
+ten further state DOT records
 are in the [US follow-up](docs/research/us-states-followup.md). Canada's
 Ontario MTO S300/S400/S500 solid slabs are in the
 [Ontario follow-up](docs/research/canada-followup.md).

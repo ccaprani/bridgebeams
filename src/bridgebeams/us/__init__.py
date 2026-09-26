@@ -84,3 +84,6 @@ __all__ += ['OhAashtoIBeamSection', 'OhIBeamDimensions', 'OhWfBeamSection']
 
 from .state_r3_mi_beams import (MiBoxBeamDimensions, MiBulbTeeDimensions, MiBulbTeeSection, MiSideBySideBoxBeamSection, MiSpreadBoxBeamSection)
 __all__ += ['MiBoxBeamDimensions', 'MiBulbTeeDimensions', 'MiBulbTeeSection', 'MiSideBySideBoxBeamSection', 'MiSpreadBoxBeamSection']
+
+from .state_r4_mi_mdot_standard import (MiMdot1800Section, MiMdot70ISection, MiMdotBulbTeeSection, MiMdotIBeamDimensions, MiMdotISection)
+__all__ += ['MiMdot1800Section', 'MiMdot70ISection', 'MiMdotBulbTeeSection', 'MiMdotIBeamDimensions', 'MiMdotISection']

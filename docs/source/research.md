@@ -52,6 +52,7 @@ round3-chile-brazil-2026-09
 round3-oregon-ohio-2026-09
 round3-philippines-2026-09
 round3-mi-pk-nz-2026-09
+round4-mi-mdot-standards-2026-09
 ```
 
 Download the structured records:
@@ -92,6 +93,7 @@ Download the structured records:
 - {download}`Round 3 (manual downloads): Oregon deck bulb-tees and Ohio I-beams <../research/data/round3-oregon-ohio-2026-09.json>`
 - {download}`Round 3: Philippines AASHTO I-girders (owner-supplied slide) <../research/data/round3-philippines-2026-09.json>`
 - {download}`Round 3: Michigan local-agency beams; Punjab and NZ checks <../research/data/round3-mi-pk-nz-2026-09.json>`
+- {download}`Round 4: Michigan MDOT standard beams (PC-1Q/2L/4J/5D + BDG 6.60) <../research/data/round4-mi-mdot-standards-2026-09.json>`
 
 Original publications retain their own copyright. Downloaded source PDFs
 are not distributed with the package. The reports retain URLs and, for

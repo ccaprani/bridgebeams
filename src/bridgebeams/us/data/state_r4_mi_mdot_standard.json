@@ -1,0 +1,194 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Michigan Department of Transportation (MDOT) standard prestressed concrete beams: PC special details (current revisions 12-22-2025) and Bridge Design Guides (BDG) 6.60 series",
+ "units": "inches (source); package geometry in mm",
+ "sources": {
+  "pc_1q": {
+   "title": "MDOT special detail PC-1Q, Prestressed Concrete I-Beam Details (plan date 12-22-2025, 2 sheets)",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=8a529778-ce2d-4652-9128-48ec743cdfea",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-1Q_a.pdf",
+   "sha256": "12bdae9fbfa3f654ed4bb169f15b4f3a7990e2fc68363d77fe23a8d53a083a52",
+   "locators": {
+    "SECTION B-B TYPE I (28 in BEAM), midspan strand section with dimension chain": "PDF p1, bottom-left pair",
+    "SECTION B-B TYPE II (36 in BEAM)": "PDF p1",
+    "SECTION B-B TYPE III (45 in BEAM)": "PDF p1, bottom-centre pair",
+    "SECTION B-B TYPE IV (54 in BEAM)": "PDF p1",
+    "Sole-plate/pad tables, strand location table": "PDF p1"
+   },
+   "revisions_note": "2022 revision PC-1N (11-28-2022) recovered from the Wayback Machine; same geometry lineage, kept for provenance (mdot_PC-1N_I-beam-details_2022-11-28_wayback.pdf in the local source store)."
+  },
+  "pc_2l": {
+   "title": "MDOT special detail PC-2L, 70 in Prestressed Concrete I-Beam Details (plan date 12-22-2025, 2 sheets)",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=c8370804-7482-40fe-9061-5bb6de3c19c8",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-2L.pdf",
+   "sha256": "bd50afeae3a4cda8be83688dece21cc8d489f83553fb63e502d4c389dc4058a7",
+   "locators": {
+    "SECTION B-B (midspan) with vertical chain 6, 2, 1 1/2, 4'-1 1/2, 3 1/2, 7 1/2": "PDF p1, bottom-right section",
+    "SECTION A-A (end face, 1'-4 in web)": "PDF p1, bottom-left section"
+   }
+  },
+  "pc_4j": {
+   "title": "MDOT special detail PC-4J, Prestressed Concrete 1800 Beam Details (plan date 12-22-2025, 2 sheets)",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=997b1418-e2d8-4b64-9374-86254618cb94",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-4J.pdf",
+   "sha256": "315a625b55dae7acb3a12ad61a5469f73810633c78106d27fcc018098b65ad56",
+   "locators": {
+    "SECTION B-B (midspan) with fillet radii R7 7/8, R2 and chain 3, 2, 4'-6 1/2, 5 1/2, 5 7/8": "PDF p1, bottom-centre",
+    "15 SPA at 2 in strand row, 2'-11 1/2 in bottom flange": "PDF p1"
+   }
+  },
+  "pc_5d": {
+   "title": "MDOT special detail PC-5D, Prestressed Concrete Bulb-Tee Beam Details (plan date 12-22-2025, 2 sheets)",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=d5628a40-b6e1-4064-8980-88f85a55839c",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-5D.pdf",
+   "sha256": "6b8064ebbf2741035c8f820715870f8582028e53e0bb7466d2ee72e380e06f04",
+   "locators": {
+    "Bulb-tee sections (49 in and 61 in top flange)": "PDF p1",
+    "61 in flange variant": "NOT transcribed this round"
+   }
+  },
+  "bdg_set": {
+   "title": "MDOT Bridge Design Guides, English complete set (232 pp; 6.60.01 issued 02/14/11; 6.65.02 series issued 05/22/23)",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=dcecf995-28a3-4f9c-8da7-5839bd206d40",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/BDG-complete-set.pdf",
+   "sha256": "41a5a153fbef6d7fba65ee08301c240b54c21ddae34aecfb547e620290d8c028",
+   "locators": {
+    "6.60.01 I-Beam Details + BEAM PROPERTIES (Types I-IV)": "PDF p125",
+    "6.60.02 Michigan 1800 Girder + BEAM PROPERTIES": "PDF p126",
+    "6.60.03 Bulb Tee + BEAM PROPERTIES (49 in and 61 in flange, depths 36-72)": "PDF p127",
+    "6.60.03A bulb-tee reinforcement": "PDF p128",
+    "6.65.02 12in & 17in box beam properties": "PDF p146 (follow-up lead)",
+    "6.65.02A 21in & 27in box beam properties": "PDF p147 (follow-up lead)",
+    "6.65.02B 33-60in box beam properties": "PDF p148 (follow-up lead)"
+   }
+  }
+ },
+ "source_status": "MDOT standard special details and Bridge Design Guides (governing standards; current revisions downloaded 26 Sep 2026 while VPN'd to US egress)",
+ "i_beam": {
+  "provenance": "transcribed",
+  "sheet": "PC-1Q PDF p1 SECTION B-B series; properties from BDG 6.60.01 p125",
+  "common_in": {"soffit_chamfer": 0.75},
+  "geometry_notes": [
+   "Midspan (SECTION B-B) outline; end blocks (SECTION A-A) have a wider web and are not modelled.",
+   "Vertical chain measured down from the top: flange tip, top taper, straight web, bottom splay, bottom bulb edge; each type sums exactly to its depth.",
+   "The Type I chain prints four values (3 3/4, 11, 5, 5 in = 24 3/4 in of 28). The missing segment is the 3 1/4 in top-flange taper height, fixed by the template of Types II-IV and pinned by the printed BEAM PROPERTIES: A, St, Sb and I all reproduce within 1 %.",
+   "Small web-flange junction fillets are not printed and are omitted; the omission explains the model running 0.4-1 % below the printed properties.",
+   "Strand layout (5/7/9/11 spaces at 2 in in the bottom bulb, 2 spaces at 2 in in the top flange) and reinforcement are not part of the concrete outline."
+  ],
+  "sections": {
+   "I28": {
+    "depth": 28, "top_width": 12, "bottom_width": 16, "web": 6,
+    "tip": 3.75, "taper": 3.25, "web_height": 11, "splay": 5, "bulb": 5,
+    "printed_properties": {"weight_lbs_ft": 288, "area": 276, "st": 1475, "sb": 1805, "ix": 22800},
+    "calculated_in": {"area": 274.7, "yb": 12.59, "st": 1465, "sb": 1794, "ix": 22575}
+   },
+   "I36": {
+    "depth": 36, "top_width": 12, "bottom_width": 18, "web": 6,
+    "tip": 6, "taper": 3, "web_height": 15, "splay": 6, "bulb": 6,
+    "printed_properties": {"weight_lbs_ft": 384, "area": 369, "st": 2530, "sb": 3220, "ix": 51000},
+    "calculated_in": {"area": 368.4, "yb": 15.85, "st": 2524, "sb": 3207, "ix": 50842}
+   },
+   "I45": {
+    "depth": 45, "top_width": 16, "bottom_width": 22, "web": 7,
+    "tip": 7, "taper": 4.5, "web_height": 19, "splay": 7.5, "bulb": 7,
+    "printed_properties": {"weight_lbs_ft": 583, "area": 560, "st": 5070, "sb": 6190, "ix": 125000},
+    "calculated_in": {"area": 558.9, "yb": 20.29, "st": 5066, "sb": 6168, "ix": 125165}
+   },
+   "I54": {
+    "depth": 54, "top_width": 20, "bottom_width": 26, "web": 8,
+    "tip": 8, "taper": 6, "web_height": 23, "splay": 9, "bulb": 8,
+    "printed_properties": {"weight_lbs_ft": 822, "area": 789, "st": 8910, "sb": 10550, "ix": 261000},
+    "calculated_in": {"area": 788.4, "yb": 24.75, "st": 8903, "sb": 10521, "ix": 260403}
+   }
+  }
+ },
+ "i70": {
+  "provenance": "transcribed",
+  "sheet": "PC-2L PDF p1 SECTION B-B (midspan); no printed properties exist for this beam",
+  "sections": {
+   "I70": {
+    "depth": 70, "top_width": 30, "bottom_width": 26, "web": 6, "soffit_chamfer": 0.75,
+    "tip": 6, "taper": 2, "step": 1.5, "web_height": 49.5, "splay": 3.5, "bulb": 7.5,
+    "geometry_notes": [
+     "Vertical chain 6 + 2 + 1 1/2 + 4'-1 1/2 + 3 1/2 + 7 1/2 = 70 in exactly (tip face, taper, vertical step at the web top, straight web, bottom splay, bulb edge).",
+     "SECTION A-A (end face) has a 1'-4 in web; the midspan web is 6 in. End block omitted.",
+     "Bottom strand extent 11 spaces at 2 in = 1'-10 in within the 2'-2 in flange; 3/4 in chamfer at the soffit corners."
+    ],
+    "calculated_in": {"area": 814.4, "yb": 36.03, "st": 15885, "sb": 14977, "ix": 539616}
+   }
+  }
+ },
+ "beam_1800": {
+  "provenance": "transcribed-with-convention",
+  "sheet": "PC-4J PDF p1 SECTION B-B; properties from BDG 6.60.02 p126",
+  "sections": {
+   "1800": {
+    "depth": 70.875, "top_width": 47.25, "bottom_width": 35.5, "web": 5.875,
+    "soffit_chamfer": 0.75,
+    "tip": 3, "slope_drop": 2, "slope_web": 54.5, "splay": 5.5, "bulb": 5.875,
+    "r_tip": 2.0, "r_bulb": 2.0, "r_web_bot": 7.875, "r_web_top": 7.875,
+    "printed_properties": {"weight_lbs_ft": 910, "area": 875, "st": 16600, "sb": 18800, "ix": 624700},
+    "geometry_notes": [
+     "Depth 5'-10 7/8 in = 1800 mm nominal. Chain 3 + 2 + 4'-6 1/2 + 5 1/2 + 5 7/8 = 5'-10 7/8 in exactly (tip face, shallow top-flange slope drop, long slope/web zone, bottom splay, bulb edge).",
+     "The top flange underside slopes at about 10:1 (measured on the sheet vector geometry) from the 3 in tip to the web; fillets R7 7/8 at both web junctions and R2 at the tip and bulb corners are printed and modelled.",
+     "Convention: the radii are reconstructed as circular tangent arcs (8-point discretisation); with them the model reproduces the printed properties to 0.9 % (A 867.0 vs 875, St 16481 vs 16600, Sb 18813 vs 18800, I 622633 vs 624700). Without fillets A falls 5 % short.",
+     "The 4'-6 1/2 in chain member is required for exact closure; the glyph reads 4'-6 7/8 on a 600 dpi render and 4'-6 1/2 with the sum check. The 10:1 slope measurement supports the 1/2 reading.",
+     "Strand extent 15 spaces at 2 in = 2'-6 in in the 2'-11 1/2 in bottom flange."
+    ],
+    "calculated_in": {"area": 867.0, "yb": 33.10, "st": 16481, "sb": 18813, "ix": 622633}
+   }
+  }
+ },
+ "bulb_tee": {
+  "provenance": "transcribed",
+  "sheet": "BDG 6.60.03 p127 sections; PC-5D PDF p1; template transcribed in the OR15-182 round (BTB 002) and confirmed identical to the BDG standard",
+  "template_in": {
+   "top_width": 49, "top_edge": 5, "top_taper_rise": 3, "top_fillet_rise": 3, "top_fillet_run": 3,
+   "web": 8, "bottom_width": 40, "bottom_bevel": 0.75, "bottom_edge": 5.5,
+   "bottom_taper_rise": 7, "bottom_taper_run": 14, "bottom_fillet_rise": 2, "bottom_fillet_run": 2
+  },
+  "geometry_notes": [
+   "Depth-parametric: only the web height changes with depth (36 through 72 in).",
+   "The outline equals the OR15-182 BTB 002 transcription (bridgebeams.us.state_r3_mi_beams.MiBulbTeeSection, BT36-BT48): A, Ybot and Ixx reproduce the BDG 6.60.03 printed table to 0.1 % at every depth. The three overlapping sizes (BT36/42/48) are kept in both families with different source labels.",
+   "The BDG 61 in top-flange variant (A 932.4 to 1220.4 in2 across depths) is not transcribed this round; its flange detail is on BDG p127 and PC-5D p1.",
+   "BDG 6.65.02A/B print full box-beam property tables (12x36 through 60x48): recorded as the next Michigan implementation target."
+  ],
+  "sections": {
+   "BT36": {
+    "depth": 36,
+    "printed_properties": {"weight_lbs_ft": 915, "area": 878.3, "ybot": 18.2, "ix": 145592},
+    "calculated_in": {"area": 877.9, "yb": 18.18, "ix": 145539}
+   },
+   "BT42": {
+    "depth": 42,
+    "printed_properties": null,
+    "calculated_in": {"area": 925.9, "yb": 21.10, "ix": 217378}
+   },
+   "BT48": {
+    "depth": 48,
+    "printed_properties": {"weight_lbs_ft": 1015, "area": 974.3, "ybot": 24.0, "ix": 305994},
+    "calculated_in": {"area": 973.9, "yb": 24.03, "ix": 305873}
+   },
+   "BT54": {
+    "depth": 54,
+    "printed_properties": {"weight_lbs_ft": 1065, "area": 1022.3, "ybot": 27.0, "ix": 412056},
+    "calculated_in": {"area": 1021.9, "yb": 26.97, "ix": 411891}
+   },
+   "BT60": {
+    "depth": 60,
+    "printed_properties": {"weight_lbs_ft": 1115, "area": 1070.3, "ybot": 29.9, "ix": 536513},
+    "calculated_in": {"area": 1069.9, "yb": 29.91, "ix": 536297}
+   },
+   "BT66": {
+    "depth": 66,
+    "printed_properties": {"weight_lbs_ft": 1165, "area": 1118.3, "ybot": 32.9, "ix": 680229},
+    "calculated_in": {"area": 1117.9, "yb": 32.86, "ix": 679955}
+   },
+   "BT72": {
+    "depth": 72,
+    "printed_properties": {"weight_lbs_ft": 1215, "area": 1166.3, "ybot": 35.8, "ix": 844069},
+    "calculated_in": {"area": 1165.9, "yb": 35.81, "ix": 843730}
+   }
+  }
+ }
+}

@@ -4,14 +4,14 @@
   "researched_jurisdictions": 122,
   "source_records": 233,
   "implemented_countries": 46,
-  "implemented_profiles": 1788,
-  "country_profile_assignments": 1963,
+  "implemented_profiles": 1801,
+  "country_profile_assignments": 1976,
   "provenance_basis": "Distinct profiles by provenance. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.",
   "provenance_counts": {
     "estimate": 235,
     "fitted-reconstruction": 190,
-    "transcribed": 578,
-    "transcribed-with-convention": 785
+    "transcribed": 590,
+    "transcribed-with-convention": 786
   },
   "countries": [
     {
@@ -12059,6 +12059,109 @@
           ]
         },
         {
+          "id": "bridgebeams.us.state_r4_mi_mdot_standard.MiMdot1800Section",
+          "name": "MiMdot1800Section",
+          "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+          "count": 1,
+          "profiles": [
+            "1800"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdot1800Section:1800"
+          ],
+          "note": "",
+          "provenance": {
+            "1800": "transcribed-with-convention"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.state_r4_mi_mdot_standard.MiMdot70ISection",
+          "name": "MiMdot70ISection",
+          "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+          "count": 1,
+          "profiles": [
+            "I70"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdot70ISection:I70"
+          ],
+          "note": "",
+          "provenance": {
+            "I70": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection",
+          "name": "MiMdotBulbTeeSection",
+          "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+          "count": 7,
+          "profiles": [
+            "BT36",
+            "BT42",
+            "BT48",
+            "BT54",
+            "BT60",
+            "BT66",
+            "BT72"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection:BT36",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection:BT42",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection:BT48",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection:BT54",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection:BT60",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection:BT66",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotBulbTeeSection:BT72"
+          ],
+          "note": "",
+          "provenance": {
+            "BT36": "transcribed",
+            "BT42": "transcribed",
+            "BT48": "transcribed",
+            "BT54": "transcribed",
+            "BT60": "transcribed",
+            "BT66": "transcribed",
+            "BT72": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotISection",
+          "name": "MiMdotISection",
+          "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+          "count": 4,
+          "profiles": [
+            "I28",
+            "I36",
+            "I45",
+            "I54"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotISection:I28",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotISection:I36",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotISection:I45",
+            "bridgebeams.us.state_r4_mi_mdot_standard.MiMdotISection:I54"
+          ],
+          "note": "",
+          "provenance": {
+            "I28": "transcribed",
+            "I36": "transcribed",
+            "I45": "transcribed",
+            "I54": "transcribed"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
           "id": "bridgebeams.us.state_r3_mi_beams.MiSideBySideBoxBeamSection",
           "name": "MiSideBySideBoxBeamSection",
           "module": "bridgebeams.us.state_r3_mi_beams",
@@ -14450,7 +14553,7 @@
           ]
         }
       ],
-      "count": 665,
+      "count": 678,
       "source_count": 16,
       "researched": true
     },

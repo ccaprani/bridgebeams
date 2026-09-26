@@ -348,6 +348,11 @@ from bridgebeams.us.state_r3_mi_beams import MiBulbTeeDimensions
 from bridgebeams.us.state_r3_mi_beams import MiBulbTeeSection
 from bridgebeams.us.state_r3_mi_beams import MiSideBySideBoxBeamSection
 from bridgebeams.us.state_r3_mi_beams import MiSpreadBoxBeamSection
+from bridgebeams.us.state_r4_mi_mdot_standard import MiMdot1800Section
+from bridgebeams.us.state_r4_mi_mdot_standard import MiMdot70ISection
+from bridgebeams.us.state_r4_mi_mdot_standard import MiMdotBulbTeeSection
+from bridgebeams.us.state_r4_mi_mdot_standard import MiMdotIBeamDimensions
+from bridgebeams.us.state_r4_mi_mdot_standard import MiMdotISection
 from bridgebeams.ph.dpwh_aashto import PhDpwhAashtoDimensions
 from bridgebeams.ph.dpwh_aashto import PhDpwhAashtoSection
 
@@ -489,4 +494,4 @@ __all__ += ['PekabexMgtDimensions', 'PekabexMgtSection', 'SomacoGirderDimensions
 
 __all__ += ['OrDeckBulbTeeDimensions', 'OrDeckBulbTeeSection', 'OhAashtoIBeamSection', 'OhIBeamDimensions', 'OhWfBeamSection', 'SaoDomingosLongarinaDimensions', 'SaoDomingosLongarinaSection', 'MopLosaNervadaVigaDimensions', 'MopLosaNervadaVigaSection', 'MopVigaPostensadaDimensions', 'MopVigaPostensadaSection']
 
-__all__ += ['MiBoxBeamDimensions', 'MiBulbTeeDimensions', 'MiBulbTeeSection', 'MiSideBySideBoxBeamSection', 'MiSpreadBoxBeamSection', 'PhDpwhAashtoDimensions', 'PhDpwhAashtoSection']
+__all__ += ['MiBoxBeamDimensions', 'MiBulbTeeDimensions', 'MiBulbTeeSection', 'MiSideBySideBoxBeamSection', 'MiSpreadBoxBeamSection', 'MiMdot1800Section', 'MiMdot70ISection', 'MiMdotBulbTeeSection', 'MiMdotIBeamDimensions', 'MiMdotISection', 'PhDpwhAashtoDimensions', 'PhDpwhAashtoSection']

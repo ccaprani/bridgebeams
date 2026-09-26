@@ -11,7 +11,8 @@ width interpretations and blocker claims in it were wrong.
   workflow. Do not merge or push to main. Keep changes on this branch or a
   new jurisdiction branch, with descriptive commits.
 - Python: `/home/ccaprani/anaconda3/envs/pybridge/bin/python`.
-- Full test suite (consolidated 23 September 2026; data-driven, same checks as the former 3369): **185 passed**,
+- Full test suite (consolidated 23 September 2026; data-driven, same checks as the former 3369): **199 passed**
+  (185 after round 3, +1 per new family test file),
   14 existing Matplotlib/Pyparsing deprecation warnings. Command:
   `timeout 180 /home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`.
 - Wheel checked outside the checkout: **all family JSON tables included**;
@@ -41,6 +42,39 @@ profiles, 476 country-profile assignments, 122 researched jurisdictions and
 233 source records. Brazil, Pakistan, the Philippines and Argentina remain
 researched countries with zero implemented profiles; Korea has three existing
 implemented profiles but its new PSC-I records are not yet implemented.
+
+## Round 4: MDOT standard beams, 26 September 2026
+
+The round-3 "MI 1800 still a lead" is closed. The mi-wayback folder held
+no beam geometry, but its Index to Bridge Detail Sheets named the PC
+special-detail sheets. With the owner VPN'd to US egress, the current
+revisions (plan dates 12-22-2025: PC-1Q, PC-2L, PC-4J, PC-5D) and the
+BDG English complete set (232 pp) were downloaded live from
+mdotjboss.state.mi.us (Cloudflare geo-blocks other IPs; wayback
+recoveries of the 2022 revisions and the recovery story are in
+sources/expansion/round3/mi-wayback/redownloaded/ with a README;
+mirror in ~/Downloads/bridgebeams-manual/us/mi/).
+
+Implemented `us/state_r4_mi_mdot_standard.py` (13 profiles, 1801 total,
+199 tests):
+- MiMdotISection PC-1Q Types I-IV: BDG 6.60.01 printed properties
+  reproduced within 1 %; Type I's unprinted 3¼ in top taper solved from
+  the printed properties (documented in the JSON).
+- MiMdot70ISection PC-2L: chain closes exactly; no printed properties
+  exist for this beam (computed A 814.4 in²).
+- MiMdot1800Section PC-4J `transcribed-with-convention`: printed R7⅞/R2
+  fillets modelled; A −0.9 % vs BDG 6.60.02. The 4'-6½ in chain member
+  is required for exact closure (glyph ambiguity ⅞ vs ½ documented).
+- MiMdotBulbTeeSection PC-5D/BDG 6.60.03 49 in-flange series 36-72 in:
+  polygon-identical to the OR15-182 BTB 002 transcription (tested) and
+  0.1 % against the BDG printed table. BT36/42/48 exist in both r3 and
+  r4 families (same geometry, different source) by design.
+
+Open Michigan leads (recorded in docs/research/round4-mi-mdot-standards-2026-09.md):
+BDG 6.65.02 box-beam property tables (15 printed sizes; note OR15-182
+17x36 A 434.25 vs BDG 427 - transcribe the standard sections, do not
+assume OR15-182 details), the 61 in top-flange bulb tee, and the
+box-beam DGN bundle for exact shear-key CAD geometry.
 
 ## Round 3 manual downloads, 24–25 September 2026
 
@@ -87,7 +121,7 @@ Owner review queue (round 3, 15 cards: source conflicts, scan readings, estimate
 gallery, counting policy, manual downloads) is in the local `dims_review.html`
 (build with `--with-review`); images and generator in `sources/review-2026-09-23/`.
 
-Totals now: **1788 distinct profiles, 1963 country-profile assignments, 46
+Totals now: **1801 distinct profiles, 1976 country-profile assignments, 46
 countries** (after round 3 below). Every profile has `provenance`: 543 transcribed, 760
 with-convention, 190 fitted, 235 estimate. The 301 pre-September profiles
 were backfilled (`tests/test_provenance_legacy.py`). The coverage map shows the
