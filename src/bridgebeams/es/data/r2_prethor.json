@@ -1,0 +1,1692 @@
+{
+ "family": "Prethor (Grupo Puentes) precast prestressed bridge beams",
+ "title_original": "Dossier Prethor 2020 - Productos: Vigas \"doble T\", Vigas Artesa, Vigas U, Vigas Cajón, Vigas Asimétricas Adosadas",
+ "producer": "Prethor / Grupo Puentes (Spain)",
+ "source_url": "https://www.grupopuentes.com/wp-content/uploads/2021/02/DOSSIER-PRETHOR-2020.pdf",
+ "source_local_file": "sources/expansion/round2/es/prethor_dossier_2020.pdf",
+ "source_sha256": "f83e41297ceed4fd9a5fbe25874e1d7123a6538984fbb935bdc955819fd8aa6c",
+ "source_status": "producer catalogue (Dossier Prethor 2020)",
+ "units": "cm for H, a, widths and outline vertices (as printed); P in t/m (printed 'P(Tn/ml)')",
+ "density_t_m3": 2.5,
+ "density_note": "Prethor does not state a density; 2.5 t/m3 assumed. The VI and VA silhouettes, scaled with no fitting, reproduce every P within 0.7 % at 2.5 t/m3, which supports the assumption.",
+ "published_note": "Nota: Los pesos son teóricos para las secciones indicadas. No incluyen recrecidos, peraltados, macizados ni repercusión de p.p. de cabezas.",
+ "method": "Each family silhouette is an embedded raster image (PyMuPDF get_drawings finds only table cells, no vector outlines). Images were extracted at native resolution (0.46-1.03 cm/px), the grey-filled section masked, and scaled isotropically from the printed dimension lines; the drawn depth then matches one table size within about 1 % (the drawn size is recorded per family). Thicknesses were read from row/column runs with one stroke width (about 1 px) removed, then built into anchored parametric outlines: 'b' vertices fixed from the soffit, 't' vertices fixed from the top, 'ts' vertices fixed from the top and riding on the 1:4 outer web. Intersection-over-union of each outline against its traced mask at the drawn size is 0.95-0.985.",
+ "geometry_notes": [
+  "Printed per size: H and top width a (troughs) or top/bottom widths (VI); printed per family: bottom width (66, 80, 172, 198, 263, 330, 396, 300 cm). These are transcribed; everything else is scaled from the silhouettes (estimate).",
+  "Outer webs of VA, VU, VC and the right web of VAA are 1:4 (a = b + H/2, or b + H/4 for VAA); this reproduces every printed a exactly except VUG (+1 cm printed, see family note).",
+  "Only one silhouette per family is drawn (at the depth noted per family); other depths keep the flange/top/bottom details fixed and change web length only. The P tables are linear in H with a slope equal to the scaled web thickness, which supports this.",
+  "Fillets drawn at flange/web junctions of VI and VA are modelled as the scaled sharp or chamfered corners; VAA-B's large bottom fillets are circular (R scaled).",
+  "Vigas U and Vigas Cajón are drawn and modelled as open-topped troughs (no top slab), as are the VAA beams; the in-situ deck closes them. No interior ring is therefore present.",
+  "VAA x origin: middle of the 3.00 m soffit; vertical outer web on the left (x = -1500 mm), 1:4 outer web on the right. Mirror for the opposite hand.",
+  "The model's top width is exactly b + H/2 (b + H/4 for VAA); the printed a is that value rounded to 1 cm (e.g. VCP 80/220 H=95: 377.5 printed 3.78).",
+  "Page 64 repeats page 63 (same image objects and table); page 63 is cited."
+ ],
+ "fit": {
+  "parameter": "bottom-slab thickness tb (cm) at the centreline, one value per family, least squares on relative P residual (pinned outliers excluded)",
+  "families": {
+   "VUP": {
+    "scaled_tb_cm": 16.5,
+    "fitted_tb_cm": 17.4
+   },
+   "VUG": {
+    "scaled_tb_cm": 16.5,
+    "fitted_tb_cm": 17.2
+   },
+   "VCP80/220": {
+    "scaled_tb_cm": 18.0,
+    "fitted_tb_cm": 19.0
+   },
+   "VCP100/200": {
+    "scaled_tb_cm": 20.5,
+    "fitted_tb_cm": 21.9
+   },
+   "VAA-B": {
+    "scaled_tb_cm": 21.0,
+    "fitted_tb_cm": 22.1
+   }
+  },
+  "rule": "Fitted only where the scaled outline's mean mass residual exceeded 1.5 %; every fitted change is <= 1.4 cm (about 1.5 px on the drawing)."
+ },
+ "families": {
+  "VI": {
+   "title_original": "Vigas \"doble T\" VI 60-140",
+   "pdf_page": 59,
+   "printed_page": 57,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 621,
+    "bbox_pt": [
+     9,
+     111,
+     92,
+     248
+    ]
+   },
+   "drawn_depth_cm": 140,
+   "bottom_width_cm": 66,
+   "symmetric": true,
+   "web_slope": 0,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     33,
+     0,
+     "b"
+    ],
+    [
+     33,
+     11,
+     "b"
+    ],
+    [
+     13,
+     17,
+     "b"
+    ],
+    [
+     8,
+     22,
+     "b"
+    ],
+    [
+     8,
+     -16,
+     "t"
+    ],
+    [
+     13,
+     -11,
+     "t"
+    ],
+    [
+     33,
+     -5,
+     "t"
+    ],
+    [
+     33,
+     0,
+     "t"
+    ],
+    [
+     0,
+     0,
+     "t"
+    ]
+   ],
+   "notes": "Drawn at H=140 (scaled depth 138.4 from the 66 cm widths). Web 16 cm (P-table slope gives 16.0). Flange tips 11 cm (bottom) / 5 cm (top), splays to 13 cm from the axis, 5 cm chamfers into the web. Flanges constant, web length varies with H (P linear in H).",
+   "provenance": "estimate"
+  },
+  "VI-I": {
+   "title_original": "Vigas \"doble T\" VI 145-245 serie I",
+   "pdf_page": 59,
+   "printed_page": 57,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 622,
+    "bbox_pt": [
+     233,
+     111,
+     330,
+     279
+    ]
+   },
+   "drawn_depth_cm": 245,
+   "bottom_width_cm": 80,
+   "symmetric": true,
+   "web_slope": 0,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     40,
+     0,
+     "b"
+    ],
+    [
+     40,
+     19,
+     "b"
+    ],
+    [
+     17.5,
+     26.5,
+     "b"
+    ],
+    [
+     9.5,
+     34.5,
+     "b"
+    ],
+    [
+     9.5,
+     -22,
+     "t"
+    ],
+    [
+     17.5,
+     -16,
+     "t"
+    ],
+    [
+     55,
+     -10,
+     "t"
+    ],
+    [
+     55,
+     0,
+     "t"
+    ],
+    [
+     0,
+     0,
+     "t"
+    ]
+   ],
+   "notes": "Drawn at H=245 (scaled 244.4). Web 19 cm (P slope 18.8). Bottom flange 80 x 19 edge with splay/chamfer to web at 34.5 cm; top flange 110, 10 cm tip, underside to 16 cm at x=17.5, 6 cm chamfer.",
+   "provenance": "estimate"
+  },
+  "VI-II": {
+   "title_original": "Vigas \"doble T\" VI 150-250 serie II",
+   "pdf_page": 59,
+   "printed_page": 57,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 623,
+    "bbox_pt": [
+     461,
+     109,
+     588,
+     280
+    ]
+   },
+   "drawn_depth_cm": 250,
+   "bottom_width_cm": 80,
+   "symmetric": true,
+   "web_slope": 0,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     40,
+     0,
+     "b"
+    ],
+    [
+     40,
+     19,
+     "b"
+    ],
+    [
+     17.5,
+     27,
+     "b"
+    ],
+    [
+     9.25,
+     35,
+     "b"
+    ],
+    [
+     9.25,
+     -27,
+     "t"
+    ],
+    [
+     16,
+     -22,
+     "t"
+    ],
+    [
+     85,
+     -10,
+     "t"
+    ],
+    [
+     85,
+     0,
+     "t"
+    ],
+    [
+     0,
+     0,
+     "t"
+    ]
+   ],
+   "notes": "Drawn at H=250 (scaled 250.3). Web 18.5 cm (P slope 18.5). Bottom flange as serie I; top flange 170, 10 cm tip thickening to 22 cm at x=16, chamfer to web at 27 cm.",
+   "provenance": "estimate"
+  },
+  "VA": {
+   "title_original": "Vigas Artesa VA-100 / VA-260",
+   "pdf_page": 61,
+   "printed_page": 59,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 632,
+    "bbox_pt": [
+     26,
+     106,
+     351,
+     350
+    ]
+   },
+   "drawn_depth_cm": 220,
+   "bottom_width_cm": 172,
+   "symmetric": true,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     80,
+     0,
+     "b"
+    ],
+    [
+     87.25,
+     5,
+     "b"
+    ],
+    [
+     78.5,
+     -30,
+     "ts"
+    ],
+    [
+     118.5,
+     -16,
+     "ts"
+    ],
+    [
+     120,
+     0,
+     "ts"
+    ],
+    [
+     69.0,
+     0,
+     "ts"
+    ],
+    [
+     78.0,
+     36,
+     "b"
+    ],
+    [
+     70,
+     28.5,
+     "b"
+    ],
+    [
+     0,
+     21.0,
+     "b"
+    ]
+   ],
+   "notes": "Drawn at about H=220 (a=347/350, H=218.6/220 at the 172 scale). Outer webs 1:4 (a = 1.72 + H/2 + 2 x 0.34 m reproduces every printed a exactly). Webs 17 cm horizontal (P slope 16.9), top flanges overhang 34 cm beyond the web line, 16 cm tip, underside meets the web 30 cm below the top. Bottom slab 21 cm at the centre rising 1:10 towards the webs, 6 x 5 cm soffit chamfers, haunch to the web at y=36 cm.",
+   "provenance": "estimate"
+  },
+  "VUP": {
+   "title_original": "Vigas U VUP 100-200",
+   "pdf_page": 63,
+   "printed_page": 61,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 640,
+    "bbox_pt": [
+     6,
+     115,
+     186,
+     258
+    ]
+   },
+   "drawn_depth_cm": 200,
+   "bottom_width_cm": 198,
+   "symmetric": true,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     94,
+     0,
+     "b"
+    ],
+    [
+     100.25,
+     5,
+     "b"
+    ],
+    [
+     99,
+     0,
+     "ts"
+    ],
+    [
+     67.0,
+     0,
+     "ts"
+    ],
+    [
+     67.0,
+     -60.0,
+     "ts"
+    ],
+    [
+     89.25,
+     29,
+     "b"
+    ],
+    [
+     82,
+     19.4,
+     "b"
+    ],
+    [
+     70,
+     17.4,
+     "b"
+    ],
+    [
+     0,
+     17.4,
+     "b"
+    ]
+   ],
+   "notes": "Drawn at H=200. Outer webs 1:4 (a = b + H/2 reproduces every printed a). Webs 17 cm horizontal; top 32 cm wide solid block (vertical inner face) meeting the web 60 cm below the top; 5 cm soffit chamfers; haunch to web at 29 cm.",
+   "provenance": "fitted-reconstruction"
+  },
+  "VUG": {
+   "title_original": "Vigas U VUG 100-200",
+   "pdf_page": 63,
+   "printed_page": 61,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 641,
+    "bbox_pt": [
+     344,
+     115,
+     551,
+     258
+    ]
+   },
+   "drawn_depth_cm": 200,
+   "bottom_width_cm": 263,
+   "symmetric": true,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     126.5,
+     0,
+     "b"
+    ],
+    [
+     132.75,
+     5,
+     "b"
+    ],
+    [
+     131.5,
+     0,
+     "ts"
+    ],
+    [
+     99.5,
+     0,
+     "ts"
+    ],
+    [
+     99.5,
+     -60.0,
+     "ts"
+    ],
+    [
+     121.75,
+     29,
+     "b"
+    ],
+    [
+     114.5,
+     19.2,
+     "b"
+    ],
+    [
+     102.5,
+     17.2,
+     "b"
+    ],
+    [
+     0,
+     17.2,
+     "b"
+    ]
+   ],
+   "notes": "Same template as VUP with the 2.63 m soffit. a = 2.63 + H/2 gives 1 cm less than every printed a (3.14 ... 3.64); the 1:4 slope and printed bottom width are kept.",
+   "provenance": "fitted-reconstruction"
+  },
+  "VCP80/220": {
+   "title_original": "Vigas Cajón VCP 80/220",
+   "pdf_page": 66,
+   "printed_page": 64,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 651,
+    "bbox_pt": [
+     4,
+     108,
+     197,
+     248
+    ]
+   },
+   "drawn_depth_cm": 220,
+   "bottom_width_cm": 330,
+   "symmetric": true,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     165,
+     0,
+     "b"
+    ],
+    [
+     165,
+     0,
+     "ts"
+    ],
+    [
+     117,
+     0,
+     "ts"
+    ],
+    [
+     117,
+     -16,
+     "ts"
+    ],
+    [
+     139.75,
+     -31,
+     "ts"
+    ],
+    [
+     155.5,
+     32,
+     "b"
+    ],
+    [
+     136.5,
+     19.0,
+     "b"
+    ],
+    [
+     0,
+     19.0,
+     "b"
+    ]
+   ],
+   "notes": "Drawn at H=220 (scaled 218.5). Outer webs 1:4, square soffit corners, 48 cm top flat with a 16 cm deep inward lip whose underside meets the web 31 cm below the top; webs 17.5 cm horizontal; haunch to web at 32 cm.",
+   "provenance": "fitted-reconstruction"
+  },
+  "VCP100/200": {
+   "title_original": "Vigas Cajón VCP 100/200",
+   "pdf_page": 66,
+   "printed_page": 64,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 652,
+    "bbox_pt": [
+     357,
+     104,
+     549,
+     244
+    ]
+   },
+   "drawn_depth_cm": 200,
+   "bottom_width_cm": 330,
+   "symmetric": true,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     160,
+     0,
+     "b"
+    ],
+    [
+     166.25,
+     5,
+     "b"
+    ],
+    [
+     165,
+     0,
+     "ts"
+    ],
+    [
+     133,
+     0,
+     "ts"
+    ],
+    [
+     133,
+     -56.0,
+     "ts"
+    ],
+    [
+     156.0,
+     36,
+     "b"
+    ],
+    [
+     135,
+     21.9,
+     "b"
+    ],
+    [
+     0,
+     21.9,
+     "b"
+    ]
+   ],
+   "notes": "Drawn at H=200. As VUP template: 32 cm solid top block, webs 18 cm horizontal, 5 cm soffit chamfers, haunch to web at 36 cm.",
+   "provenance": "fitted-reconstruction"
+  },
+  "VCG80/220": {
+   "title_original": "Vigas Cajón VCG 80/220",
+   "pdf_page": 67,
+   "printed_page": 65,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 654,
+    "bbox_pt": [
+     2,
+     105,
+     201,
+     248
+    ]
+   },
+   "drawn_depth_cm": 240,
+   "bottom_width_cm": 396,
+   "symmetric": true,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     198,
+     0,
+     "b"
+    ],
+    [
+     198,
+     0,
+     "ts"
+    ],
+    [
+     150,
+     0,
+     "ts"
+    ],
+    [
+     150,
+     -16,
+     "ts"
+    ],
+    [
+     172.75,
+     -31,
+     "ts"
+    ],
+    [
+     188.5,
+     32,
+     "b"
+    ],
+    [
+     169.5,
+     18.5,
+     "b"
+    ],
+    [
+     0,
+     18.5,
+     "b"
+    ]
+   ],
+   "notes": "Drawn at H=240 (scaled 238.6) - the P table runs to 240 although titled 80/220. Same lipped template as VCP 80/220 with the 3.96 m soffit; bottom slab 18.5 cm (scaled).",
+   "provenance": "estimate"
+  },
+  "VCG100/200": {
+   "title_original": "Vigas Cajón VCG 100/200",
+   "pdf_page": 67,
+   "printed_page": 65,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 655,
+    "bbox_pt": [
+     352,
+     99,
+     551,
+     243
+    ]
+   },
+   "drawn_depth_cm": 200,
+   "bottom_width_cm": 396,
+   "symmetric": true,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     0,
+     0,
+     "b"
+    ],
+    [
+     193,
+     0,
+     "b"
+    ],
+    [
+     199.25,
+     5,
+     "b"
+    ],
+    [
+     198,
+     0,
+     "ts"
+    ],
+    [
+     166,
+     0,
+     "ts"
+    ],
+    [
+     166,
+     -56.0,
+     "ts"
+    ],
+    [
+     189.0,
+     36,
+     "b"
+    ],
+    [
+     168,
+     22.0,
+     "b"
+    ],
+    [
+     0,
+     22.0,
+     "b"
+    ]
+   ],
+   "notes": "Drawn at H=200. Same thick-top template as VCP 100/200 with the 3.96 m soffit; bottom slab 22 cm (scaled).",
+   "provenance": "estimate"
+  },
+  "VAA-A": {
+   "title_original": "Vigas Asimétricas Adosadas VAA 180/260 (left drawing/table: lipped tops)",
+   "pdf_page": 70,
+   "printed_page": 68,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 667,
+    "bbox_pt": [
+     0,
+     118,
+     198,
+     268
+    ]
+   },
+   "drawn_depth_cm": 240,
+   "bottom_width_cm": 300,
+   "symmetric": false,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     -150,
+     0,
+     "b"
+    ],
+    [
+     150,
+     0,
+     "b"
+    ],
+    [
+     150,
+     0,
+     "ts"
+    ],
+    [
+     90,
+     0,
+     "ts"
+    ],
+    [
+     90,
+     -35,
+     "ts"
+    ],
+    [
+     112.25,
+     -53,
+     "ts"
+    ],
+    [
+     138.5,
+     52,
+     "b"
+    ],
+    [
+     98.5,
+     21.0,
+     "b"
+    ],
+    [
+     -114.5,
+     21.0,
+     "b"
+    ],
+    [
+     -131.5,
+     37,
+     "b"
+    ],
+    [
+     -131.5,
+     -47,
+     "t"
+    ],
+    [
+     -114,
+     -26,
+     "t"
+    ],
+    [
+     -114,
+     0,
+     "t"
+    ],
+    [
+     -150,
+     0,
+     "t"
+    ]
+   ],
+   "notes": "Drawn at H=240. Left outer web vertical, right outer web 1:4 (a = 3.00 + H/4 reproduces every printed a). Left web 18.5 cm, left top block 36 cm with chamfer to web 47 cm below top; right web 24.5 cm horizontal, right top flat 60 cm with 35 cm deep lip meeting the web 53 cm below the top; bottom slab 21 cm; large right haunch (to y=52 cm).",
+   "provenance": "estimate"
+  },
+  "VAA-B": {
+   "title_original": "Vigas Asimétricas Adosadas VAA 180/260 (right drawing/table: rounded haunches)",
+   "pdf_page": 70,
+   "printed_page": 68,
+   "printed_page_note": "odd pages carry printed numbers (pdf - 2); even pages are unnumbered, value inferred",
+   "image": {
+    "xref": 668,
+    "bbox_pt": [
+     354,
+     116,
+     553,
+     267
+    ]
+   },
+   "drawn_depth_cm": 240,
+   "bottom_width_cm": 300,
+   "symmetric": false,
+   "web_slope": 0.25,
+   "outline_cm": [
+    [
+     -150,
+     0,
+     "b"
+    ],
+    [
+     150,
+     0,
+     "b"
+    ],
+    [
+     150,
+     0,
+     "ts"
+    ],
+    [
+     110,
+     0,
+     "ts"
+    ],
+    [
+     110,
+     -86.0,
+     "ts"
+    ],
+    [
+     137.025,
+     22.1,
+     "b",
+     35.0
+    ],
+    [
+     -131.5,
+     22.1,
+     "b",
+     38.0
+    ],
+    [
+     -131.5,
+     -58,
+     "t"
+    ],
+    [
+     -118.5,
+     0,
+     "t"
+    ],
+    [
+     -150,
+     0,
+     "t"
+    ]
+   ],
+   "notes": "Drawn at H=240. Left web 18.5 cm with 31.5 cm top tapering to the web 58 cm below the top; right web 18.5 cm horizontal with a 40 cm top block (vertical inner face) meeting the web 86 cm below the top; circular fillets R 38 cm (left) / 35 cm (right) between webs and bottom slab (scaled). Caveat: the P table rises 1.05 t/m per m of depth (web sum ~42 cm) but the drawn webs sum to ~37 cm, so residuals drift from +1.8 % (H=180) to -0.9 % (H=260) after the slab fit.",
+   "provenance": "fitted-reconstruction"
+  }
+ },
+ "sizes": {
+  "VI-60": {
+   "family": "VI",
+   "H_cm": 60,
+   "P_t_per_m": 0.54,
+   "top_width_cm": 66,
+   "provenance": "estimate",
+   "area_m2_model": 0.217,
+   "residual_pct_vs_P": 0.46
+  },
+  "VI-80": {
+   "family": "VI",
+   "H_cm": 80,
+   "P_t_per_m": 0.62,
+   "top_width_cm": 66,
+   "provenance": "estimate",
+   "area_m2_model": 0.249,
+   "residual_pct_vs_P": 0.4
+  },
+  "VI-100": {
+   "family": "VI",
+   "H_cm": 100,
+   "P_t_per_m": 0.7,
+   "top_width_cm": 66,
+   "provenance": "estimate",
+   "area_m2_model": 0.281,
+   "residual_pct_vs_P": 0.36
+  },
+  "VI-120": {
+   "family": "VI",
+   "H_cm": 120,
+   "P_t_per_m": 0.78,
+   "top_width_cm": 66,
+   "provenance": "estimate",
+   "area_m2_model": 0.313,
+   "residual_pct_vs_P": 0.32
+  },
+  "VI-140": {
+   "family": "VI",
+   "H_cm": 140,
+   "P_t_per_m": 0.86,
+   "top_width_cm": 66,
+   "provenance": "estimate",
+   "area_m2_model": 0.345,
+   "residual_pct_vs_P": 0.29
+  },
+  "VI-I-145": {
+   "family": "VI-I",
+   "H_cm": 145,
+   "P_t_per_m": 1.38,
+   "top_width_cm": 110,
+   "provenance": "estimate",
+   "area_m2_model": 0.55458,
+   "residual_pct_vs_P": 0.47
+  },
+  "VI-I-165": {
+   "family": "VI-I",
+   "H_cm": 165,
+   "P_t_per_m": 1.48,
+   "top_width_cm": 110,
+   "provenance": "estimate",
+   "area_m2_model": 0.59257,
+   "residual_pct_vs_P": 0.1
+  },
+  "VI-I-185": {
+   "family": "VI-I",
+   "H_cm": 185,
+   "P_t_per_m": 1.57,
+   "top_width_cm": 110,
+   "provenance": "estimate",
+   "area_m2_model": 0.63057,
+   "residual_pct_vs_P": 0.41
+  },
+  "VI-I-205": {
+   "family": "VI-I",
+   "H_cm": 205,
+   "P_t_per_m": 1.66,
+   "top_width_cm": 110,
+   "provenance": "estimate",
+   "area_m2_model": 0.66858,
+   "residual_pct_vs_P": 0.69
+  },
+  "VI-I-225": {
+   "family": "VI-I",
+   "H_cm": 225,
+   "P_t_per_m": 1.76,
+   "top_width_cm": 110,
+   "provenance": "estimate",
+   "area_m2_model": 0.70657,
+   "residual_pct_vs_P": 0.37
+  },
+  "VI-I-245": {
+   "family": "VI-I",
+   "H_cm": 245,
+   "P_t_per_m": 1.85,
+   "top_width_cm": 110,
+   "provenance": "estimate",
+   "area_m2_model": 0.74457,
+   "residual_pct_vs_P": 0.62
+  },
+  "VI-II-150": {
+   "family": "VI-II",
+   "H_cm": 150,
+   "P_t_per_m": 1.71,
+   "top_width_cm": 170,
+   "provenance": "estimate",
+   "area_m2_model": 0.68602,
+   "residual_pct_vs_P": 0.3
+  },
+  "VI-II-170": {
+   "family": "VI-II",
+   "H_cm": 170,
+   "P_t_per_m": 1.8,
+   "top_width_cm": 170,
+   "provenance": "estimate",
+   "area_m2_model": 0.72303,
+   "residual_pct_vs_P": 0.42
+  },
+  "VI-II-190": {
+   "family": "VI-II",
+   "H_cm": 190,
+   "P_t_per_m": 1.89,
+   "top_width_cm": 170,
+   "provenance": "estimate",
+   "area_m2_model": 0.76002,
+   "residual_pct_vs_P": 0.53
+  },
+  "VI-II-210": {
+   "family": "VI-II",
+   "H_cm": 210,
+   "P_t_per_m": 1.99,
+   "top_width_cm": 170,
+   "provenance": "estimate",
+   "area_m2_model": 0.79702,
+   "residual_pct_vs_P": 0.13
+  },
+  "VI-II-230": {
+   "family": "VI-II",
+   "H_cm": 230,
+   "P_t_per_m": 2.08,
+   "top_width_cm": 170,
+   "provenance": "estimate",
+   "area_m2_model": 0.83403,
+   "residual_pct_vs_P": 0.24
+  },
+  "VI-II-250": {
+   "family": "VI-II",
+   "H_cm": 250,
+   "P_t_per_m": 2.17,
+   "top_width_cm": 170,
+   "provenance": "estimate",
+   "area_m2_model": 0.87103,
+   "residual_pct_vs_P": 0.35
+  },
+  "VA-100": {
+   "family": "VA",
+   "H_cm": 100,
+   "P_t_per_m": 2.16,
+   "top_width_cm": 290,
+   "provenance": "estimate",
+   "area_m2_model": 0.8666,
+   "residual_pct_vs_P": 0.3,
+   "a_cm": 290
+  },
+  "VA-120": {
+   "family": "VA",
+   "H_cm": 120,
+   "P_t_per_m": 2.33,
+   "top_width_cm": 300,
+   "provenance": "estimate",
+   "area_m2_model": 0.9346,
+   "residual_pct_vs_P": 0.28,
+   "a_cm": 300
+  },
+  "VA-140": {
+   "family": "VA",
+   "H_cm": 140,
+   "P_t_per_m": 2.49,
+   "top_width_cm": 310,
+   "provenance": "estimate",
+   "area_m2_model": 1.0026,
+   "residual_pct_vs_P": 0.66,
+   "a_cm": 310
+  },
+  "VA-160": {
+   "family": "VA",
+   "H_cm": 160,
+   "P_t_per_m": 2.66,
+   "top_width_cm": 320,
+   "provenance": "estimate",
+   "area_m2_model": 1.0706,
+   "residual_pct_vs_P": 0.62,
+   "a_cm": 320
+  },
+  "VA-180": {
+   "family": "VA",
+   "H_cm": 180,
+   "P_t_per_m": 2.83,
+   "top_width_cm": 330,
+   "provenance": "estimate",
+   "area_m2_model": 1.1386,
+   "residual_pct_vs_P": 0.58,
+   "a_cm": 330
+  },
+  "VA-200": {
+   "family": "VA",
+   "H_cm": 200,
+   "P_t_per_m": 3.0,
+   "top_width_cm": 340,
+   "provenance": "estimate",
+   "area_m2_model": 1.2066,
+   "residual_pct_vs_P": 0.55,
+   "a_cm": 340
+  },
+  "VA-220": {
+   "family": "VA",
+   "H_cm": 220,
+   "P_t_per_m": 3.17,
+   "top_width_cm": 350,
+   "provenance": "estimate",
+   "area_m2_model": 1.2746,
+   "residual_pct_vs_P": 0.52,
+   "a_cm": 350
+  },
+  "VA-240": {
+   "family": "VA",
+   "H_cm": 240,
+   "P_t_per_m": 3.34,
+   "top_width_cm": 360,
+   "provenance": "estimate",
+   "area_m2_model": 1.3426,
+   "residual_pct_vs_P": 0.49,
+   "a_cm": 360
+  },
+  "VA-260": {
+   "family": "VA",
+   "H_cm": 260,
+   "P_t_per_m": 3.51,
+   "top_width_cm": 370,
+   "provenance": "estimate",
+   "area_m2_model": 1.4106,
+   "residual_pct_vs_P": 0.47,
+   "a_cm": 370
+  },
+  "VUP-100": {
+   "family": "VUP",
+   "H_cm": 100,
+   "P_t_per_m": 1.83,
+   "top_width_cm": 248,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 0.72933,
+   "residual_pct_vs_P": -0.37,
+   "a_cm": 248
+  },
+  "VUP-120": {
+   "family": "VUP",
+   "H_cm": 120,
+   "P_t_per_m": 1.9,
+   "top_width_cm": 258,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 0.79732,
+   "residual_pct_vs_P": 4.91,
+   "a_cm": 258,
+   "pinned": "P=1.90 breaks the table's +0.17 t/m per 20 cm pattern (1.83, 1.90, 2.16, 2.33 ...); probably a misprint for about 2.00. Excluded from the fit; residual pinned."
+  },
+  "VUP-140": {
+   "family": "VUP",
+   "H_cm": 140,
+   "P_t_per_m": 2.16,
+   "top_width_cm": 268,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 0.86533,
+   "residual_pct_vs_P": 0.15,
+   "a_cm": 268
+  },
+  "VUP-160": {
+   "family": "VUP",
+   "H_cm": 160,
+   "P_t_per_m": 2.33,
+   "top_width_cm": 278,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 0.93332,
+   "residual_pct_vs_P": 0.14,
+   "a_cm": 278
+  },
+  "VUP-180": {
+   "family": "VUP",
+   "H_cm": 180,
+   "P_t_per_m": 2.5,
+   "top_width_cm": 288,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.00133,
+   "residual_pct_vs_P": 0.13,
+   "a_cm": 288
+  },
+  "VUP-200": {
+   "family": "VUP",
+   "H_cm": 200,
+   "P_t_per_m": 2.68,
+   "top_width_cm": 298,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.06933,
+   "residual_pct_vs_P": -0.25,
+   "a_cm": 298
+  },
+  "VUG-100": {
+   "family": "VUG",
+   "H_cm": 100,
+   "P_t_per_m": 2.09,
+   "top_width_cm": 314,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 0.8377,
+   "residual_pct_vs_P": 0.2,
+   "a_cm": 314
+  },
+  "VUG-120": {
+   "family": "VUG",
+   "H_cm": 120,
+   "P_t_per_m": 2.26,
+   "top_width_cm": 324,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 0.9057,
+   "residual_pct_vs_P": 0.19,
+   "a_cm": 324
+  },
+  "VUG-140": {
+   "family": "VUG",
+   "H_cm": 140,
+   "P_t_per_m": 2.44,
+   "top_width_cm": 334,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 0.9737,
+   "residual_pct_vs_P": -0.24,
+   "a_cm": 334
+  },
+  "VUG-160": {
+   "family": "VUG",
+   "H_cm": 160,
+   "P_t_per_m": 2.61,
+   "top_width_cm": 344,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.0417,
+   "residual_pct_vs_P": -0.22,
+   "a_cm": 344
+  },
+  "VUG-180": {
+   "family": "VUG",
+   "H_cm": 180,
+   "P_t_per_m": 2.78,
+   "top_width_cm": 354,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.1097,
+   "residual_pct_vs_P": -0.21,
+   "a_cm": 354
+  },
+  "VUG-200": {
+   "family": "VUG",
+   "H_cm": 200,
+   "P_t_per_m": 2.95,
+   "top_width_cm": 364,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.1777,
+   "residual_pct_vs_P": -0.19,
+   "a_cm": 364
+  },
+  "VCP80/220-80": {
+   "family": "VCP80/220",
+   "H_cm": 80,
+   "P_t_per_m": 2.49,
+   "top_width_cm": 370,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.00095,
+   "residual_pct_vs_P": 0.5,
+   "a_cm": 370
+  },
+  "VCP80/220-95": {
+   "family": "VCP80/220",
+   "H_cm": 95,
+   "P_t_per_m": 2.88,
+   "top_width_cm": 378,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.05345,
+   "residual_pct_vs_P": -8.55,
+   "a_cm": 378,
+   "pinned": "P=2.88 exceeds P at H=110 (2.75); non-monotonic, probably a misprint for about 2.62. Excluded from the fit; residual pinned."
+  },
+  "VCP80/220-110": {
+   "family": "VCP80/220",
+   "H_cm": 110,
+   "P_t_per_m": 2.75,
+   "top_width_cm": 385,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.10595,
+   "residual_pct_vs_P": 0.54,
+   "a_cm": 385
+  },
+  "VCP80/220-135": {
+   "family": "VCP80/220",
+   "H_cm": 135,
+   "P_t_per_m": 2.98,
+   "top_width_cm": 398,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.19345,
+   "residual_pct_vs_P": 0.12,
+   "a_cm": 398
+  },
+  "VCP80/220-160": {
+   "family": "VCP80/220",
+   "H_cm": 160,
+   "P_t_per_m": 3.2,
+   "top_width_cm": 410,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.28095,
+   "residual_pct_vs_P": 0.07,
+   "a_cm": 410
+  },
+  "VCP80/220-185": {
+   "family": "VCP80/220",
+   "H_cm": 185,
+   "P_t_per_m": 3.42,
+   "top_width_cm": 423,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.36845,
+   "residual_pct_vs_P": 0.03,
+   "a_cm": 423
+  },
+  "VCP80/220-200": {
+   "family": "VCP80/220",
+   "H_cm": 200,
+   "P_t_per_m": 3.56,
+   "top_width_cm": 430,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.42095,
+   "residual_pct_vs_P": -0.21,
+   "a_cm": 430
+  },
+  "VCP80/220-220": {
+   "family": "VCP80/220",
+   "H_cm": 220,
+   "P_t_per_m": 3.8,
+   "top_width_cm": 440,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.49095,
+   "residual_pct_vs_P": -1.91,
+   "a_cm": 440
+  },
+  "VCP100/200-100": {
+   "family": "VCP100/200",
+   "H_cm": 100,
+   "P_t_per_m": 2.78,
+   "top_width_cm": 380,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.11639,
+   "residual_pct_vs_P": 0.39,
+   "a_cm": 380
+  },
+  "VCP100/200-120": {
+   "family": "VCP100/200",
+   "H_cm": 120,
+   "P_t_per_m": 2.96,
+   "top_width_cm": 390,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.18839,
+   "residual_pct_vs_P": 0.37,
+   "a_cm": 390
+  },
+  "VCP100/200-140": {
+   "family": "VCP100/200",
+   "H_cm": 140,
+   "P_t_per_m": 3.15,
+   "top_width_cm": 400,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.26039,
+   "residual_pct_vs_P": 0.03,
+   "a_cm": 400
+  },
+  "VCP100/200-160": {
+   "family": "VCP100/200",
+   "H_cm": 160,
+   "P_t_per_m": 3.33,
+   "top_width_cm": 410,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.33239,
+   "residual_pct_vs_P": 0.03,
+   "a_cm": 410
+  },
+  "VCP100/200-180": {
+   "family": "VCP100/200",
+   "H_cm": 180,
+   "P_t_per_m": 3.52,
+   "top_width_cm": 420,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.40439,
+   "residual_pct_vs_P": -0.26,
+   "a_cm": 420
+  },
+  "VCP100/200-200": {
+   "family": "VCP100/200",
+   "H_cm": 200,
+   "P_t_per_m": 3.7,
+   "top_width_cm": 430,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.47639,
+   "residual_pct_vs_P": -0.24,
+   "a_cm": 430
+  },
+  "VCG80/220-80": {
+   "family": "VCG80/220",
+   "H_cm": 80,
+   "P_t_per_m": 2.8,
+   "top_width_cm": 436,
+   "provenance": "estimate",
+   "area_m2_model": 1.10845,
+   "residual_pct_vs_P": -1.03,
+   "a_cm": 436
+  },
+  "VCG80/220-95": {
+   "family": "VCG80/220",
+   "H_cm": 95,
+   "P_t_per_m": 2.93,
+   "top_width_cm": 444,
+   "provenance": "estimate",
+   "area_m2_model": 1.16095,
+   "residual_pct_vs_P": -0.94,
+   "a_cm": 444
+  },
+  "VCG80/220-110": {
+   "family": "VCG80/220",
+   "H_cm": 110,
+   "P_t_per_m": 3.06,
+   "top_width_cm": 451,
+   "provenance": "estimate",
+   "area_m2_model": 1.21345,
+   "residual_pct_vs_P": -0.86,
+   "a_cm": 451
+  },
+  "VCG80/220-135": {
+   "family": "VCG80/220",
+   "H_cm": 135,
+   "P_t_per_m": 3.28,
+   "top_width_cm": 464,
+   "provenance": "estimate",
+   "area_m2_model": 1.30095,
+   "residual_pct_vs_P": -0.84,
+   "a_cm": 464
+  },
+  "VCG80/220-160": {
+   "family": "VCG80/220",
+   "H_cm": 160,
+   "P_t_per_m": 3.51,
+   "top_width_cm": 476,
+   "provenance": "estimate",
+   "area_m2_model": 1.38845,
+   "residual_pct_vs_P": -1.11,
+   "a_cm": 476
+  },
+  "VCG80/220-185": {
+   "family": "VCG80/220",
+   "H_cm": 185,
+   "P_t_per_m": 3.73,
+   "top_width_cm": 489,
+   "provenance": "estimate",
+   "area_m2_model": 1.47595,
+   "residual_pct_vs_P": -1.08,
+   "a_cm": 489
+  },
+  "VCG80/220-200": {
+   "family": "VCG80/220",
+   "H_cm": 200,
+   "P_t_per_m": 3.85,
+   "top_width_cm": 496,
+   "provenance": "estimate",
+   "area_m2_model": 1.52845,
+   "residual_pct_vs_P": -0.75,
+   "a_cm": 496
+  },
+  "VCG80/220-220": {
+   "family": "VCG80/220",
+   "H_cm": 220,
+   "P_t_per_m": 4.03,
+   "top_width_cm": 506,
+   "provenance": "estimate",
+   "area_m2_model": 1.59845,
+   "residual_pct_vs_P": -0.84,
+   "a_cm": 506
+  },
+  "VCG80/220-240": {
+   "family": "VCG80/220",
+   "H_cm": 240,
+   "P_t_per_m": 4.21,
+   "top_width_cm": 516,
+   "provenance": "estimate",
+   "area_m2_model": 1.66845,
+   "residual_pct_vs_P": -0.92,
+   "a_cm": 516
+  },
+  "VCG100/200-100": {
+   "family": "VCG100/200",
+   "H_cm": 100,
+   "P_t_per_m": 3.14,
+   "top_width_cm": 446,
+   "provenance": "estimate",
+   "area_m2_model": 1.2645,
+   "residual_pct_vs_P": 0.68,
+   "a_cm": 446
+  },
+  "VCG100/200-120": {
+   "family": "VCG100/200",
+   "H_cm": 120,
+   "P_t_per_m": 3.33,
+   "top_width_cm": 456,
+   "provenance": "estimate",
+   "area_m2_model": 1.3365,
+   "residual_pct_vs_P": 0.34,
+   "a_cm": 456
+  },
+  "VCG100/200-140": {
+   "family": "VCG100/200",
+   "H_cm": 140,
+   "P_t_per_m": 3.51,
+   "top_width_cm": 466,
+   "provenance": "estimate",
+   "area_m2_model": 1.4085,
+   "residual_pct_vs_P": 0.32,
+   "a_cm": 466
+  },
+  "VCG100/200-160": {
+   "family": "VCG100/200",
+   "H_cm": 160,
+   "P_t_per_m": 3.69,
+   "top_width_cm": 476,
+   "provenance": "estimate",
+   "area_m2_model": 1.4805,
+   "residual_pct_vs_P": 0.3,
+   "a_cm": 476
+  },
+  "VCG100/200-180": {
+   "family": "VCG100/200",
+   "H_cm": 180,
+   "P_t_per_m": 3.88,
+   "top_width_cm": 486,
+   "provenance": "estimate",
+   "area_m2_model": 1.5525,
+   "residual_pct_vs_P": 0.03,
+   "a_cm": 486
+  },
+  "VCG100/200-200": {
+   "family": "VCG100/200",
+   "H_cm": 200,
+   "P_t_per_m": 4.06,
+   "top_width_cm": 496,
+   "provenance": "estimate",
+   "area_m2_model": 1.6245,
+   "residual_pct_vs_P": 0.03,
+   "a_cm": 496
+  },
+  "VAA-A-180": {
+   "family": "VAA-A",
+   "H_cm": 180,
+   "P_t_per_m": 3.63,
+   "top_width_cm": 345,
+   "provenance": "estimate",
+   "area_m2_model": 1.57969,
+   "residual_pct_vs_P": 8.79,
+   "a_cm": 345,
+   "pinned": "Scaled drawing (IoU 0.973 against the trace) is 7-9 % heavier than the left VAA table at 2.5 t/m3 for every depth, while its web thicknesses match the table slope; the constant part (slabs/haunches/top blocks) disagrees. Not fitted because matching would need a 4 cm thinner bottom slab than drawn; drawing kept, discrepancy pinned."
+  },
+  "VAA-A-200": {
+   "family": "VAA-A",
+   "H_cm": 200,
+   "P_t_per_m": 3.82,
+   "top_width_cm": 350,
+   "provenance": "estimate",
+   "area_m2_model": 1.66569,
+   "residual_pct_vs_P": 9.01,
+   "a_cm": 350,
+   "pinned": "Scaled drawing (IoU 0.973 against the trace) is 7-9 % heavier than the left VAA table at 2.5 t/m3 for every depth, while its web thicknesses match the table slope; the constant part (slabs/haunches/top blocks) disagrees. Not fitted because matching would need a 4 cm thinner bottom slab than drawn; drawing kept, discrepancy pinned."
+  },
+  "VAA-A-220": {
+   "family": "VAA-A",
+   "H_cm": 220,
+   "P_t_per_m": 4.09,
+   "top_width_cm": 355,
+   "provenance": "estimate",
+   "area_m2_model": 1.75169,
+   "residual_pct_vs_P": 7.07,
+   "a_cm": 355,
+   "pinned": "Scaled drawing (IoU 0.973 against the trace) is 7-9 % heavier than the left VAA table at 2.5 t/m3 for every depth, while its web thicknesses match the table slope; the constant part (slabs/haunches/top blocks) disagrees. Not fitted because matching would need a 4 cm thinner bottom slab than drawn; drawing kept, discrepancy pinned."
+  },
+  "VAA-A-240": {
+   "family": "VAA-A",
+   "H_cm": 240,
+   "P_t_per_m": 4.27,
+   "top_width_cm": 360,
+   "provenance": "estimate",
+   "area_m2_model": 1.83769,
+   "residual_pct_vs_P": 7.59,
+   "a_cm": 360,
+   "pinned": "Scaled drawing (IoU 0.973 against the trace) is 7-9 % heavier than the left VAA table at 2.5 t/m3 for every depth, while its web thicknesses match the table slope; the constant part (slabs/haunches/top blocks) disagrees. Not fitted because matching would need a 4 cm thinner bottom slab than drawn; drawing kept, discrepancy pinned."
+  },
+  "VAA-A-260": {
+   "family": "VAA-A",
+   "H_cm": 260,
+   "P_t_per_m": 4.46,
+   "top_width_cm": 365,
+   "provenance": "estimate",
+   "area_m2_model": 1.92369,
+   "residual_pct_vs_P": 7.83,
+   "a_cm": 365,
+   "pinned": "Scaled drawing (IoU 0.973 against the trace) is 7-9 % heavier than the left VAA table at 2.5 t/m3 for every depth, while its web thicknesses match the table slope; the constant part (slabs/haunches/top blocks) disagrees. Not fitted because matching would need a 4 cm thinner bottom slab than drawn; drawing kept, discrepancy pinned."
+  },
+  "VAA-B-180": {
+   "family": "VAA-B",
+   "H_cm": 180,
+   "P_t_per_m": 3.51,
+   "top_width_cm": 345,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.42919,
+   "residual_pct_vs_P": 1.79,
+   "a_cm": 345
+  },
+  "VAA-B-200": {
+   "family": "VAA-B",
+   "H_cm": 200,
+   "P_t_per_m": 3.74,
+   "top_width_cm": 350,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.50319,
+   "residual_pct_vs_P": 0.48,
+   "a_cm": 350
+  },
+  "VAA-B-220": {
+   "family": "VAA-B",
+   "H_cm": 220,
+   "P_t_per_m": 3.98,
+   "top_width_cm": 355,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.57719,
+   "residual_pct_vs_P": -0.93,
+   "a_cm": 355
+  },
+  "VAA-B-240": {
+   "family": "VAA-B",
+   "H_cm": 240,
+   "P_t_per_m": 4.16,
+   "top_width_cm": 360,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.65119,
+   "residual_pct_vs_P": -0.77,
+   "a_cm": 360
+  },
+  "VAA-B-260": {
+   "family": "VAA-B",
+   "H_cm": 260,
+   "P_t_per_m": 4.35,
+   "top_width_cm": 365,
+   "provenance": "fitted-reconstruction",
+   "area_m2_model": 1.72519,
+   "residual_pct_vs_P": -0.85,
+   "a_cm": 365
+  }
+ }
+}

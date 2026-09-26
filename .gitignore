@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# uncommitted working materials (see sources/SOURCES.md)
+sources/
+examples/*.png
+dims_review.html
+
+# Generated Sphinx autosummary stubs (existing tracked legacy stubs retained)
+docs/source/gen/

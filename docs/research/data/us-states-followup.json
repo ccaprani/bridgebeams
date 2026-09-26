@@ -1,0 +1,127 @@
+{
+  "schema": "us-state-source-inventory-v1",
+  "reviewed_on": "2026-09-22",
+  "scope": "State-level primary sources; these are not additional countries in the global jurisdiction total",
+  "records": [
+    {
+      "id": "US-CA-XS1-121-1",
+      "state": "CA",
+      "agency": "Caltrans",
+      "title": "PC/Pretensioned Bulb-Tee Girder (Debonded Strands), xs1-121-1",
+      "url": "https://dot.ca.gov/-/media/dot-media/programs/engineering/documents/bridgestandarddetails/chap-1/202007-xs1-121-1-a11y/xs1-121-1-a11y.pdf",
+      "edition": "approved October 2025; one sheet",
+      "evidence": "Dimensioned typical section with girder depth D and 47.25 in top flange, plus reinforcement template; girder depth is a project variable.",
+      "readiness": "source_verified_project_variable",
+      "remaining": "Read the companion xs1-121-3 and user guide; select a specified depth before implementing a named profile."
+    },
+    {
+      "id": "US-FL-450-036",
+      "state": "FL",
+      "agency": "Florida DOT",
+      "title": "FY 2026-27 Standard Plans, Florida-I 36 Beam, Index 450-036",
+      "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-036.pdf?sfvrsn=797b8c54_1",
+      "edition": "FY 2026-27; sheet 1 last revised 2019-11-01; sheet 2 last revised 2016-11-01",
+      "evidence": "End view gives 48 in top, 38 in bottom, 36 in depth, 7 in soffit band, and 15 in radius at lower web transition; Index 450-010 gives companion notes.",
+      "readiness": "dimensioned_arc_requires_reconstruction",
+      "remaining": "Reconstruct tangent points of radius and reconcile against published FDOT section-property table before a polygon or curve approximation is accepted."
+    },
+    {
+      "id": "US-IA-BEAMS-2026",
+      "state": "IA",
+      "agency": "Iowa DOT",
+      "title": "Bridge Standards, Beams collection",
+      "url": "https://iowadot.gov/consultants-contractors/bridges-structures/bridge-culvert-standards/bridge-standards",
+      "edition": "index updated 2026-09-09; beam sheets revised 2024-04 through 2026-06",
+      "evidence": "Index lists A/B/C/D and bulb-tee C/D/E drawings, e.g. sheet 4700 bulb-tee C revised 2026-04, cross-section sheet series 4380/4383 revised 2026-05/06.",
+      "readiness": "index_verified_pdf_download_blocked",
+      "remaining": "The current PDF download endpoint returned unsupported octet-stream to the research tool; retrieve the actual sheet or use the separately indexed historical PDF before transcribing geometry."
+    },
+    {
+      "id": "US-MN-RB-2019",
+      "state": "MN",
+      "agency": "Minnesota DOT",
+      "title": "LRFD Bridge Design Manual, Section 5, Figure 5.4.6.1",
+      "url": "https://www.dot.state.mn.us/bridge/pdf/lrfdmanual/section05.pdf",
+      "edition": "February 2019; printed 5-37; PDF page 37 (zero-based 36)",
+      "evidence": "14RB, 18RB, 22RB: common 26 in rectangle width; depths 14, 18, 22 in; independent area, centroid, inertia and section modulus table.",
+      "readiness": "implemented_historical_edition",
+      "implemented_profiles": ["14RB", "18RB", "22RB"],
+      "remaining": "MnDOT lists an October 2025 manual, but its edocs download was rejected; compare the newer figure before calling these current standards."
+    },
+    {
+      "id": "US-MO-EPG-75122",
+      "state": "MO",
+      "agency": "Missouri DOT",
+      "title": "Engineering Policy Guide 751.22 Prestressed Concrete I Girders",
+      "url": "https://epg.modot.org/index.php/751.22_Prestressed_Concrete_I_Girders",
+      "edition": "live guide accessed 2026-09-22; publication revision not shown",
+      "evidence": "Explicit Type 2/3/4/6 I, Type 7/8 bulb-tee and NU35/43/53/63/70/78 girder designations; bridge standard drawings index provides PDF sheets.",
+      "readiness": "family_verified_not_transcribed",
+      "remaining": "Obtain cross-section standards for each family and distinguish MoDOT variants from any similarly named Nebraska section."
+    },
+    {
+      "id": "US-NE-BDM-2026",
+      "state": "NE",
+      "agency": "Nebraska DOT",
+      "title": "Bridge Design Manual, Figure 5.4 and Table 5.7",
+      "url": "https://dot.nebraska.gov/media/4dapkdwu/2026-02-23_ndot-bdm-ch-1-3-5-6-7-8-9-10-13-app-c.pdf",
+      "edition": "2026-02-23; printed p. 5-16",
+      "evidence": "NU35/43/53/63/70/78 girder dimensions and six rows of height, area, perimeter, centroid, I and weight; the manual says designations do not equal exact heights in inches.",
+      "readiness": "dimension_and_properties_verified_not_implemented",
+      "remaining": "Digitize Figure 5.4 including curved haunches; validate profiles against Table 5.7."
+    },
+    {
+      "id": "US-NY-BD-PC-2026",
+      "state": "NY",
+      "agency": "New York State DOT",
+      "title": "2026 Bridge Detail Sheets BD-PC1 and BD-PC2: slab units and box beams",
+      "url": "https://www.dot.ny.gov/main/business-center/engineering/cadd-info/bridge-details-sheets-repostitory-usc/BD-PC_01-26.pdf",
+      "edition": "2026-01-13; effective with letting 2026-05-01; PDF pp. 1-2",
+      "evidence": "36- and 48-in wide slab and box section outlines, shear-key recess detail, and area/centroid/inertia tables; ten 48-in box sizes B48x24 through B48x54 appear on BD-PC2.",
+      "readiness": "dimension_and_properties_verified_not_implemented",
+      "remaining": "Transcribe each void and shear-key recess from BD-PC1/2; avoid treating the older BD-PS1E link as live because it currently redirects to 404."
+    },
+    {
+      "id": "US-PA-BD652M-2008",
+      "state": "PA",
+      "agency": "PennDOT",
+      "title": "BD-652M Standard Beam Sizes and Section Properties",
+      "url": "https://docs.penndot.pa.gov/Public/Bureaus/Bridge/BD-Stds/2003Ed/Change6/BD652M.pdf",
+      "edition": "recommended 2008-12-29; 2003 edition change 6; PDF page 3",
+      "evidence": "PA bulb-tee drawing defines W1/W2/W3, D, T1/T2, radii/haunch dimension labels and printed A/Yb/I/St/Sb rows for 36 bulb-tee variants.",
+      "readiness": "historical_geometry_needs_corner_resolution",
+      "remaining": "Resolve the small lower corner radius/chamfer and table transcription anomaly before matching the published properties; check current PennDOT edition."
+    },
+    {
+      "id": "US-TX-IGD-23",
+      "state": "TX",
+      "agency": "Texas DOT",
+      "title": "Prestressed Concrete I-Girder Details IGD-23",
+      "url": "https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGD-23.pdf",
+      "edition": "original 2017-08; revised 2019-10 and 2023-03",
+      "evidence": "Tx28/34/40/46/54/62/70 section details and seven-row section-property table, including area and inertia; dimensions are TxDOT-specific.",
+      "readiness": "dimension_and_properties_verified_not_implemented",
+      "remaining": "Trace full midspan perimeter including flange slopes and chamfers; check current Bridge Standards index before publication."
+    },
+    {
+      "id": "US-WI-STANDARDS-19",
+      "state": "WI",
+      "agency": "Wisconsin DOT",
+      "title": "Bridge Manual Standard Drawings, Chapter 19 Prestressed Concrete",
+      "url": "https://wisconsindot.gov/Pages/doing-bus/eng-consultants/cnslt-rsrces/strct/bridge-manual-standards.aspx",
+      "edition": "index accessed 2026-09-22; sheets 19.01-19.20 revised 2017-07 through 2026-07",
+      "evidence": "Index lists 28-in and 36W/45W/54W/72W/82W girders with separate detail and design-data PDFs; 19.11 36W details are accessible.",
+      "readiness": "family_verified_not_transcribed",
+      "remaining": "Pair each dimension sheet with its design-data sheet and account for retired 45/54/70-in legacy sections in older manuals."
+    }
+  ],
+  "blocked_leads": [
+    {
+      "state": "OH",
+      "agency": "Ohio DOT",
+      "title": "PBSD-1-25 box-beam standard as indexed in January 2026 PDF update",
+      "url": "https://ftp.dot.state.oh.us/pub/construction/ODOT%20JAN%202026%20SPEC%20UPDATE/Standard%20Drawings%20and%20Plan%20Insert%20Sheets/Bridge%20Standard%20SCDs/SBD%20%26%20DDS%20Revised%20Drawings_01-16-26.pdf",
+      "status": "search-indexed original currently returns 404; not counted among retrievable dimensioned sheets"
+    }
+  ]
+}

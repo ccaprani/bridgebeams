@@ -1,0 +1,664 @@
+{
+  "topic": "civilcon-tum",
+  "date": "2026-09-23",
+  "jurisdiction": "ZA",
+  "producer": "Civilcon",
+  "method": "300 dpi render, visual reading, line-centre scaling; shoelace properties",
+  "families": [
+    {
+      "family": "T",
+      "class": "za.CivilconTBeamSection",
+      "data_file": "src/bridgebeams/za/data/civilcon_t_beams.json",
+      "sizes": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10"
+      ],
+      "provenance": "transcribed-with-convention",
+      "source": {
+        "source_title_original": "PPBT: T BEAM (dimension and section-property sheet)",
+        "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBT.pdf",
+        "source_local_file": "sources/expansion/asia-africa/civilcon-T.pdf",
+        "source_sha256": "76748c16a8296cb22b2f1e9b4fb41f5e6d9d80c3d127695fbe2cfae193eeb30c",
+        "source_pdf_page": 1,
+        "source_printed_page": null,
+        "source_status": "producer catalogue"
+      },
+      "transcribed_dimensions": {
+        "base_width": 495,
+        "bottom_chamfer": "25 x 25",
+        "flange_edge_height": 75,
+        "flange_side_inset": 6,
+        "flange_taper_height": 40,
+        "lower_splay_height": 50,
+        "web_width": 105,
+        "clear_web_T3_T10": 240,
+        "upper_splay_height": 50,
+        "bulb_width": 205,
+        "bulb_height": "335 max",
+        "T1_T2_chain": "90 (web) + 50 (splay, 50 horizontal offset) + 90 (bulb, T2)",
+        "depth_labels": {
+          "T1": 380,
+          "T2": 420,
+          "T3": 535,
+          "T4": 575,
+          "T5": 615,
+          "T6": 655,
+          "T7": 695,
+          "T8": 735,
+          "T9": 775,
+          "T10": "850 (label) / 815 (table)"
+        }
+      },
+      "derived_dimensions": {
+        "taper_width": {
+          "value": 205,
+          "basis": "Not printed. Closes all 10 published areas exactly; visually aligned with the 205 bulb and the T1/T2 dashed 50 mm offset."
+        }
+      },
+      "scaled_from_drawing": null,
+      "fitted_parameters": null,
+      "geometry_notes": [
+        "Half profile from soffit: (222.5,0) (247.5,25) (241.5,100) (102.5,140) (52.5,190) (52.5,web_top) (102.5,web_top+50) (102.5,D).",
+        "web_top = 430 for T3-T10 (190+240) and 280 for T1/T2 (190+90), from the dashed T1/T2 outline and its 90/50/90 chain.",
+        "T10 depth: drawing label 850 conflicts with table 815. Implemented 815: table, '335 max' + 480, the 40 mm label pitch, and exact area closure all support 815. At 850 the area would be 178735 mm2 (+4.2%).",
+        "Published Yb values agree within 0.5 mm; Zt/Zb within 0.45% except T10 Zb, which is 0.72% above the published value. That T10 discrepancy is preserved.",
+        "Strand positions and the 45 c/c strand grid are not modelled."
+      ],
+      "residuals": {
+        "T1": {
+          "area_calc": 97385.0,
+          "yb_calc": 139.16,
+          "zt_calc": 5109471,
+          "zb_calc": 8842725,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.16,
+          "zt_rel_pct": -0.01,
+          "zb_rel_pct": -0.082
+        },
+        "T2": {
+          "area_calc": 105585.0,
+          "yb_calc": 159.42,
+          "zt_calc": 6701275,
+          "zb_calc": 10953765,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.42,
+          "zt_rel_pct": 0.169,
+          "zb_rel_pct": -0.239
+        },
+        "T3": {
+          "area_calc": 114160.0,
+          "yb_calc": 196.12,
+          "zt_calc": 9568483,
+          "zb_calc": 16533381,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.12,
+          "zt_rel_pct": -0.432,
+          "zb_rel_pct": -0.04
+        },
+        "T4": {
+          "area_calc": 122360.0,
+          "yb_calc": 220.17,
+          "zt_calc": 11918389,
+          "zb_calc": 19207620,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.17,
+          "zt_rel_pct": -0.014,
+          "zb_rel_pct": -0.064
+        },
+        "T5": {
+          "area_calc": 130560.0,
+          "yb_calc": 243.71,
+          "zt_calc": 14301040,
+          "zb_calc": 21786985,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": -0.29,
+          "zt_rel_pct": -0.063,
+          "zb_rel_pct": 0.124
+        },
+        "T6": {
+          "area_calc": 138760.0,
+          "yb_calc": 266.84,
+          "zt_calc": 16725291,
+          "zb_calc": 24330052,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": -0.16,
+          "zt_rel_pct": -0.028,
+          "zb_rel_pct": 0.041
+        },
+        "T7": {
+          "area_calc": 146960.0,
+          "yb_calc": 289.61,
+          "zt_calc": 19199126,
+          "zb_calc": 26874370,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": -0.39,
+          "zt_rel_pct": -0.109,
+          "zb_rel_pct": 0.128
+        },
+        "T8": {
+          "area_calc": 155160.0,
+          "yb_calc": 312.09,
+          "zt_calc": 21729624,
+          "zb_calc": 29445220,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.09,
+          "zt_rel_pct": 0.044,
+          "zb_rel_pct": -0.016
+        },
+        "T9": {
+          "area_calc": 163360.0,
+          "yb_calc": 334.32,
+          "zt_calc": 24322988,
+          "zb_calc": 32060317,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.32,
+          "zt_rel_pct": 0.053,
+          "zb_rel_pct": -0.092
+        },
+        "T10": {
+          "area_calc": 171560.0,
+          "yb_calc": 356.34,
+          "zt_calc": 26984629,
+          "zb_calc": 34732483,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.34,
+          "zt_rel_pct": 0.091,
+          "zb_rel_pct": 0.732
+        }
+      }
+    },
+    {
+      "family": "U",
+      "class": "za.CivilconUBeamSection",
+      "data_file": "src/bridgebeams/za/data/civilcon_u_beams.json",
+      "sizes": [
+        "U1",
+        "U3",
+        "U5",
+        "U7",
+        "U8",
+        "U9",
+        "U10",
+        "U11",
+        "U12"
+      ],
+      "provenance": "fitted-reconstruction",
+      "source": {
+        "source_title_original": "PPBU: U BEAM (dimension and section-property sheet)",
+        "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBU.pdf",
+        "source_local_file": "sources/expansion/asia-africa/civilcon-U.pdf",
+        "source_sha256": "6033d5d21b764f771cf7c081a78e2c773f46dc6b394b835314e4e64c97dece18",
+        "source_pdf_page": 1,
+        "source_printed_page": null,
+        "source_status": "producer catalogue"
+      },
+      "transcribed_dimensions": {
+        "base_width": 970,
+        "bottom_chamfer": "35 x 35 (elevation detail)",
+        "outer_batter": "6,75 : 1",
+        "web_normal_thickness": 165,
+        "top_horizontal": "40 (inner shoulder) + 250 (raised strip) + 50 (outer shoulder)",
+        "top_vertical": "33 (top to inner shoulder), 15 (inner lip), 30 (top to outer shoulder)",
+        "thickening_height": "380 (inner shoulder to web-face break)",
+        "floor_half_widths": "240 (centre valley to break) + 129 (break to web toe)",
+        "depth_labels": {
+          "U1": 800,
+          "U3": 900,
+          "U5": 1000,
+          "U7": 1100,
+          "U8": 1200,
+          "U9": 1300,
+          "U10": 1400,
+          "U11": 1500,
+          "U12": 1600
+        },
+        "left_top_chain_100_90_45": "strand positions (4* strands), not concrete"
+      },
+      "derived_dimensions": {
+        "web_horizontal_width": "165*sqrt(1+1/6.75^2)=166.80",
+        "web_toe_height": "(369-318.20)*6.75=342.9",
+        "outer_face": "x=485+y/6.75 (970 at the theoretical soffit intersection; confirmed by scaling)",
+        "chamfer": "(455.19,0)-(490.19,35)"
+      },
+      "scaled_from_drawing": {
+        "scale_px_per_mm_at_300dpi": 0.66804,
+        "valley_height": 153,
+        "break_height": 204,
+        "web_toe": [
+          371.2,
+          357.8
+        ],
+        "note": "Line-centre scaling of the U12 section. The 129 dimension scales to about 131. The fitted floor sits 24 mm (valley) and 14 mm (break) from the drawing. Drawing-scaled floor gives area residuals from +0.18% to -0.06%; the fitted floor gives at most 0.11%."
+      },
+      "fitted_parameters": {
+        "valley_height": 129.4,
+        "break_height": 218.3,
+        "method": "least squares on relative area, Yb and Ixx (Ixx from Zt*(D-Yb)) for all nine rows; printed geometry otherwise fixed; web toe fixed at the printed 369 mm half-width on the inner web face",
+        "unrounded": [
+          129.44,
+          218.28
+        ]
+      },
+      "geometry_notes": [
+        "Section drawn is U12 (1600). The right-hand elevation shows the top block (shoulders, strip, lip and 380 mm thickening) moving down the outer face for the shallower marks. Each mark here is the U12 outline with the top block translated along the 6.75:1 outer face.",
+        "Published area increments are exactly 33523 mm2 per 100 mm, implying a 167.6 mm horizontal web width. Printed 165 mm normal and 6.75:1 give 166.80 mm. The printed values are kept; this produces the +0.10% (U1) to -0.11% (U12) area trend.",
+        "U10 printed Zb 255.65e6 is inconsistent with its Zt/Yb (Ixx from Zt gives Zb 225.6e6). The raw value is preserved and the discrepancy is pinned in tests.",
+        "U5 printed self weight 13.76 kN/m vs 544016 mm2 x 25 kN/m3 = 13.60 kN/m (other rows agree). Recorded only.",
+        "No U2/U4/U6 appear in the property table; SIZES follow the table."
+      ],
+      "residuals": {
+        "U1": {
+          "area_calc": 477445.0,
+          "yb_calc": 356.4,
+          "zt_calc": 68859824,
+          "zb_calc": 85706535,
+          "area_rel_pct": 0.1,
+          "yb_diff_mm": -0.1,
+          "zt_rel_pct": -0.058,
+          "zb_rel_pct": -0.004
+        },
+        "U3": {
+          "area_calc": 510805.2,
+          "yb_calc": 402.97,
+          "zt_calc": 85798831,
+          "zb_calc": 105827593,
+          "area_rel_pct": 0.061,
+          "yb_diff_mm": -0.03,
+          "zt_rel_pct": -0.048,
+          "zb_rel_pct": 0.017
+        },
+        "U5": {
+          "area_calc": 544165.3,
+          "yb_calc": 449.95,
+          "zt_calc": 104149357,
+          "zb_calc": 127318932,
+          "area_rel_pct": 0.027,
+          "yb_diff_mm": -0.05,
+          "zt_rel_pct": -0.029,
+          "zb_rel_pct": 0.031
+        },
+        "U7": {
+          "area_calc": 577525.5,
+          "yb_calc": 497.28,
+          "zt_calc": 123842194,
+          "zb_calc": 150098682,
+          "area_rel_pct": -0.002,
+          "yb_diff_mm": -0.22,
+          "zt_rel_pct": -0.014,
+          "zb_rel_pct": 0.026
+        },
+        "U8": {
+          "area_calc": 610885.7,
+          "yb_calc": 544.91,
+          "zt_calc": 144829198,
+          "zb_calc": 174114386,
+          "area_rel_pct": -0.029,
+          "yb_diff_mm": -0.09,
+          "zt_rel_pct": -0.021,
+          "zb_rel_pct": 0.043
+        },
+        "U9": {
+          "area_calc": 644245.9,
+          "yb_calc": 592.78,
+          "zt_calc": 167075538,
+          "zb_calc": 199331271,
+          "area_rel_pct": -0.052,
+          "yb_diff_mm": -0.22,
+          "zt_rel_pct": -0.003,
+          "zb_rel_pct": 0.031
+        },
+        "U10": {
+          "area_calc": 677606.0,
+          "yb_calc": 640.86,
+          "zt_calc": 190555213,
+          "zb_calc": 225725624,
+          "area_rel_pct": -0.074,
+          "yb_diff_mm": -0.14,
+          "zt_rel_pct": -0.008,
+          "zb_rel_pct": -11.705
+        },
+        "U11": {
+          "area_calc": 710966.2,
+          "yb_calc": 689.12,
+          "zt_calc": 215248312,
+          "zb_calc": 253280866,
+          "area_rel_pct": -0.093,
+          "yb_diff_mm": 0.12,
+          "zt_rel_pct": -0.01,
+          "zb_rel_pct": 0.04
+        },
+        "U12": {
+          "area_calc": 744326.4,
+          "yb_calc": 737.54,
+          "zt_calc": 241139261,
+          "zb_calc": 281985166,
+          "area_rel_pct": -0.111,
+          "yb_diff_mm": -0.16,
+          "zt_rel_pct": -0.009,
+          "zb_rel_pct": 0.03
+        }
+      }
+    },
+    {
+      "family": "SU",
+      "class": "za.CivilconSpecialUBeamSection",
+      "data_file": "src/bridgebeams/za/data/civilcon_special_u_beams.json",
+      "sizes": [
+        "SU1",
+        "SU2"
+      ],
+      "provenance": "fitted-reconstruction",
+      "source": {
+        "source_title_original": "PPBUS: SPECIAL U BEAM (dimension and section-property sheet)",
+        "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBUS.pdf",
+        "source_local_file": "sources/expansion/asia-africa/civilcon-US.pdf",
+        "source_sha256": "d7a4d8e53c8c2bf3798b852098d49024bd4c5c0b421ba3e45bb27339fefc6999",
+        "source_pdf_page": 1,
+        "source_printed_page": null,
+        "source_status": "producer catalogue"
+      },
+      "transcribed_dimensions": {
+        "base_width": 2000,
+        "lobe_top_chain": "175 + 175 (lobe) + 850 (lobe inner edge to centreline)",
+        "lobe_vertical": "50 (raised strip) + 150 + 100 (splay)",
+        "outer_splay_offset": 75,
+        "inner_splay_length": 125,
+        "shoulder_width": 75,
+        "web_horizontal_chain": "60 + 80 + 60 = 200",
+        "SU1_lobe_inner_edge": 810,
+        "depth_labels": {
+          "SU1": 900,
+          "SU2": 1200
+        },
+        "density": "25.5 kN/m3",
+        "bottom_strand_chain": "50, 80, 80, 75, 70, then 80 c/c, 85|85 (strand positions)"
+      },
+      "derived_dimensions": {
+        "raised_strip": "350 - 2*75 = 200",
+        "neck": "x = 925 to 1125 at y = D - 300",
+        "batter": "(1125-1000)/900 -> 1:7.2 (scaled 1:7.23)",
+        "splay_top": "(848.4, 348.4)"
+      },
+      "scaled_from_drawing": null,
+      "fitted_parameters": {
+        "floor_thickness": 200.0,
+        "splay_start_half_width": 700.0,
+        "floor_splay": "45 degrees to the inner web face",
+        "method": "Scaled from the drawing (floor line centre 199.7 mm; splay points on x = y + 499.5) and confirmed against both property rows. Round values were retained because they reproduce A within 0.010%."
+      },
+      "geometry_notes": [
+        "The catalogue index says US1/US2; the sheet and table say SU1/SU2. The sheet names are used.",
+        "SU2 is drawn solid. SU1 is modelled as the same section with the top lobe moved 300 mm down the 1:7.2 webs. This puts the SU1 lobe inner edge at 808.3 mm, against the printed 810. The 1.7 mm discrepancy is recorded and not forced.",
+        "Published areas differ by exactly 120000 mm2 = 2 x 200 x 300, which confirms the 200 mm horizontal web width.",
+        "The soffit has no chamfer drawn. None is modelled.",
+        "The self-weight column header reads kN/m3; values equal area x 25.5 kN/m3 in kN/m.",
+        "Diaphragms (400 wide at L/3 or L/4) are not part of the section."
+      ],
+      "residuals": {
+        "SU1": {
+          "area_calc": 764516.1,
+          "yb_calc": 319.61,
+          "zt_calc": 100748352,
+          "zb_calc": 182953668,
+          "area_rel_pct": -0.01,
+          "yb_diff_mm": -0.39,
+          "zt_rel_pct": -0.012,
+          "zb_rel_pct": -0.003
+        },
+        "SU2": {
+          "area_calc": 884516.1,
+          "yb_calc": 439.05,
+          "zt_calc": 172929250,
+          "zb_calc": 299717820,
+          "area_rel_pct": -0.008,
+          "yb_diff_mm": 0.05,
+          "zt_rel_pct": -0.018,
+          "zb_rel_pct": -0.004
+        }
+      }
+    },
+    {
+      "family": "M",
+      "class": "za.CivilconMBeamSection",
+      "data_file": "src/bridgebeams/za/data/civilcon_m_beams.json",
+      "sizes": [
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10"
+      ],
+      "provenance": "fitted-reconstruction",
+      "source": {
+        "source_title_original": "PPBM: M BEAM (dimension and section-property sheet)",
+        "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBM.pdf",
+        "source_local_file": "sources/expansion/asia-africa/civilcon-M.pdf",
+        "source_sha256": "0c6d2b0234fc3e7f6fb8e46bff4841aea7e3a46b579a5c8e88fbe8f0796f7401",
+        "source_pdf_page": 1,
+        "source_printed_page": null,
+        "source_status": "producer catalogue"
+      },
+      "transcribed_dimensions": {
+        "base_width": 970,
+        "bottom_chamfer": 35,
+        "flange_edge": 125,
+        "flange_taper": 50,
+        "lower_splay": 80,
+        "lower_web_heights": {
+          "M2-M4": 200,
+          "M5-M7": 440,
+          "M8-M10": 680
+        },
+        "depth_labels": {
+          "M2": 720,
+          "M3": 800,
+          "M4": 880,
+          "M5": 960,
+          "M6": 1040,
+          "M7": 1120,
+          "M8": 1200,
+          "M9": 1280,
+          "M10": 1360
+        },
+        "bottom_strand_chain": "35 | 50 c/c | 75 | 75 | 50 c/c | 35 (strand positions)"
+      },
+      "derived_dimensions": {
+        "web_width": {
+          "value": 160,
+          "basis": "published area steps: 240*(w-400)+32000 = -25600 across groups; scaled 160.0-160.8"
+        },
+        "top_width": {
+          "value": 400,
+          "basis": "+32000 mm2 per 80 mm depth within each group; scaled 400.8"
+        }
+      },
+      "scaled_from_drawing": {
+        "scale_px_per_mm_at_300dpi": 1.05052,
+        "notch": "50 wide x 50 deep (line centres x=150.4, y=D-50.0)",
+        "taper_break_half_width": 160,
+        "flare": "120 horizontal x 80 vertical (slope 0.657-0.667)",
+        "edge_inset": "10 over 125 (1:12.5)"
+      },
+      "fitted_parameters": {
+        "flare_height": 60.0,
+        "edge_inset": 15.0,
+        "method": "least squares on area (excluding M4), Yb, Zt (excluding M8) and Zb, with notch, taper break, web and top fixed. The free optimum was flare 59.93 and inset 15.10; round values reproduce all eight usable areas exactly.",
+        "free_four_parameter_fit": {
+          "notch_depth": 49.45,
+          "flare_height": 60.78,
+          "taper_break_half_width": 162.28,
+          "edge_inset": 16.37
+        },
+        "drawn_outline_residuals": "flare 80 / inset 10: area -0.34% to -0.49% (constant 1525 mm2 short), Yb 1.7-4.5 mm low, Zt -0.46% to -1.62% (M8 -2.76%)"
+      },
+      "geometry_notes": [
+        "The sheet does not dimension web width, top width, notch, flare or edge inset. The drawn flare (120 x 80) and inset (10) contradict the published properties. The fitted 120 x 60 flare and 15 mm inset reproduce them. The fitted values are implemented as the best estimate of the property basis, and the drawing values are recorded here.",
+        "The notch was hypothesised as about 40 x 50 in Colin Caprani's 2026-09-22 review. It scales as 50 x 50, and the free fit gives 49.5 mm deep. 50 x 50 is used.",
+        "M4 printed area 37860 is a dropped digit: 378600 closes exactly with the M3 to M4 step (+32000). The raw value is preserved.",
+        "M10 table depth 360 conflicts with the explicit drawing label 1360. 1360 is used; the published Zt is consistent with 1360.",
+        "M8 published Zt (87.87e6) is inconsistent with its own Zb and Yb: Zt*(D-Yb) exceeds Zb*Yb by 1.16%. The calculated Zt is 1.19% below. This is pinned.",
+        "UK M-beam equivalence is unverified; no alias is provided."
+      ],
+      "residuals": {
+        "M2": {
+          "area_calc": 314600.0,
+          "yb_calc": 265.69,
+          "zt_calc": 35341937,
+          "zb_calc": 60432342,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": -0.31,
+          "zt_rel_pct": -0.079,
+          "zb_rel_pct": 0.12
+        },
+        "M3": {
+          "area_calc": 346600.0,
+          "yb_calc": 310.17,
+          "zt_calc": 46610255,
+          "zb_calc": 73607328,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.17,
+          "zt_rel_pct": 0.022,
+          "zb_rel_pct": -0.058
+        },
+        "M4": {
+          "area_calc": 378600.0,
+          "yb_calc": 353.9,
+          "zt_calc": 58359945,
+          "zb_calc": 86757383,
+          "area_rel_pct": 900.0,
+          "yb_diff_mm": -0.1,
+          "zt_rel_pct": -0.017,
+          "zb_rel_pct": 0.032
+        },
+        "M5": {
+          "area_calc": 353000.0,
+          "yb_calc": 357.4,
+          "zt_calc": 58960487,
+          "zb_calc": 99411734,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.4,
+          "zt_rel_pct": 0.069,
+          "zb_rel_pct": -0.109
+        },
+        "M6": {
+          "area_calc": 385000.0,
+          "yb_calc": 409.77,
+          "zt_calc": 74910234,
+          "zb_calc": 115212161,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": -0.23,
+          "zt_rel_pct": -0.04,
+          "zb_rel_pct": 0.054
+        },
+        "M7": {
+          "area_calc": 417000.0,
+          "yb_calc": 460.24,
+          "zt_calc": 90978785,
+          "zb_calc": 130417244,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.24,
+          "zt_rel_pct": 0.032,
+          "zb_rel_pct": -0.056
+        },
+        "M8": {
+          "area_calc": 391400.0,
+          "yb_calc": 454.66,
+          "zt_calc": 86826536,
+          "zb_calc": 142337886,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": -0.34,
+          "zt_rel_pct": -1.188,
+          "zb_rel_pct": 0.076
+        },
+        "M9": {
+          "area_calc": 423400.0,
+          "yb_calc": 513.07,
+          "zt_calc": 107462042,
+          "zb_calc": 160632792,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": 0.07,
+          "zt_rel_pct": 0.011,
+          "zb_rel_pct": -0.017
+        },
+        "M10": {
+          "area_calc": 455400.0,
+          "yb_calc": 568.89,
+          "zt_calc": 127953125,
+          "zb_calc": 177932650,
+          "area_rel_pct": 0.0,
+          "yb_diff_mm": -0.11,
+          "zt_rel_pct": -0.013,
+          "zb_rel_pct": 0.018
+        }
+      }
+    }
+  ],
+  "pinned_discrepancies": [
+    {
+      "section": "T10",
+      "item": "Zb",
+      "published": 34480000.0,
+      "calculated_rel": 0.00732
+    },
+    {
+      "section": "T10",
+      "item": "depth label",
+      "drawing": 850,
+      "table": 815,
+      "used": 815
+    },
+    {
+      "section": "U10",
+      "item": "Zb",
+      "published": 255650000.0,
+      "calculated": 225730000.0,
+      "note": "likely transposed 225.65"
+    },
+    {
+      "section": "M4",
+      "item": "area",
+      "published": 37860,
+      "closes": 378600
+    },
+    {
+      "section": "M10",
+      "item": "depth",
+      "table": 360,
+      "drawing": 1360,
+      "used": 1360
+    },
+    {
+      "section": "M8",
+      "item": "Zt",
+      "published": 87870000.0,
+      "calculated_rel": -0.01188,
+      "note": "table internally inconsistent 1.16%"
+    },
+    {
+      "section": "SU1",
+      "item": "lobe inner edge",
+      "printed": 810,
+      "web_consistent": 808.3
+    }
+  ],
+  "remaining_uncertainties": [
+    "U floor valley/break heights fitted (129.4/218.3) vs drawn ~153/204",
+    "U web horizontal width implied 167.6 vs printed 166.8",
+    "M flare 120x60 and inset 15 fitted vs drawn 120x80 and 10",
+    "SU floor splay size weakly constrained",
+    "No date/revision on any sheet; production status unverified",
+    "UK M-beam equivalence unverified"
+  ]
+}

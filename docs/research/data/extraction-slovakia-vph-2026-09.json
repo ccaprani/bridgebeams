@@ -1,0 +1,810 @@
+{
+ "topic": "slovakia-vph",
+ "date": "2026-09-23",
+ "jurisdiction": "Slovakia",
+ "organisation": "VÁHOSTAV-SK-PREFA, s.r.o. (Horný Hričov)",
+ "source_status": "producer catalogue (VÁHOSTAV-SK-PREFA, s.r.o.; English PDF created 2017-03-17)",
+ "sources": [
+  {
+   "role": "primary (English edition)",
+   "title": "PRESTRESSED BEAMS VPH-PTMN for the road bridges and the bridge accessories — PRODUCT ASSORTMENT OUTLINE",
+   "url": "https://vph.sk/assets/Uploads/ProduktPage/14/PRESTRESSED-BEAMS-VPH-PTMN.pdf",
+   "local_file": "sources/expansion/europe-americas/sk_vph_en.pdf",
+   "sha256": "da0a17b02464df4d27eb64b33546b38cedccba4cca7455665a79558fd4176c68"
+  },
+  {
+   "role": "Slovak original (headings/terms cross-check; tables identical digit for digit)",
+   "title": "PREDPÄTÉ NOSNÍKY VPH-PTMN (Katalóg mostných nosníkov)",
+   "url": "https://vph.sk/assets/Uploads/ProduktPage/14/Katalog-mostnych-nosnikov.pdf",
+   "local_file": "sources/expansion/europe-americas/sk_vph.pdf",
+   "sha256": "2e2f81545b4a161ade81580a6dd92b084fee80e115fa4a7af3ee70691f599977"
+  }
+ ],
+ "implementation": {
+  "package": "bridgebeams.sk",
+  "module": "src/bridgebeams/sk/vph_ptmn.py",
+  "data": "src/bridgebeams/sk/data/vph_ptmn.json",
+  "classes": {
+   "VphSlabBeamSection": [
+    "2016-PM11-K",
+    "2016-PM11-M",
+    "2016-PM13-K",
+    "2016-PM13-M",
+    "2016-PM15-K",
+    "2016-PM15-M"
+   ],
+   "VphGirderSection": [
+    "2016-T",
+    "2010-I-1.2",
+    "2016-I",
+    "2010-I-1.4",
+    "2010-R2-1.9",
+    "2010-R2-2.1"
+   ]
+  },
+  "tests": "tests/test_sk_vph_ptmn.py"
+ },
+ "profile_count": {
+  "distinct_cross_sections": 12,
+  "catalogue_rows": 20,
+  "note": "Catalogue rows that differ only in production length (18/21/24 m etc.) share one cross-section and are exposed as designations of one size."
+ },
+ "geometry_notes": [
+  "Origin at mid-soffit, y up. K units: 780 wide, x from -390 (rectangular block face) to +390 (ledge edge); block 480 wide.",
+  "All R=50 corners are circular arcs tangent to both faces (32 segments). Tangent points are taken from the printed chains; sharp-corner levels are derived (lower splay: 170/330 above soffit for edge tangent 140; PM: 85/245 for edge 55).",
+  "Upper flange: sharp outer-edge corner at the printed 75 below top (right-hand chain), fillet tangent on the web at 167 below top (1200 - 673 - 360); the web-root sharp corner follows from R50 tangency (about 124.7 below top). This reproduces the printed 33/49/36/49 and 42/216/42 extents within 0.5 mm.",
+  "Top roughening (zdrsnenie povrchu) modelled as a flat top. Edge rebates (30x20 on 2010 I; 40x20 on 2016-I and 2010-R2) are included. 2016-T raised strip 140x20 is included (needed: without it A -0.8 %, yt -6 mm, I -4 %).",
+  "Soffit chamfers 15/15 included on all girders; none drawn on 2016-PM units.",
+  "Excluded: optional PE-pipe lightening voids (možné vyľahčenie, R50), PE rúra Ø50 duct, DET. A transverse holes, prestressing, ducts, end blocks (2.1 m end section 'na čele nosníka').",
+  "2010 I 1.4 m: pp. 18 and 19 embed the same drawing image (PDF image object 312). Its bottom chain prints 300/100/300 = 800 and left splay 26/249/26; the upper 200 web label, 800 total and the right-hand 247 fix web 200 and splay 247. Properties match exactly with web 200.",
+  "2010-R2 1.9 m: left chain 33+49+36+49 = 167 but right chain labelled 168 (82+85) and 168 + 1372 + 360 = 1900. Convention: the flange edge is 34 (not 33), i.e. sharp edge corner 76 below top and web tangent 168; slope and R50 extents unchanged. Evidence: with 168 A/yt/I residuals are -0.004 % / +0.2 mm / -0.03 %; keeping 167 (web 1373) gives -0.11 % / -0.8 mm / -0.25 %.",
+  "2016-I right chain prints 33 + 135; 49+36+49 = 134 and the depth closes with 167 (167+673+360 = 1200). 167 used.",
+  "2010-R2 2.1 m: the literal drawing (re-read at native 218 ppi, 5x zoom, and cross-checked against the separately drawn centre-of-beam prestressing view, which scales 1100 wide, 200 web, 73-75 edge, 183 root) is closed and self-consistent, but the published yt 1.016 m and Iy 0.39284 m4 are not reproduced: literal outline gives A -0.13 %, yt 985.8 mm (-30.2 mm) and I -4.8 %. No single plausible misreading (flange edge, root depth, web width) fits all three; a 3-parameter fit needs a 137 mm flange edge and 186 mm web, contradicted by the drawing. Implemented as drawn; discrepancy pinned as a source inconsistency.",
+  "2016-PM13-M: A 209000 mm2 vs printed 0.208 m2 (+0.48 %, beyond 3-s.f. rounding); yt and I agree (+1.0 mm, +0.3 %). Unresolved; pinned.",
+  "2016-PM units: I is systematically +0.27 to +0.39 % above published for both K and M (A and yt agree to rounding). Unresolved (possible producer tessellation or rounding convention); pinned per size.",
+  "2016-T and 2016-I: A is 395 mm2 (-0.08 to -0.11 %) below the 5-s.f. published areas; the same deficit on both 2016 designs. Unresolved; within stated tolerance.",
+  "The earlier assessment note that PM M units were ~3 mm high in centroid came from placing the splay/stem junction at the '170 from top' dimension line; that dimension goes to the upper splay tangent line (400-170 = 230 = 55+44+132 ~ 231). With the 55/44/132/44 chain the M centroids agree within 1 mm."
+ ],
+ "sections": [
+  {
+   "size": "2016-PM11-K",
+   "family": "2016-PM",
+   "title_sk": "Nosníky tvaru obráteného „T“ dĺžky 11m pre doskové mosty VPH-PTMN 2016 – PM, 11m",
+   "title_en": "Inverted T-beams with a length of 11m for the slab bridges VPH-PTMN 2016 – PM, 11m",
+   "pdf_page_en": 6,
+   "pdf_page_sk": 6,
+   "printed_page": 6,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 400,
+    "bottom_width": 780,
+    "block_width": 480,
+    "ledge": 300,
+    "edge": 55,
+    "splay_vertical_chain": "44 + 132 + 44 = 220",
+    "splay_horizontal_chain": "26 + 247 + 26 (300)",
+    "fillet_radius": 50,
+    "optional_void": "PE rúra R50 at 290 from left, 230 above soffit (možné vyľahčenie) — excluded"
+   },
+   "model": {
+    "depth": 400,
+    "unit": "K",
+    "bottom_width": 780,
+    "stem_width": 480
+   },
+   "published": {
+    "area_m2": 0.241,
+    "yt_from_soffit_m": 0.177,
+    "Iy_m4": 0.003195
+   },
+   "computed": {
+    "area_mm2": 241500.0,
+    "yt_mm": 177.34,
+    "Iy_mm4": 3207610000.0,
+    "cx_mm": -75.21
+   },
+   "residuals": {
+    "area_pct": 0.207,
+    "yt_mm": 0.34,
+    "Iy_pct": 0.395
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-PM 11m-K",
+     "production_length_m": 11,
+     "span_m": 10.6,
+     "height_m": 0.4,
+     "volume_m3": 2.65,
+     "mass_t": 6.63
+    }
+   ]
+  },
+  {
+   "size": "2016-PM11-M",
+   "family": "2016-PM",
+   "title_sk": "Nosníky tvaru obráteného „T“ dĺžky 11m pre doskové mosty VPH-PTMN 2016 – PM, 11m",
+   "title_en": "Inverted T-beams with a length of 11m for the slab bridges VPH-PTMN 2016 – PM, 11m",
+   "pdf_page_en": 6,
+   "pdf_page_sk": 6,
+   "printed_page": 6,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 400,
+    "bottom_width": 820,
+    "stem_width": 220,
+    "ledges": "300 + 220 + 300",
+    "edge": 55,
+    "splay_vertical_chain": "44 + 132 + 44 = 220",
+    "splay_horizontal_chain": "26 + 247 + 26 (300)",
+    "fillet_radius": 50,
+    "stem_dim_170": "170 from top to the upper splay tangent line (=400-230); consistent",
+    "pe_pipe": "PE rúra Ø50 at splay level — excluded"
+   },
+   "model": {
+    "depth": 400,
+    "unit": "M",
+    "bottom_width": 820,
+    "stem_width": 220
+   },
+   "published": {
+    "area_m2": 0.187,
+    "yt_from_soffit_m": 0.141,
+    "Iy_m4": 0.002068
+   },
+   "computed": {
+    "area_mm2": 187000.0,
+    "yt_mm": 141.48,
+    "Iy_mm4": 2076130000.0,
+    "cx_mm": -0.0
+   },
+   "residuals": {
+    "area_pct": 0.0,
+    "yt_mm": 0.48,
+    "Iy_pct": 0.393
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-PM 11m-M",
+     "production_length_m": 11,
+     "span_m": 10.6,
+     "height_m": 0.4,
+     "volume_m3": 2.05,
+     "mass_t": 5.14
+    }
+   ]
+  },
+  {
+   "size": "2016-PM13-K",
+   "family": "2016-PM",
+   "title_sk": "Nosníky tvaru obráteného „T“ dĺžky 13m pre doskové mosty VPH-PTMN 2016 – PM, 13m",
+   "title_en": "Inverted T-beams with a length of 13m for the slab bridges VPH-PTMN 2016 – PM, 13m",
+   "pdf_page_en": 8,
+   "pdf_page_sk": 8,
+   "printed_page": 8,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 500,
+    "bottom_width": 780,
+    "block_width": 480,
+    "ledge": 300,
+    "edge": 55,
+    "splay_vertical_chain": "44 + 132 + 44 = 220",
+    "splay_horizontal_chain": "26 + 247 + 26 (300)",
+    "fillet_radius": 50,
+    "det_A": "transverse hole detail (DET. A) at 340 above soffit — excluded"
+   },
+   "model": {
+    "depth": 500,
+    "unit": "K",
+    "bottom_width": 780,
+    "stem_width": 480
+   },
+   "published": {
+    "area_m2": 0.289,
+    "yt_from_soffit_m": 0.222,
+    "Iy_m4": 0.006205
+   },
+   "computed": {
+    "area_mm2": 289500.0,
+    "yt_mm": 222.55,
+    "Iy_mm4": 6224340000.0,
+    "cx_mm": -87.61
+   },
+   "residuals": {
+    "area_pct": 0.173,
+    "yt_mm": 0.55,
+    "Iy_pct": 0.312
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-PM 13m-K",
+     "production_length_m": 13,
+     "span_m": 12.6,
+     "height_m": 0.5,
+     "volume_m3": 3.76,
+     "mass_t": 9.4
+    }
+   ]
+  },
+  {
+   "size": "2016-PM13-M",
+   "family": "2016-PM",
+   "title_sk": "Nosníky tvaru obráteného „T“ dĺžky 13m pre doskové mosty VPH-PTMN 2016 – PM, 13m",
+   "title_en": "Inverted T-beams with a length of 13m for the slab bridges VPH-PTMN 2016 – PM, 13m",
+   "pdf_page_en": 8,
+   "pdf_page_sk": 8,
+   "printed_page": 8,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 500,
+    "bottom_width": 820,
+    "stem_width": 220,
+    "ledges": "300 + 220 + 300",
+    "edge": 55,
+    "splay_vertical_chain": "44 + 132 + 44 = 220",
+    "splay_horizontal_chain": "26 + 247 + 26 (300)",
+    "fillet_radius": 50,
+    "det_A": "DET. A at 345 above soffit — excluded"
+   },
+   "model": {
+    "depth": 500,
+    "unit": "M",
+    "bottom_width": 820,
+    "stem_width": 220
+   },
+   "published": {
+    "area_m2": 0.208,
+    "yt_from_soffit_m": 0.173,
+    "Iy_m4": 0.003956
+   },
+   "computed": {
+    "area_mm2": 209000.0,
+    "yt_mm": 173.96,
+    "Iy_mm4": 3968070000.0,
+    "cx_mm": -0.0
+   },
+   "residuals": {
+    "area_pct": 0.481,
+    "yt_mm": 0.96,
+    "Iy_pct": 0.305
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-PM 13m-M",
+     "production_length_m": 13,
+     "span_m": 12.6,
+     "height_m": 0.5,
+     "volume_m3": 2.71,
+     "mass_t": 6.8
+    }
+   ]
+  },
+  {
+   "size": "2016-PM15-K",
+   "family": "2016-PM",
+   "title_sk": "Nosníky tvaru obráteného „T“ dĺžky 15m pre doskové mosty VPH-PTMN 2016 – PM, 15m",
+   "title_en": "Inverted T-beams with a length of 15m for the slab bridges VPH-PTMN 2016 – PM, 15m",
+   "pdf_page_en": 10,
+   "pdf_page_sk": 10,
+   "printed_page": 10,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 575,
+    "bottom_width": 780,
+    "block_width": 480,
+    "ledge": 300,
+    "edge": 55,
+    "splay_vertical_chain": "44 + 132 + 44 = 220",
+    "splay_horizontal_chain": "26 + 247 + 26 (300)",
+    "fillet_radius": 50,
+    "optional_void": "R50 at 240/240 (možné vyľahčenie) — excluded",
+    "det_A": "DET. A at 365 — excluded"
+   },
+   "model": {
+    "depth": 575,
+    "unit": "K",
+    "bottom_width": 780,
+    "stem_width": 480
+   },
+   "published": {
+    "area_m2": 0.325,
+    "yt_from_soffit_m": 0.257,
+    "Iy_m4": 0.009392
+   },
+   "computed": {
+    "area_mm2": 325500.0,
+    "yt_mm": 257.38,
+    "Iy_mm4": 9417210000.0,
+    "cx_mm": -94.51
+   },
+   "residuals": {
+    "area_pct": 0.154,
+    "yt_mm": 0.38,
+    "Iy_pct": 0.268
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-PM 15m-K",
+     "production_length_m": 15,
+     "span_m": 14.6,
+     "height_m": 0.575,
+     "volume_m3": 4.88,
+     "mass_t": 12.19
+    }
+   ]
+  },
+  {
+   "size": "2016-PM15-M",
+   "family": "2016-PM",
+   "title_sk": "Nosníky tvaru obráteného „T“ dĺžky 15m pre doskové mosty VPH-PTMN 2016 – PM, 15m",
+   "title_en": "Inverted T-beams with a length of 15m for the slab bridges VPH-PTMN 2016 – PM, 15m",
+   "pdf_page_en": 10,
+   "pdf_page_sk": 10,
+   "printed_page": 10,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 575,
+    "bottom_width": 820,
+    "stem_width": 220,
+    "ledges": "300 + 220 + 300",
+    "edge": 55,
+    "splay_vertical_chain": "44 + 132 + 44 = 220",
+    "splay_horizontal_chain": "26 + 247 + 26 (300)",
+    "fillet_radius": 50,
+    "det_A": "DET. A at 345 — excluded"
+   },
+   "model": {
+    "depth": 575,
+    "unit": "M",
+    "bottom_width": 820,
+    "stem_width": 220
+   },
+   "published": {
+    "area_m2": 0.225,
+    "yt_from_soffit_m": 0.2,
+    "Iy_m4": 0.005981
+   },
+   "computed": {
+    "area_mm2": 225500.0,
+    "yt_mm": 200.56,
+    "Iy_mm4": 5996930000.0,
+    "cx_mm": -0.0
+   },
+   "residuals": {
+    "area_pct": 0.222,
+    "yt_mm": 0.56,
+    "Iy_pct": 0.266
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-PM 15m-M",
+     "production_length_m": 15,
+     "span_m": 14.6,
+     "height_m": 0.575,
+     "volume_m3": 3.38,
+     "mass_t": 8.45
+    }
+   ]
+  },
+  {
+   "size": "2016-T",
+   "family": "2016-T",
+   "title_sk": "Nosníky tvaru obráteného „T“ dĺžky 18 – 21 - 24m so zníženou výškou 1,0m „VPH-PTMN 2016-T“",
+   "title_en": "BEAM VPH-PTMN 2016-T, 18m-21m-24m",
+   "pdf_page_en": 12,
+   "pdf_page_sk": 12,
+   "printed_page": 12,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 1000,
+    "body_depth": 980,
+    "bottom_width": 820,
+    "bottom_chain": "410 + 410",
+    "web_width": 220,
+    "raised_strip": "140 wide x 20 high (40 + 140 + 40 = 220), ZDRSNENIE POVRCHU",
+    "vertical_chain": "140 + 44 + 132 + 44 + 620 = 980; right 140 + 220 + 640 = 1000",
+    "lower": "bottom: SKOSENIE 15/15; edge 140, fillet 44 + splay 132 + fillet 44 (=220), horizontal 26 + 247 + 26 (300)",
+    "fillet_radius": 50
+   },
+   "model": {
+    "depth": 1000,
+    "bottom_width": 820,
+    "web_width": 220,
+    "top_width": null,
+    "strip_width": 140,
+    "strip_height": 20
+   },
+   "published": {
+    "area_m2": 0.36857,
+    "yt_from_soffit_m": 0.348,
+    "Iy_m4": 0.031
+   },
+   "computed": {
+    "area_mm2": 368175.0,
+    "yt_mm": 347.27,
+    "Iy_mm4": 30835400000.0,
+    "cx_mm": 0.0
+   },
+   "residuals": {
+    "area_pct": -0.107,
+    "yt_mm": -0.73,
+    "Iy_pct": -0.531
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-T 18m",
+     "production_length_m": 18,
+     "span_m": 17.4,
+     "height_m": 1.0,
+     "volume_m3": 6.63,
+     "mass_t": 16.6
+    },
+    {
+     "designation": "VPH-PTMN 2016-T 21m",
+     "production_length_m": 21,
+     "span_m": 20.4,
+     "height_m": 1.0,
+     "volume_m3": 7.74,
+     "mass_t": 19.4
+    },
+    {
+     "designation": "VPH-PTMN 2016-T 24m",
+     "production_length_m": 24,
+     "span_m": 23.4,
+     "height_m": 1.0,
+     "volume_m3": 8.85,
+     "mass_t": 22.1
+    }
+   ]
+  },
+  {
+   "size": "2010-I-1.2",
+   "family": "2010 I",
+   "title_sk": "Nosníky tvaru „I“ dĺžky 18 -21 -24m s výškou 1,2m „VPH-PTMN 2010“",
+   "title_en": "BEAM VPH-PTMN 2016-T, 18m-21m-24m [sic; English heading error, table and Slovak heading: VPH-PTMN 2010]",
+   "pdf_page_en": 14,
+   "pdf_page_sk": 14,
+   "printed_page": 14,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 1200,
+    "bottom_width": 800,
+    "bottom_chain": "300 + 200 + 300",
+    "web_width": 200,
+    "web_straight": 673,
+    "top": "top: 800 = 30 + 270 + 200 + 270 + 30; rebate 30 x 20; left chain 33 + 49 + 36 + 49 = 167; right chain 75 (sharp edge corner) + 92 = 167; horizontal 42 + 216 + 42 = 300",
+    "lower": "bottom: SKOSENIE 15/15; edge 140, fillet 44 + splay 132 + fillet 44 (=220), horizontal 26 + 247 + 26 (300)",
+    "fillet_radius": 50
+   },
+   "model": {
+    "depth": 1200,
+    "bottom_width": 800,
+    "web_width": 200,
+    "top_width": 800
+   },
+   "published": {
+    "area_m2": 0.4486,
+    "yt_from_soffit_m": 0.515,
+    "Iy_m4": 0.07727
+   },
+   "computed": {
+    "area_mm2": 448450.8,
+    "yt_mm": 514.58,
+    "Iy_mm4": 77233100000.0,
+    "cx_mm": 0.0
+   },
+   "residuals": {
+    "area_pct": -0.033,
+    "yt_mm": -0.42,
+    "Iy_pct": -0.048
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2010 I 18m",
+     "production_length_m": 18,
+     "span_m": 17.4,
+     "height_m": 1.2,
+     "volume_m3": 8.01,
+     "mass_t": 20.3
+    },
+    {
+     "designation": "VPH-PTMN 2010 I 21m",
+     "production_length_m": 21,
+     "span_m": 20.4,
+     "height_m": 1.2,
+     "volume_m3": 9.36,
+     "mass_t": 23.39
+    },
+    {
+     "designation": "VPH-PTMN 2010 I 24m",
+     "production_length_m": 24,
+     "span_m": 23.4,
+     "height_m": 1.2,
+     "volume_m3": 10.7,
+     "mass_t": 26.76
+    }
+   ]
+  },
+  {
+   "size": "2016-I",
+   "family": "2016-I",
+   "title_sk": "Nosníky tvaru „I“ dĺžky 27-30-32m so zníženou výškou 1,2m „VPH-PTMN 2016-I“",
+   "title_en": "BEAM VPH-PTMN 2016-I, 27m-30m-32m",
+   "pdf_page_en": 16,
+   "pdf_page_sk": 16,
+   "printed_page": 16,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 1200,
+    "bottom_width": 820,
+    "bottom_chain": "410 + 410",
+    "web_width": 220,
+    "web_straight": 673,
+    "top": "top: 820 = 40 + 740 + 40; rebate 40 x 20; left chain 33 + 49 + 36 + 49 = 167; right chain 33 + 135 (printed; 49 + 36 + 49 = 134, depth closes with 167: 167 + 673 + 360 = 1200); horizontal 42 + 216 + 42 = 300",
+    "lower": "bottom: SKOSENIE 15/15; edge 140, fillet 44 + splay 132 + fillet 44 (=220), horizontal 26 + 247 + 26 (300)",
+    "fillet_radius": 50
+   },
+   "model": {
+    "depth": 1200,
+    "bottom_width": 820,
+    "web_width": 220,
+    "top_width": 820,
+    "rebate_width": 40
+   },
+   "published": {
+    "area_m2": 0.47257,
+    "yt_from_soffit_m": 0.519,
+    "Iy_m4": 0.0803
+   },
+   "computed": {
+    "area_mm2": 472050.8,
+    "yt_mm": 518.35,
+    "Iy_mm4": 80099000000.0,
+    "cx_mm": -0.0
+   },
+   "residuals": {
+    "area_pct": -0.11,
+    "yt_mm": -0.65,
+    "Iy_pct": -0.25
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2016-I 27m",
+     "production_length_m": 27,
+     "span_m": 26.4,
+     "height_m": 1.2,
+     "volume_m3": 12.76,
+     "mass_t": 31.9
+    },
+    {
+     "designation": "VPH-PTMN 2016-I 30m",
+     "production_length_m": 30,
+     "span_m": 29.4,
+     "height_m": 1.2,
+     "volume_m3": 14.18,
+     "mass_t": 35.4
+    },
+    {
+     "designation": "VPH-PTMN 2016-I 32m",
+     "production_length_m": 32,
+     "span_m": 31.4,
+     "height_m": 1.2,
+     "volume_m3": 15.12,
+     "mass_t": 37.8
+    }
+   ]
+  },
+  {
+   "size": "2010-I-1.4",
+   "family": "2010 I",
+   "title_sk": "Nosníky tvaru „I“ dĺžky 27-30-32m s výškou 1,4m „VPH-PTMN 2010 I“",
+   "title_en": "BEAM VPH-PTMN 2010 I, 27m-30m-32m with only prestressed wires / with a combined prestressing",
+   "pdf_page_en": [
+    18,
+    19
+   ],
+   "pdf_page_sk": [
+    18,
+    19
+   ],
+   "printed_page": [
+    18,
+    19
+   ],
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 1400,
+    "bottom_width": 800,
+    "bottom_chain": "300 + 100 [sic, 200] + 300 = 800",
+    "web_width": 200,
+    "web_straight": 873,
+    "top": "top: 800 = 30 + 270 + 200 + 270 + 30; rebate 30 x 20; left chain 33 + 49 + 36 + 49 = 167; right chain 75 (sharp edge corner) + 92 = 167; horizontal 42 + 216 + 42 = 300",
+    "lower": "bottom: SKOSENIE 15/15; edge 140, fillet 44 + splay 132 + fillet 44 (=220), horizontal 26 + 247 + 26 (300); left splay printed 26 + 249 [sic] + 26, right 26 + 247 + 26",
+    "fillet_radius": 50
+   },
+   "model": {
+    "depth": 1400,
+    "bottom_width": 800,
+    "web_width": 200,
+    "top_width": 800
+   },
+   "published": {
+    "area_m2": 0.4886,
+    "yt_from_soffit_m": 0.603,
+    "Iy_m4": 0.11549
+   },
+   "computed": {
+    "area_mm2": 488450.8,
+    "yt_mm": 602.93,
+    "Iy_mm4": 115430000000.0,
+    "cx_mm": 0.0
+   },
+   "residuals": {
+    "area_pct": -0.031,
+    "yt_mm": -0.07,
+    "Iy_pct": -0.052
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2010 I 27m",
+     "production_length_m": 27,
+     "span_m": 26.4,
+     "height_m": 1.4,
+     "volume_m3": 13.13,
+     "mass_t": 32.82
+    },
+    {
+     "designation": "VPH-PTMN 2010 I 30m",
+     "production_length_m": 30,
+     "span_m": 29.4,
+     "height_m": 1.4,
+     "volume_m3": 14.59,
+     "mass_t": 36.49
+    },
+    {
+     "designation": "VPH-PTMN 2010 I 32m",
+     "production_length_m": 32,
+     "span_m": 31.4,
+     "height_m": 1.4,
+     "volume_m3": 15.57,
+     "mass_t": 38.93
+    }
+   ]
+  },
+  {
+   "size": "2010-R2-1.9",
+   "family": "2010-R2",
+   "title_sk": "Nosníky tvaru „I“ dĺžky 38m s výškou 1,9m „VPH-PTMN 2010-R2“",
+   "title_en": "BEAM VPH-PTMN 2010 I, 38m with post tensioned cables",
+   "pdf_page_en": 21,
+   "pdf_page_sk": 21,
+   "printed_page": 21,
+   "provenance": "transcribed-with-convention",
+   "transcribed_mm": {
+    "depth": 1900,
+    "bottom_width": 800,
+    "bottom_chain": "15 + 770 + 15",
+    "web_width": 200,
+    "web_straight": 1372,
+    "top": "top: 800 = 40 + 720 + 40; rebate 40 x 20 (ZDRSNENÝ POVRCH); left chain 33 + 49 + 36 + 49 (=167); right chain 82 + 85 labelled 168; horizontal 42 + 216 + 42 = 300",
+    "lower": "15 + 125 + 44 + 132 + 44 = 360; right 184 + 176 = 360",
+    "fillet_radius": 50
+   },
+   "model": {
+    "depth": 1900,
+    "bottom_width": 800,
+    "web_width": 200,
+    "top_width": 800,
+    "rebate_width": 40,
+    "top_edge_depth": 76,
+    "top_web_tangent_depth": 168
+   },
+   "published": {
+    "area_m2": 0.5888,
+    "yt_from_soffit_m": 0.831,
+    "Iy_m4": 0.25527
+   },
+   "computed": {
+    "area_mm2": 588650.8,
+    "yt_mm": 830.99,
+    "Iy_mm4": 255083000000.0,
+    "cx_mm": 0.0
+   },
+   "residuals": {
+    "area_pct": -0.025,
+    "yt_mm": -0.01,
+    "Iy_pct": -0.073
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2010 R2 38m",
+     "production_length_m": 38,
+     "span_m": 37.4,
+     "height_m": 1.9,
+     "volume_m3": 22.39,
+     "mass_t": 58.23
+    }
+   ]
+  },
+  {
+   "size": "2010-R2-2.1",
+   "family": "2010-R2",
+   "title_sk": "Nosníky tvaru „I“ dĺžky 42m s výškou 2,1m „VPH-PTMN 2010-R2“",
+   "title_en": "BEAM VPH-PTMN 2010 I, 42m with the post-tensioning",
+   "pdf_page_en": 23,
+   "pdf_page_sk": 23,
+   "printed_page": 23,
+   "provenance": "transcribed",
+   "transcribed_mm": {
+    "depth": 2100,
+    "bottom_width": 800,
+    "bottom_chain": "15 + 770 + 15",
+    "web_width": 200,
+    "web_straight": 1557,
+    "top": "top: 1100 = 40 + 1020 + 40; rebate 40 x 20; left chain 20 + 55 + 59 + 49 = 183 (centre-of-beam prestressing view reads 20 + 53 + 61 + 49 = 183); right 183; sharp outer flange edge (no radius drawn); R50 at web only",
+    "lower": "15 + 125 + 44 + 132 + 44 = 360; 184 + 176; 140 + 220",
+    "fillet_radius": 50
+   },
+   "model": {
+    "depth": 2100,
+    "bottom_width": 800,
+    "web_width": 200,
+    "top_width": 1100,
+    "rebate_width": 40,
+    "top_edge_depth": 75,
+    "top_web_tangent_depth": 183,
+    "top_edge_radius": 0
+   },
+   "published": {
+    "area_m2": 0.6664,
+    "yt_from_soffit_m": 1.016,
+    "Iy_m4": 0.39284
+   },
+   "computed": {
+    "area_mm2": 665541.3,
+    "yt_mm": 985.83,
+    "Iy_mm4": 373968000000.0,
+    "cx_mm": 0.0
+   },
+   "residuals": {
+    "area_pct": -0.129,
+    "yt_mm": -30.17,
+    "Iy_pct": -4.804
+   },
+   "catalogue_rows": [
+    {
+     "designation": "VPH-PTMN 2010 R2 42m",
+     "production_length_m": 42,
+     "span_m": 41.4,
+     "height_m": 2.1,
+     "volume_m3": 27.98,
+     "mass_t": 72.75
+    }
+   ]
+  }
+ ],
+ "resolved_issues": [
+  {
+   "issue": "PM M-unit centroid ~3 mm high (assessment)",
+   "resolution": "Artefact of the assessment's reading: 170 dimension goes to the upper splay tangent line, not the stem/splay corner. With 55 + 44 + 132 + 44 chain and R50 tangency, M-unit yt residuals are +0.5 to +1.0 mm."
+  },
+  {
+   "issue": "p18 web 100 vs 200; 249 vs 247",
+   "resolution": "pp18 and 19 embed the same image (PDF object 312), so both pages carry the slips. Web 200 (upper 200 label, 300+200+300 = 800) and splay 247 (right side) used; A/yt/I match to -0.03 %/-0.1 mm/-0.05 %."
+  },
+  {
+   "issue": "1.9 m top chain 167 vs labelled 168",
+   "resolution": "168 used (edge 34): closes 168 + 1372 + 360 = 1900 and gives A/yt/I -0.03 %/0.0 mm/-0.07 % vs -0.11 %/-0.8 mm/-0.25 % for 167 with web 1373."
+  },
+  {
+   "issue": "2.1 m centroid 986 vs 1016, I -5 %",
+   "resolution": "Not resolved. Drawing re-read at native resolution and checked against the independent centre-of-beam prestressing view; outline is self-consistent. Implemented as drawn; pinned: A -0.129 %, yt -30.17 mm, I -4.804 %."
+  }
+ ],
+ "open_issues": [
+  "2016-PM13-M area +0.48 % vs printed 0.208 m2",
+  "2016-PM I +0.27..+0.40 % systematic",
+  "2016-T/2016-I area -395 mm2 each",
+  "2.1 m published yt/I inconsistent with drawing"
+ ]
+}

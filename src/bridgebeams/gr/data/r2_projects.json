@@ -1,0 +1,41 @@
+{
+ "sections": {
+  "Dervenakia-G3": {
+   "title_original": "Τεχνική Περιγραφή — Οδικό τμήμα Δερβενάκια (Περιφέρεια Πελοποννήσου), Γέφυρα Γ3, «Τυπική διατομή γέφυρας»",
+   "organisation": "Περιφέρεια Πελοποννήσου (Region of Peloponnese)",
+   "source_url": "https://www.ppel.gov.gr/wp-content/uploads/2022/07/8_-%CE%A4%CE%95%CE%A7%CE%9D%CE%99%CE%9A%CE%97-%CE%A0%CE%95%CE%A1%CE%99%CE%93%CE%A1%CE%91%CE%A6%CE%97-%CE%94%CE%95%CE%A1%CE%92%CE%95%CE%9D%CE%91%CE%9A%CE%99%CE%91_final_signed-2.pdf",
+   "source_local_file": "sources/expansion/round2/gr/dervenakia_g3_technical_description.pdf",
+   "source_sha256": "f2e01a0489a8407c64a3471fa413fc58b89e19e585e6a96ed150c1224f5e3e0d",
+   "pdf_page": 35, "printed_page": "35",
+   "source_status": "tender technical description (2022), project-specific",
+   "provenance": "transcribed-with-convention",
+   "printed_m": {"depth": 2.40, "top_width": 1.40, "bottom_width": 0.90, "web_mid_height": 0.30, "vertical_chain_top_down": [0.15, 0.10, 1.61, 0.26, 0.28], "haunch_horizontal": 0.30, "flange_labels": [".10", ".15"]},
+   "half_profile_mm": [[450, 0], [450, 280], [150, 540], [150, 2150], [450, 2250], [700, 2300], [700, 2400]],
+   "geometry_notes": [
+    "Precast pretensioned doble-T girder, L = 39.0 m, 6 per span at 2.40 m (text p35). Midspan section only; the 1.50-2.00 m solid rectangular end zones are excluded.",
+    "Chain 0.15 + 0.10 + 1.61 + 0.26 + 0.28 = 2.40 closes. Convention (reading of a 1112 px raster figure): the '.10' is the flange-tip thickness and '.15' the flange thickness at the start of the 0.30 x 0.10 haunch, so the underside slopes from (0.70, H-0.10) to (0.45, H-0.15); the haunch meets the 0.30 web at H-0.25.",
+    "Bottom: 0.90 flange with 0.28 vertical edge and 0.26 splay to the 0.30 web.",
+    "No section properties published."
+   ]
+  },
+  "Strymonas-study": {
+   "title_original": "Διερεύνηση της σεισμικής απόκρισης γέφυρας με βάθρο θεμελιωμένο σε ρευστοποιήσιμο έδαφος (διπλωματική εργασία, Ε. Ελευθερίου, ΕΜΠ 2020), Σχήμα 9 «Διατομή δοκού»",
+   "organisation": "National Technical University of Athens (NTUA), supervisor I. Psycharis",
+   "source_url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/51220/diploma_thesis_eleftheriou_evgenia_2020.pdf?isAllowed=y&sequence=1",
+   "source_local_file": "sources/expansion/round2/gr/ntua_eleftheriou_2020_diploma_thesis.pdf",
+   "source_sha256": "37ff782a2ab2f71b632b541a7c446aba078363a90ae9ebc41738602b32cfe4da",
+   "pdf_page": 19, "printed_page": "19",
+   "source_status": "academic thesis (2020) modelling a real Strymonas-area bridge; build status of this exact girder not verified",
+   "provenance": "transcribed",
+   "printed_m": {"depth": 2.05, "top_width": 1.25, "top_chain": [0.40, 0.10, 0.25, 0.10, 0.40], "bottom_width": 0.90, "web": 0.25, "vertical_chain_top_down": [0.12, 0.03, 0.10, 1.50, 0.10, 0.20], "bottom_dims_0_25": "0.25 from each web face (extension lines, see notes)"},
+   "half_profile_mm": [[450, 0], [450, 200], [125, 300], [125, 1800], [225, 1900], [625, 1930], [625, 2050]],
+   "geometry_notes": [
+    "Midspan section of the 40.5 m variable-section precast prestressed girder (7 per 42 m span). The 0.90-wide end block and the tapered transition (Σχήμα 8) are excluded.",
+    "Chain 0.12 + 0.03 + 0.10 + 1.50 + 0.10 + 0.20 = 2.05 and 0.40 + 0.10 + 0.25 + 0.10 + 0.40 = 1.25 close.",
+    "The bottom splay is drawn from the web to the flange edge (0.325 horizontal); the two '0.25' dimensions end on extension lines inside the splay and are not flange-edge positions.",
+    "The earlier registry described this beam as asymmetric; Σχήμα 9 is symmetric.",
+    "Whole-deck composite properties (Πίνακας 7: Atot 9.20 m2, Iy 6.41 m4) are not per-beam and are not used."
+   ]
+  }
+ }
+}

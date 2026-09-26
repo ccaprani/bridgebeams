@@ -1,0 +1,131 @@
+{
+  "source_title_original": "Standard Superstructure Drawing for Road Bridges: RC Deck with Precast RC Beams (20.0 m and 25.0 m simply supported spans)",
+  "organisation": "Government of Nepal, Ministry of Physical Infrastructure and Transport, Department of Roads, Bridge Branch",
+  "sources": {
+    "1300": {
+      "registry_id": "NP-DOR-PRECAST-20",
+      "url": "https://dor.gov.np/home/publication/standard-superstructures-for-road-bridges/force/2-m-simply-supported-span-rc-deck-with-precast-rc-beams-compressed",
+      "local_file": "sources/expansion/asia-africa/nepal-precast20.pdf",
+      "sha256": "16fb263279d3b626fdfb6d852e953380a1aa4a95c40801fa1113f5acc659376f",
+      "pages": 12
+    },
+    "1700": {
+      "registry_id": "NP-DOR-PRECAST-25",
+      "url": "https://dor.gov.np/home/publication/standard-superstructures-for-road-bridges/force/25-m-simply-supported-span-rc-deck-with-precast-rc-beams-compressed",
+      "local_file": "sources/expansion/asia-africa/nepal-precast25.pdf",
+      "sha256": "d7b9eeed9de4293b90b44a478d6ef67837c53984d3191fca70fb2fd6cb685ba4",
+      "pages": 12
+    }
+  },
+  "units": "mm",
+  "source_status": "DoR standard drawing, July 2015",
+  "construction": "Reinforced concrete (RC), precast in casting yard; NOT prestressed.",
+  "geometry_notes": [
+    "Midspan outline transcribed from the 'SECTION OF PRECAST BEAM AT MID SPAN (TYP.)' view (Drg 5/10, PDF p7). The view is cut through an intermediate stiffener, so its rectangular 700-wide outline is the stiffener; the I outline inside it is the beam.",
+    "Splay horizontal 187.5 = (700-325)/2, printed as 187^5 in Drg 7/10 Detail 'Y' (PDF p9) of both volumes.",
+    "Note 4: 'Chamfer 12mm x 12mm shall be provided at all junctions of the formwork unless otherwise specified in the drawings.' No chamfer is drawn on any section.",
+    "CONVENTION (best estimate): 12 mm legs along both faces at the 6 salient corners formed by two formwork faces (2 soffit, 2 bottom-flange shoulders, 2 top-flange undersides). Top edges (free surface, roughened per Note 8) and 4 re-entrant web/splay junctions left sharp.",
+    "Chamfer area effect: removes 392.5 mm2 (soffit 2x72.0, shoulders 2x56.2, top undersides 2x68.0). Alternatives: also chamfering the 2 top edges removes a further 144.0 (total 536.5); 12x12 fills at the 4 re-entrant junctions would add 248.5. All alternatives are below 0.1% of area.",
+    "Intermediate stiffeners (700-wide, at cross girders) and 700x depth rectangular end blocks are excluded.",
+    "No published section properties; analytic checks only."
+  ],
+  "published_properties": null,
+  "sizes": [
+    {
+      "size": "1300",
+      "span_m": 20.0,
+      "drawing": "5/10 of RC Deck with Precast RC Beams 20.0 m-SS Span",
+      "locators": [
+        {
+          "pdf_page": 7,
+          "printed_page": null,
+          "drawing_no": "5/10",
+          "view": "SECTION OF PRECAST BEAM AT MID SPAN (TYP.)",
+          "position": "right centre",
+          "date": "July 14, 2015"
+        },
+        {
+          "pdf_page": 9,
+          "printed_page": null,
+          "drawing_no": "7/10",
+          "view": "DETAIL 'Y' (bottom bulb: 325 web, 187.5 splay, 150/250)",
+          "date": "July 14, 2015"
+        }
+      ],
+      "printed_mm": {
+        "top_width": 700,
+        "bottom_width": 700,
+        "web_width": 325,
+        "top_vertical": 150,
+        "upper_splay_height": 65,
+        "web_height": 685,
+        "lower_splay_height": 150,
+        "bottom_vertical": 250,
+        "depth": 1300,
+        "splay_horizontal_detail_Y": 187.5
+      },
+      "dimensions_mm": {
+        "depth": 1300,
+        "web_height": 685
+      },
+      "provenance": "transcribed-with-convention",
+      "gross_area_sharp_mm2": 612812.5,
+      "chamfer_area_removed_mm2": 392.5,
+      "gross_area_mm2": 612420.0,
+      "chamfer_effect_pct": 0.064,
+      "non_section_data": {
+        "weight_one_precast_beam_t": 37,
+        "M35_in_precast_beams_m3_per_span": 44,
+        "note": "Beam mass/volume include end blocks and stiffeners and the beam length is not stated on p7; not a section-property check. Mass/volume per beam = 2.52 t/m3 assuming 3 beams/span."
+      }
+    },
+    {
+      "size": "1700",
+      "span_m": 25.0,
+      "drawing": "5/10 of RC Deck with Precast RC Beams 25.0 m-SS Span",
+      "locators": [
+        {
+          "pdf_page": 7,
+          "printed_page": null,
+          "drawing_no": "5/10",
+          "view": "SECTION OF PRECAST BEAM AT MID SPAN (TYP.)",
+          "position": "bottom left",
+          "date": "July 14, 2015"
+        },
+        {
+          "pdf_page": 9,
+          "printed_page": null,
+          "drawing_no": "7/10",
+          "view": "DETAIL 'Y' (bottom bulb: 325 web, 187.5 splay, 150/250)",
+          "date": "July 14, 2015"
+        }
+      ],
+      "printed_mm": {
+        "top_width": 700,
+        "bottom_width": 700,
+        "web_width": 325,
+        "top_vertical": 150,
+        "upper_splay_height": 65,
+        "web_height": 1085,
+        "lower_splay_height": 150,
+        "bottom_vertical": 250,
+        "depth": 1700,
+        "splay_horizontal_detail_Y": 187.5
+      },
+      "dimensions_mm": {
+        "depth": 1700,
+        "web_height": 1085
+      },
+      "provenance": "transcribed-with-convention",
+      "gross_area_sharp_mm2": 742812.5,
+      "chamfer_area_removed_mm2": 392.5,
+      "gross_area_mm2": 742420.0,
+      "chamfer_effect_pct": 0.0528,
+      "non_section_data": {
+        "weight_one_precast_beam_t": 55,
+        "M35_in_precast_beams_m3_per_span": 66,
+        "note": "Beam mass/volume include end blocks and stiffeners and the beam length is not stated on p7; not a section-property check. Mass/volume per beam = 2.50 t/m3 assuming 3 beams/span."
+      }
+    }
+  ]
+}

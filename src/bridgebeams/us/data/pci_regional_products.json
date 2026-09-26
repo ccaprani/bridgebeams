@@ -1,0 +1,1024 @@
+{
+ "next": {
+  "title": "NEXT D and NEXT F beams (PCI Northeast regional products)",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "title": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 (MNL-133-11), Appendices B and C (ePub compressed)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": "22 (NEXT D), 23 (NEXT F)",
+  "printed_page": "Appendix C-3, C-4",
+  "also_published_as": {
+   "url": "https://www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/NeXT%20Bridge%20Beams.pdf",
+   "local_path": "sources/expansion/round2/us/pci-next-beams.pdf",
+   "sha256": "094a21b58677aa32cb731d20f0f6f2c519957ae3be46df1c4cd8d5e8b24ffe24"
+  },
+  "units": "in, in2, in4",
+  "columns": [
+   "type",
+   "A",
+   "B",
+   "C"
+  ],
+  "common_dimensions": {
+   "stem_spacing": 60,
+   "stem_top_width": 15,
+   "stem_batter": "0.375 in 12 each face",
+   "fillet_radius": 4,
+   "stem_chamfer": 0.75,
+   "D_flange": 8,
+   "F_flange": 4,
+   "F_edge_draft": 0.25
+  },
+  "rows": {
+   "NEXT40D-96": [
+    "D",
+    96.0,
+    40.0,
+    13.0
+   ],
+   "NEXT40D-120": [
+    "D",
+    120.0,
+    40.0,
+    13.0
+   ],
+   "NEXT36D-96": [
+    "D",
+    96.0,
+    36.0,
+    13.25
+   ],
+   "NEXT36D-120": [
+    "D",
+    120.0,
+    36.0,
+    13.25
+   ],
+   "NEXT32D-96": [
+    "D",
+    96.0,
+    32.0,
+    13.5
+   ],
+   "NEXT32D-120": [
+    "D",
+    120.0,
+    32.0,
+    13.5
+   ],
+   "NEXT28D-96": [
+    "D",
+    96.0,
+    28.0,
+    13.75
+   ],
+   "NEXT28D-120": [
+    "D",
+    120.0,
+    28.0,
+    13.75
+   ],
+   "NEXT36F-95.5": [
+    "F",
+    95.5,
+    36.0,
+    13.0
+   ],
+   "NEXT36F-143.5": [
+    "F",
+    143.5,
+    36.0,
+    13.0
+   ],
+   "NEXT32F-95.5": [
+    "F",
+    95.5,
+    32.0,
+    13.25
+   ],
+   "NEXT32F-143.5": [
+    "F",
+    143.5,
+    32.0,
+    13.25
+   ],
+   "NEXT28F-95.5": [
+    "F",
+    95.5,
+    28.0,
+    13.5
+   ],
+   "NEXT28F-143.5": [
+    "F",
+    143.5,
+    28.0,
+    13.5
+   ],
+   "NEXT24F-95.5": [
+    "F",
+    95.5,
+    24.0,
+    13.75
+   ],
+   "NEXT24F-143.5": [
+    "F",
+    143.5,
+    24.0,
+    13.75
+   ]
+  },
+  "published": {
+   "NEXT40D-96": [
+    1666,
+    238059,
+    25.47
+   ],
+   "NEXT40D-120": [
+    1858,
+    258171,
+    26.55
+   ],
+   "NEXT36D-96": [
+    1562,
+    176674,
+    23.03
+   ],
+   "NEXT36D-120": [
+    1754,
+    191453,
+    24.01
+   ],
+   "NEXT32D-96": [
+    1455,
+    126111,
+    20.57
+   ],
+   "NEXT32D-120": [
+    1647,
+    136502,
+    21.44
+   ],
+   "NEXT28D-96": [
+    1346,
+    85651,
+    18.06
+   ],
+   "NEXT28D-120": [
+    1538,
+    92597,
+    18.8
+   ],
+   "NEXT36F-95.5": [
+    1287,
+    160240,
+    21.77
+   ],
+   "NEXT36F-143.5": [
+    1479,
+    185525,
+    23.36
+   ],
+   "NEXT32F-95.5": [
+    1182,
+    115813,
+    19.51
+   ],
+   "NEXT32F-143.5": [
+    1374,
+    134258,
+    20.98
+   ],
+   "NEXT28F-95.5": [
+    1075,
+    79901,
+    17.24
+   ],
+   "NEXT28F-143.5": [
+    1267,
+    92661,
+    18.57
+   ],
+   "NEXT24F-95.5": [
+    966,
+    51823,
+    14.95
+   ],
+   "NEXT24F-143.5": [
+    1158,
+    60045,
+    16.12
+   ]
+  },
+  "published_columns": [
+   "area",
+   "ixx",
+   "yb"
+  ],
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "Stems centred 5'-0\" apart, 15 in wide at the flange underside (1'-3\"), battered 0.375 in per 12 in per face down to the tabulated base width C (15 - 2*0.375*(B-flange)/12 = C holds for every row); R=4 in fillets at all four stem-flange junctions; 3/4 in chamfers at the stem soffit corners.",
+   "NEXT D: 8 in deck flange of width A. The flange-edge shear key is drawn but not dimensioned; scaled from a 600 dpi render of C-3 as a 1 in deep recess: 1 in land, 1 in taper, 4 in flat, 1 in taper, 1 in land (5 in2 per side). Not fitted; area residuals -0.02 % to -0.10 %.",
+   "NEXT F: 4 in form flange; 1/4 in draft on the edge (A is the top width) and an undimensioned rounded bottom edge corner, scaled as R=2 in. Area residuals +0.01 to +0.02 %.",
+   "A = min/max tabulated widths (96/120 in for D; 95.5/143.5 in for F). Fillets polygonised with 32 chords."
+  ],
+  "residuals_vs_published": {
+   "NEXT40D-96": {
+    "area": {
+     "computed": 1665.66,
+     "residual_pct": -0.02
+    },
+    "ixx": {
+     "computed": 238169.848,
+     "residual_pct": 0.047
+    },
+    "yb": {
+     "computed": 25.433,
+     "residual_pct": -0.144
+    }
+   },
+   "NEXT40D-120": {
+    "area": {
+     "computed": 1857.66,
+     "residual_pct": -0.018
+    },
+    "ixx": {
+     "computed": 258416.138,
+     "residual_pct": 0.095
+    },
+    "yb": {
+     "computed": 26.525,
+     "residual_pct": -0.093
+    }
+   },
+   "NEXT36D-96": {
+    "area": {
+     "computed": 1560.66,
+     "residual_pct": -0.086
+    },
+    "ixx": {
+     "computed": 176749.52,
+     "residual_pct": 0.043
+    },
+    "yb": {
+     "computed": 23.007,
+     "residual_pct": -0.102
+    }
+   },
+   "NEXT36D-120": {
+    "area": {
+     "computed": 1752.66,
+     "residual_pct": -0.076
+    },
+    "ixx": {
+     "computed": 191601.837,
+     "residual_pct": 0.078
+    },
+    "yb": {
+     "computed": 23.992,
+     "residual_pct": -0.076
+    }
+   },
+   "NEXT32D-96": {
+    "area": {
+     "computed": 1453.66,
+     "residual_pct": -0.092
+    },
+    "ixx": {
+     "computed": 126145.859,
+     "residual_pct": 0.028
+    },
+    "yb": {
+     "computed": 20.549,
+     "residual_pct": -0.101
+    }
+   },
+   "NEXT32D-120": {
+    "area": {
+     "computed": 1645.66,
+     "residual_pct": -0.081
+    },
+    "ixx": {
+     "computed": 136585.116,
+     "residual_pct": 0.061
+    },
+    "yb": {
+     "computed": 21.418,
+     "residual_pct": -0.1
+    }
+   },
+   "NEXT28D-96": {
+    "area": {
+     "computed": 1344.66,
+     "residual_pct": -0.1
+    },
+    "ixx": {
+     "computed": 85661.415,
+     "residual_pct": 0.012
+    },
+    "yb": {
+     "computed": 18.049,
+     "residual_pct": -0.061
+    }
+   },
+   "NEXT28D-120": {
+    "area": {
+     "computed": 1536.66,
+     "residual_pct": -0.087
+    },
+    "ixx": {
+     "computed": 92635.478,
+     "residual_pct": 0.042
+    },
+    "yb": {
+     "computed": 18.793,
+     "residual_pct": -0.04
+    }
+   },
+   "NEXT36F-95.5": {
+    "area": {
+     "computed": 1287.176,
+     "residual_pct": 0.014
+    },
+    "ixx": {
+     "computed": 160299.852,
+     "residual_pct": 0.037
+    },
+    "yb": {
+     "computed": 21.739,
+     "residual_pct": -0.143
+    }
+   },
+   "NEXT36F-143.5": {
+    "area": {
+     "computed": 1479.176,
+     "residual_pct": 0.012
+    },
+    "ixx": {
+     "computed": 185673.782,
+     "residual_pct": 0.08
+    },
+    "yb": {
+     "computed": 23.33,
+     "residual_pct": -0.127
+    }
+   },
+   "NEXT32F-95.5": {
+    "area": {
+     "computed": 1182.176,
+     "residual_pct": 0.015
+    },
+    "ixx": {
+     "computed": 115835.75,
+     "residual_pct": 0.02
+    },
+    "yb": {
+     "computed": 19.488,
+     "residual_pct": -0.115
+    }
+   },
+   "NEXT32F-143.5": {
+    "area": {
+     "computed": 1374.176,
+     "residual_pct": 0.013
+    },
+    "ixx": {
+     "computed": 134345.055,
+     "residual_pct": 0.065
+    },
+    "yb": {
+     "computed": 20.956,
+     "residual_pct": -0.112
+    }
+   },
+   "NEXT28F-95.5": {
+    "area": {
+     "computed": 1075.176,
+     "residual_pct": 0.016
+    },
+    "ixx": {
+     "computed": 79910.445,
+     "residual_pct": 0.012
+    },
+    "yb": {
+     "computed": 17.223,
+     "residual_pct": -0.098
+    }
+   },
+   "NEXT28F-143.5": {
+    "area": {
+     "computed": 1267.176,
+     "residual_pct": 0.014
+    },
+    "ixx": {
+     "computed": 92715.703,
+     "residual_pct": 0.059
+    },
+    "yb": {
+     "computed": 18.553,
+     "residual_pct": -0.091
+    }
+   },
+   "NEXT24F-95.5": {
+    "area": {
+     "computed": 966.176,
+     "residual_pct": 0.018
+    },
+    "ixx": {
+     "computed": 51827.825,
+     "residual_pct": 0.009
+    },
+    "yb": {
+     "computed": 14.935,
+     "residual_pct": -0.099
+    }
+   },
+   "NEXT24F-143.5": {
+    "area": {
+     "computed": 1158.176,
+     "residual_pct": 0.015
+    },
+    "ixx": {
+     "computed": 60078.044,
+     "residual_pct": 0.055
+    },
+    "yb": {
+     "computed": 16.106,
+     "residual_pct": -0.084
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "nebt": {
+  "title": "Northeast Bulb-Tees (NEBT), pretensioned sections with 7.1 in (180 mm) web",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/PCI_Northeast/Technical_Resources/Bridge/NEBT_US_Customary.pdf",
+   "local_path": "sources/expansion/round2/us/pcine-nebt-us-customary.pdf",
+   "sha256": "93917cbced5561aea39be1f8f9a93c34448d226560e0d341ea86ded958b080e0",
+   "title": "PCI Bridge Design Manual Appendix C, Regional Products: Northeast Bulb-Tees (PCI Northeast, US customary)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": "1 (typical section and table), 2 (bottom bulb layout)",
+  "printed_page": "Appendix C (unnumbered)",
+  "units": "in, in2, in4",
+  "columns": [
+   "H"
+  ],
+  "common_dimensions": {
+   "top_width": 47.24,
+   "top_edge": 3.35,
+   "top_taper_drop": 1.97,
+   "web": 7.09,
+   "bottom_width": 31.89,
+   "bottom_edge": 8.66,
+   "bottom_taper_rise": 3.94,
+   "web_fillet_radius": 7.87,
+   "bulb_corner_radius": 3.94,
+   "soffit_chamfer": 0.79,
+   "top_edge_radius": 0.79
+  },
+  "rows": {
+   "NEBT39": [
+    39.37
+   ],
+   "NEBT47": [
+    47.24
+   ],
+   "NEBT55": [
+    55.12
+   ],
+   "NEBT63": [
+    62.99
+   ],
+   "NEBT71": [
+    70.87
+   ],
+   "NEBT79": [
+    78.74
+   ],
+   "NEBT83": [
+    82.68
+   ],
+   "NEBT87": [
+    86.61
+   ]
+  },
+  "published": {
+   "NEBT39": [
+    746,
+    19.04,
+    149302
+   ],
+   "NEBT47": [
+    802,
+    22.64,
+    238436
+   ],
+   "NEBT55": [
+    858,
+    26.29,
+    352341
+   ],
+   "NEBT63": [
+    914,
+    29.98,
+    492804
+   ],
+   "NEBT71": [
+    969,
+    33.69,
+    661602
+   ],
+   "NEBT79": [
+    1025,
+    37.43,
+    860400
+   ],
+   "NEBT83": [
+    1053,
+    39.3,
+    971643
+   ],
+   "NEBT87": [
+    1081,
+    41.19,
+    1091070
+   ]
+  },
+  "published_columns": [
+   "area",
+   "yb",
+   "ixx"
+  ],
+  "independent_check": "PCI Journal May-June 2021 (Brice & Pickings) Table A.8: NEBT 39 A=746.5, yb=19.03, Ix=149,232, Iy=61,849 in4.",
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "Metric-origin section (1200/85/50/180/810/220/100 mm, R200/R100, 20 mm chamfer and radius) transcribed from the inch callouts.",
+   "The top taper runs from the flange-edge underside (3.35 in below the top) to the web face 1.97 in lower; the bottom taper from the bulb edge (8.66 in) to the web face 3.94 in higher, i.e. 12.40 in run. R7.87 fillets are inserted at both web-taper intersections, R3.94 at the bulb shoulder (page 2 label; page 1 prints 3.9), 0.79 in chamfers at the soffit corners and R0.79 at the underside of the top flange edge.",
+   "Arcs are polygonised (32 chords per fillet)."
+  ],
+  "residuals_vs_published": {
+   "NEBT39": {
+    "area": {
+     "computed": 746.378,
+     "residual_pct": 0.051
+    },
+    "yb": {
+     "computed": 19.029,
+     "residual_pct": -0.056
+    },
+    "ixx": {
+     "computed": 149224.103,
+     "residual_pct": -0.052
+    }
+   },
+   "NEBT47": {
+    "area": {
+     "computed": 802.176,
+     "residual_pct": 0.022
+    },
+    "yb": {
+     "computed": 22.63,
+     "residual_pct": -0.042
+    },
+    "ixx": {
+     "computed": 238213.036,
+     "residual_pct": -0.094
+    }
+   },
+   "NEBT55": {
+    "area": {
+     "computed": 858.045,
+     "residual_pct": 0.005
+    },
+    "yb": {
+     "computed": 26.28,
+     "residual_pct": -0.039
+    },
+    "ixx": {
+     "computed": 352049.512,
+     "residual_pct": -0.083
+    }
+   },
+   "NEBT63": {
+    "area": {
+     "computed": 913.843,
+     "residual_pct": -0.017
+    },
+    "yb": {
+     "computed": 29.96,
+     "residual_pct": -0.067
+    },
+    "ixx": {
+     "computed": 492202.931,
+     "residual_pct": -0.122
+    }
+   },
+   "NEBT71": {
+    "area": {
+     "computed": 969.713,
+     "residual_pct": 0.074
+    },
+    "yb": {
+     "computed": 33.674,
+     "residual_pct": -0.047
+    },
+    "ixx": {
+     "computed": 660784.197,
+     "residual_pct": -0.124
+    }
+   },
+   "NEBT79": {
+    "area": {
+     "computed": 1025.511,
+     "residual_pct": 0.05
+    },
+    "yb": {
+     "computed": 37.408,
+     "residual_pct": -0.058
+    },
+    "ixx": {
+     "computed": 859112.419,
+     "residual_pct": -0.15
+    }
+   },
+   "NEBT83": {
+    "area": {
+     "computed": 1053.446,
+     "residual_pct": 0.042
+    },
+    "yb": {
+     "computed": 39.286,
+     "residual_pct": -0.037
+    },
+    "ixx": {
+     "computed": 970195.462,
+     "residual_pct": -0.149
+    }
+   },
+   "NEBT87": {
+    "area": {
+     "computed": 1081.309,
+     "residual_pct": 0.029
+    },
+    "yb": {
+     "computed": 41.163,
+     "residual_pct": -0.066
+    },
+    "ixx": {
+     "computed": 1089124.843,
+     "residual_pct": -0.178
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "nedbt": {
+  "title": "Northeast Deck Bulb Tee Beam (NEDBT)",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/PCI_Northeast/Technical_Resources/Bridge/2018_03_06_NEDBT_plot.pdf",
+   "local_path": "sources/expansion/round2/us/pcine-nedbt-2018.pdf",
+   "sha256": "c4ecfaa542af09f4a8733dee44ea4520e05ebdf47ff4429ee63e191f89b16be9",
+   "title": "PCI Northeast, Northeast Deck Bulb Tee Beam (NEDBT) details, sheet NEDBT-03 (issue 2018-03-06)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": 3,
+  "printed_page": "Sheet NEDBT-03, details 1 (typical cross section) and 7 (section properties)",
+  "units": "in, in2, in4",
+  "columns": [
+   "H"
+  ],
+  "common_dimensions": {
+   "width": 60,
+   "flange": 8,
+   "flange_taper_drop": 2.25,
+   "web": 7.0625,
+   "bottom_width": 31.875,
+   "bottom_edge": 8.6875,
+   "bottom_taper_rise": 3.9375,
+   "web_fillet_radius": 7.875,
+   "soffit_chamfer": 0.75,
+   "bulb_corner_radius_estimate": 3.9375,
+   "edge_key_depth_estimate": 0.9
+  },
+  "rows": {
+   "NEDBT40": [
+    40.0
+   ],
+   "NEDBT48": [
+    48.0
+   ],
+   "NEDBT56": [
+    56.0
+   ],
+   "NEDBT64": [
+    64.0
+   ],
+   "NEDBT72": [
+    72.0
+   ],
+   "NEDBT80": [
+    80.0
+   ]
+  },
+  "published": {
+   "NEDBT40": [
+    1052,
+    202089,
+    23.43
+   ],
+   "NEDBT48": [
+    1109,
+    327115,
+    28.07
+   ],
+   "NEDBT56": [
+    1165,
+    486874,
+    32.64
+   ],
+   "NEDBT64": [
+    1222,
+    683314,
+    37.16
+   ],
+   "NEDBT72": [
+    1279,
+    918385,
+    41.63
+   ],
+   "NEDBT80": [
+    1335,
+    1193950,
+    46.06
+   ]
+  },
+  "published_columns": [
+   "area",
+   "ixx",
+   "yb"
+  ],
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "60 in wide, 8 in minimum flange (a variable build-up above is excluded), flange underside drops 2 1/4 in to the web face, 7 1/16 in web, R7 7/8 fillets, bottom bulb 31 7/8 in x 8 11/16 in with 3 15/16 in taper and 3/4 in soffit chamfers.",
+   "12 3/8 in (bulb edge to web face) conflicts by 1/32 in with (31 7/8 - 7 1/16)/2; the 31 7/8 in and 7 1/16 in values are kept.",
+   "Conventions: the bulb shoulder radius is not labelled on NEDBT-03 and is taken from the NEBT drawing (3.94 in); the flange-edge shear key is drawn as a V notch over the full 8 in edge, not dimensioned; its depth (0.9 in) was scaled from the drawing. Not fitted; area residuals +0.03 % to +0.13 %."
+  ],
+  "residuals_vs_published": {
+   "NEDBT40": {
+    "area": {
+     "computed": 1053.335,
+     "residual_pct": 0.127
+    },
+    "ixx": {
+     "computed": 202187.482,
+     "residual_pct": 0.049
+    },
+    "yb": {
+     "computed": 23.432,
+     "residual_pct": 0.008
+    }
+   },
+   "NEDBT48": {
+    "area": {
+     "computed": 1109.835,
+     "residual_pct": 0.075
+    },
+    "ixx": {
+     "computed": 327263.115,
+     "residual_pct": 0.045
+    },
+    "yb": {
+     "computed": 28.066,
+     "residual_pct": -0.013
+    }
+   },
+   "NEDBT56": {
+    "area": {
+     "computed": 1166.335,
+     "residual_pct": 0.115
+    },
+    "ixx": {
+     "computed": 487046.634,
+     "residual_pct": 0.035
+    },
+    "yb": {
+     "computed": 32.639,
+     "residual_pct": -0.002
+    }
+   },
+   "NEDBT64": {
+    "area": {
+     "computed": 1222.835,
+     "residual_pct": 0.068
+    },
+    "ixx": {
+     "computed": 683457.877,
+     "residual_pct": 0.021
+    },
+    "yb": {
+     "computed": 37.159,
+     "residual_pct": -0.002
+    }
+   },
+   "NEDBT72": {
+    "area": {
+     "computed": 1279.335,
+     "residual_pct": 0.026
+    },
+    "ixx": {
+     "computed": 918396.926,
+     "residual_pct": 0.001
+    },
+    "yb": {
+     "computed": 41.633,
+     "residual_pct": 0.008
+    }
+   },
+   "NEDBT80": {
+    "area": {
+     "computed": 1335.835,
+     "residual_pct": 0.063
+    },
+    "ixx": {
+     "computed": 1193748.283,
+     "residual_pct": -0.017
+    },
+    "yb": {
+     "computed": 46.067,
+     "residual_pct": 0.016
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "zone6_u": {
+  "title": "PCI Zone 6 (SE Region) spliced U-girders, sheet U-7 typical girder geometry",
+  "source": {
+   "url": "https://www.pci.org/PCI_Docs/GCPCI_Docs/Transportation_Resources/2011PCIBridgeManual-Appendix_BC.pdf",
+   "local_path": "sources/expansion/round2/us/pci-bdm-2011-appendix-bc.pdf",
+   "sha256": "e9e2d6a1ab578983e897a94b12b31d0aca96c1806119b7624108d0716c8f398e",
+   "title": "PCI Bridge Design Manual, 3rd Edition, First Release, November 2011 (MNL-133-11), Appendices B and C (ePub compressed)",
+   "retrieved": "2026-09-23"
+  },
+  "pdf_page": 30,
+  "printed_page": "Appendix C-11 (drawing U-7)",
+  "units": "in; weight in plf",
+  "columns": [
+   "D",
+   "duct",
+   "tw",
+   "W",
+   "T",
+   "tf",
+   "bf",
+   "weight_plf"
+  ],
+  "rows": {
+   "U72-3": [
+    72,
+    3,
+    9,
+    121,
+    81,
+    20,
+    70,
+    2117
+   ],
+   "U84-3": [
+    84,
+    3,
+    9,
+    127,
+    87,
+    20,
+    70,
+    2349
+   ],
+   "U96-3": [
+    96,
+    3,
+    9,
+    133,
+    93,
+    20,
+    70,
+    2581
+   ],
+   "U72-4": [
+    72,
+    4,
+    10,
+    123,
+    81,
+    21,
+    72,
+    2271
+   ],
+   "U84-4": [
+    84,
+    4,
+    10,
+    129,
+    87,
+    21,
+    72,
+    2529
+   ],
+   "U96-4": [
+    96,
+    4,
+    10,
+    135,
+    93,
+    21,
+    72,
+    2787
+   ]
+  },
+  "published": {
+   "U72-3": [
+    2032.3
+   ],
+   "U84-3": [
+    2255.0
+   ],
+   "U96-3": [
+    2477.8
+   ],
+   "U72-4": [
+    2180.2
+   ],
+   "U84-4": [
+    2427.8
+   ],
+   "U96-4": [
+    2675.5
+   ]
+  },
+  "published_columns": [
+   "area"
+  ],
+  "published_note": "Area implied by the tabulated weight at the stated 150 pcf (gross section, ducts not deducted).",
+  "common_dimensions": {
+   "web_batter": "3 in 12",
+   "bottom_slab": 9,
+   "flange_edge": 9.25,
+   "flange_edge_draft": 2.25,
+   "flange_underside_run": 7.5,
+   "upper_inner_face": "2 in inward over 21 in (haunched sheet)",
+   "inner_chamfer": 3,
+   "soffit_chamfer": 1.5
+  },
+  "provenance": "transcribed-with-convention",
+  "source_status": "illustrative concept drawing ('all concrete dimensions ... for illustration purposes only')",
+  "geometry_notes": [
+   "W, T, tf, bf, D, tw read from the U-7 girder geometry table; W = T + 2 tf checks for all six rows.",
+   "Outer webs batter 3:12 from the soffit (bf) to the flange underside 9 1/4 in below the top, then a 7 1/2 in underside and a 2 1/4 in edge draft reach W/2 (closes to within 1/16 in for all rows).",
+   "Inner web face offset tw perpendicular to the outer face; the upper inner face runs from T/2 at the top inward 2 in per 21 in (as dimensioned on the haunched-girder sheet) until it meets the web face; 3 in chamfers at the bottom-slab corners, 9 in bottom slab, 1 1/2 in soffit chamfers.",
+   "Not fitted: the areas land within 0.16 % of the weight-implied areas (150 pcf), which independently supports the perpendicular web thickness and the 2-in-21 upper inner face. Ducts are not deducted, as in the source."
+  ],
+  "residuals_vs_published": {
+   "U72-3": {
+    "area": {
+     "computed": 2030.167,
+     "residual_pct": -0.105
+    }
+   },
+   "U84-3": {
+    "area": {
+     "computed": 2252.815,
+     "residual_pct": -0.097
+    }
+   },
+   "U96-3": {
+    "area": {
+     "computed": 2475.462,
+     "residual_pct": -0.094
+    }
+   },
+   "U72-4": {
+    "area": {
+     "computed": 2176.769,
+     "residual_pct": -0.157
+    }
+   },
+   "U84-4": {
+    "area": {
+     "computed": 2424.155,
+     "residual_pct": -0.15
+    }
+   },
+   "U96-4": {
+    "area": {
+     "computed": 2671.542,
+     "residual_pct": -0.148
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ }
+}

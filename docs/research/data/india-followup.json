@@ -1,0 +1,144 @@
+{
+  "accessed": "2026-09-22",
+  "scope": "India supplement:4newprimarysourcesplus1existing-sourceaccessupdate. Noimplementedgeometry.",
+  "merge_policy": "Replace IN-RDSO-BS141 byid; appendother4. Do not double-count existingrecord.",
+  "sources": [
+    {
+      "country": "India",
+      "country_code": "IN",
+      "accessed": "2026-09-22",
+      "dimensions": [],
+      "id": "IN-RDSO-BS141",
+      "updates_existing": true,
+      "organisation": "Research Designs and Standards Organisation, Indian Railways",
+      "title_en": "Guidelines for Quality Control, Erection, Inspection & Maintenance of PSC Girders, BS-141, March2025",
+      "url": "https://rdso.indianrailways.gov.in/uploads/BS-141.pdf",
+      "status": "web-readable-local-download-blocked",
+      "families": [
+        "2I",
+        "4I",
+        "U",
+        "box"
+      ],
+      "evidence": {
+        "method": "Official PDF opened through web reader;106pages, table of contents verifies AnnexureXXIII at printed82. Subsequent deep-page requests timed out.",
+        "local_download": "Connection refused"
+      },
+      "notes": "Existing source update, not new source. Family labels retained as inherited drawing-index leads; no table heights newly verified."
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "accessed": "2026-09-22",
+      "dimensions": [
+        {
+          "mark": "km37+744 PSC I,30m crossing",
+          "span_designation_m": 30,
+          "top_width_mm": 1100,
+          "support_stem_width_mm": 750,
+          "pdf_page": 41,
+          "geometry_status": "partial-readable-dimensions-only",
+          "unverified_readings": "Elevation may show2225mm depth; degradedscan precludes promotion. Midspan web/bottom/haunch digits need clearer drawing."
+        }
+      ],
+      "id": "IN-NHAI-DELHI-VADODARA-PKG2",
+      "organisation": "National Highways Authority of India",
+      "title_en": "Delhi\u2013Vadodara Expressway packageII, VolumeIII structural drawings, July2019",
+      "url": "https://nhai.gov.in/nhai/sites/default/files/Agreements_document/pkg2-VOL-III.pdf",
+      "status": "downloaded-partial-dimensions-transcribed",
+      "families": [
+        "project precast PSC I girder"
+      ],
+      "local_file": "sources/expansion/india-followup/nhai-project.pdf",
+      "sha256": "828db4e970519efa152ae40f8326f235d7fccfea775869d8e81ce68fb2a9cc0f",
+      "pages": 196,
+      "bytes": 2976865,
+      "evidence": {
+        "method": "PDFdownload, targeted OCR and rendered-sheet visual inspection",
+        "pdf_pages": [
+          1,
+          39,
+          40,
+          41
+        ],
+        "printed_section_page": 40
+      },
+      "notes": "Project-specific30m crossing atkm37+744. BothsupportandmidspansectionslabelledprecastPSC. EarlierRCCsheets arecastinsituandexcluded."
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "accessed": "2026-09-22",
+      "dimensions": [],
+      "id": "IN-MORTH-RCC32-2025",
+      "organisation": "Ministry of Road Transport & Highways",
+      "title_en": "Standard RCC T-beam and slab superstructure,32mspan,13mwidth,zero skew,January2025",
+      "url": "https://www.morth.gov.in/sites/default/files/comprehensive_compendium_circular/1910.6-%2032m%20span%20with%200%20skew%20Bridge%20Drawing.pdf",
+      "status": "official-indexed-drawing-download-blocked",
+      "families": [
+        "precast RCC longitudinal girder"
+      ],
+      "evidence": {
+        "method": "Official search-index text; direct reader timeout; local wwwTLSerror and oldnicredirecttoHTML",
+        "drawing": "MORTH/LSM/32m/13.0m/00/1001",
+        "related_drawings": [
+          "MORTH/LSM/32m/13.0m/00/1003",
+          "MORTH/LSM/32m/13.0m/00/1007"
+        ]
+      },
+      "notes": "ExplicitprecastRCCgirderandcastinsitudecklabels.32mspan,13mdeckwidtharenotprofiledimensions. NoPDFbytes/hashobtained."
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "accessed": "2026-09-22",
+      "dimensions": [],
+      "id": "IN-IRICEN-ABC2023",
+      "organisation": "Indian Railways Institute of Civil Engineering",
+      "title_en": "Accelerated Bridge Construction,IPWEseminarNovember2023",
+      "url": "https://www.iricen.gov.in/iricen/ipwe_seminar/2017/2024%20Session-I/IPWE%20Nov%2023%20Vol-I%20Paper%207.pdf",
+      "status": "official-indexed-family-list",
+      "families": [
+        "prefabricated PSC slab",
+        "prefabricated PSC girder"
+      ],
+      "evidence": {
+        "method": "Official search-index text,slide15; localdownloadtimeout"
+      },
+      "span_designations_m": {
+        "PSC slab": [
+          3.05,
+          4.57,
+          6.1,
+          9.15,
+          12.2
+        ],
+        "PSC girder": [
+          12.2,
+          18.3,
+          24.4
+        ]
+      },
+      "notes": "Spanfamiliesonly; nocross-sectiondepthoroutlineinferred."
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "accessed": "2026-09-22",
+      "dimensions": [],
+      "id": "IN-IRICEN-B10273",
+      "organisation": "Indian Railways Institute of Civil Engineering",
+      "title_en": "IRICENJournalNovember2021,RDSO-B/10273PSC-Ianalysisreference",
+      "url": "https://iricen.gov.in/iricen/journals/Nov-2021.pdf",
+      "status": "official-indexed-drawing-reference",
+      "families": [
+        "railway PSC I girder"
+      ],
+      "evidence": {
+        "method": "Official indexedjournaltext,printedpage39; localdownloadtimeout",
+        "drawing": "RDSO-B/10273"
+      },
+      "notes": "Printed18.4mPSC-Ideckfor25tloadingusedformodel; do not silentlychange18.4to18.3. Exactdrawingnotobtained."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bridgebeams"
+version = "0.3.0"
+description = "Standard precast/prestressed bridge beam sections for use with the sectionproperties package"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Colin Caprani", email = "colin.caprani@monash.edu" }]
+keywords = [
+    "bridge",
+    "beams",
+    "precast",
+    "prestressed",
+    "section-properties",
+    "structural-engineering",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=1.24",
+    "shapely>=2.0",
+    "sectionproperties>=3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "matplotlib>=3.7"]
+docs = [
+    "Sphinx>=4.0",
+    "pydata-sphinx-theme",
+    "myst-parser",
+    "nbsphinx",
+    "sphinx-autodoc-typehints",
+]
+
+[project.urls]
+Homepage = "https://github.com/ccaprani/bridgebeams"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

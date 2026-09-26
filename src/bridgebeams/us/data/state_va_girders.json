@@ -1,0 +1,836 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Virginia Department of Transportation, Structure and Bridge Division",
+ "units": "inch",
+ "sources": {
+  "part2_ch12": {
+   "url": "https://www.vdot.virginia.gov/x/vdotvirginiagov/doing-business/technical-guidance-and-support/technical-guidance-documents/structure-and-bridge/manuals-of-structure-and-bridge-acc/part2/Chapter12.pdf",
+   "title": "VDOT Manual of the Structure and Bridge Division, Part 2, Chapter 12 Prestressed and Post-Tensioned Concrete",
+   "retrieved": "2026-09-23",
+   "local_path": "sources/expansion/round2/us/va_part2_ch12.pdf",
+   "sha256": "54d681c62ed1a8bc5f57e3100ee565ede2bbfaec9387a6f1163e859820659223"
+  },
+  "pcbt_53s": {
+   "title": "Part 4 Standard PCBT-53S, Prestressed Concrete Bulb-T (sheet 1, Typical Beam Section)",
+   "url": "https://www.vdot.virginia.gov/x/vdotvirginiagov/doing-business/technical-guidance-and-support/technical-guidance-documents/structure-and-bridge/manuals-of-structure-and-bridge-acc/part4/PCBT-53S.pdf",
+   "retrieved": "2026-09-23",
+   "local_path": "sources/expansion/round2/us/va_PCBT-53S.pdf",
+   "sha256": "d293c77419065cdc871a0d26c782bd795d84057c734c60ec719aa3f83541b4be",
+   "pdf_page": 1,
+   "date": "28Apr2023"
+  },
+  "part4": {
+   "title": "VDOT Manual of the Structure and Bridge Division Part 4 Prestressed Concrete Beam Standards (TOC and instructions)",
+   "url": "https://www.vdot.virginia.gov/media/vdotvirginiagov/doing-business/technical-guidance-and-support/technical-guidance-documents/structure-and-bridge/manuals-of-structure-and-bridge-acc/part4/Part4.pdf",
+   "retrieved": "2026-09-23",
+   "local_path": "sources/expansion/round2/us/va_part4.pdf",
+   "sha256": "d8966b6555097ae28627909cc66332d47dbda146d4b53d1b05f1b519c166e57b",
+   "date_of_issuance": "30Apr2026"
+  }
+ },
+ "families": {
+  "PCBT": {
+   "title": "Prestressed Concrete Bulb-T PCBT-29 to PCBT-93",
+   "source_status": "current VDOT standard (File 12.03-5 dated 31Oct2018; PCBT-53S dated 28Apr2023)",
+   "locators": {
+    "properties": "Part 2 Ch12 File No. 12.03-5 (Sheet 5 of 11), PDF page 31",
+    "drawing": "PCBT-53S sheet 1 Typical Beam Section; same outline on File 12.03-5 sketch"
+   },
+   "template_in": {
+    "top_flange_width": 47.0,
+    "top_edge_thickness": 4.0,
+    "top_taper_rise": 1.5,
+    "top_bevel_rise": 2.0,
+    "top_bevel_run": 2.0,
+    "top_taper_run": 18.0,
+    "web_width": 7.0,
+    "bottom_flange_width": 32.0,
+    "bottom_edge_height": 7.0,
+    "bottom_taper_rise": 3.0,
+    "bottom_taper_run": 9.0,
+    "bottom_bevel_rise": 3.5,
+    "bottom_bevel_run": 3.5,
+    "soffit_chamfer": 0.75
+   },
+   "geometry_notes": [
+    "All outline dimensions are printed on PCBT-53S sheet 1 and on the File 12.03-5 sketch: 3'-11\" top, 4\" edge, 1 1/2\" taper, 2\"x2\" bevel, 1'-6\" taper run, 7\" web, 3 1/2\"x3 1/2\" lower bevel, 9\" lower taper run, 3\" lower taper rise, 7\" bottom edge, 2'-8\" bottom. Clear web = D - 21 in (2'-8\" on PCBT-53).",
+    "Soffit corner chamfers are drawn on PCBT-53S but not dimensioned; a 3/4 in chamfer (CDOT/PCI convention) is adopted. Without it every area is 0.55 in^2 high; with it all nine rows of A, yb and I reproduce File 12.03-5 to print precision, so the chamfer is effectively fitted (provenance transcribed-with-convention).",
+    "Gross concrete only: strands, inserts, end details excluded."
+   ],
+   "sections": {
+    "PCBT-29": {
+     "depth_in": 29,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 634.7,
+      "v_s_in": 3.4,
+      "yb_in": 14.66,
+      "i_in4": 66800.0,
+      "s_top_in3": 4658,
+      "s_bot_in3": 4557,
+      "weight_lb_ft": 661
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 634.687,
+       "yb": 14.662,
+       "ix": 66823.024,
+       "iy": 62044.729
+      },
+      "area_pct": -0.002,
+      "yb_diff_in": 0.002,
+      "ix_pct": 0.034
+     }
+    },
+    "PCBT-37": {
+     "depth_in": 37,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 690.7,
+      "v_s_in": 3.41,
+      "yb_in": 18.43,
+      "i_in4": 126000.0,
+      "s_top_in3": 6785,
+      "s_bot_in3": 6837,
+      "weight_lb_ft": 720
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 690.688,
+       "yb": 18.43,
+       "ix": 126033.089,
+       "iy": 62273.395
+      },
+      "area_pct": -0.002,
+      "yb_diff_in": 0.0,
+      "ix_pct": 0.026
+     }
+    },
+    "PCBT-45": {
+     "depth_in": 45,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 746.7,
+      "v_s_in": 3.41,
+      "yb_in": 22.23,
+      "i_in4": 207300.0,
+      "s_top_in3": 9104,
+      "s_bot_in3": 9325,
+      "weight_lb_ft": 778
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 746.688,
+       "yb": 22.234,
+       "ix": 207282.305,
+       "iy": 62502.062
+      },
+      "area_pct": -0.002,
+      "yb_diff_in": 0.004,
+      "ix_pct": -0.009
+     }
+    },
+    "PCBT-53": {
+     "depth_in": 53,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 802.7,
+      "v_s_in": 3.42,
+      "yb_in": 26.06,
+      "i_in4": 312400.0,
+      "s_top_in3": 11596,
+      "s_bot_in3": 11988,
+      "weight_lb_ft": 836
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 802.688,
+       "yb": 26.064,
+       "ix": 312375.827,
+       "iy": 62730.729
+      },
+      "area_pct": -0.002,
+      "yb_diff_in": 0.004,
+      "ix_pct": -0.008
+     }
+    },
+    "PCBT-61": {
+     "depth_in": 61,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 858.7,
+      "v_s_in": 3.42,
+      "yb_in": 29.92,
+      "i_in4": 443100.0,
+      "s_top_in3": 14257,
+      "s_bot_in3": 14810,
+      "weight_lb_ft": 894
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 858.687,
+       "yb": 29.917,
+       "ix": 443115.376,
+       "iy": 62959.395
+      },
+      "area_pct": -0.001,
+      "yb_diff_in": -0.003,
+      "ix_pct": 0.003
+     }
+    },
+    "PCBT-69": {
+     "depth_in": 69,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 914.7,
+      "v_s_in": 3.43,
+      "yb_in": 33.79,
+      "i_in4": 601300.0,
+      "s_top_in3": 17078,
+      "s_bot_in3": 17795,
+      "weight_lb_ft": 953
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 914.688,
+       "yb": 33.788,
+       "ix": 601300.295,
+       "iy": 63188.062
+      },
+      "area_pct": -0.001,
+      "yb_diff_in": -0.002,
+      "ix_pct": 0.0
+     }
+    },
+    "PCBT-77": {
+     "depth_in": 77,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 970.7,
+      "v_s_in": 3.43,
+      "yb_in": 37.67,
+      "i_in4": 788700.0,
+      "s_top_in3": 20053,
+      "s_bot_in3": 20937,
+      "weight_lb_ft": 1011
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 970.688,
+       "yb": 37.674,
+       "ix": 788728.231,
+       "iy": 63416.729
+      },
+      "area_pct": -0.001,
+      "yb_diff_in": 0.004,
+      "ix_pct": 0.004
+     }
+    },
+    "PCBT-85": {
+     "depth_in": 85,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1026.7,
+      "v_s_in": 3.44,
+      "yb_in": 41.57,
+      "i_in4": 1007200.0,
+      "s_top_in3": 23191,
+      "s_bot_in3": 24229,
+      "weight_lb_ft": 1070
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1026.688,
+       "yb": 41.572,
+       "ix": 1007195.6,
+       "iy": 63645.395
+      },
+      "area_pct": -0.001,
+      "yb_diff_in": 0.002,
+      "ix_pct": -0.0
+     }
+    },
+    "PCBT-93": {
+     "depth_in": 93,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1082.7,
+      "v_s_in": 3.44,
+      "yb_in": 45.48,
+      "i_in4": 1258500.0,
+      "s_top_in3": 26484,
+      "s_bot_in3": 27672,
+      "weight_lb_ft": 1128
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1082.687,
+       "yb": 45.481,
+       "ix": 1258497.902,
+       "iy": 63874.062
+      },
+      "area_pct": -0.001,
+      "yb_diff_in": 0.001,
+      "ix_pct": -0.0
+     }
+    }
+   }
+  },
+  "VOIDED_SLAB": {
+   "title": "Prestressed concrete voided slabs, 3 ft and 4 ft wide",
+   "source_status": "current VDOT design guideline (File 12.05-5 dated 26Apr2026; key detail 12.05-10 dated 28Apr2023)",
+   "locators": {
+    "properties_and_section": "Part 2 Ch12 File No. 12.05-5 (Sheet 5 of 13), PDF page 50",
+    "shear_key": "File No. 12.05-10 (Sheet 10 of 13), PDF page 55"
+   },
+   "shear_key_in": {
+    "upper_depth": 4.0,
+    "upper_recess": 0.375,
+    "transition": 0.375,
+    "total_depth": 8.0,
+    "lower_recess": 0.75,
+    "bottom_chamfer": 0.75
+   },
+   "geometry_notes": [
+    "Width W, depth D, void diameters D1/D2, void spacing A/B and void-centre depth C are printed in the File 12.05-5 table; voids are circular.",
+    "Shear key per File 12.05-10, each side: 3/8 in recess over the upper 4 in, 3/8 in 45-degree transition, 3/4 in recess below, ending 8 in below top with a 3/4 in 45-degree bottom chamfer. The key recess is measured from the beam side face (1/4 in from joint centreline).",
+    "The published net area and inertia do NOT deduct shear keys ('consistent with the PCI Bridge Design Manual, 4th edition'); shear_keys=False reproduces them exactly (rectangle minus voids). The default outline includes the VDOT key.",
+    "The 3/4 in drip V-notch (Drip Detail, typ. each side) at the soffit and the 3 in transverse tendon holes are omitted (<0.5 in^2 each; holes are local)."
+   ],
+   "sections": {
+    "36x15": {
+     "width_in": 36,
+     "depth_in": 15,
+     "void_d1_in": 8,
+     "void_d2_in": null,
+     "A_in": 10,
+     "B_in": 16,
+     "C_in": 7.5,
+     "E_in": 6,
+     "provenance": "transcribed",
+     "published": {
+      "net_area_in2": 439,
+      "i_in4": 9725,
+      "s_in3": 1296,
+      "weight_lb_ft": 457
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 431.244,
+       "yb": 7.442,
+       "ix": 9607.387,
+       "iy": 48887.783
+      },
+      "area_pct": -1.767,
+      "ix_pct": -1.209,
+      "without_shear_keys": {
+       "computed": {
+        "area": 439.541,
+        "yb": 7.5,
+        "ix": 9723.45,
+        "iy": 51489.061
+       },
+       "area_pct": 0.123,
+       "ix_pct": -0.016
+      }
+     }
+    },
+    "36x18": {
+     "width_in": 36,
+     "depth_in": 18,
+     "void_d1_in": 10,
+     "void_d2_in": null,
+     "A_in": 10,
+     "B_in": 16,
+     "C_in": 9,
+     "E_in": 7.5,
+     "provenance": "transcribed",
+     "published": {
+      "net_area_in2": 491,
+      "i_in4": 16514,
+      "s_in3": 1835,
+      "weight_lb_ft": 511
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 482.736,
+       "yb": 8.922,
+       "ix": 16303.962,
+       "iy": 56356.455
+      },
+      "area_pct": -1.683,
+      "ix_pct": -1.272,
+      "without_shear_keys": {
+       "computed": {
+        "area": 491.032,
+        "yb": 9.0,
+        "ix": 16515.653,
+        "iy": 58957.733
+       },
+       "area_pct": 0.007,
+       "ix_pct": 0.01
+      }
+     }
+    },
+    "36x21": {
+     "width_in": 36,
+     "depth_in": 21,
+     "void_d1_in": 12,
+     "void_d2_in": null,
+     "A_in": 10,
+     "B_in": 16,
+     "C_in": 10.5,
+     "E_in": 9,
+     "provenance": "transcribed",
+     "published": {
+      "net_area_in2": 530,
+      "i_in4": 25747,
+      "s_in3": 2452,
+      "weight_lb_ft": 552
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 521.67,
+       "yb": 10.404,
+       "ix": 25405.087,
+       "iy": 62547.749
+      },
+      "area_pct": -1.572,
+      "ix_pct": -1.328,
+      "without_shear_keys": {
+       "computed": {
+        "area": 529.967,
+        "yb": 10.5,
+        "ix": 25750.153,
+        "iy": 65149.027
+       },
+       "area_pct": -0.006,
+       "ix_pct": 0.012
+      }
+     }
+    },
+    "48x15": {
+     "width_in": 48,
+     "depth_in": 15,
+     "void_d1_in": 8,
+     "void_d2_in": 8,
+     "A_in": 10,
+     "B_in": 14,
+     "C_in": 7.5,
+     "E_in": 6,
+     "provenance": "transcribed",
+     "published": {
+      "net_area_in2": 569,
+      "i_in4": 12897,
+      "s_in3": 1720,
+      "weight_lb_ft": 593
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 561.014,
+       "yb": 7.455,
+       "ix": 12781.952,
+       "iy": 113284.9
+      },
+      "area_pct": -1.403,
+      "ix_pct": -0.892,
+      "without_shear_keys": {
+       "computed": {
+        "area": 569.311,
+        "yb": 7.5,
+        "ix": 12897.675,
+        "iy": 117947.67
+       },
+       "area_pct": 0.055,
+       "ix_pct": 0.005
+      }
+     }
+    },
+    "48x18": {
+     "width_in": 48,
+     "depth_in": 18,
+     "void_d1_in": 10,
+     "void_d2_in": 10,
+     "A_in": 10,
+     "B_in": 14,
+     "C_in": 9,
+     "E_in": 7.5,
+     "provenance": "transcribed",
+     "published": {
+      "net_area_in2": 628,
+      "i_in4": 21855,
+      "s_in3": 2428,
+      "weight_lb_ft": 654
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 620.252,
+       "yb": 8.939,
+       "ix": 21646.439,
+       "iy": 128989.078
+      },
+      "area_pct": -1.234,
+      "ix_pct": -0.954,
+      "without_shear_keys": {
+       "computed": {
+        "area": 628.549,
+        "yb": 9.0,
+        "ix": 21857.48,
+        "iy": 133651.848
+       },
+       "area_pct": 0.087,
+       "ix_pct": 0.011
+      }
+     }
+    },
+    "48x21": {
+     "width_in": 48,
+     "depth_in": 21,
+     "void_d1_in": 12,
+     "void_d2_in": 10,
+     "A_in": 10,
+     "B_in": 14,
+     "C_in": 10.5,
+     "E_in": 9,
+     "provenance": "transcribed",
+     "published": {
+      "net_area_in2": 703,
+      "i_in4": 34517,
+      "s_in3": 3287,
+      "weight_lb_ft": 733
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 695.186,
+       "yb": 10.428,
+       "ix": 34177.113,
+       "iy": 142047.699
+      },
+      "area_pct": -1.111,
+      "ix_pct": -0.985,
+      "without_shear_keys": {
+       "computed": {
+        "area": 703.483,
+        "yb": 10.5,
+        "ix": 34520.98,
+        "iy": 146710.469
+       },
+       "area_pct": 0.069,
+       "ix_pct": 0.012
+      }
+     }
+    }
+   }
+  },
+  "BOX": {
+   "title": "Prestressed concrete box beams (interior), 3 ft and 4 ft wide",
+   "source_status": "current VDOT design guideline (File 12.06-6 dated 30Apr2026; key detail 12.06-11 dated 28Apr2023)",
+   "locators": {
+    "properties_and_section": "Part 2 Ch12 File No. 12.06-6 (Sheet 6 of 14), PDF page 64",
+    "shear_key": "File No. 12.06-11 (Sheet 11 of 14), PDF page 69"
+   },
+   "void_in": {
+    "top_slab": 6.0,
+    "bottom_slab": 6.0,
+    "web": 5.0,
+    "chamfer": 3.0
+   },
+   "shear_key_in": {
+    "upper_depth": 6.0,
+    "upper_recess": 0.375,
+    "transition": 0.375,
+    "total_depth": 12.0,
+    "lower_recess": 0.75,
+    "bottom_chamfer": 0.75
+   },
+   "geometry_notes": [
+    "Section sketch prints 6 in top slab, 6 in bottom slab, 5 in webs and 3x3 in void chamfers; overall widths 3'-0\"/4'-0\" and depth D. Stroke labels read at 300 dpi.",
+    "Key-less rectangle-minus-void gives exactly published area + 20 in^2 for all eight sizes, confirming the 6/6/5/3 void; the table deducts a PCI-4th-edition shear key of ~20 in^2 whose shape is not given in the VDOT document.",
+    "The outline uses the VDOT key actually drawn in File 12.06-11 (about 12.8 in^2 total), so implemented areas are ~7.2 in^2 (1.0-1.2%) above the published net area and Ix 1.0-1.4% above; these residuals are pinned in tests rather than fitted.",
+    "Drip V-notches, transverse tendon holes and void drains are omitted. Exterior-beam properties (File 12.06-7) are not separate profiles here."
+   ],
+   "sections": {
+    "36x27": {
+     "width_in": 36,
+     "depth_in": 27,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 580,
+      "yb_in": 13.31,
+      "i_in4": 51070,
+      "s_top_in3": 3731,
+      "s_bot_in3": 3836,
+      "weight_lb_ft": 604
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 587.203,
+       "yb": 13.354,
+       "ix": 51783.999,
+       "iy": 81597.714
+      },
+      "area_pct": 1.242,
+      "yb_diff_in": 0.044,
+      "ix_pct": 1.398,
+      "without_shear_keys": {
+       "computed": {
+        "area": 600.0,
+        "yb": 13.5,
+        "ix": 52506.0,
+        "iy": 85607.0
+       },
+       "area_pct": 3.448,
+       "yb_diff_in": 0.19,
+       "ix_pct": 2.812
+      }
+     }
+    },
+    "36x33": {
+     "width_in": 36,
+     "depth_in": 33,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 640,
+      "yb_in": 16.25,
+      "i_in4": 86820,
+      "s_top_in3": 5183,
+      "s_bot_in3": 5343,
+      "weight_lb_ft": 666
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 647.203,
+       "yb": 16.308,
+       "ix": 88016.169,
+       "iy": 96137.714
+      },
+      "area_pct": 1.125,
+      "yb_diff_in": 0.058,
+      "ix_pct": 1.378,
+      "without_shear_keys": {
+       "computed": {
+        "area": 660.0,
+        "yb": 16.5,
+        "ix": 89379.0,
+        "iy": 100147.0
+       },
+       "area_pct": 3.125,
+       "yb_diff_in": 0.25,
+       "ix_pct": 2.947
+      }
+     }
+    },
+    "36x39": {
+     "width_in": 36,
+     "depth_in": 39,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 700,
+      "yb_in": 19.2,
+      "i_in4": 134100,
+      "s_top_in3": 6771,
+      "s_bot_in3": 6984,
+      "weight_lb_ft": 729
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 707.203,
+       "yb": 19.27,
+       "ix": 135895.742,
+       "iy": 110677.714
+      },
+      "area_pct": 1.029,
+      "yb_diff_in": 0.07,
+      "ix_pct": 1.339,
+      "without_shear_keys": {
+       "computed": {
+        "area": 720.0,
+        "yb": 19.5,
+        "ix": 138132.0,
+        "iy": 114687.0
+       },
+       "area_pct": 2.857,
+       "yb_diff_in": 0.3,
+       "ix_pct": 3.007
+      }
+     }
+    },
+    "36x42": {
+     "width_in": 36,
+     "depth_in": 42,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 730,
+      "yb_in": 20.68,
+      "i_in4": 162400,
+      "s_top_in3": 7614,
+      "s_bot_in3": 7853,
+      "weight_lb_ft": 760
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 737.203,
+       "yb": 20.754,
+       "ix": 164540.977,
+       "iy": 117947.714
+      },
+      "area_pct": 0.987,
+      "yb_diff_in": 0.074,
+      "ix_pct": 1.318,
+      "without_shear_keys": {
+       "computed": {
+        "area": 750.0,
+        "yb": 21.0,
+        "ix": 167301.0,
+        "iy": 121957.0
+       },
+       "area_pct": 2.74,
+       "yb_diff_in": 0.32,
+       "ix_pct": 3.018
+      }
+     }
+    },
+    "48x27": {
+     "width_in": 48,
+     "depth_in": 27,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 724,
+      "yb_in": 13.35,
+      "i_in4": 67380,
+      "s_top_in3": 4937,
+      "s_bot_in3": 5047,
+      "weight_lb_ft": 754
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 731.203,
+       "yb": 13.383,
+       "ix": 68094.464,
+       "iy": 178895.097
+      },
+      "area_pct": 0.995,
+      "yb_diff_in": 0.033,
+      "ix_pct": 1.06,
+      "without_shear_keys": {
+       "computed": {
+        "area": 744.0,
+        "yb": 13.5,
+        "ix": 68814.0,
+        "iy": 186083.0
+       },
+       "area_pct": 2.762,
+       "yb_diff_in": 0.15,
+       "ix_pct": 2.128
+      }
+     }
+    },
+    "48x33": {
+     "width_in": 48,
+     "depth_in": 33,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 784,
+      "yb_in": 16.3,
+      "i_in4": 113500,
+      "s_top_in3": 6795,
+      "s_bot_in3": 6965,
+      "weight_lb_ft": 816
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 791.203,
+       "yb": 16.343,
+       "ix": 114696.501,
+       "iy": 206755.097
+      },
+      "area_pct": 0.919,
+      "yb_diff_in": 0.043,
+      "ix_pct": 1.054,
+      "without_shear_keys": {
+       "computed": {
+        "area": 804.0,
+        "yb": 16.5,
+        "ix": 116055.0,
+        "iy": 213943.0
+       },
+       "area_pct": 2.551,
+       "yb_diff_in": 0.2,
+       "ix_pct": 2.251
+      }
+     }
+    },
+    "48x39": {
+     "width_in": 48,
+     "depth_in": 39,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 844,
+      "yb_in": 19.25,
+      "i_in4": 173700,
+      "s_top_in3": 8796,
+      "s_bot_in3": 9025,
+      "weight_lb_ft": 879
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 851.203,
+       "yb": 19.309,
+       "ix": 175538.059,
+       "iy": 234615.097
+      },
+      "area_pct": 0.853,
+      "yb_diff_in": 0.059,
+      "ix_pct": 1.058,
+      "without_shear_keys": {
+       "computed": {
+        "area": 864.0,
+        "yb": 19.5,
+        "ix": 177768.0,
+        "iy": 241803.0
+       },
+       "area_pct": 2.37,
+       "yb_diff_in": 0.25,
+       "ix_pct": 2.342
+      }
+     }
+    },
+    "48x42": {
+     "width_in": 48,
+     "depth_in": 42,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "net_area_in2": 874,
+      "yb_in": 20.73,
+      "i_in4": 209500,
+      "s_top_in3": 9847,
+      "s_bot_in3": 10110,
+      "weight_lb_ft": 910
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 881.203,
+       "yb": 20.794,
+       "ix": 211636.295,
+       "iy": 248545.097
+      },
+      "area_pct": 0.824,
+      "yb_diff_in": 0.064,
+      "ix_pct": 1.02,
+      "without_shear_keys": {
+       "computed": {
+        "area": 894.0,
+        "yb": 21.0,
+        "ix": 214389.0,
+        "iy": 255733.0
+       },
+       "area_pct": 2.288,
+       "yb_diff_in": 0.27,
+       "ix_pct": 2.334
+      }
+     }
+    }
+   }
+  }
+ }
+}

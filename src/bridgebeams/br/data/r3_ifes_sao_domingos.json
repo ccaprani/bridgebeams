@@ -1,0 +1,58 @@
+{
+ "schema_version": 1,
+ "family": "Ponte sobre Córrego São Domingos (ES-010, Conceição da Barra-ES) — longarina I pré-moldada protendida",
+ "country": "Brazil",
+ "source_status": "project-specific design (PROJETO DE ENGENHARIA 2016, ES-010 bridge) as reproduced in a 2023 peer-reviewed book chapter; not a standard",
+ "source": {
+  "authors": "Rodrigo José Costa Nóbrega; Emmanoel Guasti Ferreira (Instituto Federal do Espírito Santo)",
+  "title": "Análise comparativa das normas NBR 6118/2014, NBR 7188/2013 e AASHTO LRFD 2012, baseada na teoria da confiabilidade – estudo de caso de uma viga I da ponte sobre Córrego São Domingos na rodovia estadual ES-010, trecho Itaúnas - ES-421",
+  "book": "Engenharias: pesquisa, desenvolvimento e inovação 2 (CIP record; running page footers read '... inovação 3'), org. Amanda Fernandes Pereira da Silva, Ponta Grossa-PR: Atena Editora, 2023, ISBN 978-65-258-0935-9, CC BY-NC-ND 4.0",
+  "chapter": "Capítulo 2, pp. 5-29",
+  "doi": "https://doi.org/10.22533/at.ed.3592318012",
+  "url": null,
+  "url_note": "Book DOI above (Atena Editora); the book PDF was downloaded manually by the owner, exact file URL not recorded. The underlying IFES repository item (blocked by an anti-bot challenge in round 2) is https://repositorio.ifes.edu.br/bitstream/handle/123456789/2795/Template_ARTIGO_ABNT_Biblioteca_Rodrigo_revisado_final.pdf?isAllowed=y&sequence=1",
+  "local_file": "sources/expansion/round2/manual/br/ifes-sao-domingos-atena.pdf",
+  "sha256": "fbd41d70a651fcb808c3d57242ccd1c74bfa968f97e5638a85dbfce94d300567",
+  "accessed": "2026-09-25",
+  "locators": {
+   "Figura 7 (Seção transversal da viga principal (longarina); Fonte: PROJETO DE ENGENHARIA 2016)": "PDF p33, printed p21",
+   "Figura 8 (vista lateral e seção transversal da superestrutura)": "PDF p33, printed p21",
+   "Tabela 5 (cargas permanentes, q3 = 9,4 kN/m peso próprio longarina)": "PDF p34, printed p22",
+   "Tabela 8 (variáveis aleatórias: hviga+laje 1,48 m, b 2,2 m, yGc 0,921 m)": "PDF p37, printed p25"
+  }
+ },
+ "units": {"drawing": "cm", "outline_output": "mm"},
+ "translation": {
+  "longarina": "main longitudinal girder",
+  "alça de içamento": "lifting loop",
+  "peso próprio": "self-weight",
+  "OAE (obra de arte especial)": "bridge structure"
+ },
+ "dimensions_cm": {
+  "depth": 130, "top_width": 60, "top_flange": 10, "top_taper": 7.5,
+  "web_width": 20, "web_height": 85, "bottom_taper": 7.5, "bottom_flange": 20, "bottom_width": 45
+ },
+ "sizes": {"SD-130": {"provenance": "transcribed"}},
+ "published": {
+  "q3_self_weight_kN_per_m": 9.4,
+  "unit_weight_kN_per_m3_assumed": 25.0,
+  "h_viga_laje_m": 1.48,
+  "slab_thickness_m": 0.18,
+  "effective_width_b_m": 2.2,
+  "yGc_m": 0.921,
+  "span_m": 20.10,
+  "girders": 6,
+  "girder_spacing_cm": 240,
+  "deck_width_cm": 1480
+ },
+ "residuals": {
+  "area_from_self_weight": "A = 0.374375 m2 -> 25 kN/m3 x A = 9.36 kN/m vs printed 9.4 (-0.4%, within 2-s.f. rounding). With the project's 2,50 tf/m3 and g = 9.81 the weight would be 9.18 kN/m (-2.3%), so the 9.4 figure implies a 25 kN/m3 convention.",
+  "hviga_laje": "130 + 18 = 148 cm = 1.48 m (exact).",
+  "yGc": "NOT reproduced: gross composite centroid (b = 2.2 m, 18 cm slab, n = 1) is 1.031 m above the soffit; 0.921 m is not the precast-only centroid either (0.651 m). Its definition in the chapter is unclear; recorded, not used."
+ },
+ "geometry_notes": [
+  "Plain polygonal I, all dimensions printed on Figura 7: vertical chain 10 + 7,5 + 85 + 7,5 + 20 = 130 cm; widths 60 / 20 / 45 cm. Tapers run straight from the flange edges to the web; no chamfers drawn.",
+  "The 30 cm high rectangle drawn above the top flange and labelled 'ALÇA DE IÇAMENTO' (lifting loop) is excluded: it is not part of the girder concrete (hviga+laje = 1,48 m = 1,30 + 0,18 confirms a 130 cm girder).",
+  "Figure is a raster reproduction of the 2016 project drawing; dimensions read from the callouts, proportions checked against the drawing scale (~2.85 px/cm at 300 dpi)."
+ ]
+}

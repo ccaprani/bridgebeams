@@ -1,0 +1,2668 @@
+{
+ "source": {
+  "publisher": "FP McCann Ltd (UK)",
+  "title": "Precast Bridge Beams",
+  "edition": "v1.0, 2025",
+  "url": "https://fpmccann.co.uk/wp-content/uploads/2025/09/Bridge-Beams_2025_LR-1.pdf",
+  "local_path": "sources/expansion/round2/gb/gb_fpmccann_bridge_beams_2025.pdf",
+  "sha256": "243c2d0f902f52842eeb161a6082d4d0cf1a0d0d90e096996075f116b3723644",
+  "retrieved": "2026-09-23 (local file mtime)",
+  "pages": "18 A4 pages; PDF page = printed page for pp. 6-15",
+  "property_table_note": "Each family page prints depth, area, Yb, Zt, Zb and approximate self-weight (edge beams TYE/YE also Yc from the vertical face). Published I is taken as Zb*Yb (Zt*(d-Yb) is checked as a second estimate)."
+ },
+ "units": "mm (source units mm; section moduli 1e6 mm3; self-weight kN/m)",
+ "families": {
+  "ty_type1": {
+   "title": "TY Type 1 Beam Range (beam and slab)",
+   "pdf_page": 6,
+   "printed_page": 6,
+   "provenance": "transcribed-with-convention",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "soffit_width": 750,
+    "bottom_chamfer": "25 x 25",
+    "flange_side_height": 135,
+    "flange_side_inset": 5,
+    "shoulder_rise": 105,
+    "shoulder_run": 227.5,
+    "web_junction_rise": 80,
+    "web_junction_run": 50,
+    "web_width_min_at_320": 185,
+    "construction_point": "web-line x flange-line intersection 164 wide at 268",
+    "web_rise_to_TY10_top": 530,
+    "web_line_width_at_TY10_top": 400,
+    "ledge_height": 50,
+    "ledge_width_nominal": 40,
+    "cap_width": {
+     "TY4": 176,
+     "TY5": 196,
+     "TY6": 217,
+     "TY7": 237,
+     "TY8": 257,
+     "TY9": 277,
+     "TY10": 298
+    }
+   },
+   "published": {
+    "TY4": {
+     "depth_mm": 550.0,
+     "area_mm2": 221300.0,
+     "yb_mm": 193.45,
+     "zt_1e6mm3": 13.91,
+     "zb_1e6mm3": 25.64,
+     "self_weight_kN_m": 5.53
+    },
+    "TY5": {
+     "depth_mm": 600.0,
+     "area_mm2": 235722.0,
+     "yb_mm": 215.83,
+     "zt_1e6mm3": 17.65,
+     "zb_1e6mm3": 31.42,
+     "self_weight_kN_m": 5.89
+    },
+    "TY6": {
+     "depth_mm": 650.0,
+     "area_mm2": 251158.0,
+     "yb_mm": 240.07,
+     "zt_1e6mm3": 22.07,
+     "zb_1e6mm3": 37.68,
+     "self_weight_kN_m": 6.28
+    },
+    "TY7": {
+     "depth_mm": 700.0,
+     "area_mm2": 267608.0,
+     "yb_mm": 265.96,
+     "zt_1e6mm3": 27.18,
+     "zb_1e6mm3": 44.35,
+     "self_weight_kN_m": 6.69
+    },
+    "TY8": {
+     "depth_mm": 750.0,
+     "area_mm2": 285073.0,
+     "yb_mm": 293.28,
+     "zt_1e6mm3": 32.99,
+     "zb_1e6mm3": 51.38,
+     "self_weight_kN_m": 7.13
+    },
+    "TY9": {
+     "depth_mm": 800.0,
+     "area_mm2": 303550.0,
+     "yb_mm": 321.86,
+     "zt_1e6mm3": 39.54,
+     "zb_1e6mm3": 58.74,
+     "self_weight_kN_m": 7.59
+    },
+    "TY10": {
+     "depth_mm": 850.0,
+     "area_mm2": 323044.0,
+     "yb_mm": 351.52,
+     "zt_1e6mm3": 46.83,
+     "zb_1e6mm3": 66.41,
+     "self_weight_kN_m": 8.08
+    }
+   },
+   "geometry_notes": [
+    "Web line through (92.5, 320) and half-width 200 at y = 850 (printed 400 over 530 rise); it also passes the printed 164-wide construction point at y = 268 (163.9).",
+    "Cap uses the printed per-size width (176...298) with vertical sides 50 high; the horizontal ledge at d-50 runs from the cap to the web line, so the ledge is 40.7-41.5 mm, not exactly the printed nominal 40 (printed cap widths are rounded down ~1.6-2.4 mm relative to web(d-50) - 80).",
+    "Printed '10' and '5' vertical dims near the web/shoulder junction locate dashed construction lines only; not modelled."
+   ],
+   "residuals": {
+    "TY4": {
+     "area_mm2": 221359.2,
+     "yb_mm": 193.451,
+     "I_1e9mm4": 4.96306,
+     "area_rel": 0.000268,
+     "yb_abs": 0.000781,
+     "I_zb_rel": 0.000605,
+     "I_zt_rel": 0.000695,
+     "sw_rel": -0.000452
+    },
+    "TY5": {
+     "area_mm2": 235767.2,
+     "yb_mm": 215.808,
+     "I_1e9mm4": 6.78423,
+     "area_rel": 0.000192,
+     "yb_abs": -0.021603,
+     "I_zb_rel": 0.00042,
+     "I_zt_rel": 0.000535,
+     "sw_rel": -0.000518
+    },
+    "TY6": {
+     "area_mm2": 251239.4,
+     "yb_mm": 240.105,
+     "I_1e9mm4": 9.05522,
+     "area_rel": 0.000324,
+     "yb_abs": 0.034743,
+     "I_zb_rel": 0.001038,
+     "I_zt_rel": 0.000892,
+     "sw_rel": 0.000167
+    },
+    "TY7": {
+     "area_mm2": 267675.7,
+     "yb_mm": 265.968,
+     "I_1e9mm4": 11.80352,
+     "area_rel": 0.000253,
+     "yb_abs": 0.008082,
+     "I_zb_rel": 0.000695,
+     "I_zt_rel": 0.000535,
+     "sw_rel": -3e-05
+    },
+    "TY8": {
+     "area_mm2": 285126.2,
+     "yb_mm": 293.27,
+     "I_1e9mm4": 15.0754,
+     "area_rel": 0.000187,
+     "yb_abs": -0.009881,
+     "I_zb_rel": 0.000443,
+     "I_zt_rel": 0.000545,
+     "sw_rel": 0.000445
+    },
+    "TY9": {
+     "area_mm2": 303590.8,
+     "yb_mm": 321.823,
+     "I_1e9mm4": 18.90959,
+     "area_rel": 0.000134,
+     "yb_abs": -0.036792,
+     "I_zb_rel": 0.000187,
+     "I_zt_rel": 0.000208,
+     "sw_rel": 0.000165
+    },
+    "TY10": {
+     "area_mm2": 323119.6,
+     "yb_mm": 351.531,
+     "I_1e9mm4": 23.35541,
+     "area_rel": 0.000234,
+     "yb_abs": 0.011134,
+     "I_zb_rel": 0.00047,
+     "I_zt_rel": 0.000496,
+     "sw_rel": 0.000483
+    }
+   },
+   "pinned": {},
+   "tolerances": {
+    "area_rel": 0.0005,
+    "yb_abs_mm": 0.1,
+    "I_rel": 0.0015,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "printed cap widths are rounded (<=2.4 mm): area 0.05%"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeTYBeamSection(<TYn>, variant='bs')",
+    "verdict": "near-identical",
+    "differences": "Same lower profile, web line and 50-high ledge. Only the cap width differs: FP prints rounded caps (176..298) vs Banagher Wf (178.0..299.7), i.e. <=1.2 mm per side (<=130 mm2). FP's own table differs from Banagher's by ~-160 mm2 in every size.",
+    "per_size": {
+     "TY4": {
+      "symmetric_difference_mm2": 101.7,
+      "area_difference_mm2": -98.3
+     },
+     "TY5": {
+      "symmetric_difference_mm2": 115.2,
+      "area_difference_mm2": -114.8
+     },
+     "TY6": {
+      "symmetric_difference_mm2": 82.1,
+      "area_difference_mm2": -82.1
+     },
+     "TY7": {
+      "symmetric_difference_mm2": 100.3,
+      "area_difference_mm2": -100.3
+     },
+     "TY8": {
+      "symmetric_difference_mm2": 114.7,
+      "area_difference_mm2": -95.3
+     },
+     "TY9": {
+      "symmetric_difference_mm2": 127.3,
+      "area_difference_mm2": -112.7
+     },
+     "TY10": {
+      "symmetric_difference_mm2": 89.1,
+      "area_difference_mm2": -80.9
+     }
+    }
+   }
+  },
+  "ty_type2": {
+   "title": "TY Type 2 Beam Range (solid infill)",
+   "pdf_page": 7,
+   "printed_page": 7,
+   "provenance": "transcribed",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "lower_profile": "as TY Type 1",
+    "web_line_width_at_TY10_top": 400,
+    "web_rise_to_TY10_top": 530,
+    "top_width_printed": {
+     "TY1": 217,
+     "TY2": 238,
+     "TY3": 258,
+     "TY4": 278,
+     "TY5": 299,
+     "TY6": 319,
+     "TY7": 339,
+     "TY8": 359,
+     "TY9": 380,
+     "TY10": 400
+    }
+   },
+   "published": {
+    "TY1": {
+     "depth_mm": 400.0,
+     "area_mm2": 188790.0,
+     "yb_mm": 145.55,
+     "zt_1e6mm3": 7.69,
+     "zb_1e6mm3": 13.45,
+     "self_weight_kN_m": 4.72
+    },
+    "TY2": {
+     "depth_mm": 450.0,
+     "area_mm2": 200170.0,
+     "yb_mm": 161.46,
+     "zt_1e6mm3": 9.71,
+     "zb_1e6mm3": 17.34,
+     "self_weight_kN_m": 5.0
+    },
+    "TY3": {
+     "depth_mm": 500.0,
+     "area_mm2": 212560.0,
+     "yb_mm": 179.77,
+     "zt_1e6mm3": 12.34,
+     "zb_1e6mm3": 21.99,
+     "self_weight_kN_m": 5.31
+    },
+    "TY4": {
+     "depth_mm": 550.0,
+     "area_mm2": 225970.0,
+     "yb_mm": 200.27,
+     "zt_1e6mm3": 15.61,
+     "zb_1e6mm3": 27.27,
+     "self_weight_kN_m": 5.65
+    },
+    "TY5": {
+     "depth_mm": 600.0,
+     "area_mm2": 240390.0,
+     "yb_mm": 222.78,
+     "zt_1e6mm3": 19.54,
+     "zb_1e6mm3": 33.09,
+     "self_weight_kN_m": 6.01
+    },
+    "TY6": {
+     "depth_mm": 650.0,
+     "area_mm2": 255830.0,
+     "yb_mm": 247.07,
+     "zt_1e6mm3": 24.14,
+     "zb_1e6mm3": 39.36,
+     "self_weight_kN_m": 6.39
+    },
+    "TY7": {
+     "depth_mm": 700.0,
+     "area_mm2": 272280.0,
+     "yb_mm": 272.94,
+     "zt_1e6mm3": 29.42,
+     "zb_1e6mm3": 46.03,
+     "self_weight_kN_m": 6.81
+    },
+    "TY8": {
+     "depth_mm": 750.0,
+     "area_mm2": 289740.0,
+     "yb_mm": 300.21,
+     "zt_1e6mm3": 35.4,
+     "zb_1e6mm3": 53.04,
+     "self_weight_kN_m": 7.24
+    },
+    "TY9": {
+     "depth_mm": 800.0,
+     "area_mm2": 308220.0,
+     "yb_mm": 328.69,
+     "zt_1e6mm3": 42.11,
+     "zb_1e6mm3": 60.38,
+     "self_weight_kN_m": 7.7
+    },
+    "TY10": {
+     "depth_mm": 850.0,
+     "area_mm2": 327710.0,
+     "yb_mm": 358.23,
+     "zt_1e6mm3": 49.56,
+     "zb_1e6mm3": 68.04,
+     "self_weight_kN_m": 8.19
+    }
+   },
+   "geometry_notes": [
+    "No ledge: the web line runs to the top; top width = web-line width at y = d. Printed top widths (217...400) agree with the web line to within 0.5 mm (rounding)."
+   ],
+   "residuals": {
+    "TY1": {
+     "area_mm2": 188785.6,
+     "yb_mm": 145.51,
+     "I_1e9mm4": 1.95812,
+     "area_rel": -2.3e-05,
+     "yb_abs": -0.040017,
+     "I_zb_rel": 0.000242,
+     "I_zt_rel": 0.000716,
+     "sw_rel": 5.3e-05
+    },
+    "TY2": {
+     "area_mm2": 200165.3,
+     "yb_mm": 161.421,
+     "I_1e9mm4": 2.80111,
+     "area_rel": -2.3e-05,
+     "yb_abs": -0.039455,
+     "I_zb_rel": 0.000496,
+     "I_zt_rel": -0.000221,
+     "sw_rel": -0.000849
+    },
+    "TY3": {
+     "area_mm2": 212559.2,
+     "yb_mm": 179.725,
+     "I_1e9mm4": 3.95384,
+     "area_rel": -4e-06,
+     "yb_abs": -0.045434,
+     "I_zb_rel": 0.000176,
+     "I_zt_rel": 0.000556,
+     "sw_rel": -0.000753
+    },
+    "TY4": {
+     "area_mm2": 225967.2,
+     "yb_mm": 200.231,
+     "I_1e9mm4": 5.46297,
+     "area_rel": -1.2e-05,
+     "yb_abs": -0.039428,
+     "I_zb_rel": 0.000294,
+     "I_zt_rel": 0.000675,
+     "sw_rel": 0.000133
+    },
+    "TY5": {
+     "area_mm2": 240389.4,
+     "yb_mm": 222.732,
+     "I_1e9mm4": 7.37305,
+     "area_rel": -3e-06,
+     "yb_abs": -0.047544,
+     "I_zb_rel": 0.000171,
+     "I_zt_rel": 0.000294,
+     "sw_rel": 4.2e-05
+    },
+    "TY6": {
+     "area_mm2": 255825.7,
+     "yb_mm": 247.021,
+     "I_1e9mm4": 9.72663,
+     "area_rel": -1.7e-05,
+     "yb_abs": -0.048521,
+     "I_zb_rel": 0.000201,
+     "I_zt_rel": -1e-05,
+     "sw_rel": -0.000899
+    },
+    "TY7": {
+     "area_mm2": 272276.2,
+     "yb_mm": 272.895,
+     "I_1e9mm4": 12.56457,
+     "area_rel": -1.4e-05,
+     "yb_abs": -0.045255,
+     "I_zb_rel": 9.1e-05,
+     "I_zt_rel": 3.7e-05,
+     "sw_rel": 0.000441
+    },
+    "TY8": {
+     "area_mm2": 289740.8,
+     "yb_mm": 300.161,
+     "I_1e9mm4": 15.92638,
+     "area_rel": 3e-06,
+     "yb_abs": -0.049253,
+     "I_zb_rel": 0.000203,
+     "I_zt_rel": 0.000239,
+     "sw_rel": -0.000483
+    },
+    "TY9": {
+     "area_mm2": 308219.6,
+     "yb_mm": 328.643,
+     "I_1e9mm4": 19.85066,
+     "area_rel": -1e-06,
+     "yb_abs": -0.047374,
+     "I_zb_rel": 0.000219,
+     "I_zt_rel": 0.000191,
+     "sw_rel": -0.000714
+    },
+    "TY10": {
+     "area_mm2": 327712.5,
+     "yb_mm": 358.18,
+     "I_1e9mm4": 24.37549,
+     "area_rel": 8e-06,
+     "yb_abs": -0.050257,
+     "I_zb_rel": 6.2e-05,
+     "I_zt_rel": 0.000138,
+     "sw_rel": -0.000336
+    }
+   },
+   "pinned": {},
+   "tolerances": {
+    "area_rel": 0.0001,
+    "yb_abs_mm": 0.1,
+    "I_rel": 0.001,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "exact printed geometry; I via 4-s.f. moduli"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeTYBeamSection(<TYn>, variant='ss')",
+    "verdict": "identical",
+    "differences": "Same outline to rounding (symmetric difference <=10 mm2, from Banagher's 1-dp Wf); FP and Banagher Type 2 / solid-slab property tables are identical.",
+    "per_size": {
+     "TY1": {
+      "symmetric_difference_mm2": 1.9,
+      "area_difference_mm2": -1.9
+     },
+     "TY2": {
+      "symmetric_difference_mm2": 2.3,
+      "area_difference_mm2": 2.3
+     },
+     "TY3": {
+      "symmetric_difference_mm2": 1.7,
+      "area_difference_mm2": 1.7
+     },
+     "TY4": {
+      "symmetric_difference_mm2": 0.2,
+      "area_difference_mm2": 0.2
+     },
+     "TY5": {
+      "symmetric_difference_mm2": 2.1,
+      "area_difference_mm2": -2.1
+     },
+     "TY6": {
+      "symmetric_difference_mm2": 5.3,
+      "area_difference_mm2": -5.3
+     },
+     "TY7": {
+      "symmetric_difference_mm2": 9.3,
+      "area_difference_mm2": -9.3
+     },
+     "TY8": {
+      "symmetric_difference_mm2": 7.3,
+      "area_difference_mm2": 7.3
+     },
+     "TY9": {
+      "symmetric_difference_mm2": 4.1,
+      "area_difference_mm2": 4.1
+     },
+     "TY10": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     }
+    }
+   }
+  },
+  "tye": {
+   "title": "TYE Beam Range (edge beam, beam and slab)",
+   "pdf_page": 8,
+   "printed_page": 8,
+   "provenance": "transcribed-with-convention",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "vertical_face": "right-hand side, x = +375 (as drawn)",
+    "lower_web_side": "as TY (5, 227.5, 50; 135, 105, 80)",
+    "face_to_web_at_320": 467,
+    "face_to_construction_point_268": 457,
+    "face_to_web_line_at_TYE10_top": 575,
+    "ledge": "40 x 50",
+    "face_to_cap_edge": {
+     "TYE4": 463,
+     "TYE5": 473,
+     "TYE6": 483,
+     "TYE7": 493,
+     "TYE8": 504,
+     "TYE9": 514,
+     "TYE10": 524
+    }
+   },
+   "published": {
+    "TYE4": {
+     "depth_mm": 550.0,
+     "area_mm2": 316670.0,
+     "yb_mm": 246.79,
+     "zt_1e6mm3": 28.87,
+     "zb_1e6mm3": 33.01,
+     "self_weight_kN_m": 7.91,
+     "yc_from_face_mm": 300.01
+    },
+    "TYE5": {
+     "depth_mm": 600.0,
+     "area_mm2": 342630.0,
+     "yb_mm": 271.33,
+     "zt_1e6mm3": 32.48,
+     "zb_1e6mm3": 39.34,
+     "self_weight_kN_m": 8.56,
+     "yc_from_face_mm": 296.88
+    },
+    "TYE6": {
+     "depth_mm": 650.0,
+     "area_mm2": 369100.0,
+     "yb_mm": 296.39,
+     "zt_1e6mm3": 38.7,
+     "zb_1e6mm3": 48.17,
+     "self_weight_kN_m": 9.23,
+     "yc_from_face_mm": 294.5
+    },
+    "TYE7": {
+     "depth_mm": 700.0,
+     "area_mm2": 396070.0,
+     "yb_mm": 321.9,
+     "zt_1e6mm3": 45.55,
+     "zb_1e6mm3": 53.5,
+     "self_weight_kN_m": 9.9,
+     "yc_from_face_mm": 292.54
+    },
+    "TYE8": {
+     "depth_mm": 750.0,
+     "area_mm2": 423550.0,
+     "yb_mm": 347.79,
+     "zt_1e6mm3": 53.02,
+     "zb_1e6mm3": 61.31,
+     "self_weight_kN_m": 10.59,
+     "yc_from_face_mm": 291.54
+    },
+    "TYE9": {
+     "depth_mm": 800.0,
+     "area_mm2": 451540.0,
+     "yb_mm": 374.03,
+     "zt_1e6mm3": 61.13,
+     "zb_1e6mm3": 69.62,
+     "self_weight_kN_m": 11.29,
+     "yc_from_face_mm": 290.77
+    },
+    "TYE10": {
+     "depth_mm": 850.0,
+     "area_mm2": 480040.0,
+     "yb_mm": 400.57,
+     "zt_1e6mm3": 69.89,
+     "zb_1e6mm3": 78.41,
+     "self_weight_kN_m": 12.0,
+     "yc_from_face_mm": 290.37
+    }
+   },
+   "geometry_notes": [
+    "Vertical face at x = +375 as drawn (FP draws the face on the right; Banagher/ie on the left). Bottom corner at the face has the 25 x 25 chamfer.",
+    "Web line and ledge as TY Type 1; cap edge at x = 375 - printed face-to-cap distance."
+   ],
+   "residuals": {
+    "TYE4": {
+     "area_mm2": 316617.1,
+     "yb_mm": 246.756,
+     "I_1e9mm4": 8.14199,
+     "area_rel": -0.000167,
+     "yb_abs": -0.0339,
+     "I_zb_rel": -0.000558,
+     "I_zt_rel": -0.069877,
+     "sw_rel": -0.000853,
+     "yc_abs": 0.008635
+    },
+    "TYE5": {
+     "area_mm2": 342571.1,
+     "yb_mm": 271.295,
+     "I_1e9mm4": 10.66882,
+     "area_rel": -0.000172,
+     "yb_abs": -0.035468,
+     "I_zb_rel": -0.000496,
+     "I_zt_rel": -0.000597,
+     "sw_rel": -0.000671,
+     "yc_abs": 0.005253
+    },
+    "TYE6": {
+     "area_mm2": 369032.2,
+     "yb_mm": 296.349,
+     "I_1e9mm4": 13.67848,
+     "area_rel": -0.000184,
+     "yb_abs": -0.040773,
+     "I_zb_rel": -0.041929,
+     "I_zt_rel": -0.000455,
+     "sw_rel": 0.000271,
+     "yc_abs": 0.009004
+    },
+    "TYE7": {
+     "area_mm2": 396000.4,
+     "yb_mm": 321.848,
+     "I_1e9mm4": 17.21262,
+     "area_rel": -0.000176,
+     "yb_abs": -0.051504,
+     "I_zb_rel": -0.000524,
+     "I_zt_rel": -0.000571,
+     "sw_rel": -0.000177,
+     "yc_abs": 0.220226
+    },
+    "TYE8": {
+     "area_mm2": 423525.6,
+     "yb_mm": 347.78,
+     "I_1e9mm4": 21.32083,
+     "area_rel": -5.8e-05,
+     "yb_abs": -0.009916,
+     "I_zb_rel": -0.000102,
+     "I_zt_rel": -0.000204,
+     "sw_rel": 0.000118,
+     "yc_abs": 0.022491
+    },
+    "TYE9": {
+     "area_mm2": 451507.9,
+     "yb_mm": 374.009,
+     "I_1e9mm4": 26.03307,
+     "area_rel": -7.1e-05,
+     "yb_abs": -0.020922,
+     "I_zb_rel": -0.000265,
+     "I_zt_rel": -0.000249,
+     "sw_rel": 0.000133,
+     "yc_abs": 0.014866
+    },
+    "TYE10": {
+     "area_mm2": 479997.3,
+     "yb_mm": 400.543,
+     "I_1e9mm4": 31.39978,
+     "area_rel": -8.9e-05,
+     "yb_abs": -0.027234,
+     "I_zb_rel": -0.000284,
+     "I_zt_rel": -0.000346,
+     "sw_rel": -8.3e-05,
+     "yc_abs": 0.017967
+    }
+   },
+   "pinned": {
+    "TYE4": {
+     "I_zt_rel": {
+      "residual": -0.069877,
+      "reason": "printed Zt 28.87 inconsistent with its own Zb*Yb (Zt*(d-Yb) gives I 7% high; Banagher prints the same row) - source misprint"
+     }
+    },
+    "TYE6": {
+     "I_zb_rel": {
+      "residual": -0.041929,
+      "reason": "printed Zb 48.17 inconsistent with Zt*(d-Yb) (I 4% high; implied Zb ~46.2) - source misprint"
+     }
+    }
+   },
+   "tolerances": {
+    "area_rel": 0.0003,
+    "yb_abs_mm": 0.1,
+    "I_rel": 0.001,
+    "yc_abs_mm": 0.25,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "printed face-to-cap distances rounded (<=1 mm)"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeTYBeamSection(<TYEn>, variant='bs'), mirrored x -> -x",
+    "verdict": "near-identical",
+    "differences": "Mirror image (FP face at +x, Banagher at -x); cap widths differ only by FP's rounding (<=1 mm); property tables identical.",
+    "per_size": {
+     "TYE4": {
+      "symmetric_difference_mm2": 50.8,
+      "area_difference_mm2": -49.2
+     },
+     "TYE5": {
+      "symmetric_difference_mm2": 65.6,
+      "area_difference_mm2": -65.6
+     },
+     "TYE6": {
+      "symmetric_difference_mm2": 66.1,
+      "area_difference_mm2": -66.1
+     },
+     "TYE7": {
+      "symmetric_difference_mm2": 75.6,
+      "area_difference_mm2": -64.4
+     },
+     "TYE8": {
+      "symmetric_difference_mm2": 34.7,
+      "area_difference_mm2": -34.7
+     },
+     "TYE9": {
+      "symmetric_difference_mm2": 38.7,
+      "area_difference_mm2": -31.3
+     },
+     "TYE10": {
+      "symmetric_difference_mm2": 55.0,
+      "area_difference_mm2": -55.0
+     }
+    }
+   }
+  },
+  "y": {
+   "title": "Y Beam Range",
+   "pdf_page": 9,
+   "printed_page": 9,
+   "provenance": "transcribed-with-convention",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "soffit_width": 750,
+    "bottom_chamfer": "25 x 25",
+    "flange_side_height": 202,
+    "flange_side_inset": 5,
+    "flange_slope_rise": 177,
+    "web_width_at_379": 200,
+    "web_width_min_at_fillet": 216,
+    "fillet_radius_min": 100,
+    "rise_379_to_Y1_top": 321,
+    "ledge_detail": "cap 50 high, ledge 40 wide, 5 x 5 chamfer at the ledge outer corner",
+    "cap_width": {
+     "Y1": 198,
+     "Y2": 227,
+     "Y3": 256,
+     "Y4": 285,
+     "Y5": 313,
+     "Y6": 342,
+     "Y7": 371,
+     "Y8": 400
+    }
+   },
+   "published": {
+    "Y1": {
+     "depth_mm": 700.0,
+     "area_mm2": 309202.0,
+     "yb_mm": 255.0,
+     "zt_1e6mm3": 24.85,
+     "zb_1e6mm3": 43.4,
+     "self_weight_kN_m": 7.73
+    },
+    "Y2": {
+     "depth_mm": 800.0,
+     "area_mm2": 339882.0,
+     "yb_mm": 299.0,
+     "zt_1e6mm3": 35.02,
+     "zb_1e6mm3": 58.78,
+     "self_weight_kN_m": 8.5
+    },
+    "Y3": {
+     "depth_mm": 900.0,
+     "area_mm2": 373444.0,
+     "yb_mm": 347.0,
+     "zt_1e6mm3": 47.88,
+     "zb_1e6mm3": 76.27,
+     "self_weight_kN_m": 9.34
+    },
+    "Y4": {
+     "depth_mm": 1000.0,
+     "area_mm2": 409890.0,
+     "yb_mm": 400.0,
+     "zt_1e6mm3": 63.53,
+     "zb_1e6mm3": 95.41,
+     "self_weight_kN_m": 10.25
+    },
+    "Y5": {
+     "depth_mm": 1100.0,
+     "area_mm2": 449220.0,
+     "yb_mm": 456.0,
+     "zt_1e6mm3": 82.06,
+     "zb_1e6mm3": 116.02,
+     "self_weight_kN_m": 11.23
+    },
+    "Y6": {
+     "depth_mm": 1200.0,
+     "area_mm2": 491433.0,
+     "yb_mm": 515.0,
+     "zt_1e6mm3": 103.58,
+     "zb_1e6mm3": 138.0,
+     "self_weight_kN_m": 12.29
+    },
+    "Y7": {
+     "depth_mm": 1300.0,
+     "area_mm2": 536530.0,
+     "yb_mm": 576.0,
+     "zt_1e6mm3": 128.15,
+     "zb_1e6mm3": 161.31,
+     "self_weight_kN_m": 13.41
+    },
+    "Y8": {
+     "depth_mm": 1400.0,
+     "area_mm2": 584708.0,
+     "yb_mm": 639.0,
+     "zt_1e6mm3": 155.98,
+     "zb_1e6mm3": 186.01,
+     "self_weight_kN_m": 14.62
+    }
+   },
+   "geometry_notes": [
+    "Printed web width 200 read as the web width at y = 379 (flange-slope / web-line intersection, 202 + 177); a web line from (100, 379) to (cap/2 + 40, d - 55) reproduces it (extrapolating the caps gives 199.8).",
+    "Fillet taken at the printed minimum radius 100 mm, tangent to the flange slope and web line; its web tangent point is 218 mm wide (printed '216 minimum').",
+    "Ledge: web line ends at d-55, 45-degree 5 mm chamfer to d-50, horizontal to the printed cap, cap vertical 50 to the top."
+   ],
+   "residuals": {
+    "Y1": {
+     "area_mm2": 309439.4,
+     "yb_mm": 255.461,
+     "I_1e9mm4": 11.07263,
+     "area_rel": 0.000768,
+     "yb_abs": 0.460704,
+     "I_zb_rel": 0.000509,
+     "I_zt_rel": 0.0013,
+     "sw_rel": -6e-06
+    },
+    "Y2": {
+     "area_mm2": 340239.6,
+     "yb_mm": 299.01,
+     "I_1e9mm4": 17.59598,
+     "area_rel": 0.001052,
+     "yb_abs": 0.0102,
+     "I_zb_rel": 0.001181,
+     "I_zt_rel": 0.002904,
+     "sw_rel": 0.000347
+    },
+    "Y3": {
+     "area_mm2": 373940.6,
+     "yb_mm": 347.562,
+     "I_1e9mm4": 26.53794,
+     "area_rel": 0.00133,
+     "yb_abs": 0.562031,
+     "I_zb_rel": 0.00273,
+     "I_zt_rel": 0.002277,
+     "sw_rel": 0.000418
+    },
+    "Y4": {
+     "area_mm2": 410541.9,
+     "yb_mm": 400.268,
+     "I_1e9mm4": 38.23411,
+     "area_rel": 0.001591,
+     "yb_abs": 0.267909,
+     "I_zb_rel": 0.001837,
+     "I_zt_rel": 0.003046,
+     "sw_rel": 0.000268
+    },
+    "Y5": {
+     "area_mm2": 449652.5,
+     "yb_mm": 456.038,
+     "I_1e9mm4": 52.93572,
+     "area_rel": 0.000963,
+     "yb_abs": 0.03769,
+     "I_zb_rel": 0.000578,
+     "I_zt_rel": 0.001686,
+     "sw_rel": -4.5e-05
+    },
+    "Y6": {
+     "area_mm2": 492004.5,
+     "yb_mm": 514.912,
+     "I_1e9mm4": 71.09551,
+     "area_rel": 0.001163,
+     "yb_abs": -0.087981,
+     "I_zb_rel": 0.000359,
+     "I_zt_rel": 0.002018,
+     "sw_rel": 0.00034
+    },
+    "Y7": {
+     "area_mm2": 537256.6,
+     "yb_mm": 576.037,
+     "I_1e9mm4": 92.97681,
+     "area_rel": 0.001354,
+     "yb_abs": 0.036839,
+     "I_zb_rel": 0.00067,
+     "I_zt_rel": 0.002115,
+     "sw_rel": -0.000242
+    },
+    "Y8": {
+     "area_mm2": 585408.6,
+     "yb_mm": 638.973,
+     "I_1e9mm4": 118.90782,
+     "area_rel": 0.001198,
+     "yb_abs": -0.027377,
+     "I_zb_rel": 0.000399,
+     "I_zt_rel": 0.001744,
+     "sw_rel": 0.000157
+    }
+   },
+   "pinned": {},
+   "tolerances": {
+    "area_rel": 0.002,
+    "yb_abs_mm": 0.6,
+    "I_rel": 0.0035,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "Yb printed to the integer (+-0.5 mm) and fillet radius taken at the printed minimum; residual area +0.08..+0.16% remains (not closed by any printed dimension)"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeYBeamSection",
+    "verdict": "different",
+    "differences": "ie Y is a least-squares fitted reconstruction (no fillet, straight splay to a fitted waist, no chamfers or ledge); FP prints the outline (25 chamfers, 202 flange side, 177 splay, 200 web at 379, R100 fillet, 40x50 ledge). Up to ~65 mm apart; FP table also differs slightly from Banagher's (e.g. Y1 309202 vs 310140 mm2).",
+    "per_size": {
+     "Y1": {
+      "symmetric_difference_mm2": 26185.9,
+      "area_difference_mm2": 4112.7
+     },
+     "Y2": {
+      "symmetric_difference_mm2": 32433.0,
+      "area_difference_mm2": 623.8
+     },
+     "Y3": {
+      "symmetric_difference_mm2": 38953.9,
+      "area_difference_mm2": -2848.2
+     },
+     "Y4": {
+      "symmetric_difference_mm2": 45628.8,
+      "area_difference_mm2": -6304.0
+     },
+     "Y5": {
+      "symmetric_difference_mm2": 52374.6,
+      "area_difference_mm2": -10134.5
+     },
+     "Y6": {
+      "symmetric_difference_mm2": 59195.7,
+      "area_difference_mm2": -13607.5
+     },
+     "Y7": {
+      "symmetric_difference_mm2": 66130.4,
+      "area_difference_mm2": -17064.5
+     },
+     "Y8": {
+      "symmetric_difference_mm2": 73101.4,
+      "area_difference_mm2": -20505.5
+     }
+    }
+   }
+  },
+  "ye": {
+   "title": "YE Beam Range (edge beam)",
+   "pdf_page": 10,
+   "printed_page": 10,
+   "provenance": "transcribed-with-convention",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "vertical_face": "left-hand side, x = -375 (as drawn)",
+    "web_side": "'See Y beam details for dimensions of this side'",
+    "face_to_web_at_379": 475,
+    "face_to_web_min": 483,
+    "rise_to_YE1_top": 700,
+    "rebate": "40 wide at the face ('rebate omitted if not required on edge detail'); height not printed",
+    "ledge_width": 40,
+    "rebate_to_cap_edge": {
+     "YE1": 434,
+     "YE2": 448,
+     "YE3": 463,
+     "YE4": 477,
+     "YE5": 492,
+     "YE6": 506,
+     "YE7": 521,
+     "YE8": 535
+    }
+   },
+   "published": {
+    "YE1": {
+     "depth_mm": 700.0,
+     "area_mm2": 414820.0,
+     "yb_mm": 313.0,
+     "zt_1e6mm3": 43.54,
+     "zb_1e6mm3": 53.71,
+     "self_weight_kN_m": 10.37,
+     "yc_from_face_mm": 310.0
+    },
+    "YE2": {
+     "depth_mm": 800.0,
+     "area_mm2": 467669.0,
+     "yb_mm": 362.0,
+     "zt_1e6mm3": 58.24,
+     "zb_1e6mm3": 70.52,
+     "self_weight_kN_m": 11.69,
+     "yc_from_face_mm": 305.0
+    },
+    "YE3": {
+     "depth_mm": 900.0,
+     "area_mm2": 521960.0,
+     "yb_mm": 412.0,
+     "zt_1e6mm3": 75.42,
+     "zb_1e6mm3": 89.39,
+     "self_weight_kN_m": 13.05,
+     "yc_from_face_mm": 302.0
+    },
+    "YE4": {
+     "depth_mm": 1000.0,
+     "area_mm2": 577692.0,
+     "yb_mm": 463.0,
+     "zt_1e6mm3": 95.12,
+     "zb_1e6mm3": 110.29,
+     "self_weight_kN_m": 14.44,
+     "yc_from_face_mm": 299.0
+    },
+    "YE5": {
+     "depth_mm": 1100.0,
+     "area_mm2": 634867.0,
+     "yb_mm": 515.0,
+     "zt_1e6mm3": 117.37,
+     "zb_1e6mm3": 133.18,
+     "self_weight_kN_m": 15.87,
+     "yc_from_face_mm": 298.0
+    },
+    "YE6": {
+     "depth_mm": 1200.0,
+     "area_mm2": 693483.0,
+     "yb_mm": 568.0,
+     "zt_1e6mm3": 142.24,
+     "zb_1e6mm3": 158.08,
+     "self_weight_kN_m": 17.34,
+     "yc_from_face_mm": 298.0
+    },
+    "YE7": {
+     "depth_mm": 1300.0,
+     "area_mm2": 753541.0,
+     "yb_mm": 622.0,
+     "zt_1e6mm3": 169.78,
+     "zb_1e6mm3": 184.98,
+     "self_weight_kN_m": 18.84,
+     "yc_from_face_mm": 298.0
+    },
+    "YE8": {
+     "depth_mm": 1400.0,
+     "area_mm2": 815041.0,
+     "yb_mm": 677.0,
+     "zt_1e6mm3": 200.06,
+     "zb_1e6mm3": 213.93,
+     "self_weight_kN_m": 20.38,
+     "yc_from_face_mm": 298.0
+    }
+   },
+   "geometry_notes": [
+    "Right (web) side identical to the Y beam right side (as the page instructs).",
+    "Rebate at the face: 40 wide (printed) x 50 deep (not printed; taken equal to the Y ledge height). With the rebate the published areas are met to <=0.07%; without it the residual is +0.3-0.5%, so the tabulated properties include the rebate.",
+    "Printed rebate-to-cap distances (434...535) = Y cap half-width + 335, i.e. the same web/cap as the Y beam."
+   ],
+   "residuals": {
+    "YE1": {
+     "area_mm2": 414907.2,
+     "yb_mm": 313.437,
+     "I_1e9mm4": 16.83507,
+     "area_rel": 0.00021,
+     "yb_abs": 0.436834,
+     "I_zb_rel": 0.001418,
+     "I_zt_rel": -0.000885,
+     "sw_rel": -4.8e-05,
+     "yc_abs": 0.509614
+    },
+    "YE2": {
+     "area_mm2": 467685.6,
+     "yb_mm": 361.858,
+     "I_1e9mm4": 25.51395,
+     "area_rel": 3.5e-05,
+     "yb_abs": -0.142254,
+     "I_zb_rel": -0.00056,
+     "I_zt_rel": 0.00019,
+     "sw_rel": -0.000148,
+     "yc_abs": 0.188433
+    },
+    "YE3": {
+     "area_mm2": 522157.8,
+     "yb_mm": 411.956,
+     "I_1e9mm4": 36.83383,
+     "area_rel": 0.000379,
+     "yb_abs": -0.043743,
+     "I_zb_rel": 0.00014,
+     "I_zt_rel": 0.000784,
+     "sw_rel": 7.7e-05,
+     "yc_abs": -0.30414
+    },
+    "YE4": {
+     "area_mm2": 577787.7,
+     "yb_mm": 463.105,
+     "I_1e9mm4": 51.07706,
+     "area_rel": 0.000166,
+     "yb_abs": 0.104923,
+     "I_zb_rel": 0.00025,
+     "I_zt_rel": -4.7e-05,
+     "sw_rel": -0.000159,
+     "yc_abs": 0.384169
+    },
+    "YE5": {
+     "area_mm2": 635209.2,
+     "yb_mm": 515.45,
+     "I_1e9mm4": 68.66904,
+     "area_rel": 0.000539,
+     "yb_abs": 0.450212,
+     "I_zb_rel": 0.001186,
+     "I_zt_rel": 0.000111,
+     "sw_rel": -0.000106,
+     "yc_abs": 0.213957
+    },
+    "YE6": {
+     "area_mm2": 693689.8,
+     "yb_mm": 568.434,
+     "I_1e9mm4": 89.86653,
+     "area_rel": 0.000298,
+     "yb_abs": 0.434102,
+     "I_zb_rel": 0.000859,
+     "I_zt_rel": -0.000324,
+     "sw_rel": 0.000169,
+     "yc_abs": -0.308262
+    },
+    "YE7": {
+     "area_mm2": 754060.9,
+     "yb_mm": 622.37,
+     "I_1e9mm4": 115.16826,
+     "area_rel": 0.00069,
+     "yb_abs": 0.369684,
+     "I_zb_rel": 0.000962,
+     "I_zt_rel": 0.000499,
+     "sw_rel": 7.8e-05,
+     "yc_abs": -0.030941
+    },
+    "YE8": {
+     "area_mm2": 815391.8,
+     "yb_mm": 676.702,
+     "I_1e9mm4": 144.79028,
+     "area_rel": 0.00043,
+     "yb_abs": -0.297794,
+     "I_zb_rel": -0.000278,
+     "I_zt_rel": 0.001016,
+     "sw_rel": 0.000195,
+     "yc_abs": 0.600144
+    }
+   },
+   "pinned": {
+    "YE8": {
+     "yc_abs": {
+      "residual": 0.600144,
+      "reason": "Yc printed as an integer (298); computed 298.60 is 0.1 mm beyond rounding and depends on the unprinted rebate height (50 assumed)"
+     }
+    }
+   },
+   "tolerances": {
+    "area_rel": 0.001,
+    "yb_abs_mm": 0.5,
+    "I_rel": 0.002,
+    "yc_abs_mm": 0.6,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "Yb and Yc printed to the integer"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeYEBeamSection",
+    "verdict": "different",
+    "differences": "ie YE is a fitted reconstruction; FP prints the Y-side details, 40-wide rebate and cap offsets. Up to ~52 mm apart.",
+    "per_size": {
+     "YE1": {
+      "symmetric_difference_mm2": 13366.8,
+      "area_difference_mm2": -1397.7
+     },
+     "YE2": {
+      "symmetric_difference_mm2": 16021.5,
+      "area_difference_mm2": -2484.6
+     },
+     "YE3": {
+      "symmetric_difference_mm2": 18799.8,
+      "area_difference_mm2": -3319.5
+     },
+     "YE4": {
+      "symmetric_difference_mm2": 21611.9,
+      "area_difference_mm2": -4438.7
+     },
+     "YE5": {
+      "symmetric_difference_mm2": 24538.2,
+      "area_difference_mm2": -5208.1
+     },
+     "YE6": {
+      "symmetric_difference_mm2": 27397.9,
+      "area_difference_mm2": -6360.4
+     },
+     "YE7": {
+      "symmetric_difference_mm2": 30443.9,
+      "area_difference_mm2": -7064.0
+     },
+     "YE8": {
+      "symmetric_difference_mm2": 33305.4,
+      "area_difference_mm2": -8249.8
+     }
+    }
+   }
+  },
+  "my": {
+   "title": "MY Beam Range (solid slab)",
+   "pdf_page": 11,
+   "printed_page": 11,
+   "provenance": "fitted-reconstruction",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "bottom_width": 970,
+    "soffit_width": 920,
+    "bottom_chamfer": "25 x 25",
+    "edge_height_above_chamfer": 75,
+    "flange_top_at_web_junction_y": 125,
+    "bevel_rise": 25,
+    "web_width_at_150": 300,
+    "web_flare_rise_100_to_500": 400,
+    "top": "vertical above y = 500 (MY6, MY7)",
+    "top_width": "not printed"
+   },
+   "fitted_or_estimated_mm": {
+    "top_width_at_500": 440,
+    "bevel_run": 15
+   },
+   "published": {
+    "MY1": {
+     "depth_mm": 300.0,
+     "area_mm2": 170000.0,
+     "yb_mm": 111.7,
+     "zt_1e6mm3": 6.39,
+     "zb_1e6mm3": 10.78,
+     "self_weight_kN_m": 4.25
+    },
+    "MY2": {
+     "depth_mm": 350.0,
+     "area_mm2": 188500.0,
+     "yb_mm": 132.6,
+     "zt_1e6mm3": 9.05,
+     "zb_1e6mm3": 14.84,
+     "self_weight_kN_m": 4.71
+    },
+    "MY3": {
+     "depth_mm": 400.0,
+     "area_mm2": 208000.0,
+     "yb_mm": 155.4,
+     "zt_1e6mm3": 12.31,
+     "zb_1e6mm3": 19.39,
+     "self_weight_kN_m": 5.2
+    },
+    "MY4": {
+     "depth_mm": 450.0,
+     "area_mm2": 228500.0,
+     "yb_mm": 179.6,
+     "zt_1e6mm3": 16.18,
+     "zb_1e6mm3": 24.37,
+     "self_weight_kN_m": 5.71
+    },
+    "MY5": {
+     "depth_mm": 500.0,
+     "area_mm2": 250000.0,
+     "yb_mm": 205.0,
+     "zt_1e6mm3": 20.67,
+     "zb_1e6mm3": 29.74,
+     "self_weight_kN_m": 6.25
+    },
+    "MY6": {
+     "depth_mm": 550.0,
+     "area_mm2": 272000.0,
+     "yb_mm": 230.9,
+     "zt_1e6mm3": 25.61,
+     "zb_1e6mm3": 35.4,
+     "self_weight_kN_m": 6.8
+    },
+    "MY7": {
+     "depth_mm": 600.0,
+     "area_mm2": 294000.0,
+     "yb_mm": 256.6,
+     "zt_1e6mm3": 30.83,
+     "zb_1e6mm3": 41.26,
+     "self_weight_kN_m": 7.35
+    }
+   },
+   "geometry_notes": [
+    "Top width is not printed: 440 at y >= 500 is an estimate (drawing scales 437) and reproduces all seven areas; web flares linearly from 300 at y = 150 to 440 at y = 500; MY1-MY5 tops lie on the flare.",
+    "Bevel from the flange top at y = 125 to the web base at y = 150: rise 25 printed, run 15 fitted to the published areas (drawing scales ~20; run 20 gives +0.1% area).",
+    "Flange top slopes straight from (485, 100) to (165, 125)."
+   ],
+   "residuals": {
+    "MY1": {
+     "area_mm2": 170000.0,
+     "yb_mm": 111.593,
+     "I_1e9mm4": 1.20351,
+     "area_rel": 0.0,
+     "yb_abs": -0.106863,
+     "I_zb_rel": -0.000515,
+     "I_zt_rel": 0.000224,
+     "sw_rel": 0.0
+    },
+    "MY2": {
+     "area_mm2": 188500.0,
+     "yb_mm": 132.56,
+     "I_1e9mm4": 1.96881,
+     "area_rel": 0.0,
+     "yb_abs": -0.040318,
+     "I_zb_rel": 0.000522,
+     "I_zt_rel": 0.000681,
+     "sw_rel": -0.000531
+    },
+    "MY3": {
+     "area_mm2": 208000.0,
+     "yb_mm": 155.308,
+     "I_1e9mm4": 3.01341,
+     "area_rel": 0.0,
+     "yb_abs": -0.091506,
+     "I_zb_rel": 6.7e-05,
+     "I_zt_rel": 0.000792,
+     "sw_rel": 0.0
+    },
+    "MY4": {
+     "area_mm2": 228500.0,
+     "yb_mm": 179.522,
+     "I_1e9mm4": 4.37699,
+     "area_rel": 0.0,
+     "yb_abs": -0.077753,
+     "I_zb_rel": 3.2e-05,
+     "I_zt_rel": 0.000439,
+     "sw_rel": -0.000438
+    },
+    "MY5": {
+     "area_mm2": 250000.0,
+     "yb_mm": 204.95,
+     "I_1e9mm4": 6.0994,
+     "area_rel": 0.0,
+     "yb_abs": -0.05,
+     "I_zb_rel": 0.000442,
+     "I_zt_rel": 0.000286,
+     "sw_rel": 0.0
+    },
+    "MY6": {
+     "area_mm2": 272000.0,
+     "yb_mm": 230.836,
+     "I_1e9mm4": 8.17521,
+     "area_rel": 0.0,
+     "yb_abs": -0.063603,
+     "I_zb_rel": 0.000166,
+     "I_zt_rel": 0.000375,
+     "sw_rel": -0.0
+    },
+    "MY7": {
+     "area_mm2": 294000.0,
+     "yb_mm": 256.59,
+     "I_1e9mm4": 10.59067,
+     "area_rel": 0.0,
+     "yb_abs": -0.009864,
+     "I_zb_rel": 0.000317,
+     "I_zt_rel": 0.000344,
+     "sw_rel": -0.0
+    }
+   },
+   "pinned": {},
+   "tolerances": {
+    "area_rel": 0.0001,
+    "yb_abs_mm": 0.15,
+    "I_rel": 0.001,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "bevel run fitted to area"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeMYBeamSection",
+    "verdict": "different",
+    "differences": "ie MY is fitted (6.7 chamfer, waist at 124); FP prints 25 chamfers, 75 edge, 125/150 bevel, 300 web and a vertical top above 500. Up to ~18 mm apart; property tables identical.",
+    "per_size": {
+     "MY1": {
+      "symmetric_difference_mm2": 3328.7,
+      "area_difference_mm2": -374.9
+     },
+     "MY2": {
+      "symmetric_difference_mm2": 3649.3,
+      "area_difference_mm2": -700.9
+     },
+     "MY3": {
+      "symmetric_difference_mm2": 3971.9,
+      "area_difference_mm2": -1026.9
+     },
+     "MY4": {
+      "symmetric_difference_mm2": 4295.5,
+      "area_difference_mm2": -1352.9
+     },
+     "MY5": {
+      "symmetric_difference_mm2": 4619.8,
+      "area_difference_mm2": -1678.9
+     },
+     "MY6": {
+      "symmetric_difference_mm2": 5356.4,
+      "area_difference_mm2": 1751.1
+     },
+     "MY7": {
+      "symmetric_difference_mm2": 8132.4,
+      "area_difference_mm2": 5181.1
+     }
+    }
+   }
+  },
+  "mye": {
+   "title": "MYE Beam Range (edge beam, solid slab)",
+   "pdf_page": 12,
+   "printed_page": 12,
+   "provenance": "fitted-reconstruction",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "vertical_face": "right-hand side, x = +485 (as drawn)",
+    "bottom_width": 970,
+    "soffit_width": 920,
+    "face_to_web_at_150": 635,
+    "edge_height_above_chamfer": 75,
+    "bevel_rise": 25,
+    "web_flare_rise": "400 Max"
+   },
+   "fitted_or_estimated_mm": {
+    "top_width_at_500_half": 220,
+    "bevel_run": 15
+   },
+   "published": {
+    "MYE1": {
+     "depth_mm": 300.0,
+     "area_mm2": 230200.0,
+     "yb_mm": 136.0,
+     "zt_1e6mm3": 10.77,
+     "zb_1e6mm3": 12.99,
+     "self_weight_kN_m": 4.25
+    },
+    "MYE2": {
+     "depth_mm": 350.0,
+     "area_mm2": 263700.0,
+     "yb_mm": 160.0,
+     "zt_1e6mm3": 14.84,
+     "zb_1e6mm3": 17.61,
+     "self_weight_kN_m": 4.71
+    },
+    "MYE3": {
+     "depth_mm": 400.0,
+     "area_mm2": 297700.0,
+     "yb_mm": 184.6,
+     "zt_1e6mm3": 19.58,
+     "zb_1e6mm3": 22.85,
+     "self_weight_kN_m": 5.2
+    },
+    "MYE4": {
+     "depth_mm": 450.0,
+     "area_mm2": 332200.0,
+     "yb_mm": 209.6,
+     "zt_1e6mm3": 25.01,
+     "zb_1e6mm3": 28.69,
+     "self_weight_kN_m": 5.71
+    },
+    "MYE5": {
+     "depth_mm": 500.0,
+     "area_mm2": 367200.0,
+     "yb_mm": 234.9,
+     "zt_1e6mm3": 31.12,
+     "zb_1e6mm3": 35.13,
+     "self_weight_kN_m": 6.25
+    },
+    "MYE6": {
+     "depth_mm": 550.0,
+     "area_mm2": 402400.0,
+     "yb_mm": 260.3,
+     "zt_1e6mm3": 37.85,
+     "zb_1e6mm3": 42.13,
+     "self_weight_kN_m": 6.8
+    },
+    "MYE7": {
+     "depth_mm": 600.0,
+     "area_mm2": 437700.0,
+     "yb_mm": 285.6,
+     "zt_1e6mm3": 42.12,
+     "zb_1e6mm3": 49.65,
+     "self_weight_kN_m": 7.35
+    }
+   },
+   "geometry_notes": [
+    "MY web/flange on the left (same fitted bevel and flare as MY) and a full-height vertical face at x = +485 with a 25 x 25 bottom chamfer; reproduces all areas to 0.01%.",
+    "Printed MYE self-weights are copied from the MY table (e.g. MYE7 437700 mm2 at 25 kN/m3 = 10.94 kN/m, printed 7.35): pinned as a source error.",
+    "MYE7 Zt 42.12 is inconsistent with Zb*Yb (implies I 13.4e9 vs 14.2e9 from Zb): pinned as a source misprint."
+   ],
+   "residuals": {
+    "MYE1": {
+     "area_mm2": 230187.5,
+     "yb_mm": 136.01,
+     "I_1e9mm4": 1.76705,
+     "area_rel": -5.4e-05,
+     "yb_abs": 0.010046,
+     "I_zb_rel": 0.000233,
+     "I_zt_rel": 0.000436,
+     "sw_rel": -0.261512
+    },
+    "MYE2": {
+     "area_mm2": 263687.5,
+     "yb_mm": 160.028,
+     "I_1e9mm4": 2.81923,
+     "area_rel": -4.7e-05,
+     "yb_abs": 0.028048,
+     "I_zb_rel": 0.000579,
+     "I_zt_rel": -0.000131,
+     "sw_rel": -0.285552
+    },
+    "MYE3": {
+     "area_mm2": 297687.5,
+     "yb_mm": 184.588,
+     "I_1e9mm4": 4.21889,
+     "area_rel": -4.2e-05,
+     "yb_abs": -0.012205,
+     "I_zb_rel": 0.000185,
+     "I_zt_rel": 0.000322,
+     "sw_rel": -0.30131
+    },
+    "MYE4": {
+     "area_mm2": 332187.5,
+     "yb_mm": 209.563,
+     "I_1e9mm4": 6.01391,
+     "area_rel": -3.8e-05,
+     "yb_abs": -0.037441,
+     "I_zb_rel": 8.2e-05,
+     "I_zt_rel": 0.000251,
+     "sw_rel": -0.312462
+    },
+    "MYE5": {
+     "area_mm2": 367187.5,
+     "yb_mm": 234.87,
+     "I_1e9mm4": 8.25315,
+     "area_rel": -3.4e-05,
+     "yb_abs": -0.030496,
+     "I_zb_rel": 0.000134,
+     "I_zt_rel": 0.000392,
+     "sw_rel": -0.319172
+    },
+    "MYE6": {
+     "area_mm2": 402437.5,
+     "yb_mm": 260.282,
+     "I_1e9mm4": 10.96778,
+     "area_rel": 9.3e-05,
+     "yb_abs": -0.017606,
+     "I_zb_rel": 0.000123,
+     "I_zt_rel": 0.000241,
+     "sw_rel": -0.324056
+    },
+    "MYE7": {
+     "area_mm2": 437687.5,
+     "yb_mm": 285.629,
+     "I_1e9mm4": 14.18535,
+     "area_rel": -2.9e-05,
+     "yb_abs": 0.028778,
+     "I_zb_rel": 0.000375,
+     "I_zt_rel": 0.071197,
+     "sw_rel": -0.328307
+    }
+   },
+   "pinned": {
+    "MYE1": {
+     "sw_rel": {
+      "residual": -0.261512,
+      "reason": "MYE self-weights are copied from the MY table (implied density ~17 kN/m3) - source error"
+     }
+    },
+    "MYE2": {
+     "sw_rel": {
+      "residual": -0.285552,
+      "reason": "MYE self-weights are copied from the MY table (implied density ~17 kN/m3) - source error"
+     }
+    },
+    "MYE3": {
+     "sw_rel": {
+      "residual": -0.30131,
+      "reason": "MYE self-weights are copied from the MY table (implied density ~17 kN/m3) - source error"
+     }
+    },
+    "MYE4": {
+     "sw_rel": {
+      "residual": -0.312462,
+      "reason": "MYE self-weights are copied from the MY table (implied density ~17 kN/m3) - source error"
+     }
+    },
+    "MYE5": {
+     "sw_rel": {
+      "residual": -0.319172,
+      "reason": "MYE self-weights are copied from the MY table (implied density ~17 kN/m3) - source error"
+     }
+    },
+    "MYE6": {
+     "sw_rel": {
+      "residual": -0.324056,
+      "reason": "MYE self-weights are copied from the MY table (implied density ~17 kN/m3) - source error"
+     }
+    },
+    "MYE7": {
+     "I_zt_rel": {
+      "residual": 0.071197,
+      "reason": "printed Zt 42.12 (implied ~45.1) - source misprint"
+     },
+     "sw_rel": {
+      "residual": -0.328307,
+      "reason": "MYE self-weights are copied from the MY table (implied density ~17 kN/m3) - source error"
+     }
+    }
+   },
+   "tolerances": {
+    "area_rel": 0.0001,
+    "yb_abs_mm": 0.1,
+    "I_rel": 0.001,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "same fitted bevel as MY"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeMYEBeamSection, mirrored x -> -x",
+    "verdict": "different",
+    "differences": "As MY; FP face at +x. Up to ~18 mm apart; FP table equals Banagher's except FP self-weights (copied from MY).",
+    "per_size": {
+     "MYE1": {
+      "symmetric_difference_mm2": 2827.5,
+      "area_difference_mm2": -570.4
+     },
+     "MYE2": {
+      "symmetric_difference_mm2": 3014.2,
+      "area_difference_mm2": -759.4
+     },
+     "MYE3": {
+      "symmetric_difference_mm2": 3201.7,
+      "area_difference_mm2": -948.4
+     },
+     "MYE4": {
+      "symmetric_difference_mm2": 3389.7,
+      "area_difference_mm2": -1137.4
+     },
+     "MYE5": {
+      "symmetric_difference_mm2": 3578.0,
+      "area_difference_mm2": -1326.4
+     },
+     "MYE6": {
+      "symmetric_difference_mm2": 3816.8,
+      "area_difference_mm2": 356.1
+     },
+     "MYE7": {
+      "symmetric_difference_mm2": 5106.1,
+      "area_difference_mm2": 2038.6
+     }
+    }
+   }
+  },
+  "sy": {
+   "title": "SY Beam Range",
+   "pdf_page": 13,
+   "printed_page": 13,
+   "provenance": "transcribed-with-convention",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "soffit_width": 750,
+    "bottom_chamfer": "25 x 25",
+    "flange_side_height": 252,
+    "flange_side_inset": 5,
+    "flange_slope_rise": 177,
+    "web_width_at_429": 200,
+    "web_width_min_at_fillet": 216,
+    "fillet_radius_min": 100,
+    "rise_429_to_SY1_ledge": 1021,
+    "top_width": 320,
+    "top_notch_label": "50 x 50"
+   },
+   "published": {
+    "SY1": {
+     "depth_mm": 1500.0,
+     "area_mm2": 549158.0,
+     "yb_mm": 598.35,
+     "zt_1e6mm3": 132.59,
+     "zb_1e6mm3": 199.81,
+     "self_weight_kN_m": 13.73
+    },
+    "SY2": {
+     "depth_mm": 1600.0,
+     "area_mm2": 581158.0,
+     "yb_mm": 650.06,
+     "zt_1e6mm3": 153.97,
+     "zb_1e6mm3": 225.0,
+     "self_weight_kN_m": 14.53
+    },
+    "SY3": {
+     "depth_mm": 1700.0,
+     "area_mm2": 613158.0,
+     "yb_mm": 701.59,
+     "zt_1e6mm3": 176.16,
+     "zb_1e6mm3": 250.69,
+     "self_weight_kN_m": 15.33
+    },
+    "SY4": {
+     "depth_mm": 1800.0,
+     "area_mm2": 645158.0,
+     "yb_mm": 752.98,
+     "zt_1e6mm3": 199.16,
+     "zb_1e6mm3": 276.98,
+     "self_weight_kN_m": 16.13
+    },
+    "SY5": {
+     "depth_mm": 1900.0,
+     "area_mm2": 677158.0,
+     "yb_mm": 804.23,
+     "zt_1e6mm3": 223.09,
+     "zb_1e6mm3": 303.97,
+     "self_weight_kN_m": 16.93
+    },
+    "SY6": {
+     "depth_mm": 2000.0,
+     "area_mm2": 709158.0,
+     "yb_mm": 865.36,
+     "zt_1e6mm3": 247.89,
+     "zb_1e6mm3": 331.72,
+     "self_weight_kN_m": 17.73
+    }
+   },
+   "geometry_notes": [
+    "Web line from (100, 429) (printed 200 at y = 252 + 177 = 429) to half-width 160 at y = 1450 (printed 1021 rise; 320 width), vertical 320 above 1450 up to d - 50; fillet at the printed minimum radius 100.",
+    "Top notch: the label reads '50 x 50' but a 50-wide notch (cap 220) leaves the area 0.2% and I 0.6% below the table; a 40-wide x 50-high ledge (cap 240, as on the Y/TY pages) reproduces area to 0.03% and I to 0.02%. Implemented cap 240 (convention); the '50 x 50' label is recorded as a conflict.",
+    "SY6 printed Yb 865.36 breaks the ~51.3 mm/100 mm progression (expected ~855.5, and Zt/Zb imply ~855): pinned as a source misprint."
+   ],
+   "residuals": {
+    "SY1": {
+     "area_mm2": 548985.2,
+     "yb_mm": 598.422,
+     "I_1e9mm4": 119.54364,
+     "area_rel": -0.000315,
+     "yb_abs": 0.072331,
+     "I_zb_rel": -0.000106,
+     "I_zt_rel": -5.1e-05,
+     "sw_rel": 7.6e-05
+    },
+    "SY2": {
+     "area_mm2": 580985.2,
+     "yb_mm": 650.146,
+     "I_1e9mm4": 146.25073,
+     "area_rel": -0.000297,
+     "yb_abs": 0.085658,
+     "I_zb_rel": -8.7e-05,
+     "I_zt_rel": -7.9e-05,
+     "sw_rel": 7.2e-05
+    },
+    "SY3": {
+     "area_mm2": 612985.2,
+     "yb_mm": 701.689,
+     "I_1e9mm4": 175.85966,
+     "area_rel": -0.000282,
+     "yb_abs": 0.099057,
+     "I_zb_rel": -0.000125,
+     "I_zt_rel": -0.000115,
+     "sw_rel": 6.8e-05
+    },
+    "SY4": {
+     "area_mm2": 644985.2,
+     "yb_mm": 753.079,
+     "I_1e9mm4": 208.53089,
+     "area_rel": -0.000268,
+     "yb_abs": 0.099309,
+     "I_zb_rel": -0.000142,
+     "I_zt_rel": 3.1e-05,
+     "sw_rel": 6.5e-05
+    },
+    "SY5": {
+     "area_mm2": 676985.2,
+     "yb_mm": 804.338,
+     "I_1e9mm4": 244.42478,
+     "area_rel": -0.000255,
+     "yb_abs": 0.108131,
+     "I_zb_rel": -0.000151,
+     "I_zt_rel": -0.000125,
+     "sw_rel": 6.2e-05
+    },
+    "SY6": {
+     "area_mm2": 708985.2,
+     "yb_mm": 855.483,
+     "I_1e9mm4": 283.70165,
+     "area_rel": -0.000244,
+     "yb_abs": -9.87668,
+     "I_zb_rel": -0.01169,
+     "I_zt_rel": 0.00866,
+     "sw_rel": 5.9e-05
+    }
+   },
+   "pinned": {
+    "SY6": {
+     "yb_abs": {
+      "residual": -9.87668,
+      "reason": "printed Yb 865.36 breaks the progression (expected ~855.5; geometry 855.48) - source misprint"
+     },
+     "I_zb_rel": {
+      "residual": -0.01169,
+      "reason": "follows from the SY6 Yb misprint"
+     },
+     "I_zt_rel": {
+      "residual": 0.00866,
+      "reason": "follows from the SY6 Yb misprint"
+     }
+    }
+   },
+   "tolerances": {
+    "area_rel": 0.0005,
+    "yb_abs_mm": 0.15,
+    "I_rel": 0.0005,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "cap 240 convention (see notes)"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeSYBeamSection",
+    "verdict": "different",
+    "differences": "Same 240 cap/40x50 ledge and stem top (160 at 1450); lower splay differs: FP 252 flange side + 177 splay + R100 fillet vs ie fitted splay (397/487). Up to ~10.5 mm apart; FP table differs from Banagher's by ~-930 mm2.",
+    "per_size": {
+     "SY1": {
+      "symmetric_difference_mm2": 3738.7,
+      "area_difference_mm2": -1086.4
+     },
+     "SY2": {
+      "symmetric_difference_mm2": 3758.7,
+      "area_difference_mm2": -1106.4
+     },
+     "SY3": {
+      "symmetric_difference_mm2": 3778.7,
+      "area_difference_mm2": -1126.4
+     },
+     "SY4": {
+      "symmetric_difference_mm2": 3798.7,
+      "area_difference_mm2": -1146.4
+     },
+     "SY5": {
+      "symmetric_difference_mm2": 3818.7,
+      "area_difference_mm2": -1166.4
+     },
+     "SY6": {
+      "symmetric_difference_mm2": 3838.7,
+      "area_difference_mm2": -1186.4
+     }
+    }
+   }
+  },
+  "w": {
+   "title": "W Beams Range (open trough)",
+   "pdf_page": 14,
+   "printed_page": 14,
+   "provenance": "transcribed-with-convention",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "bottom_width_at_chamfer_top": 1510,
+    "bottom_chamfer": "25 x 25",
+    "outer_web_angle_deg": 82,
+    "slab_centre": 160,
+    "slab_at_kink": 210,
+    "kink_from_outer_face": 275,
+    "lower_inner_rise": 150,
+    "web_thickness": 170,
+    "upper_kink_offset": 138,
+    "top_notch": "60 wide x 75 high (printed)",
+    "top": {
+     "W1": {
+      "L1": 1704.4,
+      "L2": 203.2,
+      "L3": 1058,
+      "Web": 100,
+      "S": 220,
+      "F": 70
+     },
+     "W3": {
+      "L1": 1732.4,
+      "L2": 203.2,
+      "L3": 1058,
+      "Web": 200,
+      "S": 220,
+      "F": 70
+     },
+     "W5": {
+      "L1": 1760.4,
+      "L2": 203.2,
+      "L3": 1114,
+      "Web": 300,
+      "S": 220,
+      "F": 70
+     },
+     "W7": {
+      "L1": 1788.4,
+      "L2": 210.2,
+      "L3": 1128,
+      "Web": 350,
+      "S": 220,
+      "F": 120
+     },
+     "W8": {
+      "L1": 1816.4,
+      "L2": 210.2,
+      "L3": 1156,
+      "Web": 450,
+      "S": 220,
+      "F": 120
+     },
+     "W9": {
+      "L1": 1844.4,
+      "L2": 210.2,
+      "L3": 1184,
+      "Web": 550,
+      "S": 220,
+      "F": 120
+     }
+    }
+   },
+   "published": {
+    "W1": {
+     "depth_mm": 800.0,
+     "area_mm2": 572360.0,
+     "yb_mm": 305.3,
+     "zt_1e6mm3": 71.88,
+     "zb_1e6mm3": 116.46,
+     "self_weight_kN_m": 14.31
+    },
+    "W3": {
+     "depth_mm": 900.0,
+     "area_mm2": 606880.0,
+     "yb_mm": 345.9,
+     "zt_1e6mm3": 89.54,
+     "zb_1e6mm3": 143.43,
+     "self_weight_kN_m": 15.17
+    },
+    "W5": {
+     "depth_mm": 1000.0,
+     "area_mm2": 641400.0,
+     "yb_mm": 387.5,
+     "zt_1e6mm3": 108.76,
+     "zb_1e6mm3": 171.88,
+     "self_weight_kN_m": 16.0
+    },
+    "W7": {
+     "depth_mm": 1100.0,
+     "area_mm2": 692030.0,
+     "yb_mm": 440.2,
+     "zt_1e6mm3": 136.21,
+     "zb_1e6mm3": 204.15,
+     "self_weight_kN_m": 17.3
+    },
+    "W8": {
+     "depth_mm": 1200.0,
+     "area_mm2": 726550.0,
+     "yb_mm": 484.2,
+     "zt_1e6mm3": 159.46,
+     "zb_1e6mm3": 235.73,
+     "self_weight_kN_m": 18.16
+    },
+    "W9": {
+     "depth_mm": 1300.0,
+     "area_mm2": 761070.0,
+     "yb_mm": 528.7,
+     "zt_1e6mm3": 184.11,
+     "zb_1e6mm3": 268.56,
+     "self_weight_kN_m": 19.03
+    }
+   },
+   "geometry_notes": [
+    "Outer face from (755, 25) to (L1/2, d - 50); bottom 1510 at the chamfer tops, 25 x 25 chamfers.",
+    "Notch height: the vertical chain 75 + F + S + Web + 150 + 210 exceeds the depth by 25 for every size; notch height 50 closes the chain and is used (printed '75' recorded as a conflict).",
+    "Notch width 60 as printed: L1/2 - 60 - L2 - 60 = L3/2 for W1, W5, W7, W8, W9. W3 printed L3 = 1058 is a misprint (dims close at 1086); L3 is derived, not read from the table.",
+    "Inner web parallel to the outer face (82 deg) at 170 horizontal thickness; lower inner kink 275 horizontally inside the outer face at y = 210, upper inner kink at y = 360 on the inner web; upper web kink at y = d - 50 - F - S on the inner web. The printed '138' offset (inner face to upper kink) does not close with 170/82 deg (gives ~116) and is not used.",
+    "With the printed 60-wide notches the areas are 0.8% and I 1.6-2.4% below the table in every size: pinned. The published W table is numerically identical to Banagher's, whose 40-wide notch (cap = L2 + 40) closes these residuals, so FP's drawing and table are not mutually consistent."
+   ],
+   "residuals": {
+    "W1": {
+     "area_mm2": 567923.8,
+     "yb_mm": 301.326,
+     "I_1e9mm4": 34.69258,
+     "area_rel": -0.007751,
+     "yb_abs": -3.97441,
+     "I_zb_rel": -0.024262,
+     "I_zt_rel": -0.024367,
+     "sw_rel": 7e-05
+    },
+    "W3": {
+     "area_mm2": 601927.1,
+     "yb_mm": 341.564,
+     "I_1e9mm4": 48.50546,
+     "area_rel": -0.008161,
+     "yb_abs": -4.335872,
+     "I_zb_rel": -0.022312,
+     "I_zt_rel": -0.022345,
+     "sw_rel": -0.000132
+    },
+    "W5": {
+     "area_mm2": 635929.8,
+     "yb_mm": 382.845,
+     "I_1e9mm4": 65.22549,
+     "area_rel": -0.008529,
+     "yb_abs": -4.654805,
+     "I_zb_rel": -0.02069,
+     "I_zt_rel": -0.020866,
+     "sw_rel": -0.002183
+    },
+    "W7": {
+     "area_mm2": 686387.9,
+     "yb_mm": 435.62,
+     "I_1e9mm4": 88.30707,
+     "area_rel": -0.008153,
+     "yb_abs": -4.580478,
+     "I_zb_rel": -0.017356,
+     "I_zt_rel": -0.017406,
+     "sw_rel": -4.3e-05
+    },
+    "W8": {
+     "area_mm2": 720382.0,
+     "yb_mm": 479.339,
+     "I_1e9mm4": 112.26172,
+     "area_rel": -0.008489,
+     "yb_abs": -4.861054,
+     "I_zb_rel": -0.01646,
+     "I_zt_rel": -0.016469,
+     "sw_rel": -0.000206
+    },
+    "W9": {
+     "area_mm2": 754377.0,
+     "yb_mm": 523.624,
+     "I_1e9mm4": 139.76621,
+     "area_rel": -0.008794,
+     "yb_abs": -5.076167,
+     "I_zb_rel": -0.015645,
+     "I_zt_rel": -0.015759,
+     "sw_rel": 0.000171
+    }
+   },
+   "pinned": {
+    "W1": {
+     "area_rel": {
+      "residual": -0.007751,
+      "reason": "FP drawing's 60-wide top notches (L1/L2/L3 close only with 60) vs table identical to Banagher's (which closes with 40-wide notches)"
+     },
+     "yb_abs": {
+      "residual": -3.97441,
+      "reason": "as W area"
+     },
+     "I_zb_rel": {
+      "residual": -0.024262,
+      "reason": "as W area"
+     },
+     "I_zt_rel": {
+      "residual": -0.024367,
+      "reason": "as W area"
+     }
+    },
+    "W3": {
+     "area_rel": {
+      "residual": -0.008161,
+      "reason": "FP drawing's 60-wide top notches (L1/L2/L3 close only with 60) vs table identical to Banagher's (which closes with 40-wide notches)"
+     },
+     "yb_abs": {
+      "residual": -4.335872,
+      "reason": "as W area"
+     },
+     "I_zb_rel": {
+      "residual": -0.022312,
+      "reason": "as W area"
+     },
+     "I_zt_rel": {
+      "residual": -0.022345,
+      "reason": "as W area"
+     }
+    },
+    "W5": {
+     "area_rel": {
+      "residual": -0.008529,
+      "reason": "FP drawing's 60-wide top notches (L1/L2/L3 close only with 60) vs table identical to Banagher's (which closes with 40-wide notches)"
+     },
+     "yb_abs": {
+      "residual": -4.654805,
+      "reason": "as W area"
+     },
+     "I_zb_rel": {
+      "residual": -0.02069,
+      "reason": "as W area"
+     },
+     "I_zt_rel": {
+      "residual": -0.020866,
+      "reason": "as W area"
+     }
+    },
+    "W7": {
+     "area_rel": {
+      "residual": -0.008153,
+      "reason": "FP drawing's 60-wide top notches (L1/L2/L3 close only with 60) vs table identical to Banagher's (which closes with 40-wide notches)"
+     },
+     "yb_abs": {
+      "residual": -4.580478,
+      "reason": "as W area"
+     },
+     "I_zb_rel": {
+      "residual": -0.017356,
+      "reason": "as W area"
+     },
+     "I_zt_rel": {
+      "residual": -0.017406,
+      "reason": "as W area"
+     }
+    },
+    "W8": {
+     "area_rel": {
+      "residual": -0.008489,
+      "reason": "FP drawing's 60-wide top notches (L1/L2/L3 close only with 60) vs table identical to Banagher's (which closes with 40-wide notches)"
+     },
+     "yb_abs": {
+      "residual": -4.861054,
+      "reason": "as W area"
+     },
+     "I_zb_rel": {
+      "residual": -0.01646,
+      "reason": "as W area"
+     },
+     "I_zt_rel": {
+      "residual": -0.016469,
+      "reason": "as W area"
+     }
+    },
+    "W9": {
+     "area_rel": {
+      "residual": -0.008794,
+      "reason": "FP drawing's 60-wide top notches (L1/L2/L3 close only with 60) vs table identical to Banagher's (which closes with 40-wide notches)"
+     },
+     "yb_abs": {
+      "residual": -5.076167,
+      "reason": "as W area"
+     },
+     "I_zb_rel": {
+      "residual": -0.015645,
+      "reason": "as W area"
+     },
+     "I_zt_rel": {
+      "residual": -0.015759,
+      "reason": "as W area"
+     }
+    }
+   },
+   "tolerances": {
+    "area_rel": 0.0005,
+    "yb_abs_mm": 0.1,
+    "I_rel": 0.001,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "target tolerance; every size is pinned (drawing/table conflict)"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeWBeamSection",
+    "verdict": "different",
+    "differences": "FP top notches 60 wide (ie 40), FP bottom 1510 at 25 chamfers (ie 1500 at 20 chamfers), FP lower inner kinks from the 275/170 dims (ie from 2006 CAD: (500,210),(625,360)). Up to 20 mm apart; FP property table identical to Banagher's for these six sizes.",
+    "per_size": {
+     "W1": {
+      "symmetric_difference_mm2": 10710.2,
+      "area_difference_mm2": -4432.2
+     },
+     "W3": {
+      "symmetric_difference_mm2": 12086.9,
+      "area_difference_mm2": -4948.9
+     },
+     "W5": {
+      "symmetric_difference_mm2": 13464.2,
+      "area_difference_mm2": -5466.2
+     },
+     "W7": {
+      "symmetric_difference_mm2": 14496.1,
+      "area_difference_mm2": -5638.1
+     },
+     "W8": {
+      "symmetric_difference_mm2": 15882.0,
+      "area_difference_mm2": -6164.0
+     },
+     "W9": {
+      "symmetric_difference_mm2": 17267.0,
+      "area_difference_mm2": -6689.0
+     }
+    }
+   }
+  },
+  "box": {
+   "title": "Box Beams Range (solid)",
+   "pdf_page": 15,
+   "printed_page": 15,
+   "provenance": "transcribed",
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "transcribed_dims_mm": {
+    "bottom_width": [
+     495,
+     750,
+     970
+    ],
+    "top_width": [
+     365,
+     620,
+     840
+    ],
+    "bottom_chamfer": "25 x 25",
+    "side_vertical": 35,
+    "shoulder_rise": 30,
+    "shoulder_run": 65,
+    "depths": [
+     300,
+     400,
+     500,
+     600,
+     700,
+     800
+    ]
+   },
+   "published": {
+    "SD1 (495)": {
+     "depth_mm": 300.0,
+     "area_mm2": 118625.0,
+     "yb_mm": 142.0,
+     "zt_1e6mm3": 5.85,
+     "zb_1e6mm3": 6.55,
+     "self_weight_kN_m": 2.97
+    },
+    "SD2 (495)": {
+     "depth_mm": 400.0,
+     "area_mm2": 155125.0,
+     "yb_mm": 191.0,
+     "zt_1e6mm3": 10.37,
+     "zb_1e6mm3": 11.39,
+     "self_weight_kN_m": 3.88
+    },
+    "SD3 (495)": {
+     "depth_mm": 500.0,
+     "area_mm2": 191625.0,
+     "yb_mm": 240.0,
+     "zt_1e6mm3": 16.11,
+     "zb_1e6mm3": 17.46,
+     "self_weight_kN_m": 4.79
+    },
+    "SD4 (495)": {
+     "depth_mm": 600.0,
+     "area_mm2": 228125.0,
+     "yb_mm": 290.0,
+     "zt_1e6mm3": 23.09,
+     "zb_1e6mm3": 24.75,
+     "self_weight_kN_m": 5.7
+    },
+    "SD5 (495)": {
+     "depth_mm": 700.0,
+     "area_mm2": 264625.0,
+     "yb_mm": 339.0,
+     "zt_1e6mm3": 31.28,
+     "zb_1e6mm3": 33.26,
+     "self_weight_kN_m": 6.62
+    },
+    "SD6 (495)": {
+     "depth_mm": 800.0,
+     "area_mm2": 301125.0,
+     "yb_mm": 389.0,
+     "zt_1e6mm3": 40.7,
+     "zb_1e6mm3": 42.98,
+     "self_weight_kN_m": 7.53
+    },
+    "SD1 (750)": {
+     "depth_mm": 300.0,
+     "area_mm2": 195125.0,
+     "yb_mm": 145.0,
+     "zt_1e6mm3": 9.7,
+     "zb_1e6mm3": 10.38,
+     "self_weight_kN_m": 4.88
+    },
+    "SD2 (750)": {
+     "depth_mm": 400.0,
+     "area_mm2": 257125.0,
+     "yb_mm": 194.0,
+     "zt_1e6mm3": 17.19,
+     "zb_1e6mm3": 18.2,
+     "self_weight_kN_m": 6.43
+    },
+    "SD3 (750)": {
+     "depth_mm": 500.0,
+     "area_mm2": 319125.0,
+     "yb_mm": 244.0,
+     "zt_1e6mm3": 26.77,
+     "zb_1e6mm3": 28.09,
+     "self_weight_kN_m": 7.98
+    },
+    "SD4 (750)": {
+     "depth_mm": 600.0,
+     "area_mm2": 381125.0,
+     "yb_mm": 294.0,
+     "zt_1e6mm3": 38.43,
+     "zb_1e6mm3": 40.05,
+     "self_weight_kN_m": 9.53
+    },
+    "SD5 (750)": {
+     "depth_mm": 700.0,
+     "area_mm2": 443125.0,
+     "yb_mm": 344.0,
+     "zt_1e6mm3": 52.15,
+     "zb_1e6mm3": 54.09,
+     "self_weight_kN_m": 11.08
+    },
+    "SD6 (750)": {
+     "depth_mm": 800.0,
+     "area_mm2": 505125.0,
+     "yb_mm": 394.0,
+     "zt_1e6mm3": 67.94,
+     "zb_1e6mm3": 70.19,
+     "self_weight_kN_m": 12.63
+    },
+    "SD1 (970)": {
+     "depth_mm": 300.0,
+     "area_mm2": 261125.0,
+     "yb_mm": 146.0,
+     "zt_1e6mm3": 13.01,
+     "zb_1e6mm3": 13.69,
+     "self_weight_kN_m": 6.53
+    },
+    "SD2 (970)": {
+     "depth_mm": 400.0,
+     "area_mm2": 345125.0,
+     "yb_mm": 196.0,
+     "zt_1e6mm3": 23.07,
+     "zb_1e6mm3": 24.06,
+     "self_weight_kN_m": 8.63
+    },
+    "SD3 (970)": {
+     "depth_mm": 500.0,
+     "area_mm2": 429125.0,
+     "yb_mm": 246.0,
+     "zt_1e6mm3": 35.95,
+     "zb_1e6mm3": 37.26,
+     "self_weight_kN_m": 10.73
+    },
+    "SD4 (970)": {
+     "depth_mm": 600.0,
+     "area_mm2": 513125.0,
+     "yb_mm": 295.0,
+     "zt_1e6mm3": 51.46,
+     "zb_1e6mm3": 53.25,
+     "self_weight_kN_m": 12.83
+    },
+    "SD5 (970)": {
+     "depth_mm": 700.0,
+     "area_mm2": 597125.0,
+     "yb_mm": 345.0,
+     "zt_1e6mm3": 70.14,
+     "zb_1e6mm3": 72.05,
+     "self_weight_kN_m": 14.93
+    },
+    "SD6 (970)": {
+     "depth_mm": 800.0,
+     "area_mm2": 681125.0,
+     "yb_mm": 395.0,
+     "zt_1e6mm3": 91.43,
+     "zb_1e6mm3": 93.65,
+     "self_weight_kN_m": 17.03
+    }
+   },
+   "geometry_notes": [
+    "Solid sections: no voids are drawn or implied (published areas equal the solid outline to the mm2).",
+    "Only SD1-SD6 (300-800) are tabulated although the elevation sketch labels beams up to 1000."
+   ],
+   "residuals": {
+    "SD1 (495)": {
+     "area_mm2": 118625.0,
+     "yb_mm": 141.541,
+     "I_1e9mm4": 0.92743,
+     "area_rel": 0.0,
+     "yb_abs": -0.45908,
+     "I_zb_rel": -0.002866,
+     "I_zt_rel": 0.003391,
+     "sw_rel": 0.001475
+    },
+    "SD2 (495)": {
+     "area_mm2": 155125.0,
+     "yb_mm": 190.59,
+     "I_1e9mm4": 2.17076,
+     "area_rel": 0.0,
+     "yb_abs": -0.409885,
+     "I_zb_rel": -0.002173,
+     "I_zt_rel": 0.001583,
+     "sw_rel": 0.000483
+    },
+    "SD3 (495)": {
+     "area_mm2": 191625.0,
+     "yb_mm": 240.002,
+     "I_1e9mm4": 4.18954,
+     "area_rel": 0.0,
+     "yb_abs": 0.001522,
+     "I_zb_rel": -0.000205,
+     "I_zt_rel": 0.000225,
+     "sw_rel": -0.00013
+    },
+    "SD4 (495)": {
+     "area_mm2": 228125.0,
+     "yb_mm": 289.601,
+     "I_1e9mm4": 7.16635,
+     "area_rel": 0.0,
+     "yb_abs": -0.398721,
+     "I_zb_rel": -0.001553,
+     "I_zt_rel": 0.001181,
+     "sw_rel": -0.000548
+    },
+    "SD5 (495)": {
+     "area_mm2": 264625.0,
+     "yb_mm": 339.311,
+     "I_1e9mm4": 11.28374,
+     "area_rel": 0.0,
+     "yb_abs": 0.311447,
+     "I_zb_rel": 0.000763,
+     "I_zt_rel": -0.000739,
+     "sw_rel": 0.000661
+    },
+    "SD6 (495)": {
+     "area_mm2": 301125.0,
+     "yb_mm": 389.092,
+     "I_1e9mm4": 16.72422,
+     "area_rel": 0.0,
+     "yb_abs": 0.091878,
+     "I_zb_rel": 0.000299,
+     "I_zt_rel": -0.000208,
+     "sw_rel": 0.000249
+    },
+    "SD1 (750)": {
+     "area_mm2": 195125.0,
+     "yb_mm": 144.857,
+     "I_1e9mm4": 1.50451,
+     "area_rel": 0.0,
+     "yb_abs": -0.142644,
+     "I_zb_rel": -0.000391,
+     "I_zt_rel": 0.000673,
+     "sw_rel": 0.000384
+    },
+    "SD2 (750)": {
+     "area_mm2": 257125.0,
+     "yb_mm": 194.323,
+     "I_1e9mm4": 3.53621,
+     "area_rel": 0.0,
+     "yb_abs": 0.322962,
+     "I_zb_rel": 0.001532,
+     "I_zt_rel": -0.001392,
+     "sw_rel": 0.000292
+    },
+    "SD3 (750)": {
+     "area_mm2": 319125.0,
+     "yb_mm": 243.996,
+     "I_1e9mm4": 6.85344,
+     "area_rel": 0.0,
+     "yb_abs": -0.003786,
+     "I_zb_rel": -7.5e-05,
+     "I_zt_rel": 4.7e-05,
+     "sw_rel": 0.000235
+    },
+    "SD4 (750)": {
+     "area_mm2": 381125.0,
+     "yb_mm": 293.776,
+     "I_1e9mm4": 11.76626,
+     "area_rel": 0.0,
+     "yb_abs": -0.224227,
+     "I_zb_rel": -0.000717,
+     "I_zt_rel": 0.000568,
+     "sw_rel": 0.000197
+    },
+    "SD5 (750)": {
+     "area_mm2": 443125.0,
+     "yb_mm": 343.617,
+     "I_1e9mm4": 18.58467,
+     "area_rel": 0.0,
+     "yb_abs": -0.382981,
+     "I_zb_rel": -0.001198,
+     "I_zt_rel": 0.001038,
+     "sw_rel": 0.000169
+    },
+    "SD6 (750)": {
+     "area_mm2": 505125.0,
+     "yb_mm": 393.497,
+     "I_1e9mm4": 27.61869,
+     "area_rel": 0.0,
+     "yb_abs": -0.502763,
+     "I_zb_rel": -0.001308,
+     "I_zt_rel": 0.001271,
+     "sw_rel": 0.000148
+    },
+    "SD1 (970)": {
+     "area_mm2": 261125.0,
+     "yb_mm": 146.157,
+     "I_1e9mm4": 2.00082,
+     "area_rel": 0.0,
+     "yb_abs": 0.157172,
+     "I_zb_rel": 0.001039,
+     "I_zt_rel": -0.001359,
+     "sw_rel": 0.000287
+    },
+    "SD2 (970)": {
+     "area_mm2": 345125.0,
+     "yb_mm": 195.77,
+     "I_1e9mm4": 4.71166,
+     "area_rel": 0.0,
+     "yb_abs": -0.229506,
+     "I_zb_rel": -0.00087,
+     "I_zt_rel": 0.001142,
+     "sw_rel": 0.000217
+    },
+    "SD3 (970)": {
+     "area_mm2": 429125.0,
+     "yb_mm": 245.535,
+     "I_1e9mm4": 9.14806,
+     "area_rel": 0.0,
+     "yb_abs": -0.464802,
+     "I_zb_rel": -0.001953,
+     "I_zt_rel": 0.001835,
+     "sw_rel": 0.000175
+    },
+    "SD4 (970)": {
+     "area_mm2": 513125.0,
+     "yb_mm": 295.377,
+     "I_1e9mm4": 15.73006,
+     "area_rel": 0.0,
+     "yb_abs": 0.376939,
+     "I_zb_rel": 0.001356,
+     "I_zt_rel": 0.002214,
+     "sw_rel": 0.000146
+    },
+    "SD5 (970)": {
+     "area_mm2": 597125.0,
+     "yb_mm": 345.263,
+     "I_1e9mm4": 24.87766,
+     "area_rel": 0.0,
+     "yb_abs": 0.263206,
+     "I_zb_rel": 0.000821,
+     "I_zt_rel": -0.000885,
+     "sw_rel": 0.000126
+    },
+    "SD6 (970)": {
+     "area_mm2": 681125.0,
+     "yb_mm": 395.178,
+     "I_1e9mm4": 37.01087,
+     "area_rel": 0.0,
+     "yb_abs": 0.177525,
+     "I_zb_rel": 0.000517,
+     "I_zt_rel": -0.000494,
+     "sw_rel": 0.00011
+    }
+   },
+   "pinned": {
+    "SD6 (750)": {
+     "yb_abs": {
+      "residual": -0.502763,
+      "reason": "computed Yb 393.497 sits on the rounding boundary; printed 394 (0.003 mm beyond the +-0.5 integer rounding)"
+     }
+    }
+   },
+   "tolerances": {
+    "area_rel": 1e-05,
+    "yb_abs_mm": 0.5,
+    "I_rel": 0.004,
+    "yc_abs_mm": null,
+    "self_weight_rel_at_25kN_m3": 0.0025,
+    "justification": "Yb printed to the integer (I via Zb*Yb carries up to 0.35% rounding)"
+   },
+   "banagher_ie_comparison": {
+    "ie_class": "IeSolidBoxBeamSection('SDn (1|2|3)') for 495|750|970",
+    "verdict": "identical",
+    "differences": "Identical outlines (symmetric difference 0) and identical property tables for SD1-SD6; FP omits Banagher's SD7/SD8 and the 1500 width.",
+    "per_size": {
+     "SD1 (495)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD2 (495)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD3 (495)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD4 (495)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD5 (495)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD6 (495)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD1 (750)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD2 (750)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD3 (750)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD4 (750)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD5 (750)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD6 (750)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD1 (970)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD2 (970)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD3 (970)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD4 (970)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD5 (970)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     },
+     "SD6 (970)": {
+      "symmetric_difference_mm2": 0.0,
+      "area_difference_mm2": 0.0
+     }
+    }
+   }
+  }
+ },
+ "classes": {
+  "FpMcCannTyBeamSection": [
+   "ty_type1",
+   "ty_type2"
+  ],
+  "FpMcCannTyeBeamSection": [
+   "tye"
+  ],
+  "FpMcCannYBeamSection": [
+   "y"
+  ],
+  "FpMcCannYeBeamSection": [
+   "ye"
+  ],
+  "FpMcCannMyBeamSection": [
+   "my"
+  ],
+  "FpMcCannMyeBeamSection": [
+   "mye"
+  ],
+  "FpMcCannSyBeamSection": [
+   "sy"
+  ],
+  "FpMcCannWBeamSection": [
+   "w"
+  ],
+  "FpMcCannBoxBeamSection": [
+   "box"
+  ]
+ }
+}

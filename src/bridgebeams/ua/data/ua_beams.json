@@ -1,0 +1,458 @@
+{
+ "_comment": "Ukrainian precast prestressed I-beams. Half profiles are right halves in mm, origin mid-soffit, listed from the soffit corner up to the top-centre edge as [x, y, fillet_radius]; radius 0 = sharp corner. Transcribed source dimensions are kept separately in source units (mm).",
+ "sources": {
+  "nidi": {
+   "title_original": "Рекомендації щодо конструктивних рішень для відбудови пошкоджених мостів і труб",
+   "publisher": "ДП «Національний інститут розвитку інфраструктури» (former ДП «ДерждорНДІ»), Kyiv, 2022",
+   "url": "https://nidi.org.ua/files/upload/Рекомендації_мостів.pdf",
+   "local_file": "sources/expansion/round2/ua/nidi_rekomendacii_mostiv.pdf",
+   "sha256": "a9e18180605e086c9e762c0eb9ee162eff8541bf79683567fd6e26b5cf9968b9",
+   "units": "mm",
+   "note": "Word-produced PDF; the drawings are embedded raster images (pdfimages extracted at native 120-200 ppi) with stroke-font CAD labels, read visually."
+  },
+  "3betony": {
+   "title_original": "Мостові балки 3Bet-90 / 3Bet-120 (ЖБІ комбінат «3 Бетони», Калуш)",
+   "url": "http://3betony.com.ua/upload/mosty_11.png",
+   "local_file": "sources/expansion/round2/ua/3betony_mosty_11.png",
+   "sha256": "0d433f4d6adf0686e37d72552f7f9c7abb960b1423d899499ec8244a6e090220",
+   "units": "mm; volume m3; length m"
+  },
+  "kovalska": {
+   "title_original": "Каталог конструктивів — «Балки мостові» (ПБГ «Ковальська» / АТ «Дарницький завод ЗБК»)",
+   "url": "https://beton.kovalska.com/wp-content/uploads/2020/07/catalog_konstrukviv_new_2020.pdf",
+   "local_file": "sources/expansion/round2/ua/kovalska_catalog_konstruktyv_2020.pdf",
+   "sha256": "fe377609cba744785288c2928cce396c68f79776242db78b48ec8affdb9487fe",
+   "pdf_page": 30,
+   "printed_page": 30,
+   "units": "mm"
+  },
+  "oberbeton": {
+   "title_original": "Мостові балки — параметри (Обербетон)",
+   "url": "https://oberbeton.ua/wp-content/uploads/2017/03/parametry_most_balok_ua1.jpg",
+   "local_file": "sources/expansion/round2/ua/oberbeton_parametry_most_balok.jpg",
+   "sha256": "99b94ebde715794ba97199355fdcdba9d2b7115e84db50bdccd18ef3351a286e",
+   "companion_drawing": {
+    "file": "sources/expansion/round2/ua/oberbeton_cherteg1.jpg",
+    "sha256": "889a490f4b78ae89b7fa06a6398414b96b37635273dce5af8cdcbefc3fee5fa6",
+    "url": null,
+    "note": "Facade/plan/section 1-1 drawing downloaded from the oberbeton.ua product page (https://oberbeton.ua/uk/мостові-балки/); exact image URL not recorded by the research pass. Carries the R100 fillets, 1:1 haunches, 40/5/55 top-flange chain and 20x20 soffit chamfer."
+   },
+   "units": "mm"
+  }
+ },
+ "families": {
+  "B40": {
+   "family": "Б L.H.40 I-beams (ТОВ «Мост Строй Комплект», Dnipro), after «Альбом збірних залізобетонних балок довжиною 12, 15, 18, 21, 24, 33 м двотаврового перерізу...», ДП «ДерждорНДІ», 2012",
+   "source": "nidi",
+   "section": "3.3.5",
+   "source_status": "national rebuilding recommendations 2022 (reproduces ДерждорНДІ 2012 album)",
+   "provenance": "transcribed",
+   "designation_rule": "Б L.H.W: L = length cm, H = depth cm, W = top-flange width cm; suffix П/К = intermediate/edge beam (same concrete outline)",
+   "transcribed_common_mm": {
+    "top_width": 400,
+    "web_width": 180,
+    "bottom_width": 500,
+    "soffit_chamfer": "20 x 20",
+    "section_chain_top_down": "131 (flange) / 31 (R40 fillet) / 63 (haunch) / 39 (R50 fillet) / 512 (web) / 31 (R40) / 106 (haunch) / 31 (R40) / f (flange: 36, 136 or 236) / 20 (chamfer)",
+    "facade_chain_top_down": "150 / 90 / 555 / 130 / (H-925) -- vertex (intersection) levels",
+    "details": "Вузол А: R40 at top flange/haunch, R50 at haunch/web, 129 deg; Вузол Б: R40 at both bottom haunch corners, 129 deg (drawn on pp48, 51, 54, 57, 60)"
+   },
+   "published_capacity_note": "Only ULS bending/shear resistance per beam is published (e.g. Б1200.100.40: 2930 kNm / 1270 kN with 250 mm slab, 1905 kNm / 1098 kN bare; Б1500.100.40: 3850 / 1380 and 2200 / 1080). No area, mass or volume.",
+   "geometry_notes": [
+    "Modelled with sharp vertices at the facade-chain levels (150, 240 from top; H-925 and H-795 from soffit) and tangent circular fillets R40/R50/R40/R40; the resulting tangent points reproduce every value of the section chain (131/31/63/39/512/31/106/31/f/20) within 0.5 mm, so both chains are honoured.",
+    "The drawings print the haunch included angle as 129 deg; the width/level chain gives 129.3 deg (top) and 129.1 deg (bottom) -- the width/level chain is used.",
+    "The 1000 mm deep drawings (pp45, 48) print 95 as the lowest facade chain value, so that chain sums to 1020; the section chain (20+36+R40 tangent) and the 1100 mm drawings (175 = 20+136+19) show it should be 75. 75 is used (drawing error recorded, not a convention).",
+    "Pp45 (12 m) shows no detail view; the fillet radii are taken from the identical outline on pp48-60 (Вузол Б on every sheet, Вузол А on p60).",
+    "Cross-sections depend on depth only: 12 m and 15 m share the 1000 mm section, 18/21/24 m the 1100 mm section; 33 m is 1200 mm. Only the bottom-flange vertical (36/136/236) changes."
+   ],
+   "sizes": {
+    "B1200.100.40": {
+     "length_m": 12,
+     "depth": 1000,
+     "bottom_flange_vertical": 36,
+     "pdf_page": 45,
+     "figure": "3.19",
+     "model_properties": {
+      "area_mm2": 267357,
+      "yb_mm": 493.9,
+      "ixx_mm4": 30116000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    },
+    "B1500.100.40": {
+     "length_m": 15,
+     "depth": 1000,
+     "bottom_flange_vertical": 36,
+     "pdf_page": 48,
+     "figure": "3.22",
+     "model_properties": {
+      "area_mm2": 267357,
+      "yb_mm": 493.9,
+      "ixx_mm4": 30116000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    },
+    "B1800.110.40": {
+     "length_m": 18,
+     "depth": 1100,
+     "bottom_flange_vertical": 136,
+     "pdf_page": 51,
+     "figure": "3.25",
+     "model_properties": {
+      "area_mm2": 317357,
+      "yb_mm": 508.3,
+      "ixx_mm4": 42583000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    },
+    "B2100.110.40": {
+     "length_m": 21,
+     "depth": 1100,
+     "bottom_flange_vertical": 136,
+     "pdf_page": 54,
+     "figure": "3.28",
+     "model_properties": {
+      "area_mm2": 317357,
+      "yb_mm": 508.3,
+      "ixx_mm4": 42583000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    },
+    "B2400.110.40": {
+     "length_m": 24,
+     "depth": 1100,
+     "bottom_flange_vertical": 136,
+     "pdf_page": 57,
+     "figure": "3.31",
+     "model_properties": {
+      "area_mm2": 317357,
+      "yb_mm": 508.3,
+      "ixx_mm4": 42583000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    },
+    "B3300.120.40": {
+     "length_m": 33,
+     "depth": 1200,
+     "bottom_flange_vertical": 236,
+     "pdf_page": 60,
+     "figure": "3.34",
+     "model_properties": {
+      "area_mm2": 367357,
+      "yb_mm": 532.5,
+      "ixx_mm4": 56052000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    }
+   }
+  },
+  "3Bet": {
+   "family": "3Bet-90 / 3Bet-120 I-beams (ЖБІ комбінат «3 Бетони», Kalush), approved by Ukravtodor Technical Council protocol No. 5 (06.08.2008)",
+   "source": [
+    "nidi",
+    "3betony"
+   ],
+   "section": "NIDI 3.3.6 (pp64-68 Б1800.90.56, pp69-74 Б2100.90.56, pp75-79 Б2400.120.70, pp80-85 Б3300.120.70); 3betony leaflet table",
+   "source_status": "producer leaflet (Ukravtodor-approved 2008) + national rebuilding recommendations 2022",
+   "identity_check": "The 3betony leaflet sketches give 3Bet-90 top 560/420, bottom 520, H 900 and 3Bet-120 top 700/610, bottom 580, H 1200 -- identical to the NIDI drawings, so each type is implemented once from the NIDI dimensions and validated against the leaflet volumes.",
+   "types": {
+    "3Bet-90": {
+     "depth": 900,
+     "provenance": "transcribed",
+     "transcribed_mm": {
+      "widths": "top 420 (upstand, 10 draft each side to 440 at its base) / 560 at ledge / 540 at flange-haunch corner / web 200-160-200 / 520 at bottom-flange top / 500 at 10 mm above soffit / 480 soffit",
+      "section_chain_bottom_up": "10 / 160 / 90 / 190 / 190 / 90 / 115 / 15 / 40 (= 900)",
+      "horizontal_chains": "60|10|420|10|60 = 560; 10|170|200|170|10 = 560; 160|20|160|20|160 = 520; 10|500|10; 20|480|20 = 520"
+     },
+     "half_profile_mm": [
+      [
+       240,
+       0,
+       0
+      ],
+      [
+       250,
+       10,
+       0
+      ],
+      [
+       260,
+       170,
+       0
+      ],
+      [
+       100,
+       260,
+       0
+      ],
+      [
+       80,
+       450,
+       0
+      ],
+      [
+       100,
+       640,
+       0
+      ],
+      [
+       270,
+       730,
+       0
+      ],
+      [
+       280,
+       845,
+       0
+      ],
+      [
+       220,
+       860,
+       0
+      ],
+      [
+       210,
+       900,
+       0
+      ]
+     ],
+     "geometry_notes": [
+      "Web tapers 200 (at both haunches) to 160 at mid-depth (y = 450, the 190/190 chain point); the 20 offsets in the 160|20|160|20|160 chain are this taper.",
+      "Top flange: 60 mm ledge falls 15 mm outward (15 in the chain) from the 440 upstand base to the 560 edge; flange edge drafts 10 mm per side over 115 mm (560 -> 540).",
+      "Bottom flange drafts from 520 at y = 170 to 500 at y = 10, then a 10 x 10 chamfer to the 480 soffit. All corners sharp (no radii drawn)."
+     ]
+    },
+    "3Bet-120": {
+     "depth": 1200,
+     "provenance": "transcribed-with-convention",
+     "transcribed_mm": {
+      "widths": "top 610 (5 draft each side), 680 (R10 tangent points on ledge), 700 overall; web 180 below the top fillet, 150 minimum, 180 above bottom haunch; bottom 580",
+      "section_chain_bottom_up": "50 / 350 / 330 / 330 / 5? / 35 / 105 (left); 20 (upstand) / 45 / 5 (right, partly illegible)",
+      "facade_chain_top_down": "20 / 80 / 40 / 330 / 330 / 350 / 50 (= 1200)",
+      "radii": "R10 ledge/edge, R25 edge/underside, R50 underside/web (both sides)",
+      "centre_chains": "185|275|185 = 645 between R25 and R50 centres; 215 from edge to R50 centre"
+     },
+     "half_profile_mm": [
+      [
+       290,
+       0,
+       0
+      ],
+      [
+       290,
+       50,
+       0
+      ],
+      [
+       90,
+       400,
+       0
+      ],
+      [
+       90,
+       530,
+       0
+      ],
+      [
+       75,
+       730,
+       0
+      ],
+      [
+       90,
+       1060,
+       50
+      ],
+      [
+       350,
+       1095,
+       25
+      ],
+      [
+       350,
+       1180,
+       10
+      ],
+      [
+       310,
+       1180,
+       0
+      ],
+      [
+       305,
+       1200,
+       0
+      ]
+     ],
+     "geometry_notes": [
+      "Sharp vertices: flange-underside outer vertex at 1095 (section chain 105 from top), web vertex at 1060 (chain 35; facade 1060). Facade gives 1100 for the outer line; 5 mm difference unresolved.",
+      "Web stations are a convention: 180 at the top-flange vertex tapering to 150 at y = 730 (the 330/330 chain point) and back to 180 at y = 530, parallel 180 down to the haunch at y = 400. The printed 150/180 dimension levels (~y 610-640 and ~y 520-550) were scaled from the drawing (0.3 px/mm); a pixel trace of both 3Bet-120 sheets gives half-widths ~82 (y 900-1030), ~75-79 (y 640-860), ~82 (y 540-620), ~90 (y 400-520).",
+      "Upstand 20 high with 5 draft each side (610 -> 620); ledge 40 wide, level, R10 at its outer corner (680 = R10 tangent points); flange edge vertical at 700.",
+      "The '5' next to each 215 dimension and the right-hand 45/5 chain could not be resolved; the 215/185/275/645 centre chains agree with the adopted outline within ~8 mm.",
+      "Area exceeds the leaflet volume/length by about 1.3% (pinned in tests); the likely source is the web taper stations or a 5 mm outer-edge draft, both below the resolution of the drawing."
+     ]
+    }
+   },
+   "sizes": {
+    "3Bet-90-12": {
+     "type": "3Bet-90",
+     "length_m": 12,
+     "volume_m3": 3.7,
+     "nidi_designation": "Б1200.90.56 (layout fig 3.41 only)",
+     "residual": {
+      "model_area_mm2": 308550,
+      "published_V_over_L_mm2": 308333,
+      "area_residual_pct": 0.07
+     }
+    },
+    "3Bet-90-15": {
+     "type": "3Bet-90",
+     "length_m": 15,
+     "volume_m3": 4.62,
+     "nidi_designation": null,
+     "residual": {
+      "model_area_mm2": 308550,
+      "published_V_over_L_mm2": 308000,
+      "area_residual_pct": 0.18
+     }
+    },
+    "3Bet-90-18": {
+     "type": "3Bet-90",
+     "length_m": 18,
+     "volume_m3": 5.55,
+     "nidi_designation": "Б1800.90.56",
+     "pdf_page": 64,
+     "residual": {
+      "model_area_mm2": 308550,
+      "published_V_over_L_mm2": 308333,
+      "area_residual_pct": 0.07
+     }
+    },
+    "3Bet-90-21": {
+     "type": "3Bet-90",
+     "length_m": 21,
+     "volume_m3": 6.48,
+     "nidi_designation": "Б2100.90.56",
+     "pdf_page": 69,
+     "residual": {
+      "model_area_mm2": 308550,
+      "published_V_over_L_mm2": 308571,
+      "area_residual_pct": -0.01
+     }
+    },
+    "3Bet-90-24": {
+     "type": "3Bet-90",
+     "length_m": 24,
+     "volume_m3": 7.41,
+     "nidi_designation": null,
+     "residual": {
+      "model_area_mm2": 308550,
+      "published_V_over_L_mm2": 308750,
+      "area_residual_pct": -0.06
+     }
+    },
+    "3Bet-120-24": {
+     "type": "3Bet-120",
+     "length_m": 24,
+     "volume_m3": 8.53,
+     "nidi_designation": "Б2400.120.70",
+     "pdf_page": 75,
+     "residual": {
+      "model_area_mm2": 360512,
+      "published_V_over_L_mm2": 355417,
+      "area_residual_pct": 1.43
+     }
+    },
+    "3Bet-120-27": {
+     "type": "3Bet-120",
+     "length_m": 27,
+     "volume_m3": 9.6,
+     "nidi_designation": null,
+     "residual": {
+      "model_area_mm2": 360512,
+      "published_V_over_L_mm2": 355556,
+      "area_residual_pct": 1.39
+     }
+    },
+    "3Bet-120-30": {
+     "type": "3Bet-120",
+     "length_m": 30,
+     "volume_m3": 10.67,
+     "nidi_designation": "Б3000.120.70 (cited, no drawing)",
+     "residual": {
+      "model_area_mm2": 360512,
+      "published_V_over_L_mm2": 355667,
+      "area_residual_pct": 1.36
+     }
+    },
+    "3Bet-120-33": {
+     "type": "3Bet-120",
+     "length_m": 33,
+     "volume_m3": 11.74,
+     "nidi_designation": "Б3300.120.70",
+     "pdf_page": 80,
+     "residual": {
+      "model_area_mm2": 360512,
+      "published_V_over_L_mm2": 355758,
+      "area_residual_pct": 1.34
+     }
+    }
+   },
+   "volume_regression": {
+    "3Bet-90": {
+     "slope_m2": 0.30917,
+     "mean_V_over_L_m2": 0.3085
+    },
+    "3Bet-120": {
+     "slope_m2": 0.35667,
+     "mean_V_over_L_m2": 0.3556
+    },
+    "note": "V/L is essentially constant per type (no end blocks); the intercepts are ~ -0.01/-0.03 m3, i.e. actual lengths marginally under nominal."
+   }
+  },
+  "BM": {
+   "family": "БМ-24 / БМ-33 bridge I-beams (Kovalska / Darnytsia ZBK) = Oberbeton parametric bridge beam (same 600/480/160/320/313 chain)",
+   "source": [
+    "kovalska",
+    "oberbeton"
+   ],
+   "source_status": "producer catalogues (Kovalska 2020; Oberbeton 2017)",
+   "provenance": "transcribed-with-convention",
+   "transcribed_mm": {
+    "kovalska_p30": "Рис.1 H 1100, Рис.2 H 1500; top 600; top zone 320; web 160; bottom zone 313; bottom 480; length up to 33000. БМ-24/БМ-33 named on p31.",
+    "oberbeton": "H 1100-1500; top 600 = 60|480|60; upstand 40; 5; flange edge 55; top haunch 220 at 1:1; web 160, length 467-867; bottom haunch 160 at 1:1; bottom flange 153; soffit 480 with 20x20 chamfers; R100 at both web/haunch junctions."
+   },
+   "geometry_notes": [
+    "Kovalska names two discrete sizes (H 1100 = БМ-24, H 1500 = БМ-33); Oberbeton gives only the continuous range 1100-1500 whose end points coincide. Only these two named depths are implemented; no intermediate step convention is used.",
+    "The Kovalska vector sketch is schematic (the 320 and 313 zones are drawn equal length and БМ-33 is БМ-24 with a stretched web), so detail geometry is taken from the dimensioned Oberbeton section 1-1.",
+    "Convention: the '5' under the 40 mm upstand is modelled as a ledge falling 5 mm over its 60 mm width to the flange edge (40 + 5 + 55 + 220 = 320).",
+    "Flange-edge/haunch corners are sharp (no radius drawn); R100 tangent fillets at the two web/haunch corners as drawn.",
+    "No area, mass or volume is published by either producer."
+   ],
+   "sizes": {
+    "BM-24": {
+     "depth": 1100,
+     "web_straight": 467,
+     "kovalska_figure": "Рис. 1",
+     "model_properties": {
+      "area_mm2": 338327,
+      "yb_mm": 567.0,
+      "ixx_mm4": 48316000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    },
+    "BM-33": {
+     "depth": 1500,
+     "web_straight": 867,
+     "kovalska_figure": "Рис. 2",
+     "model_properties": {
+      "area_mm2": 402327,
+      "yb_mm": 770.9,
+      "ixx_mm4": 109780000000.0,
+      "note": "analytic only; no published property to compare"
+     }
+    }
+   }
+  }
+ }
+}

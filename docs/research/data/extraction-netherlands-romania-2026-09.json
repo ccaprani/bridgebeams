@@ -1,0 +1,116 @@
+{
+ "topic": "netherlands-romania",
+ "date": "2026-09-23",
+ "packages": {
+  "nl": {
+   "classes": {
+    "HaitsmaHkoSection": {
+     "profiles": 9,
+     "provenance": "transcribed-with-convention"
+    },
+    "HaitsmaHkoXlSection": {
+     "profiles": 11,
+     "provenance": "estimate"
+    },
+    "HaitsmaHrpSection": {
+     "profiles": 12,
+     "provenance": "fitted-reconstruction"
+    },
+    "HaitsmaHipSection": {
+     "profiles": 18,
+     "provenance": "fitted-reconstruction",
+     "variants": [
+      "natte-knoop",
+      "druklaag"
+     ]
+    }
+   },
+   "data": [
+    "src/bridgebeams/nl/data/haitsma_hko.json",
+    "src/bridgebeams/nl/data/haitsma_hrp_hip.json"
+   ]
+  },
+  "ro": {
+   "classes": {
+    "AsaGrindaPodSection": {
+     "profiles": 6,
+     "provenance_per_size": {
+      "42": "transcribed-with-convention",
+      "52": "estimate",
+      "72": "transcribed-with-convention",
+      "80": "transcribed-with-convention",
+      "95": "transcribed-with-convention",
+      "105": "estimate"
+     }
+    }
+   },
+   "data": [
+    "src/bridgebeams/ro/data/asa_grinda_pod.json"
+   ]
+  }
+ },
+ "sources": [
+  {
+   "id": "nl_hko",
+   "url": "https://www.haitsma.nl/media/kbqasilf/hko-hko-xl-folder.pdf",
+   "local_file": "sources/expansion/europe-americas/nl_hko.pdf",
+   "sha256": "85d308096544126a912bf748c464dd2fde88206b436c2105b9683980274c4513",
+   "pdf_pages": [
+    2
+   ]
+  },
+  {
+   "id": "nl_hip",
+   "url": "https://www.haitsma.nl/media/241925/folder-hrp-hip.pdf",
+   "local_file": "sources/expansion/europe-americas/nl_hip.pdf",
+   "sha256": "37a0eb77d1f38f80578139dd4164b8a95be0f7351ae3c15245379f778f4a7b71",
+   "pdf_pages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "nl_haitsma_html",
+   "url": null,
+   "local_file": "sources/expansion/europe-americas/nl_haitsma.html",
+   "note": "HIP 1600-2400 mm claim"
+  },
+  {
+   "id": "ro_asa",
+   "url": "https://asacons.ro/wp-content/uploads/2025/09/ASA-CONSOLIS-catalog.pdf",
+   "local_file": "sources/expansion/europe-americas/ro_asa.pdf",
+   "sha256": "443d7d9ace55c7a591a7bf520e2487c0d48ffc8812f38ac43971ea2a9ba112bd",
+   "pdf_pages": [
+    97,
+    99,
+    101
+   ],
+   "printed_pages": [
+    97,
+    99,
+    101
+   ]
+  }
+ ],
+ "findings": [
+  "HKO printed inertia column (header mm4) needs x10^9; the registry note 'missing scale factor' is resolved.",
+  "HIP edition conflict: PDF 1200-2000 mm vs web page 1600-2400 mm; PDF implemented.",
+  "ASA 72/80: R50 kept exact with tangent construction on the 13.75 deg flange slope; <=2 mm residual vs printed 4/4.8 cm extents; earlier 48.8 mm radius argument superseded.",
+  "ASA 95/105: first vertical label = flange-edge thickness (10/12) + 2 cm taper; only reading that closes to 95/105; drawings drawn 2 cm shallower.",
+  "ASA 72 strand view 90 cm vs section 92 cm conflict retained."
+ ],
+ "pinned_discrepancies": {
+  "HKO650": "I +1.54% (source 13.27)",
+  "HIP1200-natte-knoop": "area -0.68% (source 888000; 19000 step)",
+  "HIP1700-natte-knoop": "I +1.74% (source 3.70E+11)"
+ },
+ "estimates": {
+  "HKO": "root fillet r=15",
+  "HKO-XL": "whole outline scaled + 2 fitted offsets (9 mm, 9 mm)",
+  "HRP": "bottom chamfer 20, key recess 30 (fitted), 45 deg bevel, top chamfer 15, plank rebate 35x15",
+  "HIP": "bottom rebate 25x15 + 5 draft; druklaag ledges 25x57, haunch break (625, H-100); mirrored right side",
+  "ASA52": "stem width 14 at y=17 copied from 42",
+  "ASA105": "lower slope 45 deg"
+ },
+ "record": "docs/research/extraction-netherlands-romania-2026-09.md"
+}

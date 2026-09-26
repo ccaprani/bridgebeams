@@ -1,0 +1,965 @@
+{
+  "schema_version": 1,
+  "transcribed_on": "2026-09-22",
+  "method": "Human-readable visual transcription by assistant from PyMuPDF-rendered original PDF pages. CAD dimension text extraction alone was not used.",
+  "units": "mm unless another unit explicitly attached",
+  "page_convention": "pdf_page is one-based; page_index is zero-based; printed_label is drawing/page label shown on sheet.",
+  "sources": {
+    "qa": {
+      "title": "Ashghal SD 5-1-101 Rev 1, October 2013",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-101%20Rev%201%20Q-Girder%20Sections.pdf",
+      "local_path": "sources/expansion/pdf-backlog/qatar-q-girders.pdf",
+      "sha256": "8b2e22c2af37186dde1211a839823fa1e54e2706335e39ed61303ed7756eebc5",
+      "page_count": 1,
+      "retrieval_status": "Existing local source copied from /tmp into persistent ignored working-materials directory; URL availability not rechecked this pass."
+    },
+    "nz": {
+      "title": "NZTA Research Report 364, December 2008",
+      "url": "https://www.nzta.govt.nz/resources/research/reports/364/",
+      "local_path": "sources/expansion/pdf-backlog/nz-rr364.pdf",
+      "sha256": "ea199fa1dfa3272c8c31bbe8ee200c616536fae4a25418ae084d51841b01fd6d",
+      "page_count": 57,
+      "retrieval_status": "Existing local source copied from /tmp into persistent ignored working-materials directory; URL availability not rechecked this pass."
+    },
+    "no": {
+      "title": "Statens vegvesen V426 Prefabrikkerte brubjelker",
+      "url": "https://www.vegvesen.no/globalassets/fag/handboker/hb-v426-prefabrikkerte-brubjelker.pdf",
+      "local_path": "sources/expansion/pdf-backlog/norway-v426.pdf",
+      "sha256": "8e759c194e284791736e3a717f7f340f5ea85bdd5c77d67c6ba1fe559c2ca77e",
+      "page_count": 96,
+      "retrieval_status": "Existing local source copied from /tmp into persistent ignored working-materials directory; URL availability not rechecked this pass.",
+      "remaining_geometry_blockers": [
+        "Representative NTB1400 p37 top concrete recess confirmed30x30 and lower rebate15+5 offsets over40 drop.",
+        "Bottom outer chamfer visible but not dimensioned by an identified concrete-outline leader; nearby12 is reinforcement detail, not chamfer size.",
+        "KTB exterior slope and exact asymmetric vertices require explicit form-drawing trace.",
+        "Text search of full handbook for chamfer/corner notes andK201/K202 did not yield controlling missing size."
+      ]
+    },
+    "jp": {
+      "title": "PCCEN Tohoku: pretensioned beam-bridge girder design and construction in deicing-salt regions, 2017-03-23",
+      "url": "https://www.thr.mlit.go.jp/road/sesaku/manual/20170323point2.pdf",
+      "local_path": "sources/expansion/pdf-backlog/japan-thr-pccen.pdf",
+      "sha256": "f6be892e0d876ce6c895688d693602ed24a338fb16fd46d3bec9aba35dc3db6a",
+      "page_count": 44,
+      "retrieval_status": "Existing local source copied from /tmp into persistent ignored working-materials directory; URL availability not rechecked this pass."
+    }
+  },
+  "records": [
+    {
+      "source_id": "qa",
+      "family_or_type": "T1",
+      "pdf_page": 1,
+      "page_index": 0,
+      "printed_label": "SD 5-1-101 Rev 1",
+      "dimensions_mm": {
+        "depth": 800,
+        "base_width": 939,
+        "valley_height": 290,
+        "valley_rise": 71,
+        "top_width": 2150,
+        "precast_flange_thickness": 117,
+        "clear_at_ledge": 840,
+        "haunch_reference_width": 1069,
+        "haunch_horizontal_callout": 200,
+        "haunch_vertical_callout": 75,
+        "ledge_width": 25,
+        "ledge_depth": 25,
+        "corner_chamfer": 13,
+        "nominal_web_thickness": 125
+      },
+      "status": "visually_read",
+      "notes": [
+        "Slope triangle reads10.55 vertical :1 horizontal. Valley is lowest at centre, rises toward webs."
+      ],
+      "published_properties": {
+        "area_mm2": 565861,
+        "centroid_from_soffit_mm": 381,
+        "ixx_mm4": 40430000000,
+        "zt_mm3": 96500000,
+        "zb_mm3": 106130000,
+        "indicative_span_m": [
+          12,
+          17
+        ]
+      },
+      "implemented_status": "documented_reconstruction",
+      "residual_percent": {
+        "area": 0.876142,
+        "cy": 0.810067,
+        "ixx": 1.161617
+      }
+    },
+    {
+      "source_id": "qa",
+      "family_or_type": "T2",
+      "pdf_page": 1,
+      "page_index": 0,
+      "printed_label": "SD 5-1-101 Rev 1",
+      "dimensions_mm": {
+        "depth": 1050,
+        "base_width": 892,
+        "valley_height": 290,
+        "valley_rise": 67,
+        "top_width": 2150,
+        "precast_flange_thickness": 117,
+        "clear_at_ledge": 840,
+        "haunch_reference_width": 1069,
+        "haunch_horizontal_callout": 200,
+        "haunch_vertical_callout": 75,
+        "ledge_width": 25,
+        "ledge_depth": 25,
+        "corner_chamfer": 13,
+        "nominal_web_thickness": 125
+      },
+      "status": "visually_read",
+      "notes": [
+        "Slope triangle reads10.55 vertical :1 horizontal. Valley is lowest at centre, rises toward webs."
+      ],
+      "published_properties": {
+        "area_mm2": 611622,
+        "centroid_from_soffit_mm": 496,
+        "ixx_mm4": 81820000000,
+        "zt_mm3": 147700000,
+        "zb_mm3": 164970000,
+        "indicative_span_m": [
+          14,
+          21
+        ]
+      },
+      "implemented_status": "documented_reconstruction",
+      "residual_percent": {
+        "area": 0.686861,
+        "cy": 0.822894,
+        "ixx": 1.257488
+      }
+    },
+    {
+      "source_id": "qa",
+      "family_or_type": "T3",
+      "pdf_page": 1,
+      "page_index": 0,
+      "printed_label": "SD 5-1-101 Rev 1",
+      "dimensions_mm": {
+        "depth": 1250,
+        "base_width": 854,
+        "valley_height": 310,
+        "valley_rise": 64,
+        "top_width": 2150,
+        "precast_flange_thickness": 117,
+        "clear_at_ledge": 840,
+        "haunch_reference_width": 1069,
+        "haunch_horizontal_callout": 200,
+        "haunch_vertical_callout": 75,
+        "ledge_width": 25,
+        "ledge_depth": 25,
+        "corner_chamfer": 13,
+        "nominal_web_thickness": 125
+      },
+      "status": "visually_read",
+      "notes": [
+        "Slope triangle reads10.55 vertical :1 horizontal. Valley is lowest at centre, rises toward webs."
+      ],
+      "published_properties": {
+        "area_mm2": 661823,
+        "centroid_from_soffit_mm": 588,
+        "ixx_mm4": 127610000000,
+        "zt_mm3": 192760000,
+        "zb_mm3": 217020000,
+        "indicative_span_m": [
+          16,
+          24
+        ]
+      },
+      "implemented_status": "documented_reconstruction",
+      "residual_percent": {
+        "area": 0.502217,
+        "cy": 0.848838,
+        "ixx": 1.238156
+      }
+    },
+    {
+      "source_id": "qa",
+      "family_or_type": "T4",
+      "pdf_page": 1,
+      "page_index": 0,
+      "printed_label": "SD 5-1-101 Rev 1",
+      "dimensions_mm": {
+        "depth": 1550,
+        "base_width": 797,
+        "valley_height": 310,
+        "valley_rise": 58,
+        "top_width": 2150,
+        "precast_flange_thickness": 117,
+        "clear_at_ledge": 840,
+        "haunch_reference_width": 1069,
+        "haunch_horizontal_callout": 200,
+        "haunch_vertical_callout": 75,
+        "ledge_width": 25,
+        "ledge_depth": 25,
+        "corner_chamfer": 13,
+        "nominal_web_thickness": 125
+      },
+      "status": "visually_read",
+      "notes": [
+        "Slope triangle reads10.55 vertical :1 horizontal. Valley is lowest at centre, rises toward webs."
+      ],
+      "published_properties": {
+        "area_mm2": 716068,
+        "centroid_from_soffit_mm": 740,
+        "ixx_mm4": 216330000000,
+        "zt_mm3": 267070000,
+        "zb_mm3": 292340000,
+        "indicative_span_m": [
+          20,
+          28
+        ]
+      },
+      "implemented_status": "documented_reconstruction",
+      "residual_percent": {
+        "area": 0.207972,
+        "cy": 0.819743,
+        "ixx": 1.111543
+      }
+    },
+    {
+      "source_id": "qa",
+      "family_or_type": "T5",
+      "pdf_page": 1,
+      "page_index": 0,
+      "printed_label": "SD 5-1-101 Rev 1",
+      "dimensions_mm": {
+        "depth": 1900,
+        "base_width": 731,
+        "valley_height": 375,
+        "valley_rise": 53,
+        "top_width": 2150,
+        "precast_flange_thickness": 117,
+        "clear_at_ledge": 840,
+        "haunch_reference_width": 1069,
+        "haunch_horizontal_callout": 200,
+        "haunch_vertical_callout": 75,
+        "ledge_width": 25,
+        "ledge_depth": 25,
+        "corner_chamfer": 13,
+        "nominal_web_thickness": 125
+      },
+      "status": "visually_read",
+      "notes": [
+        "Slope triangle reads10.55 vertical :1 horizontal. Valley is lowest at centre, rises toward webs."
+      ],
+      "published_properties": {
+        "area_mm2": 815801,
+        "centroid_from_soffit_mm": 903,
+        "ixx_mm4": 362510000000,
+        "zt_mm3": 363600000,
+        "zb_mm3": 401450000,
+        "indicative_span_m": [
+          25,
+          34
+        ]
+      },
+      "implemented_status": "documented_reconstruction",
+      "residual_percent": {
+        "area": 0.085155,
+        "cy": 0.640268,
+        "ixx": 1.068144
+      }
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "Super-T1025",
+      "pdf_page": 8,
+      "page_index": 7,
+      "printed_label": "S1.01",
+      "dimensions_mm": {
+        "depth": 1025,
+        "top_width": 2490,
+        "base_width": 852,
+        "valley_height": 240,
+        "valley_rise": 67,
+        "void_bottom_width": 709,
+        "void_clear_at_ledge": 840,
+        "nominal_web_thickness": 100,
+        "precast_flange_thickness": 100,
+        "top_haunch_horizontal": 100,
+        "top_haunch_vertical": 75,
+        "corner_chamfer_or_radius": 20,
+        "ledge_width": 15,
+        "ledge_depth_maximum": 45
+      },
+      "status": "visually_read",
+      "notes": [
+        "Outer slope10.56:1. Ledge depth is an upper bound, not an exact dimension. Implemented gross profile omits ledge and places840 at top; inner taper adjusts slightly."
+      ],
+      "source_span_m": [
+        20,
+        22.5
+      ]
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "Super-T1225-wide",
+      "pdf_page": 15,
+      "page_index": 14,
+      "printed_label": "S1.11",
+      "dimensions_mm": {
+        "depth": 1225,
+        "top_width": 2490,
+        "base_width": 814,
+        "valley_height": 260,
+        "valley_rise": 64,
+        "void_bottom_width": 674,
+        "void_clear_at_ledge": 840,
+        "nominal_web_thickness": 100,
+        "precast_flange_thickness": 100,
+        "top_haunch_horizontal": 100,
+        "top_haunch_vertical": 75,
+        "corner_chamfer_or_radius": 20,
+        "ledge_width": 15,
+        "ledge_depth_maximum": 45
+      },
+      "status": "visually_read",
+      "notes": [
+        "Outer slope10.56:1. Ledge depth is an upper bound, not an exact dimension. Implemented gross profile omits ledge and places840 at top; inner taper adjusts slightly."
+      ],
+      "source_span_m": [
+        25,
+        27.5
+      ]
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "Super-T1225-narrow",
+      "pdf_page": 22,
+      "page_index": 21,
+      "printed_label": "S1.21",
+      "dimensions_mm": {
+        "depth": 1225,
+        "top_width": 1990,
+        "base_width": 814,
+        "valley_height": 260,
+        "valley_rise": 64,
+        "void_bottom_width": 674,
+        "void_clear_at_ledge": 840,
+        "nominal_web_thickness": 100,
+        "precast_flange_thickness": 100,
+        "top_haunch_horizontal": 100,
+        "top_haunch_vertical": 75,
+        "corner_chamfer_or_radius": 20,
+        "ledge_width": 15,
+        "ledge_depth_maximum": 45
+      },
+      "status": "visually_read",
+      "notes": [
+        "Outer slope10.56:1. Ledge depth is an upper bound, not an exact dimension. Implemented gross profile omits ledge and places840 at top; inner taper adjusts slightly."
+      ],
+      "source_span_m": [
+        30
+      ]
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "I-beam1500",
+      "pdf_page": 45,
+      "page_index": 44,
+      "printed_label": "S4.01",
+      "dimensions_mm": {
+        "depth": 1500,
+        "top_width": 375,
+        "top_thickness": 100,
+        "top_haunch_height": 75,
+        "web_width": 175,
+        "bottom_width": 475,
+        "bottom_thickness": 170,
+        "bottom_haunch_height": 150,
+        "clear_web_height": 1005,
+        "bottom_corner_chamfer_or_radius": 20
+      },
+      "status": "visually_read",
+      "notes": [
+        "Implemented external profile selecting chamfer option. No source section-property fixture."
+      ],
+      "source_span_m": [
+        18,
+        20
+      ]
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "I-beam1600",
+      "pdf_page": 51,
+      "page_index": 50,
+      "printed_label": "S4.10",
+      "dimensions_mm": {
+        "depth": 1600,
+        "top_width": 470,
+        "top_thickness": 110,
+        "top_haunch_height": 145,
+        "web_width": 180,
+        "bottom_width": 620,
+        "bottom_thickness": 150,
+        "bottom_haunch_height": 220,
+        "clear_web_height": 975,
+        "bottom_corner_chamfer_or_radius": 20
+      },
+      "status": "visually_read",
+      "notes": [
+        "Implemented external profile selecting chamfer option. No source section-property fixture."
+      ],
+      "source_span_m": [
+        22,
+        24
+      ]
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "Single hollow-core650 inner",
+      "pdf_page": 29,
+      "page_index": 28,
+      "printed_label": "S2.01",
+      "dimensions_mm": {
+        "depth": 650,
+        "top_width": 1094,
+        "bottom_width": 1138,
+        "void_top_cover": 140,
+        "void_bottom_cover": 130,
+        "void_height": 380,
+        "void_middle_vertical": 180,
+        "void_corner_splay": 100,
+        "void_maximum_width": 830,
+        "void_flat_width": 630,
+        "bottom_corner_chamfer_or_radius": 20,
+        "side_recess_top_from_top": 220,
+        "side_recess_bottom_from_soffit": 110,
+        "side_recess_depth": 12
+      },
+      "status": "visually_read",
+      "notes": [
+        "Void maximum width830 derived from100+630+100 callouts. Outer unit is asymmetric, top1122, bottom1138, void flat430/max630; do not use inner geometry for outer. Source says inner units shall not be used individually in isolation."
+      ],
+      "implemented_status": "implemented_gross_profile;587_outer_also_implemented",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "Single hollow-core900 inner",
+      "pdf_page": 34,
+      "page_index": 33,
+      "printed_label": "S2.10",
+      "dimensions_mm": {
+        "depth": 900,
+        "top_width": 1094,
+        "bottom_width": 1138,
+        "void_top_cover": 140,
+        "void_bottom_cover": 155,
+        "void_height": 605,
+        "void_middle_vertical": 405,
+        "void_corner_splay": 100,
+        "void_maximum_width": 830,
+        "void_flat_width": 630,
+        "bottom_corner_chamfer_or_radius": 20,
+        "side_recess_top_from_top": 470,
+        "side_recess_bottom_from_soffit": 110,
+        "side_recess_depth": 12
+      },
+      "status": "visually_read",
+      "notes": [
+        "Outer unit is asymmetric, top1123, bottom1138; void flat430/max630. Source says inner units shall not be used individually in isolation."
+      ],
+      "implemented_status": "implemented_gross_profile;587_outer_also_implemented",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "nz",
+      "family_or_type": "Double hollow-core587 inner",
+      "pdf_page": 40,
+      "page_index": 39,
+      "printed_label": "S3.01",
+      "dimensions_mm": {
+        "depth": 587,
+        "width": 1144,
+        "void_diameter": 368,
+        "void_centres_from_left": [
+          308,
+          836
+        ],
+        "void_centre_above_soffit": 294,
+        "void_centre_below_top": 293,
+        "void_spacing": 528,
+        "corner_chamfer_or_radius": 15,
+        "shear_key_top_depth": 157,
+        "shear_key_bottom_above_soffit": 110,
+        "shear_key_depth": 12,
+        "side_marked_dimension": 38
+      },
+      "status": "visually_read",
+      "notes": [
+        "Designation is587, not576 in earlier brief. Outer unit has one void,308 from right edge; inner unit has two. Note4 permits hexagonal voids provided area, cover, web thickness, location and unit weight maintained; no single universal void polygon."
+      ],
+      "implemented_status": "implemented_gross_profile;587_outer_also_implemented",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "NTB800-400x1400",
+      "pdf_page": 37,
+      "page_index": 36,
+      "printed_label": "Figure3.3.2a / printed page37",
+      "dimensions_mm": {
+        "depth": 1400,
+        "bottom_width": 800,
+        "top_width": 400,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 197,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 157,
+        "web_width": 220,
+        "top_zone_vertical_height": 125,
+        "top_haunch_vertical_height": 75
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "KTB570-400x1400",
+      "pdf_page": 38,
+      "page_index": 37,
+      "printed_label": "Figure3.3.2b / printed page38",
+      "dimensions_mm": {
+        "depth": 1400,
+        "bottom_width": 570,
+        "top_width": 400,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 197,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 157,
+        "top_zone_vertical_height": 125,
+        "top_haunch_vertical_height": 75
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "NTB1000-300x1200",
+      "pdf_page": 39,
+      "page_index": 38,
+      "printed_label": "Figure3.3.2c / printed page39",
+      "dimensions_mm": {
+        "depth": 1200,
+        "bottom_width": 1000,
+        "top_width": 300,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 173,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 133,
+        "web_width": 220,
+        "top_zone_vertical_height": 125,
+        "top_haunch_vertical_height": 37
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "KTB1200",
+      "pdf_page": 40,
+      "page_index": 39,
+      "printed_label": "Figure3.3.2d / printed page40",
+      "dimensions_mm": {
+        "depth": 1200,
+        "bottom_width": 670,
+        "top_width": 320,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 173,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 133,
+        "top_zone_vertical_height": 125,
+        "top_haunch_vertical_height": 37
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "NTB1200-220x1000",
+      "pdf_page": 41,
+      "page_index": 40,
+      "printed_label": "Figure3.3.2e / printed page41",
+      "dimensions_mm": {
+        "depth": 1000,
+        "bottom_width": 1200,
+        "top_width": 220,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 150,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 110,
+        "web_width": 220
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "KTB1000",
+      "pdf_page": 42,
+      "page_index": 41,
+      "printed_label": "Figure3.3.2f / printed page42",
+      "dimensions_mm": {
+        "depth": 1000,
+        "bottom_width": 770,
+        "top_width": 280,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 150,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 110
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "NTB1200-220x800",
+      "pdf_page": 43,
+      "page_index": 42,
+      "printed_label": "Figure3.3.2g / printed page43",
+      "dimensions_mm": {
+        "depth": 800,
+        "bottom_width": 1200,
+        "top_width": 220,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 150,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 110,
+        "web_width": 220
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "KTB800",
+      "pdf_page": 44,
+      "page_index": 43,
+      "printed_label": "Figure3.3.2h / printed page44",
+      "dimensions_mm": {
+        "depth": 800,
+        "bottom_width": 770,
+        "top_width": 280,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 150,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 110
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "NTB1200-220x600",
+      "pdf_page": 45,
+      "page_index": 44,
+      "printed_label": "Figure3.3.2i / printed page45",
+      "dimensions_mm": {
+        "depth": 600,
+        "bottom_width": 1200,
+        "top_width": 220,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 150,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 110,
+        "web_width": 220
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "no",
+      "family_or_type": "KTB600",
+      "pdf_page": 46,
+      "page_index": 45,
+      "printed_label": "Figure3.3.2j / printed page46",
+      "dimensions_mm": {
+        "depth": 600,
+        "bottom_width": 770,
+        "top_width": 280,
+        "bottom_flange_height_at_web": 265,
+        "bottom_outer_shoulder_height": 150,
+        "outer_shoulder_step_height": 40,
+        "bottom_outer_vertical_face_height": 110
+      },
+      "status": "visually_read",
+      "notes": [
+        "Concrete outline is implemented using the coordinate-level follow-up. Bottom15x15mm chamfers are reviewer-inferred, not printed callouts. Only KTB1400 has the30mm outer-face offset; other KTB types have vertical left faces."
+      ],
+      "implemented_status": "implemented_gross_reconstruction_with_reviewer_inferred_15mm_bottom_chamfers",
+      "implementation_followup": "visual-followup-norway-nz.json"
+    },
+    {
+      "source_id": "jp",
+      "family_or_type": "BG19",
+      "pdf_page": 10,
+      "page_index": 9,
+      "printed_label": "printed page -6-",
+      "dimensions_mm": {
+        "depth": 1000,
+        "top_width": 800,
+        "top_width_chain": [
+          20,
+          760,
+          20
+        ],
+        "concrete_web_bottom_width": 300,
+        "top_flange_thickness": 160,
+        "top_haunch_height": 35
+      },
+      "status": "visually_read",
+      "notes": [
+        "These are standard concrete sections showing changes to prestressing arrangement. Left half of each section represents end region. No AG extrapolation asserted here. Existing jp data already uses web300; stale research brief, not current module, misread240."
+      ]
+    },
+    {
+      "source_id": "jp",
+      "family_or_type": "BG20",
+      "pdf_page": 10,
+      "page_index": 9,
+      "printed_label": "printed page -6-",
+      "dimensions_mm": {
+        "depth": 1100,
+        "top_width": 800,
+        "top_width_chain": [
+          20,
+          760,
+          20
+        ],
+        "concrete_web_bottom_width": 300,
+        "top_flange_thickness": 160,
+        "top_haunch_height": 35
+      },
+      "status": "visually_read",
+      "notes": [
+        "These are standard concrete sections showing changes to prestressing arrangement. Left half of each section represents end region. No AG extrapolation asserted here. Existing jp data already uses web300; stale research brief, not current module, misread240."
+      ]
+    },
+    {
+      "source_id": "jp",
+      "family_or_type": "BG21",
+      "pdf_page": 10,
+      "page_index": 9,
+      "printed_label": "printed page -6-",
+      "dimensions_mm": {
+        "depth": 1100,
+        "top_width": 800,
+        "top_width_chain": [
+          20,
+          760,
+          20
+        ],
+        "concrete_web_bottom_width": 300,
+        "top_flange_thickness": 160,
+        "top_haunch_height": 35
+      },
+      "status": "visually_read",
+      "notes": [
+        "These are standard concrete sections showing changes to prestressing arrangement. Left half of each section represents end region. No AG extrapolation asserted here. Existing jp data already uses web300; stale research brief, not current module, misread240."
+      ]
+    },
+    {
+      "source_id": "jp",
+      "family_or_type": "BG22",
+      "pdf_page": 10,
+      "page_index": 9,
+      "printed_label": "printed page -6-",
+      "dimensions_mm": {
+        "depth": 1200,
+        "top_width": 800,
+        "top_width_chain": [
+          20,
+          760,
+          20
+        ],
+        "concrete_web_bottom_width": 300,
+        "top_flange_thickness": 160,
+        "top_haunch_height": 35
+      },
+      "status": "visually_read",
+      "notes": [
+        "These are standard concrete sections showing changes to prestressing arrangement. Left half of each section represents end region. No AG extrapolation asserted here. Existing jp data already uses web300; stale research brief, not current module, misread240."
+      ]
+    },
+    {
+      "source_id": "jp",
+      "family_or_type": "BG23",
+      "pdf_page": 10,
+      "page_index": 9,
+      "printed_label": "printed page -6-",
+      "dimensions_mm": {
+        "depth": 1200,
+        "top_width": 800,
+        "top_width_chain": [
+          20,
+          760,
+          20
+        ],
+        "concrete_web_bottom_width": 300,
+        "top_flange_thickness": 160,
+        "top_haunch_height": 35
+      },
+      "status": "visually_read",
+      "notes": [
+        "These are standard concrete sections showing changes to prestressing arrangement. Left half of each section represents end region. No AG extrapolation asserted here. Existing jp data already uses web300; stale research brief, not current module, misread240."
+      ]
+    }
+  ],
+  "translations": [
+    {
+      "original": "Tverrsnitt og armering",
+      "english": "Cross-section and reinforcement",
+      "source_id": "no",
+      "pdf_page": 37
+    },
+    {
+      "original": "TYPISK FORM- OG ARMERINGSTVERRSNITT",
+      "english": "Typical formwork and reinforcement cross-section",
+      "source_id": "no",
+      "pdf_page": 37
+    },
+    {
+      "original": "Horisontal stegarmering iht. N400",
+      "english": "Horizontal web reinforcement in accordance with N400",
+      "source_id": "no",
+      "pdf_page": 37
+    },
+    {
+      "original": "Utsparing forutsettes utstøpt",
+      "english": "Recess assumed to be filled with concrete/grout",
+      "source_id": "no",
+      "pdf_page": 37
+    },
+    {
+      "original": "Ekstra samv.bøyler ved ender",
+      "english": "Additional composite-action stirrups at the ends",
+      "source_id": "no",
+      "pdf_page": 37
+    },
+    {
+      "original": "Spenntau",
+      "english": "Prestressing strand",
+      "source_id": "no",
+      "pdf_page": 37
+    },
+    {
+      "original": "Alternativ bøyleutforming",
+      "english": "Alternative stirrup configuration",
+      "source_id": "no",
+      "pdf_page": 37
+    },
+    {
+      "original": "設計上の留意点",
+      "english": "Points to note in design",
+      "source_id": "jp",
+      "pdf_page": 9
+    },
+    {
+      "original": "ＰＣ鋼材位置および鉄筋形状",
+      "english": "Position of prestressing steel and shape of reinforcing bars",
+      "source_id": "jp",
+      "pdf_page": 9
+    },
+    {
+      "original": "標準桁仕様での配置確認（BG19の例）",
+      "english": "Arrangement check for the standard girder specification (BG19 example)",
+      "source_id": "jp",
+      "pdf_page": 9
+    },
+    {
+      "original": "被覆ＰＣ鋼材を使用したＰＣ桁への変更仕様（BG19の例）",
+      "english": "Modified specification for a PC girder using coated prestressing steel (BG19 example)",
+      "source_id": "jp",
+      "pdf_page": 9
+    },
+    {
+      "original": "支間中央部断面図",
+      "english": "Cross-section at midspan",
+      "source_id": "jp",
+      "pdf_page": 9
+    },
+    {
+      "original": "鉄筋間隔",
+      "english": "Reinforcing-bar spacing",
+      "source_id": "jp",
+      "pdf_page": 9
+    },
+    {
+      "original": "PC鋼材間隔",
+      "english": "Prestressing-steel spacing",
+      "source_id": "jp",
+      "pdf_page": 9
+    },
+    {
+      "original": "ボンドレス鋼材の追加",
+      "english": "Addition of debonded prestressing steel",
+      "source_id": "jp",
+      "pdf_page": 10
+    },
+    {
+      "original": "横締孔",
+      "english": "Transverse prestressing hole",
+      "source_id": "jp",
+      "pdf_page": 10
+    },
+    {
+      "original": "ベントアップ",
+      "english": "Bent-up prestressing strands",
+      "source_id": "jp",
+      "pdf_page": 10
+    }
+  ],
+  "corrections": [
+    "Qatar1469 is not top flange width;2150 is. Q-beam valley slopes up toward webs. T2-T4 not interpolated.",
+    "NZ S1.25 p26 is unit data; geometry is S1.01 p8, S1.11 p15, S1.21 p22. 1225 changes base, valley and optionally flange width.",
+    "NZ100x75 is upper haunch, not lower chamfer; gross cross-section is open-top U, not solid polygon.",
+    "Norway V426 has96 pages and useful text, not drawings-only. Sections already shown on pages37-46; no need to purchase a printed copy.",
+    "Norway designation middle number is top width, not universally web thickness;NTB800-400x1400 has220 mm web.",
+    "Japan240/152/151 in p9 are stirrup dimensions, not concrete web/flange; they do not override300 mm concrete web.",
+    "NZ double hollow core is587 mm, not576 mm."
+  ],
+  "implementation_followup": "visual-followup-norway-nz.json"
+}

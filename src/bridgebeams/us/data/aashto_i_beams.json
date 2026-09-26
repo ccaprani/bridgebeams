@@ -1,0 +1,14 @@
+{
+  "source": "PCI Bridge Design Manual, Appendix B-7, AASHTO I-Beams, November 2011",
+  "source_url": "https://ems-www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/AASHTO%20I%20Beams.pdf",
+  "source_sha256": "b8b5d6955224e0cf3e7f5ad2287378be8ca668aa948b6a0351002489abfe9bec",
+  "units": "inches, square inches, fourth powers of inches",
+  "sections": {
+    "I":   {"dimensions": [28, 4, 0, 3, 5, 5, 12, 16, 6, 3, 0, 5], "published": {"area": 276, "yb": 12.59, "ixx": 22750}},
+    "II":  {"dimensions": [36, 6, 0, 3, 6, 6, 12, 18, 6, 3, 0, 6], "published": {"area": 369, "yb": 15.83, "ixx": 50980}},
+    "III": {"dimensions": [45, 7, 0, 4.5, 7.5, 7, 16, 22, 7, 4.5, 0, 7.5], "published": {"area": 560, "yb": 20.27, "ixx": 125390}},
+    "IV":  {"dimensions": [54, 8, 0, 6, 9, 8, 20, 26, 8, 6, 0, 9], "published": {"area": 789, "yb": 24.73, "ixx": 260730}},
+    "V":   {"dimensions": [63, 5, 3, 4, 10, 8, 42, 28, 8, 4, 13, 10], "published": {"area": 1013, "yb": 31.96, "ixx": 521180}},
+    "VI":  {"dimensions": [72, 5, 3, 4, 10, 8, 42, 28, 8, 4, 13, 10], "published": {"area": 1085, "yb": 36.38, "ixx": 733320}}
+  }
+}

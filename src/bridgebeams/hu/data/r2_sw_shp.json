@@ -1,0 +1,241 @@
+{
+ "producer": "SW Umwelttechnik Magyarország Kft (Majosháza / Alsózsolca)",
+ "document_title_original": "SHP Hídgerenda család (KÖZLEKEDÉSÉPÍTÉS product sheet)",
+ "source_status": "producer catalogue (SHP family developed 2013, approved April 2014)",
+ "retrieved": "2026-09-23",
+ "source": {
+  "url": "https://dms.sw-umwelttechnik.at/storage/5217/SHP-bemutat%C3%B3.pdf",
+  "local": "sources/expansion/round2/hu/sw_umwelttechnik_shp.pdf",
+  "sha256": "320954ab100fe1a724b05ebe538edcd9eda82ae2e8e4d3989484a79123ad066f",
+  "pages": {
+   "general": 1,
+   "SHP-22": 2,
+   "SHP-32": 3,
+   "SHP-40": 4
+  },
+  "figure": "ELÉRHETŐ KERESZTMETSZETEK (embedded 393x289 px JPEG per page; stroke-font CAD, cm)"
+ },
+ "text_original": "trapéz (felül egységesen 60 cm szélességben, lefelé 1:5 arányban keskenyedő) keresztmetszetben, 22, 32 illetve 40 cm magassággal",
+ "units": "cm",
+ "printed": {
+  "SHP-22": {
+   "H": 22,
+   "top_width": 60,
+   "top_central": 51,
+   "ledge": 4,
+   "riser_offset": 0.5,
+   "ledge_depth": 2,
+   "edge_round": 1,
+   "sloped_side_h": 17.5,
+   "bottom_round_h": 1.5,
+   "inset": 4,
+   "soffit": 52,
+   "bottom_tangent": 1.5,
+   "bottom_offset": 0.3
+  },
+  "SHP-32": {
+   "H": 32,
+   "top_width": 60,
+   "top_central": 51,
+   "ledge": 4,
+   "riser_offset": 0.5,
+   "ledge_depth": 2,
+   "edge_round": 1,
+   "sloped_side_h": 27.5,
+   "bottom_round_h": 1.5,
+   "inset": 6,
+   "soffit": 48,
+   "bottom_tangent": 1.5,
+   "bottom_offset": 0.3
+  },
+  "SHP-40": {
+   "H": 40,
+   "top_width": 60,
+   "top_central": 51,
+   "ledge": 4,
+   "riser_offset": 0.5,
+   "ledge_depth": 2,
+   "edge_round": 1,
+   "sloped_side_h": 35.5,
+   "bottom_round_h": 1.5,
+   "inset": 8,
+   "soffit": 44,
+   "bottom_tangent": 1.5,
+   "bottom_offset": 0.3
+  }
+ },
+ "tables_t_per_piece": {
+  "_columns": "type: [length m, mass t/db, strands bottom+top, M-Határ kNm]",
+  "SHP-22": {
+   "SHP22-2,6": [
+    2.6,
+    0.8,
+    "9+2",
+    130.5
+   ],
+   "SHP22-3,6": [
+    3.6,
+    1.1,
+    "11+2",
+    156.1
+   ],
+   "SHP22-4,6": [
+    4.6,
+    1.41,
+    "16+2",
+    218.3
+   ],
+   "SHP22-5,6": [
+    5.6,
+    1.71,
+    "21+2",
+    278.0
+   ],
+   "SHP22-6,6": [
+    6.6,
+    2.01,
+    "27+2",
+    346.1
+   ]
+  },
+  "SHP-32": {
+   "SHP32-5,6": [
+    5.6,
+    2.42,
+    "5+2",
+    285.6
+   ],
+   "SHP32-6,6": [
+    6.6,
+    2.85,
+    "8+2",
+    434.8
+   ],
+   "SHP32-7,6": [
+    7.6,
+    3.28,
+    "9+2",
+    480.5
+   ],
+   "SHP32-8,6": [
+    8.6,
+    3.71,
+    "11+2",
+    571.6
+   ],
+   "SHP32-9,6": [
+    9.6,
+    4.14,
+    "13+2",
+    655.4
+   ],
+   "SHP32-10,6": [
+    10.6,
+    4.57,
+    "15+2",
+    734.7
+   ],
+   "SHP32-11,6": [
+    11.6,
+    5.0,
+    "18+2",
+    851.9
+   ],
+   "SHP32-12,6": [
+    12.6,
+    5.43,
+    "20+2",
+    905.1
+   ]
+  },
+  "SHP-40": {
+   "SHP40-8,6": [
+    8.6,
+    4.48,
+    "9+2",
+    597.4
+   ],
+   "SHP40-9,6": [
+    9.6,
+    5.0,
+    "11+2",
+    714.1
+   ],
+   "SHP40-10,6": [
+    10.6,
+    5.52,
+    "13+2",
+    823.7
+   ],
+   "SHP40-11,6": [
+    11.6,
+    6.04,
+    "15+2",
+    928.7
+   ],
+   "SHP40-12,6": [
+    12.6,
+    6.56,
+    "17+2",
+    1035.1
+   ],
+   "SHP40-13,6": [
+    13.6,
+    7.08,
+    "20+2",
+    1178.6
+   ],
+   "SHP40-14,6": [
+    14.6,
+    7.6,
+    "21+2",
+    1224.4
+   ]
+  }
+ },
+ "mass_per_metre_t": {
+  "_note": "least-squares slope of mass vs length over each table (prismatic, no end blocks implied)",
+  "SHP-22": 0.3025,
+  "SHP-32": 0.43,
+  "SHP-40": 0.52
+ },
+ "density_assumed_t_m3": 2.5,
+ "provenance": {
+  "SHP-22": "transcribed-with-convention",
+  "SHP-32": "transcribed-with-convention",
+  "SHP-40": "transcribed-with-convention"
+ },
+ "residuals": {
+  "_note": "A (m2) x 2.5 t/m3 vs table slope (t/m)",
+  "SHP-22": {
+   "A_m2": 0.12216,
+   "mass_at_2.5_t_m": 0.3054,
+   "table_t_m": 0.3025,
+   "diff_pct": 1.0,
+   "implied_density_t_m3": 2.476
+  },
+  "SHP-32": {
+   "A_m2": 0.17216,
+   "mass_at_2.5_t_m": 0.4304,
+   "table_t_m": 0.43,
+   "diff_pct": 0.1,
+   "implied_density_t_m3": 2.498
+  },
+  "SHP-40": {
+   "A_m2": 0.20776,
+   "mass_at_2.5_t_m": 0.5194,
+   "table_t_m": 0.52,
+   "diff_pct": -0.1,
+   "implied_density_t_m3": 2.503
+  }
+ },
+ "geometry_notes": [
+  "The sections are SOLID trapezoids: the oval loops and rectangles in the drawings are stirrups/connector reinforcement (dashed = projecting bars), not voids. The research lead's 'voided beam' description is wrong; mass per metre confirms a solid section.",
+  "Top: central 51 cm at full height; 4 cm wide ledges 2 cm lower at each edge (joint/grout key), riser inclined 0.5 cm (dims 4.5 = 4 + 0.5).",
+  "Sides: straight line from the ledge edge (x = 30, y = H - 2) to the theoretical soffit corner (x = 30 - inset, y = 0); insets 4/6/8 give 1:5, 1:5 and 1:4.75 (SHP-40 printed 8 over 38; text says 1:5 nominally) - printed insets used.",
+  "Soffit corner: tangent round with 1.5 cm tangent lengths (dims 1.5 horizontal on the soffit, 0.3 + 1.5 vertical on the side) - transcribed-with-convention (circular arc assumed).",
+  "Top outer corner: small round with 1 cm tangent lengths (dims '1' horizontal and '1' in the vertical chain) drawn as a tiny circle; implemented as a tangent round (convention).",
+  "Shear connectors / projecting reinforcement above the top are not part of the concrete section.",
+  "The top-edge round makes the extreme width 596.4 mm; the printed 60 cm is to the theoretical sharp corner (as the 52/48/44 soffit dims are to the theoretical bottom corner)."
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "family": "M / UMB Edge Beam (Ireland, beam & slab construction)",
+  "description": "Irish standard M beams M1-M10 (640-1360 mm deep, 'Special Order') and UMB edge beams UMB1-UMB10. M profile: 970 bottom flange, splay to a 160 web of published height H (200/440/680 per size group), splay to a 400-wide upper block, nibbed 300 top. UMB: U-shaped with 970 bottom flange, 600 void between 300-wide legs, and edge upstands. Validated to <=0.66% (M) and <=0.58% (UMB, largest size exact) against published properties.",
+  "sources": {
+    "properties_and_H": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed p. 8 (sources/banagher-bridge-beam-manual-3ed.pdf); identical M table in '05316 Precast Beam Properties.xls' (2007).",
+    "source_urls": ["https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf"]
+  },
+  "published_properties": {
+    "m": [
+      {"section": "M1", "depth": 640, "area": 284650, "yc": 220.1, "ixx_e9": 10.381, "self_weight_kN_m": 7.12, "H": 200},
+      {"section": "M680", "depth": 680, "area": 300650, "yc": 242.9, "ixx_e9": 13.173, "self_weight_kN_m": 7.52, "H": 200},
+      {"section": "M2", "depth": 720, "area": 316650, "yc": 265.4, "ixx_e9": 16.202, "self_weight_kN_m": 7.92, "H": 200},
+      {"section": "M3", "depth": 800, "area": 348650, "yc": 309.8, "ixx_e9": 23.020, "self_weight_kN_m": 8.72, "H": 200},
+      {"section": "M4", "depth": 880, "area": 380650, "yc": 353.4, "ixx_e9": 30.944, "self_weight_kN_m": 9.52, "H": 200},
+      {"section": "M5", "depth": 960, "area": 355050, "yc": 357.0, "ixx_e9": 35.813, "self_weight_kN_m": 8.88, "H": 440},
+      {"section": "M6", "depth": 1040, "area": 387050, "yc": 409.2, "ixx_e9": 47.559, "self_weight_kN_m": 9.68, "H": 440},
+      {"section": "M7", "depth": 1120, "area": 419050, "yc": 459.6, "ixx_e9": 60.446, "self_weight_kN_m": 10.48, "H": 440},
+      {"section": "M8", "depth": 1200, "area": 393450, "yc": 454.1, "ixx_e9": 65.187, "self_weight_kN_m": 9.84, "H": 680},
+      {"section": "M9", "depth": 1280, "area": 425450, "yc": 512.3, "ixx_e9": 82.977, "self_weight_kN_m": 10.64, "H": 680},
+      {"section": "M10", "depth": 1360, "area": 457450, "yc": 568.0, "ixx_e9": 101.880, "self_weight_kN_m": 11.44, "H": 680}
+    ],
+    "umb": [
+      {"section": "UMB1", "depth": 640, "area": 343675, "yc": 243.4, "ixx_e9": 11.635, "self_weight_kN_m": 8.64},
+      {"section": "UMB680", "depth": 680, "area": 360475, "yc": 260.1, "ixx_e9": 13.964, "self_weight_kN_m": 9.01},
+      {"section": "UMB2", "depth": 720, "area": 375275, "yc": 276.9, "ixx_e9": 16.573, "self_weight_kN_m": 9.38},
+      {"section": "UMB3", "depth": 800, "area": 404875, "yc": 311.4, "ixx_e9": 22.685, "self_weight_kN_m": 10.12},
+      {"section": "UMB4", "depth": 880, "area": 434475, "yc": 346.5, "ixx_e9": 30.071, "self_weight_kN_m": 10.86},
+      {"section": "UMB5", "depth": 960, "area": 464075, "yc": 382.3, "ixx_e9": 38.830, "self_weight_kN_m": 11.60},
+      {"section": "UMB6", "depth": 1040, "area": 493675, "yc": 418.6, "ixx_e9": 49.059, "self_weight_kN_m": 12.34},
+      {"section": "UMB7", "depth": 1120, "area": 523275, "yc": 455.4, "ixx_e9": 60.856, "self_weight_kN_m": 13.08},
+      {"section": "UMB8", "depth": 1200, "area": 552875, "yc": 492.4, "ixx_e9": 74.318, "self_weight_kN_m": 13.82},
+      {"section": "UMB9", "depth": 1280, "area": 582475, "yc": 529.8, "ixx_e9": 89.540, "self_weight_kN_m": 14.56},
+      {"section": "UMB10", "depth": 1360, "area": 612075, "yc": 567.4, "ixx_e9": 106.620, "self_weight_kN_m": 15.30}
+    ]
+  },
+  "fixed_dims": {
+    "m": {"bottom_face_half": 445.0, "flange_half": 485.0, "chamfer": 25.0,
+          "flange_side_half": 472.5, "flange_side_h": 158.0, "splay_h": 52.0,
+          "web_start_y": 290.6, "splay2_h": 59.0, "block_half": 199.6,
+          "nib_step": 50.1, "nib_h": 45.0, "top_half": 149.5},
+    "umb": {"bottom_face_half": 460.0, "flange_half": 485.0, "chamfer": 25.0,
+            "void_apex": 160.0, "haunch": [200.0, 180.0], "leg_half": 300.0,
+            "leg_start_y": 280.0, "top_slab": 45.0, "upstand_half": 460.0,
+            "upstand_inner": 325.0}
+  }
+}

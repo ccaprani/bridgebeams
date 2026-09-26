@@ -1,0 +1,735 @@
+{
+ "topic": "round2-europe",
+ "date": "2026-09-23",
+ "summary": {
+  "profiles": 381,
+  "classes": 42,
+  "provenance": {
+   "transcribed": 70,
+   "transcribed-with-convention": 160,
+   "fitted-reconstruction": 45,
+   "estimate": 106
+  },
+  "new_packages": {
+   "it": "IT Italy",
+   "fr": "FR France",
+   "dk": "DK Denmark",
+   "ua": "UA Ukraine",
+   "bg": "BG Bulgaria",
+   "lt": "LT Lithuania",
+   "hr": "HR Croatia"
+  },
+  "existing_packages_extended": [
+   "pl",
+   "ro",
+   "es",
+   "nl",
+   "gr",
+   "uk",
+   "hu",
+   "tr",
+   "ru"
+  ]
+ },
+ "note": "Per-family transcriptions (source units), sources (URL, local path, SHA-256, page), conventions and residuals live in each data_file; this record indexes them.",
+ "families": [
+  {
+   "module": "bridgebeams.pl.r2_pekabex_mg_t",
+   "class": "PekabexMgtSection",
+   "profiles": 10,
+   "provenance_counts": {
+    "estimate": 10
+   },
+   "source_status": "producer catalogue (2023)",
+   "data_file": "src/bridgebeams/pl/data/r2_pekabex_mg_t.json"
+  },
+  {
+   "module": "bridgebeams.ro.r2_somaco",
+   "class": "SomacoGirderSection",
+   "profiles": 5,
+   "provenance_counts": {
+    "estimate": 5
+   },
+   "source_status": "producer catalogue (2025)",
+   "data_file": "src/bridgebeams/ro/data/r2_somaco.json"
+  },
+  {
+   "module": "bridgebeams.ro.r2_prebet",
+   "class": "PrebetGirderSection",
+   "profiles": 21,
+   "provenance_counts": {
+    "transcribed-with-convention": 10,
+    "transcribed": 11
+   },
+   "source_status": "producer web page drawings (Prebet Aiud, images dated 2016-05)",
+   "data_file": "src/bridgebeams/ro/data/r2_prebet.json"
+  },
+  {
+   "module": "bridgebeams.es.r2_tierra",
+   "class": "TierraBeamSection",
+   "profiles": 16,
+   "provenance_counts": {
+    "estimate": 16
+   },
+   "source_status": "producer brochure (May 2012)",
+   "data_file": "src/bridgebeams/es/data/r2_tierra.json"
+  },
+  {
+   "module": "bridgebeams.es.r2_prethor",
+   "class": "PrethorVaSection",
+   "profiles": 9,
+   "provenance_counts": {
+    "estimate": 9
+   },
+   "source_status": "producer catalogue (Dossier Prethor 2020)",
+   "data_file": "src/bridgebeams/es/data/r2_prethor.json"
+  },
+  {
+   "module": "bridgebeams.es.r2_prethor",
+   "class": "PrethorVaaSection",
+   "profiles": 10,
+   "provenance_counts": {
+    "estimate": 5,
+    "fitted-reconstruction": 5
+   },
+   "source_status": "producer catalogue (Dossier Prethor 2020)",
+   "data_file": "src/bridgebeams/es/data/r2_prethor.json"
+  },
+  {
+   "module": "bridgebeams.es.r2_prethor",
+   "class": "PrethorVcSection",
+   "profiles": 29,
+   "provenance_counts": {
+    "fitted-reconstruction": 14,
+    "estimate": 15
+   },
+   "source_status": "producer catalogue (Dossier Prethor 2020)",
+   "data_file": "src/bridgebeams/es/data/r2_prethor.json"
+  },
+  {
+   "module": "bridgebeams.es.r2_prethor",
+   "class": "PrethorViSection",
+   "profiles": 17,
+   "provenance_counts": {
+    "estimate": 17
+   },
+   "source_status": "producer catalogue (Dossier Prethor 2020)",
+   "data_file": "src/bridgebeams/es/data/r2_prethor.json"
+  },
+  {
+   "module": "bridgebeams.es.r2_prethor",
+   "class": "PrethorVuSection",
+   "profiles": 12,
+   "provenance_counts": {
+    "fitted-reconstruction": 12
+   },
+   "source_status": "producer catalogue (Dossier Prethor 2020)",
+   "data_file": "src/bridgebeams/es/data/r2_prethor.json"
+  },
+  {
+   "module": "bridgebeams.it.paver",
+   "class": "PaverBeamSection",
+   "profiles": 28,
+   "provenance_counts": {
+    "estimate": 28
+   },
+   "source_status": "producer catalogue (2021/2024)",
+   "data_file": "src/bridgebeams/it/data/paver.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_haitsma",
+   "class": "HaitsmaHbmSection",
+   "profiles": 2,
+   "provenance_counts": {
+    "transcribed": 2
+   },
+   "source_status": "producer profile drawings (april 2009)",
+   "data_file": "src/bridgebeams/nl/data/r2_haitsma.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_haitsma",
+   "class": "HaitsmaHgrSection",
+   "profiles": 1,
+   "provenance_counts": {
+    "transcribed": 1
+   },
+   "source_status": "producer profile drawing (april 2009)",
+   "data_file": "src/bridgebeams/nl/data/r2_haitsma.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_haitsma",
+   "class": "HaitsmaHkpSection",
+   "profiles": 10,
+   "provenance_counts": {
+    "transcribed-with-convention": 10
+   },
+   "source_status": "producer catalogue (folder, NEN EN 1991-2 era; profile drawings april 2009)",
+   "data_file": "src/bridgebeams/nl/data/r2_haitsma.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_spanbeton",
+   "class": "SpanbetonPiqSection",
+   "profiles": 6,
+   "provenance_counts": {
+    "transcribed-with-convention": 6
+   },
+   "source_status": "producer project sheets (archived, production ended 2020)",
+   "data_file": "src/bridgebeams/nl/data/r2_spanbeton.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_spanbeton",
+   "class": "SpanbetonSjpFlexSection",
+   "profiles": 11,
+   "provenance_counts": {
+    "transcribed-with-convention": 11
+   },
+   "source_status": "producer project sheets (archived, production ended 2020)",
+   "data_file": "src/bridgebeams/nl/data/r2_spanbeton.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_spanbeton",
+   "class": "SpanbetonSjpSection",
+   "profiles": 9,
+   "provenance_counts": {
+    "transcribed-with-convention": 9
+   },
+   "source_status": "producer project sheets (archived, production ended 2020)",
+   "data_file": "src/bridgebeams/nl/data/r2_spanbeton.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_spanbeton",
+   "class": "SpanbetonSkkSection",
+   "profiles": 13,
+   "provenance_counts": {
+    "transcribed-with-convention": 13
+   },
+   "source_status": "producer project sheets (archived, production ended 2020)",
+   "data_file": "src/bridgebeams/nl/data/r2_spanbeton.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_spanbeton",
+   "class": "SpanbetonSrpSection",
+   "profiles": 8,
+   "provenance_counts": {
+    "transcribed-with-convention": 8
+   },
+   "source_status": "producer project sheets (archived, production ended 2020)",
+   "data_file": "src/bridgebeams/nl/data/r2_spanbeton.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_spanbeton",
+   "class": "SpanbetonZipSection",
+   "profiles": 5,
+   "provenance_counts": {
+    "transcribed-with-convention": 5
+   },
+   "source_status": "producer project sheets (archived, production ended 2020)",
+   "data_file": "src/bridgebeams/nl/data/r2_spanbeton.json"
+  },
+  {
+   "module": "bridgebeams.nl.r2_spanbeton",
+   "class": "SpanbetonZipxlSection",
+   "profiles": 15,
+   "provenance_counts": {
+    "transcribed-with-convention": 15
+   },
+   "source_status": "producer project sheets (archived, production ended 2020)",
+   "data_file": "src/bridgebeams/nl/data/r2_spanbeton.json"
+  },
+  {
+   "module": "bridgebeams.fr.afgc_vipp",
+   "class": "AfgcVippBeamSection",
+   "profiles": 2,
+   "provenance_counts": {
+    "transcribed": 2
+   },
+   "source_status": "as-surveyed existing VIPP beam (AFGC technical sheet, 2010)",
+   "data_file": "src/bridgebeams/fr/data/afgc_vipp.json"
+  },
+  {
+   "module": "bridgebeams.gr.r2_projects",
+   "class": "GrProjectGirderSection",
+   "profiles": 2,
+   "provenance_counts": {
+    "transcribed-with-convention": 1,
+    "transcribed": 1
+   },
+   "source_status": "tender technical description (2022), project-specific",
+   "data_file": "src/bridgebeams/gr/data/r2_projects.json"
+  },
+  {
+   "module": "bridgebeams.dk.crh_ot",
+   "class": "CrhOtBeamSection",
+   "profiles": 10,
+   "provenance_counts": {
+    "transcribed-with-convention": 10
+   },
+   "source_status": "producer product page (2025)",
+   "data_file": "src/bridgebeams/dk/data/crh_ot.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannBoxBeamSection",
+   "profiles": 18,
+   "provenance_counts": {
+    "transcribed": 18
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannMyBeamSection",
+   "profiles": 7,
+   "provenance_counts": {
+    "fitted-reconstruction": 7
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannMyeBeamSection",
+   "profiles": 7,
+   "provenance_counts": {
+    "fitted-reconstruction": 7
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannSyBeamSection",
+   "profiles": 6,
+   "provenance_counts": {
+    "transcribed-with-convention": 6
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannTyBeamSection",
+   "profiles": 17,
+   "provenance_counts": {
+    "transcribed-with-convention": 7,
+    "transcribed": 10
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannTyeBeamSection",
+   "profiles": 7,
+   "provenance_counts": {
+    "transcribed-with-convention": 7
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannWBeamSection",
+   "profiles": 6,
+   "provenance_counts": {
+    "transcribed-with-convention": 6
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannYBeamSection",
+   "profiles": 8,
+   "provenance_counts": {
+    "transcribed-with-convention": 8
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.uk.r2_fpmccann",
+   "class": "FpMcCannYeBeamSection",
+   "profiles": 8,
+   "provenance_counts": {
+    "transcribed-with-convention": 8
+   },
+   "source_status": "producer catalogue (FP McCann Precast Bridge Beams v1.0, 2025)",
+   "data_file": "src/bridgebeams/uk/data/r2_fpmccann.json"
+  },
+  {
+   "module": "bridgebeams.ua.i_beams",
+   "class": "ThreeBetBeamSection",
+   "profiles": 9,
+   "provenance_counts": {
+    "transcribed": 5,
+    "transcribed-with-convention": 4
+   },
+   "source_status": "producer leaflet (Ukravtodor-approved 2008) + national rebuilding recommendations 2022",
+   "data_file": "src/bridgebeams/ua/data/ua_beams.json"
+  },
+  {
+   "module": "bridgebeams.ua.i_beams",
+   "class": "UaB40BeamSection",
+   "profiles": 6,
+   "provenance_counts": {
+    "transcribed": 6
+   },
+   "source_status": "national rebuilding recommendations 2022 (reproduces ДерждорНДІ 2012 album)",
+   "data_file": "src/bridgebeams/ua/data/ua_beams.json"
+  },
+  {
+   "module": "bridgebeams.ua.i_beams",
+   "class": "UaBmBeamSection",
+   "profiles": 2,
+   "provenance_counts": {
+    "transcribed-with-convention": 2
+   },
+   "source_status": "producer catalogues (Kovalska 2020; Oberbeton 2017)",
+   "data_file": "src/bridgebeams/ua/data/ua_beams.json"
+  },
+  {
+   "module": "bridgebeams.bg.rila_gt",
+   "class": "RilaGtSection",
+   "profiles": 5,
+   "provenance_counts": {
+    "transcribed": 4,
+    "transcribed-with-convention": 1
+   },
+   "source_status": "producer web catalogue (product drawings; certified to БДС EN 15050:2007+A1:2012)",
+   "data_file": "src/bridgebeams/bg/data/rila_gt.json"
+  },
+  {
+   "module": "bridgebeams.bg.zbe_mg",
+   "class": "ZbeMgSection",
+   "profiles": 1,
+   "provenance_counts": {
+    "transcribed-with-convention": 1
+   },
+   "source_status": "producer web catalogue (single product drawing; 95 cm variant mentioned but not drawn)",
+   "data_file": "src/bridgebeams/bg/data/zbe_mg.json"
+  },
+  {
+   "module": "bridgebeams.lt.tilsta",
+   "class": "TilstaSijaSection",
+   "profiles": 4,
+   "provenance_counts": {
+    "transcribed-with-convention": 2,
+    "transcribed": 2
+   },
+   "source_status": "producer catalogue 2025",
+   "data_file": "src/bridgebeams/lt/data/tilsta.json"
+  },
+  {
+   "module": "bridgebeams.hr.viadukt_san",
+   "class": "ViaduktSanSection",
+   "profiles": 3,
+   "provenance_counts": {
+    "estimate": 1,
+    "transcribed-with-convention": 2
+   },
+   "source_status": "teaching notes (TVZ, Zagreb) reproducing Viadukt d.d. SAN type girders; not a producer catalogue",
+   "data_file": "src/bridgebeams/hr/data/viadukt_san.json"
+  },
+  {
+   "module": "bridgebeams.hu.r2_sw_shp",
+   "class": "SwShpSection",
+   "profiles": 3,
+   "provenance_counts": {
+    "transcribed-with-convention": 3
+   },
+   "source_status": "producer catalogue (SHP family developed 2013, approved April 2014)",
+   "data_file": "src/bridgebeams/hu/data/r2_sw_shp.json"
+  },
+  {
+   "module": "bridgebeams.tr.r2_itu_tip",
+   "class": "ItuTipBeamSection",
+   "profiles": 9,
+   "provenance_counts": {
+    "transcribed": 6,
+    "transcribed-with-convention": 3
+   },
+   "source_status": "M.Sc. thesis (İTÜ 2008) documenting 9 standard 'tip' beams; issuing authority not stated",
+   "data_file": "src/bridgebeams/tr/data/r2_itu_tip.json"
+  },
+  {
+   "module": "bridgebeams.ru.r2_su3503_b12",
+   "class": "Su3503B12Section",
+   "profiles": 4,
+   "provenance_counts": {
+    "transcribed-with-convention": 2,
+    "transcribed": 2
+   },
+   "source_status": "historic standard (series 3.503.1-81, Vypusk 5-1, 1988)",
+   "data_file": "src/bridgebeams/ru/data/r2_su3503_b12.json"
+  }
+ ],
+ "sources_downloaded_round2": {
+  "region_reports": "retrieval tables (URL, local path, SHA-256, pages, verdict) copied from the retrieval agents; key rows reproduced in round2-europe-2026-09.md",
+  "key": [
+   {
+    "url": "https://pekabex.com/wp-content/uploads/2023/11/Katalog-mosty-1.pdf",
+    "local": "sources/expansion/round2/pl/pekabex_mosty.pdf",
+    "sha256": "8d74196cac69984437d57bab13d5a52f6e052fb72dde2cf931ea5190531ecd5f"
+   },
+   {
+    "url": "https://www.haitsma-beton.de/media/4402/hkp-april-2009.pdf",
+    "local": "sources/expansion/round2/nl/nl_haitsma-hkp.pdf",
+    "sha256": "eb04bb01dd6ee85ef49279bd519e90016ff52b1c3aaff8e1fe010697d836a6a8"
+   },
+   {
+    "url": "https://www.haitsma-beton.de/media/4390/folder-hkp-ligger.pdf",
+    "local": "sources/expansion/round2/nl/nl_haitsma-folder-hkp.pdf",
+    "sha256": "598dd9ef8d96339e82eac3dabffbc8c80df34e862c53758f84090e98666cdb40"
+   },
+   {
+    "url": "https://www.haitsma-beton.de/media/4395/hbm-april-2009.pdf",
+    "local": "sources/expansion/round2/nl/nl_haitsma-hbm.pdf",
+    "sha256": "32462f5a803cfd10003de4ad361545a6018557a6c2192812bd3e74b0c7905ac2"
+   },
+   {
+    "url": "https://www.haitsma-beton.de/media/4399/hgko-hgr-april-2-2009.pdf",
+    "local": "sources/expansion/round2/nl/nl_haitsma-hgko-hgr.pdf",
+    "sha256": "fa933f212f89c02c2ed87b52d9408ca74984fe5c2e756f7df8e1097eeb530d2d"
+   },
+   {
+    "url": "https://web.archive.org/web/20160913105454/http://www.spanbeton.nl/content/files/Files/Kennisportaal/Kokerbalk/SKK-PIQ_A4_projectbladen_v7_1.pdf",
+    "local": "sources/expansion/round2/nl/nl_spanbeton-skk-piq-projectbladen.pdf",
+    "sha256": "61cd9027afdd8b3520b8a229941a69dd15be6dcde4a8c512c8d682c5e8346c54"
+   },
+   {
+    "url": "https://web.archive.org/web/20160913093731/http://www.spanbeton.nl/content/files/Files/Kennisportaal/Volstortliggers/SJP-SJP-flex_A4_projectbladen_v5.pdf",
+    "local": "sources/expansion/round2/nl/nl_spanbeton-sjp-sjpflex-projectbladen.pdf",
+    "sha256": "904e536a81add8540226d917d5ab6cf4bedf5fcdc8cf0e6f67b9a8d5732b0d58"
+   },
+   {
+    "url": "https://web.archive.org/web/20160913141007/http://www.spanbeton.nl/content/files/Files/Kennisportaal/Railbalk/ZIPZIPXL_A4_projectbladen_v6.pdf",
+    "local": "sources/expansion/round2/nl/nl_spanbeton-zip-zipxl-projectbladen.pdf",
+    "sha256": "4ca58ddf7d255cdb83262760dd378e0dd7e3e98d7ea967bd6ecbec0484909d96"
+   },
+   {
+    "url": "https://www.grupopuentes.com/wp-content/uploads/2021/02/DOSSIER-PRETHOR-2020.pdf",
+    "local": "sources/expansion/round2/es/prethor_dossier_2020.pdf",
+    "sha256": "f83e41297ceed4fd9a5fbe25874e1d7123a6538984fbb935bdc955819fd8aa6c"
+   },
+   {
+    "url": "https://www.prebet.ro/wp-content/uploads/2016/05/<name>.jpg (7 drawings, see ro/data/r2_prebet.json)",
+    "local": "sources/expansion/round2/ro/prebet_*.jpg"
+   },
+   {
+    "url": "https://www.afgc.asso.fr/app/uploads/2010/06/F-04-Recalculs-des-VIPP.pdf",
+    "local": "sources/expansion/round2/fr/afgc-recalculs-vipp.pdf",
+    "sha256": "5010c68c5eb7e832b92d8929dc6edf1498834e6a7ee4e0f990e9a6749c855847"
+   },
+   {
+    "url": "https://fpmccann.co.uk/wp-content/uploads/2025/09/Bridge-Beams_2025_LR-1.pdf",
+    "local": "sources/expansion/round2/gb/gb_fpmccann_bridge_beams_2025.pdf",
+    "sha256": "243c2d0f902f52842eeb161a6082d4d0cf1a0d0d90e096996075f116b3723644"
+   },
+   {
+    "url": "https://crhconcrete.dk/wp-content/uploads/2025/11/OT-bjaelke_CRH-Concrete.png",
+    "local": "sources/expansion/round2/dk/dk_crh_ot-bjaelke_geometri.png",
+    "sha256": "e5aeeed5760fe983a68f954904ff64f74cbe9513af5ac14c1342493ba506dca3"
+   },
+   {
+    "url": "https://nidi.org.ua/files/upload/Рекомендації_мостів.pdf",
+    "local": "sources/expansion/round2/ua/nidi_rekomendacii_mostiv.pdf",
+    "sha256": "a9e18180605e086c9e762c0eb9ee162eff8541bf79683567fd6e26b5cf9968b9"
+   },
+   {
+    "url": "https://beton.kovalska.com/wp-content/uploads/2020/07/catalog_konstrukviv_new_2020.pdf",
+    "local": "sources/expansion/round2/ua/kovalska_catalog_konstruktyv_2020.pdf",
+    "sha256": "fe377609cba744785288c2928cce396c68f79776242db78b48ec8affdb9487fe"
+   },
+   {
+    "url": "https://oberbeton.ua/wp-content/uploads/2017/03/parametry_most_balok_ua1.jpg",
+    "local": "sources/expansion/round2/ua/oberbeton_parametry_most_balok.jpg",
+    "sha256": "99b94ebde715794ba97199355fdcdba9d2b7115e84db50bdccd18ef3351a286e"
+   },
+   {
+    "url": "http://3betony.com.ua/upload/mosty_11.png",
+    "local": "sources/expansion/round2/ua/3betony_mosty_11.png",
+    "sha256": "0d433f4d6adf0686e37d72552f7f9c7abb960b1423d899499ec8244a6e090220"
+   },
+   {
+    "url": "rila-bg.com product images",
+    "local": "sources/expansion/round2/bg/rila_capture{17,18,19}.png"
+   },
+   {
+    "url": "zbe.bg product image MG1.png",
+    "local": "sources/expansion/round2/bg/zbe_MG1.png",
+    "sha256": "b2dc79bfa5b81c7296e93b65775bd27097e8c815d6b8eb996fb6885a632ecc95"
+   },
+   {
+    "url": "https://tilsta.lt/wp-content/uploads/sites/5/2025/06/2025-Gelzbetonio-Gaminiu-Katalogas.pdf",
+    "local": "sources/expansion/round2/lt/tilsta_2025_gelzbetonio_gaminiu_katalogas.pdf",
+    "sha256": "3f698d53191af21ae495cff42c9f846e6da5afe4d0d84b488477d55eb709be23"
+   },
+   {
+    "url": "https://dms.sw-umwelttechnik.at/storage/5217/SHP-bemutató.pdf",
+    "local": "sources/expansion/round2/hu/sw_umwelttechnik_shp.pdf",
+    "sha256": "320954ab100fe1a724b05ebe538edcd9eda82ae2e8e4d3989484a79123ad066f"
+   },
+   {
+    "url": "https://nastava.tvz.hr/gukov/pdf/2-ploce.pdf",
+    "local": "sources/expansion/round2/hr/tvz_2-ploce.pdf",
+    "sha256": "227bde9bf0d6594370b5a4b9bd8d938cb7a1730cff2e02defc978719fbff4d3e"
+   },
+   {
+    "url": "https://polen.itu.edu.tr/items/27cfbf52-8534-4c22-9b22-231b975b50f0/full",
+    "local": "sources/expansion/round2/tr/itu_thesis_ongerilmeli_i_kesitli_kopru_kirisleri.pdf",
+    "sha256": "6b92e71144b7399d3d1732004aab24411f1fc2a4ca6593f4e4665ebdd6aa3e97"
+   },
+   {
+    "url": "http://gost.gtsever.ru/Data2/1/4293849/4293849831.pdf",
+    "local": "sources/expansion/round2/ru/3.503.1-81_vyp5-1_gtsever.pdf",
+    "sha256": "fce25f9435c9b9a9bd12fbe500aa1468a301c078e56dd1a3fed97fa99fa4a45a"
+   },
+   {
+    "url": "https://www.ppel.gov.gr/wp-content/uploads/2022/07/ (Dervenakia technical description, see gr/data/r2_projects.json)",
+    "local": "sources/expansion/round2/gr/dervenakia_g3_technical_description.pdf",
+    "sha256": "f2e01a0489a8407c64a3471fa413fc58b89e19e585e6a96ed150c1224f5e3e0d"
+   },
+   {
+    "url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/51220/diploma_thesis_eleftheriou_evgenia_2020.pdf?isAllowed=y&sequence=1",
+    "local": "sources/expansion/round2/gr/ntua_eleftheriou_2020_diploma_thesis.pdf",
+    "sha256": "37ff782a2ab2f71b632b541a7c446aba078363a90ae9ebc41738602b32cfe4da"
+   }
+  ],
+  "also_held_not_implemented": "see leads; nothing under sources/ was deleted. fr/kp1_katalog_gamme_poutres.pdf is an HTML redirect page saved with a .pdf name (kept, status recorded); es/andece_artesas.pdf is a 210-byte empty response (kept)."
+ },
+ "leads_not_implemented": [
+  {
+   "cc": "PL",
+   "what": "GDDKiA Katalog typowych drogowych obiektów mostowych, Cz. I Z5 (T18-T27 deck assemblies)",
+   "local": "sources/expansion/round2/pl/gddkia_katalog_typowych_obiektow_mostowych_czI.pdf",
+   "why": "deck-assembly scale; beam type overlaps the implemented Mosty-Łódź T (pl.MostostalTSection)"
+  },
+  {
+   "cc": "PL",
+   "what": "Pekabex MG-T support sections A-A/B-B",
+   "why": "only span section implemented"
+  },
+  {
+   "cc": "CZ",
+   "what": "KŠ PREFA KSP-NPP/NDPP/NDPO; PREFA Nový Bydžov VSTI 2000 / MS-I",
+   "why": "envelope only (ranges, per-project engineering)"
+  },
+  {
+   "cc": "SK",
+   "what": "Doprastav DPS DP I/10, VP I/10",
+   "why": "no datasheet published"
+  },
+  {
+   "cc": "BG",
+   "what": "Stomanobeton main beams (stomanobeton_MainBeams_TSpec_BG.pdf)",
+   "why": "parametric H≥150, 'според проект'; not assessed further"
+  },
+  {
+   "cc": "BY",
+   "what": "zgbmk.by beams (series 3.503.1-81, 3.503.1-73, Б3.503.1-3/-4)",
+   "why": "envelope (L,B,H,volume) only"
+  },
+  {
+   "cc": "MD",
+   "what": "FEC S.A. T-beams B-1-12/15, B1200-130-93",
+   "why": "envelope only"
+  },
+  {
+   "cc": "EE",
+   "what": "E-Betoonelement ZIP-tala, Karptala",
+   "why": "envelope only"
+  },
+  {
+   "cc": "RU",
+   "what": "3.503.1-73 Klyazma Б1406.130.93",
+   "why": "non-prestressed (ordinary RC)"
+  },
+  {
+   "cc": "NL",
+   "what": "Haitsma HKP april-2009 drawing edition (250/160 slabs, solid HKP-600)",
+   "why": "conflicts with folder table; folder edition implemented"
+  },
+  {
+   "cc": "NL",
+   "what": "Haitsma HGKO-350…600",
+   "why": "identical to implemented HKO350-600"
+  },
+  {
+   "cc": "NL",
+   "what": "Haitsma HKV/HGKP/HMP, Romein RHE/Rogir-Z",
+   "why": "no outline / envelope only"
+  },
+  {
+   "cc": "NL",
+   "what": "Spanbeton TRN edge beam, PIQ widths other than 2790",
+   "why": "variable width / no properties"
+  },
+  {
+   "cc": "ES",
+   "what": "Tierra narrow U (TA90E, TA180.18E, TA240.18E) and medium U",
+   "why": "inner surface dotted / no sketch"
+  },
+  {
+   "cc": "ES",
+   "what": "Rubiera 'Vigas para puentes' (rubieraburgos.com/images/catalo/cop.pdf), PRECÓN, Hormipresa",
+   "why": "host unreachable / Scribd-gated"
+  },
+  {
+   "cc": "IT",
+   "what": "Paver IHP120-140 (designation/depth conflict), SOLAIO BOX; Travisud V/Cassone; Centro Nord PAV",
+   "why": "conflict / envelope / no PDF"
+  },
+  {
+   "cc": "PT",
+   "what": "ISEP Barbosa 2014 thesis (Viga I/T-60/75/100)",
+   "why": "repository host unreachable"
+  },
+  {
+   "cc": "RO",
+   "what": "Somaco GP85E; Somaco IPTANA GP42/52/72/80",
+   "why": "different unknown shape / identical to implemented ASA IPTANA (cross-check only)"
+  },
+  {
+   "cc": "FR",
+   "what": "Cerema PRAD/VIPP 1996 guides, CIMbéton T80",
+   "why": "ranges only; KP1/Rector/Stradal have no bridge catalogue"
+  },
+  {
+   "cc": "DE",
+   "what": "BArch DM 1/17661 'Typenelementekatalog Fertigteilträger für Straßenbrücken BT 70' (1966); BASt BT 70/700 reports (Anubis-blocked)",
+   "why": "not digitised / bot-blocked"
+  },
+  {
+   "cc": "DK",
+   "what": "CRH IB/RB/SIB beams",
+   "why": "building beams"
+  },
+  {
+   "cc": "NO",
+   "what": "Contiga DLB/LB/RB standard beams",
+   "why": "building beams, not bridge-specific"
+  },
+  {
+   "cc": "FI",
+   "what": "Parma jännepalkkisilta käyttöseloste (fi_parma_jannepalkkisilta_kayttoseloste.pdf, 'Jännepalkkielementit' p12)",
+   "why": "not assessed within budget"
+  },
+  {
+   "cc": "GB",
+   "what": "Tarmac, Moore, Shay Murtagh, Charcon; legacy C&CA/MoT M, inverted-T, box standards",
+   "why": "not reached (403 / no search budget)"
+  },
+  {
+   "cc": "UA",
+   "what": "NIDI 3Bet-120 30 m drawing Б3000.120.70; 3Bet-400/M voided slab",
+   "why": "cited not reproduced / out of scope"
+  },
+  {
+   "cc": "SI/ME/MK/LV/CY/MT/IS/SE/CH/LU",
+   "what": "no dimensioned bridge-beam source found in bounded effort",
+   "why": "dry (WebSearch quota exhausted mid-round)"
+  }
+ ]
+}

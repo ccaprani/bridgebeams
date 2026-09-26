@@ -1,0 +1,393 @@
+{
+  "source": {
+    "title": "Bridge Beam Manual, 3rd Edition",
+    "pdf_page": 30,
+    "printed_page": 28,
+    "sha256": "5432e2db0b2f95045320f91254c52ce3f7b1f6d62279c6f05ae6aef4e46bb7bf",
+    "url": "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf"
+  },
+  "geometry_status": "catalogue variable dimensions plus CAD-verified lower concrete contour; all 16 current property rows independently checked",
+  "cad_lower_profile_source": {
+    "title": "Banagher Concrete Ltd, W19 BEAMS - INTERNAL BEAMS, Structure 6, Ballykeeffe Boreen overbridge",
+    "local_original": "/mnt/data/sync/consulting/Roughan O'Donovan/W19 BEAM STRUCTURE B06 BALLYKEEFFE BOREEN OB.dwg",
+    "drawing_age": "2006 project drawing; not the current catalogue revision",
+    "dimension_handles": [
+      "118A81",
+      "118A82",
+      "118A83",
+      "118A84",
+      "118A89",
+      "118A8A",
+      "118A8B",
+      "118A8D"
+    ],
+    "modelspace_scale_factor_to_mm": 25,
+    "bottom_chamfer_mm": [
+      20,
+      20
+    ],
+    "inner_lower_vertices_right_mm": [
+      [
+        0,
+        160
+      ],
+      [
+        500,
+        210
+      ],
+      [
+        625,
+        360
+      ]
+    ],
+    "inner_contour": "flat segments, no radii",
+    "revision_difference": "Old W19 F=52 and V=512. Current catalogue W19 F=100 and V=464. The implementation uses current catalogue F/V and does not copy the old full profile.",
+    "sha256": "0dbd088c63454ae40845e609a147214973cf525015b202bdc630077d1e2959a0",
+    "local_copy": "sources/expansion/banagher-cad/w19-ballykeeffe.dwg",
+    "converted_sha256": "2e2b3bb0e1c0fd9cf65c215c48a7341cc10d54d6b36048cde25d5fb0103bdfd6"
+  },
+  "published_properties": [
+    {
+      "designation": "W1",
+      "depth_mm": 800.0,
+      "area_mm2": 572360.0,
+      "centroid_from_soffit_mm": 305.3,
+      "section_modulus_top_1e6_mm3": 71.88,
+      "section_modulus_bottom_1e6_mm3": 116.46,
+      "Ixx_1e9_mm4": 35.556,
+      "self_weight_kN_per_m": 14.31,
+      "overall_width_W1_mm": 1704.4,
+      "W2_mm": 243.2,
+      "W3_mm": 1058.0,
+      "Web_mm": 100.0,
+      "S_mm": 220.0,
+      "F_mm": 70.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W3",
+      "depth_mm": 900.0,
+      "area_mm2": 606880.0,
+      "centroid_from_soffit_mm": 345.9,
+      "section_modulus_top_1e6_mm3": 89.54,
+      "section_modulus_bottom_1e6_mm3": 143.43,
+      "Ixx_1e9_mm4": 49.614,
+      "self_weight_kN_per_m": 15.17,
+      "overall_width_W1_mm": 1732.4,
+      "W2_mm": 243.2,
+      "W3_mm": 1086.0,
+      "Web_mm": 200.0,
+      "S_mm": 220.0,
+      "F_mm": 70.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W5",
+      "depth_mm": 1000.0,
+      "area_mm2": 641400.0,
+      "centroid_from_soffit_mm": 387.5,
+      "section_modulus_top_1e6_mm3": 108.76,
+      "section_modulus_bottom_1e6_mm3": 171.88,
+      "Ixx_1e9_mm4": 66.61,
+      "self_weight_kN_per_m": 16.04,
+      "overall_width_W1_mm": 1760.4,
+      "W2_mm": 243.2,
+      "W3_mm": 1114.0,
+      "Web_mm": 300.0,
+      "S_mm": 220.0,
+      "F_mm": 70.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W7",
+      "depth_mm": 1100.0,
+      "area_mm2": 692030.0,
+      "centroid_from_soffit_mm": 440.2,
+      "section_modulus_top_1e6_mm3": 136.21,
+      "section_modulus_bottom_1e6_mm3": 204.15,
+      "Ixx_1e9_mm4": 89.871,
+      "self_weight_kN_per_m": 17.3,
+      "overall_width_W1_mm": 1788.4,
+      "W2_mm": 250.2,
+      "W3_mm": 1128.0,
+      "Web_mm": 350.0,
+      "S_mm": 220.0,
+      "F_mm": 120.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W8",
+      "depth_mm": 1200.0,
+      "area_mm2": 726550.0,
+      "centroid_from_soffit_mm": 484.2,
+      "section_modulus_top_1e6_mm3": 159.46,
+      "section_modulus_bottom_1e6_mm3": 235.73,
+      "Ixx_1e9_mm4": 114.14,
+      "self_weight_kN_per_m": 18.16,
+      "overall_width_W1_mm": 1816.4,
+      "W2_mm": 250.2,
+      "W3_mm": 1156.0,
+      "Web_mm": 450.0,
+      "S_mm": 220.0,
+      "F_mm": 120.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W9",
+      "depth_mm": 1300.0,
+      "area_mm2": 761070.0,
+      "centroid_from_soffit_mm": 528.7,
+      "section_modulus_top_1e6_mm3": 184.11,
+      "section_modulus_bottom_1e6_mm3": 268.56,
+      "Ixx_1e9_mm4": 142.0,
+      "self_weight_kN_per_m": 19.03,
+      "overall_width_W1_mm": 1844.4,
+      "W2_mm": 250.2,
+      "W3_mm": 1184.0,
+      "Web_mm": 550.0,
+      "S_mm": 220.0,
+      "F_mm": 120.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W10",
+      "depth_mm": 1400.0,
+      "area_mm2": 812400.0,
+      "centroid_from_soffit_mm": 585.2,
+      "section_modulus_top_1e6_mm3": 219.51,
+      "section_modulus_bottom_1e6_mm3": 305.62,
+      "Ixx_1e9_mm4": 178.85,
+      "self_weight_kN_per_m": 20.31,
+      "overall_width_W1_mm": 1872.4,
+      "W2_mm": 257.2,
+      "W3_mm": 1198.0,
+      "Web_mm": 600.0,
+      "S_mm": 220.0,
+      "F_mm": 170.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W11",
+      "depth_mm": 1500.0,
+      "area_mm2": 846920.0,
+      "centroid_from_soffit_mm": 631.3,
+      "section_modulus_top_1e6_mm3": 248.01,
+      "section_modulus_bottom_1e6_mm3": 341.33,
+      "Ixx_1e9_mm4": 215.46,
+      "self_weight_kN_per_m": 21.17,
+      "overall_width_W1_mm": 1900.4,
+      "W2_mm": 257.2,
+      "W3_mm": 1226.0,
+      "Web_mm": 700.0,
+      "S_mm": 220.0,
+      "F_mm": 170.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W12",
+      "depth_mm": 1600.0,
+      "area_mm2": 881440.0,
+      "centroid_from_soffit_mm": 677.6,
+      "section_modulus_top_1e6_mm3": 277.84,
+      "section_modulus_bottom_1e6_mm3": 378.23,
+      "Ixx_1e9_mm4": 256.28,
+      "self_weight_kN_per_m": 22.04,
+      "overall_width_W1_mm": 1928.4,
+      "W2_mm": 257.2,
+      "W3_mm": 1254.0,
+      "Web_mm": 800.0,
+      "S_mm": 220.0,
+      "F_mm": 170.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W13",
+      "depth_mm": 1700.0,
+      "area_mm2": 933470.0,
+      "centroid_from_soffit_mm": 736.7,
+      "section_modulus_top_1e6_mm3": 321.13,
+      "section_modulus_bottom_1e6_mm3": 419.9,
+      "Ixx_1e9_mm4": 309.34,
+      "self_weight_kN_per_m": 23.34,
+      "overall_width_W1_mm": 1956.4,
+      "W2_mm": 264.2,
+      "W3_mm": 1268.0,
+      "Web_mm": 850.0,
+      "S_mm": 220.0,
+      "F_mm": 220.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W14",
+      "depth_mm": 1800.0,
+      "area_mm2": 975150.0,
+      "centroid_from_soffit_mm": 790.6,
+      "section_modulus_top_1e6_mm3": 362.63,
+      "section_modulus_bottom_1e6_mm3": 462.97,
+      "Ixx_1e9_mm4": 366.03,
+      "self_weight_kN_per_m": 24.38,
+      "overall_width_W1_mm": 1984.4,
+      "W2_mm": 278.2,
+      "W3_mm": 1268.0,
+      "Web_mm": 950.0,
+      "S_mm": 248.0,
+      "F_mm": 192.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W15",
+      "depth_mm": 1900.0,
+      "area_mm2": 1016060.0,
+      "centroid_from_soffit_mm": 844.3,
+      "section_modulus_top_1e6_mm3": 405.7,
+      "section_modulus_bottom_1e6_mm3": 507.3,
+      "Ixx_1e9_mm4": 428.3,
+      "self_weight_kN_per_m": 25.4,
+      "overall_width_W1_mm": 2012.4,
+      "W2_mm": 292.2,
+      "W3_mm": 1268.0,
+      "Web_mm": 1050.0,
+      "S_mm": 276.0,
+      "F_mm": 164.0,
+      "V_mm": null,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W16",
+      "depth_mm": 2000.0,
+      "area_mm2": 1057970.0,
+      "centroid_from_soffit_mm": 898.6,
+      "section_modulus_top_1e6_mm3": 451.09,
+      "section_modulus_bottom_1e6_mm3": 552.89,
+      "Ixx_1e9_mm4": 496.83,
+      "self_weight_kN_per_m": 26.45,
+      "overall_width_W1_mm": 2040.4,
+      "W2_mm": 306.2,
+      "W3_mm": 1268.0,
+      "Web_mm": 1050.0,
+      "S_mm": 276.0,
+      "F_mm": 136.0,
+      "V_mm": 128,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W17",
+      "depth_mm": 2100.0,
+      "area_mm2": 1102680.0,
+      "centroid_from_soffit_mm": 954.5,
+      "section_modulus_top_1e6_mm3": 499.74,
+      "section_modulus_bottom_1e6_mm3": 599.75,
+      "Ixx_1e9_mm4": 572.45,
+      "self_weight_kN_per_m": 27.57,
+      "overall_width_W1_mm": 2068.4,
+      "W2_mm": 320.2,
+      "W3_mm": 1268.0,
+      "Web_mm": 1050.0,
+      "S_mm": 276.0,
+      "F_mm": 108.0,
+      "V_mm": 256,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W18",
+      "depth_mm": 2200.0,
+      "area_mm2": 1150190.0,
+      "centroid_from_soffit_mm": 1011.8,
+      "section_modulus_top_1e6_mm3": 551.68,
+      "section_modulus_bottom_1e6_mm3": 647.82,
+      "Ixx_1e9_mm4": 655.49,
+      "self_weight_kN_per_m": 28.75,
+      "overall_width_W1_mm": 2096.4,
+      "W2_mm": 334.2,
+      "W3_mm": 1268.0,
+      "Web_mm": 1050.0,
+      "S_mm": 276.0,
+      "F_mm": 80.0,
+      "V_mm": 384,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    },
+    {
+      "designation": "W19",
+      "depth_mm": 2300.0,
+      "area_mm2": 1213750.0,
+      "centroid_from_soffit_mm": 1081.1,
+      "section_modulus_top_1e6_mm3": 622.31,
+      "section_modulus_bottom_1e6_mm3": 701.68,
+      "Ixx_1e9_mm4": 758.56,
+      "self_weight_kN_per_m": 30.34,
+      "overall_width_W1_mm": 2124.4,
+      "W2_mm": 348.2,
+      "W3_mm": 1268.0,
+      "Web_mm": 1050.0,
+      "S_mm": 276.0,
+      "F_mm": 100.0,
+      "V_mm": 464,
+      "evidence": {
+        "pdf_page": 30,
+        "printed_page": 28
+      }
+    }
+  ],
+  "property_validation": {
+    "area_max_abs_residual_mm2": 4,
+    "centroid_max_abs_residual_mm": 0.053,
+    "Ixx_max_relative_residual": 2.5e-05,
+    "centroid_exception": "W11 published631.3 vs calculated631.247381: residual -0.052619 mm, separately pinned in tests."
+  }
+}

@@ -1,0 +1,214 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "family": "Colorado Bulb Tee girders CBTxx",
+ "agency": "Colorado Department of Transportation, Staff Bridge Branch",
+ "source": {
+  "title": "Worksheet B-618-CBT2, Prestressed Concrete CBT (Colorado Bulb Tee Girders, CBTXX)",
+  "url": "https://www.codot.gov/programs/bridge/bridge-manuals/design-standards/structural-worksheets-pdfs/b-600/sheet_b-618-cbt2.pdf",
+  "retrieved": "2026-09-23",
+  "local_path": "sources/expansion/round2/us/co_b-618-cbt2.pdf",
+  "sha256": "76c3495a789abd4e93d655f589d5de36977f8090e75dab5ce0717bf2d8d2e16b",
+  "pdf_page": 1,
+  "printed_page": "B-618-CBT2 (single sheet)",
+  "revision_dates": [
+   "6/19",
+   "7/19",
+   "6/20",
+   "3/23",
+   "9/24"
+  ]
+ },
+ "source_status": "current CDOT worksheet (rev 9/24)",
+ "units": "inch",
+ "template_in": {
+  "top_flange_width": 50.0,
+  "top_edge_thickness": 3.75,
+  "top_taper_rise": 3.0,
+  "top_bevel_rise": 3.0,
+  "top_bevel_run": 3.0,
+  "web_width": 7.0,
+  "bottom_flange_width": 39.5,
+  "bottom_edge_height": 5.875,
+  "bottom_taper_rise": 4.5,
+  "bottom_bevel_rise": 3.0,
+  "bottom_bevel_run": 3.0,
+  "soffit_chamfer": 0.75
+ },
+ "template_evidence": "CBT 90 DETAIL (only fully dimensioned view): 4'-2\" top, 3 3/4\" Typ edge, 3\" Typ taper, 3\" Typ bevel (3\" horizontal Typ), 7\" Typ web, 3'-3 1/2\" Typ bottom, 4 1/2\" Typ lower taper rise, 3\" Typ lower bevel, 3/4\" Chamfer (Typ) at soffit corners. 2\", 2 1/4\", 2 3/4\" callouts are strand spacing/cover. Other depths: 'Girder dimensions are similar except as shown' plus the 'Ref' clear-web height per detail. Bottom edge 5 7/8\" is derived: depth - (3.75+3+3) - clear web - (3+4.5).",
+ "geometry_notes": [
+  "Bottom flange vertical edge height 5.875 in is not printed; derived from the CBT90 vertical stack using the printed 5'-6 7/8\" Ref clear web; identical for all depths (every Ref value equals depth - 23.125 in).",
+  "The 3/4 in chamfer is applied at the two soffit corners only; the top flange corners are drawn square. With these conventions A, yb, Ix and Iy reproduce the table to print precision.",
+  "Gross concrete only: strands, roughened top, end details excluded."
+ ],
+ "sections": {
+  "CBT37.5": {
+   "depth_in": 37.5,
+   "clear_web_ref": "1'-2 3/8\"",
+   "provenance": "transcribed",
+   "published": {
+    "weight_lb_ft": 853,
+    "area_in2": 792,
+    "ix_in4": 151579,
+    "iy_in4": 88998,
+    "yb_in": 18.5
+   },
+   "residuals_vs_published": {
+    "computed": {
+     "area": 792.25,
+     "yb": 18.497,
+     "ix": 151579.176,
+     "iy": 88997.777
+    },
+    "area_pct": 0.032,
+    "yb_diff_in": -0.003,
+    "ix_pct": 0.0,
+    "iy_pct": -0.0
+   }
+  },
+  "CBT45": {
+   "depth_in": 45,
+   "clear_web_ref": "1'-9 7/8\"",
+   "provenance": "transcribed",
+   "published": {
+    "weight_lb_ft": 910,
+    "area_in2": 845,
+    "ix_in4": 240424,
+    "iy_in4": 89212,
+    "yb_in": 22.08
+   },
+   "residuals_vs_published": {
+    "computed": {
+     "area": 844.75,
+     "yb": 22.075,
+     "ix": 240424.437,
+     "iy": 89212.152
+    },
+    "area_pct": -0.03,
+    "yb_diff_in": -0.005,
+    "ix_pct": 0.0,
+    "iy_pct": 0.0
+   }
+  },
+  "CBT54": {
+   "depth_in": 54,
+   "clear_web_ref": "2'-6 7/8\"",
+   "provenance": "transcribed",
+   "published": {
+    "weight_lb_ft": 977,
+    "area_in2": 908,
+    "ix_in4": 378473,
+    "iy_in4": 89469,
+    "yb_in": 26.4
+   },
+   "residuals_vs_published": {
+    "computed": {
+     "area": 907.75,
+     "yb": 26.395,
+     "ix": 378472.548,
+     "iy": 89469.402
+    },
+    "area_pct": -0.028,
+    "yb_diff_in": -0.005,
+    "ix_pct": -0.0,
+    "iy_pct": 0.0
+   }
+  },
+  "CBT63": {
+   "depth_in": 63,
+   "clear_web_ref": "3'-3 7/8\"",
+   "provenance": "transcribed",
+   "published": {
+    "weight_lb_ft": 1045,
+    "area_in2": 971,
+    "ix_in4": 553233,
+    "iy_in4": 89727,
+    "yb_in": 30.74
+   },
+   "residuals_vs_published": {
+    "computed": {
+     "area": 970.75,
+     "yb": 30.739,
+     "ix": 553233.357,
+     "iy": 89726.652
+    },
+    "area_pct": -0.026,
+    "yb_diff_in": -0.001,
+    "ix_pct": 0.0,
+    "iy_pct": -0.0
+   }
+  },
+  "CBT72": {
+   "depth_in": 72,
+   "clear_web_ref": "4'-0 7/8\"",
+   "provenance": "transcribed",
+   "published": {
+    "weight_lb_ft": 1113,
+    "area_in2": 1034,
+    "ix_in4": 767268,
+    "iy_in4": 89984,
+    "yb_in": 35.1
+   },
+   "residuals_vs_published": {
+    "computed": {
+     "area": 1033.75,
+     "yb": 35.101,
+     "ix": 767267.719,
+     "iy": 89983.902
+    },
+    "area_pct": -0.024,
+    "yb_diff_in": 0.001,
+    "ix_pct": -0.0,
+    "iy_pct": -0.0
+   }
+  },
+  "CBT81": {
+   "depth_in": 81,
+   "clear_web_ref": "4'-9 7/8\"",
+   "provenance": "transcribed",
+   "published": {
+    "weight_lb_ft": 1181,
+    "area_in2": 1097,
+    "ix_in4": 1023130,
+    "iy_in4": 90241,
+    "yb_in": 39.48
+   },
+   "discrepancy": "Computed Ix 1,023,134 in^4 vs printed 1,023,130 (+4 in^4, 0.0004%); all other rows match to the unit. Treated as source rounding; pinned in tests.",
+   "residuals_vs_published": {
+    "computed": {
+     "area": 1096.75,
+     "yb": 39.48,
+     "ix": 1023134.343,
+     "iy": 90241.152
+    },
+    "area_pct": -0.023,
+    "yb_diff_in": -0.0,
+    "ix_pct": 0.0,
+    "iy_pct": 0.0
+   }
+  },
+  "CBT90": {
+   "depth_in": 90,
+   "clear_web_ref": "5'-6 7/8\"",
+   "provenance": "transcribed",
+   "published": {
+    "weight_lb_ft": 1249,
+    "area_in2": 1160,
+    "ix_in4": 1323390,
+    "iy_in4": 90498,
+    "yb_in": 43.87
+   },
+   "residuals_vs_published": {
+    "computed": {
+     "area": 1159.75,
+     "yb": 43.871,
+     "ix": 1323390.368,
+     "iy": 90498.402
+    },
+    "area_pct": -0.022,
+    "yb_diff_in": 0.001,
+    "ix_pct": 0.0,
+    "iy_pct": 0.0
+   }
+  }
+ }
+}

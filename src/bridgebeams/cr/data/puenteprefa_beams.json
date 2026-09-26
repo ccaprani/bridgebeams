@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "family": "PuentePrefa precast bridge beams (Viga California I, Simple te)",
+ "country": "Costa Rica",
+ "source_status": "producer web page diagrams (retrieved 2026-09-23)",
+ "source": {
+  "organisation": "PuentePrefa Ltda",
+  "title": "Elementos prefabricados (web page)",
+  "url": "https://www.puenteprefa.cr/elementos_prefabricados.html",
+  "local_file": "sources/expansion/round2/cr/puenteprefa.html",
+  "sha256_html": "05479e8f99994ec113e95112b53513486e98ccf09e821b30e2b7e90013a90afa",
+  "images": {
+   "california": {"url": "https://www.puenteprefa.cr/images/elem_prefa_diag2.jpg", "local_file": "sources/expansion/round2/cr/puenteprefa_diag2.jpg", "sha256": "cb8d0d16db02822862b945c9a4d0d30d2b56b3a76bcc82c5725098c550123ff1", "size_px": [600, 450]},
+   "tees": {"url": "https://www.puenteprefa.cr/images/elem_prefa_diag3.jpg", "local_file": "sources/expansion/round2/cr/puenteprefa_diag3.jpg", "sha256": "6cabf7dbb272e9e4215f3505fb0557d5d34b9f5422ba8321fae1d9b61dfecdd5", "size_px": [600, 450]}
+  },
+  "accessed": "2026-09-23",
+  "page_text": "Las vigas prefabricadas permiten construir tramos con longitudes entre los 4m y los 40m. Estas se refuerzan con pretensión o con postensión según se requiera. Resistencia del concreto 245–700 kg/cm2."
+ },
+ "units": {"drawing": "cm", "outline_output": "mm"},
+ "translation": {"viga california": "California (I) beam", "simple te": "single tee", "doble te": "double tee"},
+ "geometry_notes": [
+  "Viga California printed: depth, bottom width 48, bottom-flange edge 15, bottom overhang 15, web 18 (extension lines at the top align with the web faces) and top-flange edge 8.",
+  "ESTIMATE (California): top width not printed; drawn equal to the 48 cm bottom (pixel widths 43-44 px at 0.89-0.90 px/cm). Top taper and bottom taper not printed; scaled from the diagram: bottom taper 15 cm on both, top taper 17 cm (167) and 13 cm (137). Resolution is ~1.1 cm per pixel, so tapers are +/-2 cm.",
+  "Simple te: all five callouts printed (93 top, 10 flange, 97 depth, 20 stem at flange, 11 at soffit). CONVENTION: flat flange soffit, square corners; the diagram shows small fillets and slightly bevelled flange tips (not dimensioned).",
+  "Doble te (95 deep, 192 wide, 8 flange, stems 20/10) not implemented: drawn flange-down and stem positions not printed."
+ ],
+ "types": {
+  "CALIFORNIA-137": {"provenance": "estimate", "printed_cm": {"depth": 137, "bottom_width": 48, "bottom_flange": 15, "web": 18, "top_flange": 8},
+    "dimensions_cm": {"depth": 137, "top_width": 48, "web_width": 18, "top_flange": 8, "top_taper": 13, "bottom_width": 48, "bottom_flange": 15, "bottom_taper": 15}},
+  "CALIFORNIA-167": {"provenance": "estimate", "printed_cm": {"depth": 167, "bottom_width": 48, "bottom_flange": 15, "web": 18, "top_flange": 8},
+    "dimensions_cm": {"depth": 167, "top_width": 48, "web_width": 18, "top_flange": 8, "top_taper": 17, "bottom_width": 48, "bottom_flange": 15, "bottom_taper": 15}},
+  "SIMPLE-TE-97": {"provenance": "transcribed-with-convention", "printed_cm": {"depth": 97, "top_width": 93, "top_flange": 10, "stem_top": 20, "stem_bottom": 11},
+    "dimensions_cm": {"depth": 97, "top_width": 93, "web_width": 20, "top_flange": 10, "web_bottom_width": 11}}
+ }
+}

@@ -1,0 +1,362 @@
+{
+ "schema_version": 1,
+ "topic": "latin-america",
+ "round": 2,
+ "date": "2026-09-23",
+ "scope": "Latin America and the Caribbean: br, ar, cl, co, pe, ec, uy, py, bo, ve, gt, hn, ni, sv, cr, pa, do, jm, pr, cu, ht; new Mexican sources (mx/r2_*).",
+ "implemented": [
+  {
+   "package": "mx",
+   "module": "bridgebeams.mx.r2_producer_aashto",
+   "class": "DragonAashtoSection",
+   "sizes": [
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI"
+   ],
+   "provenance": {
+    "I": "transcribed",
+    "II": "transcribed",
+    "III": "transcribed",
+    "IV": "transcribed",
+    "V": "transcribed-with-convention",
+    "VI": "transcribed-with-convention"
+   },
+   "source": "Prefabricados Dragón, Ficha técnica Trabes tipo AASHTO",
+   "url": "https://prefabricadosdragon.com/pdf/TRABE_AASHTO.pdf",
+   "local_file": "sources/expansion/round2/mx/dragon_trabe_aashto.pdf",
+   "sha256": "76de6da76a4ca35a169be78816c7e10bf4b1991c27277fae6279334192fb4590",
+   "pdf_page": 1,
+   "units": "m",
+   "published_properties": null,
+   "data": "src/bridgebeams/mx/data/r2_producer_aashto.json"
+  },
+  {
+   "package": "mx",
+   "module": "bridgebeams.mx.r2_producer_aashto",
+   "class": "TubecoAashtoSection",
+   "sizes": [
+    "III",
+    "IV",
+    "V",
+    "VI"
+   ],
+   "provenance": "transcribed-with-convention (all)",
+   "source": "Tubeco, Elementos presforzados brochure",
+   "url": "https://www.tubeco.com.mx/catalogos/presforzados.pdf",
+   "local_file": "sources/expansion/round2/mx/tubeco_presforzados.pdf",
+   "sha256": "90f40d2e338ab43b30f45992de49ba352e16d901ec74975f6895167bf7e04035",
+   "pdf_page": 7,
+   "printed_page": 6,
+   "units": "cm",
+   "pinned_source_typos": [
+    "Tipo III top width printed 30, chain 11+18+11=40 and drawing ~38.8 -> 40 used",
+    "Tipo IV chain 20+9+57+23+20=129 vs depth 135; drawn taper 15.2 -> 15 used"
+   ],
+   "data": "src/bridgebeams/mx/data/r2_producer_aashto.json"
+  },
+  {
+   "package": "br",
+   "module": "bridgebeams.br.dnit_pcp",
+   "class": "DnitPcpLongarinaSection",
+   "sizes": [
+    "PCP-10",
+    "PCP-15",
+    "PCP-20"
+   ],
+   "provenance": "transcribed",
+   "source": "DNIT/IPR Publicação IPR-751 Álbum de projetos-tipo de pontes semipermanentes, Vol. 1 Desenhos 2ª ed. 2023 (Corte D-D, folhas 46/55/66, PDF pp56/65/76); Vol. 2 Memória de cálculo 2ª ed. 2023 Tabela 2-5 (folhas 140-142)",
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/ipr_751_vol_1_segunda_edicao.pdf",
+   "local_file": "sources/expansion/round2/br/dnit_ipr751_vol1_2ed.pdf",
+   "sha256": "5fd221adc50ec11aebbb299c0029597c07f43aecc39367c43f2b068b18177e79",
+   "residuals": {
+    "PCP-10": "A -2.6% vs printed 0.267 m2 (pinned); yi exact; I within rounding",
+    "PCP-15": "A -0.15%, yi -0.1 mm, I -1.0% (3 d.p. rounding)",
+    "PCP-20": "A 0, yi +0.3 mm, I -0.05%"
+   },
+   "data": "src/bridgebeams/br/data/dnit_pcp_longarinas.json"
+  },
+  {
+   "package": "ar",
+   "module": "bridgebeams.ar.pretensa",
+   "class": "PretensaViSection",
+   "sizes": [
+    "VI-90",
+    "VI-100",
+    "VI-120",
+    "VI-130",
+    "VI-154",
+    "VI-160",
+    "VPI-45"
+   ],
+   "provenance": "estimate",
+   "source": "Estructuras Pretensa, Puentes brochure pp1-2",
+   "url": "https://www.pretensa.com.ar/multimedia/downloads/11/12/puentes.pdf",
+   "local_file": "sources/expansion/europe-americas/ar_pretensa.pdf",
+   "sha256": "8b4193429371c1d1f1cd07037ab5aa511571128f74f3004a533eb24153b37f33",
+   "method": "outline scaled from schematic (VI assumed drawn at 1.60 m; VPI-45 from printed 0.45 m), flange heights scaled with depth, web solved to published kg/m at 2500 kg/m3",
+   "data": "src/bridgebeams/ar/data/pretensa_vi.json"
+  },
+  {
+   "package": "cr",
+   "module": "bridgebeams.cr.puenteprefa",
+   "class": "PuentePrefaBeamSection",
+   "sizes": [
+    "CALIFORNIA-137",
+    "CALIFORNIA-167",
+    "SIMPLE-TE-97"
+   ],
+   "provenance": {
+    "CALIFORNIA-137": "estimate",
+    "CALIFORNIA-167": "estimate",
+    "SIMPLE-TE-97": "transcribed-with-convention"
+   },
+   "source": "PuentePrefa Ltda, Elementos prefabricados web page diagrams elem_prefa_diag2.jpg / diag3.jpg",
+   "url": "https://www.puenteprefa.cr/elementos_prefabricados.html",
+   "local_file": "sources/expansion/round2/cr/",
+   "data": "src/bridgebeams/cr/data/puenteprefa_beams.json"
+  }
+ ],
+ "profile_counts": {
+  "mx_dragon": 6,
+  "mx_tubeco": 4,
+  "br_dnit": 3,
+  "ar_pretensa": 7,
+  "cr_puenteprefa": 3,
+  "total": 23,
+  "by_provenance": {
+   "transcribed": 7,
+   "transcribed-with-convention": 7,
+   "estimate": 9
+  }
+ },
+ "downloads": [
+  {
+   "url": "https://www.gov.br/dnit/pt-br/central-de-conteudos/atos-normativos/tipo/instrucao-normativa/2026/sei_24795123_anexo_vii.pdf",
+   "local": "sources/expansion/round2/br/dnit_ipr751_anexo.pdf",
+   "sha256": "20f615179e982d73f159282916741744972195a6b0dfdf5f3318b0aa2b2689bd",
+   "note": "PROARTE annex; points to the IPR-751 album; no section"
+  },
+  {
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/publicacao_ipr_751_vol_1.pdf",
+   "local": "sources/expansion/round2/br/dnit_ipr751_vol1.pdf",
+   "sha256": "844a4e6df87cf03c789e32a52690a690cd74f53ae1dc969e2bc3d0139c766019",
+   "note": "1st ed. 2022"
+  },
+  {
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/ipr_751_vol_1_segunda_edicao.pdf",
+   "local": "sources/expansion/round2/br/dnit_ipr751_vol1_2ed.pdf",
+   "sha256": "5fd221adc50ec11aebbb299c0029597c07f43aecc39367c43f2b068b18177e79",
+   "note": "2nd ed. 2023, used"
+  },
+  {
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/publicacao_ipr_751_vol_2.pdf",
+   "local": "sources/expansion/round2/br/dnit_ipr751_vol2.pdf",
+   "sha256": "1233fba052920de6ff01839811d8c5b44a87a9757449e6d564b52855a5aac9f7"
+  },
+  {
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/ipr_751_vol_2_segunda_edicao.pdf",
+   "local": "sources/expansion/round2/br/dnit_ipr751_vol2_2ed.pdf",
+   "sha256": "eeb4382e43cd97c516dd580173e06bf716fc3bfa99640f01b7037c365f9545da",
+   "note": "Tabela 2-5 used"
+  },
+  {
+   "url": "http://www1.dnit.gov.br/anexo/Projetos/Projetos_edital0424_16-02_3.pdf",
+   "local": "sources/expansion/round2/br/dnit_edital0424.pdf",
+   "sha256": "e10ae5f6b530da3766a9b262098e3f579e54e4855f1b36f27b477829f50e8d1d",
+   "note": "anteprojeto text: 1.50 m I longarinas, 23.89 m spans; no section drawing"
+  },
+  {
+   "url": "https://prefabricadosdragon.com/pdf/TRABE_AASHTO.pdf",
+   "local": "sources/expansion/round2/mx/dragon_trabe_aashto.pdf",
+   "sha256": "76de6da76a4ca35a169be78816c7e10bf4b1991c27277fae6279334192fb4590"
+  },
+  {
+   "url": "https://www.tubeco.com.mx/catalogos/presforzados.pdf",
+   "local": "sources/expansion/round2/mx/tubeco_presforzados.pdf",
+   "sha256": "90f40d2e338ab43b30f45992de49ba352e16d901ec74975f6895167bf7e04035"
+  },
+  {
+   "url": "https://www.mexpresa.com/pdf/obras/curriculum-pretensado_vaashto.pdf",
+   "local": "sources/expansion/round2/mx/mexpresa_curriculum.pdf",
+   "sha256": "0d58ed83ea63375031fcac82852fb02d60351fe3fc16150eccf645bff0998e52",
+   "note": "project list only"
+  },
+  {
+   "url": "https://www.compre.com.mx/vigas-aashto/",
+   "local": "sources/expansion/round2/mx/compre_vigas_aashto.html",
+   "sha256": "967217bde6efe7d91b498f87c47c8eec013e6f29fc6c2ce1a7a782ecc79a42bd",
+   "note": "prose only"
+  },
+  {
+   "url": "https://www.supermix.com.pe/wp-content/uploads/2024/07/brochure-prefabricados-concreto.pdf",
+   "local": "sources/expansion/round2/pe/supermix_prefabricados.pdf",
+   "sha256": "bf18e2aa812053b656818a349ac06de9d4e5209a9698ee0d1fb666bf52231768",
+   "note": "Vigas pretensadas page is photo + prose, no dimensions"
+  },
+  {
+   "url": "https://portal.mtc.gob.pe/transportes/caminos/normas_carreteras/documentos/manuales/MANUAL%20DE%20PUENTES%20PDF.pdf",
+   "local": "sources/expansion/round2/pe/mtc_manual_puentes.pdf",
+   "sha256": "d2842a65b6205816e6848829b3a2269ea03bf07fd67b46f5f0759ce97648878f",
+   "note": "design manual; no standard girder outlines found by text search"
+  },
+  {
+   "url": "https://repositorio.ucc.edu.ni/1177/1/Puente%20Yahoska%20RAAN.pdf",
+   "local": "sources/expansion/round2/ni/ucc_yahoska.pdf",
+   "sha256": "09414861931dc49cf897c0ebff774c7a700dd626bf67473731293b7433411a60",
+   "note": "Plano taller 4 (PDF p115) Sección A-A of 30.46 m Type-IV-named girder; callouts detached/ambiguous (532/204/50/1680/160...) -> not implemented"
+  },
+  {
+   "url": "https://connectamericas.com/sites/default/files/AnexoES-L1155_%20sdo_mejoramiento_camino_uni07e_yayantique_240912.pdf",
+   "local": "sources/expansion/round2/sv/mopt_uni07e.pdf",
+   "sha256": "f979a8ab278a2a37300426411ff01aa3d0f0cd08e3bdc646f3e6ac242ef28e2e",
+   "note": "pay item OP10034 AASHTO Tipo IV postensadas L=31.30 m H=1.40 m; no drawing"
+  },
+  {
+   "url": "https://www.puenteprefa.cr/elementos_prefabricados.html (+ images/elem_prefa_diag1-3.jpg)",
+   "local": "sources/expansion/round2/cr/",
+   "note": "implemented"
+  },
+  {
+   "url": "https://www.conde.com.do/prefabricados.html",
+   "local": "sources/expansion/round2/do/conde.html",
+   "sha256": "3848f2838402881b962a3378ee3260b3f5a46a83539d9389ff7cff7d61872046",
+   "note": "prose only"
+  },
+  {
+   "url": "https://silo.tips/download/manual-de-carreteras-volumen-n-4-planos-de-obras-tipo",
+   "local": "sources/expansion/round2/cl/silo_mc_vol4.html",
+   "sha256": "68dbe0e3bd53b28017e25de46d7aa2ba3e0bde15040bacb8254922145c65d795",
+   "note": "index text only; PDF behind reCAPTCHA"
+  },
+  {
+   "url": "https://www.tensacon.cl/",
+   "local": "sources/expansion/round2/cl/tensacon.html",
+   "sha256": "fca27c2d8ddf74cee7de1af570d84d3b2354e66a1bc069f9bffb5998e7b56db1",
+   "note": "no dimensions"
+  },
+  {
+   "url": "https://mavisa.ec/",
+   "local": "sources/expansion/round2/ec/mavisa_home.html",
+   "sha256": "ea79f5310425e4cbfa3c62e5569bba59d445b75f7a88a6f519ec0806204431bf",
+   "note": "VIGA TIPO i CALIFORNIA named; no dimensioned image found"
+  }
+ ],
+ "invalid_downloads_to_delete": [
+  "sources/expansion/round2/br/ifes_saodomingos.pdf (Anubis anti-bot HTML)",
+  "sources/expansion/round2/mx/anippac_02.pdf (sgcaptcha redirect HTML)",
+  "sources/expansion/round2/mx/imt_N-PRY-CAR-6-01-007-04.pdf (HTML)"
+ ],
+ "leads_not_implemented": [
+  {
+   "country": "BR",
+   "lead": "UFC Filgueira 2016 thesis I-beam",
+   "url": "https://repositorio.ufc.br/bitstream/riufc/68766/1/2016_tcc_dlfilgueira.pdf",
+   "status": "blocked: connection refused/timeouts from curl and WebFetch"
+  },
+  {
+   "country": "BR",
+   "lead": "IFES São Domingos 1.30 m I girders",
+   "url": "https://repositorio.ifes.edu.br/bitstream/handle/123456789/2795/Template_ARTIGO_ABNT_Biblioteca_Rodrigo_revisado_final.pdf?isAllowed=y&sequence=1",
+   "status": "blocked: Anubis anti-bot challenge"
+  },
+  {
+   "country": "BR",
+   "lead": "IBRACON/SciELO RIEM U-beam reliability paper",
+   "url": "https://www.scielo.br/j/riem/a/k55Zx3qyqfFyNRVvLCf8ccB/?lang=en",
+   "status": "rejected: beam geometry and deck layout cited from Caprani, Mayer & Siamphukdee (Australian); not a Brazilian profile. Table 1 A=556000 mm2 (transfer) / 934000 (composite)."
+  },
+  {
+   "country": "BR",
+   "lead": "Producers Protensul, Cassol, T&A, Leonardi, Rotesma",
+   "status": "sites checked; project lists or prose only ('dimensões variam de acordo com o projeto'); no catalogue sections"
+  },
+  {
+   "country": "MX",
+   "lead": "Tubeco Nebraska (PDF p8)",
+   "status": "not implemented separately: identical callouts to SEPSA Nebraska template, H only as a 135-240 cm range; corroborates mx.SepsaNebraskaSection"
+  },
+  {
+   "country": "MX",
+   "lead": "ANIPPAC catálogo v1.1 and 02.pdf 'trabe I tipo AASHTO'",
+   "status": "blocked: SiteGround sgcaptcha"
+  },
+  {
+   "country": "MX",
+   "lead": "COMPRE, MEXPRESA, ITISA",
+   "status": "no dimensions on public pages"
+  },
+  {
+   "country": "AR",
+   "lead": "Pretensa ENTT50/80 panels",
+   "status": "not implemented: only max depth 0.80 m, no mass"
+  },
+  {
+   "country": "AR",
+   "lead": "Vialidad Nacional standard beams; 1972 draft standard (TRID)",
+   "status": "not located in bounded effort"
+  },
+  {
+   "country": "CL",
+   "lead": "MOP Manual de Carreteras Vol. 4 §4.604 'Tableros de un tramo 11-15 m' incl. losa con viga pretensada / losa nervada con vigas prefabricadas",
+   "status": "blocked: official mc.mop.gob.cl and silo.tips copies behind reCAPTCHA; strongest Chilean lead"
+  },
+  {
+   "country": "CL",
+   "lead": "Hormisur, Tensacon",
+   "status": "no dimensions"
+  },
+  {
+   "country": "CO",
+   "lead": "INVIAS, Preansa Colombia",
+   "status": "no dimensioned standard found; Preansa states sections are project-specific"
+  },
+  {
+   "country": "PE",
+   "lead": "MTC Manual de Puentes; Supermix; Continental thesis Fig. 135 (academic)",
+   "status": "no standard outline / not implemented (academic)"
+  },
+  {
+   "country": "EC",
+   "lead": "Mavisa 'Viga tipo I California', Doble T, Bulb T",
+   "status": "no dimensioned image located"
+  },
+  {
+   "country": "NI",
+   "lead": "Puente Yahoska shop drawing (UCC thesis PDF p115)",
+   "status": "partial: labels detached from dimension lines; would need a fitted reconstruction from 1:75 scale"
+  },
+  {
+   "country": "SV",
+   "lead": "MOPT UNI07E OP10034 AASHTO Tipo IV postensada H=1.40 m",
+   "status": "no drawing annex in the tender PDF"
+  },
+  {
+   "country": "GT",
+   "lead": "SEGEPLAN Benque Viejo drawings",
+   "status": "blocked: HTTP 403"
+  },
+  {
+   "country": "GT",
+   "lead": "USAC T6054 Fig. 57 AASHTO I-VI",
+   "status": "not implemented: teaching reproduction of US sections (no jurisdiction transfer)"
+  },
+  {
+   "country": "PR",
+   "lead": "ACT/PRHTA Planos Modelo",
+   "status": "checked https://act.dtop.pr.gov/planos-modelo: listing shows erosion control and miscellaneous bridge details only; no girder sheets found; PR bulb-tee standard unverified"
+  },
+  {
+   "country": "CR",
+   "lead": "PuentePrefa Doble te",
+   "status": "drawn flange-down, stem positions not printed"
+  },
+  {
+   "country": "UY/PY/BO/VE/HN/PA/DO/JM/CU/HT",
+   "status": "no dimensioned public source found within bounded effort (web-search budget exhausted mid-task)"
+  }
+ ]
+}

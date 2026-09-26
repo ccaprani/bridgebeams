@@ -1,0 +1,133 @@
+{
+  "source": {
+    "title": "上海市建筑标准设计《先张法预应力混凝土空心板（桥梁）》（征求意见稿）DBJT08-101-20xx，图集号 2021沪G1005",
+    "title_en": "Shanghai building standard design: pretensioned prestressed concrete hollow slabs (bridges), consultation draft revising DBJT08-101-2015",
+    "publisher": "上海市住房和城乡建设管理委员会 / 上海市交通委员会; 主编 上海市政工程设计研究总院（集团）有限公司",
+    "url": "https://zjw.sh.gov.cn/cmsres/4c/4c7fa68a2357415c983c9b8a30a514b3/ccbaf741f888cd24cdf8ee666074c47e.pdf",
+    "retrieved": "2026-09-23",
+    "local_path": "sources/expansion/round2/cn/sh-dbjt08-101.pdf",
+    "sha256": "2ee81a5d2426f95a179a949564b6b87d89afd359aeaef3800d4630f3c7eec142",
+    "pdf_pages": 159,
+    "status": "征求意见稿 (consultation draft), PDF created 2021-10-19; the issued edition is DBJT 08-101-2024 (effective 2024-02-01), not held. Draft dimensions may differ from the issued atlas.",
+    "units": "mm (drawings); published section properties in m, m2, m4, m3",
+    "drawing_type": "vector CAD (no raster images on section pages); dimensions read visually from 300-800 dpi renders"
+  },
+  "rigid": {
+    "family": "第一分册：刚接空心板（桥梁） rigid-jointed hollow slabs, spans 10/13/16/18/20/22 m, loads 城-A/公路-I/城-B/公路-II",
+    "provenance": "transcribed-with-convention",
+    "source_status": "consultation draft 2021 (DBJT08-101 revision)",
+    "locators": {
+      "parameter_table": "PDF p6 = printed vol.1 p3, 表1 空心板(梁)参数表 (梁高 0.55/0.65/0.85/0.85/0.95/0.95 m)",
+      "void_table": "PDF p7 = printed vol.1 p4, 表2 充气加劲橡胶芯模尺寸汇总表 (10/13 m circular R180; 16-18 and 20-22 m round-ended 650 x 360, arc R180 at midspan straight segment)",
+      "width_note": "PDF p7 §6.1: 底宽1100mm, 中板顶宽1200mm, 边板顶宽1450mm, 顶板设2%横坡",
+      "sections": {
+        "10m-middle": "PDF p37 = printed 34, 跨中断面 B-B",
+        "10m-edge": "PDF p40 = printed 37, 跨中断面 B-B",
+        "13m-middle": "PDF p45 = printed 42",
+        "13m-edge": "PDF p48 = printed 45",
+        "16-18m-middle": "PDF p53 = printed 50; 18 m PDF p61 = printed 58 identical",
+        "16-18m-edge": "PDF p56 = printed 53; 18 m PDF p64 = printed 61 identical",
+        "20-22m-middle": "PDF p69 = printed 66; 22 m PDF p77 = printed 74 identical",
+        "20-22m-edge": "PDF p72 = printed 69; 22 m PDF p80 = printed 77 identical"
+      }
+    },
+    "common_dimensions_mm": {
+      "bottom_width": 1100,
+      "overhang_top_width_middle": "50 + 1200 + 50 = 1300 at ledge corners; top surface 1200",
+      "edge_top_chain": "300 + 1150 + 50 = 1500 (cantilever 300, top surface 1450)",
+      "overhang_depth": 180,
+      "reentrant_fillet_radius": 30,
+      "crossfall": "2% across the top (rising to the right as drawn); depth D printed at the base centreline",
+      "ledge_heights": "left D-193, right D-167 (printed 357/383, 457/483, 657/683, 757/783)",
+      "edge_cantilever": "tip thickness 200; cantilever soffit rises 50 over 300; root height D-267 (printed 283/383/583/683)",
+      "voids": "two voids, centres at x = +/-225 (145+360+90+360+145 = 1100)"
+    },
+    "sections": {
+      "10m-middle": {"spans_m": [10], "depth": 550, "unit": "middle", "void": "circle", "void_width": 360, "void_height": 360, "void_bottom": 90, "printed_side_heights": [357, 383]},
+      "10m-edge": {"spans_m": [10], "depth": 550, "unit": "edge", "void": "circle", "void_width": 360, "void_height": 360, "void_bottom": 90, "printed_side_heights": [283, 50, 200, 383]},
+      "13m-middle": {"spans_m": [13], "depth": 650, "unit": "middle", "void": "circle", "void_width": 360, "void_height": 360, "void_bottom": 140, "printed_side_heights": [457, 483]},
+      "13m-edge": {"spans_m": [13], "depth": 650, "unit": "edge", "void": "circle", "void_width": 360, "void_height": 360, "void_bottom": 140, "printed_side_heights": [383, 50, 200, 483]},
+      "16-18m-middle": {"spans_m": [16, 18], "depth": 850, "unit": "middle", "void": "obround", "void_width": 360, "void_height": 650, "void_bottom": 100, "printed_side_heights": [657, 683]},
+      "16-18m-edge": {"spans_m": [16, 18], "depth": 850, "unit": "edge", "void": "obround", "void_width": 360, "void_height": 650, "void_bottom": 100, "printed_side_heights": [583, 50, 200, 683]},
+      "20-22m-middle": {"spans_m": [20, 22], "depth": 950, "unit": "middle", "void": "obround", "void_width": 360, "void_height": 650, "void_bottom": 150, "printed_side_heights": [757, 783]},
+      "20-22m-edge": {"spans_m": [20, 22], "depth": 950, "unit": "edge", "void": "obround", "void_width": 360, "void_height": 650, "void_bottom": 150, "printed_side_heights": [683, 50, 200, 783]}
+    },
+    "published_properties": null,
+    "geometry_notes": [
+      "Midspan section B-B only; the support section A-A (narrower top, cast with the end diaphragm) and end plugs are excluded.",
+      "The top surface follows the printed 2% crossfall about the base centreline: y = D + 0.02 x. The drawn section is therefore asymmetric (left ledge D-193, right D-167); a slab laid with the opposite fall is the mirror image.",
+      "Ledges are horizontal at the printed heights; the 50 mm overhang faces run straight from the ledge corner (x = +/-650) to the top corner (x = +/-600).",
+      "R30 reentrant fillets are modelled as exact tangent arcs (convention: tangent to web face and ledge).",
+      "Void vertical position is fixed by the printed bottom cover (90/140/100/150). The printed top covers (100/150/100/150) are measured at the void centreline x = -225 and close only approximately against the 2% crossfall (-4.5 mm); the bottom cover is used.",
+      "Edge-slab drip groove (滴水槽, R10 at 100 mm from the cantilever tip) is omitted (about 157 mm2).",
+      "No section-property table is printed for volume 1; checks are analytic only."
+    ]
+  },
+  "hinged": {
+    "family": "第二分册：铰接空心板（桥梁） hinge-jointed hollow slabs, spans 10/13/16/18/20/22 m, loads 城-B/公路-II; restricted by the draft to low-grade roads and replacement of existing slabs",
+    "provenance": "transcribed",
+    "source_status": "consultation draft 2021 (DBJT08-101 revision)",
+    "locators": {
+      "parameter_table": "PDF p127 = printed vol.2 p2, 表1 空心板(梁)参数表 (板高 0.52/0.62/0.82/0.82/0.9/0.9 m)",
+      "properties_table": "PDF p130 = printed vol.2 p5, 表1 空心板毛截面特性 (中板/边板 A, h, Ys, Yx, I, Ws, Wx, S0)",
+      "joint_detail": "铰缝 detail on each sheet: top opening 20+70+20, bottom 50+10+50 (10 mm gap)",
+      "sections": {
+        "10m-middle": "PDF p140 = printed 15, 横断面",
+        "10m-edge": "PDF p141 = printed 16",
+        "13m-middle": "PDF p142 = printed 17",
+        "13m-edge": "PDF p143 = printed 18",
+        "16-18m-middle": "PDF p144 = printed 19 (18 m sheet printed 21 shares the property row)",
+        "16-18m-edge": "PDF p145 = printed 20",
+        "20-22m-middle": "PDF p148 = printed 23 (22 m sheet printed 25 shares the property row)",
+        "20-22m-edge": "PDF p149 = printed 24"
+      }
+    },
+    "common_dimensions_mm": {
+      "middle_width": "990 (top surface 30 + 930 + 30 inset)",
+      "edge_width": "995 base; top 30 + 965 + 400 = 1395 overall",
+      "shear_key": "from the top: 20 vertical at 30 inset, sloping to the deepest point (inset 50, or 60 for 900 deep) over the next k, back to the full face over another k; k = 70 (520/620/820), 80 (900)",
+      "void_layout_middle": "100 + 360 + 70 + 360 + 100 = 990",
+      "void_layout_edge": "100 + 360 + 75 + 360 + 100 = 995",
+      "edge_cantilever": "400 wide; tip thickness 200; soffit rises 50 over 400; root height D-250 (270/370/570/650)"
+    },
+    "sections": {
+      "10m-middle": {"spans_m": [10], "depth": 520, "unit": "middle", "key_run": 70, "key_inset": 50, "void": "circle", "void_height": 360, "void_bottom": 80, "void_top": 80},
+      "10m-edge": {"spans_m": [10], "depth": 520, "unit": "edge", "key_run": 70, "key_inset": 50, "void": "circle", "void_height": 360, "void_bottom": 80, "void_top": 80},
+      "13m-middle": {"spans_m": [13], "depth": 620, "unit": "middle", "key_run": 70, "key_inset": 50, "void": "circle", "void_height": 360, "void_bottom": 80, "void_top": 180},
+      "13m-edge": {"spans_m": [13], "depth": 620, "unit": "edge", "key_run": 70, "key_inset": 50, "void": "circle", "void_height": 360, "void_bottom": 80, "void_top": 180},
+      "16-18m-middle": {"spans_m": [16, 18], "depth": 820, "unit": "middle", "key_run": 70, "key_inset": 50, "void": "obround", "void_height": 650, "void_bottom": 90, "void_top": 80},
+      "16-18m-edge": {"spans_m": [16, 18], "depth": 820, "unit": "edge", "key_run": 70, "key_inset": 50, "void": "obround", "void_height": 650, "void_bottom": 90, "void_top": 80},
+      "20-22m-middle": {"spans_m": [20, 22], "depth": 900, "unit": "middle", "key_run": 80, "key_inset": 60, "void": "obround", "void_height": 650, "void_bottom": 130, "void_top": 120},
+      "20-22m-edge": {"spans_m": [20, 22], "depth": 900, "unit": "edge", "key_run": 80, "key_inset": 60, "void": "obround", "void_height": 650, "void_bottom": 130, "void_top": 120}
+    },
+    "published_properties_m": {
+      "note": "Ys = centroid to top, Yx = centroid to soffit. The separate middle-slab column with 80 mm topping (A 0.39042/0.48942/0.46912/0.54542, I 0.01568/0.02431/0.04540/0.06376) is composite and not used.",
+      "10m-middle": {"A": 0.30093, "h": 0.52, "Ys": 0.26646, "Yx": 0.25354, "I": 0.00956, "Ws": 0.03586, "Wx": 0.03769, "S0": 0.02472},
+      "10m-edge": {"A": 0.39868, "h": 0.52, "Ys": 0.22924, "Yx": 0.29076, "I": 0.01178, "Ws": 0.05137, "Wx": 0.04050, "S0": 0.03082},
+      "13m-middle": {"A": 0.39993, "h": 0.62, "Ys": 0.29070, "Yx": 0.32930, "I": 0.01675, "Ws": 0.05762, "Wx": 0.05087, "S0": 0.03714},
+      "13m-edge": {"A": 0.49818, "h": 0.62, "Ys": 0.25644, "Yx": 0.36356, "I": 0.01976, "Ws": 0.07706, "Wx": 0.05435, "S0": 0.04369},
+      "16-18m-middle": {"A": 0.38912, "h": 0.82, "Ys": 0.42427, "Yx": 0.39573, "I": 0.03230, "Ws": 0.07613, "Wx": 0.08162, "S0": 0.05120},
+      "16-18m-edge": {"A": 0.48837, "h": 0.82, "Ys": 0.36306, "Yx": 0.45694, "I": 0.04046, "Ws": 0.11144, "Wx": 0.08855, "S0": 0.06270},
+      "20-22m-middle": {"A": 0.46542, "h": 0.90, "Ys": 0.46486, "Yx": 0.43514, "I": 0.04632, "Ws": 0.09964, "Wx": 0.10644, "S0": 0.06757},
+      "20-22m-edge": {"A": 0.56652, "h": 0.90, "Ys": 0.40438, "Yx": 0.49562, "I": 0.05706, "Ws": 0.14111, "Wx": 0.11513, "S0": 0.08313}
+    },
+    "residuals_vs_published": {
+      "method": "exact polygon with 720-point voids, holes subtracted",
+      "10m-middle": {"A": 2e-5, "Yx": -1e-5, "I": -3.6e-4},
+      "10m-edge": {"A": 1e-5, "Yx": -2e-5, "I": -2.9e-4},
+      "13m-middle": {"A": 1e-5, "Yx": 0.0, "I": 1.8e-4},
+      "13m-edge": {"A": 1e-5, "Yx": -1e-5, "I": -1.7e-4},
+      "16-18m-middle": {"A": 4e-5, "Yx": 1e-5, "I": -3e-5},
+      "16-18m-edge": {"A": 3e-5, "Yx": 1e-5, "I": 1e-5},
+      "20-22m-middle": {"A": 3e-5, "Yx": -1e-5, "I": -5e-5},
+      "20-22m-edge": {"A": 3e-5, "Yx": -1e-5, "I": 5e-5}
+    },
+    "geometry_notes": [
+      "Top surface is flat (no crossfall) on the volume 2 sections.",
+      "The 50/60 mm dimension beside the key is the horizontal inset of the deepest key point; this reading, the 30 mm top inset and the 20/k/k vertical chain reproduce all eight published areas to <=0.004%, centroids to <=0.002% and inertias to <=0.036% (the published I is rounded to 3 significant figures for 10 m).",
+      "Voids: circles R180, or round-ended 360 x 650 (R180 + 290 straight + R180), at the printed bottom covers.",
+      "Edge-slab drip groove (滴水槽 R10) is omitted; the published area matches only without it.",
+      "Cross-section is uniform over the slab (no midspan/support distinction on these sheets); end plugs excluded."
+    ]
+  }
+}

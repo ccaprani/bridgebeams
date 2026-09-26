@@ -1,0 +1,57 @@
+{
+  "family": "Bangladesh RHD PC-I girders, JICA Western Bangladesh Bridges Improvement Project preliminary design (25/30/35/40 m)",
+  "organisation": "JICA Survey Team for the Roads and Highways Department (RHD), Bangladesh",
+  "source_status": "JICA Preparatory Survey Final Report (preliminary design)",
+  "units": "mm",
+  "source": {
+    "title": "Preparatory Survey on Western Bangladesh Bridges Improvement Project, Final Report, Chapter 7 Preliminary Design",
+    "url": "https://openjicareport.jica.go.jp/pdf/12231726_02.pdf",
+    "retrieved": "2026-09-23",
+    "local_file": "sources/expansion/round2/bd/jica-western-bridges.pdf",
+    "sha256": "aac3ef7ed2af635134c6be35c165c8fe3547c40659ae869a90bd8c7ef68653aa",
+    "pdf_page": 27,
+    "printed_page": "7-27",
+    "locator": "Table 7.4.1 'Summary of Preliminary Design of PC-I': dimensioned cross-section sketch plus section area (m2) per span. The table is an embedded 849x497 raster at 135 ppi; it was read upscaled.",
+    "context": "PDF p26 / printed 7-26: Figures 7.4.2-7.4.3 give PC-I chaired single-span girders and the deck cross-section. PC-I standard spans are 25, 30, 35 and 40 m."
+  },
+  "sizes": {
+    "25m": {
+      "dimensions_mm": {"depth": 1600, "top_width": 700, "top_surface_width": 540, "top_notch_depth": 70, "top_edge": 130, "top_splay": 75, "web_height": 1000, "bottom_splay": 100, "bottom_edge": 225, "bottom_width": 650, "web_width": 180},
+      "published_area_m2": 0.5290,
+      "fitted_web_width_mm": 179.5,
+      "provenance": "fitted-reconstruction"
+    },
+    "30m": {
+      "dimensions_mm": {"depth": 1700, "top_width": 800, "top_surface_width": 640, "top_notch_depth": 70, "top_edge": 130, "top_splay": 120, "web_height": 880, "bottom_splay": 250, "bottom_edge": 250, "bottom_width": 700, "web_width": 200},
+      "published_area_m2": 0.6723,
+      "fitted_web_width_mm": 200.0,
+      "provenance": "fitted-reconstruction"
+    },
+    "35m": {
+      "dimensions_mm": {"depth": 1850, "top_width": 800, "top_surface_width": 640, "top_notch_depth": 70, "top_edge": 130, "top_splay": 120, "web_height": 1055, "bottom_splay": 225, "bottom_edge": 250, "bottom_width": 700, "web_width": 200},
+      "published_area_m2": 0.6960,
+      "fitted_web_width_mm": 199.96,
+      "provenance": "fitted-reconstruction"
+    },
+    "40m": {
+      "dimensions_mm": {"depth": 2100, "top_width": 800, "top_surface_width": 640, "top_notch_depth": 70, "top_edge": 130, "top_splay": 120, "web_height": 1280, "bottom_splay": 250, "bottom_edge": 250, "bottom_width": 700, "web_width": 200},
+      "published_area_m2": 0.7523,
+      "fitted_web_width_mm": 200.0,
+      "provenance": "fitted-reconstruction"
+    }
+  },
+  "residuals": {
+    "25m": "web 180 adopted (exact fit 179.5): area 529,550 vs published 529,000 mm2 (+0.10%)",
+    "30m": "web 200: area 672,300 = published 0.6723 m2 exactly",
+    "35m": "web 200: area 696,050 vs published 0.6960 m2 (+50 mm2, exactly the 4-decimal rounding boundary; exact fit 199.96)",
+    "40m": "web 200: area 752,300 = published 0.7523 m2 exactly"
+  },
+  "geometry_notes": [
+    "Printed on the sketches: depth; the vertical chain (70 / 130 / top splay / web / bottom splay / bottom side); the top-width chain 80 + 540/640 + 80; and the bottom width. The chains close to the depth for all four spans.",
+    "Interpretation of the 80 x 70 top detail: the top surface is narrower (540/640) over the top 70 mm, stepping out 80 mm each side to the full 700/800 flange for a further 130 mm. It is the edge rebate typical of Japanese-style PC-I girders. The exact area fits below confirm this reading.",
+    "The web width is not printed (FITTED). Solving the gross area for the web with every other printed dimension gives 200.0 mm for 30 and 40 m, 199.96 mm for 35 m (published area at its rounding limit), and 179.5 mm for 25 m. The round value 180 is adopted for 25 m and 200 for the rest.",
+    "Straight splays with no chamfers or fillets; none are drawn at this sketch scale.",
+    "Status: a JICA preliminary design for cost estimation. It is not an issued RHD standard drawing and gives no construction evidence.",
+    "The separate JICA Cross-Border Road Network report (bangladesh-jica.pdf, Table 8.3.1) proposes different PC-I girders: b6 = 0.70/0.70/0.65/0.65/0.80 m and H = 1.60/1.70/1.85/2.10/2.20 m at 25-45 m. Its web and flange dimensions are not given, and it is not merged with this family."
+  ]
+}
