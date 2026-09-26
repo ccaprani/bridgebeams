@@ -1,8 +1,8 @@
 {
   "count_basis": "Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
-  "researched_jurisdictions": 122,
-  "source_records": 233,
+  "researched_jurisdictions": 169,
+  "source_records": 355,
   "implemented_countries": 46,
   "implemented_profiles": 1801,
   "country_profile_assignments": 1976,
@@ -17,20 +17,50 @@
     {
       "code": "AF",
       "name": "Afghanistan",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Interim Road & Highway Standards (2005), EN",
+          "url": "https://www.scribd.com/document/686111563/Interim-Road-and-Highway-Standards-Mar-05",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-AF",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "AASHTO LRFD fallback for bridges"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "AL",
       "name": "Albania",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Trare Urash\" product page (SQ",
+          "url": "https://ixhem.com/trare-urash/)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-AL",
+          "language": "SQ",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Pretensioned I-beams \u226429 m (Tirana\u2013Vor\u00eb overpasses)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "DZ",
@@ -96,11 +126,26 @@
             "pretensioned I"
           ],
           "title_original": "Ponte do Soyo sobre o canal Cadal"
+        },
+        {
+          "title": "Ponte do Soyo project page, PT",
+          "url": "https://www.betar.pt/projecto/ponte-do-soyo-sobre-o-canal-cadal-para-acesso-a-base-do-kwanda-da-alng/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-AO",
+          "language": "PT",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast PSC I-beams 1.20 m (Soyo)",
+            " PSC box (Kwanza)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -235,11 +280,25 @@
             "Prestressed bridge beams"
           ],
           "title_original": "Production"
+        },
+        {
+          "title": "Construction.am news, HY",
+          "url": "https://www.construction.am/arm/news/784-new-bridge-sadakhlo-bagratashen-border/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-AM",
+          "language": "AR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "PSC beams 5\u00d732 m (Sadakhlo\u2013Bagratashen)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -418,21 +477,53 @@
             "Experimental thin-wall girders"
           ],
           "title_original": "D\u00fcnnwandige Beton-Fertigteiltr\u00e4ger im Br\u00fccken- und Ingenieurbau"
+        },
+        {
+          "title": "Planungsgrundlagen f\u00fcr Eisenbahnbr\u00fccken\" 2008 (DE",
+          "url": "https://de.scribd.com/document/680674004/)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-AT",
+          "language": "DE",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "No standard PSC beam family",
+            " bespoke rail/road PSC",
+            " deck-equipment Regelquerschnitte only"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "sources": [
+        {
+          "title": "Impoyapi Khachmaz girder plant, RU",
+          "url": "https://www.impoyapi.com/ru/azerbaycan-xacmaz-ongerilmeli-kopru-kirisi-uretim-tesisi.html",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-AZ",
+          "language": "RU",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "custom PSC girders",
+            " Khachmaz precast plant"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
       "source_count": 1,
       "researched": true
-    },
-    {
-      "code": "AZ",
-      "name": "Azerbaijan",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
     },
     {
       "code": "BH",
@@ -449,11 +540,26 @@
             "segmental bridge units"
           ],
           "title_original": "Delmon Precast"
+        },
+        {
+          "title": "MoW Standard Specifications for Construction Works 2019, EN",
+          "url": "https://www.works.gov.bh/English/Tenders/pages/standardconstruction.aspx",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BH",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "not nationally standardised",
+            " AASHTO M203/LRFD refs"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -509,11 +615,26 @@
     {
       "code": "BB",
       "name": "Barbados",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Ministry page (EN)",
+          "url": "https://www.gov.bb/ministries/transport-works-water-resources",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BB",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "none found"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "BY",
@@ -529,11 +650,28 @@
             "Railway precast spans (catalogue navigation)"
           ],
           "title_original": "\u041f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f"
+        },
+        {
+          "title": "\u0421\u0435\u0440\u0438\u044f 3.503-12 (RU",
+          "url": "https://meganorm.ru/Data2/1/4293844/4293844232.htm)",
+          "status": "national standard family (dimensions not free)",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BY",
+          "language": "RU",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Soviet unified series 3.503-12 (12\u201324 m)",
+            " 3.503.1-81 I-beams (12/15/18/21/24/33 m)",
+            " 3.503-14 (18/21 m)",
+            " code \u0422\u041a\u041f 45-3.03-232-2011"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -575,21 +713,50 @@
             "Concrete bridge planks"
           ],
           "title_original": "Precast Concrete Products"
+        },
+        {
+          "title": "MIDH Annual Technical Report 2023\u201324 (EN)",
+          "url": "https://www.pressoffice.gov.bz/wp-content/uploads/2024/10/Min-of-Infrastructure-Dev-Housing-ATR-2023-2024.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BZ",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AASHTO Type IV beams on recent project"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "sources": [
+        {
+          "title": "ARMP documents-types (procurement only), FR",
+          "url": "https://armp.bj/documents-types-dappel-a-concurrence-actualises-au-mois-de-juin-2023-au-profit-des-acteurs-du-systeme-des-passation-des-marches-publics/",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BJ",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "none public"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
       "source_count": 1,
       "researched": true
-    },
-    {
-      "code": "BJ",
-      "name": "Benin",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
     },
     {
       "code": "BM",
@@ -605,6 +772,21 @@
       "name": "Bhutan",
       "sources": [
         {
+          "title": "Bridge Reference Manual 2005\" (EN)",
+          "url": "https://www.moit.gov.bt/wp-content/uploads/2018/05/Bridge-Reference-Manual.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BT",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "RC slab/deck-girder standards SB2 series",
+            " PSC project-only"
+          ],
+          "title_original": ""
+        },
+        {
           "title": "Same as original",
           "url": "https://www.moit.gov.bt/wp-content/uploads/2016/07/Dopshari-Drawings.pdf",
           "status": "blocked",
@@ -619,17 +801,33 @@
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
       "code": "BO",
       "name": "Bolivia",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Gu\u00eda de Dise\u00f1o de Puentes ABC 2009\" (copy), ES",
+          "url": "https://www.scribd.com/document/762625865/11-Guia-de-Puentes-2009",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BO",
+          "language": "ES",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Viga pretensada \"tipo P\" (project-specific)",
+            " postensado in viaducts"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "BA",
@@ -645,11 +843,25 @@
             "Bridge girders"
           ],
           "title_original": "Predgotovljeni elementi"
+        },
+        {
+          "title": "Op\u0107a smjernica za mostove na cestama\" 1-2-1 (BS",
+          "url": "https://jpcfbih.ba/assets/files/1-2-1_opca_smjernica_za_mostove_na_cestama.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BA",
+          "language": "BS",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Monta\u017eni prednapeti T/I nosa\u010di + monolithic deck (Avijati\u010darski most: 5\u00d726.6 m)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -666,11 +878,26 @@
             "prestressed T beam"
           ],
           "title_original": "SA\u2013Botswana Platjan bridge"
+        },
+        {
+          "title": "Standard Specifications for Road & Bridge Works (Green Book), EN",
+          "url": "https://www.scribd.com/document/761792135/Green-Book-Standard-Specifications-for-Road-Bridge-Works-BOTSWANA",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BW",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Green Book \u00a76500 prestressing",
+            " SA precast supply"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -842,11 +1069,26 @@
             "PSPC I"
           ],
           "title_original": "DYWIDAG Strand Tendons for flowing Road Traffic: New Viaducts in Brunei"
+        },
+        {
+          "title": "Sg Buaya permanent bridge tender (EN)",
+          "url": "https://www.scribd.com/document/956382495/JPPK-LTN-07-2024-D-B-Construction-of-Permanent-Bridge-at-Sg-Buaya-v2",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BN",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Malaysian JKR families: PT I-beam",
+            " pre-tensioned inverted-T"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -924,11 +1166,26 @@
     {
       "code": "BF",
       "name": "Burkina Faso",
-      "sources": [],
+      "sources": [
+        {
+          "title": "AGETIB site, FR",
+          "url": "https://www.agetib.net/",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BF",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "none public"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "BI",
@@ -953,6 +1210,22 @@
             "PC composite T"
           ],
           "title_original": "Preparatory Survey on the Project for Construction of Neak Loeung Bridge"
+        },
+        {
+          "title": "Standard Drawings Part2: Road Structure Bridge3 POST TENSION HOLLOW SLAB\" Prakas 511/2012 (KH/EN)",
+          "url": "https://www.mpwt.gov.kh/en/documents/declaration/39",
+          "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-KH",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "pre-tensioned hollow-slab PSC 15\u201325 m",
+            " PT deck girders (PCDG) 18\u201330 m",
+            " widths 7/8/10/12 m"
+          ],
+          "title_original": ""
         }
       ],
       "families": [
@@ -977,7 +1250,7 @@
         }
       ],
       "count": 1,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -994,11 +1267,26 @@
             "VIPP post-tensioned precast girder"
           ],
           "title_original": "Projet de pont sur le Logone \u2014 R\u00e9sum\u00e9 EIES, juillet2017"
+        },
+        {
+          "title": "ARMP AMI notice (referentiel revision), FR",
+          "url": "https://armp.cm/details?id_publication=1191&type_publication=AMI",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CM",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "PSC bridges rehabilitated",
+            " normative referential under revision"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -1445,11 +1733,28 @@
             "U"
           ],
           "title_original": "Infraestructura"
+        },
+        {
+          "title": "Art. 633 Prefabricados de concreto reforzado de gran formato\" INV\u00cdAS-2022, ES",
+          "url": "https://www.invias.gov.co/index.php/archivo-y-documentos/documentos-tecnicos/13335-art-633-prefabricados-de-concreto-reforzado-de-gran-formato/file",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CO",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "I",
+            " doble T",
+            " U pretensadas",
+            " caj\u00f3n"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -1484,6 +1789,21 @@
             "Pretensioned and post-tensioned bridge beams"
           ],
           "title_original": "Elementos Prefabricados"
+        },
+        {
+          "title": "Manual de Puentes CR MP-2024 Tomo I\" (Decreto 44808-MOPT), ES",
+          "url": "https://www.mopt.go.cr/sites/default/files/destacados/planificacion-sectorial/normativa/manuales/cr-2020/2025/mp2024-tomo-i.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CR",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Vigas I prefabricadas",
+            " caj\u00f3n"
+          ],
+          "title_original": ""
         }
       ],
       "families": [
@@ -1514,7 +1834,7 @@
         }
       ],
       "count": 3,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -1567,11 +1887,27 @@
     {
       "code": "CU",
       "name": "Cuba",
-      "sources": [],
+      "sources": [
+        {
+          "title": "NC 53-125 Puentes y alcantarillas\" (unofficial copy), ES",
+          "url": "https://es.scribd.com/document/448186165/NC-53-125-puentes-y-alcantarillas",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CU",
+          "language": "ES",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Prefabricated prestressed beams (own norms",
+            " Soviet-era practice)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "CW",
@@ -1585,11 +1921,27 @@
     {
       "code": "CY",
       "name": "Cyprus",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Tremithousa\u2013Paphos tender (EL",
+          "url": "https://www.eprocurement.gov.cy/epps/cft/prepareViewCfTWS.do?resourceId=7179685)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CY",
+          "language": "EL",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Precast beams + CIP RC deck",
+            " per tender"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "CZ",
@@ -1642,21 +1994,55 @@
             "MS - I - 24/1,0"
           ],
           "title_original": "p\u0159edpjat\u00e9 mostn\u00ed nosn\u00edky MS - I"
+        },
+        {
+          "title": "ZPSV \"Mostn\u00ed nosn\u00edky MK-T; PETRA\" (CS",
+          "url": "https://www.zpsv.cz/mostni-konstrukce-a-propustky/mostni-prvky/zakazkova-vyroba-mostnich-nosniku-mk-t-petra/:",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CZ",
+          "language": "CS",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Typified series KA-61/67/73 (box",
+            " 9\u201318 m)",
+            " I-62/67/73",
+            " I-90 (21\u201330 m)",
+            " VS-T",
+            " current MK-T"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 3,
+      "source_count": 4,
       "researched": true
     },
     {
       "code": "CD",
       "name": "Democratic Republic of the Congo",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Horion project page, FR",
+          "url": "https://dev.horiondrc.com/projets/pont-kasai",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CD",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "3-span PSC Kasa\u00ef bridge study"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "DK",
@@ -1758,21 +2144,52 @@
             "Bridge/elevated-road beams"
           ],
           "title_original": "CONDE PRE-FABRICADOS"
+        },
+        {
+          "title": "Reglamento de Construcci\u00f3n de Puentes\" (2023), ES",
+          "url": "https://portalweb.mopc.gob.do/media/25062/reglamento-de-construcci%C3%B3n-de-puentes.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-DO",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Pretensadas (AASHTO-referenced)"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "TL",
+      "name": "East Timor",
+      "sources": [
+        {
+          "title": "JICA/MOP bridge study (EN/PT)",
+          "url": "https://openjicareport.jica.go.jp/pdf/11592086_01.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-TL",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "PT box girder (Hinode",
+            " Dili)",
+            " PSC girder bridges (ADB/JICA)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
       "source_count": 1,
       "researched": true
-    },
-    {
-      "code": "TL",
-      "name": "East Timor",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
     },
     {
       "code": "EC",
@@ -1801,11 +2218,27 @@
             "Bulb T"
           ],
           "title_original": "Prefabricados y Pretensados de Hormig\u00f3n"
+        },
+        {
+          "title": "NEVI-12 Vol. 3, Secci\u00f3n 502\" ES",
+          "url": "https://www.obraspublicas.gob.ec/wp-content/uploads/downloads/2013/12/01-12-2013_Manual_NEVI-12_VOLUMEN_3.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-EC",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Viga I AASHTO pretensada (h\u22481.2 m",
+            " L=30 m)",
+            " caj\u00f3n"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -1822,11 +2255,25 @@
             "bridge girders"
           ],
           "title_original": "Precast Concrete Infrastructure History"
+        },
+        {
+          "title": "JICA C3 Nile crossing study, EN",
+          "url": "https://openjicareport.jica.go.jp/pdf/12002044_03.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-EG",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AASHTO-type precast PSC I-girders (32 m/30 m approach spans)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -1857,11 +2304,26 @@
             "AASHTO Tipo IV"
           ],
           "title_original": "Mejoramiento de camino rural UNI07E, tramo carretera Anchico - Yayantique"
+        },
+        {
+          "title": "Manual Centroamericano de Lineamientos para la Planificaci\u00f3n y Dise\u00f1o de Puentes y Obras de Paso\" (2022), ES",
+          "url": "https://dacger.mop.gob.sv/wp-content/uploads/download-manager-files/ManualPuentes.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SV",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "I",
+            " doble-T pretensadas (0.045L rule)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -1896,21 +2358,55 @@
             "ZIP"
           ],
           "title_original": "ViaPlus sillad, tunnelid, m\u00fcraseinad"
+        },
+        {
+          "title": "ViaPlus infrastructure product page (EN",
+          "url": "https://betoonelement.ee/en/solutions/viaplus-infrastructure/)",
+          "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-EE",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "ZIP beams (inverted-T",
+            " side-by-side + CIP deck)",
+            " T-beams",
+            " box beams 950\u00d71000 mm",
+            " \u226427 m/42 t"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "sources": [
+        {
+          "title": "Eswatini road-specifications note, EN",
+          "url": "https://chimston.com/en-sz/eswatini-specifications/",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SZ",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "none",
+            " SATCC/COLTO spec environment"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
       "source_count": 1,
       "researched": true
-    },
-    {
-      "code": "SZ",
-      "name": "Eswatini",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
     },
     {
       "code": "ET",
@@ -1938,11 +2434,26 @@
           "locator": "repository abstract, final sentence; attached Beruk berhane.pdf not yet visually checked",
           "family_names": [],
           "title_original": "Prestressed Concrete Bridge Design and Construction Practices and Prospects in Ethiopia"
+        },
+        {
+          "title": "Bridge Design Manual Part 3 (2013) Ch.2 PSC, EN",
+          "url": "https://www.scribd.com/document/368010123/Bridge-Design-Manual-Part-3-July14Final-MASTER",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-ET",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast post-tensioned T-girders 20\u201345 m",
+            " box girders"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -1986,11 +2497,26 @@
             "precast bridge beam"
           ],
           "title_original": "Fletcher Higgins \u2014 Fiji critical bridges"
+        },
+        {
+          "title": "FRA Structures Design Guide Supplement Rev V3.0\" (EN)",
+          "url": "https://www.fijiroads.org/wp-content/uploads/2024/04/FRA-Structures-Design-Guide-Supplement-Rev-V3.0-.pdf",
+          "status": "imported foreign standard system",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-FJ",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast PSC beams (Tamavua-i-Wai)",
+            " AS 5100 basis"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -2007,11 +2533,29 @@
             "Parma j\u00e4nnepalkki"
           ],
           "title_original": "Parman j\u00e4nnepalkkisilta, yleispiirustus"
+        },
+        {
+          "title": "TIEL 2160004-2000 \"J\u00e4nnitetty elementtisilta\" tyyppipiirustussarja + ohje, 84 pp (FI, PDF",
+          "url": "https://www.tieh.fi/sillat/julkaisut/jbe00.pdf",
+          "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-FI",
+          "language": "FI",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "\"J\u00e4nnitetty elementtisilta\": prestressed rectangular/trapezoid/I beams",
+            " L=16\u201340 m",
+            " H=1200\u20132100 mm",
+            " spacing 1.5\u20132.7 m",
+            " strand \u00d812.5/12.9 St1570/1770\u20131630/1860"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -2092,11 +2636,27 @@
     {
       "code": "PF",
       "name": "French Polynesia",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Titaaviri deviation study (FR)",
+          "url": "https://www.service-public.pf/dca/wp-content/uploads/sites/26/2023/07/2008_Tiaaviri_2.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-PF",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "locally-made pre-tensioned poutrelles",
+            " \"technique SNCF\""
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "TF",
@@ -2110,11 +2670,27 @@
     {
       "code": "GA",
       "name": "Gabon",
-      "sources": [],
+      "sources": [
+        {
+          "title": "TRID record (beam replacement paper), FR",
+          "url": "https://trid.trb.org/View/1020599",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GA",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "4 PSC beams/span",
+            " 41 m girder (Bokou\u00e9 1976)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "GE",
@@ -2130,11 +2706,25 @@
             "Project-specific prestressed bridge girders"
           ],
           "title_original": "TEWHIP AF Environmental Impact Assessment"
+        },
+        {
+          "title": "CS Georgia bridge projects, EN",
+          "url": "https://www.cs.ge/en/rehabilitation-and-construction-of-highway-and-railway-bridges",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GE",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "PSC composite beams (2\u00d716 m Zugdidi)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -2167,11 +2757,30 @@
             "100/100 cm"
           ],
           "title_original": "VMP\u00ae-Bauweise / Vorgespannte Modul-Plattenbauweise"
+        },
+        {
+          "title": "ARS Nr. 24/1999 \"Spannbetonfertigteilbr\u00fccken \u2013 Typenentw\u00fcrfe\" (DE, TRID record",
+          "url": "https://trid.trb.org/View/958824",
+          "status": "national standard family (dimensions not free)",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-DE",
+          "language": "DE",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Spannbeton-Fertigteilbr\u00fccken Typenentw\u00fcrfe (RQ 10",
+            "5 over RQ 26/29",
+            "5/35",
+            "5)",
+            " railway Parallelgurttr\u00e4ger bespoke (h\u22481.2 m",
+            " 18\u201322 m fields)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -2188,17 +2797,49 @@
             "claimed bridge beams"
           ],
           "title_original": "Engineered Precast. Built for Ghana."
+        },
+        {
+          "title": "MRH Standard Specification for Road & Bridge Works 2007 (\u00a721 PSC), EN",
+          "url": "https://www.highways.gov.gh/rs_standards",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GH",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "PSC works specified",
+            " project-designed beams"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
       "code": "GR",
       "name": "Greece",
       "sources": [
+        {
+          "title": "PROKEL \"\u0394\u03bf\u03ba\u03bf\u03af \u03b3\u03b5\u03c6\u03c5\u03c1\u03ce\u03bd\" (EL",
+          "url": "https://www.prokel.gr/dokoi-gefirwn/)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GR",
+          "language": "EL",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "LOCAL pretensioned I-girders 10\u201340 m",
+            " h\u22642.6 m (PROKEL 200+ girders",
+            " ARMOS 72 m bed",
+            " \u226424 m/40 t)"
+          ],
+          "title_original": ""
+        },
         {
           "title": "Technical description: improvement of the Ancient Nemea junction\u2013Dervenakia\u2013Mycenae road, Argolis",
           "url": "https://www.ppel.gov.gr/wp-content/uploads/2022/07/8_-%CE%A4%CE%95%CE%A7%CE%9D%CE%99%CE%9A%CE%97-%CE%A0%CE%95%CE%A1%CE%99%CE%93%CE%A1%CE%91%CE%A6%CE%97-%CE%94%CE%95%CE%A1%CE%92%CE%95%CE%9D%CE%91%CE%9A%CE%99%CE%91_final_signed-2.pdf",
@@ -2266,7 +2907,7 @@
         }
       ],
       "count": 2,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -2290,11 +2931,27 @@
     {
       "code": "GU",
       "name": "Guam",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Bridge Design Guidelines\" (EN)",
+          "url": "https://www.guamtransportationprogram.com/docs/pages/about-the-program/design-and-construction-resources/design-resources/bridge-design-guidelines.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GU",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "AASHTO LRFD girder superstructures",
+            " Standard Plans 2012"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "GT",
@@ -2324,11 +2981,26 @@
             "vigas tipo AASHTO"
           ],
           "title_original": "Estructuras prefabricadas: vigas tipo AASHTO para puentes"
+        },
+        {
+          "title": "AGIES NSE 5.2:2024 Puentes de tama\u00f1o y altura limitados\", ES",
+          "url": "https://conred.gob.gt/wp-content/uploads/2026/02/NSE-5.2-2024-Puentes-de-Tamano-y-Altura-Limitados.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GT",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "I AASHTO pretensada (HL-93",
+            " 5000 psi)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -2385,11 +3057,25 @@
             "Project-specific precast concrete girders"
           ],
           "title_original": "First precast girder installed for new Demerara River Bridge"
+        },
+        {
+          "title": "DPI progress report (EN)",
+          "url": "https://dpi.gov.gy/new-mackenzie-wismar-bridge-on-schedule-83-5-per-cent-complete/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GY",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "post-tensioned box girder (Mackenzie\u2013Wismar)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -2439,17 +3125,46 @@
             "AASHTO Tipo IV"
           ],
           "title_original": "Memoria Institucional INSEP 2019"
+        },
+        {
+          "title": "Manual de Carreteras Tomo 6: Drenaje y Puentes\" (1996), ES",
+          "url": "https://www.tsc.gob.hn/biblioteca/index.php/manuales?start=12",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-HN",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AASHTO girders per Tomo 6 + LRFD"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
       "code": "HK",
       "name": "Hong Kong",
       "sources": [
+        {
+          "title": "Structures Design Manual 2013 (EN)",
+          "url": "https://www.hyd.gov.hk/en/technical_references/technical_document/structures_design_manual_2013/doc/SDM2013.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-HK",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "pretensioned beams used historically",
+            " not in register"
+          ],
+          "title_original": ""
+        },
         {
           "title": "Same as original",
           "url": "https://www.epd.gov.hk/eia/files/applications/tc/pp_689/eia_1498/progress/action_3475/report/html/Sec2-RevA.htm",
@@ -2465,7 +3180,7 @@
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -2657,11 +3372,27 @@
     {
       "code": "IS",
       "name": "Iceland",
-      "sources": [],
+      "sources": [
+        {
+          "title": "\u00c1stand spennik\u00e1bla \u00ed steypu\u00f0um br\u00fam\" (IS",
+          "url": "https://www.vegagerdin.is/media/2023/07/astand-spennikapla-i-steyptum-brum.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-IS",
+          "language": "IS",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Post-tensioned concrete girder bridges (Borgarfjar\u00f0arbr\u00fa 520 m",
+            " S\u00f3lheimasandi 163 m)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "IN",
@@ -3135,11 +3866,25 @@
             "precast bridge slab"
           ],
           "title_original": "\u067e\u0631\u0648\u0698\u0647\u200c\u0647\u0627\u06cc \u0627\u062c\u0631\u0627 \u0634\u062f\u0647"
+        },
+        {
+          "title": "\u0646\u0634\u0631\u06cc\u0647 \u06f1\u06f0\u06f2 \u00ab\u0645\u062c\u0645\u0648\u0639\u0647 \u0646\u0642\u0634\u0647\u200c\u0647\u0627\u06cc \u062a\u06cc\u067e \u062a\u0627\u0628\u0644\u06cc\u0647 \u067e\u0644\u200c\u0647\u0627 (\u067e\u06cc\u0634\u200c\u0633\u0627\u062e\u062a\u0647\u060c \u067e\u06cc\u0634\u200c\u062a\u0646\u06cc\u062f\u0647\u060c \u062f\u0631\u062c\u0627) \u062a\u0627 \u062f\u0647\u0627\u0646\u0647 \u06f2\u06f0 \u0645\u062a\u0631\u00bb, FA",
+          "url": "https://civil20.blogfa.com/post/8171",
+          "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-IR",
+          "language": "FA",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast/prestressed typical bridge decks to 20 m span"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -3157,11 +3902,26 @@
             "post-tensioned bridge girder"
           ],
           "title_original": "Production Lines"
+        },
+        {
+          "title": "Standard Specifications for Roads & Bridges (rev. 2003), EN",
+          "url": "https://iraqcontractorstorage.blob.core.windows.net/root/root/images/14822024_Roadandbridgespecifications.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-IQ",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "PSC per spec B9 (BS-based",
+            " AASHTO/BS in tenders)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4002,11 +4762,26 @@
             "match-cast segmental box"
           ],
           "title_original": "Infrastructure Products"
+        },
+        {
+          "title": "\u05ea\"\u05d9 466 \u05d7\u05dc\u05e7 3 \u05d1\u05d8\u05d5\u05df \u05d3\u05e8\u05d5\u05da, HE",
+          "url": "https://www.sii.org.il/he/lobby/standardization/standard-page/?id=1682",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-IL",
+          "language": "HE",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "trough/U girders",
+            " inverted double-T (project-specific)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4200,17 +4975,45 @@
             "pretensioned bonded-wire beam"
           ],
           "title_original": "Addendum n\u00b001, DAO Boulevard de la Paix et Voie express de Yopougon"
+        },
+        {
+          "title": "Bassam\u2013Assouind\u00e9 APD calc note, FR",
+          "url": "https://fr.scribd.com/document/910231413/C225-12185-APD-001-02-2",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CI",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "9 precast PSC beams per 24 m span"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
       "code": "JM",
       "name": "Jamaica",
       "sources": [
+        {
+          "title": "NWA Documentation Centre (EN)",
+          "url": "https://www.nwa.gov.jm/services/documentation",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-JM",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "concrete T-beams/girders in inventory"
+          ],
+          "title_original": ""
+        },
         {
           "title": "Same as original",
           "url": "https://www.nwa.gov.jm/sites/default/files/publications/october%202017%20EIA_SCHIPSeg1_HarbourViewYallahs_Draft%20Final%20NEPA_Rev%202.pdf",
@@ -4226,7 +5029,7 @@
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4549,11 +5352,26 @@
             "precast transverse beam"
           ],
           "title_original": "Wadi Mujib Cable Stay Bridge"
+        },
+        {
+          "title": "Jordan Code for Roads & Bridges (JNBC page, AR)",
+          "url": "https://www.jnbc.gov.jo/Pages/viewpage.aspx?pageID=212",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-JO",
+          "language": "AR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AASHTO girders",
+            " e.g. Type IV post-tensioned (Mukharis)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4581,11 +5399,27 @@
             "\u0412\u0422\u041a/VTK"
           ],
           "title_original": "\u041c\u043e\u0441\u0442\u043e\u0432\u0430\u044f \u0431\u0430\u043b\u043a\u0430 \u0412\u0422\u041a 21,24,33 \u043c"
+        },
+        {
+          "title": "\u0421\u0422 \u0420\u041a 3368-2019 (PSC bridge elements), RU",
+          "url": "https://new-shop.ksm.kz/catalog/document/71112/",
+          "status": "Soviet/Russian typovye series adoption",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-KZ",
+          "language": "RU",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "\u0441\u0435\u0440\u0438\u044f 3.503.1-81 \u0434\u0432\u0443\u0442\u0430\u0432\u0440\u043e\u0432\u044b\u0435 \u0431\u0430\u043b\u043a\u0438 12\u201333 \u043c",
+            " \u0422\u0411\u041d-33-3\u0414",
+            " \u0422\u0423 640 \u0420\u041a beams \u226424 \u043c"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -4604,11 +5438,26 @@
             "hollow-core deck slab"
           ],
           "title_original": "Post-tensioned girders for bridge construction"
+        },
+        {
+          "title": "Standard Specification for Road & Bridge Construction 1986 \u00a718, EN",
+          "url": "https://kenha.co.ke/wp-content/uploads/2023/01/Standard-Specification-for-Road-Bridge-Construction-1986.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-KE",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "project PSC girders (C40/50)",
+            " Chinese-std box girder (Baricho)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4623,11 +5472,26 @@
     {
       "code": "XK",
       "name": "Kosovo",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Alstone Catalogue 2021 (EN/SQ",
+          "url": "https://www.alstone-ks.com/wp-content/uploads/2021/07/Alstone-Catalogue-2021.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-XK",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Pretensioned bridge beams produced locally"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "KW",
@@ -4643,11 +5507,27 @@
             "bridge girders"
           ],
           "title_original": "Infrastructure Projects"
+        },
+        {
+          "title": "Bridges & Highway Structures Design Manual, EN",
+          "url": "https://studylib.net/doc/25666350/kuwait-road--design-manual",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-KW",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast pretensioned I-beams",
+            " voided slabs",
+            " box beams"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4666,11 +5546,26 @@
             "\u041f\u041c-7,0"
           ],
           "title_original": "\u0420\u0435\u0435\u0441\u0442\u0440 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0432 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u044f \u043d\u0430 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b"
+        },
+        {
+          "title": "\u0421\u041f \u041a\u0420 \u00ab\u041c\u043e\u0441\u0442\u044b \u0438 \u0442\u0440\u0443\u0431\u044b\u00bb, RU",
+          "url": "https://gosstroy.gov.kg/index.php/ru/state_program/download-pdf/spkrmostyitruby_compressed-6756662e14409d748.76481998.pdf",
+          "status": "Soviet/Russian typovye series adoption",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-KG",
+          "language": "RU",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Soviet series legacy",
+            " \u0421\u041f \u041a\u0420 bridge rules"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4687,11 +5582,25 @@
             "PC girder"
           ],
           "title_original": "Preparatory Study for Improvement of Roads and Bridges in the Southern Region in Lao PDR"
+        },
+        {
+          "title": "NR13 Bridge Terms of Reference (EN)",
+          "url": "https://www.mpwt.gov.la/download_project?id=352",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-LA",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "precast PSC I-girders (NR13 replacements)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4708,11 +5617,26 @@
             "Bridge producer"
           ],
           "title_original": "Dzelzsbetons"
+        },
+        {
+          "title": "LVC study P\u0113t\u012bjums VAT52 (LV",
+          "url": "https://lvceli.lv/wp-content/uploads/2021/09/Petijums_VAT52t.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-LV",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "11 typified precast span types incl. spriegb utilde",
+            " Soviet-era + modern"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -4729,6 +5653,45 @@
             "precast post-tensioned beam"
           ],
           "title_original": "FIDAR BRIDGE, LEBANON"
+        },
+        {
+          "title": "GTC Plus \"Columns & Beams\", EN",
+          "url": "https://www.gtcplus.com/columns-beams/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-LB",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "factory precast PSC girders (GTC Plus",
+            " Chkka)"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "sources": [
+        {
+          "title": "Design Standards & Explanatory Notes for Bridges Vol.2, EN",
+          "url": "https://www.preventionweb.net/media/88106/download?startDownload=20260513",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-LS",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "SANRAL-based bridge standards Vol. 2"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
@@ -4737,31 +5700,54 @@
       "researched": true
     },
     {
-      "code": "LS",
-      "name": "Lesotho",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
-    },
-    {
       "code": "LR",
       "name": "Liberia",
-      "sources": [],
+      "sources": [
+        {
+          "title": "AfDB Mano River Union appraisal report, EN",
+          "url": "https://www.afdb.org/sites/default/files/documents/board-documents/multinational-ar-mano_river_union_liberia-cote_d_ivoire_road_development_and_transport_facilitation_programme_-_phase_2.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-LR",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "proposed PSC girder bridge (Nuon",
+            " 6 beams)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "LY",
       "name": "Libya",
-      "sources": [],
+      "sources": [
+        {
+          "title": "LCSS project post-96, AR",
+          "url": "https://lcss.gov.ly/blog/post-96/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-LY",
+          "language": "AR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "20 m precast PSC beams (Sidi Younis",
+            " Benghazi)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "LI",
@@ -4813,38 +5799,101 @@
     {
       "code": "LU",
       "name": "Luxembourg",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Revue Technique Luxembourgeoise Hors-s\u00e9rie No.4 (FR",
+          "url": "https://travaux.public.lu/dam-assets/fr/publications/r/revue-technique-luxembourgeoise/rt-hs-004.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-LU",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Ponts \u00e0 poutres pr\u00e9contraintes (OA 498/499 Insenborn ~37 m",
+            " Moestroff PT slab)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "MO",
       "name": "Macau",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Decreto-Lei 60/96/M RC/PSC code (PT)",
+          "url": "https://bo.dsaj.gov.mo/bo/ba/i/96/41/declei60.asp",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MO",
+          "language": "PT",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "PT box girders in major sea bridges (project D-B)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "MG",
       "name": "Madagascar",
-      "sources": [],
+      "sources": [
+        {
+          "title": "D\u00e9cret D2020-022 (accord, 880 m bridge), FR",
+          "url": "https://cnlegis.gov.mg/uploads/D2020-022%28Accord%29.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MG",
+          "language": "FR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "VIPP precast PSC beams",
+            " 40 m spans (Mangoky RN9)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "MW",
       "name": "Malawi",
-      "sources": [],
+      "sources": [
+        {
+          "title": "RA design consultancy RFP 2024, EN",
+          "url": "https://www.ra.org.mw/wp-content/uploads/2024/07/27062024_RFP_Design-Consultancy-Services_of-Capacity-Improvement-of-Crossroad-Maula-road.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MW",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "BS 5400 + SATCC",
+            " 1988 draft bridge specs"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "MY",
@@ -5114,6 +6163,44 @@
             "precast segmental bridge girder"
           ],
           "title_original": "Insight July2023: GMCP Bridge to get world\u2019s tallest precast segments"
+        },
+        {
+          "title": "Mal\u00e9-Thilafushi Bridge project page (EN)",
+          "url": "https://www.spannovationgroup.com/projects-1/mal%C3%A9-thilafushi-bridge-project-",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MV",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "segmental PT box girder (Chinese design-build)"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "sources": [
+        {
+          "title": "AGETIPE tender-requirements page, FR",
+          "url": "https://www.agetipe.org/spip.php?article32=",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-ML",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "none public"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
@@ -5122,22 +6209,30 @@
       "researched": true
     },
     {
-      "code": "ML",
-      "name": "Mali",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
-    },
-    {
       "code": "MT",
       "name": "Malta",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Marsa Junction news (EN",
+          "url": "https://www.infrastructuremalta.com/node/75)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MT",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "PSC beams 25\u201335 m",
+            " ~36 t",
+            " in flyovers (Marsa: 350 beams/7 flyovers)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "MH",
@@ -5162,6 +6257,21 @@
       "name": "Mauritius",
       "sources": [
         {
+          "title": "RDA Bridge Design Manual, EN",
+          "url": "https://www.scribd.com/document/1070293339/Rda-Bridge-Design-Manual",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MU",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast PSC beams = standard superstructure",
+            " BS 5400 basis"
+          ],
+          "title_original": ""
+        },
+        {
           "title": "Same as original",
           "url": "https://environment.govmu.org/Documents/eia/eiareports/2017/2712-preskil/append.pdf",
           "status": "blocked",
@@ -5176,7 +6286,7 @@
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -5566,11 +6676,26 @@
             "Series3.503-12, edition2 supplement, inventory384/32"
           ],
           "title_original": "Actualizarea proiectului de execu\u0163ie: Repara\u0163ia podului M5 km215+530, Volumul1"
+        },
+        {
+          "title": "NCM F.02.02-2006 PSC elements; CP D.02.05:2017 (RO/RU",
+          "url": "https://ednc.gov.md/ru/ncm-f-02-02-2006/)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MD",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Soviet-era beams assumed",
+            " no national family"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -5596,11 +6721,25 @@
             "precast prestressed small box girder"
           ],
           "title_original": "\u041d\u044d\u0433\u0434\u04af\u0433\u044d\u044d\u0440 \u0442\u043e\u0439\u0440\u043e\u0433 \u0437\u0430\u043c \u2014 III \u0411\u04af\u043b\u044d\u0433-\u0411 \u0422\u0435\u0445\u043d\u0438\u043a\u0438\u0439\u043d \u0448\u0430\u0430\u0440\u0434\u043b\u0430\u0433\u0430"
+        },
+        {
+          "title": "Tender tech. spec. citing JTG 3362-2018, MN/EN",
+          "url": "https://user.tender.gov.mn/uploads/techspec/68cba7818cf52.pdf",
+          "status": "imported foreign standard system",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MN",
+          "language": "AR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Chinese-standard PSC girders (JTG 3362-2018)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -5617,11 +6756,27 @@
             "Project-specific prestressed bridge girders"
           ],
           "title_original": "The installation of the girders on the bridge on the Mijakovi\u0107i\u2013Vrulja road has begun"
+        },
+        {
+          "title": "Fidija bridge-over-Vruje project page (EN",
+          "url": "https://fidija.me/en/project/niskogradnja/126)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-ME",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Asymmetric-I prefab PSC girders h=1.40 m",
+            " ~32 m spans (Tara/Mojkovac\u2013Lubnice",
+            " Vruje)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -5689,11 +6844,26 @@
     {
       "code": "MZ",
       "name": "Mozambique",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Desenhos-tipo para Obras de Estradas e Pontes (2023), PT",
+          "url": "https://ane.gov.mz/document/desenhos-tipo-para-obras-de-estradas-e-pontes/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MZ",
+          "language": "PT",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "precast beams per Series 6500 tolerances"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "MM",
@@ -5710,11 +6880,26 @@
             "PC box"
           ],
           "title_original": "Republic of the Union of Myanmar, bridge construction drawings"
+        },
+        {
+          "title": "Quality Control Manual for Prestressed Concrete Girder\" (EN, 2019)",
+          "url": "https://openjicareport.jica.go.jp/pdf/12340410.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MM",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "PC I-girders",
+            " PT box girders"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -6552,11 +7737,27 @@
     {
       "code": "NC",
       "name": "New Caledonia",
-      "sources": [],
+      "sources": [
+        {
+          "title": "FCBTP prestressing guide (FR)",
+          "url": "https://rcnc.gouv.nc/sites/default/files/documents_actualites/2021-04/FCBTP%20Guide%20Complet%20pour%20le%20Web.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-NC",
+          "language": "FR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "pre-tensioned beams/dalles frequent",
+            " local precaster"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "NZ",
@@ -6681,21 +7882,50 @@
             "AASHTO tipo IV"
           ],
           "title_original": "Conocer el proceso constructivo de vigas AASHTO tipo IV para puentes, aplicado en el proyecto Puente Yahoska"
+        },
+        {
+          "title": "UCC thesis \"Puente Yahoska, Waslala \u2014 vigas AASHTO tipo IV\", ES",
+          "url": "https://repositorio.ucc.edu.ni/1177/",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-NI",
+          "language": "ES",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "AASHTO Type IV pretensadas"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
       "code": "NE",
       "name": "Niger",
-      "sources": [],
+      "sources": [
+        {
+          "title": "ANP article, FR",
+          "url": "https://anp.ne/le-pont-general-seyni-kountche-permet-le-desengorgement-du-pont-kennedy-et-du-pont-de-lamitie-sino-nigerienne-ministre-de-lequipement/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-NE",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "23 \u00d7 40 m precast PSC spans (G\u00e9n\u00e9ral Seyni Kountch\u00e9 bridge)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "NG",
@@ -6723,11 +7953,25 @@
             "segmental box"
           ],
           "title_original": "Admiralty Alexander Link-Bridge, Lagos"
+        },
+        {
+          "title": "General Specifications (Roads & Bridges) 2016 \u00a7III, EN",
+          "url": "https://studylib.net/doc/27641671/general-specifications--roads-and-bridges----2016",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-NG",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "project-specific PSC girders"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -6771,11 +8015,25 @@
             "Precast bridge girders"
           ],
           "title_original": "\u041d\u0438\u0441\u043a\u043e\u0433\u0440\u0430\u0434\u0431\u0430"
+        },
+        {
+          "title": "roads.org.mk Bregalnica progress report (MK",
+          "url": "https://roads.org.mk/2021/02/01/sledime-progres-izgradba-na-nov-most-i-rekonstrukcija-na-postoechkiot-na-reka-bregalnica-na-ekspresniot-pat-a4-shtip-radovish/)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-MK",
+          "language": "MK",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Montage PSC I/T nosa\u010di since 1970s (Bregalnica bridge A4)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -6867,11 +8125,26 @@
             "inverted T"
           ],
           "title_original": "Corporate Brochure"
+        },
+        {
+          "title": "Standard Specs for Road & Bridge Construction, EN",
+          "url": "https://pdfcoffee.com/standard-specification-for-road-and-bridge-sultanate-of-omanpdf-pdf-free.html",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-OM",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "I-girder bridges",
+            " prestressed design per AASHTO LRFD (\u00a75.4)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -7029,11 +8302,26 @@
     {
       "code": "PS",
       "name": "Palestine",
-      "sources": [],
+      "sources": [
+        {
+          "title": "PCP company site, EN/AR",
+          "url": "https://pal-cp.com/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-PS",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast infrastructure elements"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "PA",
@@ -7050,11 +8338,28 @@
             " double T"
           ],
           "title_original": "Puentes"
+        },
+        {
+          "title": "Manual de Dise\u00f1o de Puentes de Panam\u00e1\" (Gaceta 29594-A), ES",
+          "url": "https://www.gacetaoficial.gob.pa/storage/gacetas/2022/08/29594_A/92903.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-PA",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "I",
+            " U",
+            " AASHTO",
+            " Nebraska prefabricadas"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -7071,11 +8376,26 @@
             "prestressed precast bridge member"
           ],
           "title_original": "Concrete / Precast Concrete"
+        },
+        {
+          "title": "Specification for Road and Bridge Works 1995\" (EN)",
+          "url": "https://www.scribd.com/document/793187274/DoW-Specification-for-Road-and-Bridge-Works-1995",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-PG",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "NAASRA 1976 legacy",
+            " AS-aligned current"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -7092,11 +8412,26 @@
             "Project prestressed beams"
           ],
           "title_original": "Puente de vigas prefabricadas pretensadas"
+        },
+        {
+          "title": "News + pliego citing \"Manual de Dise\u00f1os Estandarizados para Puentes de HA (Res.42)\":",
+          "url": "https://arquitectos.com.py/2014/09/mopc-aprobo-manual-con-disenos-estandarizados-de-puentes-de-hormigon-armado/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-PY",
+          "language": "ES",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Prefabricated girders (HA/postensado)",
+            " viaduct beams"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -7127,11 +8462,29 @@
             "AASHTO Tipo IV"
           ],
           "title_original": "Dise\u00f1o de paso a desnivel con viga I de hormig\u00f3n pretensado Tipo IV AASHTO"
+        },
+        {
+          "title": "Manual de Carreteras: Puentes MC-04-18\" ES",
+          "url": "https://portal.mtc.gob.pe/transportes/caminos/normas_carreteras/documentos/manuales/MANUAL%20DE%20PUENTES%20PDF.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-PE",
+          "language": "ES",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "I",
+            " T",
+            " Bulb-T",
+            " doble-T",
+            " caj\u00f3n prefabricadas"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -7385,6 +8738,23 @@
           "title_original": "Anexo ao Certificado 0866-CPR-2007/CE.0069"
         },
         {
+          "title": "SPRAL \"Pr\u00e9-Fabricados Pesados\" catalogue (PT",
+          "url": "https://spral.pt/assets/uploads/5e314-cat_spral_pre_fabricados_pesados_final.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-PT",
+          "language": "PT",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Vigas pr\u00e9-fabricadas pr\u00e9-esfor\u00e7adas side-by-side",
+            " T-beams T70/T90/T110 (h=0.70/0.90/1.10 m",
+            " C35/45)",
+            " caix\u00e3o"
+          ],
+          "title_original": ""
+        },
+        {
           "title": "Design of post-tensioned, site-prefabricated girder solutions for bridge and viaduct decks",
           "url": "https://recipp.ipp.pt/entities/publication/ac6171fd-3cd7-45f3-b281-dcc0ef88b40a",
           "status": "partial_dimensions",
@@ -7406,7 +8776,7 @@
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
@@ -7624,11 +8994,26 @@
     {
       "code": "CG",
       "name": "Republic of the Congo",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Le Reflet No. 005, FR",
+          "url": "https://grands-travaux.gouv.cg.kube-tech.com/sites/default/files/2020-05/Reflet_005.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CG",
+          "language": "FR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "120 m 3-span PSC Mambili bridge (CRBC)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "RO",
@@ -7895,11 +9280,27 @@
     {
       "code": "RW",
       "name": "Rwanda",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Standard Specifications for Road & Bridge Works Dec 2014, EN",
+          "url": "https://www.scribd.com/document/755209348/Final-Standard-Specifications-for-Road-Bridge-Works-Final-Dec2014",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-RW",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "\u00a7553 prestressed specs",
+            " girder erection plans"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "BL",
@@ -7967,11 +9368,27 @@
     {
       "code": "WS",
       "name": "Samoa",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Vaisigano Bridge record (EN)",
+          "url": "https://www.psc.co.jp/ps_english/works/00146.html",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-WS",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "pre-tensioned hollow girders",
+            " 3\u00d725 m (JICA)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "SM",
@@ -7996,11 +9413,26 @@
             "full-span deck girder"
           ],
           "title_original": "Reference Projects"
+        },
+        {
+          "title": "SHC 310 Bridge & Tunnel Design, AR/EN",
+          "url": "https://istitlaa.ncc.gov.sa/ar/transportation/mot/saudihighwaycode/Documents/SHC%20310%20final.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SA",
+          "language": "AR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "pretensioned I-girders (SHC 310 material clauses",
+            " AASHTO LRFD referenced)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -8017,11 +9449,26 @@
             "precast reinforced-concrete I beam"
           ],
           "title_original": "Les ouvrages d\u2019art \u2014 Dakar-Diamniadio"
+        },
+        {
+          "title": "AGEROUTE Ponts & Autoponts page, FR",
+          "url": "https://ageroute.sn/ponts-autoponts/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SN",
+          "language": "FR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "project PSC bridges (Simal",
+            " Marsassoum\u2026)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -8038,11 +9485,26 @@
             "Prestressed bridge beams"
           ],
           "title_original": "Niskogradnja"
+        },
+        {
+          "title": "SRDM9-2 \"Nosivi sistemi mostova\" + SRDM9-3 (SR",
+          "url": "https://www.putevi-srbije.rs/pdf/harmonizacija/prirucnik_za_projektovanje_puteva/SRDM9-2-nosivi-sistemi-mostova%28120430-srb-konacna%29.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-RS",
+          "language": "SR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Prefab T-nosa\u010di 25\u201340 m + CIP deck",
+            " I-nosa\u010di 15\u201340 m"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -8066,11 +9528,26 @@
     {
       "code": "SL",
       "name": "Sierra Leone",
-      "sources": [],
+      "sources": [
+        {
+          "title": "EEAS Bandajuma\u2013Liberia statement, EN",
+          "url": "https://www.eeas.europa.eu/node/4731_en",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SL",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Sewa bridge steel-composite"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "SG",
@@ -8087,11 +9564,26 @@
             "pedestrian bridge beams"
           ],
           "title_original": "Concrete Innovators products"
+        },
+        {
+          "title": "Civil Design Criteria EGD09106A3 (EN)",
+          "url": "https://www.lta.gov.sg/content/dam/ltagov/industry_innovations/industry_matters/development_construction_resources/pdf/TransportInfrastructure/civil_standards/pdf/EGD09106A3-Overall.pdf",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SG",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "precast segmental/box",
+            " no public beam catalogue"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -8235,20 +9727,52 @@
     {
       "code": "SI",
       "name": "Slovenia",
-      "sources": [],
+      "sources": [
+        {
+          "title": "TSPI PGV.07.420 dilatacije (SL",
+          "url": "https://www.gov.si/assets/organi-v-sestavi/DRSI/Dokumenti-DRSI/Tehnicne-specifikacije/TSPI-PGV.07.420-Dilatacije-na-premostitvenih-objektih.pdf)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SI",
+          "language": "SL",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "Monta\u017eni prednapeti I-nosilci + monolithic slab",
+            " koritasti 10\u201335 m (R&D)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "SB",
       "name": "Solomon Islands",
-      "sources": [],
+      "sources": [
+        {
+          "title": "World Bank modular bridges blog (EN)",
+          "url": "https://blogs.worldbank.org/en/ppps/modular-bridges-climate-resilient-solution-small-bridges-pacific",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SB",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "InQuik modular precast RC (WB SIRAP)",
+            " JICA rebuilds"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "SO",
@@ -8743,11 +10267,27 @@
     {
       "code": "SS",
       "name": "South Sudan",
-      "sources": [],
+      "sources": [
+        {
+          "title": "JICA bridge design study, EN",
+          "url": "https://openjicareport.jica.go.jp/pdf/12057949_01.pdf",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SS",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AASHTO LRFD governing (HS-25)",
+            " girder types unpinned"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "ES",
@@ -9323,11 +10863,25 @@
             "precast post-tensioned girder"
           ],
           "title_original": "Khartoum\u2013Port Sudan Road Rehabilitation Project, Staff Appraisal Report7443-SU"
+        },
+        {
+          "title": "Al Dabba Bridge paper, EN",
+          "url": "https://trid.trb.org/View/1099686",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SD",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "mixed AASHTO/BS 5400 project practice"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -9344,11 +10898,25 @@
             "Prestressed bridge girders"
           ],
           "title_original": "Pre-stressed concrete"
+        },
+        {
+          "title": "Cement journal: \"Voorgespannen betonnen bruggen in Suriname\" (NL)",
+          "url": "https://www.cementonline.nl/artikelen/voorgespannen-betonnen-bruggen-in-suriname",
+          "status": "imported foreign standard system",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SR",
+          "language": "NL",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Dutch precast PT girders (voorgespannen liggers)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -9365,11 +10933,27 @@
             "Prestressed beams and slabs"
           ],
           "title_original": "Prefabricerade broar och tunnlar"
+        },
+        {
+          "title": "Produktkatalog \"Standardiserade broar\" (SV",
+          "url": "https://bransch.trafikverket.se/for-dig-i-branschen/Planera-och-utreda/standardiserade-och-industrialiserade-produkter/produktkatalog/standardiserade-broar/)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SE",
+          "language": "SV",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Standardized bridges = RC slab frames (plattbro)",
+            " PSC beams project-specific",
+            " Abetong prefab \u22646 m std"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -9386,21 +10970,51 @@
             "Bridge/underpass producer lead"
           ],
           "title_original": "Betonfertigteile aus Obwalden"
+        },
+        {
+          "title": "ASTRA 12004 \"Konstruktive Einzelheiten von Br\u00fccken\" Normalien (DE/FR",
+          "url": "https://www.astra.admin.ch/de/kunstbauten)",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-CH",
+          "language": "DE",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "No national beam family",
+            " bespoke PSC box/slab"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "sources": [
+        {
+          "title": "SyriaSite company profile, AR",
+          "url": "https://syriasite.com/co-hama-general-company-roads-bridges-infrastructure-11262/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-SY",
+          "language": "AR",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast prestressed bridges (state builder)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
       "source_count": 1,
       "researched": true
-    },
-    {
-      "code": "SY",
-      "name": "Syria",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
     },
     {
       "code": "ST",
@@ -9508,11 +11122,26 @@
     {
       "code": "TJ",
       "name": "Tajikistan",
-      "sources": [],
+      "sources": [
+        {
+          "title": "JICA road study, EN",
+          "url": "https://openjicareport.jica.go.jp/pdf/12388559_01.pdf",
+          "status": "Soviet/Russian typovye series adoption",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-TJ",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "T-shaped and hollow PSC beams in use"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "TZ",
@@ -9528,11 +11157,26 @@
             "PSC approach girder"
           ],
           "title_original": "Construction of J.P. Magufuli Extradosed Cable-Stayed Bridge (3.0 km) at Mwanza, Tanzania"
+        },
+        {
+          "title": "Standard Specifications for Road Works 2000 Series 6500, EN",
+          "url": "https://pdfcoffee.com/standard-specifications-for-road-works-series-6000-structures-pdf-free.html",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-TZ",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "precast Y/YE beams",
+            " BS 5400 design"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -9682,20 +11326,52 @@
     {
       "code": "BS",
       "name": "The Bahamas",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Bridge Authority FAQ (EN)",
+          "url": "https://bahamasbridgeauthority.com/faqs/",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-BS",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "AASHTO (east Paradise Is.)",
+            " FDOT (2017 bridge)",
+            " PS box-beam concepts"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "GM",
       "name": "The Gambia",
-      "sources": [],
+      "sources": [
+        {
+          "title": "AfDB project page P-Z1-DB0-046, EN",
+          "url": "https://www.afdb.org/en/projects-and-operations/p-z1-db0-046",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-GM",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "942 m PSC Senegambia (Trans-Gambia) bridge"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "TG",
@@ -9709,11 +11385,26 @@
     {
       "code": "TO",
       "name": "Tonga",
-      "sources": [],
+      "sources": [
+        {
+          "title": "ADB project 53045-002 (EN)",
+          "url": "https://www.adb.org/projects/53045-002/main",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-TO",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Fanga'uta Lagoon Bridge superstructure undisclosed"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "TT",
@@ -9729,11 +11420,26 @@
             "AASHTO IV producer beam"
           ],
           "title_original": "PRESTCON2021 LIMITED"
+        },
+        {
+          "title": "Bridge B2/1 Cunapo Southern Rd project (EN)",
+          "url": "https://www.mowt.gov.tt/Divisions/BLT/Projects/Bridge-B2-1-Cunapo-Southern-Road%2C-Sangre-Grande",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-TT",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AASHTO Type III 16\u201324 m",
+            " Type IV 24\u201330 m"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -9770,11 +11476,26 @@
     {
       "code": "TM",
       "name": "Turkmenistan",
-      "sources": [],
+      "sources": [
+        {
+          "title": "construction.gov.tm post, RU",
+          "url": "https://construction.gov.tm/ru/post/novoe-inzhenernoe-sooruzhenie/",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-TM",
+          "language": "RU",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "steel spans + RC beams (Garabogaz)"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "TC",
@@ -9912,11 +11633,25 @@
             "bridge beams"
           ],
           "title_original": "The Contractor Magazine, Issue8 March2016"
+        },
+        {
+          "title": "General Specifications for Road & Bridge Works 2026, EN",
+          "url": "https://works.go.ug/general-specifications-for-road-and-bridge-works-2026-2/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-UG",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "project-specific girders"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -10072,11 +11807,25 @@
             "box"
           ],
           "title_original": "Products: Civil Engineering"
+        },
+        {
+          "title": "DMT Road Structures Manual TR-516, EN",
+          "url": "https://www.scribd.com/document/744119155/TR-516",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-AE",
+          "language": "EN",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "standard AASHTO/PCI I-girders explicitly NOT adopted (cover rules)"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -14560,11 +16309,26 @@
     {
       "code": "VI",
       "name": "United States Virgin Islands",
-      "sources": [],
+      "sources": [
+        {
+          "title": "FHWA federal-aid standards note (EN)",
+          "url": "https://www.fhwa.dot.gov/bridge/130416.cfm",
+          "status": "AASHTO-family adoption evidence",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-VI",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AASHTO LRFD per 23 CFR 625"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "UY",
@@ -14580,11 +16344,26 @@
             "Precast bridge system"
           ],
           "title_original": "Productos"
+        },
+        {
+          "title": "T.O. Construcci\u00f3n de Puentes y Carreteras, Anexo I Secci\u00f3n III\" ES",
+          "url": "https://www.impo.com.uy/bases/to-puentes-carreteras/9-1990/3_ANEXOI",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-UY",
+          "language": "ES",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Pretensado/postensado pieces",
+            " AASHTO-type practice"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -14601,21 +16380,51 @@
             "Bridge reinforced-concrete structures"
           ],
           "title_original": "\u041a\u0443\u0439\u043b\u044e\u043a\u0441\u043a\u0438\u0439 \u044d\u043a\u0441\u043f\u0435\u0440\u0438\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u0432\u043e\u0434 \u043c\u043e\u0441\u0442\u043e\u0432\u044b\u0445 \u0436\u0435\u043b\u0435\u0437\u043e\u0431\u0435\u0442\u043e\u043d\u043d\u044b\u0445 \u043a\u043e\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u0439"
+        },
+        {
+          "title": "\u0421\u0435\u0440\u0438\u044f 3.503.1-81 (\u0421\u043e\u044e\u0437\u0434\u043e\u0440\u043f\u0440\u043e\u0435\u043a\u0442), RU",
+          "url": "https://tipdoc.ru/catalog/1495/83412/",
+          "status": "Soviet/Russian typovye series adoption",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-UZ",
+          "language": "RU",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Soviet \u0442\u0438\u043f\u043e\u0432\u0430\u044f \u0441\u0435\u0440\u0438\u044f 3.503.1-81 (12\u201333 \u043c)"
+          ],
+          "title_original": ""
+        }
+      ],
+      "families": [],
+      "count": 0,
+      "source_count": 2,
+      "researched": true
+    },
+    {
+      "code": "VU",
+      "name": "Vanuatu",
+      "sources": [
+        {
+          "title": "Standard Technical Specifications for Road & Bridge Works\" 2017 (EN/FR)",
+          "url": "https://pwd.gov.vu/?id=ibet3",
+          "status": "imported foreign standard system",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-VU",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "AS 5100 / NZ route",
+            " spec adapted from PNG"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
       "source_count": 1,
       "researched": true
-    },
-    {
-      "code": "VU",
-      "name": "Vanuatu",
-      "sources": [],
-      "families": [],
-      "count": 0,
-      "source_count": 0,
-      "researched": false
     },
     {
       "code": "VA",
@@ -14640,11 +16449,26 @@
             "Pretensioned precast beams for two additional bridges"
           ],
           "title_original": "Segundo Puente sobre el Rio Chama"
+        },
+        {
+          "title": "Thesis evidence (ES):",
+          "url": "https://es.scribd.com/document/257246096/Tesis-Puentes",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-VE",
+          "language": "ES",
+          "source_type": "report/manual/catalogue",
+          "locator": "",
+          "family_names": [
+            "Prevenca proprietary pretensadas (11\u201324 m)",
+            " AASHO-style I/doble-T"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 1,
+      "source_count": 2,
       "researched": true
     },
     {
@@ -14737,20 +16561,51 @@
     {
       "code": "YE",
       "name": "Yemen",
-      "sources": [],
+      "sources": [
+        {
+          "title": "GCRB site, AR",
+          "url": "https://gcrb.gov.ye/",
+          "status": "PSC beams used; no public dimensions",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-YE",
+          "language": "AR",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "precast concrete components"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "ZM",
       "name": "Zambia",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Auditor-General report on RDA, EN",
+          "url": "https://www.ago.gov.zm/?wpfb_dl=109",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-ZM",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "precast beams unused (Mongu\u2013Kalabo)",
+            " Acrow steel favoured"
+          ],
+          "title_original": ""
+        }
+      ],
       "families": [],
       "count": 0,
-      "source_count": 0,
-      "researched": false
+      "source_count": 1,
+      "researched": true
     },
     {
       "code": "ZW",
@@ -14777,11 +16632,25 @@
             "Y8"
           ],
           "title_original": "New Mbudzi Interchange, Harare - Zimbabwe"
+        },
+        {
+          "title": "ERRP2 tender (SATCC-era specs referenced), EN",
+          "url": "https://www.zim.gov.zw/index.php/en/government-documents/category/5-tender-documents",
+          "status": "no PSC beam evidence found",
+          "registry": "deep-search-multilingual-sweep-2026-09.json",
+          "id": "R5-ZW",
+          "language": "EN",
+          "source_type": "authority document",
+          "locator": "",
+          "family_names": [
+            "none public"
+          ],
+          "title_original": ""
         }
       ],
       "families": [],
       "count": 0,
-      "source_count": 2,
+      "source_count": 3,
       "researched": true
     },
     {
