@@ -54,6 +54,7 @@ round3-philippines-2026-09
 round3-mi-pk-nz-2026-09
 round4-mi-mdot-standards-2026-09
 round5-multilingual-sweep-2026-09
+round5b-extraction-prep-2026-09
 ```
 
 Download the structured records:
@@ -96,6 +97,7 @@ Download the structured records:
 - {download}`Round 3: Michigan local-agency beams; Punjab and NZ checks <../research/data/round3-mi-pk-nz-2026-09.json>`
 - {download}`Round 4: Michigan MDOT standard beams (PC-1Q/2L/4J/5D + BDG 6.60) <../research/data/round4-mi-mdot-standards-2026-09.json>`
 - {download}`Round 5: Multilingual per-country sweep (122 jurisdictions) <../research/data/deep-search-multilingual-sweep-2026-09.json>`
+- {download}`Round 5b: extraction prep for the four implementable leads <../research/data/round5b-extraction-prep-2026-09.json>`
 
 Original publications retain their own copyright. Downloaded source PDFs
 are not distributed with the package. The reports retain URLs and, for

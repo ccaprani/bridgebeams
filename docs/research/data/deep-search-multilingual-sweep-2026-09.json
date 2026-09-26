@@ -86,16 +86,16 @@
    "url": "https://www.mpwt.gov.kh/en/documents/declaration/39",
    "language": "EN",
    "source_type": "authority document",
-   "status": "implementable lead: dimensioned PSC sections publicly downloadable",
+   "status": "PSC beams used; drawings exist on MPWT viewer-walled page",
    "family_names": [
     "pre-tensioned hollow-slab PSC 15–25 m",
     " PT deck girders (PCDG) 18–30 m",
     " widths 7/8/10/12 m"
    ],
    "locator": "",
-   "survey_status": "IMPLEMENTABLE",
+   "survey_status": "LEAD-NO-DIMS",
    "authority": "MPWT + JICA",
-   "note": "Dimensioned, downloadable; draft status"
+   "note": "Downgraded 26 Sep: the cited JICA report 12112595 is the Final Report Vol III bridge inspection survey, not standard drawings. MPWT Prakas 511/2012 page (mpwt.gov.kh/en/documents/declaration/39) is viewer-walled; needs a browser fetch."
   },
   {
    "id": "R5-TL",

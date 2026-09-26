@@ -68,6 +68,7 @@ profiles and completed checks.
 | Round 3: Michigan local-agency beams; Punjab and NZ checks | [Implementation record](round3-mi-pk-nz-2026-09.md) | [Sources and residuals](data/round3-mi-pk-nz-2026-09.json) |
 | Round 4: Michigan MDOT standard beams (PC-1Q/2L/4J/5D + BDG 6.60) | [Implementation record](round4-mi-mdot-standards-2026-09.md) | [Sources and residuals](data/round4-mi-mdot-standards-2026-09.json) |
 | Round 5: Multilingual per-country sweep (122 jurisdictions) | [Survey record](round5-multilingual-sweep-2026-09.md) | [Machine record](data/deep-search-multilingual-sweep-2026-09.json) |
+| Round 5b: extraction prep for the four implementable leads | [Prep record](round5b-extraction-prep-2026-09.md) | [Machine record](data/round5b-extraction-prep-2026-09.json) |
 
 ## Reading the evidence
 
