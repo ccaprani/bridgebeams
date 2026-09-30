@@ -128,7 +128,9 @@ filled the open centre and misread upper haunches as bottom chamfers.
 `NzIBeamSection(1500)` and `NzIBeamSection(1600)` transcribe RR364 S4.01
 and S4.10, selecting the drawing's 20 mm chamfer option. Independent
 analytic area checks validate the implementation; no published section
-property table was located for these New Zealand profiles.
+property table was located for these New Zealand profiles. Small unlabeled
+web-haunch fillets use sharp nominal intersections. The checked dimensions
+and conventions are recorded in {doc}`nzta-rr364-verified-dimensions`.
 
 `QaQBeamSection("T1")` through `QaQBeamSection("T5")` implement Ashghal
 SD 5-1-101 Rev 1 at the published 2150 mm top width. All five lower
@@ -179,10 +181,29 @@ mid-soffit origin; asymmetric KTB uses the nominal left soffit corner.
 `NzHollowCoreSection(587, unit="inner"/"outer")` selects the two-void inner
 or one-void outer unit. The 587 outer profile omits the optional drip groove.
 The 650/900 outer void-location endpoints remain unresolved and are not
-implemented. See {doc}`visual-followup-norway-nz`.
+implemented. Lower mould-face slopes are 1:80 for the 650 mm unit and
+1.5:140 for the 900 mm unit. Their exterior reconstruction records the
+nominal lower-width datum explicitly. See
+{doc}`nzta-rr364-verified-dimensions` and {doc}`visual-followup-norway-nz`.
 
 `CivilconYBeamSection("Y1"…"Y8")` includes the confirmed 40 × 50 mm ledges
 and R100 web junction for the in-situ slab arrangement. Area differences
 are below 0.037% and centroid differences below 0.476 mm. Y1's source
 modulus discrepancy is retained separately; Y2–Y8 moduli agree within 0.1%.
 See {doc}`visual-followup-za-ro-nepal`.
+
+### Michigan MDOT standard sections
+
+`MiMdotISection` supplies Types I-IV (`I28`, `I36`, `I45`, `I54`) from
+PC-1Q. `MiMdot70ISection("I70")` uses the 6-inch midspan web and the
+explicit 2-inch horizontal run of the short upper haunch. The 16-inch end
+web belongs to a separate outline whose transition elevations remain
+unresolved.
+
+`MiMdot1800Section("1800")` retains the specified web/flange radii and
+3/4-inch soffit bevels. `MiMdotBulbTeeSection` supplies seven 49-inch
+top-flange sections, `BT36` through `BT72`; the optional 61-inch flange
+remains a partial dimension record because its outer-edge thickness is
+not directly labeled. Historical BDG section properties are independent
+cross-checks; the current PC-1Q Type I flange split differs from the older
+property drawing. See {doc}`michigan-mdot-verified-dimensions`.

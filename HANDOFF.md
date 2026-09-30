@@ -1,17 +1,81 @@
-# HANDOFF — bridgebeams agent briefing (v2)
+# HANDOFF — bridgebeams agent briefing (v3)
 
 Read this fully before starting work.
+
+## NZTA and Michigan dimension reconciliation — 30 September 2026
+
+The older catalogue summary and priority list below predate implementations
+already present in this checkout. NZ I-beams and hollow-core units, and all
+four Michigan MDOT families, are exported by the country packages and the
+top-level package. Preserve those public classes and profile IDs.
+
+The checked dimensions and geometry conventions are retained in:
+
+- `src/bridgebeams/nz/data/nzta_rr364_verified_dimensions.json`
+- `src/bridgebeams/us/data/state_r4_mi_mdot_standard.json`
+- `docs/research/nzta_rr364_verified_dimensions.md`
+- `docs/research/michigan_mdot_verified_dimensions.md`
+
+Use `/home/ccaprani/anaconda3/envs/pybridge/bin/python`; the repository
+`.venv` has no pytest installation. The package-data rule includes
+`data/*.json` for every family. An isolated wheel check must confirm that
+the new NZ source record is included and loaded from the wheel.
+
+The NZ 1500 mm I-beam on PDF45/S4.01 uses widths 375/175/475 mm and the
+vertical chain 100+75+1005+150+170=1500 mm. It selects the 20 mm chamfer
+option and sharp nominal intersections for unlabeled small fillets. Its
+independent nominal area is 363100 mm². NZ 650/900 hollow-core inner units
+retain the existing coordinate convention, octagonal voids and an explicit
+nominal lower-width datum. Their lower mould-face slopes are respectively
+1:80 and 1.5:140. The 587 and 1600 mm profiles retain their existing APIs.
+
+Michigan's checked current drawings are PC-1Q, PC-2L, PC-4J and PC-5D,
+all printed 12-22-2025. PC-1Q Type I uses 4-inch flange thickness and
+3-inch upper haunch; the historical BDG property drawing uses 3.75/3.25.
+Keep that source-version difference when comparing published properties.
+PC-2L's midspan section has a 6-inch web and a short upper haunch with
+1.5-inch vertical rise and 2-inch horizontal run. PC-4J uses the printed
+R2/R7.875 arcs and 3/4-inch soffit bevels. PC-5D supplies the seven
+49-inch top-flange profiles BT36-BT72; historical BDG tables are independent
+property checks, including BT42.
+
+Remaining source limits:
+
+- NZ 650/900 outer units: verified labels are recorded as
+  `partial_dimensions`; the exterior draft/void-location datums remain
+  unresolved. Do not infer missing offsets from scale.
+- Michigan 70-inch end section: the web is 16 inches, but exact transition
+  elevations remain unresolved. The existing class models midspan.
+- Michigan 61-inch bulb-tee top flange: its width is explicit, but its
+  outer-edge thickness is not. A conditional slope extrapolation is not a
+  published dimension and must not be silently rounded to 4 inches.
+
+Source PDFs and rendered review images remain local and are not distributed
+with the package. The older priorities 1, 2 and 6 below are superseded by
+this reconciliation and the remaining limits above.
+
+Validation on 30 September 2026: the full package suite passed **239 tests**
+in 68.69 s (14 pre-existing dependency deprecation warnings). The built
+wheel was extracted and imported outside the repository; both packaged
+source JSON files loaded, NZ checks passed and all 13 Michigan profiles
+constructed valid polygons. Integral float depths such as `900.0` retain
+their earlier behavior and now have regression coverage. A fresh Sphinx
+build with `-E -W --keep-going` completed without warnings. Independent
+source and geometry review passed; the unresolved variants above remain
+explicitly unimplemented.
 
 ## Repository
 
 - Local: `~/projects/bridgebeams`, branch **`ukie-beams`**
 - Remote: `github.com/ccaprani/bridgebeams` (private)
-- PRs #1 (`aus-sections`) and #2 (`ukie-beams`) are open, stacked, NOT merged
+- PRs #1 (`aus-sections`) and #2 (`ukie-beams`) are open, both target `main`,
+  NOT merged (verified 30 September 2026)
 - Environment: `source ~/anaconda3/etc/profile.d/conda.sh && conda activate pybridge`
-- Test: `python -m pytest tests/ -q` — 180 tests, all passing
+- Test: `/home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`
+  — 239 tests passing in the dimension-reconciliation validation above
 - Docs: `cd docs && python -m sphinx -b html source _build/html` (zero warnings)
 
-## Current state (as of this handoff)
+## Historical catalogue snapshot (superseded)
 
 **22 families, 15 subpackages, ~10 jurisdictions implemented:**
 
@@ -53,7 +117,7 @@ All stored in `sources/pdfs/` — do NOT commit:
 Also: `~/Downloads/bridgebeams-manual/` — Colin's 15-country source library
 (ae au br cl ee fi ir kh nz ph sa tn us/mi us/oh us/or) with round-5 manifest.
 
-## What needs doing — priority order
+## Historical priorities (1, 2 and 6 superseded above)
 
 ### 1. NZ I-beam 1500 (RR 364 page 45)
 

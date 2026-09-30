@@ -135,5 +135,6 @@
     bridgebeams.br.r3_ifes_sao_domingos
     bridgebeams.cl.mop_mc_v4
     bridgebeams.us.state_r3_mi_beams
+    bridgebeams.us.state_r4_mi_mdot_standard
     bridgebeams.ph.dpwh_aashto
 ```

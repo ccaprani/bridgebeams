@@ -44,7 +44,7 @@ add_module_names = False
 
 templates_path = ["_templates"]
 source_suffix = [".rst", ".md"]
-exclude_patterns = ["backups/**", "gen/bridgebeams.ukie*", "_static/**"]
+exclude_patterns = ["**/backups/**", "gen/bridgebeams.ukie*", "_static/**"]
 
 # -- Options for HTML output -------------------------------------------------
 

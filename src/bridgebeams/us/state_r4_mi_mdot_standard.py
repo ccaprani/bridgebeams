@@ -11,18 +11,20 @@ Sources (SHA-256 and page locators in data/state_r4_mi_mdot_standard.json):
 * ``MiMdot1800Section``: PC-4J Prestressed Concrete 1800 Beam Details
   (12-22-2025) with BDG 6.60.02 Michigan 1800 Girder properties
   (1 profile, ``1800``). Web-flange junctions use the printed R7 7/8 in
-  and R2 in radii; the sharp-corner area is about 5 % under the printed
-  875 sq in, the filleted model about 1.4 %.
+  and R2 in radii, with the printed 3/4 in soffit bevel. Circular tangent
+  arcs are represented by 16 straight segments each; published BDG
+  properties are an independent check rather than fitted dimensions.
 * ``MiMdotBulbTeeSection``: PC-5D Prestressed Concrete Bulb-Tee Beam
   Details (12-22-2025) with BDG 6.60.03: 49 in top flange series,
   depths 36-72 in (7 profiles, ``BT36``..``BT72``). The outline is the
   same template as the OR15-182 BT36-BT48 recommendations
   (``bridgebeams.us.state_r3_mi_beams.MiBulbTeeSection``); it reproduces
-  the BDG printed A, Ybot and Ixx for every depth to 0.1 %. The 61 in top
-  flange variant is not yet transcribed.
+  the BDG printed A and Ixx within 0.05 %, with Ybot within 0.044 in.
+  The 61 in top-flange variant remains an explicit partial dimension record.
 
-Gross midspan concrete: strands, end blocks, diaphragms and haunches are
-omitted. Millimetres, origin at soffit centre, y up.
+Gross midspan concrete: strands, end blocks, diaphragms and deck haunches
+are omitted. The concrete flange-to-web haunches are included. Millimetres,
+origin at soffit centre, y up.
 """
 
 from __future__ import annotations
@@ -93,7 +95,7 @@ def i70_half_in(depth, d):
         (ww, y_splay + d["splay"]),
         (ww, y_web_bot),
         (ww, y_web),
-        (tw, y_slope),
+        (ww + d["step_run"], y_slope),
         (tw, y_taper),
         (tw, depth),
         (0.0, depth),
@@ -105,8 +107,8 @@ def beam1800_half_in(depth, d):
 
     Chain (top to bottom): 3 in tip face, 2 in slope drop, 4'-6 1/2 in
     long slope/web zone, 5 1/2 in splay, 5 7/8 in bulb. Fillets R7 7/8 at
-    both web junctions, R2 at the tip corner and the bulb-splay corner,
-    R2 at the soffit corners.
+    both web junctions, R2 at the tip corner and the bulb-splay corner.
+    The soffit corners retain their printed 3/4 in straight bevels.
     """
     tw, bw, ww = d["top_width"] / 2, d["bottom_width"] / 2, d["web"] / 2
     ch = d["soffit_chamfer"]
@@ -114,20 +116,24 @@ def beam1800_half_in(depth, d):
     y_slope_end = y_slope_top - d["slope_drop"]
     y_web_bot = y_slope_end - d["slope_web"]
     y_splay = d["bulb"]
-    path = dedupe([
+    # Use the distinct source stations directly: the lower web datum from
+    # the vertical chain coincides with bulb + splay. Keeping a duplicate
+    # there would shift the source-corner indices used for the four arcs.
+    if abs(y_web_bot - (y_splay + d["splay"])) > 1e-9:
+        raise ValueError("1800 vertical source chain does not close")
+    path = [
         (0.0, 0.0),
         (bw - ch, 0.0),
         (bw, ch),
         (bw, y_splay),
         (ww, y_splay + d["splay"]),
-        (ww, y_web_bot),
         (ww, y_slope_end),
         (tw, y_slope_top),
         (tw, depth),
         (0.0, depth),
-    ])
+    ]
     radii = {3: d["r_bulb"], 4: d["r_web_bot"], 5: d["r_web_top"], 6: d["r_tip"]}
-    return filleted_path(path, radii)
+    return filleted_path(path, radii, n=d["arc_segments"])
 
 
 def bulb_tee_half_in(depth, t):
@@ -156,7 +162,7 @@ def bulb_tee_half_in(depth, t):
 
 @dataclass(frozen=True)
 class MiMdotIBeamDimensions:
-    """MDOT I-beam dimensions in millimetres (``source_in`` in inches)."""
+    """MDOT dimensions in millimetres; source inches remain in section.row."""
 
     size: str
     depth: float
@@ -237,9 +243,9 @@ class MiMdot1800Section(_MiMdotBeamBase):
 class MiMdotBulbTeeSection(_MiMdotBeamBase):
     """MDOT PC-5D / BDG 6.60.03 bulb tee, 49 in top flange, 36-72 in deep.
 
-    Same outline as the OR15-182 BT36-BT48 recommendations
-    (``MiBulbTeeSection``), extended with the BDG's deeper sizes. The 61 in
-    top flange variant of BDG 6.60.03 is not yet transcribed.
+    Direct PC-5D source dimensions agree with the overlapping OR15-182
+    BT36-BT48 recommendations (``MiBulbTeeSection``). The 61 in variant
+    remains partial because its outer-edge thickness is not labelled.
     """
 
     _GROUP = "bulb_tee"

@@ -39,8 +39,9 @@ def _check_single_inner_dimension_chain(depth,bottom,void_height):
     assert p.is_valid and len(p.interiors)==1
     assert p.bounds==(0,0,1138,depth)
     assert p.centroid.x==pytest.approx(569)
-    # Independent outer strips, printed1:80 lower-face draft, and chamfers.
-    dx=90/80
+    # Independent outer strips, depth-specific printed draft, and chamfers.
+    slope=1/80 if depth==650 else 1.5/140
+    dx=90*slope
     lower=(1138-2*dx)*20-20**2
     lower+=(1138-dx)*90
     key_zone=1070*308+(1070+1094)/2*12
@@ -50,7 +51,7 @@ def _check_single_inner_dimension_chain(depth,bottom,void_height):
     hole=Polygon(p.interiors[0])
     assert hole.bounds==(154,bottom,984,depth-140)
     assert p.intersection(LineString([(-1,500),(1140,500)])).bounds[0]==22
-    assert p.intersection(LineString([(-1,50),(1140,50)])).bounds[0]==pytest.approx(60/80)
+    assert p.intersection(LineString([(-1,50),(1140,50)])).bounds[0]==pytest.approx(60*slope)
 
 
 def test_nz_hollow_core_catalogue_checks():

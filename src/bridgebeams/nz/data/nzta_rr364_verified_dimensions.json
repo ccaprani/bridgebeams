@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "source": {
+    "publication": "NZ Transport Agency Research Report 364: Standard precast concrete bridge beams",
+    "publication_year": 2008,
+    "pdf_filename": "nzta-rr364.pdf",
+    "pdf_sha256": "ea199fa1dfa3272c8c31bbe8ee200c616536fae4a25418ae084d51841b01fd6d",
+    "verified_date": "2026-09-30",
+    "units": "mm",
+    "method": "Full original PDF pages inspected before 432 dpi source crops; visual stroke-font reads independently checked. Calculated chains are recorded separately.",
+    "published_properties": "No published section-property table verified for these sections."
+  },
+  "profiles": {
+    "i_1500": {
+      "profile": "i_1500",
+      "status": "transcribed-with-convention",
+      "implemented": true,
+      "locator": {
+        "pdf_page_one_based": 45,
+        "drawing_number": "S4.01",
+        "title": "1500mm DEEP I-BEAMS - 18m & 20m SPAN / ARRANGEMENT & DIMENSIONS",
+        "cross_section": "TYPICAL SECTION",
+        "section_scale": "1:20"
+      },
+      "dimensions": {
+        "depth": 1500.0,
+        "top_width": 375.0,
+        "top_thickness": 100.0,
+        "top_haunch_height": 75.0,
+        "web_width": 175.0,
+        "bottom_width": 475.0,
+        "bottom_thickness": 170.0,
+        "bottom_haunch_height": 150.0,
+        "bottom_chamfer": 20.0
+      },
+      "additional_source_labels": {
+        "web_clear_vertical": 1005,
+        "upper_haunch_horizontal": 100,
+        "lower_haunch_horizontal": 150,
+        "midpoint_height_chain": [
+          750,
+          750
+        ]
+      },
+      "source_options": {
+        "soffit_corners": [
+          "20 x 20 mm chamfer",
+          "20 mm radius"
+        ]
+      },
+      "calculated_checks": {
+        "vertical_chain": [
+          100,
+          75,
+          1005,
+          150,
+          170
+        ],
+        "vertical_sum": 1500,
+        "upper_horizontal_chain": [
+          100,
+          175,
+          100
+        ],
+        "upper_horizontal_sum": 375,
+        "lower_horizontal_chain": [
+          150,
+          175,
+          150
+        ],
+        "lower_horizontal_sum": 475
+      },
+      "geometry_conventions": [
+        "20 x 20 mm bottom chamfers selected from the source chamfer/radius alternatives.",
+        "Small drawn web-haunch curves use sharp nominal junctions because no radius is labeled.",
+        "Origin at mid-soffit; y points upward; units are mm.",
+        "Local holes, ducts, reinforcement and the in-situ slab are excluded."
+      ],
+      "gaps": [
+        "Small web-haunch fillet radii are not labeled on S4.01.",
+        "No source section-property table verified; computed properties describe the chosen nominal polygon."
+      ]
+    },
+    "hollow_core_650_inner": {
+      "profile": "hollow_core_650_inner",
+      "status": "transcribed-with-convention",
+      "implemented": true,
+      "locator": {
+        "pdf_page_one_based": 29,
+        "drawing_number": "S2.01",
+        "title": "650mm DEEP SINGLE HOLLOW CORE BEAMS - 16m & 18m SPAN / ARRANGEMENT & DIMENSIONS",
+        "cross_section": "INNER UNIT",
+        "section_scale": "1:20"
+      },
+      "dimensions": {
+        "depth": 650,
+        "top_width": 1094,
+        "lower_width": 1138,
+        "side_vertical_chain": [
+          220,
+          320,
+          110
+        ],
+        "joint_diagonal_horizontal": 12,
+        "joint_diagonal_vertical": 12,
+        "void": {
+          "top_cover": 140,
+          "upper_corner_vertical": 100,
+          "straight_side_height": 180,
+          "lower_corner_vertical": 100,
+          "bottom_cover": 130,
+          "horizontal_straight_width": 630,
+          "each_corner_horizontal": 100
+        },
+        "lower_horizontal_labels": [
+          154,
+          100,
+          630,
+          100,
+          154
+        ],
+        "inspection_hole_offset": 120,
+        "inspection_hole_diameter": 40,
+        "drain_hole_diameter": 40,
+        "mould_draft": {
+          "rise": 80,
+          "run": 1
+        }
+      },
+      "source_options": {
+        "soffit_corners": [
+          "20 x 20 mm chamfer",
+          "20 mm radius"
+        ]
+      },
+      "calculated_checks": {
+        "vertical_void_chain": [
+          140,
+          100,
+          180,
+          100,
+          130
+        ],
+        "vertical_sum": 650,
+        "void_width": 830,
+        "void_height": 380,
+        "lower_horizontal_label_sum": 1138
+      },
+      "geometry_conventions": [
+        "1138 mm is the nominal maximum width at the 110 mm high lower key ledge.",
+        "1094 mm top width and the 12 mm joint diagonal give a calculated 34 mm key recess.",
+        "Lower mold draft is applied inward from the 110 mm ledge to the selected 20 mm bottom chamfer; these endpoints are a nominal interpretation.",
+        "20 x 20 mm bottom chamfers selected from the source chamfer/radius alternatives.",
+        "Octagonal void uses the printed 100 x 100 mm corner transitions; localized holes and ducts are excluded.",
+        "Origin preserves the earlier API: x=0 at the left lower key-ledge extent, y=0 at soffit."
+      ],
+      "gaps": [
+        "The exact manufactured lower draft/chamfer datum is not uniquely resolved; the stated nominal convention is used.",
+        "Source prohibits an inner unit being used singly in isolation.",
+        "No source section-property table verified."
+      ]
+    },
+    "hollow_core_650_outer": {
+      "profile": "hollow_core_650_outer",
+      "status": "partial_dimensions",
+      "implemented": false,
+      "locator": {
+        "pdf_page_one_based": 29,
+        "drawing_number": "S2.01",
+        "title": "650mm DEEP SINGLE HOLLOW CORE BEAMS - 16m & 18m SPAN / ARRANGEMENT & DIMENSIONS",
+        "cross_section": "OUTER UNIT",
+        "section_scale": "1:20"
+      },
+      "dimensions": {
+        "depth": 650,
+        "top_width": 1122,
+        "lower_width": 1138,
+        "side_vertical_chain": [
+          220,
+          320,
+          110
+        ],
+        "joint_diagonal_horizontal": 12,
+        "joint_diagonal_vertical": 12,
+        "void": {
+          "top_cover": 140,
+          "upper_corner_vertical": 100,
+          "straight_side_height": 180,
+          "lower_corner_vertical": 100,
+          "bottom_cover": 130,
+          "horizontal_straight_width": 430,
+          "each_corner_horizontal": 100
+        },
+        "lower_horizontal_labels": [
+          324,
+          100,
+          430,
+          100,
+          124
+        ],
+        "inspection_hole_offset": 120,
+        "inspection_hole_diameter": 40,
+        "drain_hole_diameter": 40,
+        "draft_offset_label": 6,
+        "drain_centre_to_right_extension": 559
+      },
+      "source_options": {
+        "soffit_corners": [
+          "20 x 20 mm chamfer",
+          "20 mm radius"
+        ],
+        "drip_groove": {
+          "trapezoid": {
+            "depth": 15,
+            "top_width": 20,
+            "each_side_horizontal": 5,
+            "clear_run_after_chamfer": 15
+          },
+          "semicircular_min_radius": 15,
+          "triangular": {
+            "depth": 20,
+            "one_side_horizontal": 40
+          }
+        }
+      },
+      "calculated_checks": {
+        "vertical_void_chain": [
+          140,
+          100,
+          180,
+          100,
+          130
+        ],
+        "vertical_sum": 650,
+        "void_width": 630,
+        "void_height": 380,
+        "lower_horizontal_label_sum": 1078
+      },
+      "geometry_conventions": [],
+      "gaps": [
+        "Horizontal chain starts and ends at different datums from the 1138 mm overall-width label; the exact exterior/core offset relationship is unresolved.",
+        "The lower horizontal labels total 1078 mm; no inferred segments or corrected labels are supplied.",
+        "Exposed-face draft and all lower edge offsets must be resolved before an exterior polygon is enabled.",
+        "Optional external drip groove permits trapezoidal, semicircular or triangular alternatives."
+      ]
+    },
+    "hollow_core_900_inner": {
+      "profile": "hollow_core_900_inner",
+      "status": "transcribed-with-convention",
+      "implemented": true,
+      "locator": {
+        "pdf_page_one_based": 34,
+        "drawing_number": "S2.10",
+        "title": "900mm DEEP SINGLE HOLLOW CORE BEAMS - 20m, 22.5m & 25m SPAN / ARRANGEMENT & DIMENSIONS",
+        "cross_section": "INNER UNIT",
+        "section_scale": "1:20"
+      },
+      "dimensions": {
+        "depth": 900,
+        "top_width": 1094,
+        "lower_width": 1138,
+        "side_vertical_chain": [
+          470,
+          320,
+          110
+        ],
+        "joint_diagonal_horizontal": 12,
+        "joint_diagonal_vertical": 12,
+        "void": {
+          "top_cover": 140,
+          "upper_corner_vertical": 100,
+          "straight_side_height": 405,
+          "lower_corner_vertical": 100,
+          "bottom_cover": 155,
+          "horizontal_straight_width": 630,
+          "each_corner_horizontal": 100
+        },
+        "lower_horizontal_labels": [
+          154,
+          100,
+          630,
+          100,
+          154
+        ],
+        "inspection_hole_offset": 120,
+        "inspection_hole_diameter": 40,
+        "drain_hole_diameter": 40,
+        "mould_draft": {
+          "rise": 140,
+          "run": 1.5
+        }
+      },
+      "source_options": {
+        "soffit_corners": [
+          "20 x 20 mm chamfer",
+          "20 mm radius"
+        ]
+      },
+      "calculated_checks": {
+        "vertical_void_chain": [
+          140,
+          100,
+          405,
+          100,
+          155
+        ],
+        "vertical_sum": 900,
+        "void_width": 830,
+        "void_height": 605,
+        "lower_horizontal_label_sum": 1138
+      },
+      "geometry_conventions": [
+        "1138 mm is the nominal maximum width at the 110 mm high lower key ledge.",
+        "1094 mm top width and the 12 mm joint diagonal give a calculated 34 mm key recess.",
+        "Lower mold draft is applied inward from the 110 mm ledge to the selected 20 mm bottom chamfer; these endpoints are a nominal interpretation.",
+        "20 x 20 mm bottom chamfers selected from the source chamfer/radius alternatives.",
+        "Octagonal void uses the printed 100 x 100 mm corner transitions; localized holes and ducts are excluded.",
+        "Origin preserves the earlier API: x=0 at the left lower key-ledge extent, y=0 at soffit."
+      ],
+      "gaps": [
+        "The exact manufactured lower draft/chamfer datum is not uniquely resolved; the stated nominal convention is used.",
+        "Source prohibits an inner unit being used singly in isolation.",
+        "No source section-property table verified."
+      ]
+    },
+    "hollow_core_900_outer": {
+      "profile": "hollow_core_900_outer",
+      "status": "partial_dimensions",
+      "implemented": false,
+      "locator": {
+        "pdf_page_one_based": 34,
+        "drawing_number": "S2.10",
+        "title": "900mm DEEP SINGLE HOLLOW CORE BEAMS - 20m, 22.5m & 25m SPAN / ARRANGEMENT & DIMENSIONS",
+        "cross_section": "OUTER UNIT",
+        "section_scale": "1:20"
+      },
+      "dimensions": {
+        "depth": 900,
+        "top_width": 1123,
+        "lower_width": 1138,
+        "side_vertical_chain": [
+          470,
+          320,
+          110
+        ],
+        "joint_diagonal_horizontal": 12,
+        "joint_diagonal_vertical": 12,
+        "void": {
+          "top_cover": 140,
+          "upper_corner_vertical": 100,
+          "straight_side_height": 405,
+          "lower_corner_vertical": 100,
+          "bottom_cover": 155,
+          "horizontal_straight_width": 430,
+          "each_corner_horizontal": 100
+        },
+        "lower_horizontal_labels": [
+          334,
+          100,
+          430,
+          100,
+          124
+        ],
+        "inspection_hole_offset": 120,
+        "inspection_hole_diameter": 40,
+        "drain_hole_diameter": 40,
+        "draft_offset_label": 7,
+        "drain_centre_to_right_extension": 559
+      },
+      "source_options": {
+        "soffit_corners": [
+          "20 x 20 mm chamfer",
+          "20 mm radius"
+        ],
+        "drip_groove": {
+          "trapezoid": {
+            "depth": 15,
+            "top_width": 20,
+            "each_side_horizontal": 5,
+            "clear_run_after_chamfer": 15
+          },
+          "semicircular_min_radius": 15,
+          "triangular": {
+            "depth": 20,
+            "one_side_horizontal": 40
+          }
+        }
+      },
+      "calculated_checks": {
+        "vertical_void_chain": [
+          140,
+          100,
+          405,
+          100,
+          155
+        ],
+        "vertical_sum": 900,
+        "void_width": 630,
+        "void_height": 605,
+        "lower_horizontal_label_sum": 1088
+      },
+      "geometry_conventions": [],
+      "gaps": [
+        "Horizontal chain starts and ends at different datums from the 1138 mm overall-width label; the exact exterior/core offset relationship is unresolved.",
+        "The lower horizontal labels total 1088 mm; no inferred segments or corrected labels are supplied.",
+        "Exposed-face draft and all lower edge offsets must be resolved before an exterior polygon is enabled.",
+        "Optional external drip groove permits trapezoidal, semicircular or triangular alternatives."
+      ]
+    }
+  }
+}

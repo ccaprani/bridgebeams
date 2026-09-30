@@ -2,8 +2,11 @@
 
 Source PDF pages 29/34/40. Single-core 650/900 inner units use octagonal
 voids and 20 mm bottom chamfers; 587 uses the circular void and 15 mm
-chamfer options. Single-core lower mould-release faces use the printed 1:80
-slope, with 1138 mm maximum width at the 110 mm high key ledge.
+chamfer options. Single-core lower mould-release faces use the printed
+1:80 (650) or 1.5:140 (900) slopes. The nominal geometry convention fixes
+1138 mm maximum width at the 110 mm high key ledge and 1094 mm top width;
+the drafted face runs from that ledge to the selected chamfer. Those
+datums are an explicit interpretation, not a source-exact mold outline.
 The outer unit is oriented with the exposed edge on the left. Its optional
 soffit drip groove is omitted from this gross section, as are local drain,
 inspection and connection holes. The source prohibits isolated use of an
@@ -16,6 +19,7 @@ from shapely.geometry import Polygon
 from shapely.geometry.polygon import orient
 
 from bridgebeams._geometry import geometry_from_polygon
+from ._sources import rr364_record
 
 
 @dataclass(frozen=True)
@@ -70,18 +74,46 @@ class NzHollowCoreSection:
         if isinstance(circle_points, bool) or not isinstance(circle_points, int) or circle_points < 32 or circle_points % 4:
             raise ValueError('circle_points must be a multiple of four, >=32')
         self.depth, self.unit, self.circle_points = depth, unit, circle_points
-        self.dimensions = (NzHollowCoreDimensions() if depth == 587 else
-                           NzHollowCoreDimensions(depth=depth, width=1138,
-                               key_depth=34, key_top_height=430,
-                               corner_chamfer=20, void_diameter=0,
-                               void_centre_height=0, lower_face_slope=1/80))
+        if depth == 587:
+            self.dimensions = NzHollowCoreDimensions()
+        else:
+            labels = self.source_record["dimensions"]
+            draft = labels["mould_draft"]
+            # Nominal key depth reconciles both printed overall widths and
+            # the 12 mm upper joint chamfer; it is a calculated convention.
+            key_depth = (labels["lower_width"] - labels["top_width"]) / 2 + 12
+            self.dimensions = NzHollowCoreDimensions(
+                depth=depth, width=labels["lower_width"], key_depth=key_depth,
+                key_top_height=depth-labels["side_vertical_chain"][0],
+                corner_chamfer=20, void_diameter=0, void_centre_height=0,
+                lower_face_slope=draft["run"] / draft["rise"],
+            )
+
+    @property
+    def source_record(self) -> dict | None:
+        """Independent source evidence; the earlier 587 mm units were not rechecked."""
+        if self.depth == 587:
+            return None
+        # Numeric SIZES validation also accepts integral floats; canonicalize
+        # only the record key while retaining the public depth value.
+        return rr364_record(f"hollow_core_{int(self.depth)}_{self.unit}")
+
+    @property
+    def geometry_conventions(self) -> tuple[str, ...]:
+        record = self.source_record
+        if record is not None:
+            return tuple(record["geometry_conventions"])
+        return ("Earlier 587 mm transcription retained without rechecking.",
+                "Circular voids polygonised; 15 mm chamfers selected.",
+                "Local holes and optional outer-unit drip groove omitted.")
 
     @property
     def polygon(self) -> Polygon:
         d = self.dimensions
         if self.depth != 587:
-            bottom = 130 if self.depth == 650 else 155
-            top = self.depth - 140
+            void = self.source_record["dimensions"]["void"]
+            bottom = void["bottom_cover"]
+            top = self.depth - void["top_cover"]
             # 154 + 100 + 630 + 100 + 154 = 1138 mm, directly from source.
             hole = [(254, bottom), (884, bottom), (984, bottom+100),
                     (984, top-100), (884, top), (254, top),

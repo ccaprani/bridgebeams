@@ -53,6 +53,8 @@ round3-oregon-ohio-2026-09
 round3-philippines-2026-09
 round3-mi-pk-nz-2026-09
 round4-mi-mdot-standards-2026-09
+nzta-rr364-verified-dimensions
+michigan-mdot-verified-dimensions
 round5-multilingual-sweep-2026-09
 round5b-extraction-prep-2026-09
 ```
@@ -96,6 +98,8 @@ Download the structured records:
 - {download}`Round 3: Philippines AASHTO I-girders (owner-supplied slide) <../research/data/round3-philippines-2026-09.json>`
 - {download}`Round 3: Michigan local-agency beams; Punjab and NZ checks <../research/data/round3-mi-pk-nz-2026-09.json>`
 - {download}`Round 4: Michigan MDOT standard beams (PC-1Q/2L/4J/5D + BDG 6.60) <../research/data/round4-mi-mdot-standards-2026-09.json>`
+- {download}`Verified NZTA RR364 dimensions and geometry conventions <../../src/bridgebeams/nz/data/nzta_rr364_verified_dimensions.json>`
+- {download}`Verified Michigan MDOT dimensions and published property checks <../../src/bridgebeams/us/data/state_r4_mi_mdot_standard.json>`
 - {download}`Round 5: Multilingual per-country sweep (122 jurisdictions) <../research/data/deep-search-multilingual-sweep-2026-09.json>`
 - {download}`Round 5b: visual audit and five implemented profiles (FI 1, IR 4) <../research/data/round5b-extraction-prep-2026-09.json>`
 

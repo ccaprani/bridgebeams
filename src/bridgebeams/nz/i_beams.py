@@ -4,6 +4,11 @@ Visually transcribed external profiles, millimetres. The source allows
 20 x 20 mm bottom-corner chamfers or 20 mm radii; this implementation
 selects the chamfers. Local holes, reinforcement, ducts and the in-situ
 slab are omitted. No published section-property table was located.
+The 1500 mm dimensions were rechecked against S4.01; small drawn
+web-haunch fillets have no labeled radii and use sharp nominal junctions.
+Its source locator, hash, labels and conventions are packaged in
+``data/nzta_rr364_verified_dimensions.json``. The 1600 mm profile is
+retained from the earlier transcription and was not rechecked here.
 """
 
 from dataclasses import dataclass
@@ -11,6 +16,7 @@ from dataclasses import dataclass
 from shapely.geometry import Polygon
 
 from bridgebeams._geometry import geometry_from_polygon, polygon_from_half_profile
+from ._sources import rr364_record
 
 
 @dataclass(frozen=True)
@@ -52,10 +58,23 @@ class NzIBeamSection:
             raise ValueError(f"depth must be one of {self.SIZES}, got {depth!r}")
         self.depth = depth
         if depth == 1500:
-            values = (1500, 375, 100, 75, 175, 475, 170, 150)
+            self.dimensions = NzIBeamDimensions(**self.source_record["dimensions"])
         else:
             values = (1600, 470, 110, 145, 180, 620, 150, 220)
-        self.dimensions = NzIBeamDimensions(*map(float, values))
+            self.dimensions = NzIBeamDimensions(*map(float, values))
+
+    @property
+    def source_record(self) -> dict | None:
+        """Independent source evidence; only the 1500 mm profile was rechecked."""
+        return rr364_record("i_1500") if self.depth == 1500 else None
+
+    @property
+    def geometry_conventions(self) -> tuple[str, ...]:
+        record = self.source_record
+        if record is not None:
+            return tuple(record["geometry_conventions"])
+        return ("Earlier 1600 mm transcription retained without rechecking.",
+                "20 mm bottom chamfers and sharp nominal haunch junctions.")
 
     @property
     def polygon(self) -> Polygon:
