@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# uncommitted working materials (see sources/SOURCES.md)
+sources/
+examples/*.png
