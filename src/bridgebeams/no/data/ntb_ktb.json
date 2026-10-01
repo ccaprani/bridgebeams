@@ -1,0 +1,161 @@
+{
+  "source": "Statens vegvesen V426, Figure 3.3.2(a-j), pp37-46",
+  "source_path": "sources/expansion/pdf-backlog/norway-v426.pdf",
+  "units": "mm",
+  "status": "dimensioned gross outline with user-inferred bottom chamfers",
+  "bottom_chamfer_provenance": "Colin Caprani visual review exported 2026-09-22T11:24:10.339Z: 15 x 15 mm inferred by projecting dimension leaders, not an explicit printed dimension.",
+  "rebates": "30 x 30 top; bottom shoulder recess 40 high, 15 inward at top and 20 inward at bottom.",
+  "scope": "Precast concrete only; recesses unfilled, no reinforcement or topping. KTB800/600 vertical exterior face independently inspected on pp44/46.",
+  "sections": {
+    "NTB800-400x1400": {
+      "pdf_page": 37,
+      "dimensions_mm": {
+        "depth": 1400,
+        "bottom_width": 800,
+        "top_width": 400,
+        "web_width": 220,
+        "bottom_web_height": 265,
+        "shoulder_height": 197,
+        "top_flange_height": 125,
+        "top_haunch_height": 75,
+        "left_top_offset": 0
+      },
+      "family": "NTB"
+    },
+    "KTB570-400x1400": {
+      "pdf_page": 38,
+      "dimensions_mm": {
+        "depth": 1400,
+        "bottom_width": 570,
+        "top_width": 400,
+        "web_width": 280,
+        "bottom_web_height": 265,
+        "shoulder_height": 197,
+        "top_flange_height": 125,
+        "top_haunch_height": 75,
+        "left_top_offset": -30
+      },
+      "family": "KTB"
+    },
+    "NTB1000-300x1200": {
+      "pdf_page": 39,
+      "dimensions_mm": {
+        "depth": 1200,
+        "bottom_width": 1000,
+        "top_width": 300,
+        "web_width": 220,
+        "bottom_web_height": 265,
+        "shoulder_height": 173,
+        "top_flange_height": 125,
+        "top_haunch_height": 37,
+        "left_top_offset": 0
+      },
+      "family": "NTB"
+    },
+    "KTB1200": {
+      "pdf_page": 40,
+      "dimensions_mm": {
+        "depth": 1200,
+        "bottom_width": 670,
+        "top_width": 320,
+        "web_width": 280,
+        "bottom_web_height": 265,
+        "shoulder_height": 173,
+        "top_flange_height": 125,
+        "top_haunch_height": 37,
+        "left_top_offset": 0
+      },
+      "family": "KTB"
+    },
+    "NTB1200-220x1000": {
+      "pdf_page": 41,
+      "dimensions_mm": {
+        "depth": 1000,
+        "bottom_width": 1200,
+        "top_width": 220,
+        "web_width": 220,
+        "bottom_web_height": 265,
+        "shoulder_height": 150,
+        "top_flange_height": 0,
+        "top_haunch_height": 0,
+        "left_top_offset": 0
+      },
+      "family": "NTB"
+    },
+    "KTB1000": {
+      "pdf_page": 42,
+      "dimensions_mm": {
+        "depth": 1000,
+        "bottom_width": 770,
+        "top_width": 280,
+        "web_width": 280,
+        "bottom_web_height": 265,
+        "shoulder_height": 150,
+        "top_flange_height": 0,
+        "top_haunch_height": 0,
+        "left_top_offset": 0
+      },
+      "family": "KTB"
+    },
+    "NTB1200-220x800": {
+      "pdf_page": 43,
+      "dimensions_mm": {
+        "depth": 800,
+        "bottom_width": 1200,
+        "top_width": 220,
+        "web_width": 220,
+        "bottom_web_height": 265,
+        "shoulder_height": 150,
+        "top_flange_height": 0,
+        "top_haunch_height": 0,
+        "left_top_offset": 0
+      },
+      "family": "NTB"
+    },
+    "KTB800": {
+      "pdf_page": 44,
+      "dimensions_mm": {
+        "depth": 800,
+        "bottom_width": 770,
+        "top_width": 280,
+        "web_width": 280,
+        "bottom_web_height": 265,
+        "shoulder_height": 150,
+        "top_flange_height": 0,
+        "top_haunch_height": 0,
+        "left_top_offset": 0
+      },
+      "family": "KTB"
+    },
+    "NTB1200-220x600": {
+      "pdf_page": 45,
+      "dimensions_mm": {
+        "depth": 600,
+        "bottom_width": 1200,
+        "top_width": 220,
+        "web_width": 220,
+        "bottom_web_height": 265,
+        "shoulder_height": 150,
+        "top_flange_height": 0,
+        "top_haunch_height": 0,
+        "left_top_offset": 0
+      },
+      "family": "NTB"
+    },
+    "KTB600": {
+      "pdf_page": 46,
+      "dimensions_mm": {
+        "depth": 600,
+        "bottom_width": 770,
+        "top_width": 280,
+        "web_width": 280,
+        "bottom_web_height": 265,
+        "shoulder_height": 150,
+        "top_flange_height": 0,
+        "top_haunch_height": 0,
+        "left_top_offset": 0
+      },
+      "family": "KTB"
+    }
+  }
+}

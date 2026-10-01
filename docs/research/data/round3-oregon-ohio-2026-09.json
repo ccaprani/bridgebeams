@@ -1,0 +1,92 @@
+{
+ "topic": "round3-oregon-ohio",
+ "date": "2026-09-25",
+ "implemented": {
+  "OrDeckBulbTeeSection": {
+   "module": "bridgebeams.us.state_r3_or_deck_bulb_tee",
+   "profiles": 12,
+   "provenance": "transcribed-with-convention",
+   "data": "src/bridgebeams/us/data/state_r3_or_deck_bulb_tee.json"
+  },
+  "OhAashtoIBeamSection": {
+   "module": "bridgebeams.us.state_r3_oh_i_beams",
+   "profiles": 6,
+   "provenance": "transcribed",
+   "data": "src/bridgebeams/us/data/state_r3_oh_i_beams.json"
+  },
+  "OhWfBeamSection": {
+   "module": "bridgebeams.us.state_r3_oh_i_beams",
+   "profiles": 7,
+   "provenance": "transcribed",
+   "data": "src/bridgebeams/us/data/state_r3_oh_i_beams.json"
+  }
+ },
+ "sources": [
+  {
+   "title": "Oregon Standard Drawings 2024 BR300 series",
+   "url": "https://www.oregon.gov/odot/engineering/202601/br300s_all.pdf",
+   "local_path": "sources/expansion/round2/us/or_br300s_all_202601.pdf",
+   "sha256": "6476990177f23054db2b51610d895cb05187b76088fbbf69f0de696aa92f3314",
+   "pages": {
+    "BR360": 9,
+    "BR365": 10,
+    "BR375": 11
+   }
+  },
+  {
+   "title": "Oregon Standard Drawings 2021 BR360 36\" Deck Bulb-T",
+   "url": null,
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/us/or/BR360.pdf",
+   "sha256": "a001514fc6b973200a4b3cee59900768a432c3686b8903ca172bcc8cf9fd1323",
+   "pages": 1
+  },
+  {
+   "title": "Oregon Standard Drawings 2021 BR375 60\" Deck Bulb-T",
+   "url": null,
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/us/or/BR375.pdf",
+   "sha256": "e59f96cf34f05764d01dee0d44c235c65361e68c9fe67446f16336a7c9dec4bf",
+   "pages": 1
+  },
+  {
+   "title": "ODOT Bridge Design Manual 2020 Edition, January 2026",
+   "url": null,
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/us/oh/ODOT-BDM-2026-01.pdf",
+   "sha256": "b49c470018b14eda432649532b2a9335cf736dfe2c22c2def52bf138fd85f074",
+   "pages": {
+    "308.2.3.4 I-beams": "PDF 235 / 3-173",
+    "Figure 308-6": "PDF 236 / 3-174",
+    "308.2.3.3 box beams": "PDF 227-228 / 3-165..3-166"
+   },
+   "status": "no geometry; defers to PSID-1-13 and PSBD-1-25"
+  },
+  {
+   "title": "ODOT Standard Bridge Drawing PSID-1-13 (rev. 2018-07-20)",
+   "url": null,
+   "index_url_cited_by_brice2021": "http://www.dot.state.oh.us/Divisions/Engineering/Structures/standard/Bridges/Pages/StandardBridgeDrawings.aspx",
+   "url_status": "unverified (manual download)",
+   "local_path": "sources/expansion/round2/manual/us/oh/PSID-1-13_2018-07-20.dgn",
+   "sha256": "358ee65f7159c078e7bffcb8df31404dbfe85f374f98fd597e1693d715fd1603",
+   "format": "MicroStation V8 DGN",
+   "status": "decoded with docs/research/data/round3-oregon-ohio-dgn-extract.py"
+  },
+  {
+   "title": "Brice et al. 2021 PCI Journal appendix",
+   "local_path": "sources/expansion/round2/us/pcij-2021-mj-brice-appendix.pdf",
+   "tables": {
+    "A.10": "Ohio: used for validation",
+    "A.11": "Oregon: BT/BI non-deck girders, not applicable to DKBT"
+   }
+  }
+ ],
+ "discrepancies": [
+  "PSID-1-13 sheet 1 printed A/yb/I for II, III, IV, Mod IV 60, Mod IV 66 are for the unchamfered section.",
+  "PSID-1-13 printed WF A +0.4 in2 and I +0.036..0.040% vs outline; Brice 2021 matches outline exactly."
+ ],
+ "leads": [
+  "Ohio PSBD-1-25 / PSBDD-3 box beams (36 and 48 in wide): drawings not in hand.",
+  "Oregon BT48-BT96 and BI51-BI75 (Brice Table A.11): no dimensioned drawing in hand."
+ ]
+}

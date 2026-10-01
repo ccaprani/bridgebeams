@@ -1,0 +1,260 @@
+{
+  "source_title_original": "PPBU: U BEAM (dimension and section-property sheet)",
+  "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBU.pdf",
+  "source_local_file": "sources/expansion/asia-africa/civilcon-U.pdf",
+  "source_sha256": "6033d5d21b764f771cf7c081a78e2c773f46dc6b394b835314e4e64c97dece18",
+  "source_pdf_page": 1,
+  "source_printed_page": null,
+  "source_status": "producer catalogue",
+  "producer": "Civilcon (South Africa)",
+  "accessed": "2026-09-22",
+  "units": "mm, mm2, mm3; self weight kN/m",
+  "reviewed": "Rendered at 300 dpi and scaled from line centres on 2026-09-23 (extraction-civilcon-tum).",
+  "transcribed_dimensions": {
+    "base_width": 970,
+    "bottom_chamfer": "35 x 35 (elevation detail)",
+    "outer_batter": "6,75 : 1",
+    "web_normal_thickness": 165,
+    "top_horizontal": "40 (inner shoulder) + 250 (raised strip) + 50 (outer shoulder)",
+    "top_vertical": "33 (top to inner shoulder), 15 (inner lip), 30 (top to outer shoulder)",
+    "thickening_height": "380 (inner shoulder to web-face break)",
+    "floor_half_widths": "240 (centre valley to break) + 129 (break to web toe)",
+    "depth_labels": {
+      "U1": 800,
+      "U3": 900,
+      "U5": 1000,
+      "U7": 1100,
+      "U8": 1200,
+      "U9": 1300,
+      "U10": 1400,
+      "U11": 1500,
+      "U12": 1600
+    },
+    "left_top_chain_100_90_45": "strand positions (4* strands), not concrete"
+  },
+  "fitted_parameters": {
+    "valley_height": 129.4,
+    "break_height": 218.3,
+    "method": "least squares on relative area, Yb and Ixx (Ixx from Zt*(D-Yb)) for all nine rows; printed geometry otherwise fixed; web toe fixed at the printed 369 mm half-width on the inner web face",
+    "unrounded": [
+      129.44,
+      218.28
+    ]
+  },
+  "scaled_from_drawing": {
+    "scale_px_per_mm_at_300dpi": 0.66804,
+    "valley_height": 153,
+    "break_height": 204,
+    "web_toe": [
+      371.2,
+      357.8
+    ],
+    "note": "Line-centre scaling of the U12 section. The 129 dimension scales to about 131. The fitted floor sits 24 mm (valley) and 14 mm (break) from the drawing. Drawing-scaled floor gives area residuals from +0.18% to -0.06%; the fitted floor gives at most 0.11%."
+  },
+  "derived_dimensions": {
+    "web_horizontal_width": "165*sqrt(1+1/6.75^2)=166.80",
+    "web_toe_height": "(369-318.20)*6.75=342.9",
+    "outer_face": "x=485+y/6.75 (970 at the theoretical soffit intersection; confirmed by scaling)",
+    "chamfer": "(455.19,0)-(490.19,35)"
+  },
+  "geometry_notes": [
+    "Section drawn is U12 (1600). The right-hand elevation shows the top block (shoulders, strip, lip and 380 mm thickening) moving down the outer face for the shallower marks. Each mark here is the U12 outline with the top block translated along the 6.75:1 outer face.",
+    "Published area increments are exactly 33523 mm2 per 100 mm, implying a 167.6 mm horizontal web width. Printed 165 mm normal and 6.75:1 give 166.80 mm. The printed values are kept; this produces the +0.10% (U1) to -0.11% (U12) area trend.",
+    "U10 printed Zb 255.65e6 is inconsistent with its Zt/Yb (Ixx from Zt gives Zb 225.6e6). The raw value is preserved and the discrepancy is pinned in tests.",
+    "U5 printed self weight 13.76 kN/m vs 544016 mm2 x 25 kN/m3 = 13.60 kN/m (other rows agree). Recorded only.",
+    "No U2/U4/U6 appear in the property table; SIZES follow the table."
+  ],
+  "sections": [
+    {
+      "section": "U1",
+      "published_depth": 800.0,
+      "area": 476970.0,
+      "yb": 356.5,
+      "zt": 68900000.0,
+      "zb": 85710000.0,
+      "self_weight_kN_per_m": 11.93,
+      "depth": 800.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 477445.0,
+        "yb_calc": 356.4,
+        "zt_calc": 68859824,
+        "zb_calc": 85706535,
+        "area_rel_pct": 0.1,
+        "yb_diff_mm": -0.1,
+        "zt_rel_pct": -0.058,
+        "zb_rel_pct": -0.004
+      }
+    },
+    {
+      "section": "U3",
+      "published_depth": 900.0,
+      "area": 510493.0,
+      "yb": 403.0,
+      "zt": 85840000.0,
+      "zb": 105810000.0,
+      "self_weight_kN_per_m": 12.77,
+      "depth": 900.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 510805.2,
+        "yb_calc": 402.97,
+        "zt_calc": 85798831,
+        "zb_calc": 105827593,
+        "area_rel_pct": 0.061,
+        "yb_diff_mm": -0.03,
+        "zt_rel_pct": -0.048,
+        "zb_rel_pct": 0.017
+      }
+    },
+    {
+      "section": "U5",
+      "published_depth": 1000.0,
+      "area": 544016.0,
+      "yb": 450.0,
+      "zt": 104180000.0,
+      "zb": 127280000.0,
+      "self_weight_kN_per_m": 13.76,
+      "depth": 1000.0,
+      "provenance": "fitted-reconstruction",
+      "note": "self weight 13.76 kN/m inconsistent with area x 25 kN/m3 (13.60)",
+      "residuals": {
+        "area_calc": 544165.3,
+        "yb_calc": 449.95,
+        "zt_calc": 104149357,
+        "zb_calc": 127318932,
+        "area_rel_pct": 0.027,
+        "yb_diff_mm": -0.05,
+        "zt_rel_pct": -0.029,
+        "zb_rel_pct": 0.031
+      }
+    },
+    {
+      "section": "U7",
+      "published_depth": 1100.0,
+      "area": 577539.0,
+      "yb": 497.5,
+      "zt": 123860000.0,
+      "zb": 150060000.0,
+      "self_weight_kN_per_m": 14.44,
+      "depth": 1100.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 577525.5,
+        "yb_calc": 497.28,
+        "zt_calc": 123842194,
+        "zb_calc": 150098682,
+        "area_rel_pct": -0.002,
+        "yb_diff_mm": -0.22,
+        "zt_rel_pct": -0.014,
+        "zb_rel_pct": 0.026
+      }
+    },
+    {
+      "section": "U8",
+      "published_depth": 1200.0,
+      "area": 611062.0,
+      "yb": 545.0,
+      "zt": 144860000.0,
+      "zb": 174040000.0,
+      "self_weight_kN_per_m": 15.28,
+      "depth": 1200.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 610885.7,
+        "yb_calc": 544.91,
+        "zt_calc": 144829198,
+        "zb_calc": 174114386,
+        "area_rel_pct": -0.029,
+        "yb_diff_mm": -0.09,
+        "zt_rel_pct": -0.021,
+        "zb_rel_pct": 0.043
+      }
+    },
+    {
+      "section": "U9",
+      "published_depth": 1300.0,
+      "area": 644584.0,
+      "yb": 593.0,
+      "zt": 167080000.0,
+      "zb": 199270000.0,
+      "self_weight_kN_per_m": 16.12,
+      "depth": 1300.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 644245.9,
+        "yb_calc": 592.78,
+        "zt_calc": 167075538,
+        "zb_calc": 199331271,
+        "area_rel_pct": -0.052,
+        "yb_diff_mm": -0.22,
+        "zt_rel_pct": -0.003,
+        "zb_rel_pct": 0.031
+      }
+    },
+    {
+      "section": "U10",
+      "published_depth": 1400.0,
+      "area": 678107.0,
+      "yb": 641.0,
+      "zt": 190570000.0,
+      "zb": 255650000.0,
+      "self_weight_kN_per_m": 16.96,
+      "depth": 1400.0,
+      "provenance": "fitted-reconstruction",
+      "discrepancy": "Zb255.65e6 inconsistent with Zt and centroid; raw number preserved.",
+      "residuals": {
+        "area_calc": 677606.0,
+        "yb_calc": 640.86,
+        "zt_calc": 190555213,
+        "zb_calc": 225725624,
+        "area_rel_pct": -0.074,
+        "yb_diff_mm": -0.14,
+        "zt_rel_pct": -0.008,
+        "zb_rel_pct": -11.705
+      }
+    },
+    {
+      "section": "U11",
+      "published_depth": 1500.0,
+      "area": 711630.0,
+      "yb": 689.0,
+      "zt": 215270000.0,
+      "zb": 253180000.0,
+      "self_weight_kN_per_m": 17.79,
+      "depth": 1500.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 710966.2,
+        "yb_calc": 689.12,
+        "zt_calc": 215248312,
+        "zb_calc": 253280866,
+        "area_rel_pct": -0.093,
+        "yb_diff_mm": 0.12,
+        "zt_rel_pct": -0.01,
+        "zb_rel_pct": 0.04
+      }
+    },
+    {
+      "section": "U12",
+      "published_depth": 1600.0,
+      "area": 745153.0,
+      "yb": 737.7,
+      "zt": 241160000.0,
+      "zb": 281900000.0,
+      "self_weight_kN_per_m": 18.63,
+      "depth": 1600.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 744326.4,
+        "yb_calc": 737.54,
+        "zt_calc": 241139261,
+        "zb_calc": 281985166,
+        "area_rel_pct": -0.111,
+        "yb_diff_mm": -0.16,
+        "zt_rel_pct": -0.009,
+        "zb_rel_pct": 0.03
+      }
+    }
+  ]
+}

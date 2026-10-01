@@ -1,0 +1,95 @@
+{
+  "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBY.pdf",
+  "source_pdf_page": 1,
+  "source_sha256": "e96298b5d9cdcceb16148c2bafcb43a032d239323a78c3c41242d3d8345c6a16",
+  "source_local_file": "sources/expansion/asia-africa/civilcon-Y.pdf",
+  "units": "mm, mm2, mm3",
+  "visual_review": {
+    "reviewer": "Colin Caprani",
+    "date": "2026-09-22",
+    "exported": "2026-09-22T11:24:10.339Z",
+    "reading": "Each notch is40mm wide by50mm high. Widths between notches, Y1\u2013Y8:198,227,256,285,313,342,371,400mm."
+  },
+  "geometry_notes": [
+    "Implements the40mm in-situ slab ledge;70mm topdeck alternative is not modelled.",
+    "750mm maximum base width;25x25 bottom chamfers; side inset5 over177 rise; lower splay177 rise to theoretical width200 at height379.",
+    "R100 circular fillet is tangent to lower splay and upper web. Arc tessellated64segments.",
+    "Published top widths are rounded to wholemm, producing up to0.04%area and0.5mmcentroid differences. No parameter fitted to properties.",
+    "Y1 moduli remain inconsistent with this nominal outline: calculated Zt is0.33978% above printed and Zb0.16862% above. Other sizes agree within0.1%. Preserve published values; do not describe all residuals as rounding."
+  ],
+  "published_properties": [
+    {
+      "section": "Y1",
+      "depth": 700.0,
+      "top_width_between_notches": 198,
+      "area": 309245.0,
+      "cy": 255.0,
+      "zt": 24780000.0,
+      "zb": 43240000.0,
+      "discrepancy": "Nominal drawing geometry gives Zt+0.33978%, Zb+0.16862%; unresolved source property discrepancy, not fitted away."
+    },
+    {
+      "section": "Y2",
+      "depth": 800.0,
+      "top_width_between_notches": 227,
+      "area": 339943.0,
+      "cy": 299.0,
+      "zt": 35060000.0,
+      "zb": 58750000.0
+    },
+    {
+      "section": "Y3",
+      "depth": 900.0,
+      "top_width_between_notches": 256,
+      "area": 373525.0,
+      "cy": 347.0,
+      "zt": 47900000.0,
+      "zb": 76330000.0
+    },
+    {
+      "section": "Y4",
+      "depth": 1000.0,
+      "top_width_between_notches": 285,
+      "area": 409990.0,
+      "cy": 400.0,
+      "zt": 63590000.0,
+      "zb": 95380000.0
+    },
+    {
+      "section": "Y5",
+      "depth": 1100.0,
+      "top_width_between_notches": 313,
+      "area": 449339.0,
+      "cy": 456.0,
+      "zt": 82130000.0,
+      "zb": 116000000.0
+    },
+    {
+      "section": "Y6",
+      "depth": 1200.0,
+      "top_width_between_notches": 342,
+      "area": 491572.0,
+      "cy": 515.0,
+      "zt": 103690000.0,
+      "zb": 137920000.0
+    },
+    {
+      "section": "Y7",
+      "depth": 1300.0,
+      "top_width_between_notches": 371,
+      "area": 536689.0,
+      "cy": 576.0,
+      "zt": 128280000.0,
+      "zb": 161240000.0
+    },
+    {
+      "section": "Y8",
+      "depth": 1400.0,
+      "top_width_between_notches": 400,
+      "area": 584688.0,
+      "cy": 639.0,
+      "zt": 156070000.0,
+      "zb": 185860000.0
+    }
+  ]
+}

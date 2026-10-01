@@ -1,0 +1,49 @@
+{
+  "family": "Lahore-Sialkot Motorway link highway precast post-tensioned I-girders (20 m, 30 m, 45 m)",
+  "organisation": "National Highway Authority of Pakistan (client); Prime Engineering & Testing Consultants / Associated Consulting Engineers-ACE / Pavron (consultants)",
+  "project": "Construction of Lahore-Sialkot Motorway (LSM) Link Highway (4-lane) Connecting LSM to Narang Mandi and Narowal (73 km)",
+  "source_status": "NHA project structural drawings, December 2017",
+  "units": "mm",
+  "source": {
+    "registry_id": "PK-NHA-LSM-2017-30M-PSC-I",
+    "url": "https://nha.gov.pk/wp-content/uploads/2018/01/Drawing-24-1-2018.pdf",
+    "retrieved": "2026-09-23",
+    "local_file": "sources/expansion/round2/pk/nha-lsm-drawings.pdf",
+    "sha256": "5b0214633d925fa36b0bdff044243936a9371a6286cf1bc8abdf86c66ea36987",
+    "pages": 190
+  },
+  "sizes": {
+    "20m": {
+      "pdf_page": 177,
+      "drawing": "LSM-EBP-BR-ST-008, Flyover at Station 9+943, 20M Girder Pre-Stressing Sections Details",
+      "section_views": "Sections 2-2 and 3-3 (midspan), scale 1:40; depth 1600 confirmed on Section 1-1",
+      "dimensions_mm": {"depth": 1600, "top_width": 800, "web_width": 200, "bottom_width": 600, "top_edge": 150, "top_splay": 150, "web_height": 860, "bottom_splay": 200, "bottom_edge": 240},
+      "printed_widths": "top 300+200+300; bottom 200+200 each side of 200 web, 600 overall"
+    },
+    "30m": {
+      "pdf_page": 139,
+      "drawing": "LSM-EBP-BR-ST-012, Flyover at Station 0+337, 30M Girder Pre-Stressing Details",
+      "section_views": "Sections 26-26 and 27-27 (exterior and interior identical), scale 1:40; depth 2000 on Section 25-25",
+      "dimensions_mm": {"depth": 2000, "top_width": 900, "web_width": 200, "bottom_width": 600, "top_edge": 170, "top_splay": 170, "web_height": 1170, "bottom_splay": 200, "bottom_edge": 290},
+      "printed_widths": "top 350+200+350; bottom 200+200 each side of 200 web, 600 overall",
+      "other_sheets_same_outline": "PDF p153 (Slip Bridge-1) and p188 (Flyover at Station 10+106) repeat the 30 m sheet"
+    },
+    "45m": {
+      "pdf_page": 142,
+      "drawing": "LSM-EBP-BR-ST-015, Flyover at Station 0+337, 45M Girder Pre-Stressing Sections Details",
+      "section_views": "Section 2-2 (midspan), scale 1:40",
+      "dimensions_mm": {"depth": 2750, "top_width": 1100, "web_width": 210, "bottom_width": 750, "top_edge": 220, "top_splay": 200, "web_height": 1650, "bottom_splay": 280, "bottom_edge": 400},
+      "printed_widths": "top 445+210+445 = 1100; bottom 270+210+270 = 750"
+    }
+  },
+  "published_properties": null,
+  "provenance": "transcribed",
+  "geometry_notes": [
+    "All dimensions are printed on the sheets and were read visually from 400 dpi renders. Every vertical chain closes to the printed depth, and every width chain closes to the printed flange widths.",
+    "Straight splays with no drawn chamfers or fillets. The sheets carry no chamfer note.",
+    "The midspan I section is used. The thickened end sections (Section 1-1 / 25-25) are rectangular 600/750 wide end blocks and are excluded.",
+    "This is one project design, not an NHA national standard. It does not match NHA Types A-H; for example, NHA Type E is 2000 deep with 700/180/600 widths.",
+    "The structural notes on PDF p72 cite AASHTO LRFD 2010 and the West Pakistan Code of Practice for Highway Bridges 1967. No US AASHTO beam type is named, and no US geometry is transferred.",
+    "No section properties are printed. Checks are analytic only."
+  ]
+}

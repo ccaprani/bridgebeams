@@ -1,0 +1,10 @@
+numpy
+matplotlib
+sectionproperties>=3.0
+shapely>=2.0
+pydata-sphinx-theme
+Sphinx>=4.0
+myst-parser
+sphinx-autodoc-typehints
+pygments >= 2.7
+nbsphinx

@@ -1,0 +1,189 @@
+{
+ "topic": "round3-philippines",
+ "date": "2026-09-25",
+ "sources": [
+  {
+   "country": "PH",
+   "title_original": "Types of Bridges (Philippines) — Deck Girder Bridges — Prestressed Concrete Girders (PSCG) — Standard AASHTO I-Girders",
+   "organisation": "unrecorded (presentation on Philippine DPWH practice)",
+   "url": null,
+   "origin_note": "Owner found the slide; author, presentation, date and URL are unrecorded (unverified). Treated as a secondary presentation of DPWH practice, not a DPWH standard drawing.",
+   "local": "sources/expansion/round2/manual/ph/owner-supplied-types-of-bridges-philippines-aashto.png",
+   "sha256": "c5e9056f77e5a10e77e47a30f5b5dff4d44988f2d81609912448ea17e734274d",
+   "form": "single presentation slide (raster PNG, 2000 x 1500 px), supplied by the repository owner",
+   "source_status": "secondary presentation slide (origin unrecorded); DPWH practice",
+   "status": "implemented",
+   "implemented": {
+    "bridgebeams.ph.PhDpwhAashtoSection": {
+     "sizes": [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V-as-drawn"
+     ],
+     "provenance": {
+      "I": "transcribed",
+      "II": "transcribed-with-convention",
+      "III": "transcribed-with-convention",
+      "IV": "transcribed-with-convention",
+      "V-as-drawn": "transcribed"
+     }
+    }
+   },
+   "transcription_mm": {
+    "I": {
+     "label_on_slide": "TYPE I",
+     "depth": 711,
+     "top_width": 305,
+     "web": 152,
+     "bottom_width": 406,
+     "chain_as_drawn": {
+      "top_flange": 102,
+      "top_taper": 76,
+      "web_height": 279,
+      "bottom_taper": 127,
+      "bottom_flange": 127
+     },
+     "chain_sum": 711,
+     "web_height_used": 279
+    },
+    "II": {
+     "label_on_slide": "TYPE II",
+     "depth": 914,
+     "top_width": 305,
+     "web": 152,
+     "bottom_width": 457,
+     "chain_as_drawn": {
+      "top_flange": 152,
+      "top_taper": 76,
+      "web_height": 381,
+      "bottom_taper": 152,
+      "bottom_flange": 152
+     },
+     "chain_sum": 913,
+     "web_height_used": 382
+    },
+    "III": {
+     "label_on_slide": "TYPE III",
+     "depth": 1143,
+     "top_width": 406,
+     "web": 178,
+     "bottom_width": 559,
+     "chain_as_drawn": {
+      "top_flange": 178,
+      "top_taper": 114,
+      "web_height": 483,
+      "bottom_taper": 191,
+      "bottom_flange": 178
+     },
+     "chain_sum": 1144,
+     "web_height_used": 482
+    },
+    "IV": {
+     "label_on_slide": "TYPE IV",
+     "depth": 1372,
+     "top_width": 508,
+     "web": 203,
+     "bottom_width": 660,
+     "chain_as_drawn": {
+      "top_flange": 203,
+      "top_taper": 152,
+      "web_height": 584,
+      "bottom_taper": 229,
+      "bottom_flange": 203
+     },
+     "chain_sum": 1371,
+     "web_height_used": 585
+    },
+    "V-as-drawn": {
+     "label_on_slide": "TYPE V",
+     "depth": 1829,
+     "top_width": 1067,
+     "web": 203,
+     "bottom_width": 660,
+     "chain_as_drawn": {
+      "top_flange": 127,
+      "top_taper": 76,
+      "top_fillet": 102,
+      "web_height": 1067,
+      "bottom_taper": 254,
+      "bottom_flange": 203
+     },
+     "chain_sum": 1829,
+     "web_height_used": 1067,
+     "top_fillet_width": 102
+    }
+   },
+   "comparison_vs_pci_2011": {
+    "reference": "bridgebeams.us.AashtoIBeamSection (PCI BDM Appendix B-7, Nov 2011, inch dimensions x 25.4)",
+    "metric": "max_vertex_mm = largest distance from a PH vertex to the nearest US vertex; hausdorff_mm = outline Hausdorff distance; sym_diff_mm2 = symmetric-difference area; area/ixx ratios PH/US (gross, about centroid)",
+    "computed": "2026-09-25",
+    "results": {
+     "I": {
+      "us_size": "I",
+      "max_vertex_mm": 0.61,
+      "hausdorff_mm": 0.49,
+      "sym_diff_mm2": 363,
+      "area_ratio": 0.99896,
+      "ixx_ratio": 0.99916
+     },
+     "II": {
+      "us_size": "II",
+      "max_vertex_mm": 0.82,
+      "hausdorff_mm": 0.71,
+      "sym_diff_mm2": 590,
+      "area_ratio": 0.99779,
+      "ixx_ratio": 0.99805
+     },
+     "III": {
+      "us_size": "III",
+      "max_vertex_mm": 0.71,
+      "hausdorff_mm": 0.57,
+      "sym_diff_mm2": 413,
+      "area_ratio": 1.00075,
+      "ixx_ratio": 1.0
+     },
+     "IV": {
+      "us_size": "IV",
+      "max_vertex_mm": 1.0,
+      "hausdorff_mm": 0.78,
+      "sym_diff_mm2": 738,
+      "area_ratio": 0.99937,
+      "ixx_ratio": 1.00019
+     },
+     "V-as-drawn": {
+      "us_size": "VI",
+      "max_vertex_mm": 25.6,
+      "max_vertex_mm_excluding_bottom_flange_corners": 0.5,
+      "hausdorff_mm": 25.6,
+      "sym_diff_mm2": 17663,
+      "area_ratio": 0.97545,
+      "ixx_ratio": 0.96744,
+      "note": "All vertices within 0.5 mm of Type VI except the two bottom-flange corners (660 vs 711.2 mm width: 25.6 mm per side)."
+     },
+     "V-as-drawn_vs_US_V": {
+      "us_size": "V",
+      "hausdorff_mm": 228.8,
+      "note": "depth 1829 vs 1600.2 mm; not a rounding difference"
+     }
+    }
+   },
+   "discrepancies": [
+    "Slide 'TYPE V' has the depth and top/web geometry of AASHTO Type VI (1829 mm = 72 in), not Type V (1600 mm); kept as size 'V-as-drawn'.",
+    "Slide 'TYPE V' bottom flange printed 660 mm; PCI Type VI (and V) B2 = 711.2 mm. Implemented as printed; pinned in tests.",
+    "Types II, III, IV vertical chains miss overall depth by 1 mm (913/1144/1371); web absorbs residual."
+   ],
+   "cross_references": [
+    "docs/research/aashto-cross-jurisdiction-followup-2026-09.md (priority 1 DPWH Odiongan Type VI; priority 2 POW 17J00028 Type IV-B)",
+    "docs/research/round2-south-asia-korea-philippines-2026-09.md (PH: no profile in round 2; DPWH host blocked)",
+    "docs/research/deep-search-korea-argentina-philippines-2026-09.md (Laguna EIS: Type VI and NU 2000 options)"
+   ],
+   "open_checks": [
+    "Obtain DPWH Odiongan Bridge 2 PDS 26/43 to settle Type VI bottom-flange width",
+    "Record slide origin",
+    "Define DPWH 'Type IV-B'"
+   ]
+  }
+ ]
+}

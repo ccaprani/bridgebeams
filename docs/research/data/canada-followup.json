@@ -1,0 +1,46 @@
+{
+  "jurisdiction": "Ontario, Canada",
+  "retrieved_utc_date": "2026-09-22",
+  "official_index_url": "https://www.library.mto.gov.on.ca/SydneyPLUS/TechPubs/Portal/tp/ssdViews.aspx",
+  "sources": [
+    {
+      "drawing": "SS107-25",
+      "portal_number": "107.0025",
+      "title": "Prestressed Solid Slabs and Bearings (S300, S400, S500)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_25.pdf",
+      "sha256": "da654b7d7f5175f4487410c01e7950dabbe71885b4849d447b1827842e489406",
+      "pdf_page": 1
+    },
+    {
+      "drawing": "SS107-26",
+      "portal_number": "107.0026",
+      "title": "Prestressed Solid Slabs Details",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_26.pdf",
+      "sha256": "e9ea826a02faa539242f8ea80eabbe66c0cfb6b811677a6eff8dd49c5441b86c",
+      "pdf_page": 1
+    },
+    {
+      "drawing": "SS107-16",
+      "portal_number": "107.0016",
+      "title": "Prestressed NU Girders and Bearings (NU 900)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_16.pdf",
+      "sha256": "cc45346cf2251d70d9f594d46e276c51394173419ec1542f3ec3c2521c5548b5",
+      "pdf_page": 1,
+      "status": "read_not_implemented",
+      "reason": "R50 and R200 curved transitions need radius-correct contour discretisation and property verification."
+    }
+  ],
+  "implemented_profiles": [
+    {"designation": "S300", "depth_mm": 300, "width_mm": 1220, "bottom_chamfer_mm": 20, "area_mm2": 365600},
+    {"designation": "S400", "depth_mm": 400, "width_mm": 1220, "bottom_chamfer_mm": 20, "area_mm2": 487600},
+    {"designation": "S500", "depth_mm": 500, "width_mm": 1220, "bottom_chamfer_mm": 20, "area_mm2": 609600}
+  ],
+  "limits": [
+    "Uninterrupted typical gross section only; local holes, end undercuts, strands, reinforcement and bearing details excluded.",
+    "No independent published section-property table on SS107-25 or SS107-26.",
+    "Ontario provincial drawing; not a national Canadian standard."
+  ]
+}

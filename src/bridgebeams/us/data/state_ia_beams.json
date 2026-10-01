@@ -1,0 +1,210 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Iowa Department of Transportation, Bridges and Structures Bureau",
+ "document": "LRFD Bridge Design Manual 5.4.1 Pretensioned Prestressed Concrete Beams, Figures 5.4.1.1.1-1 and 5.4.1.1.1-2",
+ "source": {
+  "url": "https://iowadot.gov/media/4637/download?inline",
+  "retrieved_via": "http://web.archive.org/web/20250522092537id_/https://iowadot.gov/media/4637/download?inline",
+  "direct_access": "HTTP 403 from iowadot.gov to this machine; Wayback snapshot 2025-05-22 used",
+  "local_path": "sources/expansion/round2/us/ia_bdm_5-4-2_ppcb.pdf",
+  "sha256": "970097a53980916dd9331dbf5fb2e8e04718636cc357bd6bb0b118ab05a3e707",
+  "pdf_page": 3,
+  "printed_page": "5.4.1: 3",
+  "edition": "January 2025"
+ },
+ "units": "inches",
+ "bulb_tee_template_in": {
+  "top_width": 34,
+  "top_edge": 3.8125,
+  "top_taper": 1.6875,
+  "web_width": 6.5,
+  "bottom_width": 30,
+  "bottom_edge": 7.5,
+  "bottom_taper": 5.5,
+  "web_fillet_radius": 8.0,
+  "bottom_flange_corner_radius": 2.0,
+  "soffit_fillet_radius": 0.75
+ },
+ "geometry_notes": [
+  "A-D: every dimension printed; flange tapers end on the web faces; 3/4 in by 3/4 in soffit bevels drawn and dimensioned.",
+  "A-D published A/yb/I equal the section WITHOUT the two soffit bevels to print precision (bevel area 2 x 0.28125 in2). The polygon includes the bevels as drawn; the tests compare the published values with polygon + bevel triangles and pin this explicitly.",
+  "BTB-BTE: top 2'-10, 3 13/16 in flange tip, 1 11/16 in taper to the web face, 6 1/2 in web, R=8 in web fillets, 2'-6 bottom, 7 1/2 in edge, 5 1/2 in taper to the web face, R=2 in at the bottom-flange shoulder, '3/4\" FILLET' at the soffit corners (taken as a 3/4 in radius: convention). Top-flange tip corners are drawn square. Secondary callouts (4 5/8, 7 1/16, 7 15/16, 6 3/16, 1 13/16) are fillet tangent points and agree with the construction to 1/32 in.",
+  "BTB-BTE published properties are not internally consistent between depths (area steps of 60.1/57.0/58.6 in2 for identical 9 in web additions of 58.5 in2); residuals are pinned per size. BTB printed yb 17.14 in is 0.52 in above the computed 16.62 in, inconsistent with the other three sizes (<=0.16 in); pinned as a probable source error."
+ ],
+ "i_beams": {
+  "A": {
+   "figure": "\"A\" BEAM CROSS SECTION",
+   "dimensions_in": {
+    "top_width": 13,
+    "web_width": 6,
+    "bottom_width": 17,
+    "bottom_edge": 5,
+    "bottom_tapers_rise_run": [
+     [
+      6,
+      5.5
+     ]
+    ],
+    "web_height": 16,
+    "top_tapers_rise_run": [
+     [
+      1,
+      3.5
+     ]
+    ],
+    "top_edge": 4,
+    "soffit_bevel": 0.75
+   },
+   "published_in": {
+    "area": 311.5,
+    "yb": 14.05,
+    "ix": 34082
+   },
+   "provenance": "transcribed",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  },
+  "B": {
+   "figure": "\"B\" BEAM CROSS SECTION",
+   "dimensions_in": {
+    "top_width": 13,
+    "web_width": 6,
+    "bottom_width": 17,
+    "bottom_edge": 7,
+    "bottom_tapers_rise_run": [
+     [
+      6,
+      5.5
+     ]
+    ],
+    "web_height": 20,
+    "top_tapers_rise_run": [
+     [
+      1,
+      3.5
+     ]
+    ],
+    "top_edge": 5,
+    "soffit_bevel": 0.75
+   },
+   "published_in": {
+    "area": 382.5,
+    "yb": 17.06,
+    "ix": 62000
+   },
+   "provenance": "transcribed",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  },
+  "C": {
+   "figure": "\"C\" BEAM CROSS SECTION",
+   "dimensions_in": {
+    "top_width": 16,
+    "web_width": 9,
+    "bottom_width": 20,
+    "bottom_edge": 8,
+    "bottom_tapers_rise_run": [
+     [
+      6,
+      5.5
+     ]
+    ],
+    "web_height": 25,
+    "top_tapers_rise_run": [
+     [
+      1,
+      3.5
+     ]
+    ],
+    "top_edge": 5,
+    "soffit_bevel": 0.75
+   },
+   "published_in": {
+    "area": 564.5,
+    "yb": 20.23,
+    "ix": 116354
+   },
+   "provenance": "transcribed",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  },
+  "D": {
+   "figure": "\"D\" BEAM CROSS SECTION",
+   "dimensions_in": {
+    "top_width": 20,
+    "web_width": 7,
+    "bottom_width": 22,
+    "bottom_edge": 8,
+    "bottom_tapers_rise_run": [
+     [
+      7.5,
+      7.5
+     ]
+    ],
+    "web_height": 31.5,
+    "top_tapers_rise_run": [
+     [
+      1,
+      6.5
+     ]
+    ],
+    "top_edge": 6,
+    "soffit_bevel": 0.75
+   },
+   "published_in": {
+    "area": 638.75,
+    "yb": 24.37,
+    "ix": 214974
+   },
+   "provenance": "transcribed",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  }
+ },
+ "bulb_tees": {
+  "BTB": {
+   "figure": "BTB BEAM CROSS SECTION",
+   "web_height_in": 17.5,
+   "depth_in": 36,
+   "published_in": {
+    "area": 631.7,
+    "yb": 17.14,
+    "ix": 99980
+   },
+   "provenance": "transcribed-with-convention",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  },
+  "BTC": {
+   "figure": "BTC BEAM CROSS SECTION",
+   "web_height_in": 26.5,
+   "depth_in": 45,
+   "published_in": {
+    "area": 691.8,
+    "yb": 20.74,
+    "ix": 178971
+   },
+   "provenance": "transcribed-with-convention",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  },
+  "BTD": {
+   "figure": "BTD BEAM CROSS SECTION",
+   "web_height_in": 35.5,
+   "depth_in": 54,
+   "published_in": {
+    "area": 748.8,
+    "yb": 24.64,
+    "ix": 285860
+   },
+   "provenance": "transcribed-with-convention",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  },
+  "BTE": {
+   "figure": "BTE BEAM CROSS SECTION",
+   "web_height_in": 44.5,
+   "depth_in": 63,
+   "published_in": {
+    "area": 807.4,
+    "yb": 28.75,
+    "ix": 422790
+   },
+   "provenance": "transcribed-with-convention",
+   "source_status": "Iowa DOT LRFD BDM 5.4.1, January 2025"
+  }
+ }
+}

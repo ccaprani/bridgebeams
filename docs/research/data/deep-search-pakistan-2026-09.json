@@ -1,0 +1,57 @@
+{
+  "accessed": "2026-09-22",
+  "scope": "Pakistan follow-up: distinguish AASHTO design-code use from imported US beam geometry. Named NHA sections and project girder drawings are research leads, not implemented profiles or proof of construction.",
+  "records": [
+    {
+      "id": "PK-NHA-2005-PSC-I-A-H",
+      "country_code": "PK",
+      "country": "Pakistan",
+      "language": "English",
+      "source_type": "transport_authority_standard_drawing_mirror",
+      "organisation": "National Highway Authority of Pakistan, Central Design Cell",
+      "title_original": "Designing of Bridges on National Highways",
+      "title_en": "Designing of Bridges on National Highways",
+      "url": "https://www.scribd.com/document/456777971/DESIGNING-OF-BRIDGES-ON-NATIONAL-HIGHWAYS-NHA-2006-pdf",
+      "locator": "July 2006 compilation, contents items 7-8, Summary of Proposed Standard Cross-section of Girders and drawing STANDARD/04 (Types A-C), STANDARD/05 (D-F), STANDARD/06 (G-H), dated March 2005; text-indexed third-party copy",
+      "family_names": ["NHA Type A", "NHA Type B", "NHA Type C", "NHA Type D", "NHA Type E", "NHA Type F", "NHA Type G", "NHA Type H"],
+      "printed_dimensions": "The indexed original gives H = 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600 mm for Types A-H; B1 top widths = 550, 550, 600, 700, 700, 900, 1000, 1100 mm; B3 bottom widths = 550, 550, 600, 600, 600, 620, 650, 750 mm. All rows B1-B3/D1-D5/H are reproduced in the independent 2025 study listed separately.",
+      "status": "partial_dimensions",
+      "missing_information": "Obtain the NHA-issued original PDF or drawings, visually check all STANDARD/04-06 contours and dimension labels (the mirror is text-indexed only here), establish current revision/adoption, and compare the complete outlines against any claimed US AASHTO profile before sharing an ID.",
+      "contact_route": "NHA Central Design Cell via nha.gov.pk; original title block names Lt Col (R) Muhammad Iqbal, Arfan and Azizullah."
+    },
+    {
+      "id": "PK-MUSTAFA-JAVED-2025-NHA-A-H",
+      "country_code": "PK",
+      "country": "Pakistan",
+      "language": "English",
+      "source_type": "university_research_paper",
+      "organisation": "University of Engineering and Technology Lahore; Mehwish Mustafa and Afzal Javed",
+      "title_original": "Effect of Concrete Strength on the Design of Prestressed Concrete Bridge Girders",
+      "title_en": "Effect of Concrete Strength on the Design of Prestressed Concrete Bridge Girders",
+      "url": "https://irispublishers.com/ctcse/pdf/CTCSE.MS.ID.000766.pdf",
+      "locator": "PDF/printed p.2 Table 1 dimensional schedule; p.3 Figure 1 schematic; p.8 Girder Section paragraph; DOI 10.33552/CTCSE.2025.11.000766",
+      "family_names": ["NHA Type A", "NHA Type B", "NHA Type C", "NHA Type D", "NHA Type E", "NHA Type F", "NHA Type G", "NHA Type H"],
+      "printed_dimensions": "Table 1 gives B1/B2/B3, D1-D5 and total H for all eight types, in mm. H = 1200-2600 mm at 200 mm increments; B1 top width = 550-1100 mm; B3 bottom width = 550-750 mm. The first span cell appears as an erroneous date '20-Dec'; the NHA original index gives 12-20 m.",
+      "status": "partial_dimensions",
+      "missing_information": "Paper Figure 1 has inconsistent parameter labels relative to Table 1 (including B4 and D6), so derive polygons from the NHA original drawing STANDARD/04-06 rather than this schematic. Confirm whether any NHA type is currently specified, built, or identical to an AASHTO US standard by direct outline comparison.",
+      "contact_route": "Corresponding author Mehwish Mustafa at University of Engineering and Technology Lahore, as given on paper p.1."
+    },
+    {
+      "id": "PK-NHA-LSM-2017-30M-PSC-I",
+      "country_code": "PK",
+      "country": "Pakistan",
+      "language": "English",
+      "source_type": "transport_authority_project_drawing_set",
+      "organisation": "National Highway Authority of Pakistan; Prime Engineering and Testing Consultants / Associated Consulting Engineers / Pavron",
+      "title_original": "Construction of Lahore-Sialkot Motorway Link Highway to Narang Mandi and Narowal: Structural Drawings",
+      "title_en": "Lahore-Sialkot Motorway link highway structural drawings",
+      "url": "https://nha.gov.pk/wp-content/uploads/2018/01/Drawing-24-1-2018.pdf",
+      "locator": "PDF p.72 Structural Notes; PDF p.139 / drawing LSM-EBP-BR-ST-012, Flyover at Station 0+337, 30M Girder Pre-Stressing Details; visually inspected sections 25-25, 26-26, 27-27",
+      "family_names": ["LSM 30m PSC I girder"],
+      "printed_dimensions": "Drawing LSM-EBP-BR-ST-012 shows a project-specific 30 m PSC I-girder, with 2000 mm gross depth on section 25-25, a 600 mm bottom flange and 900 mm top flange at section 26-26 (350+200+350 mm). Structural notes cite AASHTO LRFD 2010 and the West Pakistan Code of Practice but do not name a US AASHTO beam type.",
+      "status": "partial_dimensions",
+      "missing_information": "Transcribe the complete project contour including any variable end/midspan shape and chamfers from the high-resolution drawing. The pack is a 2017 project design, not an NHA national beam-type standard; actual construction and equivalence to NHA Type A-H or a US profile are unverified.",
+      "contact_route": "NHA project office via nha.gov.pk; title block names Prime Engineering and Testing Consultants, Associated Consulting Engineers and Pavron."
+    }
+  ]
+}

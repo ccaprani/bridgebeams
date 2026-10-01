@@ -1,0 +1,74 @@
+{
+  "family": "개량형 P.S.C BEAM 표준도 (Improved PSC beam standard drawings)",
+  "title_original": "설계·시공 최적화를 위한 연구보고서 (과제명: 개량형 PSC BEAM 적용방안) [부록] - 개량형 PSC BEAM 표준도",
+  "title_en": "Research report on design and construction optimisation (task: application of the improved PSC beam), appendix: improved PSC beam standard drawings",
+  "organisation": "국토해양부 대전지방국토관리청 (Ministry of Land, Transport and Maritime Affairs, Daejeon Regional Construction and Management Administration)",
+  "date": "2008-10 (sheet title blocks 2008.06)",
+  "source_status": "MLTM regional standard drawings, October 2008",
+  "units": "mm",
+  "source": {
+    "url": "https://www.codil.or.kr/filebank/original/RK/OTMCRK110390//OTMCRK110390.pdf",
+    "archive": "CODIL (건설기술정보시스템) record OTMCRK110390",
+    "retrieved": "2026-09-23",
+    "local_file": "sources/expansion/round2/kr/codil-improved-psc-beam-std.pdf",
+    "sha256": "15bdc505d5bc2bcc46d9b61c0db42c25cc367284470983f943711222395be1ff",
+    "pages": 77,
+    "scan": "A4 pages; each sheet is a 300 ppi 1-bit CCITT scan"
+  },
+  "sizes": {
+    "H1400": {
+      "midspan_views": [{"pdf_page": 5, "sheet": "일반도-1 (L=25m, H=1.4m), 표준형, 중앙부"}],
+      "span_m": [25],
+      "dimensions_mm": {"depth": 1400, "web_height": 865},
+      "printed_chain": "150 / 60 / 865 / 150 / 75(sic)",
+      "provenance": "transcribed-with-convention"
+    },
+    "H1700": {
+      "midspan_views": [
+        {"pdf_page": 12, "sheet": "일반도-1 (L=30m, H=1.7m), 표준형, 중앙부"},
+        {"pdf_page": 27, "sheet": "일반도-1 (L=25m, H=1.7m), 확장형, 중앙부"}
+      ],
+      "span_m": [25, 30],
+      "dimensions_mm": {"depth": 1700, "web_height": 1165},
+      "printed_chain": "150 / 60 / 1.165 / 150 / 75(sic)",
+      "provenance": "transcribed-with-convention"
+    },
+    "H2000": {
+      "midspan_views": [
+        {"pdf_page": 19, "sheet": "일반도-1 (L=35.0m, H=2.0m), 표준형, 중앙부"},
+        {"pdf_page": 34, "sheet": "일반도-1 (L=25m, H=2.0m), 확장형, 중앙부"},
+        {"pdf_page": 41, "sheet": "일반도-1 (L=30m, H=2.0m), 확장형, 중앙부"}
+      ],
+      "span_m": [25, 30, 35],
+      "dimensions_mm": {"depth": 2000, "web_height": 1465},
+      "printed_chain": "150 / 60 / 1.465 / 150 / 175 (p19); '75' on p34/p41",
+      "provenance": "transcribed"
+    }
+  },
+  "common_dimensions_mm": {
+    "top_width": 1200,
+    "top_width_chain": "500 + 200 + 500",
+    "web_width": 200,
+    "bottom_width": 1000,
+    "bottom_width_chain": "400 + 200 + 400",
+    "top_edge": 150,
+    "top_splay": 60,
+    "bottom_splay": 150,
+    "bottom_edge": 175,
+    "radius_top_flange_underside_corner": 50,
+    "radius_web_fillet": 150,
+    "radius_bottom_flange_shoulder": 100
+  },
+  "published_properties": null,
+  "geometry_notes": [
+    "Only the midspan (중앙부) section is used. The end (단부, 1200-wide solid) and transition sections at 11.850/11.650/10.300 are excluded.",
+    "All three depths share the printed widths 1200 / 200 / 1000 (500+200+500 and 400+200+400), the top chain 150 + 60 and the bottom splay 150. Only the clear web changes: 865, 1165 and 1465.",
+    "The standard (표준형) and extended (확장형) series use identical midspan sections at the same H. Six span sheets therefore reduce to three distinct profiles.",
+    "CORRECTION: the H=1.4 and H=1.7 sheets, and the extended H=2.0 sheets, print the bottom-flange side as '75'. Their chains then sum 100 mm short of H (1300 vs 1400; 1600 vs 1700). The standard H=2.0 sheet (PDF p19) prints '175', which closes exactly (150+60+1465+150+175 = 2000). Scaled from the 300 ppi scans, the lowest segment measures about 160-175 mm on the H=1.4 and H=1.7 sheets, not 75. The value 175 is adopted for all three depths (a leading '1' lost at the dimension tick).",
+    "Fillets are implemented as tangent circular arcs, tessellated into 16 chords. Printed radii: R=50 at the convex top-flange underside corner, R=150 at the four re-entrant web junctions, R=100 at the convex bottom-flange shoulders.",
+    "CONVENTION: the top outer corners and soffit corners appear slightly rounded on the scans but carry no radius or chamfer callout. They are kept sharp.",
+    "The top splay runs from the flange side (x=600) to the web face (x=100) over 60 mm. The bottom splay runs from x=500 to x=100 over 150 mm.",
+    "No section-property table is printed. Checks are analytic only.",
+    "These are MLTM regional 개량형 (improved) beams. They are distinct from the existing KHC (Korea Expressway Corporation) standard I-girders in kr.kgm_i_section."
+  ]
+}

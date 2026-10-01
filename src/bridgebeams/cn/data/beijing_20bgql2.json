@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "family": "Beijing 20BGQL2 single-track urban-rail post-tensioned precast box girder",
+ "country": "China",
+ "source_status": "Beijing urban-rail standard atlas 20BGQL2 (北京市工程建设标准设计文件, 轨道交通通用图集); issue date not verified",
+ "source": {
+  "id": "CN-BEIJING-20BGQL2",
+  "organisation": "北京市规划和自然资源委员会 / 北京市城乡规划标准化办公室",
+  "title_original": "20BGQL2 时速100公里及以下城市轨道交通后张法预应力混凝土单线预制箱梁",
+  "title_en": "Post-tensioned precast concrete single-track box girders for urban rail transit at up to 100 km/h",
+  "url": "https://ghzrzyw.beijing.gov.cn/biaozhunguanli/bzgj/tytj/202105/P020210527325354365083.pdf",
+  "local_file": "sources/expansion/asia-africa/beijing-20bgql2.pdf",
+  "sha256": "5aecbbfc522af84605987b5746c5eb28909bb8361634704ec4460f6a235cffa6",
+  "pdf_page_1_based": 23,
+  "printed_page": 15,
+  "sheet": "预制箱梁构造图（二）, section I–I 截面",
+  "supporting_pages": {
+   "22": "printed 14, 预制箱梁构造图（一）: 1/2 IV–IV longitudinal section, midspan 200/150/1080/150/220 chain"
+  },
+  "transcription": "Visual reading of 400-dpi render, 2026-09-23."
+ },
+ "units": {
+  "drawing": "mm",
+  "outline_output": "mm"
+ },
+ "dimensions_mm": {
+  "depth": "200 + 150 + 1450 = 1800",
+  "half_width": "2600 + a, a = 0–300 (附注1)",
+  "bottom_chain": "a + 1400 + 250 + 950 | 950 + 250 + 1400 + a",
+  "wing": "200 thick over a (flat), tapering to 350 at the web top over 1400",
+  "outer_web": "250 horizontal over 1450 (58:10 slope marker)",
+  "void": {
+   "bottom_slab": 220,
+   "height": 1380,
+   "top_slab": 200,
+   "half_width_at_top_haunch_end": 916,
+   "half_width_at_bottom_haunch_end": 730,
+   "top_haunch": "450 x 150",
+   "bottom_haunch": "300 x 150",
+   "web_normal_thickness": 280
+  },
+  "corner_radii": "R=50 at web–soffit and web–wing corners",
+  "drip_groove": "A详图: 滴水檐 R=20, 150 from the wing tip"
+ },
+ "span_table": {
+  "L_m": [
+   25,
+   30,
+   32
+  ],
+  "L1_m": [
+   3.45,
+   2.95,
+   3.95
+  ],
+  "n": [
+   3,
+   4,
+   4
+  ],
+  "note": "Same midspan section for all spans."
+ },
+ "geometry_notes": [
+  "Origin at mid-soffit, y up; single void as an interior ring.",
+  "Void internal consistency: 280 normal web with the 250:1450 slope gives 915.9/729.7 half-widths at the haunch ends vs printed 916/730.",
+  "R50 corners are exact tangent arcs (32 segments). Gross outline without fillets and groove: 2 568 520 mm2 (a=0); fillets net -170 mm2.",
+  "Drip groove: R20 circle centred on the wing soffit 150 mm from the tip (a semicircular cut, 1257 mm2 for both); on the tapered soffit when a<170. Option drip_groove=False omits it.",
+  "Excluded: ø100 vent holes (web, 1000 above soffit), ø600 access hole, ø100/ø160 drain holes, end thickening of sections II–II/III–III, 20x20 end chamfers.",
+  "No published section properties; the values below are analytic only.",
+  "Registry correction: an earlier note read an outer depth of 1600 at II–II; the drawing gives 1800 (200+150+1450) at every section."
+ ],
+ "analytic_properties": {
+  "a=0": {
+   "area_mm2": 2567095,
+   "yb_mm": 1156.3,
+   "ixx_mm4": 1025143212858
+  },
+  "a=0 no drip groove": {
+   "area_mm2": 2568350,
+   "yb_mm": 1156.51,
+   "ixx_mm4": 1025381701992
+  },
+  "a=150": {
+   "area_mm2": 2627052,
+   "yb_mm": 1168.7,
+   "ixx_mm4": 1042649576261
+  },
+  "a=150 no drip groove": {
+   "area_mm2": 2628350,
+   "yb_mm": 1168.92,
+   "ixx_mm4": 1042900045391
+  },
+  "a=300": {
+   "area_mm2": 2687095,
+   "yb_mm": 1180.57,
+   "ixx_mm4": 1059415689588
+  },
+  "a=300 no drip groove": {
+   "area_mm2": 2688350,
+   "yb_mm": 1180.77,
+   "ixx_mm4": 1059645349018
+  }
+ },
+ "provenance": "transcribed-with-convention"
+}

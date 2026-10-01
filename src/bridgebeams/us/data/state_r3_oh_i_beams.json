@@ -1,0 +1,949 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Ohio Department of Transportation (ODOT), Office of Structural Engineering",
+ "units": "inches (source); package geometry in mm",
+ "sources": {
+  "psid": {
+   "title": "Standard Bridge Drawing PSID-1-13, Prestressed Concrete I-Beam Bridge Details (10 sheets; dated 01-18-2013, revised to 07-20-2018)",
+   "url": null,
+   "index_url_cited_by_brice2021": "http://www.dot.state.oh.us/Divisions/Engineering/Structures/standard/Bridges/Pages/StandardBridgeDrawings.aspx",
+   "url_note": "Downloaded manually by the owner; exact download URL not recorded (unverified).",
+   "local_path": "sources/expansion/round2/manual/us/oh/PSID-1-13_2018-07-20.dgn",
+   "format": "MicroStation V8 DGN (OLE compound file, v08.11); no DGN V8 reader installed (no GDAL/ODA/Teigha). Decoded with a local Python parser: zlib-inflated Dgn^G graphic streams, element header words-to-follow at +8, level at +0x10, line/linestring vertices as IEEE doubles at +0x6C/+0x74; model units 1250 UOR per inch.",
+   "sha256": "358ee65f7159c078e7bffcb8df31404dbfe85f374f98fd597e1693d715fd1603"
+  },
+  "bdm": {
+   "title": "ODOT Bridge Design Manual, 2020 Edition - January 2026 update",
+   "url": null,
+   "url_note": "Downloaded manually by the owner; URL not recorded (unverified).",
+   "local_path": "sources/expansion/round2/manual/us/oh/ODOT-BDM-2026-01.pdf",
+   "sha256": "b49c470018b14eda432649532b2a9335cf736dfe2c22c2def52bf138fd85f074",
+   "locators": {
+    "308.2.3.4 I-beams (shapes: AASHTO II-IV, modified Type IV, WF36-49..WF72-49 per PSID-1-13)": "PDF p235, printed 3-173",
+    "Figure 308-6 (approximate maximum spans)": "PDF p236, printed 3-174",
+    "308.2.3.3 box beams (geometry deferred to PSBD-1-25 / PSBDD-3)": "PDF p227-228, printed 3-165/3-166"
+   },
+   "note": "The BDM contains no section geometry or property tables; it defers to PSID-1-13 and PSBD-1-25."
+  },
+  "brice2021": {
+   "title": "Brice et al. (2021), PCI Journal May-June 2021, appendix Table A.10 (Ohio DOT standard girders)",
+   "local_path": "sources/expansion/round2/us/pcij-2021-mj-brice-appendix.pdf",
+   "pdf_page": "Table A.10"
+  }
+ },
+ "geometry_notes": [
+  "Outlines are the CAD concrete-outline lines of the PSID-1-13 sections (sheet 1: weight-2 lines on levels 4/5; sheets 2-3: level 7), polygonised with shapely and scaled at 1250 UOR = 1 in (confirmed by the drawn 18 in Type II soffit and every section's depth). All vertices round to 1/16 in with residual <0.0005 in; every outline is symmetric.",
+  "Soffit corners are 3/4 in chamfers in the CAD geometry (callout '3/4\" CHAMFER (TYP.)').",
+  "Gross concrete only; flange clipping (max 6 in) and shipping holes are not modelled."
+ ],
+ "discrepancies": [
+  "PSID-1-13 printed A/yb/I for Types II, III, IV and Modified IV 60/66 are those of the section WITHOUT the 3/4 in soffit chamfers (difference 2 x 0.28 in2 and ~0.5625*yb^2 in4); the chamfered CAD outline reproduces them exactly when the chamfers are squared off. Modified IV 72 printed values match the chamfered outline.",
+  "PSID-1-13 printed WF areas are 0.4 in2 (0.04%) larger and I 53-339 in4 (<=0.06%) larger than the chamfered CAD outline; Brice et al. (2021) Table A.10 matches the CAD outline exactly (A, Ix, Iy to all printed digits)."
+ ],
+ "provenance": "transcribed",
+ "source_status": "current standard (PSID-1-13 rev. 2018-07-20, required by ODOT BDM Jan 2026 section 308.2.3.4)",
+ "sections": {
+  "II": {
+   "drawing": "PSID-1-13 sheet 1 of 10 (section properties table on sheet 1 of 10)",
+   "depth": 36.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     8.25,
+     0.0
+    ],
+    [
+     9.0,
+     0.75
+    ],
+    [
+     9.0,
+     6.0
+    ],
+    [
+     3.0,
+     12.0
+    ],
+    [
+     3.0,
+     27.0
+    ],
+    [
+     6.0,
+     30.0
+    ],
+    [
+     6.0,
+     36.0
+    ],
+    [
+     0.0,
+     36.0
+    ]
+   ],
+   "published_odot": {
+    "area": 369,
+    "weight_plf": 384,
+    "yb": 15.83,
+    "yt": 20.17,
+    "ix": 50979,
+    "sb": 3221,
+    "st": 2527,
+    "vol_sur": 3.371
+   },
+   "model_in": {
+    "area": 368.438,
+    "yb": 15.853,
+    "ix": 50841.991,
+    "iy": 5289.416
+   }
+  },
+  "III": {
+   "drawing": "PSID-1-13 sheet 1 of 10 (section properties table on sheet 1 of 10)",
+   "depth": 45.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     10.25,
+     0.0
+    ],
+    [
+     11.0,
+     0.75
+    ],
+    [
+     11.0,
+     7.0
+    ],
+    [
+     3.5,
+     14.5
+    ],
+    [
+     3.5,
+     33.5
+    ],
+    [
+     8.0,
+     38.0
+    ],
+    [
+     8.0,
+     45.0
+    ],
+    [
+     0.0,
+     45.0
+    ]
+   ],
+   "published_odot": {
+    "area": 560,
+    "weight_plf": 583,
+    "yb": 20.27,
+    "yt": 24.73,
+    "ix": 125390,
+    "sb": 6185,
+    "st": 5071,
+    "vol_sur": 4.056
+   },
+   "model_in": {
+    "area": 558.938,
+    "yb": 20.294,
+    "ix": 125164.576,
+    "iy": 12151.541
+   }
+  },
+  "IV": {
+   "drawing": "PSID-1-13 sheet 1 of 10 (section properties table on sheet 1 of 10)",
+   "depth": 54.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     12.25,
+     0.0
+    ],
+    [
+     13.0,
+     0.75
+    ],
+    [
+     13.0,
+     8.0
+    ],
+    [
+     4.0,
+     17.0
+    ],
+    [
+     4.0,
+     40.0
+    ],
+    [
+     10.0,
+     46.0
+    ],
+    [
+     10.0,
+     54.0
+    ],
+    [
+     0.0,
+     54.0
+    ]
+   ],
+   "published_odot": {
+    "area": 789,
+    "weight_plf": 822,
+    "yb": 24.73,
+    "yt": 29.27,
+    "ix": 260741,
+    "sb": 10542,
+    "st": 8909,
+    "vol_sur": 4.741
+   },
+   "model_in": {
+    "area": 788.438,
+    "yb": 24.751,
+    "ix": 260403.153,
+    "iy": 24282.041
+   }
+  },
+  "MOD-IV-60": {
+   "drawing": "PSID-1-13 sheet 1 of 10 (section properties table on sheet 1 of 10)",
+   "depth": 60.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     12.25,
+     0.0
+    ],
+    [
+     13.0,
+     0.75
+    ],
+    [
+     13.0,
+     8.0
+    ],
+    [
+     4.0,
+     17.0
+    ],
+    [
+     4.0,
+     51.0
+    ],
+    [
+     7.0,
+     54.0
+    ],
+    [
+     18.0,
+     56.0
+    ],
+    [
+     18.0,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ]
+   ],
+   "published_odot": {
+    "area": 860,
+    "weight_plf": 896,
+    "yb": 28.74,
+    "yt": 31.26,
+    "ix": 384705,
+    "sb": 13385,
+    "st": 12307,
+    "vol_sur": 4.089
+   },
+   "published_brice2021": {
+    "area": 859.4,
+    "yt": 31.24,
+    "yb": 28.76,
+    "ix": 384248,
+    "iy": 36812,
+    "j": 28713
+   },
+   "model_in": {
+    "area": 859.438,
+    "yb": 28.76,
+    "ix": 384248.427,
+    "iy": 36811.874
+   }
+  },
+  "MOD-IV-66": {
+   "drawing": "PSID-1-13 sheet 1 of 10 (section properties table on sheet 1 of 10)",
+   "depth": 66.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     12.25,
+     0.0
+    ],
+    [
+     13.0,
+     0.75
+    ],
+    [
+     13.0,
+     8.0
+    ],
+    [
+     4.0,
+     17.0
+    ],
+    [
+     4.0,
+     57.0
+    ],
+    [
+     7.0,
+     60.0
+    ],
+    [
+     18.0,
+     62.0
+    ],
+    [
+     18.0,
+     66.0
+    ],
+    [
+     0.0,
+     66.0
+    ]
+   ],
+   "published_odot": {
+    "area": 908,
+    "weight_plf": 946,
+    "yb": 31.58,
+    "yt": 34.42,
+    "ix": 492212,
+    "sb": 15588,
+    "st": 14299,
+    "vol_sur": 4.085
+   },
+   "published_brice2021": {
+    "area": 907.4,
+    "yt": 34.4,
+    "yb": 31.6,
+    "ix": 491660,
+    "iy": 37068,
+    "j": 29737
+   },
+   "model_in": {
+    "area": 907.438,
+    "yb": 31.596,
+    "ix": 491659.675,
+    "iy": 37067.874
+   }
+  },
+  "MOD-IV-72": {
+   "drawing": "PSID-1-13 sheet 1 of 10 (section properties table on sheet 1 of 10)",
+   "depth": 72.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     12.25,
+     0.0
+    ],
+    [
+     13.0,
+     0.75
+    ],
+    [
+     13.0,
+     8.0
+    ],
+    [
+     4.0,
+     17.0
+    ],
+    [
+     4.0,
+     63.0
+    ],
+    [
+     7.0,
+     66.0
+    ],
+    [
+     24.0,
+     68.0
+    ],
+    [
+     24.0,
+     72.0
+    ],
+    [
+     0.0,
+     72.0
+    ]
+   ],
+   "published_odot": {
+    "area": 1015,
+    "weight_plf": 1058,
+    "yb": 36.52,
+    "yt": 35.48,
+    "ix": 684726,
+    "sb": 18749,
+    "st": 19299,
+    "vol_sur": 3.947
+   },
+   "published_brice2021": {
+    "area": 1015.4,
+    "yt": 35.48,
+    "yb": 36.52,
+    "ix": 684726,
+    "iy": 61986,
+    "j": 31303
+   },
+   "model_in": {
+    "area": 1015.438,
+    "yb": 36.517,
+    "ix": 684725.513,
+    "iy": 61985.874
+   }
+  },
+  "WF36-49": {
+   "drawing": "PSID-1-13 sheet 2 of 10 (section properties table on sheet 3 of 10)",
+   "depth": 36.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.25,
+     0.0
+    ],
+    [
+     20.0,
+     0.75
+    ],
+    [
+     20.0,
+     5.5
+    ],
+    [
+     6.0,
+     12.5
+    ],
+    [
+     4.0,
+     14.5
+    ],
+    [
+     4.0,
+     25.0
+    ],
+    [
+     7.0,
+     28.0
+    ],
+    [
+     24.5,
+     31.0
+    ],
+    [
+     24.5,
+     36.0
+    ],
+    [
+     0.0,
+     36.0
+    ]
+   ],
+   "published_odot": {
+    "area": 878.3,
+    "weight_plf": 915,
+    "yb": 18.2,
+    "yt": 17.8,
+    "ix": 145592,
+    "sb": 8000,
+    "st": 8179,
+    "vol_sur": 4.16
+   },
+   "published_brice2021": {
+    "area": 877.9,
+    "yt": 17.82,
+    "yb": 18.18,
+    "ix": 145539,
+    "iy": 102564,
+    "j": 28068
+   },
+   "model_in": {
+    "area": 877.938,
+    "yb": 18.175,
+    "ix": 145539.394,
+    "iy": 102564.176
+   }
+  },
+  "WF42-49": {
+   "drawing": "PSID-1-13 sheet 2 of 10 (section properties table on sheet 3 of 10)",
+   "depth": 42.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.25,
+     0.0
+    ],
+    [
+     20.0,
+     0.75
+    ],
+    [
+     20.0,
+     5.5
+    ],
+    [
+     6.0,
+     12.5
+    ],
+    [
+     4.0,
+     14.5
+    ],
+    [
+     4.0,
+     31.0
+    ],
+    [
+     7.0,
+     34.0
+    ],
+    [
+     24.5,
+     37.0
+    ],
+    [
+     24.5,
+     42.0
+    ],
+    [
+     0.0,
+     42.0
+    ]
+   ],
+   "published_odot": {
+    "area": 926.3,
+    "weight_plf": 965,
+    "yb": 21.1,
+    "yt": 20.9,
+    "ix": 217461,
+    "sb": 10306,
+    "st": 10405,
+    "vol_sur": 4.152
+   },
+   "published_brice2021": {
+    "area": 925.9,
+    "yt": 20.9,
+    "yb": 21.1,
+    "ix": 217378,
+    "iy": 102820,
+    "j": 29084
+   },
+   "model_in": {
+    "area": 925.938,
+    "yb": 21.098,
+    "ix": 217377.93,
+    "iy": 102820.176
+   }
+  },
+  "WF48-49": {
+   "drawing": "PSID-1-13 sheet 2 of 10 (section properties table on sheet 3 of 10)",
+   "depth": 48.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.25,
+     0.0
+    ],
+    [
+     20.0,
+     0.75
+    ],
+    [
+     20.0,
+     5.5
+    ],
+    [
+     6.0,
+     12.5
+    ],
+    [
+     4.0,
+     14.5
+    ],
+    [
+     4.0,
+     37.0
+    ],
+    [
+     7.0,
+     40.0
+    ],
+    [
+     24.5,
+     43.0
+    ],
+    [
+     24.5,
+     48.0
+    ],
+    [
+     0.0,
+     48.0
+    ]
+   ],
+   "published_odot": {
+    "area": 974.3,
+    "weight_plf": 1015,
+    "yb": 24.0,
+    "yt": 24.0,
+    "ix": 305994,
+    "sb": 12750,
+    "st": 12750,
+    "vol_sur": 4.144
+   },
+   "published_brice2021": {
+    "area": 973.9,
+    "yt": 23.97,
+    "yb": 24.03,
+    "ix": 305873,
+    "iy": 103076,
+    "j": 30108
+   },
+   "model_in": {
+    "area": 973.938,
+    "yb": 24.029,
+    "ix": 305873.465,
+    "iy": 103076.176
+   }
+  },
+  "WF54-49": {
+   "drawing": "PSID-1-13 sheet 2 of 10 (section properties table on sheet 3 of 10)",
+   "depth": 54.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.25,
+     0.0
+    ],
+    [
+     20.0,
+     0.75
+    ],
+    [
+     20.0,
+     5.5
+    ],
+    [
+     6.0,
+     12.5
+    ],
+    [
+     4.0,
+     14.5
+    ],
+    [
+     4.0,
+     43.0
+    ],
+    [
+     7.0,
+     46.0
+    ],
+    [
+     24.5,
+     49.0
+    ],
+    [
+     24.5,
+     54.0
+    ],
+    [
+     0.0,
+     54.0
+    ]
+   ],
+   "published_odot": {
+    "area": 1022.3,
+    "weight_plf": 1065,
+    "yb": 27.0,
+    "yt": 27.0,
+    "ix": 412056,
+    "sb": 15261,
+    "st": 15261,
+    "vol_sur": 4.137
+   },
+   "published_brice2021": {
+    "area": 1021.9,
+    "yt": 27.03,
+    "yb": 26.97,
+    "ix": 411891,
+    "iy": 103332,
+    "j": 31131
+   },
+   "model_in": {
+    "area": 1021.938,
+    "yb": 26.966,
+    "ix": 411891.389,
+    "iy": 103332.176
+   }
+  },
+  "WF60-49": {
+   "drawing": "PSID-1-13 sheet 2 of 10 (section properties table on sheet 3 of 10)",
+   "depth": 60.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.25,
+     0.0
+    ],
+    [
+     20.0,
+     0.75
+    ],
+    [
+     20.0,
+     5.5
+    ],
+    [
+     6.0,
+     12.5
+    ],
+    [
+     4.0,
+     14.5
+    ],
+    [
+     4.0,
+     49.0
+    ],
+    [
+     7.0,
+     52.0
+    ],
+    [
+     24.5,
+     55.0
+    ],
+    [
+     24.5,
+     60.0
+    ],
+    [
+     0.0,
+     60.0
+    ]
+   ],
+   "published_odot": {
+    "area": 1070.3,
+    "weight_plf": 1115,
+    "yb": 29.9,
+    "yt": 30.1,
+    "ix": 536513,
+    "sb": 17944,
+    "st": 17824,
+    "vol_sur": 4.131
+   },
+   "published_brice2021": {
+    "area": 1069.9,
+    "yt": 30.09,
+    "yb": 29.91,
+    "ix": 536297,
+    "iy": 103588,
+    "j": 32155
+   },
+   "model_in": {
+    "area": 1069.938,
+    "yb": 29.909,
+    "ix": 536296.846,
+    "iy": 103588.176
+   }
+  },
+  "WF66-49": {
+   "drawing": "PSID-1-13 sheet 3 of 10 (section properties table on sheet 3 of 10)",
+   "depth": 66.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.25,
+     0.0
+    ],
+    [
+     20.0,
+     0.75
+    ],
+    [
+     20.0,
+     5.5
+    ],
+    [
+     6.0,
+     12.5
+    ],
+    [
+     4.0,
+     14.5
+    ],
+    [
+     4.0,
+     55.0
+    ],
+    [
+     7.0,
+     58.0
+    ],
+    [
+     24.5,
+     61.0
+    ],
+    [
+     24.5,
+     66.0
+    ],
+    [
+     0.0,
+     66.0
+    ]
+   ],
+   "published_odot": {
+    "area": 1118.3,
+    "weight_plf": 1165,
+    "yb": 32.9,
+    "yt": 33.1,
+    "ix": 680229,
+    "sb": 20676,
+    "st": 20551,
+    "vol_sur": 4.125
+   },
+   "published_brice2021": {
+    "area": 1117.9,
+    "yt": 33.14,
+    "yb": 32.86,
+    "ix": 679955,
+    "iy": 103844,
+    "j": 33179
+   },
+   "model_in": {
+    "area": 1117.938,
+    "yb": 32.857,
+    "ix": 679954.78,
+    "iy": 103844.176
+   }
+  },
+  "WF72-49": {
+   "drawing": "PSID-1-13 sheet 3 of 10 (section properties table on sheet 3 of 10)",
+   "depth": 72.0,
+   "right_half": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     19.25,
+     0.0
+    ],
+    [
+     20.0,
+     0.75
+    ],
+    [
+     20.0,
+     5.5
+    ],
+    [
+     6.0,
+     12.5
+    ],
+    [
+     4.0,
+     14.5
+    ],
+    [
+     4.0,
+     61.0
+    ],
+    [
+     7.0,
+     64.0
+    ],
+    [
+     24.5,
+     67.0
+    ],
+    [
+     24.5,
+     72.0
+    ],
+    [
+     0.0,
+     72.0
+    ]
+   ],
+   "published_odot": {
+    "area": 1166.3,
+    "weight_plf": 1215,
+    "yb": 35.8,
+    "yt": 36.2,
+    "ix": 844069,
+    "sb": 23577,
+    "st": 23317,
+    "vol_sur": 4.12
+   },
+   "published_brice2021": {
+    "area": 1165.9,
+    "yt": 36.19,
+    "yb": 35.81,
+    "ix": 843730,
+    "iy": 104100,
+    "j": 34202
+   },
+   "model_in": {
+    "area": 1165.938,
+    "yb": 35.809,
+    "ix": 843729.982,
+    "iy": 104100.176
+   }
+  }
+ }
+}

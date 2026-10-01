@@ -1,0 +1,178 @@
+{
+  "family": "Standard AASHTO I-Girders as used for Philippine prestressed concrete deck-girder bridges (PSCG), metric callouts",
+  "source": {
+    "title": "Types of Bridges (Philippines) — Deck Girder Bridges — Prestressed Concrete Girders (PSCG) — Standard AASHTO I-Girders",
+    "form": "single presentation slide (raster PNG, 2000 x 1500 px), supplied by the repository owner",
+    "url": null,
+    "origin_note": "Owner found the slide; author, presentation, date and URL are unrecorded (unverified). Treated as a secondary presentation of DPWH practice, not a DPWH standard drawing.",
+    "local_path": "sources/expansion/round2/manual/ph/owner-supplied-types-of-bridges-philippines-aashto.png",
+    "sha256": "c5e9056f77e5a10e77e47a30f5b5dff4d44988f2d81609912448ea17e734274d",
+    "locator": "single image; five dimensioned outlines left to right labelled TYPE I, TYPE II, TYPE III, TYPE IV, TYPE V",
+    "units": "mm",
+    "source_status": "secondary presentation slide (origin unrecorded); DPWH practice"
+  },
+  "field_meaning": {
+    "depth": "overall depth callout",
+    "top_width": "top flange width",
+    "web": "web width (double-arrow callout)",
+    "bottom_width": "bottom flange width",
+    "chain_as_drawn": "vertical dimension chain top to soffit, exactly as printed on the slide",
+    "top_fillet_width": "horizontal callout of the inner flange-to-web fillet (TYPE V only)"
+  },
+  "sections": {
+    "I": {
+      "label_on_slide": "TYPE I",
+      "depth": 711,
+      "top_width": 305,
+      "web": 152,
+      "bottom_width": 406,
+      "chain_as_drawn": {
+        "top_flange": 102,
+        "top_taper": 76,
+        "web_height": 279,
+        "bottom_taper": 127,
+        "bottom_flange": 127
+      },
+      "chain_sum": 711,
+      "web_height_used": 279,
+      "provenance": "transcribed",
+      "notes": "Chain closes (102+76+279+127+127 = 711). Horizontal taper extents derive from widths: (305-152)/2 = 76.5 top, (406-152)/2 = 127 bottom. One '127' label is printed below the soffit line; it belongs to the lowest chain interval."
+    },
+    "II": {
+      "label_on_slide": "TYPE II",
+      "depth": 914,
+      "top_width": 305,
+      "web": 152,
+      "bottom_width": 457,
+      "chain_as_drawn": {
+        "top_flange": 152,
+        "top_taper": 76,
+        "web_height": 381,
+        "bottom_taper": 152,
+        "bottom_flange": 152
+      },
+      "chain_sum": 913,
+      "web_height_used": 382,
+      "provenance": "transcribed-with-convention",
+      "notes": "Chain sums to 913, 1 mm short of the 914 overall callout (independent rounding of 6/3/15/6/6 in). Convention: overall depth and flange/taper callouts govern; web height taken as 914 - 152 - 76 - 152 - 152 = 382."
+    },
+    "III": {
+      "label_on_slide": "TYPE III",
+      "depth": 1143,
+      "top_width": 406,
+      "web": 178,
+      "bottom_width": 559,
+      "chain_as_drawn": {
+        "top_flange": 178,
+        "top_taper": 114,
+        "web_height": 483,
+        "bottom_taper": 191,
+        "bottom_flange": 178
+      },
+      "chain_sum": 1144,
+      "web_height_used": 482,
+      "provenance": "transcribed-with-convention",
+      "notes": "Chain sums to 1144, 1 mm over the 1143 overall callout (190.5 rounded up to 191). Convention: web height = 1143 - 178 - 114 - 191 - 178 = 482."
+    },
+    "IV": {
+      "label_on_slide": "TYPE IV",
+      "depth": 1372,
+      "top_width": 508,
+      "web": 203,
+      "bottom_width": 660,
+      "chain_as_drawn": {
+        "top_flange": 203,
+        "top_taper": 152,
+        "web_height": 584,
+        "bottom_taper": 229,
+        "bottom_flange": 203
+      },
+      "chain_sum": 1371,
+      "web_height_used": 585,
+      "provenance": "transcribed-with-convention",
+      "notes": "Chain sums to 1371, 1 mm short of the 1372 overall callout. Convention: web height = 1372 - 203 - 152 - 229 - 203 = 585."
+    },
+    "V-as-drawn": {
+      "label_on_slide": "TYPE V",
+      "depth": 1829,
+      "top_width": 1067,
+      "web": 203,
+      "bottom_width": 660,
+      "chain_as_drawn": {
+        "top_flange": 127,
+        "top_taper": 76,
+        "top_fillet": 102,
+        "web_height": 1067,
+        "bottom_taper": 254,
+        "bottom_flange": 203
+      },
+      "top_fillet_width": 102,
+      "chain_sum": 1829,
+      "web_height_used": 1067,
+      "provenance": "transcribed",
+      "notes": "Chain closes (127+76+102+1067+254+203 = 1829). Outer top taper horizontal extent derived: (1067-203)/2 - 102 = 330. LABEL CONFLICT: the slide labels this outline 'TYPE V', but its depth and entire top/web geometry equal AASHTO/PCI Type VI (72 in: D1 72, D2 5, D3 3, D4 4, D5 10, D6 8; B1 42, B3 8, B4 4 in), not Type V (63 in = 1600 mm deep). BOTTOM-FLANGE CONFLICT: the slide prints bottom width 660 mm (26 in, the Type IV value); PCI Types V and VI have B2 = 28 in = 711 mm. Implemented as printed (660), which makes the bottom taper 228.5 wide over 254 high instead of 45 degrees. Whether 660 is a slide error or a DPWH variant is unresolved; the DPWH Odiongan Bridge 2 Type VI drawing (PDS 26/43) is the check. The slide label is kept as size 'V-as-drawn'."
+    }
+  },
+  "comparison_vs_pci_2011": {
+    "reference": "bridgebeams.us.AashtoIBeamSection (PCI BDM Appendix B-7, Nov 2011, inch dimensions x 25.4)",
+    "metric": "max_vertex_mm = largest distance from a PH vertex to the nearest US vertex; hausdorff_mm = outline Hausdorff distance; sym_diff_mm2 = symmetric-difference area; area/ixx ratios PH/US (gross, about centroid)",
+    "computed": "2026-09-25",
+    "results": {
+      "I": {
+        "us_size": "I",
+        "max_vertex_mm": 0.61,
+        "hausdorff_mm": 0.49,
+        "sym_diff_mm2": 363,
+        "area_ratio": 0.99896,
+        "ixx_ratio": 0.99916
+      },
+      "II": {
+        "us_size": "II",
+        "max_vertex_mm": 0.82,
+        "hausdorff_mm": 0.71,
+        "sym_diff_mm2": 590,
+        "area_ratio": 0.99779,
+        "ixx_ratio": 0.99805
+      },
+      "III": {
+        "us_size": "III",
+        "max_vertex_mm": 0.71,
+        "hausdorff_mm": 0.57,
+        "sym_diff_mm2": 413,
+        "area_ratio": 1.00075,
+        "ixx_ratio": 1.0
+      },
+      "IV": {
+        "us_size": "IV",
+        "max_vertex_mm": 1.0,
+        "hausdorff_mm": 0.78,
+        "sym_diff_mm2": 738,
+        "area_ratio": 0.99937,
+        "ixx_ratio": 1.00019
+      },
+      "V-as-drawn": {
+        "us_size": "VI",
+        "max_vertex_mm": 25.6,
+        "max_vertex_mm_excluding_bottom_flange_corners": 0.5,
+        "hausdorff_mm": 25.6,
+        "sym_diff_mm2": 17663,
+        "area_ratio": 0.97545,
+        "ixx_ratio": 0.96744,
+        "note": "All vertices within 0.5 mm of Type VI except the two bottom-flange corners (660 vs 711.2 mm width: 25.6 mm per side)."
+      },
+      "V-as-drawn_vs_US_V": {
+        "us_size": "V",
+        "hausdorff_mm": 228.8,
+        "note": "depth 1829 vs 1600.2 mm; not a rounding difference"
+      }
+    }
+  },
+  "geometry_notes": [
+    "Gross concrete outline only; strands, end blocks and deck excluded.",
+    "Origin at mid-soffit, y upwards, mm; symmetric about x = 0.",
+    "Types I-IV: 45-degree flange tapers implied by drawing; horizontal extents from width differences (not separately dimensioned).",
+    "Types II, III, IV: vertical chain does not close by 1 mm; overall depth governs and the web segment absorbs the residual (provenance transcribed-with-convention).",
+    "V-as-drawn: two-stage top transition (76 outer taper + 102 x 102 fillet); outer taper horizontal = 330 derived from widths. Bottom width 660 as printed (PCI Type VI: 711.2); bottom taper therefore 228.5 wide x 254 high.",
+    "The slide publishes no section properties; published-property residuals are not available. Types I-IV agree with PCI Types I-IV within inch-to-mm rounding (max vertex 1.0 mm, area within 0.25 %). V-as-drawn agrees with PCI Type VI except the bottom flange width."
+  ]
+}

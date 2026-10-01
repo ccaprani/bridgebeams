@@ -1,0 +1,23 @@
+{
+  "accessed": "2026-09-22",
+  "scope": "Dimensioned US reference for cross-jurisdiction AASHTO I-beam comparisons; not proof of current adoption by another country.",
+  "records": [
+    {
+      "id": "US-PCI-AASHTO-I-VI-2011",
+      "country_code": "US",
+      "country": "United States",
+      "language": "English",
+      "source_type": "industry_design_manual_pdf",
+      "organisation": "Precast/Prestressed Concrete Institute (PCI)",
+      "title_original": "PCI Bridge Design Manual, Appendix B-7: AASHTO I-Beams",
+      "title_en": "PCI reference sections for AASHTO I-beam Types I–VI",
+      "url": "https://ems-www.pci.org/PCI_Docs/Design_Resources/Transportation_Resources/AASHTO%20I%20Beams.pdf",
+      "locator": "November 2011 Appendix B-7, PDF p1: D1–D6/B1–B6 dimension table and section properties; Appendix B-8, PDF p2: individual shapes",
+      "family_names": ["AASHTO Type I", "AASHTO Type II", "AASHTO Type III", "AASHTO Type IV", "AASHTO Type V", "AASHTO Type VI"],
+      "observed_dimensions": "All six 12-dimension inch rows and published A, centroid-from-soffit and Ixx transcribed. Type IV example: 54 in deep, 20 in top width, 26 in bottom width, 789 in² area. Exact gross polygons reproduce printed properties within tabular rounding.",
+      "status": "complete_outline",
+      "missing_information": "Current state/producer adoption and dimensions must be verified separately. A foreign AASHTO designation, or use of AASHTO LRFD loads, does not establish identical geometry.",
+      "contact_route": "PCI transportation resources; request an edition-specific drawing if a project adopts a modified type."
+    }
+  ]
+}

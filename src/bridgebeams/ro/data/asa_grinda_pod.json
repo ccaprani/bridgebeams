@@ -1,0 +1,485 @@
+{
+ "source": {
+  "organisation": "ASA CONS România (Consolis)",
+  "title_original": "Catalog ASA CONS România - Products",
+  "url": "https://asacons.ro/wp-content/uploads/2025/09/ASA-CONSOLIS-catalog.pdf",
+  "local_file": "sources/expansion/europe-americas/ro_asa.pdf",
+  "sha256": "443d7d9ace55c7a591a7bf520e2487c0d48ffc8812f38ac43971ea2a9ba112bd",
+  "source_status": "producer catalogue (uploaded 2025-09 per URL path)",
+  "units": "cm in source (superscript digits are decimals: 8² = 8.2, 2⁵ = 2.5); model in mm",
+  "section_heading_original": "Secțiuni caracteristice / Specific sections",
+  "registry_id": "ro_asa",
+  "prior_work": [
+   "docs/research/visual-followup-za-ro-nepal.md",
+   "docs/research/data/visual-followup-za-ro-nepal.json (records ro-42-52, ro-72-80)"
+  ]
+ },
+ "published_properties": null,
+ "published_properties_note": "The catalogue prints no area/centroid/inertia; validation is analytic (chain closure and tangent residuals). Somaco GP 42/52 volume/length (separate producer, includes end blocks) is not used.",
+ "sections": [
+  {
+   "mark": "42",
+   "name_original": "Grindă pod 42",
+   "pdf_page": 97,
+   "printed_page": 97,
+   "spans_m": [
+    6,
+    8,
+    10
+   ],
+   "shape": "inverted-T",
+   "depth_cm": 42,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     19,
+     22,
+     19
+    ],
+    "throat_callout": 14,
+    "vertical_chain_from_top": [
+     5,
+     20,
+     7,
+     7.5,
+     2.5
+    ],
+    "bottom_chain": [
+     1,
+     2.5,
+     53,
+     2.5,
+     1
+    ],
+    "bottom_overall": 60,
+    "radius_callout_original": "5 (leader to curve, no R prefix)"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 53,
+    "bottom_width": 60,
+    "side_offset": 1,
+    "chamfer": 2.5,
+    "flange_edge_level": 10,
+    "throat_width": 14,
+    "throat_level": 17,
+    "top_width": 22,
+    "taper_top_level": 37,
+    "radius": 5
+   },
+   "conventions": [
+    "14 cm = theoretical sharp intersection of the tapered stem faces (22 cm at 37 cm above soffit) with the lower-flange slope (from x = 30, y = 10) at y = 17; the vector outline's straight segments extrapolate to 13.6 cm there (drawing slightly anisotropic: drawn depth 41.6 cm).",
+    "'5' read as R = 50 mm, inscribed tangent to both straight faces (tangent points about 45 mm from the corner; vector drawing's Bezier ends 36-52 mm from it)."
+   ],
+   "model_properties_mm": {
+    "area_mm2": 131878,
+    "centroid_from_soffit_mm": 157.3,
+    "I_mm4": 2000900000.0
+   },
+   "residuals_model_vs_printed_mm": {
+    "fillet_tangent_distance_from_throat_corner_mm": {
+     "model": 45.3,
+     "printed": null
+    }
+   }
+  },
+  {
+   "mark": "52",
+   "name_original": "Grindă pod 52",
+   "pdf_page": 97,
+   "printed_page": 97,
+   "spans_m": [
+    10,
+    12
+   ],
+   "shape": "inverted-T",
+   "depth_cm": 52,
+   "provenance": "estimate",
+   "printed_cm": {
+    "top_chain": [
+     19,
+     22,
+     19
+    ],
+    "throat_callout": null,
+    "vertical_chain_from_top": [
+     15,
+     20,
+     7,
+     7.5,
+     2.5
+    ],
+    "bottom_chain": [
+     1,
+     2.5,
+     53,
+     2.5,
+     1
+    ],
+    "bottom_overall": 60,
+    "radius_callout_original": "5"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 53,
+    "bottom_width": 60,
+    "side_offset": 1,
+    "chamfer": 2.5,
+    "flange_edge_level": 10,
+    "throat_width": 14,
+    "throat_level": 17,
+    "top_width": 22,
+    "taper_top_level": 37,
+    "radius": 5
+   },
+   "conventions": [
+    "Stem width at the 17 cm level is NOT printed; 14 cm copied from Grindă pod 42 (ESTIMATE). The vector outline scales about 12.6 cm (stem taper extrapolated) and its lower-flange slope is steeper (0.37 vs 0.29) than on 42, so the drawn 52 is not a simple extension of 42.",
+    "Same R = 50 mm construction as 42."
+   ],
+   "model_properties_mm": {
+    "area_mm2": 153878,
+    "centroid_from_soffit_mm": 202.0,
+    "I_mm4": 3863100000.0
+   },
+   "residuals_model_vs_printed_mm": {
+    "fillet_tangent_distance_from_throat_corner_mm": {
+     "model": 45.3,
+     "printed": null
+    }
+   }
+  },
+  {
+   "mark": "72",
+   "name_original": "Grindă pod 72",
+   "pdf_page": 99,
+   "printed_page": 99,
+   "spans_m": [
+    12,
+    15,
+    18
+   ],
+   "shape": "I-sloped",
+   "depth_cm": 72,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     33.5,
+     4,
+     27,
+     4,
+     33.5
+    ],
+    "top_overall": 102,
+    "web": 27,
+    "vertical_chain_from_soffit": [
+     2.5,
+     8.5,
+     8,
+     5,
+     27,
+     4.8,
+     8.2,
+     8
+    ],
+    "bottom_chain": [
+     1,
+     2.5,
+     85,
+     2.5,
+     1
+    ],
+    "bottom_overall": 92,
+    "radius": "R=5 (all four fillets)",
+    "strand_view_width_conflict": "strand-position view prints 90 cm; section prints 92 cm (geometry follows the dimensioned section)"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 85,
+    "bottom_width": 92,
+    "side_offset": 1,
+    "chamfer": 2.5,
+    "flange_edge_level": 11,
+    "web_width": 27,
+    "radius": 5,
+    "web_lower_tangent": 24,
+    "top_width": 102,
+    "top_edge": 8,
+    "top_slope_drop": 8.2,
+    "top_slope_run": 4,
+    "upper_radius": 5
+   },
+   "conventions": [
+    "Straight segments kept as printed: top slope from the 8 cm edge (x = 51) falling 8.2 cm to the knee at x = 13.5 + 4 = 17.5; lower slope from the flange edge (x = 46, y = 11).",
+    "R = 50 mm kept exact. Upper fillet tangent to the web and to the sloping flange (slope 8.2/33.5, 13.75 deg): horizontal extent 38.1 mm (printed 40), vertical extent 48.5 mm (printed 48), web tangent 1.0 mm below the printed level. The earlier 48.8 mm radius figure (visual-followup-za-ro-nepal.md) assumed a horizontal flange tangent and is superseded.",
+    "Lower fillet: circle R = 50 mm tangent to the web with its web tangent point at the printed 2.5+8.5+8+5 = 24 cm level; the lower-flange straight face is the tangent from the flange edge (46, 11). Its fillet tangent point lies at y = 191.9 mm vs the printed 19 cm (1.9 mm residual). The lower slope's horizontal extent is not printed.",
+    "Residual <= 2 mm on every printed fillet extent; area effect << 0.1%."
+   ],
+   "model_properties_mm": {
+    "area_mm2": 389459,
+    "centroid_from_soffit_mm": 360.2,
+    "I_mm4": 24724000000.0
+   },
+   "residuals_model_vs_printed_mm": {
+    "upper_web_tangent_mm": {
+     "model": 509.0,
+     "printed": 510
+    },
+    "upper_horizontal_extent_mm": {
+     "model": 38.1,
+     "printed": 40
+    },
+    "upper_vertical_extent_mm": {
+     "model": 48.5,
+     "printed": 48
+    },
+    "lower_slope_tangent_level_mm": {
+     "model": 191.9,
+     "printed": 190
+    }
+   }
+  },
+  {
+   "mark": "80",
+   "name_original": "Grindă pod 80",
+   "pdf_page": 99,
+   "printed_page": 99,
+   "spans_m": [
+    16,
+    18
+   ],
+   "shape": "I-sloped",
+   "depth_cm": 80,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     33.5,
+     4,
+     27,
+     4,
+     33.5
+    ],
+    "top_overall": 102,
+    "web": 27,
+    "vertical_chain_from_soffit": [
+     2.5,
+     8.5,
+     8,
+     5,
+     35,
+     4.8,
+     8.2,
+     8
+    ],
+    "bottom_chain": [
+     1,
+     2.5,
+     85,
+     2.5,
+     1
+    ],
+    "bottom_overall": 92,
+    "radius": "R=5 (all four fillets)"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 85,
+    "bottom_width": 92,
+    "side_offset": 1,
+    "chamfer": 2.5,
+    "flange_edge_level": 11,
+    "web_width": 27,
+    "radius": 5,
+    "web_lower_tangent": 24,
+    "top_width": 102,
+    "top_edge": 8,
+    "top_slope_drop": 8.2,
+    "top_slope_run": 4,
+    "upper_radius": 5
+   },
+   "conventions": [
+    "Straight segments kept as printed: top slope from the 8 cm edge (x = 51) falling 8.2 cm to the knee at x = 13.5 + 4 = 17.5; lower slope from the flange edge (x = 46, y = 11).",
+    "R = 50 mm kept exact. Upper fillet tangent to the web and to the sloping flange (slope 8.2/33.5, 13.75 deg): horizontal extent 38.1 mm (printed 40), vertical extent 48.5 mm (printed 48), web tangent 1.0 mm below the printed level. The earlier 48.8 mm radius figure (visual-followup-za-ro-nepal.md) assumed a horizontal flange tangent and is superseded.",
+    "Lower fillet: circle R = 50 mm tangent to the web with its web tangent point at the printed 2.5+8.5+8+5 = 24 cm level; the lower-flange straight face is the tangent from the flange edge (46, 11). Its fillet tangent point lies at y = 191.9 mm vs the printed 19 cm (1.9 mm residual). The lower slope's horizontal extent is not printed.",
+    "Residual <= 2 mm on every printed fillet extent; area effect << 0.1%."
+   ],
+   "model_properties_mm": {
+    "area_mm2": 411059,
+    "centroid_from_soffit_mm": 399.7,
+    "I_mm4": 32614000000.0
+   },
+   "residuals_model_vs_printed_mm": {
+    "upper_web_tangent_mm": {
+     "model": 589.0,
+     "printed": 590
+    },
+    "upper_horizontal_extent_mm": {
+     "model": 38.1,
+     "printed": 40
+    },
+    "upper_vertical_extent_mm": {
+     "model": 48.5,
+     "printed": 48
+    },
+    "lower_slope_tangent_level_mm": {
+     "model": 191.9,
+     "printed": 190
+    }
+   }
+  },
+  {
+   "mark": "95",
+   "name_original": "Grindă pod 95",
+   "pdf_page": 101,
+   "printed_page": 101,
+   "spans_m": [
+    18,
+    21,
+    24
+   ],
+   "shape": "I-bulb",
+   "depth_cm": 95,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     42,
+     10,
+     16,
+     10,
+     42
+    ],
+    "top_overall": 120,
+    "web": 16,
+    "vertical_chain_from_top": [
+     10,
+     2,
+     10,
+     39.5,
+     21.5,
+     12
+    ],
+    "lower_slope": {
+     "horizontal": 8.7,
+     "vertical": 6
+    },
+    "bottom_chain": [
+     1,
+     45,
+     1
+    ],
+    "bottom_overall": 47,
+    "radii": "R = 10 (top), R = 20 (bottom)"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 45,
+    "bottom_width_at_edge": 47,
+    "flange_edge_level": 12,
+    "web_width": 16,
+    "lower_slope_run": 8.7,
+    "lower_slope_rise": 6,
+    "lower_radius": 20,
+    "top_width": 120,
+    "top_edge": 10,
+    "top_slope_drop": 2,
+    "top_slope_run": 10,
+    "upper_radius": 10
+   },
+   "conventions": [
+    "Chosen reading: the first vertical label (10 on 95, 12 on 105) is the flange-EDGE thickness, followed by the 2 cm flange-underside drop to the knee, then the 10 cm fillet zone. Only this reading closes 10+2+10+39.5+21.5+12 = 95 and 12+2+10+44.5+24.5+12 = 105. The vector drawings are drawn about 2 cm shallower (93 and 103 cm total, edges 8 and 10 cm), i.e. with the other reading; the stated depth governs.",
+    "Top fillet R = 100 mm tangent to the web and the 2 cm/42 cm (95) or 2/40 (105) sloping underside; vertical extent 99.9 mm (printed 100), web tangent within 0.1 mm of the printed level; horizontal extent 95.2 mm (95) / 95.0 mm (105) vs printed 100 (about 5 mm residual, because the printed 10 cm is measured to the theoretical knee).",
+    "95 lower fillet: R = 200 tangent to the web and to the 6 : 8.7 slope through the flange edge (23.5, 12): web tangent at 331.9 mm vs printed 335 (3.1 mm residual); the slope's printed 8.7/6 end point is inside the fillet.",
+    "105 lower fillet: R = 200 on an assumed 45 degree slope from (25, 12): web tangent at 362.8 mm vs printed 365 (2.2 mm)."
+   ],
+   "model_properties_mm": {
+    "area_mm2": 328630,
+    "centroid_from_soffit_mm": 563.8,
+    "I_mm4": 37980000000.0
+   },
+   "residuals_model_vs_printed_mm": {
+    "upper_web_tangent_mm": {
+     "model": 729.9,
+     "printed": 730
+    },
+    "upper_horizontal_extent_mm": {
+     "model": 95.2,
+     "printed": 100
+    },
+    "lower_web_tangent_mm": {
+     "model": 331.9,
+     "printed": 335
+    }
+   }
+  },
+  {
+   "mark": "105",
+   "name_original": "Grindă pod 105",
+   "pdf_page": 101,
+   "printed_page": 101,
+   "spans_m": [
+    18,
+    21,
+    24
+   ],
+   "shape": "I-bulb",
+   "depth_cm": 105,
+   "provenance": "estimate",
+   "printed_cm": {
+    "top_chain": [
+     40,
+     10,
+     18,
+     10,
+     40
+    ],
+    "top_overall": 118,
+    "web": 18,
+    "vertical_chain_from_top": [
+     12,
+     2,
+     10,
+     44.5,
+     24.5,
+     12
+    ],
+    "lower_slope": null,
+    "bottom_overall": 50,
+    "radii": "R=10 (top), R=20 (bottom)"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 50,
+    "bottom_width_at_edge": 50,
+    "flange_edge_level": 12,
+    "web_width": 18,
+    "lower_slope_run": 1,
+    "lower_slope_rise": 1,
+    "lower_radius": 20,
+    "top_width": 118,
+    "top_edge": 12,
+    "top_slope_drop": 2,
+    "top_slope_run": 10,
+    "upper_radius": 10
+   },
+   "conventions": [
+    "Lower-flange slope undimensioned: 45 degrees assumed (vector outline straight segment 9.2 x 9.4 cm, about 46 degrees) -> ESTIMATE.",
+    "Chosen reading: the first vertical label (10 on 95, 12 on 105) is the flange-EDGE thickness, followed by the 2 cm flange-underside drop to the knee, then the 10 cm fillet zone. Only this reading closes 10+2+10+39.5+21.5+12 = 95 and 12+2+10+44.5+24.5+12 = 105. The vector drawings are drawn about 2 cm shallower (93 and 103 cm total, edges 8 and 10 cm), i.e. with the other reading; the stated depth governs.",
+    "Top fillet R = 100 mm tangent to the web and the 2 cm/42 cm (95) or 2/40 (105) sloping underside; vertical extent 99.9 mm (printed 100), web tangent within 0.1 mm of the printed level; horizontal extent 95.2 mm (95) / 95.0 mm (105) vs printed 100 (about 5 mm residual, because the printed 10 cm is measured to the theoretical knee).",
+    "95 lower fillet: R = 200 tangent to the web and to the 6 : 8.7 slope through the flange edge (23.5, 12): web tangent at 331.9 mm vs printed 335 (3.1 mm residual); the slope's printed 8.7/6 end point is inside the fillet.",
+    "105 lower fillet: R = 200 on an assumed 45 degree slope from (25, 12): web tangent at 362.8 mm vs printed 365 (2.2 mm)."
+   ],
+   "model_properties_mm": {
+    "area_mm2": 391054,
+    "centroid_from_soffit_mm": 614.2,
+    "I_mm4": 54463000000.0
+   },
+   "residuals_model_vs_printed_mm": {
+    "upper_web_tangent_mm": {
+     "model": 809.9,
+     "printed": 810
+    },
+    "upper_horizontal_extent_mm": {
+     "model": 95.0,
+     "printed": 100
+    },
+    "lower_web_tangent_mm": {
+     "model": 362.8,
+     "printed": 365
+    }
+   }
+  }
+ ]
+}

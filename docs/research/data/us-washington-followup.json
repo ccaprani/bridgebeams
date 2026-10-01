@@ -1,0 +1,43 @@
+{
+  "as_of": "2026-09-22",
+  "country_code": "US",
+  "jurisdiction": "Washington State",
+  "implemented_family": "WSDOT W-series prestressed I-girders",
+  "implemented_designations": ["W42G", "W50G", "W58G", "W74G"],
+  "profile_status": "Archived June 2006 standard outline; independently corroborated by June 2025 WSDOT gross-property table. Geometry only, no current design approval.",
+  "source_outlines": {
+    "url": "https://wsdot.wa.gov/publications/manuals/fulltext/M23-50/M23-50.01Complete.pdf",
+    "title": "WSDOT Bridge Design Manual M 23-50.01, Appendix A, Standard I-Girder Sections",
+    "pdf_page_1_based": 440,
+    "printed_sheet": "5.6-A1-1",
+    "local_file": "sources/expansion/europe-americas/us_wsdot_2006_complete.pdf",
+    "sha256": "db8e991abdbaf8eb6ffe68e58c7a0110dabf0be08e0dd848728344f02f3676af"
+  },
+  "source_properties": {
+    "url": "https://www.wsdot.wa.gov/publications/manuals/fulltext/m23-50/chapter5.pdf",
+    "title": "WSDOT Bridge Design Manual M 23-50.24, Table 5.6.1-1",
+    "pdf_page_1_based": 95,
+    "printed_page": "5-85",
+    "local_file": "sources/expansion/europe-americas/us_wsdot_chapter5_2025.pdf",
+    "sha256": "6af4c603fd17fa738361ad3764d6ddcb2035457e0ed002e4da68c9ab84205da0"
+  },
+  "validation": [
+    {"designation": "W42G", "area_in2_calculated": 373.25, "yb_in_calculated": 18.942733, "ix_in4_calculated": 76091.578, "iy_in4_calculated": 5407.823},
+    {"designation": "W50G", "area_in2_calculated": 525.5, "yb_in_calculated": 22.810339, "ix_in4_calculated": 164957.514, "iy_in4_calculated": 13362.771},
+    {"designation": "W58G", "area_in2_calculated": 603.5, "yb_in_calculated": 28.003314, "ix_in4_calculated": 264609.243, "iy_in4_calculated": 17065.313},
+    {"designation": "W74G", "area_in2_calculated": 746.6875, "yb_in_calculated": 38.077143, "ix_in4_calculated": 546110.450, "iy_in4_calculated": 34759.378}
+  ],
+  "registry_correction": {
+    "record_id": "us_wsdot_iwf",
+    "designation": "W74G",
+    "field": "depth_in",
+    "existing": 73.625,
+    "verified": 73.5,
+    "evidence": "2006 sheet labels 6 ft 1.5 in; June 2025 Table 5.6.1-1 lists 73.5 in."
+  },
+  "remaining_sources": [
+    {"id": "us_wsdot_iwf", "family": "WF36G through WF100G", "status": "overview and property table available; detailed polygon dimensions require separate source-closure review"},
+    {"id": "us_wsdot_deck", "family": "deck girders", "status": "2026 overview stamped PRELIMINARY PLAN NOT FOR CONSTRUCTION; no complete verified polygon here"},
+    {"id": "us_wsdot_tub", "family": "tub girders", "status": "2026 overview stamped PRELIMINARY PLAN NOT FOR CONSTRUCTION; no complete verified polygon here"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "family": "MG-T",
+  "title_original": "System strunobetonowych belek prefabrykowanych typu MG-T",
+  "title_en": "MG-T pretensioned precast bridge beam system",
+  "producer": "Pekabex / Mosty Gdańsk sp. z o.o.",
+  "source_url": "https://pekabex.com/wp-content/uploads/2023/11/Katalog-mosty-1.pdf",
+  "source_local_file": "sources/expansion/round2/pl/pekabex_mosty.pdf",
+  "source_sha256": "8d74196cac69984437d57bab13d5a52f6e052fb72dde2cf931ea5190531ecd5f",
+  "retrieved": "2026-09-23",
+  "source_status": "producer catalogue (2023)",
+  "provenance": "estimate",
+  "units": "mm (drawing), m / m3 / Mg (table)",
+  "locators": {
+    "sections": "PDF p3 (printed p2): 'A–A przekrój podporowy', 'B–B przekrój przypodporowy', 'C–C przekrój przęsłowy' (span section implemented)",
+    "table": "PDF p6 (printed p8): długość całkowita Lc, wysokość H, objętość betonu V, masa M"
+  },
+  "printed_dimensions_mm": {"top_width": 2390, "span_web_width": 220, "support_web_width": 450, "depth": "H (table)", "bottom_width": "bd (symbol only)"},
+  "scaled_dimensions_mm": {
+    "scale": "vector outline of C–C scaled so the drawn top width equals the printed 2390 (14.346 mm/pt); drawn web 222 (printed 220), drawn depth 1309 (≈ MG-T30, H = 1300)",
+    "bottom_width": 720, "bottom_edge_height_sharp": 250, "bottom_splay_top_at_web": 360,
+    "web_top_below_top": 260, "haunch_half_width_at_slab": 230, "flange_thickness_at_haunch": 150,
+    "flange_tip_thickness": 80,
+    "radii": {"soffit_corner": 45, "flange_edge_to_splay": 50, "splay_to_web": 20, "web_to_haunch": 5, "haunch_to_slab_soffit": 5, "flange_tip": 45}
+  },
+  "geometry_notes": [
+    "Only the span (przęsłowy, C–C) section is modelled; the 450 mm-web support and near-support sections (A–A, B–B) are excluded.",
+    "Printed: 2390 top width, 220 span web, H per table. Every other dimension is scaled from the vector outline in the PDF (to-scale drawing, apparently H ≈ 1300) and rounded to 5 mm: an ESTIMATE.",
+    "All sizes assumed to share the flanges; only the web height changes with H (catalogue: 'Zmiana wysokości belki następuje co ok. 3m').",
+    "Fillet radii are fitted to the drawn Bézier corners (tangent lengths), rounded.",
+    "Check: V/Lc (mean area incl. support zones) / span-section area = 0.95–1.08; the ratio steps between MG-T24 and MG-T27 (0.97 → 1.04), which may mean thicker parts on longer beams; unresolved."
+  ],
+  "sizes": {
+    "MG-T18": {"length_m": 18.2, "depth_m": 0.90, "volume_m3": 10.7, "mass_Mg": 27},
+    "MG-T21": {"length_m": 21.2, "depth_m": 1.00, "volume_m3": 13.1, "mass_Mg": 33},
+    "MG-T24": {"length_m": 24.2, "depth_m": 1.10, "volume_m3": 15.6, "mass_Mg": 39},
+    "MG-T27": {"length_m": 27.2, "depth_m": 1.20, "volume_m3": 19.3, "mass_Mg": 48},
+    "MG-T30": {"length_m": 30.2, "depth_m": 1.30, "volume_m3": 22.2, "mass_Mg": 56},
+    "MG-T33": {"length_m": 33.2, "depth_m": 1.45, "volume_m3": 25.7, "mass_Mg": 64},
+    "MG-T36": {"length_m": 36.2, "depth_m": 1.60, "volume_m3": 29.3, "mass_Mg": 73},
+    "MG-T39": {"length_m": 39.2, "depth_m": 1.75, "volume_m3": 33.2, "mass_Mg": 83},
+    "MG-T42": {"length_m": 42.2, "depth_m": 1.90, "volume_m3": 37.2, "mass_Mg": 93},
+    "MG-T46": {"length_m": 46.2, "depth_m": 2.10, "volume_m3": 44.0, "mass_Mg": 110}
+  },
+  "residuals_mean_area_ratio": {"MG-T18": 0.949, "MG-T21": 0.963, "MG-T24": 0.971, "MG-T27": 1.035, "MG-T30": 1.039, "MG-T33": 1.045, "MG-T36": 1.046, "MG-T39": 1.050, "MG-T42": 1.050, "MG-T46": 1.078}
+}

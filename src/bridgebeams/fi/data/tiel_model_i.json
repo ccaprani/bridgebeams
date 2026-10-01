@@ -1,0 +1,43 @@
+{
+  "family": "TIEL model A-A h1270 (Finland; model example, not a national SKU)",
+  "source": {
+    "title": "TIEL 2160004-2000 Jännitetty elementtisilta",
+    "url": "https://www.tieh.fi/sillat/julkaisut/jbe00.pdf",
+    "local_path": "sources/expansion/round5-extraction/fi/TIEL-2160004-2000-jbe00.pdf",
+    "manual_store_path": "~/Downloads/bridgebeams-manual/fi/TIEL-2160004-2000-jbe00.pdf",
+    "sha256": "8a9b178803a0dbcdd85e872a4f6d80fd690b41688e3b4754e7a105ff8381fa78",
+    "pdf_page": 28,
+    "printed_sheet": "LIITE 1.4",
+    "section": "A-A",
+    "note": "Preliminary-design guide; PDF pp10-12 permits project/mould changes. One dimensioned model, not an exhaustive standard-size family. LIITE 3.1 is material consumption curves, not a size matrix."
+  },
+  "sections": {
+    "TIEL-model-AA-h1270": {
+      "dimensions_mm": {
+        "depth": 1270,
+        "bottom_width": 600,
+        "bottom_thickness": 210,
+        "bottom_haunch": 210,
+        "web_width": 180,
+        "web_height": 600,
+        "top_haunch": 50,
+        "top_thickness": 200,
+        "top_width": 300
+      },
+      "span_context_m": 30,
+      "scope": "Nominal bare concrete A-A only; no CIP slab, reinforcement, end blocks or undocumented chamfers."
+    }
+  },
+  "rounded_corroboration": {
+    "pdf_page": 51,
+    "printed_sheet": "LIITE 4, printed p11",
+    "area_m2": 0.39,
+    "cy_m": 0.51,
+    "ixx_m4": 0.063,
+    "basis": "Rounded worked-example values without tendons, using three rectangular layers rather than the nominal haunched polygon; corroboration only, not exact property targets.",
+    "idealization_pdf_page": 49,
+    "idealization_printed_sheet": "LIITE 4, printed p9",
+    "rectangular_layer_heights_mm": [315, 730, 225],
+    "rectangular_layer_widths_mm": [600, 180, 300]
+  }
+}

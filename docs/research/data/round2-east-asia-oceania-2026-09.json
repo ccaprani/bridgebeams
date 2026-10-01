@@ -1,0 +1,1026 @@
+{
+  "topic": "east-asia-oceania",
+  "round": 2,
+  "date": "2026-09-23",
+  "disclaimer": "Research-grade, crowd-sourced-correction data; not authoritative. Provenance labels per profile.",
+  "profile_totals": {
+    "profiles": 163,
+    "transcribed": 79,
+    "transcribed-with-convention": 58,
+    "fitted-reconstruction": 11,
+    "estimate": 15,
+    "note": "th IG20 in ThDohIGirderR2Section duplicates existing th.ThDOHIGirderSection (splay resolved); count once."
+  },
+  "regions": {
+    "China, Hong Kong, Macau": {
+      "fragment": "A-china-hk",
+      "retrieved": "2026-09-23",
+      "sources": [
+        {
+          "id": "CN-SH-DBJT08-101-DRAFT",
+          "country": "CN",
+          "title": "上海市建筑标准设计《先张法预应力混凝土空心板（桥梁）》（征求意见稿）DBJT08-101-20xx，图集号2021沪G1005",
+          "url": "https://zjw.sh.gov.cn/cmsres/4c/4c7fa68a2357415c983c9b8a30a514b3/ccbaf741f888cd24cdf8ee666074c47e.pdf",
+          "local_path": "sources/expansion/round2/cn/sh-dbjt08-101.pdf",
+          "sha256": "2ee81a5d2426f95a179a949564b6b87d89afd359aeaef3800d4630f3c7eec142",
+          "retrieved": "2026-09-23",
+          "pages": "159 pp; vol.1 刚接 PDF p6-7 (tables), sections p37/40/45/48/53/56/61/64/69/72/77/80 (printed = PDF-3); vol.2 铰接 PDF p127 (table), p130 (表1 毛截面特性), sections p140-149 (printed = PDF-125)",
+          "status": "consultation draft (征求意见稿), 2021; issued edition DBJT 08-101-2024 not held",
+          "profiles_implemented": 16,
+          "notes": "Vector CAD, fully dimensioned. Hinged family (8) reproduces published A/Yx/I to <=0.004%/0.002%/0.036%: provenance transcribed. Rigid family (8) has no property table; 2% crossfall top, R30 fillets as arcs, drip groove omitted: transcribed-with-convention. Spans 16/18 and 20/22 share outlines."
+        },
+        {
+          "id": "CN-SH-PRECAST-GENERAL-PART4",
+          "country": "CN",
+          "title": "预制拼装桥梁结构设计通用图 第四部分：连续钢混组合大箱梁桥",
+          "url": "http://jsjtw.sh.gov.cn/zjw/static/capture/b58433be2e3543d2/ce8f86f7f57c477b1e77755e601bd20f.pdf",
+          "local_path": "sources/expansion/round2/cn/sh-precast-part4.pdf",
+          "sha256": "33e1cda7e8ad8cce5c09ac5886f2bcf8c6f0502e65aadbeecee474523e271c11",
+          "retrieved": "2026-09-23",
+          "pages": "37 pp",
+          "status": "Shanghai municipal general drawings",
+          "profiles_implemented": 0,
+          "notes": "Steel-concrete composite box; out of scope. Parts 1-3 (possibly precast concrete girders) not located."
+        },
+        {
+          "id": "CN-SZ-SJG217-2026",
+          "country": "CN",
+          "title": "深圳市工程建设地方标准 SJG 217-2026 装配式桥梁技术规程",
+          "url": "https://zjj.sz.gov.cn/attachment/1/1683/1683793/12649852.pdf",
+          "local_path": "sources/expansion/round2/cn/sz-sjg217-2026.pdf",
+          "sha256": "4014ca507437844a0f5d4fdc1f19a72084524fc0c6879ca3b761cbd9fb2b4a17",
+          "retrieved": "2026-09-23",
+          "pages": "text lines ~1935-1980 (小箱梁 clauses)",
+          "status": "issued local standard 2026-02-05, effective 2026-04-01",
+          "profiles_implemented": 0,
+          "notes": "Rules only; requires 小箱梁 to follow 广东省高速公路设计标准化成果 装配式预应力混凝土箱梁通用图 (lead). No section dimensions."
+        },
+        {
+          "id": "HK-HYD-SSD-INDEX",
+          "country": "HK",
+          "title": "Highways Department Structures Standard Drawings index",
+          "url": "https://www.hyd.gov.hk/en/technical_references/standard_drawings/structures_standard_drawings/index.html",
+          "local_path": "sources/expansion/round2/hk/ssd-index.html",
+          "sha256": "0d78012914ad1d8d64d294ee3b69faea826665912ba78c92528fc37b9a52061f",
+          "retrieved": "2026-09-23",
+          "pages": "html",
+          "status": "current index",
+          "profiles_implemented": 0,
+          "notes": "Parapets, gratings, gullies, VMS gantries only; no precast beam standard drawing."
+        },
+        {
+          "id": "HK-HYD-SDM2013",
+          "country": "HK",
+          "title": "Structures Design Manual for Highways and Railways, 2013 Edition",
+          "url": "https://www.hyd.gov.hk/en/technical_references/technical_document/structures_design_manual_2013/doc/SDM2013.pdf",
+          "local_path": "sources/expansion/round2/hk/hyd-sdm2013.pdf",
+          "sha256": "9c010efacc889de454a5f79df5a19feb1c74977900c8214bcddd3db45eaf93cd",
+          "retrieved": "2026-09-23",
+          "pages": "310 pp",
+          "status": "current manual (amendments to 2023)",
+          "profiles_implemented": 0,
+          "notes": "Text search: precast/pre-tensioned only in material/stress clauses; no standard beam sections."
+        }
+      ],
+      "leads": [
+        {
+          "country": "CN",
+          "title": "重庆市交通行业设计标准化系列 装配式预应力混凝土T梁（先简支后连续）12分册 Ver1.0 (2022 consultation)",
+          "url": "https://jtj.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/W020220329617704768498.pdf",
+          "status": "blocked: jtj.cq.gov.cn connection timeout from this host and via WebFetch (also W020220329617732810676.pdf 第三册, W020220329617718915444.pdf, W020220329617790453573.pdf)"
+        },
+        {
+          "country": "CN",
+          "title": "DBJT 08-101-2024 先张法预应力混凝土空心板（桥梁） issued edition",
+          "url": null,
+          "status": "not located as open PDF; compare draft dimensions when obtained"
+        },
+        {
+          "country": "CN",
+          "title": "预应力混凝土空心板应用技术标准 (Chongqing, consultation)",
+          "url": "https://zfcxjw.cq.gov.cn/hdjl_166/yjzj/202101/P020210122377569687839.pdf",
+          "status": "download timed out; likely building hollow-core (not verified)"
+        },
+        {
+          "country": "CN",
+          "title": "广西 DBJT45/T 070-2025 高速公路施工图设计技术指南",
+          "url": "http://jtt.gxzf.gov.cn/ztzl/jtkjybzh/P020250606591627231134.pdf",
+          "status": "download timed out; guidance (13-16 m 小箱梁/矮T梁), probably no outlines"
+        },
+        {
+          "country": "CN",
+          "title": "2017版 公路工程设计标准化 桥涵通用图 小箱梁 42分册 (GDQ/T-XL); 2008版 部颁 T梁/空心板通用图",
+          "url": null,
+          "status": "reseller-only distribution (guifanku/co188/book118, login/paywall); not retrieved"
+        },
+        {
+          "country": "HK",
+          "title": "Island Eastern Corridor Link precast U-beam (EPD EIA §2.5.2)",
+          "url": "https://www.epd.gov.hk/eia/files/applications/tc/pp_689/eia_1498/progress/action_3475/report/html/Sec2-RevA.htm",
+          "status": "project mention only; HyD has no public beam standard drawings"
+        },
+        {
+          "country": "MO",
+          "title": "DSSCU (土地工務局) downloads",
+          "url": "https://www.dsscu.gov.mo/zh_HANT/menu/downloads",
+          "status": "bounded search found no bridge beam standard drawing"
+        }
+      ]
+    },
+    "Japan, Taiwan": {
+      "fragment": "B-japan-taiwan",
+      "sources": [
+        {
+          "id": "JP-CHUBU-KYOURYOU-2014",
+          "country": "JP",
+          "title": "中部地方整備局 道路設計要領 第5章 橋梁 (v2014.03)",
+          "url": "https://www.cbr.mlit.go.jp/road/sekkeiyouryou/pdf/cb005_kyouryou_v201403.pdf",
+          "local_path": "sources/expansion/round2/jp/chubu-kyouryou-v201403.pdf",
+          "sha256": "34d000230a4410fbeeb09ee0d5dfde7a6178dd72222d74387686c5b6fa04a91e",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p28 / printed 5-25 (表-5-III-9, 図-5-III-40)",
+          "status": "implemented (dimensions); superseded guideline",
+          "profiles_implemented": 40,
+          "notes": "AS19 H2=106 misprint -> 160."
+        },
+        {
+          "id": "JP-CHUBU-KYOURYOU-2025",
+          "country": "JP",
+          "title": "中部地方整備局 道路設計要領 第5章 橋梁 (v2025.09)",
+          "url": "https://www.cbr.mlit.go.jp/road/sekkeiyouryou/pdf/cb005_kyouryou_v202509.pdf",
+          "local_path": "sources/expansion/round2/jp/chubu-kyouryou-v202509.pdf",
+          "sha256": "f439452e92b12377fa81e72a33155799280b8f1fd1e62af4c4585b57c5825f27",
+          "retrieved": "2026-09-23",
+          "pages": "printed 5-26",
+          "status": "context only",
+          "profiles_implemented": 0,
+          "notes": "Removes slab/T girder tables; defers to PCCEN JIS A 5373-2016 handbook (2020)."
+        },
+        {
+          "id": "JP-NIHONKOATSU-SLAB-2024",
+          "country": "JP",
+          "title": "日本高圧コンクリート スラブ橋げた 諸元表 (2024)",
+          "url": "http://www.nihonkoatsu.co.jp/wp-content/themes/nihonkoatsu/images/product/bridge_shogen2024.pdf",
+          "local_path": "sources/expansion/round2/jp/nihonkoatsu-bridge-shogen2024.pdf",
+          "sha256": "a87921caaae033c590e6e28f85cbb77f8cfd69e29b0e8be8724dc3c2b05ccb5a",
+          "retrieved": "2026-09-23",
+          "pages": "PDF pp3-4 主げた断面諸数値",
+          "status": "implemented (published properties validation)",
+          "profiles_implemented": 0,
+          "notes": "All 40 Ac exact, Ic within 0.0074%, yb within 0.48 mm. 2018 edition (bridge_shogen.pdf, sha256 de1c95d7...f4) identical."
+        },
+        {
+          "id": "JP-ASAHIDANKE-2016",
+          "country": "JP",
+          "title": "旭ダンケ PC橋げた JIS A 5373-2010 (2016.08)",
+          "url": "http://www.asahidanke.co.jp/wpdir/wp-content/uploads/2017/10/14pcketa_201608.pdf",
+          "local_path": "sources/expansion/round2/jp/asahidanke-pcketa-201608.pdf",
+          "sha256": "5b07a943276e7a3e3fdb6fcbb12ddc4f9fb5613722e67dc706465eea02898fec",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p2 主げた諸数値表",
+          "status": "corroborating",
+          "profiles_implemented": 0,
+          "notes": "Independent H/H1/H2/H3 incl. AS19 H2=160; support-side H2=140."
+        },
+        {
+          "id": "JP-BIPRE-CROSS",
+          "country": "JP",
+          "title": "バイプレストレッシング工法協会 プレキャスト桁の標準断面 (試設計)",
+          "url": "https://bipre.sakura.ne.jp/cross/index.html",
+          "local_path": "sources/expansion/round2/jp/bipre-img3.gif; bipre-img11.gif; bipre.html",
+          "sha256": "img3 dc8dc6de56a1c0d461f601717b74ee2f1658cb6ab85b9c9bddfa5226b4037cfd; img11 904f52d0eeab38e2f7a38f7947195a3fb5dc29b2b6fff51a862311b81d1700a0; html e0308f54fa3d059386ff119f0f44d3fd057a3b52386599d7f897eb6ad2f4de48",
+          "retrieved": "2026-09-23",
+          "pages": "img3 (I 25-50 m), img11 (hollow 25-35 m)",
+          "status": "implemented (trial designs)",
+          "profiles_implemented": 9,
+          "notes": "I45 vertical chain scaled (estimate)."
+        },
+        {
+          "id": "JP-MLIT-PRECAST-GL-2018",
+          "country": "JP",
+          "title": "コンクリート橋のプレキャスト化ガイドライン (平成30年6月)",
+          "url": "https://www.mlit.go.jp/common/001240409.pdf",
+          "local_path": "sources/expansion/round2/jp/mlit-precast-guideline-2018.pdf",
+          "sha256": "cca2d79c11f3fecb4f34edf5e3e94edfc8865257750a298338eed1c3f180d608",
+          "retrieved": "2026-09-23",
+          "pages": "-",
+          "status": "context only",
+          "profiles_implemented": 0,
+          "notes": "Defines PCコンポ/Uコンポ/バルブT forms; no dimensioned sections."
+        },
+        {
+          "id": "TW-THB-PCI-1991",
+          "country": "TW",
+          "title": "公路總局預力混凝土簡支梁橋橋梁工程標準圖適用性之探討 (臺灣公路工程 38(4-5), 2012)",
+          "url": "https://www.thb.gov.tw/FileResource.axd?path=html/doc/%E5%87%BA%E7%89%88%E5%93%81-%E5%8F%B0%E7%81%A3%E5%85%AC%E8%B7%AF%E5%B7%A5%E7%A8%8B/%E7%AC%AC38%E5%8D%B7%E7%AC%AC4-5%E6%9C%9F.pdf",
+          "local_path": "sources/expansion/round2/tw/thb-journal-38-4-5.pdf",
+          "sha256": "a65f67be5570b669c01c0e40b45137af1736a80d690496a4f8cd0dfe160d32e2",
+          "retrieved": "2026-09-23",
+          "pages": "PDF pp11-12, printed 12-13 (圖2, 表4)",
+          "status": "implemented; historic 1991 standard",
+          "profiles_implemented": 7,
+          "notes": "Type I H3 table 19 vs figure 18 cm pinned."
+        },
+        {
+          "id": "TW-DORTS-U-WENHU",
+          "country": "TW",
+          "title": "捷運工程叢書 精進版 32 捷運高架橋梁結構設計與施工, p56 (圖4-2-2 預鑄U型梁斷面性質)",
+          "url": "https://ebook.dorts.gov.taipei/ebook/no32/files/mobile/74.jpg",
+          "local_path": "sources/expansion/round2/tw/dorts-no32-p74.jpg",
+          "sha256": "46e5b6abdc6fb11fa4dd7ebd11bb39a4686a9de34b50851be754e90065024b75",
+          "retrieved": "2026-09-23",
+          "pages": "ebook page 74 / printed 56",
+          "status": "lead (not implemented)",
+          "profiles_implemented": 0,
+          "notes": "Wenhu Line Neihu precast U: top 4.3 m, bottom 4.088 m, H 1.3 m, t 0.24 m; A=1.58 m2, Yc=0.39 m, Iz=0.25 m4. Outline drawing undimensioned and asymmetric (analysis model)."
+        }
+      ],
+      "leads": [
+        {
+          "country": "JP",
+          "lead": "SMC Preconcrete pc-bridge-girder.pdf (https://precon.co.jp/download/doboku-catalog/04-bridge/pc-bridge-girder.pdf)",
+          "status": "blocked: TCP connect timeout 2026-09-23"
+        },
+        {
+          "country": "JP",
+          "lead": "Nihon Koatsu 軽荷重スラブ橋げた (JIS, 100 kN, 5-13 m) and NKL slab; no public spec PDF found on product page",
+          "status": "lead"
+        },
+        {
+          "country": "JP",
+          "lead": "JIS A 5373-2016 / PCCEN 2020 handbook: check whether 2016 slab/T dimensions differ from 2004/2010 tables",
+          "status": "purchase-only"
+        },
+        {
+          "country": "JP",
+          "lead": "Bi-pre img1/img2 GIFs (span-depth chart, anchorage detail) downloaded, not sections",
+          "status": "context"
+        },
+        {
+          "country": "TW",
+          "lead": "DGH 1983 (民國72年) and 1991 PCI standard drawing sheets 橋-301..336 themselves (not online)",
+          "status": "lead"
+        },
+        {
+          "country": "TW",
+          "lead": "Taipei DORTS ebooks no32 / no7 contain further U-girder and box girder material; Taichung MRT / Circular Line U girders",
+          "status": "lead"
+        }
+      ],
+      "profiles": {
+        "jp.r2_jis_slab_girders.JisSlabGirderSection": 40,
+        "jp.r2_bipre_girders.BipreIGirderSection": 6,
+        "jp.r2_bipre_girders.BipreHollowGirderSection": 3,
+        "tw.r2_thb_pci_girders.ThbPciGirderSection": 7
+      }
+    },
+    "Vietnam, Cambodia, Laos, Myanmar, Thailand": {
+      "fragment": "C: Vietnam, Cambodia, Laos, Myanmar, Thailand (round 2, 2026-09-23)",
+      "sources": [
+        {
+          "id": "TH-DOH-STD-2015",
+          "country": "TH",
+          "title": "Standard Drawings for Highway Design and Construction, 2015 Revision (2018 Edition) - Department of Highways (กรมทางหลวง)",
+          "url": "https://doh.go.th/uploads/tinymce/service/bid/doc_bid/STANDARD%20DRAWING%202015%20EDITION_2018.pdf",
+          "retrieved_via": "https://web.archive.org/web/20240806064200if_/https://doh.go.th/uploads/tinymce/service/bid/doc_bid/STANDARD%20DRAWING%202015%20EDITION_2018.pdf",
+          "local_path": "sources/expansion/round2/th/doh-std-2015.pdf",
+          "sha256": "7ac8bea18fdeee7cbe8e1b3dd5ef39a084ca3dcd7e2f8fce8d52119f02973bd2",
+          "retrieved": "2026-09-23",
+          "pages": {
+            "index_part2": "PDF p5-6",
+            "PG-101 plank girder (sheet 208/R1)": "PDF p225",
+            "BB-101 box beam (sheet 212/R1)": "PDF p229",
+            "IG-103 15 m I-girder (sheet 217/R1)": "PDF p234",
+            "IG-205 20 m I-girder (sheet 223/R1)": "PDF p240"
+          },
+          "status": "current national standard drawing",
+          "profiles_implemented": 20,
+          "classes": [
+            "th.r2_doh_girders.ThDohPlankGirderSection (14)",
+            "th.r2_doh_girders.ThDohBoxBeamSection (4)",
+            "th.r2_doh_girders.ThDohIGirderR2Section (IG15 new; IG20 duplicates existing ThDOHIGirderSection with resolved splay)"
+          ],
+          "notes": "Scanned raster; PDF page = sheet number + 17 around the bridge sheets. No published section properties; analytic checks only."
+        },
+        {
+          "id": "VN-620-I33",
+          "country": "VN",
+          "title": "Dầm I 33 m (22TCN 272-05) - Bê tông 620 Châu Thới",
+          "url": "https://620chauthoi.com/wp-content/uploads/2019/11/DAM-I33-272-05.jpg",
+          "product_page": "https://620chauthoi.com/en/san-pham/dam-i33/",
+          "local_path": "sources/expansion/round2/vn/c620/DAM-I33-272-05.jpg",
+          "sha256": "161a01d52e3dc6892563f6f87e10bd6bd00f2cbdbd3ff81b6845ebcca28d8f6d",
+          "retrieved": "2026-09-23",
+          "pages": "single image; sections 3-3/4-4",
+          "status": "producer drawing",
+          "profiles_implemented": 1
+        },
+        {
+          "id": "VN-620-I2454",
+          "country": "VN",
+          "title": "Dầm chữ I 24,54 m - Bê tông 620 Châu Thới",
+          "url": "https://620chauthoi.com/wp-content/uploads/2019/11/dam-chu-I.2454m-.jpg",
+          "local_path": "sources/expansion/round2/vn/c620/dam-chu-I.2454m-.jpg",
+          "sha256": "f8acc52d9b63111494a5c552eb897fd0f1ed2372735ae266fdf2186175e0db29",
+          "retrieved": "2026-09-23",
+          "pages": "single image; sections C-C/D-D",
+          "status": "producer drawing",
+          "profiles_implemented": 1
+        },
+        {
+          "id": "VN-620-I186",
+          "country": "VN",
+          "title": "Dầm I 18,6 m - Bê tông 620 Châu Thới",
+          "url": "https://620chauthoi.com/wp-content/uploads/2019/11/DAM-I-18.6M.jpg",
+          "local_path": "sources/expansion/round2/vn/c620/DAM-I-18.6M.jpg",
+          "sha256": "09d0b038ae3e5b70096293f55ccda4ebc8415ca13a59de7dd1cf083ff244c072",
+          "retrieved": "2026-09-23",
+          "pages": "single image; sections C-C/D-D",
+          "status": "producer drawing",
+          "profiles_implemented": 1
+        },
+        {
+          "id": "VN-620-T186",
+          "country": "VN",
+          "title": "Dầm T 18,6 m cải tiến - Bê tông 620 Châu Thới",
+          "url": "https://620chauthoi.com/wp-content/uploads/2019/12/T.186m-c%E1%BA%A3i-ti%E1%BA%BFn.jpg",
+          "product_page": "https://620chauthoi.com/en/san-pham/dam-t/",
+          "local_path": "sources/expansion/round2/vn/c620/T.186m-cải-tiến.jpg",
+          "sha256": "90b92740260cbbf8f5117b53ffe5c6090693b79327533cda3c0b9eae25dd2e6e",
+          "retrieved": "2026-09-23",
+          "pages": "single image; sections A-A, B-B, C-C",
+          "status": "producer drawing",
+          "profiles_implemented": 1
+        },
+        {
+          "id": "VN-620-TN20",
+          "country": "VN",
+          "title": "Dầm T ngược 20 m - Bê tông 620 Châu Thới",
+          "url": "https://620chauthoi.com/wp-content/uploads/2019/12/t-nguoc.jpg",
+          "local_path": "sources/expansion/round2/vn/c620/t-nguoc.jpg",
+          "sha256": "a0caf3c0cca279a549110225c9fe7f2b29c34a3774330e4adb07e6ac5d716bcb",
+          "retrieved": "2026-09-23",
+          "pages": "single image; midspan sections dầm trong/dầm biên",
+          "status": "producer drawing",
+          "profiles_implemented": 1
+        },
+        {
+          "id": "KH-KUT-VONG-2006",
+          "country": "KH",
+          "title": "VONG Seng, Design of Prestressed Concrete Bridge Girder Using Self-Compacting Concrete for Cambodian Rehabilitation (Kochi University of Technology doctoral dissertation, 2006)",
+          "url": "https://www.kochi-tech.ac.jp/english/admission/img/3_Design%20of%20Prestressed%20Concrete%20Bridge%20Girder%20Using%20Self-Compacting%20Concrete%20for%20Cambodian%20Rehabilitation.pdf",
+          "handle": "http://hdl.handle.net/10173/210",
+          "local_path": "sources/expansion/round2/kh/kochi-scc-cambodia.pdf",
+          "sha256": "8e7b3f682f9e67520a64fd8ff4be906ecd331d6b18692a6d4dc3923b2a81f1b2",
+          "retrieved": "2026-09-23",
+          "pages": "Fig.3.3.2, PDF p30 / printed p28",
+          "status": "doctoral-thesis study design; real-scale girder produced in Cambodia",
+          "profiles_implemented": 1
+        },
+        {
+          "id": "VN-TNEC-TYPICAL",
+          "country": "VN",
+          "title": "TN E&C - Dầm Super T / Girder product table and typical sections",
+          "url": "https://tnec.com.vn/uploads/images/12_5%2C%20hop%2C%20tngc%2C%20spt.jpg",
+          "local_path": "sources/expansion/round2/vn/tnec-typical.jpg",
+          "sha256": "0b1ee3391c3c81d47a1b52f55c51741470b8ed305ac07acfe635bea821676d0a",
+          "retrieved": "2026-09-23",
+          "status": "producer page",
+          "profiles_implemented": 0,
+          "notes": "Partial only: girder 12.5 (700 deep, 400 top, 163 soffit); hollow box 990 soffit/920 top, H 650-750, two oval voids undimensioned; inverted T 980 base, 440 top; Super-T 2400 top, 1750 deep, 700 base, trough 590 at one level and 432 floor. Webs/flanges undimensioned."
+        },
+        {
+          "id": "VN-LVL-SUPERT",
+          "country": "VN",
+          "title": "Lê Văn Lạc - Thiết kế kết cấu nhịp cầu dầm Super-T (book, ĐHBK Đà Nẵng) - Cần Thơ Super-T drawings",
+          "url": "https://cuuduongthancong.com/dlf/15721761/thiet-ke-cau-be-tong-cot-thep/le-van-lac/thiet-ke-kc-nhip-cau-dam-super-t.pdf",
+          "local_path": "sources/expansion/round2/vn/superT-lvl.pdf",
+          "sha256": "73826431417668f1a2457fbc8f15f09916ba3e4f544a45f914aa74f67ee4edbb",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p63 cross sections A-A/B-B/C-C",
+          "status": "textbook reproduction of project drawings",
+          "profiles_implemented": 0,
+          "notes": "Section B-B callouts illegible at 500 dpi (low-quality scan): overall 2245?, 710/25/315/315/25/710?, 1750 deep. Text: Super-T 38 m, H 1.75 m, bottom 700, top 2290, web 100. Not implemented."
+        },
+        {
+          "id": "VN-UTC-I33-LECTURE",
+          "country": "VN",
+          "title": "Nguyễn Viết Trung - Công nghệ dầm Super-T (bài giảng, ĐH Giao thông Vận tải)",
+          "url": "http://ctgttp.edu.free.fr/Update/CD-2%20SoTay%20Sinh%20Vien%20CAU_DUONG-2008/Bai%20giang%20cac%20mon%20hoc%20Ket%20cau%20va%20CAU/Tai%20lieu%20tham%20khao/Cong%20nghe%20dam%20Super_TUnicode.pdf",
+          "local_path": "sources/expansion/round2/vn/superT-congnghe.pdf",
+          "sha256": "202b86d88d2dd1819714cdd1bd4dd63662fefcbc0233c96f396673a77e82494f",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p1-2",
+          "status": "lecture notes",
+          "profiles_implemented": 0,
+          "notes": "Older post-tensioned QL1A I33: H 1650, top 850, top flange 200-310, bottom 650, bottom bulb 250-450, web 200 (midspan) - different from the 620 Châu Thới 1400 mm pretensioned I33. Partial."
+        },
+        {
+          "id": "TH-POUND-MULTIBEAM",
+          "country": "TH",
+          "title": "Pound Concrete - คานสะพานอัดแรงมัลติบีม (prestressed multibeam)",
+          "url": "https://poundconcrete.co.th/product/i-shaped-prestressed-concrete-bridge-beam/",
+          "local_path": "sources/expansion/round2/th/pound/pound-page.html",
+          "sha256": "cb12f63b5627edf62ebc1f8f0fa4e405ee2307df675d66b58c81b9f84897a037",
+          "retrieved": "2026-09-23",
+          "status": "producer page",
+          "profiles_implemented": 0,
+          "notes": "Table w/W/D/T (cm) for types A (5-10 m, 20/33/34-42/8-10) and B (9-30 m); sketch labels only w, W and H; T and flange/haunch geometry undefined. Not implemented."
+        }
+      ],
+      "leads_not_implemented": [
+        "VN: Bộ GTVT/TEDI định hình drawings (dầm bản rỗng, I33, Super-T) are sold on paywalled libraries (thuviencongtrinh.com, thuvienfile.com, filethietke.vn); not accessed.",
+        "VN: 620 Châu Thới 'dầm bản rỗng' and 'dầm giao thông nông thôn' pages carry only photographs; request drawings from info@ccc620.com.",
+        "VN: Phan Vũ I33 page (https://www.phanvu.vn/dam-i33), VINACONEX Sài Gòn Super-T, CETAS Super-T, 620 IDIC (620idic.com.vn) - no dimensioned drawings captured.",
+        "KH: Cambodia Bridge Design Standard CAM PW 04-101/102-99 (AUSTROADS 1996 base) - Scribd copy only; no standard girder drawings found.",
+        "LA: JICA NR9 bridge reconstruction preparatory survey (openjicareport 12251385_01) - alternatives only (steel I, connected T, hollow slab, box); no dimensioned precast sections.",
+        "MM: JICA New Thaketa (12182341_01) and Mekong connectivity (12269858_03/04) - steel and in-situ PC box; no precast standard sections. No MoC standard girder drawings found in bounded search.",
+        "TH: DOH PG-101/BB-101 companion sheets PG-102..104 and BB-102/103 (strands) not needed; DRR rural-road standard drawings and CPAC catalogue not searched (time)."
+      ]
+    },
+    "Malaysia, Singapore, Indonesia, Mongolia": {
+      "fork": "D",
+      "topic": "east-asia-oceania",
+      "scope": [
+        "my",
+        "sg",
+        "mn",
+        "id/r2_*"
+      ],
+      "date": "2026-09-23",
+      "sources": [
+        {
+          "id": "MY-GCAST-2020",
+          "country": "MY",
+          "title_original": "G-CAST Prestressed Concrete Beams (JUNE 2020.REV.0)",
+          "url": "https://g-cast.com.my/wp-content/uploads/media_uploads/G-CAST-Catalogue-Prestressed-Beam.pdf",
+          "local_path": "sources/expansion/round2/my/g-cast-prestressed-beam.pdf",
+          "sha256": "8304c3ba7287fc99a2cf5febc151c9cf977458249f710ffa1132e99eff3cef5c",
+          "retrieved": "2026-09-23",
+          "pages": "2 (PRT), 3 (U), 4 (TM), 5 (I/T)",
+          "status": "producer catalogue",
+          "profiles_implemented": 22,
+          "notes": "PRT1-3 (shared with OKA), U x9, TM x9, I1600, T1800"
+        },
+        {
+          "id": "MY-OKA-TM-2018",
+          "country": "MY",
+          "title_original": "OKA Prestressed (Pretensioned) T-Beams / M-Beams",
+          "url": "http://www.oka.com.my/index.asp?CompanyID=29&FileName=T-Beams_M-Beams.pdf",
+          "local_path": "sources/expansion/round2/my/oka-T-Beams_M-Beams.pdf",
+          "sha256": "e74ebcc04aaf9dc111acfa1388de2b0941dc832294f0323a79dd8a6c56623ec8",
+          "retrieved": "2026-09-23",
+          "pages": "1 (PRT, PRT-M), 2 (M2-M10)",
+          "status": "producer catalogue (JKR standard PRT reproduced)",
+          "profiles_implemented": 16,
+          "notes": "PRT-M x7, M x9; PRT1-3 counted under G-CAST"
+        },
+        {
+          "id": "ID-WIKA-2022",
+          "country": "ID",
+          "title_original": "Brosur WTON 2022",
+          "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1660206289_Brosur%20WTON%202022.pdf",
+          "local_path": "sources/expansion/asia-africa/wika-2022.pdf",
+          "sha256": "7ec2716d3c3b2575d6366c492c7f883ed9655041b7a3d1e93527baa42bbffa23",
+          "retrieved": "pre-existing",
+          "pages": "19",
+          "status": "producer brochure",
+          "profiles_implemented": 4,
+          "notes": "VS57/62/66/74 bare units; vector-measured key/void spacing"
+        },
+        {
+          "id": "ID-WIKA-2017-BRIDGE",
+          "country": "ID",
+          "title_original": "WIKA Beton BRIDGE PRODUCT (December 2017)",
+          "url": "https://wika-beton.co.id/wp-content/uploads/2023/12/03-5-BRIDGE.pdf",
+          "local_path": "sources/expansion/round2/id/wika-2023-bridge.pdf",
+          "sha256": "f530caf28005bb89cf37421659c6623c243da3bc4068a6c6d47c23a5f715d0ff",
+          "retrieved": "2026-09-23",
+          "pages": "1-6",
+          "status": "producer sheet",
+          "profiles_implemented": 0,
+          "notes": "corroborates 2022 brochure; PC-U H-120/140/165/185 A/I lead"
+        },
+        {
+          "id": "ID-WIKA-VOIDED-MANUAL",
+          "country": "ID",
+          "title_original": "WIKA voided slab handling manual",
+          "url": null,
+          "local_path": "sources/expansion/asia-africa/wika-voided.pdf",
+          "sha256": "6914ec56a7811b321d61bc77f321ddca491407f98bd2866e3ad7553eb9605d00",
+          "retrieved": "pre-existing",
+          "pages": "1-24",
+          "status": "handling manual",
+          "profiles_implemented": 0,
+          "notes": "no dimensions (reconfirmed)"
+        },
+        {
+          "id": "ID-WASKITA-2026",
+          "country": "ID",
+          "title_original": "Product Catalogue PT Waskita Beton Precast Tbk 2026",
+          "url": "https://waskitaprecast.co.id/uploads/pdf/waskita-katalog-produk-2026.pdf",
+          "local_path": "sources/expansion/round2/id/waskita-katalog-2026.pdf",
+          "sha256": "e16e05d22b723cc364bbc058df341a7e46ebf19e90c8aba63286661d61ad0825",
+          "retrieved": "2026-09-23",
+          "pages": "14-15 (PC-I; printed 13-14), 44-45 (voided slab; printed 43-44)",
+          "status": "producer catalogue",
+          "profiles_implemented": 13,
+          "notes": "PC-I H90-H230 x8 transcribed-with-convention; voided slab x5 estimate; plain curl with browser User-Agent succeeded (earlier 403)"
+        },
+        {
+          "id": "ID-BM-PANDUAN-2021",
+          "country": "ID",
+          "title_original": "Panduan Praktis Perencanaan Teknis Jembatan (02/M/BM/2021)",
+          "url": "https://binamarga.pu.go.id/uploads/files/1716/02mbm2021-panduan-praktis-perencanaan-teknis-jembatan.pdf",
+          "local_path": "sources/expansion/round2/id/bm-panduan-praktis-2021.pdf",
+          "sha256": "4014a3deff5f9d2da14d6d665ea252aa9ceeb969e620ba9f36645cef38fab0a1",
+          "retrieved": "2026-09-23",
+          "pages": "1536",
+          "status": "national guidance (worked examples)",
+          "profiles_implemented": 0,
+          "notes": "no standard girder table found in bounded text search"
+        },
+        {
+          "id": "MY-HUME",
+          "country": "MY",
+          "title_original": "Hume Prestressed Concrete Beam",
+          "url": "https://chuanhuat.com.my/w3/wp-content/uploads/2014/09/concreteBeams.pdf",
+          "local_path": "sources/expansion/round2/my/hume-concrete-beams.pdf",
+          "sha256": "f667f61b44e9da5100e5e159ccc81f3c95cc06f8d41ea9dc0a6839bdbe5d3e58",
+          "retrieved": "2026-09-23",
+          "pages": "2-3",
+          "status": "producer catalogue (72 ppi raster)",
+          "profiles_implemented": 0,
+          "notes": "M2-M10, inverted T 535-890, I-5..I-14 with properties; resolution too low; inverted-T residual +1055 mm2 unresolved"
+        },
+        {
+          "id": "XX-GEOQUEST-TIERRA-ARMADA",
+          "country": "ES",
+          "title_original": "Precast & Prestressed Beam Bridges (Tierra Armada / Reinforced Earth)",
+          "url": "https://www.geoquest-group.com/wp-content/uploads/2019/12/PRECAST-BEAMS-EN_V01_BD.pdf",
+          "local_path": "sources/expansion/round2/my/geoquest-precast-beams-en.pdf",
+          "sha256": "5679b4ce59b702bc5fb7a3802897030d0e6af860e60d166eb34a9cf7a092cf52",
+          "retrieved": "2026-09-23",
+          "pages": "1-16",
+          "status": "producer catalogue (Spanish producer)",
+          "profiles_implemented": 0,
+          "notes": "out of scope (Europe); IL series etc."
+        }
+      ],
+      "leads": [
+        {
+          "country": "ID",
+          "item": "Bina Marga SE DJBM 15/2021 Gambar Standar + Suplemen 02/S/Pd/BM/2022",
+          "url": "https://binamarga.pu.go.id/index.php/nspk/detail/02spdbm2022-suplemen-pedoman-gambar-standar-pekerjaan-jalan-dan-jembatan",
+          "status": "not retrieved"
+        },
+        {
+          "country": "ID",
+          "item": "Waskita PC-U (A,B only), PC-T (unlabelled), Semi-T (no H), segmental box Type 1/2",
+          "status": "insufficient"
+        },
+        {
+          "country": "MY",
+          "item": "Prestasi Concrete, Eastern Pretech, IBS producers",
+          "status": "not searched this pass"
+        },
+        {
+          "country": "SG",
+          "item": "LTA Civil Design Criteria / Standard Details of Road Elements",
+          "url": "https://www.lta.gov.sg/content/dam/ltagov/industry_innovations/industry_matters/development_construction_resources/civil_standards/pdf/EGD09106A2_Overall.pdf",
+          "status": "no standard beam sections; bounded search found no SG producer catalogue"
+        },
+        {
+          "country": "MN",
+          "item": "no new source beyond gap-mongolia.pdf",
+          "status": "bounded search"
+        }
+      ],
+      "implemented_profiles": 57
+    },
+    "Australia, New Zealand, Fiji, Papua New Guinea": {
+      "topic": "east-asia-oceania",
+      "fork": "E (AU/NZ/FJ/PG)",
+      "date": "2026-09-23",
+      "sources": [
+        {
+          "id": "AU-TMR-SD2042",
+          "country": "AU",
+          "title": "Design assumptions for transversely stressed standard deck units (Standard Drawing 2042)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2042.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2042.pdf",
+          "sha256": "73d388617fe3db08718504cfb3994ae460ceeb44efe7bcf7b165cb8bd8fdfbb4",
+          "retrieved": "2026-09-23",
+          "pages": "p2 §8(a), §11",
+          "status": "current standard (rev C 7/18)",
+          "profiles_implemented": [],
+          "notes": "75x75 void chamfer rule; 596 mm width"
+        },
+        {
+          "id": "AU-TMR-SD2050",
+          "country": "AU",
+          "title": "10m PSC Deck Unit (Standard Drawing 2050)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2050.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2050.pdf",
+          "sha256": "95793ce594a46e7c3f5f6e3b96ed3f78325f138088fef5773333bfa568da6a45",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p3 (drawing 3 of 6), SECTION C",
+          "status": "current standard (rev D 07/25)",
+          "profiles_implemented": [
+            "TmrDeckUnitSection('500')"
+          ],
+          "notes": "CC BY 4.0"
+        },
+        {
+          "id": "AU-TMR-SD2051",
+          "country": "AU",
+          "title": "11m PSC Deck Unit (Standard Drawing 2051)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2051.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2051.pdf",
+          "sha256": "a8af965060c7c50d323d5e322d188ac430137aadd424498be8a7293977d2a630",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p3 (drawing 3 of 6), SECTION C",
+          "status": "current standard (rev D 07/25)",
+          "profiles_implemented": [
+            "TmrDeckUnitSection('500')"
+          ],
+          "notes": "CC BY 4.0"
+        },
+        {
+          "id": "AU-TMR-SD2052",
+          "country": "AU",
+          "title": "12m PSC Deck Unit (Standard Drawing 2052)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2052.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2052.pdf",
+          "sha256": "0f54e4e6030496f61abafbd5b4a9c23b8be4524e4384707edaff9c1618e22ce8",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p3 (drawing 3 of 6), SECTION C",
+          "status": "current standard (rev E 07/25)",
+          "profiles_implemented": [
+            "TmrDeckUnitSection('540')"
+          ],
+          "notes": "CC BY 4.0"
+        },
+        {
+          "id": "AU-TMR-SD2053",
+          "country": "AU",
+          "title": "13m PSC Deck Unit (Standard Drawing 2053)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2053.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2053.pdf",
+          "sha256": "7e4cce39dc4fbf4a248dd89aa451c8231bced76b96c2ffaea84cdb718c01d7ef",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p3 (drawing 3 of 6), SECTION C",
+          "status": "current standard (rev D 07/25)",
+          "profiles_implemented": [
+            "TmrDeckUnitSection('540')"
+          ],
+          "notes": "CC BY 4.0"
+        },
+        {
+          "id": "AU-TMR-SD2055",
+          "country": "AU",
+          "title": "15m PSC Deck Unit (Standard Drawing 2055)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/2055.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2055.pdf",
+          "sha256": "fe850aec81c301ced8c83196c69e537206240c9fee9a3ee06b9111b4091d75a4",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p3 (drawing 3 of 6), SECTION C",
+          "status": "current standard (rev C 07/25)",
+          "profiles_implemented": [
+            "TmrDeckUnitSection('650')"
+          ],
+          "notes": "CC BY 4.0"
+        },
+        {
+          "id": "AU-TMR-SD2059",
+          "country": "AU",
+          "title": "19m PSC Deck Unit (Standard Drawing 2059)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2059.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2059.pdf",
+          "sha256": "ed40c18a3e95c6c4afd98d815b96e17fe54474459897f8d901a1b57282178c7a",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p3 (drawing 3 of 6), SECTION C",
+          "status": "current standard (rev C 7/25)",
+          "profiles_implemented": [
+            "TmrDeckUnitSection('760')"
+          ],
+          "notes": "CC BY 4.0"
+        },
+        {
+          "id": "AU-TMR-SD2065",
+          "country": "AU",
+          "title": "25m PSC Deck Unit (Standard Drawing 2065)",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/2065.pdf?la=en",
+          "local_path": "sources/expansion/round2/au/tmr-sd2065.pdf",
+          "sha256": "b53a12d2d358bcbcdaf53abee20746dfc5c6893372dc691f898f55b8c4f8a6b9",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p3 (drawing 3 of 6), SECTION C",
+          "status": "current standard (rev B 7/18)",
+          "profiles_implemented": [
+            "TmrDeckUnitSection('1100')"
+          ],
+          "notes": "CC BY 4.0"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T1-8m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 1 – 8m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t1-8m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t1-8m.pdf",
+          "sha256": "dd03fa16153975d78f0ea6c6f5ed6b21ddcc7cdaf65deaac36daf530ecbc0349",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p28 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T1-10m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 1 – 10m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t1-10m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t1-10m.pdf",
+          "sha256": "0481003d160a5f7353987e1e960b5478b4d9ddb76df0c3e6fb6717e2a904fba2",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p28 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [
+            "TfnswCbsModuleSection('T1-internal')",
+            "TfnswCbsModuleSection('T1-external')"
+          ],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T1-12m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 1 – 12m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t1-12m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t1-12m.pdf",
+          "sha256": "4f7356d7d3bef2e0a46c164c08278a141eb80d146696ad1a7c0a929312cb8990",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p28 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T2-8m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 2 – 8m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t2-8m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t2-8m.pdf",
+          "sha256": "13b883562747c67fa23a279a87822f13e5da78a6b515add75a29baf45ee10d83",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p25 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T2-10m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 2 – 10m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t2-10m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t2-10m.pdf",
+          "sha256": "569c24dc184058b2fede128dc4da8f80861db69391a83f2626977627141d756c",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p25 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [
+            "TfnswCbsModuleSection('T2-external')"
+          ],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T2-12m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 2 – 12m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t2-12m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t2-12m.pdf",
+          "sha256": "8f438a28866faca7d7bfc40a1b95bf4d6a72ef57e8ff10ae355d0882f33c32c6",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p25 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T3-8m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 3 – 8m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t3-8m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t3-8m.pdf",
+          "sha256": "acc08b7dbb574677c88223aa3c2e282f1e6593a6399060d31253c6d8dbae0776",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p27 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T3-10m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 3 – 10m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t3-10m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t3-10m.pdf",
+          "sha256": "d5eceef0bc8b7080994d414e7fd84cecc630b32f8b52470427bc7cf433e4c79c",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p27 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [
+            "TfnswCbsModuleSection('T3-external')"
+          ],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-T3-12m",
+          "country": "AU",
+          "title": "Country Bridge Solutions – Modular Bridge Drawings – Type 3 – 12m span",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t3-12m-span.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-t3-12m.pdf",
+          "sha256": "290e25a34536f3734771d5c772a6c4281412ba9bd0a1e9bc5da7a75d4fbbdacf",
+          "retrieved": "2026-09-23",
+          "pages": "PDF p27 PRECAST MODULE CONCRETE section sheet",
+          "status": "current TfNSW standard drawing (approved 07.10.2016)",
+          "profiles_implemented": [],
+          "notes": "identical module sections across 8/10/12 m within a type (visually checked T1 10/12, T2 10, T3 10; others located by text only)"
+        },
+        {
+          "id": "AU-TFNSW-CBS-GUIDE",
+          "country": "AU",
+          "title": "Country Bridge Solutions Design guide Edition 1, Version 1.0",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/country-bridge-solutions-design-guide.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-design-guide.pdf",
+          "sha256": "1932570efd6cd3325bacba6b274cb1cc971b5909cdfc7f7445b3b459d72ee21e",
+          "retrieved": "2026-09-23",
+          "pages": "p16 §4.2.1",
+          "status": "current guide",
+          "profiles_implemented": [],
+          "notes": "600 mm double-T deck modules, Types 1-3"
+        },
+        {
+          "id": "AU-TFNSW-CBS-CONCEPT",
+          "country": "AU",
+          "title": "Country Bridge Solutions concept drawings (PRELIMINARY: NOT FOR CONSTRUCTION)",
+          "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/country-bridge-solutions-concept-drawings.pdf",
+          "local_path": "sources/expansion/round2/au/tfnsw-cbs-concept.pdf",
+          "sha256": "d2a486d2c6d6c4bf68b34f7695521358aa7e8a16d7e75cb229ded4b5aa20730a",
+          "retrieved": "2026-09-23",
+          "pages": null,
+          "status": "preliminary",
+          "profiles_implemented": [],
+          "notes": "not used"
+        },
+        {
+          "id": "AU-TFNSW-B0201",
+          "country": "AU",
+          "title": "Super T Girder Standard Sizes (B0201)",
+          "url": "https://standards.transport.nsw.gov.au/_entity/annotation/de8be369-b135-ed11-9db1-000d3ae011f9",
+          "local_path": "sources/expansion/round2/au/tfnsw-b0201-supert.pdf",
+          "sha256": "df97b8f17951cbdcb4f9d2014eb4db72aae3d26114be33c6b13ef27ef2a1adb8",
+          "retrieved": "2026-09-23",
+          "pages": "p1",
+          "status": "downloaded-untranscribed",
+          "profiles_implemented": [],
+          "notes": "Super-T already in legacy aus; possible NSW-variant check"
+        },
+        {
+          "id": "AU-TFNSW-RTA-DRAFTING",
+          "country": "AU",
+          "title": "RTA Structural Drafting Table of Contents and Detailing Manual",
+          "url": "https://standards.transport.nsw.gov.au/_entity/annotation/f54ed89b-b235-ed11-9db1-000d3ae011f9",
+          "local_path": "sources/expansion/round2/au/tfnsw-rta-drafting-manual.pdf",
+          "sha256": "b5a3997334730eff9390fce32cf0a8c703a38bd4e438b7bd13a3a9bf696780d2",
+          "retrieved": "2026-09-23",
+          "pages": null,
+          "status": "downloaded-untranscribed",
+          "profiles_implemented": [],
+          "notes": "8-page TOC only"
+        },
+        {
+          "id": "AU-MRWA-SEDM",
+          "country": "AU",
+          "title": "Main Roads WA Structures Engineering Design Manual",
+          "url": "https://www.mainroads.wa.gov.au/globalassets/technical-commercial/technical-library/structures-engineering/structure-design/technical-design-guidelines/structures-engineering-design-manual.pdf",
+          "local_path": "sources/expansion/round2/au/mrwa-design-manual.pdf",
+          "sha256": "fafcb8ec9a76602acdd127a70717faa227ae06713c3cdc130627d08512c5e3e7",
+          "retrieved": "2026-09-23",
+          "pages": "Ch2 §2.4.5-2.4.8, Figs 2.6-2.11 (PDF pp29-34)",
+          "status": "not-extractable",
+          "profiles_implemented": [],
+          "notes": "plank 6/9/12 m, modified NAASRA Type 2 I-beam 915 deep, Teeroff 750-2250; GA drawings only"
+        },
+        {
+          "id": "AU-MRWA-BBDIM",
+          "country": "AU",
+          "title": "Main Roads WA Bridge Branch Design Information Manual",
+          "url": "https://www.mainroads.wa.gov.au/globalassets/technical-commercial/technical-library/structures-engineering/structure-design/technical-design-guidelines/bridge-branch-design-information-manual.pdf",
+          "local_path": "sources/expansion/round2/au/mrwa-bridge-branch-design-info.pdf",
+          "sha256": "b32b4a55214984befc22261be59b85257f9d6c582596b0d25c6b558934251614",
+          "retrieved": "2026-09-23",
+          "pages": null,
+          "status": "not-extractable",
+          "profiles_implemented": [],
+          "notes": "no beam sections found by text search"
+        },
+        {
+          "id": "NZ-STAHLTON-DT-BRIDGE",
+          "country": "NZ",
+          "title": "Rural bridge by Stahlton (double tee)",
+          "url": "http://stahlton.co.nz/wp-content/uploads/2016/04/Stahlton-Double-Tee-Bridge.new-shape1.pdf",
+          "local_path": "sources/expansion/round2/nz/stahlton-double-tee-bridge.pdf",
+          "sha256": "000e9d06738bb1531784f187d6f40eb7b4b1fb4b0a04d9b84eb251ce2f7c38c1",
+          "retrieved": "2026-09-23",
+          "pages": "p1",
+          "status": "partial",
+          "profiles_implemented": [],
+          "notes": "unit width 1.8-2.1 m, spans 12.5-20 m; section not dimensioned"
+        },
+        {
+          "id": "NZ-STAHLTON-DT-FLOOR",
+          "country": "NZ",
+          "title": "Stahlton Double Tees product brochure",
+          "url": "https://stahlton.co.nz/wp-content/uploads/2016/04/Stahlton-Double-Tee-brochure-FINAL.pdf",
+          "local_path": "sources/expansion/round2/nz/stahlton-double-tee-brochure.pdf",
+          "sha256": "1f04f144c2bd5c529d6526c5f4044953a13e49905fa4c6b9021a2a2d5215a2a8",
+          "retrieved": "2026-09-23",
+          "pages": null,
+          "status": "rejected (building floors)",
+          "profiles_implemented": [],
+          "notes": ""
+        },
+        {
+          "id": "NZ-HUMES-DT",
+          "country": "NZ",
+          "title": "Humes Double T Concrete Bridges",
+          "url": "https://www.humes.co.nz/assets/Uploads/Resources/Files/231002-Double-T-Concrete-Bridges-v2.pdf",
+          "local_path": "sources/expansion/round2/nz/humes-nz-double-t-bridges.pdf",
+          "sha256": "c74c7195665bcf1e13647d785a81f206045e7be6b215714f864d44e2b7f51216",
+          "retrieved": "2026-09-23",
+          "pages": "p1",
+          "status": "partial",
+          "profiles_implemented": [],
+          "notes": "800 deep x 2 m wide, 8-18 m; no web/flange dims"
+        },
+        {
+          "id": "FJ-FRA-SDGS",
+          "country": "FJ",
+          "title": "FRA Structures Design Guide Supplement Rev V3.0",
+          "url": "https://www.fijiroads.org/wp-content/uploads/2024/04/FRA-Structures-Design-Guide-Supplement-Rev-V3.0-.pdf",
+          "local_path": "sources/expansion/round2/fj/fra-structures-design-guide-supplement-v3.pdf",
+          "sha256": "ce79056810814139abb716cd6b0afae345511a2208d3e4b12ee36c084ce0b172",
+          "retrieved": "2026-09-23",
+          "pages": null,
+          "status": "not-extractable",
+          "profiles_implemented": [],
+          "notes": "no precast beam sections"
+        }
+      ],
+      "leads": [
+        {
+          "id": "AU-TMR-SD2054-2064",
+          "country": "AU",
+          "url": null,
+          "status": "blocked (Cloudflare challenge)",
+          "notes": "TMR 14/16-18/20-24 m PSC deck unit sets; numbering inferred, unverified"
+        },
+        {
+          "id": "AU-TMR-DDPS-V3-CH15",
+          "country": "AU",
+          "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Bridges-marine-and-other-structures/Drafting-and-Design-Presentation-Standards/Volume-3/Current-versions/Volume3Chapter15.pdf?la=en",
+          "status": "blocked (Cloudflare challenge)",
+          "notes": "Chapter 15 PSC deck units drafting standard"
+        },
+        {
+          "id": "AU-TAS-SPD-REV05",
+          "country": "AU",
+          "url": "https://www.transport.tas.gov.au/__data/assets/pdf_file/0006/253680/Standardised_Plank_Design_-_Design_Guide_Rev05_Current.PDF",
+          "status": "blocked (Cloudflare challenge / 403)",
+          "notes": "Tasmania standardised rectangular plank design"
+        },
+        {
+          "id": "NZ-NZTA-RED-FOLDER-3",
+          "country": "NZ",
+          "url": "https://www.nzta.govt.nz/assets/Highways-Information-Portal/Technical-disciplines/Structures/Standard-bridge-drawings/PDF-indexes/D00-Red-Folder-No.-3-1990-Index.pdf",
+          "status": "blocked (Incapsula bot challenge)",
+          "notes": "MWD/NZTA historic I, U, double hollow-core standard drawings incl. D87-0-111-10-7004-4R6 (U-beams)"
+        },
+        {
+          "id": "NZ-NZTA-RR252",
+          "country": "NZ",
+          "url": "https://www.nzta.govt.nz/assets/resources/research/reports/252/252-New-standard-precast-concrete-bridge-beams-stage-1-identification-of-new-standard-beam-shapes.pdf",
+          "status": "blocked (Incapsula)",
+          "notes": "stage-1 beam shape identification"
+        },
+        {
+          "id": "PG-ADB-43200-012",
+          "country": "PG",
+          "url": "https://www.adb.org/sites/default/files/project-documents//43200-012-png-tacr-01.pdf",
+          "status": "blocked (Cloudflare)",
+          "notes": "PNG bridge replacement TA; Lae precast girder factory (10 m) per search snippet"
+        }
+      ]
+    }
+  },
+  "source_record_count": 60
+}

@@ -1,0 +1,182 @@
+{
+  "family": "T Beam (Ireland, solid slab construction)",
+  "description": "Irish standard pretensioned T beams T1-T10 (380-815 mm deep, 495 mm flange, solid slab construction; 'Special Order' per Banagher). Note T1-T2 use an 85 mm web height, T3-T10 a 240 mm web height.",
+  "sources": {
+    "properties_and_F_H": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed p. 16 (sources/banagher-bridge-beam-manual-3ed.pdf); identical tables in '05316 Precast Beam Properties.xls' (2007).",
+    "source_urls": [
+      "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf"
+    ],
+    "profile_dims": "Manual p. 16 drawing (vector PDF): vertical stack F + 50 + H + 50 + 40 + 75 + 25 = depth (verified exact for all ten sizes); top flange 205 wide; flange 495 wide with 25 chamfers (445 bottom face); shoulder/taper zones 50."
+  },
+  "published_properties": [
+    {
+      "section": "T1",
+      "depth": 380,
+      "area": 98000,
+      "yc": 139.9,
+      "zt": 5.18,
+      "zb": 8.89,
+      "ixx_e9": 1.2443,
+      "self_weight_kN_m": 2.45,
+      "F": 55,
+      "H": 85
+    },
+    {
+      "section": "T2",
+      "depth": 420,
+      "area": 106200,
+      "yc": 160.0,
+      "zt": 6.76,
+      "zb": 10.98,
+      "ixx_e9": 1.7572,
+      "self_weight_kN_m": 2.66,
+      "F": 95,
+      "H": 85
+    },
+    {
+      "section": "T3",
+      "depth": 535,
+      "area": 114275,
+      "yc": 196.0,
+      "zt": 9.57,
+      "zb": 16.55,
+      "ixx_e9": 3.244,
+      "self_weight_kN_m": 2.86,
+      "F": 55,
+      "H": 240
+    },
+    {
+      "section": "T4",
+      "depth": 575,
+      "area": 122475,
+      "yc": 220.0,
+      "zt": 11.92,
+      "zb": 19.23,
+      "ixx_e9": 4.231,
+      "self_weight_kN_m": 3.06,
+      "F": 95,
+      "H": 240
+    },
+    {
+      "section": "T5",
+      "depth": 615,
+      "area": 130675,
+      "yc": 243.6,
+      "zt": 14.3,
+      "zb": 21.81,
+      "ixx_e9": 5.3126,
+      "self_weight_kN_m": 3.27,
+      "F": 135,
+      "H": 240
+    },
+    {
+      "section": "T6",
+      "depth": 655,
+      "area": 138875,
+      "yc": 266.7,
+      "zt": 16.73,
+      "zb": 24.36,
+      "ixx_e9": 6.4959,
+      "self_weight_kN_m": 3.47,
+      "F": 175,
+      "H": 240
+    },
+    {
+      "section": "T7",
+      "depth": 695,
+      "area": 147075,
+      "yc": 289.5,
+      "zt": 19.2,
+      "zb": 26.91,
+      "ixx_e9": 7.7878,
+      "self_weight_kN_m": 3.68,
+      "F": 215,
+      "H": 240
+    },
+    {
+      "section": "T8",
+      "depth": 735,
+      "area": 155275,
+      "yc": 311.9,
+      "zt": 21.74,
+      "zb": 29.48,
+      "ixx_e9": 9.1954,
+      "self_weight_kN_m": 3.88,
+      "F": 255,
+      "H": 240
+    },
+    {
+      "section": "T9",
+      "depth": 775,
+      "area": 163475,
+      "yc": 334.2,
+      "zt": 24.33,
+      "zb": 32.1,
+      "ixx_e9": 10.726,
+      "self_weight_kN_m": 4.09,
+      "F": 295,
+      "H": 240
+    },
+    {
+      "section": "T10",
+      "depth": 815,
+      "area": 171675,
+      "yc": 356.2,
+      "zt": 26.99,
+      "zb": 34.77,
+      "ixx_e9": 12.385,
+      "self_weight_kN_m": 4.29,
+      "F": 335,
+      "H": 240
+    }
+  ],
+  "geometry": {
+    "note": "Exact profile, no fitting required. The vertical stack is published (chamfer 25 + flange side 75 + splay 40 + lower taper 50 + web H + upper taper 50 + top flange F = depth, exact for all ten sizes) and the horizontal dims below reproduce the published A, yc and Ixx to within 0.02% (max) when the polygon is constructed correctly. They also match the manual p.16 CAD drawing.",
+    "stack_bottom_up": [
+      {
+        "zone": "bottom face (445 wide)",
+        "height": 0
+      },
+      {
+        "zone": "corner chamfer (to 495)",
+        "height": 25
+      },
+      {
+        "zone": "flange side (495 -> 485)",
+        "height": 75
+      },
+      {
+        "zone": "splay (485 -> 205 shoulder)",
+        "height": 40
+      },
+      {
+        "zone": "lower taper (205 -> 105 web)",
+        "height": 50
+      },
+      {
+        "zone": "web (105 wide)",
+        "height": "H (85 T1-T2 / 240 T3-T10)"
+      },
+      {
+        "zone": "upper taper (105 -> 205)",
+        "height": 50
+      },
+      {
+        "zone": "top flange (205 wide)",
+        "height": "F (55...335 per size)"
+      }
+    ],
+    "dims": {
+      "bottom_face_width": 445.0,
+      "flange_width": 495.0,
+      "flange_width_at_100": 485.0,
+      "shoulder_width": 205.0,
+      "web_width": 105.0,
+      "top_flange_width": 205.0
+    },
+    "rms_error_pct": 0.008,
+    "max_error_pct": 0.019,
+    "note_self_weight": "The published T self-weights are ~4% higher than area x 24 kN/m3 (unlike the Y family where they match exactly); the tables' A column and the drawing agree with each other and are used here."
+  },
+  "strand_note": "Strand layout (xls DWG of T10, 2007-era): bottom flange two rows 13/13 at 60/110 above soffit over a 445 face with pitches 72.5|45 45 45 40 40 45 45 45 72.5; single centred strands at 240-380 and 450-770 up the web/top flange. Not yet encoded as a row table - extract from the manual appendix or DWG before relying on it."
+}

@@ -41,6 +41,10 @@ class SuperTGirderSection:
     middle of the soffit.
     """
 
+    # Fig. D1(B) constants; default top flange (2100 x 75, VIC) is one of the jurisdictional options.
+    provenance = "transcribed-with-convention"
+    source_status = "AS5100.5 Appendix D"
+
     def __init__(
         self,
         girder_type: int,
@@ -164,6 +168,9 @@ class IGirderSection:
     Returns a ``sectionproperties`` ``Geometry`` (mm), origin at the middle
     of the top flange.
     """
+
+    provenance = "transcribed"
+    source_status = "AS5100.5 Appendix D"
 
     def __init__(self, girder_type: int):
         if not 1 <= girder_type <= 4:

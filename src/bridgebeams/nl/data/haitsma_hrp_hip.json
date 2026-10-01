@@ -1,0 +1,657 @@
+{
+ "source": {
+  "organisation": "Haitsma Beton",
+  "title_original": "HRP- en HIP-brugliggers (folder HRP/HIP)",
+  "url": "https://www.haitsma.nl/media/241925/folder-hrp-hip.pdf",
+  "local_file": "sources/expansion/europe-americas/nl_hip.pdf",
+  "sha256": "37a0eb77d1f38f80578139dd4164b8a95be0f7351ae3c15245379f778f4a7b71",
+  "pdf_pages": {
+   "HRP": 2,
+   "HIP": 3
+  },
+  "printed_page": null,
+  "pdf_creation_date": "2018-02-22",
+  "source_status": "producer catalogue (PDF created 2018-02-22)",
+  "units": "mm",
+  "registry_id": "nl_hip"
+ },
+ "edition_conflict": {
+  "pdf_tables": "HIP natte knoop and HIP druklaag tables list H = 1200-2000 mm",
+  "web_page": "Haitsma HIP web page (local snapshot sources/expansion/europe-americas/nl_haitsma.html, URL not recorded in the registry) states 'De HIP-ligger met druklaag kan worden gemaakt met een hoogte tussen de 1600 en 2400mm' and the same for 'HIP-ligger met dwarsnaspanning'.",
+  "resolution": "PDF tables implemented (the only source with dimensions and properties). The current product range may be 1600-2400 mm; H > 2000 is not implemented and the web page may describe a later edition (unverified)."
+ },
+ "hrp": {
+  "title_original": "HRP-ligger",
+  "table_heading_original": "Element, h.o.h. 1200mm",
+  "provenance": "fitted-reconstruction",
+  "printed_dimensions_mm": {
+   "bottom_width_chain": [
+    220,
+    215,
+    300,
+    215,
+    220
+   ],
+   "overall_bottom_width": 1170,
+   "vertical_chain_from_soffit": [
+    66,
+    84,
+    20,
+    130
+   ],
+   "stem_width_B": 300,
+   "planks_note": "'25' is the shuttering-plank thickness above the stem; 'standaard' in-situ deck; composite columns not used"
+  },
+  "estimates_mm": {
+   "bottom_chamfer": 20,
+   "side_key_depth": 30,
+   "side_key_lower_bevel": "45 degrees from y=66 to y=96",
+   "side_key_top": 135,
+   "top_edge_chamfer": 15,
+   "plank_rebate_at_stem_top": {
+    "width": 35,
+    "depth": 15
+   }
+  },
+  "published_properties": [
+   {
+    "section": "HRP500",
+    "H": 500,
+    "B_mm": 300,
+    "Ab_mm2": 315000.0,
+    "V_mm": 172,
+    "I_printed_x1e9": 5.44,
+    "I_mm4": 5440000000
+   },
+   {
+    "section": "HRP600",
+    "H": 600,
+    "B_mm": 300,
+    "Ab_mm2": 345000.0,
+    "V_mm": 204,
+    "I_printed_x1e9": 9.3,
+    "I_mm4": 9300000000
+   },
+   {
+    "section": "HRP700",
+    "H": 700,
+    "B_mm": 300,
+    "Ab_mm2": 375000.0,
+    "V_mm": 240,
+    "I_printed_x1e9": 14.7,
+    "I_mm4": 14700000000
+   },
+   {
+    "section": "HRP800",
+    "H": 800,
+    "B_mm": 300,
+    "Ab_mm2": 405000.0,
+    "V_mm": 277,
+    "I_printed_x1e9": 21.9,
+    "I_mm4": 21900000000
+   },
+   {
+    "section": "HRP900",
+    "H": 900,
+    "B_mm": 300,
+    "Ab_mm2": 435000.0,
+    "V_mm": 316,
+    "I_printed_x1e9": 30.9,
+    "I_mm4": 30900000000
+   },
+   {
+    "section": "HRP1000",
+    "H": 1000,
+    "B_mm": 300,
+    "Ab_mm2": 465000.0,
+    "V_mm": 357,
+    "I_printed_x1e9": 42.1,
+    "I_mm4": 42100000000
+   },
+   {
+    "section": "HRP1100",
+    "H": 1100,
+    "B_mm": 300,
+    "Ab_mm2": 495000.0,
+    "V_mm": 398,
+    "I_printed_x1e9": 55.5,
+    "I_mm4": 55500000000
+   },
+   {
+    "section": "HRP1200",
+    "H": 1200,
+    "B_mm": 300,
+    "Ab_mm2": 525000.0,
+    "V_mm": 441,
+    "I_printed_x1e9": 71.3,
+    "I_mm4": 71300000000
+   },
+   {
+    "section": "HRP1300",
+    "H": 1300,
+    "B_mm": 300,
+    "Ab_mm2": 555000.0,
+    "V_mm": 485,
+    "I_printed_x1e9": 89.7,
+    "I_mm4": 89700000000
+   },
+   {
+    "section": "HRP1400",
+    "H": 1400,
+    "B_mm": 300,
+    "Ab_mm2": 585000.0,
+    "V_mm": 529,
+    "I_printed_x1e9": 111.0,
+    "I_mm4": 111000000000
+   },
+   {
+    "section": "HRP1500",
+    "H": 1500,
+    "B_mm": 300,
+    "Ab_mm2": 615000.0,
+    "V_mm": 573,
+    "I_printed_x1e9": 135.0,
+    "I_mm4": 135000000000
+   },
+   {
+    "section": "HRP1600",
+    "H": 1600,
+    "B_mm": 300,
+    "Ab_mm2": 645000.0,
+    "V_mm": 619,
+    "I_printed_x1e9": 162.0,
+    "I_mm4": 162000000000
+   }
+  ],
+  "geometry_notes": [
+   "Main outline transcribed: flange edge top at 66+84 = 150 mm at x = 585, flange top rising 20 mm to the knee at x = 365 (y = 170), then 215 x 130 splay to the 300 mm stem at y = 300.",
+   "Side shear-key recess, bottom and top chamfers and the stem-top plank rebate are drawn but undimensioned. Chamfers (20, 15) and the rebate (about 36 x 13) were scaled from the vector drawing; the recess depth was then fitted to Ab/V/I (least squares gave 30.9 mm; the drawing scales about 20 mm). Rounded values adopted.",
+   "Sharp outline without keys over-estimates Ab by 1.0-2.1%; published Ab increments are exactly 30000 mm2 per 100 mm (300 mm stem).",
+   "Published Ab has three significant figures."
+  ],
+  "residuals": [
+   {
+    "section": "HRP500",
+    "model_area_mm2": 315512,
+    "area_rel": 0.0016,
+    "model_centroid_mm": 172.0,
+    "centroid_diff_mm": 0.0,
+    "model_I_mm4": 5452500000.0,
+    "I_rel": 0.0023
+   },
+   {
+    "section": "HRP600",
+    "model_area_mm2": 345512,
+    "area_rel": 0.0015,
+    "model_centroid_mm": 204.5,
+    "centroid_diff_mm": 0.5,
+    "model_I_mm4": 9320900000.0,
+    "I_rel": 0.0022
+   },
+   {
+    "section": "HRP700",
+    "model_area_mm2": 375512,
+    "area_rel": 0.0014,
+    "model_centroid_mm": 239.8,
+    "centroid_diff_mm": -0.2,
+    "model_I_mm4": 14739000000.0,
+    "I_rel": 0.0027
+   },
+   {
+    "section": "HRP800",
+    "model_area_mm2": 405512,
+    "area_rel": 0.0013,
+    "model_centroid_mm": 277.3,
+    "centroid_diff_mm": 0.3,
+    "model_I_mm4": 21897000000.0,
+    "I_rel": -0.0001
+   },
+   {
+    "section": "HRP900",
+    "model_area_mm2": 435512,
+    "area_rel": 0.0012,
+    "model_centroid_mm": 316.5,
+    "centroid_diff_mm": 0.5,
+    "model_I_mm4": 30973000000.0,
+    "I_rel": 0.0024
+   },
+   {
+    "section": "HRP1000",
+    "model_area_mm2": 465512,
+    "area_rel": 0.0011,
+    "model_centroid_mm": 357.1,
+    "centroid_diff_mm": 0.1,
+    "model_I_mm4": 42138000000.0,
+    "I_rel": 0.0009
+   },
+   {
+    "section": "HRP1100",
+    "model_area_mm2": 495512,
+    "area_rel": 0.001,
+    "model_centroid_mm": 398.9,
+    "centroid_diff_mm": 0.9,
+    "model_I_mm4": 55559000000.0,
+    "I_rel": 0.0011
+   },
+   {
+    "section": "HRP1200",
+    "model_area_mm2": 525512,
+    "area_rel": 0.001,
+    "model_centroid_mm": 441.5,
+    "centroid_diff_mm": 0.5,
+    "model_I_mm4": 71397000000.0,
+    "I_rel": 0.0014
+   },
+   {
+    "section": "HRP1300",
+    "model_area_mm2": 555512,
+    "area_rel": 0.0009,
+    "model_centroid_mm": 485.0,
+    "centroid_diff_mm": 0.0,
+    "model_I_mm4": 89812000000.0,
+    "I_rel": 0.0013
+   },
+   {
+    "section": "HRP1400",
+    "model_area_mm2": 585512,
+    "area_rel": 0.0009,
+    "model_centroid_mm": 529.1,
+    "centroid_diff_mm": 0.1,
+    "model_I_mm4": 110960000000.0,
+    "I_rel": -0.0003
+   },
+   {
+    "section": "HRP1500",
+    "model_area_mm2": 615512,
+    "area_rel": 0.0008,
+    "model_centroid_mm": 573.9,
+    "centroid_diff_mm": 0.9,
+    "model_I_mm4": 135000000000.0,
+    "I_rel": 0.0
+   },
+   {
+    "section": "HRP1600",
+    "model_area_mm2": 645512,
+    "area_rel": 0.0008,
+    "model_centroid_mm": 619.1,
+    "centroid_diff_mm": 0.1,
+    "model_I_mm4": 162090000000.0,
+    "I_rel": 0.0006
+   }
+  ]
+ },
+ "hip": {
+  "title_original": "HIP-ligger (Haitsma I Profiel)",
+  "provenance": "fitted-reconstruction",
+  "natte_knoop": {
+   "title_original": "HIP natte knoop/dwarsnaspanning",
+   "table_heading_original": "element h.o.h. 1500mm",
+   "printed_dimensions_mm": {
+    "top_width_chain": [
+     300,
+     880,
+     300
+    ],
+    "top_vertical_chain_from_top": [
+     300,
+     69,
+     22
+    ],
+    "bottom_width_chain": [
+     490,
+     125,
+     250,
+     125,
+     490
+    ],
+    "overall_bottom_width": 1480,
+    "bottom_vertical_chain_from_soffit": [
+     59,
+     103,
+     121,
+     100
+    ]
+   },
+   "estimates_mm": {
+    "bottom_edge_rebate": "25 mm inward, 15 mm rise at y = 59, then side face 5 mm draft outward to y = 162 (scaled from drawing)"
+   },
+   "published_properties": [
+    {
+     "section": "HIP1200-natte-knoop",
+     "H": 1200,
+     "Ab_mm2": 888000.0,
+     "V_mm": 568,
+     "I_mm4": 149000000000.0
+    },
+    {
+     "section": "HIP1300-natte-knoop",
+     "H": 1300,
+     "Ab_mm2": 907000.0,
+     "V_mm": 618,
+     "I_mm4": 185000000000.0
+    },
+    {
+     "section": "HIP1400-natte-knoop",
+     "H": 1400,
+     "Ab_mm2": 932000.0,
+     "V_mm": 669,
+     "I_mm4": 226000000000.0
+    },
+    {
+     "section": "HIP1500-natte-knoop",
+     "H": 1500,
+     "Ab_mm2": 957000.0,
+     "V_mm": 719,
+     "I_mm4": 271000000000.0
+    },
+    {
+     "section": "HIP1600-natte-knoop",
+     "H": 1600,
+     "Ab_mm2": 982000.0,
+     "V_mm": 770,
+     "I_mm4": 321000000000.0
+    },
+    {
+     "section": "HIP1700-natte-knoop",
+     "H": 1700,
+     "Ab_mm2": 1010000.0,
+     "V_mm": 820,
+     "I_mm4": 370000000000.0
+    },
+    {
+     "section": "HIP1800-natte-knoop",
+     "H": 1800,
+     "Ab_mm2": 1030000.0,
+     "V_mm": 871,
+     "I_mm4": 437000000000.0
+    },
+    {
+     "section": "HIP1900-natte-knoop",
+     "H": 1900,
+     "Ab_mm2": 1060000.0,
+     "V_mm": 921,
+     "I_mm4": 502000000000.0
+    },
+    {
+     "section": "HIP2000-natte-knoop",
+     "H": 2000,
+     "Ab_mm2": 1080000.0,
+     "V_mm": 971,
+     "I_mm4": 572000000000.0
+    }
+   ],
+   "pinned_discrepancies": {
+    "HIP1200-natte-knoop": "Published Ab 888000 gives a 1200->1300 increment of 19000 mm2 while the 250 mm web gives 25000 (every other step is 25000 within rounding); the outline is -0.7% on area. Source rounding/typo; pinned.",
+    "HIP1700-natte-knoop": "Published I 3.70E+11 breaks the progression (3.21, 3.70, 4.37); outline is +1.7%. Source value pinned."
+   },
+   "residuals": [
+    {
+     "section": "HIP1200-natte-knoop",
+     "model_area_mm2": 881945,
+     "area_rel": -0.0068,
+     "model_centroid_mm": 567.9,
+     "centroid_diff_mm": -0.1,
+     "model_I_mm4": 148950000000.0,
+     "I_rel": -0.0003
+    },
+    {
+     "section": "HIP1300-natte-knoop",
+     "model_area_mm2": 906945,
+     "area_rel": -0.0001,
+     "model_centroid_mm": 618.4,
+     "centroid_diff_mm": 0.4,
+     "model_I_mm4": 185130000000.0,
+     "I_rel": 0.0007
+    },
+    {
+     "section": "HIP1400-natte-knoop",
+     "model_area_mm2": 931945,
+     "area_rel": -0.0001,
+     "model_centroid_mm": 668.9,
+     "centroid_diff_mm": -0.1,
+     "model_I_mm4": 225840000000.0,
+     "I_rel": -0.0007
+    },
+    {
+     "section": "HIP1500-natte-knoop",
+     "model_area_mm2": 956945,
+     "area_rel": -0.0001,
+     "model_centroid_mm": 719.3,
+     "centroid_diff_mm": 0.3,
+     "model_I_mm4": 271210000000.0,
+     "I_rel": 0.0008
+    },
+    {
+     "section": "HIP1600-natte-knoop",
+     "model_area_mm2": 981945,
+     "area_rel": -0.0001,
+     "model_centroid_mm": 769.8,
+     "centroid_diff_mm": -0.2,
+     "model_I_mm4": 321370000000.0,
+     "I_rel": 0.0011
+    },
+    {
+     "section": "HIP1700-natte-knoop",
+     "model_area_mm2": 1006945,
+     "area_rel": -0.003,
+     "model_centroid_mm": 820.1,
+     "centroid_diff_mm": 0.1,
+     "model_I_mm4": 376430000000.0,
+     "I_rel": 0.0174
+    },
+    {
+     "section": "HIP1800-natte-knoop",
+     "model_area_mm2": 1031945,
+     "area_rel": 0.0019,
+     "model_centroid_mm": 870.5,
+     "centroid_diff_mm": -0.5,
+     "model_I_mm4": 436530000000.0,
+     "I_rel": -0.0011
+    },
+    {
+     "section": "HIP1900-natte-knoop",
+     "model_area_mm2": 1056945,
+     "area_rel": -0.0029,
+     "model_centroid_mm": 920.9,
+     "centroid_diff_mm": -0.1,
+     "model_I_mm4": 501790000000.0,
+     "I_rel": -0.0004
+    },
+    {
+     "section": "HIP2000-natte-knoop",
+     "model_area_mm2": 1081945,
+     "area_rel": 0.0018,
+     "model_centroid_mm": 971.2,
+     "centroid_diff_mm": 0.2,
+     "model_I_mm4": 572330000000.0,
+     "I_rel": 0.0006
+    }
+   ]
+  },
+  "druklaag": {
+   "title_original": "HIP + 200mm druklaag",
+   "table_heading_original": "element h.o.h. 1500mm",
+   "printed_dimensions_mm": {
+    "top_overall_width": 1440,
+    "top_vertical_chain_from_top": [
+     90,
+     185
+    ],
+    "bottom_width_chain": [
+     490,
+     125,
+     250,
+     125,
+     490
+    ],
+    "overall_bottom_width": 1480,
+    "bottom_vertical_chain_from_soffit": [
+     59,
+     103,
+     121,
+     100
+    ]
+   },
+   "estimates_mm": {
+    "bottom_edge_rebate": "as natte knoop",
+    "top_edge_ledge": "25 mm wide x 57 mm deep each side (top face 1390 mm)",
+    "haunch_break": "underside from the 90 mm edge falls 10 mm to x = 625, then runs to the web at 90+185 = 275 below the top"
+   },
+   "published_properties": [
+    {
+     "section": "HIP1200-druklaag",
+     "H": 1200,
+     "Ab_mm2": 797000.0,
+     "V_mm": 554,
+     "I_mm4": 154000000000.0
+    },
+    {
+     "section": "HIP1300-druklaag",
+     "H": 1300,
+     "Ab_mm2": 822000.0,
+     "V_mm": 599,
+     "I_mm4": 189000000000.0
+    },
+    {
+     "section": "HIP1400-druklaag",
+     "H": 1400,
+     "Ab_mm2": 847000.0,
+     "V_mm": 646,
+     "I_mm4": 227000000000.0
+    },
+    {
+     "section": "HIP1500-druklaag",
+     "H": 1500,
+     "Ab_mm2": 872000.0,
+     "V_mm": 692,
+     "I_mm4": 270000000000.0
+    },
+    {
+     "section": "HIP1600-druklaag",
+     "H": 1600,
+     "Ab_mm2": 897000.0,
+     "V_mm": 738,
+     "I_mm4": 318000000000.0
+    },
+    {
+     "section": "HIP1700-druklaag",
+     "H": 1700,
+     "Ab_mm2": 922000.0,
+     "V_mm": 785,
+     "I_mm4": 370000000000.0
+    },
+    {
+     "section": "HIP1800-druklaag",
+     "H": 1800,
+     "Ab_mm2": 947000.0,
+     "V_mm": 832,
+     "I_mm4": 426000000000.0
+    },
+    {
+     "section": "HIP1900-druklaag",
+     "H": 1900,
+     "Ab_mm2": 972000.0,
+     "V_mm": 879,
+     "I_mm4": 487000000000.0
+    },
+    {
+     "section": "HIP2000-druklaag",
+     "H": 2000,
+     "Ab_mm2": 997000.0,
+     "V_mm": 926,
+     "I_mm4": 553000000000.0
+    }
+   ],
+   "geometry_notes": [
+    "The drawing is asymmetric at the flange tips (left tip about 100 mm thick with a flat underside, right tip 90 mm with a short slope to x = 625, i.e. a joint profile). The dimensioned right-hand side is mirrored; area effect below 0.1%."
+   ],
+   "residuals": [
+    {
+     "section": "HIP1200-druklaag",
+     "model_area_mm2": 797245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 553.7,
+     "centroid_diff_mm": -0.3,
+     "model_I_mm4": 153910000000.0,
+     "I_rel": -0.0006
+    },
+    {
+     "section": "HIP1300-druklaag",
+     "model_area_mm2": 822245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 599.5,
+     "centroid_diff_mm": 0.5,
+     "model_I_mm4": 188620000000.0,
+     "I_rel": -0.002
+    },
+    {
+     "section": "HIP1400-druklaag",
+     "model_area_mm2": 847245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 645.6,
+     "centroid_diff_mm": -0.4,
+     "model_I_mm4": 227420000000.0,
+     "I_rel": 0.0019
+    },
+    {
+     "section": "HIP1500-druklaag",
+     "model_area_mm2": 872245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 691.9,
+     "centroid_diff_mm": -0.1,
+     "model_I_mm4": 270430000000.0,
+     "I_rel": 0.0016
+    },
+    {
+     "section": "HIP1600-druklaag",
+     "model_area_mm2": 897245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 738.4,
+     "centroid_diff_mm": 0.4,
+     "model_I_mm4": 317780000000.0,
+     "I_rel": -0.0007
+    },
+    {
+     "section": "HIP1700-druklaag",
+     "model_area_mm2": 922245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 785.1,
+     "centroid_diff_mm": 0.1,
+     "model_I_mm4": 369600000000.0,
+     "I_rel": -0.0011
+    },
+    {
+     "section": "HIP1800-druklaag",
+     "model_area_mm2": 947245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 832.0,
+     "centroid_diff_mm": -0.0,
+     "model_I_mm4": 426010000000.0,
+     "I_rel": 0.0
+    },
+    {
+     "section": "HIP1900-druklaag",
+     "model_area_mm2": 972245,
+     "area_rel": 0.0003,
+     "model_centroid_mm": 879.0,
+     "centroid_diff_mm": -0.0,
+     "model_I_mm4": 487130000000.0,
+     "I_rel": 0.0003
+    },
+    {
+     "section": "HIP2000-druklaag",
+     "model_area_mm2": 997245,
+     "area_rel": 0.0002,
+     "model_centroid_mm": 926.2,
+     "centroid_diff_mm": 0.2,
+     "model_I_mm4": 553100000000.0,
+     "I_rel": 0.0002
+    }
+   ]
+  },
+  "geometry_notes": [
+   "Sharp outlines without the undimensioned rebates/ledges over-estimate Ab by up to 0.8% (natte knoop) and 2.7% (druklaag); with the scaled estimates Ab is within 0.1% and V within 1 mm except the pinned rows.",
+   "Published Ab/I have three significant figures."
+  ]
+ }
+}

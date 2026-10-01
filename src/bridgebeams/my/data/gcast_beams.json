@@ -1,0 +1,523 @@
+{
+ "schema_version": 1,
+ "family": "G-CAST prestressed U, TM, I and T beams",
+ "country": "MY",
+ "source_status": "producer catalogue (G-CAST, JUNE 2020.REV.0)",
+ "sources": [
+  {
+   "title_original": "G-CAST Prestressed Concrete Beams (catalogue), JUNE 2020.REV.0",
+   "producer": "Cast Concrete Sdn Bhd (G-CAST), Kuala Lumpur",
+   "url": "https://g-cast.com.my/wp-content/uploads/media_uploads/G-CAST-Catalogue-Prestressed-Beam.pdf",
+   "local_file": "sources/expansion/round2/my/g-cast-prestressed-beam.pdf",
+   "sha256": "8304c3ba7287fc99a2cf5febc151c9cf977458249f710ffa1132e99eff3cef5c",
+   "retrieved": "2026-09-23",
+   "pdf_page": "3-5",
+   "printed_page": null,
+   "content": "Embedded CAD raster sections (pdfimages) + property tables"
+  }
+ ],
+ "units": "mm, mm2, mm4, mm3; kN/m",
+ "transcribed_dimensions": {
+  "U": {
+   "bottom_width": 970,
+   "chamfer": 35,
+   "outer_batter": "7 : 1 (vertical : horizontal)",
+   "top": "325 = 40 (inner ledge) + 235 (raised strip) + 50 (outer ledge)",
+   "vertical_steps": "30 (top to ledges), 15 (inner step), 19 (outer step)",
+   "thickening": 407,
+   "floor": "150 (centre) + 50 (to break) + 155 (to web toe) = 355",
+   "depth_labels": "U1 800 ... U12 1600, 100 mm steps; top block slides down outer face (dashed marks)"
+  },
+  "TM": {
+   "bottom": "970 base, 25 chamfer, 160 edge, 50 taper, 80 splay, 160 web (intermediate section; end section 320 web not implemented)",
+   "top": "B = 1350-1550, flange with superelevation 'S.E.', edge callouts 39/75, splay 105 high x 220",
+   "depths": "1040/1200/1360"
+  },
+  "I1600": "1067 top = 80 + 907 + 80; stack from top 50/77/76/102, web 838, splay 254 (254 horizontal), bottom 183 + 20 chamfer; web 203; splay 102 horizontal; base 711",
+  "T1800": "1750 top with S.E.; callouts 34/75 at the tip, 94 splay (100 horizontal), 1120 web, 205 splay, 250 bottom, 20 chamfer, 660 base, 250 web"
+ },
+ "fitted_parameters": {
+  "U": {
+   "web_horizontal_width": 157.4,
+   "floor_break_half_width": 265.0,
+   "method": "least squares on A (%), Yb (mm/5) and Ixx (%) for 9 rows; printed dimensions fixed"
+  },
+  "TM": {
+   "flange_thickness": 87.0,
+   "method": "uniform symmetric flange fitted to the sum of the nine areas (86.95 mm unrounded); edge lean 10 mm taken from the OKA M-beam drawing because the TM bottom is the same M-type detail (convention)"
+  },
+  "T1800": {
+   "tip_thickness": 65.0,
+   "method": "fitted to A; root 131 follows the depth chain"
+  }
+ },
+ "geometry_notes": [
+  "All drawings are embedded raster images (~130-150 ppi); callouts were read from 2-4x upscaled crops.",
+  "U1 (800): the 407 mm thickening would end 7 mm below the 355 mm web-toe level, so the sloping inner face is run straight to the toe (the drawn U1 dashed outline also meets the floor directly). Other marks keep the kink on the 7:1 inner web face.",
+  "U: the 970 base is taken at the theoretical outer-face/soffit intersection (x = 485 + y/7), 35 x 35 chamfer. The fitted web horizontal width 157.4 mm equals the published area increment (314.2 mm2 per mm of depth / 2).",
+  "TM: provenance estimate - the real flange has a crossfall and stepped edges that a symmetric profile cannot represent; A/Yb/I are nevertheless reproduced within 0.2 %/1.3 mm/0.45 %.",
+  "T1800: the drawn flange has crossfall; reading 250 as the bottom flange including the 20 mm chamfer (not 250 + 20) is required for Yb to close (the alternative gives Yb 928 vs 944).",
+  "I1600: dimensions are the US AASHTO Type V inch values in mm (42 x 63 in) but the top has 80 x 50 mm shoulders; it is implemented as a G-CAST profile, not as an alias of PCI Type V."
+ ],
+ "sections": {
+  "U1": {
+   "family": "U",
+   "depth": 800,
+   "area": 466944,
+   "yt": 445,
+   "yb": 355,
+   "ixx": 29900000000.0,
+   "zt": 67100000.0,
+   "zb": 84000000.0,
+   "weight_kN_per_m": 11.44,
+   "length_m": "14-18",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 466806.4,
+    "yb_calc": 355.01,
+    "ixx_calc": 29935594602.0,
+    "area_rel_pct": -0.029,
+    "yb_diff_mm": 0.01,
+    "ixx_rel_pct": 0.119
+   }
+  },
+  "U3": {
+   "family": "U",
+   "depth": 900,
+   "area": 498334,
+   "yt": 498,
+   "yb": 402,
+   "ixx": 41700000000.0,
+   "zt": 83700000.0,
+   "zb": 103600000.0,
+   "weight_kN_per_m": 12.21,
+   "length_m": "14.5-20",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 497858.3,
+    "yb_calc": 402.05,
+    "ixx_calc": 41781144486.0,
+    "area_rel_pct": -0.095,
+    "yb_diff_mm": 0.05,
+    "ixx_rel_pct": 0.195
+   }
+  },
+  "U5": {
+   "family": "U",
+   "depth": 1000,
+   "area": 529756,
+   "yt": 551,
+   "yb": 449,
+   "ixx": 56000000000.0,
+   "zt": 101700000.0,
+   "zb": 124600000.0,
+   "weight_kN_per_m": 12.98,
+   "length_m": "16-22",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 529338.3,
+    "yb_calc": 449.4,
+    "ixx_calc": 56109824544.0,
+    "area_rel_pct": -0.079,
+    "yb_diff_mm": 0.4,
+    "ixx_rel_pct": 0.196
+   }
+  },
+  "U7": {
+   "family": "U",
+   "depth": 1100,
+   "area": 561179,
+   "yt": 603,
+   "yb": 497,
+   "ixx": 72900000000.0,
+   "zt": 121000000.0,
+   "zb": 146800000.0,
+   "weight_kN_per_m": 13.75,
+   "length_m": "17.5-24.5",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 560818.3,
+    "yb_calc": 497.04,
+    "ixx_calc": 73078578258.0,
+    "area_rel_pct": -0.064,
+    "yb_diff_mm": 0.04,
+    "ixx_rel_pct": 0.245
+   }
+  },
+  "U8": {
+   "family": "U",
+   "depth": 1200,
+   "area": 592609,
+   "yt": 655,
+   "yb": 545,
+   "ixx": 92700000000.0,
+   "zt": 141500000.0,
+   "zb": 170100000.0,
+   "weight_kN_per_m": 14.52,
+   "length_m": "19-26.5",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 592298.3,
+    "yb_calc": 544.93,
+    "ixx_calc": 92845860856.0,
+    "area_rel_pct": -0.052,
+    "yb_diff_mm": -0.07,
+    "ixx_rel_pct": 0.157
+   }
+  },
+  "U9": {
+   "family": "U",
+   "depth": 1300,
+   "area": 624035,
+   "yt": 707,
+   "yb": 593,
+   "ixx": 115400000000.0,
+   "zt": 163200000.0,
+   "zb": 194700000.0,
+   "weight_kN_per_m": 15.29,
+   "length_m": "21-28.5",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 623778.3,
+    "yb_calc": 593.04,
+    "ixx_calc": 115569914549.0,
+    "area_rel_pct": -0.041,
+    "yb_diff_mm": 0.04,
+    "ixx_rel_pct": 0.147
+   }
+  },
+  "U10": {
+   "family": "U",
+   "depth": 1400,
+   "area": 655458,
+   "yt": 759,
+   "yb": 641,
+   "ixx": 141300000000.0,
+   "zt": 186100000.0,
+   "zb": 220300000.0,
+   "weight_kN_per_m": 16.06,
+   "length_m": "22.5-30",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 655258.3,
+    "yb_calc": 641.33,
+    "ixx_calc": 141408819705.0,
+    "area_rel_pct": -0.03,
+    "yb_diff_mm": 0.33,
+    "ixx_rel_pct": 0.077
+   }
+  },
+  "U11": {
+   "family": "U",
+   "depth": 1500,
+   "area": 686881,
+   "yt": 810,
+   "yb": 690,
+   "ixx": 170400000000.0,
+   "zt": 210200000.0,
+   "zb": 247100000.0,
+   "weight_kN_per_m": 16.83,
+   "length_m": "24-30",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 686738.3,
+    "yb_calc": 689.78,
+    "ixx_calc": 170520531936.0,
+    "area_rel_pct": -0.021,
+    "yb_diff_mm": -0.22,
+    "ixx_rel_pct": 0.071
+   }
+  },
+  "U12": {
+   "family": "U",
+   "depth": 1600,
+   "area": 718291,
+   "yt": 862,
+   "yb": 738,
+   "ixx": 202900000000.0,
+   "zt": 235400000.0,
+   "zb": 274900000.0,
+   "weight_kN_per_m": 17.6,
+   "length_m": "25.5-30",
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 3,
+   "residuals": {
+    "area_calc": 718218.3,
+    "yb_calc": 738.36,
+    "ixx_calc": 203062909445.0,
+    "area_rel_pct": -0.01,
+    "yb_diff_mm": 0.36,
+    "ixx_rel_pct": 0.08
+   }
+  },
+  "TM1040-1350": {
+   "family": "TM",
+   "depth": 1040,
+   "flange_width": 1350,
+   "area": 451418,
+   "yt": 536,
+   "yb": 504,
+   "ixx": 70300000000.0,
+   "zt": 131199999.99999999,
+   "zb": 139300000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 450805.0,
+    "yb_calc": 503.29,
+    "ixx_calc": 70372503496.0,
+    "area_rel_pct": -0.136,
+    "yb_diff_mm": -0.71,
+    "ixx_rel_pct": 0.103
+   }
+  },
+  "TM1040-1450": {
+   "family": "TM",
+   "depth": 1040,
+   "flange_width": 1450,
+   "area": 459287,
+   "yt": 527,
+   "yb": 513,
+   "ixx": 72200000000.0,
+   "zt": 137000000.0,
+   "zb": 140800000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 459505.0,
+    "yb_calc": 512.63,
+    "ixx_calc": 72454240374.0,
+    "area_rel_pct": 0.047,
+    "yb_diff_mm": -0.37,
+    "ixx_rel_pct": 0.352
+   }
+  },
+  "TM1040-1550": {
+   "family": "TM",
+   "depth": 1040,
+   "flange_width": 1550,
+   "area": 467731,
+   "yt": 518,
+   "yb": 522,
+   "ixx": 74200000000.0,
+   "zt": 143100000.0,
+   "zb": 142200000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 468205.0,
+    "yb_calc": 521.62,
+    "ixx_calc": 74458817165.0,
+    "area_rel_pct": 0.101,
+    "yb_diff_mm": -0.38,
+    "ixx_rel_pct": 0.349
+   }
+  },
+  "TM1200-1350": {
+   "family": "TM",
+   "depth": 1200,
+   "flange_width": 1350,
+   "area": 477135,
+   "yt": 620,
+   "yb": 580,
+   "ixx": 100000000000.0,
+   "zt": 161400000.0,
+   "zb": 172300000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 476405.0,
+    "yb_calc": 578.96,
+    "ixx_calc": 100082913288.0,
+    "area_rel_pct": -0.153,
+    "yb_diff_mm": -1.04,
+    "ixx_rel_pct": 0.083
+   }
+  },
+  "TM1200-1450": {
+   "family": "TM",
+   "depth": 1200,
+   "flange_width": 1450,
+   "area": 484887,
+   "yt": 610,
+   "yb": 590,
+   "ixx": 102600000000.0,
+   "zt": 168100000.0,
+   "zb": 174000000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 485105.0,
+    "yb_calc": 589.32,
+    "ixx_calc": 102938273651.0,
+    "area_rel_pct": 0.045,
+    "yb_diff_mm": -0.68,
+    "ixx_rel_pct": 0.33
+   }
+  },
+  "TM1200-1550": {
+   "family": "TM",
+   "depth": 1200,
+   "flange_width": 1550,
+   "area": 493331,
+   "yt": 601,
+   "yb": 599,
+   "ixx": 105300000000.0,
+   "zt": 175300000.0,
+   "zb": 175700000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 493805.0,
+    "yb_calc": 599.31,
+    "ixx_calc": 105693214238.0,
+    "area_rel_pct": 0.096,
+    "yb_diff_mm": 0.31,
+    "ixx_rel_pct": 0.373
+   }
+  },
+  "TM1360-1350": {
+   "family": "TM",
+   "depth": 1360,
+   "flange_width": 1350,
+   "area": 502731,
+   "yt": 703,
+   "yb": 657,
+   "ixx": 135800000000.00002,
+   "zt": 193100000.0,
+   "zb": 206900000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 502005.0,
+    "yb_calc": 655.07,
+    "ixx_calc": 135875249068.0,
+    "area_rel_pct": -0.144,
+    "yb_diff_mm": -1.93,
+    "ixx_rel_pct": 0.055
+   }
+  },
+  "TM1360-1450": {
+   "family": "TM",
+   "depth": 1360,
+   "flange_width": 1450,
+   "area": 509962,
+   "yt": 694,
+   "yb": 666,
+   "ixx": 139000000000.0,
+   "zt": 200300000.0,
+   "zb": 208600000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 510705.0,
+    "yb_calc": 666.34,
+    "ixx_calc": 139622072442.0,
+    "area_rel_pct": 0.146,
+    "yb_diff_mm": 0.34,
+    "ixx_rel_pct": 0.448
+   }
+  },
+  "TM1360-1550": {
+   "family": "TM",
+   "depth": 1360,
+   "flange_width": 1550,
+   "area": 518931,
+   "yt": 683,
+   "yb": 677,
+   "ixx": 142800000000.0,
+   "zt": 209200000.0,
+   "zb": 210800000.0,
+   "provenance": "estimate",
+   "pdf_page": 4,
+   "residuals": {
+    "area_calc": 519405.0,
+    "yb_calc": 677.23,
+    "ixx_calc": 143243561552.0,
+    "area_rel_pct": 0.091,
+    "yb_diff_mm": 0.23,
+    "ixx_rel_pct": 0.311
+   }
+  },
+  "I1600": {
+   "family": "I",
+   "depth": 1600,
+   "flange_width": 1067,
+   "area": 645144,
+   "yt": 797,
+   "yb": 803,
+   "ixx": 211900000000.0,
+   "zt": 265700000.0,
+   "zb": 264000000.0,
+   "weight_kN_per_m": 15.8,
+   "provenance": "transcribed",
+   "pdf_page": 5,
+   "dimensions_mm": {
+    "bottom_width": 711,
+    "chamfer": 20,
+    "bottom_edge": 183,
+    "bottom_splay": 254,
+    "web": 838,
+    "web_width": 203,
+    "top_splay_height": 102,
+    "top_splay_width": 102,
+    "top_taper": 76,
+    "flange_edge": 77,
+    "top_width": 1067,
+    "strip_width": 907,
+    "strip_height": 50
+   },
+   "residuals": {
+    "area_calc": 644756.0,
+    "yb_calc": 802.78,
+    "ixx_calc": 211820297067.0,
+    "area_rel_pct": -0.06,
+    "yb_diff_mm": -0.22,
+    "ixx_rel_pct": -0.038
+   }
+  },
+  "T1800": {
+   "family": "T",
+   "depth": 1800,
+   "flange_width": 1750,
+   "area": 757115,
+   "yt": 856,
+   "yb": 944,
+   "ixx": 311460000000.0,
+   "zt": 363900000.0,
+   "zb": 329900000.0,
+   "weight_kN_per_m": 18.5,
+   "provenance": "fitted-reconstruction",
+   "pdf_page": 5,
+   "dimensions_mm": {
+    "bottom_width": 660,
+    "chamfer": 20,
+    "bottom_flange": 250,
+    "bottom_splay": 205,
+    "web": 1120,
+    "web_width": 250,
+    "top_splay_height": 94,
+    "top_splay_width": 100,
+    "root_thickness": 131,
+    "tip_thickness": 65,
+    "top_width": 1750
+   },
+   "residuals": {
+    "area_calc": 757125.0,
+    "yb_calc": 944.19,
+    "ixx_calc": 311506378101.0,
+    "area_rel_pct": 0.001,
+    "yb_diff_mm": 0.19,
+    "ixx_rel_pct": 0.015
+   }
+  }
+ }
+}

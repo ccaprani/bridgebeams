@@ -1,0 +1,1145 @@
+{
+ "family": "JIS A 5373 スラブ橋げた (pretensioned PC slab girders, road bridges)",
+ "jurisdiction": "Japan",
+ "units": {
+  "source_dimensions": "mm",
+  "source_properties": "cm, cm2, cm3, cm4",
+  "library": "mm"
+ },
+ "source_status": "JIS A 5373 recommended-specification product table (JIS A 5373:2004/2010 editions); guideline and producer reproductions",
+ "sources": [
+  {
+   "id": "JP-CHUBU-KYOURYOU-2014",
+   "title": "中部地方整備局 道路設計要領 第5章 橋梁 (v2014.03)",
+   "url": "https://www.cbr.mlit.go.jp/road/sekkeiyouryou/pdf/cb005_kyouryou_v201403.pdf",
+   "local_path": "sources/expansion/round2/jp/chubu-kyouryou-v201403.pdf",
+   "sha256": "34d000230a4410fbeeb09ee0d5dfde7a6178dd72222d74387686c5b6fa04a91e",
+   "pdf_page": 28,
+   "printed_page": "5-25",
+   "locator": "表-5-III-9 スラブ橋の主桁諸元一覧; 図-5-III-40 スラブ橋の主桁断面図 (充実断面/中空断面)",
+   "retrieved": "2026-09-23",
+   "status_note": "Superseded: the 2025.09 edition (cb005_kyouryou_v202509.pdf, SHA-256 f439452e92b12377fa81e72a33155799280b8f1fd1e62af4c4585b57c5825f27, printed p5-26) removes the table and defers to the PCCEN JIS A 5373-2016 handbook (2020)."
+  },
+  {
+   "id": "JP-NIHONKOATSU-SLAB-2024",
+   "title": "日本高圧コンクリート 通常橋げた スラブ橋げた 諸元表 (2024)",
+   "url": "http://www.nihonkoatsu.co.jp/wp-content/themes/nihonkoatsu/images/product/bridge_shogen2024.pdf",
+   "local_path": "sources/expansion/round2/jp/nihonkoatsu-bridge-shogen2024.pdf",
+   "sha256": "a87921caaae033c590e6e28f85cbb77f8cfd69e29b0e8be8724dc3c2b05ccb5a",
+   "pdf_page": [
+    3,
+    4
+   ],
+   "locator": "主げた断面諸数値 A活荷重 / B活荷重 (主げた総断面 rows Ac, yuc, ylc, Ic, Wuc, Wlc)",
+   "retrieved": "2026-09-23",
+   "status_note": "Producer catalogue; identical values in the 2018 edition bridge_shogen.pdf (SHA-256 de1c95d7f8bfeea32a0b393ca9744926005b0576385ac60641c478382d3f0bf4, pp3-4). PDF pp5-8 show per-type section drawings (not re-dimensioned here)."
+  },
+  {
+   "id": "JP-ASAHIDANKE-2016",
+   "title": "旭ダンケ プレキャストプレストレストコンクリート橋げた JIS A 5373-2010 (2016.08)",
+   "url": "http://www.asahidanke.co.jp/wpdir/wp-content/uploads/2017/10/14pcketa_201608.pdf",
+   "local_path": "sources/expansion/round2/jp/asahidanke-pcketa-201608.pdf",
+   "sha256": "5b07a943276e7a3e3fdb6fcbb12ddc4f9fb5613722e67dc706465eea02898fec",
+   "pdf_page": 2,
+   "locator": "主げた諸数値表 (H, H1, H2, H3, span, length, volume, mass)",
+   "retrieved": "2026-09-23",
+   "status_note": "Producer catalogue; independently confirms every H/H1/H2/H3 including AS19 H2=160. Note: table is midspan; support-side H2 is 140 for all hollow types (end region excluded here)."
+  }
+ ],
+ "geometry": {
+  "common": "Soffit 700 wide; vertical 70 mm edge; 30x30 mm inward splay; upper body 640 wide to top (H-100 vertical). Joint keys between adjacent girders are formed by this 30 mm set-back.",
+  "hollow_void": "Void 400 wide (120 mm side walls from the 640 face), vertical sides H1 high; top 300 wide with 50x50 chamfers; bottom V 110 high to a centre apex H3 above soffit; top slab H2. Depth chain H = H2+50+H1+110+H3."
+ },
+ "geometry_notes": [
+  "Midspan gross concrete section; strands, stirrups, transverse-tie holes and end solid zones excluded.",
+  "Void corners modelled sharp as drawn.",
+  "Solid types with the same depth share one outline (e.g. AS05=AS06=BS05=BS06); they are distinct JIS designations (span, strands), kept as separate SIZES following the existing JisTGirderSection precedent. Distinct outlines: 4 solid depths and 14 hollow (H,H1,H2,H3) combinations (18 in total).",
+  "Published yuc/ylc are distances from the neutral axis to the top/bottom fibre (ylc negative)."
+ ],
+ "sections": {
+  "AS05": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "A活荷重",
+   "standard_span_m": 5,
+   "dimensions_source_mm": {
+    "H": 350
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2291,
+    "yuc_cm": 17.8,
+    "ylc_cm": -17.2,
+    "Ic_cm4": 237700,
+    "Wuc_cm3": 13360,
+    "Wlc_cm3": -13810
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 229100.0,
+    "yb_mm": 172.06,
+    "Ixx_mm4": 2376889235,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.06,
+    "dI_pct": -0.0047
+   }
+  },
+  "AS06": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "A活荷重",
+   "standard_span_m": 6,
+   "dimensions_source_mm": {
+    "H": 350
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2291,
+    "yuc_cm": 17.8,
+    "ylc_cm": -17.2,
+    "Ic_cm4": 237700,
+    "Wuc_cm3": 13360,
+    "Wlc_cm3": -13810
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 229100.0,
+    "yb_mm": 172.06,
+    "Ixx_mm4": 2376889235,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.06,
+    "dI_pct": -0.0047
+   }
+  },
+  "AS07": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "A活荷重",
+   "standard_span_m": 7,
+   "dimensions_source_mm": {
+    "H": 400
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2611,
+    "yuc_cm": 20.3,
+    "ylc_cm": -19.7,
+    "Ic_cm4": 354000,
+    "Wuc_cm3": 17430,
+    "Wlc_cm3": -17980
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 261100.0,
+    "yb_mm": 196.93,
+    "Ixx_mm4": 3539941033,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.07,
+    "dI_pct": -0.0017
+   }
+  },
+  "AS08": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "A活荷重",
+   "standard_span_m": 8,
+   "dimensions_source_mm": {
+    "H": 400
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2611,
+    "yuc_cm": 20.3,
+    "ylc_cm": -19.7,
+    "Ic_cm4": 354000,
+    "Wuc_cm3": 17430,
+    "Wlc_cm3": -17980
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 261100.0,
+    "yb_mm": 196.93,
+    "Ixx_mm4": 3539941033,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.07,
+    "dI_pct": -0.0017
+   }
+  },
+  "AS09": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "A活荷重",
+   "standard_span_m": 9,
+   "dimensions_source_mm": {
+    "H": 450
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2931,
+    "yuc_cm": 22.8,
+    "ylc_cm": -22.2,
+    "Ic_cm4": 502900,
+    "Wuc_cm3": 22040,
+    "Wlc_cm3": -22670
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 293100.0,
+    "yb_mm": 221.83,
+    "Ixx_mm4": 5029361141,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.17,
+    "dI_pct": 0.0072
+   }
+  },
+  "AS10": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "A活荷重",
+   "standard_span_m": 10,
+   "dimensions_source_mm": {
+    "H": 450
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2931,
+    "yuc_cm": 22.8,
+    "ylc_cm": -22.2,
+    "Ic_cm4": 502900,
+    "Wuc_cm3": 22040,
+    "Wlc_cm3": -22670
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 293100.0,
+    "yb_mm": 221.83,
+    "Ixx_mm4": 5029361141,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.17,
+    "dI_pct": 0.0072
+   }
+  },
+  "AS11": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "A活荷重",
+   "standard_span_m": 11,
+   "dimensions_source_mm": {
+    "H": 450
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2931,
+    "yuc_cm": 22.8,
+    "ylc_cm": -22.2,
+    "Ic_cm4": 502900,
+    "Wuc_cm3": 22040,
+    "Wlc_cm3": -22670
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 293100.0,
+    "yb_mm": 221.83,
+    "Ixx_mm4": 5029361141,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.17,
+    "dI_pct": 0.0072
+   }
+  },
+  "AS12": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 12,
+   "dimensions_source_mm": {
+    "H": 450,
+    "H1": 60,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2296,
+    "yuc_cm": 22.8,
+    "ylc_cm": -22.2,
+    "Ic_cm4": 486000,
+    "Wuc_cm3": 21300,
+    "Wlc_cm3": -21900
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 229600.0,
+    "yb_mm": 221.86,
+    "Ixx_mm4": 4859642551,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.14,
+    "dI_pct": -0.0074
+   }
+  },
+  "AS13": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 13,
+   "dimensions_source_mm": {
+    "H": 500,
+    "H1": 110,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2416,
+    "yuc_cm": 25.3,
+    "ylc_cm": -24.7,
+    "Ic_cm4": 653400,
+    "Wuc_cm3": 25780,
+    "Wlc_cm3": -26500
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 241600.0,
+    "yb_mm": 246.54,
+    "Ixx_mm4": 6533647219,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.46,
+    "dI_pct": -0.0054
+   }
+  },
+  "AS14": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 14,
+   "dimensions_source_mm": {
+    "H": 500,
+    "H1": 110,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2416,
+    "yuc_cm": 25.3,
+    "ylc_cm": -24.7,
+    "Ic_cm4": 653400,
+    "Wuc_cm3": 25780,
+    "Wlc_cm3": -26500
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 241600.0,
+    "yb_mm": 246.54,
+    "Ixx_mm4": 6533647219,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.46,
+    "dI_pct": -0.0054
+   }
+  },
+  "AS15": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 15,
+   "dimensions_source_mm": {
+    "H": 550,
+    "H1": 160,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2536,
+    "yuc_cm": 27.9,
+    "ylc_cm": -27.1,
+    "Ic_cm4": 851000,
+    "Wuc_cm3": 30530,
+    "Wlc_cm3": -31370
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 253600.0,
+    "yb_mm": 271.25,
+    "Ixx_mm4": 8509607083,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.25,
+    "dI_pct": -0.0046
+   }
+  },
+  "AS16": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 16,
+   "dimensions_source_mm": {
+    "H": 600,
+    "H1": 210,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2656,
+    "yuc_cm": 30.4,
+    "ylc_cm": -29.6,
+    "Ic_cm4": 1080300,
+    "Wuc_cm3": 35530,
+    "Wlc_cm3": -36500
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 265600.0,
+    "yb_mm": 295.99,
+    "Ixx_mm4": 10802528218,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.01,
+    "dI_pct": -0.0044
+   }
+  },
+  "AS17": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 17,
+   "dimensions_source_mm": {
+    "H": 650,
+    "H1": 260,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2776,
+    "yuc_cm": 32.9,
+    "ylc_cm": -32.1,
+    "Ic_cm4": 1342700,
+    "Wuc_cm3": 40780,
+    "Wlc_cm3": -41860
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 277600.0,
+    "yb_mm": 320.75,
+    "Ixx_mm4": 13427415645,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.25,
+    "dI_pct": 0.0031
+   }
+  },
+  "AS18": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 18,
+   "dimensions_source_mm": {
+    "H": 700,
+    "H1": 310,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2896,
+    "yuc_cm": 35.4,
+    "ylc_cm": -34.6,
+    "Ic_cm4": 1639900,
+    "Wuc_cm3": 46260,
+    "Wlc_cm3": -47460
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 289600.0,
+    "yb_mm": 345.52,
+    "Ixx_mm4": 16399273554,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.48,
+    "dI_pct": 0.0017
+   }
+  },
+  "AS19": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 19,
+   "dimensions_source_mm": {
+    "H": 750,
+    "H1": 340,
+    "H2": 160,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3096,
+    "yuc_cm": 37.4,
+    "ylc_cm": -37.6,
+    "Ic_cm4": 2012400,
+    "Wuc_cm3": 53820,
+    "Wlc_cm3": -53510
+   },
+   "provenance": "transcribed-with-convention",
+   "source_discrepancy": "Chubu 2014 表-5-III-9 prints AS19 H2=106; the depth chain H2+50+H1+110+H3=750 closes only with H2=160, Asahi Danke (JIS A 5373-2010) prints 160, and Nihon Koatsu Ac=3096 cm2 equals AS20 (H2=160). 106 treated as a misprint.",
+   "residuals_vs_published": {
+    "area_mm2": 309600.0,
+    "yb_mm": 376.09,
+    "Ixx_mm4": 20123768808,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.09,
+    "dI_pct": -0.0011
+   }
+  },
+  "AS20": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 20,
+   "dimensions_source_mm": {
+    "H": 750,
+    "H1": 340,
+    "H2": 160,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3096,
+    "yuc_cm": 37.4,
+    "ylc_cm": -37.6,
+    "Ic_cm4": 2012400,
+    "Wuc_cm3": 53820,
+    "Wlc_cm3": -53510
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 309600.0,
+    "yb_mm": 376.09,
+    "Ixx_mm4": 20123768808,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.09,
+    "dI_pct": -0.0011
+   }
+  },
+  "AS21": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 21,
+   "dimensions_source_mm": {
+    "H": 800,
+    "H1": 390,
+    "H2": 160,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3216,
+    "yuc_cm": 39.9,
+    "ylc_cm": -40.1,
+    "Ic_cm4": 2392800,
+    "Wuc_cm3": 60020,
+    "Wlc_cm3": -59620
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 321600.0,
+    "yb_mm": 401.32,
+    "Ixx_mm4": 23927714328,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.32,
+    "dI_pct": -0.0012
+   }
+  },
+  "AS22": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 22,
+   "dimensions_source_mm": {
+    "H": 850,
+    "H1": 390,
+    "H2": 180,
+    "H3": 120
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3536,
+    "yuc_cm": 42.7,
+    "ylc_cm": -42.3,
+    "Ic_cm4": 2948500,
+    "Wuc_cm3": 69070,
+    "Wlc_cm3": -69690
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 353600.0,
+    "yb_mm": 423.07,
+    "Ixx_mm4": 29485428459,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.07,
+    "dI_pct": 0.0015
+   }
+  },
+  "AS23": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 23,
+   "dimensions_source_mm": {
+    "H": 900,
+    "H1": 420,
+    "H2": 200,
+    "H3": 120
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3736,
+    "yuc_cm": 44.6,
+    "ylc_cm": -45.4,
+    "Ic_cm4": 3489300,
+    "Wuc_cm3": 78160,
+    "Wlc_cm3": -76930
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 373600.0,
+    "yb_mm": 453.57,
+    "Ixx_mm4": 34892843401,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.43,
+    "dI_pct": -0.0004
+   }
+  },
+  "AS24": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "A活荷重",
+   "standard_span_m": 24,
+   "dimensions_source_mm": {
+    "H": 950,
+    "H1": 470,
+    "H2": 200,
+    "H3": 120
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3856,
+    "yuc_cm": 47.1,
+    "ylc_cm": -47.9,
+    "Ic_cm4": 4034900,
+    "Wuc_cm3": 85660,
+    "Wlc_cm3": -84250
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 385600.0,
+    "yb_mm": 478.94,
+    "Ixx_mm4": 40349256180,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.06,
+    "dI_pct": 0.0006
+   }
+  },
+  "BS05": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "B活荷重",
+   "standard_span_m": 5,
+   "dimensions_source_mm": {
+    "H": 350
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2291,
+    "yuc_cm": 17.8,
+    "ylc_cm": -17.2,
+    "Ic_cm4": 237700,
+    "Wuc_cm3": 13360,
+    "Wlc_cm3": -13810
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 229100.0,
+    "yb_mm": 172.06,
+    "Ixx_mm4": 2376889235,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.06,
+    "dI_pct": -0.0047
+   }
+  },
+  "BS06": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "B活荷重",
+   "standard_span_m": 6,
+   "dimensions_source_mm": {
+    "H": 350
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2291,
+    "yuc_cm": 17.8,
+    "ylc_cm": -17.2,
+    "Ic_cm4": 237700,
+    "Wuc_cm3": 13360,
+    "Wlc_cm3": -13810
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 229100.0,
+    "yb_mm": 172.06,
+    "Ixx_mm4": 2376889235,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.06,
+    "dI_pct": -0.0047
+   }
+  },
+  "BS07": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "B活荷重",
+   "standard_span_m": 7,
+   "dimensions_source_mm": {
+    "H": 400
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2611,
+    "yuc_cm": 20.3,
+    "ylc_cm": -19.7,
+    "Ic_cm4": 354000,
+    "Wuc_cm3": 17430,
+    "Wlc_cm3": -17980
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 261100.0,
+    "yb_mm": 196.93,
+    "Ixx_mm4": 3539941033,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.07,
+    "dI_pct": -0.0017
+   }
+  },
+  "BS08": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "B活荷重",
+   "standard_span_m": 8,
+   "dimensions_source_mm": {
+    "H": 400
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2611,
+    "yuc_cm": 20.3,
+    "ylc_cm": -19.7,
+    "Ic_cm4": 354000,
+    "Wuc_cm3": 17430,
+    "Wlc_cm3": -17980
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 261100.0,
+    "yb_mm": 196.93,
+    "Ixx_mm4": 3539941033,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.07,
+    "dI_pct": -0.0017
+   }
+  },
+  "BS09": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "B活荷重",
+   "standard_span_m": 9,
+   "dimensions_source_mm": {
+    "H": 450
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2931,
+    "yuc_cm": 22.8,
+    "ylc_cm": -22.2,
+    "Ic_cm4": 502900,
+    "Wuc_cm3": 22040,
+    "Wlc_cm3": -22670
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 293100.0,
+    "yb_mm": 221.83,
+    "Ixx_mm4": 5029361141,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.17,
+    "dI_pct": 0.0072
+   }
+  },
+  "BS10": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "B活荷重",
+   "standard_span_m": 10,
+   "dimensions_source_mm": {
+    "H": 450
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2931,
+    "yuc_cm": 22.8,
+    "ylc_cm": -22.2,
+    "Ic_cm4": 502900,
+    "Wuc_cm3": 22040,
+    "Wlc_cm3": -22670
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 293100.0,
+    "yb_mm": 221.83,
+    "Ixx_mm4": 5029361141,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.17,
+    "dI_pct": 0.0072
+   }
+  },
+  "BS11": {
+   "section_type": "充実断面 (solid)",
+   "live_load": "B活荷重",
+   "standard_span_m": 11,
+   "dimensions_source_mm": {
+    "H": 500
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3251,
+    "yuc_cm": 25.3,
+    "ylc_cm": -24.7,
+    "Ic_cm4": 688500,
+    "Wuc_cm3": 27190,
+    "Wlc_cm3": -27900
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 325100.0,
+    "yb_mm": 246.75,
+    "Ixx_mm4": 6885151534,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.25,
+    "dI_pct": 0.0022
+   }
+  },
+  "BS12": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 12,
+   "dimensions_source_mm": {
+    "H": 500,
+    "H1": 110,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2416,
+    "yuc_cm": 25.4,
+    "ylc_cm": -24.7,
+    "Ic_cm4": 653400,
+    "Wuc_cm3": 25780,
+    "Wlc_cm3": -26500
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 241600.0,
+    "yb_mm": 246.54,
+    "Ixx_mm4": 6533647219,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.46,
+    "dI_pct": -0.0054
+   }
+  },
+  "BS13": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 13,
+   "dimensions_source_mm": {
+    "H": 500,
+    "H1": 110,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2416,
+    "yuc_cm": 25.4,
+    "ylc_cm": -24.7,
+    "Ic_cm4": 653400,
+    "Wuc_cm3": 25780,
+    "Wlc_cm3": -26500
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 241600.0,
+    "yb_mm": 246.54,
+    "Ixx_mm4": 6533647219,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.46,
+    "dI_pct": -0.0054
+   }
+  },
+  "BS14": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 14,
+   "dimensions_source_mm": {
+    "H": 550,
+    "H1": 160,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2536,
+    "yuc_cm": 27.9,
+    "ylc_cm": -27.1,
+    "Ic_cm4": 851000,
+    "Wuc_cm3": 30530,
+    "Wlc_cm3": -31370
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 253600.0,
+    "yb_mm": 271.25,
+    "Ixx_mm4": 8509607083,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.25,
+    "dI_pct": -0.0046
+   }
+  },
+  "BS15": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 15,
+   "dimensions_source_mm": {
+    "H": 600,
+    "H1": 210,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2656,
+    "yuc_cm": 30.4,
+    "ylc_cm": -29.6,
+    "Ic_cm4": 1080300,
+    "Wuc_cm3": 35530,
+    "Wlc_cm3": -36500
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 265600.0,
+    "yb_mm": 295.99,
+    "Ixx_mm4": 10802528218,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.01,
+    "dI_pct": -0.0044
+   }
+  },
+  "BS16": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 16,
+   "dimensions_source_mm": {
+    "H": 600,
+    "H1": 210,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2656,
+    "yuc_cm": 30.4,
+    "ylc_cm": -29.6,
+    "Ic_cm4": 1080300,
+    "Wuc_cm3": 35530,
+    "Wlc_cm3": -36500
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 265600.0,
+    "yb_mm": 295.99,
+    "Ixx_mm4": 10802528218,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.01,
+    "dI_pct": -0.0044
+   }
+  },
+  "BS17": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 17,
+   "dimensions_source_mm": {
+    "H": 650,
+    "H1": 260,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2776,
+    "yuc_cm": 32.9,
+    "ylc_cm": -32.1,
+    "Ic_cm4": 1342700,
+    "Wuc_cm3": 40780,
+    "Wlc_cm3": -41860
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 277600.0,
+    "yb_mm": 320.75,
+    "Ixx_mm4": 13427415645,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.25,
+    "dI_pct": 0.0031
+   }
+  },
+  "BS18": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 18,
+   "dimensions_source_mm": {
+    "H": 700,
+    "H1": 310,
+    "H2": 140,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 2896,
+    "yuc_cm": 35.5,
+    "ylc_cm": -34.6,
+    "Ic_cm4": 1639900,
+    "Wuc_cm3": 46260,
+    "Wlc_cm3": -47460
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 289600.0,
+    "yb_mm": 345.52,
+    "Ixx_mm4": 16399273554,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.48,
+    "dI_pct": 0.0017
+   }
+  },
+  "BS19": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 19,
+   "dimensions_source_mm": {
+    "H": 750,
+    "H1": 340,
+    "H2": 160,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3096,
+    "yuc_cm": 37.4,
+    "ylc_cm": -37.6,
+    "Ic_cm4": 2012400,
+    "Wuc_cm3": 53820,
+    "Wlc_cm3": -53510
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 309600.0,
+    "yb_mm": 376.09,
+    "Ixx_mm4": 20123768808,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.09,
+    "dI_pct": -0.0011
+   }
+  },
+  "BS20": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 20,
+   "dimensions_source_mm": {
+    "H": 800,
+    "H1": 390,
+    "H2": 160,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3216,
+    "yuc_cm": 39.9,
+    "ylc_cm": -40.1,
+    "Ic_cm4": 2392800,
+    "Wuc_cm3": 60020,
+    "Wlc_cm3": -59620
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 321600.0,
+    "yb_mm": 401.32,
+    "Ixx_mm4": 23927714328,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.32,
+    "dI_pct": -0.0012
+   }
+  },
+  "BS21": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 21,
+   "dimensions_source_mm": {
+    "H": 850,
+    "H1": 440,
+    "H2": 160,
+    "H3": 90
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3336,
+    "yuc_cm": 42.4,
+    "ylc_cm": -42.7,
+    "Ic_cm4": 2813400,
+    "Wuc_cm3": 66440,
+    "Wlc_cm3": -65960
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 333600.0,
+    "yb_mm": 426.53,
+    "Ixx_mm4": 28133630045,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.47,
+    "dI_pct": -0.0013
+   }
+  },
+  "BS22": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 22,
+   "dimensions_source_mm": {
+    "H": 900,
+    "H1": 440,
+    "H2": 180,
+    "H3": 120
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3656,
+    "yuc_cm": 45.2,
+    "ylc_cm": -44.8,
+    "Ic_cm4": 3438000,
+    "Wuc_cm3": 76080,
+    "Wlc_cm3": -76720
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 365600.0,
+    "yb_mm": 448.1,
+    "Ixx_mm4": 34379548344,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.1,
+    "dI_pct": -0.0013
+   }
+  },
+  "BS23": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 23,
+   "dimensions_source_mm": {
+    "H": 950,
+    "H1": 470,
+    "H2": 200,
+    "H3": 120
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3856,
+    "yuc_cm": 47.1,
+    "ylc_cm": -47.9,
+    "Ic_cm4": 4034900,
+    "Wuc_cm3": 85660,
+    "Wlc_cm3": -84250
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 385600.0,
+    "yb_mm": 478.94,
+    "Ixx_mm4": 40349256180,
+    "dA_pct": 0.0,
+    "dyb_mm": -0.06,
+    "dI_pct": 0.0006
+   }
+  },
+  "BS24": {
+   "section_type": "中空断面 (hollow)",
+   "live_load": "B活荷重",
+   "standard_span_m": 24,
+   "dimensions_source_mm": {
+    "H": 1000,
+    "H1": 520,
+    "H2": 200,
+    "H3": 120
+   },
+   "published_gross_cm": {
+    "Ac_cm2": 3976,
+    "yuc_cm": 49.6,
+    "ylc_cm": -50.4,
+    "Ic_cm4": 4628800,
+    "Wuc_cm3": 93380,
+    "Wlc_cm3": -91790
+   },
+   "provenance": "transcribed",
+   "residuals_vs_published": {
+    "area_mm2": 397600.0,
+    "yb_mm": 504.29,
+    "Ixx_mm4": 46287570476,
+    "dA_pct": 0.0,
+    "dyb_mm": 0.29,
+    "dI_pct": -0.0009
+   }
+  }
+ },
+ "residual_summary": {
+  "max_abs_dA_pct": 0,
+  "max_abs_dyb_mm": 0.48,
+  "max_abs_dI_pct": 0.0074
+ }
+}

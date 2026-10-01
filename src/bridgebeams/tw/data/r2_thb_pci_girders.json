@@ -1,0 +1,171 @@
+{
+ "family": "Taiwan Directorate General of Highways (公路總局) PCI 型梁 Types I-VII, Dec 1991 (民國80年12月) standard drawings",
+ "jurisdiction": "Taiwan",
+ "units": {
+  "source": "cm",
+  "library": "mm"
+ },
+ "source_status": "historic 1991 standard drawings (declared no longer applicable), as summarised in a 2012 DGH journal article",
+ "sources": [
+  {
+   "id": "TW-THB-PCI-1991",
+   "title": "公路總局預力混凝土簡支梁橋橋梁工程標準圖適用性之探討, 臺灣公路工程 第38卷第4-5期 (May 2012), pp.152-155",
+   "url": "https://www.thb.gov.tw/FileResource.axd?path=html/doc/%E5%87%BA%E7%89%88%E5%93%81-%E5%8F%B0%E7%81%A3%E5%85%AC%E8%B7%AF%E5%B7%A5%E7%A8%8B/%E7%AC%AC38%E5%8D%B7%E7%AC%AC4-5%E6%9C%9F.pdf",
+   "local_path": "sources/expansion/round2/tw/thb-journal-38-4-5.pdf",
+   "sha256": "a65f67be5570b669c01c0e40b45137af1736a80d690496a4f8cd0dfe160d32e2",
+   "pdf_page": [
+    11,
+    12
+   ],
+   "printed_page": [
+    "12 (期-154)",
+    "13 (期-155)"
+   ],
+   "locator": "圖2 PCI梁斷面圖 (Type I; Type II-VII parametric); 表4 各類型PCI型梁尺寸表",
+   "retrieved": "2026-09-23"
+  }
+ ],
+ "geometry_notes": [
+  "GTF top flange width, GBF bottom flange width, GHT depth, TFT top flange edge thickness, BFT bottom flange edge thickness, GWB web width, H1 top taper height, H3 bottom taper height, F2 bottom taper horizontal run; H2 and F1 (second top fillet) are zero for every type.",
+  "Top taper runs from the flange edge straight to the web ((GTF-GWB)/2 horizontal); F2 equals (GBF-GWB)/2 for every type (checked).",
+  "GBL/GBH are end-block length and transition lengths along the girder, not cross-section dimensions; the midspan section only is modelled.",
+  "Types VI and VII are both 45 m alternatives; the article recommends dropping VII. Status: the 1991 set was declared no longer applicable (article p.1); it is historic.",
+  "Post-tensioned; ducts not deducted. No published section properties."
+ ],
+ "sections": {
+  "I": {
+   "span_m": 20,
+   "dimensions_source_cm": {
+    "GTF": 42,
+    "GBF": 56,
+    "GHT": 115,
+    "TFT": 18,
+    "BFT": 18,
+    "GWB": 20,
+    "H1": 12,
+    "H2": 0,
+    "H3": 19,
+    "F1": 0,
+    "F2": 18,
+    "GBL": 130,
+    "GBH": 100
+   },
+   "provenance": "transcribed",
+   "source_discrepancy": "Figure 2 (Type I drawing) prints the bottom splay height as 18 cm; Table 4 gives H3 = 19 cm. Table value used (consistent rule for all types); figure value changes gross area by 20 cm2 (about 0.5%). Figure top splay is undimensioned and scales to about 11 cm vs H1 = 12 cm."
+  },
+  "II": {
+   "span_m": 25,
+   "dimensions_source_cm": {
+    "GTF": 100,
+    "GBF": 50,
+    "GHT": 150,
+    "TFT": 15,
+    "BFT": 20,
+    "GWB": 20,
+    "H1": 12,
+    "H2": 0,
+    "H3": 12,
+    "F1": 0,
+    "F2": 15,
+    "GBL": 115,
+    "GBH": 100
+   },
+   "provenance": "transcribed"
+  },
+  "III": {
+   "span_m": 30,
+   "dimensions_source_cm": {
+    "GTF": 100,
+    "GBF": 55,
+    "GHT": 170,
+    "TFT": 15,
+    "BFT": 24,
+    "GWB": 20,
+    "H1": 15,
+    "H2": 0,
+    "H3": 21,
+    "F1": 0,
+    "F2": 17.5,
+    "GBL": 130,
+    "GBH": 200
+   },
+   "provenance": "transcribed"
+  },
+  "IV": {
+   "span_m": 35,
+   "dimensions_source_cm": {
+    "GTF": 110,
+    "GBF": 67,
+    "GHT": 200,
+    "TFT": 15,
+    "BFT": 24,
+    "GWB": 20,
+    "H1": 15,
+    "H2": 0,
+    "H3": 21,
+    "F1": 0,
+    "F2": 23.5,
+    "GBL": 150,
+    "GBH": 200
+   },
+   "provenance": "transcribed"
+  },
+  "V": {
+   "span_m": 40,
+   "dimensions_source_cm": {
+    "GTF": 120,
+    "GBF": 70,
+    "GHT": 200,
+    "TFT": 15,
+    "BFT": 25,
+    "GWB": 20,
+    "H1": 15,
+    "H2": 0,
+    "H3": 35,
+    "F1": 0,
+    "F2": 25,
+    "GBL": 150,
+    "GBH": 200
+   },
+   "provenance": "transcribed"
+  },
+  "VI": {
+   "span_m": 45,
+   "dimensions_source_cm": {
+    "GTF": 130,
+    "GBF": 70,
+    "GHT": 220,
+    "TFT": 18,
+    "BFT": 33,
+    "GWB": 20,
+    "H1": 15,
+    "H2": 0,
+    "H3": 25,
+    "F1": 0,
+    "F2": 25,
+    "GBL": 165,
+    "GBH": 200
+   },
+   "provenance": "transcribed"
+  },
+  "VII": {
+   "span_m": 45,
+   "dimensions_source_cm": {
+    "GTF": 140,
+    "GBF": 70,
+    "GHT": 220,
+    "TFT": 20,
+    "BFT": 35,
+    "GWB": 20,
+    "H1": 15,
+    "H2": 0,
+    "H3": 25,
+    "F1": 0,
+    "F2": 25,
+    "GBL": 165,
+    "GBH": 200
+   },
+   "provenance": "transcribed"
+  }
+ }
+}

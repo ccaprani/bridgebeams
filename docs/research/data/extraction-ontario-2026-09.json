@@ -1,0 +1,311 @@
+{
+  "topic": "ontario",
+  "date": "2026-09-23",
+  "jurisdiction": "Ontario, Canada",
+  "official_index_url": "https://www.library.mto.gov.on.ca/SydneyPLUS/TechPubs/Portal/tp/ssdViews.aspx",
+  "retrieval_method": "Portal uses ASP.NET postback; drawings downloaded by posting the per-row download control. SS107-16 and SS107-25 hashes match previously held copies.",
+  "downloaded_sources": [
+    {
+      "drawing": "SS107-13",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_13.pdf"
+    },
+    {
+      "drawing": "SS107-14",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_14.pdf"
+    },
+    {
+      "drawing": "SS107-15",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_15.pdf"
+    },
+    {
+      "drawing": "SS107-16",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_16.pdf"
+    },
+    {
+      "drawing": "SS107-17",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_17.pdf"
+    },
+    {
+      "drawing": "SS107-18",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_18.pdf"
+    },
+    {
+      "drawing": "SS107-19",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_19.pdf"
+    },
+    {
+      "drawing": "SS107-20",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_20.pdf"
+    },
+    {
+      "drawing": "SS107-21",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_21.pdf"
+    },
+    {
+      "drawing": "SS107-22",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_22.pdf"
+    },
+    {
+      "drawing": "SS107-23",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_23.pdf"
+    },
+    {
+      "drawing": "SS107-24",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_24.pdf"
+    }
+  ],
+  "families": [
+    {
+      "class": "bridgebeams.ca.CaMtoNuGirderSection",
+      "module": "src/bridgebeams/ca/mto_nu_girder.py",
+      "data": "src/bridgebeams/ca/data/mto_nu_girders.json",
+      "sizes": [
+        "NU900",
+        "NU1200",
+        "NU1400",
+        "NU1600",
+        "NU1800",
+        "NU1900",
+        "NU2000",
+        "NU2400"
+      ],
+      "provenance": "transcribed-with-convention",
+      "source_status": "current June 2025 (SS107-16..23)",
+      "transcribed_dimensions_mm": {
+        "top_width": 1235,
+        "top_flange_tip_edge": 65,
+        "top_taper_to_web_face": 45,
+        "web_width": 160,
+        "web_height": "D - 385 (printed 515/815/1015/1215/1415/1515/1615/2015)",
+        "bottom_taper_from_web_face": 140,
+        "bottom_flange_edge": 135,
+        "bottom_width": 985,
+        "web_fillet_radius": 200,
+        "flange_tip_fillet_radius": 50,
+        "soffit_chamfer": 20
+      },
+      "geometry_notes": [
+        "45 mm top taper and 140 mm bottom taper are measured to the theoretical intersection with the web face (extension lines reach the web face on the 500 dpi render of SS107-16).",
+        "R50 and R200 fillets are the unique circular arcs tangent to the two adjoining straight lines at each printed theoretical corner; tessellated with arc_segments chords (default 32; area error <0.008%, Ixx error <0.007% vs exact arcs).",
+        "20 mm soffit chamfer taken as 20 x 20 mm at 45 degrees (convention; only '20mm CHAMFER' printed).",
+        "Top-flange upper outer corners are square as drawn; no top chamfer called out.",
+        "Web 160 mm (pretensioned standard). The guide mentions a 185 mm web for post-tensioned use; not a standard drawing, not implemented.",
+        "Holes, dowel inserts, strands, reinforcement, end undercuts and bearing plates excluded.",
+        "No published section-property table exists in any held Ontario source; checks are analytic only. The US Nebraska NU metric table does not apply (different outline)."
+      ],
+      "analytic_reference": {
+        "NU900": {
+          "area_mm2": 427110.5,
+          "yb_mm": 410.441,
+          "ixx_mm4": 46488908000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        },
+        "NU1200": {
+          "area_mm2": 475110.5,
+          "yb_mm": 542.791,
+          "ixx_mm4": 95586070000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        },
+        "NU1400": {
+          "area_mm2": 507110.5,
+          "yb_mm": 632.88,
+          "ixx_mm4": 139923428000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        },
+        "NU1600": {
+          "area_mm2": 539110.5,
+          "yb_mm": 724.146,
+          "ixx_mm4": 194315206000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        },
+        "NU1800": {
+          "area_mm2": 571110.5,
+          "yb_mm": 816.391,
+          "ixx_mm4": 259416161000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        },
+        "NU1900": {
+          "area_mm2": 587110.5,
+          "yb_mm": 862.83,
+          "ixx_mm4": 296186312000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        },
+        "NU2000": {
+          "area_mm2": 603110.5,
+          "yb_mm": 909.459,
+          "ixx_mm4": 335877918000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        },
+        "NU2400": {
+          "area_mm2": 667110.5,
+          "yb_mm": 1097.589,
+          "ixx_mm4": 525479184000.0,
+          "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+        }
+      },
+      "per_size": {
+        "NU900": {
+          "drawing": "SS107-16",
+          "sha256": "cc45346cf2251d70d9f594d46e276c51394173419ec1542f3ec3c2521c5548b5",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 1
+        },
+        "NU1200": {
+          "drawing": "SS107-17",
+          "sha256": "3df71394fc74f020c81360e958eb3f69d36a7bbc3ad9791a3b9257d56046c44f",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 2
+        },
+        "NU1400": {
+          "drawing": "SS107-18",
+          "sha256": "24c3967c1262dd07b5350f0d7909a50dbcbac784ca2fd48bdf512ebe8551cf94",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 3
+        },
+        "NU1600": {
+          "drawing": "SS107-19",
+          "sha256": "7e36c01db7ac54610f5a0fa3d809702a40ed4c9c69c334910b2582b7b0a2854f",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 4
+        },
+        "NU1800": {
+          "drawing": "SS107-20",
+          "sha256": "9c80344fdc8737423753ab2ae4fee7d9d3096971694c2ffe95cfc0d328e84e0e",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 5
+        },
+        "NU1900": {
+          "drawing": "SS107-21",
+          "sha256": "3e5e312291f52580e7395f61ccde86205aa4ff791cfc6edc59d452f649612939",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 6
+        },
+        "NU2000": {
+          "drawing": "SS107-22",
+          "sha256": "ada8f9ceb48a6bcbb157a2b4ec3ec0465802721086aaaeaaab4bf228c3cf0162",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 7
+        },
+        "NU2400": {
+          "drawing": "SS107-23",
+          "sha256": "077f308b2fe4ecdf5ba636f3ab4de7eece58c3c21fa004f08ebd105056a5a260",
+          "pdf_page": 1,
+          "draft_2023_pdf_page": 8
+        }
+      },
+      "published_properties": null
+    },
+    {
+      "class": "bridgebeams.ca.CaMtoBoxGirderSection",
+      "module": "src/bridgebeams/ca/mto_box_girder.py",
+      "data": "src/bridgebeams/ca/data/mto_box_girders.json",
+      "sizes": [
+        "B700-1220",
+        "B800-1220",
+        "B900-1220",
+        "B1000-1220",
+        "B700-915",
+        "B800-915",
+        "B900-915",
+        "B1000-915"
+      ],
+      "provenance": {
+        "B700-1220": "transcribed-with-convention",
+        "B800-1220": "transcribed-with-convention",
+        "B900-1220": "transcribed-with-convention",
+        "B1000-1220": "transcribed-with-convention",
+        "B700-915": "estimate",
+        "B800-915": "estimate",
+        "B900-915": "estimate",
+        "B1000-915": "estimate"
+      },
+      "source_status": {
+        "B700-1220": "current SS107-13 (June 2025)",
+        "B800-1220": "current SS107-13 (June 2025)",
+        "B900-1220": "current SS107-13 (June 2025)",
+        "B1000-1220": "current SS107-14 (June 2025)",
+        "B700-915": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template",
+        "B800-915": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template",
+        "B900-915": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template",
+        "B1000-915": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template"
+      },
+      "sources": [
+        {
+          "drawing": "SS107-13",
+          "portal_number": "107.0013",
+          "title_original": "Prestressed Box Girders and Bearings (B700, B800, B900)",
+          "date": "June 2025",
+          "local_file": "sources/expansion/europe-americas/ca_mto_ss107_13.pdf",
+          "sha256": "f09855653c1fb35e6bc165c068b4f84e6229643d038cede8f26b7c034c2e99d0",
+          "pdf_page": 1
+        },
+        {
+          "drawing": "SS107-14",
+          "portal_number": "107.0014",
+          "title_original": "Prestressed Box Girders and Bearings (B1000)",
+          "date": "June 2025",
+          "local_file": "sources/expansion/europe-americas/ca_mto_ss107_14.pdf",
+          "sha256": "c603460caf713ce292749a16cdbfc04327688621170d9ca2641987605d32edd2",
+          "pdf_page": 1
+        },
+        {
+          "drawing": "SS107-15",
+          "portal_number": "107.0015",
+          "title_original": "Prestressed Box Girder Details",
+          "date": "June 2025",
+          "local_file": "sources/expansion/europe-americas/ca_mto_ss107_15.pdf",
+          "sha256": "f6492f2ec97940b51f476854b409511f2dcf5739467f36d204cd5a0def4c4a01",
+          "pdf_page": 1,
+          "note": "No shear key; welded L102/L51 steel ties across nominal 10 mm gap."
+        },
+        {
+          "title_original": "Prestressed Concrete Girder Guidelines (DRAFT) BRO-00X, August 2023",
+          "url": "https://tcp.mto.gov.on.ca/sites/default/files/2023-08/Prestressed%20Concrete%20Girder%20Guidelines%20%28August11%202023%29.pdf",
+          "local_file": "sources/expansion/europe-americas/ca_mto_guide.pdf",
+          "sha256": "4cf5ad75d1b99f4d6c82ea47b6587def31b8f6a09080e732428c3ba8fbb2e31f",
+          "pdf_page": [
+            15,
+            16
+          ],
+          "printed_page": [
+            7,
+            8
+          ],
+          "table": "Table 3 - Box Girder Geometry Used in Ontario",
+          "note": "Text: standard sizes B700-B1000 in 100 mm increments; two standard widths 915 and 1220 mm. Document marked DRAFT."
+        }
+      ],
+      "transcribed_dimensions_mm": {
+        "width": 1220,
+        "depth": [
+          700,
+          800,
+          900,
+          1000
+        ],
+        "top_slab": 140,
+        "bottom_slab": 140,
+        "web": 125,
+        "void_chamfer": "75 x 75",
+        "outer_corner_chamfer": "20 (TYP), top corners optional per note 15"
+      },
+      "geometry_notes": [
+        "All four 20 mm outer chamfers included (drawn TYP on section 2); note 15 makes the top pair optional. Removing them adds 400 mm2.",
+        "Chamfers taken at 45 degrees.",
+        "Void (EPS-filled, note 16) modelled as a hole; midspan section 2 used, solid end block (section 1) excluded.",
+        "915 mm width: listed only in DRAFT 2023 guide; no current drawing held. Best estimate reuses 140/125/75/20 mm details, void width 665 mm. Provenance 'estimate'.",
+        "No published properties; checks are analytic only."
+      ],
+      "published_properties": null
+    }
+  ],
+  "superseded": {
+    "ca_mto_nu": "2023 DRAFT NU sheets; callouts identical to 2025",
+    "ca_mto_guide": "DRAFT 2023; retains only the 915 mm box width lead"
+  },
+  "remaining_uncertainties": [
+    "No published properties for either family in any held source.",
+    "915 mm box geometry estimated from 1220 template.",
+    "45 degree chamfers and tangent fillets are conventions."
+  ]
+}

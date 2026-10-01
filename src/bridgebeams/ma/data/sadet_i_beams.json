@@ -1,0 +1,36 @@
+{
+  "source_title_original": "Poutres industrielles (poutres précontraintes)",
+  "source_title_en": "Industrial prestressed beams (buildings and bridge decks)",
+  "producer": "SADET (Morocco)",
+  "source_url": "https://sadet.ma/wp-content/uploads/2023/09/poutres-industrrielles.pdf",
+  "source_local_file": "sources/expansion/asia-africa/sadet-morocco.pdf",
+  "source_sha256": "8f60ff2b42d0266c48ed6ef9a32759ad79732dbfe77cc476547fca0ed9a5bffd",
+  "source_pdf_page": 2,
+  "source_printed_page": null,
+  "accessed": "2026-09-22",
+  "source_status": "producer catalogue (brochure; schematic graphic)",
+  "units": "base cm in source (stored mm); portées limites m; poids kg/ml",
+  "scaling_method": "Embedded raster (240x143 px, PDF p2) thresholded at grey<200; per-row outline extents measured for each beam. Scale = printed base / pixel base: 11.11, 10.98, 11.11, 11.00 mm/px for I40/I45/I50/I55. Measured web widths 111/165/211/253 mm vs callouts 100/150/200/250 (one ~11 mm stroke). Row counts (incl. strokes): top flange 19-20, top taper 8-9, bottom taper 9, bottom flange 13-14, total 111 px = 1218-1233 mm.",
+  "estimated_dimensions": {
+    "depth": 1220.0,
+    "top_flange": 210.0,
+    "top_taper": 100.0,
+    "bottom_taper": 100.0,
+    "bottom_flange": 150.0,
+    "top_width_rule": "equal to base width (outline drawn symmetric top/bottom)"
+  },
+  "geometry_notes": [
+    "PROVENANCE estimate for all four sizes: only base width (table) and web width (graphic callouts 10/15/20/25 cm) are printed.",
+    "Depth, flange and taper heights scaled from the raster graphic to +/-11 mm (1 px); the four outlines are drawn at a common scale and common depth.",
+    "Sharp corners: the graphic resolution cannot show chamfers or fillets.",
+    "Mass check at an assumed 2500 kg/m3 (density not stated; brochure masses may include reinforcement): I45 -9.6 %, I50 -4.0 %, I55 -3.7 % mass deficit vs mass-implied area. Not fitted.",
+    "I40 printed mass 282 kg/m implies 0.113 m2, inconsistent with its outline (~0.26 m2) and the family progression; preserved verbatim as a source anomaly.",
+    "Web callouts in the graphic are small blobs; 10/15/20/25 cm reading is consistent with the scaled widths."
+  ],
+  "sections": [
+    {"section": "I40", "base_width": 400, "web_width_callout": 100, "limiting_span_m": 25, "mass_kg_per_m": 282, "provenance": "estimate", "mass_residual_note": "printed mass anomalous (see notes)"},
+    {"section": "I45", "base_width": 450, "web_width_callout": 150, "limiting_span_m": 26, "mass_kg_per_m": 888, "provenance": "estimate"},
+    {"section": "I50", "base_width": 500, "web_width_callout": 200, "limiting_span_m": 28, "mass_kg_per_m": 995, "provenance": "estimate"},
+    {"section": "I55", "base_width": 550, "web_width_callout": 250, "limiting_span_m": 29, "mass_kg_per_m": 1150, "provenance": "estimate"}
+  ]
+}

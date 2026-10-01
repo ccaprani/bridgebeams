@@ -1,0 +1,537 @@
+{
+  "schema": "bridgebeams-us-state-v1",
+  "agency": "Michigan Department of Transportation (MDOT) standard prestressed concrete beams: PC special details (current revisions 12-22-2025) and Bridge Design Guides (BDG) 6.60 series",
+  "units": "inches (source); package geometry in mm",
+  "sources": {
+    "pc_1q": {
+      "title": "MDOT special detail PC-1Q, Prestressed Concrete I-Beam Details (plan date 12-22-2025, 2 sheets)",
+      "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=8a529778-ce2d-4652-9128-48ec743cdfea",
+      "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-1Q_a.pdf",
+      "sha256": "12bdae9fbfa3f654ed4bb169f15b4f3a7990e2fc68363d77fe23a8d53a083a52",
+      "locators": {
+        "SECTION B-B TYPE I (28 in BEAM), midspan strand section with dimension chain": "PDF p1, bottom-left pair",
+        "SECTION B-B TYPE II (36 in BEAM)": "PDF p1",
+        "SECTION B-B TYPE III (45 in BEAM)": "PDF p1, bottom-centre pair",
+        "SECTION B-B TYPE IV (54 in BEAM)": "PDF p1",
+        "Sole-plate/pad tables, strand location table": "PDF p1"
+      },
+      "revisions_note": "2022 revision PC-1N (11-28-2022) recovered from the Wayback Machine; same geometry lineage, kept for provenance (mdot_PC-1N_I-beam-details_2022-11-28_wayback.pdf in the local source store).",
+      "verified_library_path": "/home/ccaprani/Downloads/bridgebeams-manual/us/mi/mdot_PC-1Q_I-beam-details_2025-12-22.pdf",
+      "verified_date": "2026-09-30"
+    },
+    "pc_2l": {
+      "title": "MDOT special detail PC-2L, 70 in Prestressed Concrete I-Beam Details (plan date 12-22-2025, 2 sheets)",
+      "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=c8370804-7482-40fe-9061-5bb6de3c19c8",
+      "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-2L.pdf",
+      "sha256": "bd50afeae3a4cda8be83688dece21cc8d489f83553fb63e502d4c389dc4058a7",
+      "locators": {
+        "SECTION B-B (midspan) with vertical chain 6, 2, 1 1/2, 4'-1 1/2, 3 1/2, 7 1/2": "PDF p1, bottom-right section",
+        "SECTION A-A (end face, 1'-4 in web)": "PDF p1, bottom-left section",
+        "2 in horizontal upper short-haunch run": "PDF p1, SECTION B-B, leader immediately left of the 6 in web dimension"
+      },
+      "verified_library_path": "/home/ccaprani/Downloads/bridgebeams-manual/us/mi/mdot_PC-2L_70in-I-beam-details_2025-12-22.pdf",
+      "verified_date": "2026-09-30"
+    },
+    "pc_4j": {
+      "title": "MDOT special detail PC-4J, Prestressed Concrete 1800 Beam Details (plan date 12-22-2025, 2 sheets)",
+      "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=997b1418-e2d8-4b64-9374-86254618cb94",
+      "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-4J.pdf",
+      "sha256": "315a625b55dae7acb3a12ad61a5469f73810633c78106d27fcc018098b65ad56",
+      "locators": {
+        "SECTION B-B (midspan) with fillet radii R7 7/8, R2 and chain 3, 2, 4'-6 1/2, 5 1/2, 5 7/8": "PDF p1, bottom-centre",
+        "15 SPA at 2 in strand row, 2'-11 1/2 in bottom flange": "PDF p1",
+        "3/4 in bottom-soffit bevel": "PDF p1, upper reinforcement SECTION A-A, leader to the concrete bottom outside corner"
+      },
+      "verified_library_path": "/home/ccaprani/Downloads/bridgebeams-manual/us/mi/mdot_PC-4J_1800-beam-details_2025-12-22.pdf",
+      "verified_date": "2026-09-30"
+    },
+    "pc_5d": {
+      "title": "MDOT special detail PC-5D, Prestressed Concrete Bulb-Tee Beam Details (plan date 12-22-2025, 2 sheets)",
+      "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=d5628a40-b6e1-4064-8980-88f85a55839c",
+      "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-5D.pdf",
+      "sha256": "6b8064ebbf2741035c8f820715870f8582028e53e0bb7466d2ee72e380e06f04",
+      "locators": {
+        "49 in flange, 8 in web, 40 in bottom flange and all seven depths": "PDF p1, lower SECTION A-A / B-B; hatched 6 in form blockouts each side",
+        "61 in flange variant and starred blockout removal note": "PDF p1, starred note below upper reinforcement SECTION A-A; outside edge thickness not directly dimensioned"
+      },
+      "verified_library_path": "/home/ccaprani/Downloads/bridgebeams-manual/us/mi/mdot_PC-5D_bulb-tee-details_2025-12-22.pdf",
+      "verified_date": "2026-09-30"
+    },
+    "bdg_set": {
+      "title": "MDOT Bridge Design Guides, English complete set (232 pp; 6.60.01 issued 02/14/11; 6.65.02 series issued 05/22/23)",
+      "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=dcecf995-28a3-4f9c-8da7-5839bd206d40",
+      "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/BDG-complete-set.pdf",
+      "sha256": "41a5a153fbef6d7fba65ee08301c240b54c21ddae34aecfb547e620290d8c028",
+      "locators": {
+        "6.60.01 I-Beam Details + BEAM PROPERTIES (Types I-IV)": "PDF p125",
+        "6.60.02 Michigan 1800 Girder + BEAM PROPERTIES": "PDF p126",
+        "6.60.03 Bulb Tee + BEAM PROPERTIES (49 in and 61 in flange, depths 36-72)": "PDF p127, issued 05/22/23",
+        "6.60.03A bulb-tee reinforcement": "PDF p128",
+        "6.65.02 12in & 17in box beam properties": "PDF p146 (follow-up lead)",
+        "6.65.02A 21in & 27in box beam properties": "PDF p147 (follow-up lead)",
+        "6.65.02B 33-60in box beam properties": "PDF p148 (follow-up lead)"
+      }
+    }
+  },
+  "source_status": "Source dimensions independently verified against original MDOT special-detail PDFs on 2026-09-30 (printed revision 12-22-2025); historical BDG properties separately checked against the retained complete-set PDF.",
+  "i_beam": {
+    "provenance": "transcribed",
+    "sheet": "PC-1Q PDF p1 SECTION B-B series; properties from BDG 6.60.01 p125",
+    "common_in": {
+      "soffit_chamfer": 0.75
+    },
+    "geometry_notes": [
+      "PC-1Q SECTION B-B midspan outlines: four fully dimensioned straight flange/haunch/web profiles with 3/4 in bottom-soffit chamfers.",
+      "Source vertical chains top to bottom: I28 [4,3,11,5,5], I36 [6,3,15,6,6], I45 [7,4.5,19,7.5,7], I54 [8,6,23,9,8] inches.",
+      "Historical BDG 6.60.01 (issued 02/14/11, PDF p125) prints Type I tip 3 3/4 in and taper 3 1/4 in, unlike current PC-1Q values 4 and 3 in. Its property table is retained as an independent historical cross-check, not a reason to change current dimensions.",
+      "No additional concrete junction fillets are dimensioned in PC-1Q; no unprinted fillets are introduced to fit published properties.",
+      "Strand locations, bar dimensions and concrete cover are reinforcement details, excluded from the gross concrete outline."
+    ],
+    "sections": {
+      "I28": {
+        "depth": 28,
+        "top_width": 12,
+        "bottom_width": 16,
+        "web": 6,
+        "tip": 4,
+        "taper": 3,
+        "web_height": 11,
+        "splay": 5,
+        "bulb": 5,
+        "printed_properties": {
+          "weight_lbs_ft": 288,
+          "area": 276,
+          "st": 1475,
+          "sb": 1805,
+          "ix": 22800
+        },
+        "calculated_in": {
+          "area": 275.4375,
+          "yb": 12.614571515,
+          "ix": 22658.2900322423,
+          "st": 1472.711017074,
+          "sb": 1796.1997365724
+        },
+        "property_residual_fraction": {
+          "area": -0.0020380435,
+          "st": -0.0015518528,
+          "sb": -0.0048754922,
+          "ix": -0.0062153495
+        }
+      },
+      "I36": {
+        "depth": 36,
+        "top_width": 12,
+        "bottom_width": 18,
+        "web": 6,
+        "tip": 6,
+        "taper": 3,
+        "web_height": 15,
+        "splay": 6,
+        "bulb": 6,
+        "printed_properties": {
+          "weight_lbs_ft": 384,
+          "area": 369,
+          "st": 2530,
+          "sb": 3220,
+          "ix": 51000
+        },
+        "calculated_in": {
+          "area": 368.4375,
+          "yb": 15.8530534351,
+          "ix": 50841.9914867605,
+          "st": 2523.5581641624,
+          "sb": 3207.0787936755
+        },
+        "property_residual_fraction": {
+          "area": -0.0015243902,
+          "st": -0.0025461802,
+          "sb": -0.004012797,
+          "ix": -0.0030982061
+        }
+      },
+      "I45": {
+        "depth": 45,
+        "top_width": 16,
+        "bottom_width": 22,
+        "web": 7,
+        "tip": 7,
+        "taper": 4.5,
+        "web_height": 19,
+        "splay": 7.5,
+        "bulb": 7,
+        "printed_properties": {
+          "weight_lbs_ft": 583,
+          "area": 560,
+          "st": 5070,
+          "sb": 6190,
+          "ix": 125000
+        },
+        "calculated_in": {
+          "area": 558.9375,
+          "yb": 20.293609527,
+          "ix": 125164.5756896544,
+          "st": 5066.0810135928,
+          "sb": 6167.6842418349
+        },
+        "property_residual_fraction": {
+          "area": -0.0018973214,
+          "st": -0.0007729756,
+          "sb": -0.0036051306,
+          "ix": 0.0013166055
+        }
+      },
+      "I54": {
+        "depth": 54,
+        "top_width": 20,
+        "bottom_width": 26,
+        "web": 8,
+        "tip": 8,
+        "taper": 6,
+        "web_height": 23,
+        "splay": 9,
+        "bulb": 8,
+        "printed_properties": {
+          "weight_lbs_ft": 822,
+          "area": 789,
+          "st": 8910,
+          "sb": 10550,
+          "ix": 261000
+        },
+        "calculated_in": {
+          "area": 788.4375,
+          "yb": 24.7513079667,
+          "ix": 260403.1529480346,
+          "st": 8903.0700125537,
+          "sb": 10520.783519736
+        },
+        "property_residual_fraction": {
+          "area": -0.0007129278,
+          "st": -0.0007777764,
+          "sb": -0.0027693346,
+          "ix": -0.0022867703
+        }
+      }
+    },
+    "geometry_status": "source_dimensioned_midspan",
+    "calculated_properties_note": "Gross properties of the implemented source-dimensional polygon in inch units; centroidal Ix. These calculated values and BDG residuals are not source dimensions."
+  },
+  "i70": {
+    "provenance": "transcribed",
+    "sheet": "PC-2L PDF p1 SECTION B-B (midspan); no independent I70 property table was located in the reviewed BDG pages",
+    "sections": {
+      "I70": {
+        "depth": 70,
+        "top_width": 30,
+        "bottom_width": 26,
+        "web": 6,
+        "soffit_chamfer": 0.75,
+        "tip": 6,
+        "taper": 2,
+        "step": 1.5,
+        "web_height": 49.5,
+        "splay": 3.5,
+        "bulb": 7.5,
+        "geometry_notes": [
+          "Vertical chain 6+2+1.5+49.5+3.5+7.5=70 in. The short upper haunch has a source horizontal run of 2 in and vertical rise of 1.5 in, followed by the main 10 in run / 2 in rise to the 30 in flange edge.",
+          "SECTION A-A has a 16 in end web; its exact flange/haunch intersection stations are not resolved. The implemented section is the 6 in midspan web only.",
+          "Bottom strand extent 11 spaces at 2 in =22 in within 26 in flange; printed 3/4 in soffit chamfers are retained."
+        ],
+        "calculated_in": {
+          "area": 779.4375,
+          "yb": 34.8570082592,
+          "ix": 514616.4583059262,
+          "st": 14643.5016717118,
+          "sb": 14763.6439272057
+        },
+        "step_run": 2
+      }
+    },
+    "geometry_status": "source_dimensioned_midspan",
+    "partial_sections": {
+      "end_face": {
+        "status": "partial_dimensions",
+        "source": "pc_2l",
+        "locator": "PDF p1 SECTION A-A and elevation",
+        "dimensions_in": {
+          "depth": 70,
+          "top_width": 30,
+          "bottom_width": 26,
+          "web": 16,
+          "longitudinal_web_transition": 90
+        },
+        "unresolved": [
+          "Exact end-face upper and lower flange/haunch intersection elevations",
+          "Longitudinal transition contour"
+        ],
+        "implemented": false
+      }
+    },
+    "calculated_properties_note": "Gross properties of the implemented source-dimensional polygon in inch units; centroidal Ix. These calculated values and BDG residuals are not source dimensions."
+  },
+  "beam_1800": {
+    "provenance": "transcribed-with-convention",
+    "sheet": "PC-4J PDF p1 SECTION B-B; properties from BDG 6.60.02 p126",
+    "sections": {
+      "1800": {
+        "depth": 70.875,
+        "top_width": 47.25,
+        "bottom_width": 35.5,
+        "web": 5.875,
+        "soffit_chamfer": 0.75,
+        "tip": 3,
+        "slope_drop": 2,
+        "slope_web": 54.5,
+        "splay": 5.5,
+        "bulb": 5.875,
+        "r_tip": 2.0,
+        "r_bulb": 2.0,
+        "r_web_bot": 7.875,
+        "r_web_top": 7.875,
+        "printed_properties": {
+          "weight_lbs_ft": 910,
+          "area": 875,
+          "st": 16600,
+          "sb": 18800,
+          "ix": 624700
+        },
+        "geometry_notes": [
+          "PC-4J chain 3+2+54.5+5.5+5.875=70.875 in. The 3 in dimension is top-to-outer-edge underside; the 2 in dimension is the further drop to the theoretical upper web-haunch datum.",
+          "Both web junctions use the printed R7 7/8 in. Upper outer edge and lower outer slope junction use R2 in. Bottom-soffit corners are the printed 3/4 in BEVEL (TYP), not radius corners.",
+          "The dimensioned straight-line intersections determine tangent circular arcs; numerical convention is 16 chords per circular arc, without changing the printed radii.",
+          "Historical BDG 6.60.02 PDF p126 properties are checked independently; residuals are reported, never fitted away by modifying source dimensions.",
+          "The 4 ft 6 1/2 in datum chain was read directly and checked by full-depth closure; no vector-scale measurements are used."
+        ],
+        "calculated_in": {
+          "area": 867.0317818668,
+          "yb": 33.0962400706,
+          "ix": 622633.3625718495,
+          "st": 16481.0428858847,
+          "sb": 18812.8126108438
+        },
+        "arc_segments": 16,
+        "property_residual_fraction": {
+          "area": -0.009106535,
+          "st": -0.0071660912,
+          "sb": 0.0006815219,
+          "ix": -0.0033082078
+        }
+      }
+    },
+    "geometry_status": "source_dimensioned_with_discretized_circular_arcs",
+    "calculated_properties_note": "Gross properties of the implemented source-dimensional polygon in inch units; centroidal Ix. These calculated values and BDG residuals are not source dimensions."
+  },
+  "bulb_tee": {
+    "provenance": "transcribed",
+    "sheet": "PC-5D PDF p1, lower SECTION A-A / B-B, blockouts in form:49 in top flange; independent properties from BDG 6.60.03 PDF p127 (05/22/23)",
+    "template_in": {
+      "top_width": 49,
+      "top_edge": 5,
+      "top_taper_rise": 3,
+      "top_fillet_rise": 3,
+      "top_fillet_run": 3,
+      "web": 8,
+      "bottom_width": 40,
+      "bottom_bevel": 0.75,
+      "bottom_edge": 5.5,
+      "bottom_taper_rise": 7,
+      "bottom_taper_run": 14,
+      "bottom_fillet_rise": 2,
+      "bottom_fillet_run": 2
+    },
+    "geometry_notes": [
+      "All seven source depths 36,42,48,54,60,66,72 in use 49 in top flange,8 in web and40 in bottom flange with3/4 in soffit bevels. Only clear web height changes.",
+      "Upper chain 5+3+3=11 in; lower chain 5.5+7+2=14.5 in; clear web height is calculated as depth-25.5 in.",
+      "Upper horizontal run 17.5+3 in each side closes to49 in; lower run14+2 in each side closes to40 in.",
+      "The5 in upper thickness dimension is at the inner49 in blockout boundary, not the61 in outer edge.",
+      "The OR15-182 BTB002 overlapping template is a separate lineage; current geometry is directly sourced from PC-5D and checked against BDG6.60.03 properties."
+    ],
+    "sections": {
+      "BT36": {
+        "depth": 36,
+        "printed_properties": {
+          "weight_lbs_ft": 915,
+          "area": 878.3,
+          "ybot": 18.2,
+          "ix": 145592
+        },
+        "calculated_in": {
+          "area": 877.9375,
+          "yb": 18.1752034835,
+          "ix": 145539.3937006278,
+          "st": 8164.9960809516,
+          "sb": 8007.5798783989
+        },
+        "property_residual_fraction": {
+          "area": -0.0004127291,
+          "ybot": -0.001362446,
+          "ix": -0.0003613269
+        }
+      },
+      "BT42": {
+        "depth": 42,
+        "printed_properties": {
+          "weight_lbs_ft": 965,
+          "area": 926.3,
+          "ybot": 21.1,
+          "ix": 217461
+        },
+        "calculated_in": {
+          "area": 925.9375,
+          "yb": 21.0982843964,
+          "ix": 217377.9299569838,
+          "st": 10400.0041948716,
+          "sb": 10303.1092894743
+        },
+        "property_residual_fraction": {
+          "area": -0.0003913419,
+          "ybot": -8.13082e-05,
+          "ix": -0.0003819997
+        }
+      },
+      "BT48": {
+        "depth": 48,
+        "printed_properties": {
+          "weight_lbs_ft": 1015,
+          "area": 974.3,
+          "ybot": 24.0,
+          "ix": 305994
+        },
+        "calculated_in": {
+          "area": 973.9375,
+          "yb": 24.0289471433,
+          "ix": 305873.4645005915,
+          "st": 12760.1180610854,
+          "sb": 12729.3743948519
+        },
+        "property_residual_fraction": {
+          "area": -0.000372062,
+          "ybot": 0.001206131,
+          "ix": -0.0003939146
+        }
+      },
+      "BT54": {
+        "depth": 54,
+        "printed_properties": {
+          "weight_lbs_ft": 1065,
+          "area": 1022.3,
+          "ybot": 27.0,
+          "ix": 412056
+        },
+        "calculated_in": {
+          "area": 1021.9375,
+          "yb": 26.9661233768,
+          "ix": 411891.389047319,
+          "st": 15236.1200277568,
+          "sb": 15274.4012660849
+        },
+        "property_residual_fraction": {
+          "area": -0.0003545926,
+          "ybot": -0.0012546897,
+          "ix": -0.0003994868
+        }
+      },
+      "BT60": {
+        "depth": 60,
+        "printed_properties": {
+          "weight_lbs_ft": 1115,
+          "area": 1070.3,
+          "ybot": 29.9,
+          "ix": 536513
+        },
+        "calculated_in": {
+          "area": 1069.9375,
+          "yb": 29.9089364644,
+          "ix": 536296.8455699934,
+          "st": 17822.4623046225,
+          "sb": 17930.9901643979
+        },
+        "property_residual_fraction": {
+          "area": -0.0003386901,
+          "ybot": 0.0002988784,
+          "ix": -0.0004028876
+        }
+      },
+      "BT66": {
+        "depth": 66,
+        "printed_properties": {
+          "weight_lbs_ft": 1165,
+          "area": 1118.3,
+          "ybot": 32.9,
+          "ix": 680229
+        },
+        "calculated_in": {
+          "area": 1117.9375,
+          "yb": 32.8566603306,
+          "ix": 679954.7799134958,
+          "st": 20515.578294035,
+          "sb": 20694.5798225381
+        },
+        "property_residual_fraction": {
+          "area": -0.0003241527,
+          "ybot": -0.0013173152,
+          "ix": -0.0004031291
+        }
+      },
+      "BT72": {
+        "depth": 72,
+        "printed_properties": {
+          "weight_lbs_ft": 1215,
+          "area": 1166.3,
+          "ybot": 35.8,
+          "ix": 844069
+        },
+        "calculated_in": {
+          "area": 1165.9375,
+          "yb": 35.808688466,
+          "ix": 843729.9821663222,
+          "st": 23313.0535038446,
+          "sb": 23562.1581887118
+        },
+        "property_residual_fraction": {
+          "area": -0.000310812,
+          "ybot": 0.0002426946,
+          "ix": -0.0004016471
+        }
+      }
+    },
+    "geometry_status": "source_dimensioned_49_in_flange",
+    "partial_sections": {
+      "61_in_flange": {
+        "status": "partial_dimensions",
+        "source": "pc_5d",
+        "locator": "PDF p1 lower sections and starred note below upper SECTION A-A; BDG6.60.03 PDF p127",
+        "dimensions_in": {
+          "top_width": 61,
+          "blockout_width_each_side": 6,
+          "web": 8,
+          "bottom_width": 40,
+          "depths": [
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72
+          ]
+        },
+        "calculated_not_published": {
+          "outer_edge_thickness_if_linear_extension_in": 3.9714285714285715,
+          "formula": "5-6*(3/17.5)=139/35 in; conditional continuation of the dimensioned straight slope"
+        },
+        "unresolved": [
+          "Outside edge thickness of61 in flange is not directly labelled; do not substitute4 in by rounding."
+        ],
+        "implemented": false
+      }
+    },
+    "calculated_properties_note": "Gross properties of the implemented source-dimensional polygon in inch units; centroidal Ix. These calculated values and BDG residuals are not source dimensions."
+  },
+  "verification": {
+    "date": "2026-09-30",
+    "method": "Independent full-page visual read, positioned text and enlarged annotation-endpoint review; exact dimension-chain arithmetic. No dimensions measured from PDF scale.",
+    "governing_geometry": "PC-1Q/PC-2L/PC-4J/PC-5D, printed revision 12-22-2025, PDF page 1",
+    "property_reference": "Historical independent MDOT BDG property tables, PDF pages 125-127; source dimensions take precedence over property residuals."
+  }
+}

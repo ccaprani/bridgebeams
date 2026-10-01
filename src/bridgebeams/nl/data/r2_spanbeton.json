@@ -1,0 +1,1745 @@
+{
+ "family": "Spanbeton (Consolis Spanbeton, now VBI) precast prestressed bridge beams: SKK/PIQ box girders, SJP/SJP-flex inverted-T slab beams (volstortliggers), SRP edge beam, ZIP/ZIPXL rail beams",
+ "producer": "Consolis Spanbeton B.V. (Netherlands); bridge-beam production ended 2020 (now VBI)",
+ "source_status": "producer project sheets (archived, production ended 2020)",
+ "units": "mm; tables in the printed multipliers (x10^3 mm2, x10^6 or x10^9 mm4, x10^6 mm3); self-weight kN/m",
+ "sources": {
+  "skk_piq": {
+   "title_original": "Kokerbalkoplossingen SKK & PIQ (projectbladen, SKK-PIQ_A4_projectbladen_v7_1.pdf)",
+   "url": "https://web.archive.org/web/20160913105454/http://www.spanbeton.nl/content/files/Files/Kennisportaal/Kokerbalk/SKK-PIQ_A4_projectbladen_v7_1.pdf",
+   "url_note": "Wayback snapshot located via the CDX API on 2026-09-23; the id_ download of this snapshot is byte-identical (SHA-256) to the local file. Original spanbeton.nl URL is dead (bridge production ended 2020).",
+   "local_file": "sources/expansion/round2/nl/nl_spanbeton-skk-piq-projectbladen.pdf",
+   "sha256": "61cd9027afdd8b3520b8a229941a69dd15be6dcde4a8c512c8d682c5e8346c54",
+   "pdf_creation_date": "2014-11-05",
+   "drawing_dates": "SKK-1/2.dwg 16-12-2013; PIQ.dwg 7-1-2014",
+   "pages": {
+    "3": "Grootheden SKK: SKK 700 t/m 1600 and 1700 t/m 1900 dimensioned sections + tables",
+    "4": "Grootheden PIQ: PIQ 1200 t/m 1450 dimensioned section + tables (b=2790)"
+   },
+   "printed_page": null,
+   "original_url": "http://www.spanbeton.nl/content/files/Files/Kennisportaal/Kokerbalk/SKK-PIQ_A4_projectbladen_v7_1.pdf"
+  },
+  "sjp": {
+   "title_original": "Massief samengestelde oplossingen volstortliggers SJP & SJP FLEX (projectbladen, SJP-SJP-flex_A4_projectbladen_v5.pdf)",
+   "url": "https://web.archive.org/web/20160913093731/http://www.spanbeton.nl/content/files/Files/Kennisportaal/Volstortliggers/SJP-SJP-flex_A4_projectbladen_v5.pdf",
+   "url_note": "Wayback snapshot located via the CDX API on 2026-09-23; the id_ download of this snapshot is byte-identical (SHA-256) to the local file. Original spanbeton.nl URL is dead (bridge production ended 2020).",
+   "local_file": "sources/expansion/round2/nl/nl_spanbeton-sjp-sjpflex-projectbladen.pdf",
+   "sha256": "904e536a81add8540226d917d5ab6cf4bedf5fcdc8cf0e6f67b9a8d5732b0d58",
+   "pdf_creation_date": "2014-09-22",
+   "drawing_dates": "SJP.dwg 10-12-2013",
+   "pages": {
+    "1": "Algemene dwarsdoorsnede: SJP (990 module), SJP-flex (1180 module), SRP edge beam",
+    "3": "Grootheden SJP/SRP: dimensioned SJP and SRP sections + tables",
+    "4": "Grootheden SJP-flex: dimensioned SJP-flex section + tables"
+   },
+   "printed_page": null,
+   "original_url": "http://www.spanbeton.nl/content/files/Files/Kennisportaal/Volstortliggers/SJP-SJP-flex_A4_projectbladen_v5.pdf"
+  },
+  "zip": {
+   "title_original": "Railbalkoplossingen ZIP & ZIPXL (projectbladen, ZIPZIPXL_A4_projectbladen_v6.pdf)",
+   "url": "https://web.archive.org/web/20160913141007/http://www.spanbeton.nl/content/files/Files/Kennisportaal/Railbalk/ZIPZIPXL_A4_projectbladen_v6.pdf",
+   "url_note": "Wayback snapshot located via the CDX API on 2026-09-23; the id_ download of this snapshot is byte-identical (SHA-256) to the local file. Original spanbeton.nl URL is dead (bridge production ended 2020).",
+   "local_file": "sources/expansion/round2/nl/nl_spanbeton-zip-zipxl-projectbladen.pdf",
+   "sha256": "4ca58ddf7d255cdb83262760dd378e0dd7e3e98d7ea967bd6ecbec0484909d96",
+   "drawing_dates": "ZIPXL-1/2.dwg 11-12-2013",
+   "pages": {
+    "1": "Algemene dwarsdoorsnede ZIP/ZIPXL (bridge cross-sections)",
+    "3": "Grootheden ZIP/ZIPXL: h/h1/ht + prefab and composite tables",
+    "4": "Afmetingen ZIP/ZIPXL: dimensioned ZIP 500-900, ZIPXL 1000-1700, ZIPXL 1800-2400, TRN"
+   },
+   "printed_page": null,
+   "original_url": "http://www.spanbeton.nl/content/files/Files/Kennisportaal/Railbalk/ZIPZIPXL_A4_projectbladen_v6.pdf"
+  }
+ },
+ "method": "Dimensions read on 150-500 dpi renders (pdftoppm) of the pages listed; undimensioned details (void haunches, void ledge, edge keys, chamfers, ZIPXL-2 flange curve) measured from the vector paths of the filled section drawings (PyMuPDF), scaled by the printed overall width. Published properties are the 'Grootheden prefabligger' (bare precast) columns only; composite ('samengestelde constructie') columns are recorded but not used.",
+ "geometry_notes": [
+  "Millimetres, origin at mid-soffit (SRP: mid of its 300 mm soffit), y up. Box voids are real polygon interiors.",
+  "SKK: printed b=1480 (700-1600) / 1180 (1700-1900), top slab 170/225, bottom slab 140/175, web min. 155, joint rebate 30 deep from 315 below top. Rebate floor drawn with a 5 mm fall (315 outer, 310 inner) - taken from vector drawing.",
+  "SKK void details measured from vector drawing (convention): top haunch 75 x 200, bottom chamfer 75 x 75, 20 mm ledge under the top slab whose inner edge is at x = +/-415 (b=1480) or +/-355 (b=1180); soffit corner chamfer 15 x 15. Transverse ducts (dwarssparingen h.o.h. 1200) excluded.",
+  "SKK published Zb for 700-1500 is ~h/2 (+5) whereas the dimensioned outline (170 top / 140 bottom slab plus top rebate) gives Zb 8-16 mm higher; the SKK-1600 row agrees with the same outline to 0.5 mm. Pinned in tests, not fitted. Hollow self-weight/25 is 0-4 % above the model area (irregular increments, e.g. +0.2 kN/m from 1500 to 1600), so it is recorded but only loosely tested.",
+  "PIQ: top 1820 + 2x40 rebate (shoulder 1900 wide, 150 tall below 350 from top), web 183 at soffit (outer faces 1750 apart), top slab 175, bottom slab 140, bottom flange b=2790 (published properties only for b=2790; range 1900-2790 not parametrised). Web taper, flange tip thickness 114 and top-flange slope, 38 mm shoulder chamfer, void haunches (75x200 top, 85x75 bottom) and 20 mm ledge measured from the vector drawing. Web outer/inner faces keep their printed widths at fixed offsets from soffit/top for other heights (convention).",
+  "PIQ published Ab (1120-1210e3) exceeds hollow self-weight/25 kN/m3 (1060-1160e3), which the modelled outline matches within 1.5%; Zb published 31-38 mm below model. Pinned.",
+  "SJP: 990 = 365+260+365, flange edge 85, flange top rises 20 to the stem root at 105 above soffit, stem 260 at root tapering to b at h1-h2 then vertical. Taper per side 0.225 reproduces every printed b to 0.3 mm. Root fillet (~25 R), soffit corner rounding and 4 mm edge draft omitted (convention).",
+  "SJP / SJP-flex published prefab properties are 'stijfheid t.p.v. de sparingen' (stiffness at the transverse openings). They agree with the gross outline minus the opening SMEARED along the span (SJP: dia 80 at 250 c/c, centre 172 above soffit -> band 132-212 reduced by pi*40^2/(80*250) = 25.1 %; SJP-flex: 145 x 100 at 250 c/c, band 160-260 reduced by 145/250 = 58 %). The polygon is the solid gross section between openings; the smeared reduction is applied only in validation.",
+  "SJP-flex: 1180 = 415+350+415, flange edge 110, stem 350 vertical to y=286 (scaled; 286.4 implied by printed b), taper 0.44 per side to b at h1-h2. Flange-top step (+20 at 143 from edge) and slope (+10 to 190 from centre) and 15 mm root chamfer scaled from vector drawing. Printed b=556 for SJP-flex 550 breaks the 0.88 mm/mm taper of every other row (582 expected); 582 implemented (areas/increments fit 582) and the printed value pinned.",
+  "SRP edge beam (L): 490 = 100+90+300 at soffit level chain, 275+50+165 at top; cantilever 225 thick at the outer face, soffit 250 sloping face from (100, h1-225) to (190, h3); h2 = h1-190, h3 = h1-475 (all printed). 11 mm drip nib and 15-20 mm corner chamfers omitted (convention).",
+  "SRP published Ib is 5.0-5.5 % above the transcribed outline for every size while A and Zb agree within 0.5 % / 0.6 mm; no symmetric-bending reinterpretation (principal or product-of-inertia) reproduces it. Pinned family-wide.",
+  "ZIP/ZIPXL are single rail beams (railbalk) placed side by side, not multi-rib units: page 4 dimensions every rib. ZIP: 1180 = 440+300+225+215, edge 140, flange top +35 over 215, haunch +100 over 225 to the 300 stem, 230 x 35 top nib ABOVE h (h is measured to the shoulder; h1 = h-275).",
+  "ZIPXL 1000-1700: 1480 = 615+250+240+375, edge 140, +68, haunch +187 to the 250 stem at 395; head 500 wide x h1 tall below h, chamfer 120 tall (105 for ZIPXL 1000) to the stem; 430 x 35 nib ABOVE h.",
+  "ZIPXL 1800-2400: same bottom flange/stem; top flange 1440 wide, 40 edge, 1370 x 45 nib, h includes the nib; flange soffit is a curve spanning 190 vertically from the stem (y=h-275) to the flange edge (y=h-85), modelled as the drawn cubic Bezier (control points (125,h-275),(125,h-275),(500,h-90),(720,h-85), mirrored), sampled at 12 segments.",
+  "ZIP/ZIPXL flange-edge shear-key profile (inset 24 at soffit, 7 at y=19, 0 at y=60, 32 at y=92, 15 at y=140) measured from vector drawings; stem-root fillets omitted.",
+  "ZIP/ZIPXL self-weight column ('ZIP') divided by 25 kN/m3 agrees with the modelled area within 0.4 % for every size, confirming the outlines. The prefab property table does not: Ab is 2-3 % (ZIP), 4.8-7.2 % (ZIPXL 1000-1700) and 3.3-4.0 % (ZIPXL 1800-2400) above; ZIPXL 1000-1700 Zb 29-35 mm above and Ib 10-19 % above. Cause unknown (a transformed section including prestressing steel is one possibility - unverified); pinned, not fitted.",
+  "ZIP 700 printed Zb=225 contradicts its own Wb (I/Wb = 16230/66 = 246 mm); model gives 246.8. Pinned as a source typo.",
+  "ZIPXL 2200 printed W'b=780 contradicts I/(h-Zb) = 701180/1175 = 597; not used.",
+  "Not implemented: TRN edge beam (ZIP p4; width 'minimaal 600 / maximaal 1240' variable), SJP R/TRN edge beams (p1, no properties), SKK/PIQ edge solutions (p2)."
+ ],
+ "self_weight_density_kN_m3": 25.0,
+ "skk": {
+  "provenance": "transcribed-with-convention",
+  "pdf_page": 3,
+  "dimensions_printed_mm": {
+   "b_700_1600": 1480,
+   "b_1700_1900": 1180,
+   "top_slab": [
+    170,
+    225
+   ],
+   "bottom_slab": [
+    140,
+    175
+   ],
+   "web_min": 155,
+   "rebate_depth": 30,
+   "rebate_level_below_top": 315,
+   "dwarssparingen_hoh": 1200
+  },
+  "dimensions_measured_mm": {
+   "top_haunch_xy": [
+    75,
+    200
+   ],
+   "bottom_chamfer_xy": [
+    75,
+    75
+   ],
+   "ledge_depth": 20,
+   "ledge_half_width": [
+    415,
+    355
+   ],
+   "soffit_chamfer": 15,
+   "rebate_floor_fall": 5
+  },
+  "sizes": {
+   "SKK-1900": {
+    "ht_mm": 1900,
+    "self_weight_solid_kN_m": 55.5,
+    "self_weight_hollow_kN_m": 23.5,
+    "Ib_1e9_mm4": 435,
+    "Zb_mm": 973,
+    "Ab_1e3_mm2": 938,
+    "Wb_1e6_mm3": 450,
+    "W_top_1e6_mm3": 460,
+    "variant": "SKK 1700 t/m 1900 (b=1180)",
+    "residuals": {
+     "A_model_mm2": 941850.0,
+     "Zb_model_mm": 977.18,
+     "Ib_model_mm4": 427049982000.0,
+     "dA_rel": 0.0041,
+     "dZb_mm": 4.18,
+     "dI_rel": -0.01828,
+     "dSelfWeight_rel": 0.00197
+    }
+   },
+   "SKK-1800": {
+    "ht_mm": 1800,
+    "self_weight_solid_kN_m": 52.5,
+    "self_weight_hollow_kN_m": 22.7,
+    "Ib_1e9_mm4": 375,
+    "Zb_mm": 922,
+    "Ab_1e3_mm2": 907,
+    "Wb_1e6_mm3": 415,
+    "W_top_1e6_mm3": 425,
+    "variant": "SKK 1700 t/m 1900 (b=1180)",
+    "residuals": {
+     "A_model_mm2": 910850.0,
+     "Zb_model_mm": 926.04,
+     "Ib_model_mm4": 371854994000.0,
+     "dA_rel": 0.00424,
+     "dZb_mm": 4.04,
+     "dI_rel": -0.00839,
+     "dSelfWeight_rel": 0.00314
+    }
+   },
+   "SKK-1700": {
+    "ht_mm": 1700,
+    "self_weight_solid_kN_m": 49.6,
+    "self_weight_hollow_kN_m": 21.9,
+    "Ib_1e9_mm4": 325,
+    "Zb_mm": 871,
+    "Ab_1e3_mm2": 876,
+    "Wb_1e6_mm3": 380,
+    "W_top_1e6_mm3": 385,
+    "variant": "SKK 1700 t/m 1900 (b=1180)",
+    "residuals": {
+     "A_model_mm2": 879850.0,
+     "Zb_model_mm": 874.83,
+     "Ib_model_mm4": 321211738000.0,
+     "dA_rel": 0.00439,
+     "dZb_mm": 3.83,
+     "dI_rel": -0.01166,
+     "dSelfWeight_rel": 0.00439
+    }
+   },
+   "SKK-1600": {
+    "ht_mm": 1600,
+    "self_weight_solid_kN_m": 58.6,
+    "self_weight_hollow_kN_m": 21.8,
+    "Ib_1e9_mm4": 300,
+    "Zb_mm": 823,
+    "Ab_1e3_mm2": 871,
+    "Wb_1e6_mm3": 370,
+    "W_top_1e6_mm3": 380,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 867150.0,
+     "Zb_model_mm": 822.54,
+     "Ib_model_mm4": 296371702000.0,
+     "dA_rel": -0.00442,
+     "dZb_mm": -0.46,
+     "dI_rel": -0.01209,
+     "dSelfWeight_rel": -0.00556
+    }
+   },
+   "SKK-1500": {
+    "ht_mm": 1500,
+    "self_weight_solid_kN_m": 55.0,
+    "self_weight_hollow_kN_m": 21.6,
+    "Ib_1e9_mm4": 255,
+    "Zb_mm": 755,
+    "Ab_1e3_mm2": 845,
+    "Wb_1e6_mm3": 340,
+    "W_top_1e6_mm3": 345,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 836150.0,
+     "Zb_model_mm": 771.41,
+     "Ib_model_mm4": 252183126000.0,
+     "dA_rel": -0.01047,
+     "dZb_mm": 16.41,
+     "dI_rel": -0.01105,
+     "dSelfWeight_rel": -0.03223
+    }
+   },
+   "SKK-1400": {
+    "ht_mm": 1400,
+    "self_weight_solid_kN_m": 51.3,
+    "self_weight_hollow_kN_m": 20.9,
+    "Ib_1e9_mm4": 215,
+    "Zb_mm": 705,
+    "Ab_1e3_mm2": 815,
+    "Wb_1e6_mm3": 305,
+    "W_top_1e6_mm3": 310,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 805150.0,
+     "Zb_model_mm": 720.2,
+     "Ib_model_mm4": 212173029000.0,
+     "dA_rel": -0.01209,
+     "dZb_mm": 15.2,
+     "dI_rel": -0.01315,
+     "dSelfWeight_rel": -0.0369
+    }
+   },
+   "SKK-1300": {
+    "ht_mm": 1300,
+    "self_weight_solid_kN_m": 47.6,
+    "self_weight_hollow_kN_m": 20.2,
+    "Ib_1e9_mm4": 180,
+    "Zb_mm": 655,
+    "Ab_1e3_mm2": 785,
+    "Wb_1e6_mm3": 275,
+    "W_top_1e6_mm3": 280,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 774150.0,
+     "Zb_model_mm": 668.9,
+     "Ib_model_mm4": 176186139000.0,
+     "dA_rel": -0.01382,
+     "dZb_mm": 13.9,
+     "dI_rel": -0.02119,
+     "dSelfWeight_rel": -0.04189
+    }
+   },
+   "SKK-1200": {
+    "ht_mm": 1200,
+    "self_weight_solid_kN_m": 43.9,
+    "self_weight_hollow_kN_m": 19.4,
+    "Ib_1e9_mm4": 145,
+    "Zb_mm": 605,
+    "Ab_1e3_mm2": 755,
+    "Wb_1e6_mm3": 245,
+    "W_top_1e6_mm3": 245,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 743150.0,
+     "Zb_model_mm": 617.48,
+     "Ib_model_mm4": 144067137000.0,
+     "dA_rel": -0.0157,
+     "dZb_mm": 12.48,
+     "dI_rel": -0.00643,
+     "dSelfWeight_rel": -0.04233
+    }
+   },
+   "SKK-1100": {
+    "ht_mm": 1100,
+    "self_weight_solid_kN_m": 40.2,
+    "self_weight_hollow_kN_m": 18.4,
+    "Ib_1e9_mm4": 120,
+    "Zb_mm": 555,
+    "Ab_1e3_mm2": 725,
+    "Wb_1e6_mm3": 215,
+    "W_top_1e6_mm3": 215,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 712150.0,
+     "Zb_model_mm": 565.94,
+     "Ib_model_mm4": 115660649000.0,
+     "dA_rel": -0.01772,
+     "dZb_mm": 10.94,
+     "dI_rel": -0.03616,
+     "dSelfWeight_rel": -0.0324
+    }
+   },
+   "SKK-1000": {
+    "ht_mm": 1000,
+    "self_weight_solid_kN_m": 36.5,
+    "self_weight_hollow_kN_m": 17.6,
+    "Ib_1e9_mm4": 93,
+    "Zb_mm": 500,
+    "Ab_1e3_mm2": 690,
+    "Wb_1e6_mm3": 185,
+    "W_top_1e6_mm3": 185,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 681150.0,
+     "Zb_model_mm": 514.27,
+     "Ib_model_mm4": 90811234000.0,
+     "dA_rel": -0.01283,
+     "dZb_mm": 14.27,
+     "dI_rel": -0.02354,
+     "dSelfWeight_rel": -0.03246
+    }
+   },
+   "SKK-900": {
+    "ht_mm": 900,
+    "self_weight_solid_kN_m": 32.8,
+    "self_weight_hollow_kN_m": 16.6,
+    "Ib_1e9_mm4": 71,
+    "Zb_mm": 450,
+    "Ab_1e3_mm2": 660,
+    "Wb_1e6_mm3": 155,
+    "W_top_1e6_mm3": 160,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 650150.0,
+     "Zb_model_mm": 462.43,
+     "Ib_model_mm4": 69363365000.0,
+     "dA_rel": -0.01492,
+     "dZb_mm": 12.43,
+     "dI_rel": -0.02305,
+     "dSelfWeight_rel": -0.02086
+    }
+   },
+   "SKK-800": {
+    "ht_mm": 800,
+    "self_weight_solid_kN_m": 29.1,
+    "self_weight_hollow_kN_m": 15.7,
+    "Ib_1e9_mm4": 52,
+    "Zb_mm": 400,
+    "Ab_1e3_mm2": 630,
+    "Wb_1e6_mm3": 130,
+    "W_top_1e6_mm3": 130,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 619150.0,
+     "Zb_model_mm": 410.4,
+     "Ib_model_mm4": 51161411000.0,
+     "dA_rel": -0.01722,
+     "dZb_mm": 10.4,
+     "dI_rel": -0.01613,
+     "dSelfWeight_rel": -0.01409
+    }
+   },
+   "SKK-700": {
+    "ht_mm": 700,
+    "self_weight_solid_kN_m": 25.4,
+    "self_weight_hollow_kN_m": 14.9,
+    "Ib_1e9_mm4": 37,
+    "Zb_mm": 350,
+    "Ab_1e3_mm2": 600,
+    "Wb_1e6_mm3": 105,
+    "W_top_1e6_mm3": 105,
+    "variant": "SKK 700 t/m 1600 (b=1480)",
+    "residuals": {
+     "A_model_mm2": 588150.0,
+     "Zb_model_mm": 358.17,
+     "Ib_model_mm4": 36049608000.0,
+     "dA_rel": -0.01975,
+     "dZb_mm": 8.17,
+     "dI_rel": -0.02569,
+     "dSelfWeight_rel": -0.01317
+    }
+   }
+  }
+ },
+ "piq": {
+  "provenance": "transcribed-with-convention",
+  "pdf_page": 4,
+  "dimensions_printed_mm": {
+   "top_width": 1820,
+   "rebate": 40,
+   "shoulder_width_min": 1900,
+   "bottom_width_min_max": [
+    1900,
+    2790
+   ],
+   "bottom_width_used": 2790,
+   "web_at_soffit": 183,
+   "web_outer_faces": 1750,
+   "top_slab": 175,
+   "bottom_slab": 140,
+   "rebate_level_below_top": 350,
+   "dwarssparingen_hoh": 1500
+  },
+  "dimensions_measured_mm": {
+   "shoulder_height": 150,
+   "shoulder_chamfer": 38,
+   "rebate_floor_fall": 6,
+   "web_outer_half_width_top": 912,
+   "web_outer_half_width_bottom": 878,
+   "web_inner_half_width_top": 736,
+   "flange_tip_thickness": 114,
+   "flange_root": [
+    900,
+    176
+   ],
+   "top_haunch_xy": [
+    76,
+    200
+   ],
+   "bottom_chamfer_xy": [
+    85,
+    75
+   ],
+   "ledge_depth": 20,
+   "ledge_half_width": 612,
+   "soffit_edge_chamfer": 35
+  },
+  "sizes": {
+   "PIQ-1450": {
+    "ht_mm": 1450,
+    "self_weight_solid_kN_m": 69.0,
+    "self_weight_hollow_kN_m": 29.0,
+    "Ib_1e9_mm4": 360,
+    "Zb_mm": 640,
+    "Ab_1e3_mm2": 1210,
+    "Wb_1e6_mm3": 565,
+    "W_top_1e6_mm3": 445,
+    "b_mm": 2790,
+    "residuals": {
+     "A_model_mm2": 1165414.0,
+     "Zb_model_mm": 677.45,
+     "Ib_model_mm4": 349244908000.0,
+     "dA_rel": -0.03685,
+     "dZb_mm": 37.45,
+     "dI_rel": -0.02988,
+     "dSelfWeight_rel": 0.00467
+    }
+   },
+   "PIQ-1400": {
+    "ht_mm": 1400,
+    "self_weight_solid_kN_m": 67.0,
+    "self_weight_hollow_kN_m": 28.5,
+    "Ib_1e9_mm4": 330,
+    "Zb_mm": 615,
+    "Ab_1e3_mm2": 1195,
+    "Wb_1e6_mm3": 540,
+    "W_top_1e6_mm3": 420,
+    "b_mm": 2790,
+    "residuals": {
+     "A_model_mm2": 1147464.0,
+     "Zb_model_mm": 653.21,
+     "Ib_model_mm4": 320339308000.0,
+     "dA_rel": -0.03978,
+     "dZb_mm": 38.21,
+     "dI_rel": -0.02927,
+     "dSelfWeight_rel": 0.00655
+    }
+   },
+   "PIQ-1350": {
+    "ht_mm": 1350,
+    "self_weight_solid_kN_m": 64.5,
+    "self_weight_hollow_kN_m": 28.0,
+    "Ib_1e9_mm4": 300,
+    "Zb_mm": 595,
+    "Ab_1e3_mm2": 1175,
+    "Wb_1e6_mm3": 510,
+    "W_top_1e6_mm3": 400,
+    "b_mm": 2790,
+    "residuals": {
+     "A_model_mm2": 1129514.0,
+     "Zb_model_mm": 628.99,
+     "Ib_model_mm4": 292863580000.0,
+     "dA_rel": -0.03871,
+     "dZb_mm": 33.99,
+     "dI_rel": -0.02379,
+     "dSelfWeight_rel": 0.00849
+    }
+   },
+   "PIQ-1300": {
+    "ht_mm": 1300,
+    "self_weight_solid_kN_m": 62.5,
+    "self_weight_hollow_kN_m": 27.5,
+    "Ib_1e9_mm4": 275,
+    "Zb_mm": 570,
+    "Ab_1e3_mm2": 1155,
+    "Wb_1e6_mm3": 485,
+    "W_top_1e6_mm3": 375,
+    "b_mm": 2790,
+    "residuals": {
+     "A_model_mm2": 1111564.0,
+     "Zb_model_mm": 604.79,
+     "Ib_model_mm4": 266795247000.0,
+     "dA_rel": -0.03761,
+     "dZb_mm": 34.79,
+     "dI_rel": -0.02984,
+     "dSelfWeight_rel": 0.01051
+    }
+   },
+   "PIQ-1250": {
+    "ht_mm": 1250,
+    "self_weight_solid_kN_m": 60.0,
+    "self_weight_hollow_kN_m": 27.0,
+    "Ib_1e9_mm4": 250,
+    "Zb_mm": 545,
+    "Ab_1e3_mm2": 1135,
+    "Wb_1e6_mm3": 455,
+    "W_top_1e6_mm3": 355,
+    "b_mm": 2790,
+    "residuals": {
+     "A_model_mm2": 1093614.0,
+     "Zb_model_mm": 580.62,
+     "Ib_model_mm4": 242111830000.0,
+     "dA_rel": -0.03646,
+     "dZb_mm": 35.62,
+     "dI_rel": -0.03155,
+     "dSelfWeight_rel": 0.01261
+    }
+   },
+   "PIQ-1200": {
+    "ht_mm": 1200,
+    "self_weight_solid_kN_m": 57.5,
+    "self_weight_hollow_kN_m": 26.5,
+    "Ib_1e9_mm4": 225,
+    "Zb_mm": 525,
+    "Ab_1e3_mm2": 1120,
+    "Wb_1e6_mm3": 430,
+    "W_top_1e6_mm3": 335,
+    "b_mm": 2790,
+    "residuals": {
+     "A_model_mm2": 1075664.0,
+     "Zb_model_mm": 556.46,
+     "Ib_model_mm4": 218790849000.0,
+     "dA_rel": -0.03959,
+     "dZb_mm": 31.46,
+     "dI_rel": -0.0276,
+     "dSelfWeight_rel": 0.01478
+    }
+   }
+  }
+ },
+ "sjp": {
+  "provenance": "transcribed-with-convention",
+  "pdf_page": 3,
+  "dimensions_printed_mm": {
+   "width": 990,
+   "chain": [
+    365,
+    260,
+    365
+   ],
+   "edge": 85,
+   "rise": 20,
+   "opening_centre": 172,
+   "opening_diameter": 80,
+   "opening_hoh": 250
+  },
+  "sizes": {
+   "SJP-700": {
+    "h1_mm": 700,
+    "h2_mm": 150,
+    "b_mm": 460,
+    "self_weight_kN_m": 7.92,
+    "Ib_1e6_mm4": 16190,
+    "Zb_mm": 324,
+    "Ab_1e3_mm2": 317,
+    "Wb_1e6_mm3": 50,
+    "W_top_1e6_mm3": 43,
+    "residuals": {
+     "A_model_mm2": 320016.9,
+     "Zb_model_mm": 320.68,
+     "Ib_model_mm4": 16295573000.0,
+     "dA_rel": 0.00952,
+     "dZb_mm": -3.32,
+     "dI_rel": 0.00652,
+     "dSelfWeight_rel": 0.01015,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-650": {
+    "h1_mm": 650,
+    "h2_mm": 100,
+    "b_mm": 460,
+    "self_weight_kN_m": 7.35,
+    "Ib_1e6_mm4": 13140,
+    "Zb_mm": 297,
+    "Ab_1e3_mm2": 294,
+    "Wb_1e6_mm3": 44,
+    "W_top_1e6_mm3": 37,
+    "residuals": {
+     "A_model_mm2": 297016.9,
+     "Zb_model_mm": 293.24,
+     "Ib_model_mm4": 13179666000.0,
+     "dA_rel": 0.01026,
+     "dZb_mm": -3.76,
+     "dI_rel": 0.00302,
+     "dSelfWeight_rel": 0.01026,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-600": {
+    "h1_mm": 600,
+    "h2_mm": 50,
+    "b_mm": 460,
+    "self_weight_kN_m": 6.78,
+    "Ib_1e6_mm4": 10440,
+    "Zb_mm": 268,
+    "Ab_1e3_mm2": 274,
+    "Wb_1e6_mm3": 39,
+    "W_top_1e6_mm3": 31,
+    "residuals": {
+     "A_model_mm2": 274016.9,
+     "Zb_model_mm": 265.39,
+     "Ib_model_mm4": 10430908000.0,
+     "dA_rel": 6e-05,
+     "dZb_mm": -2.61,
+     "dI_rel": -0.00087,
+     "dSelfWeight_rel": 0.01039,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-550": {
+    "h1_mm": 550,
+    "h2_mm": 0,
+    "b_mm": 460,
+    "self_weight_kN_m": 6.22,
+    "Ib_1e6_mm4": 8050,
+    "Zb_mm": 239,
+    "Ab_1e3_mm2": 249,
+    "Wb_1e6_mm3": 34,
+    "W_top_1e6_mm3": 26,
+    "residuals": {
+     "A_model_mm2": 251016.9,
+     "Zb_model_mm": 237.03,
+     "Ib_model_mm4": 8019416000.0,
+     "dA_rel": 0.0081,
+     "dZb_mm": -1.97,
+     "dI_rel": -0.0038,
+     "dSelfWeight_rel": 0.00891,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-500": {
+    "h1_mm": 500,
+    "h2_mm": 0,
+    "b_mm": 438,
+    "self_weight_kN_m": 5.66,
+    "Ib_1e6_mm4": 6010,
+    "Zb_mm": 209,
+    "Ab_1e3_mm2": 227,
+    "Wb_1e6_mm3": 29,
+    "W_top_1e6_mm3": 21,
+    "residuals": {
+     "A_model_mm2": 228670.3,
+     "Zb_model_mm": 208.8,
+     "Ib_model_mm4": 5971509000.0,
+     "dA_rel": 0.00736,
+     "dZb_mm": -0.2,
+     "dI_rel": -0.0064,
+     "dSelfWeight_rel": 0.01003,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-450": {
+    "h1_mm": 450,
+    "h2_mm": 0,
+    "b_mm": 415,
+    "self_weight_kN_m": 5.14,
+    "Ib_1e6_mm4": 4340,
+    "Zb_mm": 180,
+    "Ab_1e3_mm2": 205,
+    "Wb_1e6_mm3": 24,
+    "W_top_1e6_mm3": 16,
+    "residuals": {
+     "A_model_mm2": 207254.7,
+     "Zb_model_mm": 181.32,
+     "Ib_model_mm4": 4294314000.0,
+     "dA_rel": 0.011,
+     "dZb_mm": 1.32,
+     "dI_rel": -0.01053,
+     "dSelfWeight_rel": 0.00805,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-400": {
+    "h1_mm": 400,
+    "h2_mm": 0,
+    "b_mm": 393,
+    "self_weight_kN_m": 4.64,
+    "Ib_1e6_mm4": 2980,
+    "Zb_mm": 152,
+    "Ab_1e3_mm2": 186,
+    "Wb_1e6_mm3": 20,
+    "W_top_1e6_mm3": 12,
+    "residuals": {
+     "A_model_mm2": 187132.5,
+     "Zb_model_mm": 155.05,
+     "Ib_model_mm4": 2961266000.0,
+     "dA_rel": 0.00609,
+     "dZb_mm": 3.05,
+     "dI_rel": -0.00629,
+     "dSelfWeight_rel": 0.00826,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-350": {
+    "h1_mm": 350,
+    "h2_mm": 0,
+    "b_mm": 370,
+    "self_weight_kN_m": 4.17,
+    "Ib_1e6_mm4": 1920,
+    "Zb_mm": 125,
+    "Ab_1e3_mm2": 167,
+    "Wb_1e6_mm3": 15,
+    "W_top_1e6_mm3": 9,
+    "residuals": {
+     "A_model_mm2": 167992.6,
+     "Zb_model_mm": 130.0,
+     "Ib_model_mm4": 1925543000.0,
+     "dA_rel": 0.00594,
+     "dZb_mm": 5.0,
+     "dI_rel": 0.00289,
+     "dSelfWeight_rel": 0.00715,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-300": {
+    "h1_mm": 300,
+    "h2_mm": 0,
+    "b_mm": 348,
+    "self_weight_kN_m": 3.73,
+    "Ib_1e6_mm4": 1100,
+    "Zb_mm": 100,
+    "Ab_1e3_mm2": 149,
+    "Wb_1e6_mm3": 11,
+    "W_top_1e6_mm3": 6,
+    "residuals": {
+     "A_model_mm2": 150094.5,
+     "Zb_model_mm": 106.69,
+     "Ib_model_mm4": 1156893000.0,
+     "dA_rel": 0.00735,
+     "dZb_mm": 6.69,
+     "dI_rel": 0.05172,
+     "dSelfWeight_rel": 0.006,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   }
+  }
+ },
+ "sjp_flex": {
+  "provenance": "transcribed-with-convention",
+  "pdf_page": 4,
+  "dimensions_printed_mm": {
+   "width": 1180,
+   "chain": [
+    415,
+    350,
+    415
+   ],
+   "edge": 110,
+   "opening": [
+    145,
+    100
+   ],
+   "opening_bottom": 160,
+   "opening_hoh": 250
+  },
+  "dimensions_measured_mm": {
+   "stem_vertical_top": 286,
+   "taper_per_side": 0.44,
+   "flange_step": [
+    447,
+    420,
+    20
+   ],
+   "flange_root": [
+    190,
+    140
+   ],
+   "root_chamfer": 15,
+   "soffit_edge": [
+    [
+     570,
+     0
+    ],
+    [
+     590,
+     20
+    ]
+   ]
+  },
+  "sizes": {
+   "SJP-flex-800": {
+    "h1_mm": 800,
+    "h2_mm": 200,
+    "b_mm_printed": 626,
+    "self_weight_kN_m": 11.3,
+    "Ib_1e6_mm4": 30650,
+    "Zb_mm": 377,
+    "Ab_1e3_mm2": 453,
+    "Wb_1e6_mm3": 81,
+    "W_top_1e6_mm3": 72,
+    "b_mm": 626,
+    "residuals": {
+     "A_model_mm2": 462297.0,
+     "Zb_model_mm": 377.42,
+     "Ib_model_mm4": 31639408000.0,
+     "dA_rel": 0.02052,
+     "dZb_mm": 0.42,
+     "dI_rel": 0.03228,
+     "dSelfWeight_rel": 0.02278,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-750": {
+    "h1_mm": 750,
+    "h2_mm": 150,
+    "b_mm_printed": 626,
+    "self_weight_kN_m": 10.6,
+    "Ib_1e6_mm4": 25540,
+    "Zb_mm": 347,
+    "Ab_1e3_mm2": 423,
+    "Wb_1e6_mm3": 74,
+    "W_top_1e6_mm3": 63,
+    "b_mm": 626,
+    "residuals": {
+     "A_model_mm2": 430997.0,
+     "Zb_model_mm": 348.54,
+     "Ib_model_mm4": 26325896000.0,
+     "dA_rel": 0.01891,
+     "dZb_mm": 1.54,
+     "dI_rel": 0.03077,
+     "dSelfWeight_rel": 0.0165,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-700": {
+    "h1_mm": 700,
+    "h2_mm": 100,
+    "b_mm_printed": 626,
+    "self_weight_kN_m": 9.83,
+    "Ib_1e6_mm4": 20910,
+    "Zb_mm": 317,
+    "Ab_1e3_mm2": 393,
+    "Wb_1e6_mm3": 66,
+    "W_top_1e6_mm3": 55,
+    "b_mm": 626,
+    "residuals": {
+     "A_model_mm2": 399697.0,
+     "Zb_model_mm": 319.06,
+     "Ib_model_mm4": 21536171000.0,
+     "dA_rel": 0.01704,
+     "dZb_mm": 2.06,
+     "dI_rel": 0.02995,
+     "dSelfWeight_rel": 0.01652,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-650": {
+    "h1_mm": 650,
+    "h2_mm": 50,
+    "b_mm_printed": 626,
+    "self_weight_kN_m": 9.08,
+    "Ib_1e6_mm4": 16730,
+    "Zb_mm": 286,
+    "Ab_1e3_mm2": 363,
+    "Wb_1e6_mm3": 58,
+    "W_top_1e6_mm3": 46,
+    "b_mm": 626,
+    "residuals": {
+     "A_model_mm2": 368397.0,
+     "Zb_model_mm": 288.82,
+     "Ib_model_mm4": 17227297000.0,
+     "dA_rel": 0.01487,
+     "dZb_mm": 2.82,
+     "dI_rel": 0.02972,
+     "dSelfWeight_rel": 0.01431,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-600": {
+    "h1_mm": 600,
+    "h2_mm": 0,
+    "b_mm_printed": 626,
+    "self_weight_kN_m": 8.33,
+    "Ib_1e6_mm4": 13000,
+    "Zb_mm": 254,
+    "Ab_1e3_mm2": 333,
+    "Wb_1e6_mm3": 51,
+    "W_top_1e6_mm3": 38,
+    "b_mm": 626,
+    "residuals": {
+     "A_model_mm2": 337097.0,
+     "Zb_model_mm": 257.61,
+     "Ib_model_mm4": 13354918000.0,
+     "dA_rel": 0.0123,
+     "dZb_mm": 3.61,
+     "dI_rel": 0.0273,
+     "dSelfWeight_rel": 0.0117,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-550": {
+    "h1_mm": 550,
+    "h2_mm": 0,
+    "b_mm_printed": 556,
+    "self_weight_kN_m": 7.6,
+    "Ib_1e6_mm4": 9720,
+    "Zb_mm": 222,
+    "Ab_1e3_mm2": 304,
+    "Wb_1e6_mm3": 44,
+    "W_top_1e6_mm3": 30,
+    "b_mm": 582,
+    "residuals": {
+     "A_model_mm2": 306889.0,
+     "Zb_model_mm": 226.34,
+     "Ib_model_mm4": 10000007000.0,
+     "dA_rel": 0.0095,
+     "dZb_mm": 4.34,
+     "dI_rel": 0.02881,
+     "dSelfWeight_rel": 0.0095,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-500": {
+    "h1_mm": 500,
+    "h2_mm": 0,
+    "b_mm_printed": 538,
+    "self_weight_kN_m": 6.91,
+    "Ib_1e6_mm4": 7010,
+    "Zb_mm": 191,
+    "Ab_1e3_mm2": 276,
+    "Wb_1e6_mm3": 37,
+    "W_top_1e6_mm3": 23,
+    "b_mm": 538,
+    "residuals": {
+     "A_model_mm2": 278881.0,
+     "Zb_model_mm": 196.31,
+     "Ib_model_mm4": 7239288000.0,
+     "dA_rel": 0.01044,
+     "dZb_mm": 5.31,
+     "dI_rel": 0.03271,
+     "dSelfWeight_rel": 0.00898,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-450": {
+    "h1_mm": 450,
+    "h2_mm": 0,
+    "b_mm_printed": 494,
+    "self_weight_kN_m": 6.28,
+    "Ib_1e6_mm4": 4840,
+    "Zb_mm": 162,
+    "Ab_1e3_mm2": 251,
+    "Wb_1e6_mm3": 30,
+    "W_top_1e6_mm3": 17,
+    "b_mm": 494,
+    "residuals": {
+     "A_model_mm2": 253073.0,
+     "Zb_model_mm": 167.86,
+     "Ib_model_mm4": 5019704000.0,
+     "dA_rel": 0.00826,
+     "dZb_mm": 5.86,
+     "dI_rel": 0.03713,
+     "dSelfWeight_rel": 0.00746,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-400": {
+    "h1_mm": 400,
+    "h2_mm": 0,
+    "b_mm_printed": 450,
+    "self_weight_kN_m": 5.71,
+    "Ib_1e6_mm4": 3150,
+    "Zb_mm": 135,
+    "Ab_1e3_mm2": 228,
+    "Wb_1e6_mm3": 23,
+    "W_top_1e6_mm3": 12,
+    "b_mm": 450,
+    "residuals": {
+     "A_model_mm2": 229465.0,
+     "Zb_model_mm": 141.36,
+     "Ib_model_mm4": 3288157000.0,
+     "dA_rel": 0.00643,
+     "dZb_mm": 6.36,
+     "dI_rel": 0.04386,
+     "dSelfWeight_rel": 0.00466,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-350": {
+    "h1_mm": 350,
+    "h2_mm": 0,
+    "b_mm_printed": 406,
+    "self_weight_kN_m": 5.19,
+    "Ib_1e6_mm4": 1880,
+    "Zb_mm": 111,
+    "Ab_1e3_mm2": 208,
+    "Wb_1e6_mm3": 17,
+    "W_top_1e6_mm3": 7.9,
+    "b_mm": 406,
+    "residuals": {
+     "A_model_mm2": 208057.0,
+     "Zb_model_mm": 117.28,
+     "Ib_model_mm4": 1990269000.0,
+     "dA_rel": 0.00027,
+     "dZb_mm": 6.28,
+     "dI_rel": 0.05865,
+     "dSelfWeight_rel": 0.0022,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   },
+   "SJP-flex-300": {
+    "h1_mm": 300,
+    "h2_mm": 0,
+    "b_mm_printed": 362,
+    "self_weight_kN_m": 4.73,
+    "Ib_1e6_mm4": 990,
+    "Zb_mm": 90,
+    "Ab_1e3_mm2": 189,
+    "Wb_1e6_mm3": 11,
+    "W_top_1e6_mm3": 4.7,
+    "b_mm": 362,
+    "residuals": {
+     "A_model_mm2": 188849.0,
+     "Zb_model_mm": 96.11,
+     "Ib_model_mm4": 1069050000.0,
+     "dA_rel": -0.0008,
+     "dZb_mm": 6.11,
+     "dI_rel": 0.07985,
+     "dSelfWeight_rel": -0.00186,
+     "note": "model includes smeared transverse openings (see geometry_notes)"
+    }
+   }
+  }
+ },
+ "srp": {
+  "provenance": "transcribed-with-convention",
+  "pdf_page": 3,
+  "dimensions_printed_mm": {
+   "width": 490,
+   "soffit_chain": [
+    100,
+    90,
+    300
+   ],
+   "top_chain": [
+    275,
+    50,
+    165
+   ],
+   "cantilever": 225,
+   "slope_height": 250,
+   "step_below_top": 190
+  },
+  "sizes": {
+   "SRP-900": {
+    "h1_mm": 900,
+    "h2_mm": 710,
+    "h3_mm": 425,
+    "self_weight_kN_m": 7.18,
+    "Ib_1e6_mm4": 19725,
+    "Zb_mm": 460,
+    "Ab_1e3_mm2": 287,
+    "Wb_1e6_mm3": 44,
+    "W_top_1e6_mm3": 44,
+    "residuals": {
+     "A_model_mm2": 287900.0,
+     "Zb_model_mm": 460.61,
+     "Ib_model_mm4": 18742350000.0,
+     "dA_rel": 0.00314,
+     "dZb_mm": 0.61,
+     "dI_rel": -0.04982,
+     "dSelfWeight_rel": 0.00244
+    }
+   },
+   "SRP-850": {
+    "h1_mm": 850,
+    "h2_mm": 660,
+    "h3_mm": 375,
+    "self_weight_kN_m": 6.8,
+    "Ib_1e6_mm4": 16580,
+    "Zb_mm": 434,
+    "Ab_1e3_mm2": 272,
+    "Wb_1e6_mm3": 39,
+    "W_top_1e6_mm3": 39,
+    "residuals": {
+     "A_model_mm2": 272900.0,
+     "Zb_model_mm": 434.56,
+     "Ib_model_mm4": 15736371000.0,
+     "dA_rel": 0.00331,
+     "dZb_mm": 0.56,
+     "dI_rel": -0.05088,
+     "dSelfWeight_rel": 0.00331
+    }
+   },
+   "SRP-800": {
+    "h1_mm": 800,
+    "h2_mm": 610,
+    "h3_mm": 325,
+    "self_weight_kN_m": 6.43,
+    "Ib_1e6_mm4": 13790,
+    "Zb_mm": 408,
+    "Ab_1e3_mm2": 257,
+    "Wb_1e6_mm3": 34,
+    "W_top_1e6_mm3": 34,
+    "residuals": {
+     "A_model_mm2": 257900.0,
+     "Zb_model_mm": 408.38,
+     "Ib_model_mm4": 13070836000.0,
+     "dA_rel": 0.0035,
+     "dZb_mm": 0.38,
+     "dI_rel": -0.05215,
+     "dSelfWeight_rel": 0.00272
+    }
+   },
+   "SRP-750": {
+    "h1_mm": 750,
+    "h2_mm": 560,
+    "h3_mm": 275,
+    "self_weight_kN_m": 6.05,
+    "Ib_1e6_mm4": 11325,
+    "Zb_mm": 382,
+    "Ab_1e3_mm2": 242,
+    "Wb_1e6_mm3": 30,
+    "W_top_1e6_mm3": 30,
+    "residuals": {
+     "A_model_mm2": 242900.0,
+     "Zb_model_mm": 382.05,
+     "Ib_model_mm4": 10726870000.0,
+     "dA_rel": 0.00372,
+     "dZb_mm": 0.05,
+     "dI_rel": -0.05282,
+     "dSelfWeight_rel": 0.00372
+    }
+   },
+   "SRP-700": {
+    "h1_mm": 700,
+    "h2_mm": 510,
+    "h3_mm": 225,
+    "self_weight_kN_m": 5.68,
+    "Ib_1e6_mm4": 9180,
+    "Zb_mm": 355,
+    "Ab_1e3_mm2": 227,
+    "Wb_1e6_mm3": 26,
+    "W_top_1e6_mm3": 26,
+    "residuals": {
+     "A_model_mm2": 227900.0,
+     "Zb_model_mm": 355.55,
+     "Ib_model_mm4": 8685564000.0,
+     "dA_rel": 0.00396,
+     "dZb_mm": 0.55,
+     "dI_rel": -0.05386,
+     "dSelfWeight_rel": 0.00308
+    }
+   },
+   "SRP-650": {
+    "h1_mm": 650,
+    "h2_mm": 460,
+    "h3_mm": 175,
+    "self_weight_kN_m": 5.3,
+    "Ib_1e6_mm4": 7325,
+    "Zb_mm": 329,
+    "Ab_1e3_mm2": 212,
+    "Wb_1e6_mm3": 23,
+    "W_top_1e6_mm3": 22,
+    "residuals": {
+     "A_model_mm2": 212900.0,
+     "Zb_model_mm": 328.84,
+     "Ib_model_mm4": 6927965000.0,
+     "dA_rel": 0.00425,
+     "dZb_mm": -0.16,
+     "dI_rel": -0.0542,
+     "dSelfWeight_rel": 0.00425
+    }
+   },
+   "SRP-600": {
+    "h1_mm": 600,
+    "h2_mm": 410,
+    "h3_mm": 125,
+    "self_weight_kN_m": 4.93,
+    "Ib_1e6_mm4": 5750,
+    "Zb_mm": 302,
+    "Ab_1e3_mm2": 197,
+    "Wb_1e6_mm3": 20,
+    "W_top_1e6_mm3": 19,
+    "residuals": {
+     "A_model_mm2": 197900.0,
+     "Zb_model_mm": 301.87,
+     "Ib_model_mm4": 5435055000.0,
+     "dA_rel": 0.00457,
+     "dZb_mm": -0.13,
+     "dI_rel": -0.05477,
+     "dSelfWeight_rel": 0.00355
+    }
+   },
+   "SRP-550": {
+    "h1_mm": 550,
+    "h2_mm": 360,
+    "h3_mm": 75,
+    "self_weight_kN_m": 4.55,
+    "Ib_1e6_mm4": 4430,
+    "Zb_mm": 275,
+    "Ab_1e3_mm2": 182,
+    "Wb_1e6_mm3": 17,
+    "W_top_1e6_mm3": 16,
+    "residuals": {
+     "A_model_mm2": 182900.0,
+     "Zb_model_mm": 274.58,
+     "Ib_model_mm4": 4187733000.0,
+     "dA_rel": 0.00495,
+     "dZb_mm": -0.42,
+     "dI_rel": -0.05469,
+     "dSelfWeight_rel": 0.00495
+    }
+   }
+  }
+ },
+ "zip": {
+  "provenance": "transcribed-with-convention",
+  "pdf_page": 4,
+  "dimensions_printed_mm": {
+   "ZIP": {
+    "width": 1180,
+    "chain": [
+     440,
+     300,
+     225,
+     215
+    ],
+    "edge": 140,
+    "rise": 35,
+    "haunch": 100,
+    "nib": [
+     230,
+     35
+    ]
+   },
+   "ZIPXL_1000_1700": {
+    "width": 1480,
+    "chain": [
+     615,
+     250,
+     240,
+     375
+    ],
+    "edge": 140,
+    "rise": 68,
+    "haunch": 187,
+    "head": 500,
+    "head_chamfer": [
+     120,
+     105
+    ],
+    "nib": [
+     430,
+     35
+    ]
+   },
+   "ZIPXL_1800_2400": {
+    "width": 1480,
+    "chain": [
+     615,
+     250,
+     240,
+     375
+    ],
+    "edge": 140,
+    "rise": 68,
+    "haunch": 187,
+    "top_flange": 1440,
+    "top_edge": 40,
+    "nib": [
+     1370,
+     45
+    ],
+    "curve_height": 190
+   }
+  },
+  "dimensions_measured_mm": {
+   "edge_key_inset_y": [
+    [
+     24,
+     0
+    ],
+    [
+     7,
+     19
+    ],
+    [
+     0,
+     60
+    ],
+    [
+     32,
+     92
+    ],
+    [
+     15,
+     140
+    ]
+   ],
+   "xl2_bezier": [
+    [
+     125,
+     -275
+    ],
+    [
+     125,
+     -275
+    ],
+    [
+     500,
+     -90
+    ],
+    [
+     720,
+     -85
+    ]
+   ]
+  },
+  "sizes": {
+   "ZIPXL-2400": {
+    "drawing": "ZIPXL 1800 t/m 2400",
+    "h_mm": 2400,
+    "h1_mm": 1730,
+    "ht_mm": 2600,
+    "self_weight_kN_m": 26.5,
+    "Ib_1e6_mm4": 868970,
+    "Zb_mm": 1120,
+    "Ab_1e3_mm2": 1095,
+    "Wb_1e6_mm3": 765,
+    "W_top_1e6_mm3": 685,
+    "residuals": {
+     "A_model_mm2": 1058067.9,
+     "Zb_model_mm": 1122.34,
+     "Ib_model_mm4": 827883184000.0,
+     "dA_rel": -0.03373,
+     "dZb_mm": 2.34,
+     "dI_rel": -0.04728,
+     "dSelfWeight_rel": -0.00182
+    }
+   },
+   "ZIPXL-2300": {
+    "drawing": "ZIPXL 1800 t/m 2400",
+    "h_mm": 2300,
+    "h1_mm": 1630,
+    "ht_mm": 2500,
+    "self_weight_kN_m": 25.8,
+    "Ib_1e6_mm4": 782410,
+    "Zb_mm": 1075,
+    "Ab_1e3_mm2": 1070,
+    "Wb_1e6_mm3": 720,
+    "W_top_1e6_mm3": 645,
+    "residuals": {
+     "A_model_mm2": 1033067.9,
+     "Zb_model_mm": 1074.43,
+     "Ib_model_mm4": 745094426000.0,
+     "dA_rel": -0.03452,
+     "dZb_mm": -0.57,
+     "dI_rel": -0.04769,
+     "dSelfWeight_rel": 0.00103
+    }
+   },
+   "ZIPXL-2200": {
+    "drawing": "ZIPXL 1800 t/m 2400",
+    "h_mm": 2200,
+    "h1_mm": 1530,
+    "ht_mm": 2400,
+    "self_weight_kN_m": 25.2,
+    "Ib_1e6_mm4": 701180,
+    "Zb_mm": 1025,
+    "Ab_1e3_mm2": 1050,
+    "Wb_1e6_mm3": 675,
+    "W_top_1e6_mm3": 780,
+    "residuals": {
+     "A_model_mm2": 1008067.9,
+     "Zb_model_mm": 1026.63,
+     "Ib_model_mm4": 667461532000.0,
+     "dA_rel": -0.03994,
+     "dZb_mm": 1.63,
+     "dI_rel": -0.04809,
+     "dSelfWeight_rel": 7e-05
+    }
+   },
+   "ZIPXL-2100": {
+    "drawing": "ZIPXL 1800 t/m 2400",
+    "h_mm": 2100,
+    "h1_mm": 1430,
+    "ht_mm": 2300,
+    "self_weight_kN_m": 24.6,
+    "Ib_1e6_mm4": 625160,
+    "Zb_mm": 980,
+    "Ab_1e3_mm2": 1020,
+    "Wb_1e6_mm3": 630,
+    "W_top_1e6_mm3": 565,
+    "residuals": {
+     "A_model_mm2": 983067.9,
+     "Zb_model_mm": 978.93,
+     "Ib_model_mm4": 594858776000.0,
+     "dA_rel": -0.03621,
+     "dZb_mm": -1.07,
+     "dI_rel": -0.04847,
+     "dSelfWeight_rel": -0.00095
+    }
+   },
+   "ZIPXL-2000": {
+    "drawing": "ZIPXL 1800 t/m 2400",
+    "h_mm": 2000,
+    "h1_mm": 1330,
+    "ht_mm": 2200,
+    "self_weight_kN_m": 24.0,
+    "Ib_1e6_mm4": 554230,
+    "Zb_mm": 930,
+    "Ab_1e3_mm2": 995,
+    "Wb_1e6_mm3": 590,
+    "W_top_1e6_mm3": 525,
+    "residuals": {
+     "A_model_mm2": 958067.9,
+     "Zb_model_mm": 931.36,
+     "Ib_model_mm4": 527160362000.0,
+     "dA_rel": -0.03712,
+     "dZb_mm": 1.36,
+     "dI_rel": -0.04884,
+     "dSelfWeight_rel": -0.00201
+    }
+   },
+   "ZIPXL-1900": {
+    "drawing": "ZIPXL 1800 t/m 2400",
+    "h_mm": 1900,
+    "h1_mm": 1230,
+    "ht_mm": 2100,
+    "self_weight_kN_m": 23.3,
+    "Ib_1e6_mm4": 488250,
+    "Zb_mm": 885,
+    "Ab_1e3_mm2": 970,
+    "Wb_1e6_mm3": 545,
+    "W_top_1e6_mm3": 485,
+    "residuals": {
+     "A_model_mm2": 933067.9,
+     "Zb_model_mm": 883.92,
+     "Ib_model_mm4": 464240405000.0,
+     "dA_rel": -0.03807,
+     "dZb_mm": -1.08,
+     "dI_rel": -0.04917,
+     "dSelfWeight_rel": 0.00115
+    }
+   },
+   "ZIPXL-1800": {
+    "drawing": "ZIPXL 1800 t/m 2400",
+    "h_mm": 1800,
+    "h1_mm": 1130,
+    "ht_mm": 2000,
+    "self_weight_kN_m": 22.7,
+    "Ib_1e6_mm4": 427110,
+    "Zb_mm": 835,
+    "Ab_1e3_mm2": 946,
+    "Wb_1e6_mm3": 505,
+    "W_top_1e6_mm3": 450,
+    "residuals": {
+     "A_model_mm2": 908067.9,
+     "Zb_model_mm": 836.61,
+     "Ib_model_mm4": 405972924000.0,
+     "dA_rel": -0.0401,
+     "dZb_mm": 1.61,
+     "dI_rel": -0.04949,
+     "dSelfWeight_rel": 7e-05
+    }
+   },
+   "ZIPXL-1700": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 1690,
+    "h1_mm": 400,
+    "ht_mm": 1950,
+    "self_weight_kN_m": 20.5,
+    "Ib_1e6_mm4": 318490,
+    "Zb_mm": 740,
+    "Ab_1e3_mm2": 864,
+    "Wb_1e6_mm3": 430,
+    "W_top_1e6_mm3": 325,
+    "residuals": {
+     "A_model_mm2": 822594.0,
+     "Zb_model_mm": 709.9,
+     "Ib_model_mm4": 284470117000.0,
+     "dA_rel": -0.04792,
+     "dZb_mm": -30.1,
+     "dI_rel": -0.10682,
+     "dSelfWeight_rel": 0.00316
+    }
+   },
+   "ZIPXL-1600": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 1590,
+    "h1_mm": 300,
+    "ht_mm": 1850,
+    "self_weight_kN_m": 19.3,
+    "Ib_1e6_mm4": 266260,
+    "Zb_mm": 680,
+    "Ab_1e3_mm2": 814,
+    "Wb_1e6_mm3": 390,
+    "W_top_1e6_mm3": 280,
+    "residuals": {
+     "A_model_mm2": 772594.0,
+     "Zb_model_mm": 647.75,
+     "Ib_model_mm4": 235338034000.0,
+     "dA_rel": -0.05087,
+     "dZb_mm": -32.25,
+     "dI_rel": -0.11613,
+     "dSelfWeight_rel": 0.00077
+    }
+   },
+   "ZIPXL-1500": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 1490,
+    "h1_mm": 200,
+    "ht_mm": 1750,
+    "self_weight_kN_m": 18.0,
+    "Ib_1e6_mm4": 217850,
+    "Zb_mm": 615,
+    "Ab_1e3_mm2": 764,
+    "Wb_1e6_mm3": 355,
+    "W_top_1e6_mm3": 240,
+    "residuals": {
+     "A_model_mm2": 722594.0,
+     "Zb_model_mm": 583.93,
+     "Ib_model_mm4": 189809609000.0,
+     "dA_rel": -0.0542,
+     "dZb_mm": -31.07,
+     "dI_rel": -0.12871,
+     "dSelfWeight_rel": 0.0036
+    }
+   },
+   "ZIPXL-1400": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 1390,
+    "h1_mm": 375,
+    "ht_mm": 1650,
+    "self_weight_kN_m": 18.5,
+    "Ib_1e6_mm4": 192230,
+    "Zb_mm": 600,
+    "Ab_1e3_mm2": 783,
+    "Wb_1e6_mm3": 320,
+    "W_top_1e6_mm3": 235,
+    "residuals": {
+     "A_model_mm2": 741344.0,
+     "Zb_model_mm": 571.33,
+     "Ib_model_mm4": 168675470000.0,
+     "dA_rel": -0.0532,
+     "dZb_mm": -28.67,
+     "dI_rel": -0.12253,
+     "dSelfWeight_rel": 0.00182
+    }
+   },
+   "ZIPXL-1300": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 1290,
+    "h1_mm": 275,
+    "ht_mm": 1550,
+    "self_weight_kN_m": 17.3,
+    "Ib_1e6_mm4": 155260,
+    "Zb_mm": 545,
+    "Ab_1e3_mm2": 733,
+    "Wb_1e6_mm3": 285,
+    "W_top_1e6_mm3": 200,
+    "residuals": {
+     "A_model_mm2": 691344.0,
+     "Zb_model_mm": 513.56,
+     "Ib_model_mm4": 134417333000.0,
+     "dA_rel": -0.05683,
+     "dZb_mm": -31.44,
+     "dI_rel": -0.13424,
+     "dSelfWeight_rel": -0.00095
+    }
+   },
+   "ZIPXL-1200": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 1190,
+    "h1_mm": 175,
+    "ht_mm": 1450,
+    "self_weight_kN_m": 16.0,
+    "Ib_1e6_mm4": 121860,
+    "Zb_mm": 485,
+    "Ab_1e3_mm2": 683,
+    "Wb_1e6_mm3": 250,
+    "W_top_1e6_mm3": 165,
+    "residuals": {
+     "A_model_mm2": 641344.0,
+     "Zb_model_mm": 454.58,
+     "Ib_model_mm4": 103519435000.0,
+     "dA_rel": -0.06099,
+     "dZb_mm": -30.42,
+     "dI_rel": -0.15051,
+     "dSelfWeight_rel": 0.0021
+    }
+   },
+   "ZIPXL-1100": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 1090,
+    "h1_mm": 75,
+    "ht_mm": 1350,
+    "self_weight_kN_m": 14.8,
+    "Ib_1e6_mm4": 91770,
+    "Zb_mm": 425,
+    "Ab_1e3_mm2": 633,
+    "Wb_1e6_mm3": 215,
+    "W_top_1e6_mm3": 130,
+    "residuals": {
+     "A_model_mm2": 591344.0,
+     "Zb_model_mm": 394.08,
+     "Ib_model_mm4": 75707303000.0,
+     "dA_rel": -0.06581,
+     "dZb_mm": -30.92,
+     "dI_rel": -0.17503,
+     "dSelfWeight_rel": -0.00111
+    }
+   },
+   "ZIPXL-1000": {
+    "drawing": "ZIPXL 1000 t/m 1700",
+    "h_mm": 990,
+    "h1_mm": 75,
+    "ht_mm": 1250,
+    "self_weight_kN_m": 14.1,
+    "Ib_1e6_mm4": 71910,
+    "Zb_mm": 390,
+    "Ab_1e3_mm2": 608,
+    "Wb_1e6_mm3": 185,
+    "W_top_1e6_mm3": 115,
+    "residuals": {
+     "A_model_mm2": 564469.0,
+     "Zb_model_mm": 355.34,
+     "Ib_model_mm4": 58163756000.0,
+     "dA_rel": -0.0716,
+     "dZb_mm": -34.66,
+     "dI_rel": -0.19116,
+     "dSelfWeight_rel": 0.00083
+    }
+   },
+   "ZIP-900": {
+    "drawing": "ZIP 500 t/m 900",
+    "h_mm": 890,
+    "h1_mm": 615,
+    "ht_mm": 1150,
+    "self_weight_kN_m": 11.0,
+    "Ib_1e6_mm4": 33450,
+    "Zb_mm": 322,
+    "Ab_1e3_mm2": 449,
+    "Wb_1e6_mm3": 104,
+    "W_top_1e6_mm3": 55,
+    "residuals": {
+     "A_model_mm2": 439344.0,
+     "Zb_model_mm": 324.62,
+     "Ib_model_mm4": 33140129000.0,
+     "dA_rel": -0.02151,
+     "dZb_mm": 2.62,
+     "dI_rel": -0.00926,
+     "dSelfWeight_rel": -0.00149
+    }
+   },
+   "ZIP-800": {
+    "drawing": "ZIP 500 t/m 900",
+    "h_mm": 790,
+    "h1_mm": 515,
+    "ht_mm": 1050,
+    "self_weight_kN_m": 10.2,
+    "Ib_1e6_mm4": 23860,
+    "Zb_mm": 282,
+    "Ab_1e3_mm2": 419,
+    "Wb_1e6_mm3": 84,
+    "W_top_1e6_mm3": 44,
+    "residuals": {
+     "A_model_mm2": 409344.0,
+     "Zb_model_mm": 284.89,
+     "Ib_model_mm4": 23642459000.0,
+     "dA_rel": -0.02305,
+     "dZb_mm": 2.89,
+     "dI_rel": -0.00912,
+     "dSelfWeight_rel": 0.00329
+    }
+   },
+   "ZIP-700": {
+    "drawing": "ZIP 500 t/m 900",
+    "h_mm": 690,
+    "h1_mm": 415,
+    "ht_mm": 950,
+    "self_weight_kN_m": 9.5,
+    "Ib_1e6_mm4": 16230,
+    "Zb_mm": 225,
+    "Ab_1e3_mm2": 389,
+    "Wb_1e6_mm3": 66,
+    "W_top_1e6_mm3": 34,
+    "residuals": {
+     "A_model_mm2": 379344.0,
+     "Zb_model_mm": 246.77,
+     "Ib_model_mm4": 16091645000.0,
+     "dA_rel": -0.02482,
+     "dZb_mm": 21.77,
+     "dI_rel": -0.00852,
+     "dSelfWeight_rel": -0.00173
+    }
+   },
+   "ZIP-600": {
+    "drawing": "ZIP 500 t/m 900",
+    "h_mm": 590,
+    "h1_mm": 315,
+    "ht_mm": 850,
+    "self_weight_kN_m": 8.7,
+    "Ib_1e6_mm4": 10400,
+    "Zb_mm": 209,
+    "Ab_1e3_mm2": 359,
+    "Wb_1e6_mm3": 50,
+    "W_top_1e6_mm3": 25,
+    "residuals": {
+     "A_model_mm2": 349344.0,
+     "Zb_model_mm": 210.7,
+     "Ib_model_mm4": 10311962000.0,
+     "dA_rel": -0.0269,
+     "dZb_mm": 1.7,
+     "dI_rel": -0.00847,
+     "dSelfWeight_rel": 0.00386
+    }
+   },
+   "ZIP-500": {
+    "drawing": "ZIP 500 t/m 900",
+    "h_mm": 490,
+    "h1_mm": 215,
+    "ht_mm": 750,
+    "self_weight_kN_m": 8.0,
+    "Ib_1e6_mm4": 6180,
+    "Zb_mm": 177,
+    "Ab_1e3_mm2": 329,
+    "Wb_1e6_mm3": 35,
+    "W_top_1e6_mm3": 18,
+    "residuals": {
+     "A_model_mm2": 319344.0,
+     "Zb_model_mm": 177.24,
+     "Ib_model_mm4": 6118013000.0,
+     "dA_rel": -0.02935,
+     "dZb_mm": 0.24,
+     "dI_rel": -0.01003,
+     "dSelfWeight_rel": -0.00205
+    }
+   }
+  }
+ }
+}

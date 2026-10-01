@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1000 520" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif"
+     role="img" aria-label="World map of standard bridge beam families covered by bridgebeams">
+  <rect x="0" y="0" width="1000" height="520" fill="#f8fafc"/>
+  <g stroke="#b8c4cc" stroke-width="1" fill="#dde5ea">
+    <!-- North America -->
+    <path d="M 120 78 Q 150 48 210 44 Q 268 40 300 58 Q 322 72 312 96 Q 300 122 278 138
+             Q 262 152 252 172 Q 242 190 228 186 Q 214 182 206 166 Q 196 148 178 142
+             Q 148 132 132 112 Q 116 94 120 78 Z"/>
+    <!-- Central America -->
+    <path d="M 228 186 Q 244 196 262 204 Q 278 212 290 222 Q 282 226 270 220 Q 252 212 240 202 Q 230 194 228 186 Z"/>
+    <!-- South America -->
+    <path d="M 292 226 Q 318 222 344 234 Q 368 246 372 274 Q 376 302 362 330 Q 350 356 336 382
+             Q 326 402 314 396 Q 304 388 304 362 Q 302 332 296 306 Q 288 274 286 252 Q 286 232 292 226 Z"/>
+    <!-- Greenland -->
+    <path d="M 300 26 Q 330 18 352 28 Q 344 46 322 52 Q 304 56 296 44 Q 294 32 300 26 Z"/>
+    <!-- Europe -->
+    <path d="M 470 96 Q 486 82 510 78 Q 534 74 556 80 Q 576 86 580 102 Q 582 118 568 128
+             Q 552 140 534 144 Q 516 148 500 142 Q 482 136 474 122 Q 468 108 470 96 Z"/>
+    <!-- Scandinavia -->
+    <path d="M 522 40 Q 540 32 556 40 Q 566 50 560 66 Q 552 82 540 88 Q 530 80 526 64 Q 522 50 522 40 Z"/>
+    <!-- Africa -->
+    <path d="M 486 156 Q 516 146 552 150 Q 590 154 616 168 Q 636 180 632 204 Q 626 230 610 254
+             Q 596 278 586 304 Q 576 330 560 342 Q 544 350 530 336 Q 514 318 504 292
+             Q 492 262 486 232 Q 478 196 480 174 Q 481 160 486 156 Z"/>
+    <!-- Middle East / Arabia -->
+    <path d="M 586 160 Q 608 154 628 162 Q 646 170 648 188 Q 648 204 634 212 Q 618 218 602 210
+             Q 590 202 586 186 Q 583 170 586 160 Z"/>
+    <!-- Asia -->
+    <path d="M 586 96 Q 622 62 680 52 Q 744 42 800 56 Q 850 68 872 92 Q 886 110 872 128
+             Q 854 148 826 158 Q 796 170 764 176 Q 736 182 712 192 Q 690 200 672 190
+             Q 656 180 648 164 Q 636 148 620 140 Q 600 132 592 118 Q 584 104 586 96 Z"/>
+    <!-- India -->
+    <path d="M 700 176 Q 716 168 730 176 Q 740 186 736 202 Q 730 220 720 236 Q 712 248 704 238
+             Q 696 222 694 204 Q 694 186 700 176 Z"/>
+    <!-- SE Asia -->
+    <path d="M 756 200 Q 772 194 786 202 Q 796 212 790 224 Q 782 234 770 230 Q 760 224 754 214 Q 750 204 756 200 Z"/>
+    <!-- Japan -->
+    <path d="M 878 128 Q 892 122 900 132 Q 906 144 898 158 Q 890 170 880 166 Q 872 158 872 146 Q 874 134 878 128 Z"/>
+    <!-- Indonesia -->
+    <path d="M 768 246 Q 790 240 814 246 Q 834 252 828 260 Q 812 266 790 262 Q 772 258 768 246 Z"/>
+    <!-- Australia -->
+    <path d="M 834 300 Q 862 286 898 292 Q 928 298 940 320 Q 948 342 932 360 Q 912 378 882 376
+             Q 854 374 840 354 Q 828 336 828 318 Q 828 308 834 300 Z"/>
+    <!-- New Zealand -->
+    <path d="M 946 372 Q 958 366 966 376 Q 970 388 960 398 Q 950 404 944 394 Q 942 382 946 372 Z"/>
+  </g>
+
+  <!-- ============ pins ============ -->
+  <g stroke-width="1.5" font-size="11" font-weight="600" text-anchor="middle">
+    <!-- IMPLEMENTED (green) -->
+    <a xlink:href="families.html#ireland-uk" href="families.html#ireland-uk">
+      <title>Ireland — T, TY/TYE, Y/YE, U/SU, M/UMB, SY/SYE, MY/MYE (implemented)</title>
+      <circle cx="479" cy="104" r="13" fill="#2e7d32" stroke="white"/>
+      <text x="479" y="108" fill="white" font-size="9">IE</text>
+      <text x="479" y="88" fill="#2e7d32" font-size="9">Ireland</text>
+    </a>
+    <a xlink:href="families.html#australia" href="families.html#australia">
+      <title>Australia — Super-T, I-girders (implemented)</title>
+      <circle cx="884" cy="330" r="13" fill="#2e7d32" stroke="white"/>
+      <text x="884" y="334" fill="white" font-size="9">AU</text>
+      <text x="884" y="314" fill="#2e7d32" font-size="9">Australia</text>
+    </a>
+
+    <!-- SOURCES COLLECTED / RESEARCHED (blue) -->
+    <a xlink:href="#united-states" href="#united-states">
+      <title>United States — AASHTO/PCI Types I–VI, bulb-tees, box beams (researched)</title>
+      <circle cx="228" cy="140" r="12" fill="#1565c0" stroke="white"/>
+      <text x="228" y="144" fill="white" font-size="9">US</text>
+    </a>
+    <a xlink:href="#canada" href="#canada">
+      <title>Canada — CPCI / NU girders (researched)</title>
+      <circle cx="206" cy="96" r="12" fill="#1565c0" stroke="white"/>
+      <text x="206" y="100" fill="white" font-size="9">CA</text>
+    </a>
+    <a xlink:href="#brazil" href="#brazil">
+      <title>Brazil — standard I-beams / vigas (researched)</title>
+      <circle cx="352" cy="286" r="12" fill="#1565c0" stroke="white"/>
+      <text x="352" y="290" fill="white" font-size="9">BR</text>
+    </a>
+    <a xlink:href="#china" href="#china">
+      <title>China — JTG standard T-beams, hollow slabs, small box girders (researched)</title>
+      <circle cx="790" cy="150" r="12" fill="#1565c0" stroke="white"/>
+      <text x="790" y="154" fill="white" font-size="9">CN</text>
+    </a>
+    <a xlink:href="#india" href="#india">
+      <title>India — IRC standard girders (researched)</title>
+      <circle cx="716" cy="196" r="12" fill="#1565c0" stroke="white"/>
+      <text x="716" y="200" fill="white" font-size="9">IN</text>
+    </a>
+    <a xlink:href="#japan" href="#japan">
+      <title>Japan — JRA PC I-girders (researched)</title>
+      <circle cx="886" cy="148" r="12" fill="#1565c0" stroke="white"/>
+      <text x="886" y="152" fill="white" font-size="9">JP</text>
+    </a>
+    <a xlink:href="#korea" href="#korea">
+      <title>Korea — KDS standard girders (researched)</title>
+      <circle cx="851" cy="146" r="12" fill="#1565c0" stroke="white"/>
+      <text x="851" y="150" fill="white" font-size="9">KR</text>
+    </a>
+
+    <!-- PLANNED SURVEY (grey) -->
+    <a xlink:href="#mexico" href="#mexico">
+      <title>Mexico — SCT standards (survey)</title>
+      <circle cx="219" cy="184" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="219" y="188" fill="white" font-size="8">MX</text>
+    </a>
+    <a xlink:href="#argentina-chile-colombia" href="#argentina-chile-colombia">
+      <title>Argentina / Chile / Colombia (survey)</title>
+      <circle cx="314" cy="352" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="314" y="356" fill="white" font-size="8">AR</text>
+    </a>
+    <a xlink:href="#united-kingdom" href="#united-kingdom">
+      <title>United Kingdom — historic M/Y/U standard beams (survey)</title>
+      <circle cx="496" cy="104" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="496" y="108" fill="white" font-size="8">GB</text>
+    </a>
+    <a xlink:href="#continental-europe" href="#continental-europe">
+      <title>Continental Europe — EN 15050 national ranges (survey)</title>
+      <circle cx="540" cy="112" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="540" y="116" fill="white" font-size="8">EU</text>
+    </a>
+    <a xlink:href="#nordics" href="#nordics">
+      <title>Nordics — national standard beams (survey)</title>
+      <circle cx="546" cy="62" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="546" y="66" fill="white" font-size="8">SE</text>
+    </a>
+    <a xlink:href="#turkey" href="#turkey">
+      <title>Turkey — KGM standard sections (survey)</title>
+      <circle cx="598" cy="146" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="598" y="150" fill="white" font-size="8">TR</text>
+    </a>
+    <a xlink:href="#russia-cis" href="#russia-cis">
+      <title>Russia / CIS — GOST series (survey)</title>
+      <circle cx="664" cy="96" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="664" y="100" fill="white" font-size="8">RU</text>
+    </a>
+    <a xlink:href="#middle-east" href="#middle-east">
+      <title>Middle East — Gulf practice (survey)</title>
+      <circle cx="622" cy="184" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="622" y="188" fill="white" font-size="8">ME</text>
+    </a>
+    <a xlink:href="#south-africa" href="#south-africa">
+      <title>South Africa — SANRAL standard beams (survey)</title>
+      <circle cx="566" cy="322" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="566" y="326" fill="white" font-size="8">ZA</text>
+    </a>
+    <a xlink:href="#southeast-asia" href="#southeast-asia">
+      <title>Southeast Asia — adopted foreign + local standards (survey)</title>
+      <circle cx="774" cy="216" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="774" y="220" fill="white" font-size="8">SEA</text>
+    </a>
+    <a xlink:href="#new-zealand" href="#new-zealand">
+      <title>New Zealand — standard beams (survey)</title>
+      <circle cx="952" cy="382" r="10" fill="#90a4ae" stroke="white"/>
+      <text x="952" y="386" fill="white" font-size="8">NZ</text>
+    </a>
+  </g>
+
+  <!-- legend -->
+  <g font-size="11">
+    <circle cx="60" cy="452" r="9" fill="#2e7d32" stroke="white"/>
+    <text x="76" y="456" fill="#37474f">implemented</text>
+    <circle cx="60" cy="474" r="9" fill="#1565c0" stroke="white"/>
+    <text x="76" y="478" fill="#37474f">researched — sources collected</text>
+    <circle cx="60" cy="496" r="9" fill="#90a4ae" stroke="white"/>
+    <text x="76" y="500" fill="#37474f">surveyed — planned</text>
+  </g>
+</svg>

@@ -1,0 +1,456 @@
+{
+  "nh45a_package_ii": {
+    "source_title": "NHAI NH-45A Package II, PKG II Modified Structural Drawings (Feedback Infra Pvt. Ltd.)",
+    "source_url": "https://nhai.gov.in/nhai/sites/default/files/2020/PKG_II_Modified_Structural_drawings.pdf",
+    "source_local_file": "sources/expansion/asia-africa/nhai-pkg-ii-modified-structural-drawings.pdf",
+    "source_sha256": "7f21b6abd44f339680aa5f7d1d91cfad75edb3055f09d0f6cbd635765fa09227",
+    "source_pages": 68,
+    "units": "mm",
+    "source_status": "Final Feasibility Report",
+    "status_note": "Every sheet is stamped FINAL FEASIBILITY REPORT. Project proposal drawings, R0; not a national standard, not construction/as-built evidence.",
+    "geometry_notes": [
+      "Gross midspan outline 'SECTION AT MID' only; end sections (75/100/40/25 mm offsets, rectangular webs) excluded.",
+      "All widths/heights are CAD vector callouts read visually from renders; no values fitted.",
+      "Splay horizontal extents are printed (300/225 for the 900 family, 250/150 for the 800 family) and equal (flange - web)/2, so they close exactly.",
+      "RCC-1400 and RCC-1500 clear web heights are not separately printed and are derived by chain closure.",
+      "PSC = prestressed (drawn 'PSC-I girder'); RCC = reinforced, precast (drawn 'precast RCC I girder'). Construction type is carried per size.",
+      "Identical outlines kept as distinct SIZES: PSC-2000 == RCC-2000; RCC-2250 == Nh45aPscISection CH50+473-MID.",
+      "No published section properties on the sheets; checks are analytic only."
+    ],
+    "published_properties": null,
+    "sizes": [
+      {
+        "size": "PSC-1500",
+        "construction": "PSC",
+        "dimensions_mm": {
+          "depth": 1500,
+          "top_width": 900,
+          "web_width": 300,
+          "bottom_width": 750,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 850,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "900",
+          "150",
+          "100",
+          "300 (splay horiz.)",
+          "850",
+          "300 (web)",
+          "225 (splay horiz.)",
+          "150",
+          "250",
+          "750",
+          "1500"
+        ],
+        "locators": [
+          {
+            "pdf_page": 61,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-FLY-CH-51+475-GA-01 (02 OF 02)",
+            "revision": "R0",
+            "structure": "Flyover at design Ch 51+475",
+            "detail_title": "DETAIL PSC-I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          },
+          {
+            "pdf_page": 66,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-FLY-TYP-GA-01 (02 OF 02)",
+            "revision": "R0",
+            "structure": "Flyover, typical GA 01",
+            "detail_title": "DETAIL PSC-I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          },
+          {
+            "pdf_page": 68,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-FLY-TYP-GA-02 (02 OF 02)",
+            "revision": "R0",
+            "structure": "Flyover, typical GA 02",
+            "detail_title": "DETAIL PSC-I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          }
+        ],
+        "provenance": "transcribed",
+        "identical_to": [],
+        "notes": "Three identical sheets. Different outline from RCC-1500 (900/750 vs 800/600 flanges).",
+        "gross_area_mm2": 716250.0
+      },
+      {
+        "size": "PSC-2000",
+        "construction": "PSC",
+        "dimensions_mm": {
+          "depth": 2000,
+          "top_width": 900,
+          "web_width": 300,
+          "bottom_width": 750,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 1350,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "900",
+          "150",
+          "100",
+          "300",
+          "1350",
+          "300",
+          "225",
+          "150",
+          "250",
+          "750",
+          "2000"
+        ],
+        "locators": [
+          {
+            "pdf_page": 52,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-MNB CUM VUP-CH-43+835-GA-01 (01 OF 02)",
+            "revision": "R0",
+            "structure": "Minor bridge cum VUP at design Ch 43+835",
+            "detail_title": "DETAIL PSC-I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          },
+          {
+            "pdf_page": 63,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-FLY-CH-61+015-GA-01 (02 OF 02)",
+            "revision": "R0",
+            "structure": "Flyover at design Ch 61+015 (first of two details on sheet)",
+            "detail_title": "DETAIL PSC-I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          }
+        ],
+        "provenance": "transcribed",
+        "identical_to": [
+          "RCC-2000"
+        ],
+        "notes": "Outline identical to RCC-2000 (p26).",
+        "gross_area_mm2": 866250.0
+      },
+      {
+        "size": "RCC-1300",
+        "construction": "RCC",
+        "dimensions_mm": {
+          "depth": 1300,
+          "top_width": 800,
+          "web_width": 300,
+          "bottom_width": 600,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 650,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "800",
+          "150",
+          "100",
+          "250",
+          "650",
+          "300",
+          "150",
+          "150",
+          "250",
+          "600",
+          "1300"
+        ],
+        "locators": [
+          {
+            "pdf_page": 63,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-FLY-CH-61+015-GA-01 (02 OF 02)",
+            "revision": "R0",
+            "structure": "Flyover at design Ch 61+015 (second detail on sheet)",
+            "detail_title": "DETAIL RCC-IGIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          }
+        ],
+        "provenance": "transcribed",
+        "identical_to": [],
+        "notes": "Reinforced concrete, not prestressed.",
+        "gross_area_mm2": 587500.0
+      },
+      {
+        "size": "RCC-1400",
+        "construction": "RCC",
+        "dimensions_mm": {
+          "depth": 1400,
+          "top_width": 800,
+          "web_width": 300,
+          "bottom_width": 600,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 750,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "800",
+          "150",
+          "100",
+          "250 | 300 | 250",
+          "150 (bottom splay horiz.)",
+          "150",
+          "250",
+          "600",
+          "1400"
+        ],
+        "locators": [
+          {
+            "pdf_page": 22,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-MNB-CH-33+284-GA-01",
+            "revision": "R0",
+            "structure": "Minor bridge (2x16.0m) at design Ch 33+284",
+            "detail_title": "DETAILED FOR PRECAST RCC I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          }
+        ],
+        "provenance": "transcribed",
+        "identical_to": [],
+        "notes": "Clear web height 750 is not printed; derived by closing the printed chain 150+100+?+150+250 = 1400. Reinforced, not prestressed.",
+        "gross_area_mm2": 617500.0
+      },
+      {
+        "size": "RCC-1500",
+        "construction": "RCC",
+        "dimensions_mm": {
+          "depth": 1500,
+          "top_width": 800,
+          "web_width": 300,
+          "bottom_width": 600,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 850,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "800",
+          "150",
+          "100",
+          "250 | 300 | 250",
+          "150",
+          "150",
+          "250",
+          "600",
+          "1500"
+        ],
+        "locators": [
+          {
+            "pdf_page": 28,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-MNB-CH-40+484-GA-01",
+            "revision": "R0",
+            "structure": "Minor bridge (1x21.0m) at design Ch 40+484",
+            "detail_title": "DETAILED FOR PRECAST RCC I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          },
+          {
+            "pdf_page": 30,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-MNB-CH-41+043-GA-01",
+            "revision": "R0",
+            "structure": "Minor bridge (1x21.0m) at design Ch 41+043",
+            "detail_title": "DETAILED FOR PRECAST RCC I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          },
+          {
+            "pdf_page": 47,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-MJB-CH-47+471-GA-01",
+            "revision": "R0",
+            "structure": "Major bridge (13x20.0m) at design Ch 47+471",
+            "detail_title": "DETAILED FOR PRECAST RCC I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "NOV 2017",
+            "scale": "1:30"
+          }
+        ],
+        "provenance": "transcribed",
+        "identical_to": [],
+        "notes": "Clear web height 850 not printed separately; derived by chain closure to 1500. Reinforced, not prestressed.",
+        "gross_area_mm2": 647500.0
+      },
+      {
+        "size": "RCC-2000",
+        "construction": "RCC",
+        "dimensions_mm": {
+          "depth": 2000,
+          "top_width": 900,
+          "web_width": 300,
+          "bottom_width": 750,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 1350,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "900 (300|300|300)",
+          "150",
+          "100",
+          "1350",
+          "225",
+          "150",
+          "250",
+          "750",
+          "2000"
+        ],
+        "locators": [
+          {
+            "pdf_page": 26,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-MNB-CH-40+161-GA-01",
+            "revision": "R0",
+            "structure": "Minor bridge (1x30.0m) at design Ch 40+161",
+            "detail_title": "DETAILED FOR PRECAST RCC I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "March 2017",
+            "scale": "1:30"
+          }
+        ],
+        "provenance": "transcribed",
+        "identical_to": [
+          "PSC-2000"
+        ],
+        "notes": "Outline identical to PSC-2000 but drawn as reinforced (RCC).",
+        "gross_area_mm2": 866250.0
+      },
+      {
+        "size": "RCC-2250",
+        "construction": "RCC",
+        "dimensions_mm": {
+          "depth": 2250,
+          "top_width": 900,
+          "web_width": 300,
+          "bottom_width": 750,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 1600,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "300|300|300 (top width 900 by chain; overall 900 callout cropped above view)",
+          "150",
+          "100",
+          "1600",
+          "225",
+          "150",
+          "250",
+          "750",
+          "2250"
+        ],
+        "locators": [
+          {
+            "pdf_page": 44,
+            "printed_page": null,
+            "drawing_number": "FIPL-HD-TPT-117-V-N-45A-MJB-CH-38+514-GA-01",
+            "revision": "R0",
+            "structure": "Major bridge (2x36.0m) at design Ch 38+514",
+            "detail_title": "DETAILED FOR PRECAST RCC I GIRDER",
+            "view": "SECTION AT MID",
+            "date": "NOV 2017",
+            "scale": "1:30"
+          }
+        ],
+        "provenance": "transcribed",
+        "identical_to": [
+          "Nh45aPscISection CH50+473-MID (PDF p50, PSC)"
+        ],
+        "notes": "Outline identical to the existing PSC profile Nh45aPscISection (p50), but drawn as reinforced (RCC).",
+        "gross_area_mm2": 941250.0
+      }
+    ]
+  },
+  "delhi_vadodara_pkg_ii": {
+    "source_title": "NHAI Delhi-Vadodara Expressway package II, Volume III drawings (Sohna-Firozpur Jhirka, km 18+500 to 47+000)",
+    "source_url": "https://nhai.gov.in/nhai/sites/default/files/Agreements_document/pkg2-VOL-III.pdf",
+    "source_local_file": "sources/expansion/india-followup/nhai-project.pdf",
+    "source_sha256": "828db4e970519efa152ae40f8326f235d7fccfea775869d8e81ce68fb2a9cc0f",
+    "source_pages": 196,
+    "units": "mm",
+    "source_status": "Feasibility/DPR project drawing (Vol III cover July 2019; dimensions tentative)",
+    "status_note": "Consultant Chaitanya Projects Consultancy; title block describes feasibility report/DPR consultancy under Bharatmala Pariyojana. Sheet notes say all dimensions are tentative.",
+    "geometry_notes": [
+      "Web width is a scale-measured estimate (see estimate block); everything else is a (blurred) printed callout.",
+      "Support section (1100 top / 750 rectangular stem) not implemented; midspan only.",
+      "No published section properties."
+    ],
+    "published_properties": null,
+    "sizes": [
+      {
+        "size": "KM37+744-MID",
+        "construction": "PSC",
+        "dimensions_mm": {
+          "depth": 2000,
+          "top_width": 1100,
+          "web_width": 300,
+          "bottom_width": 750,
+          "top_vertical": 150,
+          "upper_splay_height": 100,
+          "web_height": 1350,
+          "lower_splay_height": 150,
+          "bottom_vertical": 250
+        },
+        "printed": [
+          "1100 (top width, legible)",
+          "150 / 100 (top chain, blurred but consistent)",
+          "1350",
+          "150 / 250 (bottom chain, blurred)",
+          "750 (base)",
+          "2000",
+          "web width: illegible blob"
+        ],
+        "locators": [
+          {
+            "pdf_page": 41,
+            "printed_page": "40 (hand-stamped)",
+            "drawing_number": "illegible in scan",
+            "revision": "illegible in scan",
+            "structure": "1 x 30.0 m PSC I-beam bridge at km 37+744 (Sohna-Firozpur Jhirka)",
+            "detail_title": "CROSS SECTION OF PRECAST PSC GIRDER",
+            "view": "AT MID SPAN",
+            "date": "AUGUST 201x (title block; last digit illegible in 1-bit scan)",
+            "scale": "1:50"
+          }
+        ],
+        "provenance": "estimate",
+        "identical_to": [],
+        "estimate": {
+          "web_width_mm": 300,
+          "method": "scale measurement on native 1189x840 1-bit JBIG2 image (1 native px ~ 26 mm at 1:50). Line-centre spacings: top flange 42 native px = 1100 mm (26.2 mm/px); web 11 px -> 288 mm; symmetric half-base 14.5 px -> 760 mm vs printed 750; vertical 2000 mm ~ 76 px (26.3 mm/px). Web 288 +/- 26 mm; 300 adopted as the nearest round value, matching the 300 mm web of every NH 45-A Package II girder.",
+          "area_sensitivity_mm2_per_26mm_web": 38350.0
+        },
+        "notes": "Vertical chain 150+100+1350+150+250 closes to 2000; the elevation label 2225 is girder + 225 deck slab (Detail A). Splay horizontal extents follow from widths: 400 top, 225 bottom. Sheet note 9 (p40/p43): all dimensions are tentative and may be changed after detail design.",
+        "gross_area_mm2": 906250.0
+      }
+    ]
+  }
+}

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bridgebeams"
-version = "0.2.0"
+version = "0.3.0"
 description = "Standard precast/prestressed bridge beam sections for use with the sectionproperties package"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -33,6 +33,13 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7", "matplotlib>=3.7"]
+docs = [
+    "Sphinx>=4.0",
+    "pydata-sphinx-theme",
+    "myst-parser",
+    "nbsphinx",
+    "sphinx-autodoc-typehints",
+]
 
 [project.urls]
 Homepage = "https://github.com/ccaprani/bridgebeams"
@@ -41,7 +48,7 @@ Homepage = "https://github.com/ccaprani/bridgebeams"
 where = ["src"]
 
 [tool.setuptools.package-data]
-"bridgebeams.ukie.data" = ["*.json"]
+"*" = ["data/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -1,0 +1,29 @@
+{
+ "title_original": "Ouvrages d'art de type VIPP : détermination des hypothèses de recalcul à partir de reconnaissances physiques in situ (La Technique Française du Béton, fiche F-04)",
+ "authors": "Nicolas Bessoule, Michel Boy (AFGC)",
+ "source_url": "https://www.afgc.asso.fr/app/uploads/2010/06/F-04-Recalculs-des-VIPP.pdf",
+ "retrieved": "2026-09-23 (HTTP 200, 1 572 244 bytes, identical to the local copy)",
+ "source_local_file": "sources/expansion/round2/fr/afgc-recalculs-vipp.pdf",
+ "source_sha256": "5010c68c5eb7e832b92d8929dc6edf1498834e6a7ee4e0f990e9a6749c855847",
+ "pdf_page": 7,
+ "printed_page": "7",
+ "figure": "Figure 3 : Géométrie d'une poutre sur appui et à mi-travée / Geometry of a beam, at bearing and at mid-span",
+ "source_status": "as-surveyed existing VIPP beam (AFGC technical sheet, 2010)",
+ "provenance": "transcribed",
+ "units": "m",
+ "sections": {
+  "support": {"top_parts_m": [0.45, 0.42, 0.44], "top_total_m": 1.31, "bottom_parts_m": [0.25, 0.42, 0.25], "bottom_total_m": 0.91,
+              "left_m": {"tip": 0.06, "tip_underside_to_soffit": 1.33, "web": 0.83, "splay": 0.20, "bottom_edge": 0.23},
+              "right_m": {"tip": 0.10, "tip_underside_to_soffit": 1.37, "web": 0.83, "splay": 0.20, "bottom_edge": 0.23}},
+  "mid-span": {"top_parts_m": [0.51, 0.22, 0.55], "top_total_m": 1.29, "bottom_parts_m": [0.34, 0.22, 0.35], "bottom_total_m": 0.91,
+              "left_m": {"tip": 0.09, "tip_underside_to_soffit": 1.35, "web": 0.74, "splay": 0.29, "bottom_edge": 0.23},
+              "right_m": {"tip": 0.07, "tip_underside_to_soffit": 1.33, "web": 0.73, "splay": 0.29, "bottom_edge": 0.23}}
+ },
+ "geometry_notes": [
+  "An as-surveyed (reconnaissance physique) post-tensioned VIPP beam of an unnamed five-span viaduct; the left and right halves differ by 1-4 cm as measured and are modelled asymmetrically exactly as dimensioned. It is one real beam, not a French standard family.",
+  "x = 0 at the web centreline; the part chains are used where they disagree with the printed totals (support bottom 0.25+0.42+0.25 = 0.92 vs 0.91; mid-span top 0.51+0.22+0.55 = 1.28 vs 1.29).",
+  "The top flange underside is a straight line from the tip to the web top (the level where the web chain starts); the top face is a straight line between the two tip tops (not horizontal because the tip heights differ).",
+  "The drawing is not to scale (the 0.09 tip scales to ~0.14 m); printed values govern.",
+  "Mid-span web 0.22 m vs support web 0.42 m: the support section is the thickened end zone."
+ ]
+}

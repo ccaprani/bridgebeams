@@ -1,0 +1,351 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Illinois Department of Transportation (IDOT), Bureau of Bridges and Structures",
+ "units": "inches (source); package geometry in mm",
+ "sources": {
+  "cells": {
+   "title": "IDOT Bridge Cell Library - Beams-Prestressed Deck Beams (cells PD-/PDD-, dated 4/4/2025 and 5/15/2023)",
+   "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/doing-business/specialty-lists/highways/bridges/cell-libraries/bridge/beams-prestressed-deck-beams.pdf",
+   "local_path": "sources/expansion/round2/us/il_cell_beams-prestressed-deck-beams.pdf",
+   "sha256": "178fadf3285a73336f4c690cd1b4b68f0ad146d9bc6cc5bacfaac46ba6c5d822",
+   "retrieved": "2026-09-23"
+  },
+  "design_guide": {
+   "title": "IDOT Bridge Manual Design Guide 3.5 - LRFD PPC Deck Beam Design (May 2019)",
+   "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/doing-business/memorandums-and-letters/highways/bridges/bm-design-guides/bm-3.5-lrfd-ppc-deck-beam-design.pdf",
+   "local_path": "sources/expansion/round2/us/il_dg35.pdf",
+   "sha256": "9f3c20e171774d5599402450079f4565f8f640a889b72ed69f22bc877654d013",
+   "retrieved": "2026-09-23",
+   "locator": "Beam Section, printed p3.4-24 area (text 'See Table 3.5.4-1 ...'): A=569.9 in2, I=49697 in4, Cb=13.30 in, Ct=13.71 in for the 27 in x 36 in example beam"
+  }
+ },
+ "source_status": "current CADD cell library (PD cells dated 4/4/2025)",
+ "template_in": {
+  "top_face_inset": 0.625,
+  "key_inset": 1.25,
+  "key_upper_transition": 0.375,
+  "key_lower_transition": 0.75,
+  "soffit_chamfer": 1.5,
+  "void_chamfer": 2.0,
+  "slab": 5.5
+ },
+ "geometry_notes": [
+  "Every dimension read from each cell's 'SECTION B-B (Showing dimensions)'. Full width W at and below the key; the top band is inset 5/8 in each side (top width W - 1 1/4 in).",
+  "Key: top band height t, then a 3/8 in high 45-degree-ish transition in to 1 1/4 in inset, vertical key face, then a 3/4 in high transition back out to full width at the top of the lower band; the key band height k includes both transitions.",
+  "Bands (top/key/bottom): 11 in: 3/4/4; 17 in: 3/4 1/2/9 1/2; 21 in: 3/4 1/2/13 1/2; 27 in: 6/7/14; 33 in: 6/7/20; 42 in: 6/7/29.",
+  "Voids: 5 1/2 in top and bottom slabs, 2 x 2 in void chamfers; webs 7 in (17x36, 21x36), 8 in (17x48, 21x48), 6 in (27-42 in deep), measured from the full-width face. 11 in beams are solid.",
+  "1 1/2 x 1 1/2 in soffit chamfers; top corners square.",
+  "Validation: the only published property row located (Design Guide 3.5 example, 27x36) is reproduced to A 569.92 vs 569.9 in2, I 49696.9 vs 49697 in4, Cb 13.295 vs 13.30 in. The BM Table 3.5.4-1 with the other rows is in the IDOT Bridge Manual, which was not retrievable (served via PowerDMS)."
+ ],
+ "sections": {
+  "11x48": {
+   "depth": 11,
+   "width": 48,
+   "bands": [
+    3,
+    4,
+    4
+   ],
+   "web": null,
+   "void": null,
+   "page": 4,
+   "cell": "PD-1148-0",
+   "provenance": "transcribed"
+  },
+  "11x52": {
+   "depth": 11,
+   "width": 52,
+   "bands": [
+    3,
+    4,
+    4
+   ],
+   "web": null,
+   "void": null,
+   "page": 7,
+   "cell": "PD-1152-0",
+   "provenance": "transcribed"
+  },
+  "17x36": {
+   "depth": 17,
+   "width": 36,
+   "bands": [
+    3,
+    4.5,
+    9.5
+   ],
+   "web": 7,
+   "void": [
+    22,
+    6
+   ],
+   "page": 10,
+   "cell": "PD-1736-0",
+   "provenance": "transcribed"
+  },
+  "17x48": {
+   "depth": 17,
+   "width": 48,
+   "bands": [
+    3,
+    4.5,
+    9.5
+   ],
+   "web": 8,
+   "void": [
+    32,
+    6
+   ],
+   "page": 13,
+   "cell": "PD-1748-0",
+   "provenance": "transcribed"
+  },
+  "21x36": {
+   "depth": 21,
+   "width": 36,
+   "bands": [
+    3,
+    4.5,
+    13.5
+   ],
+   "web": 7,
+   "void": [
+    22,
+    10
+   ],
+   "page": 16,
+   "cell": "PD-2136-0",
+   "provenance": "transcribed"
+  },
+  "21x48": {
+   "depth": 21,
+   "width": 48,
+   "bands": [
+    3,
+    4.5,
+    13.5
+   ],
+   "web": 8,
+   "void": [
+    32,
+    10
+   ],
+   "page": 19,
+   "cell": "PD-2148-0",
+   "provenance": "transcribed"
+  },
+  "27x36": {
+   "depth": 27,
+   "width": 36,
+   "bands": [
+    6,
+    7,
+    14
+   ],
+   "web": 6,
+   "void": [
+    24,
+    16
+   ],
+   "page": 22,
+   "published": {
+    "area": 569.9,
+    "ix": 49697,
+    "yb": 13.3,
+    "sb": 3738.1,
+    "st": 3626.1
+   },
+   "cell": "PD-2736-0",
+   "provenance": "transcribed"
+  },
+  "27x48": {
+   "depth": 27,
+   "width": 48,
+   "bands": [
+    6,
+    7,
+    14
+   ],
+   "web": 6,
+   "void": [
+    36,
+    16
+   ],
+   "page": 25,
+   "cell": "PD-2748-0",
+   "provenance": "transcribed"
+  },
+  "33x36": {
+   "depth": 33,
+   "width": 36,
+   "bands": [
+    6,
+    7,
+    20
+   ],
+   "web": 6,
+   "void": [
+    24,
+    22
+   ],
+   "page": 28,
+   "cell": "PD-3336-0",
+   "provenance": "transcribed"
+  },
+  "33x48": {
+   "depth": 33,
+   "width": 48,
+   "bands": [
+    6,
+    7,
+    20
+   ],
+   "web": 6,
+   "void": [
+    36,
+    22
+   ],
+   "page": 31,
+   "cell": "PD-3348-0",
+   "provenance": "transcribed"
+  },
+  "42x36": {
+   "depth": 42,
+   "width": 36,
+   "bands": [
+    6,
+    7,
+    29
+   ],
+   "web": 6,
+   "void": [
+    24,
+    31
+   ],
+   "page": 34,
+   "cell": "PD-4236-0",
+   "provenance": "transcribed"
+  },
+  "42x48": {
+   "depth": 42,
+   "width": 48,
+   "bands": [
+    6,
+    7,
+    29
+   ],
+   "web": 6,
+   "void": [
+    36,
+    31
+   ],
+   "page": 37,
+   "cell": "PD-4248-0",
+   "provenance": "transcribed"
+  }
+ },
+ "residuals": {
+  "11x48": {
+   "model_in": {
+    "area": 513.172,
+    "yb": 5.482,
+    "ix": 5191.47,
+    "iy": 93190.483
+   }
+  },
+  "11x52": {
+   "model_in": {
+    "area": 557.172,
+    "yb": 5.483,
+    "ix": 5635.15,
+    "iy": 119252.423
+   }
+  },
+  "17x36": {
+   "model_in": {
+    "area": 471.922,
+    "yb": 8.41,
+    "ix": 13924.138,
+    "iy": 56711.386
+   }
+  },
+  "17x48": {
+   "model_in": {
+    "area": 615.922,
+    "yb": 8.431,
+    "ix": 18658.028,
+    "iy": 133301.998
+   }
+  },
+  "21x36": {
+   "model_in": {
+    "area": 527.922,
+    "yb": 10.376,
+    "ix": 25255.306,
+    "iy": 68714.053
+   }
+  },
+  "21x48": {
+   "model_in": {
+    "area": 679.922,
+    "yb": 10.404,
+    "ix": 33684.791,
+    "iy": 159243.332
+   }
+  },
+  "27x36": {
+   "model_in": {
+    "area": 569.922,
+    "yb": 13.295,
+    "ix": 49696.895,
+    "iy": 79595.789
+   },
+   "residual": {
+    "area_in2": 0.022,
+    "area_pct": 0.004,
+    "ix_pct": -0.0,
+    "yb_in": -0.005
+   }
+  },
+  "27x48": {
+   "model_in": {
+    "area": 701.922,
+    "yb": 13.333,
+    "ix": 65288.417,
+    "iy": 174640.672
+   }
+  },
+  "33x36": {
+   "model_in": {
+    "area": 641.922,
+    "yb": 16.217,
+    "ix": 84463.339,
+    "iy": 96011.789
+   }
+  },
+  "33x48": {
+   "model_in": {
+    "area": 773.922,
+    "yb": 16.265,
+    "ix": 109761.121,
+    "iy": 206608.672
+   }
+  },
+  "42x36": {
+   "model_in": {
+    "area": 749.922,
+    "yb": 20.628,
+    "ix": 158671.794,
+    "iy": 120635.789
+   }
+  },
+  "42x48": {
+   "model_in": {
+    "area": 881.922,
+    "yb": 20.684,
+    "ix": 202984.319,
+    "iy": 254560.672
+   }
+  }
+ }
+}

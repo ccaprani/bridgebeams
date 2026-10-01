@@ -1,0 +1,256 @@
+{
+ "family": "Paver (Paver Via) travi da ponte",
+ "producer": "Paver S.p.A. (Paver Via, Italy)",
+ "source_status": "producer catalogue (2021/2024)",
+ "provenance": "estimate",
+ "sources": {
+  "it_paver": {
+   "title_original": "Tipologie travi da ponte (Paver Via 2021, travi da ponte)",
+   "url": "https://www.paver.it/wp-content/uploads/2024/08/paver-via_2021_travi-da-ponte.pdf",
+   "local": "sources/expansion/europe-americas/it_paver.pdf",
+   "sha256": "45ebb432ef469ee2cdf214f84916247a56c157a5ae400fdde9c226fee8fc2dcf"
+  },
+  "it_uhp250": {
+   "title_original": "UHP 250 - sezione filante",
+   "url": "https://www.paver.it/wp-content/uploads/2024/08/uhp-250-sezione-filante.pdf",
+   "local": "sources/expansion/europe-americas/it_uhp250.pdf",
+   "sha256": "e7377652d9bedf89d41bbfada0ef86214ebb0ad069a5b719970b944603e91218"
+  },
+  "it_htp": {
+   "title_original": "HTP",
+   "url": "https://www.paver.it/wp-content/uploads/2024/08/htp.pdf",
+   "local": "sources/expansion/europe-americas/it_htp.pdf",
+   "sha256": "49cc19b228a6202a5e85df4c36c00e8c16ddd5749a1b4eea5ab5ada644ea555b"
+  },
+  "it_hp125": {
+   "title_original": "HP 125 - sezione filante",
+   "url": "https://www.paver.it/wp-content/uploads/2024/08/hp-125-sezione-filante.pdf",
+   "local": "sources/expansion/europe-americas/it_hp125.pdf",
+   "sha256": "7a842a825bd4c7e6d9e92491d22ba68a7edd157f758affb4a4261d74954e40c5"
+  }
+ },
+ "locators": {
+  "HP": "it_paver PDF p3 (printed 25) = it_hp125 p1: 'HP 125 - SEZIONE FILANTE', table TIPO HP100, H 100, B 125, C 125 cm",
+  "UHP": "it_uhp250 p1 = it_paver p4 (printed 26): 'UHP 250 - SEZIONE FILANTE'; sketches at H 170, 80 (C 250) and UHP60 (C 114,4); tables H, B(max), C(max), C(min)",
+  "VHP": "it_paver p5 (printed 27): 'VHP 250 - TRAVE FILANTE'; sketches at H 170 and 80, B 97,4 (table 97), C 250",
+  "HTP": "it_paver p6 (printed 28) = it_htp p1: HTP60/50/40, B 60, C(max) 150, C(min) 60",
+  "IHP_THP": "it_paver p7 (printed 29): 'IMPALCATI A TRAVI ACCOSTATE' IHP (B = C = 60) and THP (B 60, C 18)"
+ },
+ "method": "Image-only pages rendered at 300 dpi; the grey-filled sketch was masked, mirror-symmetrised and simplified, scaled by the printed widths and depth (the UHP/VHP/HP/IHP sketches are to scale: independent x and y scales agree within 0.4-1.5%). Corner coordinates were then read and rounded to 5 mm; for the U/V families the webs are straight lines common to the H 170 and H 80 sketches, so intermediate depths only extend the webs.",
+ "geometry_notes": [
+  "Only H, B and C (overall widths) are printed; all thicknesses are scaled from the sketches: ESTIMATE (typ. +/-10-20 mm).",
+  "UHP/VHP (open U/V troughs): web lines x = 522 + 0.1532 (y - y0) (outer; y0 = 271 VHP, 253 UHP) and x = 375 + 0.1488 (y - 289) (inner); top flange: web top at H - 202, haunch slope 0.515 to the flange underside y = H - 81 + 0.049 (x - 938), tip 1250/H - 62. Bottom slab 214 mm at the centre, 238 at the inner fillet. Reproduces the H 80 sketch within ~25 mm.",
+  "UHP modelled at C(max) = B(max) = 2500; the table also lists C(min) 147/144/138/132/126/120 (narrower top flanges) which is not modelled.",
+  "UHP60: sketch prints 114,4 top width, table 114 (conflict preserved); modelled 1144, no top flange.",
+  "VHP bottom width: sketch 97,4 vs table 97 cm; 974 mm used.",
+  "HP100: heading 'HP 125' vs table 'HP100' (H 100, B = C = 125); implemented as HP100. Web scales to 150 mm.",
+  "HTP: C varies 60-150 cm; implemented at C(max) = 150 cm. The sketch is drawn with a ~120 cm flange although labelled 150; flange thickness (tip 78, root 90 mm) and 15 mm soffit chamfers scaled via the 60 cm stem.",
+  "IHP: sketch is to scale at H ~ 65 cm (IHP65); other depths change the web only. IHP120/125/130/135/140 rows print H 90/85/80/75/70 (designation/depth conflict) and are NOT implemented.",
+  "THP: printed C = 18 cm stem is used (sketch scales to ~20 cm); bottom flange scaled.",
+  "SOLAIO BOX (voided slab, H 25-60) not implemented: void sizes not scalable with confidence.",
+  "No section properties are published."
+ ],
+ "tables": {
+  "UHP": {
+   "UHP170": [
+    170,
+    250,
+    250,
+    147
+   ],
+   "UHP160": [
+    160,
+    250,
+    250,
+    144
+   ],
+   "UHP140": [
+    140,
+    250,
+    250,
+    138
+   ],
+   "UHP120": [
+    120,
+    250,
+    250,
+    132
+   ],
+   "UHP100": [
+    100,
+    250,
+    250,
+    126
+   ],
+   "UHP80": [
+    80,
+    250,
+    250,
+    120
+   ],
+   "UHP60": [
+    60,
+    250,
+    114,
+    114
+   ],
+   "_columns": "H, B(max), C(max), C(min) cm"
+  },
+  "VHP": {
+   "VHP170": [
+    170,
+    97,
+    250
+   ],
+   "VHP160": [
+    160,
+    97,
+    250
+   ],
+   "VHP140": [
+    140,
+    97,
+    250
+   ],
+   "VHP120": [
+    120,
+    97,
+    250
+   ],
+   "VHP100": [
+    100,
+    97,
+    250
+   ],
+   "VHP80": [
+    80,
+    97,
+    250
+   ],
+   "_columns": "H, B, C cm"
+  },
+  "HP": {
+   "HP100": [
+    100,
+    125,
+    125
+   ],
+   "_columns": "H, B, C cm"
+  },
+  "HTP": {
+   "HTP60": [
+    60,
+    60,
+    150,
+    60
+   ],
+   "HTP50": [
+    50,
+    60,
+    150,
+    60
+   ],
+   "HTP40": [
+    40,
+    60,
+    150,
+    60
+   ],
+   "_columns": "H, B, C(max), C(min) cm"
+  },
+  "IHP": {
+   "IHP90": [
+    90,
+    60,
+    60
+   ],
+   "IHP85": [
+    85,
+    60,
+    60
+   ],
+   "IHP80": [
+    80,
+    60,
+    60
+   ],
+   "IHP75": [
+    75,
+    60,
+    60
+   ],
+   "IHP70": [
+    70,
+    60,
+    60
+   ],
+   "IHP65": [
+    65,
+    60,
+    60
+   ],
+   "IHP120": [
+    90,
+    60,
+    60
+   ],
+   "IHP125": [
+    85,
+    60,
+    60
+   ],
+   "IHP130": [
+    80,
+    60,
+    60
+   ],
+   "IHP135": [
+    75,
+    60,
+    60
+   ],
+   "IHP140": [
+    70,
+    60,
+    60
+   ],
+   "_columns": "H, B, C cm (IHP120-140 conflicting, not implemented)"
+  },
+  "THP": {
+   "THP60": [
+    60,
+    60,
+    18
+   ],
+   "THP55": [
+    55,
+    60,
+    18
+   ],
+   "THP50": [
+    50,
+    60,
+    18
+   ],
+   "THP45": [
+    45,
+    60,
+    18
+   ],
+   "THP40": [
+    40,
+    60,
+    18
+   ],
+   "_columns": "H, B, C cm"
+  }
+ },
+ "trace_check": {
+  "_note": "model area vs area of the traced (scaled, symmetrised) sketch; symmetric-difference / area in brackets",
+  "UHP170": "1.010 vs 1.005 m2 (1.8%)",
+  "UHP80": "0.751 vs 0.745 m2 (2.5%)",
+  "VHP80": "0.539 vs 0.531 m2 (4.6%)",
+  "HP100": "0.479 vs 0.480 m2 (1.1%)",
+  "IHP65": "0.239 vs 0.236 m2 (2.4%)"
+ }
+}

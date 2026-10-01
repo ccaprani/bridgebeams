@@ -1,0 +1,182 @@
+{
+  "source": {
+    "publisher": "Ashghal, Qatar Public Works Authority",
+    "drawing": "SD 5-1-101 Rev 1",
+    "date": "2013-10",
+    "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-101%20Rev%201%20Q-Girder%20Sections.pdf",
+    "pdf_page": 1,
+    "sha256": "8b2e22c2af37186dde1211a839823fa1e54e2706335e39ed61303ed7756eebc5",
+    "transcribed_on": "2026-09-22",
+    "method": "Visual reading of 5x rendered CAD paths; all five lower zones and property table read directly."
+  },
+  "geometry_status": "documented_reconstruction",
+  "notes": [
+    "Open-top U profile; valley at centre rises toward webs.",
+    "200+1069+200 is not overall top width; nominal top width is 2150 mm.",
+    "No interpolation of type-specific bottom dimensions.",
+    "Nominal web callout125 not enforced exactly; parallel-face reconstruction gives approximately122-123 mm.",
+    "Top slab/deck200 typical note describes in-situ slab, not117 mm precast flange."
+  ],
+  "residual_limits_percent": {
+    "area": 0.89,
+    "cy": 0.86,
+    "ixx": 1.27
+  },
+  "test_tolerances_percent": {
+    "area": 1.0,
+    "cy": 1.0,
+    "ixx": 1.5
+  },
+  "sections": {
+    "T1": {
+      "dimensions_mm": {
+        "depth": 800,
+        "base_width": 939,
+        "valley_height": 290,
+        "valley_rise": 71
+      },
+      "published": {
+        "area_mm2": 565861,
+        "centroid_from_soffit_mm": 381,
+        "ixx_mm4": 40430000000,
+        "zt_mm3": 96500000,
+        "zb_mm3": 106130000,
+        "indicative_span_m": [
+          12,
+          17
+        ]
+      },
+      "computed_reconstruction": {
+        "area": 570818.7440758294,
+        "cx": -5.982370893908689e-15,
+        "cy": 384.0863552800111,
+        "ixx": 40899641572.32454
+      },
+      "residual_percent": {
+        "area": 0.876142,
+        "cy": 0.810067,
+        "ixx": 1.161617
+      }
+    },
+    "T2": {
+      "dimensions_mm": {
+        "depth": 1050,
+        "base_width": 892,
+        "valley_height": 290,
+        "valley_rise": 67
+      },
+      "published": {
+        "area_mm2": 611622,
+        "centroid_from_soffit_mm": 496,
+        "ixx_mm4": 81820000000,
+        "zt_mm3": 147700000,
+        "zb_mm3": 164970000,
+        "indicative_span_m": [
+          14,
+          21
+        ]
+      },
+      "computed_reconstruction": {
+        "area": 615822.9928909953,
+        "cx": -6.049287443740047e-15,
+        "cy": 500.08155221363575,
+        "ixx": 82848876658.95337
+      },
+      "residual_percent": {
+        "area": 0.686861,
+        "cy": 0.822894,
+        "ixx": 1.257488
+      }
+    },
+    "T3": {
+      "dimensions_mm": {
+        "depth": 1250,
+        "base_width": 854,
+        "valley_height": 310,
+        "valley_rise": 64
+      },
+      "published": {
+        "area_mm2": 661823,
+        "centroid_from_soffit_mm": 588,
+        "ixx_mm4": 127610000000,
+        "zt_mm3": 192760000,
+        "zb_mm3": 217020000,
+        "indicative_span_m": [
+          16,
+          24
+        ]
+      },
+      "computed_reconstruction": {
+        "area": 665146.7890995261,
+        "cx": -1.4001760060757421e-15,
+        "cy": 592.9911703047505,
+        "ixx": 129190011241.23798
+      },
+      "residual_percent": {
+        "area": 0.502217,
+        "cy": 0.848838,
+        "ixx": 1.238156
+      }
+    },
+    "T4": {
+      "dimensions_mm": {
+        "depth": 1550,
+        "base_width": 797,
+        "valley_height": 310,
+        "valley_rise": 58
+      },
+      "published": {
+        "area_mm2": 716068,
+        "centroid_from_soffit_mm": 740,
+        "ixx_mm4": 216330000000,
+        "zt_mm3": 267070000,
+        "zb_mm3": 292340000,
+        "indicative_span_m": [
+          20,
+          28
+        ]
+      },
+      "computed_reconstruction": {
+        "area": 717557.2227488151,
+        "cx": -9.51798499686245e-15,
+        "cy": 746.0661006769408,
+        "ixx": 218734600279.58264
+      },
+      "residual_percent": {
+        "area": 0.207972,
+        "cy": 0.819743,
+        "ixx": 1.111543
+      }
+    },
+    "T5": {
+      "dimensions_mm": {
+        "depth": 1900,
+        "base_width": 731,
+        "valley_height": 375,
+        "valley_rise": 53
+      },
+      "published": {
+        "area_mm2": 815801,
+        "centroid_from_soffit_mm": 903,
+        "ixx_mm4": 362510000000,
+        "zt_mm3": 363600000,
+        "zb_mm3": 401450000,
+        "indicative_span_m": [
+          25,
+          34
+        ]
+      },
+      "computed_reconstruction": {
+        "area": 816495.6919431278,
+        "cx": -1.9200668777628453e-14,
+        "cy": 908.7816198546709,
+        "ixx": 366382128506.7152
+      },
+      "residual_percent": {
+        "area": 0.085155,
+        "cy": 0.640268,
+        "ixx": 1.068144
+      }
+    }
+  }
+}

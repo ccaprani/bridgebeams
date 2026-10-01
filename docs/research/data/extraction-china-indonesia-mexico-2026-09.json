@@ -1,0 +1,652 @@
+{
+ "topic": "china-indonesia-mexico",
+ "date": "2026-09-23",
+ "record": "docs/research/extraction-china-indonesia-mexico-2026-09.md",
+ "packages": {
+  "cn": {
+   "modules": [
+    "src/bridgebeams/cn/beijing_box.py"
+   ],
+   "data": [
+    "src/bridgebeams/cn/data/beijing_20bgql2.json"
+   ],
+   "tests": "tests/test_cn_beijing_box.py",
+   "classes": {
+    "Beijing20bgql2BoxSection": {
+     "sizes": [
+      "a=0",
+      "a=300"
+     ],
+     "parameter": "a in 0-300 mm",
+     "provenance": "transcribed-with-convention"
+    }
+   }
+  },
+  "id": {
+   "modules": [
+    "src/bridgebeams/id/wika_girders.py"
+   ],
+   "data": [
+    "src/bridgebeams/id/data/wika_girders.json"
+   ],
+   "tests": "tests/test_id_wika.py",
+   "classes": {
+    "WikaChannelGirderSection": {
+     "sizes": [
+      "CG60",
+      "CG70",
+      "CG80",
+      "CG100"
+     ],
+     "provenance": "fitted-reconstruction"
+    },
+    "WikaPcIGirderSection": {
+     "sizes": [
+      "H90",
+      "H125",
+      "H160",
+      "H170",
+      "H210"
+     ],
+     "provenance": "estimate"
+    },
+    "WikaPcUGirderSection": {
+     "sizes": [
+      "H120",
+      "H140",
+      "H165",
+      "H185",
+      "H210",
+      "H230"
+     ],
+     "provenance": "estimate"
+    },
+    "WikaBulbTeeSection": {
+     "sizes": [
+      "H220"
+     ],
+     "provenance": "estimate"
+    }
+   }
+  },
+  "mx": {
+   "modules": [
+    "src/bridgebeams/mx/sepsa_box.py",
+    "src/bridgebeams/mx/sepsa_double_tee.py",
+    "src/bridgebeams/mx/sepsa_nebraska.py",
+    "src/bridgebeams/mx/_arcs.py"
+   ],
+   "data": [
+    "src/bridgebeams/mx/data/sepsa_box_girders.json",
+    "src/bridgebeams/mx/data/sepsa_double_tees.json",
+    "src/bridgebeams/mx/data/sepsa_nebraska.json"
+   ],
+   "tests": "tests/test_mx_sepsa_extraction.py",
+   "modified": [
+    "src/bridgebeams/mx/__init__.py (backup in src/bridgebeams/mx/backups/)"
+   ],
+   "classes": {
+    "SepsaBoxGirderSection": {
+     "sizes": [
+      "CA-85",
+      "CA-115",
+      "CA-135",
+      "CA-150",
+      "CA-180",
+      "B-400",
+      "CA-135-U",
+      "CA-150-U",
+      "CA-180-U",
+      "B-400-U"
+     ],
+     "parameter": "a (wing width) within table range",
+     "provenance": "transcribed-with-convention"
+    },
+    "SepsaDoubleTeeSection": {
+     "sizes": "26: LIGERA-85..45, PESADA-85..45, AMERICANA-81..45",
+     "parameter": "a (flange width)",
+     "provenance": "transcribed"
+    },
+    "SepsaNebraskaSection": {
+     "sizes": "13: 135-W18 and 180/200-ALERO-ESPECIAL/210/220/240/240-BASE-ESPECIAL x W18/W20",
+     "provenance": "estimate"
+    }
+   }
+  }
+ },
+ "sources": {
+  "CN-BEIJING-20BGQL2": {
+   "id": "CN-BEIJING-20BGQL2",
+   "organisation": "北京市规划和自然资源委员会 / 北京市城乡规划标准化办公室",
+   "title_original": "20BGQL2 时速100公里及以下城市轨道交通后张法预应力混凝土单线预制箱梁",
+   "title_en": "Post-tensioned precast concrete single-track box girders for urban rail transit at up to 100 km/h",
+   "url": "https://ghzrzyw.beijing.gov.cn/biaozhunguanli/bzgj/tytj/202105/P020210527325354365083.pdf",
+   "local_file": "sources/expansion/asia-africa/beijing-20bgql2.pdf",
+   "sha256": "5aecbbfc522af84605987b5746c5eb28909bb8361634704ec4460f6a235cffa6",
+   "pdf_page_1_based": 23,
+   "printed_page": 15,
+   "sheet": "预制箱梁构造图（二）, section I–I 截面",
+   "supporting_pages": {
+    "22": "printed 14, 预制箱梁构造图（一）: 1/2 IV–IV longitudinal section, midspan 200/150/1080/150/220 chain"
+   },
+   "transcription": "Visual reading of 400-dpi render, 2026-09-23."
+  },
+  "ID-WIKA-2022": {
+   "id": "ID-WIKA-2022",
+   "organisation": "PT Wijaya Karya Beton Tbk (WIKA Beton)",
+   "title": "Brosur WTON 2022",
+   "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1660206289_Brosur%20WTON%202022.pdf",
+   "local_file": "sources/expansion/asia-africa/wika-2022.pdf",
+   "sha256": "7ec2716d3c3b2575d6366c492c7f883ed9655041b7a3d1e93527baa42bbffa23",
+   "pdf_pages_1_based": {
+    "pc_u": 17,
+    "pc_i": 18,
+    "bulb_tee": 20,
+    "channel": 22
+   },
+   "printed_pages": "unnumbered brochure pages (footer 'July - 2022')",
+   "transcription": "Printed dimensions read from 600-dpi (p22) and 400-dpi (pp17/18/20) renders, 2026-09-23. Brochure drawings are vector paths; they were extracted with PyMuPDF and used for undimensioned proportions. Published A and I read visually (channel/U/bulb-tee use '.' and PC-I uses ',' as thousands separator: e.g. 'Area : 4.329 cm2' = 4329 cm2, 'Area : 2,572 cm2' = 2572 cm2)."
+  },
+  "mx_sepsa": {
+   "organisation": "Grupo Constructor SEPSA",
+   "title": "Catálogo de piezas SEPSA V-05 27-21",
+   "url": "https://sepsacv.com.mx/wp-content/uploads/2022/02/CATALOGO-DE-PIEZAS-SEPSA-V-05-27-21.pdf",
+   "local_file": "sources/expansion/europe-americas/mx_sepsa.pdf",
+   "sha256": "4bf8d28b4d5165d893df215f484ddab996a9e6849a3410049ba4e0cb69133feb",
+   "accessed": "2026-09-22",
+   "pdf_pages_1_based": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "printed_pages": "unnumbered catalogue pages",
+   "transcription": "Every printed dimension re-read from 400-dpi renders (2026-09-23). Table rows are the 2026-09-22 text extraction (docs/research/data/europe-americas-sources.json, mx_sepsa), visually re-checked. Undimensioned radii were measured from the catalogue's vector drawing paths, which are drawn at uniform scale (x/y scale agree to 0.2% on CA-85, CA-150, CA-135-U, CA-150-U, CA-180-U and B-400)."
+  }
+ },
+ "profile_count": {
+  "cn": 2,
+  "id": 16,
+  "mx_new": 49
+ },
+ "residuals": {
+  "beijing": {
+   "published": "none",
+   "analytic": {
+    "a=0": {
+     "area_mm2": 2567095,
+     "yb_mm": 1156.3,
+     "ixx_mm4": 1025143212858
+    },
+    "a=0 no drip groove": {
+     "area_mm2": 2568350,
+     "yb_mm": 1156.51,
+     "ixx_mm4": 1025381701992
+    },
+    "a=150": {
+     "area_mm2": 2627052,
+     "yb_mm": 1168.7,
+     "ixx_mm4": 1042649576261
+    },
+    "a=150 no drip groove": {
+     "area_mm2": 2628350,
+     "yb_mm": 1168.92,
+     "ixx_mm4": 1042900045391
+    },
+    "a=300": {
+     "area_mm2": 2687095,
+     "yb_mm": 1180.57,
+     "ixx_mm4": 1059415689588
+    },
+    "a=300 no drip groove": {
+     "area_mm2": 2688350,
+     "yb_mm": 1180.77,
+     "ixx_mm4": 1059645349018
+    }
+   }
+  },
+  "wika": {
+   "channel": {
+    "CG60": {
+     "area_mm2": 432725.0,
+     "yb_mm": 361.68,
+     "ixx_mm4": 12917965794,
+     "area_rel": -0.000404,
+     "ixx_rel": -0.00101
+    },
+    "CG70": {
+     "area_mm2": 480450.0,
+     "yb_mm": 420.89,
+     "ixx_mm4": 20212474023,
+     "area_rel": -0.000312,
+     "ixx_rel": -0.000951
+    },
+    "CG80": {
+     "area_mm2": 527175.0,
+     "yb_mm": 479.27,
+     "ixx_mm4": 29653986096,
+     "area_rel": -0.000427,
+     "ixx_rel": -0.000906
+    },
+    "CG100": {
+     "area_mm2": 633625.0,
+     "yb_mm": 589.84,
+     "ixx_mm4": 57149458872,
+     "area_rel": 0.000355,
+     "ixx_rel": -0.000482
+    }
+   },
+   "pc_i": {
+    "H90": {
+     "area_mm2": 257189.0,
+     "yb_mm": 364.48,
+     "ixx_mm4": 22666396384,
+     "area_rel": -4.3e-05,
+     "ixx_rel": 1.4e-05
+    },
+    "H125": {
+     "area_mm2": 316698.5,
+     "yb_mm": 520.64,
+     "ixx_mm4": 54962522745,
+     "area_rel": -5e-06,
+     "ixx_rel": -0.0
+    },
+    "H160": {
+     "area_mm2": 477310.7,
+     "yb_mm": 713.01,
+     "ixx_mm4": 146113664754,
+     "area_rel": 2.3e-05,
+     "ixx_rel": 1.8e-05
+    },
+    "H170": {
+     "area_mm2": 669516.5,
+     "yb_mm": 819.46,
+     "ixx_mm4": 236422733757,
+     "area_rel": 2.5e-05,
+     "ixx_rel": 5e-05
+    },
+    "H210": {
+     "area_mm2": 749464.8,
+     "yb_mm": 1010.92,
+     "ixx_mm4": 410848906305,
+     "area_rel": -4.7e-05,
+     "ixx_rel": -5.2e-05
+    }
+   },
+   "bulb_tee": {
+    "H220": {
+     "area_mm2": 1292480.0,
+     "yb_mm": 1129.21,
+     "ixx_mm4": 901038474840,
+     "area_rel": -1.5e-05,
+     "ixx_rel": -2.6e-05
+    }
+   },
+   "pc_u": {
+    "H120": {
+     "area_mm2": 919875.1,
+     "yb_mm": 566.11,
+     "ixx_mm4": 126529135743,
+     "area_rel": 0.002261,
+     "ixx_rel": 0.001553
+    },
+    "H140": {
+     "area_mm2": 1030401.8,
+     "yb_mm": 664.75,
+     "ixx_mm4": 195830211341,
+     "area_rel": -0.005979,
+     "ixx_rel": -0.00262
+    },
+    "H165": {
+     "area_mm2": 1200634.7,
+     "yb_mm": 781.33,
+     "ixx_mm4": 315257771471,
+     "area_rel": 0.010805,
+     "ixx_rel": 0.005325
+    },
+    "H185": {
+     "area_mm2": 1311154.5,
+     "yb_mm": 881.46,
+     "ixx_mm4": 434192431329,
+     "area_rel": 0.003486,
+     "ixx_rel": 0.001819
+    },
+    "H210": {
+     "area_mm2": 1449309.4,
+     "yb_mm": 1007.58,
+     "ixx_mm4": 618451155601,
+     "area_rel": -0.012597,
+     "ixx_rel": -0.007749
+    },
+    "H230": {
+     "area_mm2": 1591914.1,
+     "yb_mm": 1099.19,
+     "ixx_mm4": 807544316917,
+     "area_rel": -0.001058,
+     "ixx_rel": 0.000148
+    }
+   }
+  },
+  "sepsa_box": {
+   "CA-85": {
+    "rows": 17,
+    "closed_residual_cm2_range": [
+     -15.4,
+     -10.0
+    ],
+    "closed_rel_range": [
+     -0.0026,
+     -0.0018
+    ],
+    "derived": {
+     "wing_soffit_slope": 0.0922,
+     "upper_fillet_web_tangent_height_cm": 51.9879,
+     "upper_fillet_wing_tangent_x_cm": 65.4398,
+     "soffit_flat_half_width_cm": 36.8801,
+     "soffit_tangent_half_width_cm": 41.8652
+    }
+   },
+   "CA-115": {
+    "rows": 17,
+    "closed_residual_cm2_range": [
+     -30.5,
+     -11.9
+    ],
+    "closed_rel_range": [
+     -0.0047,
+     -0.0023
+    ],
+    "derived": {
+     "wing_soffit_slope": 0.0948,
+     "upper_fillet_web_tangent_height_cm": 82.0042,
+     "upper_fillet_wing_tangent_x_cm": 67.7292,
+     "soffit_flat_half_width_cm": 36.8676,
+     "soffit_tangent_half_width_cm": 41.8526
+    }
+   },
+   "CA-135": {
+    "rows": 17,
+    "closed_residual_cm2_range": [
+     42.6,
+     107.6
+    ],
+    "closed_rel_range": [
+     0.0062,
+     0.0199
+    ],
+    "derived": {
+     "wing_soffit_slope": 0.0911,
+     "upper_fillet_web_tangent_height_cm": 101.9952,
+     "upper_fillet_wing_tangent_x_cm": 69.3603,
+     "soffit_flat_half_width_cm": 36.8693,
+     "soffit_tangent_half_width_cm": 41.8543
+    },
+    "type_u_residual_cm2_range": [
+     13.8,
+     34.1
+    ]
+   },
+   "CA-150": {
+    "rows": 17,
+    "closed_residual_cm2_range": [
+     13.5,
+     17.4
+    ],
+    "closed_rel_range": [
+     0.0019,
+     0.0025
+    ],
+    "derived": {
+     "wing_soffit_slope": 0.0925,
+     "upper_fillet_web_tangent_height_cm": 117.039,
+     "upper_fillet_wing_tangent_x_cm": 70.6607,
+     "soffit_flat_half_width_cm": 36.8229,
+     "soffit_tangent_half_width_cm": 41.8071
+    },
+    "type_u_residual_cm2_range": [
+     -4.3,
+     -2.6
+    ]
+   },
+   "CA-180": {
+    "rows": 17,
+    "closed_residual_cm2_range": [
+     -368.1,
+     -350.5
+    ],
+    "closed_rel_range": [
+     -0.0525,
+     -0.0454
+    ],
+    "derived": {
+     "wing_soffit_slope": 0.0948,
+     "upper_fillet_web_tangent_height_cm": 146.9947,
+     "upper_fillet_wing_tangent_x_cm": 72.7336,
+     "soffit_flat_half_width_cm": 36.8784,
+     "soffit_tangent_half_width_cm": 41.8635
+    },
+    "type_u_residual_cm2_range": [
+     -122.4,
+     -15.4
+    ]
+   },
+   "B-400": {
+    "rows": 18,
+    "closed_residual_cm2_range": [
+     88.9,
+     103.7
+    ],
+    "closed_rel_range": [
+     0.0071,
+     0.0087
+    ],
+    "derived": {
+     "wing_soffit_slope": 0.0811,
+     "upper_fillet_web_tangent_height_cm": 130.3252,
+     "upper_fillet_wing_tangent_x_cm": 112.4028,
+     "soffit_flat_half_width_cm": 43.1441,
+     "soffit_tangent_half_width_cm": 82.8647
+    },
+    "type_u_residual_cm2_range": [
+     -6.4,
+     -3.6
+    ]
+   }
+  },
+  "sepsa_double_tee": {
+   "LIGERA": {
+    "85.0": [
+     0.75
+    ],
+    "80.0": [
+     0.0
+    ],
+    "75.0": [
+     -5.0
+    ],
+    "70.0": [
+     0.75
+    ],
+    "65.0": [
+     1.25
+    ],
+    "60.0": [
+     -3.5
+    ],
+    "55.0": [
+     0.75
+    ],
+    "50.0": [
+     1.25
+    ],
+    "45.0": [
+     1.0
+    ]
+   },
+   "PESADA": {
+    "85.0": [
+     0.2
+    ],
+    "80.0": [
+     1.4
+    ],
+    "75.0": [
+     1.6
+    ],
+    "70.0": [
+     2.8
+    ],
+    "65.0": [
+     -2.2
+    ],
+    "60.0": [
+     -0.5
+    ],
+    "55.0": [
+     0.2
+    ],
+    "50.0": [
+     0.9
+    ],
+    "45.0": [
+     0.6
+    ]
+   },
+   "AMERICANA": {
+    "81.0": [
+     0.0
+    ],
+    "75.0": [
+     0.6
+    ],
+    "70.0": [
+     2.5
+    ],
+    "65.0": [
+     -0.8
+    ],
+    "60.0": [
+     0.6
+    ],
+    "55.0": [
+     -2.2
+    ],
+    "50.0": [
+     -0.3
+    ],
+    "45.0": [
+     1.6
+    ]
+   }
+  },
+  "sepsa_nebraska": {
+   "135": {
+    "web_18": {
+     "area_m2": 0.55204,
+     "area_rel": -0.00228,
+     "yb_mm": 641.2,
+     "ixx_mm4": 141456362903
+    }
+   },
+   "180": {
+    "web_18": {
+     "area_m2": 0.63304,
+     "area_rel": -0.00215,
+     "yb_mm": 854.82,
+     "ixx_mm4": 287565492190
+    },
+    "web_20": {
+     "area_m2": 0.66904,
+     "area_rel": -0.00218,
+     "yb_mm": 857.25,
+     "ixx_mm4": 297355032576
+    }
+   },
+   "200-ALERO-ESPECIAL": {
+    "web_18": {
+     "area_m2": 0.74851,
+     "area_rel": -0.00172,
+     "yb_mm": 1054.86,
+     "ixx_mm4": 441137948691
+    },
+    "web_20": {
+     "area_m2": 0.78851,
+     "area_rel": -0.00164,
+     "yb_mm": 1052.08,
+     "ixx_mm4": 454585566427
+    }
+   },
+   "210": {
+    "web_18": {
+     "area_m2": 0.68704,
+     "area_rel": -0.00212,
+     "yb_mm": 998.72,
+     "ixx_mm4": 420000438478
+    },
+    "web_20": {
+     "area_m2": 0.72904,
+     "area_rel": -0.002,
+     "yb_mm": 1001.67,
+     "ixx_mm4": 435539532943
+    }
+   },
+   "220": {
+    "web_18": {
+     "area_m2": 0.70504,
+     "area_rel": -0.00207,
+     "yb_mm": 1046.89,
+     "ixx_mm4": 470885600733
+    },
+    "web_20": {
+     "area_m2": 0.74904,
+     "area_rel": -0.00195,
+     "yb_mm": 1050.01,
+     "ixx_mm4": 488749080673
+    }
+   },
+   "240": {
+    "web_18": {
+     "area_m2": 0.74104,
+     "area_rel": -0.00197,
+     "yb_mm": 1143.51,
+     "ixx_mm4": 583308425544
+    },
+    "web_20": {
+     "area_m2": 0.78904,
+     "area_rel": -0.00185,
+     "yb_mm": 1146.94,
+     "ixx_mm4": 606492300723
+    }
+   },
+   "240-BASE-ESPECIAL": {
+    "web_18": {
+     "area_m2": 0.82264,
+     "area_rel": -0.00177,
+     "yb_mm": 1056.53,
+     "ixx_mm4": 640139058885
+    },
+    "web_20": {
+     "area_m2": 0.87064,
+     "area_rel": -0.00168,
+     "yb_mm": 1064.44,
+     "ixx_mm4": 664112613992
+    }
+   }
+  }
+ },
+ "pinned_discrepancies": [
+  "SEPSA CA-180 closed: table ~350-370 cm2 (4.3-5.3%) above the drawn geometry for every width; closed table value is also below Type U. Unresolved; pinned in tests.",
+  "SEPSA CA-135 closed: residual +43 -> +108 cm2 (+0.6 -> +2.0%) as a shrinks; table area decrements inconsistent with its own b column. Pinned.",
+  "SEPSA B-400 closed: +89..+104 cm2 (+0.7..+0.9%) while B-400 Type U matches within 0.06%. Pinned.",
+  "SEPSA TC180 Type U a=190 repeats 7280 cm2 (a=200); residual -1.7% pinned.",
+  "SEPSA TC135 Type U a=310 value (6807) equals the closed a=300 value; residual +0.5% (within band).",
+  "SEPSA TT ligera h=75 (-5.0 cm2) and h=60 (-3.5 cm2) exceed b-rounding tolerance; pinned.",
+  "SEPSA CA-115 b/b1 column is identical to CA-85's; computed b deviates up to 0.21 cm at a=140.",
+  "WIKA CG100: printed width chain sums to 1220 (580 void) vs 1200; drawing's 560 used.",
+  "WIKA PC-U: one common fit leaves residuals up to 1.3% A / 0.8% I (H210)."
+ ],
+ "not_implemented": [
+  "WIKA voided slabs VS57-VS74 and segmental boxes (outside scope; PARTIAL in assessment)",
+  "Beijing sections II-II/III-III (end thickening, not midspan)"
+ ]
+}

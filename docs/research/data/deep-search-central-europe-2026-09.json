@@ -1,0 +1,90 @@
+{
+  "accessed": "2026-09-22",
+  "scope": "New Central European and Dutch named precast bridge-beam source leads; research queue, not implemented geometry",
+  "records": [
+    {
+      "id": "nl_haitsma_hgko",
+      "country_code": "NL", "country": "Netherlands", "language": "Dutch", "source_type": "manufacturer_pdf", "organisation": "Haitsma Beton",
+      "title_original": "HGKO-ligger", "title_en": "HGKO cambered short-span girder", "url": "https://www.haitsma-beton.de/media/4409/folder-hgko-ligger.pdf", "locator": "product sheet p. 1; profile drawings at https://www.haitsma-beton.de/media/4399/hgko-hgr-april-2-2009.pdf pp. 1-5",
+      "family_names": ["HGKO-ligger", "HGKO-400", "HGKO-450", "HGKO-550", "HGKO-600"], "printed_dimensions": "Sheet: standard width 990 mm, working width 1000 mm, span 7-16 m; separate drawing sheets include HGKO-400/450/550/600.",
+      "status": "partial_dimensions", "missing_information": "Transcribe every vertex, chamfer, void and variant from separate 1:10 profile sheets before implementation.", "contact_route": "info@haitsma.nl; +31 (0)512-33 56 78 (manufacturer downloads page)."
+    },
+    {
+      "id": "nl_haitsma_hbm",
+      "country_code": "NL", "country": "Netherlands", "language": "Dutch", "source_type": "manufacturer_pdf", "organisation": "Haitsma Beton",
+      "title_original": "HBM-ligger Boogbrug", "title_en": "HBM arched U-girder bridge", "url": "https://www.haitsma-beton.de/media/4408/folder-hbm-ligger-boogbrug.pdf", "locator": "product sheet p. 1; profile sheet https://www.haitsma-beton.de/media/4395/hbm-april-2009.pdf",
+      "family_names": ["HBM-ligger"], "printed_dimensions": "Sheet: standard width 1180 mm, working width 1200-1350 mm, span 10-16 m; arched U-girder.",
+      "status": "partial_dimensions", "missing_information": "Profile drawing is graphic-heavy; extract and verify U-shape inner contour, variant heights and fillets.", "contact_route": "info@haitsma.nl; +31 (0)512-33 56 78."
+    },
+    {
+      "id": "nl_haitsma_hkp",
+      "country_code": "NL", "country": "Netherlands", "language": "Dutch", "source_type": "manufacturer_pdf", "organisation": "Haitsma Beton",
+      "title_original": "HKP-ligger", "title_en": "HKP box-profile girder", "url": "https://www.haitsma-beton.de/media/4390/folder-hkp-ligger.pdf", "locator": "product sheet p. 1; profile drawings https://www.haitsma-beton.de/media/4402/hkp-april-2009.pdf pp. 1-9",
+      "family_names": ["HKP-ligger", "HKP-600", "HKP-700", "HKP-800", "HKP-900", "HKP-1000", "HKP-1100", "HKP-1200", "HKP-1300", "HKP-1400"], "printed_dimensions": "Sheet: standard width 1480 mm, working width 1500 mm, span 18-68 m; transverse post-tensioning, complete deck without topping.",
+      "status": "partial_dimensions", "missing_information": "Digitize and verify full exterior and box void of all nine 1:20 profile drawings.", "contact_route": "info@haitsma.nl; +31 (0)512-33 56 78."
+    },
+    {
+      "id": "nl_haitsma_hkv",
+      "country_code": "NL", "country": "Netherlands", "language": "Dutch", "source_type": "manufacturer_pdf", "organisation": "Haitsma Beton",
+      "title_original": "HKV-ligger", "title_en": "HKV variable-bottom box girder", "url": "https://www.haitsma-beton.de/media/4393/folder-hkv-ligger.pdf", "locator": "product sheet p. 1, Variaties in dwarsdoorsnede",
+      "family_names": ["HKV-ligger"], "printed_dimensions": "Sheet: standard width 1480 mm; span 18-35 m; variable bottom.",
+      "status": "partial_dimensions", "missing_information": "Variable bottom prevents a single fixed polygon; obtain design-specific cross sections and slope/void dimensions.", "contact_route": "info@haitsma.nl; +31 (0)512-33 56 78."
+    },
+    {
+      "id": "nl_haitsma_hgkp",
+      "country_code": "NL", "country": "Netherlands", "language": "Dutch", "source_type": "manufacturer_pdf", "organisation": "Haitsma Beton",
+      "title_original": "HGKP-ligger", "title_en": "HGKP curved box-profile girder", "url": "https://www.haitsma-beton.de/media/4389/folder-hgkp-ligger.pdf", "locator": "product sheet p. 1, Bovenaanzicht ligger and Dwarsdoorsnede",
+      "family_names": ["HGKP-ligger"], "printed_dimensions": "Sheet: span 25-40 m; curved box profile, complete deck without topping.",
+      "status": "named_only", "missing_information": "No fixed cross-sectional dimensions verified; curvature-dependent and likely project-specific geometry needs drawings.", "contact_route": "info@haitsma.nl; +31 (0)512-33 56 78."
+    },
+    {
+      "id": "nl_haitsma_hmp",
+      "country_code": "NL", "country": "Netherlands", "language": "Dutch", "source_type": "manufacturer_pdf", "organisation": "Haitsma Beton",
+      "title_original": "HMP-ligger", "title_en": "HMP solid-profile girder", "url": "https://www.haitsma-beton.de/media/4392/folder-hmp-ligger.pdf", "locator": "product sheet p. 1",
+      "family_names": ["HMP-ligger"], "printed_dimensions": "Sheet: standard width 1480 mm, working width 1500 mm, span 9-21 m; complete deck without topping.",
+      "status": "partial_dimensions", "missing_information": "Obtain or transcribe dimensioned fixed-height profile sheets and end/edge variants.", "contact_route": "info@haitsma.nl; +31 (0)512-33 56 78."
+    },
+    {
+      "id": "cz_ks_prefa_ksp",
+      "country_code": "CZ", "country": "Czechia", "language": "Czech", "source_type": "manufacturer_web", "organisation": "KŠ PREFA",
+      "title_original": "Mostní nosníky předem předpínané KSP-NPP; Mostní nosníky dodatečně předpínané plné KSP-NDPP; Mostní nosníky odlehčené KSP-NDPO", "title_en": "KSP pre-tensioned I, solid T and lightened T bridge girders", "url": "https://ksprefa.cz/produkty/dopravni-stavby/mostni-nosniky/", "locator": "Mostní nosníky headings and descriptions",
+      "family_names": ["KSP-NPP", "KSP-NDPP", "KSP-NDPO"], "printed_dimensions": "KSP-NDPP: web 350-600 mm, depth 600-1200 mm, girder width 1000-2000 mm. KSP-NDPO: web 350-600 mm, depth 1200-1600 mm, girder width 1000-2000 mm. KSP-NPP: up to 32 m span, I-section.",
+      "status": "partial_dimensions", "missing_information": "Dimension ranges are not discrete fixed outlines; request standard production drawings, flange/web transitions and lightening-void geometry.", "contact_route": "Ing. Petr Mrzena, p.mrzena@ksprefa.cz, +420 737 256 441 (page quick contact)."
+    },
+    {
+      "id": "cz_prefa_nb_ms_i",
+      "country_code": "CZ", "country": "Czechia", "language": "Czech", "source_type": "manufacturer_web", "organisation": "PREFA Nový Bydžov / MEDIS group",
+      "title_original": "předpjaté mostní nosníky MS - I", "title_en": "MS-I prestressed bridge girders", "url": "https://www.prefa-nb.cz/predpjate-mostni-nosniky-vsti-2000", "locator": "MS-I nosníky and Charakteristiky nosníku MS-I table",
+      "family_names": ["MS - I", "MS - I - 9/0,4", "MS - I - 12/0,5", "MS - I - 15/0,7", "MS - I - 18/0,8", "MS - I - 21/0,9", "MS - I - 24/1,0"], "printed_dimensions": "Page: lengths 9-34 m, construction depth 0.4-1.4 m; first table row MS-I-9/0.4 length 8.96 m, depth 0.4 m, width 0.67 m.",
+      "status": "partial_dimensions", "missing_information": "Full flange/web/chamfer geometry is absent from HTML; request production cross-section and inspect linked VSTI PDF only as predecessor, not equivalent geometry.", "contact_route": "michal.bilek@msilnice.cz; +420 495 846 104 (manufacturer header)."
+    },
+    {
+      "id": "sk_doprastav_dp_i10",
+      "country_code": "SK", "country": "Slovakia", "language": "Slovak", "source_type": "manufacturer_web_and_journal", "organisation": "Doprastav, a.s., Závod Bratislava / Beton journal authors",
+      "title_original": "Mostné dodatočne predpäté prefabrikované nosníky DPS DP I/10 dĺžok 24-42 m", "title_en": "DPS DP I/10 post-tensioned precast bridge girders", "url": "https://www.doprastav.sk/2/mostne-dodatocne-predpate-prefabrikovane-nosniky-dps-dp-i10-dlzok-24-42-m/", "academic_url": "https://www.ebeton.cz/wp-content/uploads/2023-3-36.pdf", "locator": "manufacturer page product heading and Použitie; Beton 3/2023 pp. 37-38 (PDF pp. 2-3), Most 203 and Fig. 7",
+      "family_names": ["DPS DP I/10"], "printed_dimensions": "Manufacturer: lengths 24-42 m. Journal's D1 bridge 203 example: girder depth 2.0 m, maximum length 42 m, composite slab 0.225 m; 3 assembled RC segments, then post-tensioned.",
+      "status": "partial_dimensions", "missing_information": "Need dimensioned I/10 cross-section and component joints; journal bridge example must not be generalized to all variants.", "contact_route": "Manufacturer prefabrication enquiry form: https://www.doprastav.sk/mostne-prefabrikovane-nosniky/."
+    },
+    {
+      "id": "sk_doprastav_vp_i10",
+      "country_code": "SK", "country": "Slovakia", "language": "Slovak", "source_type": "manufacturer_web", "organisation": "Doprastav, a.s., Závod Bratislava",
+      "title_original": "Mostné predpäté prefabrikované nosníky DPS VP I/10 12-21 m", "title_en": "DPS VP I/10 pre-tensioned precast bridge girders", "url": "https://www.doprastav.sk/2/mostne-predpate-prefabrikovane-nosniky-dps-vp-i10-12-21-m/", "locator": "product heading and Použitie; companion 24-30 m variant on manufacturer product index",
+      "family_names": ["DPS VP I/10"], "printed_dimensions": "Manufacturer states 12-21 m lengths; companion product index separately lists 24-30 m lengths.",
+      "status": "named_only", "missing_information": "Need dimensioned I/10 fixed cross-sections and confirm whether 12-21 m and 24-30 m lengths share shape.", "contact_route": "Manufacturer prefabrication enquiry form: https://www.doprastav.sk/mostne-prefabrikovane-nosniky/."
+    },
+    {
+      "id": "pl_pekabex_mg_t",
+      "country_code": "PL", "country": "Poland", "language": "Polish", "source_type": "manufacturer_pdf_and_conference", "organisation": "Pekabex Bet S.A. / Mosty Gdańsk",
+      "title_original": "Belki prefabrykowane typu MG-T", "title_en": "MG-T precast pretensioned bridge girders", "url": "https://pekabex.com/wp-content/uploads/2023/11/Katalog-mosty-1.pdf", "academic_url": "https://www.researchgate.net/publication/376349825_Projekt_i_ocena_nowego_typu_strunobetonowych_belek_prefabrykowanych_MG-T_do_zastosowan_w_mostownictwie", "locator": "catalogue printed pp. 3-4 (PDF pp. 3-4) section sketches A-A/B-B/C-C; printed p. 8 (PDF p. 6) dimension/mass table; conference paper 2023 Fig. 2 and section 3",
+      "family_names": ["MG-T18", "MG-T21", "MG-T24", "MG-T27", "MG-T30", "MG-T33", "MG-T36", "MG-T39", "MG-T42", "MG-T46"], "printed_dimensions": "Catalogue: beam depths 0.90-2.10 m and lengths 18.2-46.2 m by named variant; typical top width 2390 mm shown on section sketches, but edge versions and top-flange adaptation are possible.",
+      "status": "partial_dimensions", "missing_information": "Transcribe whole support/intermediate/span cross-section dimension chains, incl. variable depth and edge-beam top-flange modifications; verify against rendered figures.", "contact_route": "info@pekabex.pl; biuro@mostygdansk.pl (catalogue back page)."
+    },
+    {
+      "id": "de_ssf_vmp",
+      "country_code": "DE", "country": "Germany", "language": "German", "source_type": "conference_proceedings", "organisation": "SSF Ingenieure AG (Andreas Danders)",
+      "title_original": "VMP®-Bauweise / Vorgespannte Modul-Plattenbauweise", "title_en": "VMP prestressed modular slab-beam system", "url": "https://elibrary.narr.digital/xibrary/kbr-2026-1", "locator": "7. Brückenkolloquium (September 2026), 'Ersatzneubau der Elisabethbrücke', pp. 69-71, section 1.1, Table 1",
+      "family_names": ["VMP®-Bauweise", "200/40 cm", "100/60 cm", "100/80 cm", "100/100 cm"], "printed_dimensions": "Table 1 lists selectable modules 200/40, 100/60, 100/80, 100/100 cm and maximum weights 17, 20, 35, 55 t respectively; system presented for single-span bridges to about 20 m.",
+      "status": "partial_dimensions", "missing_information": "Module width/depth notation needs confirmation from author drawing; obtain full cross-sectional outline and distinguish proposed system from built Elisabethbrücke, which uses VTR steel-composite modules.", "contact_route": "Andreas Danders, adanders@ssf-ing.de (SSF public contact page https://www.ssf-ing.de/kontakt/)."
+    }
+  ]
+}

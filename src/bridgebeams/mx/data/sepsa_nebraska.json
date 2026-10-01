@@ -1,0 +1,311 @@
+{
+ "schema_version": 1,
+ "family": "SEPSA Trabe Nebraska producer I-girders",
+ "country": "Mexico",
+ "source_status": "producer catalogue V-05-27-21",
+ "source": {
+  "organisation": "Grupo Constructor SEPSA",
+  "title": "Catálogo de piezas SEPSA V-05 27-21",
+  "url": "https://sepsacv.com.mx/wp-content/uploads/2022/02/CATALOGO-DE-PIEZAS-SEPSA-V-05-27-21.pdf",
+  "local_file": "sources/expansion/europe-americas/mx_sepsa.pdf",
+  "sha256": "4bf8d28b4d5165d893df215f484ddab996a9e6849a3410049ba4e0cb69133feb",
+  "accessed": "2026-09-22",
+  "pdf_page_1_based": 5,
+  "transcription": "Printed dimensions read from 400-dpi renders (2026-09-23); property table from PDF text extraction, visually checked. Undimensioned details measured from the page's vector drawing paths (uniform scale: x/y factors agree to 0.15%)."
+ },
+ "units": {
+  "drawing": "cm",
+  "published_area": "m2",
+  "outline_output": "mm"
+ },
+ "scope": "Producer-specific metric profiles named after, but not identical to, the US Nebraska NU girder.",
+ "translation": {
+  "alero especial": "special (wide) wing",
+  "base especial": "special (deep) base",
+  "alma": "web",
+  "ancho de base": "bottom width",
+  "patín superior": "top flange",
+  "claro": "span"
+ },
+ "geometry_notes": [
+  "Origin at mid-soffit, y up. Outline built in cm with 48-segment arcs and scaled to mm.",
+  "20 cm web = 18 cm web profile with every half-width increased by 1 cm; published area differences are exactly 2 cm x depth for all six types, confirming this.",
+  "Bottom flange: printed 15 cm edge (base especial 25), 27 cm to the web; the lower R20 fillet is tangent to the web at 15+27 and its tangent point on the taper is taken at x=22.5 cm (printed 27.5/45/27.5 chord); the taper line is the tangent there and the R5 fillet joins it to the vertical flange edge. The R5 tangent then falls at y=14.8 cm (printed 15).",
+  "ESTIMATE: top flange soffit is a straight line from the end of the flange-tip arc, tangent to the upper R20 fillet (which is tangent to the web 32 cm below the top: 10+22). The drawing's break point (x~24.5 cm) is not dimensioned and the catalogue polyline is not tangent; the tangent convention is used.",
+  "ESTIMATE: flange tip is a quarter circle R10 from the top corner to the 10 cm edge line (measured from the vector drawing, not printed). Alero especial: 2 cm vertical tip edge, then R8.5 quarter circle (the printed 2 + 8.5 + 2.5 + 20 chain), then the soffit line tangent to R20 (web end 33 cm below top).",
+  "ESTIMATE: base especial soffit corners carry a 2 x 2 cm chamfer (drawn, not printed); the other types have square soffit corners as drawn.",
+  "Base especial uses the same 45 cm tangent-chord convention although that drawing does not print 45 (drawn tangent ~(22.6, 32.6) cm vs 22.5, 33.1 used)."
+ ],
+ "types": [
+  {
+   "type": "135",
+   "source_designation": "NEBRASKA - 135",
+   "depth_cm": 135,
+   "top_width_web18_cm": 125,
+   "bottom_width_web18_cm": 100,
+   "printed_web_height_cm": 61,
+   "bottom_edge_cm": 15,
+   "top_web_end_from_top_cm": 32,
+   "tip_vertical_edge_cm": 0,
+   "tip_radius_cm": 10,
+   "area_m2": {
+    "web_18": 0.5533,
+    "web_20": null
+   },
+   "span_range_m": "20-30",
+   "provenance": "estimate",
+   "printed_vertical_chain_cm": [
+    10,
+    22,
+    61,
+    27,
+    15
+   ],
+   "residuals": {
+    "web_18": {
+     "area_m2": 0.55204,
+     "area_rel": -0.00228,
+     "yb_mm": 641.2,
+     "ixx_mm4": 141456362903
+    }
+   }
+  },
+  {
+   "type": "180",
+   "source_designation": "NEBRASKA - 180",
+   "depth_cm": 180,
+   "top_width_web18_cm": 125,
+   "bottom_width_web18_cm": 100,
+   "printed_web_height_cm": 106,
+   "bottom_edge_cm": 15,
+   "top_web_end_from_top_cm": 32,
+   "tip_vertical_edge_cm": 0,
+   "tip_radius_cm": 10,
+   "area_m2": {
+    "web_18": 0.6344,
+    "web_20": 0.6705
+   },
+   "span_range_m": "30-40",
+   "provenance": "estimate",
+   "printed_vertical_chain_cm": [
+    10,
+    22,
+    106,
+    27,
+    15
+   ],
+   "residuals": {
+    "web_18": {
+     "area_m2": 0.63304,
+     "area_rel": -0.00215,
+     "yb_mm": 854.82,
+     "ixx_mm4": 287565492190
+    },
+    "web_20": {
+     "area_m2": 0.66904,
+     "area_rel": -0.00218,
+     "yb_mm": 857.25,
+     "ixx_mm4": 297355032576
+    }
+   }
+  },
+  {
+   "type": "200-ALERO-ESPECIAL",
+   "source_designation": "NEBRASKA - 200 ALERO ESPECIAL",
+   "depth_cm": 200,
+   "top_width_web18_cm": 184,
+   "bottom_width_web18_cm": 100,
+   "printed_web_height_cm": 125,
+   "bottom_edge_cm": 15,
+   "top_web_end_from_top_cm": 33,
+   "tip_vertical_edge_cm": 2,
+   "tip_radius_cm": 8.5,
+   "area_m2": {
+    "web_18": 0.7498,
+    "web_20": 0.7898
+   },
+   "span_range_m": "35-42",
+   "provenance": "estimate",
+   "printed_vertical_chain_cm": [
+    2,
+    8.5,
+    2.5,
+    20,
+    125,
+    27,
+    15
+   ],
+   "residuals": {
+    "web_18": {
+     "area_m2": 0.74851,
+     "area_rel": -0.00172,
+     "yb_mm": 1054.86,
+     "ixx_mm4": 441137948691
+    },
+    "web_20": {
+     "area_m2": 0.78851,
+     "area_rel": -0.00164,
+     "yb_mm": 1052.08,
+     "ixx_mm4": 454585566427
+    }
+   }
+  },
+  {
+   "type": "210",
+   "source_designation": "NEBRASKA - 210",
+   "depth_cm": 210,
+   "top_width_web18_cm": 125,
+   "bottom_width_web18_cm": 100,
+   "printed_web_height_cm": 136,
+   "bottom_edge_cm": 15,
+   "top_web_end_from_top_cm": 32,
+   "tip_vertical_edge_cm": 0,
+   "tip_radius_cm": 10,
+   "area_m2": {
+    "web_18": 0.6885,
+    "web_20": 0.7305
+   },
+   "span_range_m": "38-45",
+   "provenance": "estimate",
+   "printed_vertical_chain_cm": [
+    10,
+    22,
+    136,
+    27,
+    15
+   ],
+   "residuals": {
+    "web_18": {
+     "area_m2": 0.68704,
+     "area_rel": -0.00212,
+     "yb_mm": 998.72,
+     "ixx_mm4": 420000438478
+    },
+    "web_20": {
+     "area_m2": 0.72904,
+     "area_rel": -0.002,
+     "yb_mm": 1001.67,
+     "ixx_mm4": 435539532943
+    }
+   }
+  },
+  {
+   "type": "220",
+   "source_designation": "NEBRASKA - 220",
+   "depth_cm": 220,
+   "top_width_web18_cm": 125,
+   "bottom_width_web18_cm": 100,
+   "printed_web_height_cm": 146,
+   "bottom_edge_cm": 15,
+   "top_web_end_from_top_cm": 32,
+   "tip_vertical_edge_cm": 0,
+   "tip_radius_cm": 10,
+   "area_m2": {
+    "web_18": 0.7065,
+    "web_20": 0.7505
+   },
+   "span_range_m": "40-48",
+   "provenance": "estimate",
+   "printed_vertical_chain_cm": [
+    10,
+    22,
+    146,
+    27,
+    15
+   ],
+   "residuals": {
+    "web_18": {
+     "area_m2": 0.70504,
+     "area_rel": -0.00207,
+     "yb_mm": 1046.89,
+     "ixx_mm4": 470885600733
+    },
+    "web_20": {
+     "area_m2": 0.74904,
+     "area_rel": -0.00195,
+     "yb_mm": 1050.01,
+     "ixx_mm4": 488749080673
+    }
+   }
+  },
+  {
+   "type": "240",
+   "source_designation": "NEBRASKA - 240",
+   "depth_cm": 240,
+   "top_width_web18_cm": 125,
+   "bottom_width_web18_cm": 100,
+   "printed_web_height_cm": 166,
+   "bottom_edge_cm": 15,
+   "top_web_end_from_top_cm": 32,
+   "tip_vertical_edge_cm": 0,
+   "tip_radius_cm": 10,
+   "area_m2": {
+    "web_18": 0.7425,
+    "web_20": 0.7905
+   },
+   "span_range_m": "45-50",
+   "provenance": "estimate",
+   "printed_vertical_chain_cm": [
+    10,
+    22,
+    166,
+    27,
+    15
+   ],
+   "residuals": {
+    "web_18": {
+     "area_m2": 0.74104,
+     "area_rel": -0.00197,
+     "yb_mm": 1143.51,
+     "ixx_mm4": 583308425544
+    },
+    "web_20": {
+     "area_m2": 0.78904,
+     "area_rel": -0.00185,
+     "yb_mm": 1146.94,
+     "ixx_mm4": 606492300723
+    }
+   }
+  },
+  {
+   "type": "240-BASE-ESPECIAL",
+   "source_designation": "NEBRASKA - 240 BASE ESPECIAL",
+   "depth_cm": 240,
+   "top_width_web18_cm": 125,
+   "bottom_width_web18_cm": 100,
+   "printed_web_height_cm": 156,
+   "bottom_edge_cm": 25,
+   "top_web_end_from_top_cm": 32,
+   "tip_vertical_edge_cm": 0,
+   "tip_radius_cm": 10,
+   "area_m2": {
+    "web_18": 0.8241,
+    "web_20": 0.8721
+   },
+   "span_range_m": "45-50",
+   "provenance": "estimate",
+   "soffit_chamfer_cm": 2,
+   "printed_vertical_chain_cm": [
+    10,
+    22,
+    156,
+    27,
+    25
+   ],
+   "residuals": {
+    "web_18": {
+     "area_m2": 0.82264,
+     "area_rel": -0.00177,
+     "yb_mm": 1056.53,
+     "ixx_mm4": 640139058885
+    },
+    "web_20": {
+     "area_m2": 0.87064,
+     "area_rel": -0.00168,
+     "yb_mm": 1064.44,
+     "ixx_mm4": 664112613992
+    }
+   }
+  }
+ ]
+}

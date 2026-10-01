@@ -1,0 +1,228 @@
+{
+  "jurisdiction": "Ontario, Canada",
+  "family": "MTO prestressed NU girder",
+  "official_index_url": "https://www.library.mto.gov.on.ca/SydneyPLUS/TechPubs/Portal/tp/ssdViews.aspx",
+  "retrieved_utc_date": "2026-09-23",
+  "retrieval_note": "Portal uses ASP.NET postback; drawings downloaded by posting the per-row download control. SS107-16 and SS107-25 hashes match previously held copies.",
+  "source_units": "mm",
+  "section_view": "TYPICAL SECTION, lower left of sheet",
+  "transcribed_dimensions_mm": {
+    "top_width": 1235,
+    "top_flange_tip_edge": 65,
+    "top_taper_to_web_face": 45,
+    "web_width": 160,
+    "web_height": "D - 385 (printed 515/815/1015/1215/1415/1515/1615/2015)",
+    "bottom_taper_from_web_face": 140,
+    "bottom_flange_edge": 135,
+    "bottom_width": 985,
+    "web_fillet_radius": 200,
+    "flange_tip_fillet_radius": 50,
+    "soffit_chamfer": 20
+  },
+  "details_sheet": {
+    "drawing": "SS107-24",
+    "title_original": "Prestressed NU Girders - Details",
+    "date": "June 2025",
+    "local_file": "sources/expansion/europe-americas/ca_mto_ss107_24.pdf",
+    "sha256": "993c6e51c7fd9bebc00222b7c45c66a4ef3984f772e28fe8e544beeef2f2bc34",
+    "note": "Table 2 lists the same eight depths; no section properties."
+  },
+  "superseded_draft": {
+    "title": "Prestressed NU Girders and Bearings (DRAFT, July 25 2023)",
+    "url": "https://tcp.mto.gov.on.ca/sites/default/files/2023-08/NU-Girder-July-2023.pdf",
+    "local_file": "sources/expansion/europe-americas/ca_mto_nu.pdf",
+    "sha256": "190e5f3bff7c1e7d8bc49cf7e09c9a53b0d2febc15c3a9d5c634a640a1fa6859",
+    "status": "DRAFT; superseded by June 2025 sheets; callouts identical on all eight typical sections (visually compared)"
+  },
+  "guide": {
+    "title_original": "Prestressed Concrete Girder Guidelines (DRAFT) BRO-00X, August 2023",
+    "url": "https://tcp.mto.gov.on.ca/sites/default/files/2023-08/Prestressed%20Concrete%20Girder%20Guidelines%20%28August11%202023%29.pdf",
+    "local_file": "sources/expansion/europe-americas/ca_mto_guide.pdf",
+    "sha256": "4cf5ad75d1b99f4d6c82ea47b6587def31b8f6a09080e732428c3ba8fbb2e31f",
+    "pdf_page": 15,
+    "printed_page": 7,
+    "table": "Table 2 - NU Girder Geometry Used in Ontario",
+    "note": "Same outline; H (900-2400)."
+  },
+  "published_properties": null,
+  "geometry_notes": [
+    "45 mm top taper and 140 mm bottom taper are measured to the theoretical intersection with the web face (extension lines reach the web face on the 500 dpi render of SS107-16).",
+    "R50 and R200 fillets are the unique circular arcs tangent to the two adjoining straight lines at each printed theoretical corner; tessellated with arc_segments chords (default 32; area error <0.008%, Ixx error <0.007% vs exact arcs).",
+    "20 mm soffit chamfer taken as 20 x 20 mm at 45 degrees (convention; only '20mm CHAMFER' printed).",
+    "Top-flange upper outer corners are square as drawn; no top chamfer called out.",
+    "Web 160 mm (pretensioned standard). The guide mentions a 185 mm web for post-tensioned use; not a standard drawing, not implemented.",
+    "Holes, dowel inserts, strands, reinforcement, end undercuts and bearing plates excluded.",
+    "No published section-property table exists in any held Ontario source; checks are analytic only. The US Nebraska NU metric table does not apply (different outline)."
+  ],
+  "residuals": "n/a - no published properties",
+  "sizes": {
+    "NU900": {
+      "depth_mm": 900,
+      "web_height_mm": 515,
+      "drawing": "SS107-16",
+      "portal_number": "107.0016",
+      "title_original": "Prestressed NU Girders and Bearings (NU 900)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_16.pdf",
+      "sha256": "cc45346cf2251d70d9f594d46e276c51394173419ec1542f3ec3c2521c5548b5",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 1,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-16 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 427110.5,
+        "yb_mm": 410.441,
+        "ixx_mm4": 46488908000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    },
+    "NU1200": {
+      "depth_mm": 1200,
+      "web_height_mm": 815,
+      "drawing": "SS107-17",
+      "portal_number": "107.0017",
+      "title_original": "Prestressed NU Girders and Bearings (NU 1200)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_17.pdf",
+      "sha256": "3df71394fc74f020c81360e958eb3f69d36a7bbc3ad9791a3b9257d56046c44f",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 2,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-17 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 475110.5,
+        "yb_mm": 542.791,
+        "ixx_mm4": 95586070000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    },
+    "NU1400": {
+      "depth_mm": 1400,
+      "web_height_mm": 1015,
+      "drawing": "SS107-18",
+      "portal_number": "107.0018",
+      "title_original": "Prestressed NU Girders and Bearings (NU 1400)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_18.pdf",
+      "sha256": "24c3967c1262dd07b5350f0d7909a50dbcbac784ca2fd48bdf512ebe8551cf94",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 3,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-18 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 507110.5,
+        "yb_mm": 632.88,
+        "ixx_mm4": 139923428000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    },
+    "NU1600": {
+      "depth_mm": 1600,
+      "web_height_mm": 1215,
+      "drawing": "SS107-19",
+      "portal_number": "107.0019",
+      "title_original": "Prestressed NU Girders and Bearings (NU 1600)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_19.pdf",
+      "sha256": "7e36c01db7ac54610f5a0fa3d809702a40ed4c9c69c334910b2582b7b0a2854f",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 4,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-19 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 539110.5,
+        "yb_mm": 724.146,
+        "ixx_mm4": 194315206000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    },
+    "NU1800": {
+      "depth_mm": 1800,
+      "web_height_mm": 1415,
+      "drawing": "SS107-20",
+      "portal_number": "107.0020",
+      "title_original": "Prestressed NU Girders and Bearings (NU 1800)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_20.pdf",
+      "sha256": "9c80344fdc8737423753ab2ae4fee7d9d3096971694c2ffe95cfc0d328e84e0e",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 5,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-20 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 571110.5,
+        "yb_mm": 816.391,
+        "ixx_mm4": 259416161000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    },
+    "NU1900": {
+      "depth_mm": 1900,
+      "web_height_mm": 1515,
+      "drawing": "SS107-21",
+      "portal_number": "107.0021",
+      "title_original": "Prestressed NU Girders and Bearings (NU 1900)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_21.pdf",
+      "sha256": "3e5e312291f52580e7395f61ccde86205aa4ff791cfc6edc59d452f649612939",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 6,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-21 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 587110.5,
+        "yb_mm": 862.83,
+        "ixx_mm4": 296186312000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    },
+    "NU2000": {
+      "depth_mm": 2000,
+      "web_height_mm": 1615,
+      "drawing": "SS107-22",
+      "portal_number": "107.0022",
+      "title_original": "Prestressed NU Girders and Bearings (NU 2000)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_22.pdf",
+      "sha256": "ada8f9ceb48a6bcbb157a2b4ec3ec0465802721086aaaeaaab4bf228c3cf0162",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 7,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-22 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 603110.5,
+        "yb_mm": 909.459,
+        "ixx_mm4": 335877918000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    },
+    "NU2400": {
+      "depth_mm": 2400,
+      "web_height_mm": 2015,
+      "drawing": "SS107-23",
+      "portal_number": "107.0023",
+      "title_original": "Prestressed NU Girders and Bearings (NU 2400)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_23.pdf",
+      "sha256": "077f308b2fe4ecdf5ba636f3ab4de7eece58c3c21fa004f08ebd105056a5a260",
+      "pdf_page": 1,
+      "printed_page": null,
+      "draft_2023_pdf_page": 8,
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-23 (June 2025)",
+      "analytic_reference": {
+        "area_mm2": 667110.5,
+        "yb_mm": 1097.589,
+        "ixx_mm4": 525479184000.0,
+        "basis": "exact circular arcs (4096-chord limit; closed-form area agrees within 0.1 mm2)"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+ "producer": "Viadukt d.d. (Zagreb) - type girders as reproduced in TVZ teaching notes",
+ "document_title_original": "2. Pločasti gredni mostovi (nastavni materijal, Tehničko veleučilište u Zagrebu), Slika 2.5 - Tipski montažni nosači",
+ "source_status": "teaching notes (TVZ, Zagreb) reproducing Viadukt d.d. SAN type girders; not a producer catalogue",
+ "retrieved": "2026-09-23",
+ "source": {"url": "https://nastava.tvz.hr/gukov/pdf/2-ploce.pdf",
+            "local": "sources/expansion/round2/hr/tvz_2-ploce.pdf",
+            "sha256": "227bde9bf0d6594370b5a4b9bd8d938cb7a1730cff2e02defc978719fbff4d3e",
+            "pdf_page": 4, "printed_page": 11, "figure": "Slika 2.5 - Tipski montažni nosači (scanned bitmap, ~300 dpi)"},
+ "text_original": "Rješenje koje se danas primjenjuje predstavljaju tipski armiranobetonski ili prednapeti betonski nosači koje tvrtka Viadukt proizvodi u pet različitih poprečnih presjeka ovisno o rasponu i zadanom opterećenju (slika 2.5). ... Ako su šupljine u montažnim elementima okruglog presjeka, ploče se grade kao slobodne grede raspona do 20 m, a ako su šupljine četvrtastog presjeka, rasponi mogu biti i oko 30 m",
+ "units": "cm",
+ "printed": {
+  "SAN 210/75":  {"width": 210, "H": 75,  "Lmax_m": 20, "voids": "3 round (not dimensioned)"},
+  "SAN 210/115": {"width": 210, "H": 115, "Lmax_m": 27, "voids": "1 chamfered rectangle", "top_slab": 15, "bottom_slab": 10, "webs": 15},
+  "SAN 210/135": {"width": 210, "H": 135, "Lmax_m": 32, "voids": "1 chamfered rectangle", "top_slab": 15, "bottom_slab": 10, "webs": 15}
+ },
+ "estimates_cm": {
+  "SAN 210/75": {"void_diameter": 50, "void_centres_x": [-60, 0, 60], "void_centre_y": 35,
+                 "scaled": "diameters 50.2-51.9 (line centres), centres at -59.6/-1.0/+59.4, top cover ~15, bottom ~8 at 1.93 px/cm; rounded to the 15/10 slab convention of the larger types"},
+  "SAN 210/115": {"void_chamfer": 15, "scaled": "chamfer legs 11.5-17.5 (mean ~14) at 1.95 px/cm"},
+  "SAN 210/135": {"void_chamfer": 15, "scaled": "chamfer legs 11-18 (mean ~15) at 1.93 px/cm"},
+  "all": {"shear_key": {"centre_below_top": 25, "height": 15, "depth": 3, "flank": 3},
+          "scaled": "side groove (half of the longitudinal 'moždanik' joint) 13-35 cm below top on 210/75, 15 cm tall ~25 cm below top on 210/115 and 210/135, ~2.5-4 cm deep"}
+ },
+ "provenance": {"SAN 210/75": "estimate", "SAN 210/115": "transcribed-with-convention", "SAN 210/135": "transcribed-with-convention"},
+ "published_properties": "none (only Lmax per type)",
+ "skipped": "The text says Viadukt produced five cross-sections; only three are drawn in Slika 2.5.",
+ "geometry_notes": [
+  "Overall 210 x H and (115/135) slab/web thicknesses 15/10/15 are printed; the drawing is to scale within ~1.5 cm (line-centre measurements), confirming the reading.",
+  "SAN 210/75 void diameter and positions are not dimensioned: scaled, then rounded to O50 at 60 cm centres, centre 35 cm above the soffit (10 cm bottom / 15 cm top cover): estimate.",
+  "SAN 210/115 and 210/135 octagonal voids: 15 x 15 cm corner chamfers scaled from the drawing (estimate).",
+  "Both vertical faces carry a shallow groove forming the longitudinal shear-key joint; modelled as a trapezoidal notch 3 cm deep, 15 cm tall (9 cm flat), centred 25 cm below the top: estimate. Top and bottom outer corners square as drawn.",
+  "Voids are polygon interiors (circles as 64-gons)."
+ ]
+}

@@ -1,0 +1,162 @@
+{
+  "family": "TfNSW Country Bridge Solutions 600 mm precast prestressed double-T deck modules",
+  "authority": "Transport for NSW / Roads and Maritime Services, Bridge Engineering Section",
+  "source_status": "current TfNSW standard drawings (Country Bridge Solutions, 2016 issue)",
+  "drawing_status": "Approved for use 07.10.2016 (W Ariyaratne); standard-drawing sets 'Modular Bridge Drawings', published on transport.nsw.gov.au 2022; CBS design guide Edition 1 v1.0 says the modules must be used in strict adherence to the cover-sheet criteria",
+  "copyright": "(c) Copyright Roads and Maritime Services 2016 (title block)",
+  "units": "mm",
+  "retrieved": "2026-09-23",
+  "concrete": "50 MPa, density 2550 kg/m3 (general notes, PRECAST MODULE CONCRETE - SHEET A, text layer; PDF p26)",
+  "sources": [
+    {
+      "id": "AU-TFNSW-CBS-T1-10",
+      "title": "Country Bridge Solutions - Modular Bridge Drawings - Type 1 - 2 lanes - 10m span",
+      "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t1-10m-span.pdf",
+      "local_path": "sources/expansion/round2/au/tfnsw-cbs-t1-10m.pdf",
+      "sha256": "0481003d160a5f7353987e1e960b5478b4d9ddb76df0c3e6fb6717e2a904fba2",
+      "pages": {
+        "PRECAST MODULE CONCRETE - SHEET A (MB10DL52)": 26,
+        "PRECAST MODULE CONCRETE - SHEET C (MB10DL54)": 28
+      }
+    },
+    {
+      "id": "AU-TFNSW-CBS-T1-8",
+      "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t1-8m-span.pdf",
+      "local_path": "sources/expansion/round2/au/tfnsw-cbs-t1-8m.pdf",
+      "sha256": "dd03fa16153975d78f0ea6c6f5ed6b21ddcc7cdaf65deaac36daf530ecbc0349",
+      "pages": {
+        "SHEET C": 28
+      }
+    },
+    {
+      "id": "AU-TFNSW-CBS-T1-12",
+      "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t1-12m-span.pdf",
+      "local_path": "sources/expansion/round2/au/tfnsw-cbs-t1-12m.pdf",
+      "sha256": "4f7356d7d3bef2e0a46c164c08278a141eb80d146696ad1a7c0a929312cb8990",
+      "pages": {
+        "SHEET C": 28
+      }
+    },
+    {
+      "id": "AU-TFNSW-CBS-T2-10",
+      "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t2-10m-span.pdf",
+      "local_path": "sources/expansion/round2/au/tfnsw-cbs-t2-10m.pdf",
+      "sha256": "569c24dc184058b2fede128dc4da8f80861db69391a83f2626977627141d756c",
+      "pages": {
+        "PRECAST MODULE CONCRETE - SHEET B": 25
+      }
+    },
+    {
+      "id": "AU-TFNSW-CBS-T3-10",
+      "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/cbs-modular-bridge-drawings-t3-10m-span.pdf",
+      "local_path": "sources/expansion/round2/au/tfnsw-cbs-t3-10m.pdf",
+      "sha256": "d5eceef0bc8b7080994d414e7fd84cecc630b32f8b52470427bc7cf433e4c79c",
+      "pages": {
+        "PRECAST MODULE CONCRETE - SHEET B": 27
+      }
+    },
+    {
+      "id": "AU-TFNSW-CBS-GUIDE",
+      "title": "Country Bridge Solutions Design guide Edition 1, Version 1.0",
+      "url": "https://www.transport.nsw.gov.au/system/files/media/documents/2022/country-bridge-solutions-design-guide.pdf",
+      "local_path": "sources/expansion/round2/au/tfnsw-cbs-design-guide.pdf",
+      "sha256": "1932570efd6cd3325bacba6b274cb1cc971b5909cdfc7f7445b3b459d72ee21e",
+      "pages": {
+        "4.2.1 deck modules 600 mm double-T": 16
+      }
+    }
+  ],
+  "printed_common": {
+    "depth_to_deck_top": 600,
+    "web_soffit_width": 320,
+    "web_gap_soffit": 810,
+    "web_batter": "17.6:1",
+    "top_slab_over_void": 160,
+    "void_top_width": 760,
+    "stub": "410 wide x 75 thick, top 160 below deck top",
+    "web_top_width_at_365": 366,
+    "outer_face_offset_at_365": 79,
+    "outer_face_offset_at_soffit": 100,
+    "chamfers": "20x20 soffit chamfer (typ), 20x20 fillet at void-top corners (typ), 40x40 fillet under flanges (typ), 15x15 chamfer at flange tips (typ)",
+    "kerb": "755 overall (390 above 365 underside on Types 1/2, 335 above 420 underside on Type 3); 300 top flat, 25 run on the inner face, printed 5/150/10 vertical detail"
+  },
+  "geometry_notes": [
+    "Both web faces batter 1:17.6 outward going up: 21 mm over 365 mm (100 -> 79 printed) and 25 mm over 440 mm (810 -> 760 printed) both close within 0.3 mm.",
+    "Origin: x = 0 at the centre of the 810 mm gap between the web soffits (for the asymmetric external modules this is the double-T body centre, not the centroid); y = 0 at soffit.",
+    "Chamfer/fillet legs are taken horizontal and vertical (convention).",
+    "Kerb outer corners are chamfered 15 x 15 (the drawing shows small chamfers there; the 15 x 15 'typ' note is applied as a convention).",
+    "Kerb's 5 mm top detail and 10 mm drainage-level recess are ignored; the inner kerb face runs straight from the end of the 300 mm top flat to deck level 25 mm further in (convention; area effect < 200 mm2).",
+    "Type 2 printed top chain 325 + 107 = 432 to the left web outer face at 365 mm, whereas the soffit chain 450 and the 17.6:1 batter give 429.3 mm: 2.7 mm closure mismatch. The soffit chain (450) is used and the mismatch is recorded.",
+    "Excluded: 450 mm solid end blocks, 220x250x5 bearing recesses, 50 dia vent holes, drainage pipes, anchor bolts, holding-down bracket recesses, projecting reinforcement.",
+    "No section properties are published. Mass check (text layer of SHEET A general notes): Type 1 internal module approx 13.1 / 16.4 / 19.7 t for the 8 / 10 / 12 m sets (module lengths 7970/9970/11970 assumed from the 9970 printed for 10 m). The span-to-span increment 3.3 t per 2.0 m at 2550 kg/m3 implies a prismatic area of 0.647 m2 (+/-3% from 0.1 t rounding); the implemented T1-internal area is 0.6414 m2 (-0.9%). Type 1 external 16.9 t and Type 3 19.6 t (10 m) include end blocks; prismatic 9.97 m masses are 16.76 t and 19.28 t."
+  ],
+  "sections": {
+    "T1-internal": {
+      "provenance": "transcribed",
+      "label": "Type 1 internal precast module - Type A (Section 1/52)",
+      "overall_width": 2470,
+      "dimensions_mm": {
+        "left": "stub",
+        "right": "stub",
+        "left_overhang": 100,
+        "right_overhang": 100
+      }
+    },
+    "T1-external": {
+      "provenance": "transcribed-with-convention",
+      "label": "Type 1 external precast module - Type B (Section 3/53)",
+      "overall_width": 2060,
+      "dimensions_mm": {
+        "left": "kerb",
+        "right": "stub",
+        "left_overhang": 100,
+        "right_overhang": 100,
+        "kerb_bottom": 365
+      }
+    },
+    "T2-external": {
+      "provenance": "transcribed-with-convention",
+      "label": "Type 2 (1 lane, closure pour) precast module (Section 1/52, sheet B)",
+      "overall_width": 2410,
+      "dimensions_mm": {
+        "left": "kerb",
+        "right": "stub",
+        "left_overhang": 450,
+        "right_overhang": 100,
+        "kerb_bottom": 365
+      }
+    },
+    "T3-external": {
+      "provenance": "transcribed-with-convention",
+      "label": "Type 3 (1 lane, no closure pour) precast module (Section 1/52, sheet B)",
+      "overall_width": 2420,
+      "dimensions_mm": {
+        "left": "kerb",
+        "right": "deck",
+        "left_overhang": 625,
+        "right_overhang": 345,
+        "kerb_bottom": 420
+      }
+    }
+  },
+  "published_mass_t": {
+    "T1-internal": {
+      "8m": 13.1,
+      "10m": 16.4,
+      "12m": 19.7
+    },
+    "T1-external": {
+      "10m": 16.9
+    },
+    "T3-external": {
+      "10m": 19.6
+    }
+  },
+  "residuals": {
+    "T1-internal": {
+      "implied_prismatic_area_mm2": 647059,
+      "implemented_area_mm2": 641420,
+      "relative": -0.0087
+    }
+  }
+}

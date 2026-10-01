@@ -1,0 +1,1157 @@
+{
+  "date": "2026-09-22",
+  "user_review_export": "2026-09-22T11:24:10.339Z",
+  "verbatim_answers": "visual-review-responses-2026-09-22.json",
+  "sources": [
+    {
+      "path": "sources/expansion/pdf-backlog/norway-v426.pdf",
+      "sha256": "8e759c194e284791736e3a717f7f340f5ea85bdd5c77d67c6ba1fe559c2ca77e"
+    },
+    {
+      "path": "sources/expansion/pdf-backlog/nz-rr364.pdf",
+      "sha256": "ea199fa1dfa3272c8c31bbe8ee200c616536fae4a25418ae084d51841b01fd6d"
+    }
+  ],
+  "implemented_profiles": [
+    {
+      "country": "NO",
+      "type": "NTB800-400x1400",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 37,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          385.0,
+          0.0
+        ],
+        [
+          400.0,
+          15.0
+        ],
+        [
+          400.0,
+          157.0
+        ],
+        [
+          380.0,
+          157.0
+        ],
+        [
+          385.0,
+          197.0
+        ],
+        [
+          110.0,
+          265.0
+        ],
+        [
+          110.0,
+          1200.0
+        ],
+        [
+          200.0,
+          1275.0
+        ],
+        [
+          200.0,
+          1370.0
+        ],
+        [
+          170.0,
+          1370.0
+        ],
+        [
+          170.0,
+          1400.0
+        ],
+        [
+          -170.0,
+          1400.0
+        ],
+        [
+          -170.0,
+          1370.0
+        ],
+        [
+          -200.0,
+          1370.0
+        ],
+        [
+          -200.0,
+          1275.0
+        ],
+        [
+          -110.0,
+          1200.0
+        ],
+        [
+          -110.0,
+          265.0
+        ],
+        [
+          -385.0,
+          197.0
+        ],
+        [
+          -380.0,
+          157.0
+        ],
+        [
+          -400.0,
+          157.0
+        ],
+        [
+          -400.0,
+          15.0
+        ],
+        [
+          -385.0,
+          0.0
+        ],
+        [
+          385.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 466785.0,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "KTB570-400x1400",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 38,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          555.0,
+          0.0
+        ],
+        [
+          570.0,
+          15.0
+        ],
+        [
+          570.0,
+          157.0
+        ],
+        [
+          550.0,
+          157.0
+        ],
+        [
+          555.0,
+          197.0
+        ],
+        [
+          280.0,
+          265.0
+        ],
+        [
+          280.0,
+          1200.0
+        ],
+        [
+          370.0,
+          1275.0
+        ],
+        [
+          370.0,
+          1370.0
+        ],
+        [
+          340.0,
+          1370.0
+        ],
+        [
+          340.0,
+          1400.0
+        ],
+        [
+          -30.0,
+          1400.0
+        ],
+        [
+          -0.32142857142857145,
+          15.0
+        ],
+        [
+          15.0,
+          0.0
+        ],
+        [
+          555.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 492280.0,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "NTB1000-300x1200",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 39,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          485.0,
+          0.0
+        ],
+        [
+          500.0,
+          15.0
+        ],
+        [
+          500.0,
+          133.0
+        ],
+        [
+          480.0,
+          133.0
+        ],
+        [
+          485.0,
+          173.0
+        ],
+        [
+          110.0,
+          265.0
+        ],
+        [
+          110.0,
+          1038.0
+        ],
+        [
+          150.0,
+          1075.0
+        ],
+        [
+          150.0,
+          1170.0
+        ],
+        [
+          120.0,
+          1170.0
+        ],
+        [
+          120.0,
+          1200.0
+        ],
+        [
+          -120.0,
+          1200.0
+        ],
+        [
+          -120.0,
+          1170.0
+        ],
+        [
+          -150.0,
+          1170.0
+        ],
+        [
+          -150.0,
+          1075.0
+        ],
+        [
+          -110.0,
+          1038.0
+        ],
+        [
+          -110.0,
+          265.0
+        ],
+        [
+          -485.0,
+          173.0
+        ],
+        [
+          -480.0,
+          133.0
+        ],
+        [
+          -500.0,
+          133.0
+        ],
+        [
+          -500.0,
+          15.0
+        ],
+        [
+          -485.0,
+          0.0
+        ],
+        [
+          485.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 441495.0,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "KTB1200",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 40,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          655.0,
+          0.0
+        ],
+        [
+          670.0,
+          15.0
+        ],
+        [
+          670.0,
+          133.0
+        ],
+        [
+          650.0,
+          133.0
+        ],
+        [
+          655.0,
+          173.0
+        ],
+        [
+          280.0,
+          265.0
+        ],
+        [
+          280.0,
+          1038.0
+        ],
+        [
+          320.0,
+          1075.0
+        ],
+        [
+          320.0,
+          1170.0
+        ],
+        [
+          290.0,
+          1170.0
+        ],
+        [
+          290.0,
+          1200.0
+        ],
+        [
+          0.0,
+          1200.0
+        ],
+        [
+          0.0,
+          15.0
+        ],
+        [
+          15.0,
+          0.0
+        ],
+        [
+          655.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 424635.0,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "NTB1200-220x1000",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 41,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          585.0,
+          0.0
+        ],
+        [
+          600.0,
+          15.0
+        ],
+        [
+          600.0,
+          110.0
+        ],
+        [
+          580.0,
+          110.0
+        ],
+        [
+          585.0,
+          150.0
+        ],
+        [
+          110.0,
+          265.0
+        ],
+        [
+          110.0,
+          970.0
+        ],
+        [
+          80.0,
+          970.0
+        ],
+        [
+          80.0,
+          1000.0
+        ],
+        [
+          -80.0,
+          1000.0
+        ],
+        [
+          -80.0,
+          970.0
+        ],
+        [
+          -110.0,
+          970.0
+        ],
+        [
+          -110.0,
+          265.0
+        ],
+        [
+          -585.0,
+          150.0
+        ],
+        [
+          -580.0,
+          110.0
+        ],
+        [
+          -600.0,
+          110.0
+        ],
+        [
+          -600.0,
+          15.0
+        ],
+        [
+          -585.0,
+          0.0
+        ],
+        [
+          585.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 418200.0,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "KTB1000",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 42,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          755.0,
+          0.0
+        ],
+        [
+          770.0,
+          15.0
+        ],
+        [
+          770.0,
+          110.0
+        ],
+        [
+          750.0,
+          110.0
+        ],
+        [
+          755.0,
+          150.0
+        ],
+        [
+          280.0,
+          265.0
+        ],
+        [
+          280.0,
+          970.0
+        ],
+        [
+          250.0,
+          970.0
+        ],
+        [
+          250.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.0,
+          15.0
+        ],
+        [
+          15.0,
+          0.0
+        ],
+        [
+          755.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 378987.5,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "NTB1200-220x800",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 43,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          585.0,
+          0.0
+        ],
+        [
+          600.0,
+          15.0
+        ],
+        [
+          600.0,
+          110.0
+        ],
+        [
+          580.0,
+          110.0
+        ],
+        [
+          585.0,
+          150.0
+        ],
+        [
+          110.0,
+          265.0
+        ],
+        [
+          110.0,
+          770.0
+        ],
+        [
+          80.0,
+          770.0
+        ],
+        [
+          80.0,
+          800.0
+        ],
+        [
+          -80.0,
+          800.0
+        ],
+        [
+          -80.0,
+          770.0
+        ],
+        [
+          -110.0,
+          770.0
+        ],
+        [
+          -110.0,
+          265.0
+        ],
+        [
+          -585.0,
+          150.0
+        ],
+        [
+          -580.0,
+          110.0
+        ],
+        [
+          -600.0,
+          110.0
+        ],
+        [
+          -600.0,
+          15.0
+        ],
+        [
+          -585.0,
+          0.0
+        ],
+        [
+          585.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 374200.0,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "KTB800",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 44,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          755.0,
+          0.0
+        ],
+        [
+          770.0,
+          15.0
+        ],
+        [
+          770.0,
+          110.0
+        ],
+        [
+          750.0,
+          110.0
+        ],
+        [
+          755.0,
+          150.0
+        ],
+        [
+          280.0,
+          265.0
+        ],
+        [
+          280.0,
+          770.0
+        ],
+        [
+          250.0,
+          770.0
+        ],
+        [
+          250.0,
+          800.0
+        ],
+        [
+          0.0,
+          800.0
+        ],
+        [
+          0.0,
+          15.0
+        ],
+        [
+          15.0,
+          0.0
+        ],
+        [
+          755.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 322987.5,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "NTB1200-220x600",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 45,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          585.0,
+          0.0
+        ],
+        [
+          600.0,
+          15.0
+        ],
+        [
+          600.0,
+          110.0
+        ],
+        [
+          580.0,
+          110.0
+        ],
+        [
+          585.0,
+          150.0
+        ],
+        [
+          110.0,
+          265.0
+        ],
+        [
+          110.0,
+          570.0
+        ],
+        [
+          80.0,
+          570.0
+        ],
+        [
+          80.0,
+          600.0
+        ],
+        [
+          -80.0,
+          600.0
+        ],
+        [
+          -80.0,
+          570.0
+        ],
+        [
+          -110.0,
+          570.0
+        ],
+        [
+          -110.0,
+          265.0
+        ],
+        [
+          -585.0,
+          150.0
+        ],
+        [
+          -580.0,
+          110.0
+        ],
+        [
+          -600.0,
+          110.0
+        ],
+        [
+          -600.0,
+          15.0
+        ],
+        [
+          -585.0,
+          0.0
+        ],
+        [
+          585.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 330200.0,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NO",
+      "type": "KTB600",
+      "status": "implemented gross reconstruction",
+      "source_pdf_page": 46,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          755.0,
+          0.0
+        ],
+        [
+          770.0,
+          15.0
+        ],
+        [
+          770.0,
+          110.0
+        ],
+        [
+          750.0,
+          110.0
+        ],
+        [
+          755.0,
+          150.0
+        ],
+        [
+          280.0,
+          265.0
+        ],
+        [
+          280.0,
+          570.0
+        ],
+        [
+          250.0,
+          570.0
+        ],
+        [
+          250.0,
+          600.0
+        ],
+        [
+          0.0,
+          600.0
+        ],
+        [
+          0.0,
+          15.0
+        ],
+        [
+          15.0,
+          0.0
+        ],
+        [
+          755.0,
+          0.0
+        ]
+      ],
+      "area_mm2": 266987.5,
+      "inference": "15x15 bottom chamfer from Colin projected leader interpretation, not printed. Other dimensions visually transcribed."
+    },
+    {
+      "country": "NZ",
+      "type": "587 inner",
+      "status": "implemented gross profile",
+      "source_pdf_page": 40,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          1129.0,
+          0.0
+        ],
+        [
+          1144.0,
+          15.0
+        ],
+        [
+          1144.0,
+          110.0
+        ],
+        [
+          1106.0,
+          110.0
+        ],
+        [
+          1106.0,
+          418.0
+        ],
+        [
+          1118.0,
+          430.0
+        ],
+        [
+          1118.0,
+          587.0
+        ],
+        [
+          26.0,
+          587.0
+        ],
+        [
+          26.0,
+          430.0
+        ],
+        [
+          38.0,
+          418.0
+        ],
+        [
+          38.0,
+          110.0
+        ],
+        [
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          15.0
+        ],
+        [
+          15.0,
+          0.0
+        ],
+        [
+          1129.0,
+          0.0
+        ]
+      ],
+      "holes": {
+        "count": 2,
+        "shape": "circle polygon approximation256segments",
+        "centres_mm": [
+          [
+            308,
+            294
+          ],
+          [
+            836,
+            294
+          ]
+        ],
+        "diameter_mm": 368
+      },
+      "area_mm2": 426260.83478484023,
+      "scope": "No local inspection/drain/connection holes. Outer587 drip groove omitted; circular void option used. Single650/900 lowerface1:80 slope anchored to maximum1138 width at110mm ledge."
+    },
+    {
+      "country": "NZ",
+      "type": "587 outer",
+      "status": "implemented gross profile",
+      "source_pdf_page": 40,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          1129.0,
+          0.0
+        ],
+        [
+          1144.0,
+          15.0
+        ],
+        [
+          1144.0,
+          110.0
+        ],
+        [
+          1106.0,
+          110.0
+        ],
+        [
+          1106.0,
+          418.0
+        ],
+        [
+          1118.0,
+          430.0
+        ],
+        [
+          1118.0,
+          587.0
+        ],
+        [
+          15.0,
+          587.0
+        ],
+        [
+          0.0,
+          572.0
+        ],
+        [
+          0.0,
+          15.0
+        ],
+        [
+          15.0,
+          0.0
+        ],
+        [
+          1129.0,
+          0.0
+        ]
+      ],
+      "holes": {
+        "count": 1,
+        "shape": "circle polygon approximation256segments",
+        "centres_mm": [
+          [
+            836,
+            294
+          ]
+        ],
+        "diameter_mm": 368
+      },
+      "area_mm2": 548669.4173924201,
+      "scope": "No local inspection/drain/connection holes. Outer587 drip groove omitted; circular void option used. Single650/900 lowerface1:80 slope anchored to maximum1138 width at110mm ledge."
+    },
+    {
+      "country": "NZ",
+      "type": "650 inner",
+      "status": "implemented gross profile",
+      "source_pdf_page": 29,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          1116.875,
+          0.0
+        ],
+        [
+          1136.875,
+          20.0
+        ],
+        [
+          1138.0,
+          110.0
+        ],
+        [
+          1104.0,
+          110.0
+        ],
+        [
+          1104.0,
+          418.0
+        ],
+        [
+          1116.0,
+          430.0
+        ],
+        [
+          1116.0,
+          650.0
+        ],
+        [
+          22.0,
+          650.0
+        ],
+        [
+          22.0,
+          430.0
+        ],
+        [
+          34.0,
+          418.0
+        ],
+        [
+          34.0,
+          110.0
+        ],
+        [
+          0.0,
+          110.0
+        ],
+        [
+          1.125,
+          20.0
+        ],
+        [
+          21.125,
+          0.0
+        ],
+        [
+          1116.875,
+          0.0
+        ]
+      ],
+      "holes": {
+        "count": 1,
+        "shape": "octagon",
+        "centres_mm": [
+          [
+            569,
+            320
+          ]
+        ],
+        "diameter_mm": null
+      },
+      "area_mm2": 412457.75,
+      "scope": "No local inspection/drain/connection holes. Outer587 drip groove omitted; circular void option used. Single650/900 lowerface1:80 slope anchored to maximum1138 width at110mm ledge."
+    },
+    {
+      "country": "NZ",
+      "type": "900 inner",
+      "status": "implemented gross profile",
+      "source_pdf_page": 34,
+      "coordinate_units": "mm",
+      "exterior_coordinates": [
+        [
+          1116.875,
+          0.0
+        ],
+        [
+          1136.875,
+          20.0
+        ],
+        [
+          1138.0,
+          110.0
+        ],
+        [
+          1104.0,
+          110.0
+        ],
+        [
+          1104.0,
+          418.0
+        ],
+        [
+          1116.0,
+          430.0
+        ],
+        [
+          1116.0,
+          900.0
+        ],
+        [
+          22.0,
+          900.0
+        ],
+        [
+          22.0,
+          430.0
+        ],
+        [
+          34.0,
+          418.0
+        ],
+        [
+          34.0,
+          110.0
+        ],
+        [
+          0.0,
+          110.0
+        ],
+        [
+          1.125,
+          20.0
+        ],
+        [
+          21.125,
+          0.0
+        ],
+        [
+          1116.875,
+          0.0
+        ]
+      ],
+      "holes": {
+        "count": 1,
+        "shape": "octagon",
+        "centres_mm": [
+          [
+            569,
+            457.5
+          ]
+        ],
+        "diameter_mm": null
+      },
+      "area_mm2": 499207.75,
+      "scope": "No local inspection/drain/connection holes. Outer587 drip groove omitted; circular void option used. Single650/900 lowerface1:80 slope anchored to maximum1138 width at110mm ledge."
+    }
+  ],
+  "remaining_agent_tasks": [
+    {
+      "country": "NZ",
+      "type": "650 outer",
+      "page": 29,
+      "resolved": "Outer width top1122/bottom1138; one octagonal void with430flat/630maxwidth,380height and140/130top/bottomcover. Key top430,bottom110,12x12 top transition. Exposed left face is sloping; drip groove options shown.",
+      "exact_gap": "324+100+430+100+124=1078 does not span1138. Trace offset extension-line endpoints before placing the eccentric void relative to overall boundary; first reference lies at drip-groove side, last near keyface. Do not reuse symmetric inner void."
+    },
+    {
+      "country": "NZ",
+      "type": "900 outer",
+      "page": 34,
+      "resolved": "Outer width top1123/bottom1138; one octagonal void with430flat/630maxwidth,605height and140/155top/bottomcover. Key top430,bottom110,12x12 top transition.",
+      "exact_gap": "334+100+430+100+124=1088 does not span1138; trace actual endpoint references before placing eccentric void. Do not turn partial chain into a full-width chain."
+    }
+  ],
+  "corrections_to_old_transcription": [
+    "587 key depth38, not12;12 is its upper chamfer.587 upper width1092 is derived1144-2*(38-12).",
+    "650/900 inner key depth34 is derived(1138-1094)/2+12;12 alone is not recess depth.",
+    "650/900 lower mould-release slope is printed1:80 in enlarged detail, not unknown.",
+    "KTB exterior slope applies to1400 only;1200/1000/800/600 left faces vertical after independent p40/42/44/46 inspection."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "family": "RDA standard pre-tensioned PSC bridge beam, Drg No T/B/505 (13.5 m)",
+  "organisation": "Road Development Authority (RDA), Sri Lanka",
+  "source_status": "RDA standard beam drawing T/B/505, as reproduced on RDA tender drawings (2024-2025)",
+  "units": "mm",
+  "sources": {
+    "primary": {
+      "registry_id": "LK-RDA-TB505",
+      "title": "Reconstruction of Bridge No 18/3 on Kalugamuwa-Vilakatupotha Road (B-190) Balance Work: Details of Deck, Drg No RDA/NWP/T/497-9, dated 10-06-2024, Design Office (NWP), RDA Kurunegala",
+      "url": "https://rda.gov.lk/rda_project_new/uploads/procurement/50/attchment_172287482193214602_tender%20drawing%2018-3.pdf",
+      "retrieved": "2026-09-23",
+      "local_file": "sources/expansion/round2/lk/rda-tender-18-3.pdf",
+      "sha256": "656eb33e683e129f6770d0ee8105685292e14154a23c05c142f9526d9c0faad9",
+      "pdf_page": 10,
+      "locator": "'SECTION OF BEAM' Scale 1:10 (vector drawing); deck cross-section note: '20 Nos Of 13500mm Long PSC. Beam Drg:NO:T/B/505'"
+    },
+    "confirmation": {
+      "title": "Pallanoya-Inginiyagala Road, Bridge No 3/2 km (Reconstruction): Details of Deck (tender issue)",
+      "url": "https://rda.gov.lk/rda_project_new/uploads/procurement/403/attchment_174176038339765831_Drawings%2019.pdf",
+      "retrieved": "2026-09-23",
+      "local_file": "sources/expansion/round2/lk/rda-drawings-19.pdf",
+      "sha256": "cfd21fa2fbc1fde1a812a58785351c14946c38623d884dd5f6c1a43db93ade59",
+      "pdf_page": 10,
+      "locator": "'13.5m. long.' beam section (200 ppi scan): 525 overall, 200 top, 100 web, 500 base, 25 x 25 chamfer; chain 195/50/100/80/75/25"
+    }
+  },
+  "sizes": {
+    "TB505": {
+      "length_m": 13.5,
+      "dimensions_mm": {
+        "depth": 525,
+        "top_width": 200,
+        "web_width": 100,
+        "bottom_width": 500,
+        "top_block_height": 195,
+        "top_splay": 50,
+        "web_height": 100,
+        "bottom_splay": 80,
+        "bottom_edge": 75,
+        "soffit_chamfer": 25
+      },
+      "provenance": "transcribed"
+    }
+  },
+  "published_properties": null,
+  "geometry_notes": [
+    "The beam is an inverted-T 'bulb' section: a 500-wide bottom flange with 25 x 25 soffit chamfers, a 75 vertical side and an 80 taper to a 100 web over 100 mm, then a 45-degree 50 mm splay to a 200-wide x 195 top bulb. Total height 25+75+80+100+50+195 = 525.",
+    "In the 2024 vector drawing the 100 web and the 25 mm horizontal chamfer leg are drawn to scale but not printed. The Pallanoya scan prints both (web 100, chamfer 25) and the 525 overall. The web also follows from 200 - 2 x 50 with the 45-degree splay.",
+    "Deck context: the beams are placed side by side with 225 mm polythene void displacers between them. The deck is completed with in-situ concrete, so the beams are the inverted-T units of a filled solid/void deck. Only the precast beam is modelled.",
+    "The standalone T/B/505 sheet (RDA head office) was not obtained. Its title, revision and date are unknown.",
+    "No section properties are printed. Checks are analytic only."
+  ]
+}

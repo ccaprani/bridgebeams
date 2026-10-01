@@ -1,0 +1,1012 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "Missouri Department of Transportation (MoDOT)",
+ "document": "Engineering Policy Guide (EPG) 751.21 Prestressed Concrete Slab and Box Beams, 751.21.1.3 Geometric Properties",
+ "document_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+ "page_snapshot": {
+  "local_path": "sources/expansion/round2/us/mo_epg_751_21.html",
+  "sha256": "2f75e851125408837a92dd9b7990e159ba21e0560257cc0c475a6541829f9d40",
+  "retrieved": "2026-09-23"
+ },
+ "shear_key_source": {
+  "url": "https://epg.modot.org/files/2/27/751.21.1.3_box_and_solid.jpg",
+  "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+  "local_path": "sources/expansion/round2/us/modot/751.21.1.3_box_and_solid.jpg",
+  "sha256": "195cdbea2250f44b87b9a5b65919a2a58684ba398aa8f39394acd9a184768e82",
+  "retrieved": "2026-09-23"
+ },
+ "units": "inches",
+ "shear_key_in": {
+  "box_and_voided": {
+   "top_zone": 4.0,
+   "bottom_zone": 6.0,
+   "top_setback": 0.625,
+   "recess_depth": 1.25,
+   "upper_chamfer_rise": 0.375,
+   "lower_slope_rise": 0.75
+  },
+  "solid": {
+   "top_zone": 3.0,
+   "recess_height": 4.0,
+   "bottom_zone": 4.0,
+   "top_setback": 0.625,
+   "recess_depth": 1.25,
+   "upper_chamfer_rise": 0.375,
+   "lower_slope_rise": 0.75
+  }
+ },
+ "geometry_notes": [
+  "Adjacent-beam side key (751.21.1.3 'Box Beams & Voided Slab Beams' detail): top 4 in zone set back 5/8 in from the soffit-width face (top width = width - 1 1/4 in); a 5/8 in by 3/8 in chamfer steps a further 5/8 in into a vertical recess face 1 1/4 in inside the soffit-width face; recess spans the 'Varies' zone = depth - 10 in; the recess returns to the bottom 6 in zone by a 3/4 in rise over 1 1/4 in run.",
+  "Solid beams: same key with a 3 in top zone, 4 in recess and 4 in bottom zone (11 in deep).",
+  "Spread beams have no key: full-width rectangle.",
+  "Soffit corners: 1 1/2 in bevels ('** 1 1/2 in (Typ.)' boxes, '* 1 1/2 in (Typ.)' slabs). Top corners are square.",
+  "Box voids: rectangles 5 in below the top and 6 in above the soffit, centred, with 2 in by 2 in chamfers at all four corners (printed void areas confirm four chamfers).",
+  "Voided slab voids: circles; 48 in 21 in slab has a 10 1/2 in centre void between two 12 1/2 in voids (printed). Void circles are 64-gons, so computed areas are ~0.16% low on the voids.",
+  "Void-area and gross-area checks close to print precision for every row (see residuals)."
+ ],
+ "box_beams": {
+  "ADJ36-17": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/51/751.21.1.3_adjacent_box_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_3_2021.jpg",
+    "sha256": "a2203e379a7907773072830fd45940ff5a8db7eac661f8ede3dc8495ce3fe833",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "17 in. Beam (adjacent, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 17,
+   "void_in": {
+    "width": 22,
+    "height": 6,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 464.4,
+    "yb": 8.3,
+    "ix": 13896,
+    "iy": 54433,
+    "v_s": 2.97,
+    "void_area": 124.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ36-21": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/51/751.21.1.3_adjacent_box_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_3_2021.jpg",
+    "sha256": "a2203e379a7907773072830fd45940ff5a8db7eac661f8ede3dc8495ce3fe833",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "21 in. Beam (adjacent, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 21,
+   "void_in": {
+    "width": 22,
+    "height": 10,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 510.4,
+    "yb": 10.19,
+    "ix": 25129,
+    "iy": 63415,
+    "v_s": 2.96,
+    "void_area": 212.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ36-27": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/51/751.21.1.3_adjacent_box_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_3_2021.jpg",
+    "sha256": "a2203e379a7907773072830fd45940ff5a8db7eac661f8ede3dc8495ce3fe833",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "27 in. Beam (adjacent, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 27,
+   "void_in": {
+    "width": 24,
+    "height": 16,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 547.4,
+    "yb": 13.02,
+    "ix": 49024,
+    "iy": 72827,
+    "v_s": 2.73,
+    "void_area": 376.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ36-33": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/51/751.21.1.3_adjacent_box_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_3_2021.jpg",
+    "sha256": "a2203e379a7907773072830fd45940ff5a8db7eac661f8ede3dc8495ce3fe833",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "33 in. Beam (adjacent, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 33,
+   "void_in": {
+    "width": 24,
+    "height": 22,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 604.4,
+    "yb": 15.9,
+    "ix": 82934,
+    "iy": 84713,
+    "v_s": 2.69,
+    "void_area": 520.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ36-39": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/51/751.21.1.3_adjacent_box_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_3_2021.jpg",
+    "sha256": "a2203e379a7907773072830fd45940ff5a8db7eac661f8ede3dc8495ce3fe833",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "39 in. Beam (adjacent, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 39,
+   "void_in": {
+    "width": 24,
+    "height": 28,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 661.4,
+    "yb": 18.81,
+    "ix": 127710,
+    "iy": 96599,
+    "v_s": 2.66,
+    "void_area": 664.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ36-42": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/51/751.21.1.3_adjacent_box_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_3_2021.jpg",
+    "sha256": "a2203e379a7907773072830fd45940ff5a8db7eac661f8ede3dc8495ce3fe833",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "42 in. Beam (adjacent, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 42,
+   "void_in": {
+    "width": 24,
+    "height": 31,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 689.9,
+    "yb": 20.27,
+    "ix": 154494,
+    "iy": 102542,
+    "v_s": 2.65,
+    "void_area": 736.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-17": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ae/751.21.1.3_adjacent_box_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_4_2021.jpg",
+    "sha256": "0bc4b26a61d74077d5ee8a6838f5203c39c6824898f67819e7b928211f7768f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "17 in. Beam (adjacent, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 17,
+   "void_in": {
+    "width": 32,
+    "height": 6,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 608.4,
+    "yb": 8.29,
+    "ix": 18608,
+    "iy": 129185,
+    "v_s": 3.04,
+    "void_area": 184.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-21": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ae/751.21.1.3_adjacent_box_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_4_2021.jpg",
+    "sha256": "0bc4b26a61d74077d5ee8a6838f5203c39c6824898f67819e7b928211f7768f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "21 in. Beam (adjacent, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 21,
+   "void_in": {
+    "width": 32,
+    "height": 10,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 662.4,
+    "yb": 10.19,
+    "ix": 33516,
+    "iy": 149661,
+    "v_s": 3.06,
+    "void_area": 312.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-27": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ae/751.21.1.3_adjacent_box_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_4_2021.jpg",
+    "sha256": "0bc4b26a61d74077d5ee8a6838f5203c39c6824898f67819e7b928211f7768f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "27 in. Beam (adjacent, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 27,
+   "void_in": {
+    "width": 36,
+    "height": 16,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 679.4,
+    "yb": 12.97,
+    "ix": 64499,
+    "iy": 162380,
+    "v_s": 2.73,
+    "void_area": 568.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-33": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ae/751.21.1.3_adjacent_box_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_4_2021.jpg",
+    "sha256": "0bc4b26a61d74077d5ee8a6838f5203c39c6824898f67819e7b928211f7768f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "33 in. Beam (adjacent, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 33,
+   "void_in": {
+    "width": 36,
+    "height": 22,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 736.4,
+    "yb": 15.83,
+    "ix": 108042,
+    "iy": 186151,
+    "v_s": 2.7,
+    "void_area": 784.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-39": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ae/751.21.1.3_adjacent_box_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_4_2021.jpg",
+    "sha256": "0bc4b26a61d74077d5ee8a6838f5203c39c6824898f67819e7b928211f7768f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "39 in. Beam (adjacent, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 39,
+   "void_in": {
+    "width": 36,
+    "height": 28,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 793.4,
+    "yb": 18.71,
+    "ix": 164816,
+    "iy": 209921,
+    "v_s": 2.68,
+    "void_area": 1000.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-42": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ae/751.21.1.3_adjacent_box_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_box_4_2021.jpg",
+    "sha256": "0bc4b26a61d74077d5ee8a6838f5203c39c6824898f67819e7b928211f7768f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "42 in. Beam (adjacent, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 42,
+   "void_in": {
+    "width": 36,
+    "height": 31,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 821.9,
+    "yb": 20.16,
+    "ix": 198487,
+    "iy": 221806,
+    "v_s": 2.66,
+    "void_area": 1108.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-17": {
+   "source": {
+    "url": "https://epg.modot.org/files/3/3c/751.21.1.3_spread_box_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_box_2021.jpg",
+    "sha256": "b2d4a6821152a9a67e8684bb1df2ca51750cde915ffd9d35e727d4e95a8bed6a",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "17 in. Beam (spread, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 17,
+   "void_in": {
+    "width": 32,
+    "height": 6,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 629.8,
+    "yb": 8.38,
+    "ix": 18922,
+    "iy": 140928,
+    "v_s": 3.16,
+    "void_area": 184.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-21": {
+   "source": {
+    "url": "https://epg.modot.org/files/3/3c/751.21.1.3_spread_box_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_box_2021.jpg",
+    "sha256": "b2d4a6821152a9a67e8684bb1df2ca51750cde915ffd9d35e727d4e95a8bed6a",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "21 in. Beam (spread, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 21,
+   "void_in": {
+    "width": 32,
+    "height": 10,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 693.8,
+    "yb": 10.31,
+    "ix": 34200,
+    "iy": 166869,
+    "v_s": 3.22,
+    "void_area": 312.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-27": {
+   "source": {
+    "url": "https://epg.modot.org/files/3/3c/751.21.1.3_spread_box_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_box_2021.jpg",
+    "sha256": "b2d4a6821152a9a67e8684bb1df2ca51750cde915ffd9d35e727d4e95a8bed6a",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "27 in. Beam (spread, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 27,
+   "void_in": {
+    "width": 36,
+    "height": 16,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 725.8,
+    "yb": 13.15,
+    "ix": 66264,
+    "iy": 187786,
+    "v_s": 2.93,
+    "void_area": 568.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-33": {
+   "source": {
+    "url": "https://epg.modot.org/files/3/3c/751.21.1.3_spread_box_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_box_2021.jpg",
+    "sha256": "b2d4a6821152a9a67e8684bb1df2ca51750cde915ffd9d35e727d4e95a8bed6a",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "33 in. Beam (spread, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 33,
+   "void_in": {
+    "width": 36,
+    "height": 22,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 797.8,
+    "yb": 16.05,
+    "ix": 111729,
+    "iy": 219754,
+    "v_s": 2.94,
+    "void_area": 784.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-39": {
+   "source": {
+    "url": "https://epg.modot.org/files/3/3c/751.21.1.3_spread_box_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_box_2021.jpg",
+    "sha256": "b2d4a6821152a9a67e8684bb1df2ca51750cde915ffd9d35e727d4e95a8bed6a",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "39 in. Beam (spread, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 39,
+   "void_in": {
+    "width": 36,
+    "height": 28,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 869.8,
+    "yb": 18.97,
+    "ix": 171541,
+    "iy": 251722,
+    "v_s": 2.94,
+    "void_area": 1000.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-42": {
+   "source": {
+    "url": "https://epg.modot.org/files/3/3c/751.21.1.3_spread_box_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_box_2021.jpg",
+    "sha256": "b2d4a6821152a9a67e8684bb1df2ca51750cde915ffd9d35e727d4e95a8bed6a",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "42 in. Beam (spread, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 42,
+   "void_in": {
+    "width": 36,
+    "height": 31,
+    "top_slab": 5,
+    "bottom_slab": 6,
+    "corner_chamfer": 2.0
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 905.8,
+    "yb": 20.44,
+    "ix": 207233,
+    "iy": 267706,
+    "v_s": 2.94,
+    "void_area": 1108.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  }
+ },
+ "voided_slabs": {
+  "ADJ36-15": {
+   "source": {
+    "url": "https://epg.modot.org/files/f/f4/751.21.1.3_adjacent_voided_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_voided_3_2021.jpg",
+    "sha256": "dd9237ed263481bfa5dfa729b9d0d3388b0ef8de2ba4d0edb720483d4110d5f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "15 in. Beam (adjacent voided slab, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 15,
+   "voids_in": {
+    "centre_height": 8.0,
+    "x_and_diameter": [
+     [
+      -8,
+      8.5
+     ],
+     [
+      8,
+      8.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 407.9,
+    "yb": 7.3,
+    "ix": 9265,
+    "iy": 44859,
+    "v_s": 2.64,
+    "void_area": 113.5
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ36-18": {
+   "source": {
+    "url": "https://epg.modot.org/files/f/f4/751.21.1.3_adjacent_voided_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_voided_3_2021.jpg",
+    "sha256": "dd9237ed263481bfa5dfa729b9d0d3388b0ef8de2ba4d0edb720483d4110d5f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "18 in. Beam (adjacent voided slab, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 18,
+   "voids_in": {
+    "centre_height": 9.5,
+    "x_and_diameter": [
+     [
+      -8,
+      11.5
+     ],
+     [
+      8,
+      11.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 414.2,
+    "yb": 8.66,
+    "ix": 15150,
+    "iy": 47021,
+    "v_s": 2.31,
+    "void_area": 207.7
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ36-21": {
+   "source": {
+    "url": "https://epg.modot.org/files/f/f4/751.21.1.3_adjacent_voided_3_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_voided_3_2021.jpg",
+    "sha256": "dd9237ed263481bfa5dfa729b9d0d3388b0ef8de2ba4d0edb720483d4110d5f5",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "21 in. Beam (adjacent voided slab, 36 in wide)",
+   "kind": "adjacent",
+   "width_in": 36,
+   "depth_in": 21,
+   "voids_in": {
+    "centre_height": 10.5,
+    "x_and_diameter": [
+     [
+      -8,
+      12.5
+     ],
+     [
+      8,
+      12.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 477.0,
+    "yb": 10.4,
+    "ix": 24509,
+    "iy": 53328,
+    "v_s": 2.49,
+    "void_area": 245.4
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-15": {
+   "source": {
+    "url": "https://epg.modot.org/files/6/6b/751.21.1.3_adjacent_voided_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_voided_4_2021.jpg",
+    "sha256": "8e7f5415123f109e029503cffa0c51bbb7ea0e09998397c5f611599f7dedb50b",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "15 in. Beam (adjacent voided slab, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 15,
+   "voids_in": {
+    "centre_height": 8.0,
+    "x_and_diameter": [
+     [
+      -14,
+      8.5
+     ],
+     [
+      0,
+      8.5
+     ],
+     [
+      14,
+      8.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 531.2,
+    "yb": 7.29,
+    "ix": 12363,
+    "iy": 104974,
+    "v_s": 2.59,
+    "void_area": 170.2
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-18": {
+   "source": {
+    "url": "https://epg.modot.org/files/6/6b/751.21.1.3_adjacent_voided_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_voided_4_2021.jpg",
+    "sha256": "8e7f5415123f109e029503cffa0c51bbb7ea0e09998397c5f611599f7dedb50b",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "18 in. Beam (adjacent voided slab, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 18,
+   "voids_in": {
+    "centre_height": 9.5,
+    "x_and_diameter": [
+     [
+      -14,
+      11.5
+     ],
+     [
+      0,
+      11.5
+     ],
+     [
+      14,
+      11.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 526.3,
+    "yb": 8.63,
+    "ix": 20075,
+    "iy": 108244,
+    "v_s": 2.2,
+    "void_area": 311.6
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "ADJ48-21": {
+   "source": {
+    "url": "https://epg.modot.org/files/6/6b/751.21.1.3_adjacent_voided_4_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_adjacent_voided_4_2021.jpg",
+    "sha256": "8e7f5415123f109e029503cffa0c51bbb7ea0e09998397c5f611599f7dedb50b",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "21 in. Beam (adjacent voided slab, 48 in wide)",
+   "kind": "adjacent",
+   "width_in": 48,
+   "depth_in": 21,
+   "voids_in": {
+    "centre_height": 10.5,
+    "x_and_diameter": [
+     [
+      -14,
+      12.5
+     ],
+     [
+      0,
+      10.5
+     ],
+     [
+      14,
+      12.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 642.4,
+    "yb": 10.42,
+    "ix": 33175,
+    "iy": 123986,
+    "v_s": 2.58,
+    "void_area": 332.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-15": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/55/751.21.1.3_spread_voided_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_voided_2021.jpg",
+    "sha256": "589554aa61e66ebc7d76cb3dc25687424cbd6fd476bbab537d93d2b3695f7baa",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "15 in. Beam (spread voided slab, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 15,
+   "voids_in": {
+    "centre_height": 8.0,
+    "x_and_diameter": [
+     [
+      -14,
+      8.5
+     ],
+     [
+      0,
+      8.5
+     ],
+     [
+      14,
+      8.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 547.5,
+    "yb": 7.37,
+    "ix": 12569,
+    "iy": 113984,
+    "v_s": 2.68,
+    "void_area": 170.2
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-18": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/55/751.21.1.3_spread_voided_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_voided_2021.jpg",
+    "sha256": "589554aa61e66ebc7d76cb3dc25687424cbd6fd476bbab537d93d2b3695f7baa",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "18 in. Beam (spread voided slab, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 18,
+   "voids_in": {
+    "centre_height": 9.5,
+    "x_and_diameter": [
+     [
+      -14,
+      11.5
+     ],
+     [
+      0,
+      11.5
+     ],
+     [
+      14,
+      11.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 550.1,
+    "yb": 8.75,
+    "ix": 20478,
+    "iy": 121353,
+    "v_s": 2.31,
+    "void_area": 311.6
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SPR48-21": {
+   "source": {
+    "url": "https://epg.modot.org/files/5/55/751.21.1.3_spread_voided_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_spread_voided_2021.jpg",
+    "sha256": "589554aa61e66ebc7d76cb3dc25687424cbd6fd476bbab537d93d2b3695f7baa",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "21 in. Beam (spread voided slab, 48 in wide)",
+   "kind": "spread",
+   "width_in": 48,
+   "depth_in": 21,
+   "voids_in": {
+    "centre_height": 10.5,
+    "x_and_diameter": [
+     [
+      -14,
+      12.5
+     ],
+     [
+      0,
+      10.5
+     ],
+     [
+      14,
+      12.5
+     ]
+    ]
+   },
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 673.7,
+    "yb": 10.53,
+    "ix": 33824,
+    "iy": 141194,
+    "v_s": 2.72,
+    "void_area": 332.0
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  }
+ },
+ "solid_slabs": {
+  "SOLID48": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ab/751.21.1.3_solid_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_solid_2021.jpg",
+    "sha256": "9d5c78530f6c525475174619cd22457fb0cd083d1a90eed85308f56ff89dd79f",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "48 in. Wide Beam",
+   "width_in": 48,
+   "depth_in": 11,
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 513.2,
+    "yb": 5.48,
+    "ix": 5191,
+    "iy": 93190,
+    "v_s": 4.38
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  },
+  "SOLID52": {
+   "source": {
+    "url": "https://epg.modot.org/files/a/ab/751.21.1.3_solid_2021.jpg",
+    "page_url": "https://epg.modot.org/index.php/751.21_Prestressed_Concrete_Slab_and_Box_Beams",
+    "local_path": "sources/expansion/round2/us/modot/751.21.1.3_solid_2021.jpg",
+    "sha256": "9d5c78530f6c525475174619cd22457fb0cd083d1a90eed85308f56ff89dd79f",
+    "retrieved": "2026-09-23"
+   },
+   "figure": "52 in. Wide Beam",
+   "width_in": 52,
+   "depth_in": 11,
+   "soffit_bevel_in": 1.5,
+   "published_in": {
+    "area": 557.2,
+    "yb": 5.48,
+    "ix": 5635,
+    "iy": 119252,
+    "v_s": 4.45
+   },
+   "provenance": "transcribed",
+   "source_status": "MoDOT EPG 751.21.1.3 (live guide; figures dated 2021)"
+  }
+ }
+}

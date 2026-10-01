@@ -1,0 +1,70 @@
+{
+  "family": "Thai DOH 2015 standard drawings: PC plank girders, PC box beams and I-girders (round 2)",
+  "source": {
+    "title": "Kingdom of Thailand, Ministry of Transport, Department of Highways - Standard Drawings for Highway Design and Construction, 2015 Revision (2018 Edition)",
+    "url": "https://doh.go.th/uploads/tinymce/service/bid/doc_bid/STANDARD%20DRAWING%202015%20EDITION_2018.pdf",
+    "retrieved_via": "https://web.archive.org/web/20240806064200if_/https://doh.go.th/uploads/tinymce/service/bid/doc_bid/STANDARD%20DRAWING%202015%20EDITION_2018.pdf",
+    "retrieved": "2026-09-23",
+    "local_path": "sources/expansion/round2/th/doh-std-2015.pdf",
+    "sha256": "7ac8bea18fdeee7cbe8e1b3dd5ef39a084ca3dcd7e2f8fce8d52119f02973bd2",
+    "units": "m (converted to mm in code)",
+    "source_status": "current national standard drawing (DOH 2015 revision, 2018 edition, sheets revised 1/2017)",
+    "note": "Scanned raster PDF; all values read visually at 400-500 dpi. PDF page = sheet number + 17 for sheets 205-223."
+  },
+  "plank": {
+    "drawing": "PG-101, sheet 208/R1, PDF page 225: 0-45 deg skew PC plank girder bridge - girder dimensions and sections",
+    "common_m": {"width_soffit": 0.99, "key_inset": 0.07, "top_inset": 0.045, "void_diameter_12m": 0.15, "void_centre_12m": 0.225,
+                 "interior_void_x_12m": [-0.25, 0.0, 0.25],
+                 "exterior_void_chain_12m_from_keyed_edge": [0.24, 0.30, 0.27, 0.18]},
+    "table_m": {
+      "5":  {"h": 0.18, "h1": 0.05, "h2": 0.09},
+      "6":  {"h": 0.21, "h1": 0.05, "h2": 0.09},
+      "7":  {"h": 0.24, "h1": 0.05, "h2": 0.09},
+      "8":  {"h": 0.28, "h1": 0.05, "h2": 0.10},
+      "9":  {"h": 0.31, "h1": 0.08, "h2": 0.14},
+      "10": {"h": 0.35, "h1": 0.08, "h2": 0.14},
+      "12": {"h": 0.45, "h1": 0.08, "h2": 0.14}
+    },
+    "geometry_notes": [
+      "Interior plank: soffit 990 wide; outer faces vertical to h1; 70 mm inward to the key point at h2; faces then lean outward to a 900 mm top (45 mm inset each side).",
+      "Exterior plank: key profile on one side only (drawn left; the 0.51/0.48 split about the plank CG line sums to 0.99); the exposed face is vertical full height and is placed on the right (+x).",
+      "Only the 12 m plank has voids: three 150 mm circular holes at mid-depth 225 mm (h = 450). Interior holes at x = -250/0/+250; exterior holes 240, 540 and 810 mm from the keyed edge (chain 0.24/0.30/0.27/0.18).",
+      "Convention: 20 mm x 20 mm soffit-corner chamfers, from the sheet's 'CHAMFER 0.02 (TYP.)' note and the rounded soffit corners drawn in the sections; top corners sharp.",
+      "Circular voids are 64-gon approximations by default (circle_points)."
+    ]
+  },
+  "box": {
+    "drawing": "BB-101, sheet 212/R1, PDF page 229: 0-45 deg skew PC box beam 15.00 m and 20.00 m span - plans and sections (sections A-A interior, C-C exterior)",
+    "common_m": {"width_soffit": 0.99, "top_width": 0.90, "key_inset": 0.07, "top_inset": 0.045, "key_diagonal_rise": 0.07, "unresolved_0.02_callout": 0.02},
+    "table_m": {
+      "15": {"b1": 0.18, "b2": 0.10, "b3_interior": 0.29, "b3_exterior": 0.36, "h1": 0.18, "h2": 0.28, "h3": 0.14, "h4": 0.09, "h5": 0.10, "h6": 0.25, "h7": 0.35, "h": 0.60},
+      "20": {"b1": 0.18, "b2": 0.10, "b3_interior": 0.29, "b3_exterior": 0.36, "h1": 0.18, "h2": 0.36, "h3": 0.16, "h4": 0.08, "h5": 0.20, "h6": 0.30, "h7": 0.40, "h": 0.70}
+    },
+    "closure_checks": [
+      "h3 + 2 h4 + h5 + h1 = h (0.60, 0.70); h2 = 2 h4 + h5; h6 + h7 = h.",
+      "interior bottom chain 0.07 + 2 b1 + 2 b2 + b3(0.29) + 0.07 = 0.99; exterior 0.07 + 2 b1 + 2 b2 + b3(0.36) = 0.99 (no key on the exposed side)."
+    ],
+    "geometry_notes": [
+      "Side key: vertical outer face to h7, 45-degree diagonal 70 mm inward and 70 mm up, then the face leans outward to the 45 mm top inset (same shape as the plank girder).",
+      "A '0.02' vertical callout at the top corner of every box section could not be placed with confidence (possibly a 20 mm lip above the top-inset point); it is ignored: top corner taken at (inset 45, h). Area effect < 0.1%.",
+      "Octagonal void: width b3 + 2 b2, height 2 h4 + h5, corner chamfers b2 (horizontal) x h4 (vertical); bottom at h3, top at h - h1; starts b1 inside the key line.",
+      "Exterior beam: key on the left only; exposed face on the right (+x) vertical full height. Box-beam sections are drawn with sharp soffit corners, so no chamfer is applied.",
+      "Section only: end diaphragm solid zones and transverse tie-strand holes are excluded."
+    ]
+  },
+  "igirder": {
+    "drawings": {
+      "IG15": "IG-103, sheet 217/R1, PDF page 234, section D-D (midspan)",
+      "IG20": "IG-205, sheet 223/R1, PDF page 240, sections C-C / D-D"
+    },
+    "table_m": {
+      "IG15": {"depth": 0.75, "top_width": 0.45, "top_edge": 0.10, "top_haunch": 0.075, "web": 0.15, "web_height": 0.225, "bottom_splay": 0.15, "bottom_edge": 0.20, "bottom_width": 0.50},
+      "IG20": {"depth": 1.20, "top_width": 0.45, "top_edge": 0.10, "top_haunch": 0.075, "web": 0.175, "web_height": 0.625, "bottom_splay": 0.20, "bottom_edge": 0.20, "bottom_width": 0.50}
+    },
+    "geometry_notes": [
+      "IG15 top chain 0.15/0.15/0.15 = 0.45 gives a 150 mm web (the earlier JSON note of a ~175 mm IG-103 web is superseded by this reading). Vertical chain 0.10 + 0.075 + 0.225 + 0.15 + 0.20 = 0.75.",
+      "IG20 chain 0.10 + 0.075 + 0.625 + 0.20 + 0.20 = 1.20 with top chain 0.1375/0.175/0.1375. The existing bridgebeams.th.ThDOHIGirderSection models the 825 mm below the haunch as a plain web; this r2 class resolves the 625 web + 200 bottom splay explicitly. It is the SAME profile: do not count both.",
+      "Convention (estimate): 20 mm x 20 mm soffit-corner chamfers; small undimensioned chamfers are drawn at both soffit corners (scaled ~20 mm) and DOH uses 'CHAMFER 0.02 (TYP.)' elsewhere."
+    ]
+  }
+}

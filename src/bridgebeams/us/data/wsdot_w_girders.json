@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "country": "United States",
+  "jurisdiction": "Washington State",
+  "family": "WSDOT standard prestressed concrete W-series I-girders",
+  "sources": {
+    "outline": {
+      "organisation": "Washington State Department of Transportation",
+      "title": "Bridge Design Manual M 23-50.01, Appendix A, Standard I-Girder Sections",
+      "date": "June 2006",
+      "url": "https://wsdot.wa.gov/publications/manuals/fulltext/M23-50/M23-50.01Complete.pdf",
+      "pdf_page_1_based": 440,
+      "printed_sheet": "5.6-A1-1",
+      "sha256": "db8e991abdbaf8eb6ffe68e58c7a0110dabf0be08e0dd848728344f02f3676af"
+    },
+    "properties": {
+      "organisation": "Washington State Department of Transportation",
+      "title": "Bridge Design Manual M 23-50.24, Chapter 5, Table 5.6.1-1",
+      "date": "June 2025",
+      "url": "https://www.wsdot.wa.gov/publications/manuals/fulltext/m23-50/chapter5.pdf",
+      "pdf_page_1_based": 95,
+      "printed_page": "5-85",
+      "sha256": "6af4c603fd17fa738361ad3764d6ddcb2035457e0ed002e4da68c9ab84205da0"
+    }
+  },
+  "units": {
+    "source_outline": "in",
+    "source_area": "in2",
+    "source_centroid": "in from soffit",
+    "source_second_moment": "in4",
+    "output_outline": "mm",
+    "conversion": "1 in = 25.4 mm exactly"
+  },
+  "scope": "Archived 2006 drawing outlines agree with the June 2025 published gross section-property table. Geometric representation only; no current project design approval is implied.",
+  "geometry_notes": [
+    "Each right-half vertex starts at the soffit centre and follows the outside boundary upward; the other half is mirrored.",
+    "W42G upper flange: 3.5 in vertical edge plus 1.5 in taper; bottom flange: 1 in bottom chamfer, 5 in vertical edge and 2 in taper.",
+    "W50G and W58G upper flange: 5 in vertical edge plus 2 in taper; bottom flange: 1 in bottom chamfer, 6 in vertical edge and 3 in taper.",
+    "W74G upper flange: 2.875 in vertical edge, 2.625 in broad taper and 2 in bevel to the web; bottom flange as W50G/W58G.",
+    "Section-property checks reproduce the rounded WSDOT area, Yb, Ix and Iy values; no fitting to the property table was performed."
+  ],
+  "sections": {
+    "W42G": {
+      "depth_in": 42,
+      "top_flange_width_in": 15,
+      "bottom_flange_width_in": 20,
+      "web_width_in": 6,
+      "right_half_in": [[0, 0], [9, 0], [10, 1], [10, 5], [3, 7], [3, 37], [7.5, 38.5], [7.5, 42]],
+      "published_properties_imperial": {"area_in2": 373.25, "yb_in": 18.94, "ix_in4": 76092, "iy_in4": 5408}
+    },
+    "W50G": {
+      "depth_in": 50,
+      "top_flange_width_in": 20,
+      "bottom_flange_width_in": 25,
+      "web_width_in": 6,
+      "right_half_in": [[0, 0], [11.5, 0], [12.5, 1], [12.5, 6], [3, 9], [3, 43], [10, 45], [10, 50]],
+      "published_properties_imperial": {"area_in2": 525.5, "yb_in": 22.81, "ix_in4": 164958, "iy_in4": 13363}
+    },
+    "W58G": {
+      "depth_in": 58,
+      "top_flange_width_in": 25,
+      "bottom_flange_width_in": 25,
+      "web_width_in": 6,
+      "right_half_in": [[0, 0], [11.5, 0], [12.5, 1], [12.5, 6], [3, 9], [3, 51], [12.5, 53], [12.5, 58]],
+      "published_properties_imperial": {"area_in2": 603.5, "yb_in": 28.00, "ix_in4": 264609, "iy_in4": 17065}
+    },
+    "W74G": {
+      "depth_in": 73.5,
+      "top_flange_width_in": 43,
+      "bottom_flange_width_in": 25,
+      "web_width_in": 6,
+      "right_half_in": [[0, 0], [11.5, 0], [12.5, 1], [12.5, 6], [3, 9], [3, 66], [5, 68], [21.5, 70.625], [21.5, 73.5]],
+      "published_properties_imperial": {"area_in2": 746.7, "yb_in": 38.08, "ix_in4": 546110, "iy_in4": 34759}
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+ "topic": "round4-mi-mdot-standards",
+ "date": "2026-09-26",
+ "background": "Round-3 handoff listed 'MI 1800 still a lead'. The mi-wayback folder's Index to Bridge Detail Sheets named the PC special-detail sheets; current revisions and the BDG set were downloaded live from mdotjboss.state.mi.us with US VPN egress (Cloudflare blocks other IPs). Source PDFs mirrored to ~/Downloads/bridgebeams-manual/us/mi/.",
+ "implemented": {
+  "MiMdotISection": {
+   "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+   "profiles": 4,
+   "provenance": "transcribed",
+   "data": "src/bridgebeams/us/data/state_r4_mi_mdot_standard.json",
+   "validation": "BDG 6.60.01 BEAM PROPERTIES: A/St/Sb/I all within 1% (Type I taper 3 1/4 in solved from printed properties; chain prints 4 of 5 segments)"
+  },
+  "MiMdot70ISection": {
+   "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+   "profiles": 1,
+   "provenance": "transcribed",
+   "data": "src/bridgebeams/us/data/state_r4_mi_mdot_standard.json",
+   "validation": "dimension chain closes exactly (6+2+1.5+49.5+3.5+7.5=70); no printed properties exist for this beam"
+  },
+  "MiMdot1800Section": {
+   "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+   "profiles": 1,
+   "provenance": "transcribed-with-convention",
+   "data": "src/bridgebeams/us/data/state_r4_mi_mdot_standard.json",
+   "validation": "BDG 6.60.02: A -0.9%, St -0.7%, Sb +0.1%, I -0.3% with printed R7 7/8 and R2 fillets modelled; 4'-6 1/2 in chain member required for exact closure (glyph reads 4'-6 7/8 at 600 dpi)"
+  },
+  "MiMdotBulbTeeSection": {
+   "module": "bridgebeams.us.state_r4_mi_mdot_standard",
+   "profiles": 7,
+   "provenance": "transcribed",
+   "data": "src/bridgebeams/us/data/state_r4_mi_mdot_standard.json",
+   "validation": "BDG 6.60.03 printed A/Ybot/Ixx reproduced to 0.1% at every depth; polygon-identical to round-3 MiBulbTeeSection (OR15-182 BTB 002), cross-checked in tests"
+  }
+ },
+ "sources": [
+  {
+   "id": "MI-PC-1Q-2025",
+   "title": "MDOT special detail PC-1Q, Prestressed Concrete I-Beam Details (12-22-2025), 2 sheets",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=8a529778-ce2d-4652-9128-48ec743cdfea",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-1Q_a.pdf",
+   "sha256": "12bdae9fbfa3f654ed4bb169f15b4f3a7990e2fc68363d77fe23a8d53a083a52"
+  },
+  {
+   "id": "MI-PC-2L-2025",
+   "title": "MDOT special detail PC-2L, 70 in Prestressed Concrete I-Beam Details (12-22-2025), 2 sheets",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=c8370804-7482-40fe-9061-5bb6de3c19c8",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-2L.pdf",
+   "sha256": "bd50afeae3a4cda8be83688dece21cc8d489f83553fb63e502d4c389dc4058a7"
+  },
+  {
+   "id": "MI-PC-4J-2025",
+   "title": "MDOT special detail PC-4J, Prestressed Concrete 1800 Beam Details (12-22-2025), 2 sheets",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=997b1418-e2d8-4b64-9374-86254618cb94",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-4J.pdf",
+   "sha256": "315a625b55dae7acb3a12ad61a5469f73810633c78106d27fcc018098b65ad56"
+  },
+  {
+   "id": "MI-PC-5D-2025",
+   "title": "MDOT special detail PC-5D, Prestressed Concrete Bulb-Tee Beam Details (12-22-2025), 2 sheets",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=d5628a40-b6e1-4064-8980-88f85a55839c",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/PC-5D.pdf",
+   "sha256": "6b8064ebbf2741035c8f820715870f8582028e53e0bb7466d2ee72e380e06f04"
+  },
+  {
+   "id": "MI-BDG-SET",
+   "title": "MDOT Bridge Design Guides, English complete set (232 pp; 6.60.01 issued 02/14/11, 6.65.02 series issued 05/22/23)",
+   "url": "https://mdotjboss.state.mi.us/stdplan/getStandardPlanDocument.htm?docGuid=dcecf995-28a3-4f9c-8da7-5839bd206d40",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/BDG-complete-set.pdf",
+   "sha256": "41a5a153fbef6d7fba65ee08301c240b54c21ddae34aecfb547e620290d8c028",
+   "locators": {
+    "6.60.01 I-beam details + properties": "p125",
+    "6.60.02 Michigan 1800 girder + properties": "p126",
+    "6.60.03 bulb tee + properties": "p127",
+    "6.65.02 box beam properties (12/17, 21/27, 33-60 in)": "pp146-148"
+   }
+  }
+ ],
+ "not_implemented": [
+  {
+   "lead": "BDG 6.65.02 box beam property tables",
+   "detail": "15 printed sizes 12x36..60x48 with full properties (pp146-148). MDOT-standard box family; would cross-check the OR15-182 boxes (whose 17x36 A 434.25 differs from BDG 427). Needs section-drawing transcription.",
+   "locator": "BDG pp146-148"
+  },
+  {
+   "lead": "61 in top-flange bulb tee",
+   "detail": "BDG 6.60.03 second column (A 932.4..1220.4 by depth); flange detail on p127 / PC-5D p1 not transcribed.",
+   "locator": "BDG p127"
+  },
+  {
+   "lead": "Box Beam DGN bundle",
+   "detail": "8 native MicroStation files (mdot_box-beam-BDG_DGN-cad.zip) for exact shear-key CAD geometry; would upgrade round-3 SSBB key estimates.",
+   "local_path": "sources/expansion/round3/mi-wayback/redownloaded/live-2026/BoxBeam_b-dgn/"
+  }
+ ]
+}

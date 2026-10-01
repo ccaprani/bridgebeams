@@ -1,0 +1,1461 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "New York State Department of Transportation (NYSDOT)",
+ "units": "inches (source); public geometry in mm",
+ "sources": [
+  {
+   "id": "NYSDOT-BD-PC-2026",
+   "title": "Bridge Detail Sheets BD-PC (US customary), 2026 set",
+   "url": "https://www.dot.ny.gov/main/business-center/engineering/cadd-info/bridge-details-sheets-repostitory-usc/BD-PC_01-26.pdf",
+   "retrieved": "2026-09-23",
+   "local_path": "sources/expansion/round2/us/nysdot_BD-PC_01-26.pdf",
+   "sha256": "3ea2cf78993dc01ae0993fc90042e84fad3551c64054d5f7829398bb28e864d5",
+   "edition": "approved 2026-01-13, EB 26-004, effective lettings of 2026-05-01",
+   "pages": {
+    "BD-PC1": 1,
+    "BD-PC2": 2,
+    "BD-PC14": 14,
+    "BD-PC15": 15,
+    "BD-PC31": 31,
+    "BD-PC36": 36
+   }
+  }
+ ],
+ "geometry_notes": [
+  "Slab units and boxes: 'shear key recess detail' (BD-PC1): bottom 4 in band at the full width with a 3/4 in soffit chamfer; 3/4 x 3/4 in taper into a face recessed 3/4 in; 3/8 x 3/8 in taper out to a top 4 in band inset 3/8 in. The 3'-0\"/4'-0\" widths are at the bottom band. Interior unit (keys both faces).",
+  "Box void: 5 in webs measured from the recessed face, 5 1/2 in top and bottom slabs, 3 x 3 in void chamfers.",
+  "Slab voids: centred at mid-depth, diameters/spacing as drawn (36 in: 2 voids at +/-7 1/2 in; 48 in: 3 voids at 0, +/-14 in; S48x21: 12/10/12 in as labelled).",
+  "PINNED: NYSDOT tabulated yb is exactly D/2 for every box and slab unit (not the true centroid, which is ~0.02-0.08 in lower because of the asymmetric key).",
+  "PINNED: box Ix column is not smooth in depth (irregular second differences); residuals -0.4% to +0.9%. B36 areas match to 0.1 in2; B48 areas are 0.4-0.9% below the model (source area increments 28.9-31 in2 per 3 in, drawn webs give exactly 30).",
+  "PINNED: S48x21 table (646.4 in2, 33426 in4) corresponds to three 12 in voids, whereas the drawing labels the middle void 10 in; the drawing is followed (+5.3% area).",
+  "PINNED: S36x15 and S48x15 table areas exceed the drawn 8 in voids by 0.9 and 2.9 in2.",
+  "PCEF: all dimensions drawn; the 3/4 in soffit chamfers are omitted (convention) because NYSDOT's table is reproduced exactly without them. PCEF-63 table Ix 500945 is a digit transposition of the computed 500495 (pinned).",
+  "NEXT D/F: stems 5'-0\" apart, 15 in wide at the flange soffit (1'-3\"), side slope 0.375 in 12, R=4 in fillets, 3/4 in stem chamfers; D flange 9 in with the flange key-way; F flange 4 in with 1/4 in edge draft. Minimum flange thickness used (grinding allowance and fascia drip groove omitted). NEXT40D-120 yb read visually (27.37 in)."
+ ],
+ "families": {
+  "ny_box_beam": {
+   "provenance": "transcribed",
+   "source_status": "current standard (NYSDOT BD-PC 2026, EB 26-004, lettings from 2026-05-01)",
+   "template_in": {
+    "soffit_chamfer_in": 0.75,
+    "lower_band_in": 4.0,
+    "upper_band_in": 4.0,
+    "recess_from_bottom_face_in": 0.75,
+    "top_band_inset_in": 0.375,
+    "web_in": 5.0,
+    "top_slab_in": 5.5,
+    "bottom_slab_in": 5.5,
+    "void_chamfer_in": 3.0
+   },
+   "sections": {
+    "B36x24": {
+     "width_in": 36.0,
+     "depth_in": 24.0,
+     "published": {
+      "area_in2": 536.6,
+      "yb_in": 12.0,
+      "ix_in4": 36638.3
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.008,
+      "yb_in": -0.05,
+      "ix_pct": 0.134,
+      "computed": {
+       "area_in2": 536.64,
+       "yb_in": 11.95,
+       "ix_in4": 36687.5
+      }
+     }
+    },
+    "B36x27": {
+     "width_in": 36.0,
+     "depth_in": 27.0,
+     "published": {
+      "area_in2": 566.6,
+      "yb_in": 13.5,
+      "ix_in4": 49948.2
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.007,
+      "yb_in": -0.055,
+      "ix_pct": 0.663,
+      "computed": {
+       "area_in2": 566.64,
+       "yb_in": 13.445,
+       "ix_in4": 50279.3
+      }
+     }
+    },
+    "B36x30": {
+     "width_in": 36.0,
+     "depth_in": 30.0,
+     "published": {
+      "area_in2": 596.6,
+      "yb_in": 15.0,
+      "ix_in4": 66421.0
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.007,
+      "yb_in": -0.059,
+      "ix_pct": -0.0,
+      "computed": {
+       "area_in2": 596.64,
+       "yb_in": 14.941,
+       "ix_in4": 66420.9
+      }
+     }
+    },
+    "B36x33": {
+     "width_in": 36.0,
+     "depth_in": 33.0,
+     "published": {
+      "area_in2": 626.6,
+      "yb_in": 16.5,
+      "ix_in4": 85361.3
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.006,
+      "yb_in": -0.063,
+      "ix_pct": -0.133,
+      "computed": {
+       "area_in2": 626.64,
+       "yb_in": 16.437,
+       "ix_in4": 85247.4
+      }
+     }
+    },
+    "B36x36": {
+     "width_in": 36.0,
+     "depth_in": 36.0,
+     "published": {
+      "area_in2": 656.6,
+      "yb_in": 18.0,
+      "ix_in4": 106599.5
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.006,
+      "yb_in": -0.067,
+      "ix_pct": 0.276,
+      "computed": {
+       "area_in2": 656.64,
+       "yb_in": 17.933,
+       "ix_in4": 106893.7
+      }
+     }
+    },
+    "B36x39": {
+     "width_in": 36.0,
+     "depth_in": 39.0,
+     "published": {
+      "area_in2": 686.6,
+      "yb_in": 19.5,
+      "ix_in4": 130672.6
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.006,
+      "yb_in": -0.07,
+      "ix_pct": 0.629,
+      "computed": {
+       "area_in2": 686.64,
+       "yb_in": 19.43,
+       "ix_in4": 131495.0
+      }
+     }
+    },
+    "B36x42": {
+     "width_in": 36.0,
+     "depth_in": 42.0,
+     "published": {
+      "area_in2": 716.6,
+      "yb_in": 21.0,
+      "ix_in4": 159622.9
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.006,
+      "yb_in": -0.073,
+      "ix_pct": -0.274,
+      "computed": {
+       "area_in2": 716.64,
+       "yb_in": 20.927,
+       "ix_in4": 159186.1
+      }
+     }
+    },
+    "B36x45": {
+     "width_in": 36.0,
+     "depth_in": 45.0,
+     "published": {
+      "area_in2": 746.6,
+      "yb_in": 22.5,
+      "ix_in4": 189942.6
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.005,
+      "yb_in": -0.076,
+      "ix_pct": 0.084,
+      "computed": {
+       "area_in2": 746.64,
+       "yb_in": 22.424,
+       "ix_in4": 190102.0
+      }
+     }
+    },
+    "B36x48": {
+     "width_in": 36.0,
+     "depth_in": 48.0,
+     "published": {
+      "area_in2": 776.6,
+      "yb_in": 24.0,
+      "ix_in4": 223529.7
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.005,
+      "yb_in": -0.078,
+      "ix_pct": 0.379,
+      "computed": {
+       "area_in2": 776.64,
+       "yb_in": 23.922,
+       "ix_in4": 224377.8
+      }
+     }
+    },
+    "B36x51": {
+     "width_in": 36.0,
+     "depth_in": 51.0,
+     "published": {
+      "area_in2": 806.6,
+      "yb_in": 25.5,
+      "ix_in4": 260456.3
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.005,
+      "yb_in": -0.081,
+      "ix_pct": 0.65,
+      "computed": {
+       "area_in2": 806.64,
+       "yb_in": 25.419,
+       "ix_in4": 262148.6
+      }
+     }
+    },
+    "B36x54": {
+     "width_in": 36.0,
+     "depth_in": 54.0,
+     "published": {
+      "area_in2": 836.6,
+      "yb_in": 27.0,
+      "ix_in4": 300842.6
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.005,
+      "yb_in": -0.083,
+      "ix_pct": 0.9,
+      "computed": {
+       "area_in2": 836.64,
+       "yb_in": 26.917,
+       "ix_in4": 303549.1
+      }
+     }
+    },
+    "B48x24": {
+     "width_in": 48.0,
+     "depth_in": 24.0,
+     "published": {
+      "area_in2": 665.7,
+      "yb_in": 12.0,
+      "ix_in4": 48290.5
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.442,
+      "yb_in": -0.04,
+      "ix_pct": 0.05,
+      "computed": {
+       "area_in2": 668.64,
+       "yb_in": 11.96,
+       "ix_in4": 48314.7
+      }
+     }
+    },
+    "B48x27": {
+     "width_in": 48.0,
+     "depth_in": 27.0,
+     "published": {
+      "area_in2": 694.7,
+      "yb_in": 13.5,
+      "ix_in4": 65516.5
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.567,
+      "yb_in": -0.044,
+      "ix_pct": 0.534,
+      "computed": {
+       "area_in2": 698.64,
+       "yb_in": 13.456,
+       "ix_in4": 65866.6
+      }
+     }
+    },
+    "B48x30": {
+     "width_in": 48.0,
+     "depth_in": 30.0,
+     "published": {
+      "area_in2": 723.9,
+      "yb_in": 15.0,
+      "ix_in4": 85769.7
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.655,
+      "yb_in": -0.048,
+      "ix_pct": 0.924,
+      "computed": {
+       "area_in2": 728.64,
+       "yb_in": 14.952,
+       "ix_in4": 86562.3
+      }
+     }
+    },
+    "B48x33": {
+     "width_in": 48.0,
+     "depth_in": 33.0,
+     "published": {
+      "area_in2": 754.9,
+      "yb_in": 16.5,
+      "ix_in4": 110827.9
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.496,
+      "yb_in": -0.052,
+      "ix_pct": -0.263,
+      "computed": {
+       "area_in2": 758.64,
+       "yb_in": 16.448,
+       "ix_in4": 110536.8
+      }
+     }
+    },
+    "B48x36": {
+     "width_in": 48.0,
+     "depth_in": 36.0,
+     "published": {
+      "area_in2": 783.8,
+      "yb_in": 18.0,
+      "ix_in4": 137736.0
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.618,
+      "yb_in": -0.056,
+      "ix_pct": 0.137,
+      "computed": {
+       "area_in2": 788.64,
+       "yb_in": 17.944,
+       "ix_in4": 137925.2
+      }
+     }
+    },
+    "B48x39": {
+     "width_in": 48.0,
+     "depth_in": 39.0,
+     "published": {
+      "area_in2": 813.0,
+      "yb_in": 19.5,
+      "ix_in4": 168055.7
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.694,
+      "yb_in": -0.059,
+      "ix_pct": 0.48,
+      "computed": {
+       "area_in2": 818.64,
+       "yb_in": 19.441,
+       "ix_in4": 168862.5
+      }
+     }
+    },
+    "B48x42": {
+     "width_in": 48.0,
+     "depth_in": 42.0,
+     "published": {
+      "area_in2": 844.0,
+      "yb_in": 21.0,
+      "ix_in4": 204309.6
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.55,
+      "yb_in": -0.062,
+      "ix_pct": -0.404,
+      "computed": {
+       "area_in2": 848.64,
+       "yb_in": 20.938,
+       "ix_in4": 203483.6
+      }
+     }
+    },
+    "B48x45": {
+     "width_in": 48.0,
+     "depth_in": 45.0,
+     "published": {
+      "area_in2": 873.0,
+      "yb_in": 22.5,
+      "ix_in4": 242101.1
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.646,
+      "yb_in": -0.064,
+      "ix_pct": -0.073,
+      "computed": {
+       "area_in2": 878.64,
+       "yb_in": 22.436,
+       "ix_in4": 241923.7
+      }
+     }
+    },
+    "B48x48": {
+     "width_in": 48.0,
+     "depth_in": 48.0,
+     "published": {
+      "area_in2": 902.1,
+      "yb_in": 24.0,
+      "ix_in4": 283688.6
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.725,
+      "yb_in": -0.067,
+      "ix_pct": 0.222,
+      "computed": {
+       "area_in2": 908.64,
+       "yb_in": 23.933,
+       "ix_in4": 284317.5
+      }
+     }
+    },
+    "B48x51": {
+     "width_in": 48.0,
+     "depth_in": 51.0,
+     "published": {
+      "area_in2": 931.1,
+      "yb_in": 25.5,
+      "ix_in4": 329216.2
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.81,
+      "yb_in": -0.07,
+      "ix_pct": 0.481,
+      "computed": {
+       "area_in2": 938.64,
+       "yb_in": 25.43,
+       "ix_in4": 330800.3
+      }
+     }
+    },
+    "B48x54": {
+     "width_in": 48.0,
+     "depth_in": 54.0,
+     "published": {
+      "area_in2": 960.2,
+      "yb_in": 27.0,
+      "ix_in4": 378780.1
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.879,
+      "yb_in": -0.072,
+      "ix_pct": 0.72,
+      "computed": {
+       "area_in2": 968.64,
+       "yb_in": 26.928,
+       "ix_in4": 381506.9
+      }
+     }
+    }
+   }
+  },
+  "ny_slab_unit": {
+   "provenance": "transcribed",
+   "source_status": "current standard (NYSDOT BD-PC 2026, EB 26-004, lettings from 2026-05-01)",
+   "template_in": {
+    "soffit_chamfer_in": 0.75,
+    "lower_band_in": 4.0,
+    "upper_band_in": 4.0,
+    "recess_from_bottom_face_in": 0.75,
+    "top_band_inset_in": 0.375
+   },
+   "sections": {
+    "S36x12": {
+     "width_in": 36.0,
+     "depth_in": 12.0,
+     "voids_in": [],
+     "published": {
+      "area_in2": 423.1,
+      "yb_in": 6.0,
+      "ix_in4": 5107.4
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.01,
+      "yb_in": -0.022,
+      "ix_pct": 0.0,
+      "computed": {
+       "area_in2": 423.14,
+       "yb_in": 5.978,
+       "ix_in4": 5107.4
+      }
+     }
+    },
+    "S36x15": {
+     "width_in": 36.0,
+     "depth_in": 15.0,
+     "voids_in": [
+      [
+       -7.5,
+       8.0
+      ],
+      [
+       7.5,
+       8.0
+      ]
+     ],
+     "published": {
+      "area_in2": 427.0,
+      "yb_in": 7.5,
+      "ix_in4": 9497.1
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": -0.199,
+      "yb_in": -0.032,
+      "ix_pct": 0.695,
+      "computed": {
+       "area_in2": 426.15,
+       "yb_in": 7.468,
+       "ix_in4": 9563.1
+      }
+     }
+    },
+    "S36x18": {
+     "width_in": 36.0,
+     "depth_in": 18.0,
+     "voids_in": [
+      [
+       -7.5,
+       10.0
+      ],
+      [
+       7.5,
+       10.0
+      ]
+     ],
+     "published": {
+      "area_in2": 473.1,
+      "yb_in": 9.0,
+      "ix_in4": 16210.5
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": 0.005,
+      "yb_in": -0.038,
+      "ix_pct": 0.005,
+      "computed": {
+       "area_in2": 473.12,
+       "yb_in": 8.962,
+       "ix_in4": 16211.3
+      }
+     }
+    },
+    "S36x21": {
+     "width_in": 36.0,
+     "depth_in": 21.0,
+     "voids_in": [
+      [
+       -7.5,
+       12.0
+      ],
+      [
+       7.5,
+       12.0
+      ]
+     ],
+     "published": {
+      "area_in2": 508.9,
+      "yb_in": 10.5,
+      "ix_in4": 25219.5
+     },
+     "pdf_page": 1,
+     "sheet": "BD-PC1",
+     "residuals": {
+      "area_pct": -0.268,
+      "yb_in": -0.044,
+      "ix_pct": 0.006,
+      "computed": {
+       "area_in2": 507.54,
+       "yb_in": 10.456,
+       "ix_in4": 25221.1
+      }
+     }
+    },
+    "S48x12": {
+     "width_in": 48.0,
+     "depth_in": 12.0,
+     "voids_in": [],
+     "published": {
+      "area_in2": 567.1,
+      "yb_in": 6.0,
+      "ix_in4": 6835.5
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.007,
+      "yb_in": -0.017,
+      "ix_pct": -0.001,
+      "computed": {
+       "area_in2": 567.14,
+       "yb_in": 5.983,
+       "ix_in4": 6835.5
+      }
+     }
+    },
+    "S48x15": {
+     "width_in": 48.0,
+     "depth_in": 15.0,
+     "voids_in": [
+      [
+       -14.0,
+       8.0
+      ],
+      [
+       0.0,
+       8.0
+      ],
+      [
+       14.0,
+       8.0
+      ]
+     ],
+     "published": {
+      "area_in2": 558.8,
+      "yb_in": 7.5,
+      "ix_in4": 12666.0
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": -0.518,
+      "yb_in": -0.025,
+      "ix_pct": 0.563,
+      "computed": {
+       "area_in2": 555.9,
+       "yb_in": 7.475,
+       "ix_in4": 12737.3
+      }
+     }
+    },
+    "S48x18": {
+     "width_in": 48.0,
+     "depth_in": 18.0,
+     "voids_in": [
+      [
+       -14.0,
+       10.0
+      ],
+      [
+       0.0,
+       10.0
+      ],
+      [
+       14.0,
+       10.0
+      ]
+     ],
+     "published": {
+      "area_in2": 610.5,
+      "yb_in": 9.0,
+      "ix_in4": 21551.8
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 0.019,
+      "yb_in": -0.03,
+      "ix_pct": 0.006,
+      "computed": {
+       "area_in2": 610.62,
+       "yb_in": 8.97,
+       "ix_in4": 21553.0
+      }
+     }
+    },
+    "S48x21": {
+     "width_in": 48.0,
+     "depth_in": 21.0,
+     "voids_in": [
+      [
+       -14.0,
+       12.0
+      ],
+      [
+       0.0,
+       10.0
+      ],
+      [
+       14.0,
+       12.0
+      ]
+     ],
+     "published": {
+      "area_in2": 646.4,
+      "yb_in": 10.5,
+      "ix_in4": 33426.2
+     },
+     "pdf_page": 2,
+     "sheet": "BD-PC2",
+     "residuals": {
+      "area_pct": 5.357,
+      "yb_in": -0.033,
+      "ix_pct": 1.692,
+      "computed": {
+       "area_in2": 681.03,
+       "yb_in": 10.467,
+       "ix_in4": 33991.9
+      }
+     }
+    }
+   }
+  },
+  "ny_pcef_bulb_tee": {
+   "provenance": "transcribed-with-convention",
+   "source_status": "current standard (NYSDOT BD-PC 2026, EB 26-004, lettings from 2026-05-01)",
+   "sheet": "BD-PC14",
+   "template_in": {
+    "top_width_in": 47.0,
+    "bottom_width_in": 32.0,
+    "web_in": 7.0,
+    "top_tip_in": 4.0,
+    "top_taper_drop_in": 1.5,
+    "top_taper_run_in": 18.0,
+    "top_chamfer_in": 2.0,
+    "bottom_edge_in": 9.0,
+    "bottom_taper_rise_in": 3.0,
+    "bottom_taper_run_in": 9.0,
+    "bottom_chamfer_in": 3.5,
+    "web_straight_in": "D - 23"
+   },
+   "sections": {
+    "PCEF-39": {
+     "depth_in": 39.0,
+     "published": {
+      "area_in2": 755.0,
+      "yb_in": 18.77,
+      "ix_in4": 148321.0
+     },
+     "pdf_page": 14,
+     "residuals": {
+      "area_pct": 0.033,
+      "yb_in": 0.0,
+      "ix_pct": 0.0,
+      "computed": {
+       "area_in2": 755.25,
+       "yb_in": 18.77,
+       "ix_in4": 148321.1
+      }
+     }
+    },
+    "PCEF-47": {
+     "depth_in": 47.0,
+     "published": {
+      "area_in2": 811.0,
+      "yb_in": 22.39,
+      "ix_in4": 239351.0
+     },
+     "pdf_page": 14,
+     "residuals": {
+      "area_pct": 0.031,
+      "yb_in": -0.005,
+      "ix_pct": 0.0,
+      "computed": {
+       "area_in2": 811.25,
+       "yb_in": 22.385,
+       "ix_in4": 239351.5
+      }
+     }
+    },
+    "PCEF-55": {
+     "depth_in": 55.0,
+     "published": {
+      "area_in2": 867.0,
+      "yb_in": 26.05,
+      "ix_in4": 356133.0
+     },
+     "pdf_page": 14,
+     "residuals": {
+      "area_pct": 0.029,
+      "yb_in": 0.0,
+      "ix_pct": -0.0,
+      "computed": {
+       "area_in2": 867.25,
+       "yb_in": 26.05,
+       "ix_in4": 356132.8
+      }
+     }
+    },
+    "PCEF-63": {
+     "depth_in": 63.0,
+     "published": {
+      "area_in2": 923.0,
+      "yb_in": 29.76,
+      "ix_in4": 500945.0
+     },
+     "pdf_page": 14,
+     "residuals": {
+      "area_pct": 0.027,
+      "yb_in": -0.004,
+      "ix_pct": -0.09,
+      "computed": {
+       "area_in2": 923.25,
+       "yb_in": 29.756,
+       "ix_in4": 500495.0
+      }
+     }
+    },
+    "PCEF-71": {
+     "depth_in": 71.0,
+     "published": {
+      "area_in2": 979.0,
+      "yb_in": 33.5,
+      "ix_in4": 674259.0
+     },
+     "pdf_page": 14,
+     "residuals": {
+      "area_pct": 0.026,
+      "yb_in": -0.005,
+      "ix_pct": 0.0,
+      "computed": {
+       "area_in2": 979.25,
+       "yb_in": 33.495,
+       "ix_in4": 674259.4
+      }
+     }
+    },
+    "PCEF-79": {
+     "depth_in": 79.0,
+     "published": {
+      "area_in2": 1035.0,
+      "yb_in": 37.26,
+      "ix_in4": 879241.0
+     },
+     "pdf_page": 14,
+     "residuals": {
+      "area_pct": 0.024,
+      "yb_in": 0.003,
+      "ix_pct": 0.0,
+      "computed": {
+       "area_in2": 1035.25,
+       "yb_in": 37.263,
+       "ix_in4": 879241.1
+      }
+     }
+    }
+   }
+  },
+  "ny_nebt": {
+   "provenance": "fitted-reconstruction",
+   "source_status": "current standard (NYSDOT BD-PC 2026, EB 26-004, lettings from 2026-05-01)",
+   "sheet": "BD-PC15",
+   "template_in": {
+    "top_width_in": 47.25,
+    "bottom_width_in": 31.875,
+    "web_in": 7.125,
+    "top_edge_in": 3.375,
+    "top_taper_drop_in": 2.0,
+    "bottom_edge_in": 8.625,
+    "bottom_taper_rise_in": 3.875,
+    "web_fillet_radius_in": 7.875,
+    "bulb_corner_radius_in": 4.0,
+    "tip_radius_in": 0.875,
+    "soffit_chamfer_in": 0.75
+   },
+   "label_reading": "Printed stack: 2\" and 3 3/8\" top callouts, 1'-9 1/2\" (NEBT-39) / 5'-0 7/8\" (NEBT-79) between the theoretical web intersections, 3 7/8\" and 8 5/8\" bottom callouts. The overall depths close only with 5 3/8\" at the web top. The drawn assignment (2\" tip + 1 3/8\" drop) leaves ~29 in2 missing; the assignment 3 3/8\" tip + 2\" drop reproduces all six tables within 0.3% area / 0.1 in yb / 0.23% I, and is used.",
+   "sections": {
+    "NEBT-39": {
+     "depth_in": 39.375,
+     "table_depth_in": 39.37,
+     "published": {
+      "area_in2": 746.0,
+      "yb_in": 19.04,
+      "ix_in4": 149302.0
+     },
+     "pdf_page": 15,
+     "residuals": {
+      "area_pct": 0.144,
+      "yb_in": 0.046,
+      "ix_pct": 0.179,
+      "computed": {
+       "area_in2": 747.07,
+       "yb_in": 19.086,
+       "ix_in4": 149569.6
+      }
+     }
+    },
+    "NEBT-47": {
+     "depth_in": 47.25,
+     "table_depth_in": 47.24,
+     "published": {
+      "area_in2": 802.0,
+      "yb_in": 22.64,
+      "ix_in4": 238436.0
+     },
+     "pdf_page": 15,
+     "residuals": {
+      "area_pct": 0.147,
+      "yb_in": 0.064,
+      "ix_pct": 0.155,
+      "computed": {
+       "area_in2": 803.18,
+       "yb_in": 22.704,
+       "ix_in4": 238804.9
+      }
+     }
+    },
+    "NEBT-55": {
+     "depth_in": 55.125,
+     "table_depth_in": 55.12,
+     "published": {
+      "area_in2": 858.0,
+      "yb_in": 26.29,
+      "ix_in4": 352341.0
+     },
+     "pdf_page": 15,
+     "residuals": {
+      "area_pct": 0.15,
+      "yb_in": 0.073,
+      "ix_pct": 0.131,
+      "computed": {
+       "area_in2": 859.29,
+       "yb_in": 26.363,
+       "ix_in4": 352802.1
+      }
+     }
+    },
+    "NEBT-63": {
+     "depth_in": 63.0,
+     "table_depth_in": 62.99,
+     "published": {
+      "area_in2": 914.0,
+      "yb_in": 29.98,
+      "ix_in4": 492804.0
+     },
+     "pdf_page": 15,
+     "residuals": {
+      "area_pct": 0.153,
+      "yb_in": 0.077,
+      "ix_pct": 0.106,
+      "computed": {
+       "area_in2": 915.4,
+       "yb_in": 30.057,
+       "ix_in4": 493327.4
+      }
+     }
+    },
+    "NEBT-71": {
+     "depth_in": 70.875,
+     "table_depth_in": 70.87,
+     "published": {
+      "area_in2": 969.0,
+      "yb_in": 33.69,
+      "ix_in4": 661602.0
+     },
+     "pdf_page": 15,
+     "residuals": {
+      "area_pct": 0.259,
+      "yb_in": 0.088,
+      "ix_pct": 0.081,
+      "computed": {
+       "area_in2": 971.51,
+       "yb_in": 33.778,
+       "ix_in4": 662140.8
+      }
+     }
+    },
+    "NEBT-79": {
+     "depth_in": 78.75,
+     "table_depth_in": 78.74,
+     "published": {
+      "area_in2": 1025.0,
+      "yb_in": 37.43,
+      "ix_in4": 860400.0
+     },
+     "pdf_page": 15,
+     "residuals": {
+      "area_pct": 0.256,
+      "yb_in": 0.094,
+      "ix_pct": 0.07,
+      "computed": {
+       "area_in2": 1027.62,
+       "yb_in": 37.524,
+       "ix_in4": 860998.0
+      }
+     }
+    }
+   },
+   "not_implemented": "Transcription retained for reference; not exposed as a class because it duplicates the PCI Northeast family in bridgebeams.us.pci_regional_products (coordinator instruction 2026-09-23)."
+  },
+  "ny_next_beam": {
+   "provenance": "transcribed-with-convention",
+   "source_status": "current standard (NYSDOT BD-PC 2026, EB 26-004, lettings from 2026-05-01)",
+   "sheet": "BD-PC31 (type D), BD-PC36 (type F)",
+   "template_in": {
+    "stem_spacing_in": 60.0,
+    "stem_top_width_in": 15.0,
+    "stem_side_slope": "12 : 0.375",
+    "fillet_radius_in": 4.0,
+    "stem_chamfer_in": 0.75
+   },
+   "types": {
+    "D": {
+     "flange_in": 9.0,
+     "edge_profile_in": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0.75,
+       1.75
+      ],
+      [
+       0.75,
+       7.25
+      ],
+      [
+       0,
+       8
+      ],
+      [
+       0,
+       9
+      ]
+     ],
+     "note": "flange key-way: 1 in full face at top, 3/4 x 3/4 chamfers, 5 1/2 in x 3/4 in recess"
+    },
+    "F": {
+     "flange_in": 4.0,
+     "edge_profile_in": [
+      [
+       0.25,
+       0
+      ],
+      [
+       0,
+       4
+      ]
+     ],
+     "note": "1/4 in draft on flange edge"
+    }
+   },
+   "sections": {
+    "NEXT40D-96": {
+     "type": "D",
+     "width_in": 96.0,
+     "depth_in": 41.0,
+     "stem_width_in": 13.0,
+     "published": {
+      "area_in2": 1763.0,
+      "yb_in": 26.26,
+      "ix_in4": 258748.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.041,
+      "yb_in": -0.005,
+      "ix_pct": -0.003,
+      "computed": {
+       "area_in2": 1762.28,
+       "yb_in": 26.255,
+       "ix_in4": 258739.0
+      }
+     }
+    },
+    "NEXT36D-96": {
+     "type": "D",
+     "width_in": 96.0,
+     "depth_in": 37.0,
+     "stem_width_in": 13.25,
+     "published": {
+      "area_in2": 1658.0,
+      "yb_in": 23.79,
+      "ix_in4": 193181.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.043,
+      "yb_in": -0.001,
+      "ix_pct": -0.002,
+      "computed": {
+       "area_in2": 1657.28,
+       "yb_in": 23.789,
+       "ix_in4": 193177.0
+      }
+     }
+    },
+    "NEXT32D-96": {
+     "type": "D",
+     "width_in": 96.0,
+     "depth_in": 33.0,
+     "stem_width_in": 13.5,
+     "published": {
+      "area_in2": 1551.0,
+      "yb_in": 21.29,
+      "ix_in4": 138970.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.046,
+      "yb_in": -0.001,
+      "ix_pct": -0.001,
+      "computed": {
+       "area_in2": 1550.28,
+       "yb_in": 21.289,
+       "ix_in4": 138968.8
+      }
+     }
+    },
+    "NEXT28D-96": {
+     "type": "D",
+     "width_in": 96.0,
+     "depth_in": 29.0,
+     "stem_width_in": 13.75,
+     "published": {
+      "area_in2": 1442.0,
+      "yb_in": 18.74,
+      "ix_in4": 95413.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.05,
+      "yb_in": 0.004,
+      "ix_pct": -0.001,
+      "computed": {
+       "area_in2": 1441.28,
+       "yb_in": 18.744,
+       "ix_in4": 95412.4
+      }
+     }
+    },
+    "NEXT40D-120": {
+     "type": "D",
+     "width_in": 120.0,
+     "depth_in": 41.0,
+     "stem_width_in": 13.0,
+     "published": {
+      "area_in2": 1979.0,
+      "yb_in": 27.37,
+      "ix_in4": 280397.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.036,
+      "yb_in": 0.004,
+      "ix_pct": -0.002,
+      "computed": {
+       "area_in2": 1978.28,
+       "yb_in": 27.374,
+       "ix_in4": 280392.6
+      }
+     }
+    },
+    "NEXT36D-120": {
+     "type": "D",
+     "width_in": 120.0,
+     "depth_in": 37.0,
+     "stem_width_in": 13.25,
+     "published": {
+      "area_in2": 1874.0,
+      "yb_in": 24.79,
+      "ix_in4": 209138.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.038,
+      "yb_in": 0.003,
+      "ix_pct": -0.001,
+      "computed": {
+       "area_in2": 1873.28,
+       "yb_in": 24.793,
+       "ix_in4": 209136.5
+      }
+     }
+    },
+    "NEXT32D-120": {
+     "type": "D",
+     "width_in": 120.0,
+     "depth_in": 33.0,
+     "stem_width_in": 13.5,
+     "published": {
+      "area_in2": 1767.0,
+      "yb_in": 22.17,
+      "ix_in4": 150285.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.04,
+      "yb_in": 0.001,
+      "ix_pct": -0.0,
+      "computed": {
+       "area_in2": 1766.28,
+       "yb_in": 22.171,
+       "ix_in4": 150284.3
+      }
+     }
+    },
+    "NEXT28D-120": {
+     "type": "D",
+     "width_in": 120.0,
+     "depth_in": 29.0,
+     "stem_width_in": 13.75,
+     "published": {
+      "area_in2": 1658.0,
+      "yb_in": 19.49,
+      "ix_in4": 103094.0
+     },
+     "pdf_page": 31,
+     "residuals": {
+      "area_pct": -0.043,
+      "yb_in": 0.005,
+      "ix_pct": -0.001,
+      "computed": {
+       "area_in2": 1657.28,
+       "yb_in": 19.495,
+       "ix_in4": 103093.2
+      }
+     }
+    },
+    "NEXT36F-95.5": {
+     "type": "F",
+     "width_in": 95.5,
+     "depth_in": 36.0,
+     "stem_width_in": 13.0,
+     "published": {
+      "area_in2": 1287.0,
+      "yb_in": 21.77,
+      "ix_in4": 160240.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.129,
+      "yb_in": -0.019,
+      "ix_pct": 0.143,
+      "computed": {
+       "area_in2": 1288.66,
+       "yb_in": 21.751,
+       "ix_in4": 160468.8
+      }
+     }
+    },
+    "NEXT32F-95.5": {
+     "type": "F",
+     "width_in": 95.5,
+     "depth_in": 32.0,
+     "stem_width_in": 13.25,
+     "published": {
+      "area_in2": 1182.0,
+      "yb_in": 19.51,
+      "ix_in4": 115813.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.14,
+      "yb_in": -0.011,
+      "ix_pct": 0.122,
+      "computed": {
+       "area_in2": 1183.66,
+       "yb_in": 19.499,
+       "ix_in4": 115953.9
+      }
+     }
+    },
+    "NEXT28F-95.5": {
+     "type": "F",
+     "width_in": 95.5,
+     "depth_in": 28.0,
+     "stem_width_in": 13.5,
+     "published": {
+      "area_in2": 1075.0,
+      "yb_in": 17.24,
+      "ix_in4": 79901.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.154,
+      "yb_in": -0.007,
+      "ix_pct": 0.108,
+      "computed": {
+       "area_in2": 1076.66,
+       "yb_in": 17.233,
+       "ix_in4": 79987.2
+      }
+     }
+    },
+    "NEXT24F-95.5": {
+     "type": "F",
+     "width_in": 95.5,
+     "depth_in": 24.0,
+     "stem_width_in": 13.75,
+     "published": {
+      "area_in2": 966.0,
+      "yb_in": 14.95,
+      "ix_in4": 51823.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.172,
+      "yb_in": -0.006,
+      "ix_pct": 0.095,
+      "computed": {
+       "area_in2": 967.66,
+       "yb_in": 14.944,
+       "ix_in4": 51872.4
+      }
+     }
+    },
+    "NEXT36F-143.5": {
+     "type": "F",
+     "width_in": 143.5,
+     "depth_in": 36.0,
+     "stem_width_in": 13.0,
+     "published": {
+      "area_in2": 1479.0,
+      "yb_in": 23.36,
+      "ix_in4": 185525.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.112,
+      "yb_in": -0.021,
+      "ix_pct": 0.146,
+      "computed": {
+       "area_in2": 1480.66,
+       "yb_in": 23.339,
+       "ix_in4": 185796.1
+      }
+     }
+    },
+    "NEXT32F-143.5": {
+     "type": "F",
+     "width_in": 143.5,
+     "depth_in": 32.0,
+     "stem_width_in": 13.25,
+     "published": {
+      "area_in2": 1374.0,
+      "yb_in": 20.98,
+      "ix_in4": 134258.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.121,
+      "yb_in": -0.016,
+      "ix_pct": 0.126,
+      "computed": {
+       "area_in2": 1375.66,
+       "yb_in": 20.964,
+       "ix_in4": 134427.5
+      }
+     }
+    },
+    "NEXT28F-143.5": {
+     "type": "F",
+     "width_in": 143.5,
+     "depth_in": 28.0,
+     "stem_width_in": 13.5,
+     "published": {
+      "area_in2": 1267.0,
+      "yb_in": 18.57,
+      "ix_in4": 92661.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.131,
+      "yb_in": -0.01,
+      "ix_pct": 0.114,
+      "computed": {
+       "area_in2": 1268.66,
+       "yb_in": 18.56,
+       "ix_in4": 92766.7
+      }
+     }
+    },
+    "NEXT24F-143.5": {
+     "type": "F",
+     "width_in": 143.5,
+     "depth_in": 24.0,
+     "stem_width_in": 13.75,
+     "published": {
+      "area_in2": 1158.0,
+      "yb_in": 16.12,
+      "ix_in4": 60045.0
+     },
+     "pdf_page": 36,
+     "residuals": {
+      "area_pct": 0.143,
+      "yb_in": -0.008,
+      "ix_pct": 0.101,
+      "computed": {
+       "area_in2": 1159.66,
+       "yb_in": 16.112,
+       "ix_in4": 60105.6
+      }
+     }
+    }
+   },
+   "not_implemented": "Transcription retained for reference; not exposed as a class because it duplicates the PCI Northeast family in bridgebeams.us.pci_regional_products (coordinator instruction 2026-09-23)."
+  }
+ }
+}

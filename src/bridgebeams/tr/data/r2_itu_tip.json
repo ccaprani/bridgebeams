@@ -1,0 +1,290 @@
+{
+ "family": "İTÜ thesis standard precast pretensioned I-beams TİP I/II/III × A/B/C (Turkey)",
+ "title_original": "Öngerilmeli Prefabrike I Kesitli Köprü Kirişlerinin Optimizasyonu (Yüksek Lisans Tezi, İstanbul Teknik Üniversitesi, Fen Bilimleri Enstitüsü)",
+ "author": "Selahattin Tayfun Sarsık (advisor: Turgut Öztürk), 2008",
+ "source_url": "https://polen.itu.edu.tr/bitstreams/d9854b5e-8c5a-4873-b253-e001d8f62be0/download",
+ "source_item_page": "https://polen.itu.edu.tr/items/27cfbf52-8534-4c22-9b22-231b975b50f0/full",
+ "source_local_file": "sources/expansion/round2/tr/itu_thesis_ongerilmeli_i_kesitli_kopru_kirisleri.pdf",
+ "source_sha256": "6b92e71144b7399d3d1732004aab24411f1fc2a4ca6593f4e4665ebdd6aa3e97",
+ "retrieved": "2026-09-23",
+ "source_status": "M.Sc. thesis (İTÜ 2008) documenting 9 'tip' beams used in Turkish bridge superstructures; issuing authority not stated",
+ "origin_note": "The thesis (Özet p.xi; §3 p.7) describes the beams only as '9 tip öngerilmeli prefabrike I kesitli köprü kirişi' used in bridge superstructures ('köprü üst yapısında kullanılan'). It does NOT attribute the shapes to KGM (Karayolları Genel Müdürlüğü) type drawings or to a producer; KGM is cited only for the H30-S24 live load (KGM Yol Köprüleri için Teknik Şartname, 1973). Any KGM attribution is therefore unverified. The shapes are plain I-sections with splayed flanges (not 'fish-belly' in elevation), placed side by side at 78 cm (TİP I/II) or 99 cm (TİP III) centres with a 25 cm in-situ slab (§2.1).",
+ "units": "cm (source); polygons in mm",
+ "height_classes_cm": {
+  "A": 75,
+  "B": 90,
+  "C": 120
+ },
+ "families": {
+  "I": {
+   "top_width": 75,
+   "top_flange": 10,
+   "top_splay_offset": 0,
+   "top_splay_height": 12.5,
+   "top_splay_run": 27.5,
+   "web": 20,
+   "bottom_splay_height": 4,
+   "bottom_splay_run": 17.5,
+   "bottom_flange": 18.5,
+   "bottom_width": 50,
+   "pdf_page": 20,
+   "printed_page": 7,
+   "figure": "Şekil 3.1",
+   "tables": [
+    "Tablo 3.1",
+    "Tablo 3.2"
+   ],
+   "composite_effective_width": 63.69
+  },
+  "II": {
+   "top_width": 75,
+   "top_flange": 10,
+   "top_splay_offset": 0,
+   "top_splay_height": 12.5,
+   "top_splay_run": 27.5,
+   "web": 20,
+   "bottom_splay_height": 7.5,
+   "bottom_splay_run": 27.5,
+   "bottom_flange": 15,
+   "bottom_width": 75,
+   "pdf_page": 21,
+   "printed_page": 8,
+   "figure": "Şekil 3.2",
+   "tables": [
+    "Tablo 3.3",
+    "Tablo 3.4"
+   ],
+   "composite_effective_width": 63.69
+  },
+  "III": {
+   "top_width": 95,
+   "top_flange": 9.5,
+   "top_splay_offset": 10,
+   "top_splay_height": 13.0,
+   "top_splay_height_printed": 13.5,
+   "top_splay_run": 27.5,
+   "web": 20,
+   "bottom_splay_height": 7.5,
+   "bottom_splay_run": 27.5,
+   "bottom_flange": 15,
+   "bottom_width": 75,
+   "pdf_page": 22,
+   "printed_page": 9,
+   "figure": "Şekil 3.3",
+   "tables": [
+    "Tablo 3.5",
+    "Tablo 3.6"
+   ],
+   "composite_effective_width": 80.83
+  }
+ },
+ "sizes": {
+  "TIP-I-A": {
+   "type": "TİP I",
+   "height_class": "A",
+   "H_cm": 75,
+   "provenance": "transcribed",
+   "precast": {
+    "F_cm2": 3008.75,
+    "yalt_cm": 40.54,
+    "yust_cm": 34.46,
+    "Ix_cm4": 1928447,
+    "Walt_cm3": 47565,
+    "Wust_cm3": 55968
+   },
+   "composite": {
+    "Fc_cm2": 4601,
+    "ycalt_cm": 56.79,
+    "ycust_cm": 18.21,
+    "Icx_cm4": 4307110,
+    "Wcalt_cm3": 75839,
+    "Wcust_cm3": 236563
+   }
+  },
+  "TIP-I-B": {
+   "type": "TİP I",
+   "height_class": "B",
+   "H_cm": 90,
+   "provenance": "transcribed",
+   "precast": {
+    "F_cm2": 3308.75,
+    "yalt_cm": 48.4,
+    "yust_cm": 41.6,
+    "Ix_cm4": 3154342,
+    "Walt_cm3": 65173,
+    "Wust_cm3": 75824
+   },
+   "composite": {
+    "Fc_cm2": 4901,
+    "ycalt_cm": 65.98,
+    "ycust_cm": 24.02,
+    "Icx_cm4": 6383421,
+    "Wcalt_cm3": 96755,
+    "Wcust_cm3": 265701
+   }
+  },
+  "TIP-I-C": {
+   "type": "TİP I",
+   "height_class": "C",
+   "H_cm": 120,
+   "provenance": "transcribed",
+   "precast": {
+    "F_cm2": 3908.75,
+    "yalt_cm": 63.95,
+    "yust_cm": 56.05,
+    "Ix_cm4": 6754650,
+    "Walt_cm3": 105628,
+    "Wust_cm3": 120505
+   },
+   "composite": {
+    "Fc_cm2": 5501,
+    "ycalt_cm": 83.79,
+    "ycust_cm": 36.21,
+    "Icx_cm4": 12154261,
+    "Wcalt_cm3": 145058,
+    "Wcust_cm3": 335651
+   }
+  },
+  "TIP-II-A": {
+   "type": "TİP II",
+   "height_class": "A",
+   "H_cm": 75,
+   "provenance": "transcribed",
+   "precast": {
+    "F_cm2": 3425.0,
+    "yalt_cm": 36.63,
+    "yust_cm": 38.37,
+    "Ix_cm4": 2317304,
+    "Walt_cm3": 63262,
+    "Wust_cm3": 60394
+   },
+   "composite": {
+    "Fc_cm2": 5017,
+    "ycalt_cm": 52.77,
+    "ycust_cm": 22.23,
+    "Icx_cm4": 5212852,
+    "Wcalt_cm3": 98778,
+    "Wcust_cm3": 234532
+   }
+  },
+  "TIP-II-B": {
+   "type": "TİP II",
+   "height_class": "B",
+   "H_cm": 90,
+   "provenance": "transcribed",
+   "precast": {
+    "F_cm2": 3725.0,
+    "yalt_cm": 43.92,
+    "yust_cm": 46.08,
+    "Ix_cm4": 3757297,
+    "Walt_cm3": 85542,
+    "Wust_cm3": 81545
+   },
+   "composite": {
+    "Fc_cm2": 5317,
+    "ycalt_cm": 61.46,
+    "ycust_cm": 28.54,
+    "Icx_cm4": 7667443,
+    "Wcalt_cm3": 124748,
+    "Wcust_cm3": 268689
+   }
+  },
+  "TIP-II-C": {
+   "type": "TİP II",
+   "height_class": "C",
+   "H_cm": 120,
+   "provenance": "transcribed",
+   "precast": {
+    "F_cm2": 4325.0,
+    "yalt_cm": 58.6,
+    "yust_cm": 61.4,
+    "Ix_cm4": 7927462,
+    "Walt_cm3": 135290,
+    "Wust_cm3": 129103
+   },
+   "composite": {
+    "Fc_cm2": 5917,
+    "ycalt_cm": 78.48,
+    "ycust_cm": 41.52,
+    "Icx_cm4": 14366605,
+    "Wcalt_cm3": 183057,
+    "Wcust_cm3": 346031
+   }
+  },
+  "TIP-III-A": {
+   "type": "TİP III",
+   "height_class": "A",
+   "H_cm": 75,
+   "provenance": "transcribed-with-convention",
+   "precast": {
+    "F_cm2": 3601.25,
+    "yalt_cm": 38.31,
+    "yust_cm": 36.69,
+    "Ix_cm4": 2515026,
+    "Walt_cm3": 65648,
+    "Wust_cm3": 68550
+   },
+   "composite": {
+    "Fc_cm2": 5622,
+    "ycalt_cm": 55.99,
+    "ycust_cm": 19.01,
+    "Icx_cm4": 5752293,
+    "Wcalt_cm3": 102735,
+    "Wcust_cm3": 302620
+   }
+  },
+  "TIP-III-B": {
+   "type": "TİP III",
+   "height_class": "B",
+   "H_cm": 90,
+   "provenance": "transcribed-with-convention",
+   "precast": {
+    "F_cm2": 3901.25,
+    "yalt_cm": 45.82,
+    "yust_cm": 44.18,
+    "Ix_cm4": 4054875,
+    "Walt_cm3": 88490,
+    "Wust_cm3": 91787
+   },
+   "composite": {
+    "Fc_cm2": 5922,
+    "ycalt_cm": 65.16,
+    "ycust_cm": 24.84,
+    "Icx_cm4": 8436468,
+    "Wcalt_cm3": 129467,
+    "Wcust_cm3": 339677
+   }
+  },
+  "TIP-III-C": {
+   "type": "TİP III",
+   "height_class": "C",
+   "H_cm": 120,
+   "provenance": "transcribed-with-convention",
+   "precast": {
+    "F_cm2": 4501.25,
+    "yalt_cm": 60.84,
+    "yust_cm": 59.16,
+    "Ix_cm4": 8484991,
+    "Walt_cm3": 139458,
+    "Wust_cm3": 143430
+   },
+   "composite": {
+    "Fc_cm2": 6522,
+    "ycalt_cm": 83.05,
+    "ycust_cm": 36.95,
+    "Icx_cm4": 15751686,
+    "Wcalt_cm3": 189676,
+    "Wcust_cm3": 426241
+   }
+  }
+ },
+ "geometry_notes": [
+  "All outline dimensions transcribed from Şekil 3.1–3.3 (PDF pp 20–22, 200 dpi renders read visually); web height = H − 45 cm as printed.",
+  "TİP I and TİP II: transcribed chain closes (10+12.5+4+18.5 = 45; 10+12.5+7.5+15 = 45) and reproduces the published F, yalt and Ix of Tablo 3.1/3.3 exactly (to the printed rounding).",
+  "TİP III: the printed vertical chain 9.5+13.5+7.5+15 = 45.5 does not close with the printed web height H−45. With 13.5 the area is +13.75 cm² (+0.3–0.4%) over Tablo 3.5. Using a 13.0 cm top-splay height (chain closes to 45) reproduces F, yalt and Ix of Tablo 3.5 exactly for all three heights, so 13.0 is adopted (convention; the 13.5 label is taken as a drawing slip). Hence provenance 'transcribed-with-convention' for TİP III.",
+  "TİP III top flange: 95 cm wide, 9.5 cm thick; the splay starts 10 cm in from each flange tip (the '10' callouts) and runs 27.5 cm horizontally to the 20 cm web.",
+  "Sharp corners throughout (none drawn). Composite section = precast + 25 cm slab of transformed width b = 63.69 cm (TİP I/II) or 80.83 cm (TİP III) (n = 29440/36057); tests reproduce Tablo 3.2/3.4/3.6.",
+  "Concrete C45 for precast beams, C30 for slab (§2.2)."
+ ],
+ "residuals": "Precast F, yalt, Ix: all 9 sizes match published values to printed rounding (|ΔF| ≤ 0.01 cm², |Δyalt| ≤ 0.005 cm, |ΔIx|/Ix < 1e-6) with the TİP III 13.0 cm splay convention. Composite Fc/ycalt/Icx reproduced within rounding (see tests)."
+}

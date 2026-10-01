@@ -1,0 +1,706 @@
+{
+ "family": "Tierra Armada (Geoquest) precast prestressed bridge beams",
+ "title_original": "Precast & Prestressed Beam Bridges (Tierra Armada S.A., Reinforced Earth), F_Beams_May2012",
+ "producer": "Tierra Armada S.A. / Geoquest (Spain)",
+ "source_url": "https://www.geoquest-group.es/wp-content/uploads/sites/17/2023/12/F_Beams_May2012-4.pdf",
+ "source_local_file": "sources/expansion/europe-americas/es_tierra.pdf",
+ "source_sha256": "813ceca5d7cb06c8bc38b267b26cd9f83d23a34807fe412e2126a77b39556657",
+ "source_status": "producer brochure (May 2012)",
+ "provenance": "estimate",
+ "units": "m on the sketches and in the series text; half profiles stored in mm",
+ "method": "Scanned sketches (pdftoppm 300 dpi) traced by image processing (dark outline mask, fill, mirror-symmetrised or right-half mirrored), then read into sharp-corner half profiles rounded to 5 mm. Sketches are to scale: the printed top width, bottom width and depth agree within 1% (IL: 0.80/0.57/0.60/0.90/1.10 all within 1%; IP medium within 1%; U wide soffit 3.20 m gives the name depth within 1%).",
+ "geometry_notes": [
+  "Only overall top width (upper wing), bottom width (lower wing) and depth are printed; every thickness, splay and chamfer is SCALED from the sketches (estimate, ±10–20 mm).",
+  "The brochure says moulds allow +5 cm top-flange thickness, +3/+6 cm web and mixed wing geometries; the modelled outlines are the drawn standard ones.",
+  "TPP inverted-I: the lower wing is 1.20–1.80 m 'equal to the distance between beams'; the sketches are drawn at 1.80 m (scaled), which is implemented. Page p5 scan is rotated ~0.8°, corrected before tracing.",
+  "IP-200 designation read from context (label illegible); IP-255-A traced only on its right half, modelled as IP-235-A + 200 mm web (convention).",
+  "Max series web widths trace as 188–206 mm; 200 mm (IP-200/235) and 190 mm (A series) adopted.",
+  "U narrow series (TA90E, TA180.18E, TA240.18E; lower wing 1.85 m) not implemented: inner surface drawn dotted and not traceable. U medium series (lower wing 2.60 m) has no sketch.",
+  "No section properties are published; areas are analytic only."
+ ],
+ "sizes": {
+  "IL-60": {
+   "series": "2.1 IL",
+   "pdf_page": 3,
+   "depth_m": 0.6,
+   "top_m": 0.8,
+   "bottom_m": 0.57,
+   "half_profile_mm": [
+    [
+     255,
+     0
+    ],
+    [
+     285,
+     30
+    ],
+    [
+     285,
+     105
+    ],
+    [
+     60,
+     205
+    ],
+    [
+     60,
+     450
+    ],
+    [
+     200,
+     525
+    ],
+    [
+     400,
+     555
+    ],
+    [
+     400,
+     600
+    ]
+   ]
+  },
+  "IL-90": {
+   "series": "2.1 IL",
+   "pdf_page": 3,
+   "depth_m": 0.9,
+   "top_m": 0.8,
+   "bottom_m": 0.57,
+   "half_profile_mm": [
+    [
+     255,
+     0
+    ],
+    [
+     285,
+     30
+    ],
+    [
+     285,
+     205
+    ],
+    [
+     60,
+     305
+    ],
+    [
+     60,
+     745
+    ],
+    [
+     200,
+     825
+    ],
+    [
+     400,
+     855
+    ],
+    [
+     400,
+     900
+    ]
+   ]
+  },
+  "IL-110": {
+   "series": "2.1 IL",
+   "pdf_page": 3,
+   "depth_m": 1.1,
+   "top_m": 0.8,
+   "bottom_m": 0.57,
+   "half_profile_mm": [
+    [
+     255,
+     0
+    ],
+    [
+     285,
+     30
+    ],
+    [
+     285,
+     205
+    ],
+    [
+     60,
+     305
+    ],
+    [
+     60,
+     945
+    ],
+    [
+     200,
+     1025
+    ],
+    [
+     400,
+     1055
+    ],
+    [
+     400,
+     1100
+    ]
+   ]
+  },
+  "IP-120": {
+   "series": "2.2 IP medium",
+   "pdf_page": 4,
+   "depth_m": 1.2,
+   "top_m": 1.4,
+   "bottom_m": 0.6,
+   "half_profile_mm": [
+    [
+     270,
+     0
+    ],
+    [
+     300,
+     30
+    ],
+    [
+     300,
+     160
+    ],
+    [
+     80,
+     260
+    ],
+    [
+     80,
+     935
+    ],
+    [
+     165,
+     1095
+    ],
+    [
+     700,
+     1150
+    ],
+    [
+     700,
+     1200
+    ]
+   ]
+  },
+  "IP-160": {
+   "series": "2.2 IP medium",
+   "pdf_page": 4,
+   "depth_m": 1.6,
+   "top_m": 1.4,
+   "bottom_m": 0.6,
+   "half_profile_mm": [
+    [
+     270,
+     0
+    ],
+    [
+     300,
+     30
+    ],
+    [
+     300,
+     310
+    ],
+    [
+     80,
+     410
+    ],
+    [
+     80,
+     1320
+    ],
+    [
+     165,
+     1495
+    ],
+    [
+     700,
+     1550
+    ],
+    [
+     700,
+     1600
+    ]
+   ]
+  },
+  "IP-190": {
+   "series": "2.2 IP medium",
+   "pdf_page": 4,
+   "depth_m": 1.9,
+   "top_m": 1.4,
+   "bottom_m": 0.6,
+   "half_profile_mm": [
+    [
+     270,
+     0
+    ],
+    [
+     300,
+     30
+    ],
+    [
+     300,
+     355
+    ],
+    [
+     80,
+     460
+    ],
+    [
+     80,
+     1625
+    ],
+    [
+     160,
+     1790
+    ],
+    [
+     700,
+     1850
+    ],
+    [
+     700,
+     1900
+    ]
+   ]
+  },
+  "IP-200": {
+   "series": "2.3 IP maximum, standard upper wing",
+   "pdf_page": 4,
+   "depth_m": 2.0,
+   "top_m": 1.43,
+   "bottom_m": 0.63,
+   "label_note": "designation label illegible in scan; depth scales to 2.01 m and the page's A-67 photo caption cites 'IP-200 beams'",
+   "half_profile_mm": [
+    [
+     285,
+     0
+    ],
+    [
+     315,
+     40
+    ],
+    [
+     315,
+     320
+    ],
+    [
+     100,
+     420
+    ],
+    [
+     100,
+     1730
+    ],
+    [
+     160,
+     1860
+    ],
+    [
+     715,
+     1945
+    ],
+    [
+     715,
+     2000
+    ]
+   ]
+  },
+  "IP-235": {
+   "series": "2.3 IP maximum, standard upper wing",
+   "pdf_page": 4,
+   "depth_m": 2.35,
+   "top_m": 1.43,
+   "bottom_m": 0.63,
+   "half_profile_mm": [
+    [
+     285,
+     0
+    ],
+    [
+     315,
+     35
+    ],
+    [
+     315,
+     360
+    ],
+    [
+     100,
+     465
+    ],
+    [
+     100,
+     2025
+    ],
+    [
+     180,
+     2190
+    ],
+    [
+     715,
+     2240
+    ],
+    [
+     715,
+     2350
+    ]
+   ]
+  },
+  "IP-235-A": {
+   "series": "2.3 IP maximum, wider upper wing (1.83 m)",
+   "pdf_page": 4,
+   "depth_m": 2.35,
+   "top_m": 1.83,
+   "bottom_m": 0.63,
+   "half_profile_mm": [
+    [
+     285,
+     0
+    ],
+    [
+     315,
+     30
+    ],
+    [
+     315,
+     365
+    ],
+    [
+     95,
+     465
+    ],
+    [
+     95,
+     2005
+    ],
+    [
+     190,
+     2185
+    ],
+    [
+     915,
+     2265
+    ],
+    [
+     915,
+     2350
+    ]
+   ]
+  },
+  "IP-255-A": {
+   "series": "2.3 IP maximum, wider upper wing (1.83 m)",
+   "pdf_page": 4,
+   "depth_m": 2.55,
+   "top_m": 1.83,
+   "bottom_m": 0.63,
+   "label_note": "scan outline broken at top-left; right-half trace confirms the IP-235-A bulb/web; modelled as IP-235-A with the web 200 mm longer (convention)",
+   "half_profile_mm": [
+    [
+     285,
+     0
+    ],
+    [
+     315,
+     30
+    ],
+    [
+     315,
+     365
+    ],
+    [
+     95,
+     465
+    ],
+    [
+     95,
+     2205
+    ],
+    [
+     190,
+     2385
+    ],
+    [
+     915,
+     2465
+    ],
+    [
+     915,
+     2550
+    ]
+   ]
+  },
+  "TPP75": {
+   "series": "3.1 TPP inverted I (flat deck)",
+   "pdf_page": 5,
+   "depth_m": 0.75,
+   "top_m": 0.63,
+   "bottom_m": 1.8,
+   "half_profile_mm": [
+    [
+     870,
+     0
+    ],
+    [
+     900,
+     30
+    ],
+    [
+     900,
+     135
+    ],
+    [
+     530,
+     145
+    ],
+    [
+     160,
+     225
+    ],
+    [
+     75,
+     255
+    ],
+    [
+     75,
+     490
+    ],
+    [
+     155,
+     660
+    ],
+    [
+     315,
+     675
+    ],
+    [
+     315,
+     750
+    ]
+   ]
+  },
+  "TPP120": {
+   "series": "3.1 TPP inverted I (flat deck)",
+   "pdf_page": 5,
+   "depth_m": 1.2,
+   "top_m": 0.63,
+   "bottom_m": 1.8,
+   "half_profile_mm": [
+    [
+     870,
+     0
+    ],
+    [
+     900,
+     30
+    ],
+    [
+     900,
+     135
+    ],
+    [
+     530,
+     145
+    ],
+    [
+     160,
+     225
+    ],
+    [
+     75,
+     255
+    ],
+    [
+     75,
+     940
+    ],
+    [
+     155,
+     1110
+    ],
+    [
+     315,
+     1125
+    ],
+    [
+     315,
+     1200
+    ]
+   ]
+  },
+  "TPP180": {
+   "series": "3.1 TPP inverted I (flat deck)",
+   "pdf_page": 5,
+   "depth_m": 1.8,
+   "top_m": 0.63,
+   "bottom_m": 1.8,
+   "half_profile_mm": [
+    [
+     870,
+     0
+    ],
+    [
+     900,
+     30
+    ],
+    [
+     900,
+     135
+    ],
+    [
+     530,
+     145
+    ],
+    [
+     160,
+     225
+    ],
+    [
+     75,
+     255
+    ],
+    [
+     75,
+     1540
+    ],
+    [
+     155,
+     1710
+    ],
+    [
+     315,
+     1725
+    ],
+    [
+     315,
+     1800
+    ]
+   ]
+  },
+  "TA90A": {
+   "series": "7.3 U wide / mono-beam",
+   "pdf_page": 11,
+   "depth_m": 0.9,
+   "bottom_m": 3.2,
+   "half_profile_mm": [
+    [
+     1600,
+     0
+    ],
+    [
+     1750,
+     615
+    ],
+    [
+     2070,
+     720
+    ],
+    [
+     2110,
+     900
+    ],
+    [
+     1610,
+     900
+    ],
+    [
+     1465,
+     310
+    ],
+    [
+     1340,
+     215
+    ],
+    [
+     0,
+     215
+    ]
+   ]
+  },
+  "TA150A": {
+   "series": "7.3 U wide / mono-beam",
+   "pdf_page": 11,
+   "depth_m": 1.5,
+   "bottom_m": 3.2,
+   "half_profile_mm": [
+    [
+     1600,
+     0
+    ],
+    [
+     1895,
+     1205
+    ],
+    [
+     2230,
+     1330
+    ],
+    [
+     2265,
+     1500
+    ],
+    [
+     1785,
+     1500
+    ],
+    [
+     1500,
+     355
+    ],
+    [
+     1390,
+     270
+    ],
+    [
+     0,
+     270
+    ]
+   ]
+  },
+  "TA210A": {
+   "series": "7.3 U wide / mono-beam",
+   "pdf_page": 11,
+   "depth_m": 2.1,
+   "bottom_m": 3.2,
+   "half_profile_mm": [
+    [
+     1600,
+     0
+    ],
+    [
+     2015,
+     1685
+    ],
+    [
+     2080,
+     1745
+    ],
+    [
+     2360,
+     1830
+    ],
+    [
+     2410,
+     2100
+    ],
+    [
+     1905,
+     2100
+    ],
+    [
+     1475,
+     355
+    ],
+    [
+     1380,
+     280
+    ],
+    [
+     0,
+     280
+    ]
+   ]
+  }
+ }
+}

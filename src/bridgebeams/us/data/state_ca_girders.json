@@ -1,0 +1,1510 @@
+{
+ "schema": "bridgebeams-us-state-v1",
+ "agency": "California Department of Transportation (Caltrans), Division of Engineering Services",
+ "units": "inch",
+ "source": {
+  "title": "Caltrans Bridge Design Memo 5.3 Precast Prestressed Girders, September 2023",
+  "url": "https://dot.ca.gov/-/media/dot-media/programs/engineering/documents/bridgedesignmemos/09/092023bdm-53--precast-prestressed-girders-a11y.pdf",
+  "retrieved": "2026-09-23",
+  "local_path": "sources/expansion/round2/us/ca_bdm5-3.pdf",
+  "sha256": "748701c73a5a0765ef3f49a3f247df95f7d5242c44ca545429d57a267b244bb1"
+ },
+ "source_status": "current Caltrans Bridge Design Memo 5.3 (September 2023)",
+ "families": {
+  "I": {
+   "title": "California Standard \"I\" Girder",
+   "locator": "Figure 5.3.4.1-1 and Table 5.3.4.1-1, PDF page 3, printed page 3",
+   "template_in": {
+    "top_width": 19.0,
+    "bottom_width": 19.0,
+    "web": 7.0,
+    "top_edge": 3.0,
+    "top_taper": 6.0,
+    "bottom_edge": 6.0,
+    "bottom_taper": 6.0
+   },
+   "geometry_notes": [
+    "All dimensions printed: 19 in flanges (6+7+6), 3 in top edge, 6 in top taper, 6 in bottom taper, 6 in bottom edge; h = D - 21 in (checked against the h column). Tapers run from the flange edge to the web face (6 in horizontal over 6 in vertical).",
+    "Published yb is rounded to 0.1 in, so centroid residuals up to 0.05 in are rounding."
+   ],
+   "sections": {
+    "CA I36": {
+     "depth_ft_in": "3'-0\"",
+     "depth_in": 36,
+     "h_in": 15,
+     "provenance": "transcribed",
+     "published": {
+      "area_in2": 432,
+      "i_in4": 63000,
+      "yb_in": 17.1,
+      "yt_in": 18.9,
+      "sb_in3": 3684.2,
+      "st_in3": 3333.3,
+      "r_in": 12.1,
+      "weight_lb_ft": 450
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 432.0,
+       "yb": 17.125,
+       "ix": 62957.25,
+       "iy": 8238.0
+      },
+      "area_pct": -0.0,
+      "yb_diff_in": 0.025,
+      "ix_pct": -0.068
+     }
+    },
+    "CA I42": {
+     "depth_ft_in": "3'-6\"",
+     "depth_in": 42,
+     "h_in": 21,
+     "provenance": "transcribed",
+     "published": {
+      "area_in2": 474,
+      "i_in4": 95400,
+      "yb_in": 20.0,
+      "yt_in": 20.0,
+      "sb_in3": 4770.0,
+      "st_in3": 4336.4,
+      "r_in": 14.2,
+      "weight_lb_ft": 494
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 474.0,
+       "yb": 19.975,
+       "ix": 95423.696,
+       "iy": 8409.5
+      },
+      "area_pct": 0.0,
+      "yb_diff_in": -0.025,
+      "ix_pct": 0.025
+     }
+    },
+    "CA I48": {
+     "depth_ft_in": "4'-0\"",
+     "depth_in": 48,
+     "h_in": 27,
+     "provenance": "transcribed",
+     "published": {
+      "area_in2": 516,
+      "i_in4": 136400,
+      "yb_in": 22.8,
+      "yt_in": 25.2,
+      "sb_in3": 5982.5,
+      "st_in3": 5412.7,
+      "r_in": 16.3,
+      "weight_lb_ft": 538
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 516.0,
+       "yb": 22.849,
+       "ix": 136404.209,
+       "iy": 8581.0
+      },
+      "area_pct": -0.0,
+      "yb_diff_in": 0.049,
+      "ix_pct": 0.003
+     }
+    },
+    "CA I54": {
+     "depth_ft_in": "4'-6\"",
+     "depth_in": 54,
+     "h_in": 33,
+     "provenance": "transcribed",
+     "published": {
+      "area_in2": 558,
+      "i_in4": 186400,
+      "yb_in": 25.7,
+      "yt_in": 28.3,
+      "sb_in3": 7264.6,
+      "st_in3": 6597.2,
+      "r_in": 18.3,
+      "weight_lb_ft": 581
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 558.0,
+       "yb": 25.742,
+       "ix": 186658.839,
+       "iy": 8752.5
+      },
+      "area_pct": 0.0,
+      "yb_diff_in": 0.042,
+      "ix_pct": 0.139
+     }
+    },
+    "CA I60": {
+     "depth_ft_in": "5'-0\"",
+     "depth_in": 60,
+     "h_in": 39,
+     "provenance": "transcribed",
+     "published": {
+      "area_in2": 600,
+      "i_in4": 246900,
+      "yb_in": 28.6,
+      "yt_in": 31.4,
+      "sb_in3": 8632.9,
+      "st_in3": 7863.1,
+      "r_in": 20.3,
+      "weight_lb_ft": 625
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 600.0,
+       "yb": 28.65,
+       "ix": 246946.5,
+       "iy": 8924.0
+      },
+      "area_pct": 0.0,
+      "yb_diff_in": 0.05,
+      "ix_pct": 0.019
+     }
+    },
+    "CA I66": {
+     "depth_ft_in": "5'-6\"",
+     "depth_in": 66,
+     "h_in": 45,
+     "provenance": "transcribed",
+     "published": {
+      "area_in2": 642,
+      "i_in4": 318000,
+      "yb_in": 31.6,
+      "yt_in": 34.4,
+      "sb_in3": 10063.3,
+      "st_in3": 9244.2,
+      "r_in": 22.3,
+      "weight_lb_ft": 669
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 642.0,
+       "yb": 31.57,
+       "ix": 318025.346,
+       "iy": 9095.5
+      },
+      "area_pct": -0.0,
+      "yb_diff_in": -0.03,
+      "ix_pct": 0.008
+     }
+    }
+   }
+  },
+  "BT": {
+   "title": "California Standard \"Bulb-Tee\" Girder",
+   "locator": "Figure 5.3.4.1-2 and Table 5.3.4.1-2, PDF page 4, printed page 4",
+   "template_in": {
+    "top_width": 47.25,
+    "web": 7.875,
+    "top_edge": 3.9375,
+    "top_taper": 3.9375,
+    "bottom_width": 29.5,
+    "bottom_edge": 7.875,
+    "bottom_taper": 5.875,
+    "fillet_radius": 7.875
+   },
+   "geometry_notes": [
+    "Dimensions printed (converted from metric, e.g. 1200/200/100/750 mm): 47-1/4 top, 19-11/16+7-7/8+19-11/16, 3-15/16 edge, 3-15/16 taper, 5-7/8 lower taper, 7-7/8 bottom edge, 29-1/2 bottom, R = 7-7/8 (typ) at the four web/taper junctions (tangent arcs).",
+    "Depth D is taken from the ft-in column; printed h equals D - 21.625 to within 0.04 in (metric rounding).",
+    "CA BT49 printed area 856 in^2 is ~20 in^2 below the computed 876 in^2 and breaks the ~46.5 in^2 per 5.9 in progression of the table (925-47 = 878); yb and the other rows agree. Treated as a source misprint; pinned individually.",
+    "Ix residuals of -0.1 to -0.4% are consistent with the metric-to-inch conversion of the fillets and flange thicknesses."
+   ],
+   "sections": {
+    "CA BT49": {
+     "depth_ft_in": "4'-1\"",
+     "depth_in": 49,
+     "h_in": 27.375,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 856,
+      "i_in4": 272373,
+      "yb_in": 25.3,
+      "yt_in": 23.7,
+      "sb_in3": 10766,
+      "st_in3": 11493,
+      "r_in": 18,
+      "weight_lb_ft": 892
+     },
+     "discrepancy": "Printed gross area 856 in^2 vs computed 876 in^2 (+2.35%); likely misprint (progression predicts ~878). Ix +1.2% follows.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 876.135,
+       "yb": 25.339,
+       "ix": 275749.263,
+       "iy": 67881.025
+      },
+      "area_pct": 2.352,
+      "yb_diff_in": 0.039,
+      "ix_pct": 1.24
+     }
+    },
+    "CA BT55": {
+     "depth_ft_in": "4'-7 1/8\"",
+     "depth_in": 55.125,
+     "h_in": 33.465,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 925,
+      "i_in4": 373350,
+      "yb_in": 28.4,
+      "yt_in": 26.7,
+      "sb_in3": 13153,
+      "st_in3": 13966,
+      "r_in": 20,
+      "weight_lb_ft": 963
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 924.37,
+       "yb": 28.385,
+       "ix": 372784.683,
+       "iy": 68130.299
+      },
+      "area_pct": -0.068,
+      "yb_diff_in": -0.015,
+      "ix_pct": -0.151
+     }
+    },
+    "CA BT61": {
+     "depth_ft_in": "5'-1\"",
+     "depth_in": 61,
+     "h_in": 39.37,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 971,
+      "i_in4": 483385,
+      "yb_in": 31.3,
+      "yt_in": 29.7,
+      "sb_in3": 15444,
+      "st_in3": 16262,
+      "r_in": 22,
+      "weight_lb_ft": 1012
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 970.635,
+       "yb": 31.307,
+       "ix": 482139.469,
+       "iy": 68369.398
+      },
+      "area_pct": -0.038,
+      "yb_diff_in": 0.007,
+      "ix_pct": -0.258
+     }
+    },
+    "CA BT67": {
+     "depth_ft_in": "5'-6 7/8\"",
+     "depth_in": 66.875,
+     "h_in": 45.276,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1018,
+      "i_in4": 610718,
+      "yb_in": 34.2,
+      "yt_in": 32.7,
+      "sb_in3": 17830,
+      "st_in3": 18689,
+      "r_in": 24,
+      "weight_lb_ft": 1060
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1016.901,
+       "yb": 34.231,
+       "ix": 608244.915,
+       "iy": 68608.497
+      },
+      "area_pct": -0.108,
+      "yb_diff_in": 0.031,
+      "ix_pct": -0.405
+     }
+    },
+    "CA BT73": {
+     "depth_ft_in": "6'-0 7/8\"",
+     "depth_in": 72.875,
+     "h_in": 51.181,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1063,
+      "i_in4": 755589,
+      "yb_in": 37.2,
+      "yt_in": 35.6,
+      "sb_in3": 20309,
+      "st_in3": 21207,
+      "r_in": 27,
+      "weight_lb_ft": 1108
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1064.151,
+       "yb": 37.219,
+       "ix": 755152.505,
+       "iy": 68852.684
+      },
+      "area_pct": 0.108,
+      "yb_diff_in": 0.019,
+      "ix_pct": -0.058
+     }
+    },
+    "CA BT79": {
+     "depth_ft_in": "6'-6 3/4\"",
+     "depth_in": 78.75,
+     "h_in": 57.087,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1110,
+      "i_in4": 919200,
+      "yb_in": 40.1,
+      "yt_in": 38.6,
+      "sb_in3": 22912,
+      "st_in3": 23800,
+      "r_in": 29,
+      "weight_lb_ft": 1157
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1110.417,
+       "yb": 40.145,
+       "ix": 917553.792,
+       "iy": 69091.783
+      },
+      "area_pct": 0.038,
+      "yb_diff_in": 0.045,
+      "ix_pct": -0.179
+     }
+    },
+    "CA BT85": {
+     "depth_ft_in": "7'-0 5/8\"",
+     "depth_in": 84.625,
+     "h_in": 62.992,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1157,
+      "i_in4": 1102271,
+      "yb_in": 43.1,
+      "yt_in": 41.6,
+      "sb_in3": 25592,
+      "st_in3": 26513,
+      "r_in": 31,
+      "weight_lb_ft": 1205
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1156.682,
+       "yb": 43.072,
+       "ix": 1099118.184,
+       "iy": 69330.883
+      },
+      "area_pct": -0.027,
+      "yb_diff_in": -0.028,
+      "ix_pct": -0.286
+     }
+    }
+   }
+  },
+  "WF": {
+   "title": "California Standard Pretensioned and Post-Tensioned \"Wide-Flange\" Girders",
+   "locator": "Figures/Tables 5.3.4.1-3 (pretensioned, PDF page 5) and 5.3.4.1-4 (post-tensioned, PDF page 6)",
+   "template_in": {
+    "pretensioned": {
+     "top_width": 48.0,
+     "web": 6.5,
+     "bottom_width": 45.0
+    },
+    "post_tensioned": {
+     "top_width": 49.5,
+     "web": 8.0,
+     "bottom_width": 46.5
+    },
+    "top_edge": 3.0,
+    "top_taper_rise": 1.75,
+    "bottom_edge": 6.125,
+    "bottom_taper_rise": 6.375,
+    "web_fillet_radius": 10.0,
+    "flange_tip_radius": 2.5,
+    "soffit_chamfer": 0.75
+   },
+   "geometry_notes": [
+    "Printed: 4'-0\" (PT 4'-1 1/2\") top = 1'-8 3/4\" + web + 1'-8 3/4\"; 3\" tip thickness; 1 3/4\" underside taper from tip to web face; r = 10\" web fillets; r = 2 1/2\" (typ) at the flange-tip and bottom-flange-edge corners; 6 1/8\" bottom edge; 6 3/8\" bottom taper rising to the web face over 1'-7 1/4\"; 3'-9\" (PT 3'-10 1/2\") bottom; 3/4\" soffit chamfer.",
+    "Every radius is implemented as the unique tangent arc between the two straight lines it joins (16 segments). The top outer flange corners are drawn square.",
+    "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually."
+   ],
+   "sections": {
+    "CA WF48": {
+     "variant": "pretensioned",
+     "depth_in": 48,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 882,
+      "i_in4": 274880,
+      "yb_in": 20.69,
+      "yt_in": 27.31,
+      "sb_in3": 13290,
+      "st_in3": 10070,
+      "r_in": 17.65,
+      "weight_lb_ft": 920
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 882.219,
+       "yb": 20.682,
+       "ix": 274531.134,
+       "iy": 93126.139
+      },
+      "area_pct": 0.025,
+      "yb_diff_in": -0.008,
+      "ix_pct": -0.127
+     }
+    },
+    "CA WF54": {
+     "variant": "pretensioned",
+     "depth_in": 54,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 921,
+      "i_in4": 369100,
+      "yb_in": 23.23,
+      "yt_in": 30.77,
+      "sb_in3": 15890,
+      "st_in3": 12000,
+      "r_in": 20.02,
+      "weight_lb_ft": 960
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 921.219,
+       "yb": 23.229,
+       "ix": 368554.121,
+       "iy": 93263.451
+      },
+      "area_pct": 0.024,
+      "yb_diff_in": -0.001,
+      "ix_pct": -0.148
+     }
+    },
+    "CA WF60": {
+     "variant": "pretensioned",
+     "depth_in": 60,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 960,
+      "i_in4": 479620,
+      "yb_in": 25.82,
+      "yt_in": 34.18,
+      "sb_in3": 18580,
+      "st_in3": 14030,
+      "r_in": 22.35,
+      "weight_lb_ft": 1000
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 960.219,
+       "yb": 25.812,
+       "ix": 478811.706,
+       "iy": 93400.764
+      },
+      "area_pct": 0.023,
+      "yb_diff_in": -0.008,
+      "ix_pct": -0.169
+     }
+    },
+    "CA WF66": {
+     "variant": "pretensioned",
+     "depth_in": 66,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 999,
+      "i_in4": 607130,
+      "yb_in": 28.44,
+      "yt_in": 37.56,
+      "sb_in3": 21350,
+      "st_in3": 16160,
+      "r_in": 24.65,
+      "weight_lb_ft": 1040
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 999.219,
+       "yb": 28.429,
+       "ix": 606046.559,
+       "iy": 93538.076
+      },
+      "area_pct": 0.022,
+      "yb_diff_in": -0.011,
+      "ix_pct": -0.178
+     }
+    },
+    "CA WF72": {
+     "variant": "pretensioned",
+     "depth_in": 72,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1038,
+      "i_in4": 752430,
+      "yb_in": 31.08,
+      "yt_in": 40.92,
+      "sb_in3": 24210,
+      "st_in3": 18390,
+      "r_in": 26.92,
+      "weight_lb_ft": 1080
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1038.219,
+       "yb": 31.074,
+       "ix": 750995.24,
+       "iy": 93675.389
+      },
+      "area_pct": 0.021,
+      "yb_diff_in": -0.006,
+      "ix_pct": -0.191
+     }
+    },
+    "CA WF78": {
+     "variant": "pretensioned",
+     "depth_in": 78,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1075,
+      "i_in4": 913490,
+      "yb_in": 33.77,
+      "yt_in": 44.23,
+      "sb_in3": 27050,
+      "st_in3": 20650,
+      "r_in": 29.15,
+      "weight_lb_ft": 1120
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1077.219,
+       "yb": 33.745,
+       "ix": 914389.303,
+       "iy": 93812.701
+      },
+      "area_pct": 0.206,
+      "yb_diff_in": -0.025,
+      "ix_pct": 0.098
+     }
+    },
+    "CA WF84": {
+     "variant": "pretensioned",
+     "depth_in": 84,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1116,
+      "i_in4": 1099400,
+      "yb_in": 36.45,
+      "yt_in": 47.55,
+      "sb_in3": 30160,
+      "st_in3": 23120,
+      "r_in": 31.39,
+      "weight_lb_ft": 1160
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1116.219,
+       "yb": 36.439,
+       "ix": 1096956.174,
+       "iy": 93950.014
+      },
+      "area_pct": 0.02,
+      "yb_diff_in": -0.011,
+      "ix_pct": -0.222
+     }
+    },
+    "CA WF90": {
+     "variant": "pretensioned",
+     "depth_in": 90,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1153,
+      "i_in4": 1297900,
+      "yb_in": 39.19,
+      "yt_in": 50.81,
+      "sb_in3": 33120,
+      "st_in3": 25550,
+      "r_in": 33.55,
+      "weight_lb_ft": 1200
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1155.219,
+       "yb": 39.153,
+       "ix": 1299419.842,
+       "iy": 94087.326
+      },
+      "area_pct": 0.192,
+      "yb_diff_in": -0.037,
+      "ix_pct": 0.117
+     }
+    },
+    "CA WF96": {
+     "variant": "pretensioned",
+     "depth_in": 96,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1194,
+      "i_in4": 1526600,
+      "yb_in": 41.91,
+      "yt_in": 54.09,
+      "sb_in3": 36430,
+      "st_in3": 28220,
+      "r_in": 35.76,
+      "weight_lb_ft": 1240
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1194.219,
+       "yb": 41.886,
+       "ix": 1522501.426,
+       "iy": 94224.639
+      },
+      "area_pct": 0.018,
+      "yb_diff_in": -0.024,
+      "ix_pct": -0.268
+     }
+    },
+    "CA WF102": {
+     "variant": "pretensioned",
+     "depth_in": 102,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1231,
+      "i_in4": 1764700,
+      "yb_in": 44.68,
+      "yt_in": 57.32,
+      "sb_in3": 39500,
+      "st_in3": 30790,
+      "r_in": 37.86,
+      "weight_lb_ft": 1280
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1233.219,
+       "yb": 44.636,
+       "ix": 1766919.627,
+       "iy": 94361.951
+      },
+      "area_pct": 0.18,
+      "yb_diff_in": -0.044,
+      "ix_pct": 0.126
+     }
+    },
+    "CA WF108": {
+     "variant": "pretensioned",
+     "depth_in": 108,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1272,
+      "i_in4": 2039200,
+      "yb_in": 47.42,
+      "yt_in": 60.58,
+      "sb_in3": 43000,
+      "st_in3": 33660,
+      "r_in": 40.04,
+      "weight_lb_ft": 1330
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1272.219,
+       "yb": 47.402,
+       "ix": 2033391.095,
+       "iy": 94499.264
+      },
+      "area_pct": 0.017,
+      "yb_diff_in": -0.018,
+      "ix_pct": -0.285
+     }
+    },
+    "CA WF114": {
+     "variant": "pretensioned",
+     "depth_in": 114,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1309,
+      "i_in4": 2319500,
+      "yb_in": 50.23,
+      "yt_in": 63.77,
+      "sb_in3": 46180,
+      "st_in3": 36370,
+      "r_in": 42.09,
+      "weight_lb_ft": 1360
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1311.219,
+       "yb": 50.181,
+       "ix": 2322630.741,
+       "iy": 94636.576
+      },
+      "area_pct": 0.17,
+      "yb_diff_in": -0.049,
+      "ix_pct": 0.135
+     }
+    },
+    "CA WF120": {
+     "variant": "pretensioned",
+     "depth_in": 120,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1350,
+      "i_in4": 2643200,
+      "yb_in": 52.99,
+      "yt_in": 67.01,
+      "sb_in3": 49880,
+      "st_in3": 39450,
+      "r_in": 44.25,
+      "weight_lb_ft": 1410
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1350.219,
+       "yb": 52.973,
+       "ix": 2635351.981,
+       "iy": 94773.889
+      },
+      "area_pct": 0.016,
+      "yb_diff_in": -0.017,
+      "ix_pct": -0.297
+     }
+    },
+    "CA WF48PT": {
+     "variant": "post_tensioned",
+     "depth_in": 48,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 954,
+      "i_in4": 289440,
+      "yb_in": 20.94,
+      "yt_in": 27.06,
+      "sb_in3": 13820,
+      "st_in3": 10700,
+      "r_in": 17.42,
+      "weight_lb_ft": 990
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 954.219,
+       "yb": 20.932,
+       "ix": 289088.144,
+       "iy": 104109.347
+      },
+      "area_pct": 0.023,
+      "yb_diff_in": -0.008,
+      "ix_pct": -0.122
+     }
+    },
+    "CA WF54PT": {
+     "variant": "post_tensioned",
+     "depth_in": 54,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1002,
+      "i_in4": 389840,
+      "yb_in": 23.54,
+      "yt_in": 30.46,
+      "sb_in3": 16560,
+      "st_in3": 12800,
+      "r_in": 19.72,
+      "weight_lb_ft": 1040
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1002.219,
+       "yb": 23.533,
+       "ix": 389296.078,
+       "iy": 104365.347
+      },
+      "area_pct": 0.022,
+      "yb_diff_in": -0.007,
+      "ix_pct": -0.14
+     }
+    },
+    "CA WF60PT": {
+     "variant": "post_tensioned",
+     "depth_in": 60,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1050,
+      "i_in4": 508060,
+      "yb_in": 26.18,
+      "yt_in": 33.82,
+      "sb_in3": 19410,
+      "st_in3": 15020,
+      "r_in": 22.0,
+      "weight_lb_ft": 1090
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1050.219,
+       "yb": 26.171,
+       "ix": 507254.647,
+       "iy": 104621.347
+      },
+      "area_pct": 0.021,
+      "yb_diff_in": -0.009,
+      "ix_pct": -0.159
+     }
+    },
+    "CA WF66PT": {
+     "variant": "post_tensioned",
+     "depth_in": 66,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1098,
+      "i_in4": 644950,
+      "yb_in": 28.85,
+      "yt_in": 37.15,
+      "sb_in3": 22360,
+      "st_in3": 17360,
+      "r_in": 24.24,
+      "weight_lb_ft": 1140
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1098.219,
+       "yb": 28.841,
+       "ix": 643865.786,
+       "iy": 104877.347
+      },
+      "area_pct": 0.02,
+      "yb_diff_in": -0.009,
+      "ix_pct": -0.168
+     }
+    },
+    "CA WF72PT": {
+     "variant": "post_tensioned",
+     "depth_in": 72,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1146,
+      "i_in4": 801460,
+      "yb_in": 31.55,
+      "yt_in": 40.45,
+      "sb_in3": 25400,
+      "st_in3": 19810,
+      "r_in": 26.45,
+      "weight_lb_ft": 1190
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1146.219,
+       "yb": 31.538,
+       "ix": 800025.075,
+       "iy": 105133.347
+      },
+      "area_pct": 0.019,
+      "yb_diff_in": -0.012,
+      "ix_pct": -0.179
+     }
+    },
+    "CA WF78PT": {
+     "variant": "post_tensioned",
+     "depth_in": 78,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1192,
+      "i_in4": 975690,
+      "yb_in": 34.29,
+      "yt_in": 43.71,
+      "sb_in3": 28450,
+      "st_in3": 22320,
+      "r_in": 28.61,
+      "weight_lb_ft": 1240
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1194.219,
+       "yb": 34.26,
+       "ix": 976623.014,
+       "iy": 105389.347
+      },
+      "area_pct": 0.186,
+      "yb_diff_in": -0.03,
+      "ix_pct": 0.096
+     }
+    },
+    "CA WF84PT": {
+     "variant": "post_tensioned",
+     "depth_in": 84,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1242,
+      "i_in4": 1177000,
+      "yb_in": 37.01,
+      "yt_in": 46.99,
+      "sb_in3": 31800,
+      "st_in3": 25050,
+      "r_in": 30.78,
+      "weight_lb_ft": 1290
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1242.219,
+       "yb": 37.003,
+       "ix": 1174546.012,
+       "iy": 105645.347
+      },
+      "area_pct": 0.018,
+      "yb_diff_in": -0.007,
+      "ix_pct": -0.208
+     }
+    },
+    "CA WF90PT": {
+     "variant": "post_tensioned",
+     "depth_in": 90,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1288,
+      "i_in4": 1393100,
+      "yb_in": 39.8,
+      "yt_in": 50.2,
+      "sb_in3": 35000,
+      "st_in3": 27750,
+      "r_in": 32.89,
+      "weight_lb_ft": 1340
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1290.219,
+       "yb": 39.765,
+       "ix": 1394677.139,
+       "iy": 105901.347
+      },
+      "area_pct": 0.172,
+      "yb_diff_in": -0.035,
+      "ix_pct": 0.113
+     }
+    },
+    "CA WF96PT": {
+     "variant": "post_tensioned",
+     "depth_in": 96,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1338,
+      "i_in4": 1642000,
+      "yb_in": 42.56,
+      "yt_in": 53.44,
+      "sb_in3": 38580,
+      "st_in3": 30730,
+      "r_in": 35.03,
+      "weight_lb_ft": 1390
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1338.219,
+       "yb": 42.544,
+       "ix": 1637896.731,
+       "iy": 106157.347
+      },
+      "area_pct": 0.016,
+      "yb_diff_in": -0.016,
+      "ix_pct": -0.25
+     }
+    },
+    "CA WF102PT": {
+     "variant": "post_tensioned",
+     "depth_in": 102,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1384,
+      "i_in4": 1902800,
+      "yb_in": 45.38,
+      "yt_in": 56.62,
+      "sb_in3": 41930,
+      "st_in3": 33610,
+      "r_in": 37.08,
+      "weight_lb_ft": 1440
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1386.219,
+       "yb": 45.339,
+       "ix": 1905082.86,
+       "iy": 106413.347
+      },
+      "area_pct": 0.16,
+      "yb_diff_in": -0.041,
+      "ix_pct": 0.12
+     }
+    },
+    "CA WF108PT": {
+     "variant": "post_tensioned",
+     "depth_in": 108,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1434,
+      "i_in4": 2202900,
+      "yb_in": 48.16,
+      "yt_in": 59.84,
+      "sb_in3": 45740,
+      "st_in3": 36810,
+      "r_in": 39.19,
+      "weight_lb_ft": 1490
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1434.219,
+       "yb": 48.147,
+       "ix": 2197111.717,
+       "iy": 106669.347
+      },
+      "area_pct": 0.015,
+      "yb_diff_in": -0.013,
+      "ix_pct": -0.263
+     }
+    },
+    "CA WF114PT": {
+     "variant": "post_tensioned",
+     "depth_in": 114,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1480,
+      "i_in4": 2511700,
+      "yb_in": 51.01,
+      "yt_in": 62.99,
+      "sb_in3": 49240,
+      "st_in3": 39870,
+      "r_in": 41.2,
+      "weight_lb_ft": 1540
+     },
+     "discrepancy": "Printed area is ~2.2 in^2 below the otherwise uniform +39 in^2 (pretensioned) / +48 in^2 (PT) per-6-in increment of the neighbouring rows, and I is ~0.1% above the computed value while the neighbouring rows are ~0.2% below; the odd 6'-6\"/7'-6\"/8'-6\"/9'-6\" rows appear to come from a slightly different calculation. Pinned individually.",
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1482.219,
+       "yb": 50.968,
+       "ix": 2514857.911,
+       "iy": 106925.347
+      },
+      "area_pct": 0.15,
+      "yb_diff_in": -0.042,
+      "ix_pct": 0.126
+     }
+    },
+    "CA WF120PT": {
+     "variant": "post_tensioned",
+     "depth_in": 120,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1530,
+      "i_in4": 2867100,
+      "yb_in": 53.81,
+      "yt_in": 66.19,
+      "sb_in3": 53280,
+      "st_in3": 43320,
+      "r_in": 43.29,
+      "weight_lb_ft": 1590
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1530.219,
+       "yb": 53.8,
+       "ix": 2859194.72,
+       "iy": 107181.347
+      },
+      "area_pct": 0.014,
+      "yb_diff_in": -0.01,
+      "ix_pct": -0.276
+     }
+    }
+   }
+  },
+  "TUB": {
+   "title": "California Standard \"Bath-Tub\" Girder",
+   "locator": "Figure 5.3.4.1-5 and Table 5.3.4.1-5, PDF page 7, printed page 7",
+   "template_in": {
+    "bottom_width": 59.0,
+    "web_slope_h_per_v": 0.25,
+    "web_normal_thickness": 7.875,
+    "bottom_slab": 6.875,
+    "flange_width": 16.75,
+    "ledge_width": 2.875,
+    "ledge_depth": 2.0,
+    "inner_vertical_to": 6.875,
+    "incline_to": 11.75,
+    "bottom_fillet": 3.0
+   },
+   "geometry_notes": [
+    "Printed: 59\" soffit, 4:1 webs, 7-7/8\" web thickness (normal), 6-7/8\" bottom slab, 16-3/4\" flange from outer edge to inner face, 2-7/8\" x 2\" ledge, 6-7/8\" and 4-7/8\" vertical steps and 11-3/4\" to the start of the inner web face, 3\"x3\" inner bottom chamfers.",
+    "Interpretation (convention): the 6-7/8\" inner vertical face is measured from the top of girder (it contains the 2\" ledge), then the 4-7/8\" incline, giving 11-3/4\" (metric 50+125 = 175, 175+125 = 300 mm). This is the only reading for which D - h = 11-3/4 + 6-7/8 = 18.6 in matches the table (18.7 in).",
+    "The table column headed \"D (in)\" (36.4 ... 65.9) is actually h (clear inner web height, D - 475 mm); D is taken from the ft-in column.",
+    "Residuals: area within 0.1%, yb within 0.035 in, Ix within 0.25%."
+   ],
+   "sections": {
+    "CA TUB55": {
+     "depth_ft_in": "4'-7 1/8\"",
+     "depth_in": 55.125,
+     "h_in_printed_as_D": 36.4,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1339,
+      "i_in4": 460081,
+      "yb_in": 24.1,
+      "yt_in": 31.0,
+      "sb_in3": 19095,
+      "st_in3": 14830,
+      "r_in": 19,
+      "weight_lb_ft": 1395
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1338.855,
+       "yb": 24.117,
+       "ix": 460231.013,
+       "iy": 1132073.672
+      },
+      "area_pct": -0.011,
+      "yb_diff_in": 0.017,
+      "ix_pct": 0.033
+     }
+    },
+    "CA TUB61": {
+     "depth_ft_in": "5'-1\"",
+     "depth_in": 61,
+     "h_in_printed_as_D": 42.3,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1435,
+      "i_in4": 604231,
+      "yb_in": 26.9,
+      "yt_in": 34.1,
+      "sb_in3": 22471,
+      "st_in3": 17702,
+      "r_in": 21,
+      "weight_lb_ft": 1495
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1434.234,
+       "yb": 26.903,
+       "ix": 603372.862,
+       "iy": 1296824.424
+      },
+      "area_pct": -0.053,
+      "yb_diff_in": 0.003,
+      "ix_pct": -0.142
+     }
+    },
+    "CA TUB67": {
+     "depth_ft_in": "5'-6 7/8\"",
+     "depth_in": 66.875,
+     "h_in_printed_as_D": 48.2,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1531,
+      "i_in4": 773128,
+      "yb_in": 29.7,
+      "yt_in": 37.2,
+      "sb_in3": 26010,
+      "st_in3": 20780,
+      "r_in": 22,
+      "weight_lb_ft": 1595
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1529.613,
+       "yb": 29.709,
+       "ix": 771208.964,
+       "iy": 1473532.844
+      },
+      "area_pct": -0.091,
+      "yb_diff_in": 0.009,
+      "ix_pct": -0.248
+     }
+    },
+    "CA TUB73": {
+     "depth_ft_in": "6'-0 7/8\"",
+     "depth_in": 72.875,
+     "h_in_printed_as_D": 54.1,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1627,
+      "i_in4": 968692,
+      "yb_in": 32.6,
+      "yt_in": 40.3,
+      "sb_in3": 29752,
+      "st_in3": 24052,
+      "r_in": 24,
+      "weight_lb_ft": 1695
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1627.021,
+       "yb": 32.589,
+       "ix": 969825.501,
+       "iy": 1666770.768
+      },
+      "area_pct": 0.001,
+      "yb_diff_in": -0.011,
+      "ix_pct": 0.117
+     }
+    },
+    "CA TUB79": {
+     "depth_ft_in": "6'-6 3/4\"",
+     "depth_in": 78.75,
+     "h_in_printed_as_D": 60.0,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1723,
+      "i_in4": 1192606,
+      "yb_in": 35.4,
+      "yt_in": 43.3,
+      "sb_in3": 33695,
+      "st_in3": 27513,
+      "r_in": 26,
+      "weight_lb_ft": 1795
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1722.4,
+       "yb": 35.423,
+       "ix": 1192630.123,
+       "iy": 1868905.451
+      },
+      "area_pct": -0.035,
+      "yb_diff_in": 0.023,
+      "ix_pct": 0.002
+     }
+    },
+    "CA TUB85": {
+     "depth_ft_in": "7'-0 5/8\"",
+     "depth_in": 84.625,
+     "h_in_printed_as_D": 65.9,
+     "provenance": "transcribed-with-convention",
+     "published": {
+      "area_in2": 1819,
+      "i_in4": 1446551,
+      "yb_in": 38.3,
+      "yt_in": 46.4,
+      "sb_in3": 37801,
+      "st_in3": 31190,
+      "r_in": 28,
+      "weight_lb_ft": 1895
+     },
+     "residuals_vs_published": {
+      "computed": {
+       "area": 1817.779,
+       "yb": 38.268,
+       "ix": 1445126.459,
+       "iy": 2084241.083
+      },
+      "area_pct": -0.067,
+      "yb_diff_in": -0.032,
+      "ix_pct": -0.098
+     }
+    }
+   }
+  },
+  "VOIDED_SLAB": {
+   "title": "California Standard \"Voided\" Slab",
+   "locator": "Figure 5.3.4.1-6, PDF page 8, printed page 8",
+   "key_estimate_in": {
+    "top_inset": 1.0,
+    "recess": 2.0,
+    "chamfer_rise": 1.0
+   },
+   "geometry_notes": [
+    "Widths 36/48 in, depths 12/15/18/21 in, void diameters and horizontal spacings are printed; voids are at mid-depth (7 1/2+7 1/2, 9+9, 10 1/2+10 1/2).",
+    "The side shear-key profile is drawn but not dimensioned and no properties are published. Best estimate scaled from the 400 dpi render (49 px/in): top portion inset 1 in per side down to D/3 below top; 45-degree chamfer (about 1 in) to a recess 2 in inside the bottom face; recess down to D/3 above the soffit; square step back to full width. Provenance 'estimate'.",
+    "No property table exists for validation; tests check only the printed widths/depths and void areas."
+   ],
+   "sections": {
+    "SI-36": {
+     "width_in": 36,
+     "depth_in": 12,
+     "voids_x_dia_in": [],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 409.0,
+       "yb": 5.926,
+       "ix": 5024.584,
+       "iy": 39842.833
+      }
+     }
+    },
+    "SI-48": {
+     "width_in": 48,
+     "depth_in": 12,
+     "voids_x_dia_in": [],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 553.0,
+       "yb": 5.945,
+       "ix": 6753.169,
+       "iy": 98202.833
+      }
+     }
+    },
+    "SII-36": {
+     "width_in": 36,
+     "depth_in": 15,
+     "voids_x_dia_in": [
+      [
+       -7.5,
+       7
+      ],
+      [
+       7.5,
+       7
+      ]
+     ],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 434.086,
+       "yb": 7.39,
+       "ix": 9576.598,
+       "iy": 45175.035
+      }
+     }
+    },
+    "SII-48": {
+     "width_in": 48,
+     "depth_in": 15,
+     "voids_x_dia_in": [
+      [
+       -14,
+       7
+      ],
+      [
+       0,
+       7
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 575.629,
+       "yb": 7.417,
+       "ix": 12835.203,
+       "iy": 107200.602
+      }
+     }
+    },
+    "SIII-36": {
+     "width_in": 36,
+     "depth_in": 18,
+     "voids_x_dia_in": [
+      [
+       -7.5,
+       9
+      ],
+      [
+       7.5,
+       9
+      ]
+     ],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 485.856,
+       "yb": 8.857,
+       "ix": 16310.067,
+       "iy": 51835.796
+      }
+     }
+    },
+    "SIII-48": {
+     "width_in": 48,
+     "depth_in": 18,
+     "voids_x_dia_in": [
+      [
+       -14.5,
+       9
+      ],
+      [
+       0,
+       9
+      ],
+      [
+       14.5,
+       9
+      ]
+     ],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 638.284,
+       "yb": 8.891,
+       "ix": 21822.827,
+       "iy": 119358.066
+      }
+     }
+    },
+    "SIV-36": {
+     "width_in": 36,
+     "depth_in": 21,
+     "voids_x_dia_in": [
+      [
+       -7.5,
+       12
+      ],
+      [
+       7.5,
+       12
+      ]
+     ],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 488.967,
+       "yb": 10.306,
+       "ix": 24884.344,
+       "iy": 54777.618
+      }
+     }
+    },
+    "SIV-48": {
+     "width_in": 48,
+     "depth_in": 21,
+     "voids_x_dia_in": [
+      [
+       -14,
+       12
+      ],
+      [
+       0,
+       9
+      ],
+      [
+       14,
+       12
+      ]
+     ],
+     "provenance": "estimate",
+     "published": null,
+     "residuals_vs_published": {
+      "computed": {
+       "area": 677.395,
+       "yb": 10.36,
+       "ix": 33828.857,
+       "iy": 124823.873
+      }
+     }
+    }
+   }
+  }
+ }
+}

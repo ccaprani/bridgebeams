@@ -1,0 +1,81 @@
+{
+  "family": "Queensland TMR transversely stressed PSC deck units (596 mm wide)",
+  "authority": "Department of Transport and Main Roads, Queensland (TMR)",
+  "licence": "CC BY 4.0 (title blocks: (c) The State of Queensland (Department of Transport and Main Roads))",
+  "source_status": "current TMR standard drawing (2018/2025 issues)",
+  "units": "mm",
+  "retrieved": "2026-09-23",
+  "common_rules": {
+    "source": "Standard Drawing 2042 'Design assumptions for transversely stressed standard deck units', drawing 2 of 2 (PDF p2), section 8(a): 'The chamfer for the void shall be 75mm x 75mm'; section 11 table: '596mm wide deck units'",
+    "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2042.pdf?la=en",
+    "local_path": "sources/expansion/round2/au/tmr-sd2042.pdf",
+    "sha256": "73d388617fe3db08718504cfb3994ae460ceeb44efe7bcf7b165cb8bd8fdfbb4",
+    "revision": "C, date 7/18"
+  },
+  "geometry_notes": [
+    "All outline dimensions are printed on SECTION C 'Typical section inner units' (drawing 3 of 6 of each span set, PDF p3). Read visually from 250 dpi renders.",
+    "Width 596, soffit corners 25 x 25 chamfer (printed); top corners square as drawn.",
+    "Voided units: void edges 120 from each side face (void width 356), bottom slab 240, top slab 190, 75 x 75 corner fillets drawn as 45-degree chamfers (SD2042 8(a)).",
+    "Excluded from the gross midspan section: 100x100x55 / 140x100x55 top recesses and 70 dia / 110x70 hold-down holes at unit ends, 90 dia transverse stressing holes, formwork anchors.",
+    "Outer units (drawings 5/6) use the same precast section (Section C 5,6 refers to Section C inner units for all typical details); kerb/parapet is cast in situ afterwards and not part of the precast profile.",
+    "10 m and 11 m drawings share the solid 500 profile; 12 m and 13 m share the solid 540 profile. Each distinct profile is counted once; spans are recorded.",
+    "No section properties are published; checks are analytic only."
+  ],
+  "sections": {
+    "500": {
+      "depth": 500, "width": 596, "soffit_chamfer": 25, "void": null,
+      "spans_m": [10, 11], "provenance": "transcribed",
+      "drawings": [
+        {"number": "2050", "title": "10m PSC Deck Unit", "sheet": "drawing 3 of 6", "pdf_page": 3, "revision": "D, 07/25",
+         "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2050.pdf?la=en",
+         "local_path": "sources/expansion/round2/au/tmr-sd2050.pdf", "sha256": "95793ce594a46e7c3f5f6e3b96ed3f78325f138088fef5773333bfa568da6a45"},
+        {"number": "2051", "title": "11m PSC Deck Unit", "sheet": "drawing 3 of 6", "pdf_page": 3, "revision": "D, 07/25",
+         "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2051.pdf?la=en",
+         "local_path": "sources/expansion/round2/au/tmr-sd2051.pdf", "sha256": "a8af965060c7c50d323d5e322d188ac430137aadd424498be8a7293977d2a630"}
+      ]
+    },
+    "540": {
+      "depth": 540, "width": 596, "soffit_chamfer": 25, "void": null,
+      "spans_m": [12, 13], "provenance": "transcribed",
+      "drawings": [
+        {"number": "2052", "title": "12m PSC Deck Unit", "sheet": "drawing 3 of 6", "pdf_page": 3, "revision": "E, 07/25",
+         "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2052.pdf?la=en",
+         "local_path": "sources/expansion/round2/au/tmr-sd2052.pdf", "sha256": "0f54e4e6030496f61abafbd5b4a9c23b8be4524e4384707edaff9c1618e22ce8"},
+        {"number": "2053", "title": "13m PSC Deck Unit", "sheet": "drawing 3 of 6", "pdf_page": 3, "revision": "D, 07/25",
+         "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2053.pdf?la=en",
+         "local_path": "sources/expansion/round2/au/tmr-sd2053.pdf", "sha256": "7e4cce39dc4fbf4a248dd89aa451c8231bced76b96c2ffaea84cdb718c01d7ef"}
+      ]
+    },
+    "650": {
+      "depth": 650, "width": 596, "soffit_chamfer": 25,
+      "void": {"side_cover": 120, "bottom": 240, "height": 220, "top_cover": 190, "fillet": 75},
+      "spans_m": [15], "provenance": "transcribed",
+      "drawings": [
+        {"number": "2055", "title": "15m PSC Deck Unit", "sheet": "drawing 3 of 6", "pdf_page": 3, "revision": "C, 07/25",
+         "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/2055.pdf?la=en",
+         "local_path": "sources/expansion/round2/au/tmr-sd2055.pdf", "sha256": "fe850aec81c301ced8c83196c69e537206240c9fee9a3ee06b9111b4091d75a4"}
+      ]
+    },
+    "760": {
+      "depth": 760, "width": 596, "soffit_chamfer": 25,
+      "void": {"side_cover": 120, "bottom": 240, "height": 330, "top_cover": 190, "fillet": 75},
+      "spans_m": [19], "provenance": "transcribed",
+      "drawings": [
+        {"number": "2059", "title": "19m PSC Deck Unit", "sheet": "drawing 3 of 6", "pdf_page": 3, "revision": "C, 7/25",
+         "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/SD2059.pdf?la=en",
+         "local_path": "sources/expansion/round2/au/tmr-sd2059.pdf", "sha256": "ed40c18a3e95c6c4afd98d815b96e17fe54474459897f8d901a1b57282178c7a"}
+      ]
+    },
+    "1100": {
+      "depth": 1100, "width": 596, "soffit_chamfer": 25,
+      "void": {"side_cover": 120, "bottom": 240, "height": 670, "top_cover": 190, "fillet": 75},
+      "spans_m": [25], "provenance": "transcribed",
+      "drawings": [
+        {"number": "2065", "title": "25m PSC Deck Unit", "sheet": "drawing 3 of 6", "pdf_page": 3, "revision": "B, 7/18",
+         "url": "https://www.tmr.qld.gov.au/-/media/busind/techstdpubs/Specifications-and-drawings/Standard-Drawings-Roads/Bridges/2065.pdf?la=en",
+         "local_path": "sources/expansion/round2/au/tmr-sd2065.pdf", "sha256": "b53a12d2d358bcbcdaf53abee20746dfc5c6893372dc691f898f55b8c4f8a6b9"}
+      ]
+    }
+  },
+  "not_retrieved": "Span sets 14, 16-18 and 20-24 m (drawing numbers 2054, 2056-2058, 2060-2064 inferred from the numbering pattern, unverified) were not retrievable: the TMR index page and those URLs return a Cloudflare browser challenge. Their depths are therefore not implemented."
+}

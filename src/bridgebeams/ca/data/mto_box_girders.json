@@ -1,0 +1,194 @@
+{
+  "jurisdiction": "Ontario, Canada",
+  "family": "MTO prestressed box girder",
+  "official_index_url": "https://www.library.mto.gov.on.ca/SydneyPLUS/TechPubs/Portal/tp/ssdViews.aspx",
+  "retrieved_utc_date": "2026-09-23",
+  "source_units": "mm",
+  "sources": [
+    {
+      "drawing": "SS107-13",
+      "portal_number": "107.0013",
+      "title_original": "Prestressed Box Girders and Bearings (B700, B800, B900)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_13.pdf",
+      "sha256": "f09855653c1fb35e6bc165c068b4f84e6229643d038cede8f26b7c034c2e99d0",
+      "pdf_page": 1
+    },
+    {
+      "drawing": "SS107-14",
+      "portal_number": "107.0014",
+      "title_original": "Prestressed Box Girders and Bearings (B1000)",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_14.pdf",
+      "sha256": "c603460caf713ce292749a16cdbfc04327688621170d9ca2641987605d32edd2",
+      "pdf_page": 1
+    },
+    {
+      "drawing": "SS107-15",
+      "portal_number": "107.0015",
+      "title_original": "Prestressed Box Girder Details",
+      "date": "June 2025",
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_15.pdf",
+      "sha256": "f6492f2ec97940b51f476854b409511f2dcf5739467f36d204cd5a0def4c4a01",
+      "pdf_page": 1,
+      "note": "No shear key; welded L102/L51 steel ties across nominal 10 mm gap."
+    },
+    {
+      "title_original": "Prestressed Concrete Girder Guidelines (DRAFT) BRO-00X, August 2023",
+      "url": "https://tcp.mto.gov.on.ca/sites/default/files/2023-08/Prestressed%20Concrete%20Girder%20Guidelines%20%28August11%202023%29.pdf",
+      "local_file": "sources/expansion/europe-americas/ca_mto_guide.pdf",
+      "sha256": "4cf5ad75d1b99f4d6c82ea47b6587def31b8f6a09080e732428c3ba8fbb2e31f",
+      "pdf_page": [
+        15,
+        16
+      ],
+      "printed_page": [
+        7,
+        8
+      ],
+      "table": "Table 3 - Box Girder Geometry Used in Ontario",
+      "note": "Text: standard sizes B700-B1000 in 100 mm increments; two standard widths 915 and 1220 mm. Document marked DRAFT."
+    }
+  ],
+  "transcribed_dimensions_mm": {
+    "width": 1220,
+    "depth": [
+      700,
+      800,
+      900,
+      1000
+    ],
+    "top_slab": 140,
+    "bottom_slab": 140,
+    "web": 125,
+    "void_chamfer": "75 x 75",
+    "outer_corner_chamfer": "20 (TYP), top corners optional per note 15"
+  },
+  "published_properties": null,
+  "geometry_notes": [
+    "All four 20 mm outer chamfers included (drawn TYP on section 2); note 15 makes the top pair optional. Removing them adds 400 mm2.",
+    "Chamfers taken at 45 degrees.",
+    "Void (EPS-filled, note 16) modelled as a hole; midspan section 2 used, solid end block (section 1) excluded.",
+    "915 mm width: listed only in DRAFT 2023 guide; no current drawing held. Best estimate reuses 140/125/75/20 mm details, void width 665 mm. Provenance 'estimate'.",
+    "No published properties; checks are analytic only."
+  ],
+  "residuals": "n/a - no published properties",
+  "sizes": {
+    "B700-1220": {
+      "depth_mm": 700,
+      "width_mm": 1220,
+      "drawing": "SS107-13",
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-13 (June 2025)",
+      "analytic_area_mm2": 457050.0,
+      "void_width_mm": 970,
+      "void_height_mm": 420,
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_13.pdf",
+      "sha256": "f09855653c1fb35e6bc165c068b4f84e6229643d038cede8f26b7c034c2e99d0",
+      "pdf_page": 1,
+      "view": "STRAND GRID ARRANGEMENT, section 2"
+    },
+    "B800-1220": {
+      "depth_mm": 800,
+      "width_mm": 1220,
+      "drawing": "SS107-13",
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-13 (June 2025)",
+      "analytic_area_mm2": 482050.0,
+      "void_width_mm": 970,
+      "void_height_mm": 520,
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_13.pdf",
+      "sha256": "f09855653c1fb35e6bc165c068b4f84e6229643d038cede8f26b7c034c2e99d0",
+      "pdf_page": 1,
+      "view": "STRAND GRID ARRANGEMENT, section 2"
+    },
+    "B900-1220": {
+      "depth_mm": 900,
+      "width_mm": 1220,
+      "drawing": "SS107-13",
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-13 (June 2025)",
+      "analytic_area_mm2": 507050.0,
+      "void_width_mm": 970,
+      "void_height_mm": 620,
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_13.pdf",
+      "sha256": "f09855653c1fb35e6bc165c068b4f84e6229643d038cede8f26b7c034c2e99d0",
+      "pdf_page": 1,
+      "view": "STRAND GRID ARRANGEMENT, section 2"
+    },
+    "B1000-1220": {
+      "depth_mm": 1000,
+      "width_mm": 1220,
+      "drawing": "SS107-14",
+      "provenance": "transcribed-with-convention",
+      "source_status": "current SS107-14 (June 2025)",
+      "analytic_area_mm2": 532050.0,
+      "void_width_mm": 970,
+      "void_height_mm": 720,
+      "local_file": "sources/expansion/europe-americas/ca_mto_ss107_14.pdf",
+      "sha256": "c603460caf713ce292749a16cdbfc04327688621170d9ca2641987605d32edd2",
+      "pdf_page": 1,
+      "view": "STRAND GRID ARRANGEMENT, section 2"
+    },
+    "B700-915": {
+      "depth_mm": 700,
+      "width_mm": 915,
+      "drawing": "SS107-13 template applied to guide Table 3 width",
+      "provenance": "estimate",
+      "source_status": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template",
+      "analytic_area_mm2": 371650.0,
+      "void_width_mm": 665,
+      "void_height_mm": 420,
+      "local_file": "sources/expansion/europe-americas/ca_mto_guide.pdf",
+      "sha256": "4cf5ad75d1b99f4d6c82ea47b6587def31b8f6a09080e732428c3ba8fbb2e31f",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "view": "Table 3 sketch"
+    },
+    "B800-915": {
+      "depth_mm": 800,
+      "width_mm": 915,
+      "drawing": "SS107-13 template applied to guide Table 3 width",
+      "provenance": "estimate",
+      "source_status": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template",
+      "analytic_area_mm2": 396650.0,
+      "void_width_mm": 665,
+      "void_height_mm": 520,
+      "local_file": "sources/expansion/europe-americas/ca_mto_guide.pdf",
+      "sha256": "4cf5ad75d1b99f4d6c82ea47b6587def31b8f6a09080e732428c3ba8fbb2e31f",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "view": "Table 3 sketch"
+    },
+    "B900-915": {
+      "depth_mm": 900,
+      "width_mm": 915,
+      "drawing": "SS107-13 template applied to guide Table 3 width",
+      "provenance": "estimate",
+      "source_status": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template",
+      "analytic_area_mm2": 421650.0,
+      "void_width_mm": 665,
+      "void_height_mm": 620,
+      "local_file": "sources/expansion/europe-americas/ca_mto_guide.pdf",
+      "sha256": "4cf5ad75d1b99f4d6c82ea47b6587def31b8f6a09080e732428c3ba8fbb2e31f",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "view": "Table 3 sketch"
+    },
+    "B1000-915": {
+      "depth_mm": 1000,
+      "width_mm": 915,
+      "drawing": "SS107-14 template applied to guide Table 3 width",
+      "provenance": "estimate",
+      "source_status": "DRAFT 2023 guide (width only); geometry estimated from 2025 1220 template",
+      "analytic_area_mm2": 446650.0,
+      "void_width_mm": 665,
+      "void_height_mm": 720,
+      "local_file": "sources/expansion/europe-americas/ca_mto_guide.pdf",
+      "sha256": "4cf5ad75d1b99f4d6c82ea47b6587def31b8f6a09080e732428c3ba8fbb2e31f",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "view": "Table 3 sketch"
+    }
+  }
+}

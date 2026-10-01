@@ -1,0 +1,109 @@
+{
+  "source": {
+    "title_original": "橋梁及結構工程設計注意事項",
+    "title_en": "Bridge and structural engineering design considerations, first edition May 2020",
+    "authority": "Ministry of Transportation and Communications, Freeway Bureau",
+    "edition": "May 2020 first edition",
+    "url": "https://www.freeway.gov.tw/Upload/DownloadFiles/發文附件2_橋梁設計注意事項(初版)%20109.05.04(頒定稿)_250654.pdf",
+    "accessed": "2026-09-22",
+    "sha256": "31c95d4978d4bd8446923ff5379186b6f5e2d2fa3c8808f3c627a2d8add66628",
+    "pdf_page": 34,
+    "printed_page": 30,
+    "figure": 10,
+    "table": 14,
+    "source_units": "cm",
+    "conversion_to_mm": 10
+  },
+  "classification": "precast post-tensioned concrete I girder",
+  "scope": "Gross standard midspan section; excludes ducts, reinforcement and end-block thickening. No section-property table is published in this figure.",
+  "translated_labels": {
+    "預鑄後拉": "precast post-tensioned",
+    "配置尺度": "dimensional layout",
+    "I形梁端塊": "I-girder end block",
+    "A": "overall depth",
+    "B": "constant-width longitudinal end block length",
+    "C": "longitudinal end block transition length"
+  },
+  "sections": {
+    "IV": {
+      "dimensions_mm": {
+        "depth": 1350,
+        "top_width": 500,
+        "bottom_width": 650,
+        "web_width": 200,
+        "top_edge_height": 200,
+        "top_outer_splay_height": 150,
+        "bottom_edge_height": 200,
+        "bottom_splay_height": 225,
+        "top_inner_splay_height": 0,
+        "top_knee_width": 200
+      },
+      "end_block_B_mm": 1000,
+      "end_block_C_mm": 300
+    },
+    "V": {
+      "dimensions_mm": {
+        "depth": 1600,
+        "top_width": 1050,
+        "bottom_width": 700,
+        "web_width": 200,
+        "top_edge_height": 125,
+        "top_outer_splay_height": 75,
+        "bottom_edge_height": 200,
+        "bottom_splay_height": 250,
+        "top_inner_splay_height": 100,
+        "top_knee_width": 400
+      },
+      "end_block_B_mm": 1200,
+      "end_block_C_mm": 500
+    },
+    "VI": {
+      "dimensions_mm": {
+        "depth": 1850,
+        "top_width": 1050,
+        "bottom_width": 700,
+        "web_width": 200,
+        "top_edge_height": 125,
+        "top_outer_splay_height": 75,
+        "bottom_edge_height": 200,
+        "bottom_splay_height": 250,
+        "top_inner_splay_height": 100,
+        "top_knee_width": 400
+      },
+      "end_block_B_mm": 1400,
+      "end_block_C_mm": 500
+    },
+    "VII": {
+      "dimensions_mm": {
+        "depth": 2000,
+        "top_width": 1050,
+        "bottom_width": 700,
+        "web_width": 200,
+        "top_edge_height": 125,
+        "top_outer_splay_height": 75,
+        "bottom_edge_height": 200,
+        "bottom_splay_height": 250,
+        "top_inner_splay_height": 100,
+        "top_knee_width": 400
+      },
+      "end_block_B_mm": 1500,
+      "end_block_C_mm": 500
+    },
+    "VIII": {
+      "dimensions_mm": {
+        "depth": 2100,
+        "top_width": 1050,
+        "bottom_width": 700,
+        "web_width": 200,
+        "top_edge_height": 125,
+        "top_outer_splay_height": 75,
+        "bottom_edge_height": 200,
+        "bottom_splay_height": 250,
+        "top_inner_splay_height": 100,
+        "top_knee_width": 400
+      },
+      "end_block_B_mm": 1600,
+      "end_block_C_mm": 500
+    }
+  }
+}

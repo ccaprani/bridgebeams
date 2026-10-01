@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "reviewer": "Colin Caprani",
+  "source": "User-supplied BRIDGEBEAMS VISUAL REVIEW v3 export in conversation",
+  "queue_updated": "2026-09-22",
+  "exported_at": "2026-09-22T11:24:10.339Z",
+  "subsequent_user_clarifications": [
+    "Apparently the dwgs were embeded in the xls file"
+  ],
+  "evidence_policy": "Answers below are preserved verbatim. Reviewer interpretations, inferred dimensions and tentative equivalence claims are not automatically publisher dimension callouts. Follow-up records distinguish their provenance.",
+  "responses": [
+    {
+      "id": "no-ntb",
+      "title": "Norway · NTB bottom chamfer and rebates",
+      "locator": "V426, Figure 3.3.2(a/c/e/g/i); PDF and printed pages 37/39/41/43/45",
+      "answer": "Bottom chamfer is 15x15mm; not dimensioned, but very clear form other dimension liens when projected.\nTop of beam rebate is 30x30mm\nTop of bottom flange rebate is 40mm high; 15mm wide at its top and 20mm (15+5) at its bottom."
+    },
+    {
+      "id": "no-ktb",
+      "title": "Norway · KTB asymmetric outline",
+      "locator": "V426, Figure 3.3.2(b/d/f/h/j); PDF and printed pages 38/40/42/44/46",
+      "answer": "p38: KTB570-400x1400 has a 30mm slope over 1400mm depth for its outer face. It's top left edge is 30mm to the left of its bottom left corner. Bottom left chmafer, 15x15mm, bottom right hte same; and top right of bottom flange is the same 15wide at top; 20 wide at bottom, 40mm high chamfer. The top right one is 30x30mm\n\np40: KTB1200: no slope of left hand face. Same chamfer details as above.\n\np42: KTB1000: No slope; same chamfer details."
+    },
+    {
+      "id": "nz-hc650",
+      "title": "New Zealand · 650 single hollow-core outline",
+      "locator": "RR364, drawing S2.01; PDF page 29",
+      "answer": "12x12 chamfer at the top of a 320 high recess, starting 220 below top of beam.\n\nRecording the difference between the inner and outer units is too vague - you're asking me to describe both in text and then say whats different. The two drawings are present. in teh second image."
+    },
+    {
+      "id": "nz-hc900",
+      "title": "New Zealand · 900 single hollow-core outline",
+      "locator": "RR364, drawing S2.10; PDF page 34",
+      "answer": "notch starts 430 above bottom of beam; 12x12 chamfer; extends down to 110mm above bottom of beam.\n\nDitto comment re inner and outer."
+    },
+    {
+      "id": "nz-hc587",
+      "title": "New Zealand · 587 double hollow-core and edge unit",
+      "locator": "RR364, drawing S3.01; PDF page 40",
+      "answer": "12x12 chamfer, notch starts 157mm below top of beam extends to 110mm above bottom of beam.\n\nDitto comment re inner/outer."
+    },
+    {
+      "id": "ie-w",
+      "title": "Ireland · Banagher W inner concrete contour",
+      "locator": "Bridge Beam Manual, 3rd ed.; PDF30 / printed28; Appendix C PDF51–58",
+      "answer": "These are in DWG files in a local folder - see agent history. There is no inner radius, just flat surfaces."
+    },
+    {
+      "id": "ie-sd4",
+      "title": "Ireland · Banagher Solid Box width class (4)",
+      "locator": "Bridge Beam Manual, 3rd ed.; PDF14 / printed12",
+      "answer": "again; all this is fully dimension on cad drgs."
+    },
+    {
+      "id": "np-chamfers",
+      "title": "Nepal · 20/25 m precast RC chamfer scope",
+      "locator": "DoR standard superstructures, both volumes; PDF7 / drawing5/10; reinforcement PDF9 / drawing7/10",
+      "answer": "there is no cross-sectional information on this."
+    },
+    {
+      "id": "za-m",
+      "title": "South Africa · Civilcon M upper flange and step",
+      "locator": "Civilcon PPBM; one-page producer sheet",
+      "answer": "these are just standard uk m beams i'm sure. The notch size isn't specified but about 40wx50high is standard."
+    },
+    {
+      "id": "za-y",
+      "title": "South Africa · Civilcon Y top ledge variants",
+      "locator": "Civilcon PPBY; one-page producer sheet",
+      "answer": "the notch each side for each depth is 40 wide x 50 high. Each width between nothces for each depth is: 198, 227, 256, 285, 313, 342, 371, 400."
+    },
+    {
+      "id": "ro-42-52",
+      "title": "Romania · ASA bridge beams 42 / 52",
+      "locator": "ASA CONS Consolis catalogue; PDF and printed page 97",
+      "answer": "1. Answer is \"1\" - cm no doubt. The next number over is 2.5cm and then 53cm; so 10 + 25 + 530 + 25 + 10 = 600mm width\n\n2. total widths of bottom flange are: 60 for both. 53cm between chamfers for both."
+    },
+    {
+      "id": "ro-72-80",
+      "title": "Romania · ASA bridge beams 72 / 80",
+      "locator": "ASA CONS Consolis catalogue; PDF and printed page 99",
+      "answer": "1, 2.5 cm; 85cm for a total width of 92cm"
+    }
+  ]
+}

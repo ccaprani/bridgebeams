@@ -1,0 +1,202 @@
+{
+ "schema_version": 1,
+ "family": "JKR standard pretensioned T-beams PRT1-PRT3 and OKA-modified PRT-M",
+ "country": "MY",
+ "source_status": "JKR standard section reproduced in producer catalogues (G-CAST 2020; OKA 2018); PRT-M is an OKA producer modification",
+ "sources": [
+  {
+   "title_original": "G-CAST Prestressed Concrete Beams (catalogue), JUNE 2020.REV.0",
+   "producer": "Cast Concrete Sdn Bhd (G-CAST), Kuala Lumpur",
+   "url": "https://g-cast.com.my/wp-content/uploads/media_uploads/G-CAST-Catalogue-Prestressed-Beam.pdf",
+   "local_file": "sources/expansion/round2/my/g-cast-prestressed-beam.pdf",
+   "sha256": "8304c3ba7287fc99a2cf5febc151c9cf977458249f710ffa1132e99eff3cef5c",
+   "retrieved": "2026-09-23",
+   "pdf_page": 2,
+   "printed_page": null,
+   "content": "JKR PRESTRESSED PRT BEAMS: dimensioned section + D/length/weight/A/Yt/Yb/Ixx/Zt/Zb"
+  },
+  {
+   "title_original": "OKA Prestressed (Pretensioned) T-Beams / M-Beams brochure (March 2018 on sheet)",
+   "producer": "OKA Concrete Industries Sdn Bhd, Ipoh",
+   "url": "http://www.oka.com.my/index.asp?CompanyID=29&FileName=T-Beams_M-Beams.pdf",
+   "page_url": "http://www.oka.com.my/index.asp?LanguagesID=1&TitleReferenceID=1295&CompanyID=29",
+   "local_file": "sources/expansion/round2/my/oka-T-Beams_M-Beams.pdf",
+   "sha256": "e74ebcc04aaf9dc111acfa1388de2b0941dc832294f0323a79dd8a6c56623ec8",
+   "retrieved": "2026-09-23",
+   "pdf_page": 1,
+   "printed_page": null,
+   "content": "Same PRT section drawing (scan); PRT1-3 A and hw; PRT-M depths, hw, area range"
+  }
+ ],
+ "units": "mm, mm2, mm4",
+ "transcribed_dimensions": {
+  "top_width": 800,
+  "raised_strip": "620 wide x 30 high (90 + 620 + 90 = 800)",
+  "flange_edge": 130,
+  "taper": "35 high over 250 each side",
+  "web_width": 300,
+  "web_depth_hw": "1055/1155/1205 (PRT1/2/3)"
+ },
+ "geometry_notes": [
+  "Beam has no bottom flange; the 300 mm web runs to the soffit. No soffit chamfer is shown on either drawing.",
+  "Printed areas close exactly for PRT1-3 (458350/488350/503350 mm2).",
+  "PRT-M rows are not individually tabulated. They are built with the PRT top and 300 mm web; hw = H - 195 matches the printed hw list for all seven depths and the printed area range endpoints (518350 at 1450, 623350 at 1800) are reproduced exactly. Provenance transcribed-with-convention.",
+  "Strand positions (50 mm grid, 60 mm top strands) are not part of the gross section."
+ ],
+ "sections": {
+  "PRT1": {
+   "depth": 1250,
+   "area": 458350,
+   "yt": 528,
+   "yb": 722,
+   "ixx": 68300000000.0,
+   "zt": 129200000.0,
+   "zb": 94600000.0,
+   "beam_length_m": 18.6,
+   "weight_kN_per_m": 11.2,
+   "provenance": "transcribed",
+   "printed_hw": 1055,
+   "source_ref": "G-CAST PDF p2 (properties) and OKA PDF p1 (A, hw)",
+   "residuals": {
+    "area_calc": 458350.0,
+    "yb_calc": 721.59,
+    "ixx_calc": 68273505667.0,
+    "area_rel_pct": 0.0,
+    "yb_diff_mm": -0.41,
+    "ixx_rel_pct": -0.039
+   }
+  },
+  "PRT2": {
+   "depth": 1350,
+   "area": 488350,
+   "yt": 576,
+   "yb": 774,
+   "ixx": 85100000000.0,
+   "zt": 147700000.0,
+   "zb": 109900000.0,
+   "beam_length_m": 20.6,
+   "weight_kN_per_m": 12.0,
+   "provenance": "transcribed",
+   "printed_hw": 1155,
+   "source_ref": "G-CAST PDF p2 (properties) and OKA PDF p1 (A, hw)",
+   "residuals": {
+    "area_calc": 488350.0,
+    "yb_calc": 774.19,
+    "ixx_calc": 85061903484.0,
+    "area_rel_pct": 0.0,
+    "yb_diff_mm": 0.19,
+    "ixx_rel_pct": -0.045
+   }
+  },
+  "PRT3": {
+   "depth": 1400,
+   "area": 503350,
+   "yt": 600,
+   "yb": 800,
+   "ixx": 94400000000.0,
+   "zt": 157400000.0,
+   "zb": 117900000.0,
+   "beam_length_m": 22.6,
+   "weight_kN_per_m": 12.3,
+   "provenance": "transcribed",
+   "printed_hw": 1205,
+   "source_ref": "G-CAST PDF p2 (properties) and OKA PDF p1 (A, hw)",
+   "residuals": {
+    "area_calc": 503350.0,
+    "yb_calc": 800.38,
+    "ixx_calc": 94360128888.0,
+    "area_rel_pct": 0.0,
+    "yb_diff_mm": 0.38,
+    "ixx_rel_pct": -0.042
+   }
+  },
+  "PRT-M1450": {
+   "depth": 1450,
+   "printed_hw": 1255,
+   "area": null,
+   "provenance": "transcribed-with-convention",
+   "source_ref": "OKA PDF p1 (PRT-M depth list, hw list, area range 518,350-623,350 mm2)",
+   "area_range_endpoint": 518350,
+   "residuals": {
+    "area_calc": 518350.0,
+    "yb_calc": 826.49,
+    "ixx_calc": 104286212617.0,
+    "area_vs_range_endpoint": 0.0
+   }
+  },
+  "PRT-M1500": {
+   "depth": 1500,
+   "printed_hw": 1305,
+   "area": null,
+   "provenance": "transcribed-with-convention",
+   "source_ref": "OKA PDF p1 (PRT-M depth list, hw list, area range 518,350-623,350 mm2)",
+   "residuals": {
+    "area_calc": 533350.0,
+    "yb_calc": 852.54,
+    "ixx_calc": 114859016817.0
+   }
+  },
+  "PRT-M1550": {
+   "depth": 1550,
+   "printed_hw": 1355,
+   "area": null,
+   "provenance": "transcribed-with-convention",
+   "source_ref": "OKA PDF p1 (PRT-M depth list, hw list, area range 518,350-623,350 mm2)",
+   "residuals": {
+    "area_calc": 548350.0,
+    "yb_calc": 878.54,
+    "ixx_calc": 126097391363.0
+   }
+  },
+  "PRT-M1600": {
+   "depth": 1600,
+   "printed_hw": 1405,
+   "area": null,
+   "provenance": "transcribed-with-convention",
+   "source_ref": "OKA PDF p1 (PRT-M depth list, hw list, area range 518,350-623,350 mm2)",
+   "residuals": {
+    "area_calc": 563350.0,
+    "yb_calc": 904.48,
+    "ixx_calc": 138020175491.0
+   }
+  },
+  "PRT-M1650": {
+   "depth": 1650,
+   "printed_hw": 1455,
+   "area": null,
+   "provenance": "transcribed-with-convention",
+   "source_ref": "OKA PDF p1 (PRT-M depth list, hw list, area range 518,350-623,350 mm2)",
+   "residuals": {
+    "area_calc": 578350.0,
+    "yb_calc": 930.37,
+    "ixx_calc": 150646199183.0
+   }
+  },
+  "PRT-M1700": {
+   "depth": 1700,
+   "printed_hw": 1505,
+   "area": null,
+   "provenance": "transcribed-with-convention",
+   "source_ref": "OKA PDF p1 (PRT-M depth list, hw list, area range 518,350-623,350 mm2)",
+   "residuals": {
+    "area_calc": 593350.0,
+    "yb_calc": 956.22,
+    "ixx_calc": 163994284329.0
+   }
+  },
+  "PRT-M1800": {
+   "depth": 1800,
+   "printed_hw": 1605,
+   "area": null,
+   "provenance": "transcribed-with-convention",
+   "source_ref": "OKA PDF p1 (PRT-M depth list, hw list, area range 518,350-623,350 mm2)",
+   "area_range_endpoint": 623350,
+   "residuals": {
+    "area_calc": 623350.0,
+    "yb_calc": 1007.79,
+    "ixx_calc": 192931891956.0,
+    "area_vs_range_endpoint": 0.0
+   }
+  }
+ }
+}

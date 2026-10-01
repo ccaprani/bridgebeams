@@ -1,0 +1,165 @@
+{
+  "family": "SY / SYE Beam (Ireland, beam & slab construction, long span)",
+  "description": "Irish standard SY beams SY1-SY6 (1500-2000 mm deep) and SYE edge beams SYE1-SYE6 - the long-span development of the Y family. SY: 750 bottom flange, splay to a tapered stem with 240-wide top nib. SYE: full-height vertical face on one side. Fitted to the published properties of all twelve sizes: SY rms 0.012%, SYE rms 0.56%.",
+  "sources": {
+    "properties": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed pp. 14-15 (sources/banagher-bridge-beam-manual-3ed.pdf); identical SY table in '05316 Precast Beam Properties.xls' (2007).",
+    "source_urls": [
+      "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf"
+    ]
+  },
+  "published_properties": {
+    "sy": [
+      {
+        "section": "SY1",
+        "depth": 1500,
+        "area": 550090,
+        "yc": 597.6,
+        "zt": 132.69,
+        "zb": 200.39,
+        "ixx_e9": 119.75,
+        "self_weight_kN_m": 13.75
+      },
+      {
+        "section": "SY2",
+        "depth": 1600,
+        "area": 582090,
+        "yc": 649.2,
+        "zt": 154.09,
+        "zb": 225.66,
+        "ixx_e9": 146.51,
+        "self_weight_kN_m": 14.55
+      },
+      {
+        "section": "SY3",
+        "depth": 1700,
+        "area": 614090,
+        "yc": 700.7,
+        "zt": 176.3,
+        "zb": 251.41,
+        "ixx_e9": 176.17,
+        "self_weight_kN_m": 15.35
+      },
+      {
+        "section": "SY4",
+        "depth": 1800,
+        "area": 646090,
+        "yc": 752.1,
+        "zt": 199.35,
+        "zb": 277.77,
+        "ixx_e9": 208.91,
+        "self_weight_kN_m": 16.15
+      },
+      {
+        "section": "SY5",
+        "depth": 1900,
+        "area": 678090,
+        "yc": 803.3,
+        "zt": 223.28,
+        "zb": 304.82,
+        "ixx_e9": 244.87,
+        "self_weight_kN_m": 16.95
+      },
+      {
+        "section": "SY6",
+        "depth": 2000,
+        "area": 710090,
+        "yc": 854.4,
+        "zt": 248.1,
+        "zb": 332.65,
+        "ixx_e9": 284.22,
+        "self_weight_kN_m": 17.75
+      }
+    ],
+    "sye": [
+      {
+        "section": "SYE1",
+        "depth": 1500,
+        "area": 837240,
+        "yc": 700.2,
+        "xc": 287.7,
+        "zt": 211.91,
+        "zb": 242.05,
+        "ixx_e9": 169.49,
+        "self_weight_kN_m": 20.93
+      },
+      {
+        "section": "SYE2",
+        "depth": 1600,
+        "area": 890740,
+        "yc": 751.0,
+        "xc": 286.5,
+        "zt": 242.1,
+        "zb": 273.68,
+        "ixx_e9": 205.54,
+        "self_weight_kN_m": 22.27
+      },
+      {
+        "section": "SYE3",
+        "depth": 1700,
+        "area": 944240,
+        "yc": 801.7,
+        "xc": 285.4,
+        "zt": 273.9,
+        "zb": 306.88,
+        "ixx_e9": 246.04,
+        "self_weight_kN_m": 23.61
+      },
+      {
+        "section": "SYE4",
+        "depth": 1800,
+        "area": 997740,
+        "yc": 852.4,
+        "xc": 284.4,
+        "zt": 307.36,
+        "zb": 341.7,
+        "ixx_e9": 291.26,
+        "self_weight_kN_m": 24.94
+      },
+      {
+        "section": "SYE5",
+        "depth": 1900,
+        "area": 1051240,
+        "yc": 903.0,
+        "xc": 283.6,
+        "zt": 342.49,
+        "zb": 378.17,
+        "ixx_e9": 341.47,
+        "self_weight_kN_m": 26.28
+      },
+      {
+        "section": "SYE6",
+        "depth": 2000,
+        "area": 1104740,
+        "yc": 953.5,
+        "xc": 282.8,
+        "zt": 379.3,
+        "zb": 416.3,
+        "ixx_e9": 396.94,
+        "self_weight_kN_m": 27.62
+      }
+    ]
+  },
+  "fitted_dims": {
+    "sy": {
+      "bottom_face_half": 350.0,
+      "flange_half": 375.0,
+      "chamfer": 25.0,
+      "splay_w": 142.4,
+      "splay_y": 397.3,
+      "stem_bot": 102.9,
+      "stem_bot_y": 486.8,
+      "stem_top": 160.1,
+      "stem_top_y_ref": 1450.0,
+      "nib_step": 40.0,
+      "nib_h": 50.0
+    },
+    "sye": {
+      "splay_w": 80.0,
+      "stem_bot": 147.76,
+      "stem_top": 120.0,
+      "wf_intercept": 700.0,
+      "wf_slope": 0.11643,
+      "face_offset": -375.0
+    }
+  }
+}

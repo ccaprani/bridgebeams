@@ -1,0 +1,297 @@
+{
+  "topic": "africa-middle-east",
+  "round": 2,
+  "date": "2026-09-23",
+  "implemented": [
+    {
+      "package": "qa",
+      "module": "bridgebeams.qa.r2_ty_beams",
+      "class": "QaTyBeamSection",
+      "sizes": [
+        "TY1",
+        "TY2",
+        "TY3",
+        "TY4",
+        "TY5",
+        "TY6",
+        "TY7",
+        "TY8",
+        "TY9",
+        "TY10"
+      ],
+      "provenance": "transcribed",
+      "source_status": "current standard (Ashghal QCS 2014 standard detail, Rev 1, Oct 2013)",
+      "data": "src/bridgebeams/qa/data/r2_ty_beams.json"
+    },
+    {
+      "package": "qa",
+      "module": "bridgebeams.qa.r2_ty_beams",
+      "class": "QaTyeBeamSection",
+      "sizes": [
+        "TYE1",
+        "TYE2",
+        "TYE3",
+        "TYE4",
+        "TYE5",
+        "TYE6",
+        "TYE7",
+        "TYE8",
+        "TYE9",
+        "TYE10"
+      ],
+      "provenance": "transcribed",
+      "source_status": "current standard (Ashghal QCS 2014 standard detail, Rev 1, Oct 2013)",
+      "data": "src/bridgebeams/qa/data/r2_ty_beams.json",
+      "pinned": "areas -0.127..-0.157%, Ixx -0.13..-0.15% vs table"
+    },
+    {
+      "package": "ma",
+      "module": "bridgebeams.ma.sadet_i_beams",
+      "class": "SadetIBeamSection",
+      "sizes": [
+        "I40",
+        "I45",
+        "I50",
+        "I55"
+      ],
+      "provenance": "estimate",
+      "source_status": "producer catalogue (brochure; schematic graphic)",
+      "data": "src/bridgebeams/ma/data/sadet_i_beams.json",
+      "pinned": "mass residual I45 -9.6%, I50 -4.0%, I55 -3.7% at assumed 2500 kg/m3; I40 printed mass anomalous"
+    }
+  ],
+  "sources": [
+    {
+      "id": "QA-ASHGHAL-SD-5-1-111",
+      "title_original": "SD 5-1-111 Rev 1 TY - Beams",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-111%20Rev%201%20TY%20-%20Beams.pdf",
+      "local": "sources/expansion/round2/qa/sd-5-1-111.pdf",
+      "sha256": "2ffa5e85015932561188f207e23920ddd3159960da878ee83d94a8992d3d662a",
+      "retrieved": "2026-09-23",
+      "pdf_page": 1,
+      "status": "implemented"
+    },
+    {
+      "id": "QA-ASHGHAL-SD-5-1-112",
+      "title_original": "SD 5-1-112 Rev 1 TYE - Beams",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-112%20Rev%201%20TYE%20-%20Beams.pdf",
+      "local": "sources/expansion/round2/qa/sd-5-1-112.pdf",
+      "sha256": "12ee6ccfa2a0b9cd65ed42c740a343703ef83ee96f633f11e0af31432de16c5c",
+      "retrieved": "2026-09-23",
+      "pdf_page": 1,
+      "status": "implemented"
+    },
+    {
+      "id": "QA-ASHGHAL-SD-5-1-100",
+      "title_original": "SD 5-1-100 Rev 2 Precast Beams General Notes",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-100%20Rev%202%20Precast%20Beams%20General%20Notes.pdf",
+      "local": "sources/expansion/round2/qa/sd-5-1-100.pdf",
+      "sha256": "c090940fd30f6a482e9c5c49bddd5702d6cb8689b84ca9800a5fa5a1aebe0aea",
+      "retrieved": "2026-09-23",
+      "status": "context: 101-110 Q-beam, 111-115 TY/TYE; no other Ashghal beam family"
+    },
+    {
+      "id": "QA-ASHGHAL-SD-5-1-102",
+      "title_original": "SD 5-1-102 Rev 1 Q-Girder Reinforcement",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-102%20Rev%201%20Q-Girder%20Reinforcement.pdf",
+      "local": "sources/expansion/round2/qa/sd-5-1-102.pdf",
+      "sha256": "31c3a2c50150be1eb7f536853b42a9e2a436517525217c3e4d9ea93edf631aed",
+      "retrieved": "2026-09-23",
+      "status": "lead for qa.QaQBeamSection owner: 185 mm bottom slab (research-agent reading, not re-verified by implementer)"
+    },
+    {
+      "id": "QA-ASHGHAL-SD-5-1-103",
+      "title_original": "SD 5-1-103 Rev 1 Q-Girder Prestressing",
+      "url": "https://www.ashghal.gov.qa/en/SDDDocumentsLibrary/SD%205-1-103%20Rev%201%20Q-Girder%20Prestressing.pdf",
+      "local": "sources/expansion/round2/qa/sd-5-1-103.pdf",
+      "sha256": "8eaa983fd3e16a759ce163a745de85b67e72d7f33946d0310f536bdc96a872e5",
+      "retrieved": "2026-09-23",
+      "status": "lead for qa.QaQBeamSection owner: strand-grid widths (research-agent reading)"
+    },
+    {
+      "id": "MA-SADET-I",
+      "title_original": "Poutres industrielles",
+      "url": "https://sadet.ma/wp-content/uploads/2023/09/poutres-industrrielles.pdf",
+      "local": "sources/expansion/asia-africa/sadet-morocco.pdf",
+      "sha256": "8f60ff2b42d0266c48ed6ef9a32759ad79732dbfe77cc476547fca0ed9a5bffd",
+      "retrieved": "2026-09-22",
+      "pdf_page": 2,
+      "status": "implemented (estimate)"
+    },
+    {
+      "id": "ZA-BEDROCK",
+      "title_original": "Bedrock Group bridge beams: BRG-CAT-{M,T,U,Y}-BEAM-PRECAST-BEAM-PROFILE.png",
+      "url": "https://bedrockgroup.co.za/bridge-beams/",
+      "image_urls": {
+        "M": "https://bedrockgroup.co.za/wp-content/uploads/2026/07/BRG-CAT-M-BEAM-PRECAST-BEAM-PROFILE.png",
+        "T": "https://bedrockgroup.co.za/wp-content/uploads/2025/08/BRG-CAT-T-BEAM-PRECAST-BEAM-PROFILE.png",
+        "U": "https://bedrockgroup.co.za/wp-content/uploads/2025/08/BRG-CAT-U-BEAM-PRECAST-BEAM-PROFILE.png",
+        "Y": "https://bedrockgroup.co.za/wp-content/uploads/2025/08/BRG-CAT-Y-BEAM-PRECAST-BEAM-PROFILE.png"
+      },
+      "local": {
+        "M": "sources/expansion/round2/za/bedrock-M.png",
+        "T": "sources/expansion/round2/za/bedrock-T.png",
+        "U": "sources/expansion/round2/za/bedrock-U.png",
+        "Y": "sources/expansion/round2/za/bedrock-Y.png"
+      },
+      "sha256": {
+        "M": "c47ec252a6e39b533a7d6964b00200a3b5d20c03a0eb9645bb065c4b209785bf",
+        "T": "61629506c6225c7543c42663801d92d05ace55b548de240e778f407017ff88ec",
+        "U": "03f80493a9604555d46f9ce49a2075ed9c0c73c880bfefb44fa001d5b6084df7",
+        "Y": "eb85dd677893dea2d071fd1c4a53947bf5dc5b79c12a007484105a3efd164461"
+      },
+      "retrieved": "2026-09-23",
+      "status": "corroboration only: same tables as Civilcon PPBM/PPBT/PPBU/PPBY",
+      "m_sheet_dimensions_mm": {
+        "base": 970,
+        "soffit_chamfer": 35,
+        "flange_edge": 125,
+        "edge_inset": 10,
+        "flange_taper_height": 50,
+        "flange_taper_run": 315,
+        "lower_splay": "80 x 80",
+        "web": 160,
+        "upper_flare": "120 horizontal x 60 vertical",
+        "top": "50+300+50 (400) with 50x50 notch each side",
+        "web_heights": {
+          "M2-M4": 200,
+          "M5-M7": 440,
+          "M8-M10": 680
+        },
+        "M4_area": 378600,
+        "M10_depth": 1360,
+        "check": "all printed dims (inset 10, flare 60): areas +875 mm2 above table for all M2-M10; yb within 1.2 mm"
+      },
+      "t_sheet": "T10 labelled 815 (resolves Civilcon 850 label)"
+    },
+    {
+      "id": "ET-AAU-BERHANE-2002",
+      "title_original": "Prestressed Concrete Bridge Design and Construction Practices and Prospects in Ethiopia",
+      "url": "https://etd.aau.edu.et/items/cc61a905-fcb6-4cc0-8e04-e1d9e4bdeb9f",
+      "local": "sources/expansion/round2/et/aau-berhane-2002.pdf",
+      "sha256": "7ccfa3f037077c3c02263472305776613720d3296721dca80a90d3367e957bc8",
+      "retrieved": "2026-09-23",
+      "status": "not implemented: uses US PCI sections (e.g. PCI IV with modified height); no Ethiopian family"
+    },
+    {
+      "id": "DZ-ENP-GASMI-KACIMI-2016",
+      "title_original": "Étude et calcul d'un pont à poutre en béton précontraint",
+      "url": "https://repository.enp.edu.dz/jspui/bitstream/123456789/2624/1/GASMI.Rabah_KACIMI.Amar.pdf",
+      "local": "sources/expansion/round2/dz/enp-gasmi-kacimi-pont-poutre.pdf",
+      "sha256": "04523d05acd37b8b6ed4afd32ca18394f8d48f5c1a2db47c5cec7353a4e3eb4a",
+      "retrieved": "2026-09-23",
+      "pdf_page": 34,
+      "status": "not implemented: student SETRA pre-dimensioning (Oued Illoula viaduct, Bejaia-Ahnif link); depth chain inconsistent (180 cm labelled both beam and beam+slab)"
+    },
+    {
+      "id": "MA-EMG-PFE-2015",
+      "title_original": "Conception et dimensionnement d'un ouvrage d'art",
+      "url": "https://ajbtp.com/wp-content/uploads/2024/10/CONCEPTION-ET-DIMENSIONNEMENT-DUN-OUVRAGE-D-ART.pdf",
+      "local": "sources/expansion/round2/ma/pfe-ouvrage-art.pdf",
+      "sha256": "d9fe762fb67c88278afeaff706bcf6db048a7bb708855f5d52f256246d82349f",
+      "retrieved": "2026-09-23",
+      "status": "not implemented: student RC (not prestressed) cast-in-situ PSI-BA T-beam"
+    },
+    {
+      "id": "FR-AFGC-VIPP",
+      "title_original": "Ouvrages d'art de type VIPP : détermination des hypothèses de recalcul",
+      "url": "https://www.afgc.asso.fr/app/uploads/2010/06/F-04-Recalculs-des-VIPP.pdf",
+      "local": "sources/expansion/round2/fr/afgc-recalculs-vipp.pdf",
+      "sha256": "5010c68c5eb7e832b92d8929dc6edf1498834e6a7ee4e0f990e9a6749c855847",
+      "retrieved": "2026-09-23",
+      "pdf_page": 7,
+      "status": "out of scope (France); lead for fr owner"
+    },
+    {
+      "id": "AE-DMT-STD-DRAWINGS",
+      "title_original": "Abu Dhabi DMT Standard Drawings Part 1/Part 2",
+      "url": [
+        "https://www.dmt.gov.ae/adm/-/media/Project/DMT/ADM/E-Library/Standard-Drawings-PART-1.pdf",
+        "https://www.dmt.gov.ae/adm/-/media/Project/DMT/ADM/E-Library/Standard-Drawings-PART-2.pdf"
+      ],
+      "local": [
+        "sources/expansion/round2/ae/dmt-standard-drawings-part1.pdf",
+        "sources/expansion/round2/ae/dmt-standard-drawings-part2.pdf"
+      ],
+      "sha256": [
+        "9e46980d69f70ceaef3195998fed3506c1dc27a7bfa192bea25b6dafd37c7185",
+        "c5497b8a374e11a4a0c3f942e66bf4a6785e6c2d6215231deb9092fea34bd821"
+      ],
+      "retrieved": "2026-09-23",
+      "status": "no girder dimensions: Part 2 ST-19/ST-20 (PDF p73-74) show undimensioned girder silhouettes"
+    },
+    {
+      "id": "SA-PMU-THESIS",
+      "url": "https://pmu.edu.sa/attachments/academics/pdf/udp/coe/dept/ce/dsljfsd.pdf",
+      "local": "sources/expansion/round2/sa/pmu-thesis-candidate.pdf",
+      "sha256": "3620c2064eb0429e8a61b38e7552101db628a7dfdf1201e17f711e1d919943e7",
+      "retrieved": "2026-09-23",
+      "status": "not implemented: generic AASHTO student design"
+    }
+  ],
+  "blocked_leads": [
+    {
+      "country": "TN",
+      "what": "SOMEF Catalogue_Somef_bpt_2017_technique.pdf",
+      "url": "https://www.somef.tn/img/cms/catalogues/Catalogue_Somef_bpt_2017_technique%20.pdf",
+      "reason": "HTTP 403 to automated fetch; try browser"
+    },
+    {
+      "country": "SA",
+      "what": "RGA Saudi Highway Code SHC 302/304",
+      "url": "https://shc.rga.gov.sa/content/dam/roadcodes/assets/road-code-library/302%20EN.pdf",
+      "reason": "TCP timeout from this network"
+    },
+    {
+      "country": "SA",
+      "what": "MOMRA Bridges Design Specifications MA-100-D (2013)",
+      "url": "https://mp.momra.gov.sa/en/node/861",
+      "reason": "unreachable; PDF URL not found"
+    },
+    {
+      "country": "AE",
+      "what": "Abu Dhabi Road Structures Design Manual TR-516",
+      "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/TR-516.pdf",
+      "reason": "timeout"
+    },
+    {
+      "country": "EG",
+      "what": "GARBLT General and Technical Conditions of Prestressed Concrete Bridges over the Nile (cited in ResearchGate 260164626)",
+      "url": null,
+      "reason": "not public; paper behind login"
+    },
+    {
+      "country": "CM",
+      "what": "2iE theses: Sodiko interchange Douala (Tchoula Kenfack 2015); PK49 Ekekam-Evodoula (Ndilassi Ngbweke)",
+      "url": null,
+      "reason": "PDF link not resolved; docplayer mirror 404"
+    },
+    {
+      "country": "KE",
+      "what": "KeNHA ROAD DESIGN MANUAL Part IV Bridge Design",
+      "url": "https://www.kenha.co.ke/images/downloads/ROAD%20DESIGN%20MANUAL%20-%20Part%20IV%20-%20Bridge_Design.pdf",
+      "reason": "returns HTML page"
+    },
+    {
+      "country": "NG",
+      "what": "FMW Structural Design manual",
+      "url": "https://fmhud.gov.ng/themes/front_end_themes_01/images/uploads_images/1569354267.pdf",
+      "reason": "returns HTML page"
+    },
+    {
+      "country": "ET",
+      "what": "ERA Bridge Design Manual 2002/2013, Standard Detailed Drawings 2013",
+      "url": null,
+      "reason": "only reseller copies (Scribd/pdfcoffee/Course Hero); not used"
+    }
+  ],
+  "negatives": [
+    "UG MoWT Vol 4 Bridge Design Manual: no precast sections",
+    "TZ/MW/MZ JICA basic design reports (11969136_02, 11800166_01, 11838901_01, 12320065_01): no dimensioned girder sections",
+    "LY, MR, SN, CI: no source within budget",
+    "SA Al Rashid Abetong: building precast only",
+    "MA INTERSIG, Prefa Maroc, Bonna Sabla: no catalogue",
+    "DZ SAPTA/ENGOA/Cosider: no public catalogue"
+  ],
+  "gulf_levant_iran": "see markdown section; research agent notes WebSearch budget exhausted mid-sweep"
+}

@@ -1,0 +1,1502 @@
+{
+ "family": "Prebet Aiud precast prestressed road/viaduct girders",
+ "producer": "Prebet Aiud S.A. (Romania)",
+ "title_original": "Grinzi pentru viaducte (Viaduct girders) - product web page",
+ "source_page_url": "https://www.prebet.ro/en/viaduct-girders/",
+ "retrieved": "2026-09-23",
+ "source_status": "producer web page drawings (Prebet Aiud, images dated 2016-05)",
+ "units": "cm in source (superscript digits are decimals: 8² = 8.2); model_parameters_cm in cm; code converts to mm",
+ "images": {
+  "Grinzi-pretensionate": {
+   "url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate.jpg",
+   "local_file": "sources/expansion/round2/ro/prebet_Grinzi-pretensionate.jpg",
+   "sha256": "323f69a220f261878e59046e8a0e9dba1f710c3306d8fd26b1b9204cd6745da8",
+   "pixels": [
+    1600,
+    900
+   ],
+   "page_caption_original": "Grinzi pretensionate tip ⊥ – Grinda L= 6.00 -> 10.00 m, H=0.42 m; L=10.00 -> 12.00 m, H=0.52 m"
+  },
+  "Grinzi-pretensionate-2": {
+   "url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-2.jpg",
+   "local_file": "sources/expansion/round2/ro/prebet_Grinzi-pretensionate-2.jpg",
+   "sha256": "0f37155628fed251af10f5016cafae24ba16298944b0263a391e728f7da10464",
+   "pixels": [
+    1600,
+    900
+   ],
+   "page_caption_original": "Grinzi pretensionate tip I – Grinda L=14.00 -> 16.00 m, H=0.72 m; L=16.00 -> 18.00 m, H=0.80 m"
+  },
+  "Grinzi-pretensionate-tip-T": {
+   "url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T.jpg",
+   "local_file": "sources/expansion/round2/ro/prebet_Grinzi-pretensionate-tip-T.jpg",
+   "sha256": "9614d29b92c35d47e5bdbf63f8d149c455e7c79b19830b6900d9b859b9f66e39",
+   "pixels": [
+    1600,
+    900
+   ],
+   "page_caption_original": "Grinzi pretensionate tip T – Grinda L=15.00 -> 24.00 m, H=0.93 m"
+  },
+  "Grinzi-pretensionate-sau-postcomprimate-tip-T": {
+   "url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-sau-postcomprimate-tip-T.jpg",
+   "local_file": "sources/expansion/round2/ro/prebet_Grinzi-pretensionate-sau-postcomprimate-tip-T.jpg",
+   "sha256": "f847c687ca6807e7e1fe76b3277f6ccc104557af008f72f34ecc0bc12b8821cf",
+   "pixels": [
+    1600,
+    900
+   ],
+   "page_caption_original": "Grinzi pretensionate sau postcomprimate tip T – Grinda L=15.00 -> 30.00 m, H=1.03-1.05 m"
+  },
+  "Grinzi-pretensionate-tip-T-2": {
+   "url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T-2.jpg",
+   "local_file": "sources/expansion/round2/ro/prebet_Grinzi-pretensionate-tip-T-2.jpg",
+   "sha256": "609c1f6e225440d4e17783be3fb72db7cf9cad303529ecbe07bc27b7ba5825f0",
+   "pixels": [
+    1600,
+    900
+   ],
+   "page_caption_original": "Grinzi pretensionate tip T – Grinda L=24.00 -> 40.00 m, H=1.40 m, H=1.60 m, H=1.80 m, H=2.00 m"
+  },
+  "Grinzi-pretensionate-tip-I": {
+   "url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-I.jpg",
+   "local_file": "sources/expansion/round2/ro/prebet_Grinzi-pretensionate-tip-I.jpg",
+   "sha256": "c2acda46ee99bb5e5dc24ddc7349fd412cb1fb2b0c86955af10bb6bc6b95fafe",
+   "pixels": [
+    1600,
+    900
+   ],
+   "page_caption_original": "Grinzi pretensionate tip I – Grinda L=24.00 -> 40.00 m, H=1.30 m, H=1.50 m, H=1.60 m, H=1.80 m"
+  },
+  "Grinzi-tronsonate-tip-T": {
+   "url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-tronsonate-tip-T.jpg",
+   "local_file": "sources/expansion/round2/ro/prebet_Grinzi-tronsonate-tip-T.jpg",
+   "sha256": "a79361eca833d5ff95175349e36d3a747331d05383cd370e0367a70e2199f93c",
+   "pixels": [
+    1600,
+    900
+   ],
+   "page_caption_original": "Grinzi tronsonate tip T – L=24.00 -> 30.00 m, H=1.60 m; L=24.00 -> 33.00 m, H=1.80 m; L=33.00 -> 40.00 m, H=2.10 m"
+  }
+ },
+ "image_url_verification": "Each local file SHA-256 equals the file downloaded from its image URL on 2026-09-23 (URLs taken from the page HTML).",
+ "method": "Dimensions read visually from 3-8x upscaled crops of the 1600x900 JPEG drawings; ambiguous stroke-font labels resolved by chain closure and by the drawn geometry (grey-fill mask traced per row, about 1.5-2.7 px/cm).",
+ "published_properties": null,
+ "published_properties_note": "No area, mass or inertia is published; validation is analytic (chains close to H, width chains sum) and areas are recorded.",
+ "geometry_notes": [
+  "Fillets use the printed radius, tangent to the web at the printed chain level and to a straight flange face through the printed flange-edge point.",
+  "T-family top haunches (curve, no radius label) are R=10 cm fillets between web and sloping flange underside.",
+  "Soffit chamfers on INVT-TIP (1x1 cm) and I72/I80 (2x2 cm) are undimensioned; values scaled from the images.",
+  "Prebet INVT42/52-TIP equal the ASA CONS / IPTANA 42/52 except the soffit chamfer; I72/I80 equal ASA 72/80 except the 90 (Prebet) vs 92 (ASA) bottom width; T93-TIP is the IPTANA 95 section printed with an 8 cm flange edge. All are implemented under Prebet with separate producer attribution.",
+  "Page lists the segmental family as H=1.60/1.80/2.10 m; the middle drawing prints 1.84 m (implemented as drawn).",
+  "Images grinzi-pentru-poduri-de-sosea(-2).jpg on the same page are site photographs (no dimensions).",
+  "Forest-bridge girders (Grinzi pentru poduri forestiere) are listed by text only (no drawing) and not implemented."
+ ],
+ "sizes": {
+  "INVT42-EC": {
+   "name_original": "Grindă pretensionată tip ⊥ (Grinzi Eurocode), H=42 cm",
+   "image": "Grinzi-pretensionate",
+   "drawing": "left, \"Grinzi Eurocode\"",
+   "kind": "inverted-T-EC",
+   "depth_cm": 42,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     20,
+     22,
+     20
+    ],
+    "bottom_chain": [
+     1,
+     60,
+     1
+    ],
+    "bottom_overall": 62,
+    "web_callout": 19,
+    "radius": "R=8",
+    "vertical_chain_from_soffit": [
+     15,
+     6,
+     8,
+     13,
+     10
+    ],
+    "depth_labels": [
+     42,
+     52
+    ],
+    "dashed_line": "10 cm below top = top of 42 cm variant"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 60,
+    "edge_width": 62,
+    "edge_level": 15,
+    "web_width_at_tangent": 19,
+    "web_tangent_level": 29,
+    "top_width_ref": 22,
+    "top_ref_level": 52,
+    "radius": 8
+   },
+   "conventions": [
+    "R=8 fillet tangent to the tapered stem face at the printed 19 cm callout level (29 cm) and to the straight flange slope through the flange edge (31, 15); the 6/8 split of the chain is then met within 0.6 cm (tangent at 21.6 vs 21).",
+    "Stem faces straight from 19 cm at y=29 to 22 cm at y=52 (the 20/22/20 chain is drawn at the top).",
+    "42 cm variant: top at the dashed line; top width 20.7 cm by the stem taper (not printed; drawing scales 20.7)."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate.jpg",
+   "model_properties_mm": {
+    "area_mm2": 161977,
+    "centroid_from_soffit_mm": 155.5,
+    "I_mm4": 2006100000.0
+   },
+   "residuals_model_vs_printed": {
+    "slope_tangent_level_cm": {
+     "model": 20.97,
+     "printed": 21
+    }
+   }
+  },
+  "INVT42-TIP": {
+   "name_original": "Grindă pretensionată tip ⊥ (Proiect tipizat), H=42 cm",
+   "image": "Grinzi-pretensionate",
+   "drawing": "middle, \"Proiect tipizat\"",
+   "kind": "inverted-T-TIP",
+   "depth_cm": 42,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     19,
+     22,
+     19
+    ],
+    "bottom_overall": 60,
+    "throat_callout": 14,
+    "radius": "R=5",
+    "vertical_chain_from_soffit": [
+     10,
+     7,
+     20,
+     5,
+     10
+    ],
+    "depth_labels": [
+     42,
+     52
+    ]
+   },
+   "model_parameters_cm": {
+    "bottom_width": 60,
+    "soffit_chamfer": 1,
+    "edge_level": 10,
+    "throat_width": 14,
+    "throat_level": 17,
+    "stem_width": 22,
+    "stem_level": 37,
+    "radius": 5
+   },
+   "conventions": [
+    "14 cm = theoretical intersection of the tapered stem faces with the flange slope at y=17 (same reading as ASA 42); R=5 inscribed there.",
+    "Soffit corners: undimensioned small chamfers drawn; 1 x 1 cm assumed (image scales about 1 cm).",
+    "42 cm variant: top at the dashed line (stem vertical 5 cm above the taper)."
+   ],
+   "identity": {
+    "module": "bridgebeams.ro.asa",
+    "class": "AsaGrindaPodSection",
+    "size": "42",
+    "relation": "Same IPTANA typical section: every printed dimension above the bottom-flange edge (19/22/19 top, 14 throat, R5, 10/7/20 chain, 60 bottom) equals ASA CONS \"Grindă pod 42\"; widths identical for y >= 10 cm. Below, ASA prints a 2.5 cm soffit chamfer plus 1 cm edge draft (1+2.5+53+2.5+1), while Prebet prints only 60 and draws a vertical edge with a ~1 cm chamfer."
+   },
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate.jpg",
+   "model_properties_mm": {
+    "area_mm2": 133653,
+    "centroid_from_soffit_mm": 155.6,
+    "I_mm4": 2031400000.0
+   },
+   "residuals_model_vs_printed": {}
+  },
+  "INVT52-EC": {
+   "name_original": "Grindă pretensionată tip ⊥ (Grinzi Eurocode), H=52 cm",
+   "image": "Grinzi-pretensionate",
+   "drawing": "left, \"Grinzi Eurocode\"",
+   "kind": "inverted-T-EC",
+   "depth_cm": 52,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     20,
+     22,
+     20
+    ],
+    "bottom_chain": [
+     1,
+     60,
+     1
+    ],
+    "bottom_overall": 62,
+    "web_callout": 19,
+    "radius": "R=8",
+    "vertical_chain_from_soffit": [
+     15,
+     6,
+     8,
+     13,
+     10
+    ],
+    "depth_labels": [
+     42,
+     52
+    ],
+    "dashed_line": "10 cm below top = top of 42 cm variant"
+   },
+   "model_parameters_cm": {
+    "soffit_width": 60,
+    "edge_width": 62,
+    "edge_level": 15,
+    "web_width_at_tangent": 19,
+    "web_tangent_level": 29,
+    "top_width_ref": 22,
+    "top_ref_level": 52,
+    "radius": 8
+   },
+   "conventions": [
+    "R=8 fillet tangent to the tapered stem face at the printed 19 cm callout level (29 cm) and to the straight flange slope through the flange edge (31, 15); the 6/8 split of the chain is then met within 0.6 cm (tangent at 21.6 vs 21).",
+    "Stem faces straight from 19 cm at y=29 to 22 cm at y=52 (the 20/22/20 chain is drawn at the top)."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate.jpg",
+   "model_properties_mm": {
+    "area_mm2": 183325,
+    "centroid_from_soffit_mm": 192.2,
+    "I_mm4": 3895400000.0
+   },
+   "residuals_model_vs_printed": {
+    "slope_tangent_level_cm": {
+     "model": 20.97,
+     "printed": 21
+    }
+   }
+  },
+  "INVT52-TIP": {
+   "name_original": "Grindă pretensionată tip ⊥ (Proiect tipizat), H=52 cm",
+   "image": "Grinzi-pretensionate",
+   "drawing": "middle, \"Proiect tipizat\"",
+   "kind": "inverted-T-TIP",
+   "depth_cm": 52,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_chain": [
+     19,
+     22,
+     19
+    ],
+    "bottom_overall": 60,
+    "throat_callout": 14,
+    "radius": "R=5",
+    "vertical_chain_from_soffit": [
+     10,
+     7,
+     20,
+     5,
+     10
+    ],
+    "depth_labels": [
+     42,
+     52
+    ]
+   },
+   "model_parameters_cm": {
+    "bottom_width": 60,
+    "soffit_chamfer": 1,
+    "edge_level": 10,
+    "throat_width": 14,
+    "throat_level": 17,
+    "stem_width": 22,
+    "stem_level": 37,
+    "radius": 5
+   },
+   "conventions": [
+    "14 cm = theoretical intersection of the tapered stem faces with the flange slope at y=17 (same reading as ASA 42); R=5 inscribed there.",
+    "Soffit corners: undimensioned small chamfers drawn; 1 x 1 cm assumed (image scales about 1 cm)."
+   ],
+   "identity": {
+    "module": "bridgebeams.ro.asa",
+    "class": "AsaGrindaPodSection",
+    "size": "52",
+    "relation": "Same IPTANA typical section: every printed dimension above the bottom-flange edge (19/22/19 top, 14 throat, R5, 10/7/20 chain, 60 bottom) equals ASA CONS \"Grindă pod 52\"; widths identical for y >= 10 cm. Below, ASA prints a 2.5 cm soffit chamfer plus 1 cm edge draft (1+2.5+53+2.5+1), while Prebet prints only 60 and draws a vertical edge with a ~1 cm chamfer."
+   },
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate.jpg",
+   "model_properties_mm": {
+    "area_mm2": 155653,
+    "centroid_from_soffit_mm": 200.0,
+    "I_mm4": 3917500000.0
+   },
+   "residuals_model_vs_printed": {}
+  },
+  "I72-TIP": {
+   "name_original": "Grindă pretensionată tip I (Proiect tipizat), H=72 cm",
+   "image": "Grinzi-pretensionate-2",
+   "drawing": "middle (72)",
+   "kind": "I-fillet",
+   "depth_cm": 72,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_overall": 102,
+    "top_chain": [
+     37.5,
+     27,
+     37.5
+    ],
+    "bottom_chain": [
+     31.5,
+     27,
+     31.5
+    ],
+    "bottom_overall": 90,
+    "radius": "R=5 (top and bottom)",
+    "vertical_chain_from_soffit": [
+     11,
+     8.2,
+     4.8,
+     27,
+     4.8,
+     8.2,
+     8
+    ]
+   },
+   "model_parameters_cm": {
+    "bottom_width": 90,
+    "soffit_chamfer": 2,
+    "edge_level": 11,
+    "web_width": 27,
+    "radius": 5,
+    "lower_tangent_level": 24,
+    "upper_tangent_below_top": 21,
+    "top_width": 102,
+    "top_edge": 8
+   },
+   "conventions": [
+    "R=5 fillets tangent to the web at the printed chain levels (24 cm and H-21 cm) and to straight flange slopes through the flange edges (45, 11) and (51, H-8): the 8.2/4.8 split is met exactly (tangent at 19.2 cm).",
+    "Soffit corner chamfers drawn but not dimensioned: 2 x 2 cm assumed (image scales about 2.5 x 1.5 cm)."
+   ],
+   "identity": {
+    "module": "bridgebeams.ro.asa",
+    "class": "AsaGrindaPodSection",
+    "size": "72",
+    "relation": "Same IPTANA section as ASA CONS \"Grindă pod 72\" above the lower flange (102 top, 37.5 overhang, 27 web, 8/8.2/4.8 top chain, R5, 24 cm lower web tangent). Differs below: Prebet prints bottom width 90 cm (ASA section prints 92 cm with 1+2.5 cm chamfer, while ASA's own strand view prints 90). Above the lower web tangent the widths agree within 8.3 mm: ASA builds the upper R5 fillet at its printed 4 cm knee run, Prebet prints no knee and the fillet is tangent at the chain level."
+   },
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-2.jpg",
+   "model_properties_mm": {
+    "area_mm2": 387589,
+    "centroid_from_soffit_mm": 360.9,
+    "I_mm4": 24624000000.0
+   },
+   "residuals_model_vs_printed": {
+    "lower_slope_tangent_level_cm": {
+     "model": 19.2,
+     "printed": 19.2
+    },
+    "upper_slope_tangent_level_cm": {
+     "model": 55.86,
+     "printed": 55.8
+    }
+   }
+  },
+  "I80-TIP": {
+   "name_original": "Grindă pretensionată tip I (Proiect tipizat), H=80 cm",
+   "image": "Grinzi-pretensionate-2",
+   "drawing": "left (80)",
+   "kind": "I-fillet",
+   "depth_cm": 80,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_overall": 102,
+    "top_chain": [
+     37.5,
+     27,
+     37.5
+    ],
+    "bottom_chain": [
+     31.5,
+     27,
+     31.5
+    ],
+    "bottom_overall": 90,
+    "radius": "R=5 (top and bottom)",
+    "vertical_chain_from_soffit": [
+     11,
+     8.2,
+     4.8,
+     35,
+     4.8,
+     8.2,
+     8
+    ]
+   },
+   "model_parameters_cm": {
+    "bottom_width": 90,
+    "soffit_chamfer": 2,
+    "edge_level": 11,
+    "web_width": 27,
+    "radius": 5,
+    "lower_tangent_level": 24,
+    "upper_tangent_below_top": 21,
+    "top_width": 102,
+    "top_edge": 8
+   },
+   "conventions": [
+    "R=5 fillets tangent to the web at the printed chain levels (24 cm and H-21 cm) and to straight flange slopes through the flange edges (45, 11) and (51, H-8): the 8.2/4.8 split is met exactly (tangent at 19.2 cm).",
+    "Soffit corner chamfers drawn but not dimensioned: 2 x 2 cm assumed (image scales about 2.5 x 1.5 cm)."
+   ],
+   "identity": {
+    "module": "bridgebeams.ro.asa",
+    "class": "AsaGrindaPodSection",
+    "size": "80",
+    "relation": "Same IPTANA section as ASA CONS \"Grindă pod 80\" above the lower flange (102 top, 37.5 overhang, 27 web, 8/8.2/4.8 top chain, R5, 24 cm lower web tangent). Differs below: Prebet prints bottom width 90 cm (ASA section prints 92 cm with 1+2.5 cm chamfer, while ASA's own strand view prints 90). Above the lower web tangent the widths agree within 8.3 mm: ASA builds the upper R5 fillet at its printed 4 cm knee run, Prebet prints no knee and the fillet is tangent at the chain level."
+   },
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-2.jpg",
+   "model_properties_mm": {
+    "area_mm2": 409189,
+    "centroid_from_soffit_mm": 400.4,
+    "I_mm4": 32476000000.0
+   },
+   "residuals_model_vs_printed": {
+    "lower_slope_tangent_level_cm": {
+     "model": 19.2,
+     "printed": 19.2
+    },
+    "upper_slope_tangent_level_cm": {
+     "model": 63.86,
+     "printed": 63.8
+    }
+   }
+  },
+  "T93-TIP": {
+   "name_original": "Grindă pretensionată tip T (Proiect tipizat), H=93 cm",
+   "image": "Grinzi-pretensionate-tip-T",
+   "drawing": "middle, \"Proiect tipizat\"",
+   "kind": "T-bulb",
+   "depth_cm": 93,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_overall": 120,
+    "top_chain": [
+     42,
+     10,
+     16,
+     10,
+     42
+    ],
+    "web_chain": [
+     15.5,
+     16,
+     15.5
+    ],
+    "bottom_chain": [
+     1,
+     45,
+     1
+    ],
+    "radius": "R=20 (bottom)",
+    "vertical_chain_from_soffit": [
+     12,
+     6.1,
+     15.4,
+     39.5,
+     10
+    ],
+    "flange_edge_chain": [
+     8,
+     2
+    ],
+    "depth": 93
+   },
+   "model_parameters_cm": {
+    "soffit_width": 45,
+    "edge_width": 47,
+    "edge_level": 12,
+    "web_width": 16,
+    "lower_radius": 20,
+    "lower_tangent_level": 33.5,
+    "top_width": 120,
+    "top_edge": 8,
+    "underside_drop": 2,
+    "knee_run": 10,
+    "upper_radius": 10
+   },
+   "conventions": [
+    "Top haunch (10 x 10 cm, curve without radius label) modelled as R=10 fillet inscribed between web and the 2 cm/42 cm sloping flange underside (same construction as ASA 95).",
+    "R=20 bottom fillet tangent to the web at the printed level 33.5 cm and to a straight flange slope through the flange edge (23.5, 12); tangent point 17.4 cm vs printed 12+6.1 = 18.1 cm.",
+    "The vertical label read \"7.4\"-like is 15.4 (leading 1 drawn as a tick); only 15.4 closes the chain to 93."
+   ],
+   "identity": {
+    "module": "bridgebeams.ro.asa",
+    "class": "AsaGrindaPodSection",
+    "size": "95",
+    "relation": "Same IPTANA T section as ASA CONS \"Grindă pod 95\" in plan (120 top, 42/10/16/10/42, 45/47 bottom, 39.5 web, 12 edge) but Prebet prints the flange-edge thickness 8 cm and H=93 cm (ASA chosen reading 10 cm / 95 cm; ASA notes its drawing is drawn at 93). Also matches the Somaco GP93 icon depth. Not dimensionally identical: 2 cm thinner top flange."
+   },
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T.jpg",
+   "model_properties_mm": {
+    "area_mm2": 305366,
+    "centroid_from_soffit_mm": 533.4,
+    "I_mm4": 34399000000.0
+   },
+   "residuals_model_vs_printed": {
+    "lower_slope_tangent_level_cm": {
+     "model": 17.37,
+     "printed": 18.1
+    },
+    "upper_web_tangent_level_cm": {
+     "model": 72.99,
+     "printed": 73
+    },
+    "upper_horizontal_extent_cm": {
+     "model": 9.52,
+     "printed": 10
+    }
+   }
+  },
+  "T95-EC": {
+   "name_original": "Grindă pretensionată tip T (Proiect Eurocode), H=95 cm",
+   "image": "Grinzi-pretensionate-tip-T",
+   "drawing": "left, \"Proiect Eurocode\"",
+   "kind": "T-bulb",
+   "depth_cm": 95,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_overall": 120,
+    "top_chain": [
+     41,
+     9.5,
+     19,
+     9.5,
+     41
+    ],
+    "web_chain": [
+     16,
+     19,
+     16
+    ],
+    "bottom_chain": [
+     1,
+     48,
+     1
+    ],
+    "radius": "R=20 (bottom)",
+    "vertical_chain_from_soffit": [
+     12,
+     6.1,
+     15.4,
+     39.5,
+     10
+    ],
+    "flange_edge_chain": [
+     10,
+     2
+    ],
+    "depth": 95
+   },
+   "model_parameters_cm": {
+    "soffit_width": 48,
+    "edge_width": 50,
+    "edge_level": 12,
+    "web_width": 19,
+    "lower_radius": 20,
+    "lower_tangent_level": 33.5,
+    "top_width": 120,
+    "top_edge": 10,
+    "underside_drop": 2,
+    "knee_run": 9.5,
+    "upper_radius": 10
+   },
+   "conventions": [
+    "Top haunch 9.5 x 10 cm: R=10 fillet between web and the 2 cm/41 cm sloping underside.",
+    "R=20 bottom fillet tangent to web at 33.5 cm and to the flange slope through (25, 12); tangent point 17.4 vs printed 18.1 cm.",
+    "PINNED: the web-level chain 16+19+16 = 51 cm disagrees with the bottom chain 1+48+1 = 50 cm; 50 cm used (the drawing scales 50)."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T.jpg",
+   "model_properties_mm": {
+    "area_mm2": 354420,
+    "centroid_from_soffit_mm": 552.7,
+    "I_mm4": 40028000000.0
+   },
+   "residuals_model_vs_printed": {
+    "lower_slope_tangent_level_cm": {
+     "model": 17.37,
+     "printed": 18.1
+    },
+    "upper_web_tangent_level_cm": {
+     "model": 73.01,
+     "printed": 73
+    },
+    "upper_horizontal_extent_cm": {
+     "model": 9.51,
+     "printed": 9.5
+    }
+   }
+  },
+  "T103-TIP": {
+   "name_original": "Grindă pretensionată sau postcomprimată tip T (Proiect tipizat), H=103 cm",
+   "image": "Grinzi-pretensionate-sau-postcomprimate-tip-T",
+   "drawing": "middle, \"Proiect tipizat\"",
+   "kind": "T-bulb",
+   "depth_cm": 103,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_overall": 120,
+    "top_chain": [
+     42,
+     10,
+     16,
+     10,
+     42
+    ],
+    "web_chain": [
+     18,
+     16,
+     18
+    ],
+    "bottom_chain": [
+     1,
+     50,
+     1
+    ],
+    "vertical_chain_from_soffit_as_read": [
+     12,
+     6.8,
+     16.3,
+     "47.3 (superscript illegible)",
+     10,
+     2,
+     8
+    ],
+    "depth": 103
+   },
+   "model_parameters_cm": {
+    "soffit_width": 50,
+    "edge_width": 52,
+    "edge_level": 12,
+    "web_width": 16,
+    "lower_radius": 20,
+    "lower_tangent_level": 35.1,
+    "top_width": 120,
+    "top_edge": 8,
+    "underside_drop": 2,
+    "knee_run": 10,
+    "upper_radius": 10
+   },
+   "conventions": [
+    "Chain as read (12+6.8+16.3+47.3+10+2+8 = 102.4) does not close to 103; the stroke-font superscripts are 3-4 px high. The web label is taken as 47.9 (closing). Supporting evidence: the R=20 tangent construction with web tangent at 12+6.8+16.3 = 35.1 cm puts the slope tangent at 18.79 cm vs printed 18.8.",
+    "No bottom radius printed on this drawing: R=20 assumed from the 93/95 drawing (same family).",
+    "Top haunch 10 x 10: R=10 fillet as T93."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-sau-postcomprimate-tip-T.jpg",
+   "model_properties_mm": {
+    "area_mm2": 332894,
+    "centroid_from_soffit_mm": 570.6,
+    "I_mm4": 47103000000.0
+   },
+   "residuals_model_vs_printed": {
+    "lower_slope_tangent_level_cm": {
+     "model": 18.79,
+     "printed": 18.8
+    },
+    "upper_web_tangent_level_cm": {
+     "model": 82.99,
+     "printed": 83
+    },
+    "upper_horizontal_extent_cm": {
+     "model": 9.52,
+     "printed": 10
+    }
+   }
+  },
+  "T105-EC": {
+   "name_original": "Grindă pretensionată sau postcomprimată tip T (Proiect Eurocode), H=105 cm",
+   "image": "Grinzi-pretensionate-sau-postcomprimate-tip-T",
+   "drawing": "left, \"Proiect Eurocode\"",
+   "kind": "T-bulb",
+   "depth_cm": 105,
+   "provenance": "transcribed-with-convention",
+   "printed_cm": {
+    "top_overall": 120,
+    "top_chain": [
+     41,
+     9.5,
+     19,
+     9.5,
+     41
+    ],
+    "web_chain": [
+     15.5,
+     19,
+     15.5
+    ],
+    "bottom_chain": [
+     1,
+     48,
+     1
+    ],
+    "vertical_chain_from_soffit": [
+     12,
+     6,
+     15.5,
+     49.5,
+     10,
+     2,
+     10
+    ],
+    "depth": 105
+   },
+   "model_parameters_cm": {
+    "soffit_width": 48,
+    "edge_width": 50,
+    "edge_level": 12,
+    "web_width": 19,
+    "lower_radius": 20,
+    "lower_tangent_level": 33.5,
+    "top_width": 120,
+    "top_edge": 10,
+    "underside_drop": 2,
+    "knee_run": 9.5,
+    "upper_radius": 10
+   },
+   "conventions": [
+    "No bottom radius printed: R=20 assumed (as T95-EC); tangent point 17.4 vs printed 18 cm.",
+    "Top haunch 9.5 x 10: R=10 fillet.",
+    "The drawing is drawn with a ~13 cm flange edge (scaled), but the printed chain 10+2+10 closes exactly to 105; printed values used."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-sau-postcomprimate-tip-T.jpg",
+   "model_properties_mm": {
+    "area_mm2": 373420,
+    "centroid_from_soffit_mm": 606.9,
+    "I_mm4": 51850000000.0
+   },
+   "residuals_model_vs_printed": {
+    "lower_slope_tangent_level_cm": {
+     "model": 17.37,
+     "printed": 18.0
+    },
+    "upper_web_tangent_level_cm": {
+     "model": 83.01,
+     "printed": 83
+    },
+    "upper_horizontal_extent_cm": {
+     "model": 9.51,
+     "printed": 9.5
+    }
+   }
+  },
+  "T140": {
+   "name_original": "Grindă pretensionată tip T, H=1.40 m",
+   "image": "Grinzi-pretensionate-tip-T-2",
+   "drawing": "H=140 drawing",
+   "kind": "polyline",
+   "depth_cm": 140,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 120,
+    "bottom_overall": 80,
+    "web_chain": [
+     27.5,
+     25,
+     27.5
+    ],
+    "vertical_chain_from_soffit": [
+     30,
+     25,
+     60,
+     17,
+     8
+    ],
+    "depth": 140
+   },
+   "model_parameters_cm": {
+    "bottom_width": 80,
+    "edge_level": 30,
+    "lower_segments": [
+     [
+      27.5,
+      25
+     ]
+    ],
+    "web_width": 25,
+    "upper_segments": [
+     [
+      47.5,
+      17
+     ]
+    ],
+    "top_edge": 8,
+    "top_width": 120
+   },
+   "conventions": [
+    "Top edge label read as 8 (stroke-font 8 resembles 3); only 8 closes the chain and the drawing scales 8.2 cm. Web labels read by closure (the H=140 label resembles 65; drawing scales 60)."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T-2.jpg",
+   "model_properties_mm": {
+    "area_mm2": 740500,
+    "centroid_from_soffit_mm": 677.2,
+    "I_mm4": 173970000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 60
+    }
+   }
+  },
+  "T160": {
+   "name_original": "Grindă pretensionată tip T, H=1.60 m",
+   "image": "Grinzi-pretensionate-tip-T-2",
+   "drawing": "H=160 drawing",
+   "kind": "polyline",
+   "depth_cm": 160,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 120,
+    "bottom_overall": 80,
+    "web_chain": [
+     27.5,
+     25,
+     27.5
+    ],
+    "vertical_chain_from_soffit": [
+     30,
+     25,
+     80,
+     17,
+     8
+    ],
+    "depth": 160
+   },
+   "model_parameters_cm": {
+    "bottom_width": 80,
+    "edge_level": 30,
+    "lower_segments": [
+     [
+      27.5,
+      25
+     ]
+    ],
+    "web_width": 25,
+    "upper_segments": [
+     [
+      47.5,
+      17
+     ]
+    ],
+    "top_edge": 8,
+    "top_width": 120
+   },
+   "conventions": [
+    "Top edge label read as 8 (stroke-font 8 resembles 3); only 8 closes the chain and the drawing scales 8.2 cm. Web labels read by closure (the H=140 label resembles 65; drawing scales 60)."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T-2.jpg",
+   "model_properties_mm": {
+    "area_mm2": 790500,
+    "centroid_from_soffit_mm": 768.9,
+    "I_mm4": 247290000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 80
+    }
+   }
+  },
+  "T180": {
+   "name_original": "Grindă pretensionată tip T, H=1.80 m",
+   "image": "Grinzi-pretensionate-tip-T-2",
+   "drawing": "H=180 drawing",
+   "kind": "polyline",
+   "depth_cm": 180,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 120,
+    "bottom_overall": 80,
+    "web_chain": [
+     27.5,
+     25,
+     27.5
+    ],
+    "vertical_chain_from_soffit": [
+     30,
+     25,
+     100,
+     17,
+     8
+    ],
+    "depth": 180
+   },
+   "model_parameters_cm": {
+    "bottom_width": 80,
+    "edge_level": 30,
+    "lower_segments": [
+     [
+      27.5,
+      25
+     ]
+    ],
+    "web_width": 25,
+    "upper_segments": [
+     [
+      47.5,
+      17
+     ]
+    ],
+    "top_edge": 8,
+    "top_width": 120
+   },
+   "conventions": [
+    "Top edge label read as 8 (stroke-font 8 resembles 3); only 8 closes the chain and the drawing scales 8.2 cm. Web labels read by closure (the H=140 label resembles 65; drawing scales 60)."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T-2.jpg",
+   "model_properties_mm": {
+    "area_mm2": 840500,
+    "centroid_from_soffit_mm": 861.6,
+    "I_mm4": 336330000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 100
+    }
+   }
+  },
+  "T200": {
+   "name_original": "Grindă pretensionată tip T, H=2.00 m",
+   "image": "Grinzi-pretensionate-tip-T-2",
+   "drawing": "H=200 drawing",
+   "kind": "polyline",
+   "depth_cm": 200,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 120,
+    "bottom_overall": 80,
+    "web_chain": [
+     27.5,
+     25,
+     27.5
+    ],
+    "vertical_chain_from_soffit": [
+     30,
+     25,
+     120,
+     17,
+     8
+    ],
+    "depth": 200
+   },
+   "model_parameters_cm": {
+    "bottom_width": 80,
+    "edge_level": 30,
+    "lower_segments": [
+     [
+      27.5,
+      25
+     ]
+    ],
+    "web_width": 25,
+    "upper_segments": [
+     [
+      47.5,
+      17
+     ]
+    ],
+    "top_edge": 8,
+    "top_width": 120
+   },
+   "conventions": [
+    "Top edge label read as 8 (stroke-font 8 resembles 3); only 8 closes the chain and the drawing scales 8.2 cm. Web labels read by closure (the H=140 label resembles 65; drawing scales 60)."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-T-2.jpg",
+   "model_properties_mm": {
+    "area_mm2": 890500,
+    "centroid_from_soffit_mm": 955.1,
+    "I_mm4": 442100000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 120
+    }
+   }
+  },
+  "I130": {
+   "name_original": "Grindă pretensionată tip I, H=max 1.30 m",
+   "image": "Grinzi-pretensionate-tip-I",
+   "drawing": "H=130 drawing",
+   "kind": "polyline",
+   "depth_cm": 130,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 52,
+    "top_chain": [
+     17,
+     18,
+     17
+    ],
+    "bottom_overall": 84,
+    "bottom_chain": [
+     33,
+     18,
+     33
+    ],
+    "vertical_chain_from_soffit": [
+     16.7,
+     14.1,
+     59.3,
+     9.3,
+     "max 30.6"
+    ],
+    "depth": "max 130"
+   },
+   "model_parameters_cm": {
+    "bottom_width": 84,
+    "edge_level": 16.7,
+    "lower_segments": [
+     [
+      33,
+      14.1
+     ]
+    ],
+    "web_width": 18,
+    "upper_segments": [
+     [
+      17,
+      9.3
+     ]
+    ],
+    "top_edge": 30.6,
+    "top_width": 52
+   },
+   "conventions": [
+    "Top block printed as \"max 30.6\" and depth as \"max H\": the maximum is modelled."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-I.jpg",
+   "model_properties_mm": {
+    "area_mm2": 510600,
+    "centroid_from_soffit_mm": 598.9,
+    "I_mm4": 104220000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 59.3
+    }
+   }
+  },
+  "I150": {
+   "name_original": "Grindă pretensionată tip I, H=max 1.50 m",
+   "image": "Grinzi-pretensionate-tip-I",
+   "drawing": "H=150 drawing",
+   "kind": "polyline",
+   "depth_cm": 150,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 52,
+    "top_chain": [
+     17,
+     18,
+     17
+    ],
+    "bottom_overall": 84,
+    "bottom_chain": [
+     33,
+     18,
+     33
+    ],
+    "vertical_chain_from_soffit": [
+     16.7,
+     14.1,
+     79.3,
+     9.3,
+     "max 30.6"
+    ],
+    "depth": "max 150"
+   },
+   "model_parameters_cm": {
+    "bottom_width": 84,
+    "edge_level": 16.7,
+    "lower_segments": [
+     [
+      33,
+      14.1
+     ]
+    ],
+    "web_width": 18,
+    "upper_segments": [
+     [
+      17,
+      9.3
+     ]
+    ],
+    "top_edge": 30.6,
+    "top_width": 52
+   },
+   "conventions": [
+    "Top block printed as \"max 30.6\" and depth as \"max H\": the maximum is modelled."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-I.jpg",
+   "model_properties_mm": {
+    "area_mm2": 546600,
+    "centroid_from_soffit_mm": 695.6,
+    "I_mm4": 152240000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 79.3
+    }
+   }
+  },
+  "I160": {
+   "name_original": "Grindă pretensionată tip I, H=max 1.60 m",
+   "image": "Grinzi-pretensionate-tip-I",
+   "drawing": "H=160 drawing",
+   "kind": "polyline",
+   "depth_cm": 160,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 52,
+    "top_chain": [
+     17,
+     18,
+     17
+    ],
+    "bottom_overall": 84,
+    "bottom_chain": [
+     33,
+     18,
+     33
+    ],
+    "vertical_chain_from_soffit": [
+     16.7,
+     14.1,
+     89.3,
+     9.3,
+     "max 30.6"
+    ],
+    "depth": "max 160"
+   },
+   "model_parameters_cm": {
+    "bottom_width": 84,
+    "edge_level": 16.7,
+    "lower_segments": [
+     [
+      33,
+      14.1
+     ]
+    ],
+    "web_width": 18,
+    "upper_segments": [
+     [
+      17,
+      9.3
+     ]
+    ],
+    "top_edge": 30.6,
+    "top_width": 52
+   },
+   "conventions": [
+    "Top block printed as \"max 30.6\" and depth as \"max H\": the maximum is modelled."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-I.jpg",
+   "model_properties_mm": {
+    "area_mm2": 564600,
+    "centroid_from_soffit_mm": 744.0,
+    "I_mm4": 180300000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 89.3
+    }
+   }
+  },
+  "I180": {
+   "name_original": "Grindă pretensionată tip I, H=max 1.80 m",
+   "image": "Grinzi-pretensionate-tip-I",
+   "drawing": "H=180 drawing",
+   "kind": "polyline",
+   "depth_cm": 180,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 52,
+    "top_chain": [
+     17,
+     18,
+     17
+    ],
+    "bottom_overall": 84,
+    "bottom_chain": [
+     33,
+     18,
+     33
+    ],
+    "vertical_chain_from_soffit": [
+     16.7,
+     14.1,
+     109.3,
+     9.3,
+     "max 30.6"
+    ],
+    "depth": "max 180"
+   },
+   "model_parameters_cm": {
+    "bottom_width": 84,
+    "edge_level": 16.7,
+    "lower_segments": [
+     [
+      33,
+      14.1
+     ]
+    ],
+    "web_width": 18,
+    "upper_segments": [
+     [
+      17,
+      9.3
+     ]
+    ],
+    "top_edge": 30.6,
+    "top_width": 52
+   },
+   "conventions": [
+    "Top block printed as \"max 30.6\" and depth as \"max H\": the maximum is modelled.",
+    "Overall label reads \"max 1.8?\"; chain 16.7+14.1+109.3+9.3+30.6 = 180 and the page states H=1.80 m."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-pretensionate-tip-I.jpg",
+   "model_properties_mm": {
+    "area_mm2": 600600,
+    "centroid_from_soffit_mm": 841.2,
+    "I_mm4": 244980000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 109.3
+    }
+   }
+  },
+  "TS160-TIP": {
+   "name_original": "Grindă tronsonată tip T (Proiect tipizat), H=1.60 m",
+   "image": "Grinzi-tronsonate-tip-T",
+   "drawing": "left, \"Proiect tipizat\"",
+   "kind": "polyline",
+   "depth_cm": 160,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 120,
+    "top_chain": [
+     42,
+     10,
+     16,
+     10,
+     42
+    ],
+    "bottom_chain": [
+     9.5,
+     10,
+     16,
+     10,
+     9.5
+    ],
+    "bottom_overall": 55,
+    "vertical_chain_from_soffit": [
+     16,
+     9.5,
+     18,
+     86.5,
+     10,
+     2,
+     18
+    ],
+    "depth": 160
+   },
+   "model_parameters_cm": {
+    "bottom_width": 55,
+    "edge_level": 16,
+    "lower_segments": [
+     [
+      9.5,
+      9.5
+     ],
+     [
+      10,
+      18
+     ]
+    ],
+    "web_width": 16,
+    "upper_segments": [
+     [
+      10,
+      10
+     ],
+     [
+      42,
+      2
+     ]
+    ],
+    "top_edge": 18,
+    "top_width": 120
+   },
+   "conventions": [
+    "Labels 16 / 18 / 86.5 read with the leading 1 drawn as a tick and 8 resembling 6; the reading closes to 160 and matches the drawing within 1-2 cm."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-tronsonate-tip-T.jpg",
+   "model_properties_mm": {
+    "area_mm2": 574025,
+    "centroid_from_soffit_mm": 932.0,
+    "I_mm4": 194130000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 86.5
+    }
+   }
+  },
+  "TS184-EC": {
+   "name_original": "Grindă tronsonată tip T (Proiect Eurocode), H=1.84 m",
+   "image": "Grinzi-tronsonate-tip-T",
+   "drawing": "middle, \"Proiect Eurocode\"",
+   "kind": "polyline",
+   "depth_cm": 184,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 124,
+    "top_chain": [
+     43,
+     9,
+     20,
+     9,
+     43
+    ],
+    "bottom_chain": [
+     12,
+     10,
+     20,
+     10,
+     12
+    ],
+    "bottom_overall": 64,
+    "vertical_chain_from_soffit": [
+     22,
+     12,
+     19,
+     97,
+     10,
+     2,
+     22
+    ],
+    "depth": 184
+   },
+   "model_parameters_cm": {
+    "bottom_width": 64,
+    "edge_level": 22,
+    "lower_segments": [
+     [
+      12,
+      12
+     ],
+     [
+      10,
+      19
+     ]
+    ],
+    "web_width": 20,
+    "upper_segments": [
+     [
+      9,
+      10
+     ],
+     [
+      43,
+      2
+     ]
+    ],
+    "top_edge": 22,
+    "top_width": 124
+   },
+   "conventions": [
+    "The page lists this family as H=1.80 m; the drawing prints 1.84 m (chain closes to 184) and is implemented as drawn."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-tronsonate-tip-T.jpg",
+   "model_properties_mm": {
+    "area_mm2": 772200,
+    "centroid_from_soffit_mm": 1032.0,
+    "I_mm4": 339940000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 97
+    }
+   }
+  },
+  "TS210-EC": {
+   "name_original": "Grindă tronsonată tip T (Proiect Eurocode), H=2.10 m",
+   "image": "Grinzi-tronsonate-tip-T",
+   "drawing": "right, \"Proiect Eurocode\"",
+   "kind": "polyline",
+   "depth_cm": 210,
+   "provenance": "transcribed",
+   "printed_cm": {
+    "top_overall": 122,
+    "top_chain": [
+     41,
+     10,
+     20,
+     10,
+     41
+    ],
+    "bottom_chain": [
+     16,
+     10,
+     20,
+     10,
+     16
+    ],
+    "bottom_overall": 72,
+    "vertical_chain_from_soffit": [
+     24,
+     16,
+     20,
+     120,
+     10,
+     2,
+     18
+    ],
+    "depth": 210
+   },
+   "model_parameters_cm": {
+    "bottom_width": 72,
+    "edge_level": 24,
+    "lower_segments": [
+     [
+      16,
+      16
+     ],
+     [
+      10,
+      20
+     ]
+    ],
+    "web_width": 20,
+    "upper_segments": [
+     [
+      10,
+      10
+     ],
+     [
+      41,
+      2
+     ]
+    ],
+    "top_edge": 18,
+    "top_width": 122
+   },
+   "conventions": [
+    "Labels read \"2C\" = 20 and \"13\" = 18 (stroke-font 8); only this reading closes to 210, and the drawing scales 20 and 19."
+   ],
+   "image_url": "https://www.prebet.ro/wp-content/uploads/2016/05/Grinzi-tronsonate-tip-T.jpg",
+   "model_properties_mm": {
+    "area_mm2": 828200,
+    "centroid_from_soffit_mm": 1079.6,
+    "I_mm4": 486280000000.0
+   },
+   "residuals_model_vs_printed": {
+    "web_straight_cm": {
+     "model": 120
+    }
+   }
+  }
+ }
+}

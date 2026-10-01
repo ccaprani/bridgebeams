@@ -1,0 +1,67 @@
+{
+  "family": "Y / YE Edge Beam (Ireland, beam & slab construction)",
+  "description": "Irish standard prestressed concrete Y beams (Y1-Y8, 700-1400 mm deep, 750 mm soffit width) and YE edge beams. This module implements the symmetric Y beam; YE (asymmetric edge beam with vertical outer face, Xc ~297-310 mm) is future work.",
+  "sources": {
+    "properties_and_Wf": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed pp. 32-33 (sources/banagher-bridge-beam-manual-3ed.pdf); identical tables in Concast civil brochure (sources/concast-civil-brochure.pdf) and in '05316 Precast Beam Properties.xls' (2007).",
+    "source_urls": [
+      "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+      "http://concast.ie/wp-content/uploads/2020/03/Concast_Civil.pdf"
+    ],
+    "strand_layout": "Banagher manual printed p. 33: 'Y Beam Showing All Possible Strand Locations - In all beams superimposed'."
+  },
+  "published_properties": [
+    {"section": "Y1", "depth": 700, "area": 310140, "yc": 255.0, "zt": 24.88, "zb": 43.42, "ixx_e9": 11.073, "self_weight_kN_m": 7.44, "wf": 198.1},
+    {"section": "Y2", "depth": 800, "area": 340830, "yc": 298.4, "zt": 35.07, "zb": 58.96, "ixx_e9": 17.593, "self_weight_kN_m": 8.18, "wf": 227.0},
+    {"section": "Y3", "depth": 900, "area": 374420, "yc": 346.8, "zt": 47.95, "zb": 76.51, "ixx_e9": 26.530, "self_weight_kN_m": 8.99, "wf": 255.8},
+    {"section": "Y4", "depth": 1000, "area": 410880, "yc": 399.3, "zt": 63.63, "zb": 95.72, "ixx_e9": 38.220, "self_weight_kN_m": 9.86, "wf": 284.7},
+    {"section": "Y5", "depth": 1100, "area": 450230, "yc": 455.2, "zt": 82.19, "zb": 116.40, "ixx_e9": 52.990, "self_weight_kN_m": 10.81, "wf": 313.5},
+    {"section": "Y6", "depth": 1200, "area": 492460, "yc": 514.0, "zt": 103.73, "zb": 138.45, "ixx_e9": 71.160, "self_weight_kN_m": 11.82, "wf": 342.3},
+    {"section": "Y7", "depth": 1300, "area": 537580, "yc": 575.0, "zt": 128.35, "zb": 161.83, "ixx_e9": 93.052, "self_weight_kN_m": 12.90, "wf": 371.2},
+    {"section": "Y8", "depth": 1400, "area": 585580, "yc": 637.8, "zt": 156.12, "zb": 186.56, "ixx_e9": 118.990, "self_weight_kN_m": 14.05, "wf": 400.0}
+  ],
+  "fit": {
+    "note": "Manufacturers publish Wf, properties and strand layouts but not internal dimensions. The internal geometry below is a least-squares reconstruction fitted to the published area, centroid and second moment of area of all eight sizes (24 values, direct relative errors). Units mm. Origin: mid-soffit, y up.",
+    "soffit_width": 750,
+    "wf_linear": {"wf_of_d": "-3.750 + 0.28840 * d", "flare_slope_per_side": 0.1442},
+    "params": {
+      "chamfer": 0.0,
+      "flange_depth": 203.98,
+      "waist_half_width": 168.21,
+      "waist_height": 275.62,
+      "top_block_height": 0.0
+    },
+    "rms_error_pct": 2.63,
+    "max_error_pct": 4.8,
+    "residuals_pct": {
+      "Y1": {"area": -1.55, "yc": 0.20, "ixx": -0.42},
+      "Y8": {"area": 3.47, "yc": -2.10, "ixx": -4.59}
+    }
+  },
+  "strand_rows": [
+    {"count": 13, "height": 60, "spread": 720.0, "note": "bottom row; published pitches 75|45 45 45 50 50 65 65 50 50 45 45 45|75"},
+    {"count": 14, "height": 110, "spread": 720.0},
+    {"count": 14, "height": 160, "spread": 720.0},
+    {"count": 10, "height": 210, "spread": 540.0},
+    {"count": 2, "height": 310, "spread": 240.0},
+    {"count": 2, "height": 350, "spread": 190.0},
+    {"count": 2, "height": 480, "spread": 70.0, "published": true},
+    {"count": 2, "height": 530, "spread": 84.7},
+    {"count": 2, "height": 580, "spread": 99.4, "published": true},
+    {"count": 2, "height": 630, "spread": 114.1},
+    {"count": 2, "height": 680, "spread": 128.8, "published": true},
+    {"count": 2, "height": 730, "spread": 143.5},
+    {"count": 2, "height": 780, "spread": 158.2, "published": true},
+    {"count": 2, "height": 830, "spread": 172.9},
+    {"count": 2, "height": 880, "spread": 187.6, "published": true},
+    {"count": 2, "height": 930, "spread": 202.4},
+    {"count": 2, "height": 980, "spread": 217.1, "published": true},
+    {"count": 2, "height": 1030, "spread": 231.8},
+    {"count": 2, "height": 1080, "spread": 246.5, "published": true},
+    {"count": 2, "height": 1130, "spread": 261.2},
+    {"count": 2, "height": 1180, "spread": 275.9},
+    {"count": 2, "height": 1230, "spread": 290.6},
+    {"count": 2, "height": 1280, "spread": 305.3, "published": true},
+    {"count": 2, "height": 1330, "spread": 320.0, "published": true}
+  ],
+  "strand_note": "Row heights are mm above soffit. Published spread dims (70, 100, 130, 160, 190, 220, 250, 305, 320 at rows 480-1330, marked 'published': true) imply a linear spread law spread(y) = 70 + 0.2941*(y - 480); unmarked rows are interpolated at that law. Strand positions are distributed uniformly within each row spread; manufacturers place strands at non-uniform pitches within the bottom flange rows (see 'note' on the 60 mm row). 'All beams superimposed' - filter rows to those below a beam's depth minus top cover before use."
+}

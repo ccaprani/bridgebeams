@@ -1,0 +1,1101 @@
+{
+ "schema_version": 1,
+ "family": "WIKA Beton precast bridge girders (channel, PC-I, PC-U, bulb tee)",
+ "country": "Indonesia",
+ "source_status": "producer brochure (WIKA Beton, July 2022)",
+ "source": {
+  "id": "ID-WIKA-2022",
+  "organisation": "PT Wijaya Karya Beton Tbk (WIKA Beton)",
+  "title": "Brosur WTON 2022",
+  "url": "https://crm.wika-beton.co.id/wika-crm-storage/brochure/1660206289_Brosur%20WTON%202022.pdf",
+  "local_file": "sources/expansion/asia-africa/wika-2022.pdf",
+  "sha256": "7ec2716d3c3b2575d6366c492c7f883ed9655041b7a3d1e93527baa42bbffa23",
+  "pdf_pages_1_based": {
+   "pc_u": 17,
+   "pc_i": 18,
+   "bulb_tee": 20,
+   "channel": 22
+  },
+  "printed_pages": "unnumbered brochure pages (footer 'July - 2022')",
+  "transcription": "Printed dimensions read from 600-dpi (p22) and 400-dpi (pp17/18/20) renders, 2026-09-23. Brochure drawings are vector paths; they were extracted with PyMuPDF and used for undimensioned proportions. Published A and I read visually (channel/U/bulb-tee use '.' and PC-I uses ',' as thousands separator: e.g. 'Area : 4.329 cm2' = 4329 cm2, 'Area : 2,572 cm2' = 2572 cm2)."
+ },
+ "units": {
+  "drawing": "mm (channel girder, U web/slab); cm (PC-I, PC-U H and A, bulb tee)",
+  "published_area": "cm2",
+  "published_inertia": "cm4",
+  "outline_output": "mm"
+ },
+ "translation": {
+  "GIRDER SHAPE & DIMENSION": "(English in source)"
+ },
+ "geometry_notes": [
+  "Origin at mid-soffit, y up. right_half_mm lists the right-hand outline; channel and U outlines run from the inner (void/top) centreline edge round the leg/web to the top and are mirrored as one ring.",
+  "Channel girders CG60-CG100 (fitted-reconstruction): printed width chain, 15/1170/15 top recess, 50/150/leg depth chain and leg taper are exact; the side shear key, inner haunch rise and corner chamfers are not dimensioned and use common fitted values (bottom chamfers 5 x 5 mm, haunch 50 x 50 mm, key recess 35 mm with 25 mm rises). Residuals <=0.05% A and <=0.10% I.",
+  "PC-I H90-H210, PC-U H120-H230, bulb tee H220 (estimate): only H, top/bottom widths and web are printed; see method notes per family. Their published A/I are reproduced by construction (PC-I, bulb tee) or within 1.3% (PC-U global fit). These are not manufacturer drawings."
+ ],
+ "channel": {
+  "pdf_page": 22,
+  "fit": {
+   "bottom_chamfer_mm": 5,
+   "inner_haunch_vertical_mm": 50,
+   "key_recess_depth_mm": 35,
+   "key_lower_rise_mm": 25,
+   "key_upper_rise_mm": 25,
+   "top_recess_mm": 15,
+   "method": "Common values for all four sizes chosen by least squares on published A and I (unrounded optimum c=4.1, h=40.1, k=31.7 mm, max residual 0.04%); rounded to drawing-like values. Drawn values scaled from the vector outline: chamfers ~20, haunch 50 x 50, key 25 mm, which give A +0.14..+0.29% and I -0.28..-0.71%."
+  },
+  "sections": [
+   {
+    "size": "CG60",
+    "source_designation": "CG 60 x 120",
+    "depth_mm": 600,
+    "width_mm": 1200,
+    "top_width_mm": 1170,
+    "leg_soffit_width_mm": 240,
+    "leg_taper_mm": 20,
+    "void_top_width_mm": 580,
+    "printed_void_top_width_mm": 580,
+    "published_area_cm2": 4329.0,
+    "published_inertia_cm4": 1293103.0,
+    "right_half_mm": [
+     [
+      290.0,
+      400
+     ],
+     [
+      340,
+      350
+     ],
+     [
+      360,
+      5
+     ],
+     [
+      365,
+      0
+     ],
+     [
+      595,
+      0
+     ],
+     [
+      600,
+      5
+     ],
+     [
+      600,
+      400
+     ],
+     [
+      565,
+      425
+     ],
+     [
+      565,
+      525
+     ],
+     [
+      585,
+      550
+     ],
+     [
+      585,
+      600
+     ]
+    ],
+    "provenance": "fitted-reconstruction",
+    "residuals": {
+     "area_mm2": 432725.0,
+     "yb_mm": 361.68,
+     "ixx_mm4": 12917965794,
+     "area_rel": -0.000404,
+     "ixx_rel": -0.00101
+    }
+   },
+   {
+    "size": "CG70",
+    "source_designation": "CG 70 x 120",
+    "depth_mm": 700,
+    "width_mm": 1200,
+    "top_width_mm": 1170,
+    "leg_soffit_width_mm": 235,
+    "leg_taper_mm": 25,
+    "void_top_width_mm": 580,
+    "printed_void_top_width_mm": 580,
+    "published_area_cm2": 4806.0,
+    "published_inertia_cm4": 2023171.0,
+    "right_half_mm": [
+     [
+      290.0,
+      500
+     ],
+     [
+      340,
+      450
+     ],
+     [
+      365,
+      5
+     ],
+     [
+      370,
+      0
+     ],
+     [
+      595,
+      0
+     ],
+     [
+      600,
+      5
+     ],
+     [
+      600,
+      500
+     ],
+     [
+      565,
+      525
+     ],
+     [
+      565,
+      625
+     ],
+     [
+      585,
+      650
+     ],
+     [
+      585,
+      700
+     ]
+    ],
+    "provenance": "fitted-reconstruction",
+    "residuals": {
+     "area_mm2": 480450.0,
+     "yb_mm": 420.89,
+     "ixx_mm4": 20212474023,
+     "area_rel": -0.000312,
+     "ixx_rel": -0.000951
+    }
+   },
+   {
+    "size": "CG80",
+    "source_designation": "CG 80 x 120",
+    "depth_mm": 800,
+    "width_mm": 1200,
+    "top_width_mm": 1170,
+    "leg_soffit_width_mm": 230,
+    "leg_taper_mm": 30,
+    "void_top_width_mm": 580,
+    "printed_void_top_width_mm": 580,
+    "published_area_cm2": 5274.0,
+    "published_inertia_cm4": 2968087.0,
+    "right_half_mm": [
+     [
+      290.0,
+      600
+     ],
+     [
+      340,
+      550
+     ],
+     [
+      370,
+      5
+     ],
+     [
+      375,
+      0
+     ],
+     [
+      595,
+      0
+     ],
+     [
+      600,
+      5
+     ],
+     [
+      600,
+      600
+     ],
+     [
+      565,
+      625
+     ],
+     [
+      565,
+      725
+     ],
+     [
+      585,
+      750
+     ],
+     [
+      585,
+      800
+     ]
+    ],
+    "provenance": "fitted-reconstruction",
+    "residuals": {
+     "area_mm2": 527175.0,
+     "yb_mm": 479.27,
+     "ixx_mm4": 29653986096,
+     "area_rel": -0.000427,
+     "ixx_rel": -0.000906
+    }
+   },
+   {
+    "size": "CG100",
+    "source_designation": "CG 100 x 120",
+    "depth_mm": 1000,
+    "width_mm": 1200,
+    "top_width_mm": 1170,
+    "leg_soffit_width_mm": 230,
+    "leg_taper_mm": 40,
+    "void_top_width_mm": 560,
+    "printed_void_top_width_mm": 580,
+    "published_area_cm2": 6334.0,
+    "published_inertia_cm4": 5717699.0,
+    "right_half_mm": [
+     [
+      280.0,
+      800
+     ],
+     [
+      330,
+      750
+     ],
+     [
+      370,
+      5
+     ],
+     [
+      375,
+      0
+     ],
+     [
+      595,
+      0
+     ],
+     [
+      600,
+      5
+     ],
+     [
+      600,
+      800
+     ],
+     [
+      565,
+      825
+     ],
+     [
+      565,
+      925
+     ],
+     [
+      585,
+      950
+     ],
+     [
+      585,
+      1000
+     ]
+    ],
+    "provenance": "fitted-reconstruction",
+    "residuals": {
+     "area_mm2": 633625.0,
+     "yb_mm": 589.84,
+     "ixx_mm4": 57149458872,
+     "area_rel": 0.000355,
+     "ixx_rel": -0.000482
+    },
+    "note": "Printed chain 230+40+50+580+50+40+230 sums to 1220, not the printed 1200 width; the vector drawing shows a 560 mm void top (50 x 50 haunch), which is used."
+   }
+  ]
+ },
+ "pc_i": {
+  "pdf_page": 18,
+  "method": "Brochure vector outline (non-uniformly scaled: x/y = 1.05-1.07) rescaled so the printed H, top, bottom and web widths are exact; top-flange depths (from top) and bottom-flange heights (from soffit, chamfer excluded) then scaled by two factors solved for the published A and I exactly.",
+  "sections": [
+   {
+    "size": "H90",
+    "source_designation": "PC I H-90",
+    "depth_mm": 900,
+    "top_width_mm": 350,
+    "bottom_width_mm": 650,
+    "web_width_mm": 170,
+    "published_area_cm2": 2572.0,
+    "published_inertia_cm4": 2266607.0,
+    "fit_top_depth_scale": 0.9117,
+    "fit_bottom_depth_scale": 1.0155,
+    "right_half_mm": [
+     [
+      292.7,
+      0
+     ],
+     [
+      325.0,
+      17.4
+     ],
+     [
+      325.0,
+      125.3
+     ],
+     [
+      85.0,
+      225.4
+     ],
+     [
+      85.0,
+      751.9
+     ],
+     [
+      175.0,
+      819.4
+     ],
+     [
+      175.0,
+      900
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 257189.0,
+     "yb_mm": 364.48,
+     "ixx_mm4": 22666396384,
+     "area_rel": -4.3e-05,
+     "ixx_rel": 1.4e-05
+    }
+   },
+   {
+    "size": "H125",
+    "source_designation": "PC I H-125",
+    "depth_mm": 1250,
+    "top_width_mm": 350,
+    "bottom_width_mm": 650,
+    "web_width_mm": 170,
+    "published_area_cm2": 3167.0,
+    "published_inertia_cm4": 5496255.0,
+    "fit_top_depth_scale": 0.8967,
+    "fit_bottom_depth_scale": 1.0003,
+    "right_half_mm": [
+     [
+      292.6,
+      0
+     ],
+     [
+      325.0,
+      17.7
+     ],
+     [
+      325.0,
+      125.3
+     ],
+     [
+      85.0,
+      225.6
+     ],
+     [
+      85.0,
+      1102.1
+     ],
+     [
+      175.0,
+      1169.5
+     ],
+     [
+      175.0,
+      1250
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 316698.5,
+     "yb_mm": 520.64,
+     "ixx_mm4": 54962522745,
+     "area_rel": -5e-06,
+     "ixx_rel": -0.0
+    }
+   },
+   {
+    "size": "H160",
+    "source_designation": "PC I H-160",
+    "depth_mm": 1600,
+    "top_width_mm": 550,
+    "bottom_width_mm": 650,
+    "web_width_mm": 180,
+    "published_area_cm2": 4773.0,
+    "published_inertia_cm4": 14611104.0,
+    "fit_top_depth_scale": 0.9199,
+    "fit_bottom_depth_scale": 1.0108,
+    "right_half_mm": [
+     [
+      292.6,
+      0
+     ],
+     [
+      325.0,
+      17.4
+     ],
+     [
+      325.0,
+      225.0
+     ],
+     [
+      90.0,
+      325.0
+     ],
+     [
+      90.0,
+      1402.0
+     ],
+     [
+      275.0,
+      1470.3
+     ],
+     [
+      275.0,
+      1600
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 477310.7,
+     "yb_mm": 713.01,
+     "ixx_mm4": 146113664754,
+     "area_rel": 2.3e-05,
+     "ixx_rel": 1.8e-05
+    }
+   },
+   {
+    "size": "H170",
+    "source_designation": "PC I H-170",
+    "depth_mm": 1700,
+    "top_width_mm": 800,
+    "bottom_width_mm": 700,
+    "web_width_mm": 200,
+    "published_area_cm2": 6695.0,
+    "published_inertia_cm4": 23641085.0,
+    "fit_top_depth_scale": 1.015,
+    "fit_bottom_depth_scale": 0.9976,
+    "right_half_mm": [
+     [
+      317.7,
+      0
+     ],
+     [
+      350.0,
+      17.6
+     ],
+     [
+      350.0,
+      248.5
+     ],
+     [
+      100.0,
+      497.2
+     ],
+     [
+      100.0,
+      1376.3
+     ],
+     [
+      400.0,
+      1497.7
+     ],
+     [
+      400.0,
+      1629.3
+     ],
+     [
+      300.0,
+      1629.3
+     ],
+     [
+      300.0,
+      1700
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 669516.5,
+     "yb_mm": 819.46,
+     "ixx_mm4": 236422733757,
+     "area_rel": 2.5e-05,
+     "ixx_rel": 5e-05
+    }
+   },
+   {
+    "size": "H210",
+    "source_designation": "PC I H-210",
+    "depth_mm": 2100,
+    "top_width_mm": 800,
+    "bottom_width_mm": 700,
+    "web_width_mm": 200,
+    "published_area_cm2": 7495.0,
+    "published_inertia_cm4": 41087033.0,
+    "fit_top_depth_scale": 1.0097,
+    "fit_bottom_depth_scale": 0.9957,
+    "right_half_mm": [
+     [
+      317.6,
+      0
+     ],
+     [
+      350.0,
+      17.6
+     ],
+     [
+      350.0,
+      248.9
+     ],
+     [
+      100.0,
+      497.8
+     ],
+     [
+      100.0,
+      1776.9
+     ],
+     [
+      400.0,
+      1898.1
+     ],
+     [
+      400.0,
+      2029.3
+     ],
+     [
+      300.0,
+      2029.3
+     ],
+     [
+      300.0,
+      2100
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 749464.8,
+     "yb_mm": 1010.92,
+     "ixx_mm4": 410848906305,
+     "area_rel": -4.7e-05,
+     "ixx_rel": -5.2e-05
+    }
+   }
+  ]
+ },
+ "bulb_tee": {
+  "pdf_page": 20,
+  "method": "Brochure vector half-outlines are strongly non-uniform (x scale 23.6-35.8 mm/pt for web/bottom/top vs y 33.4 mm/pt; raw area +22%). Vertical proportions from the drawing (y scale), printed widths exact, flange junction x from the top-flange scale; top-flange depths and bottom-bulb heights scaled by two factors solved for published A and I.",
+  "sections": [
+   {
+    "size": "H220",
+    "source_designation": "PC Bulb Tee H-220",
+    "depth_mm": 2200,
+    "top_width_mm": 2400,
+    "bottom_width_mm": 1200,
+    "web_width_mm": 250,
+    "published_area_cm2": 12925,
+    "published_inertia_cm4": 90106159,
+    "fit_top_depth_scale": 0.8775,
+    "fit_bottom_depth_scale": 0.6137,
+    "right_half_mm": [
+     [
+      600,
+      0
+     ],
+     [
+      600,
+      287.6
+     ],
+     [
+      125,
+      493.7
+     ],
+     [
+      125,
+      1825.1
+     ],
+     [
+      377.4,
+      2024.6
+     ],
+     [
+      1200,
+      2092.8
+     ],
+     [
+      1200,
+      2200
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 1292480.0,
+     "yb_mm": 1129.21,
+     "ixx_mm4": 901038474840,
+     "area_rel": -1.5e-05,
+     "ixx_rel": -2.6e-05
+    }
+   }
+  ]
+ },
+ "pc_u": {
+  "pdf_page": 17,
+  "method": "One drawing for six sizes. Vector outline scaled as U-185/190 (its 300 mm bottom slab then matches the printed 300); printed 300 mm slab and 300 mm (horizontal, vertical upper part) web kept. Sizes: top-flange zone (287 mm) fixed at the top, bottom zone (to the inner haunch, 375 mm) fixed, web region between stretched to H; webs and flanges translate with the top width A (soffit fixed). Two common factors fitted by least squares over all 12 A/I values: top-zone depth scale 0.86 and soffit half-width -85 mm. Per-size exact fits were rejected because they need implausible (0.2-0.35) top-flange scales for H165-H230.",
+  "fit": {
+   "top_zone_depth_scale": 0.86,
+   "soffit_half_width_shift_mm": -85.0
+  },
+  "sections": [
+   {
+    "size": "H120",
+    "source_designation": "PC U H-120",
+    "depth_mm": 1200,
+    "top_width_mm": 1720,
+    "published_area_cm2": 9178.0,
+    "published_inertia_cm4": 12633291.0,
+    "right_half_mm": [
+     [
+      464.5,
+      0.0
+     ],
+     [
+      493.8,
+      18.9
+     ],
+     [
+      653.7,
+      749.4
+     ],
+     [
+      653.7,
+      953.0
+     ],
+     [
+      860.0,
+      1044.4
+     ],
+     [
+      860.0,
+      1135.9
+     ],
+     [
+      777.6,
+      1135.9
+     ],
+     [
+      777.6,
+      1200.0
+     ],
+     [
+      437.3,
+      1200.0
+     ],
+     [
+      437.3,
+      1135.9
+     ],
+     [
+      354.9,
+      1135.9
+     ],
+     [
+      354.9,
+      749.4
+     ],
+     [
+      264.5,
+      375.4
+     ],
+     [
+      216.0,
+      300.4
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 919875.1,
+     "yb_mm": 566.11,
+     "ixx_mm4": 126529135743,
+     "area_rel": 0.002261,
+     "ixx_rel": 0.001553
+    }
+   },
+   {
+    "size": "H140",
+    "source_designation": "PC U H-140",
+    "depth_mm": 1400,
+    "top_width_mm": 1720,
+    "published_area_cm2": 10366.0,
+    "published_inertia_cm4": 19634469.0,
+    "right_half_mm": [
+     [
+      464.5,
+      0.0
+     ],
+     [
+      493.8,
+      18.9
+     ],
+     [
+      653.7,
+      878.8
+     ],
+     [
+      653.7,
+      1153.0
+     ],
+     [
+      860.0,
+      1244.4
+     ],
+     [
+      860.0,
+      1335.9
+     ],
+     [
+      777.6,
+      1335.9
+     ],
+     [
+      777.6,
+      1400.0
+     ],
+     [
+      437.3,
+      1400.0
+     ],
+     [
+      437.3,
+      1335.9
+     ],
+     [
+      354.9,
+      1335.9
+     ],
+     [
+      354.9,
+      878.8
+     ],
+     [
+      264.5,
+      375.4
+     ],
+     [
+      216.0,
+      300.4
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 1030401.8,
+     "yb_mm": 664.75,
+     "ixx_mm4": 195830211341,
+     "area_rel": -0.005979,
+     "ixx_rel": -0.00262
+    }
+   },
+   {
+    "size": "H165",
+    "source_designation": "PC U H-165",
+    "depth_mm": 1650,
+    "top_width_mm": 1900,
+    "published_area_cm2": 11878.0,
+    "published_inertia_cm4": 31358776.0,
+    "right_half_mm": [
+     [
+      464.5,
+      0.0
+     ],
+     [
+      493.8,
+      18.9
+     ],
+     [
+      743.7,
+      1040.7
+     ],
+     [
+      743.7,
+      1403.0
+     ],
+     [
+      950.0,
+      1494.4
+     ],
+     [
+      950.0,
+      1585.9
+     ],
+     [
+      867.6,
+      1585.9
+     ],
+     [
+      867.6,
+      1650.0
+     ],
+     [
+      527.3,
+      1650.0
+     ],
+     [
+      527.3,
+      1585.9
+     ],
+     [
+      444.9,
+      1585.9
+     ],
+     [
+      444.9,
+      1040.7
+     ],
+     [
+      264.5,
+      375.4
+     ],
+     [
+      216.0,
+      300.4
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 1200634.7,
+     "yb_mm": 781.33,
+     "ixx_mm4": 315257771471,
+     "area_rel": 0.010805,
+     "ixx_rel": 0.005325
+    }
+   },
+   {
+    "size": "H185",
+    "source_designation": "PC U H-185",
+    "depth_mm": 1850,
+    "top_width_mm": 1900,
+    "published_area_cm2": 13066.0,
+    "published_inertia_cm4": 43340406.0,
+    "right_half_mm": [
+     [
+      464.5,
+      0.0
+     ],
+     [
+      493.8,
+      18.9
+     ],
+     [
+      743.7,
+      1170.2
+     ],
+     [
+      743.7,
+      1603.0
+     ],
+     [
+      950.0,
+      1694.4
+     ],
+     [
+      950.0,
+      1785.9
+     ],
+     [
+      867.6,
+      1785.9
+     ],
+     [
+      867.6,
+      1850.0
+     ],
+     [
+      527.3,
+      1850.0
+     ],
+     [
+      527.3,
+      1785.9
+     ],
+     [
+      444.9,
+      1785.9
+     ],
+     [
+      444.9,
+      1170.2
+     ],
+     [
+      264.5,
+      375.4
+     ],
+     [
+      216.0,
+      300.4
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 1311154.5,
+     "yb_mm": 881.46,
+     "ixx_mm4": 434192431329,
+     "area_rel": 0.003486,
+     "ixx_rel": 0.001819
+    }
+   },
+   {
+    "size": "H210",
+    "source_designation": "PC U H-210",
+    "depth_mm": 2100,
+    "top_width_mm": 1900,
+    "published_area_cm2": 14678.0,
+    "published_inertia_cm4": 62328088.0,
+    "right_half_mm": [
+     [
+      464.5,
+      0.0
+     ],
+     [
+      493.8,
+      18.9
+     ],
+     [
+      743.7,
+      1332.0
+     ],
+     [
+      743.7,
+      1853.0
+     ],
+     [
+      950.0,
+      1944.4
+     ],
+     [
+      950.0,
+      2035.9
+     ],
+     [
+      867.6,
+      2035.9
+     ],
+     [
+      867.6,
+      2100.0
+     ],
+     [
+      527.3,
+      2100.0
+     ],
+     [
+      527.3,
+      2035.9
+     ],
+     [
+      444.9,
+      2035.9
+     ],
+     [
+      444.9,
+      1332.0
+     ],
+     [
+      264.5,
+      375.4
+     ],
+     [
+      216.0,
+      300.4
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 1449309.4,
+     "yb_mm": 1007.58,
+     "ixx_mm4": 618451155601,
+     "area_rel": -0.012597,
+     "ixx_rel": -0.007749
+    }
+   },
+   {
+    "size": "H230",
+    "source_designation": "PC U H-230",
+    "depth_mm": 2300,
+    "top_width_mm": 2080,
+    "published_area_cm2": 15936.0,
+    "published_inertia_cm4": 80742448.0,
+    "right_half_mm": [
+     [
+      464.5,
+      0.0
+     ],
+     [
+      493.8,
+      18.9
+     ],
+     [
+      833.7,
+      1461.5
+     ],
+     [
+      833.7,
+      2053.0
+     ],
+     [
+      1040.0,
+      2144.4
+     ],
+     [
+      1040.0,
+      2235.9
+     ],
+     [
+      957.6,
+      2235.9
+     ],
+     [
+      957.6,
+      2300.0
+     ],
+     [
+      617.3,
+      2300.0
+     ],
+     [
+      617.3,
+      2235.9
+     ],
+     [
+      534.9,
+      2235.9
+     ],
+     [
+      534.9,
+      1461.5
+     ],
+     [
+      264.5,
+      375.4
+     ],
+     [
+      216.0,
+      300.4
+     ]
+    ],
+    "provenance": "estimate",
+    "residuals": {
+     "area_mm2": 1591914.1,
+     "yb_mm": 1099.19,
+     "ixx_mm4": 807544316917,
+     "area_rel": -0.001058,
+     "ixx_rel": 0.000148
+    }
+   }
+  ]
+ }
+}

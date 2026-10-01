@@ -1,0 +1,15 @@
+{
+  "family": "Thai DOH standard precast prestressed I-girders (spans <= 20 m)",
+  "description": "Thailand Department of Highways standard-drawing I-girders (2015 Edition standard drawings, IG-101..IG-206), HL-93 loading. The 20 m girder (IG-205) is fully dimensioned on the official sheet; the 15 m girder (IG-103) documents the family's stack topology (top flange 100 + haunch 75 + web + splay 150 + bottom flange 200 = 750).",
+  "sources": {
+    "drawings": "DOH Standard Drawing 2015 Edition (2018), Part 2 Section 1: IG-101..IG-206. Downloaded via Wayback snapshot 2024-08-06 of https://doh.go.th/uploads/tinymce/service/bid/doc_bid/STANDARD%20DRAWING%202015%20EDITION_2018.pdf",
+    "source_urls": [
+      "https://doh.go.th/uploads/tinymce/service/bid/doc_bid/STANDARD%20DRAWING%202015%20EDITION_2018.pdf",
+      "https://web.archive.org/web/20240806064200/https://doh.go.th/uploads/tinymce/service/bid/doc_bid/STANDARD%20DRAWING%202015%20EDITION_2018.pdf"
+    ],
+    "note": "15 m girder (IG-103 Sections C-C/D-D): depth 750, top flange 450x100, haunch 75, web ~175 clear 225, splay 150, bottom flange 500x200 edge - exact. 20 m girder (IG-205): depth 1200, top flange 450x100, haunch 75, web 175 thick, bottom flange 500 wide x 200 edge; web/splay split of the remaining 825 mm modelled as plain web (<=1% area effect). Strand layout (IG-206): 28 x 12.7 mm 7-wire strands (18 bonded, 10 debonded). PA Concrete marketing dims quote a 500 top flange vs the official drawing 450 - drawing governs."
+  },
+  "published_properties": [
+    {"section": "DOH-IG-20", "span_m": 20, "depth": 1200, "top_flange_width": 450, "top_flange_thickness": 100, "haunch_height": 75, "web_width": 175, "bottom_flange_width": 500, "bottom_flange_edge_thickness": 200}
+  ]
+}

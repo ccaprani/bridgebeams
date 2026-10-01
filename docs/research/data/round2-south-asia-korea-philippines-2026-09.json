@@ -1,0 +1,286 @@
+{
+  "topic": "south-asia-korea-philippines",
+  "date": "2026-09-23",
+  "scope": "Round 2 extraction for Pakistan, Philippines, Sri Lanka, Bangladesh, Bhutan, Maldives, Afghanistan, plus new sources for India, Korea and Nepal.",
+  "implemented": [
+    {
+      "class": "bridgebeams.pk.NhaStandardIGirderSection",
+      "sizes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "provenance": "transcribed-with-convention",
+      "source_status": "NHA standard (drawings STANDARD/04-06, March 2005) as reproduced in a 2025 journal table",
+      "url": "https://irispublishers.com/ctcse/pdf/CTCSE.MS.ID.000766.pdf",
+      "local_file": "sources/expansion/round2/pk/uet-nha-a-h.pdf",
+      "sha256": "0037dfe0f37d268cccd428401d0062341a7f586d93c5265b062f329656adb415",
+      "pdf_page": 2,
+      "data": "src/bridgebeams/pk/data/nha_standard_i.json"
+    },
+    {
+      "class": "bridgebeams.pk.LsmPscIGirderSection",
+      "sizes": [
+        "20m",
+        "30m",
+        "45m"
+      ],
+      "provenance": "transcribed",
+      "source_status": "NHA project structural drawings, December 2017",
+      "url": "https://nha.gov.pk/wp-content/uploads/2018/01/Drawing-24-1-2018.pdf",
+      "local_file": "sources/expansion/round2/pk/nha-lsm-drawings.pdf",
+      "sha256": "5b0214633d925fa36b0bdff044243936a9371a6286cf1bc8abdf86c66ea36987",
+      "pdf_pages": {
+        "20m": 177,
+        "30m": 139,
+        "45m": 142
+      },
+      "data": "src/bridgebeams/pk/data/lsm_psc_i.json"
+    },
+    {
+      "class": "bridgebeams.kr.r2_improved_psc_beam.ImprovedPscBeamSection",
+      "sizes": [
+        "H1400",
+        "H1700",
+        "H2000"
+      ],
+      "provenance": {
+        "H1400": "transcribed-with-convention",
+        "H1700": "transcribed-with-convention",
+        "H2000": "transcribed"
+      },
+      "source_status": "MLTM regional standard drawings, October 2008",
+      "url": "https://www.codil.or.kr/filebank/original/RK/OTMCRK110390//OTMCRK110390.pdf",
+      "local_file": "sources/expansion/round2/kr/codil-improved-psc-beam-std.pdf",
+      "sha256": "15bdc505d5bc2bcc46d9b61c0db42c25cc367284470983f943711222395be1ff",
+      "pdf_pages": [
+        5,
+        12,
+        19,
+        27,
+        34,
+        41
+      ],
+      "data": "src/bridgebeams/kr/data/r2_improved_psc_beam.json"
+    },
+    {
+      "class": "bridgebeams.lk.RdaTB505BeamSection",
+      "sizes": [
+        "TB505"
+      ],
+      "provenance": "transcribed",
+      "source_status": "RDA standard beam drawing T/B/505, as reproduced on RDA tender drawings (2024-2025)",
+      "url": "https://rda.gov.lk/rda_project_new/uploads/procurement/50/attchment_172287482193214602_tender%20drawing%2018-3.pdf",
+      "local_file": "sources/expansion/round2/lk/rda-tender-18-3.pdf",
+      "sha256": "656eb33e683e129f6770d0ee8105685292e14154a23c05c142f9526d9c0faad9",
+      "pdf_page": 10,
+      "confirmation_url": "https://rda.gov.lk/rda_project_new/uploads/procurement/403/attchment_174176038339765831_Drawings%2019.pdf",
+      "confirmation_sha256": "cfd21fa2fbc1fde1a812a58785351c14946c38623d884dd5f6c1a43db93ade59",
+      "data": "src/bridgebeams/lk/data/rda_tb505.json"
+    },
+    {
+      "class": "bridgebeams.bd.JicaPcIGirderSection",
+      "sizes": [
+        "25m",
+        "30m",
+        "35m",
+        "40m"
+      ],
+      "provenance": "fitted-reconstruction",
+      "source_status": "JICA Preparatory Survey Final Report (preliminary design)",
+      "url": "https://openjicareport.jica.go.jp/pdf/12231726_02.pdf",
+      "local_file": "sources/expansion/round2/bd/jica-western-bridges.pdf",
+      "sha256": "aac3ef7ed2af635134c6be35c165c8fe3547c40659ae869a90bd8c7ef68653aa",
+      "pdf_page": 27,
+      "printed_page": "7-27",
+      "data": "src/bridgebeams/bd/data/jica_wbbip_pc_i.json"
+    },
+    {
+      "class": "bridgebeams.india.r2_delhi_vadodara_psc_i.DelhiVadodaraPscISection",
+      "sizes": [
+        "30m"
+      ],
+      "provenance": "estimate",
+      "source_status": "NHAI project tender drawing, July 2019",
+      "url": "https://nhai.gov.in/nhai/sites/default/files/Agreements_document/pkg2-VOL-III.pdf",
+      "local_file": "sources/expansion/india-followup/nhai-project.pdf",
+      "sha256": "828db4e970519efa152ae40f8326f235d7fccfea775869d8e81ce68fb2a9cc0f",
+      "pdf_page": 41,
+      "data": "src/bridgebeams/india/data/r2_delhi_vadodara_psc_i.json",
+      "integration_note": "Removed at integration: duplicate of bridgebeams.india.nhai_i_girders.DelhiVadodaraPscISection (same PDF p41, identical geometry).",
+      "implemented": false
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://irispublishers.com/ctcse/pdf/CTCSE.MS.ID.000766.pdf",
+      "local_file": "sources/expansion/round2/pk/uet-nha-a-h.pdf",
+      "sha256": "0037dfe0f37d268cccd428401d0062341a7f586d93c5265b062f329656adb415",
+      "note": "3-page PDF (pp1-3 of 10)"
+    },
+    {
+      "url": "https://nha.gov.pk/wp-content/uploads/2018/01/Drawing-24-1-2018.pdf",
+      "local_file": "sources/expansion/round2/pk/nha-lsm-drawings.pdf",
+      "sha256": "5b0214633d925fa36b0bdff044243936a9371a6286cf1bc8abdf86c66ea36987"
+    },
+    {
+      "url": "https://openjicareport.jica.go.jp/pdf/11879053_02.pdf",
+      "local_file": "sources/expansion/round2/pk/jica-wbb-02.pdf",
+      "sha256": "8389b5394432aaf4b4f2ddb5c60f27c8c151d4cf1a1448c01fe9605012476f84",
+      "note": "Muzaffarabad West Bank Bypass; cites NHA SBS Jan 2005; no girder dimensions"
+    },
+    {
+      "url": "https://www.codil.or.kr/filebank/original/RK/OTMCRK110390//OTMCRK110390.pdf",
+      "local_file": "sources/expansion/round2/kr/codil-improved-psc-beam-std.pdf",
+      "sha256": "15bdc505d5bc2bcc46d9b61c0db42c25cc367284470983f943711222395be1ff"
+    },
+    {
+      "url": "https://www.codil.or.kr/filebank/original/MA/OTMCMA500808/OTMCMA500808.pdf",
+      "local_file": "sources/expansion/round2/kr/codil-30m.pdf",
+      "sha256": "8937673e525e2490088ea7776cdf111a761ea96abc48e2a7242345b36ecc82a4",
+      "note": "도로교의 내하력평가 실무매뉴얼 (MOCT 2002); PSC-I tendon-work sheets give only H/BU/BB"
+    },
+    {
+      "url": "https://rda.gov.lk/rda_project_new/uploads/procurement/50/attchment_172287482193214602_tender%20drawing%2018-3.pdf",
+      "local_file": "sources/expansion/round2/lk/rda-tender-18-3.pdf",
+      "sha256": "656eb33e683e129f6770d0ee8105685292e14154a23c05c142f9526d9c0faad9"
+    },
+    {
+      "url": "https://rda.gov.lk/rda_project_new/uploads/procurement/403/attchment_174176038339765831_Drawings%2019.pdf",
+      "local_file": "sources/expansion/round2/lk/rda-drawings-19.pdf",
+      "sha256": "cfd21fa2fbc1fde1a812a58785351c14946c38623d884dd5f6c1a43db93ade59"
+    },
+    {
+      "url": "https://openjicareport.jica.go.jp/pdf/11829132_03.pdf",
+      "local_file": "sources/expansion/round2/lk/jica-eastern-trunk-ch12.pdf",
+      "sha256": "0c260f32d49d24a7209294fd4f70df39a68f00798f718fae0f30f5858089609d",
+      "note": "mentions standard pre-tension PC girders widely used in Sri Lanka; no sections"
+    },
+    {
+      "url": "https://openjicareport.jica.go.jp/pdf/12231726_02.pdf",
+      "local_file": "sources/expansion/round2/bd/jica-western-bridges.pdf",
+      "sha256": "aac3ef7ed2af635134c6be35c165c8fe3547c40659ae869a90bd8c7ef68653aa"
+    },
+    {
+      "url": "https://rhd.gov.bd/Documents/BridgeDesign/BridgeDesignStandards/Index.pdf",
+      "local_file": "sources/expansion/round2/bd/rhd-bds-index.pdf",
+      "sha256": "624b7cef6be9a75799e20d1660e87a913b2c7a4e5b119e896f3c1b76ef52ea51",
+      "note": "RHD Bridge Design Standards Jan 2004; criteria only, no girder sections"
+    },
+    {
+      "url": "https://eia.emb.gov.ph/wp-content/uploads/2022/02/EIS.pdf",
+      "local_file": "sources/expansion/round2/ph/laguna-eis.pdf",
+      "sha256": "34ebffde9d2269e6d986a9984b5d68c008fd338315e52ef67250f12c64b5fa2e",
+      "note": "PDF p120 Figures 1-48/1-49 are undimensioned deck schematics"
+    },
+    {
+      "url": "https://openjicareport.jica.go.jp/pdf/12185252_03.pdf",
+      "local_file": "sources/expansion/round2/ph/jica-12185252-03.pdf",
+      "sha256": "82679c091bed18dc25d37c7f369678191d4ecf95ecda38529addac760cd92947",
+      "note": "Davao bypass structural design: PSCG 'AASHTO girder type V' named, no dimensions"
+    }
+  ],
+  "leads_not_implemented": [
+    {
+      "country": "PK",
+      "lead": "NHA 'Standardization of Bridge Superstructures' (Jan/Mar 2005), STANDARD/04-06 original sheets",
+      "status": "blocked",
+      "reason": "Only a login-gated Scribd mirror was found. The original is needed to confirm the A-H outline convention against the conflicting Figure 1."
+    },
+    {
+      "country": "PH",
+      "lead": "DPWH Odiongan Bridge 2 AASHTO Type VI drawing (bid bulletin PDF)",
+      "status": "blocked",
+      "reason": "dpwh.gov.ph returns an Incapsula bot challenge to curl and WebFetch; not bypassed"
+    },
+    {
+      "country": "PH",
+      "lead": "DPWH POW 17J00028 'AASHTO Type IV-B' plans",
+      "status": "blocked",
+      "reason": "same Incapsula protection"
+    },
+    {
+      "country": "PH",
+      "lead": "Laguna Lakeshore EIS Figures 1-48/1-49",
+      "status": "not-extractable",
+      "reason": "undimensioned schematics (PDF p120)"
+    },
+    {
+      "country": "PH",
+      "lead": "studylib 'AASHTO Type IV-A 30m span girder' fabrication drawing",
+      "status": "blocked",
+      "reason": "HTTP 429; third-party upload"
+    },
+    {
+      "country": "KR",
+      "lead": "CODIL 2005 PSC I 거더교의 최적설계 및 표준화 연구 (KEC)",
+      "status": "not-retrieved",
+      "reason": "The existing KHC class already covers KEC 25/30/35 m. Not pursued within the bounded effort."
+    },
+    {
+      "country": "KR",
+      "lead": "MOCT 2002 load-rating manual, Tables 2.4-2.7: historic 1963/1978 MOC and ADB/IBRD standard PSC-I (H, BU, BB only)",
+      "status": "partial_dimensions",
+      "reason": "Three dimensions per girder only; no web or flange thicknesses"
+    },
+    {
+      "country": "KR",
+      "lead": "고속도로건설공사 표준도 2017 (CODIL OTKCMA170350)",
+      "status": "not-relevant",
+      "reason": "The 398-page KEC set has no girder standard drawings; structures cover only barriers and similar items.",
+      "url": "https://www.codil.or.kr/filebank/original/MA/OTKCMA170350/OTKCMA170350.pdf",
+      "local_file": "sources/expansion/round2/kr/kec-std-2017-OTKCMA170350.pdf",
+      "sha256": "2c5fa96a630ce7188a22fa9776ef784b350eebdbc4ecd44bdf5015d4d59ca002",
+      "pages": 398,
+      "retrieved": "2026-09-23",
+      "retrieval_note": "Re-downloaded and retained as reference after an initial post-inspection deletion; server TLS chain incomplete, integrity recorded by hash."
+    },
+    {
+      "country": "LK",
+      "lead": "Standalone RDA drawing T/B/505 and other T/B/5xx beams; ICC and ELS producer ranges (5-25 m RDA 'I' beams)",
+      "status": "blocked",
+      "reason": "The ICC brochure link returns 404, stockpile.lk returns 403 and elslanka.com refuses connections"
+    },
+    {
+      "country": "BD",
+      "lead": "LGED Road Structure Manual Parts A/C (2008), LGED Bridge Design Standards 2012, LGED 2018 guideline",
+      "status": "blocked",
+      "reason": "oldweb.lged.gov.bd returns HTTP 500 (ASP.NET parser error)"
+    },
+    {
+      "country": "BD",
+      "lead": "JICA Cross-Border Road Network Table 8.3.1 (H, b6 only, 25-45 m)",
+      "status": "partial_dimensions",
+      "reason": "Web and flanges are not given. Not merged with the Western Bangladesh family."
+    },
+    {
+      "country": "IN",
+      "lead": "MoRTH 32 m standard drawings 1003/1007 (precast RCC girder)",
+      "status": "blocked",
+      "reason": "www.morth.gov.in fails TLS (unrecognized name); morth.gov.in redirects the PDF to the homepage"
+    },
+    {
+      "country": "IN",
+      "lead": "RDSO BS-141 Annexure XXIII and RDSO-B/10273",
+      "status": "blocked",
+      "reason": "rdso.indianrailways.gov.in refuses connections"
+    },
+    {
+      "country": "BT",
+      "lead": "Dopshari bridge DSZ-SUP-08 Girder Section (moit.gov.bt)",
+      "status": "blocked",
+      "reason": "HTTP 403 WordPress security notice"
+    },
+    {
+      "country": "AF/MV",
+      "lead": "none located",
+      "status": "no-source",
+      "reason": "The search budget was exhausted before these could be searched. No primary source was found in the prior registers."
+    }
+  ]
+}

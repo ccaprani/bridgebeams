@@ -1,0 +1,277 @@
+{
+  "source_title_original": "PPBM: M BEAM (dimension and section-property sheet)",
+  "source_url": "https://civilcon-za.co.za/wp-content/uploads/2017/05/PPBM.pdf",
+  "source_local_file": "sources/expansion/asia-africa/civilcon-M.pdf",
+  "source_sha256": "0c6d2b0234fc3e7f6fb8e46bff4841aea7e3a46b579a5c8e88fbe8f0796f7401",
+  "source_pdf_page": 1,
+  "source_printed_page": null,
+  "source_status": "producer catalogue",
+  "producer": "Civilcon (South Africa)",
+  "accessed": "2026-09-22",
+  "units": "mm, mm2, mm3; self weight kN/m",
+  "reviewed": "Rendered at 300 dpi and scaled from line centres on 2026-09-23 (extraction-civilcon-tum).",
+  "transcribed_dimensions": {
+    "base_width": 970,
+    "bottom_chamfer": 35,
+    "flange_edge": 125,
+    "flange_taper": 50,
+    "lower_splay": 80,
+    "lower_web_heights": {
+      "M2-M4": 200,
+      "M5-M7": 440,
+      "M8-M10": 680
+    },
+    "depth_labels": {
+      "M2": 720,
+      "M3": 800,
+      "M4": 880,
+      "M5": 960,
+      "M6": 1040,
+      "M7": 1120,
+      "M8": 1200,
+      "M9": 1280,
+      "M10": 1360
+    },
+    "bottom_strand_chain": "35 | 50 c/c | 75 | 75 | 50 c/c | 35 (strand positions)"
+  },
+  "derived_dimensions": {
+    "web_width": {
+      "value": 160,
+      "basis": "published area steps: 240*(w-400)+32000 = -25600 across groups; scaled 160.0-160.8"
+    },
+    "top_width": {
+      "value": 400,
+      "basis": "+32000 mm2 per 80 mm depth within each group; scaled 400.8"
+    }
+  },
+  "scaled_from_drawing": {
+    "scale_px_per_mm_at_300dpi": 1.05052,
+    "notch": "50 wide x 50 deep (line centres x=150.4, y=D-50.0)",
+    "taper_break_half_width": 160,
+    "flare": "120 horizontal x 80 vertical (slope 0.657-0.667)",
+    "edge_inset": "10 over 125 (1:12.5)"
+  },
+  "fitted_parameters": {
+    "flare_height": 60.0,
+    "edge_inset": 15.0,
+    "method": "least squares on area (excluding M4), Yb, Zt (excluding M8) and Zb, with notch, taper break, web and top fixed. The free optimum was flare 59.93 and inset 15.10; round values reproduce all eight usable areas exactly.",
+    "free_four_parameter_fit": {
+      "notch_depth": 49.45,
+      "flare_height": 60.78,
+      "taper_break_half_width": 162.28,
+      "edge_inset": 16.37
+    },
+    "drawn_outline_residuals": "flare 80 / inset 10: area -0.34% to -0.49% (constant 1525 mm2 short), Yb 1.7-4.5 mm low, Zt -0.46% to -1.62% (M8 -2.76%)"
+  },
+  "geometry_notes": [
+    "The sheet does not dimension web width, top width, notch, flare or edge inset. The drawn flare (120 x 80) and inset (10) contradict the published properties. The fitted 120 x 60 flare and 15 mm inset reproduce them. The fitted values are implemented as the best estimate of the property basis, and the drawing values are recorded here.",
+    "The notch was hypothesised as about 40 x 50 in Colin Caprani's 2026-09-22 review. It scales as 50 x 50, and the free fit gives 49.5 mm deep. 50 x 50 is used.",
+    "M4 printed area 37860 is a dropped digit: 378600 closes exactly with the M3 to M4 step (+32000). The raw value is preserved.",
+    "M10 table depth 360 conflicts with the explicit drawing label 1360. 1360 is used; the published Zt is consistent with 1360.",
+    "M8 published Zt (87.87e6) is inconsistent with its own Zb and Yb: Zt*(D-Yb) exceeds Zb*Yb by 1.16%. The calculated Zt is 1.19% below. This is pinned.",
+    "UK M-beam equivalence is unverified; no alias is provided."
+  ],
+  "sections": [
+    {
+      "section": "M2",
+      "published_depth": 720.0,
+      "area": 314600.0,
+      "yb": 266.0,
+      "zt": 35370000.0,
+      "zb": 60360000.0,
+      "self_weight_kN_per_m": 7.87,
+      "depth_used": 720.0,
+      "lower_web_height": 200.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 314600.0,
+        "yb_calc": 265.69,
+        "zt_calc": 35341937,
+        "zb_calc": 60432342,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": -0.31,
+        "zt_rel_pct": -0.079,
+        "zb_rel_pct": 0.12
+      }
+    },
+    {
+      "section": "M3",
+      "published_depth": 800.0,
+      "area": 346600.0,
+      "yb": 310.0,
+      "zt": 46600000.0,
+      "zb": 73650000.0,
+      "self_weight_kN_per_m": 8.67,
+      "depth_used": 800.0,
+      "lower_web_height": 200.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 346600.0,
+        "yb_calc": 310.17,
+        "zt_calc": 46610255,
+        "zb_calc": 73607328,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.17,
+        "zt_rel_pct": 0.022,
+        "zb_rel_pct": -0.058
+      }
+    },
+    {
+      "section": "M4",
+      "published_depth": 880.0,
+      "area": 37860.0,
+      "yb": 354.0,
+      "zt": 58370000.0,
+      "zb": 86730000.0,
+      "self_weight_kN_per_m": 9.47,
+      "depth_used": 880.0,
+      "lower_web_height": 200.0,
+      "provenance": "fitted-reconstruction",
+      "discrepancy": "Area37860 is printed in table; incompatible with9.47kN/m at25kN/m3. No corrected area substituted.",
+      "residuals": {
+        "area_calc": 378600.0,
+        "yb_calc": 353.9,
+        "zt_calc": 58359945,
+        "zb_calc": 86757383,
+        "area_rel_pct": 900.0,
+        "yb_diff_mm": -0.1,
+        "zt_rel_pct": -0.017,
+        "zb_rel_pct": 0.032
+      }
+    },
+    {
+      "section": "M5",
+      "published_depth": 960.0,
+      "area": 353000.0,
+      "yb": 357.0,
+      "zt": 58920000.0,
+      "zb": 99520000.0,
+      "self_weight_kN_per_m": 8.83,
+      "depth_used": 960.0,
+      "lower_web_height": 440.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 353000.0,
+        "yb_calc": 357.4,
+        "zt_calc": 58960487,
+        "zb_calc": 99411734,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.4,
+        "zt_rel_pct": 0.069,
+        "zb_rel_pct": -0.109
+      }
+    },
+    {
+      "section": "M6",
+      "published_depth": 1040.0,
+      "area": 384999.0,
+      "yb": 410.0,
+      "zt": 74940000.0,
+      "zb": 115150000.0,
+      "self_weight_kN_per_m": 9.63,
+      "depth_used": 1040.0,
+      "lower_web_height": 440.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 385000.0,
+        "yb_calc": 409.77,
+        "zt_calc": 74910234,
+        "zb_calc": 115212161,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": -0.23,
+        "zt_rel_pct": -0.04,
+        "zb_rel_pct": 0.054
+      }
+    },
+    {
+      "section": "M7",
+      "published_depth": 1120.0,
+      "area": 417000.0,
+      "yb": 460.0,
+      "zt": 90950000.0,
+      "zb": 130490000.00000001,
+      "self_weight_kN_per_m": 10.43,
+      "depth_used": 1120.0,
+      "lower_web_height": 440.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 417000.0,
+        "yb_calc": 460.24,
+        "zt_calc": 90978785,
+        "zb_calc": 130417244,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.24,
+        "zt_rel_pct": 0.032,
+        "zb_rel_pct": -0.056
+      }
+    },
+    {
+      "section": "M8",
+      "published_depth": 1200.0,
+      "area": 391399.0,
+      "yb": 455.0,
+      "zt": 87870000.0,
+      "zb": 142230000.0,
+      "self_weight_kN_per_m": 9.79,
+      "depth_used": 1200.0,
+      "lower_web_height": 680.0,
+      "provenance": "fitted-reconstruction",
+      "discrepancy": "Published Zt inconsistent with published Zb/Yb by 1.16%; calculated Zt 1.19% below published.",
+      "residuals": {
+        "area_calc": 391400.0,
+        "yb_calc": 454.66,
+        "zt_calc": 86826536,
+        "zb_calc": 142337886,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": -0.34,
+        "zt_rel_pct": -1.188,
+        "zb_rel_pct": 0.076
+      }
+    },
+    {
+      "section": "M9",
+      "published_depth": 1280.0,
+      "area": 423399.0,
+      "yb": 513.0,
+      "zt": 107450000.0,
+      "zb": 160660000.0,
+      "self_weight_kN_per_m": 10.59,
+      "depth_used": 1280.0,
+      "lower_web_height": 680.0,
+      "provenance": "fitted-reconstruction",
+      "residuals": {
+        "area_calc": 423400.0,
+        "yb_calc": 513.07,
+        "zt_calc": 107462042,
+        "zb_calc": 160632792,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": 0.07,
+        "zt_rel_pct": 0.011,
+        "zb_rel_pct": -0.017
+      }
+    },
+    {
+      "section": "M10",
+      "published_depth": 360.0,
+      "area": 455399.0,
+      "yb": 569.0,
+      "zt": 127970000.0,
+      "zb": 177900000.0,
+      "self_weight_kN_per_m": 11.39,
+      "depth_used": 1360.0,
+      "lower_web_height": 680.0,
+      "provenance": "fitted-reconstruction",
+      "discrepancy": "Property table depth360 conflicts with explicit drawing label M10-1360. Prefer drawing depth; retain raw table.",
+      "residuals": {
+        "area_calc": 455400.0,
+        "yb_calc": 568.89,
+        "zt_calc": 127953125,
+        "zb_calc": 177932650,
+        "area_rel_pct": 0.0,
+        "yb_diff_mm": -0.11,
+        "zt_rel_pct": -0.013,
+        "zb_rel_pct": 0.018
+      }
+    }
+  ]
+}

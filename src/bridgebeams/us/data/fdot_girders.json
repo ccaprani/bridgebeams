@@ -1,0 +1,2214 @@
+{
+ "standard": "Florida Department of Transportation, FY 2026-27 Standard Plans (Index 450 series) and Standard Plans Instructions (Topic No. 625-010-003)",
+ "fib": {
+  "title": "Florida-I Beams FIB-36 ... FIB-96 (Index 450-036 ... 450-096)",
+  "drawings": {
+   "FIB-36": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-036.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-036.pdf",
+    "sha256": "f7d970f181b502b9584c817006e08acec4d1424dab27866027b5c439e3c8513e",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   },
+   "FIB-45": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-045.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-045.pdf",
+    "sha256": "08a80ec2b8b761848ed68afc26750a3b3c29530c94bc753f0e14115af14f8d2b",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   },
+   "FIB-54": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-054.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-054.pdf",
+    "sha256": "ae4d247a625b3abe85a7d3b0a6c40d12e006d078b3292666a950591a7f72f33f",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   },
+   "FIB-63": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-063.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-063.pdf",
+    "sha256": "d7e858806b68c0d3c16821c4d2ee4c06d0e607a1d928e6dbf24989bfa6b367b9",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   },
+   "FIB-72": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-072.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-072.pdf",
+    "sha256": "22b573af157a9a575a33e521fa81af314c0f0bde1ae1fa4fe57f0a9e6eba7ef0",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   },
+   "FIB-78": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-078.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-078.pdf",
+    "sha256": "68b25a41fd082c42d9003b7f6da419465eb2c5f59bf4f5bad4ca76ecf282977f",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   },
+   "FIB-84": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-084.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-084.pdf",
+    "sha256": "1c1ad12536fc10158014d1544848eb33dcfe1b99081d4320b40e6304209419c9",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   },
+   "FIB-96": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-096.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-096.pdf",
+    "sha256": "f82b88ef391f119f3f713618ebc1a55d4c750cbbbb21827909289e56993d910c",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 2 'END VIEW'",
+    "pdf_page": 1,
+    "last_revision": "11/01/19"
+   }
+  },
+  "properties_source": {
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-010.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-010.pdf",
+   "sha256": "0de1674a84be0e8cd567f3feb3305e05eff7df48a2a07ea30cf0bae0178a2a1c",
+   "retrieved": "2026-09-23",
+   "pdf_page": 9,
+   "printed_page": "9",
+   "table": "Section Properties"
+  },
+  "units": "in, in2, in4",
+  "common_dimensions": {
+   "top_width": 48,
+   "top_edge": 3.5,
+   "top_taper_drop": 1.5,
+   "top_taper_run": 17,
+   "top_chamfer": 3.5,
+   "web": 7,
+   "bottom_width": 38,
+   "bottom_edge": 7,
+   "bottom_taper_rise": 7.5,
+   "web_fillet_radius": 15,
+   "soffit_chamfer": 0.75,
+   "web_straight_label": "H - 23 (1'-1\" for FIB-36, 6'-1\" for FIB-96)"
+  },
+  "rows": {
+   "FIB-36": [
+    36
+   ],
+   "FIB-45": [
+    45
+   ],
+   "FIB-54": [
+    54
+   ],
+   "FIB-63": [
+    63
+   ],
+   "FIB-72": [
+    72
+   ],
+   "FIB-78": [
+    78
+   ],
+   "FIB-84": [
+    84
+   ],
+   "FIB-96": [
+    96
+   ]
+  },
+  "columns": [
+   "H"
+  ],
+  "published_columns": [
+   "area",
+   "perimeter",
+   "ixx",
+   "iyy",
+   "yt",
+   "yb"
+  ],
+  "published": {
+   "FIB-36": [
+    806.58,
+    206.57,
+    127545,
+    81070,
+    19.51,
+    16.49
+   ],
+   "FIB-45": [
+    869.58,
+    224.57,
+    226581,
+    81327,
+    24.79,
+    20.21
+   ],
+   "FIB-54": [
+    932.58,
+    242.57,
+    359929,
+    81584,
+    29.96,
+    24.04
+   ],
+   "FIB-63": [
+    995.58,
+    260.57,
+    530313,
+    81842,
+    35.04,
+    27.96
+   ],
+   "FIB-72": [
+    1058.58,
+    278.57,
+    740416,
+    82099,
+    40.06,
+    31.94
+   ],
+   "FIB-78": [
+    1100.58,
+    290.57,
+    903861,
+    82270,
+    43.37,
+    34.63
+   ],
+   "FIB-84": [
+    1142.58,
+    302.57,
+    1087000.0,
+    82442,
+    46.66,
+    37.34
+   ],
+   "FIB-96": [
+    1226.58,
+    326.57,
+    1515000.0,
+    82785,
+    53.18,
+    42.82
+   ]
+  },
+  "published_notes": "FIB-84 and FIB-96 Ixx printed as 1.087 x 10^6 and 1.515 x 10^6 (4 significant figures). PCI Journal 2021 Table A.4 gives 1,086,921 and 1,514,980.",
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "Top flange 4'-0\" wide, 3 1/2\" edge, 1 1/2\" drop over 1'-5\" to a 3 1/2\" x 3 1/2\" chamfer into the 7\" web.",
+   "Bottom flange 3'-2\" wide, 7\" edge, 7 1/2\" rise to the web face (1'-3 1/2\" run from the flange edge, a dot marks this intersection point); a 1'-3\" radius is inserted at that web-taper intersection (its tangent point lies about 9.4 in up the web).",
+   "3/4\" chamfers on the bottom of the bottom flange only (included; the published area needs them). The 15 in arc is polygonised with 32 chords."
+  ],
+  "residuals_vs_published": {
+   "FIB-36": {
+    "area": {
+     "computed": 806.628,
+     "residual_pct": 0.006
+    },
+    "perimeter": {
+     "computed": 206.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 127545.463,
+     "residual_pct": 0.0
+    },
+    "iyy": {
+     "computed": 81072.37,
+     "residual_pct": 0.003
+    },
+    "yt": {
+     "computed": 19.51,
+     "residual_pct": 0.001
+    },
+    "yb": {
+     "computed": 16.49,
+     "residual_pct": -0.001
+    }
+   },
+   "FIB-45": {
+    "area": {
+     "computed": 869.628,
+     "residual_pct": 0.006
+    },
+    "perimeter": {
+     "computed": 224.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 226582.314,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 81329.62,
+     "residual_pct": 0.003
+    },
+    "yt": {
+     "computed": 24.786,
+     "residual_pct": -0.015
+    },
+    "yb": {
+     "computed": 20.214,
+     "residual_pct": 0.018
+    }
+   },
+   "FIB-54": {
+    "area": {
+     "computed": 932.628,
+     "residual_pct": 0.005
+    },
+    "perimeter": {
+     "computed": 242.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 359932.994,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 81586.87,
+     "residual_pct": 0.004
+    },
+    "yt": {
+     "computed": 29.958,
+     "residual_pct": -0.008
+    },
+    "yb": {
+     "computed": 24.042,
+     "residual_pct": 0.01
+    }
+   },
+   "FIB-63": {
+    "area": {
+     "computed": 995.628,
+     "residual_pct": 0.005
+    },
+    "perimeter": {
+     "computed": 260.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 530321.012,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 81844.12,
+     "residual_pct": 0.003
+    },
+    "yt": {
+     "computed": 35.044,
+     "residual_pct": 0.011
+    },
+    "yb": {
+     "computed": 27.956,
+     "residual_pct": -0.014
+    }
+   },
+   "FIB-72": {
+    "area": {
+     "computed": 1058.628,
+     "residual_pct": 0.005
+    },
+    "perimeter": {
+     "computed": 278.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 740428.929,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 82101.37,
+     "residual_pct": 0.003
+    },
+    "yt": {
+     "computed": 40.06,
+     "residual_pct": 0.001
+    },
+    "yb": {
+     "computed": 31.94,
+     "residual_pct": -0.001
+    }
+   },
+   "FIB-78": {
+    "area": {
+     "computed": 1100.628,
+     "residual_pct": 0.004
+    },
+    "perimeter": {
+     "computed": 290.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 903878.623,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 82272.87,
+     "residual_pct": 0.003
+    },
+    "yt": {
+     "computed": 43.372,
+     "residual_pct": 0.004
+    },
+    "yb": {
+     "computed": 34.628,
+     "residual_pct": -0.006
+    }
+   },
+   "FIB-84": {
+    "area": {
+     "computed": 1142.628,
+     "residual_pct": 0.004
+    },
+    "perimeter": {
+     "computed": 302.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 1086941.733,
+     "residual_pct": -0.005
+    },
+    "iyy": {
+     "computed": 82444.37,
+     "residual_pct": 0.003
+    },
+    "yt": {
+     "computed": 46.661,
+     "residual_pct": 0.001
+    },
+    "yb": {
+     "computed": 37.339,
+     "residual_pct": -0.001
+    }
+   },
+   "FIB-96": {
+    "area": {
+     "computed": 1226.628,
+     "residual_pct": 0.004
+    },
+    "perimeter": {
+     "computed": 326.571,
+     "residual_pct": 0.0
+    },
+    "ixx": {
+     "computed": 1515013.514,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 82787.37,
+     "residual_pct": 0.003
+    },
+    "yt": {
+     "computed": 53.178,
+     "residual_pct": -0.003
+    },
+    "yb": {
+     "computed": 42.822,
+     "residual_pct": 0.004
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "fub": {
+  "title": "Florida-U Beams FUB-48/54/63/72 (Index 450-248 ... 450-272)",
+  "drawings": {
+   "FUB-48": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-248.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-248.pdf",
+    "sha256": "7214eae0bf8f83fb164f45393ebed0a7d15c6cf887ae4120dd775121b970bfd4",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 3 'TYPICAL SECTION'",
+    "pdf_page": 1,
+    "last_revision": "11/01/16"
+   },
+   "FUB-54": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-254.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-254.pdf",
+    "sha256": "7a2c80e285df90726f5ad6b2bf34df26461ee0d61182665d6fe3d46d76a18cec",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 3 'TYPICAL SECTION'",
+    "pdf_page": 1,
+    "last_revision": "11/01/16"
+   },
+   "FUB-63": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-263.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-263.pdf",
+    "sha256": "09ba98a87440bdaa269c9baac0b70334031d745103babcef6550e408a2f8a707",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 3 'TYPICAL SECTION'",
+    "pdf_page": 1,
+    "last_revision": "11/01/16"
+   },
+   "FUB-72": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-272.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-272.pdf",
+    "sha256": "627a1f450de288b9f59f183b049f3de8aedeb4f417bd377e4bb398b0afe97567",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 3 'TYPICAL SECTION'",
+    "pdf_page": 1,
+    "last_revision": "11/01/16"
+   }
+  },
+  "properties_source": {
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-210.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-210.pdf",
+   "sha256": "ef0dc4f956c8b93b6c5b60a15aab7bb550c0794eaae5c3e6ec834deab63350ad",
+   "retrieved": "2026-09-23",
+   "pdf_page": 10,
+   "printed_page": "10",
+   "table": "Section Properties"
+  },
+  "units": "in, in2, in4",
+  "common_dimensions": {
+   "bottom_width": 56,
+   "bottom_slab": 10,
+   "inner_chamfer": 3,
+   "inner_lower_half_width_top": 25.5625,
+   "web_batter": "1 in 4 (outer face and lower inner face)",
+   "upper_inner_rise": 21,
+   "upper_inner_run": 1.9375,
+   "flange_width": 16,
+   "flange_edge": 7,
+   "flange_underside_drop": 1,
+   "edge_draft": 0.5,
+   "underside_run": 8.5,
+   "top_chamfer": 0.75,
+   "soffit_chamfer": 1.5,
+   "web_thickness_label": 5.5
+  },
+  "rows": {
+   "FUB-48": [
+    48
+   ],
+   "FUB-54": [
+    54
+   ],
+   "FUB-63": [
+    63
+   ],
+   "FUB-72": [
+    72
+   ]
+  },
+  "columns": [
+   "H"
+  ],
+  "published_columns": [
+   "area",
+   "ixx",
+   "iyy",
+   "yt",
+   "yb"
+  ],
+  "published": {
+   "FUB-48": [
+    1206,
+    321222,
+    905815,
+    28.53,
+    19.47
+   ],
+   "FUB-54": [
+    1275,
+    439370,
+    1026000.0,
+    31.99,
+    22.01
+   ],
+   "FUB-63": [
+    1377,
+    659103,
+    1222000.0,
+    37.08,
+    25.92
+   ],
+   "FUB-72": [
+    1479,
+    933707,
+    1438000.0,
+    42.09,
+    29.91
+   ]
+  },
+  "independent_check": "PCI Journal 2021 Table A.4 (from FDOT 2021): FUB-48 A=1207.5, yb=19.45, Ix=321,913, Iy=907,842.",
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "Overall top width 7'-10\"/8'-1\"/8'-10\" (48/54/72) = 56 + 2*(H-8)/4 + 18; each top flange 1'-4\" wide.",
+   "Inner face: 3\" x 3\" chamfer off the 10\" bottom slab, then a 1:4 face up to 21\" below the top (4'-3 1/8\" apart at the chamfer top), then 1 15/16\" further out over the top 21\" to the flange inner edge; the lower segment is 1'-2\", 1'-8\" and 3'-2\" high for FUB-48/54/72 (H - 34).",
+   "Outer face 1:4 from the 4'-8\" soffit to 8\" below the top, flange underside rising 1\" over 8 1/2\" to the edge, 1/2\" edge draft over 7\", 3/4\" chamfer at the bottom of the top-flange edge and 1 1/2\" soffit chamfers.",
+   "Residuals: area -0.01 to -0.07 %, Ixx +0.03 to +0.06 %, Iyy +0.05 to +0.14 % (Iyy for FUB-54+ printed to 4 significant figures), yb +0.01 to +0.10 %. PCI Journal 2021 lists slightly larger areas (1207.5 for FUB-48), so FDOT's own table is the reference here."
+  ],
+  "residuals_vs_published": {
+   "FUB-48": {
+    "area": {
+     "computed": 1205.827,
+     "residual_pct": -0.014
+    },
+    "ixx": {
+     "computed": 321327.969,
+     "residual_pct": 0.033
+    },
+    "iyy": {
+     "computed": 906598.452,
+     "residual_pct": 0.086
+    },
+    "yt": {
+     "computed": 28.528,
+     "residual_pct": -0.008
+    },
+    "yb": {
+     "computed": 19.472,
+     "residual_pct": 0.011
+    }
+   },
+   "FUB-54": {
+    "area": {
+     "computed": 1274.077,
+     "residual_pct": -0.072
+    },
+    "ixx": {
+     "computed": 439540.361,
+     "residual_pct": 0.039
+    },
+    "iyy": {
+     "computed": 1026523.33,
+     "residual_pct": 0.051
+    },
+    "yt": {
+     "computed": 31.972,
+     "residual_pct": -0.055
+    },
+    "yb": {
+     "computed": 22.028,
+     "residual_pct": 0.08
+    }
+   },
+   "FUB-63": {
+    "area": {
+     "computed": 1376.452,
+     "residual_pct": -0.04
+    },
+    "ixx": {
+     "computed": 659415.777,
+     "residual_pct": 0.047
+    },
+    "iyy": {
+     "computed": 1222899.584,
+     "residual_pct": 0.074
+    },
+    "yt": {
+     "computed": 37.057,
+     "residual_pct": -0.063
+    },
+    "yb": {
+     "computed": 25.943,
+     "residual_pct": 0.09
+    }
+   },
+   "FUB-72": {
+    "area": {
+     "computed": 1478.827,
+     "residual_pct": -0.012
+    },
+    "ixx": {
+     "computed": 934228.129,
+     "residual_pct": 0.056
+    },
+    "iyy": {
+     "computed": 1439983.936,
+     "residual_pct": 0.138
+    },
+    "yt": {
+     "computed": 42.06,
+     "residual_pct": -0.072
+    },
+    "yb": {
+     "computed": 29.94,
+     "residual_pct": 0.101
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "fsb": {
+  "title": "Florida Slab Beams 12\", 15\", 18\" (Index 450-451/452/453), widths 4'-0\" to 5'-0\"",
+  "drawings": {
+   "FSB12": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-451.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-451.pdf",
+    "sha256": "439942b5b7339f61a693e9028bc5d11047ae9ddd3c94c11582fd42572992f7ff",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 1 'TYPICAL SECTION' and 'FLANGE DETAIL'",
+    "pdf_page": 1
+   },
+   "FSB15": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-452.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-452.pdf",
+    "sha256": "2a0b771017c77db765b890cd282697b6aea5f968dc3d50836343a49411a2350a",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 1 'TYPICAL SECTION' and 'FLANGE DETAIL'",
+    "pdf_page": 1
+   },
+   "FSB18": {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/idx/450-453.pdf",
+    "local_path": "sources/expansion/round2/us/fdot-2027-450-453.pdf",
+    "sha256": "3495028fe167f9b7bf00bc0923671211becf4aab6426109ba9037cb500b61745",
+    "retrieved": "2026-09-23",
+    "sheet": "1 of 1 'TYPICAL SECTION' and 'FLANGE DETAIL'",
+    "pdf_page": 1
+   }
+  },
+  "properties_source": {
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-450.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-450.pdf",
+   "sha256": "a77eae740c0ca95e580a3dc725869e306ac3b9673c3db892fa990837e5e7e0d7",
+   "retrieved": "2026-09-23",
+   "pdf_page": "32-34",
+   "printed_page": "32-34",
+   "table": "Cross Section Properties"
+  },
+  "units": "in, in2, in4",
+  "columns": [
+   "H",
+   "W"
+  ],
+  "rows": {
+   "FSB12-48": [
+    12,
+    48
+   ],
+   "FSB12-49": [
+    12,
+    49
+   ],
+   "FSB12-50": [
+    12,
+    50
+   ],
+   "FSB12-51": [
+    12,
+    51
+   ],
+   "FSB12-52": [
+    12,
+    52
+   ],
+   "FSB12-53": [
+    12,
+    53
+   ],
+   "FSB12-54": [
+    12,
+    54
+   ],
+   "FSB12-55": [
+    12,
+    55
+   ],
+   "FSB12-56": [
+    12,
+    56
+   ],
+   "FSB12-57": [
+    12,
+    57
+   ],
+   "FSB12-58": [
+    12,
+    58
+   ],
+   "FSB12-59": [
+    12,
+    59
+   ],
+   "FSB12-60": [
+    12,
+    60
+   ],
+   "FSB15-48": [
+    15,
+    48
+   ],
+   "FSB15-49": [
+    15,
+    49
+   ],
+   "FSB15-50": [
+    15,
+    50
+   ],
+   "FSB15-51": [
+    15,
+    51
+   ],
+   "FSB15-52": [
+    15,
+    52
+   ],
+   "FSB15-53": [
+    15,
+    53
+   ],
+   "FSB15-54": [
+    15,
+    54
+   ],
+   "FSB15-55": [
+    15,
+    55
+   ],
+   "FSB15-56": [
+    15,
+    56
+   ],
+   "FSB15-57": [
+    15,
+    57
+   ],
+   "FSB15-58": [
+    15,
+    58
+   ],
+   "FSB15-59": [
+    15,
+    59
+   ],
+   "FSB15-60": [
+    15,
+    60
+   ],
+   "FSB18-48": [
+    18,
+    48
+   ],
+   "FSB18-49": [
+    18,
+    49
+   ],
+   "FSB18-50": [
+    18,
+    50
+   ],
+   "FSB18-51": [
+    18,
+    51
+   ],
+   "FSB18-52": [
+    18,
+    52
+   ],
+   "FSB18-53": [
+    18,
+    53
+   ],
+   "FSB18-54": [
+    18,
+    54
+   ],
+   "FSB18-55": [
+    18,
+    55
+   ],
+   "FSB18-56": [
+    18,
+    56
+   ],
+   "FSB18-57": [
+    18,
+    57
+   ],
+   "FSB18-58": [
+    18,
+    58
+   ],
+   "FSB18-59": [
+    18,
+    59
+   ],
+   "FSB18-60": [
+    18,
+    60
+   ]
+  },
+  "published_columns": [
+   "area",
+   "perimeter",
+   "ixx",
+   "iyy",
+   "yt",
+   "yb"
+  ],
+  "published": {
+   "FSB12-48": [
+    473.76,
+    114.33,
+    5772.0,
+    65367.0,
+    6.43,
+    5.57
+   ],
+   "FSB12-49": [
+    485.76,
+    116.33,
+    5918.0,
+    70257.0,
+    6.42,
+    5.58
+   ],
+   "FSB12-50": [
+    497.76,
+    118.33,
+    6064.0,
+    75389.0,
+    6.41,
+    5.59
+   ],
+   "FSB12-51": [
+    509.76,
+    120.33,
+    6210.0,
+    80771.0,
+    6.4,
+    5.6
+   ],
+   "FSB12-52": [
+    521.76,
+    122.33,
+    6356.0,
+    86407.0,
+    6.39,
+    5.61
+   ],
+   "FSB12-53": [
+    533.76,
+    124.32,
+    6502.0,
+    92304.0,
+    6.38,
+    5.62
+   ],
+   "FSB12-54": [
+    545.76,
+    126.33,
+    6647.0,
+    98468.0,
+    6.37,
+    5.63
+   ],
+   "FSB12-55": [
+    557.76,
+    128.33,
+    6793.0,
+    104906.0,
+    6.37,
+    5.63
+   ],
+   "FSB12-56": [
+    569.76,
+    130.32,
+    6938.0,
+    111621.0,
+    6.36,
+    5.64
+   ],
+   "FSB12-57": [
+    581.76,
+    132.33,
+    7084.0,
+    118622.0,
+    6.35,
+    5.65
+   ],
+   "FSB12-58": [
+    593.76,
+    134.33,
+    7229.0,
+    125914.0,
+    6.34,
+    5.66
+   ],
+   "FSB12-59": [
+    605.76,
+    136.32,
+    7375.0,
+    133502.0,
+    6.34,
+    5.66
+   ],
+   "FSB12-60": [
+    617.76,
+    138.33,
+    7520.0,
+    141393.0,
+    6.33,
+    5.67
+   ],
+   "FSB15-48": [
+    581.76,
+    120.33,
+    11245.0,
+    77031.0,
+    7.98,
+    7.02
+   ],
+   "FSB15-49": [
+    596.76,
+    122.33,
+    11529.0,
+    82920.0,
+    7.97,
+    7.03
+   ],
+   "FSB15-50": [
+    611.76,
+    124.32,
+    11814.0,
+    89108.0,
+    7.96,
+    7.04
+   ],
+   "FSB15-51": [
+    626.76,
+    126.33,
+    12098.0,
+    95601.0,
+    7.94,
+    7.06
+   ],
+   "FSB15-52": [
+    641.76,
+    128.33,
+    12382.0,
+    102407.0,
+    7.93,
+    7.07
+   ],
+   "FSB15-53": [
+    656.76,
+    130.32,
+    12666.0,
+    109535.0,
+    7.92,
+    7.08
+   ],
+   "FSB15-54": [
+    671.76,
+    132.33,
+    12950.0,
+    116990.0,
+    7.91,
+    7.09
+   ],
+   "FSB15-55": [
+    686.76,
+    134.33,
+    13234.0,
+    124782.0,
+    7.91,
+    7.09
+   ],
+   "FSB15-56": [
+    701.76,
+    136.33,
+    13518.0,
+    132917.0,
+    7.9,
+    7.1
+   ],
+   "FSB15-57": [
+    716.76,
+    138.33,
+    13801.0,
+    141403.0,
+    7.89,
+    7.11
+   ],
+   "FSB15-58": [
+    731.76,
+    140.33,
+    14085.0,
+    150247.0,
+    7.88,
+    7.12
+   ],
+   "FSB15-59": [
+    746.76,
+    142.32,
+    14368.0,
+    159458.0,
+    7.87,
+    7.13
+   ],
+   "FSB15-60": [
+    761.76,
+    144.33,
+    14651.0,
+    169041.0,
+    7.87,
+    7.13
+   ],
+   "FSB18-48": [
+    689.76,
+    126.33,
+    19334.0,
+    88695.0,
+    9.51,
+    8.49
+   ],
+   "FSB18-49": [
+    707.76,
+    128.33,
+    19824.0,
+    95583.0,
+    9.5,
+    8.5
+   ],
+   "FSB18-50": [
+    725.76,
+    130.32,
+    20315.0,
+    102825.0,
+    9.49,
+    8.51
+   ],
+   "FSB18-51": [
+    743.76,
+    132.33,
+    20805.0,
+    110430.0,
+    9.47,
+    8.53
+   ],
+   "FSB18-52": [
+    761.76,
+    134.33,
+    21295.0,
+    118407.0,
+    9.46,
+    8.54
+   ],
+   "FSB18-53": [
+    779.76,
+    136.32,
+    21785.0,
+    126765.0,
+    9.45,
+    8.55
+   ],
+   "FSB18-54": [
+    797.76,
+    138.33,
+    22274.0,
+    135512.0,
+    9.44,
+    8.56
+   ],
+   "FSB18-55": [
+    815.76,
+    140.33,
+    22764.0,
+    144659.0,
+    9.43,
+    8.57
+   ],
+   "FSB18-56": [
+    833.76,
+    142.33,
+    23253.0,
+    154213.0,
+    9.42,
+    8.58
+   ],
+   "FSB18-57": [
+    851.76,
+    144.33,
+    23742.0,
+    164185.0,
+    9.41,
+    8.59
+   ],
+   "FSB18-58": [
+    869.76,
+    146.33,
+    24231.0,
+    174582.0,
+    9.41,
+    8.59
+   ],
+   "FSB18-59": [
+    887.76,
+    148.32,
+    24720.0,
+    185413.0,
+    9.4,
+    8.6
+   ],
+   "FSB18-60": [
+    905.76,
+    150.33,
+    25208.0,
+    195689.0,
+    9.39,
+    8.61
+   ]
+  },
+  "common_dimensions": {
+   "flange": 4,
+   "flange_projection": 6,
+   "top_chamfer": 2,
+   "reentrant_chamfer": 0.75,
+   "edge_draft": 0.5,
+   "edge_top_chamfer": 0.5,
+   "edge_bottom_chamfer": 0.75
+  },
+  "provenance": "transcribed-with-convention",
+  "geometry_notes": [
+   "W is measured at the soffit working point. 4\" bottom flange projecting 6\" beyond an upper body of width W - 12 and height H - 4 with 2\" top chamfers.",
+   "Flange edge: 1/2\" draft (inward towards the top), 1/2\" chamfer at the top corner and 3/4\" chamfer at the soffit corner (Flange Detail).",
+   "The re-entrant '3/4\" fillet' is modelled as a 3/4\" 45-degree fill (chamfer): this reproduces the published areas to 0.01 in2 (a circular fillet would be 0.32 in2 low).",
+   "Each tabulated width (13 per depth) is a separate profile with its own published properties; the three depths share one drawing each.",
+   "Pinned source discrepancy: 18\" FSB 5'-0\" Iyy printed 195,689 in4; the polygon gives 196,689 (+0.51 %), and the neighbouring rows' increments (+10,397, +10,834 for 4'-10\"/4'-11\") imply ~196,700: probably a one-digit typo in the SPI table."
+  ],
+  "residuals_vs_published": {
+   "FSB12-48": {
+    "area": {
+     "computed": 473.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 114.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 5771.664,
+     "residual_pct": -0.006
+    },
+    "iyy": {
+     "computed": 65367.283,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 6.43,
+     "residual_pct": 0.006
+    },
+    "yb": {
+     "computed": 5.57,
+     "residual_pct": -0.007
+    }
+   },
+   "FSB12-49": {
+    "area": {
+     "computed": 485.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 116.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 5917.832,
+     "residual_pct": -0.003
+    },
+    "iyy": {
+     "computed": 70256.955,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 6.42,
+     "residual_pct": -0.004
+    },
+    "yb": {
+     "computed": 5.58,
+     "residual_pct": 0.004
+    }
+   },
+   "FSB12-50": {
+    "area": {
+     "computed": 497.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 118.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 6063.895,
+     "residual_pct": -0.002
+    },
+    "iyy": {
+     "computed": 75389.506,
+     "residual_pct": 0.001
+    },
+    "yt": {
+     "computed": 6.41,
+     "residual_pct": -0.006
+    },
+    "yb": {
+     "computed": 5.59,
+     "residual_pct": 0.006
+    }
+   },
+   "FSB12-51": {
+    "area": {
+     "computed": 509.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 120.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 6209.862,
+     "residual_pct": -0.002
+    },
+    "iyy": {
+     "computed": 80770.934,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 6.4,
+     "residual_pct": 0.0
+    },
+    "yb": {
+     "computed": 5.6,
+     "residual_pct": -0.0
+    }
+   },
+   "FSB12-52": {
+    "area": {
+     "computed": 521.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 122.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 6355.738,
+     "residual_pct": -0.004
+    },
+    "iyy": {
+     "computed": 86407.241,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 6.391,
+     "residual_pct": 0.013
+    },
+    "yb": {
+     "computed": 5.609,
+     "residual_pct": -0.014
+    }
+   },
+   "FSB12-53": {
+    "area": {
+     "computed": 533.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 124.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 6501.529,
+     "residual_pct": -0.007
+    },
+    "iyy": {
+     "computed": 92304.426,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 6.382,
+     "residual_pct": 0.032
+    },
+    "yb": {
+     "computed": 5.618,
+     "residual_pct": -0.036
+    }
+   },
+   "FSB12-54": {
+    "area": {
+     "computed": 545.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 126.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 6647.242,
+     "residual_pct": 0.004
+    },
+    "iyy": {
+     "computed": 98468.489,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 6.374,
+     "residual_pct": 0.057
+    },
+    "yb": {
+     "computed": 5.626,
+     "residual_pct": -0.064
+    }
+   },
+   "FSB12-55": {
+    "area": {
+     "computed": 557.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 128.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 6792.881,
+     "residual_pct": -0.002
+    },
+    "iyy": {
+     "computed": 104905.43,
+     "residual_pct": -0.001
+    },
+    "yt": {
+     "computed": 6.366,
+     "residual_pct": -0.069
+    },
+    "yb": {
+     "computed": 5.634,
+     "residual_pct": 0.079
+    }
+   },
+   "FSB12-56": {
+    "area": {
+     "computed": 569.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 130.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 6938.451,
+     "residual_pct": 0.006
+    },
+    "iyy": {
+     "computed": 111621.25,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 6.358,
+     "residual_pct": -0.033
+    },
+    "yb": {
+     "computed": 5.642,
+     "residual_pct": 0.038
+    }
+   },
+   "FSB12-57": {
+    "area": {
+     "computed": 581.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 132.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 7083.956,
+     "residual_pct": -0.001
+    },
+    "iyy": {
+     "computed": 118621.947,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 6.35,
+     "residual_pct": 0.008
+    },
+    "yb": {
+     "computed": 5.65,
+     "residual_pct": -0.009
+    }
+   },
+   "FSB12-58": {
+    "area": {
+     "computed": 593.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 134.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 7229.4,
+     "residual_pct": 0.006
+    },
+    "iyy": {
+     "computed": 125913.523,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 6.343,
+     "residual_pct": 0.054
+    },
+    "yb": {
+     "computed": 5.657,
+     "residual_pct": -0.06
+    }
+   },
+   "FSB12-59": {
+    "area": {
+     "computed": 605.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 136.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 7374.788,
+     "residual_pct": -0.003
+    },
+    "iyy": {
+     "computed": 133501.976,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 6.337,
+     "residual_pct": -0.053
+    },
+    "yb": {
+     "computed": 5.663,
+     "residual_pct": 0.06
+    }
+   },
+   "FSB12-60": {
+    "area": {
+     "computed": 617.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 138.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 7520.121,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 141393.308,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 6.33,
+     "residual_pct": 0.001
+    },
+    "yb": {
+     "computed": 5.67,
+     "residual_pct": -0.001
+    }
+   },
+   "FSB15-48": {
+    "area": {
+     "computed": 581.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 120.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 11244.725,
+     "residual_pct": -0.002
+    },
+    "iyy": {
+     "computed": 77031.283,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.979,
+     "residual_pct": -0.015
+    },
+    "yb": {
+     "computed": 7.021,
+     "residual_pct": 0.017
+    }
+   },
+   "FSB15-49": {
+    "area": {
+     "computed": 596.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 122.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 11529.327,
+     "residual_pct": 0.003
+    },
+    "iyy": {
+     "computed": 82920.205,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.967,
+     "residual_pct": -0.041
+    },
+    "yb": {
+     "computed": 7.033,
+     "residual_pct": 0.046
+    }
+   },
+   "FSB15-50": {
+    "area": {
+     "computed": 611.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 124.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 11813.765,
+     "residual_pct": -0.002
+    },
+    "iyy": {
+     "computed": 89107.506,
+     "residual_pct": -0.001
+    },
+    "yt": {
+     "computed": 7.955,
+     "residual_pct": -0.059
+    },
+    "yb": {
+     "computed": 7.045,
+     "residual_pct": 0.067
+    }
+   },
+   "FSB15-51": {
+    "area": {
+     "computed": 626.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 126.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 12098.05,
+     "residual_pct": 0.0
+    },
+    "iyy": {
+     "computed": 95600.684,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 7.944,
+     "residual_pct": 0.056
+    },
+    "yb": {
+     "computed": 7.056,
+     "residual_pct": -0.062
+    }
+   },
+   "FSB15-52": {
+    "area": {
+     "computed": 641.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 128.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 12382.193,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 102407.241,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.934,
+     "residual_pct": 0.051
+    },
+    "yb": {
+     "computed": 7.066,
+     "residual_pct": -0.057
+    }
+   },
+   "FSB15-53": {
+    "area": {
+     "computed": 656.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 130.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 12666.204,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 109534.676,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 7.924,
+     "residual_pct": 0.052
+    },
+    "yb": {
+     "computed": 7.076,
+     "residual_pct": -0.058
+    }
+   },
+   "FSB15-54": {
+    "area": {
+     "computed": 671.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 132.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 12950.092,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 116990.489,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.915,
+     "residual_pct": 0.059
+    },
+    "yb": {
+     "computed": 7.085,
+     "residual_pct": -0.065
+    }
+   },
+   "FSB15-55": {
+    "area": {
+     "computed": 686.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 134.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 13233.865,
+     "residual_pct": -0.001
+    },
+    "iyy": {
+     "computed": 124782.18,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.906,
+     "residual_pct": -0.056
+    },
+    "yb": {
+     "computed": 7.094,
+     "residual_pct": 0.062
+    }
+   },
+   "FSB15-56": {
+    "area": {
+     "computed": 701.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 136.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 13517.529,
+     "residual_pct": -0.003
+    },
+    "iyy": {
+     "computed": 132917.25,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.897,
+     "residual_pct": -0.039
+    },
+    "yb": {
+     "computed": 7.103,
+     "residual_pct": 0.043
+    }
+   },
+   "FSB15-57": {
+    "area": {
+     "computed": 716.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 138.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 13801.093,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 141403.197,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.889,
+     "residual_pct": -0.018
+    },
+    "yb": {
+     "computed": 7.111,
+     "residual_pct": 0.02
+    }
+   },
+   "FSB15-58": {
+    "area": {
+     "computed": 731.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 140.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 14084.562,
+     "residual_pct": -0.003
+    },
+    "iyy": {
+     "computed": 150247.523,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.881,
+     "residual_pct": 0.008
+    },
+    "yb": {
+     "computed": 7.119,
+     "residual_pct": -0.009
+    }
+   },
+   "FSB15-59": {
+    "area": {
+     "computed": 746.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 142.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 14367.941,
+     "residual_pct": -0.0
+    },
+    "iyy": {
+     "computed": 159457.726,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 7.873,
+     "residual_pct": 0.038
+    },
+    "yb": {
+     "computed": 7.127,
+     "residual_pct": -0.042
+    }
+   },
+   "FSB15-60": {
+    "area": {
+     "computed": 761.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 144.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 14651.237,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 169041.308,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 7.866,
+     "residual_pct": -0.055
+    },
+    "yb": {
+     "computed": 7.134,
+     "residual_pct": 0.061
+    }
+   },
+   "FSB18-48": {
+    "area": {
+     "computed": 689.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 126.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 19333.817,
+     "residual_pct": -0.001
+    },
+    "iyy": {
+     "computed": 88695.283,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.512,
+     "residual_pct": 0.021
+    },
+    "yb": {
+     "computed": 8.488,
+     "residual_pct": -0.024
+    }
+   },
+   "FSB18-49": {
+    "area": {
+     "computed": 707.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 128.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 19824.416,
+     "residual_pct": 0.002
+    },
+    "iyy": {
+     "computed": 95583.455,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.499,
+     "residual_pct": -0.01
+    },
+    "yb": {
+     "computed": 8.501,
+     "residual_pct": 0.012
+    }
+   },
+   "FSB18-50": {
+    "area": {
+     "computed": 725.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 130.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 20314.787,
+     "residual_pct": -0.001
+    },
+    "iyy": {
+     "computed": 102825.506,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.487,
+     "residual_pct": -0.036
+    },
+    "yb": {
+     "computed": 8.513,
+     "residual_pct": 0.04
+    }
+   },
+   "FSB18-51": {
+    "area": {
+     "computed": 743.756,
+     "residual_pct": -0.001
+    },
+    "perimeter": {
+     "computed": 132.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 20804.947,
+     "residual_pct": -0.0
+    },
+    "iyy": {
+     "computed": 110430.434,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.475,
+     "residual_pct": 0.051
+    },
+    "yb": {
+     "computed": 8.525,
+     "residual_pct": -0.057
+    }
+   },
+   "FSB18-52": {
+    "area": {
+     "computed": 761.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 134.325,
+     "residual_pct": -0.004
+    },
+    "ixx": {
+     "computed": 21294.909,
+     "residual_pct": -0.0
+    },
+    "iyy": {
+     "computed": 118407.241,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.464,
+     "residual_pct": 0.038
+    },
+    "yb": {
+     "computed": 8.536,
+     "residual_pct": -0.042
+    }
+   },
+   "FSB18-53": {
+    "area": {
+     "computed": 779.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 136.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 21784.689,
+     "residual_pct": -0.001
+    },
+    "iyy": {
+     "computed": 126764.926,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 9.453,
+     "residual_pct": 0.031
+    },
+    "yb": {
+     "computed": 8.547,
+     "residual_pct": -0.034
+    }
+   },
+   "FSB18-54": {
+    "area": {
+     "computed": 797.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 138.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 22274.298,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 135512.489,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.443,
+     "residual_pct": 0.029
+    },
+    "yb": {
+     "computed": 8.557,
+     "residual_pct": -0.032
+    }
+   },
+   "FSB18-55": {
+    "area": {
+     "computed": 815.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 140.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 22763.748,
+     "residual_pct": -0.001
+    },
+    "iyy": {
+     "computed": 144658.93,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 9.433,
+     "residual_pct": 0.031
+    },
+    "yb": {
+     "computed": 8.567,
+     "residual_pct": -0.034
+    }
+   },
+   "FSB18-56": {
+    "area": {
+     "computed": 833.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 142.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 23253.049,
+     "residual_pct": 0.0
+    },
+    "iyy": {
+     "computed": 154213.25,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.424,
+     "residual_pct": 0.038
+    },
+    "yb": {
+     "computed": 8.576,
+     "residual_pct": -0.042
+    }
+   },
+   "FSB18-57": {
+    "area": {
+     "computed": 851.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 144.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 23742.211,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 164184.447,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 9.415,
+     "residual_pct": 0.049
+    },
+    "yb": {
+     "computed": 8.585,
+     "residual_pct": -0.054
+    }
+   },
+   "FSB18-58": {
+    "area": {
+     "computed": 869.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 146.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 24231.242,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 174581.523,
+     "residual_pct": -0.0
+    },
+    "yt": {
+     "computed": 9.406,
+     "residual_pct": -0.042
+    },
+    "yb": {
+     "computed": 8.594,
+     "residual_pct": 0.046
+    }
+   },
+   "FSB18-59": {
+    "area": {
+     "computed": 887.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 148.325,
+     "residual_pct": 0.004
+    },
+    "ixx": {
+     "computed": 24720.149,
+     "residual_pct": 0.001
+    },
+    "iyy": {
+     "computed": 185413.476,
+     "residual_pct": 0.0
+    },
+    "yt": {
+     "computed": 9.398,
+     "residual_pct": -0.023
+    },
+    "yb": {
+     "computed": 8.602,
+     "residual_pct": 0.025
+    }
+   },
+   "FSB18-60": {
+    "area": {
+     "computed": 905.756,
+     "residual_pct": -0.0
+    },
+    "perimeter": {
+     "computed": 150.325,
+     "residual_pct": -0.003
+    },
+    "ixx": {
+     "computed": 25208.941,
+     "residual_pct": 0.004
+    },
+    "iyy": {
+     "computed": 196689.308,
+     "residual_pct": 0.511
+    },
+    "yt": {
+     "computed": 9.39,
+     "residual_pct": -0.001
+    },
+    "yb": {
+     "computed": 8.61,
+     "residual_pct": 0.001
+    }
+   }
+  },
+  "residuals_note": "Computed from the implemented polygon in inch units (voids subtracted); residual_pct = 100*(computed - published)/published."
+ },
+ "aashto_type_ii_note": {
+  "index": "450-120",
+  "properties_source": {
+   "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/design/standardplans/2027/spi/spi-450-120.pdf",
+   "local_path": "sources/expansion/round2/us/fdot-2027-spi-450-120.pdf",
+   "sha256": "c1048fc45305eb2e6a5459f70f804960e2121a099c298f6d466fd82ba1f410ae",
+   "retrieved": "2026-09-23",
+   "pdf_page": 7
+  },
+  "finding": "FDOT AASHTO Type II uses the PCI Type II outline; SPI 450-120 gives A=369, Ixx=50,979, Iyy=5,333, yt=20.17, yb=15.83, 'based on gross section properties and neglect the 3/4\" chamfers on the bottom flanges'. Not re-implemented: use bridgebeams.us.AashtoIBeamSection('II')."
+ }
+}

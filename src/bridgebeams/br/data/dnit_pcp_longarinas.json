@@ -1,0 +1,73 @@
+{
+ "schema_version": 1,
+ "family": "DNIT IPR-751 semipermanent bridge precast I longarinas (PCP modules)",
+ "country": "Brazil",
+ "source_status": "current federal standard album (IPR-751, 2nd edition 2023)",
+ "sources": {
+  "drawings": {
+   "organisation": "Departamento Nacional de Infraestrutura de Transportes (DNIT) / Instituto de Pesquisas em Transportes (IPR)",
+   "title": "Publicação IPR-751 — Álbum de projetos-tipo de pontes semipermanentes, Volume 1 — Desenhos, 2ª edição (2023)",
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/ipr_751_vol_1_segunda_edicao.pdf",
+   "local_file": "sources/expansion/round2/br/dnit_ipr751_vol1_2ed.pdf",
+   "sha256": "5fd221adc50ec11aebbb299c0029597c07f43aecc39367c43f2b068b18177e79",
+   "accessed": "2026-09-23",
+   "locators": {"PCP-10": "PDF p56, folha 46", "PCP-15": "PDF p65, folha 55", "PCP-20": "PDF p76, folha 66"},
+   "view": "Corte D-D, esc. 1:25"
+  },
+  "drawings_first_edition": {
+   "title": "Publicação IPR-751 — Álbum ..., Volume 1 — Desenhos, 1ª edição (2022)",
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/publicacao_ipr_751_vol_1.pdf",
+   "local_file": "sources/expansion/round2/br/dnit_ipr751_vol1.pdf",
+   "sha256": "844a4e6df87cf03c789e32a52690a690cd74f53ae1dc969e2bc3d0139c766019",
+   "note": "Same Corte D-D dimensions on PDF pp56/65/76 (visually compared)."
+  },
+  "properties": {
+   "title": "Publicação IPR-751 — Volume 2 — Memória de cálculo, 2ª edição (2023)",
+   "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-manuais/vigentes/ipr_751_vol_2_segunda_edicao.pdf",
+   "local_file": "sources/expansion/round2/br/dnit_ipr751_vol2_2ed.pdf",
+   "sha256": "eeb4382e43cd97c516dd580173e06bf716fc3bfa99640f01b7037c365f9545da",
+   "locator": "Tabela 2-5 – Propriedades das Seções Transversais, folhas 140-142 ('1ª Etapa' = precast beam alone)"
+  }
+ },
+ "units": {"drawing": "cm", "published_area": "m2", "published_inertia": "m4", "outline_output": "mm"},
+ "translation": {
+  "longarina pré-moldada": "precast longitudinal girder",
+  "corte": "section",
+  "ponte semipermanente": "semipermanent bridge",
+  "1ª etapa": "stage 1 (precast beam alone)",
+  "yi / ys": "centroid distance to bottom / top fibre"
+ },
+ "geometry_notes": [
+  "Plain polygonal I, equal top and bottom flange widths; tapers run straight from flange edge to web. All callouts printed; no chamfers drawn.",
+  "Midspan Corte D-D modelled; the 70 cm solid end blocks and 15 cm transitions (elevation views) are excluded.",
+  "Volume 2 Tabela 2-1 labels PCP-10/PCP-15 'concreto armado pré-moldado' and PCP-20 'concreto pré-moldado protendido'; Volume 1 has an armadura ativa sheet for each module. Recorded, not resolved.",
+  "PINNED DISCREPANCY PCP-10: the drawing gives A = 0.2600 m2 (exact) while Tabela 2-5 prints A = 0.267 m2 (+2.7%). yi = ys = 0.35 m and I = 0.014 m4 (calc 0.01354, within print rounding) agree. PCP-15 and PCP-20 reproduce A, yi and I to print precision."
+ ],
+ "types": {
+  "PCP-10": {
+   "provenance": "transcribed",
+   "module_span_m": 10,
+   "beam_length_cm": 1050,
+   "dimensions_cm": {"depth": 70, "flange_width": 50, "web_width": 20, "top_flange": 15, "top_taper": 10, "bottom_flange": 15, "bottom_taper": 10},
+   "published_stage1": {"A_m2": 0.267, "I_m4": 0.014, "yi_m": 0.35, "ys_m": 0.35, "Wi_m3": 0.04, "Ws_m3": 0.04},
+   "calculated": {"A_m2": 0.2600, "I_m4": 0.013542, "yi_m": 0.3500},
+   "residuals": {"A": "-2.6% (pinned)", "I": "-3.3% vs 0.014 printed to 3 d.p.", "yi": "0"}
+  },
+  "PCP-15": {
+   "provenance": "transcribed",
+   "module_span_m": 15,
+   "dimensions_cm": {"depth": 100, "flange_width": 50, "web_width": 20, "top_flange": 15, "top_taper": 10, "bottom_flange": 15, "bottom_taper": 15},
+   "published_stage1": {"A_m2": 0.328, "I_m4": 0.037, "yi_m": 0.494, "ys_m": 0.506, "Wi_m3": 0.074, "Ws_m3": 0.072},
+   "calculated": {"A_m2": 0.3275, "I_m4": 0.036645, "yi_m": 0.4939},
+   "residuals": {"A": "-0.15%", "I": "-1.0% (0.037 printed to 3 d.p.)", "yi": "-0.1 mm"}
+  },
+  "PCP-20": {
+   "provenance": "transcribed",
+   "module_span_m": 20,
+   "dimensions_cm": {"depth": 130, "flange_width": 60, "web_width": 20, "top_flange": 15, "top_taper": 10, "bottom_flange": 15, "bottom_taper": 15},
+   "published_stage1": {"A_m2": 0.430, "I_m4": 0.0870, "yi_m": 0.640, "ys_m": 0.660, "Wi_m3": 0.136, "Ws_m3": 0.132},
+   "calculated": {"A_m2": 0.4300, "I_m4": 0.086955, "yi_m": 0.6403},
+   "residuals": {"A": "0", "I": "-0.05%", "yi": "+0.3 mm"}
+  }
+ }
+}

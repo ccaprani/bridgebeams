@@ -1,0 +1,35 @@
+{
+  "family": "YE Edge Beam (Ireland, beam & slab construction)",
+  "description": "Irish standard prestressed YE edge beams YE1-YE8 (700-1400 mm deep, 750 mm soffit width) - the edge-beam companion to the Y family, with a full-height vertical face on one side (cast-on parapet side) and an asymmetric section (published Xc = distance from the vertical face to the centroid).",
+  "sources": {
+    "properties_Wf_Xc": "Banagher Precast Concrete, Bridge Beam Manual, 3rd ed., printed pp. 32-33 (sources/banagher-bridge-beam-manual-3ed.pdf); identical tables in Concast brochure and in '05316 Precast Beam Properties.xls' (2007).",
+    "source_urls": [
+      "https://files.brintex.com/Occurrence/291/Brochure/7518/brochure.pdf",
+      "http://concast.ie/wp-content/uploads/2020/03/Concast_Civil.pdf"
+    ],
+    "strand_layout": "Banagher manual printed p. 33: 'YE Beam Showing All Possible Strand Locations - In all beams superimposed'. Bottom rows 13@60, 14@110, 14@160, 12@210, 6@250, 1@260, 4@310, 4@350; web rows 2/4 @ 380-1330 with pair spreads 70-320 (offset toward the vertical face); a 320-wide top row pair spread at 1330."
+  },
+  "published_properties": [
+    {"section": "YE1", "depth": 700, "area": 417260, "yc": 315.0, "xc": 309.5, "zt": 44.43, "zb": 54.31, "ixx_e9": 17.106, "self_weight_kN_m": 10.43, "wf": 474.1},
+    {"section": "YE2", "depth": 800, "area": 470100, "yc": 363.4, "xc": 304.4, "zt": 59.28, "zb": 71.21, "ixx_e9": 25.879, "self_weight_kN_m": 11.28, "wf": 488.5},
+    {"section": "YE3", "depth": 900, "area": 524400, "yc": 413.4, "xc": 300.9, "zt": 76.61, "zb": 90.18, "ixx_e9": 37.278, "self_weight_kN_m": 12.59, "wf": 502.9},
+    {"section": "YE4", "depth": 1000, "area": 580130, "yc": 464.6, "xc": 298.7, "zt": 96.45, "zb": 111.15, "ixx_e9": 51.641, "self_weight_kN_m": 13.92, "wf": 517.3},
+    {"section": "YE5", "depth": 1100, "area": 637300, "yc": 516.8, "xc": 297.5, "zt": 118.85, "zb": 134.13, "ixx_e9": 69.316, "self_weight_kN_m": 15.30, "wf": 531.8},
+    {"section": "YE6", "depth": 1200, "area": 695920, "yc": 569.8, "xc": 297.1, "zt": 143.86, "zb": 159.10, "ixx_e9": 90.659, "self_weight_kN_m": 16.70, "wf": 546.2},
+    {"section": "YE7", "depth": 1300, "area": 755980, "yc": 623.6, "xc": 297.3, "zt": 171.55, "zb": 186.08, "ixx_e9": 116.040, "self_weight_kN_m": 18.14, "wf": 560.6},
+    {"section": "YE8", "depth": 1400, "area": 817480, "yc": 678.0, "xc": 298.0, "zt": 201.98, "zb": 215.10, "ixx_e9": 145.830, "self_weight_kN_m": 19.62, "wf": 575.0}
+  ],
+  "fit": {
+    "note": "Topology (from the p.32 nested drawing): the LEFT face is vertical at the soffit edge for the full depth; the top runs from the left face across the published top width Wf; the right side mirrors the Y-beam lower body (soffit edge -> haunch -> waist) then runs straight to the top-right corner. Internal dims least-squares fitted to published A, yc, Xc and Ixx of all eight sizes (32 values; Wf published input). Units mm; origin at mid-soffit, y up; the vertical face is at x = -375 and published Xc is measured from that face.",
+    "soffit_width": 750.0,
+    "vertical_face_offset": -375.0,
+    "params": {
+      "chamfer": 0.0,
+      "flange_depth": 224.31,
+      "waist_half_width": 154.91,
+      "waist_height": 291.56
+    },
+    "rms_error_pct": 0.75,
+    "max_error_pct": 1.49
+  }
+}

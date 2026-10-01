@@ -1,0 +1,29 @@
+{
+  "family": "JIS A 5373 けた橋げた (pretensioned T-girders, Japan)",
+  "description": "Japanese standard precast pretensioned T-girders per JIS A 5373 Annex B Recommended Specification B-1: types AG18-AG24 (A live load) and BG18-BG24 (B live load), spans 18-24 m @ 1 m pitch. Cross-section per MLIT Chubu Regional Bureau design guideline (図-5-III-41): top flange 800 wide x 160 thick with 20 mm side returns and 35 mm haunch; web+bottom 300 wide constant; depth 900-1300 mm per type. Girder c/c spacing max 1.08 m; skew >= 70 deg; concrete 50 N/mm2 (36 at transfer).",
+  "sources": {
+    "section_dims": "MLIT Chubu Regional Bureau 道路橋設計要領 第5章橋梁 v2014.03, 表-5-III-10 + 図-5-III-41 (citing the PCCEN handbook, JIS A 5373:2004): https://www.cbr.mlit.go.jp/road/sekkeiyouryou/pdf/cb005_kyouryou_v201403.pdf",
+    "depths_strands": "JIS A 5373:2004 English translation (RS 2-1, 表2): https://dokumen.site/download/jis-a5373-2004-precast-prestressed-concrete-products-a5b39f0a1947fc",
+    "thr": "THR/PCCEN Tohoku プレテンション橋げた設計施工のポイント: https://www.thr.mlit.go.jp/road/sesaku/manual/20170323point2.pdf"
+  },
+  "types": [
+    {"section": "AG18", "load": "A", "span_m": 18, "depth": 900},
+    {"section": "AG19", "load": "A", "span_m": 19, "depth": 1000},
+    {"section": "AG20", "load": "A", "span_m": 20, "depth": 1000},
+    {"section": "AG21", "load": "A", "span_m": 21, "depth": 1100},
+    {"section": "AG22", "load": "A", "span_m": 22, "depth": 1100},
+    {"section": "AG23", "load": "A", "span_m": 23, "depth": 1200},
+    {"section": "AG24", "load": "A", "span_m": 24, "depth": 1200},
+    {"section": "BG18", "load": "B", "span_m": 18, "depth": 1000},
+    {"section": "BG19", "load": "B", "span_m": 19, "depth": 1000},
+    {"section": "BG20", "load": "B", "span_m": 20, "depth": 1100},
+    {"section": "BG21", "load": "B", "span_m": 21, "depth": 1100},
+    {"section": "BG22", "load": "B", "span_m": 22, "depth": 1200},
+    {"section": "BG23", "load": "B", "span_m": 23, "depth": 1200},
+    {"section": "BG24", "load": "B", "span_m": 24, "depth": 1300}
+  ],
+  "dims_mm": {
+    "top_flange_width": 800.0, "top_flange_thickness": 160.0,
+    "side_return": 20.0, "haunch": 35.0, "web_plus_bottom_width": 300.0
+  }
+}

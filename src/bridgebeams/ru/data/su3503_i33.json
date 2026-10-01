@@ -1,0 +1,104 @@
+{
+  "family": "\u0421\u043e\u044e\u0437\u0434\u043e\u0440\u043f\u0440\u043e\u0435\u043a\u0442 \u0441\u0435\u0440\u0438\u044f 3.503.1-81, \u0412\u044b\u043f\u0443\u0441\u043a 7-1 \u2014 33 m precast prestressed I-beams (Russia/CIS)",
+  "description": "Soyuzdorproekt typical-design series 3.503.1-81 (release Vypusk 7-1): fully transportable pretensioned I-section beams for 33 m spans. Four marks: B3300.174.153 / B3300.194.153 / B3300.174.173 / B3300.194.173 - marking per GOST 23009: B<length mm>.<top slab width dm*100>.<height dm*100>, i.e. 33 m long, top slab 1740/1940 mm, girder height 1530/1730 mm. Top slab 1040 + e wide (e=700/900), 180 thick with 30x30 edge notches, R300 haunches into a 200 mm web, bottom flange 620 wide with R200 fillets. Concrete B35 (h=1730) / B40 (h=1530); pretressing K-7 strand bundles (m bundles x n strands; bundle length k x 100 mm).",
+  "sources": {
+    "release": "Soyuzdorproekt, series 3.503.1-81, Vypusk 7-1 working drawings (scanned, 85 sheets) - https://zavodjbi.com/upload/uf/647/iywafccbli2pfal5dwsrmiq6qoxzueum/zavodjbi.com_Vypusk-7_1.-Balki-proletnykh-stroeniy-dlinoy-12_15_18_21_24-i-33m-tselnoperevozimye-s-natyazheniem-na-upory.pdf",
+    "marking_and_masses": "Producer catalogue (GBiSIB Novosibirsk) - https://novosibirsk.gbisib.ru/katalog/mostostroenie/balki-dvutavrovogo-secheniya-s-napryazhennoj-armaturoj/ (mark table: length/width/height/support-rib thickness/volume/mass per mark and inventory drawing)",
+    "context": "STO NOSTROY 2.29.106-2013 Annex A; SP 35.13330 design code; series entry https://tipdoc.ru/catalog/1495/83412/"
+  },
+  "fixed_dims": {
+    "top_slab_thickness": 180.0,
+    "edge_notch": "30 x 30",
+    "top_slab_overhang_left": 1040.0,
+    "web_thickness_a": 200.0,
+    "bottom_flange_width": 620.0,
+    "bottom_flange_margin_c": 20.0,
+    "r_haunch": 300.0,
+    "r_bottom_fillet": 200.0
+  },
+  "fitted_dims": {
+    "bottom_flange_thickness": 196.9,
+    "r_haunch_fitted": 283.8,
+    "r_bottom_fillet_fitted": 223.9,
+    "note": "Least-squares fit to producer volume-derived areas of all four marks (rms 0.30%, max 0.32%) with valid polygons; fitted radii land on the drawing callouts R300/R200."
+  },
+  "published_properties": [
+    {
+      "section": "B3300.174.153",
+      "length_mm": 33000,
+      "height": 1530,
+      "top_width": 1740,
+      "e": 700,
+      "web_a": 200,
+      "b2": 580,
+      "c": 20,
+      "k_bundles_len": 329,
+      "bundles_m": 10,
+      "strands_n": 9,
+      "concrete": "B40",
+      "volume_m3": 23.93,
+      "mass_t": 59.82,
+      "area_mm2": 725152,
+      "support_rib": "260/160"
+    },
+    {
+      "section": "B3300.194.153",
+      "length_mm": 33000,
+      "height": 1530,
+      "top_width": 1940,
+      "e": 900,
+      "web_a": 200,
+      "b2": 580,
+      "c": 20,
+      "k_bundles_len": 329,
+      "bundles_m": 10,
+      "strands_n": 9,
+      "concrete": "B40",
+      "volume_m3": 25.12,
+      "mass_t": 62.79,
+      "area_mm2": 761212,
+      "support_rib": "260/160"
+    },
+    {
+      "section": "B3300.174.173",
+      "length_mm": 33000,
+      "height": 1730,
+      "top_width": 1740,
+      "e": 700,
+      "web_a": 200,
+      "b2": 580,
+      "c": 20,
+      "k_bundles_len": 329,
+      "bundles_m": 10,
+      "strands_n": 9,
+      "concrete": "B35",
+      "volume_m3": 25.1,
+      "mass_t": 62.75,
+      "area_mm2": 760606,
+      "support_rib": "260/160"
+    },
+    {
+      "section": "B3300.194.173",
+      "length_mm": 33000,
+      "height": 1730,
+      "top_width": 1940,
+      "e": 900,
+      "web_a": 200,
+      "b2": 580,
+      "c": 20,
+      "k_bundles_len": 329,
+      "bundles_m": 10,
+      "strands_n": 9,
+      "concrete": "B35",
+      "volume_m3": 26.29,
+      "mass_t": 65.72,
+      "area_mm2": 796667,
+      "support_rib": "260/160"
+    }
+  ],
+  "related_series": {
+    "12-24 m": "h=930 (L=12/15 m, web 100, B40) and h=1230 (L=18/21/24 m, web 150, B35) marks B1200/1500/1800/2100/2400.174/194.93/.123 - same slab/e/b2/c system (b2 600/590, c 10/15); own proportions, separate drawing sheets; not yet implemented.",
+    "3.503-12": "Unified precast superstructures 8-33 m incl. post-tensioned variants - https://meganorm.ru/Data2/1/4293844/4293844232.htm",
+    "3.503.1-73": "T-section beams L=8-18 m, h=750, b=1100"
+  }
+}
