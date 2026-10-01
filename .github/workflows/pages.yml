@@ -2,7 +2,7 @@ name: Publish Sphinx site
 
 on:
   push:
-    branches: [ukie-beams]
+    branches: [main]
   workflow_dispatch:
 
 permissions:

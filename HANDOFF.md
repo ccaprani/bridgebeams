@@ -1,6 +1,17 @@
-# HANDOFF — bridgebeams agent briefing (v3)
+# HANDOFF — global bridgebeams database agent briefing (v4)
 
 Read this fully before starting work.
+
+## Global database on main — 1 October 2026
+
+`main` is the integration branch for the global database. Colin authorized
+merging PR #1 (`aus-sections`) and PR #2 (`ukie-beams`); both are now merged.
+Their merge commits are `d200e1e` and `1e9b79d`, respectively. The merged
+code tree matches the validated global catalogue at `9dcafba`.
+
+The local checkout now tracks `origin/main`, and the Pages workflow runs
+on pushes to `main`. The old `ukie-beams` name is historical; it no longer
+defines the database scope or the active workflow.
 
 ## NZTA and Michigan dimension reconciliation — 30 September 2026
 
@@ -66,10 +77,10 @@ explicitly unimplemented.
 
 ## Repository
 
-- Local: `~/projects/bridgebeams`, branch **`ukie-beams`**
+- Local: `~/projects/bridgebeams`, branch **`main`**
 - Remote: `github.com/ccaprani/bridgebeams` (private)
-- PRs #1 (`aus-sections`) and #2 (`ukie-beams`) are open, both target `main`,
-  NOT merged (verified 30 September 2026)
+- PRs #1 (`aus-sections`) and #2 (`ukie-beams`) merged into `main`
+  on 1 October 2026; the local checkout is synchronized with `origin/main`
 - Environment: `source ~/anaconda3/etc/profile.d/conda.sh && conda activate pybridge`
 - Test: `/home/ccaprani/anaconda3/envs/pybridge/bin/python -m pytest tests/ -q`
   — 239 tests passing in the dimension-reconciliation validation above
@@ -243,5 +254,8 @@ Research briefs: `sources/research/*.md` (16+ files).
 
 ## Commit protocol
 
-Push to `ukie-beams` branch. PR #2 tracks. Do NOT merge. Do NOT push to
-main. Commit with descriptive messages. Test before committing.
+Use `main` as the integration branch for the global database. Future
+feature PRs target `main`. The earlier ban on merging or pushing to main
+was superseded by Colin's explicit consolidation instruction on
+1 October 2026. Commit with descriptive messages and run checks appropriate
+to the change before committing.
