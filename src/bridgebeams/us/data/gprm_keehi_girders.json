@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "family": "GPRM Keehi IV and VI prestressed bridge girders",
+  "country": "US",
+  "manufacturer": "GPRM Prestress",
+  "manufacturer_region": "Hawaii",
+  "sources": [
+    {
+      "title_original": "Keehi Girders",
+      "url": "https://www.gprmp.com/sites/default/files/A2-23-10%20KEEHI%20GIRDERS.pdf",
+      "local_file": "docs/research/manufacturers/2026-10-02-intake/references/6d4ca3e48e7f85eb37e1-A2-23-10-KEEHI-GIRDERS.pdf.pdf",
+      "sha256": "1f9eebef99376b56923d9c219b6b3f58f8845a99e697bc3416836c3f78c8703a",
+      "retrieved": "2026-10-02",
+      "pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "edition": "Undated sheets; issued/revised fields blank. PDF creation and modification metadata in 2010 do not establish a drawing issue date."
+    }
+  ],
+  "units": "Source dimensions in inches; published area in in2, I in in4, moduli in in3, weight in kip/ft. Public geometry in mm.",
+  "geometry_notes": [
+    "Wide profiles use the maximum printed widths: VI W 57 in; IV W 56.5 in. The 3 in edge is for the widest section. Unspecified project-specific narrowing is not modelled.",
+    "IV MOD adds 4 in at the top of IV, increasing the top edge from 4 to 8 in and total depth from 58 to 62 in.",
+    "All profiles retain both printed 3/4 in soffit chamfers and lower-web R=3/4 in fillets. Fillets are approximated with 64 straight segments per arc. Unlabelled upper corner radii are not inferred.",
+    "The published IV, IV W, IV MOD and VI W properties match the sharp nominal outline, excluding the drawn bevels and radii, to source rounding. Their as-drawn polygons have areas lower by 0.51-0.59 in2. Across all five profiles, including VI, the area deficits are 0.288-0.589 in2, Ixx is lower by 0.11-0.14 percent and yb is higher by 0.017-0.026 in. These source-convention differences are preserved rather than used to fit dimensions.",
+    "VI printed area 944 in2 rounds the nominal 944.25 in2; its as-drawn area is 943.711715 in2, giving a 0.288285 in2 deficit against the printed value. Printed Ixx 638894 in4 differs from the independently integrated sharp outline 638816.49 in4 by 0.012 percent.",
+    "Gross concrete only: reinforcing steel, strands, end-zone/block-out and project-specific details are excluded. Source availability is not proof of current production or design-standard applicability."
+  ],
+  "sections": {
+    "K-VI W": {
+      "pdf_page": 1,
+      "sheet": "K-VI W",
+      "dimensions_in": {
+        "depth": 72,
+        "top_width": 57,
+        "web_width": 7,
+        "bottom_width": 26,
+        "bottom_edge": 8,
+        "bottom_splay": 9.5,
+        "web_height": 43.5,
+        "top_splay_height": 4,
+        "top_splay_run": 4,
+        "top_taper": 4,
+        "top_edge": 3,
+        "soffit_chamfer": 0.75,
+        "lower_web_radius": 0.75
+      },
+      "published_in": {
+        "area": 1028.3,
+        "yt": 33.9,
+        "yb": 38.1,
+        "ix": 731754,
+        "zt": 21589,
+        "zb": 19204,
+        "weight_kip_per_ft": 1.07
+      },
+      "provenance": "transcribed-with-convention",
+      "source_status": "Undated GPRM producer drawing; fully dimensioned nominal section, printed corners retained, maximum width for wide variants; current physical production unverified"
+    },
+    "K-VI": {
+      "pdf_page": 2,
+      "sheet": "K-VI",
+      "dimensions_in": {
+        "depth": 72,
+        "top_width": 36,
+        "web_width": 7,
+        "bottom_width": 26,
+        "bottom_edge": 8,
+        "bottom_splay": 9.5,
+        "web_height": 43.5,
+        "top_splay_height": 4,
+        "top_splay_run": 4,
+        "top_taper": 2,
+        "top_edge": 5,
+        "soffit_chamfer": 0.75,
+        "lower_web_radius": 0.75
+      },
+      "published_in": {
+        "area": 944,
+        "yt": 36.73,
+        "yb": 35.27,
+        "ix": 638894,
+        "zt": 17394,
+        "zb": 18114,
+        "weight_kip_per_ft": 0.98
+      },
+      "provenance": "transcribed-with-convention",
+      "source_status": "Undated GPRM producer drawing; fully dimensioned nominal section, printed corners retained, maximum width for wide variants; current physical production unverified"
+    },
+    "K-IV W": {
+      "pdf_page": 3,
+      "sheet": "K-IV W",
+      "dimensions_in": {
+        "depth": 58,
+        "top_width": 56.5,
+        "web_width": 6.5,
+        "bottom_width": 26,
+        "bottom_edge": 8,
+        "bottom_splay": 6,
+        "web_height": 33,
+        "top_splay_height": 4,
+        "top_splay_run": 4,
+        "top_taper": 4,
+        "top_edge": 3,
+        "soffit_chamfer": 0.75,
+        "lower_web_radius": 0.75
+      },
+      "published_in": {
+        "area": 873.5,
+        "yt": 26.39,
+        "yb": 31.61,
+        "ix": 409337,
+        "zt": 15514,
+        "zb": 12948,
+        "weight_kip_per_ft": 0.91
+      },
+      "provenance": "transcribed-with-convention",
+      "source_status": "Undated GPRM producer drawing; fully dimensioned nominal section, printed corners retained, maximum width for wide variants; current physical production unverified"
+    },
+    "K-IV": {
+      "pdf_page": 4,
+      "sheet": "K-IV",
+      "dimensions_in": {
+        "depth": 58,
+        "top_width": 24,
+        "web_width": 6.5,
+        "bottom_width": 26,
+        "bottom_edge": 8,
+        "bottom_splay": 6,
+        "web_height": 37,
+        "top_splay_height": 0,
+        "top_splay_run": 0,
+        "top_taper": 3,
+        "top_edge": 4,
+        "soffit_chamfer": 0.75,
+        "lower_web_radius": 0.75
+      },
+      "published_in": {
+        "area": 687.75,
+        "yt": 32.62,
+        "yb": 25.38,
+        "ix": 282484,
+        "zt": 8660,
+        "zb": 11130,
+        "weight_kip_per_ft": 0.716
+      },
+      "provenance": "transcribed-with-convention",
+      "source_status": "Undated GPRM producer drawing; fully dimensioned nominal section, printed corners retained, maximum width for wide variants; current physical production unverified"
+    },
+    "K-IV MOD": {
+      "pdf_page": 4,
+      "sheet": "K-IV, IV MOD property row and additional-depth callout",
+      "dimensions_in": {
+        "depth": 62,
+        "top_width": 24,
+        "web_width": 6.5,
+        "bottom_width": 26,
+        "bottom_edge": 8,
+        "bottom_splay": 6,
+        "web_height": 37,
+        "top_splay_height": 0,
+        "top_splay_run": 0,
+        "top_taper": 3,
+        "top_edge": 8,
+        "soffit_chamfer": 0.75,
+        "lower_web_radius": 0.75
+      },
+      "published_in": {
+        "area": 783.8,
+        "yt": 32.38,
+        "yb": 29.62,
+        "ix": 383594,
+        "zt": 11846,
+        "zb": 12951,
+        "weight_kip_per_ft": 0.816
+      },
+      "provenance": "transcribed-with-convention",
+      "source_status": "Undated GPRM producer drawing; fully dimensioned nominal section, printed corners retained, maximum width for wide variants; current physical production unverified"
+    }
+  }
+}

@@ -87,3 +87,6 @@ __all__ += ['MiBoxBeamDimensions', 'MiBulbTeeDimensions', 'MiBulbTeeSection', 'M
 
 from .state_r4_mi_mdot_standard import (MiMdot1800Section, MiMdot70ISection, MiMdotBulbTeeSection, MiMdotIBeamDimensions, MiMdotISection)
 __all__ += ['MiMdot1800Section', 'MiMdot70ISection', 'MiMdotBulbTeeSection', 'MiMdotIBeamDimensions', 'MiMdotISection']
+
+from .gprm_keehi_girders import GprmKeehiDimensions, GprmKeehiGirderSection
+__all__ += ["GprmKeehiDimensions", "GprmKeehiGirderSection"]

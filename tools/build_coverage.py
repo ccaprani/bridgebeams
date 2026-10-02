@@ -135,6 +135,45 @@ def provenance_counts(unique_families):
     return dict(sorted(counts.items()))
 
 
+def manufacturer_summary(path):
+    """Read the public count-only snapshot; never require private raw sources."""
+    summary=json.loads(path.read_text(encoding='utf-8'))
+    fields=('records','manufacturers','suppliers','historical','queries',
+            'historical_manufacturers','historical_suppliers',
+            'unverified_leads','contractors','excluded')
+    codes=set()
+    for row in summary['countries']:
+        if row['code'] in codes:
+            raise ValueError(f"Duplicate research summary country: {row['code']}")
+        codes.add(row['code'])
+        if any(type(row[key]) is not int or row[key]<0 for key in fields):
+            raise ValueError(f"Invalid research summary count: {row['code']}")
+        if row['historical']!=row['historical_manufacturers']+row['historical_suppliers']:
+            raise ValueError(f"Historical role counts disagree: {row['code']}")
+        if row['records']!=sum(row[key] for key in fields if key not in ('records','historical','queries')):
+            raise ValueError(f"Research role counts disagree: {row['code']}")
+    for key in fields:
+        if sum(row[key] for row in summary['countries'])!=summary['totals'][key]:
+            raise ValueError(f'Research summary total disagrees: {key}')
+    if len(codes)!=summary['totals']['jurisdictions']:
+        raise ValueError('Research summary jurisdiction total disagrees')
+    for continent, totals in summary['continents'].items():
+        members=[row for row in summary['countries'] if row['continent']==continent]
+        if totals['jurisdictions']!=len(members) or any(
+                sum(row[key] for row in members)!=totals[key] for key in fields):
+            raise ValueError(f'Research summary continent totals disagree: {continent}')
+    if set(summary['continents'])!={row['continent'] for row in summary['countries']}:
+        raise ValueError('Research summary continent partition disagrees')
+    for total_key, role_fields in (
+            ('manufacturer_countries',('manufacturers',)),
+            ('supplier_countries',('suppliers',)),
+            ('current_role_countries',('manufacturers','suppliers'))):
+        if summary['totals'][total_key]!=sum(
+                sum(row[key] for key in role_fields)>0 for row in summary['countries']):
+            raise ValueError(f'Research summary country coverage disagrees: {total_key}')
+    return summary
+
+
 def build():
     boundaries=json.loads((ASSETS/'boundaries.json').read_text())
     countries={f['code']:{'code':f['code'],'name':f['name'],'sources':[],'families':[]} for f in boundaries['features']}
@@ -191,7 +230,7 @@ def build():
             records+=int(add('US','United States',{'title':s['title'],'url':s['url'],
                 'status':'official drawing and independent property check',
                 'registry':'us-washington-followup.json','id':'wsdot_'+key}))
-    for deep_search in sorted((ROOT/'docs/research/data').glob('deep-search-*-2026-09.json')):
+    for deep_search in sorted((ROOT/'docs/research/data').glob('deep-search-*.json')):
         for s in json.loads(deep_search.read_text())['records']:
             records+=int(add(s['country_code'],s['country'],{
                 'title':s.get('title_en') or s['title_original'],
@@ -228,15 +267,25 @@ def build():
         row['count']=sum(f['count'] for f in row['families'])
         row['source_count']=len(row['sources'])
         row['researched']=bool(row['sources'])
-    result={'count_basis':'Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.',
+    research=manufacturer_summary(ASSETS/'manufacturer-summary.json')
+    for observation in research['countries']:
+        code=observation['code']
+        row=countries.setdefault(code,{'code':code,'name':observation['name'],
+                                      'sources':[],'families':[],'count':0,
+                                      'source_count':0,'researched':False})
+        row['manufacturer_research']=observation
+    for row in countries.values():
+        row.setdefault('manufacturer_research',None)
+    result={'count_basis':'Country counts represent named source-backed fixed profiles available in that jurisdiction. The global total counts distinct source-profile IDs, not coordinate-deduplicated outlines: different named source families may share an identical outline. Shared reexports retain the same profile ID and count once globally, while appearing in each applicable country. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.',
         'source_count_basis':'Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.',
         'researched_jurisdictions':sum(r['researched'] for r in countries.values()),
         'source_records':records,'implemented_countries':sum(r['count']>0 for r in countries.values()),
         'implemented_profiles':len({profile_id for families in unique_families.values()
                                     for family in families for profile_id in family['profile_ids']}),
         'country_profile_assignments':sum(r['count'] for r in countries.values()),
-        'provenance_basis':'Distinct profiles by provenance. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.',
+        'provenance_basis':'Distinct named source-profile IDs by provenance, not distinct outline shapes. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.',
         'provenance_counts':provenance_counts(unique_families),
+        'manufacturer_research':{key:value for key,value in research.items() if key!='countries'},
         'countries':sorted(countries.values(),key=lambda r:r['name'])}
     (ASSETS/'coverage-data.json').write_text(json.dumps(result,indent=2)+'\n')
     # Fully rendered HTML has no fetch dependency and works through file:// too.
@@ -251,7 +300,7 @@ def build():
         f=dict(f,path=project_path(f['path'],scale,y_top))
         row=countries[f['code']];count=row['count']
         level=('low' if count<=5 else 'mid' if count<=15 else 'high' if count<=40 else 'max') if count else ('zero' if row['researched'] else 'norecord')
-        label=f"{row['name']}: {count} profiles; {row['source_count']} research records"
+        label=f"{row['name']}: {count} named beam profiles; {row['source_count']} catalogue source records"
         svg.append(f'<path class="country {level}" data-code="{escape(f["code"])}" tabindex="0" role="button" aria-label="{escape(label)}" d="{f["path"]}"><title>{escape(label)}</title></path>')
     svg.append('</svg>')
     rows=[]
@@ -260,10 +309,13 @@ def build():
             n=sum(v=='estimate' for v in f.get('provenance',{}).values())
             return f"{f['name']} ({f['count']}{', '+str(n)+' estimate' if n else ''})"
         family=', '.join(label(f) for f in r['families']) or '—'
-        rows.append(f'<tr data-code="{escape(r["code"])}"><th scope="row"><button class="country-select" data-code="{escape(r["code"])}">{escape(r["name"])}</button></th><td>{escape(r["code"])}</td><td>{r["count"]}</td><td>{r["source_count"]}</td><td>{escape(family)}</td></tr>')
+        observation=r['manufacturer_research']
+        def research_value(key):
+            return observation[key] if observation is not None else '—'
+        rows.append(f'<tr data-code="{escape(r["code"])}"><th scope="row"><button class="country-select" data-code="{escape(r["code"])}">{escape(r["name"])}</button></th><td>{escape(r["code"])}</td><td class="metric-value">{r["count"]}</td><td>{r["count"]}</td><td>{research_value("manufacturers")}</td><td>{research_value("suppliers")}</td><td>{research_value("records")}</td><td>{research_value("queries")}</td><td>{escape(family)}</td></tr>')
     payload=json.dumps(result).replace('<','\\u003c')
     output=template.replace('<!-- MAP -->',''.join(svg)).replace('<!-- ROWS -->','\n'.join(rows)).replace('/* DATA */',payload)
-    output=output.replace('<!-- SUMMARY -->',f"{result['implemented_profiles']} distinct implemented profiles ({', '.join(f'{v} {k}' for k,v in result['provenance_counts'].items())}) · {result['country_profile_assignments']} country-profile assignments · {result['implemented_countries']} countries with fixed profiles · {result['researched_jurisdictions']} researched jurisdictions · {records} source records")
+    output=output.replace('<!-- SUMMARY -->',f"{result['implemented_profiles']} named beam profiles ({', '.join(f'{v} {k}' for k,v in result['provenance_counts'].items())}) · {result['country_profile_assignments']} country-profile assignments · {result['implemented_countries']} countries with fixed profiles · {result['researched_jurisdictions']} researched jurisdictions · {records} source records")
     (ASSETS/'index.html').write_text(output)
     # GB = shared Banagher aliases plus UK-only producer families (e.g. FP McCann).
     uk_own=[f for f in unique_families['GB'] if f['module'].startswith('bridgebeams.uk.')]

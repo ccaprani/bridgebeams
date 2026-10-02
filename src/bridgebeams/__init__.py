@@ -501,3 +501,9 @@ __all__ += ['PekabexMgtDimensions', 'PekabexMgtSection', 'SomacoGirderDimensions
 __all__ += ['OrDeckBulbTeeDimensions', 'OrDeckBulbTeeSection', 'OhAashtoIBeamSection', 'OhIBeamDimensions', 'OhWfBeamSection', 'SaoDomingosLongarinaDimensions', 'SaoDomingosLongarinaSection', 'MopLosaNervadaVigaDimensions', 'MopLosaNervadaVigaSection', 'MopVigaPostensadaDimensions', 'MopVigaPostensadaSection']
 
 __all__ += ['MiBoxBeamDimensions', 'MiBulbTeeDimensions', 'MiBulbTeeSection', 'MiSideBySideBoxBeamSection', 'MiSpreadBoxBeamSection', 'MiMdot1800Section', 'MiMdot70ISection', 'MiMdotBulbTeeSection', 'MiMdotIBeamDimensions', 'MiMdotISection', 'PhDpwhAashtoDimensions', 'PhDpwhAashtoSection']
+
+from bridgebeams.us.gprm_keehi_girders import GprmKeehiDimensions, GprmKeehiGirderSection
+__all__ += ["GprmKeehiDimensions", "GprmKeehiGirderSection"]
+
+from bridgebeams.my.scib_i_beam import ScibIBeamDimensions, ScibIBeamSection
+__all__ += ["ScibIBeamDimensions", "ScibIBeamSection"]

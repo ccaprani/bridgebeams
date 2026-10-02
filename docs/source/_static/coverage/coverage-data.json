@@ -1,17 +1,142 @@
 {
-  "count_basis": "Country counts represent named source-backed discrete geometry choices available in that jurisdiction. Shared producer profiles appear in each applicable country but only once in the unique global total. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
+  "count_basis": "Country counts represent named source-backed fixed profiles available in that jurisdiction. The global total counts distinct source-profile IDs, not coordinate-deduplicated outlines: different named source families may share an identical outline. Shared reexports retain the same profile ID and count once globally, while appearing in each applicable country. Includes documented reconstructions; excludes arbitrary continuous inputs, incomplete parametric templates and Korean extrapolations. Count is not a design certification.",
   "source_count_basis": "Research source records, including partial, blocked and rejected leads; duplicate publications can have separate family records. Not implemented sections.",
   "researched_jurisdictions": 169,
-  "source_records": 355,
+  "source_records": 357,
   "implemented_countries": 48,
-  "implemented_profiles": 1806,
-  "country_profile_assignments": 1981,
-  "provenance_basis": "Distinct profiles by provenance. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.",
+  "implemented_profiles": 1822,
+  "country_profile_assignments": 1997,
+  "provenance_basis": "Distinct named source-profile IDs by provenance, not distinct outline shapes. unlabelled = families implemented before September 2026, which predate the attribute; see their module documentation.",
   "provenance_counts": {
     "estimate": 235,
     "fitted-reconstruction": 190,
     "transcribed": 591,
-    "transcribed-with-convention": 790
+    "transcribed-with-convention": 806
+  },
+  "manufacturer_research": {
+    "schema_version": 1,
+    "campaign_date": "2026-10-01",
+    "snapshot_created_at": "2026-10-02T06:08:56.822733+00:00",
+    "count_basis": "Named company, branch, public organisation or factory operating-unit records; not a legal-entity deduplication or factory census.",
+    "current_role_basis": "Opened sources support advertised PSC bridge-beam manufacture or supply. Current means a source-supported advertised role, not verified physical production at the snapshot date.",
+    "records_basis": "All canonical discovery records, including unverified leads, contractors and exclusions. Current manufacturers and suppliers are separate statuses, not overlapping counts.",
+    "geography_basis": "Company actual country for records and roles; searched jurisdiction for queries. Foreign-market leads are excluded from domestic company counts. A zero is a saved-observation count, not evidence of producer absence.",
+    "coverage_basis": "250 planned countries and areas in the UN M49 campaign partition with Taiwan and Kosovo recorded separately. Protocol closure means the documented search frontier was closed, not that every web page or producer was found.",
+    "input_sha256": {
+      "companies.jsonl": "e93cbf55ff188887f22e8111148eff35e6883bd8c4b94d90ebe06d166167162e",
+      "coverage.jsonl": "95413bea5cf58f06f38ebef3c27d15cad466151527412f157d746f2b4831d278",
+      "queries.jsonl": "6e82160b60a130c3dfbaa4a52eafd5ba638c4d6e869ac25ef5092d64e5d63f39",
+      "validation.json": "7dd12ad1af47b7f3df5cfe29e0eba4392c739f9c4f07a14adb0d16434642b884"
+    },
+    "totals": {
+      "records": 1728,
+      "queries": 4555,
+      "manufacturers": 497,
+      "suppliers": 31,
+      "historical_manufacturers": 114,
+      "historical_suppliers": 4,
+      "unverified_leads": 724,
+      "contractors": 154,
+      "excluded": 204,
+      "historical": 118,
+      "jurisdictions": 250,
+      "manufacturer_countries": 89,
+      "supplier_countries": 23,
+      "current_role_countries": 91
+    },
+    "continents": {
+      "africa": {
+        "jurisdictions": 60,
+        "records": 98,
+        "queries": 204,
+        "manufacturers": 14,
+        "suppliers": 0,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 0,
+        "unverified_leads": 57,
+        "contractors": 6,
+        "excluded": 19,
+        "historical": 2
+      },
+      "antarctica": {
+        "jurisdictions": 1,
+        "records": 0,
+        "queries": 41,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      },
+      "asia": {
+        "jurisdictions": 51,
+        "records": 832,
+        "queries": 2656,
+        "manufacturers": 177,
+        "suppliers": 15,
+        "historical_manufacturers": 56,
+        "historical_suppliers": 3,
+        "unverified_leads": 411,
+        "contractors": 94,
+        "excluded": 76,
+        "historical": 59
+      },
+      "europe": {
+        "jurisdictions": 52,
+        "records": 310,
+        "queries": 844,
+        "manufacturers": 114,
+        "suppliers": 11,
+        "historical_manufacturers": 42,
+        "historical_suppliers": 0,
+        "unverified_leads": 95,
+        "contractors": 6,
+        "excluded": 42,
+        "historical": 42
+      },
+      "north_america": {
+        "jurisdictions": 41,
+        "records": 196,
+        "queries": 384,
+        "manufacturers": 117,
+        "suppliers": 1,
+        "historical_manufacturers": 5,
+        "historical_suppliers": 0,
+        "unverified_leads": 60,
+        "contractors": 3,
+        "excluded": 10,
+        "historical": 5
+      },
+      "oceania": {
+        "jurisdictions": 29,
+        "records": 115,
+        "queries": 236,
+        "manufacturers": 40,
+        "suppliers": 1,
+        "historical_manufacturers": 6,
+        "historical_suppliers": 0,
+        "unverified_leads": 38,
+        "contractors": 16,
+        "excluded": 14,
+        "historical": 6
+      },
+      "south_america": {
+        "jurisdictions": 16,
+        "records": 177,
+        "queries": 190,
+        "manufacturers": 35,
+        "suppliers": 3,
+        "historical_manufacturers": 3,
+        "historical_suppliers": 1,
+        "unverified_leads": 63,
+        "contractors": 29,
+        "excluded": 43,
+        "historical": 4
+      }
+    }
   },
   "countries": [
     {
@@ -36,7 +161,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AF",
+        "name": "Afghanistan",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 5,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 1,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "AL",
@@ -60,7 +201,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AL",
+        "name": "Albania",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "DZ",
@@ -81,7 +238,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "DZ",
+        "name": "Algeria",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 3,
+        "queries": 6,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "AS",
@@ -90,7 +263,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "AS",
+        "name": "American Samoa",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AD",
@@ -99,7 +288,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "AD",
+        "name": "Andorra",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AO",
@@ -146,7 +351,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AO",
+        "name": "Angola",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 6,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "AI",
@@ -155,7 +376,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "AI",
+        "name": "Anguilla",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AQ",
@@ -164,7 +401,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "AQ",
+        "name": "Antarctica",
+        "continent": "antarctica",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 41,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AG",
@@ -173,7 +426,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "AG",
+        "name": "Antigua and Barbuda",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AR",
@@ -264,7 +533,23 @@
       ],
       "count": 7,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AR",
+        "name": "Argentina",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 20,
+        "queries": 13,
+        "manufacturers": 6,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 2,
+        "excluded": 10,
+        "historical": 1
+      }
     },
     {
       "code": "AM",
@@ -299,7 +584,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AM",
+        "name": "Armenia",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AW",
@@ -308,7 +609,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "AW",
+        "name": "Aruba",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AU",
@@ -461,7 +778,23 @@
       ],
       "count": 22,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AU",
+        "name": "Australia",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 49,
+        "queries": 66,
+        "manufacturers": 21,
+        "suppliers": 0,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 0,
+        "unverified_leads": 13,
+        "contractors": 8,
+        "excluded": 5,
+        "historical": 2
+      }
     },
     {
       "code": "AT",
@@ -498,7 +831,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AT",
+        "name": "Austria",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 35,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "AZ",
@@ -523,7 +872,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AZ",
+        "name": "Azerbaijan",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 5,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BH",
@@ -560,7 +925,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BH",
+        "name": "Bahrain",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 9,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "BD",
@@ -610,7 +991,23 @@
       ],
       "count": 4,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BD",
+        "name": "Bangladesh",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 5,
+        "queries": 8,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 4,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "BB",
@@ -634,7 +1031,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BB",
+        "name": "Barbados",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BY",
@@ -672,7 +1085,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BY",
+        "name": "Belarus",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 8,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BE",
@@ -695,7 +1124,23 @@
       ],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "BE",
+        "name": "Belgium",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 10,
+        "queries": 11,
+        "manufacturers": 6,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "BZ",
@@ -732,7 +1177,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BZ",
+        "name": "Belize",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "BJ",
@@ -756,7 +1217,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BJ",
+        "name": "Benin",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BM",
@@ -765,7 +1242,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "BM",
+        "name": "Bermuda",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BT",
@@ -802,7 +1295,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BT",
+        "name": "Bhutan",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BO",
@@ -827,7 +1336,48 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BO",
+        "name": "Bolivia (Plurinational State of)",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 10,
+        "queries": 11,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 2,
+        "excluded": 6,
+        "historical": 0
+      }
+    },
+    {
+      "code": "BQ",
+      "name": "Bonaire, Sint Eustatius and Saba",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "BQ",
+        "name": "Bonaire, Sint Eustatius and Saba",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BA",
@@ -862,7 +1412,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BA",
+        "name": "Bosnia and Herzegovina",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 10,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "BW",
@@ -898,7 +1464,48 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BW",
+        "name": "Botswana",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 3,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
+    },
+    {
+      "code": "BV",
+      "name": "Bouvet Island",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "BV",
+        "name": "Bouvet Island",
+        "continent": "south_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BR",
@@ -1035,7 +1642,23 @@
       ],
       "count": 4,
       "source_count": 6,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BR",
+        "name": "Brazil",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 57,
+        "queries": 49,
+        "manufacturers": 11,
+        "suppliers": 1,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 33,
+        "contractors": 5,
+        "excluded": 6,
+        "historical": 1
+      }
     },
     {
       "code": "IO",
@@ -1044,7 +1667,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "IO",
+        "name": "British Indian Ocean Territory",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "VG",
@@ -1053,7 +1692,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "VG",
+        "name": "British Virgin Islands",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BN",
@@ -1089,7 +1744,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BN",
+        "name": "Brunei Darussalam",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BG",
@@ -1161,7 +1832,23 @@
       ],
       "count": 6,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BG",
+        "name": "Bulgaria",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 8,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BF",
@@ -1185,7 +1872,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BF",
+        "name": "Burkina Faso",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BI",
@@ -1194,7 +1897,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "BI",
+        "name": "Burundi",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "KH",
@@ -1249,7 +1968,23 @@
       ],
       "count": 1,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "KH",
+        "name": "Cambodia",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 5,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "CM",
@@ -1285,7 +2020,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CM",
+        "name": "Cameroon",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 4,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "CA",
@@ -1446,7 +2197,23 @@
       ],
       "count": 19,
       "source_count": 5,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CA",
+        "name": "Canada",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 19,
+        "queries": 39,
+        "manufacturers": 14,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 4,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "CV",
@@ -1455,7 +2222,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "CV",
+        "name": "Cabo Verde",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "KY",
@@ -1464,7 +2247,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "KY",
+        "name": "Cayman Islands",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CF",
@@ -1473,7 +2272,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "CF",
+        "name": "Central African Republic",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TD",
@@ -1482,7 +2297,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "TD",
+        "name": "Chad",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CL",
@@ -1563,7 +2394,23 @@
       ],
       "count": 9,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CL",
+        "name": "Chile",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 7,
+        "queries": 10,
+        "manufacturers": 4,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "CN",
@@ -1714,7 +2561,73 @@
       ],
       "count": 18,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CN",
+        "name": "China",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 69,
+        "queries": 324,
+        "manufacturers": 16,
+        "suppliers": 0,
+        "historical_manufacturers": 17,
+        "historical_suppliers": 0,
+        "unverified_leads": 31,
+        "contractors": 2,
+        "excluded": 3,
+        "historical": 17
+      }
+    },
+    {
+      "code": "CX",
+      "name": "Christmas Island",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "CX",
+        "name": "Christmas Island",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
+    },
+    {
+      "code": "CC",
+      "name": "Cocos (Keeling) Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "CC",
+        "name": "Cocos (Keeling) Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CO",
@@ -1753,7 +2666,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CO",
+        "name": "Colombia",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 14,
+        "queries": 9,
+        "manufacturers": 3,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 8,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "KM",
@@ -1762,7 +2691,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "KM",
+        "name": "Comoros",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CK",
@@ -1771,7 +2716,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "CK",
+        "name": "Cook Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CR",
@@ -1833,7 +2794,23 @@
       ],
       "count": 3,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CR",
+        "name": "Costa Rica",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 6,
+        "queries": 25,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 1,
+        "excluded": 1,
+        "historical": 1
+      }
     },
     {
       "code": "HR",
@@ -1880,7 +2857,23 @@
       ],
       "count": 3,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "HR",
+        "name": "Croatia",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 15,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "CU",
@@ -1905,7 +2898,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CU",
+        "name": "Cuba",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CW",
@@ -1914,7 +2923,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "CW",
+        "name": "Cura\u00e7ao",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CY",
@@ -1939,7 +2964,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CY",
+        "name": "Cyprus",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CZ",
@@ -2016,7 +3057,23 @@
       "families": [],
       "count": 0,
       "source_count": 4,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CZ",
+        "name": "Czechia",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 7,
+        "queries": 11,
+        "manufacturers": 5,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CD",
@@ -2040,7 +3097,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CD",
+        "name": "Democratic Republic of the Congo",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 7,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "DK",
@@ -2108,7 +3181,23 @@
       ],
       "count": 10,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "DK",
+        "name": "Denmark",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 9,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "DJ",
@@ -2117,7 +3206,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "DJ",
+        "name": "Djibouti",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "DM",
@@ -2126,7 +3231,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "DM",
+        "name": "Dominica",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "DO",
@@ -2161,7 +3282,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "DO",
+        "name": "Dominican Republic",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 5,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TL",
@@ -2187,7 +3324,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TL",
+        "name": "Timor-Leste",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "EC",
@@ -2237,7 +3390,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "EC",
+        "name": "Ecuador",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 9,
+        "queries": 16,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 6,
+        "contractors": 1,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "EG",
@@ -2272,7 +3441,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "EG",
+        "name": "Egypt",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 6,
+        "queries": 9,
+        "manufacturers": 3,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "SV",
@@ -2322,7 +3507,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SV",
+        "name": "El Salvador",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 7,
+        "manufacturers": 1,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GQ",
@@ -2331,7 +3532,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GQ",
+        "name": "Equatorial Guinea",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "ER",
@@ -2340,7 +3557,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "ER",
+        "name": "Eritrea",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "EE",
@@ -2377,7 +3610,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "EE",
+        "name": "Estonia",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 7,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "SZ",
@@ -2402,7 +3651,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SZ",
+        "name": "Eswatini",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "ET",
@@ -2450,7 +3715,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ET",
+        "name": "Ethiopia",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "FK",
@@ -2459,7 +3740,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "FK",
+        "name": "Falkland Islands (Malvinas)",
+        "continent": "south_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "FO",
@@ -2468,7 +3765,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "FO",
+        "name": "Faroe Islands",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "FM",
@@ -2477,7 +3790,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "FM",
+        "name": "Micronesia (Federated States of)",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "FJ",
@@ -2513,7 +3842,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "FJ",
+        "name": "Fiji",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 10,
+        "queries": 19,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 6,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 1
+      }
     },
     {
       "code": "FI",
@@ -2569,7 +3914,23 @@
       ],
       "count": 1,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "FI",
+        "name": "Finland",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 10,
+        "queries": 27,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 7,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "FR",
@@ -2644,7 +4005,48 @@
       ],
       "count": 2,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "FR",
+        "name": "France",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 12,
+        "queries": 51,
+        "manufacturers": 2,
+        "suppliers": 1,
+        "historical_manufacturers": 5,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 3,
+        "historical": 5
+      }
+    },
+    {
+      "code": "GF",
+      "name": "French Guiana",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GF",
+        "name": "French Guiana",
+        "continent": "south_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 3,
+        "queries": 6,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "PF",
@@ -2669,7 +4071,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PF",
+        "name": "French Polynesia",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 1,
+        "queries": 5,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TF",
@@ -2678,7 +4096,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "TF",
+        "name": "French Southern Territories",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GA",
@@ -2703,7 +4137,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GA",
+        "name": "Gabon",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GE",
@@ -2738,7 +4188,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GE",
+        "name": "Georgia",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 5,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "DE",
@@ -2794,7 +4260,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "DE",
+        "name": "Germany",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 35,
+        "queries": 65,
+        "manufacturers": 13,
+        "suppliers": 0,
+        "historical_manufacturers": 3,
+        "historical_suppliers": 0,
+        "unverified_leads": 13,
+        "contractors": 1,
+        "excluded": 5,
+        "historical": 3
+      }
     },
     {
       "code": "GH",
@@ -2830,7 +4312,48 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GH",
+        "name": "Ghana",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 9,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
+    },
+    {
+      "code": "GI",
+      "name": "Gibraltar",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GI",
+        "name": "Gibraltar",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GR",
@@ -2921,7 +4444,23 @@
       ],
       "count": 2,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GR",
+        "name": "Greece",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 2,
+        "queries": 4,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GL",
@@ -2930,7 +4469,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GL",
+        "name": "Greenland",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GD",
@@ -2939,7 +4494,48 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GD",
+        "name": "Grenada",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
+    },
+    {
+      "code": "GP",
+      "name": "Guadeloupe",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GP",
+        "name": "Guadeloupe",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GU",
@@ -2964,7 +4560,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GU",
+        "name": "Guam",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 5,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "GT",
@@ -3014,7 +4626,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GT",
+        "name": "Guatemala",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 4,
+        "queries": 11,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 3,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GG",
@@ -3023,7 +4651,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GG",
+        "name": "Guernsey",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GN",
@@ -3045,7 +4689,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GN",
+        "name": "Guinea",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "GW",
@@ -3054,7 +4714,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GW",
+        "name": "Guinea-Bissau",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "GY",
@@ -3089,7 +4765,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GY",
+        "name": "Guyana",
+        "continent": "south_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 4,
+        "queries": 6,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "HT",
@@ -3110,7 +4802,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "HT",
+        "name": "Haiti",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "HM",
@@ -3119,7 +4827,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "HM",
+        "name": "Heard Island and McDonald Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "HN",
@@ -3157,7 +4881,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "HN",
+        "name": "Honduras",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 2,
+        "queries": 9,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "HK",
@@ -3194,7 +4934,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "HK",
+        "name": "China, Hong Kong Special Administrative Region",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 6,
+        "queries": 29,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 3,
+        "contractors": 1,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "HU",
@@ -3380,7 +5136,23 @@
       ],
       "count": 17,
       "source_count": 4,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "HU",
+        "name": "Hungary",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 11,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 1
+      }
     },
     {
       "code": "IS",
@@ -3405,7 +5177,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "IS",
+        "name": "Iceland",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 9,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "IN",
@@ -3564,7 +5352,23 @@
       ],
       "count": 9,
       "source_count": 6,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "IN",
+        "name": "India",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 64,
+        "queries": 489,
+        "manufacturers": 8,
+        "suppliers": 0,
+        "historical_manufacturers": 7,
+        "historical_suppliers": 0,
+        "unverified_leads": 20,
+        "contractors": 23,
+        "excluded": 6,
+        "historical": 7
+      }
     },
     {
       "code": "ID",
@@ -3862,7 +5666,23 @@
       ],
       "count": 33,
       "source_count": 5,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ID",
+        "name": "Indonesia",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 56,
+        "queries": 147,
+        "manufacturers": 12,
+        "suppliers": 1,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 0,
+        "unverified_leads": 33,
+        "contractors": 2,
+        "excluded": 6,
+        "historical": 2
+      }
     },
     {
       "code": "IR",
@@ -3928,7 +5748,23 @@
       ],
       "count": 4,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "IR",
+        "name": "Iran (Islamic Republic of)",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 14,
+        "queries": 54,
+        "manufacturers": 2,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 9,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "IQ",
@@ -3965,7 +5801,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "IQ",
+        "name": "Iraq",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 18,
+        "queries": 36,
+        "manufacturers": 5,
+        "suppliers": 0,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 1,
+        "unverified_leads": 8,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 3
+      }
     },
     {
       "code": "IE",
@@ -4777,7 +6629,23 @@
       ],
       "count": 175,
       "source_count": 5,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "IE",
+        "name": "Ireland",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 14,
+        "manufacturers": 3,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "IM",
@@ -4786,7 +6654,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "IM",
+        "name": "Isle of Man",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "IL",
@@ -4825,7 +6709,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "IL",
+        "name": "Israel",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 15,
+        "queries": 23,
+        "manufacturers": 6,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 2,
+        "excluded": 5,
+        "historical": 0
+      }
     },
     {
       "code": "IT",
@@ -5002,7 +6902,23 @@
       ],
       "count": 28,
       "source_count": 5,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "IT",
+        "name": "Italy",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 32,
+        "queries": 104,
+        "manufacturers": 16,
+        "suppliers": 0,
+        "historical_manufacturers": 6,
+        "historical_suppliers": 0,
+        "unverified_leads": 8,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 6
+      }
     },
     {
       "code": "CI",
@@ -5037,7 +6953,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CI",
+        "name": "C\u00f4te d\u2019Ivoire",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 5,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 2,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "JM",
@@ -5073,7 +7005,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "JM",
+        "name": "Jamaica",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "JP",
@@ -5370,7 +7318,23 @@
       ],
       "count": 63,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "JP",
+        "name": "Japan",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 48,
+        "queries": 141,
+        "manufacturers": 24,
+        "suppliers": 2,
+        "historical_manufacturers": 10,
+        "historical_suppliers": 0,
+        "unverified_leads": 5,
+        "contractors": 6,
+        "excluded": 1,
+        "historical": 10
+      }
     },
     {
       "code": "JE",
@@ -5379,7 +7343,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "JE",
+        "name": "Jersey",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "JO",
@@ -5415,7 +7395,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "JO",
+        "name": "Jordan",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 11,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 2,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "KZ",
@@ -5463,7 +7459,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "KZ",
+        "name": "Kazakhstan",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 9,
+        "queries": 24,
+        "manufacturers": 3,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 3,
+        "contractors": 0,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "KE",
@@ -5501,7 +7513,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "KE",
+        "name": "Kenya",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "KI",
@@ -5510,7 +7538,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "KI",
+        "name": "Kiribati",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "XK",
@@ -5534,7 +7578,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "XK",
+        "name": "Kosovo",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 4,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 3,
+        "historical": 0
+      }
     },
     {
       "code": "KW",
@@ -5571,7 +7631,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "KW",
+        "name": "Kuwait",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 4,
+        "queries": 10,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 3,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "KG",
@@ -5609,7 +7685,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "KG",
+        "name": "Kyrgyzstan",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LA",
@@ -5644,7 +7736,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LA",
+        "name": "Lao People's Democratic Republic",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 11,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 3,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "LV",
@@ -5680,7 +7788,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LV",
+        "name": "Latvia",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LB",
@@ -5716,7 +7840,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LB",
+        "name": "Lebanon",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LS",
@@ -5740,7 +7880,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LS",
+        "name": "Lesotho",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 6,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LR",
@@ -5765,7 +7921,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LR",
+        "name": "Liberia",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LY",
@@ -5790,7 +7962,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LY",
+        "name": "Libya",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 6,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "LI",
@@ -5799,7 +7987,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "LI",
+        "name": "Liechtenstein",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LT",
@@ -5837,7 +8041,23 @@
       ],
       "count": 4,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "LT",
+        "name": "Lithuania",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LU",
@@ -5862,7 +8082,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LU",
+        "name": "Luxembourg",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 2,
+        "queries": 7,
+        "manufacturers": 0,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MO",
@@ -5886,7 +8122,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MO",
+        "name": "China, Macao Special Administrative Region",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MG",
@@ -5911,7 +8163,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MG",
+        "name": "Madagascar",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MW",
@@ -5936,7 +8204,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MW",
+        "name": "Malawi",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MY",
@@ -5971,6 +8255,30 @@
             "PRHS"
           ],
           "title_original": "Precast Prestressed Beams"
+        },
+        {
+          "title": "Prestressed Concrete Beams \u2014 SCIB Concrete Manufacturing",
+          "url": "https://scib.com.my/live/images/catalog/beam.pdf",
+          "status": "complete_outline",
+          "registry": "deep-search-manufacturer-intake-2026-10.json",
+          "id": "MY-SCIB-I-2026-10-INTAKE",
+          "language": "English",
+          "source_type": "producer_catalogue",
+          "locator": "Undated six-page catalogue, PDF page 6, three dimension groups I5-I8, I12-I14, I15-I18 and adjacent property tables.",
+          "family_names": [
+            "I5",
+            "I6",
+            "I7",
+            "I8",
+            "I12",
+            "I13",
+            "I14",
+            "I15",
+            "I16",
+            "I17",
+            "I18"
+          ],
+          "title_original": "PRESTRESSED CONCRETE BEAMS \u2014 SCIB CONCRETE MANUFACTURING SDN BHD"
         }
       ],
       "families": [
@@ -6186,11 +8494,76 @@
           "jurisdictions": [
             "MY"
           ]
+        },
+        {
+          "id": "bridgebeams.my.scib_i_beam.ScibIBeamSection",
+          "name": "ScibIBeamSection",
+          "module": "bridgebeams.my.scib_i_beam",
+          "count": 11,
+          "profiles": [
+            "I5",
+            "I6",
+            "I7",
+            "I8",
+            "I12",
+            "I13",
+            "I14",
+            "I15",
+            "I16",
+            "I17",
+            "I18"
+          ],
+          "profile_ids": [
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I5",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I6",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I7",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I8",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I12",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I13",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I14",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I15",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I16",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I17",
+            "bridgebeams.my.scib_i_beam.ScibIBeamSection:I18"
+          ],
+          "note": "",
+          "provenance": {
+            "I5": "transcribed-with-convention",
+            "I6": "transcribed-with-convention",
+            "I7": "transcribed-with-convention",
+            "I8": "transcribed-with-convention",
+            "I12": "transcribed-with-convention",
+            "I13": "transcribed-with-convention",
+            "I14": "transcribed-with-convention",
+            "I15": "transcribed-with-convention",
+            "I16": "transcribed-with-convention",
+            "I17": "transcribed-with-convention",
+            "I18": "transcribed-with-convention"
+          },
+          "jurisdictions": [
+            "MY"
+          ]
         }
       ],
-      "count": 39,
-      "source_count": 2,
-      "researched": true
+      "count": 50,
+      "source_count": 3,
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MY",
+        "name": "Malaysia",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 37,
+        "queries": 80,
+        "manufacturers": 11,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 1,
+        "unverified_leads": 17,
+        "contractors": 2,
+        "excluded": 5,
+        "historical": 1
+      }
     },
     {
       "code": "MV",
@@ -6225,7 +8598,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MV",
+        "name": "Maldives",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "ML",
@@ -6249,7 +8638,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ML",
+        "name": "Mali",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MT",
@@ -6275,7 +8680,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MT",
+        "name": "Malta",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 5,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 3,
+        "historical": 0
+      }
     },
     {
       "code": "MH",
@@ -6284,7 +8705,48 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "MH",
+        "name": "Marshall Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
+    },
+    {
+      "code": "MQ",
+      "name": "Martinique",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "MQ",
+        "name": "Martinique",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MR",
@@ -6293,7 +8755,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "MR",
+        "name": "Mauritania",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MU",
@@ -6330,7 +8808,48 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MU",
+        "name": "Mauritius",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
+    },
+    {
+      "code": "YT",
+      "name": "Mayotte",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "YT",
+        "name": "Mayotte",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MX",
@@ -6703,7 +9222,23 @@
       ],
       "count": 66,
       "source_count": 4,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MX",
+        "name": "Mexico",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 32,
+        "queries": 51,
+        "manufacturers": 21,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 9,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 1
+      }
     },
     {
       "code": "MD",
@@ -6739,7 +9274,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MD",
+        "name": "Republic of Moldova",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 9,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 3,
+        "historical": 0
+      }
     },
     {
       "code": "MC",
@@ -6748,7 +9299,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "MC",
+        "name": "Monaco",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MN",
@@ -6783,7 +9350,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MN",
+        "name": "Mongolia",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 2,
+        "queries": 7,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "ME",
@@ -6820,7 +9403,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ME",
+        "name": "Montenegro",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MS",
@@ -6829,7 +9428,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "MS",
+        "name": "Montserrat",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MA",
@@ -6882,7 +9497,23 @@
       ],
       "count": 4,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MA",
+        "name": "Morocco",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 9,
+        "queries": 14,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 5,
+        "contractors": 1,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "MZ",
@@ -6906,7 +9537,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MZ",
+        "name": "Mozambique",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MM",
@@ -6943,7 +9590,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MM",
+        "name": "Myanmar",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 13,
+        "queries": 32,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 6,
+        "contractors": 5,
+        "excluded": 1,
+        "historical": 1
+      }
     },
     {
       "code": "NA",
@@ -6952,7 +9615,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "NA",
+        "name": "Namibia",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "NR",
@@ -6961,7 +9640,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "NR",
+        "name": "Naoero",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "NP",
@@ -7029,7 +9724,23 @@
       ],
       "count": 2,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NP",
+        "name": "Nepal",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 4,
+        "queries": 7,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 1,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "NL",
@@ -7775,7 +10486,23 @@
       ],
       "count": 130,
       "source_count": 8,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NL",
+        "name": "Netherlands (Kingdom of the)",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 11,
+        "queries": 25,
+        "manufacturers": 2,
+        "suppliers": 1,
+        "historical_manufacturers": 5,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 5
+      }
     },
     {
       "code": "NC",
@@ -7800,7 +10527,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NC",
+        "name": "New Caledonia",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 7,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 2,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "NZ",
@@ -7893,7 +10636,23 @@
       ],
       "count": 9,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NZ",
+        "name": "New Zealand",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 28,
+        "queries": 63,
+        "manufacturers": 13,
+        "suppliers": 1,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 0,
+        "unverified_leads": 10,
+        "contractors": 1,
+        "excluded": 1,
+        "historical": 2
+      }
     },
     {
       "code": "NI",
@@ -7944,7 +10703,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NI",
+        "name": "Nicaragua",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 5,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "NE",
@@ -7968,7 +10743,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NE",
+        "name": "Niger",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "NG",
@@ -8015,7 +10806,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NG",
+        "name": "Nigeria",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 3,
+        "queries": 5,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 3,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "NU",
@@ -8024,7 +10831,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "NU",
+        "name": "Niue",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "NF",
@@ -8033,7 +10856,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "NF",
+        "name": "Norfolk Island",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "KP",
@@ -8042,7 +10881,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "KP",
+        "name": "Democratic People's Republic of Korea",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MK",
@@ -8077,7 +10932,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "MK",
+        "name": "North Macedonia",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 8,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 2,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MP",
@@ -8086,7 +10957,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "MP",
+        "name": "Northern Mariana Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "NO",
@@ -8150,7 +11037,23 @@
       ],
       "count": 10,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "NO",
+        "name": "Norway",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 9,
+        "manufacturers": 3,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "OM",
@@ -8188,7 +11091,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "OM",
+        "name": "Oman",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 12,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PK",
@@ -8331,7 +11250,23 @@
       ],
       "count": 11,
       "source_count": 4,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PK",
+        "name": "Pakistan",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 3,
+        "queries": 13,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "PW",
@@ -8340,7 +11275,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "PW",
+        "name": "Palau",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PS",
@@ -8364,7 +11315,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PS",
+        "name": "State of Palestine",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PA",
@@ -8403,7 +11370,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PA",
+        "name": "Panama",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 13,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 4,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PG",
@@ -8439,7 +11422,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PG",
+        "name": "Papua New Guinea",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 15,
+        "queries": 22,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 8,
+        "contractors": 4,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "PY",
@@ -8475,7 +11474,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PY",
+        "name": "Paraguay",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 17,
+        "queries": 14,
+        "manufacturers": 1,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 6,
+        "contractors": 4,
+        "excluded": 5,
+        "historical": 0
+      }
     },
     {
       "code": "PE",
@@ -8528,7 +11543,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PE",
+        "name": "Peru",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 10,
+        "queries": 11,
+        "manufacturers": 3,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 3,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "PH",
@@ -8635,7 +11666,23 @@
       ],
       "count": 5,
       "source_count": 5,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PH",
+        "name": "Philippines",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 27,
+        "queries": 48,
+        "manufacturers": 5,
+        "suppliers": 3,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 5,
+        "contractors": 7,
+        "excluded": 7,
+        "historical": 0
+      }
     },
     {
       "code": "PN",
@@ -8644,7 +11691,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "PN",
+        "name": "Pitcairn",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PL",
@@ -8758,7 +11821,23 @@
       ],
       "count": 16,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PL",
+        "name": "Poland",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 6,
+        "queries": 8,
+        "manufacturers": 6,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PT",
@@ -8820,7 +11899,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PT",
+        "name": "Portugal",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 6,
+        "queries": 27,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 5,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PR",
@@ -8845,7 +11940,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "PR",
+        "name": "Puerto Rico",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "QA",
@@ -9032,7 +12143,23 @@
       ],
       "count": 25,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "QA",
+        "name": "Qatar",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 5,
+        "queries": 14,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 5,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "CG",
@@ -9056,7 +12183,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CG",
+        "name": "Congo",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 6,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "RO",
@@ -9235,7 +12378,23 @@
       ],
       "count": 32,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "RO",
+        "name": "Romania",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 15,
+        "queries": 35,
+        "manufacturers": 10,
+        "suppliers": 0,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 2
+      }
     },
     {
       "code": "RU",
@@ -9318,7 +12477,23 @@
       ],
       "count": 8,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "RU",
+        "name": "Russian Federation",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 28,
+        "queries": 63,
+        "manufacturers": 12,
+        "suppliers": 5,
+        "historical_manufacturers": 4,
+        "historical_suppliers": 0,
+        "unverified_leads": 6,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 4
+      }
     },
     {
       "code": "RW",
@@ -9343,7 +12518,48 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "RW",
+        "name": "Rwanda",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
+    },
+    {
+      "code": "RE",
+      "name": "R\u00e9union",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "RE",
+        "name": "R\u00e9union",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "BL",
@@ -9352,7 +12568,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "BL",
+        "name": "Saint Barth\u00e9lemy",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "SH",
@@ -9361,7 +12593,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "SH",
+        "name": "Saint Helena",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "KN",
@@ -9370,7 +12618,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "KN",
+        "name": "Saint Kitts and Nevis",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "LC",
@@ -9379,7 +12643,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "LC",
+        "name": "Saint Lucia",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "MF",
@@ -9388,7 +12668,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "MF",
+        "name": "Saint Martin (French Part)",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "PM",
@@ -9397,7 +12693,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "PM",
+        "name": "Saint Pierre and Miquelon",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "VC",
@@ -9406,7 +12718,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "VC",
+        "name": "Saint Vincent and the Grenadines",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "WS",
@@ -9431,7 +12759,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "WS",
+        "name": "Samoa",
+        "continent": "oceania",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 5,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 1,
+        "excluded": 1,
+        "historical": 1
+      }
     },
     {
       "code": "SM",
@@ -9440,7 +12784,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "SM",
+        "name": "San Marino",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "SA",
@@ -9476,7 +12836,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SA",
+        "name": "Saudi Arabia",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 65,
+        "queries": 127,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 3,
+        "historical_suppliers": 0,
+        "unverified_leads": 45,
+        "contractors": 4,
+        "excluded": 13,
+        "historical": 3
+      }
     },
     {
       "code": "SN",
@@ -9512,7 +12888,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SN",
+        "name": "Senegal",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "RS",
@@ -9548,7 +12940,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "RS",
+        "name": "Serbia",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 2,
+        "queries": 7,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "SC",
@@ -9557,7 +12965,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "SC",
+        "name": "Seychelles",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "KAS",
@@ -9566,7 +12990,8 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": null
     },
     {
       "code": "SL",
@@ -9590,7 +13015,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SL",
+        "name": "Sierra Leone",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "SG",
@@ -9627,7 +13068,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SG",
+        "name": "Singapore",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 91,
+        "queries": 136,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 83,
+        "contractors": 4,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "SX",
@@ -9636,7 +13093,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "SX",
+        "name": "Sint Maarten (Dutch part)",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "SK",
@@ -9765,7 +13238,23 @@
       ],
       "count": 12,
       "source_count": 4,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SK",
+        "name": "Slovakia",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 7,
+        "queries": 13,
+        "manufacturers": 4,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "SI",
@@ -9790,7 +13279,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SI",
+        "name": "Slovenia",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 10,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 1,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "SB",
@@ -9815,7 +13320,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SB",
+        "name": "Solomon Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 2,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "SO",
@@ -9824,7 +13345,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "SO",
+        "name": "Somalia",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "SOL",
@@ -9833,7 +13370,8 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": null
     },
     {
       "code": "ZA",
@@ -10195,7 +13733,23 @@
       ],
       "count": 58,
       "source_count": 7,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ZA",
+        "name": "South Africa",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 8,
+        "queries": 13,
+        "manufacturers": 4,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "GS",
@@ -10204,7 +13758,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "GS",
+        "name": "South Georgia and the South Sandwich Islands",
+        "continent": "south_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 4,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "KR",
@@ -10305,7 +13875,23 @@
       ],
       "count": 6,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "KR",
+        "name": "Republic of Korea",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 77,
+        "queries": 259,
+        "manufacturers": 4,
+        "suppliers": 0,
+        "historical_manufacturers": 3,
+        "historical_suppliers": 1,
+        "unverified_leads": 57,
+        "contractors": 8,
+        "excluded": 4,
+        "historical": 4
+      }
     },
     {
       "code": "SS",
@@ -10330,7 +13916,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SS",
+        "name": "South Sudan",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "ES",
@@ -10812,7 +14414,23 @@
       ],
       "count": 99,
       "source_count": 4,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ES",
+        "name": "Spain",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 24,
+        "queries": 63,
+        "manufacturers": 6,
+        "suppliers": 1,
+        "historical_manufacturers": 4,
+        "historical_suppliers": 0,
+        "unverified_leads": 12,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 4
+      }
     },
     {
       "code": "LK",
@@ -10890,7 +14508,23 @@
       ],
       "count": 1,
       "source_count": 4,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "LK",
+        "name": "Sri Lanka",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 21,
+        "queries": 191,
+        "manufacturers": 3,
+        "suppliers": 0,
+        "historical_manufacturers": 3,
+        "historical_suppliers": 0,
+        "unverified_leads": 6,
+        "contractors": 9,
+        "excluded": 0,
+        "historical": 3
+      }
     },
     {
       "code": "SD",
@@ -10925,7 +14559,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SD",
+        "name": "Sudan",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "SR",
@@ -10960,7 +14610,48 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SR",
+        "name": "Suriname",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 8,
+        "queries": 9,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 1,
+        "unverified_leads": 2,
+        "contractors": 1,
+        "excluded": 2,
+        "historical": 2
+      }
+    },
+    {
+      "code": "SJ",
+      "name": "Svalbard and Jan Mayen Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "SJ",
+        "name": "Svalbard and Jan Mayen Islands",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 5,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "SE",
@@ -10997,7 +14688,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SE",
+        "name": "Sweden",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 3,
+        "queries": 18,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 1
+      }
     },
     {
       "code": "CH",
@@ -11033,7 +14740,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "CH",
+        "name": "Switzerland",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 22,
+        "queries": 46,
+        "manufacturers": 1,
+        "suppliers": 1,
+        "historical_manufacturers": 6,
+        "historical_suppliers": 0,
+        "unverified_leads": 7,
+        "contractors": 0,
+        "excluded": 7,
+        "historical": 6
+      }
     },
     {
       "code": "SY",
@@ -11057,7 +14780,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "SY",
+        "name": "Syrian Arab Republic",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 5,
+        "queries": 9,
+        "manufacturers": 0,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 1,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "ST",
@@ -11066,7 +14805,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "ST",
+        "name": "Sao Tome and Principe",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TW",
@@ -11160,7 +14915,23 @@
       ],
       "count": 12,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TW",
+        "name": "Taiwan",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 13,
+        "queries": 46,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 7,
+        "contractors": 1,
+        "excluded": 4,
+        "historical": 1
+      }
     },
     {
       "code": "TJ",
@@ -11184,7 +14955,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TJ",
+        "name": "Tajikistan",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TZ",
@@ -11220,7 +15007,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TZ",
+        "name": "United Republic of Tanzania",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TH",
@@ -11364,7 +15167,23 @@
       ],
       "count": 20,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TH",
+        "name": "Thailand",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 35,
+        "queries": 85,
+        "manufacturers": 22,
+        "suppliers": 1,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 11,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "BS",
@@ -11390,7 +15209,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "BS",
+        "name": "Bahamas",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "GM",
@@ -11414,7 +15249,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GM",
+        "name": "Gambia",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TG",
@@ -11423,7 +15274,48 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "TG",
+        "name": "Togo",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
+    },
+    {
+      "code": "TK",
+      "name": "Tokelau",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "TK",
+        "name": "Tokelau",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TO",
@@ -11447,7 +15339,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TO",
+        "name": "Tonga",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "TT",
@@ -11483,7 +15391,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TT",
+        "name": "Trinidad and Tobago",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 2,
+        "queries": 5,
+        "manufacturers": 2,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TN",
@@ -11505,7 +15429,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TN",
+        "name": "Tunisia",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 4,
+        "queries": 7,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 2,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "CYN",
@@ -11514,7 +15454,8 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": null
     },
     {
       "code": "TM",
@@ -11538,7 +15479,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TM",
+        "name": "Turkmenistan",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TC",
@@ -11547,7 +15504,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "TC",
+        "name": "Turks and Caicos Islands",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TV",
@@ -11556,7 +15529,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "TV",
+        "name": "Tuvalu",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "TR",
@@ -11660,7 +15649,23 @@
       ],
       "count": 13,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "TR",
+        "name": "T\u00fcrkiye",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 56,
+        "queries": 78,
+        "manufacturers": 35,
+        "suppliers": 2,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 15,
+        "contractors": 3,
+        "excluded": 0,
+        "historical": 1
+      }
     },
     {
       "code": "UG",
@@ -11695,7 +15700,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "UG",
+        "name": "Uganda",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 1,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "UA",
@@ -11827,7 +15848,23 @@
       ],
       "count": 17,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "UA",
+        "name": "Ukraine",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 7,
+        "queries": 24,
+        "manufacturers": 4,
+        "suppliers": 0,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 2
+      }
     },
     {
       "code": "AE",
@@ -11869,7 +15906,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "AE",
+        "name": "United Arab Emirates",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 14,
+        "queries": 33,
+        "manufacturers": 4,
+        "suppliers": 0,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 7,
+        "contractors": 1,
+        "excluded": 1,
+        "historical": 1
+      }
     },
     {
       "code": "GB",
@@ -13040,7 +17093,23 @@
       ],
       "count": 259,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "GB",
+        "name": "United Kingdom of Great Britain and Northern Ireland",
+        "continent": "europe",
+        "coverage_status": "protocol_saturated",
+        "records": 10,
+        "queries": 27,
+        "manufacturers": 2,
+        "suppliers": 1,
+        "historical_manufacturers": 1,
+        "historical_suppliers": 0,
+        "unverified_leads": 3,
+        "contractors": 0,
+        "excluded": 3,
+        "historical": 1
+      }
     },
     {
       "code": "US",
@@ -13184,6 +17253,24 @@
           "status": "official drawing and independent property check",
           "registry": "us-washington-followup.json",
           "id": "wsdot_source_properties"
+        },
+        {
+          "title": "Keehi IV and VI prestressed bridge girders",
+          "url": "https://www.gprmp.com/sites/default/files/A2-23-10%20KEEHI%20GIRDERS.pdf",
+          "status": "complete_outline",
+          "registry": "deep-search-manufacturer-intake-2026-10.json",
+          "id": "US-GPRM-KEEHI-2026-10-INTAKE",
+          "language": "English",
+          "source_type": "producer_drawing",
+          "locator": "PDF page 1 sheet K-VI W; page 2 K-VI; page 3 K-IV W; page 4 K-IV, including IV MOD additional-depth callout and property row.",
+          "family_names": [
+            "K-VI W",
+            "K-VI",
+            "K-IV W",
+            "K-IV",
+            "K-IV MOD"
+          ],
+          "title_original": "Keehi Girders"
         },
         {
           "title": "PCI reference sections for AASHTO I-beam Types I\u2013VI",
@@ -13712,6 +17799,37 @@
             "FUB-54": "transcribed-with-convention",
             "FUB-63": "transcribed-with-convention",
             "FUB-72": "transcribed-with-convention"
+          },
+          "jurisdictions": [
+            "US"
+          ]
+        },
+        {
+          "id": "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection",
+          "name": "GprmKeehiGirderSection",
+          "module": "bridgebeams.us.gprm_keehi_girders",
+          "count": 5,
+          "profiles": [
+            "K-VI W",
+            "K-VI",
+            "K-IV W",
+            "K-IV",
+            "K-IV MOD"
+          ],
+          "profile_ids": [
+            "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-VI W",
+            "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-VI",
+            "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-IV W",
+            "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-IV",
+            "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-IV MOD"
+          ],
+          "note": "",
+          "provenance": {
+            "K-VI W": "transcribed-with-convention",
+            "K-VI": "transcribed-with-convention",
+            "K-IV W": "transcribed-with-convention",
+            "K-IV": "transcribed-with-convention",
+            "K-IV MOD": "transcribed-with-convention"
           },
           "jurisdictions": [
             "US"
@@ -16345,9 +20463,50 @@
           ]
         }
       ],
-      "count": 678,
-      "source_count": 16,
-      "researched": true
+      "count": 683,
+      "source_count": 17,
+      "researched": true,
+      "manufacturer_research": {
+        "code": "US",
+        "name": "United States of America",
+        "continent": "north_america",
+        "coverage_status": "protocol_saturated",
+        "records": 111,
+        "queries": 139,
+        "manufacturers": 75,
+        "suppliers": 0,
+        "historical_manufacturers": 2,
+        "historical_suppliers": 0,
+        "unverified_leads": 29,
+        "contractors": 0,
+        "excluded": 5,
+        "historical": 2
+      }
+    },
+    {
+      "code": "UM",
+      "name": "United States Minor Outlying Islands",
+      "sources": [],
+      "families": [],
+      "count": 0,
+      "source_count": 0,
+      "researched": false,
+      "manufacturer_research": {
+        "code": "UM",
+        "name": "United States Minor Outlying Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "VI",
@@ -16371,7 +20530,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "VI",
+        "name": "United States Virgin Islands",
+        "continent": "north_america",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "UY",
@@ -16407,7 +20582,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "UY",
+        "name": "Uruguay",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 9,
+        "queries": 11,
+        "manufacturers": 3,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 3,
+        "contractors": 2,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "UZ",
@@ -16442,7 +20633,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "UZ",
+        "name": "Uzbekistan",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 8,
+        "queries": 41,
+        "manufacturers": 2,
+        "suppliers": 1,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 5,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "VU",
@@ -16467,7 +20674,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "VU",
+        "name": "Vanuatu",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 3,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "VA",
@@ -16476,7 +20699,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "VA",
+        "name": "Holy See",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "VE",
@@ -16512,7 +20751,23 @@
       "families": [],
       "count": 0,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "VE",
+        "name": "Venezuela (Bolivarian Republic of)",
+        "continent": "south_america",
+        "coverage_status": "protocol_saturated",
+        "records": 8,
+        "queries": 13,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 4,
+        "contractors": 1,
+        "excluded": 2,
+        "historical": 0
+      }
     },
     {
       "code": "VN",
@@ -16581,7 +20836,23 @@
       ],
       "count": 5,
       "source_count": 2,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "VN",
+        "name": "Viet Nam",
+        "continent": "asia",
+        "coverage_status": "protocol_saturated",
+        "records": 22,
+        "queries": 73,
+        "manufacturers": 8,
+        "suppliers": 1,
+        "historical_manufacturers": 3,
+        "historical_suppliers": 0,
+        "unverified_leads": 10,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 3
+      }
     },
     {
       "code": "WF",
@@ -16590,7 +20861,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "WF",
+        "name": "Wallis and Futuna Islands",
+        "continent": "oceania",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "EH",
@@ -16599,7 +20886,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "EH",
+        "name": "Western Sahara",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "YE",
@@ -16623,7 +20926,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "YE",
+        "name": "Yemen",
+        "continent": "asia",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "ZM",
@@ -16648,7 +20967,23 @@
       "families": [],
       "count": 0,
       "source_count": 1,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ZM",
+        "name": "Zambia",
+        "continent": "africa",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 1,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 1,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     },
     {
       "code": "ZW",
@@ -16694,7 +21029,23 @@
       "families": [],
       "count": 0,
       "source_count": 3,
-      "researched": true
+      "researched": true,
+      "manufacturer_research": {
+        "code": "ZW",
+        "name": "Zimbabwe",
+        "continent": "africa",
+        "coverage_status": "protocol_saturated",
+        "records": 7,
+        "queries": 7,
+        "manufacturers": 1,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 5,
+        "contractors": 0,
+        "excluded": 1,
+        "historical": 0
+      }
     },
     {
       "code": "AX",
@@ -16703,7 +21054,23 @@
       "families": [],
       "count": 0,
       "source_count": 0,
-      "researched": false
+      "researched": false,
+      "manufacturer_research": {
+        "code": "AX",
+        "name": "\u00c5land Islands",
+        "continent": "europe",
+        "coverage_status": "searched_no_qualifying_source",
+        "records": 0,
+        "queries": 2,
+        "manufacturers": 0,
+        "suppliers": 0,
+        "historical_manufacturers": 0,
+        "historical_suppliers": 0,
+        "unverified_leads": 0,
+        "contractors": 0,
+        "excluded": 0,
+        "historical": 0
+      }
     }
   ]
 }

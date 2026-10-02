@@ -39,15 +39,30 @@ All geometry is in **millimetres** and returned as `sectionproperties`
 `Geometry` objects, so sections can be meshed and analysed directly, or
 wrapped with materials for concrete section design checks.
 
-The catalogue now has **1806 distinct fixed profiles across
-48 countries**, separately from **122 jurisdictions with research records**.
-The latest five are one Finnish TIEL model example (not a national SKU) and
-four Iranian RMTO102 nominal source-sheet sections; no families are extrapolated.
+The section catalogue has **1822 named beam profiles across
+48 countries**, with **169 jurisdictions represented in the catalogue source registries**.
+The October manufacturer intake adds 16 named profiles: 11 Malaysian SCIB
+profiles and five Hawaiʻi GPRM AASHTO profiles. These contain 10 distinct new
+outline shapes; six SCIB nominal outlines also match existing Civilcon profiles.
+Catalogue totals count distinct named source-profile IDs rather than globally
+deduplicated shapes. Different named source families may share an outline;
+matching outlines do not establish shared company identity or production.
 The UK and Ireland each show 175 shared Banagher profiles; those country assignments
-do not create new distinct geometry.
+retain the same source-profile IDs and count once in the global total.
 Belgian and Greek parametric templates are listed separately because their
 flange thicknesses must be supplied. India has one dimensioned NHAI project
 feasibility profile; that does not imply a national standard.
+
+The global manufacturer research adds **1,728 named organisation and operating-unit records**
+from **4,555 searches across 250 countries and areas**. Opened sources support
+**497 current manufacturing roles and 31 current supply roles across 91 jurisdictions**;
+these are advertised PSC bridge-beam capabilities, rather than verified current
+physical production or implemented geometry. Historical roles and unverified
+leads remain separate.
+
+**[Explore the world map and global statistics](coverage.md)** — switch between
+named beam profiles, research records, current manufacturers, current suppliers,
+historical roles and searches; inspect country details and continent totals.
 
 ## Implemented families
 

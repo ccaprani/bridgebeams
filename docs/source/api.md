@@ -23,6 +23,7 @@
     bridgebeams.ca.mto_solid_slab
     bridgebeams.us.other_state_mn_rectangular
     bridgebeams.us.wsdot_w_girders
+    bridgebeams.us.gprm_keehi_girders
     bridgebeams.nz.super_t
     bridgebeams.nz.i_beams
     bridgebeams.nz.hollow_core
@@ -91,6 +92,7 @@
     bridgebeams.my.gcast_beams
     bridgebeams.my.jkr_prt
     bridgebeams.my.oka_m_beam
+    bridgebeams.my.scib_i_beam
     bridgebeams.nl.r2_haitsma
     bridgebeams.nl.r2_spanbeton
     bridgebeams.pk.nha_i_girders

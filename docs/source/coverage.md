@@ -1,26 +1,26 @@
 # Country coverage
 
-**Research coverage and implemented geometry are different counts.** This map colours countries by the number of fixed, source-backed profiles available in the library. The table also includes every jurisdiction in the research registries, including countries with no implemented geometry. Ireland and the United Kingdom are separate jurisdictions. Banagher profiles with documented availability in both appear in both country rows, with stable profile IDs; the global distinct-profile total counts each once.
+**Named beam profiles and manufacturer discovery are different counts.** Choose a map dimension: implemented named beam profiles, manufacturer research records, current manufacturers, current suppliers, historical manufacturer/supplier roles, executed searches, or catalogue source records. Summary cards show the global totals; the country panel and continent table explain the corresponding observations.
 
-The legend uses grey for places with no research record and no fixed section,
-light blue for researched places with zero implemented sections, then deeper
-colours for 1–5, 6–15, 16–40 and 41 or more sections. A few legacy families
-have implemented sections without an entry in the recent research registries;
-their section count determines their map colour.
+Grey denotes an area outside the selected dataset's observations. Light blue denotes a researched jurisdiction with zero records for the selected metric; zero does not establish producer absence. Deeper colours show larger counts, with the active legend stating the ranges. Natural Earth omits some small-area outlines; all 250 manufacturer-research jurisdictions remain selectable in the searchable table and contribute to the global totals.
 
 [Open the map and complete table in a full window](_static/coverage/index.html).
 
 ```{raw} html
-<iframe src="_static/coverage/index.html" title="Bridgebeams country coverage map and searchable complete country table" style="width:100%;height:1250px;border:1px solid #d1d5da;border-radius:8px" loading="lazy"></iframe>
+<iframe src="_static/coverage/index.html" title="Bridgebeams global beam sections and manufacturer research map with selectable statistics" style="width:100%;height:1600px;border:1px solid #d1d5da;border-radius:8px" loading="lazy"></iframe>
 ```
 
-Country counts include documented gross reconstructions and distinct named source variants available in each jurisdiction. Shared Banagher profiles count in both the UK and Ireland; the distinct global total deduplicates their profile IDs. Arbitrary continuous parameter choices, extrapolated Korean sizes, and incomplete Belgian/Greek templates requiring user-selected flange thicknesses are excluded. A profile count does not establish suitability for structural design. The map's **How the counts work** panel records specific counting choices.
+Country counts include documented gross reconstructions and named source variants available in each jurisdiction. The global catalogue counts distinct **source-profile IDs**, rather than coordinate-deduplicated shapes: different named source families can share identical outlines. Shared Banagher reexports retain the same IDs and count once globally while appearing in both the UK and Ireland. Arbitrary continuous parameter choices, extrapolated Korean sizes, and incomplete Belgian/Greek templates requiring user-selected flange thicknesses are excluded. A profile count does not establish suitability for structural design. The map's **How the counts work** panel records specific counting choices.
 
-The default table includes 123 catalogue jurisdictions: 122 with recent
-research records plus Belgium, whose legacy template sits outside those
-recent registries. Greece and Poland now have both geometry/templates and
-new project or manufacturer research. The all-country
-view also displays jurisdictions with no catalogue record.
+The October manufacturer intake adds **16 named profiles and 10 distinct new outline shapes**: 11 Malaysian SCIB names and five Hawaiʻi GPRM AASHTO names. Six SCIB nominal outlines also match existing Civilcon profiles and therefore provide another named source-family observation of those shapes; they retain their own source-profile IDs. Matching outlines do not establish corporate identity or shared production.
+
+The default table shows catalogue jurisdictions. Choosing a manufacturer dimension switches to all manufacturer-research jurisdictions; the filter can also show only countries with a current manufacturer or supplier. Country details retain implemented family sizes, catalogue source links, original-language titles and source locators alongside the new aggregate role statistics.
+
+The completed manufacturer discovery campaign records **1,728 named organisations and operating units**, including **497 current manufacturers**, **31 current suppliers**, **114 historical manufacturers** and **4 historical suppliers**. Its **4,555 executed searches** cover **250 countries and areas**, with a saved snapshot dated **2 October 2026**. These are separate from geometric profiles in the package. The map computes catalogue totals directly from current classes and source registries.
+
+The unit is a named company, branch, public organisation or factory operating unit; it is not a deduplicated legal-entity count or a factory census. “Current” means opened sources support an advertised PSC bridge-beam manufacturing or supply role, rather than confirmed physical production on the snapshot date. Historical evidence remains separate. The total research-record count also includes unverified leads, contractor-only records and excluded entities; it must not be interpreted as 1,728 qualifying manufacturers. Counts use a company's actual country, not a foreign market in which it was discovered. Searches use the searched jurisdiction.
+
+The campaign used local-language and English trade queries with documented frontier closure. Access gaps and uncertain identities remain in the local research archive. Closure does not imply that every web page or producer was found. Only a compact aggregate is published here: country and continent counts, dates, definitions and input hashes. Company dossiers, raw search responses, downloaded documents and private analysis remain outside the public site. [Download the public manufacturer statistics](_static/coverage/manufacturer-summary.json).
 
 Research-record counts include partial transcriptions, inaccessible documents and rejected leads. Multiple records can refer to the same publication. These counts are neither unique-document counts nor implemented profiles. Legacy implementation sources are listed separately in [Sources](sources.md); the recent collection work is in the [Research catalogue](research.md).
 
@@ -28,4 +28,4 @@ The September multilingual discovery search now includes Pakistan NHA Types A–
 
 The map, search, country details and source table work offline without external scripts or a map service. External source links need internet access. Small jurisdictions remain selectable in the complete table. Boundaries use [Natural Earth’s public-domain 1:50m country data](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/), simplified for display; they are a cartographic representation, not a catalogue claim about sovereignty.
 
-Developers can regenerate the counts and page using `python tools/build_coverage.py` in the project environment. The generator reads current class size lists and the source registries; [download the generated coverage data](_static/coverage/coverage-data.json).
+Developers can regenerate the map using `python tools/build_coverage.py` in the project environment. It reads current class size lists, source registries and the checked-in compact manufacturer summary, so GitHub Pages needs no private research files. To refresh manufacturer statistics from a completed, locally audited campaign, first run `python tools/build_manufacturer_summary.py`; it validates the completion receipt and counts before publishing the aggregate. [Download the generated coverage data](_static/coverage/coverage-data.json).

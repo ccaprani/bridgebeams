@@ -49,6 +49,7 @@ exclude_patterns = ["**/backups/**", "gen/bridgebeams.ukie*", "_static/**"]
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "pydata_sphinx_theme"
+html_title = "bridgebeams"
 html_theme_options = {
     "github_url": "https://github.com/ccaprani/bridgebeams",
 }

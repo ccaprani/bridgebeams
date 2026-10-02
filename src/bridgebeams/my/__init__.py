@@ -1,5 +1,5 @@
 """Malaysian precast prestressed bridge beams (JKR PRT standard; OKA and
-G-CAST producer catalogues)."""
+G-CAST and SCIB producer catalogues)."""
 
 from .gcast_beams import (
     GcastIBeamSection,
@@ -24,3 +24,6 @@ __all__ = [
     "OkaMBeamDimensions",
     "OkaMBeamSection",
 ]
+
+from .scib_i_beam import ScibIBeamDimensions, ScibIBeamSection
+__all__ += ["ScibIBeamDimensions", "ScibIBeamSection"]

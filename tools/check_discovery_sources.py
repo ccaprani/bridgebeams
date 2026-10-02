@@ -20,10 +20,19 @@ REQUIRED = (
     "organisation", "title_original", "title_en", "url", "locator",
     "family_names", "status", "missing_information",
 )
+LEGACY_SWEEP_TOPIC = "round5-multilingual-sweep"
+LEGACY_SURVEY_STATUSES = {
+    "LEAD-NO-DIMS", "AASHTO-ADOPTION", "NONE-FOUND", "IMPORTED-OTHER",
+    "RUSSIAN-ADOPTION", "LOCAL-STANDARD", "IMPLEMENTABLE",
+}
+LEGACY_REQUIRED = tuple(key for key in REQUIRED if key not in {
+    "organisation", "missing_information",
+}) + ("authority", "note", "survey_status")
+LEGACY_EMPTY_TEXT_ALLOWED = {"title_original", "locator"}
 
 
 def main() -> None:
-    files = sorted(DATA.glob("deep-search-*-2026-09.json"))
+    files = sorted(DATA.glob("deep-search-*.json"))
     if not files:
         raise ValueError("No deep-search records found")
     identifiers: set[str] = set()
@@ -31,11 +40,16 @@ def main() -> None:
     by_status: dict[str, int] = {}
     for file in files:
         document = json.loads(file.read_text(encoding="utf-8"))
+        # This retained survey predates the named-section queue schema. Its
+        # descriptive status and explicit survey categories are original
+        # evidence, not current complete-outline readiness classifications.
+        legacy_sweep = document.get("topic") == LEGACY_SWEEP_TOPIC
+        required = LEGACY_REQUIRED if legacy_sweep else REQUIRED
         records = document["records"]
         if not isinstance(records, list) or not records:
             raise ValueError(f"{file}: expected nonempty records list")
         for record in records:
-            missing = [key for key in REQUIRED if key not in record]
+            missing = [key for key in required if key not in record]
             if missing:
                 raise ValueError(f"{file}: {record.get('id', '<no id>')}: missing {missing}")
             identity = record["id"]
@@ -46,20 +60,29 @@ def main() -> None:
             if not isinstance(code, str) or not re.fullmatch(r"[A-Z]{2}", code):
                 raise ValueError(f"{identity}: invalid country_code {code!r}")
             status = record["status"]
-            if status not in STATUSES:
+            if not isinstance(status, str) or not status.strip():
+                raise ValueError(f"{identity}: empty status")
+            if not legacy_sweep and status not in STATUSES:
                 raise ValueError(f"{identity}: invalid status {status!r}")
+            if legacy_sweep and (not isinstance(record["survey_status"], str)
+                                 or record["survey_status"] not in LEGACY_SURVEY_STATUSES):
+                raise ValueError(f"{identity}: invalid survey_status {record['survey_status']!r}")
             parsed = urlparse(record["url"])
             if parsed.scheme not in {"http", "https"} or not parsed.netloc:
                 raise ValueError(f"{identity}: invalid source URL")
-            for key in REQUIRED:
+            for key in required:
                 if key in {"family_names", "status", "url"}:
+                    continue
+                if legacy_sweep and key in LEGACY_EMPTY_TEXT_ALLOWED:
+                    if not isinstance(record[key], str):
+                        raise ValueError(f"{identity}: invalid {key}")
                     continue
                 if not isinstance(record[key], str) or not record[key].strip():
                     raise ValueError(f"{identity}: empty {key}")
             names = record["family_names"]
             if not isinstance(names, list) or any(not isinstance(n, str) or not n.strip() for n in names):
                 raise ValueError(f"{identity}: invalid family_names")
-            if status != "blocked" and not names:
+            if not legacy_sweep and status != "blocked" and not names:
                 raise ValueError(f"{identity}: verified lead lacks named sections")
             by_country[code] = by_country.get(code, 0) + 1
             by_status[status] = by_status.get(status, 0) + 1

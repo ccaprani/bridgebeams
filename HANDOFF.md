@@ -1,6 +1,83 @@
-# HANDOFF — global bridgebeams database agent briefing (v4)
+# HANDOFF — global bridgebeams database agent briefing (v5)
 
 Read this fully before starting work.
+
+## Map statistics and manufacturer-source intake — 2 October 2026
+
+The catalogue is global and integrated on `main`. The world map now offers
+seven dimensions: named beam profiles, manufacturer research records,
+current manufacturers, current suppliers, historical manufacturer/supplier
+roles, executed searches and catalogue source records. Global cards,
+country details and a continent table distinguish these observations.
+
+Current catalogue totals are **1822 named source profiles**, **1997 country
+assignments**, **48 countries with profiles**, **169 jurisdictions in the
+catalogue source registries**, and **357 catalogue source records**.
+Profile totals count source-profile IDs, not coordinate-deduplicated shapes.
+Shared reexports count once globally; different named source families may
+have identical outlines.
+
+The frozen manufacturer campaign has **1728 named organisation/operating-unit
+records**, **497 current manufacturing roles**, **31 current supply roles**,
+**118 historical roles**, and **4555 executed searches across 250 countries
+and areas**. Current roles occur in 91 jurisdictions and mean source-supported
+advertised capability, not a census of operating factories. Preserve the
+campaign completion and final independent audit in
+`docs/research/manufacturers/2026-10-01/`; the 34 audited input hashes remain
+unchanged. A compact aggregate is committed at
+`docs/source/_static/coverage/manufacturer-summary.json`; Pages and ordinary
+coverage builds do not require the raw local research archive.
+`tools/build_manufacturer_summary.py` validates the completion receipt before
+refreshing that aggregate. `tools/build_coverage.py` uses current classes,
+source registries and the committed aggregate.
+
+The source intake added `ScibIBeamSection` (11 Malaysian I profiles from
+SCIB PDF6) and `GprmKeehiGirderSection` (five Hawaii Keehi profiles from
+GPRM PDF1–4), exported through country and top-level APIs. Their packaged
+source records are `my/data/scib_i_beams.json` and
+`us/data/gprm_keehi_girders.json`. These 16 names contain **10 distinct new
+nominal outlines**; six SCIB profiles match existing Civilcon outlines.
+SCIB's printed areas match exactly; the maximum Ixx residual is 0.085%.
+GPRM retains explicit 3/4-inch soffit chamfers and lower-web radii, with
+source-table differences recorded rather than fitted. Source availability
+does not establish current production or governing-standard applicability.
+
+The bounded source-retrieval pass dispositioned **414 known technical/
+catalogue/product URLs**, **217 revealed binary links**, and five HTTPS
+alternatives. **534 requests** yielded **301 distinct validated PDF bodies**,
+of which **274 were new** against repository archives and the external manual
+library. There are now **760 distinct valid campaign-plus-intake PDFs**.
+All 508 retained response bodies passed byte/hash checks, with no pending
+callable tasks. Original documents, blocked responses and derived evidence
+remain local under `docs/research/manufacturers/2026-10-02-intake/`.
+
+Use `REPORT.md`, `intake_matrix.csv`, `selected_intake_candidates.json`,
+`retrieval_queue.jsonl` and `artifact_manifest.json` in that intake directory
+for later analysis. Its source-lane completion manifest is a point-in-time
+receipt; root task status and later acceptance receipts can subsequently
+change. Broad mechanical inventory is complete; visual/semantic geometry
+review was selected, not all 760 PDFs. Kazakhstan AZMK drawings need
+transcription; Czech VSTI headings conflict with drawing interpretation;
+Ecuador MAVISA flange/haunch heights remain missing, including a depth
+conflict. Do not invent dimensions for those partial sources.
+
+Validation: **255 package tests passed** (14 pre-existing dependency
+warnings); the corrected Keehi convention notes passed the two focused
+tests. The wheel was extracted and imported outside this checkout and all
+16 new profiles constructed valid geometry from its packaged JSON. The
+fresh strict Sphinx build passed. Independent geometry and map data/browser checks
+passed, including final embedded desktop/mobile checks and the strict site-title
+rebuild. Acceptance and deployment receipts are recorded in the local intake
+directory. `tools/build_local_docs.py` replaces
+HTML only after a successful fresh build, preventing stale source backups
+or local review attachments from leaking into published output. Discovery
+validation accepts both strict source records and the explicitly tagged
+legacy multilingual survey schema without rewriting its 122 observations.
+
+Raw campaign dossiers, document archives, `private/`, `.pi/`, `tmp/`, local
+backups and the user's existing `.gitignore` edit must remain outside the
+selected publication commit. The public site contains aggregate statistics
+and source metadata, not the private analysis or raw source archive.
 
 ## Global database on main — 1 October 2026
 

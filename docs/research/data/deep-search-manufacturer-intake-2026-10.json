@@ -1,0 +1,90 @@
+{
+  "accessed": "2026-10-02",
+  "scope": "Two producer primary sources with complete nominal outlines, implemented from the October manufacturer campaign. Source availability is not evidence of current physical production; section assignments are not a census of unique geometries.",
+  "records": [
+    {
+      "id": "MY-SCIB-I-2026-10-INTAKE",
+      "country_code": "MY",
+      "country": "Malaysia",
+      "language": "English",
+      "source_type": "producer_catalogue",
+      "organisation": "SCIB Concrete Manufacturing Sdn Bhd",
+      "title_original": "PRESTRESSED CONCRETE BEAMS — SCIB CONCRETE MANUFACTURING SDN BHD",
+      "title_en": "Prestressed Concrete Beams — SCIB Concrete Manufacturing",
+      "url": "https://scib.com.my/live/images/catalog/beam.pdf",
+      "locator": "Undated six-page catalogue, PDF page 6, three dimension groups I5-I8, I12-I14, I15-I18 and adjacent property tables.",
+      "family_names": [
+        "I5",
+        "I6",
+        "I7",
+        "I8",
+        "I12",
+        "I13",
+        "I14",
+        "I15",
+        "I16",
+        "I17",
+        "I18"
+      ],
+      "printed_dimensions": "Eleven gross nominal I-beams, 965-1830 mm deep. Top widths 360/410 mm, webs 150/200 mm, bottom widths 510/610/660 mm; printed flange, haunch and straight-web chains close exactly. Dimensions mm; A mm2; Yb/Yt mm; centroidal Ixx mm4; moduli mm3; weight kN/m.",
+      "status": "complete_outline",
+      "missing_information": "Gross nominal outlines are complete and implemented. No radius/chamfer dimension is printed; sharp intersections are a stated convention. Reinforcement, strand placement, local holes/end zones and project design are excluded. Catalogue is undated; current physical production and design approval are unverified.",
+      "implementation": "bridgebeams.my.ScibIBeamSection",
+      "geometry_provenance": "transcribed-with-convention",
+      "implemented_profile_ids": [
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I5",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I6",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I7",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I8",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I12",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I13",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I14",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I15",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I16",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I17",
+        "bridgebeams.my.scib_i_beam.ScibIBeamSection:I18"
+      ],
+      "source_sha256": "65d64dce4d12209412265644b69957aceef1a2615774625275145f8bdb5f36cc",
+      "packaged_source_record": "src/bridgebeams/my/data/scib_i_beams.json",
+      "property_verification": "Independent printed table: all 11 areas exact; Yb within 0.489 mm; Ixx within 0.085 percent; moduli within 0.022 percent. I13 Zt 138.81e6 and I15 Zt 166.0e6 mm3 retained exactly.",
+      "geometry_duplicates": "I5/I6/I7/I12/I13/I14 equal existing South African Civilcon nominal outlines; independent manufacturer/country assignments, not six distinct new shapes. I8/I15/I16/I17/I18 are distinct. SCIB M2-M10 corroborates OKA and is not added again.",
+      "contact_route": "SCIB company website https://scib.com.my/"
+    },
+    {
+      "id": "US-GPRM-KEEHI-2026-10-INTAKE",
+      "country_code": "US",
+      "country": "United States",
+      "language": "English",
+      "source_type": "producer_drawing",
+      "organisation": "GPRM Prestress (Hawaii)",
+      "title_original": "Keehi Girders",
+      "title_en": "Keehi IV and VI prestressed bridge girders",
+      "url": "https://www.gprmp.com/sites/default/files/A2-23-10%20KEEHI%20GIRDERS.pdf",
+      "locator": "PDF page 1 sheet K-VI W; page 2 K-VI; page 3 K-IV W; page 4 K-IV, including IV MOD additional-depth callout and property row.",
+      "family_names": [
+        "K-VI W",
+        "K-VI",
+        "K-IV W",
+        "K-IV",
+        "K-IV MOD"
+      ],
+      "printed_dimensions": "Five gross nominal profiles. VI/VI W depth 72 in; IV/IV W 58 in; IV MOD 62 in. Web 7/6.5 in, base 26 in; top widths VI W 57 in maximum, VI 36 in, IV W 56.5 in maximum, IV/IV MOD 24 in. All depth chains printed; 3/4 in soffit chamfers and lower-web radii. Source units in, in2, in4, in3 and kip/ft; public geometry mm via exact 25.4 conversion.",
+      "status": "complete_outline",
+      "missing_information": "Complete as-drawn nominal profiles implemented, including maximum-width wide variants. Project-specific narrower flange geometry is unspecified and excluded; IV MOD uses the printed 4 in top addition. Reinforcement, local end details and project design are excluded. Sheets have blank issue/revision dates; PDF metadata from 2010 is not a drawing issue date. Current production and design approval are unverified.",
+      "implementation": "bridgebeams.us.GprmKeehiGirderSection",
+      "geometry_provenance": "transcribed-with-convention",
+      "implemented_profile_ids": [
+        "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-VI W",
+        "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-VI",
+        "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-IV W",
+        "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-IV",
+        "bridgebeams.us.gprm_keehi_girders.GprmKeehiGirderSection:K-IV MOD"
+      ],
+      "source_sha256": "1f9eebef99376b56923d9c219b6b3f58f8845a99e697bc3416836c3f78c8703a",
+      "packaged_source_record": "src/bridgebeams/us/data/gprm_keehi_girders.json",
+      "property_verification": "As-drawn corners vs source tables: area deficit 0.29-0.59 in2; Yb below 0.026 in difference; centroidal Ixx below 0.14 percent difference. Published IV/IV W/IV MOD/VI W mostly use the sharp outline without labelled corners; VI table has a further 0.012 percent nominal Ixx discrepancy. These differences are recorded without fitting dimensions.",
+      "geometry_duplicates": "No nominal duplicate of these five polygons was found among the 1806 previously counted catalogue profiles.",
+      "contact_route": "GPRM company website https://www.gprmp.com/"
+    }
+  ]
+}
